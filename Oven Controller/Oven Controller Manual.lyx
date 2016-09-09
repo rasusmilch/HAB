@@ -1,0 +1,600 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrreprt
+\begin_preamble
+\KOMAoption{fontsize}{10pt}\recalctypearea
+\usepackage{fontspec}
+
+%\usepackage[osf,p,type1]{libertine}
+\defaultfontfeatures{Ligatures = {Common, TeX}, Numbers = {Proportional, OldStyle, SlashedZero}, Contextuals = Swash, Fractions = On}% ,Scale=MatchLowercase} bug in current Biolinum
+\setmainfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
+\setmonofont[Numbers = {Monospaced, Lining, SlashedZero}]{Linux Libertine Mono O}
+\usepackage[libertine]{newtxmath}
+
+%\setromanfont [Ligatures={Common,TeX}, Numbers={OldStyle}]{Linux Libertine O}
+%\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+%\setsansfont[Ligatures={Common,TeX}, Numbers={OldStyle}]{Linux Biolinum O}
+%\setromanfont [Ligatures={Common,TeX}, Numbers={OldStyle}]{Libertine}
+%\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+%\setsansfont[Ligatures={Common,TeX}, Numbers={OldStyle}]{Linux Biolinum O}
+
+\usepackage[letterspace = 0, babel = true, protrusion = true, expansion = true]{microtype}
+%\usepackage{textcomp}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{lettrine}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+% Wrap minted environment in a pretty box.
+\BeforeBeginEnvironment{minted}{\begin{tcolorbox}}%
+\AfterEndEnvironment{minted}{\end{tcolorbox}}%
+\setminted{breaklines,breakautoindent,autogobble,tabsize=2}
+\newminted[asm]{nasm}{linenos, xleftmargin=1em}
+\newminted[html]{html}{}
+\newminted[java]{java}{}
+\newminted[cpp]{cpp}{}
+\newminted[make]{make}{}
+
+\newcommand{\iasm}[1]{\mintinline{nasm}{#1}}
+
+%\usepackage{enumitem}
+%\setlist{nosep}
+%\setlist{noitemsep} % to leave space around whole list
+% More control per list
+%\setlist[2]{noitemsep} % sets the itemsep and parsep for all level two lists to 0
+%\setenumerate{noitemsep} % sets no itemsep for enumerate lists only
+%\begin{enumerate}[noitemsep] % sets no itemsep for just this list
+% ITEMS
+%\end{enumerate}
+
+\usepackage{mathdots}
+\usepackage{url}
+
+\usepackage{varioref}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\everymath{\displaystyle}
+
+% Vertically stretch a table row this amount
+%\renewcommand*\arraystretch{1.5}
+% Or use this command
+% \setlength{\extrarowheight}{2pt}
+
+
+% Make nicer looking captions
+%\usepackage{caption}
+%\captionsetup{labelfont=bf,format=hang,justification=justified}
+
+% Indent KOMA script captions
+%\setcapindent{1em}
+
+% Make KOMA script caption labels (eg Figure 1:) bold.
+\addtokomafont{captionlabel}{\bfseries}
+
+% Adjust the KOMA caption fonts smaller
+%\setkomafont{caption}{\small\itshape}
+\setkomafont{caption}{\small}
+\setkomafont{captionlabel}{\usekomafont{caption}}
+\usepackage{subfig}
+%\captionsetup[subfloat]{font={footnotesize,it}}
+\captionsetup[subfloat]{font={footnotesize}}
+
+
+% Note that tables should have the caption above the table.
+% Figures should have the caption below the table.
+% Algorithms does not seem to matter above or below, though code above the caption looks nicer in LyX GUI
+% Could adjust the caption spacing depending on the environment (document class)
+%\captionsetup[table]{skip=20pt}
+%\setlength{\abovecaptionskip}{15pt plus 10pt minus 2pt} % Chosen fairly arbitrarily
+
+% Center figures and tables
+\let\originaltable\table
+\let\endoriginaltable\endtable
+\renewenvironment{table}[1][ht]{%
+\originaltable[#1]
+\addfontfeatures{Numbers={Lining, Monospaced, SlashedZero}}
+ \centering}%
+{\endoriginaltable}
+
+\let\originalfigure\figure
+\let\endoriginalfigure\endfigure
+\renewenvironment{figure}[1][ht]{%
+\originalfigure[#1]
+\centering}%
+{\endoriginalfigure}
+
+%\renewcommand*{\figureformat}{}
+%\renewcommand*{\tableformat}{\tablename~\thetable}
+%\renewcommand*{\captionformat}{}
+\renewcommand*\thetable{%
+%  \thechapter.%
+  \@arabic\c@table
+}
+
+\renewcommand*\thefigure{%
+%  \thechapter.%
+  \@arabic\c@figure
+}
+
+
+% Force floats to appear in their respective sections, subsections, and subsubsections.
+%\usepackage[section,subsection,subsubsection]{extraplaceins}
+\usepackage[section, subsection]{extraplaceins}
+
+%\makeatletter
+\if@twoside % commands below work only for twoside option of \documentclass
+    \newlength{\textblockoffset}
+    \setlength{\textblockoffset}{12mm}
+    \addtolength{\hoffset}{\textblockoffset}
+    \addtolength{\evensidemargin}{-2.0\textblockoffset}
+\fi
+%\makeatother
+\title{CS4390 Ethics}
+\author{Robert Susmilch}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+%\makeatletter
+\let\papertitle\@title
+\let\paperauthor\@author
+\let\paperdate\@date
+%\makeatother
+\lehead[\papertitle]{\papertitle}
+\rehead[\paperauthor]{\paperauthor}
+\lohead[\paperauthor]{\paperauthor}
+\rohead[\papertitle]{\papertitle}
+
+\definecolor{green}{RGB}{0, 180, 0}
+%\definecolor{cyan}{RGB}{0, 180, 180}
+\definecolor{blue}{RGB}{0,100,255}
+\definecolor{yellow}{RGB}{200,200,0}
+\definecolor{Black}{RGB}{0, 0, 0}
+\definecolor{Gray}{RGB}{150, 150, 150}
+\definecolor{teal}{RGB}{64, 128, 128}
+\definecolor{gray}{rgb}{0.95,0.95,0.95}
+\definecolor{muave}{rgb}{0.58,0,0.82}
+
+\usepackage{framed}
+
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\newcommand{\myquote}[2][black!10]{%
+  \medskip
+  {\setlength{\fboxsep}{.1\columnwidth}%
+  \noindent\colorbox{#1}{\begin{minipage}{\dimexpr\columnwidth-2\fboxsep}
+    \raggedright\sffamily\bfseries\Huge#2
+  \end{minipage}}} \par
+  \medskip
+}
+%\newcommand{\hltt}[1]{\textcolor{blue}{#1}}
+%\usepackage{footnote}
+\setminted{breaklines,breakautoindent,autogobble,tabsize=2}
+\newminted[bash]{bash}{}
+
+% Use to include text files into a LaTeX file, such as source files
+\usepackage{fancyvrb}
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ rulecolor=\color{Gray},
+%
+ label=\fbox{\color{Black}Passwords},
+ labelposition=topline,
+ %
+ %commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
+% Then we use
+%\VerbatimInput{yourFileInSameDirectory.txt}
+
+\usepackage{enumitem}
+\setlist[itemize,1]{label=$\bullet$}
+\setlist[itemize,2]{label=\tiny$\blacklozenge$}
+\setlist[itemize,3]{label=\tiny$\blacktriangleright$}
+\setlist[itemize,4]{label=\tiny$\blacksquare$}
+\setlist[itemize,5]{label=$\circ$}
+\setlist[itemize,6]{label=$\triangleright$}
+\setlist[itemize,7]{label=$\star$}
+\setlist[itemize,8]{label=$\ast$}
+\setlist[itemize,9]{label=$\star$}
+
+\renewlist{itemize}{itemize}{9}
+\setlist[itemize]{noitemsep}
+
+% KOMA script won't include the nomenclature within the table of contents
+\def\nompreamble{\addcontentsline{toc}{section}{\nomname}\markboth{\nomname}{\nomname}}
+%\DeclareUnicodeCharacter{21AA}{\hookarrow}
+
+% Highlight nomenclature terms in some way.
+\newcommand{\term}[1]{\textcolor{blue}{#1}}
+%\newcommand{\term}[1]{\texttt{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\tn}[1]{\term{\noun{#1}}}
+
+\usepackage{listings}
+
+\lstdefinelanguage{ijvm}
+{morekeywords={BIPUSH, DUP, GOTO, IADD, IAND, IFEQ, IFLT, IF\_ICMPEQ, IINC, ILOAD, INVOKEVIRTUAL, IOR, IRETURN, ISTORE, ISUB, LDC\_W, NOP, POP, SWAP, WIDE, RD, WR, FETCH, if},
+sensitive = false,
+morecomment=[l]{//},
+emph={A, B, N, Z, MDR, PC, MBR, MBRU, SP, LV, CPP, TOS, OPC, MPC},
+emph={[2]H, MAR},
+emphstyle={\color{blue}},
+emphstyle={[2]\color{muave}}
+}
+
+\lstdefinelanguage{arm}
+{morekeywords={add, cmp, blt,mov},
+sensitive = false,
+morecomment=[l]{;},
+emph={R0, R1, R2, R3, R4, R5, R6},
+emph={[2]H, MAR},
+emphstyle={\color{red}},
+emphstyle={[2]\color{muave}}
+}
+
+\lstset{%
+language=ijvm,
+basicstyle={\ttfamily},
+breaklines=true,
+commentstyle={\color{teal}\textit},
+keywordstyle={\color{blue}},
+rulecolor={\color{black}},
+backgroundcolor={\color{gray}},
+stringstyle={\color{muave}},
+frame=single,
+numbers=left,
+numberstyle={\scriptsize}}
+
+\newcommand{\ijvm}[1]{\lstinline[language=ijvm]{#1}}
+\usepackage[maxfloats=25]{morefloats}
+\widowpenalty=10000
+\clubpenalty=10000 
+\end_preamble
+\options headsepline,DIV=15,BCOR=0.125in,index=totoc,toc=listofnumbered,toc=graduated,unicode=true, twoside=true
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+callout
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "libertine-ntxm" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "CS4390 Ethics"
+\pdf_author "Robert Susmilch"
+\pdf_subject "Data Structures and Algorithms"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+CS4390
+\end_layout
+
+\begin_layout Subject
+Ethics
+\end_layout
+
+\begin_layout Subtitle
+Class Notes
+\end_layout
+
+\begin_layout Titlehead
+Copyright © 2016 Robert Susmilch
+\end_layout
+
+\begin_layout Author
+Robert Susmilch
+\end_layout
+
+\begin_layout Date
+Fall 2016
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+cleardoublepage
+\backslash
+null
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+August 25, 2016
+\end_layout
+
+\begin_layout Subsection
+Kantianism
+\end_layout
+
+\begin_layout Itemize
+Moral rules
+\end_layout
+
+\begin_layout Itemize
+Categorical imperative
+\end_layout
+
+\begin_layout Itemize
+Autonomy
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Not means to an end
+\end_layout
+
+\begin_layout Itemize
+Compensated fairly
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Duty to fulfill moral obligations
+\end_layout
+
+\begin_layout Itemize
+All humans have equal worth
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Does not take into account situation or allow breaking of rules
+\end_layout
+
+\end_deeper
+\begin_layout Subsection
+Utilitarianism
+\end_layout
+
+\begin_layout Itemize
+Cost - benefit analysis
+\end_layout
+
+\begin_layout Itemize
+Overall 
+\begin_inset Quotes eld
+\end_inset
+
+happiness
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Rule Utilitarianism
+\end_layout
+
+\begin_layout Itemize
+General rules to increase happiness.
+\end_layout
+
+\begin_layout Itemize
+Negatives similar to Kantianism
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Does allow two rules to come into conflict, one then does the happiness
+ calculus to decide which rule benefits the most
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Act Utilitarianism
+\end_layout
+
+\begin_layout Itemize
+An action will affect overall happiness
+\end_layout
+
+\begin_layout Subsection
+Social Contract Theory
+\end_layout
+
+\begin_layout Itemize
+People rationally agree to rules and laws
+\end_layout
+
+\begin_layout Itemize
+Justice and fairness, applied 
+\emph on
+in order:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Each person 
+\emph on
+should
+\emph default
+ have as extensive a set of basic freedoms as possible as long as freedoms
+ others from having the same freedoms.
+\end_layout
+
+\begin_layout Enumerate
+Social and economic disparities can be justified only if:
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+Everyone has a fair chance to obtain a better position.
+\end_layout
+
+\begin_layout Enumerate
+Difference principle: such disparities provide the greatest benefit to the
+ least advantaged.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Description
+Veil
+\begin_inset space ~
+\end_inset
+
+of
+\begin_inset space ~
+\end_inset
+
+ignorance One should consider the implications of the moral solution, regardless
+ of which role in society one will receive.
+ Ignorant of 
+\begin_inset Quotes eld
+\end_inset
+
+our
+\begin_inset Quotes erd
+\end_inset
+
+ possible position.
+\end_layout
+
+\begin_layout Subsection
+Virtue Ethics
+\end_layout
+
+\begin_layout Description
+Character Acquired through practice.
+\end_layout
+
+\begin_layout Description
+Intellectual Acquired through education.
+\end_layout
+
+\begin_layout Itemize
+Plato introduced and developed further by Aristotle
+\end_layout
+
+\begin_layout Itemize
+Computer science has taken to virtue ethics perhaps due to AI
+\end_layout
+
+\begin_layout Itemize
+
+\end_layout
+
+\end_body
+\end_document

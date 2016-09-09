@@ -1,0 +1,1665 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrreprt
+\begin_preamble
+\KOMAoption{fontsize}{10pt}\recalctypearea
+\usepackage{fontspec}
+
+%\usepackage[osf,p,type1]{libertine}
+\defaultfontfeatures{Ligatures = {Common, TeX}, Numbers = {Proportional, OldStyle, SlashedZero}, Contextuals = Swash, Fractions = On}% ,Scale=MatchLowercase} bug in current Biolinum
+\setmainfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
+\setmonofont[Numbers = {Monospaced, Lining, SlashedZero}]{Linux Libertine Mono O}
+\usepackage[libertine]{newtxmath}
+
+%\setromanfont [Ligatures={Common,TeX}, Numbers={OldStyle}]{Linux Libertine O}
+%\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+%\setsansfont[Ligatures={Common,TeX}, Numbers={OldStyle}]{Linux Biolinum O}
+%\setromanfont [Ligatures={Common,TeX}, Numbers={OldStyle}]{Libertine}
+%\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+%\setsansfont[Ligatures={Common,TeX}, Numbers={OldStyle}]{Linux Biolinum O}
+
+\usepackage[letterspace = 0, babel = true, protrusion = true, expansion = true]{microtype}
+%\usepackage{textcomp}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{lettrine}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+% Wrap minted environment in a pretty box.
+\BeforeBeginEnvironment{minted}{\begin{tcolorbox}}%
+\AfterEndEnvironment{minted}{\end{tcolorbox}}%
+\setminted{breaklines,breakautoindent,autogobble,tabsize=2}
+\newminted[asm]{nasm}{linenos, xleftmargin=1em}
+\newminted[html]{html}{}
+\newminted[java]{java}{}
+\newminted[cpp]{cpp}{}
+\newminted[make]{make}{}
+
+\newcommand{\iasm}[1]{\mintinline{nasm}{#1}}
+
+%\usepackage{enumitem}
+%\setlist{nosep}
+%\setlist{noitemsep} % to leave space around whole list
+% More control per list
+%\setlist[2]{noitemsep} % sets the itemsep and parsep for all level two lists to 0
+%\setenumerate{noitemsep} % sets no itemsep for enumerate lists only
+%\begin{enumerate}[noitemsep] % sets no itemsep for just this list
+% ITEMS
+%\end{enumerate}
+
+\usepackage{mathdots}
+\usepackage{url}
+
+\usepackage{varioref}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\everymath{\displaystyle}
+
+% Vertically stretch a table row this amount
+%\renewcommand*\arraystretch{1.5}
+% Or use this command
+% \setlength{\extrarowheight}{2pt}
+
+
+% Make nicer looking captions
+%\usepackage{caption}
+%\captionsetup{labelfont=bf,format=hang,justification=justified}
+
+% Indent KOMA script captions
+%\setcapindent{1em}
+
+% Make KOMA script caption labels (eg Figure 1:) bold.
+\addtokomafont{captionlabel}{\bfseries}
+
+% Adjust the KOMA caption fonts smaller
+%\setkomafont{caption}{\small\itshape}
+\setkomafont{caption}{\small}
+\setkomafont{captionlabel}{\usekomafont{caption}}
+\usepackage{subfig}
+%\captionsetup[subfloat]{font={footnotesize,it}}
+\captionsetup[subfloat]{font={footnotesize}}
+
+
+% Note that tables should have the caption above the table.
+% Figures should have the caption below the table.
+% Algorithms does not seem to matter above or below, though code above the caption looks nicer in LyX GUI
+% Could adjust the caption spacing depending on the environment (document class)
+%\captionsetup[table]{skip=20pt}
+%\setlength{\abovecaptionskip}{15pt plus 10pt minus 2pt} % Chosen fairly arbitrarily
+
+% Center figures and tables
+\let\originaltable\table
+\let\endoriginaltable\endtable
+\renewenvironment{table}[1][ht]{%
+\originaltable[#1]
+\addfontfeatures{Numbers={Lining, Monospaced, SlashedZero}}
+ \centering}%
+{\endoriginaltable}
+
+\let\originalfigure\figure
+\let\endoriginalfigure\endfigure
+\renewenvironment{figure}[1][ht]{%
+\originalfigure[#1]
+\centering}%
+{\endoriginalfigure}
+
+%\renewcommand*{\figureformat}{}
+%\renewcommand*{\tableformat}{\tablename~\thetable}
+%\renewcommand*{\captionformat}{}
+\renewcommand*\thetable{%
+%  \thechapter.%
+  \@arabic\c@table
+}
+
+\renewcommand*\thefigure{%
+%  \thechapter.%
+  \@arabic\c@figure
+}
+
+
+% Force floats to appear in their respective sections, subsections, and subsubsections.
+%\usepackage[section,subsection,subsubsection]{extraplaceins}
+\usepackage[section, subsection]{extraplaceins}
+
+%\makeatletter
+\if@twoside % commands below work only for twoside option of \documentclass
+    \newlength{\textblockoffset}
+    \setlength{\textblockoffset}{12mm}
+    \addtolength{\hoffset}{\textblockoffset}
+    \addtolength{\evensidemargin}{-2.0\textblockoffset}
+\fi
+%\makeatother
+\title{Oven Controller}
+\author{Robert Susmilch}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+%\makeatletter
+\let\papertitle\@title
+\let\paperauthor\@author
+\let\paperdate\@date
+%\makeatother
+\lehead[\papertitle]{\papertitle}
+\rehead[\paperauthor]{\paperauthor}
+\lohead[\paperauthor]{\paperauthor}
+\rohead[\papertitle]{\papertitle}
+
+\definecolor{green}{RGB}{0, 180, 0}
+%\definecolor{cyan}{RGB}{0, 180, 180}
+\definecolor{blue}{RGB}{0,100,255}
+\definecolor{yellow}{RGB}{200,200,0}
+\definecolor{Black}{RGB}{0, 0, 0}
+\definecolor{Gray}{RGB}{150, 150, 150}
+\definecolor{teal}{RGB}{64, 128, 128}
+\definecolor{gray}{rgb}{0.95,0.95,0.95}
+\definecolor{muave}{rgb}{0.58,0,0.82}
+
+\usepackage{framed}
+
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\newcommand{\myquote}[2][black!10]{%
+  \medskip
+  {\setlength{\fboxsep}{.1\columnwidth}%
+  \noindent\colorbox{#1}{\begin{minipage}{\dimexpr\columnwidth-2\fboxsep}
+    \raggedright\sffamily\bfseries\Huge#2
+  \end{minipage}}} \par
+  \medskip
+}
+%\newcommand{\hltt}[1]{\textcolor{blue}{#1}}
+%\usepackage{footnote}
+\setminted{breaklines,breakautoindent,autogobble,tabsize=2}
+\newminted[bash]{bash}{}
+
+% Use to include text files into a LaTeX file, such as source files
+\usepackage{fancyvrb}
+% redefine \VerbatimInput
+\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+{fontsize=\footnotesize,
+ %
+ frame=lines,  % top and bottom rule only
+ framesep=2em, % separation between frame and text
+ rulecolor=\color{Gray},
+%
+ label=\fbox{\color{Black}Passwords},
+ labelposition=topline,
+ %
+ %commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+ commentchar=*        % comment character
+}
+% Then we use
+%\VerbatimInput{yourFileInSameDirectory.txt}
+
+\usepackage{enumitem}
+\setlist[itemize,1]{label=$\bullet$}
+\setlist[itemize,2]{label=\tiny$\blacklozenge$}
+\setlist[itemize,3]{label=\tiny$\blacktriangleright$}
+\setlist[itemize,4]{label=\tiny$\blacksquare$}
+\setlist[itemize,5]{label=$\circ$}
+\setlist[itemize,6]{label=$\triangleright$}
+\setlist[itemize,7]{label=$\star$}
+\setlist[itemize,8]{label=$\ast$}
+\setlist[itemize,9]{label=$\star$}
+
+\renewlist{itemize}{itemize}{9}
+\setlist[itemize]{noitemsep}
+
+% KOMA script won't include the nomenclature within the table of contents
+\def\nompreamble{\addcontentsline{toc}{section}{\nomname}\markboth{\nomname}{\nomname}}
+%\DeclareUnicodeCharacter{21AA}{\hookarrow}
+
+% Highlight nomenclature terms in some way.
+\newcommand{\term}[1]{\textcolor{blue}{#1}}
+%\newcommand{\term}[1]{\texttt{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\tn}[1]{\term{\noun{#1}}}
+
+\usepackage{listings}
+
+\lstdefinelanguage{ijvm}
+{morekeywords={BIPUSH, DUP, GOTO, IADD, IAND, IFEQ, IFLT, IF\_ICMPEQ, IINC, ILOAD, INVOKEVIRTUAL, IOR, IRETURN, ISTORE, ISUB, LDC\_W, NOP, POP, SWAP, WIDE, RD, WR, FETCH, if},
+sensitive = false,
+morecomment=[l]{//},
+emph={A, B, N, Z, MDR, PC, MBR, MBRU, SP, LV, CPP, TOS, OPC, MPC},
+emph={[2]H, MAR},
+emphstyle={\color{blue}},
+emphstyle={[2]\color{muave}}
+}
+
+\lstdefinelanguage{arm}
+{morekeywords={add, cmp, blt,mov},
+sensitive = false,
+morecomment=[l]{;},
+emph={R0, R1, R2, R3, R4, R5, R6},
+emph={[2]H, MAR},
+emphstyle={\color{red}},
+emphstyle={[2]\color{muave}}
+}
+
+\lstset{%
+language=ijvm,
+basicstyle={\ttfamily},
+breaklines=true,
+commentstyle={\color{teal}\textit},
+keywordstyle={\color{blue}},
+rulecolor={\color{black}},
+backgroundcolor={\color{gray}},
+stringstyle={\color{muave}},
+frame=single,
+numbers=left,
+numberstyle={\scriptsize}}
+
+\newcommand{\ijvm}[1]{\lstinline[language=ijvm]{#1}}
+\usepackage[maxfloats=25]{morefloats}
+\widowpenalty=10000
+\clubpenalty=10000 
+\end_preamble
+\options headsepline,DIV=15,BCOR=0.125in,index=totoc,toc=listofnumbered,toc=graduated,unicode=true, twoside=true
+\use_default_options true
+\begin_modules
+theorems-ams-bytype
+theorems-ams-extended-bytype
+callout
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding auto
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "libertine-ntxm" "auto"
+\font_default_family default
+\use_non_tex_fonts false
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "Oven Controller"
+\pdf_author "Robert Susmilch"
+\pdf_subject "Domestic Oven Controller"
+\pdf_keywords "Oven, domestic, stove, control, controller"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+Oven Controller
+\end_layout
+
+\begin_layout Subtitle
+User Manual
+\end_layout
+
+\begin_layout Titlehead
+Copyright © 2016 Robert Susmilch
+\end_layout
+
+\begin_layout Author
+Robert Susmilch
+\end_layout
+
+\begin_layout Date
+September 3, 2016
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status collapsed
+
+\begin_layout Plain Layout
+
+%
+\backslash
+cleardoublepage
+\backslash
+null
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Newpage cleardoublepage
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+setcounter{chapter}{1}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Overview
+\end_layout
+
+\begin_layout Section
+Basics
+\end_layout
+
+\begin_layout Standard
+The user interface is composed of an 
+\noun on
+led
+\noun default
+ display with integrated buttons.
+ The button functions are as shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Primary-user-interface_buttons"
+
+\end_inset
+
+.
+ The 8-segment numerical display outputs various information, such as current
+ oven mode, timer count down and control inputs.
+ The 
+\noun on
+led
+\noun default
+s above the buttons and below the 8-segment display are status indicators
+ for various oven modes and functions (see 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Primary-user-interface_status_LEDs"
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+A secondary 8-segment 
+\noun on
+led
+\noun default
+ display is included that allows longer length user messages (such as error
+ and alarm output) as well as supplements various oven functions.
+ Typically the secondary display outputs the current oven temperature as
+ well as the current oven bake or broil set temperature.
+ Alternatively, the display can be set to output the current control board's
+ temperature and the current oven temperature.
+ This alternative output mode can be easily determined due to the first
+ display temperature having all decimal points lit.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Controller Off_Buttons.png
+	lyxscale 10
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Primary user interface display.
+ Buttons are as labeled.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Primary-user-interface_buttons"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Controller Off_Status.png
+	lyxscale 10
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Primary user interface with status 
+\noun on
+led
+\noun default
+s labeled.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Primary-user-interface_status_LEDs"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Secondary display used for oven temperatures.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Control
+\end_layout
+
+\begin_layout Subsection
+Power Up
+\end_layout
+
+\begin_layout Standard
+During initial power up (such as after plugging in or turning on the electric
+ panel breaker) the oven controller will display a welcome message, and
+ proceed to test output functions by illuminating all 
+\noun on
+led
+\noun default
+ segments and sounding the alert beeper.
+ The oven will then enter standby mode.
+\end_layout
+
+\begin_layout Subsection
+Modes
+\end_layout
+
+\begin_layout Standard
+The oven has the following modes:
+\end_layout
+
+\begin_layout Itemize
+Standby
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Standby mode indicates the oven is not currently heating, tracking a timer
+ and that the clock has not been set.
+\end_layout
+
+\begin_layout Itemize
+There is 
+\emph on
+no
+\emph default
+ status 
+\noun on
+led
+\noun default
+ indicating standby mode.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Indicated by the display output of 
+\begin_inset Quotes eld
+\end_inset
+
+standby
+\begin_inset Quotes erd
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Standby-mode"
+
+\end_inset
+
+) or, if the clock is set, showing the current time with the status 
+\noun on
+led
+\noun default
+s slowly counting up (in binary fashion.)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+If oven was previously on, the temperature indicated by the secondary display
+ should slowly decline.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Standby.png
+	lyxscale 20
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Standby mode is when the oven is currently not preforming a task, in other
+ words it is idle awaiting a command.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Standby-mode"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Timer
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Timer mode allows tracking time
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Depends on whether oven is currently on
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If oven is not in bake or broil mode, timer mode functions as a traditional
+ kitchen timer.
+\end_layout
+
+\begin_layout Itemize
+If oven is currently in bake or broil mode, the timer will 
+\emph on
+automatically
+\emph default
+ turn off the oven when the timer expires.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Itemize
+Timer mode is indicated by the 
+\begin_inset Quotes eld
+\end_inset
+
+timer
+\begin_inset Quotes erd
+\end_inset
+
+ status 
+\noun on
+led
+\noun default
+ and a decreasing time display.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Bake / broil
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bake mode is for normal oven baking.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+During bake preheat 
+\emph on
+both
+\emph default
+ oven elements (bake and broil) are used to quickly and evenly heat the
+ oven.
+\end_layout
+
+\begin_layout Itemize
+Bake mode occasionally cycles the broil element on to help even out cooking.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Broil mode utilizes 
+\emph on
+only
+\emph default
+ the broil element, both during preheat and normal broil operation.
+\end_layout
+
+\begin_layout Itemize
+Status 
+\noun on
+led
+\noun default
+s
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Bake mode is indicated by the 
+\begin_inset Quotes eld
+\end_inset
+
+bake
+\begin_inset Quotes erd
+\end_inset
+
+ status 
+\noun on
+led
+\noun default
+.
+\end_layout
+
+\begin_layout Itemize
+Broil mode is indicated by the 
+\begin_inset Quotes eld
+\end_inset
+
+broil
+\begin_inset Quotes erd
+\end_inset
+
+ status 
+\noun on
+led
+\noun default
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Once a temperature is entered the oven will heat to the set temperature
+ and cycle the bake and broil elements on and off.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+There is an automatic safety timer.
+ Please see the oven temperature section.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Clock
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If the clock time is set, during standby the display will show the current
+ time.
+\end_layout
+
+\begin_layout Itemize
+Times are set in 24 hour mode (military time.)
+\end_layout
+
+\begin_layout Itemize
+The clock function does not utilize a battery backup, and will lose the
+ time if power is lost.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+If power is lost, the controller will not display the clock during standby.
+ Instead the display will simply state 
+\begin_inset Quotes eld
+\end_inset
+
+standby
+\begin_inset Quotes erd
+\end_inset
+
+ indicating the oven is idle.
+\end_layout
+
+\end_deeper
+\end_deeper
+\begin_layout Subsection
+Operation
+\end_layout
+
+\begin_layout Standard
+Please see 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Primary-user-interface_buttons"
+
+\end_inset
+
+ for button locations, and 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Primary-user-interface_status_LEDs"
+
+\end_inset
+
+ for status 
+\noun on
+led
+\noun default
+s.
+\end_layout
+
+\begin_layout Subsubsection
+Bake
+\end_layout
+
+\begin_layout Paragraph
+Entering a bake temperature
+\end_layout
+
+\begin_layout Itemize
+Bake mode can be entered by pressing the 
+\begin_inset Quotes eld
+\end_inset
+
+bake button.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The 
+\begin_inset Quotes eld
+\end_inset
+
+bake
+\begin_inset Quotes erd
+\end_inset
+
+ status
+\noun on
+ led
+\noun default
+ will light by itself to signify the user is in the bake setting menu.
+\end_layout
+
+\begin_layout Itemize
+The display will change to show the set temperature the user desires for
+ the oven.
+\end_layout
+
+\begin_layout Itemize
+See 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Oven_temp_setting"
+
+\end_inset
+
+.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+The user may press, or hold the up and down buttons to enter the desired
+ temperature.
+\end_layout
+
+\begin_layout Itemize
+Once the desired temperature is displayed, pressing enter will start the
+ bake mode.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The display will flash the status 
+\noun on
+led
+\noun default
+s to indicate acknowledgment of the users entry.
+\end_layout
+
+\begin_layout Itemize
+If the oven was 
+\emph on
+not previously
+\emph default
+ in a bake or broil mode, the oven will now enter preheat mode.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Display will state 
+\begin_inset Quotes eld
+\end_inset
+
+preheat
+\begin_inset Quotes erd
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Unless the timer function is already active.
+\end_layout
+
+\end_inset
+
+ and the 
+\begin_inset Quotes eld
+\end_inset
+
+preheat
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\noun on
+led
+\noun default
+ will light.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+If the oven was already in bake or broil mode, the oven will 
+\emph on
+not
+\emph default
+ preheat, and instead follow the normal thermostat setting.
+\end_layout
+
+\end_deeper
+\begin_layout Warning
+Preheat mode utilizes 
+\emph on
+both
+\emph default
+ oven elements to quickly heat the oven.
+ Due to the extended times required to heat a cold oven, and the fact that
+ the broil element will be on, food placed inside the oven before the preheat
+ cycle is done will burn.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Temp Setting.png
+	lyxscale 20
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Display of the bake temperature setting menu.
+ We note the current temperature setting is 100°F and that the 
+\begin_inset Quotes eld
+\end_inset
+
+bake
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\noun on
+led
+\noun default
+ status light is lit.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Oven_temp_setting"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+The status 
+\family sans
+\noun on
+led
+\family default
+\noun default
+s
+\family sans
+ will show that the 
+\begin_inset Quotes eld
+\end_inset
+
+bake
+\begin_inset Quotes erd
+\end_inset
+
+ 
+\family default
+\noun on
+led
+\noun default
+ is lit, signifying that the oven is in bake mode.
+\end_layout
+
+\begin_layout Itemize
+
+\family sans
+The
+\family default
+ secondary display will show the set point temperature (or internal board
+ temperature) and current oven temperature (see 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Secondary-display-oven_temp"
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Itemize
+The oven will 
+\emph on
+automatically
+\emph default
+ enter a safety timer to prevent leaving the oven on for long periods unattended.
+ See important notice regarding the mandatory timer.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Oven Temp.png
+	lyxscale 20
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Secondary display showing internal (board) temperature (73°F, indicted by
+ three decimal points) and current oven temperature (71°F).
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Secondary-display-oven_temp"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout CalloutTitle
+Mandatory Preheat Timer
+\end_layout
+
+\begin_layout CalloutText
+Once preheat mode is entered, an automatic safety timer of 20 minutes is
+ started to reach oven set point temperature.
+ If the oven does not reach the set temperature in that time frame the timer
+ alarm will sound and the oven will shut off.
+\end_layout
+
+\begin_layout CalloutText
+Additionally, once the oven reaches the desired temperature, the safety
+ timer is reset to 20 minutes and the oven will shut down 
+\series bold
+unless
+\series default
+ the user enters a time using the timer function.
+\end_layout
+
+\begin_layout CalloutText
+Once a timer has been started, the mandatory timer is deactivated and the
+ stove will heat until the user supplied timer is exhausted.
+\end_layout
+
+\begin_layout Warning
+
+\series bold
+Do not
+\series default
+ attempt to bypass or deactivate the mandatory safety timer.
+ Ovens and stoves are the 
+\emph on
+number one
+\emph default
+ cause of household fires and unattended cooking is a safety hazard.
+\end_layout
+
+\begin_layout Warning
+Do not rely on the mandatory timer to turn off the oven.
+ 
+\series bold
+Always
+\series default
+ shutdown and 
+\series bold
+confirm
+\series default
+ the oven is off, the status 
+\noun on
+led
+\noun default
+s indict no heating modes, the 
+\begin_inset Quotes eld
+\end_inset
+
+warm
+\begin_inset Quotes erd
+\end_inset
+
+ status 
+\noun on
+led
+\noun default
+ is off and that the temperature is approximately at 
+\series bold
+ambient
+\series default
+ (room) temperature before leaving the oven unattended.
+\end_layout
+
+\begin_layout Subsubsection
+Preheat
+\end_layout
+
+\begin_layout Itemize
+If the oven is in preheat mode, once the oven reaches the entered temperature,
+ the preheat alarm will sound.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The oven will beep and flash the status 
+\noun on
+led
+\noun default
+s to let the user know the oven has reached temperature.
+\end_layout
+
+\begin_layout Itemize
+The preheat alarm can be canceled by pressing any button.
+\end_layout
+
+\begin_layout Itemize
+The user is encouraged to enter a time into the oven timer to avoid automatic
+ oven shutdown due to the mandatory timer.
+\end_layout
+
+\end_deeper
+\begin_layout Tip
+Always remember to enter a timer when cooking to prevent automatic shutdown.
+\end_layout
+
+\begin_layout Subsubsection
+Broil
+\end_layout
+
+\begin_layout Itemize
+Broil mode operates in the same manner as bake mode.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The bake element is never used during heating.
+\end_layout
+
+\begin_layout Itemize
+There is no preheat mode.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+All operations function similarly, including the mandatory safety timer.
+\end_layout
+
+\begin_layout Subsubsection
+Canceling or turning off the oven
+\end_layout
+
+\begin_layout Itemize
+To turn off the oven in either bake or broil modes, press the appropriate
+ button (bake if baking, broil if broiling) and 
+\emph on
+again
+\emph default
+ press the same button to cancel that mode.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+The display will flash and the appropriate bake or broil status 
+\noun on
+led
+\noun default
+ will go out.
+\end_layout
+
+\end_deeper
+\begin_layout Subsubsection
+Timer
+\end_layout
+
+\begin_layout Enumerate
+Pressing the 
+\begin_inset Quotes eld
+\end_inset
+
+timer
+\begin_inset Quotes erd
+\end_inset
+
+ button will enter the timer setting menu.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The timer status 
+\noun on
+led
+\noun default
+ will light alone to signify one is in the timer menu.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+The display will show 
+\begin_inset Quotes eld
+\end_inset
+
+Hr
+\begin_inset Quotes erd
+\end_inset
+
+ signifying that the user is now entering the number of hours required (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Timer-entry-hours"
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The hour decimal point will flash as well to additionally confirm entry.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Using the up and down buttons enter the required number of hours.
+\end_layout
+
+\begin_layout Enumerate
+Pressing enter confirms the number of hours.
+\end_layout
+
+\begin_layout Enumerate
+The display will now show 
+\begin_inset Quotes eld
+\end_inset
+
+Min
+\begin_inset Quotes erd
+\end_inset
+
+ to signify entering minutes (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Timer-entry-minute"
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The minute decimal point will flash to confirm minutes are being entered.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+Pressing enter a second time confirms the time and starts the timer.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The status 
+\noun on
+led
+\noun default
+s will flash and the display will now show the countdown timer.
+\end_layout
+
+\begin_layout Enumerate
+The 
+\begin_inset Quotes eld
+\end_inset
+
+timer
+\begin_inset Quotes erd
+\end_inset
+
+ status 
+\noun on
+led
+\noun default
+ will now be lit, indicating a timer is running.
+\end_layout
+
+\end_deeper
+\begin_layout Enumerate
+When the timer is exhausted, the controller will enter an alarm state.
+\end_layout
+
+\begin_deeper
+\begin_layout Enumerate
+The display will show 
+\begin_inset Quotes eld
+\end_inset
+
+timer.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Enumerate
+A status 
+\noun on
+led
+\noun default
+s will flash and a beeper will sound indicting that the timer has expired.
+\end_layout
+
+\begin_layout Enumerate
+If the oven is currently in bake or broil mode, 
+\emph on
+the oven will shutdown.
+\end_layout
+
+\end_deeper
+\begin_layout Tip
+When the timer expires while cooking in the oven, the oven will 
+\emph on
+automatically
+\emph default
+ shutdown.
+ This helps to prevent over cooking or burning of food.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\noindent
+\align center
+\begin_inset Graphics
+	filename Hour.png
+	lyxscale 20
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Timer entry showing prompt for desired number of hours.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Timer-entry-hours"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Minute.png
+	lyxscale 20
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Timer entry showing prompt for desired number of minutes.
+ The unusual 
+\begin_inset Quotes eld
+\end_inset
+
+M
+\begin_inset Quotes erd
+\end_inset
+
+ is due to the limited possibilities for character display on 8-segment
+ 
+\noun on
+led
+\noun default
+s.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Timer-entry-minute"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Exiting a menu
+\end_layout
+
+\begin_layout Itemize
+To cancel entering a temperature or time press the 
+\begin_inset Quotes eld
+\end_inset
+
+cancel / back.
+\begin_inset Quotes erd
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Additionally, if no button is pressed for approximately 10 seconds, the
+ controller will automatically cancel and exit the temperature menu.
+\end_layout
+
+\begin_layout Tip
+Pressing 
+\begin_inset Quotes eld
+\end_inset
+
+back
+\begin_inset Quotes erd
+\end_inset
+
+ or allowing the menu to time out, 
+\emph on
+will not
+\emph default
+ cancel the appropriate oven function (such as turning off a timer or shutting
+ off the oven.) Canceling the setting menu will simply 
+\emph on
+exit
+\emph default
+ the menu without changing any settings.
+ The oven will continue to operate in any modes it was currently in, such
+ as baking or timing.
+\end_layout
+
+\end_body
+\end_document

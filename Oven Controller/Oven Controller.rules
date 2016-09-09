@@ -1,0 +1,140 @@
+
+(rules PCB Oven Controller
+  (snap_angle 
+    fortyfive_degree
+  )
+  (autoroute_settings
+    (fanout off)
+    (autoroute on)
+    (postroute on)
+    (vias on)
+    (via_costs 50)
+    (plane_via_costs 5)
+    (start_ripup_costs 100)
+    (start_pass_no 1247)
+    (layer_rule F.Cu
+      (active on)
+      (preferred_direction horizontal)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 2.9)
+    )
+    (layer_rule B.Cu
+      (active on)
+      (preferred_direction vertical)
+      (preferred_direction_trace_costs 1.0)
+      (against_preferred_direction_trace_costs 1.5)
+    )
+  )
+  (rule
+    (width 700.0)
+    (clear 350.2)
+    (clear 350.0 (type smd_to_turn_gap))
+    (clear 87.6 (type smd_smd))
+    (clear 0.2 (type "Zero_Clearance"_"Zero_Clearance"))
+  )
+  (padstack "Via[0-1]_1200:600_um"
+    (shape
+      (circle F.Cu 1200.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1200.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (padstack "Via[0-1]_1500:600_um"
+    (shape
+      (circle F.Cu 1500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1500.0 0.0 0.0)
+    )
+    (attach off)
+  )
+  (via 
+    "Via[0-1]_1200:600_um" "Via[0-1]_1200:600_um" default
+  )
+  (via 
+    "Via[0-1]_1500:600_um" "Via[0-1]_1500:600_um" default
+  )
+  (via 
+    "Via[0-1]_1200:600_um-kicad_default" "Via[0-1]_1200:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1500:600_um-kicad_default" "Via[0-1]_1500:600_um" "kicad_default"
+  )
+  (via 
+    "Via[0-1]_1200:600_um-Power" "Via[0-1]_1200:600_um" Power
+  )
+  (via 
+    "Via[0-1]_1500:600_um-Power" "Via[0-1]_1500:600_um" Power
+  )
+  (via 
+    "Via[0-1]_1200:600_um-Zero_Clearance" "Via[0-1]_1200:600_um" "Zero_Clearance"
+  )
+  (via 
+    "Via[0-1]_1500:600_um-Zero_Clearance" "Via[0-1]_1500:600_um" "Zero_Clearance"
+  )
+  (via_rule
+    default "Via[0-1]_1200:600_um"
+  )
+  (via_rule
+    "kicad_default" "Via[0-1]_1200:600_um-kicad_default"
+  )
+  (via_rule
+    Power "Via[0-1]_1500:600_um-Power"
+  )
+  (via_rule
+    "Zero_Clearance" "Via[0-1]_1500:600_um-Zero_Clearance"
+  )
+  (class default
+    (clearance_class default)
+    (via_rule default)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "kicad_default"
+    "Net-(C10-Pad1)" "Net-(C14-Pad1)" "Net-(C15-Pad1)" "328P_RESET" "85_THERM" "328P_THERMISTOR" "Net-(C21-Pad2)" "Net-(C22-Pad2)"
+    "FAN_85" "Net-(D5-Pad1)" "Net-(D7-Pad1)" "Net-(D7-Pad2)" "Net-(D8-Pad2)" "Net-(IC1-Pad1)" "Net-(IC1-Pad2)" "Net-(IC1-Pad3)"
+    "/D_DATA" "/D_STB" "/D_CLK" "Net-(IC1-Pad17)" "Net-(IC1-Pad18)" "Net-(IC1-Pad19)" "Net-(IC2-Pad1)" "OVEN_EN"
+    "Net-(IC2-Pad5)" "Net-(IC2-Pad6)" "Net-(IC2-Pad7)" "BROIL_RELAY" "BAKE_RELAY" "Net-(P10-Pad2)" "Net-(P11-Pad2)" "Net-(P12-Pad2)"
+    "D_CS" "Net-(Q1-Pad2)" "Net-(Q1-Pad3)" "Net-(Q1-Pad1)" "Net-(Q2-Pad2)" "Net-(Q3-Pad2)" "Net-(Q5-Pad2)" "Net-(Q6-Pad2)"
+    "Net-(Q6-Pad3)" "Net-(Q6-Pad1)" "Net-(Q7-Pad2)" "Net-(Q8-Pad2)" "Net-(Q9-Pad2)" "Net-(Q9-Pad3)" "AUX_CS" "Net-(J1-Pad1)"
+    "Net-(D6-Pad2)" "Net-(P5-Pad1)" "Net-(P5-Pad2)" "Net-(IC1-Pad4)" "Net-(IC1-Pad5)" "Net-(IC1-Pad6)" "/BROIL_OUT" "/BAKE_OUT"
+    "/FAN_328P" "/328P_HEARTBEAT" "/BUZZER_328P" "Net-(IC1-Pad23)" "Net-(IC1-Pad24)" "Net-(IC1-Pad25)" "Net-(IC1-Pad26)" "Net-(IC1-Pad27)"
+    "Net-(C28-Pad1)" "Net-(C28-Pad2)" "Net-(U3-Pad2)" "Net-(U3-Pad3)"
+    (clearance_class "kicad_default")
+    (via_rule kicad_default)
+    (rule
+      (width 700.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class Power
+    +12V +9V +3.3V
+    (clearance_class Power)
+    (via_rule Power)
+    (rule
+      (width 1000.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+  (class "Zero_Clearance"
+    +5V GND
+    (clearance_class "Zero_Clearance")
+    (via_rule Zero_Clearance)
+    (rule
+      (width 500.0)
+    )
+    (circuit 
+      (use_layer F.Cu B.Cu)
+    )
+  )
+)
