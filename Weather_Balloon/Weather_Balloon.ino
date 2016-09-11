@@ -22,6 +22,8 @@
 #include "OneWire.h"
 #include "DallasTemperature.h"
 #include "MAG3110.h"
+#include <Adafruit_Sensor.h>
+#include <Adafruit_ADXL345_U.h>
 
 // Pin numbers for LCD display *AT THE DISPLAY END* not for the Arduino.
 #define BACKLIGHT_PIN     3
@@ -48,8 +50,22 @@
 #define ROWS       4
 #define PAUSE    400
 
+/*  DS18B20 resolution / conversion times
+ *  9 =  93.75 ms
+ * 10 = 187.5  ms
+ * 11 = 375    ms
+ * 12 = 750    ms
+*/
+#define DS18B20_RESOLUTION 10
+
+// Calculated correction factor for ADXL345
+const double ADXL345_CORRECTION  = 0.911265;
+
 // Light sensor
 Adafruit_SI1145 uv = Adafruit_SI1145();
+
+// Create accelerometer object with arbitrary ID
+Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
 
 // Setup a oneWire instance to communicate with any OneWire devices (not just Maxim/Dallas temperature ICs)
 OneWire oneWire(ONE_WIRE_BUS);
@@ -73,6 +89,15 @@ void setup()
 
     lcd.begin (20,4); //  <<----- My LCD was 16x2
     DS18B20.begin();
+
+    // Set to global desired resolution.
+    DS18B20.setResolution(DS18B20_RESOLUTION);
+
+    // Don't wait for conversion
+    DS18B20.setWaitForConversion(false);
+
+    DS18B20.requestTemperatures(); // Send the command to get temperatures
+
     mag3110.config();
 
     // Switch on the backlight
@@ -88,8 +113,22 @@ void setup()
     if (! uv.begin()) {
         Serial.println(F("Didn't find Si1145"));
         lcd.print(F("Didn't find Si1145"));
-        while (1);
+        /*
+         * Setup no UV HERE
+         */
     }
+
+    if(!accel.begin()) {
+        /* There was a problem detecting the ADXL345 ... check your connections */
+        Serial.println("Ooops, no ADXL345 detected ... Check your wiring!");
+        /*
+         * Set up accelerometer fail here!
+         */
+    }
+
+    accel.setRange(ADXL345_RANGE_2_G);
+    accel.setDataRate(ADXL345_DATARATE_6_25HZ);
+    accel.setCorrection(ADXL345_CORRECTION);
 
     // "Normal" range (indoors) instead of "high" gain (outdoors) for visible and IR gain. Read-modify-write registers.
     uint8_t IRADC_value = uv.getRegister(SI1145_PARAM_ALSIRADCMISC);
@@ -100,7 +139,7 @@ void setup()
     analogRead(UV_PIN);
 }
 
-void beep_small_piezo(unsigned int freq, unsigned int millisecs) {
+void beep_small_piezo(unsigned int freq, unsigned long millisecs) {
     // Buzzer harmonics seem to be around 2000 Hz for max volume. 3500-4000 also work.
     // How long to go high or low for frequency
     unsigned long squareWave_us = (1000000L / (2 * freq));
@@ -130,28 +169,42 @@ void loop() {
     //uint8_t IRADC_value = uv.getRegister(SI1145_PARAM_ALSIRADCMISC);
     float DS18B20_temp_f{0};
 
-    DS18B20.requestTemperatures(); // Send the command to get temperatures
 
-    DS18B20_temp_f = DS18B20.getTempFByIndex(0);
+
+    // Check if temp is available
+    if (DS18B20.isConversionAvailable(0)) {
+        DS18B20_temp_f = DS18B20.getTempFByIndex(0);
+        DS18B20.requestTemperaturesByIndex(0); // Send the command to get temperatures
+    }
+
+
+
     //if (visible == 0 || infrared == 0) {
     //uv.reset();
     //}
 
+    // Get a new sensor event
+    sensors_event_t event;
+    accel.getEvent(&event);
+
     lcd.clear();
     //lcd.setCursor(0, 0);
 
-    lcd.print(F("Vis: "));
+    lcd.print(F("L:"));
     lcd.print(visible);
-    lcd.setCursor(0, 1);
-    lcd.print(F(" IR: "));
+    //lcd.setCursor(0, 1);
+    lcd.print(F("/"));
     lcd.print(infrared);
-    lcd.setCursor(0, 2);
-    lcd.print(F(" UV: "));
+    //lcd.setCursor(0, 2);
+    lcd.print(F("/"));
     lcd.print(ultraViolet);
-    lcd.setCursor(0, 3);
-    lcd.print(DS18B20_temp_f);
-    lcd.print(F("F"));
+    //lcd.setCursor(0,);
+    lcd.print(F("/"));
+    lcd.print(analogRead(UV_PIN) * 5);
+    //lcd.print(F(" "));
 
+
+    /*
     Serial.print(F("Vis: "));
     Serial.print(visible);
     Serial.print(F(" IR: "));
@@ -161,24 +214,37 @@ void loop() {
     Serial.print(F(" "));
     Serial.print(DS18B20_temp_f);
     Serial.println(F("F"));
+    */
 
-    lcd.setCursor(11, 0);
-    lcd.print(F("MX: "));
+    lcd.setCursor(0, 1);
+    lcd.print(F("MX:"));
     lcd.print(mag3110.read_x());
-    lcd.setCursor(11, 1);
-    lcd.print(F("MY: "));
+    //lcd.setCursor(11, 1);
+    lcd.print(F("/"));
     lcd.print(mag3110.read_y());
-    lcd.setCursor(11, 2);
-    lcd.print(F("MZ: "));
+    //lcd.setCursor(11, 2);
+    lcd.print(F("/"));
     lcd.print(mag3110.read_z());
 
-    lcd.setCursor(11, 3);
-    lcd.print(F("UV: "));
-    lcd.print(analogRead(UV_PIN) * 5);
+    //lcd.setCursor(0, 2);
 
+
+    lcd.setCursor(0, 2);
+    lcd.print(F("A:"));
+    lcd.print(event.acceleration.x);
+    lcd.print(F("/"));
+    lcd.print(event.acceleration.y);
+    lcd.print(F("/"));
+    lcd.print(event.acceleration.z);
+
+
+    lcd.setCursor(0, 3);
+    lcd.print(DS18B20_temp_f);
+    lcd.print(F("F"));
     //uv.nop();
     uv.force_convert();
-    delay(500);
+    //delay(100);
+
 
 }
 
