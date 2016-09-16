@@ -31,7 +31,7 @@
 #endif
 
 #if (ARDUINO < 10000)
-   #include <../Wire/Wire.h>
+   #include <Wire.h>
 #else
    #include <Wire.h>
 #endif

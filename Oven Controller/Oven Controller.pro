@@ -1,4 +1,4 @@
-update=Tue 06 Sep 2016 11:18:48 PM CDT
+update=Mon 12 Sep 2016 09:59:48 PM CDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -71,6 +71,8 @@ LibName41=sensors
 LibName42=switches
 LibName43=Personal
 LibName44=level shift
+[general]
+version=1
 [schematic_editor]
 version=1
 PageLayoutDescrFile=
@@ -82,5 +84,3 @@ SpiceForceRefPrefix=0
 SpiceUseNetNumbers=0
 LabSize=60
 ERC_TestSimilarLabels=1
-[general]
-version=1
