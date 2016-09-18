@@ -1,0 +1,277 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Weather
+LIBS:Weather Balloon-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 3
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L DS3231 U?
+U 1 1 57DCD58C
+P 4350 2000
+F 0 "U?" H 4350 2597 60  0000 C CNN
+F 1 "DS3231" H 4350 2491 60  0000 C CNN
+F 2 "" H 4350 2000 60  0001 C CNN
+F 3 "" H 4350 2000 60  0001 C CNN
+	1    4350 2000
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR?
+U 1 1 57DCD593
+P 4950 2600
+F 0 "#PWR?" H 4950 2350 50  0001 C CNN
+F 1 "GND" H 4955 2427 50  0000 C CNN
+F 2 "" H 4950 2600 50  0000 C CNN
+F 3 "" H 4950 2600 50  0000 C CNN
+	1    4950 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1950 4950 1950
+Wire Wire Line
+	4950 1950 4950 2600
+Wire Wire Line
+	3800 2050 3750 2050
+Wire Wire Line
+	3750 2050 3750 2500
+Wire Wire Line
+	3750 2500 5150 2500
+Connection ~ 4950 2500
+Wire Wire Line
+	4900 2350 4950 2350
+Connection ~ 4950 2350
+Wire Wire Line
+	4900 2250 4950 2250
+Connection ~ 4950 2250
+Wire Wire Line
+	4900 2150 4950 2150
+Connection ~ 4950 2150
+Wire Wire Line
+	4900 2050 4950 2050
+Connection ~ 4950 2050
+Wire Wire Line
+	3800 2150 3750 2150
+Connection ~ 3750 2150
+Wire Wire Line
+	3800 2250 3750 2250
+Connection ~ 3750 2250
+Wire Wire Line
+	3800 2350 3750 2350
+Connection ~ 3750 2350
+$Comp
+L +BATT #PWR?
+U 1 1 57DCD5AD
+P 3750 1300
+F 0 "#PWR?" H 3750 1150 50  0001 C CNN
+F 1 "+BATT" H 3765 1473 50  0000 C CNN
+F 2 "" H 3750 1300 50  0000 C CNN
+F 3 "" H 3750 1300 50  0000 C CNN
+	1    3750 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3750 1300 3750 1750
+Wire Wire Line
+	3750 1750 3800 1750
+$Comp
+L Battery P?
+U 1 1 57DCD5B5
+P 5150 2050
+F 0 "P?" H 5268 2096 50  0000 L CNN
+F 1 "3V Coin" H 5268 2005 50  0000 L CNN
+F 2 "" H 5150 2050 50  0000 C CNN
+F 3 "" H 5150 2050 50  0000 C CNN
+	1    5150 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1850 5150 1850
+Wire Wire Line
+	5150 1850 5150 1900
+Wire Wire Line
+	5150 2500 5150 2200
+Text GLabel 5000 1550 2    60   Input ~ 0
+DS3231_SDA
+Wire Wire Line
+	4900 1650 4950 1650
+Wire Wire Line
+	4950 1650 4950 1550
+Wire Wire Line
+	4950 1550 5000 1550
+Text GLabel 5000 1750 2    60   BiDi ~ 0
+DS3231_SDA
+Wire Wire Line
+	5000 1750 4900 1750
+NoConn ~ 3800 1850
+NoConn ~ 3800 1950
+NoConn ~ 3800 1650
+$Comp
+L AD620 U?
+U 1 1 57DCD5C8
+P 7850 2200
+F 0 "U?" H 8050 2350 50  0000 L CNN
+F 1 "AD620" H 8050 2100 50  0000 L CNN
+F 2 "" H 7850 2200 50  0000 C CNN
+F 3 "" H 7850 2200 50  0000 C CNN
+	1    7850 2200
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57DCD5CF
+P 6950 1500
+F 0 "C?" H 7065 1546 50  0000 L CNN
+F 1 "0.1uF" H 7065 1455 50  0000 L CNN
+F 2 "" H 6988 1350 50  0000 C CNN
+F 3 "" H 6950 1500 50  0000 C CNN
+	1    6950 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 57DCD5D6
+P 7400 1500
+F 0 "C?" H 7515 1546 50  0000 L CNN
+F 1 "22uF" H 7515 1455 50  0000 L CNN
+F 2 "" H 7438 1350 50  0000 C CNN
+F 3 "" H 7400 1500 50  0000 C CNN
+	1    7400 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L +5V #PWR?
+U 1 1 57DCD5DD
+P 7750 1250
+F 0 "#PWR?" H 7750 1100 50  0001 C CNN
+F 1 "+5V" H 7765 1423 50  0000 C CNN
+F 2 "" H 7750 1250 50  0000 C CNN
+F 3 "" H 7750 1250 50  0000 C CNN
+	1    7750 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7750 1250 7750 1900
+Wire Wire Line
+	6950 1350 6950 1300
+Wire Wire Line
+	6950 1300 7750 1300
+Connection ~ 7750 1300
+Wire Wire Line
+	7400 1350 7400 1300
+Connection ~ 7400 1300
+$Comp
+L GND #PWR?
+U 1 1 57DCD5E9
+P 7200 1750
+F 0 "#PWR?" H 7200 1500 50  0001 C CNN
+F 1 "GND" H 7205 1577 50  0000 C CNN
+F 2 "" H 7200 1750 50  0000 C CNN
+F 3 "" H 7200 1750 50  0000 C CNN
+	1    7200 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 1650 6950 1700
+Wire Wire Line
+	6950 1700 7400 1700
+Wire Wire Line
+	7400 1700 7400 1650
+Wire Wire Line
+	7200 1750 7200 1700
+Connection ~ 7200 1700
+$Comp
+L GND #PWR?
+U 1 1 57DCD5F4
+P 7500 2650
+F 0 "#PWR?" H 7500 2400 50  0001 C CNN
+F 1 "GND" H 7505 2477 50  0000 C CNN
+F 2 "" H 7500 2650 50  0000 C CNN
+F 3 "" H 7500 2650 50  0000 C CNN
+	1    7500 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 2300 7500 2300
+Wire Wire Line
+	7500 2300 7500 2650
+Wire Wire Line
+	7500 2550 7750 2550
+$Comp
+L R R?
+U 1 1 57DCD5FD
+P 7900 2800
+F 0 "R?" V 8000 2800 50  0000 C CNN
+F 1 "1.13k" V 7800 2800 50  0000 C CNN
+F 2 "" V 7830 2800 50  0000 C CNN
+F 3 "" H 7900 2800 50  0000 C CNN
+	1    7900 2800
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7750 2550 7750 2500
+Connection ~ 7500 2550
+Wire Wire Line
+	7750 2800 7700 2800
+Wire Wire Line
+	7700 2800 7700 2600
+Wire Wire Line
+	7700 2600 7850 2600
+Wire Wire Line
+	7850 2600 7850 2500
+Wire Wire Line
+	7950 2500 7950 2600
+Wire Wire Line
+	7950 2600 8100 2600
+Wire Wire Line
+	8100 2600 8100 2800
+Wire Wire Line
+	8100 2800 8050 2800
+Text GLabel 7450 2100 0    60   Input ~ 0
+CO2_RAW
+Wire Wire Line
+	7450 2100 7550 2100
+Text GLabel 8300 2200 2    60   Output ~ 0
+CO2_AMP
+Wire Wire Line
+	8300 2200 8150 2200
+$EndSCHEMATC
