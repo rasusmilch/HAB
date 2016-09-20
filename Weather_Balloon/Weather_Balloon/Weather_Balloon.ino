@@ -27,9 +27,8 @@
 #include "Adafruit_TSL2561_U.h"
 #include "SparkFunMAX17043.h"
 #include "SparkFunLSM9DS1.h"
+#include "TinyGPS++.h"
 
-
-void beep_piezo(unsigned int, unsigned long, unsigned int);
 
 #ifdef USE_LCD
     // Pin numbers for LCD display *AT THE DISPLAY END* not for the Arduino.
@@ -90,6 +89,66 @@ void beep_piezo(unsigned int, unsigned long, unsigned int);
 //#define PRINT_CALCULATED
 #define PRINT_RAW
 
+typedef struct {
+    // Temperature sensors
+    float DS18B20_temp_c[1] = {0};
+
+    // Humidity sensor
+    float sht31_t, sht31_h = 0;
+
+    // UV light output
+    float uv = 0;
+
+    // Battery voltage and state-of-charge
+    float voltage, soc = 0;
+
+    // Pressure and temp of pressure sensor
+    double ms5607_pressure = 0, ms5607_temp = 0;
+
+    // Infrared and broadband light readings
+    struct {
+        uint16_t ir, broadband = 0;
+        uint32_t lux = 0;
+    } tsl;
+
+    struct {
+        float x, y, z = 0;
+    } accel;
+
+    struct {
+        float x, y, z = 0;
+    } mag;
+
+    struct {
+        float x, y, z = 0;
+    } gyro;
+
+    // Geiger counts for X, Y, Z axis.
+    struct {
+        uint8_t x, y, z = 0;
+    } geiger;
+
+    struct {
+        double lat, lng = 0;
+        double altitude = 0;
+        double speed, course = 0;
+
+        uint32_t hdop = 0;
+
+        uint32_t sats = 0;
+
+        uint32_t date = 0;
+        uint32_t time = 0;
+
+
+
+    } gps;
+
+} sensorData;
+
+// Create global sensor structure
+sensorData sensors;
+
 // Light sensor
 Adafruit_SI1145 uv = Adafruit_SI1145();
 
@@ -117,28 +176,67 @@ MAX17043 fuel_gauge;
 
 LSM9DS1 DOF;
 
+/* Create GPS object
+ * REQUIRES CUSTOM LARGER BUFFER FOR INCOMING UART
+*/
+TinyGPSPlus gps;
+
+// GPS start and stop sequences to speak binary protocol to module
+#define GPS_SBYTE_1  0xA0
+#define GPS_SBYTE_2  0xA1
+#define GPS_END_1    0x0D
+#define GPS_END_2    0x0A
+
+// GPS Message List
+#define GPS_RESTART     0x01
+#define GPS_CONFIG_NMEA 0x08
+#define GPS_CONFIG_OUT  0x09
+#define GPS_CONFIG_PWR  0x12
+
+#define GPS_ACK         0x83
+#define GPS_NACK        0x84
+
 #ifdef USE_LCD
     // Create LCD
     LiquidCrystal_I2C	lcd(I2C_ADDR,En_pin,Rw_pin,Rs_pin,D4_pin,D5_pin,D6_pin,D7_pin);
 #endif
 
-
+// Initialize sensors if we found them or not
 bool SHT31_found = false;
 bool ms5607_found = false;
 bool uv_found = false;
 bool mag3110_found = false;
+bool DS18B20_found = false;
+bool TSL2561_found = false;
 
 // Nine degrees of freedom (accel, gyro and magnetometer)
-bool triple_sensor_found = false;
+bool LSM9DS1 = false;
 
 
+// Start with heat off.
+bool Heat_Enable = false;
+
+void beep_piezo(unsigned int, unsigned long, unsigned int);
+void configure_GPS_NMEA();
+
+
+
+template <typename T, size_t N>
+
+size_t countof( T (&array)[N] )
+
+{
+
+    return N;
+
+}
 
 /**************************************************************************/
 /*
     Configures the gain and integration time for the TSL2561
 */
 /**************************************************************************/
-void configureSensor(void)
+void configure_TSL2561(void)
 {
   /* You can also manually set the gain or enable auto-gain support */
   // tsl.setGain(TSL2561_GAIN_1X);      /* No gain ... use in bright light to avoid sensor saturation */
@@ -151,10 +249,10 @@ void configureSensor(void)
   // tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_402MS);  /* 16-bit data but slowest conversions */
 
   /* Update these values depending on what you've set above! */
-  Serial.println("------------------------------------");
+  /*Serial.println("------------------------------------");
   Serial.print  ("Gain:         "); Serial.println("Auto");
   Serial.print  ("Timing:       "); Serial.println("13 ms");
-  Serial.println("------------------------------------");
+  Serial.println("------------------------------------");*/
 }
 
 
@@ -167,21 +265,37 @@ void setup()
 
     Serial.begin(9600);
     Serial.println(F("Restarting HAB Controller"));
+    Serial.println(F("Initializing GPS..."));
+    Serial1.begin(9600);
+
+    configure_GPS_NMEA();
+    Serial.print(F("Hardware Serial buffer size: "));
+    Serial.println(SERIAL_RX_BUFFER_SIZE);
+
     #ifdef USE_LCD
         lcd.begin (20,4); //  <<----- My LCD was 16x2
     #endif
 
     DS18B20.begin();
 
-    // Set to global desired resolution.
-    DS18B20.setResolution(DS18B20_RESOLUTION);
+    if (DS18B20.getDeviceCount() > 0) {
+        DS18B20_found = true;
 
-    // Don't wait for conversion
-    DS18B20.setWaitForConversion(false);
+        // Set to global desired resolution.
+        DS18B20.setResolution(DS18B20_RESOLUTION);
 
-    // Send the command to get temperatures so that the conversion complete flag
-    // can be used in the main loop
-    DS18B20.requestTemperatures();
+        // Don't wait for conversion
+        DS18B20.setWaitForConversion(false);
+
+        // Send the command to get temperatures so that the conversion complete flag
+        // can be used in the main loop
+        DS18B20.requestTemperatures();
+    }
+
+
+
+
+
 
     //mag3110.config();
 
@@ -238,8 +352,9 @@ void setup()
         Serial.print(F("Ooops, no TSL2561 detected ... Check your wiring or I2C ADDR!"));
 
     } else {
+        TSL2561_found = true;
         /* Setup the sensor gain and integration time */
-        configureSensor();
+        configure_TSL2561();
     }
 
     // Before initializing the DOF, there are a few settings
@@ -248,6 +363,7 @@ void setup()
     DOF.settings.device.commInterface = IMU_MODE_I2C;
     DOF.settings.device.mAddress = LSM9DS1_M;
     DOF.settings.device.agAddress = LSM9DS1_AG;
+
     // The above lines will only take effect AFTER calling
     // DOF.begin(), which verifies communication with the DOF
     // and turns it on.
@@ -266,8 +382,6 @@ void setup()
     // First analog reading can be inaccurate due to ADC capacitor needing to be primed, so start it up.
     analogRead(UV_PIN);
 
-
-    analogWrite(MAIN_HEATER_PIN, 127);
 }
 
 void beep_piezo(unsigned int freq, unsigned long millisecs, unsigned int pin) {
@@ -294,6 +408,75 @@ void beep_piezo(unsigned int freq, unsigned long millisecs, unsigned int pin) {
 
 }
 
+
+
+void read_GPS() {
+    /* TODO: Add check if time chip has been set from GPS values.
+     * Better accuracy from reliable GPS settings.
+     */
+    //uint8_t available = Serial1.available();
+    char read_char;
+    //Serial.print(available);
+    //Serial.print(F(" "));
+    while(Serial1.available()) {
+        read_char = Serial1.read();
+            //gps.encode(Serial1.read());
+        gps.encode(read_char);
+        //Serial.print(read_char);
+    }
+
+    if (gps.location.isValid()) {
+        sensors.gps.lat = gps.location.lat();
+        sensors.gps.lng = gps.location.lng();
+    } else {
+        sensors.gps.lat = 0;
+        sensors.gps.lng = 0;
+    }
+
+    if (gps.altitude.isValid()) {
+        sensors.gps.altitude = gps.altitude.meters();
+    } else {
+        sensors.gps.altitude = 0;
+    }
+
+    if (gps.date.isValid()) {
+        sensors.gps.date = gps.date.value();
+    } else {
+        sensors.gps.date = 0;
+    }
+
+    if (gps.time.isValid()) {
+        sensors.gps.time = gps.time.value();
+    } else {
+        sensors.gps.time = 0;
+    }
+
+    if (gps.satellites.isValid()) {
+        sensors.gps.sats = gps.satellites.value();
+    } else {
+        sensors.gps.sats = 0;
+    }
+
+    if (gps.hdop.isValid()) {
+        sensors.gps.hdop = gps.hdop.value();
+    } else {
+        sensors.gps.hdop = 0;
+    }
+
+    if (gps.course.isValid()) {
+        sensors.gps.course = gps.course.deg();
+    } else {
+        sensors.gps.course = -1;
+    }
+
+    if (gps.speed.isValid()) {
+        sensors.gps.speed = gps.speed.mps();
+    } else {
+        sensors.gps.speed = -1;
+    }
+
+    //Serial.println(gps.failedChecksum());
+}
 
 
 void printAccel()
@@ -419,147 +602,282 @@ void printGyro()
 #endif
 }
 
+void readSensors() {
 
-void loop() {
-    float DS18B20_temp_f, sht31_t, sht31_h, light, voltage, soc = 0;
-    double ms5607_pressure, ms5607_temp = 0;
-    int mag3110_x, mag3110_y, mag3110_z = 0;
     uint16_t ir, broadband = 0;
 
+    read_GPS();
+
+    // To read from the accelerometer, you must first call the
+    // readAccel() function. When this exits, it'll update the
+    // ax, ay, and az variables with the most current data.
+    DOF.readAccel();
+
+    sensors.accel.x = DOF.calcAccel(DOF.ax);
+    sensors.accel.y = DOF.calcAccel(DOF.ay);
+    sensors.accel.z = DOF.calcAccel(DOF.az);
+
+    // To read from the magnetometer, you must first call the
+    // readMag() function. When this exits, it'll update the
+    // mx, my, and mz variables with the most current data.
+    DOF.readMag();
+
+    sensors.mag.x = DOF.calcMag(DOF.mx);
+    sensors.mag.y = DOF.calcMag(DOF.my);
+    sensors.mag.z = DOF.calcMag(DOF.mz);
+
+    // To read from the gyroscope, you must first call the
+    // readGyro() function. When this exits, it'll update the
+    // gx, gy, and gz variables with the most current data.
+    DOF.readGyro();
+
+    sensors.gyro.x = DOF.calcGyro(DOF.gx);
+    sensors.gyro.y = DOF.calcGyro(DOF.gy);
+    sensors.gyro.z = DOF.calcGyro(DOF.gz);
+
     if (SHT31_found == true) {
-        sht31_t = sht31.readTemperature();
-        sht31_h = sht31.readHumidity();
+        sensors.sht31_t = sht31.readTemperature();
+        sensors.sht31_h = sht31.readHumidity();
     }
 
-    if (ms5607_found == true) {
-        ms5607_pressure = ms5607.GetPres();
-        ms5607_temp = ms5607.GetTemp();
 
-        // Read the altitude sensor values into object.
+    if (ms5607_found == true && ms5607.Read_CRC4() == ms5607.Calc_CRC4()) {
+        sensors.ms5607_pressure = ms5607.GetPres();
+        sensors.ms5607_temp = ms5607.GetTemp();
+
+        // Read the altitude sensor values into object for next round?
         ms5607.Readout();
-    }
 
+    } else {
+        sensors.ms5607_pressure = 0;
+        sensors.ms5607_temp = 1000;
+    }
 
     // Check if temp is available
     if (DS18B20.isConversionAvailable(0)) {
-        DS18B20_temp_f = DS18B20.getTempFByIndex(0);
+        sensors.DS18B20_temp_c[0] = DS18B20.getTempCByIndex(0);
         DS18B20.requestTemperaturesByIndex(0); // Send the command to get temperatures
+    } else {
+        sensors.DS18B20_temp_c[0] = 1000;
     }
 
-    /*
-    if (mag3110_found == true) {
-        mag3110_x = mag3110.read_x();
-        mag3110_y = mag3110.read_y();
-        mag3110_z = mag3110.read_z();
+    sensors.voltage = fuel_gauge.getVoltage();
+    sensors.soc = fuel_gauge.getSOC();
+
+    if (TSL2561_found == true) {
+        // Get a new sensor event
+        //sensors_event_t event;
+        //tsl.getEvent(&event);
+        //Serial.print(event.light);
+        tsl.getLuminosity(&broadband, &ir);
+        sensors.tsl.broadband = broadband;
+        sensors.tsl.ir = ir;
+        sensors.tsl.lux = tsl.calculateLux(broadband, ir);
     }
-    */
 
-    //if (visible == 0 || infrared == 0) {
-    //uv.reset();
-    //}
+    sensors.uv = analogRead(UV_PIN);
 
-    voltage = fuel_gauge.getVoltage();
-    soc = fuel_gauge.getSOC();
+}
 
-    // Get a new sensor event
-    /*
-    sensors_event_t event;
-    accel.getEvent(&event);
-    */
 
-    tsl.getLuminosity(&broadband, &ir);
-    light = tsl.calculateLux(broadband, ir);
+uint8_t GPS_CRC(uint8_t *payload, uint16_t length) {
+    // Calculate CRC for GPS payload.
+    uint8_t crc = 0;
 
-    #ifdef DEBUG
+    for (uint16_t i = 0; i < length; i++) {
+        //Serial.print(i);
+        //Serial.print(F(" "));
+        //Serial.print(payload[i], HEX);
+        crc ^= payload[i];
+        //Serial.print(" ");
+        //Serial.println(crc, HEX);
+    }
 
-        if (voltage != 0) {
-            Serial.print(F("Voltage: "));
-            Serial.print(voltage);
-            Serial.print(F("V "));
-            Serial.print(soc);
-            Serial.println(F("%"));
+    return crc;
+}
+
+
+
+void configure_GPS_NMEA() {
+
+    // Start message
+    uint8_t start_message[4] = {GPS_SBYTE_1, GPS_SBYTE_2, 0, 9};
+
+    // Update every 5 seconds
+    // Payload for update frequency is of the form
+    //                = {NEMA ID, GGA, GSA, GSV, GLL, RMC, VTG, ZDA, Attrib}
+    uint8_t payload[9] = {0x08,     2,   2,   0,   0,   2,   2,  0,   0};
+
+    // Calculate the crc of payload
+    uint8_t crc = GPS_CRC(payload, 9);
+
+    // Trailer for config
+    uint8_t end_message[3] = {crc, GPS_END_1, GPS_END_2};
+
+    // Bang it out to the GPS
+    if (Serial1.availableForWrite() >= 16) {
+        Serial1.write(start_message, 4);
+        Serial1.write(payload, 9);
+        Serial1.write(end_message, 3);
+
+        /*
+        Serial.print("Start: ");
+
+        for (uint8_t i = 0; i < 4; i++) {
+            Serial.print(start_message[i], HEX);
+            Serial.print(F(" "));
         }
 
-        if (! isnan(sht31_h)) {  // check if 'is not a number'
-            Serial.print(sht31_h);
+        Serial.println();
+        Serial.print(F("Payload: "));
+
+        for (uint8_t i = 0; i < 9; i++) {
+            Serial.print(payload[i], HEX);
+            Serial.print(F(" "));
+        }
+
+        Serial.println();
+        Serial.print(F("End: "));
+
+        for (uint8_t i = 0; i < 3; i++) {
+            Serial.print(end_message[i], HEX);
+            Serial.print(F(" "));
+        }
+        Serial.println();
+        */
+    }
+}
+
+
+
+void check_battery() {
+    // Check battery capacity and do appropriate things.
+
+    if (sensors.voltage <= 3.2 || sensors.soc < 20) {
+        // Turn off CO2 sensor as well.
+        Heat_Enable = false;
+
+    } else if (sensors.voltage > 3.4 && sensors.soc > 25) {
+        Heat_Enable = true;
+    }
+}
+
+
+void print_sensors() {
+
+        if (sensors.voltage != 0) {
+            Serial.print(F("Voltage: "));
+            Serial.print(sensors.voltage);
+            Serial.print(F("V "));
+        }
+
+        if (sensors.soc <= 100) {
+            Serial.print(sensors.soc);
+            Serial.print(F("%"));
+        }
+
+        Serial.println();
+
+        if (sensors.sht31_h > 0) {  // check if 'is not a number'
+            Serial.print(sensors.sht31_h);
         } else {
             Serial.print(F("XX"));
         }
 
         Serial.print(F("% "));
 
-        if (! isnan(sht31_t)) {  // check if 'is not a number'
-            Serial.print(sht31_t * 1.8 + 32);
-            Serial.print(F("F "));
-        } else {
-            Serial.print(F("XX"));
-        }
-
-        /*Serial.print(F("F L:"));
-        Serial.print(visible);
-        Serial.print(F("/"));
-        Serial.print(infrared);
-        Serial.print(F("/"));*/
-        Serial.println(analogRead(UV_PIN));
-
-        /*
-        Serial.print(F("MX:"));
-        Serial.print(mag3110_x);
-        Serial.print(F("/"));
-        Serial.print(mag3110_y);
-        Serial.print(F("/"));
-        Serial.println(mag3110_z);
-
-        Serial.print(F("A:"));
-        Serial.print(event.acceleration.x);
-        Serial.print(F("/"));
-        Serial.print(event.acceleration.y);
-        Serial.print(F("/"));
-        Serial.println(event.acceleration.z);
-        */
-
-
-        if (ms5607.Read_CRC4() == ms5607.Calc_CRC4()) {
-            Serial.print(ms5607_pressure);
-            Serial.print(F("Pa "));
-            Serial.print((ms5607_temp * 0.018) + 32);
+        if (sensors.sht31_t != 1000) {  // check if 'is not a number'
+            Serial.print(sensors.sht31_t * 1.8 + 32);
             Serial.println(F("F "));
         } else {
-            Serial.print(F("CRC !="));
+            Serial.println(F("XX"));
         }
+
+        Serial.print(F("F L:"));
+        Serial.print(sensors.tsl.lux);
+        Serial.print(F("/"));
+        Serial.print(sensors.tsl.ir);
+        Serial.print(F("/"));
+        Serial.print(sensors.tsl.broadband);
+        Serial.print(F("/"));
+        Serial.println(sensors.uv);
+
+
+        Serial.print(F("MX:"));
+        Serial.print(sensors.mag.x);
+        Serial.print(F("/"));
+        Serial.print(sensors.mag.y);
+        Serial.print(F("/"));
+        Serial.println(sensors.mag.z);
+
+        Serial.print(F("A:"));
+        Serial.print(sensors.accel.x);
+        Serial.print(F("/"));
+        Serial.print(sensors.accel.y);
+        Serial.print(F("/"));
+        Serial.println(sensors.accel.z);
+
+        Serial.print(F("G:"));
+        Serial.print(sensors.gyro.x);
+        Serial.print(F("/"));
+        Serial.print(sensors.gyro.y);
+        Serial.print(F("/"));
+        Serial.println(sensors.gyro.z);
+
+        Serial.print(sensors.ms5607_pressure);
+        Serial.print(F("Pa "));
+        Serial.print((sensors.ms5607_temp * 0.018) + 32);
+        Serial.println(F("F "));
+
 
         Serial.print(F("DS18B20: "));
-        Serial.print(DS18B20_temp_f);
+        Serial.print(sensors.DS18B20_temp_c[0] * 1.8 + 32);
         Serial.println(F("F "));
-        Serial.print(F("CO2: "));
-        Serial.println(analogRead(CO2_PIN));
 
-        if (light) {
-            Serial.print(light);
-            Serial.print(" lux. Broadband: ");
-            Serial.print(broadband);
-            Serial.print(F(" IR: "));
-            Serial.println(ir);
-        } else {
-            /* If event.light = 0 lux the sensor is probably saturated
-             * and no reliable data could be generated! */
-            Serial.println("Sensor overload");
-        }
+        Serial.print(sensors.gps.date);
+        Serial.print(F(", "));
+        Serial.print(sensors.gps.time);
+        Serial.print(F(", "));
 
-        printGyro();  // Print "G: gx, gy, gz"
-        printAccel(); // Print "A: ax, ay, az"
-        printMag();   // Print "M: mx, my, mz"
+        Serial.print(sensors.gps.lat, 6);
+        Serial.print(F(", "));
+        Serial.print(sensors.gps.lng, 6);
 
-        // Print the heading and orientation for fun!
-        // Call print attitude. The LSM9DS1's magnetometer x and y
-        // axes are opposite to the accelerometer, so my and mx are
-        // substituted for each other.
-        printAttitude(DOF.ax, DOF.ay, DOF.az, -DOF.my, -DOF.mx, DOF.mz);
+        Serial.print(F(", "));
+        Serial.print(sensors.gps.altitude, 6);
+        Serial.print(F(" m"));
+        Serial.print(F(", "));
+        Serial.print(sensors.gps.speed);
+        Serial.print(F("mps, "));
+        Serial.print(sensors.gps.course);
+        Serial.print(F("deg, "));
+
+        Serial.print(sensors.gps.sats);
+        Serial.print(F(", "));
+        Serial.print(sensors.gps.hdop);
+        Serial.println(F("m"));
+        Serial.print(F("CRC ERROR: "));
+        Serial.println(gps.failedChecksum());
 
         Serial.print(F("Up time: "));
         Serial.print(static_cast<unsigned long>(millis() / 1000L));
         Serial.println(F(" seconds"));
         Serial.println();
+}
+
+
+void loop() {
+
+
+
+    readSensors();
+    check_battery();
+
+
+    #ifdef DEBUG
+        print_sensors();
+
+
     #endif // DEBUG
 
     //delay(1000);
