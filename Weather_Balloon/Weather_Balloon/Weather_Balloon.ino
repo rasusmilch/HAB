@@ -113,14 +113,17 @@ typedef struct {
 
     struct {
         float x, y, z = 0;
+        float bias[3] = {0, 0, 0};
     } accel;
 
     struct {
         float x, y, z = 0;
+        float bias[3] = {0, 0, 0};
     } mag;
 
     struct {
         float x, y, z = 0;
+        float bias[3] = {0, 0, 0};
     } gyro;
 
     // Geiger counts for X, Y, Z axis.
@@ -293,32 +296,6 @@ void setup()
     }
 
 
-
-
-
-
-    //mag3110.config();
-
-    #ifdef USE_LCD
-        // Switch on the backlight
-        lcd.setBacklightPin(BACKLIGHT_PIN,POSITIVE);
-        //lcd.setBacklight(255);
-        lcd.backlight();
-
-        lcd.home (); // go home
-    #endif
-
-    //lcd.autoscroll();
-    // lcd.print("SainSmartI2C16x2");
-     //lcd.print("Super duper long thingamabobish!!!");
-
-    /*
-    if(!accel.begin()) {
-
-        Serial.println(F("Ooops, no ADXL345 detected ... Check your wiring!"));
-    }
-    */
-
     if(ms5607.connect()>0) {
         Serial.println(F("Error connecting to MS5607..."));
         // Do something about fail here.
@@ -373,6 +350,23 @@ void setup()
 
 
     }
+
+    DOF.calibrate();
+    DOF.calibrateMag();
+
+    /*for (uint8_t i = 0; i < 3; i++) {
+        sensors.accel.bias[i] = DOF.aBiasRaw[i];
+        Serial.print(sensors.accel.biasRaw[i]);
+        Serial.print(F(" "));
+        sensors.mag.bias[i] = DOF.mBiasRaw[i];
+        Serial.print(sensors.mag.biasRaw[i]);
+        Serial.print(F(" "));
+        sensors.gyro.bias[i] = DOF.gBiasRaw[i];
+        Serial.println(sensors.gyro.biasRaw[i]);
+    }*/
+
+
+
 
     // Start the fuel gauge
     fuel_gauge.begin();
