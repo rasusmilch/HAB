@@ -78,13 +78,13 @@ uint8_t const  SPI_SCK_PIN = SCK_PIN;
 #else  // SOFTWARE_SPI
 // define software SPI pins so Mega can use unmodified GPS Shield
 /** SPI chip select pin */
-uint8_t const SD_CHIP_SELECT_PIN = 10;
+uint8_t const SD_CHIP_SELECT_PIN = 53;
 /** SPI Master Out Slave In pin */
-uint8_t const SPI_MOSI_PIN = 11;
+uint8_t const SPI_MOSI_PIN = 51;
 /** SPI Master In Slave Out pin */
-uint8_t const SPI_MISO_PIN = 12;
+uint8_t const SPI_MISO_PIN = 50;
 /** SPI Clock pin */
-uint8_t const SPI_SCK_PIN = 13;
+uint8_t const SPI_SCK_PIN = 52;
 #endif  // SOFTWARE_SPI
 //------------------------------------------------------------------------------
 /** Protect block zero from write if nonzero */

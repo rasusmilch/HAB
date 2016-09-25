@@ -1,6 +1,11 @@
-/*
-  Serial.print((signed int)((DOF.temperature >> 8) + 25), DEC);
-
+/* High Altitude Weather Balloon Controller
+ * Controller to log sensor data to an SD card and allow location finding through
+ * sound and lights.
+ * Possible data transmission to a ground station through a radio transmitter.
+ *
+ * CS4360 Fall 2016
+ * Licensed GPLv3
+ * Robert Susmilch
 */
 
 #define DEBUG 1
@@ -9,6 +14,9 @@
 #include <Wire.h>
 //#include <SPI.h>
 //#define USE_LCD
+#include <util/atomic.h>
+#include <avr/cpufunc.h>
+#include <avr/interrupt.h>
 
 #ifdef USE_LCD
     #include "LCD.h"
@@ -28,6 +36,12 @@
 #include "SparkFunMAX17043.h"
 #include "SparkFunLSM9DS1.h"
 #include "TinyGPS++.h"
+
+// Definitions
+void beep_piezo(unsigned int, unsigned long, unsigned int);
+void configure_GPS_NMEA();
+void configure_GPS_WAAS();
+uint32_t find_sdcard_tail(const uint32_t, const uint32_t);
 
 
 #ifdef USE_LCD
@@ -102,10 +116,8 @@
 #define PRINT_RAW
 
 typedef struct {
-
     struct {
-    // Initialize sensors if we found them or not
-
+        // Initialize sensors if we found them or not
         bool LSM9DS1 = false;
         bool SHT31 = false;
         bool MS5607 = false;
@@ -114,25 +126,34 @@ typedef struct {
         bool TSL2561 = false;
         bool GPS = false;
 
-    }found;
+    } found;
 
     // Temperature sensors
     float DS18B20_temp_c[1] = {0};
 
-    // Humidity sensor
-    float sht31_t, sht31_h = 0;
+    struct {
+        // Humidity sensor
+        float temp, humidity = 0;
+    } sht31;
 
     // UV light output
     float uv = 0;
 
-    // Battery voltage and state-of-charge
-    float voltage, soc = 0;
 
-    // Pressure and temp of pressure sensor
-    double ms5607_pressure = 0, ms5607_temp = 0;
-
-    // Infrared and broadband light readings
     struct {
+        // Battery voltage and state-of-charge
+        float voltage, soc = 0;
+    } battery;
+
+    struct {
+        // Pressure and temp of pressure sensor
+        double pressure, temp = 0;
+    } ms5607;
+
+
+
+    struct {
+        // Infrared and broadband light readings
         uint16_t ir, broadband = 0;
         uint32_t lux = 0;
     } tsl;
@@ -149,15 +170,14 @@ typedef struct {
         float x, y, z = 0;
     } gyro;
 
-    // Geiger counts for X, Y, Z axis.
-    // When time to log data, copy data from count to axis, zero count.
-    // Protects from losing counts while writing log (very slow.)
+
     struct {
+        // Geiger counts for X, Y, Z axis.
+        // When time to log data, copy data from count to axis, zero count.
+        // Protects from losing counts while writing log (very slow.)
         // These are the values we will data log.
         uint16_t x, y, z = 0;
 
-        // These are in use counters.
-        uint16_t x_count, y_count, z_count = 0;
     } geiger;
 
     struct {
@@ -180,18 +200,41 @@ typedef struct {
         uint32_t date = 0;
         uint32_t time = 0;
 
-
-
     } gps;
 
-} sensorData;
+    // Maximum value for heater control.
+    uint8_t heater_max = 255;
+
+    struct {
+        // Which sensors are enabled?
+        bool LSM9DS1 = false;
+        bool SHT31 = false;
+        bool MS5607 = false;
+        bool UV = true;
+        bool DS18B20 = false;
+        bool TSL2561 = false;
+        bool GPS = true;
+
+    } enabled;
+
+    uint16_t crc;
+
+} data_struct;
+
+typedef struct {
+        // Geiger counts for X, Y, Z axis.
+        // When time to log data, copy data from count to axis, zero count.
+        // Protects from losing counts while writing log (very slow.)
+        // These are the values we will data log.
+
+        // These are in use counters.
+        volatile uint16_t x_count, y_count, z_count = 0;
+} geiger_temp;
 
 // Create global sensor structure
-sensorData sensors;
+data_struct dataLog;
 
-
-
-
+geiger_temp geiger;
 
 // Light sensor
 Adafruit_SI1145 uv = Adafruit_SI1145();
@@ -219,6 +262,45 @@ Adafruit_TSL2561_Unified tsl = Adafruit_TSL2561_Unified(TSL2561_ADDR_FLOAT, 1234
 MAX17043 fuel_gauge;
 
 LSM9DS1 DOF;
+
+Sd2Card sdcard;
+
+typedef struct {
+    // Number of 512 byte blocks reported by sdcard.
+    uint32_t blocks = 0;
+
+    // Current block on the card.
+    // *CANNOT* write to block zero, sd card configuration block.
+    uint32_t current_block = 1;
+
+    uint32_t write_errors, crc_errors = 0;
+
+    // CRC byte
+    int16_t crc;
+
+    // Buffer to hold for reading, writing, finding tail.
+    uint8_t buffer[512];
+
+    // Buffer to hold data waiting to be written between logging calls.
+    uint8_t hold_buffer[512];
+
+    // This holds the number of "structures" that have been packed into a
+    // 512 byte block.
+    uint8_t num_packed = 0;
+
+} sd_data;
+
+sd_data sdcard_data;
+
+typedef struct {
+    uint8_t queue_loc = 0;
+
+    uint16_t address = 0;
+
+
+} eeprom_struct;
+
+eeprom_struct eeprom;
 
 /* Create GPS object
  * REQUIRES CUSTOM LARGER BUFFER FOR INCOMING UART
@@ -259,10 +341,6 @@ TinyGPSCustom vdop(gps, "GPGSA", 17);
 // Start with heat off.
 bool Heat_Enable = false;
 
-// Definitions
-void beep_piezo(unsigned int, unsigned long, unsigned int);
-void configure_GPS_NMEA();
-void configure_GPS_WAAS();
 
 
 
@@ -276,6 +354,20 @@ size_t countof( T (&array)[N] )
 
 }
 
+int16_t sd_calc_crc(const uint8_t* src, const uint8_t block_size) {
+    int16_t crc, i, x = 0;
+
+    // CRC16 code via Scott Dattalo www.dattalo.com
+    for(crc = i = 0; i < block_size; i++) {
+      x   = ((crc >> 8) ^ src[i]) & 0xff;
+      x  ^= x >> 4;
+      crc = (crc << 8) ^ (x << 12) ^ (x << 5) ^ x;
+    }
+
+    return crc;
+}
+
+
 /**************************************************************************/
 /*
     Configures the gain and integration time for the TSL2561
@@ -288,7 +380,9 @@ void configure_TSL2561(void)
         Serial.print(F("Ooops, no TSL2561 detected ... Check your wiring or I2C ADDR!"));
 
     } else {
-        sensors.found.TSL2561 = true;
+        dataLog.found.TSL2561 = true;
+
+        dataLog.enabled.TSL2561 = true;
 
         /* Setup the sensor gain and integration time */
         /* You can also manually set the gain or enable auto-gain support */
@@ -320,31 +414,25 @@ ISR(PCINT1_vect) {
      */
 
     // Previous pin value for port. Static to preserve between calls.
-    static uint8_t previous_pins_j, previous_pins_k = 0;
+    static uint8_t previous_pins_j = 0;
 
     // Grab current pin state quickly. Low pulse from Geiger is only 150 microseconds.
     uint8_t current_state_j = PINJ;
-    uint8_t current_state_k = PINK;
 
     // If the current pin state is low, and previous it was high, we have
     // a falling edge.
     if ((current_state_j & (1<<PJ1)) == 0 && (previous_pins_j & (1<<PJ1)) > 0) {
       // Trigger count
-      sensors.geiger.x_count++;
+      geiger.x_count++;
     }
 
     if ((current_state_j & (1<<PJ0)) == 0 && (previous_pins_j & (1<<PJ0)) > 0) {
       // Trigger count
-      sensors.geiger.y_count++;
+      geiger.y_count++;
     }
 
-    if ((current_state_k & (1<<PK7)) == 0 && (previous_pins_k & (1<<PK7)) > 0) {
-      // Trigger count
-      sensors.geiger.z_count++;
-    }
     // Store for later.
     previous_pins_j = current_state_j;
-    previous_pins_k = current_state_k;
 }
 
 ISR(PCINT2_vect) {
@@ -365,7 +453,7 @@ ISR(PCINT2_vect) {
     // a falling edge.
     if ((current_state_k & (1<<PK7)) == 0 && (previous_pins_k & (1<<PK7)) > 0) {
       // Trigger count
-      sensors.geiger.z_count++;
+      geiger.z_count++;
     }
 
     // Store for later.
@@ -413,11 +501,12 @@ void configure_geiger() {
 }
 
 void configure_ds18b20() {
-    // Configure Dallas temp sensors.
+    // Configure Dallas temp dataLog.
     DS18B20.begin();
 
     if (DS18B20.getDeviceCount() > 0) {
-        sensors.found.DS18B20 = true;
+        dataLog.found.DS18B20 = true;
+        dataLog.enabled.DS18B20 = true;
 
         // Set to global desired resolution.
         DS18B20.setResolution(DS18B20_RESOLUTION);
@@ -443,7 +532,8 @@ void configure_ms5607() {
         ms5607.ReadProm();
 
         // We found it
-        sensors.found.MS5607 = true;
+        dataLog.found.MS5607 = true;
+        dataLog.enabled.MS5607 = true;
     }
 }
 
@@ -462,10 +552,11 @@ void configure_LSM9DS1() {
     if (!DOF.begin()) {
         Serial.println(F("Failed to communicate with LSM9DS1."));
         Serial.println(F("Double-check wiring."));
-        sensors.found.LSM9DS1 = false;
+        dataLog.found.LSM9DS1 = false;
 
     } else {
-        sensors.found.LSM9DS1 = true;
+        dataLog.found.LSM9DS1 = true;
+        dataLog.enabled.LSM9DS1 = true;
         DOF.calibrate();
         DOF.calibrateMag();
     }
@@ -477,13 +568,16 @@ void configure_sht31() {
     // Start and check for humidity sensor
     if (! sht31.begin(0x44)) {   // Set to 0x45 for alternate i2c addr
         Serial.println(F("Couldn't find SHT31"));
-        sensors.found.SHT31 = false;
+        dataLog.found.SHT31 = false;
         // Do something here about fail.
     } else {
         // We found the  humidity sensor.
-        sensors.found.SHT31 = true;
+        dataLog.found.SHT31 = true;
+        dataLog.enabled.SHT31 = true;
+
         // Enable the heater, its cold up there.
         // Sensor performs best in 5-60 C temps.
+        // However, that changes the relative humidity, there is no compensation.
         sht31.heater(true);
     }
 }
@@ -493,19 +587,41 @@ void print_found() {
     Serial.println(F("\nSensors found"));
     Serial.println(F("-------------"));
     Serial.print(F("DS18B20: "));
-    Serial.println(sensors.found.DS18B20);
+    Serial.println(dataLog.found.DS18B20);
     Serial.print(F(" MS5607: "));
-    Serial.println(sensors.found.MS5607);
+    Serial.println(dataLog.found.MS5607);
     Serial.print(F("LSM9DS1: "));
-    Serial.println(sensors.found.LSM9DS1);
+    Serial.println(dataLog.found.LSM9DS1);
     Serial.print(F("  SHT31: "));
-    Serial.println(sensors.found.SHT31);
+    Serial.println(dataLog.found.SHT31);
     Serial.print(F("TLS2561: "));
-    Serial.println(sensors.found.TSL2561);
+    Serial.println(dataLog.found.TSL2561);
     Serial.println();
 
     delay(1000);
 }
+void configure_sdcard() {
+
+    if (sdcard.init(SPI_HALF_SPEED, SS_PIN)==0) {
+        Serial.print(F("Something wrong initilizing SDCard...\nError: "));
+        Serial.println(sdcard.errorCode(), HEX);
+    } else {
+        Serial.print(F("Card size: "));
+        sdcard_data.blocks = sdcard.cardSize() - 1;
+        Serial.print(sdcard_data.blocks);
+        Serial.println(F(" blocks"));
+    }
+
+    uint32_t tail = find_sdcard_tail(1, sdcard_data.blocks);
+
+    if (tail != 0) {
+        sdcard_data.current_block = tail;
+        Serial.print(F("\nFound tail of log at block: "));
+        Serial.println(sdcard_data.current_block);
+    }
+
+}
+
 
 void setup()
 {
@@ -513,7 +629,7 @@ void setup()
     pinMode(MAIN_HEATER_PIN, OUTPUT);
     beep_piezo(1000, 1000, PIEZO_PIN);
 
-    Serial.begin(9600);
+    Serial.begin(115200);
     Serial.println(F("Restarting HAB Controller"));
 
     Serial.print(F("Hardware Serial buffer size: "));
@@ -525,6 +641,8 @@ void setup()
     configure_GPS_NMEA();
     configure_GPS_WAAS();
 
+    Serial.println(F("Configuring SDCard..."));
+    configure_sdcard();
 
     Serial.println(F("Configuring Geigers..."));
     configure_geiger();
@@ -548,8 +666,6 @@ void setup()
     // Humidity sensor
     Serial.println(F("Configuring SHT31..."));
     configure_sht31();
-
-
 
     // Start the fuel gauge
     Serial.println(F("Configuring fuel gauge..."));
@@ -615,63 +731,63 @@ void read_GPS() {
     }
 
     if (gps.location.isValid()) {
-        sensors.gps.lat = gps.location.lat();
-        sensors.gps.lng = gps.location.lng();
+        dataLog.gps.lat = gps.location.lat();
+        dataLog.gps.lng = gps.location.lng();
     } else {
-        sensors.gps.lat = 0;
-        sensors.gps.lng = 0;
+        dataLog.gps.lat = 0;
+        dataLog.gps.lng = 0;
     }
 
     if (gps.altitude.isValid()) {
-        sensors.gps.altitude = gps.altitude.meters();
+        dataLog.gps.altitude = gps.altitude.meters();
     } else {
-        sensors.gps.altitude = 0;
+        dataLog.gps.altitude = 0;
     }
 
     if (gps.date.isValid()) {
-        sensors.gps.date = gps.date.value();
+        dataLog.gps.date = gps.date.value();
     } else {
-        sensors.gps.date = 0;
+        dataLog.gps.date = 0;
     }
 
     if (gps.time.isValid()) {
-        sensors.gps.time = gps.time.value();
+        dataLog.gps.time = gps.time.value();
     } else {
-        sensors.gps.time = 0;
+        dataLog.gps.time = 0;
     }
 
     if (gps.satellites.isValid()) {
-        sensors.gps.sats = static_cast<uint8_t>(gps.satellites.value());
+        dataLog.gps.sats = static_cast<uint8_t>(gps.satellites.value());
     } else {
-        sensors.gps.sats = 0;
+        dataLog.gps.sats = 0;
     }
 
     if (gps.hdop.isValid()) {
-        sensors.gps.hdop = static_cast<uint16_t>(gps.hdop.value() * GPS_PRECISION);
+        dataLog.gps.hdop = static_cast<uint16_t>(gps.hdop.value() * GPS_PRECISION);
     } else {
-        sensors.gps.hdop = 0;
+        dataLog.gps.hdop = 0;
     }
 
     if (gps.course.isValid()) {
-        sensors.gps.course = gps.course.deg();
+        dataLog.gps.course = gps.course.deg();
     } else {
-        sensors.gps.course = -1;
+        dataLog.gps.course = -1;
     }
 
     if (gps.speed.isValid()) {
-        sensors.gps.speed = gps.speed.mps();
+        dataLog.gps.speed = gps.speed.mps();
     } else {
-        sensors.gps.speed = -1;
+        dataLog.gps.speed = -1;
     }
 
     if (vdop.isValid()) {
         // Convert character buffer pointer to a double with null end pointer,
         // multiply by 100 to remove decimal, and then convert to integer.
-        sensors.gps.vdop = static_cast<uint16_t>(strtod(vdop.value(), NULL) * 100 * GPS_PRECISION);
+        dataLog.gps.vdop = static_cast<uint16_t>(strtod(vdop.value(), NULL) * 100 * GPS_PRECISION);
         //Serial.println(vdop.value());
-        //Serial.println(sensors.gps.vdop);
+        //Serial.println(dataLog.gps.vdop);
     } else {
-        sensors.gps.vdop = 0;
+        dataLog.gps.vdop = 0;
     }
     //Serial.println(gps.failedChecksum());
 }
@@ -722,69 +838,69 @@ void readSensors() {
     // ax, ay, and az variables with the most current data.
     DOF.readAccel();
 
-    sensors.accel.x = DOF.calcAccel(DOF.ax);
-    sensors.accel.y = DOF.calcAccel(DOF.ay);
-    sensors.accel.z = DOF.calcAccel(DOF.az);
+    dataLog.accel.x = DOF.calcAccel(DOF.ax);
+    dataLog.accel.y = DOF.calcAccel(DOF.ay);
+    dataLog.accel.z = DOF.calcAccel(DOF.az);
 
     // To read from the magnetometer, you must first call the
     // readMag() function. When this exits, it'll update the
     // mx, my, and mz variables with the most current data.
     DOF.readMag();
 
-    sensors.mag.x = DOF.calcMag(DOF.mx);
-    sensors.mag.y = DOF.calcMag(DOF.my);
-    sensors.mag.z = DOF.calcMag(DOF.mz);
+    dataLog.mag.x = DOF.calcMag(DOF.mx);
+    dataLog.mag.y = DOF.calcMag(DOF.my);
+    dataLog.mag.z = DOF.calcMag(DOF.mz);
 
     // To read from the gyroscope, you must first call the
     // readGyro() function. When this exits, it'll update the
     // gx, gy, and gz variables with the most current data.
     DOF.readGyro();
 
-    sensors.gyro.x = DOF.calcGyro(DOF.gx);
-    sensors.gyro.y = DOF.calcGyro(DOF.gy);
-    sensors.gyro.z = DOF.calcGyro(DOF.gz);
+    dataLog.gyro.x = DOF.calcGyro(DOF.gx);
+    dataLog.gyro.y = DOF.calcGyro(DOF.gy);
+    dataLog.gyro.z = DOF.calcGyro(DOF.gz);
 
-    if (sensors.found.SHT31 == true) {
-        sensors.sht31_t = sht31.readTemperature();
-        sensors.sht31_h = sht31.readHumidity();
+    if (dataLog.found.SHT31 == true) {
+        dataLog.sht31.temp = sht31.readTemperature();
+        dataLog.sht31.humidity = sht31.readHumidity();
     }
 
 
-    if (sensors.found.MS5607 == true && ms5607.Read_CRC4() == ms5607.Calc_CRC4()) {
-        sensors.ms5607_pressure = ms5607.GetPres();
-        sensors.ms5607_temp = ms5607.GetTemp();
+    if (dataLog.found.MS5607 == true && ms5607.Read_CRC4() == ms5607.Calc_CRC4()) {
+        dataLog.ms5607.pressure = ms5607.GetPres();
+        dataLog.ms5607.temp = ms5607.GetTemp();
 
         // Read the altitude sensor values into object for next round?
         ms5607.Readout();
 
     } else {
-        sensors.ms5607_pressure = 0;
-        sensors.ms5607_temp = 1000;
+        dataLog.ms5607.pressure = 0;
+        dataLog.ms5607.temp = 1000;
     }
 
     // Check if temp is available
-    if (sensors.found.DS18B20 == true && DS18B20.isConversionAvailable(0)) {
-        sensors.DS18B20_temp_c[0] = DS18B20.getTempCByIndex(0);
+    if (dataLog.found.DS18B20 == true && DS18B20.isConversionAvailable(0)) {
+        dataLog.DS18B20_temp_c[0] = DS18B20.getTempCByIndex(0);
         DS18B20.requestTemperaturesByIndex(0); // Send the command to get temperatures
     } else {
-        sensors.DS18B20_temp_c[0] = 1000;
+        dataLog.DS18B20_temp_c[0] = 1000;
     }
 
-    sensors.voltage = fuel_gauge.getVoltage();
-    sensors.soc = fuel_gauge.getSOC();
+    dataLog.battery.voltage = fuel_gauge.getVoltage();
+    dataLog.battery.soc = fuel_gauge.getSOC();
 
-    if (sensors.found.TSL2561 == true) {
+    if (dataLog.found.TSL2561 == true) {
         // Get a new sensor event
         //sensors_event_t event;
         //tsl.getEvent(&event);
         //Serial.print(event.light);
         tsl.getLuminosity(&broadband, &ir);
-        sensors.tsl.broadband = broadband;
-        sensors.tsl.ir = ir;
-        sensors.tsl.lux = tsl.calculateLux(broadband, ir);
+        dataLog.tsl.broadband = broadband;
+        dataLog.tsl.ir = ir;
+        dataLog.tsl.lux = tsl.calculateLux(broadband, ir);
     }
 
-    sensors.uv = analogRead(UV_PIN);
+    dataLog.uv = analogRead(UV_PIN);
 
 }
 
@@ -890,119 +1006,126 @@ void adjust_heaters() {
 void check_battery() {
     // Check battery capacity and do appropriate things.
 
-    if (sensors.voltage <= 3.2 || sensors.soc < 20) {
+    if (dataLog.battery.voltage <= 3.1 || dataLog.battery.soc < 10) {
         // Turn off CO2 sensor as well.
         Heat_Enable = false;
 
 
-    } else if (sensors.voltage > 3.4 && sensors.soc > 25) {
+    } else if (dataLog.battery.voltage > 3.4 && dataLog.battery.soc > 25) {
         Heat_Enable = true;
+    }
+}
+
+void heater_control() {
+
+    if (Heat_Enable == false) {
+        analogWrite(MAIN_HEATER_PIN, 0);
     }
 }
 
 
 void print_sensors() {
 
-        if (sensors.voltage != 0) {
+        if (dataLog.battery.voltage != 0) {
             Serial.print(F("Voltage: "));
-            Serial.print(sensors.voltage);
+            Serial.print(dataLog.battery.voltage);
             Serial.print(F(" V "));
         }
 
-        if (sensors.soc <= 100) {
-            Serial.print(sensors.soc);
+        if (dataLog.battery.soc <= 100) {
+            Serial.print(dataLog.battery.soc);
             Serial.print(F("%"));
         }
 
         Serial.println();
 
-        if (sensors.sht31_h > 0) {  // check if 'is not a number'
-            Serial.print(sensors.sht31_h);
+        if (dataLog.sht31.humidity > 0) {  // check if 'is not a number'
+            Serial.print(dataLog.sht31.humidity);
             Serial.print(F("% "));
         } else {
             Serial.print(F("XX"));
         }
 
-        if (sensors.sht31_t != 1000) {  // check if 'is not a number'
-            Serial.print(sensors.sht31_t * 1.8 + 32);
+        if (dataLog.sht31.temp != 1000) {  // check if 'is not a number'
+            Serial.print(dataLog.sht31.temp * 1.8 + 32);
             Serial.println(F(" F "));
         } else {
             Serial.println(F("XX"));
         }
 
         Serial.print(F("L:"));
-        Serial.print(sensors.tsl.lux);
+        Serial.print(dataLog.tsl.lux);
         Serial.print(F("/"));
-        Serial.print(sensors.tsl.ir);
+        Serial.print(dataLog.tsl.ir);
         Serial.print(F("/"));
-        Serial.print(sensors.tsl.broadband);
+        Serial.print(dataLog.tsl.broadband);
         Serial.print(F("/"));
-        Serial.println(sensors.uv);
+        Serial.println(dataLog.uv);
 
 
         Serial.print(F("M:"));
-        Serial.print(sensors.mag.x);
+        Serial.print(dataLog.mag.x);
         Serial.print(F("/"));
-        Serial.print(sensors.mag.y);
+        Serial.print(dataLog.mag.y);
         Serial.print(F("/"));
-        Serial.println(sensors.mag.z);
+        Serial.println(dataLog.mag.z);
 
         Serial.print(F("A:"));
-        Serial.print(sensors.accel.x);
+        Serial.print(dataLog.accel.x);
         Serial.print(F("/"));
-        Serial.print(sensors.accel.y);
+        Serial.print(dataLog.accel.y);
         Serial.print(F("/"));
-        Serial.println(sensors.accel.z);
+        Serial.println(dataLog.accel.z);
 
         Serial.print(F("G:"));
-        Serial.print(sensors.gyro.x);
+        Serial.print(dataLog.gyro.x);
         Serial.print(F("/"));
-        Serial.print(sensors.gyro.y);
+        Serial.print(dataLog.gyro.y);
         Serial.print(F("/"));
-        Serial.println(sensors.gyro.z);
+        Serial.println(dataLog.gyro.z);
 
-        Serial.print(sensors.ms5607_pressure);
+        Serial.print(dataLog.ms5607.pressure);
         Serial.print(F(" Pa "));
-        Serial.print((sensors.ms5607_temp * 0.018) + 32);
+        Serial.print((dataLog.ms5607.temp * 0.018) + 32);
         Serial.println(F(" F "));
 
 
         Serial.print(F("DS18B20: "));
-        Serial.print(sensors.DS18B20_temp_c[0] * 1.8 + 32);
+        Serial.print(dataLog.DS18B20_temp_c[0] * 1.8 + 32);
         Serial.println(F(" F "));
 
-        Serial.print(sensors.gps.date);
+        Serial.print(dataLog.gps.date);
         Serial.print(F(", "));
-        Serial.print(sensors.gps.time);
+        Serial.print(dataLog.gps.time);
         Serial.print(F(", "));
 
-        Serial.print(sensors.gps.lat, 6);
+        Serial.print(dataLog.gps.lat, 6);
         Serial.print(F(", "));
-        Serial.print(sensors.gps.lng, 6);
+        Serial.print(dataLog.gps.lng, 6);
 
         Serial.print(F(", "));
-        Serial.print(sensors.gps.altitude, 6);
+        Serial.print(dataLog.gps.altitude, 6);
         Serial.print(F(" m, "));
-        Serial.print(sensors.gps.speed);
+        Serial.print(dataLog.gps.speed);
         Serial.print(F(" mps, "));
-        Serial.print(sensors.gps.course);
+        Serial.print(dataLog.gps.course);
         Serial.print(F(" deg, "));
 
-        Serial.print(sensors.gps.sats);
+        Serial.print(dataLog.gps.sats);
         Serial.print(F(" sats, HDOP: "));
-        Serial.print(static_cast<float>(sensors.gps.hdop / 100), 1);
+        Serial.print(static_cast<float>(dataLog.gps.hdop / 100), 1);
         Serial.print(F(" m, VDOP: "));
-        Serial.print(static_cast<float>(sensors.gps.vdop / 100), 1);
+        Serial.print(static_cast<float>(dataLog.gps.vdop / 100), 1);
         Serial.println(F(" m"));
         Serial.print(F("CRC ERROR: "));
         Serial.println(gps.failedChecksum());
 
         Serial.print(F("Geiger: "));
-        Serial.print(sensors.geiger.x_count);
+        Serial.print(geiger.x_count);
         Serial.print(F("/"));
-        Serial.print(sensors.geiger.y_count);
+        Serial.print(geiger.y_count);
         Serial.print(F("/"));
-        Serial.println(sensors.geiger.z_count);
+        Serial.println(geiger.z_count);
 
         Serial.print(F("Up time: "));
         Serial.print(static_cast<unsigned long>(millis() / 1000L));
@@ -1010,21 +1133,426 @@ void print_sensors() {
 
 }
 
+void power_control() {
+    // Control power consumption with powering down sensors or limiting heater power.
+
+}
+
+void reset_sdcard() {
+    // Toggle power to SD card here to reset?
+
+}
+
+uint8_t EEPROM_read(uint16_t uiAddress) {
+    /* Wait for completion of previous write */
+    while(EECR & (1<<EEPE)) {
+    }
+
+    /* Set up address register */
+    EEAR = uiAddress;
+    /* Start eeprom read by writing EERE */
+    EECR |= (1<<EERE);
+    /* Return data from Data Register */
+    return EEDR;
+}
+
+
+void EEPROM_update(uint16_t uiAddress, uint8_t ucData) {
+    // Write data to EEPROM unless the data is already the same at the address.
+
+    uint8_t readEEPROM = EEPROM_read(uiAddress);
+
+    if (readEEPROM == ucData) {
+        // We already have that value written.
+        return;
+    }
+
+    /* Wait for completion of previous write */
+    while(EECR & (1<<EEPE)) {
+    }
+
+    /* Set up address and Data Registers */
+    EEAR = uiAddress;
+    EEDR = ucData;
+    /* Write logical one to EEMPE */
+    EECR |= (1<<EEMPE);
+    /* Start eeprom write by setting EEPE */
+    EECR |= (1<<EEPE);
+}
+
+
+uint32_t find_sdcard_tail(const uint32_t first = 1, const uint32_t last = sdcard_data.blocks) {
+    // On powerup look for the tail of the SD card log.
+    // We use a binary search algorithm with a slight twist.
+
+    bool not_found = true;
+    bool left_empty = true;
+    bool right_empty = true;
+
+    // Current block, start at the beginning block (block 0 is out of bounds!)
+    uint32_t current_search = first;
+
+    // Get size of the data structure
+    uint16_t data_size = sizeof(dataLog);
+
+    // Can't have zero block. Holds SD card information. Would be a false short circuit.
+    if (current_search == 0) {
+        current_search = 1;
+    }
+
+    uint32_t left = current_search;
+    uint32_t right = last;
+
+
+    // Check left side is empty?
+    // Read a partial block for data
+    sdcard.readData(left, 0, data_size, sdcard_data.buffer);
+
+    for (uint8_t i = 0; i < data_size; i++) {
+        if (sdcard_data.buffer[i] != 0) {
+            // It's not empty
+            left_empty = false;
+
+            // That's all we care about
+            break;
+        }
+    }
+
+    if (left_empty == true) {
+        // It's empty, so return it.
+        return left;
+    }
+
+    // Check right point for empty
+    // Read a partial block for data
+    sdcard.readData(right, 0, data_size, sdcard_data.buffer);
+
+    for (uint8_t i = 0; i < data_size; i++) {
+        //Serial.println(sdcard_data.buffer[i], HEX);
+
+        if (sdcard_data.buffer[i] != 0) {
+
+            // It's empty
+            right_empty = false;
+
+            // Abort, since we are looking for empty blocks
+            break;
+        }
+    }
+
+    if (right_empty == false) {
+        // We can't get any more right, so return.
+        return right;
+    }
+
+
+    while (not_found == true) {
+
+        // Middle value
+        current_search = (right + left) / 2;
+
+        #ifdef DEBUG
+
+            Serial.print(F("Left: "));
+            Serial.print(left);
+            Serial.print(F(" Current: "));
+            Serial.print(current_search);
+            Serial.print(F(" Right: "));
+            Serial.println(right);
+
+        #endif // DEBUG
+
+        // Read a partial block for data
+        sdcard.readData(current_search, 0, data_size, sdcard_data.buffer);
+
+        for (uint8_t i = 0; i < data_size; i++) {
+            if (sdcard_data.buffer[i] != 0) {
+                // Block is not empty.
+                not_found = true;
+
+                // New left value is this current block
+                left = current_search;
+
+                left_empty = false;
+                #ifdef DEBUG_MORE
+                    sdcard_data.current_block++;
+                    Serial.print(F("SDcard block "));
+                    Serial.print(sdcard_data.current_block);
+                    Serial.println(F(" NOT empty... skipping."));
+                #endif // DEBUG_MORE
+                break;
+            }
+        }
+
+
+        if (left != current_search) {
+            // Since left is not equal to current_search we assume it was empty
+            right = current_search;
+            right_empty = true;
+        }
+
+        if (left_empty == false && right_empty == true && right - left <= 1 ) {
+            // Close enough
+            not_found = false;
+        }
+    }
+
+    return right;
+}
+
+void test_logging() {
+    // Get size of the data structure
+    static uint16_t data_size = sizeof(dataLog);
+
+    Serial.print(F("\n\n\n*************************\nRead sensors from SDcard\n*************************\n\n\n"));
+    for (uint8_t i = 0; i < 510/data_size; i++) {
+        memcpy(&dataLog, &sdcard_data.buffer[i * data_size], data_size);
+
+        print_sensors();
+    }
+
+    Serial.print(F("\n\n\n*************************\nEnd sensors from SDcard\n*************************\n\n\n"));
+
+}
+
+
+void log_data() {
+    // Log the sensor data by packing it into a holding buffer.
+    // When the buffer is full, we flush it to storage and reset
+    // the holding buffer.
+
+    uint16_t crc_before, crc_after, loops = 0;
+    bool success, empty_block = false;
+
+    // Get size of the data structure
+    static uint16_t data_size = sizeof(dataLog);
+
+    if (sdcard_data.num_packed == 0) {
+        // Zero the SDcard buffer since we're starting fresh
+        memset(sdcard_data.hold_buffer, 0, 512);
+    }
+
+    if (sdcard_data.num_packed * data_size < 510 - data_size) {
+        // Check if we can squeeze another data packet into the buffer.
+
+        // Make sure that optimizations don't fiddle with our ordering.
+        ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+
+            // Copy over Geiger counts for logging
+
+            dataLog.geiger.x = geiger.x_count;
+            dataLog.geiger.y = geiger.y_count;
+            dataLog.geiger.z = geiger.z_count;
+
+            // Zero interrupt counts
+            geiger.x_count = 0 = geiger.y_count = geiger.z_count = 0;
+
+        }
+
+        // Copy the data log structure as a byte stream to the SD card buffer for later writing.
+        memcpy(&sdcard_data.hold_buffer[sdcard_data.num_packed * data_size], &dataLog, data_size);
+
+        // We packed another
+        sdcard_data.num_packed++;
+
+        #ifdef DEBUG
+            Serial.print(F("Number of structures packed: "));
+            Serial.println(sdcard_data.num_packed);
+            Serial.print(F("SD card packing start address: "));
+            Serial.println(sdcard_data.num_packed * data_size, DEC);
+        #endif // DEBUG
+
+    }
+
+    if (sdcard_data.num_packed * data_size >= 510 - data_size) {
+        // Test again to see if we're at the limit. If we are, we need to log it.
+        // Otherwise we lose a log when we are called again.
+        // We allow 2 bytes for the CRC16 at the end of the buffer.
+
+        #ifdef DEBUG
+            Serial.print(F("\nSensor data size: "));
+            Serial.println(data_size);
+
+            Serial.print(F("SD Block: "));
+            Serial.print(sdcard_data.current_block);
+            Serial.print(F("/"));
+            Serial.println(sdcard_data.blocks);
+        #endif // DEBUG
+
+        //print_sensors();
+
+        // We may want to try multiple data writes in case of a bad block.
+        // Need to define how large a bad block flash memory can have.
+        // In other words, if a write/erase block is 8MB, then multiple 512 byte
+        // blocks will need to be skipped to get to "good" memory.
+        // 8MB = 16384 pages of 512 bytes (we're writing to 512 byte blocks, so
+        // so that's what we care about. Add 1 to get over any threshold.
+        while(success == false && sdcard_data.current_block <= sdcard_data.blocks) {
+            // Reset for loop
+            success = true;
+
+            // Zero the SDcard buffer
+            memset(sdcard_data.buffer, 0, 512);
+
+            //Serial.println(F("Reading block verify zero"));
+            // Read a block of data to ensure we are writing to an empty block.
+            sdcard.readBlock(sdcard_data.current_block, sdcard_data.buffer);
+
+            empty_block = true;
+
+            //Serial.println(F("Verify zero"));
+
+            for (uint16_t i = 0; i < 512; i++) {
+                // Iterate over the block, looking for non-zero values
+                //Serial.println(sdcard_data.buffer[i], HEX);
+                if (sdcard_data.buffer[i] != 0) {
+                    // Not empty
+                    empty_block = false;
+                    success = false;
+
+                    #ifdef DEBUG
+                        sdcard_data.current_block++;
+                        Serial.print(F("SDcard block "));
+                        Serial.print(sdcard_data.current_block);
+                        Serial.println(F(" NOT empty... skipping."));
+                    #endif // DEBUG_MORE
+
+                    // Break for next block.
+                    break;
+                }
+            }
+
+            if (empty_block == true) {
+                // Copy the data log structure as a byte stream to the SD card buffer for later writing.
+                // memcpy(&sdcard_data.buffer, &dataLog, data_size);
+
+                //Serial.println(F("Calculating CRC..."));
+                // Calculate the buffer's CRC16 for comparison after writing.
+                crc_before = sd_calc_crc(sdcard_data.hold_buffer, data_size * (sdcard_data.num_packed + 1));
+
+                // Tack on CRC to end of SDcard buffer
+                memcpy(&sdcard_data.hold_buffer[511 - sizeof(crc_before)], &crc_before, sizeof(crc_before));
+
+                // Write the buffer and check if returned successfully
+                if (sdcard.writeBlock(sdcard_data.current_block, sdcard_data.hold_buffer) == 0) {
+                    sdcard_data.write_errors++;
+                    success = false;
+
+                    // Had an error. Get error code and "status"
+                    Serial.print(F("SDcard Write Error: "));
+                    Serial.println(sdcard.errorCode(), HEX);
+                    Serial.print(F("Status: "));
+                    Serial.println(sdcard.errorData(), HEX);
+
+                    // Reset the card in case it was a lock up error.
+                    reset_sdcard();
+
+                    // Try the next data block.
+                    sdcard_data.current_block++;
+
+                    loops++;
+
+                    // Skip reading the data since we had a write error.
+                    continue;
+                }
+
+
+                // Zero the buffer
+                memset(sdcard_data.buffer, 0, 512);
+
+                // Memset does not seem to zero data structures. However, we can copy over our freshly zeroed buffer no problems
+                // to zero the sensor data.
+                // memcpy(&dataLog, &sdcard_data.buffer, data_size);
+
+                //Serial.println(F("\n\nAFTER ZEROING\n"));
+                //print_sensors();
+
+                // Read the data in for verification
+                sdcard.readBlock(sdcard_data.current_block, sdcard_data.buffer);
+
+                // Copy over the CRC we read
+                memcpy(&crc_after, &sdcard_data.buffer[511 - sizeof(crc_before)], sizeof(crc_before));
+
+                // Calculate the CRC after we read back the data.
+                crc_after = sd_calc_crc(sdcard_data.buffer, data_size * (sdcard_data.num_packed + 1));
+
+                if (crc_before != crc_after) {
+                    // Test if the write and read were identical
+                    // They were not!
+                    sdcard_data.crc_errors++;
+
+                    // We have a problem, crc mismatch.
+                    Serial.println(F("\n************************\n*     CRC MISMATCH     *\n************************"));
+
+                    success = false;
+
+                    // Reset the card in case it was a lock up error.
+                    reset_sdcard();
+
+                    // Try the next data block.
+                    sdcard_data.current_block++;
+
+                    loops++;
+
+                    // Skip to next loop since we had an error.
+                    continue;
+
+                } else {
+                    // Success!
+                    // Increase to next block.
+                    sdcard_data.current_block++;
+                }
+
+                if (success == true) {
+                    // We only write when the holding buffer is full, so
+                    // reset the packing counter
+                    sdcard_data.num_packed = 0;
+
+                    #ifdef DEBUG
+                        test_logging();
+                    #endif // DEBUG
+                }
+
+                #ifdef DEBUG
+                    Serial.print(F("****************\nCRC BEFORE: "));
+                    Serial.println(crc_before, HEX);
+
+                    Serial.print(F(" CRC AFTER: "));
+                    Serial.println(crc_after, HEX);
+                    Serial.print(F("CRC Errors: "));
+                    Serial.print(sdcard_data.crc_errors);
+                    Serial.print(F(" Write Errors: "));
+                    Serial.println(sdcard_data.write_errors);
+                    Serial.println(F("****************\n"));
+                #endif // DEBUG
+            }
+        }
+    }
+
+
+        //print_sensors();
+}
+
 
 void loop() {
 
 
-
+    // Read the sensors
     readSensors();
+
+    // How's our battery?
     check_battery();
 
+    // Control heat and power consumption
+    heater_control();
 
     #ifdef DEBUG
-        print_sensors();
 
+        print_sensors();
 
     #endif // DEBUG
 
+    log_data();
     //delay(1000);
 
 

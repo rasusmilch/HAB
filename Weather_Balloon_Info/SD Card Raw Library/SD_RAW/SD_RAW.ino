@@ -96,7 +96,7 @@ byte sdc_cmd(byte commandIndex, long arg) {
 }
 
 // initialize SD card 
-// retuns 1 if successful
+// returns 1 if successful
 byte sdc_initialize(void) {
   // set slow clock: 1/128 base frequency (125Khz in this case)
   SPCR |=  (1<<SPR1) | (1<<SPR0); // set slow clock: 1/128 base frequency (125Khz in this case)
@@ -244,12 +244,12 @@ void setup() {
   DDRB |=  (1<<PIN_MOSI);  
   // Initialize serial communication 
   Serial.begin(9600);
-  Serial.print(F("Initializing..."));
+  Serial.println(F("Initializing..."));
   // Initialize SPI and SDC 
   spi_err=0;        // reset SPI error
   spi_initialize(); // initialize SPI port
-  Serial.print(F("SPI Initialized..."));
-  sdc_initialize(); // Initialize SD Card
+  Serial.println(F("SPI Initialized..."));
+  Serial.println(sdc_initialize()); // Initialize SD Card
   Serial.print(F("SDC Initialized..."));
   Serial.print(sdc_totalNbrBlocks(), DEC);
   Serial.println(" blocks");
@@ -258,7 +258,7 @@ void setup() {
 void loop() {
   // This is just an example
   Serial.println("Writing blocks...");
-  for (int b=0; b<255; b++) {
+  for (int b=0; b<5; b++) {
     Serial.print("Writing block ");
     Serial.println(b, HEX);
     for (int i=0; i<blockSize; i++){
@@ -267,7 +267,7 @@ void loop() {
     sdc_writeBlock(b);         // copy vector of data on SD card
   }
   Serial.println("Reading blocks...");
-  for (int b=0; b<255; b++) {
+  for (int b=0; b<5; b++) {
     Serial.print("Reading block ");
     Serial.println(b, HEX);
     sdc_readBlock(b);          // copy SD card block of data in vector of data

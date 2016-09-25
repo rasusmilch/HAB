@@ -536,6 +536,11 @@ K RF 5GHz NPN Transistor
 F http://www.nxp.com/documents/data_sheet/BFT92_CNV.pdf
 $ENDCMP
 #
+$CMP BILEVEL_SHIFT
+D Bilevel Logic Shifter
+K bilevel,logic,shift
+$ENDCMP
+#
 $CMP BS107
 D 200V Vds, N-Channel MOSFET, TO-92
 K N-Channel MOSFET
