@@ -1738,6 +1738,11 @@ K Dual N-Channel MOSFET
 F http://www.fairchildsemi.com/ds/FD/FDS9926A.pdf
 $ENDCMP
 #
+$CMP FUEL_GAUGE
+D Lithium Fuel Gauge
+K lithium,ion,fuel,gauge,battery
+$ENDCMP
+#
 $CMP IPS6011PBF
 D 39V, 60A, Intelligent Power Switch High Side, TO-220-5
 K  Intelligent Power Switch High Side MOSFET
@@ -1916,6 +1921,10 @@ $CMP MAT02
 D Precision Dual Monolithic Transistor, Low Noise, Low Offset, Vce 40V, Ic 20mA, TO-78
 K Precision Dual Monolithic Transistor Low Noise EOL
 F http://www.elenota.pl/datasheet_download/93431/MAT02
+$ENDCMP
+#
+$CMP MAX6107EUR
+D Voltage Reference
 $ENDCMP
 #
 $CMP MJE13003

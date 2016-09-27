@@ -1,4 +1,4 @@
-update=Fri 16 Sep 2016 11:47:39 AM CDT
+update=Mon 26 Sep 2016 07:13:11 PM CDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -23,8 +23,6 @@ ModuleOutlineThickness=0.150000000000
 [cvpcb]
 version=1
 NetIExt=net
-[general]
-version=1
 [eeschema]
 version=1
 LibDir=
@@ -59,3 +57,16 @@ LibName27=atmel
 LibName28=contrib
 LibName29=valves
 LibName30=/home/peanut/Arduino/Weather_Balloon/Weather
+[general]
+version=1
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=/home/peanut/ownCloud-encfs/School/Robert/Arduino/Weather_Balloon/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=50
+ERC_TestSimilarLabels=1
