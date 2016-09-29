@@ -11,7 +11,7 @@
     (via_costs 50)
     (plane_via_costs 5)
     (start_ripup_costs 100)
-    (start_pass_no 610)
+    (start_pass_no 1521)
     (layer_rule F.Cu
       (active on)
       (preferred_direction horizontal)
@@ -36,7 +36,7 @@
     (clear 300.2 (type Heat_Heat))
     (clear 300.2 (type Heat_Power))
   )
-  (padstack "Via[0-1]_1200:400_um"
+  (padstack "Via[0-1]_1200:500_um"
     (shape
       (circle F.Cu 1200.0 0.0 0.0)
     )
@@ -45,7 +45,7 @@
     )
     (attach off)
   )
-  (padstack "Via[0-1]_1400:400_um"
+  (padstack "Via[0-1]_1400:500_um"
     (shape
       (circle F.Cu 1400.0 0.0 0.0)
     )
@@ -54,41 +54,62 @@
     )
     (attach off)
   )
-  (via 
-    "Via[0-1]_1200:400_um" "Via[0-1]_1200:400_um" default
+  (padstack "Via[0-1]_1500:500_um"
+    (shape
+      (circle F.Cu 1500.0 0.0 0.0)
+    )
+    (shape
+      (circle B.Cu 1500.0 0.0 0.0)
+    )
+    (attach off)
   )
   (via 
-    "Via[0-1]_1400:400_um" "Via[0-1]_1400:400_um" default
+    "Via[0-1]_1200:500_um" "Via[0-1]_1200:500_um" default
   )
   (via 
-    "Via[0-1]_1200:400_um-kicad_default" "Via[0-1]_1200:400_um" "kicad_default"
+    "Via[0-1]_1400:500_um" "Via[0-1]_1400:500_um" default
   )
   (via 
-    "Via[0-1]_1400:400_um-kicad_default" "Via[0-1]_1400:400_um" "kicad_default"
+    "Via[0-1]_1500:500_um" "Via[0-1]_1500:500_um" default
   )
   (via 
-    "Via[0-1]_1200:400_um-Heat" "Via[0-1]_1200:400_um" Heat
+    "Via[0-1]_1200:500_um-kicad_default" "Via[0-1]_1200:500_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_1400:400_um-Heat" "Via[0-1]_1400:400_um" Heat
+    "Via[0-1]_1400:500_um-kicad_default" "Via[0-1]_1400:500_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_1200:400_um-Power" "Via[0-1]_1200:400_um" Power
+    "Via[0-1]_1500:500_um-kicad_default" "Via[0-1]_1500:500_um" "kicad_default"
   )
   (via 
-    "Via[0-1]_1400:400_um-Power" "Via[0-1]_1400:400_um" Power
+    "Via[0-1]_1200:500_um-Heat" "Via[0-1]_1200:500_um" Heat
+  )
+  (via 
+    "Via[0-1]_1400:500_um-Heat" "Via[0-1]_1400:500_um" Heat
+  )
+  (via 
+    "Via[0-1]_1500:500_um-Heat" "Via[0-1]_1500:500_um" Heat
+  )
+  (via 
+    "Via[0-1]_1200:500_um-Power" "Via[0-1]_1200:500_um" Power
+  )
+  (via 
+    "Via[0-1]_1400:500_um-Power" "Via[0-1]_1400:500_um" Power
+  )
+  (via 
+    "Via[0-1]_1500:500_um-Power" "Via[0-1]_1500:500_um" Power
   )
   (via_rule
-    default "Via[0-1]_1200:400_um"
+    default "Via[0-1]_1200:500_um"
   )
   (via_rule
-    "kicad_default" "Via[0-1]_1200:400_um-kicad_default"
+    "kicad_default" "Via[0-1]_1200:500_um-kicad_default"
   )
   (via_rule
-    Heat "Via[0-1]_1400:400_um-Heat"
+    Heat "Via[0-1]_1400:500_um-Heat"
   )
   (via_rule
-    Power "Via[0-1]_1200:400_um-Power"
+    Power "Via[0-1]_1200:500_um-Power"
   )
   (class default
     (clearance_class default)
@@ -101,23 +122,21 @@
     )
   )
   (class "kicad_default"
-    "CR2032_POS" "Net-(C1-Pad2)" "2560_RESET" "Net-(C6-Pad2)" "Net-(C7-Pad2)" "Net-(C8-Pad1)" "Net-(D1-Pad1)" "Net-(D1-Pad2)"
-    "Net-(D2-Pad1)" "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(IC1-Pad1)" "2560_HEARTBEAT" "Net-(IC1-Pad5)" "Net-(IC1-Pad6)"
-    "Net-(IC1-Pad7)" "Net-(IC2-Pad2)" "Net-(IC2-Pad3)" "SHT31_Heat" "TSL2561_Heat" "Net-(IC2-Pad9)" "AT25_CS_9" "AT25_CS_8"
-    "AT25_CS_7" "Custom_Heat" "Main_Heat" "UV_Heat" "GPS_Heat" SS "Net-(IC2-Pad20)" "Net-(IC2-Pad21)"
-    "Net-(IC2-Pad22)" "AT25_CS_6" "AT25_CS_4" "AT25_CS_5" "Net-(IC2-Pad30)" "UV_POWER" "SHT31_RESET" "DOF_POWER"
-    "MS5607_POWER" "TSL2561_POWER" "SD_POWER" "GPS_POWER" "GEIGER_POWER" "SCL_5" "SDA_5" "Net-(IC2-Pad45)"
-    "Net-(IC2-Pad46)" "AT25_CS_1" "AT25_CS_2" "/RADIO_0" "/RADIO_1" "/RADIO_2" "/RADIO_3" "/RADIO_4"
-    "/RADIO_5" "/RADIO_6" "/RADIO_7" "GEIGER_X" "GEIGER_Y" "GEIGER_Z" "AT25_CS_3" "LANDING_LED"
-    PIEZO "PIEZO_PWR" "DS18B20_DATA" "DS18B20_PWR" "AT25_CS_10" "UV_VOLTAGE" AREF SCK
-    MOSI MISO "Net-(P9-Pad2)" "SCL_3.3" "SDA_3.3" "Net-(P17-Pad4)" "Net-(P18-Pad3)" "MISO_3.3"
-    "Net-(P19-Pad2)" "SCK_3.3" "MOSI_3.3" "SS_3.3" "Net-(P20-Pad2)" "Net-(P21-Pad1)" "UV_PWR" "SHT_31_PWR"
-    "Net-(P23-Pad7)" "2560_TX_GPS_RX" "2560_RX_GPS_TX" "Net-(P27-Pad5)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)" "Net-(Q3-Pad1)" "Net-(Q4-Pad1)"
-    "Net-(Q5-Pad1)" "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" "Net-(Q8-Pad1)" "Net-(Q9-Pad1)" "Net-(Q10-Pad1)" "Net-(Q11-Pad1)" "Net-(Q12-Pad1)"
-    "Net-(Q13-Pad1)" "Net-(Q14-Pad1)" "Net-(Q15-Pad1)" "Net-(Q16-Pad1)" "Net-(Q17-Pad1)" "Net-(IC2-Pad19)" "Net-(IC2-Pad43)" "Net-(IC2-Pad44)"
+    "Net-(C1-Pad2)" "2560_RESET" "Net-(C6-Pad2)" "Net-(C7-Pad2)" "Net-(C8-Pad1)" "Net-(D1-Pad1)" "Net-(D1-Pad2)" "Net-(D2-Pad1)"
+    "Net-(D2-Pad2)" "Net-(D3-Pad1)" "Net-(D3-Pad2)" "Net-(IC1-Pad1)" "2560_HEARTBEAT" "Net-(IC1-Pad5)" "Net-(IC1-Pad6)" "Net-(IC1-Pad7)"
+    "Net-(IC2-Pad2)" "Net-(IC2-Pad3)" "SHT31_Heat" "TSL2561_Heat" "Net-(IC2-Pad9)" "AT25_CS_9" "AT25_CS_8" "AT25_CS_7"
+    "Custom_Heat" "Main_Heat" "UV_Heat" "GPS_Heat" SS "Net-(IC2-Pad20)" "Net-(IC2-Pad21)" "Net-(IC2-Pad22)"
+    "AT25_CS_6" "AT25_CS_4" "AT25_CS_5" "Net-(IC2-Pad30)" "UV_POWER" "SHT31_RESET" "DOF_POWER" "MS5607_POWER"
+    "TSL2561_POWER" "SD_POWER" "GPS_POWER" "GEIGER_POWER" "SCL_5" "SDA_5" "Net-(IC2-Pad45)" "Net-(IC2-Pad46)"
+    "AT25_CS_1" "AT25_CS_2" "/RADIO_0" "/RADIO_1" "/RADIO_2" "/RADIO_3" "/RADIO_4" "/RADIO_5"
+    "/RADIO_6" "/RADIO_7" "GEIGER_X" "GEIGER_Y" "GEIGER_Z" "AT25_CS_3" "LANDING_LED" PIEZO
+    "PIEZO_PWR" "DS18B20_DATA" "DS18B20_PWR" "AT25_CS_10" "UV_VOLTAGE" AREF SCK MOSI
+    MISO "Net-(P9-Pad2)" "SCL_3.3" "SDA_3.3" "MISO_3.3" "SCK_3.3" "MOSI_3.3" "SS_3.3"
+    "Net-(P21-Pad1)" "UV_PWR" "SHT_31_PWR" "2560_TX_GPS_RX" "2560_RX_GPS_TX" "Net-(IC2-Pad19)" "Net-(IC2-Pad43)" "Net-(IC2-Pad44)"
     "Net-(P5-Pad1)" "Net-(P6-Pad1)" "Net-(P19-Pad1)" "Net-(P22-Pad2)" "Net-(P22-Pad3)" "Net-(P22-Pad4)" "Net-(P22-Pad5)" "Net-(P22-Pad6)"
     "Net-(P22-Pad7)" "Net-(P22-Pad8)" "Net-(P22-Pad9)" "Net-(R65-Pad2)" "Net-(R67-Pad2)" "Net-(R69-Pad2)" "Net-(R70-Pad2)" "Net-(R71-Pad2)"
-    "Net-(P26-Pad1)" "Net-(R72-Pad1)" "Net-(C12-Pad2)" "Net-(C13-Pad2)" "Net-(C14-Pad2)" "Net-(C15-Pad2)" "Net-(C16-Pad2)" "Net-(C17-Pad2)"
+    "Net-(R72-Pad1)" "Net-(IC2-Pad82)" "Net-(IC2-Pad83)" "Net-(IC2-Pad84)" "Net-(IC2-Pad85)" "Net-(IC2-Pad86)" "Net-(IC2-Pad87)" "Net-(IC2-Pad88)"
+    "Net-(IC2-Pad89)" "Net-(C22-Pad1)" "Net-(C23-Pad1)"
     (clearance_class "kicad_default")
     (via_rule kicad_default)
     (rule
@@ -128,7 +147,10 @@
     )
   )
   (class Heat
-    +BATT
+    +BATT "Net-(P17-Pad4)" "Net-(P18-Pad3)" "Net-(P19-Pad2)" "Net-(P20-Pad2)" "Net-(P27-Pad5)" "Net-(Q1-Pad1)" "Net-(Q2-Pad1)"
+    "Net-(Q3-Pad1)" "Net-(Q4-Pad1)" "Net-(Q5-Pad1)" "Net-(Q6-Pad1)" "Net-(Q7-Pad1)" "Net-(Q8-Pad1)" "Net-(Q9-Pad1)" "Net-(Q10-Pad1)"
+    "Net-(Q11-Pad1)" "Net-(Q12-Pad1)" "Net-(Q13-Pad1)" "Net-(Q14-Pad1)" "Net-(Q15-Pad1)" "Net-(Q16-Pad1)" "Net-(Q17-Pad1)" "Net-(P26-Pad1)"
+    "Net-(C12-Pad2)" "Net-(C13-Pad2)" "Net-(C14-Pad2)" "Net-(C15-Pad2)" "Net-(C16-Pad2)" "Net-(C17-Pad2)" "Net-(P23-Pad4)"
     (clearance_class Heat)
     (via_rule Heat)
     (rule
@@ -139,7 +161,7 @@
     )
   )
   (class Power
-    GND "Vcc_1" +3V3
+    GND "Vcc_1" "CR2032_POS" +3V3
     (clearance_class Power)
     (via_rule Power)
     (rule
