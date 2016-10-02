@@ -50,15 +50,15 @@ U 57DC68E1
 F0 "Heater" 250
 F1 "Heater.sch" 250
 $EndSheet
-Text GLabel 1750 5600 0    50   Output ~ 0
+Text GLabel 1750 2900 0    50   Output ~ 0
 Main_Heat
-Text GLabel 1750 5800 0    50   Output ~ 0
+Text GLabel 1750 3000 0    50   Output ~ 0
 GPS_Heat
-Text GLabel 1750 5700 0    50   Output ~ 0
+Text GLabel 4550 3000 2    50   Output ~ 0
 UV_Heat
-Text GLabel 4550 5600 2    50   Output ~ 0
+Text GLabel 1750 2800 0    50   Output ~ 0
 TSL2561_Heat
-Text GLabel 1750 5500 0    50   Output ~ 0
+Text GLabel 4550 3100 2    50   Output ~ 0
 Custom_Heat
 $Comp
 L ATMEGA2560-A IC2
@@ -123,7 +123,7 @@ U 1 1 57DCF599
 P 1550 2050
 F 0 "Y1" V 1596 1919 50  0000 R CNN
 F 1 "16Mhz" V 1500 1900 50  0000 R CNN
-F 2 "Personal:HC-49V" H 1550 2050 50  0001 C CNN
+F 2 "Crystals:HC-49V" H 1550 2050 50  0001 C CNN
 F 3 "" H 1550 2050 50  0000 C CNN
 	1    1550 2050
 	0    -1   -1   0   
@@ -310,12 +310,12 @@ SDA_5
 $Comp
 L CONN_01X02 P5
 U 1 1 57E803B7
-P 5050 2250
-F 0 "P5" H 5100 2400 50  0000 R CNN
-F 1 "2560_SCK" H 5100 2100 50  0000 R CNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5050 2250 50  0001 C CNN
-F 3 "" H 5050 2250 50  0000 C CNN
-	1    5050 2250
+P 5150 2250
+F 0 "P5" V 5250 2300 50  0000 R CNN
+F 1 "2560_SCK" H 5200 2100 50  0000 R CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02" H 5150 2250 50  0001 C CNN
+F 3 "" H 5150 2250 50  0000 C CNN
+	1    5150 2250
 	0    -1   -1   0   
 $EndComp
 $Comp
@@ -356,7 +356,7 @@ F1 "Aux.sch" 100
 $EndSheet
 Text GLabel 4550 6100 2    60   Input ~ 0
 UV_VOLTAGE
-Text GLabel 1750 2500 0    50   Output ~ 0
+Text GLabel 1750 4700 0    50   Output ~ 0
 UV_POWER
 Text GLabel 2750 1250 0    60   Input ~ 0
 Vcc_1
@@ -375,15 +375,15 @@ F 3 "" H 8400 1350 50  0000 C CNN
 	1    8400 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 4750 1800 2    50   Output ~ 0
+Text GLabel 1750 5000 0    50   Output ~ 0
 PIEZO_PWR
-Text GLabel 4750 1900 2    50   Output ~ 0
+Text GLabel 4550 6300 2    50   Output ~ 0
 PIEZO
-Text GLabel 4750 2000 2    50   Output ~ 0
+Text GLabel 4550 6200 2    50   Output ~ 0
 LANDING_LED
-Text GLabel 4750 1600 2    50   Output ~ 0
+Text GLabel 4550 5400 2    50   Output ~ 0
 DS18B20_PWR
-Text GLabel 4750 1700 2    50   BiDi ~ 0
+Text GLabel 1750 6600 0    50   BiDi ~ 0
 DS18B20_DATA
 $Comp
 L C C4
@@ -512,93 +512,91 @@ F 3 "" H 5850 5800 50  0000 C CNN
 	1    5850 5800
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 2600 0    50   Output ~ 0
+Text GLabel 1750 4600 0    50   Output ~ 0
 SHT31_RESET
-Text GLabel 1750 2700 0    50   Output ~ 0
+Text GLabel 4550 2300 2    50   Output ~ 0
 DOF_POWER
-Text GLabel 1750 2800 0    50   Output ~ 0
-MS5607_POWER
-Text GLabel 1750 2900 0    50   Output ~ 0
+Text GLabel 1750 4800 0    50   Output ~ 0
 TSL2561_POWER
-Text GLabel 1750 3000 0    50   Output ~ 0
+Text GLabel 1750 6200 0    50   Output ~ 0
 SD_POWER
-Text GLabel 1750 3100 0    50   Output ~ 0
+Text GLabel 1750 3200 0    50   Output ~ 0
 GPS_POWER
 $Comp
 L R R5
 U 1 1 57E96F25
-P 6000 2900
-F 0 "R5" V 5950 3050 50  0000 C CNN
-F 1 "150" V 6000 2900 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5930 2900 50  0001 C CNN
-F 3 "" H 6000 2900 50  0000 C CNN
-	1    6000 2900
+P 5250 1500
+F 0 "R5" V 5200 1650 50  0000 C CNN
+F 1 "150" V 5250 1500 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5180 1500 50  0001 C CNN
+F 3 "" H 5250 1500 50  0000 C CNN
+	1    5250 1500
 	0    1    1    0   
 $EndComp
 $Comp
 L +5V #PWR016
 U 1 1 57E9700C
-P 6350 2900
-F 0 "#PWR016" H 6350 2750 50  0001 C CNN
-F 1 "+5V" V 6365 3073 50  0000 C CNN
-F 2 "" H 6350 2900 50  0000 C CNN
-F 3 "" H 6350 2900 50  0000 C CNN
-	1    6350 2900
+P 5600 1500
+F 0 "#PWR016" H 5600 1350 50  0001 C CNN
+F 1 "+5V" V 5615 1673 50  0000 C CNN
+F 2 "" H 5600 1500 50  0000 C CNN
+F 3 "" H 5600 1500 50  0000 C CNN
+	1    5600 1500
 	0    1    1    0   
 $EndComp
 $Comp
 L R R7
 U 1 1 57E980CF
-P 6000 3050
-F 0 "R7" V 5950 3200 50  0000 C CNN
-F 1 "150" V 6000 3050 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5930 3050 50  0001 C CNN
-F 3 "" H 6000 3050 50  0000 C CNN
-	1    6000 3050
+P 5250 1650
+F 0 "R7" V 5200 1800 50  0000 C CNN
+F 1 "150" V 5250 1650 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5180 1650 50  0001 C CNN
+F 3 "" H 5250 1650 50  0000 C CNN
+	1    5250 1650
 	0    1    1    0   
 $EndComp
 $Comp
 L R R8
 U 1 1 57E98FFD
-P 6000 3200
-F 0 "R8" V 5950 3350 50  0000 C CNN
-F 1 "150" V 6000 3200 50  0000 C CNN
-F 2 "Resistors_SMD:R_1206_HandSoldering" V 5930 3200 50  0001 C CNN
-F 3 "" H 6000 3200 50  0000 C CNN
-	1    6000 3200
+P 5250 1800
+F 0 "R8" V 5200 1950 50  0000 C CNN
+F 1 "150" V 5250 1800 50  0000 C CNN
+F 2 "Resistors_SMD:R_1206_HandSoldering" V 5180 1800 50  0001 C CNN
+F 3 "" H 5250 1800 50  0000 C CNN
+	1    5250 1800
 	0    1    1    0   
 $EndComp
 $Comp
 L Led_Small D1
 U 1 1 57E9930D
-P 5600 2900
-F 0 "D1" H 5500 2950 50  0000 C CNN
-F 1 "Green" H 5750 2950 50  0000 C CNN
-F 2 "LEDs:LED_1206" V 5600 2900 50  0001 C CNN
-F 3 "" V 5600 2900 50  0000 C CNN
-	1    5600 2900
+P 4850 1500
+F 0 "D1" H 4750 1550 50  0000 C CNN
+F 1 "Green" H 5000 1550 50  0000 C CNN
+F 2 "LEDs:LED_1206" V 4850 1500 50  0001 C CNN
+F 3 "" V 4850 1500 50  0000 C CNN
+	1    4850 1500
 	1    0    0    -1  
 $EndComp
 $Comp
 L Led_Small D2
 U 1 1 57E99533
-P 5600 3050
-F 0 "D2" H 5500 3100 50  0000 C CNN
-F 1 "Yellow" H 5750 3100 50  0000 C CNN
-F 2 "LEDs:LED_1206" V 5600 3050 50  0001 C CNN
-F 3 "" V 5600 3050 50  0000 C CNN
-	1    5600 3050
+P 4850 1650
+F 0 "D2" H 4750 1700 50  0000 C CNN
+F 1 "Yellow" H 5000 1700 50  0000 C CNN
+F 2 "LEDs:LED_1206" V 4850 1650 50  0001 C CNN
+F 3 "" V 4850 1650 50  0000 C CNN
+	1    4850 1650
 	1    0    0    -1  
 $EndComp
 $Comp
 L Led_Small D3
 U 1 1 57E99627
-P 5600 3200
-F 0 "D3" H 5500 3250 50  0000 C CNN
-F 1 "Red" H 5750 3250 50  0000 C CNN
-F 2 "LEDs:LED_1206" V 5600 3200 50  0001 C CNN
-F 3 "" V 5600 3200 50  0000 C CNN
-	1    5600 3200
+P 4850 1800
+F 0 "D3" H 4750 1850 50  0000 C CNN
+F 1 "Red" H 5000 1850 50  0000 C CNN
+F 2 "LEDs:LED_1206" V 4850 1800 50  0001 C CNN
+F 3 "" V 4850 1800 50  0000 C CNN
+	1    4850 1800
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -645,7 +643,7 @@ F 3 "" H 7100 3800 50  0000 C CNN
 	1    7100 3800
 	1    0    0    -1  
 $EndComp
-Text GLabel 1750 3200 0    50   Output ~ 0
+Text GLabel 1750 6300 0    50   Output ~ 0
 GEIGER_POWER
 $Comp
 L PWR_FLAG #FLG018
@@ -658,27 +656,16 @@ F 3 "" H 3250 1100 50  0000 C CNN
 	1    3250 1100
 	0    -1   -1   0   
 $EndComp
-NoConn ~ 1850 6600
-NoConn ~ 1850 4900
-NoConn ~ 1850 4800
-NoConn ~ 1850 4700
-NoConn ~ 1850 4600
 NoConn ~ 4450 2200
-NoConn ~ 4450 2300
 NoConn ~ 4450 5000
 NoConn ~ 4450 4900
 NoConn ~ 4450 4800
 NoConn ~ 4450 4700
-NoConn ~ 4450 5400
-NoConn ~ 4450 5800
-NoConn ~ 4450 5700
 NoConn ~ 4450 6800
 NoConn ~ 4450 6700
 NoConn ~ 4450 6600
 NoConn ~ 4450 6500
 NoConn ~ 4450 6400
-NoConn ~ 4450 6300
-NoConn ~ 4450 6200
 Text GLabel 7250 2500 2    50   Output ~ 0
 SS
 $Comp
@@ -722,25 +709,25 @@ U 57EC94A0
 F0 "AT25_EEPROM" 50
 F1 "AT25_EEPROM.sch" 50
 $EndSheet
-Text GLabel 1750 6100 0    50   Output ~ 0
-AT25_CS_1
-Text GLabel 1750 6200 0    50   Output ~ 0
-AT25_CS_2
-Text GLabel 1750 6300 0    50   Output ~ 0
-AT25_CS_3
-Text GLabel 1750 6400 0    50   Output ~ 0
-AT25_CS_4
-Text GLabel 1750 6500 0    50   Output ~ 0
-AT25_CS_5
-Text GLabel 1750 5900 0    50   Output ~ 0
-AT25_CS_6
 Text GLabel 1750 5400 0    50   Output ~ 0
+AT25_CS_1
+Text GLabel 1750 5600 0    50   Output ~ 0
+AT25_CS_2
+Text GLabel 1750 5800 0    50   Output ~ 0
+AT25_CS_3
+Text GLabel 4550 5700 2    50   Output ~ 0
+AT25_CS_4
+Text GLabel 4550 5900 2    50   Output ~ 0
+AT25_CS_5
+Text GLabel 1750 5500 0    50   Output ~ 0
+AT25_CS_6
+Text GLabel 1750 5700 0    50   Output ~ 0
 AT25_CS_7
 Text GLabel 1750 5300 0    50   Output ~ 0
 AT25_CS_8
-Text GLabel 1750 5200 0    50   Output ~ 0
+Text GLabel 4550 5800 2    50   Output ~ 0
 AT25_CS_9
-Text GLabel 1750 5000 0    50   Output ~ 0
+Text GLabel 1750 5200 0    50   Output ~ 0
 AT25_CS_10
 $Comp
 L MAX6107EUR U1
@@ -927,7 +914,7 @@ Wire Wire Line
 	4900 3750 4900 4300
 Connection ~ 4900 4300
 Wire Wire Line
-	5000 2600 5000 2450
+	5100 2600 5100 2450
 Wire Wire Line
 	5500 2450 5500 2700
 Wire Wire Line
@@ -939,7 +926,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 2450 5600 2450
 Wire Wire Line
-	5100 2450 5100 2450
+	5100 2450 5200 2450
 Wire Wire Line
 	1700 4300 1850 4300
 Wire Wire Line
@@ -1009,9 +996,7 @@ Wire Wire Line
 Wire Wire Line
 	6900 1400 7050 1400
 Wire Wire Line
-	4450 5900 5500 5900
-Wire Wire Line
-	5350 5900 5350 5950
+	5350 5600 5350 5950
 Wire Wire Line
 	5350 6250 5350 6300
 Connection ~ 5350 5900
@@ -1020,29 +1005,13 @@ Wire Wire Line
 Wire Wire Line
 	5800 5900 6100 5900
 Wire Wire Line
-	1750 2500 1850 2500
-Wire Wire Line
-	1750 2600 1850 2600
-Wire Wire Line
-	1750 3100 1850 3100
-Wire Wire Line
 	1750 3000 1850 3000
 Wire Wire Line
 	1750 2900 1850 2900
 Wire Wire Line
 	1750 2800 1850 2800
 Wire Wire Line
-	1750 2700 1850 2700
-Wire Wire Line
-	4750 1600 4450 1600
-Wire Wire Line
-	4450 1700 4750 1700
-Wire Wire Line
 	4750 1800 4450 1800
-Wire Wire Line
-	4450 1900 4750 1900
-Wire Wire Line
-	4750 2000 4450 2000
 Wire Wire Line
 	6900 1500 7050 1500
 Wire Wire Line
@@ -1054,35 +1023,29 @@ Wire Wire Line
 Wire Wire Line
 	1750 5500 1850 5500
 Wire Wire Line
-	5500 3200 4450 3200
+	4750 1650 4650 1650
 Wire Wire Line
-	5500 3050 5400 3050
+	4650 1650 4650 1700
 Wire Wire Line
-	5400 3050 5400 3100
+	4750 1500 4600 1500
 Wire Wire Line
-	5400 3100 4450 3100
+	4600 1500 4600 1600
 Wire Wire Line
-	5500 2900 5350 2900
+	4950 1650 5100 1650
 Wire Wire Line
-	5350 2900 5350 3000
+	4950 1800 5100 1800
 Wire Wire Line
-	5350 3000 4450 3000
+	4950 1500 5100 1500
 Wire Wire Line
-	5700 3050 5850 3050
+	5500 1800 5400 1800
 Wire Wire Line
-	5700 3200 5850 3200
+	5400 1650 5500 1650
+Connection ~ 5500 1650
 Wire Wire Line
-	5700 2900 5850 2900
+	5400 1500 5600 1500
+Connection ~ 5500 1500
 Wire Wire Line
-	6250 3200 6150 3200
-Wire Wire Line
-	6150 3050 6250 3050
-Connection ~ 6250 3050
-Wire Wire Line
-	6150 2900 6350 2900
-Connection ~ 6250 2900
-Wire Wire Line
-	4550 5600 4450 5600
+	4450 5600 5350 5600
 Wire Wire Line
 	4550 5500 4450 5500
 Wire Wire Line
@@ -1136,19 +1099,7 @@ Wire Wire Line
 Wire Wire Line
 	1750 5000 1850 5000
 Wire Wire Line
-	1750 5900 1850 5900
-Wire Wire Line
-	1750 6100 1850 6100
-Wire Wire Line
 	1750 6200 1850 6200
-Wire Wire Line
-	1750 6300 1850 6300
-Wire Wire Line
-	1750 6400 1850 6400
-Wire Wire Line
-	1750 6500 1850 6500
-Wire Wire Line
-	1850 3200 1750 3200
 Wire Wire Line
 	1700 4400 1850 4400
 Wire Wire Line
@@ -1160,9 +1111,9 @@ Wire Wire Line
 Wire Wire Line
 	5600 2700 7250 2700
 Wire Wire Line
-	5100 2600 7250 2600
+	5200 2600 7250 2600
 Wire Wire Line
-	5100 2600 5100 2450
+	5200 2450 5200 2600
 Wire Wire Line
 	6350 2150 6350 2100
 Wire Wire Line
@@ -1205,7 +1156,7 @@ Wire Wire Line
 	5400 4300 5400 4200
 Connection ~ 5400 4300
 Wire Wire Line
-	6250 2900 6250 3200
+	5500 1500 5500 1800
 Text Label 4450 3500 0    50   ~ 0
 RADIO_1
 Text Label 4450 3600 0    50   ~ 0
@@ -1336,7 +1287,7 @@ Wire Wire Line
 Wire Wire Line
 	4600 2700 4450 2700
 Wire Wire Line
-	4900 2600 5000 2600
+	4900 2600 5100 2600
 Wire Wire Line
 	5500 2700 4900 2700
 $Comp
@@ -1635,4 +1586,55 @@ Wire Wire Line
 Wire Wire Line
 	4550 2900 4450 2900
 NoConn ~ 4450 2100
+Wire Wire Line
+	4450 5800 4550 5800
+Wire Wire Line
+	4450 5700 4550 5700
+NoConn ~ 1850 5900
+NoConn ~ 1850 6100
+Wire Wire Line
+	5500 5900 5350 5900
+Wire Wire Line
+	4450 5900 4550 5900
+Wire Wire Line
+	1750 6600 1850 6600
+Wire Wire Line
+	4550 5400 4450 5400
+Text GLabel 1750 4900 0    50   Output ~ 0
+MS5607_POWER
+Wire Wire Line
+	4550 3000 4450 3000
+Wire Wire Line
+	4550 3100 4450 3100
+Wire Wire Line
+	4600 1600 4450 1600
+Wire Wire Line
+	4650 1700 4450 1700
+Wire Wire Line
+	1750 4600 1850 4600
+Wire Wire Line
+	1750 4700 1850 4700
+Wire Wire Line
+	1750 4800 1850 4800
+Wire Wire Line
+	1750 4900 1850 4900
+Wire Wire Line
+	4450 6200 4550 6200
+Wire Wire Line
+	4450 6300 4550 6300
+NoConn ~ 4450 1900
+NoConn ~ 4450 2000
+NoConn ~ 1850 2600
+NoConn ~ 1850 2500
+NoConn ~ 1850 6500
+NoConn ~ 1850 6400
+NoConn ~ 4450 3200
+Wire Wire Line
+	1750 6300 1850 6300
+NoConn ~ 1850 3100
+Wire Wire Line
+	4450 2300 4550 2300
+NoConn ~ 1850 2700
+Wire Wire Line
+	1750 3200 1850 3200
 $EndSCHEMATC
