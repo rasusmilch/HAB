@@ -79,7 +79,7 @@ void loop(void) {
     Serial.print(data[i], HEX);
     Serial.print(" ");
   }
-  Serial.print(" CRC=");
+  Serial.print(" CRC =");
   Serial.print(OneWire::crc8(data, 8), HEX);
   Serial.println();
 

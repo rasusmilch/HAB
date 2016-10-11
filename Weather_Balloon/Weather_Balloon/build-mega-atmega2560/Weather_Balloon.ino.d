@@ -29,4 +29,5 @@ build-mega-atmega2560/Weather_Balloon.ino.o: Weather_Balloon.ino \
  /home/peanut/Arduino/libraries/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h \
  /home/peanut/Arduino/libraries/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h \
  /home/peanut/Arduino/libraries/SparkFun_LSM9DS1/src/LSM9DS1_Types.h \
- /home/peanut/Arduino/libraries/TinyGPSPlus-0.94b/TinyGPS++.h
+ /home/peanut/Arduino/libraries/TinyGPSPlus-0.94b/TinyGPS++.h \
+ /home/peanut/Arduino/libraries/Arduino-DS3231-master/DS3231.h

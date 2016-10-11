@@ -1,0 +1,13 @@
+5v
+3v
+gnd
+scl
+sda
+landing gnd
+sht31 reset
+tsl pwr
+uv pwr
+uv out
+
+
+UV_O +3.3 SCK +5 sda gnd tsl_pwr uvpwr sht_rst dsdata

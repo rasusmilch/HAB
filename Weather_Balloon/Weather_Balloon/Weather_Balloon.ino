@@ -8,7 +8,8 @@
  * Robert Susmilch
 */
 
-#define DEBUG 1
+bool DEBUG = false;
+bool DEBUG_MORE = false;
 
 #include <stdint.h>
 #include <Wire.h>
@@ -36,6 +37,10 @@
 #include "SparkFunMAX17043.h"
 #include "SparkFunLSM9DS1.h"
 #include "TinyGPS++.h"
+#include "DS3231.h"
+#include "PID_v1.h"
+
+
 
 // Definitions
 void beep_piezo(unsigned int, unsigned long, unsigned int);
@@ -57,7 +62,7 @@ uint32_t find_sdcard_tail(const uint32_t, const uint32_t);
 #endif
 
 // One Wire data is plugged into pin 2 on the Arduino
-#define ONE_WIRE_BUS 2
+#define ONE_WIRE_BUS 4
 
 // UV sensor is on analog A0
 #define UV_PIN  A0
@@ -66,22 +71,38 @@ uint32_t find_sdcard_tail(const uint32_t, const uint32_t);
 #define CO2_PIN A3
 
 // Piezo pin
-#define PIEZO_PIN   4
+#define PIEZO_PIN   A2
 
 
-/* Remote Heaters
- * Arduino board
- * Daughter board (heater control, level shifting, sensor power cutoff) with battery
- * Humidity
- * UV
- * IR, Visible
- * GPS (though draws 90 ma at 3.3v...)
- * 3x Possibly Geiger
- */
+// Remote Heaters
+// Arduino board
+// Daughter board (heater control, level shifting, sensor power cutoff) with battery
+// Humidity
+// UV
+// IR, Visible
+// GPS (though draws 90 ma at 3.3v...)
+// 3x Possibly Geiger
+//
 
 
-// Main compartment heater pin
-#define MAIN_HEATER_PIN 9
+// Resistive heater pin. Note that these are Arduino defined pin numbers.
+#define MAIN_HEATER_PIN     45
+#define GPS_HEATER_PIN      44
+#define UV_HEATER_PIN       11
+#define TSL2561_HEATER_PIN  46
+#define CUSTOM_HEATER_PIN   12
+#define SHT31_HEATER_PIN    5
+
+#define GEIGER_PWR_PIN      39
+
+// Resistive heater hystersis about setpoint. In whatever units temps
+// are stored and processed (Celsius in this case.)
+float hyster = 0.5;
+
+// Number of degrees Celsius over ambient temps to prevent condensation.
+float over_ambient = 2;
+
+#define SAMPLE_TIME 1000
 
 #ifdef USE_LCD
     // LCD stuff
@@ -91,13 +112,13 @@ uint32_t find_sdcard_tail(const uint32_t, const uint32_t);
     #define PAUSE    400
 #endif
 
-/*  DS18B20 resolution / conversion times
- *  9 =  93.75 ms
- * 10 = 187.5  ms
- * 11 = 375    ms
- * 12 = 750    ms
-*/
-#define DS18B20_RESOLUTION 10
+//  DS18B20 resolution / conversion times
+//  9 =  93.75 ms
+// 10 = 187.5  ms
+// 11 = 375    ms
+// 12 = 750    ms
+//
+#define DS18B20_RESOLUTION 11
 
 // Calculated correction factor for ADXL345
 #define ADXL345_CORRECTION  0.911265
@@ -129,11 +150,31 @@ typedef struct {
     } found;
 
     // Temperature sensors
-    float DS18B20_temp_c[1] = {0};
+    // Box internal temp
+    // External temp
+    // Main
+    // GPS
+    // TSL2561
+    // SHT31
+    // UV
+    // Custom daughter board (if any)
+    struct {
+        float main = -1000;
+        float internal = -1000;
+        float external = -1000;
+        float gps = -1000;
+        float tsl2561 = -1000;
+        float sht31 = -1000;
+        float uv = -1000;
+        float ms5607 = -1000;
+        float custom = -1000;
+        float clock = -1000;
+
+    } temp;
 
     struct {
         // Humidity sensor
-        float temp, humidity = 0;
+        float humidity = 0;
     } sht31;
 
     // UV light output
@@ -147,10 +188,8 @@ typedef struct {
 
     struct {
         // Pressure and temp of pressure sensor
-        double pressure, temp = 0;
+        double pressure = 0;
     } ms5607;
-
-
 
     struct {
         // Infrared and broadband light readings
@@ -217,11 +256,15 @@ typedef struct {
 
     } enabled;
 
-    uint16_t crc;
+    uint32_t unix_time;
+    //uint16_t crc;
 
 } data_struct;
 
-typedef struct {
+// Create global sensor structure
+data_struct dataLog;
+
+struct {
         // Geiger counts for X, Y, Z axis.
         // When time to log data, copy data from count to axis, zero count.
         // Protects from losing counts while writing log (very slow.)
@@ -229,15 +272,80 @@ typedef struct {
 
         // These are in use counters.
         volatile uint16_t x_count, y_count, z_count = 0;
-} geiger_temp;
+} geiger;
 
-// Create global sensor structure
-data_struct dataLog;
 
-geiger_temp geiger;
+// Eight DS18B20 sensor addresses, each address is 8 bytes long.
+// The search order for this library is deterministic (same sensors
+// will yield the same order.
+
+// Box internal temp
+// External temp
+// Main
+// GPS
+// TSL2561
+// SHT31
+// UV
+// Custom daughter board (if any)
+
+struct {
+    uint8_t INTERNAL_ADDR [8]   = {0x28, 0x70, 0x95, 0x22, 0x05, 0x00, 0x00, 0xA1};
+    uint8_t TSL2561_ADDR [8]    = {0x28, 0x57, 0x8C, 0x22, 0x05, 0x00, 0x00, 0x1D};
+    uint8_t UV_ADDR [8]         = {0x28, 0xFF, 0xB6, 0x50, 0x6A, 0x14, 0x03, 0xB9};
+    uint8_t GPS_ADDR [8]        = {0x28, 0xFF, 0x4D, 0x7F, 0x6F, 0x14, 0x04, 0x33};
+    uint8_t MAIN_ADDR [8]       = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
+    uint8_t EXTERNAL_ADDR [8]   = {0x28, 0xFF, 0x8C, 0x54, 0x6F, 0x14, 0x04, 0x38};
+    uint8_t CUSTOM_ADDR [8]     = {0x28, 0x1B, 0x46, 0x6E, 0x00, 0x00, 0x00, 0x4D};
+
+    bool main = false;
+    bool internal = false;
+    bool external = false;
+    bool gps = false;
+    bool tsl2561 = false;
+    bool uv = false;
+    bool custom = false;
+    uint8_t num_found = 0;
+
+} temp_sensors;
+
+struct {
+    // Holds various configuration and memory settings.
+    // User settings such as alarm thresholds, and weather the device has taken off are stored here.
+
+    // Location alarms. These will be user settable through EEPROM in the future.
+    // If under this pressure, we start the alarm for location retrieval. In Pascals
+    float pressure_alarm = 82553;
+
+    // If under this GPS altitude, we start the alarm for location retrieval. In meters.
+    float altitude_alarm = 1800;
+
+    // Did we take off from the ground already?
+    bool launched = false;
+
+    // Number of seconds above altitude threshold to "arm"
+    uint16_t altitude_time = 120;
+
+} configuration;
+
+// Are we in alarm?
+bool alarm = false;
+
+// Counter for above altitude to arm in-flight.
+uint16_t count_at_altitude = 0;
+
+// History of pressure and altitude to derive climbing or falling over time.
+float pressure_hist[30];
+float altitude_hist[30];
+
+// Circular array queue head and tail indexes.
+uint8_t pressure_hist_head = 0;
+uint8_t pressure_hist_tail = 0;
+uint8_t altitude_hist_head = 0;
+uint8_t altitude_hist_tail = 0;
+
 
 // Light sensor
-Adafruit_SI1145 uv = Adafruit_SI1145();
+//Adafruit_SI1145 uv = Adafruit_SI1145();
 
 // Create accelerometer object with arbitrary ID
 //Adafruit_ADXL345_Unified accel = Adafruit_ADXL345_Unified(12345);
@@ -264,6 +372,9 @@ MAX17043 fuel_gauge;
 LSM9DS1 DOF;
 
 Sd2Card sdcard;
+
+DS3231 clock;
+RTCDateTime date_time;
 
 typedef struct {
     // Number of 512 byte blocks reported by sdcard.
@@ -302,14 +413,44 @@ typedef struct {
 
 eeprom_struct eeprom;
 
-/* Create GPS object
- * REQUIRES CUSTOM LARGER BUFFER FOR INCOMING UART
-*/
+// Create GPS object
+// REQUIRES CUSTOM LARGER BUFFER FOR INCOMING UART
+
 TinyGPSPlus gps;
 
 // Grab vertical dilution of precision.
 TinyGPSCustom vdop(gps, "GPGSA", 17);
 
+struct {
+    double temp;
+    double pwm;
+    double setpoint;
+
+    // Set using the Ziegler-Nichols Method.
+    double Kp = 176.47;
+    double Ki = 7;
+    double Kd = 1.75;
+} gps_vPID, uv_vPID, tsl_vPID, sht_vPID, custom_vPID;
+
+struct {
+    double temp;
+    double pwm;
+    double setpoint;
+
+    // Set using the Ziegler-Nichols Method.
+    double Kp = 352.94; //600;
+    double Ki = 30; //0;
+    double Kd = 9; //0;
+} main_vPID;
+
+//PID_Vars main_vPID, gps_vPID, uv_vPID, tsl_vPID, sht_vPID, custom_vPID;
+
+PID PID_main(&main_vPID.temp, &main_vPID.pwm, &main_vPID.setpoint, main_vPID.Kp, main_vPID.Ki, main_vPID.Kd, DIRECT);
+PID PID_gps(&gps_vPID.temp, &gps_vPID.pwm, &gps_vPID.setpoint, gps_vPID.Kp, gps_vPID.Ki, gps_vPID.Kd, DIRECT);
+PID PID_uv(&uv_vPID.temp, &uv_vPID.pwm, &uv_vPID.setpoint, uv_vPID.Kp, uv_vPID.Ki, uv_vPID.Kd, DIRECT);
+PID PID_tsl(&tsl_vPID.temp, &tsl_vPID.pwm, &tsl_vPID.setpoint, tsl_vPID.Kp, tsl_vPID.Ki, tsl_vPID.Kd, DIRECT);
+PID PID_sht(&sht_vPID.temp, &sht_vPID.pwm, &sht_vPID.setpoint, sht_vPID.Kp, sht_vPID.Ki, sht_vPID.Kd, DIRECT);
+PID PID_custom(&custom_vPID.temp, &custom_vPID.pwm, &custom_vPID.setpoint, custom_vPID.Kp, custom_vPID.Ki, custom_vPID.Kd, DIRECT);
 
 // GPS start and stop sequences to speak binary protocol to module
 #define GPS_SBYTE_1  0xA0
@@ -334,7 +475,6 @@ TinyGPSCustom vdop(gps, "GPGSA", 17);
     // Create LCD
     LiquidCrystal_I2C	lcd(I2C_ADDR,En_pin,Rw_pin,Rs_pin,D4_pin,D5_pin,D6_pin,D7_pin);
 #endif
-
 
 
 
@@ -373,10 +513,11 @@ int16_t sd_calc_crc(const uint8_t* src, const uint8_t block_size) {
     Configures the gain and integration time for the TSL2561
 */
 /**************************************************************************/
+
 void configure_TSL2561(void)
 {
    if(!tsl.begin()) {
-        /* There was a problem detecting the ADXL345 ... check your connections */
+        // There was a problem detecting the ADXL345 ... check your connections
         Serial.print(F("Ooops, no TSL2561 detected ... Check your wiring or I2C ADDR!"));
 
     } else {
@@ -384,34 +525,28 @@ void configure_TSL2561(void)
 
         dataLog.enabled.TSL2561 = true;
 
-        /* Setup the sensor gain and integration time */
-        /* You can also manually set the gain or enable auto-gain support */
-        // tsl.setGain(TSL2561_GAIN_1X);      /* No gain ... use in bright light to avoid sensor saturation */
-        // tsl.setGain(TSL2561_GAIN_16X);     /* 16x gain ... use in low light to boost sensitivity */
-        tsl.enableAutoRange(true);            /* Auto-gain ... switches automatically between 1x and 16x */
+        // Setup the sensor gain and integration time
+        // You can also manually set the gain or enable auto-gain support
+        // tsl.setGain(TSL2561_GAIN_1X);      // No gain ... use in bright light to avoid sensor saturation
+        // tsl.setGain(TSL2561_GAIN_16X);     // 16x gain ... use in low light to boost sensitivity
+        tsl.enableAutoRange(true);            // Auto-gain ... switches automatically between 1x and 16x
 
-        /* Changing the integration time gives you better sensor resolution (402ms = 16-bit data) */
-        tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_13MS);      /* fast but low resolution */
-        // tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_101MS);  /* medium resolution and speed   */
-        // tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_402MS);  /* 16-bit data but slowest conversions */
+        // Changing the integration time gives you better sensor resolution (402ms = 16-bit data)
+        tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_13MS);      // fast but low resolution
+        // tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_101MS);  // medium resolution and speed
+        // tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_402MS);  // 16-bit data but slowest conversions
 
     }
 
-
-  /* Update these values depending on what you've set above! */
-  /*Serial.println("------------------------------------");
-  Serial.print  ("Gain:         "); Serial.println("Auto");
-  Serial.print  ("Timing:       "); Serial.println("13 ms");
-  Serial.println("------------------------------------");*/
 }
 
 ISR(PCINT1_vect) {
-    /* Pin change interrupt for Geiger counters.
-     * No falling or rising edge detection on these pins so we
-     * need to track previous pin states.
-     * When a pin has changed value we update the appropriate counter.
-     * Geiger counter outputs a low pulse of 150 microseconds on particle detection.
-     */
+    //Pin change interrupt for Geiger counters.
+     //No falling or rising edge detection on these pins so we
+     // need to track previous pin states.
+     // When a pin has changed value we update the appropriate counter.
+     // Geiger counter outputs a low pulse of 150 microseconds on particle detection.
+
 
     // Previous pin value for port. Static to preserve between calls.
     static uint8_t previous_pins_j = 0;
@@ -423,12 +558,12 @@ ISR(PCINT1_vect) {
     // a falling edge.
     if ((current_state_j & (1<<PJ1)) == 0 && (previous_pins_j & (1<<PJ1)) > 0) {
       // Trigger count
-      geiger.x_count++;
+      geiger.y_count++;
     }
 
     if ((current_state_j & (1<<PJ0)) == 0 && (previous_pins_j & (1<<PJ0)) > 0) {
       // Trigger count
-      geiger.y_count++;
+      geiger.x_count++;
     }
 
     // Store for later.
@@ -436,12 +571,12 @@ ISR(PCINT1_vect) {
 }
 
 ISR(PCINT2_vect) {
-    /* Pin change interrupt for Geiger counters.
-     * No falling or rising edge detection on these pins so we
-     * need to track previous pin states.
-     * When a pin has changed value we update the appropriate counter.
-     * Geiger counter outputs a low pulse of 150 microseconds on particle detection.
-     */
+    // Pin change interrupt for Geiger counters.
+    //No falling or rising edge detection on these pins so we
+    //need to track previous pin states.
+    //When a pin has changed value we update the appropriate counter.
+    //Geiger counter outputs a low pulse of 150 microseconds on particle detection.
+    //
 
     // Previous pin value for port. Static to preserve between calls.
     static uint8_t previous_pins_k = 0;
@@ -500,14 +635,107 @@ void configure_geiger() {
 
 }
 
+bool compare_buffers(uint8_t *first, uint8_t *second, uint16_t bytes) {
+    // Compare two buffers for equality.
+
+    // Return the default if we didn't short circuit on mismatch.
+
+    for (uint16_t i = 0; i < bytes; i++) {
+        if (first[i] != second[i]) {
+            if (DEBUG_MORE == true) {
+                Serial.print(F("Buffer mismatch at index: "));
+                Serial.print(i);
+                Serial.print(F(" with value 0x"));
+                Serial.print(first[i], HEX);
+                Serial.print(F(", 0x"));
+                Serial.println(second[i]);
+            }
+            return false;
+        }
+    }
+    return true;
+}
+
+
 void configure_ds18b20() {
     // Configure Dallas temp dataLog.
+
+    uint8_t DS18B20_addr [8] = {0};
+
     DS18B20.begin();
 
-    if (DS18B20.getDeviceCount() > 0) {
+    temp_sensors.num_found = DS18B20.getDeviceCount();
+
+    if (temp_sensors.num_found > 0) {
         dataLog.found.DS18B20 = true;
         dataLog.enabled.DS18B20 = true;
 
+        for (uint8_t i = 0; i < temp_sensors.num_found; i++) {
+            DS18B20.getAddress(DS18B20_addr, i);
+
+            if (DEBUG == true) {
+                Serial.print(F(" DS18B20 device found: "));
+                for (uint8_t j = 0; j < 8; j++) {
+                    Serial.print(DS18B20_addr[j], HEX);
+                    Serial.print(F(" "));
+                }
+
+                Serial.println();
+            }
+
+            // See if sensors match
+            if (compare_buffers(DS18B20_addr, temp_sensors.MAIN_ADDR, 8) == true) {
+                temp_sensors.main = true;
+
+                if (DEBUG == true) {
+                    Serial.println(F("Main Temp Sensor Found"));
+                }
+
+            } else if (compare_buffers(DS18B20_addr, temp_sensors.CUSTOM_ADDR, 8) == true) {
+                temp_sensors.custom = true;
+
+                if (DEBUG == true) {
+                    Serial.println(F("Custom Temp Sensor Found"));
+                }
+
+            } else if (compare_buffers(DS18B20_addr, temp_sensors.GPS_ADDR, 8) == true) {
+                temp_sensors.gps = true;
+
+                if (DEBUG == true) {
+                    Serial.println(F("GPS Temp Sensor Found"));
+                }
+
+            } else if (compare_buffers(DS18B20_addr, temp_sensors.TSL2561_ADDR, 8) == true) {
+                temp_sensors.tsl2561 = true;
+
+                if (DEBUG == true) {
+                    Serial.println(F("TSL2561 Temp Sensor Found"));
+                }
+
+            } else if (compare_buffers(DS18B20_addr, temp_sensors.UV_ADDR, 8) == true) {
+                temp_sensors.uv = true;
+
+                if (DEBUG == true) {
+                    Serial.println(F("UV Temp Sensor Found"));
+                }
+
+            } else if (compare_buffers(DS18B20_addr, temp_sensors.INTERNAL_ADDR, 8) == true) {
+                temp_sensors.internal = true;
+
+                if (DEBUG == true) {
+                    Serial.println(F("Internal Temp Sensor Found"));
+                }
+
+            } else if (compare_buffers(DS18B20_addr, temp_sensors.EXTERNAL_ADDR, 8) == true) {
+                temp_sensors.external = true;
+
+                if (DEBUG == true) {
+                    Serial.println(F("External Temp Sensor Found"));
+                }
+
+            }
+
+        }
         // Set to global desired resolution.
         DS18B20.setResolution(DS18B20_RESOLUTION);
 
@@ -516,6 +744,11 @@ void configure_ds18b20() {
 
         // Send the command to get temperatures so that the conversion complete flag
         // can be used in the main loop
+
+        if (DEBUG == true) {
+            Serial.println(F("Requesting DS18B20 all temps..."));
+        }
+
         DS18B20.requestTemperatures();
     }
 }
@@ -578,7 +811,7 @@ void configure_sht31() {
         // Enable the heater, its cold up there.
         // Sensor performs best in 5-60 C temps.
         // However, that changes the relative humidity, there is no compensation.
-        sht31.heater(true);
+        //sht31.heater(true);
     }
 }
 
@@ -587,7 +820,7 @@ void print_found() {
     Serial.println(F("\nSensors found"));
     Serial.println(F("-------------"));
     Serial.print(F("DS18B20: "));
-    Serial.println(dataLog.found.DS18B20);
+    Serial.println(temp_sensors.num_found);
     Serial.print(F(" MS5607: "));
     Serial.println(dataLog.found.MS5607);
     Serial.print(F("LSM9DS1: "));
@@ -622,15 +855,84 @@ void configure_sdcard() {
 
 }
 
+void configure_PID() {
 
-void setup()
-{
-    pinMode(PIEZO_PIN, OUTPUT);
+    Serial.println(F("Configuring PID..."));
+    //
+    PID_main.SetMode(MANUAL);
+    PID_gps.SetMode(MANUAL);
+    PID_tsl.SetMode(MANUAL);
+    PID_sht.SetMode(MANUAL);
+    PID_custom.SetMode(MANUAL);
+    PID_uv.SetMode(MANUAL);
+
+    PID_main.SetSampleTime(SAMPLE_TIME);
+    PID_gps.SetSampleTime(SAMPLE_TIME);
+    PID_tsl.SetSampleTime(SAMPLE_TIME);
+    PID_sht.SetSampleTime(SAMPLE_TIME);
+    PID_custom.SetSampleTime(SAMPLE_TIME);
+    PID_uv.SetSampleTime(SAMPLE_TIME);
+}
+
+void setup() {
+
+
     pinMode(MAIN_HEATER_PIN, OUTPUT);
-    beep_piezo(1000, 1000, PIEZO_PIN);
+    pinMode(UV_HEATER_PIN, OUTPUT);
+    pinMode(TSL2561_HEATER_PIN, OUTPUT);
+    pinMode(SHT31_HEATER_PIN, OUTPUT);
+    pinMode(GEIGER_PWR_PIN, OUTPUT);
+    pinMode(GPS_HEATER_PIN, OUTPUT);
+
+    configure_PID();
+
+    // LEDs
+    pinMode(22, OUTPUT);
+    digitalWrite(22,LOW);
+        pinMode(23, OUTPUT);
+    digitalWrite(23,LOW);
+        pinMode(24, OUTPUT);
+    digitalWrite(24,LOW);
+
+    digitalWrite(GEIGER_PWR_PIN, HIGH);
 
     Serial.begin(115200);
-    Serial.println(F("Restarting HAB Controller"));
+    Serial.println(F("\n\rRestarting HAB Controller"));
+
+    clock.begin();
+
+  // MS5607, SHT31, TSL2561 as output
+    DDRJ |= (1 << PJ6) | (1 << PJ3) | (1 << PJ5);
+    // Turn on MS5607, TSL2561
+    PORTJ |= (1 << PJ6) | (1 << PJ5);
+
+    // SHT31 reset is inverse of power control. Shorting to ground resets sensor
+    // but holds I2C hostage.
+    PORTJ &= ~(1 << PJ3);
+
+    // PIEZO POWER
+    DDRJ |= (1 << PJ7);
+    PORTJ |= (1 << PJ7);
+  // 9DOF
+    DDRA |= (1 << PA7);
+    PORTA |= (1 << PA7);
+
+  // 9DOF
+    DDRG |= (1 << PG1);
+    PORTG|= (1 << PG1);
+
+  // GPS
+    DDRL |= (1 << PL7) ;
+    PORTL |= (1 << PL7);
+
+    // DS18B20 Power
+    DDRE |= (1 << PE2);
+    PORTE |= (1 << PE2);
+
+    pinMode(PIEZO_PIN, OUTPUT);
+    beep_piezo(1000, 1000, PIEZO_PIN);
+
+
 
     Serial.print(F("Hardware Serial buffer size: "));
     Serial.println(SERIAL_RX_BUFFER_SIZE);
@@ -675,17 +977,31 @@ void setup()
     Serial.println(F("Quick-starting fuel gauge..."));
     fuel_gauge.quickStart();
 
-    #ifdef DEBUG
+    if (DEBUG == true) {
         print_found();
-    #endif // DEBUG
+    }
 
     // First analog reading can be inaccurate due to ADC capacitor needing to be primed, so start it up.
     analogRead(UV_PIN);
 
     // FOR TESTING BATTERY RUNTIME ONLY.
-    analogWrite(MAIN_HEATER_PIN, 127);
+    /*
+    analogWrite(MAIN_HEATER_PIN, 150);
+    analogWrite(TSL2561_HEATER_PIN, 150);
+    analogWrite(UV_HEATER_PIN, 150);
+    analogWrite(SHT31_HEATER_PIN, 150);
+    analogWrite(GPS_HEATER_PIN, 150);
+    */
 
 
+}
+
+void flash_landing() {
+    // Flash location landing lights for 100 ms.
+    DDRF |= (1 << PF1);
+    PORTF |= (1 << PF1);
+    delay(10);
+    PORTF &= ~(1 << PF1);
 
 }
 
@@ -716,9 +1032,9 @@ void beep_piezo(unsigned int freq, unsigned long millisecs, unsigned int pin) {
 
 
 void read_GPS() {
-    /* TODO: Add check if time chip has been set from GPS values.
-     * Better accuracy from reliable GPS settings.
-     */
+    // TODO: Add check if time chip has been set from GPS values.
+     // Better accuracy from reliable GPS settings.
+     //
     //uint8_t available = Serial1.available();
     char read_char;
     //Serial.print(available);
@@ -744,16 +1060,31 @@ void read_GPS() {
         dataLog.gps.altitude = 0;
     }
 
-    if (gps.date.isValid()) {
+    if (gps.date.isValid() && gps.date.age() < 60000L) {
         dataLog.gps.date = gps.date.value();
     } else {
         dataLog.gps.date = 0;
     }
 
-    if (gps.time.isValid()) {
+    if (DEBUG == true) {
+        Serial.print(F("Date age: "));
+        Serial.print(gps.date.age());
+    }
+
+    if (gps.time.isValid() && gps.time.age() < 5000L) {
         dataLog.gps.time = gps.time.value();
+
+        if (date_time.year == 2000) {
+            clock.setDateTime(gps.date.year(), gps.date.month(), gps.date.day(), gps.time.hour(), gps.time.minute(), gps.time.second());
+        }
+
     } else {
         dataLog.gps.time = 0;
+    }
+
+    if (DEBUG == true) {
+        Serial.print(F(" time: "));
+        Serial.println(gps.time.age());
     }
 
     if (gps.satellites.isValid()) {
@@ -831,6 +1162,16 @@ void readSensors() {
 
     uint16_t ir, broadband = 0;
 
+    // Get the time from the DS3231 RTC
+    date_time = clock.getDateTime();
+
+    dataLog.unix_time = date_time.unixtime;
+
+    // The temperature registers are updated after every 64-second conversion.
+    // If you want force temperature conversion use forceConversion()
+    clock.forceConversion();
+    dataLog.temp.main = clock.readTemperature();
+
     read_GPS();
 
     // To read from the accelerometer, you must first call the
@@ -861,29 +1202,93 @@ void readSensors() {
     dataLog.gyro.z = DOF.calcGyro(DOF.gz);
 
     if (dataLog.found.SHT31 == true) {
-        dataLog.sht31.temp = sht31.readTemperature();
+        dataLog.temp.sht31 = sht31.readTemperature();
         dataLog.sht31.humidity = sht31.readHumidity();
+    } else {
+        dataLog.temp.sht31 = -1000;
+        dataLog.sht31.humidity = -1000;
     }
 
 
     if (dataLog.found.MS5607 == true && ms5607.Read_CRC4() == ms5607.Calc_CRC4()) {
         dataLog.ms5607.pressure = ms5607.GetPres();
-        dataLog.ms5607.temp = ms5607.GetTemp();
+        dataLog.temp.ms5607 = ms5607.GetTemp();
 
         // Read the altitude sensor values into object for next round?
         ms5607.Readout();
 
     } else {
         dataLog.ms5607.pressure = 0;
-        dataLog.ms5607.temp = 1000;
+        dataLog.temp.ms5607 = -1000;
     }
 
     // Check if temp is available
-    if (dataLog.found.DS18B20 == true && DS18B20.isConversionAvailable(0)) {
-        dataLog.DS18B20_temp_c[0] = DS18B20.getTempCByIndex(0);
-        DS18B20.requestTemperaturesByIndex(0); // Send the command to get temperatures
-    } else {
-        dataLog.DS18B20_temp_c[0] = 1000;
+    if (dataLog.found.DS18B20 == true) {
+        /*
+        if (temp_sensors.main == true && DS18B20.isConversionAvailable(temp_sensors.MAIN_ADDR)) {
+            dataLog.temp.main = DS18B20.getTempC(temp_sensors.MAIN_ADDR);
+            if (DEBUG_MORE == true) {
+                Serial.print(F("Main: "));
+                Serial.println(dataLog.temp.main);
+            }
+        } else {
+            dataLog.temp.main = -1000;
+        }
+        */
+
+        if (temp_sensors.internal == true && DS18B20.isConversionAvailable(temp_sensors.INTERNAL_ADDR)) {
+            dataLog.temp.internal = DS18B20.getTempC(temp_sensors.INTERNAL_ADDR);
+            //DS18B20.requestTemperaturesByAddress(temp_sensors.INTERNAL_ADDR);
+            if (DEBUG_MORE == true) {
+                Serial.print(F("Internal: "));
+                Serial.println(dataLog.temp.internal);
+            }
+        } else {
+            dataLog.temp.internal = -1000;
+        }
+
+        if (temp_sensors.external == true && DS18B20.isConversionAvailable(temp_sensors.EXTERNAL_ADDR)) {
+            dataLog.temp.external = DS18B20.getTempC(temp_sensors.EXTERNAL_ADDR);
+            //DS18B20.requestTemperaturesByAddress(temp_sensors.EXTERNAL_ADDR);
+            if (DEBUG_MORE == true) {
+                Serial.print(F("External: "));
+                Serial.println(dataLog.temp.external);
+            }
+        } else {
+            dataLog.temp.external = -1000;
+        }
+
+        if (temp_sensors.gps == true && DS18B20.isConversionAvailable(temp_sensors.GPS_ADDR)) {
+            dataLog.temp.gps = DS18B20.getTempC(temp_sensors.GPS_ADDR);
+            //DS18B20.requestTemperaturesByAddress(temp_sensors.GPS_ADDR);
+        } else {
+            dataLog.temp.gps = -1000;
+        }
+
+        if (temp_sensors.tsl2561 == true && DS18B20.isConversionAvailable(temp_sensors.TSL2561_ADDR)) {
+            dataLog.temp.tsl2561 = DS18B20.getTempC(temp_sensors.TSL2561_ADDR);
+            //DS18B20.requestTemperaturesByAddress(temp_sensors.TSL2561_ADDR);
+        } else {
+            dataLog.temp.tsl2561 = -1000;
+        }
+
+        if (temp_sensors.uv == true && DS18B20.isConversionAvailable(temp_sensors.UV_ADDR)) {
+            dataLog.temp.uv = DS18B20.getTempC(temp_sensors.UV_ADDR);
+            //DS18B20.requestTemperaturesByAddress(temp_sensors.UV_ADDR);
+        } else {
+            dataLog.temp.uv = -1000;
+        }
+
+        if (temp_sensors.custom == true && DS18B20.isConversionAvailable(temp_sensors.CUSTOM_ADDR)) {
+            dataLog.temp.custom = DS18B20.getTempC(temp_sensors.CUSTOM_ADDR);
+            //DS18B20.requestTemperaturesByAddress(temp_sensors.CUSTOM_ADDR);
+        } else {
+            dataLog.temp.custom = -1000;
+        }
+
+        // Send the command to get temperatures for next time.
+        DS18B20.requestTemperatures();
+
     }
 
     dataLog.battery.voltage = fuel_gauge.getVoltage();
@@ -945,7 +1350,7 @@ void configure_GPS_NMEA() {
         Serial1.write(payload, 9);
         Serial1.write(end_message, 3);
 
-        /*
+
         Serial.print("Start: ");
 
         for (uint8_t i = 0; i < 4; i++) {
@@ -969,7 +1374,7 @@ void configure_GPS_NMEA() {
             Serial.print(F(" "));
         }
         Serial.println();
-        */
+
     }
 }
 
@@ -1017,14 +1422,228 @@ void check_battery() {
 }
 
 void heater_control() {
+    // Define the setpoint for whatever the external temperature is,
+    // plus some for dew point.
+    //float setpoint = 40;
+
+    float setpoint = -1000;
+
+    if (dataLog.temp.external != -1000) {
+        setpoint = dataLog.temp.external + 2;
+
+        // Check for minimum operating temps for electronic components.
+        if (setpoint < -40 + over_ambient) {
+            setpoint = -40 + over_ambient;
+        }
+    }
+
+
+    if (DEBUG == true) {
+        Serial.print(F("Temp setpoint: "));
+        Serial.print(setpoint * 1.8 + 32);
+        Serial.print(F("F Hystersis: "));
+        Serial.print(hyster * 1.8);
+        Serial.println(F("F"));
+    }
 
     if (Heat_Enable == false) {
-        analogWrite(MAIN_HEATER_PIN, 0);
+        // Turn off heaters
+        PID_main.SetMode(MANUAL);
+        PID_gps.SetMode(MANUAL);
+        PID_tsl.SetMode(MANUAL);
+        PID_sht.SetMode(MANUAL);
+        PID_custom.SetMode(MANUAL);
+        PID_uv.SetMode(MANUAL);
+
+        digitalWrite(MAIN_HEATER_PIN, LOW);
+        digitalWrite(CUSTOM_HEATER_PIN, LOW);
+        digitalWrite(GPS_HEATER_PIN, LOW);
+        digitalWrite(TSL2561_HEATER_PIN, LOW);
+        digitalWrite(UV_HEATER_PIN, LOW);
+        digitalWrite(SHT31_HEATER_PIN, LOW);
+
+
+
+    } else {
+        PID_main.SetMode(AUTOMATIC);
+        PID_gps.SetMode(AUTOMATIC);
+        PID_tsl.SetMode(AUTOMATIC);
+        PID_sht.SetMode(AUTOMATIC);
+        PID_custom.SetMode(AUTOMATIC);
+        PID_uv.SetMode(AUTOMATIC);
+        // Check setpoints
+
+        // Check if sensor was found, and valid reading.
+
+        if (temp_sensors.gps == true && dataLog.temp.gps != -1000) {
+            // Found. Update setpoint
+            gps_vPID.setpoint = setpoint;
+            // Save temp to PID
+            gps_vPID.temp = dataLog.temp.gps;
+            // Compute PID
+            PID_gps.Compute();
+            // Set output.
+            analogWrite(GPS_HEATER_PIN, gps_vPID.pwm);
+        } else {
+            // No sensor found, or faulty reading.
+            PID_gps.SetMode(MANUAL);
+            // Turn off heater.
+            analogWrite(GPS_HEATER_PIN, 0);
+        }
+
+
+         // Check if sensor was found, and valid reading.
+        if (temp_sensors.uv == true && dataLog.temp.uv != -1000) {
+            // Found. Update setpoint
+            uv_vPID.setpoint = setpoint;
+            // Save temp to PID
+            uv_vPID.temp = dataLog.temp.uv;
+            // Compute PID
+            PID_uv.Compute();
+            // Set output.
+            analogWrite(UV_HEATER_PIN, uv_vPID.pwm);
+        } else {
+            // No sensor found, or faulty reading.
+            PID_uv.SetMode(MANUAL);
+            // Turn off heater.
+            analogWrite(UV_HEATER_PIN, 0);
+        }
+
+        // Check if sensor was found, and valid reading.
+        if (temp_sensors.tsl2561 == true && dataLog.temp.tsl2561 != -1000) {
+            // Found. Update setpoint
+            tsl_vPID.setpoint = setpoint;
+            // Save temp to PID
+            tsl_vPID.temp = dataLog.temp.tsl2561;
+            // Compute PID
+            PID_tsl.Compute();
+            // Set output.
+            analogWrite(TSL2561_HEATER_PIN, tsl_vPID.pwm);
+        } else {
+            // No sensor found, or faulty reading.
+            PID_tsl.SetMode(MANUAL);
+            // Turn off heater.
+            analogWrite(TSL2561_HEATER_PIN, 0);
+        }
+
+        // Check if sensor was found, and valid reading.
+        if (dataLog.temp.main != -1000) {
+            // Found. Update setpoint
+            main_vPID.setpoint = setpoint;
+            // Save temp to PID
+            main_vPID.temp = dataLog.temp.main;
+            // Compute PID
+            PID_main.Compute();
+            // Set output.
+            analogWrite(MAIN_HEATER_PIN, main_vPID.pwm);
+        } else {
+            // No sensor found, or faulty reading.
+            PID_main.SetMode(MANUAL);
+            // Turn off heater.
+            analogWrite(MAIN_HEATER_PIN, 0);
+        }
+
+        // Check if sensor was found, and valid reading.
+        if (temp_sensors.custom == true && dataLog.temp.custom != -1000) {
+            // Found. Update setpoint
+            custom_vPID.setpoint = setpoint;
+            // Save temp to PID
+            custom_vPID.temp = dataLog.temp.custom;
+            // Compute PID
+            PID_custom.Compute();
+            // Set output.
+            analogWrite(CUSTOM_HEATER_PIN, custom_vPID.pwm);
+        } else {
+            // No sensor found, or faulty reading.
+            PID_custom.SetMode(MANUAL);
+            // Turn off heater.
+            analogWrite(CUSTOM_HEATER_PIN, 0);
+        }
+
+        // Check if sensor was found, and valid reading.
+        if (dataLog.found.SHT31 == true && dataLog.temp.sht31 != -1000) {
+            // Found. Update setpoint
+            sht_vPID.setpoint = setpoint;
+            // Save temp to PID
+            sht_vPID.temp = dataLog.temp.sht31;
+            // Compute PID
+            PID_sht.Compute();
+            // Set output.
+            analogWrite(SHT31_HEATER_PIN, sht_vPID.pwm);
+        } else {
+            // No sensor found, or faulty reading.
+            PID_sht.SetMode(MANUAL);
+            // Turn off heater.
+            analogWrite(SHT31_HEATER_PIN, 0);
+        }
+
+        /*
+
+        if (dataLog.temp.custom < (setpoint - hyster) && dataLog.temp.custom != -1000) {
+            analogWrite(CUSTOM_HEATER_PIN, dataLog.heater_max);
+        } else if (dataLog.temp.custom > (setpoint + hyster)) {
+            digitalWrite(CUSTOM_HEATER_PIN, LOW);
+        }
+
+        if (dataLog.temp.main < (setpoint - hyster) && dataLog.temp.main != -1000) {
+            digitalWrite(MAIN_HEATER_PIN, HIGH);
+        } else if (dataLog.temp.main > (setpoint + hyster)) {
+            digitalWrite(MAIN_HEATER_PIN, LOW);
+        }
+
+        if (dataLog.temp.uv < (setpoint - hyster) && dataLog.temp.uv != -1000) {
+            digitalWrite(UV_HEATER_PIN, HIGH);
+        } else if (dataLog.temp.uv > (setpoint + hyster)) {
+            digitalWrite(UV_HEATER_PIN, LOW);
+        }
+
+        if (dataLog.temp.tsl2561 < (setpoint - hyster) && dataLog.temp.tsl2561 != -1000) {
+            digitalWrite(TSL2561_HEATER_PIN, HIGH);
+        } else if (dataLog.temp.tsl2561 > (setpoint + hyster)) {
+            digitalWrite(TSL2561_HEATER_PIN, LOW);
+        }
+
+        if (dataLog.temp.gps < (setpoint - hyster) && dataLog.temp.gps != -1000) {
+            digitalWrite(GPS_HEATER_PIN, HIGH);
+        } else if (dataLog.temp.gps > (setpoint + hyster)) {
+            digitalWrite(GPS_HEATER_PIN, LOW);
+        }
+
+        if (dataLog.temp.sht31 < (setpoint - hyster) && dataLog.temp.sht31 != -1000) {
+            digitalWrite(SHT31_HEATER_PIN, HIGH);
+        } else if (dataLog.temp.sht31 > (setpoint + hyster)) {
+            digitalWrite(SHT31_HEATER_PIN, LOW);
+        }
+        */
+
+        if (DEBUG == true) {
+            Serial.print(F("PWM -- Main: "));
+            Serial.print(main_vPID.pwm);
+            Serial.print(F(" GPS: "));
+            Serial.print(gps_vPID.pwm);
+            Serial.print(F(" SHT: "));
+            Serial.print(sht_vPID.pwm);
+            Serial.print(F(" TSL: "));
+            Serial.print(tsl_vPID.pwm);
+            Serial.print(F(" UV: "));
+            Serial.print(uv_vPID.pwm);
+            Serial.print(F(" CUSTOM: "));
+            Serial.println(custom_vPID.pwm);
+        }
     }
+    Serial.println(dataLog.temp.main);
 }
 
 
 void print_sensors() {
+
+        Serial.print(date_time.year);   Serial.print("-");
+        Serial.print(date_time.month);  Serial.print("-");
+        Serial.print(date_time.day);    Serial.print(" ");
+        Serial.print(date_time.hour);   Serial.print(":");
+        Serial.print(date_time.minute); Serial.print(":");
+        Serial.print(date_time.second); Serial.print("  ");
+        Serial.println(date_time.unixtime);
 
         if (dataLog.battery.voltage != 0) {
             Serial.print(F("Voltage: "));
@@ -1046,8 +1665,8 @@ void print_sensors() {
             Serial.print(F("XX"));
         }
 
-        if (dataLog.sht31.temp != 1000) {  // check if 'is not a number'
-            Serial.print(dataLog.sht31.temp * 1.8 + 32);
+        if (dataLog.temp.sht31 != 1000) {  // check if 'is not a number'
+            Serial.print(dataLog.temp.sht31 * 1.8 + 32);
             Serial.println(F(" F "));
         } else {
             Serial.println(F("XX"));
@@ -1086,13 +1705,28 @@ void print_sensors() {
 
         Serial.print(dataLog.ms5607.pressure);
         Serial.print(F(" Pa "));
-        Serial.print((dataLog.ms5607.temp * 0.018) + 32);
+        Serial.print((dataLog.temp.ms5607 * 0.018) + 32);
         Serial.println(F(" F "));
 
 
-        Serial.print(F("DS18B20: "));
-        Serial.print(dataLog.DS18B20_temp_c[0] * 1.8 + 32);
-        Serial.println(F(" F "));
+        Serial.print(F("DS18B20\n\rMain: "));
+        Serial.print(dataLog.temp.main * 1.8 + 32);
+        Serial.print(F(", In: "));
+        Serial.print(dataLog.temp.internal * 1.8 + 32);
+        Serial.print(F(", Ex: "));
+        Serial.print(dataLog.temp.external * 1.8 + 32);
+        Serial.print(F(", GPS: "));
+        Serial.print(dataLog.temp.gps * 1.8 + 32);
+        Serial.print(F(", TSL: "));
+        Serial.print(dataLog.temp.tsl2561 * 1.8 + 32);
+        Serial.print(F(", UV: "));
+        Serial.print(dataLog.temp.uv * 1.8 + 32);
+        Serial.print(F(", CUST: "));
+        Serial.print(dataLog.temp.custom * 1.8 + 32);
+        Serial.println(F(", "));
+
+        Serial.print(F("Clock temp: "));
+        Serial.println(dataLog.temp.clock * 1.8 + 32);
 
         Serial.print(dataLog.gps.date);
         Serial.print(F(", "));
@@ -1121,11 +1755,11 @@ void print_sensors() {
         Serial.println(gps.failedChecksum());
 
         Serial.print(F("Geiger: "));
-        Serial.print(geiger.x_count);
+        Serial.print(dataLog.geiger.x);
         Serial.print(F("/"));
-        Serial.print(geiger.y_count);
+        Serial.print(dataLog.geiger.y);
         Serial.print(F("/"));
-        Serial.println(geiger.z_count);
+        Serial.println(dataLog.geiger.z);
 
         Serial.print(F("Up time: "));
         Serial.print(static_cast<unsigned long>(millis() / 1000L));
@@ -1144,15 +1778,15 @@ void reset_sdcard() {
 }
 
 uint8_t EEPROM_read(uint16_t uiAddress) {
-    /* Wait for completion of previous write */
+    // Wait for completion of previous write
     while(EECR & (1<<EEPE)) {
     }
 
-    /* Set up address register */
+    // Set up address register
     EEAR = uiAddress;
-    /* Start eeprom read by writing EERE */
+    // Start eeprom read by writing EERE
     EECR |= (1<<EERE);
-    /* Return data from Data Register */
+    // Return data from Data Register
     return EEDR;
 }
 
@@ -1167,19 +1801,26 @@ void EEPROM_update(uint16_t uiAddress, uint8_t ucData) {
         return;
     }
 
-    /* Wait for completion of previous write */
+    // Wait for completion of previous write
     while(EECR & (1<<EEPE)) {
     }
 
-    /* Set up address and Data Registers */
+    // Set up address and Data Registers
     EEAR = uiAddress;
     EEDR = ucData;
-    /* Write logical one to EEMPE */
+    // Write logical one to EEMPE
     EECR |= (1<<EEMPE);
-    /* Start eeprom write by setting EEPE */
+    // Start eeprom write by setting EEPE
     EECR |= (1<<EEPE);
 }
 
+void read_configuration() {
+    // Read the configuration data from EEPROM.
+
+    // How big is our buffer?
+    uint16_t buffer_size = sizeof(configuration);
+    uint8_t buffer[buffer_size];
+}
 
 uint32_t find_sdcard_tail(const uint32_t first = 1, const uint32_t last = sdcard_data.blocks) {
     // On powerup look for the tail of the SD card log.
@@ -1251,7 +1892,7 @@ uint32_t find_sdcard_tail(const uint32_t first = 1, const uint32_t last = sdcard
         // Middle value
         current_search = (right + left) / 2;
 
-        #ifdef DEBUG
+        if (DEBUG == true) {
 
             Serial.print(F("Left: "));
             Serial.print(left);
@@ -1260,7 +1901,7 @@ uint32_t find_sdcard_tail(const uint32_t first = 1, const uint32_t last = sdcard
             Serial.print(F(" Right: "));
             Serial.println(right);
 
-        #endif // DEBUG
+        }
 
         // Read a partial block for data
         sdcard.readData(current_search, 0, data_size, sdcard_data.buffer);
@@ -1274,12 +1915,12 @@ uint32_t find_sdcard_tail(const uint32_t first = 1, const uint32_t last = sdcard
                 left = current_search;
 
                 left_empty = false;
-                #ifdef DEBUG_MORE
+                if (DEBUG_MORE == true) {
                     sdcard_data.current_block++;
                     Serial.print(F("SDcard block "));
                     Serial.print(sdcard_data.current_block);
                     Serial.println(F(" NOT empty... skipping."));
-                #endif // DEBUG_MORE
+                }
                 break;
             }
         }
@@ -1304,14 +1945,14 @@ void test_logging() {
     // Get size of the data structure
     static uint16_t data_size = sizeof(dataLog);
 
-    Serial.print(F("\n\n\n*************************\nRead sensors from SDcard\n*************************\n\n\n"));
+    Serial.print(F("\n\n\n\r*************************\n\rRead sensors from SDcard\n\r*************************\n\n\n\r"));
     for (uint8_t i = 0; i < 510/data_size; i++) {
         memcpy(&dataLog, &sdcard_data.buffer[i * data_size], data_size);
 
         print_sensors();
     }
 
-    Serial.print(F("\n\n\n*************************\nEnd sensors from SDcard\n*************************\n\n\n"));
+    Serial.print(F("\n\n\n\r*************************\n\rEnd sensors from SDcard\n\r*************************\n\n\n\r"));
 
 }
 
@@ -1335,19 +1976,23 @@ void log_data() {
     if (sdcard_data.num_packed * data_size < 510 - data_size) {
         // Check if we can squeeze another data packet into the buffer.
 
-        // Make sure that optimizations don't fiddle with our ordering.
-        ATOMIC_BLOCK(ATOMIC_RESTORESTATE) {
+        // Make sure that registers are flushed and optimizations don't fiddle with our watchdog variable.
+        _MemoryBarrier();
+        cli();
 
-            // Copy over Geiger counts for logging
+        // Copy over Geiger counts for logging
 
-            dataLog.geiger.x = geiger.x_count;
-            dataLog.geiger.y = geiger.y_count;
-            dataLog.geiger.z = geiger.z_count;
+        dataLog.geiger.x = geiger.x_count;
+        dataLog.geiger.y = geiger.y_count;
+        dataLog.geiger.z = geiger.z_count;
 
-            // Zero interrupt counts
-            geiger.x_count = 0 = geiger.y_count = geiger.z_count = 0;
+        // Zero interrupt counts
+        geiger.x_count = 0;
+        geiger.y_count = 0;
+        geiger.z_count = 0;
 
-        }
+        sei();
+        _MemoryBarrier();
 
         // Copy the data log structure as a byte stream to the SD card buffer for later writing.
         memcpy(&sdcard_data.hold_buffer[sdcard_data.num_packed * data_size], &dataLog, data_size);
@@ -1355,12 +2000,12 @@ void log_data() {
         // We packed another
         sdcard_data.num_packed++;
 
-        #ifdef DEBUG
+        if (DEBUG == true) {
             Serial.print(F("Number of structures packed: "));
             Serial.println(sdcard_data.num_packed);
             Serial.print(F("SD card packing start address: "));
             Serial.println(sdcard_data.num_packed * data_size, DEC);
-        #endif // DEBUG
+        }
 
     }
 
@@ -1369,7 +2014,7 @@ void log_data() {
         // Otherwise we lose a log when we are called again.
         // We allow 2 bytes for the CRC16 at the end of the buffer.
 
-        #ifdef DEBUG
+        if (DEBUG == true) {
             Serial.print(F("\nSensor data size: "));
             Serial.println(data_size);
 
@@ -1377,7 +2022,7 @@ void log_data() {
             Serial.print(sdcard_data.current_block);
             Serial.print(F("/"));
             Serial.println(sdcard_data.blocks);
-        #endif // DEBUG
+        }
 
         //print_sensors();
 
@@ -1410,12 +2055,12 @@ void log_data() {
                     empty_block = false;
                     success = false;
 
-                    #ifdef DEBUG
+                    if (DEBUG == true) {
                         sdcard_data.current_block++;
                         Serial.print(F("SDcard block "));
                         Serial.print(sdcard_data.current_block);
                         Serial.println(F(" NOT empty... skipping."));
-                    #endif // DEBUG_MORE
+                    }
 
                     // Break for next block.
                     break;
@@ -1482,7 +2127,7 @@ void log_data() {
                     sdcard_data.crc_errors++;
 
                     // We have a problem, crc mismatch.
-                    Serial.println(F("\n************************\n*     CRC MISMATCH     *\n************************"));
+                    Serial.println(F("\n\r************************\n\r*     CRC MISMATCH     *\n\r************************"));
 
                     success = false;
 
@@ -1508,13 +2153,13 @@ void log_data() {
                     // reset the packing counter
                     sdcard_data.num_packed = 0;
 
-                    #ifdef DEBUG
+                    if (DEBUG_MORE == true) {
                         test_logging();
-                    #endif // DEBUG
+                    }
                 }
 
-                #ifdef DEBUG
-                    Serial.print(F("****************\nCRC BEFORE: "));
+                if (DEBUG == true) {
+                    Serial.print(F("****************\n\rCRC BEFORE: "));
                     Serial.println(crc_before, HEX);
 
                     Serial.print(F(" CRC AFTER: "));
@@ -1524,7 +2169,7 @@ void log_data() {
                     Serial.print(F(" Write Errors: "));
                     Serial.println(sdcard_data.write_errors);
                     Serial.println(F("****************\n"));
-                #endif // DEBUG
+                }
             }
         }
     }
@@ -1533,10 +2178,18 @@ void log_data() {
         //print_sensors();
 }
 
+void check_altitude() {
+    if (dataLog.ms5607.pressure > configuration.altitude_alarm) {
+
+    }
+}
 
 void loop() {
 
 
+    if (DEBUG == true) {
+        Serial.println(F("Reading sensors..."));
+    }
     // Read the sensors
     readSensors();
 
@@ -1546,14 +2199,17 @@ void loop() {
     // Control heat and power consumption
     heater_control();
 
-    #ifdef DEBUG
+    if (DEBUG == true) {
 
         print_sensors();
 
-    #endif // DEBUG
+    }
+    if (DEBUG == true) {
+        Serial.println(F("Logging data..."));
+    }
 
     log_data();
     //delay(1000);
-
+    flash_landing();
 
 }

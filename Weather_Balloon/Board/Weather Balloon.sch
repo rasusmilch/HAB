@@ -36,8 +36,8 @@ $Descr USLetter 11000 8500
 encoding utf-8
 Sheet 1 4
 Title "HAB Control Unit"
-Date "2016-09-26"
-Rev "v0.6"
+Date "2016-10-03"
+Rev "v1.4"
 Comp "Robert Susmilch"
 Comment1 ""
 Comment2 ""
@@ -605,7 +605,7 @@ U 1 1 57E9C671
 P 5650 5900
 F 0 "SW1" H 5650 5750 50  0000 C CNN
 F 1 "SILENCE" H 5650 5850 50  0000 C CNN
-F 2 "Buttons_Switches_ThroughHole:SW_PUSH-12mm" H 5650 6100 50  0001 C CNN
+F 2 "Buttons_Switches_ThroughHole:SW_PUSH_6mm" H 5650 6100 50  0001 C CNN
 F 3 "" H 5650 6100 50  0000 C CNN
 	1    5650 5900
 	1    0    0    -1  

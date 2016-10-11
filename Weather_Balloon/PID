@@ -1,0 +1,22 @@
+
+UV
+Ku = 300
+Pu = 14 cycles
+
+PI controller
+Kp = Ku/2.2 = 136.4
+Ki = Pu/1.2 = 11.6
+Kd = 0
+
+PID controller
+Kd = Ku/1.7 = 176.47
+Ki = Pu/2   = 7
+Kd = Pu/8   = 1.75
+
+Main
+Ku = 600
+Pu = 53
+
+Kd = 272.73
+Ki = 44.17
+Kd = 0
