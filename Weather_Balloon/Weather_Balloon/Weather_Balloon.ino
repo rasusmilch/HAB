@@ -8,8 +8,9 @@
  * Robert Susmilch
 */
 
-bool DEBUG = false;
+bool DEBUG = true;
 bool DEBUG_MORE = false;
+volatile uint16_t watchdog = 10;
 
 #include <stdint.h>
 #include <Wire.h>
@@ -18,6 +19,9 @@ bool DEBUG_MORE = false;
 #include <util/atomic.h>
 #include <avr/cpufunc.h>
 #include <avr/interrupt.h>
+#include <avr/sleep.h>
+#include <avr/power.h>
+#include <avr/wdt.h>
 
 #ifdef USE_LCD
     #include "LCD.h"
@@ -39,15 +43,17 @@ bool DEBUG_MORE = false;
 #include "TinyGPS++.h"
 #include "DS3231.h"
 #include "PID_v1.h"
+#include <EEPROM.h>
+#include "EEPROM_anything.h"
 
 
 
 // Definitions
-void beep_piezo(unsigned int, unsigned long, unsigned int);
+void beep_piezo(unsigned long, unsigned long, unsigned int);
 void configure_GPS_NMEA();
 void configure_GPS_WAAS();
 uint32_t find_sdcard_tail(const uint32_t, const uint32_t);
-
+void flash_landing(uint16_t);
 
 #ifdef USE_LCD
     // Pin numbers for LCD display *AT THE DISPLAY END* not for the Arduino.
@@ -61,7 +67,7 @@ uint32_t find_sdcard_tail(const uint32_t, const uint32_t);
     #define D7_pin  7
 #endif
 
-// One Wire data is plugged into pin 2 on the Arduino
+// One Wire data is plugged into pin 4 on the Arduino
 #define ONE_WIRE_BUS 4
 
 // UV sensor is on analog A0
@@ -73,6 +79,9 @@ uint32_t find_sdcard_tail(const uint32_t, const uint32_t);
 // Piezo pin
 #define PIEZO_PIN   A2
 
+#define GREEN_LED     22
+#define YELLOW_LED  23
+#define RED_LED   24
 
 // Remote Heaters
 // Arduino board
@@ -149,6 +158,8 @@ typedef struct {
 
     } found;
 
+    bool launched = false;
+    bool alarm = false;
     // Temperature sensors
     // Box internal temp
     // External temp
@@ -322,26 +333,30 @@ struct {
     // Did we take off from the ground already?
     bool launched = false;
 
+    // Are we in alarm?
+    bool alarm = false;
+
+    bool decent = false;
+
     // Number of seconds above altitude threshold to "arm"
     uint16_t altitude_time = 120;
 
-} configuration;
+} configuration, default_config;
 
-// Are we in alarm?
-bool alarm = false;
+
 
 // Counter for above altitude to arm in-flight.
 uint16_t count_at_altitude = 0;
 
 // History of pressure and altitude to derive climbing or falling over time.
-float pressure_hist[30];
-float altitude_hist[30];
+float pressure_hist[120];
+float altitude_hist[120];
 
 // Circular array queue head and tail indexes.
-uint8_t pressure_hist_head = 0;
-uint8_t pressure_hist_tail = 0;
-uint8_t altitude_hist_head = 0;
-uint8_t altitude_hist_tail = 0;
+int16_t pressure_hist_head = 0;
+int16_t pressure_hist_tail = -1;
+int16_t altitude_hist_head = 0;
+int16_t altitude_hist_tail = -1;
 
 
 // Light sensor
@@ -481,8 +496,10 @@ PID PID_custom(&custom_vPID.temp, &custom_vPID.pwm, &custom_vPID.setpoint, custo
 // Start with heat off.
 bool Heat_Enable = false;
 
+// Have we set the DS3231 RTC from GPS yet?
+bool set_clock = false;
 
-
+volatile bool reset_flag = false;
 
 template <typename T, size_t N>
 
@@ -532,8 +549,8 @@ void configure_TSL2561(void)
         tsl.enableAutoRange(true);            // Auto-gain ... switches automatically between 1x and 16x
 
         // Changing the integration time gives you better sensor resolution (402ms = 16-bit data)
-        tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_13MS);      // fast but low resolution
-        // tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_101MS);  // medium resolution and speed
+        //tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_13MS);      // fast but low resolution
+        tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_101MS);  // medium resolution and speed
         // tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_402MS);  // 16-bit data but slowest conversions
 
     }
@@ -593,6 +610,77 @@ ISR(PCINT2_vect) {
 
     // Store for later.
     previous_pins_k = current_state_k;
+}
+
+ISR(INT4_vect) {
+    // Pin change interrupt for Geiger counters.
+    //No falling or rising edge detection on these pins so we
+    //need to track previous pin states.
+    //When a pin has changed value we update the appropriate counter.
+    //Geiger counter outputs a low pulse of 150 microseconds on particle detection.
+    //
+
+    // Previous pin value for port. Static to preserve between calls.
+    static uint8_t previous_pins_e = 0;
+    static bool button = false;
+    static uint32_t button_time = 0;
+    static uint8_t led_status;
+
+    uint32_t current_time = millis();
+
+    // Grab current pin state quickly. Low pulse from Geiger is only 150 microseconds.
+    uint8_t current_state_e = PINE;
+
+    // If the current pin state is high, and previous it was low, we have
+    // a rising edge.
+    if ((current_state_e & (1<<PE4)) >= 1 && (previous_pins_e & (1<<PE4)) == 0) {
+        button = true;
+        button_time = current_time;
+        led_status = PINA & (1 << PA0) & (1 << PA1) & (1 << PA2);
+
+        PORTA &= ~(1 << PA0) & ~(1 << PA1) & ~(1 << PA2);
+    } else if ((current_state_e & (1 << PE4)) == 0 && ((previous_pins_e & (1 << PE4)) >= 1)) {
+        PORTA |= (1 << PA0) | (1 << PA1) | (1 << PA2);
+
+        if ((current_time - button_time) > 1000L && (current_time - button_time) < 5000L) {
+            reset_flag = true;
+            PORTA |= (1 << PA0) | (1 << PA1) | (1 << PA2);
+        } else {
+            reset_flag = false;
+            PORTA |= (1 << PA0) | (1 << PA1) | (1 << PA2);
+        }
+
+    } else {
+        PORTA |= (1 << PA0) | (1 << PA1) | (1 << PA2);
+    }
+
+    // Store for later.
+    previous_pins_e = current_state_e;
+}
+
+ISR(WDT_vect) {
+    // Run when the watchdog wakes from sleep.
+
+}
+
+void configure_button() {
+    pinMode(2, INPUT_PULLUP);
+
+    // Clear interrupts
+    cli();
+
+    EIMSK &= ~(1 << INT4);
+
+    EICRB &= ~(1 << ISC41);
+    EICRB |= (1 << ISC40);
+
+    EIMSK |= (1 << INT4);
+
+
+    // Set interrupts
+    sei();
+
+    // Now pin changes will call the ISR(PCINT0_vect) for button presses.
 }
 
 void configure_geiger() {
@@ -874,116 +962,409 @@ void configure_PID() {
     PID_uv.SetSampleTime(SAMPLE_TIME);
 }
 
+void piezo_power(bool power) {
+    if (power == true) {
+        // PIEZO POWER
+        DDRJ |= (1 << PJ7);
+        PORTJ |= (1 << PJ7);
+    } else {
+        // PIEZO POWER
+        DDRJ &= ~(1 << PJ7);
+        PORTJ &= ~(1 << PJ7);
+    }
+}
+
+void tsl2561_power(bool power) {
+    if (power == true) {
+        // TSL2561 as output
+        DDRJ |= (1 << PJ5);
+        // Turn on TSL2561
+        PORTJ |= (1 << PJ5);
+    } else {
+        //Tristate
+        DDRJ &= ~(1 << PJ5);
+        PORTJ &= ~(1 << PJ5);
+    }
+}
+
+void ms5607_power(bool power) {
+    if (power == true) {
+        // As output
+        DDRJ |= (1 << PJ6);
+        // Turn on
+        PORTJ |= (1 << PJ6);
+    } else {
+        //Tristate
+        DDRJ &= ~(1 << PJ6);
+        PORTJ &= ~(1 << PJ6);
+    }
+}
+
+void sht31_power(bool power) {
+    if (power == true) {
+        DDRJ |= (1 << PJ3);
+
+        // SHT31 reset is inverse of power control. Shorting to ground resets sensor
+        // but holds I2C hostage.
+        PORTJ &= ~(1 << PJ3);
+    } else {
+        // Tri state
+        DDRJ &= ~(1 << PJ3);
+        PORTJ &= ~(1 << PJ3);
+    }
+}
+
+void geiger_power(bool power) {
+
+    if (power == true) {
+        digitalWrite(GEIGER_PWR_PIN, HIGH);
+    } else {
+        // Tri state
+        pinMode(GEIGER_PWR_PIN, INPUT);
+    }
+}
+
+void sd_power(bool power) {
+    if (power == true) {
+        // SD Power
+        DDRG |= (1 << PG1);
+        PORTG |= (1 << PG1);
+    } else {
+        // Tristate
+        DDRG &= ~(1 << PG1);
+        PORTG &= ~(1 << PG1);
+    }
+}
+
+void gps_power(bool power) {
+    if (power == true) {
+        // GPS
+        DDRL |= (1 << PL7) ;
+        PORTL |= (1 << PL7);
+    } else {
+        // Tristate
+        DDRL &= ~(1 << PL7) ;
+        PORTL &= ~(1 << PL7);
+    }
+}
+
+void ds18b20_power(bool power) {
+    if (power == true) {
+        // DS18B20 Power
+        DDRE |= (1 << PE2);
+        PORTE |= (1 << PE2);
+    } else {
+        // Tri state
+        DDRE &= ~(1 << PE2);
+        PORTE &= ~(1 << PE2);
+    }
+}
+
+void dof_power(bool power) {
+    if (power == true) {
+        // 9DOF
+        DDRA |= (1 << PA7);
+        PORTA |= (1 << PA7);
+    } else {
+        // Tristate
+        DDRA &= ~(1 << PA7);
+        PORTA &= ~(1 << PA7);
+    }
+}
+
+void led_power(bool power) {
+    if (power == true) {
+        pinMode(RED_LED, OUTPUT);
+        pinMode(YELLOW_LED, OUTPUT);
+        pinMode(GREEN_LED, OUTPUT);
+        digitalWrite(RED_LED, HIGH);
+        digitalWrite(YELLOW_LED, HIGH);
+        digitalWrite(GREEN_LED, HIGH);
+    } else {
+        pinMode(RED_LED, INPUT);
+        pinMode(YELLOW_LED, INPUT);
+        pinMode(GREEN_LED, INPUT);
+    }
+}
+
+
+void power_sensors(bool power) {
+
+    geiger_power(power);
+    ms5607_power(power);
+    tsl2561_power(power);
+    piezo_power(power);
+    dof_power(power);
+    sht31_power(power);
+    sd_power(power);
+    gps_power(power);
+    ds18b20_power(power);
+    led_power(power);
+
+    if (power == true) {
+        pinMode(MAIN_HEATER_PIN, OUTPUT);
+        pinMode(UV_HEATER_PIN, OUTPUT);
+        pinMode(TSL2561_HEATER_PIN, OUTPUT);
+        pinMode(SHT31_HEATER_PIN, OUTPUT);
+        pinMode(GEIGER_PWR_PIN, OUTPUT);
+        pinMode(GPS_HEATER_PIN, OUTPUT);
+
+    } else {
+        pinMode(MAIN_HEATER_PIN, INPUT);
+        pinMode(UV_HEATER_PIN, INPUT);
+        pinMode(TSL2561_HEATER_PIN, INPUT);
+        pinMode(SHT31_HEATER_PIN, INPUT);
+        pinMode(GEIGER_PWR_PIN, INPUT);
+        pinMode(GPS_HEATER_PIN, INPUT);
+
+
+    }
+}
+
+
+
+void watchdog_sleep() {
+  // Setup the WDT for sleep waking
+  cli();
+
+  // Clear the reset flag.
+  MCUSR &= ~(1<<WDRF);
+
+  // In order to change WDE or the prescaler, we need to
+  // set WDCE (This will allow updates for 4 clock cycles).
+
+  WDTCSR |= (1<<WDCE) | (1<<WDE);
+
+  // set new watchdog timeout prescaler value
+  //WDTCSR = 1<<WDP0 | 1<<WDP3;                       // 8.0 seconds
+  //WDTCSR = (1 << WDP2) | (1 << WDP1);               // 1 Second
+  //WDTCSR = (1 << WDP2) | (1 << WDP1) | (1 << WDP0); // 2 seconds;
+  // Include the interrupt and then reset.
+  WDTCSR = (1 <<WDP3) | (1 << WDIE) | (1 << WDE);     // 4 seconds;
+
+  sei();
+}
+
+void watchdog_reset_only() {
+  // Setup the WDT for sleep waking
+  cli();
+
+  // Clear the reset flag.
+  MCUSR &= ~(1<<WDRF);
+
+  // In order to change WDE or the prescaler, we need to
+  // set WDCE (This will allow updates for 4 clock cycles).
+
+  WDTCSR |= (1<<WDCE) | (1<<WDE);
+
+  // set new watchdog timeout prescaler value
+  //WDTCSR = 1<<WDP0 | 1<<WDP3;                       // 8.0 seconds
+  //WDTCSR = (1 << WDP2) | (1 << WDP1);               // 1 Second
+  //WDTCSR = (1 << WDP2) | (1 << WDP1) | (1 << WDP0); // 2 seconds;
+  WDTCSR = (1 <<WDP3) | (1 << WDE);                   // 4 seconds;
+  // Enable the WD interrupt (note no reset).
+  //WDTCSR |= _BV(WDIE);
+
+  sei();
+}
+
+void disable_peripherals () {
+    // Here we've entered alarm mode, or assumed location mode.
+    // Disable all peripherals to save power.
+
+    power_adc_disable();
+    power_spi_disable();
+    power_twi_disable();
+    power_usart0_disable();
+    power_usart1_disable();
+    power_usart2_disable();
+    //power_usart3_disable();
+}
+
+void enter_sleep(void) {
+  // EDIT: could also use SLEEP_MODE_PWR_DOWN for lowest power consumption.
+  wdt_reset();
+  set_sleep_mode(SLEEP_MODE_PWR_DOWN);
+  sleep_enable();
+  //sleep_bod_disable();
+  sei();
+  // Now enter sleep mode.
+  sleep_mode();
+
+  // The program will continue from here after the WDT timeout
+  sleep_disable(); // First thing to do is disable sleep.
+
+  // Re-enable the peripherals.
+  //power_all_enable();
+}
+void location_alarm() {
+    disable_peripherals();
+    watchdog_sleep();
+
+    while(true) {
+        enter_sleep();
+        WDTCSR |= (1 << WDIE);
+
+        flash_landing(10);
+        piezo_power(true);
+        //Serial.begin(115200);
+        beep_piezo(1000L, 250L, PIEZO_PIN);
+        beep_piezo(2000L, 250L, PIEZO_PIN);
+        piezo_power(false);
+    }
+}
+
+void count_down_led() {
+    wdt_reset();
+    led_power(true);
+    digitalWrite(RED_LED, LOW);
+    digitalWrite(YELLOW_LED, LOW);
+    digitalWrite(GREEN_LED, LOW);
+    wdt_reset();
+    delay(3333);
+
+    digitalWrite(GREEN_LED, HIGH);
+    wdt_reset();
+    delay(3333);
+
+    digitalWrite(YELLOW_LED, HIGH);
+    wdt_reset();
+    delay(3333);
+    digitalWrite(RED_LED, HIGH);
+
+    wdt_reset();
+    led_power(false);
+}
+
 void setup() {
 
+    wdt_reset();
+    watchdog_reset_only();
 
-    pinMode(MAIN_HEATER_PIN, OUTPUT);
-    pinMode(UV_HEATER_PIN, OUTPUT);
-    pinMode(TSL2561_HEATER_PIN, OUTPUT);
-    pinMode(SHT31_HEATER_PIN, OUTPUT);
-    pinMode(GEIGER_PWR_PIN, OUTPUT);
-    pinMode(GPS_HEATER_PIN, OUTPUT);
+    configure_button();
 
-    configure_PID();
+    power_sensors(false);
 
-    // LEDs
-    pinMode(22, OUTPUT);
-    digitalWrite(22,LOW);
-        pinMode(23, OUTPUT);
-    digitalWrite(23,LOW);
-        pinMode(24, OUTPUT);
-    digitalWrite(24,LOW);
-
-    digitalWrite(GEIGER_PWR_PIN, HIGH);
-
+    EEPROM.get(0, configuration);
+/*
     Serial.begin(115200);
-    Serial.println(F("\n\rRestarting HAB Controller"));
 
-    clock.begin();
+    Serial.print(F("Launched: "));
+    Serial.print(configuration.launched);
+    Serial.print(F(" Alarm: "));
+    Serial.println(configuration.alarm);
+*/
+    count_down_led();
 
-  // MS5607, SHT31, TSL2561 as output
-    DDRJ |= (1 << PJ6) | (1 << PJ3) | (1 << PJ5);
-    // Turn on MS5607, TSL2561
-    PORTJ |= (1 << PJ6) | (1 << PJ5);
-
-    // SHT31 reset is inverse of power control. Shorting to ground resets sensor
-    // but holds I2C hostage.
-    PORTJ &= ~(1 << PJ3);
-
-    // PIEZO POWER
-    DDRJ |= (1 << PJ7);
-    PORTJ |= (1 << PJ7);
-  // 9DOF
-    DDRA |= (1 << PA7);
-    PORTA |= (1 << PA7);
-
-  // 9DOF
-    DDRG |= (1 << PG1);
-    PORTG|= (1 << PG1);
-
-  // GPS
-    DDRL |= (1 << PL7) ;
-    PORTL |= (1 << PL7);
-
-    // DS18B20 Power
-    DDRE |= (1 << PE2);
-    PORTE |= (1 << PE2);
-
-    pinMode(PIEZO_PIN, OUTPUT);
-    beep_piezo(1000, 1000, PIEZO_PIN);
-
-
-
-    Serial.print(F("Hardware Serial buffer size: "));
-    Serial.println(SERIAL_RX_BUFFER_SIZE);
-
-    Serial.println(F("Configuring GPS..."));
-    Serial1.begin(9600);
-
-    configure_GPS_NMEA();
-    configure_GPS_WAAS();
-
-    Serial.println(F("Configuring SDCard..."));
-    configure_sdcard();
-
-    Serial.println(F("Configuring Geigers..."));
-    configure_geiger();
-
-    // Start and setup DS18B20s.
-    Serial.println(F("Configuring DS18B20s..."));
-    configure_ds18b20();
-
-    // Pressure sensor
-    Serial.println(F("Configuring MS5607..."));
-    configure_ms5607();
-
-    // Configure lux sensor
-    Serial.println(F("Configuring TSL2561..."));
-    configure_TSL2561();
-
-    // Configure the accel, gyro and magnetometer sensor.
-    Serial.println(F("Configuring LSM9DS1..."));
-    configure_LSM9DS1();
-
-    // Humidity sensor
-    Serial.println(F("Configuring SHT31..."));
-    configure_sht31();
-
-    // Start the fuel gauge
-    Serial.println(F("Configuring fuel gauge..."));
-    fuel_gauge.begin();
-
-    // Restart for more accurate reading.
-    Serial.println(F("Quick-starting fuel gauge..."));
-    fuel_gauge.quickStart();
-
-    if (DEBUG == true) {
-        print_found();
+    if (reset_flag == true) {
+        wdt_reset();
+        EEPROM.put(0, default_config);
+        reset_flag = false;
+        flash_landing(10);
+        piezo_power(true);
+        beep_piezo(1000, 250, PIEZO_PIN);
+        delay(100);
+        flash_landing(10);
+        beep_piezo(2000, 250, PIEZO_PIN);
+        piezo_power(false);
     }
 
-    // First analog reading can be inaccurate due to ADC capacitor needing to be primed, so start it up.
-    analogRead(UV_PIN);
+    wdt_reset();
+    EEPROM.get(0, configuration);
+/*
+    Serial.begin(115200);
 
+    Serial.print(F("Launched: "));
+    Serial.print(configuration.launched);
+    Serial.print(F(" Alarm: "));
+    Serial.println(configuration.alarm);
+
+    delay(1000);
+    */
+    if (configuration.alarm == false) {
+        Heat_Enable = true;
+
+        configure_PID();
+
+        // LEDs
+        led_power(true);
+
+        //delay(1000);
+
+        //digitalWrite(RED_LED, HIGH);
+
+        // Sensor power and heater pin modes.
+        power_sensors(true);
+
+
+        Serial.begin(115200);
+        Serial.println(F("\n\rRestarting HAB Controller"));
+
+        clock.begin();
+
+        beep_piezo(1000, 250, PIEZO_PIN);
+
+
+
+        Serial.print(F("Hardware Serial buffer size: "));
+        Serial.println(SERIAL_RX_BUFFER_SIZE);
+
+        Serial.println(F("Configuring GPS..."));
+        Serial1.begin(9600);
+
+        configure_GPS_NMEA();
+        configure_GPS_WAAS();
+
+        Serial.println(F("Configuring SDCard..."));
+        configure_sdcard();
+
+        Serial.println(F("Configuring Geigers..."));
+        configure_geiger();
+
+        // Start and setup DS18B20s.
+        Serial.println(F("Configuring DS18B20s..."));
+        configure_ds18b20();
+
+        wdt_reset();
+        // Pressure sensor
+        Serial.println(F("Configuring MS5607..."));
+        configure_ms5607();
+
+        // Configure lux sensor
+        Serial.println(F("Configuring TSL2561..."));
+        configure_TSL2561();
+
+        // Configure the accel, gyro and magnetometer sensor.
+        Serial.println(F("Configuring LSM9DS1..."));
+        configure_LSM9DS1();
+
+        // Humidity sensor
+        Serial.println(F("Configuring SHT31..."));
+        configure_sht31();
+
+        // Start the fuel gauge
+        Serial.println(F("Configuring fuel gauge..."));
+        fuel_gauge.begin();
+
+        // Restart for more accurate reading.
+        Serial.println(F("Quick-starting fuel gauge..."));
+        fuel_gauge.quickStart();
+
+        wdt_reset();
+
+        if (DEBUG == true) {
+            print_found();
+        }
+
+        //Heat_Enable = true;
+
+        // First analog reading can be inaccurate due to ADC capacitor needing to be primed, so start it up.
+        analogRead(UV_PIN);
+    } else {
+        watchdog_sleep();
+        power_sensors(false);
+        location_alarm();
+    }
     // FOR TESTING BATTERY RUNTIME ONLY.
     /*
     analogWrite(MAIN_HEATER_PIN, 150);
@@ -993,33 +1374,36 @@ void setup() {
     analogWrite(GPS_HEATER_PIN, 150);
     */
 
-
+    if (watchdog == 10) {
+        watchdog = 20;
+    }
 }
 
-void flash_landing() {
-    // Flash location landing lights for 100 ms.
+void flash_landing(uint16_t time) {
+    // Flash location landing lights for time ms.
     DDRF |= (1 << PF1);
     PORTF |= (1 << PF1);
-    delay(10);
+    delay(time);
+    DDRF &= ~(1 << PF1);
     PORTF &= ~(1 << PF1);
 
 }
 
-void beep_piezo(unsigned int freq, unsigned long millisecs, unsigned int pin) {
+void beep_piezo(unsigned long freq, unsigned long millisecs, unsigned int pin) {
     // Buzzer harmonics seem to be around 2000 Hz for max volume. 3500-4000 also work.
     // How long to go high or low for frequency
     unsigned long squareWave_us = (1000000L / (2 * freq));
     // How many loops to beep for?
-    unsigned int duration_loops = (unsigned int)(freq * (1000L / millisecs));
-
+    unsigned long duration_loops = (unsigned long)(freq * millisecs / 1000L);
+/*
     Serial.print(F("Freq: "));
     Serial.print(freq);
     Serial.print(F(" Square: "));
     Serial.print(squareWave_us);
     Serial.print(F(" Duration: "));
     Serial.println(duration_loops);
-
-    for (unsigned long i{0}; i < duration_loops; i++) {
+*/
+    for (unsigned long i=0; i < duration_loops; i++) {
         digitalWrite(pin, HIGH);
         delayMicroseconds(squareWave_us);
         digitalWrite(pin, LOW);
@@ -1054,7 +1438,7 @@ void read_GPS() {
         dataLog.gps.lng = 0;
     }
 
-    if (gps.altitude.isValid()) {
+    if (gps.altitude.isValid() && gps.altitude.age() < 10000L) {
         dataLog.gps.altitude = gps.altitude.meters();
     } else {
         dataLog.gps.altitude = 0;
@@ -1074,8 +1458,12 @@ void read_GPS() {
     if (gps.time.isValid() && gps.time.age() < 5000L) {
         dataLog.gps.time = gps.time.value();
 
-        if (date_time.year == 2000) {
+        // Need to set the RTC. This will always set the clock when a valid GPS time is first found.
+        // This protects against a set clock with backup battery having clock drift.
+        // Also synchronizes the clocks.
+        if (set_clock == false) {
             clock.setDateTime(gps.date.year(), gps.date.month(), gps.date.day(), gps.time.hour(), gps.time.minute(), gps.time.second());
+            set_clock = true;
         }
 
     } else {
@@ -1094,7 +1482,7 @@ void read_GPS() {
     }
 
     if (gps.hdop.isValid()) {
-        dataLog.gps.hdop = static_cast<uint16_t>(gps.hdop.value() * GPS_PRECISION);
+        dataLog.gps.hdop = static_cast<uint16_t>(gps.hdop.value());// * GPS_PRECISION);
     } else {
         dataLog.gps.hdop = 0;
     }
@@ -1114,7 +1502,7 @@ void read_GPS() {
     if (vdop.isValid()) {
         // Convert character buffer pointer to a double with null end pointer,
         // multiply by 100 to remove decimal, and then convert to integer.
-        dataLog.gps.vdop = static_cast<uint16_t>(strtod(vdop.value(), NULL) * 100 * GPS_PRECISION);
+        dataLog.gps.vdop = static_cast<uint16_t>(strtod(vdop.value(), NULL));// * 100 * GPS_PRECISION);
         //Serial.println(vdop.value());
         //Serial.println(dataLog.gps.vdop);
     } else {
@@ -1159,6 +1547,9 @@ void printAttitude(float ax, float ay, float az, float mx, float my, float mz)
 
 
 void readSensors() {
+    if (watchdog == 30) {
+        watchdog = 40;
+    }
 
     uint16_t ir, broadband = 0;
 
@@ -1307,6 +1698,9 @@ void readSensors() {
 
     dataLog.uv = analogRead(UV_PIN);
 
+    if (watchdog == 40) {
+        watchdog = 50;
+    }
 }
 
 
@@ -1409,19 +1803,29 @@ void adjust_heaters() {
 
 
 void check_battery() {
+    if (watchdog == 140) {
+        watchdog = 150;
+    }
     // Check battery capacity and do appropriate things.
 
-    if (dataLog.battery.voltage <= 3.1 || dataLog.battery.soc < 10) {
+    if (dataLog.battery.voltage <= 3.2 || dataLog.battery.soc < 10) {
         // Turn off CO2 sensor as well.
         Heat_Enable = false;
 
 
-    } else if (dataLog.battery.voltage > 3.4 && dataLog.battery.soc > 25) {
+    } else if (dataLog.battery.voltage > 3.4 && dataLog.battery.soc > 10) {
         Heat_Enable = true;
+    }
+
+    if (watchdog == 150) {
+        watchdog = 160;
     }
 }
 
 void heater_control() {
+    if (watchdog == 160) {
+        watchdog = 170;
+    }
     // Define the setpoint for whatever the external temperature is,
     // plus some for dew point.
     //float setpoint = 40;
@@ -1631,7 +2035,7 @@ void heater_control() {
             Serial.println(custom_vPID.pwm);
         }
     }
-    Serial.println(dataLog.temp.main);
+    //Serial.println(dataLog.temp.main);
 }
 
 
@@ -1958,6 +2362,11 @@ void test_logging() {
 
 
 void log_data() {
+
+    if (watchdog == 120) {
+        watchdog = 130;
+    }
+
     // Log the sensor data by packing it into a holding buffer.
     // When the buffer is full, we flush it to storage and reset
     // the holding buffer.
@@ -2174,24 +2583,365 @@ void log_data() {
         }
     }
 
-
+    if (watchdog == 130) {
+        watchdog = 140;
+    }
         //print_sensors();
+
 }
 
-void check_altitude() {
-    if (dataLog.ms5607.pressure > configuration.altitude_alarm) {
+void queue_altitude(float altitude) {
+    if (watchdog == 40) {
+        watchdog = 50;
+    }
 
+    // Static flag for first pass to allow head = tail.
+    static bool first_pass = true;
+
+    bool done = false;
+
+    // Size of array
+    uint8_t queue_size = sizeof(altitude_hist)/sizeof(*altitude_hist);
+    //Serial.print(F("Incoming altitude: "));
+    //Serial.println(altitude);
+
+    //if (altitude != 0) {
+        // Only add if not the initial bad value of 0 pressure.
+        // Move tail
+        altitude_hist_tail++;
+
+        // Over queue size
+        if (altitude_hist_tail >= queue_size) {
+            //Serial.println(F("Tail over queue"));
+            altitude_hist_tail = 0;
+        }
+
+        // Store value
+        altitude_hist[altitude_hist_tail] = altitude;
+
+        // Do we need to move the head?
+        if (altitude_hist_tail == altitude_hist_head && first_pass != true) {
+            //Serial.println(F("Head = Tail"));
+            altitude_hist_head = altitude_hist_tail + 1;
+        }
+
+        // Is head over the queue size?
+        if (altitude_hist_head >= queue_size) {
+            //Serial.println(F("Head over queue"));
+            altitude_hist_head = 0;
+        }
+/*
+        Serial.print(F("Head: "));
+        Serial.print(altitude_hist_head);
+        Serial.print(F(" Tail: "));
+        Serial.println(altitude_hist_tail);
+
+        uint8_t index = altitude_hist_head;
+        Serial.print(F("Altitude: "));
+
+        while (done == false) {
+                if (index >= queue_size) {
+                    index = 0;
+                }
+                if (index == altitude_hist_tail) {
+                    done = true;
+                }
+
+                Serial.print(altitude_hist[index]);
+                Serial.print(F(" "));
+
+                index++;
+        }
+*/
+        /*
+        for (uint8_t i = 0; i < queue_size; i++) {
+                            Serial.print(altitude_hist[i]);
+                Serial.print(F(" "));
+        }
+        */
+        //Serial.println();
+
+        // Allow head to move now.
+        first_pass = false;
+    //}
+
+    if (watchdog == 50) {
+        watchdog = 60;
+    }
+}
+
+void queue_pressure(float pressure) {
+
+    if (watchdog == 60) {
+        watchdog = 70;
+    }
+    // Static flag for first pass to allow head = tail.
+    static bool first_pass = true;
+
+    bool done = false;
+
+    // Size of array
+    uint8_t queue_size = sizeof(pressure_hist)/sizeof(*pressure_hist);
+    //Serial.print(F("Incoming pressure: "));
+    //Serial.println(pressure);
+
+    //if (pressure != 0) {
+        // Only add if not the initial bad value of 0 pressure.
+        // Move tail
+        pressure_hist_tail++;
+
+        // Over queue size
+        if (pressure_hist_tail >= queue_size) {
+            //Serial.println(F("Tail over queue"));
+            pressure_hist_tail = 0;
+        }
+
+        // Store value
+        pressure_hist[pressure_hist_tail] = pressure;
+
+        // Do we need to move the head?
+        if (pressure_hist_tail == pressure_hist_head && first_pass != true) {
+            //Serial.println(F("Head = Tail"));
+            pressure_hist_head = pressure_hist_tail + 1;
+        }
+
+        // Is head over the queue size?
+        if (pressure_hist_head >= queue_size) {
+            //Serial.println(F("Head over queue"));
+            pressure_hist_head = 0;
+        }
+/*
+        Serial.print(F("Head: "));
+        Serial.print(pressure_hist_head);
+        Serial.print(F(" Tail: "));
+        Serial.println(pressure_hist_tail);
+
+        uint8_t index = pressure_hist_head;
+        Serial.print(F("pressure: "));
+
+        while (done == false) {
+                if (index >= queue_size) {
+                    index = 0;
+                }
+                if (index == pressure_hist_tail) {
+                    done = true;
+                }
+
+                Serial.print(pressure_hist[index]);
+                Serial.print(F(" "));
+
+                index++;
+        }
+*/
+        /*
+        for (uint8_t i = 0; i < queue_size; i++) {
+                            Serial.print(pressure_hist[i]);
+                Serial.print(F(" "));
+        }
+        */
+        //Serial.println();
+
+        // Allow head to move now.
+        first_pass = false;
+    //}
+
+    if (watchdog == 70) {
+        watchdog = 80;
+    }
+}
+
+void check_launch() {
+
+    if (watchdog == 80) {
+        watchdog = 90;
+    }
+
+    uint16_t pressure_count = 0;
+    uint16_t alt_count = 0;
+
+    if (configuration.launched == false) {
+        for (uint16_t i = 0; i < sizeof(pressure_hist)/sizeof(*pressure_hist); i++) {
+            if (pressure_hist[i] != 0 && pressure_hist[i] < configuration.pressure_alarm) {
+                pressure_count++;
+            }
+        }
+
+        for (uint16_t i = 0; i < sizeof(altitude_hist)/sizeof(*altitude_hist); i++) {
+            if (altitude_hist[i] != 0 && altitude_hist[i] > configuration.altitude_alarm) {
+                alt_count++;
+            }
+        }
+
+        if (pressure_count > 90 || alt_count > 90) {
+            // At least 2 intervals with 90 positive readings were spent above the threshold.
+            configuration.launched = true;
+        } else if (millis() / 1000L > 1800L) {
+            // We've been awake for 30 minutes. Assume we've launched then.
+            configuration.launched = true;
+        }
+    }
+
+    if (DEBUG == true) {
+        Serial.print(F("Pressure count: "));
+        Serial.print(pressure_count);
+        Serial.print(F(" Alt Count: "));
+        Serial.println(alt_count);
+    }
+
+    if (watchdog == 90) {
+        watchdog = 100;
+    }
+}
+
+void check_decent() {
+    static uint8_t counter = 0;
+
+    if (configuration.launched == true && pressure_hist[pressure_hist_tail] < configuration.pressure_alarm && pressure_hist[pressure_hist_head] < configuration.pressure_alarm) {
+            counter++;
+    }
+
+    if (configuration.launched == true && altitude_hist[altitude_hist_tail] < configuration.altitude_alarm && altitude_hist[altitude_hist_head] < configuration.altitude_alarm) {
+            counter++;
+    }
+
+    if (configuration.launched == true && counter > 30) {
+        // At least 30 seconds were spent below the threshold.
+        configuration.decent = true;
+    } else if (configuration.launched == true) { //} && millis() / 1000L > 14400L) {
+        // We've been awake for 4 hours. Assume we've landed then.
+        configuration.decent = true;
+    }
+}
+
+void check_landing() {
+    if (watchdog == 100) {
+        watchdog = 110;
+    }
+
+    if (configuration.launched == true) {
+        bool pres_threshold = true;
+        bool alt_threshold = true;
+
+        for (uint16_t i = 0; i < sizeof(pressure_hist)/sizeof(*pressure_hist); i++) {
+            if (pressure_hist[i] < configuration.pressure_alarm || pressure_hist[i] == 0) {
+                pres_threshold = false;
+            }
+
+        }
+
+        for (uint16_t i = 0; i < sizeof(altitude_hist)/sizeof(*altitude_hist); i++) {
+            if (altitude_hist[i] > configuration.altitude_alarm || altitude_hist[i] == 0) {
+                alt_threshold = false;
+            }
+
+        }
+
+        if (pres_threshold == true || alt_threshold == true) {
+            configuration.alarm = true;
+        }
+    }
+
+    if (watchdog == 110) {
+        watchdog = 120;
+    }
+}
+
+void configure_write() {
+
+}
+
+void check_alarms() {
+
+    if (watchdog == 170) {
+        watchdog = 180;
+    }
+
+    if (configuration.launched == true) {
+        EEPROM.put(0, configuration);
+
+        if (DEBUG == true) {
+            Serial.println(F("***** LAUNCHED *****"));
+            //delay(1000);
+        }
+
+        piezo_power(true);
+        flash_landing(10);
+        beep_piezo(1000, 250, PIEZO_PIN);
+        flash_landing(250);
+        beep_piezo(2000, 500, PIEZO_PIN);
+        piezo_power(false);
+        led_power(false);
+
+    }
+
+    if (configuration.alarm == true) {
+        EEPROM.put(0, configuration);
+        delay(100);
+        watchdog_sleep();
+        power_sensors(false);
+        location_alarm();
+    }
+
+    if (watchdog == 180) {
+        watchdog = 190;
+    }
+}
+
+//int8_t direction = 10;
+void pet_watchdog() {
+    // Make sure that registers are flushed and optimizations don't fiddle with our watchdog variable.
+    _MemoryBarrier();
+    if (watchdog == 200) {
+        wdt_reset();
+        watchdog = 20;
+        _MemoryBarrier();
+    } else {
+        // Wait for reset.
+        while(true) {}
     }
 }
 
 void loop() {
+    //static float test_altitude = 400;
+    if (watchdog == 20) {
+        watchdog = 30;
+    }
 
+    if (reset_flag == true) {
+        EEPROM.put(0, default_config);
+        reset_flag = false;
+        flash_landing(10);
+        beep_piezo(1000, 250, PIEZO_PIN);
+        //delay(100);
+        flash_landing(10);
+        beep_piezo(2000, 250, PIEZO_PIN);
+    }
 
     if (DEBUG == true) {
         Serial.println(F("Reading sensors..."));
     }
     // Read the sensors
     readSensors();
+
+    /*
+    dataLog.gps.altitude = test_altitude;
+    test_altitude += direction;
+
+    if (test_altitude > 3000) {
+        direction = -10;
+    }
+*/
+    queue_altitude(dataLog.gps.altitude);
+    queue_pressure(dataLog.ms5607.pressure);
+
+    check_launch();
+    check_landing();
+
+    dataLog.launched = configuration.launched;
+    dataLog.alarm = configuration.alarm;
+
+    log_data();
+
 
     // How's our battery?
     check_battery();
@@ -2208,8 +2958,13 @@ void loop() {
         Serial.println(F("Logging data..."));
     }
 
-    log_data();
-    //delay(1000);
-    flash_landing();
+    check_alarms();
+
+    if (watchdog == 190) {
+        watchdog = 200;
+    }
+    pet_watchdog();
+    //delay(100);
+    //flash_landing(10);
 
 }

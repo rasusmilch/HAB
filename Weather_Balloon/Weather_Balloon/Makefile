@@ -3,7 +3,7 @@
 #BOARD_TAG    = uno
 BOARD_TAG    = mega
 BOARD_SUB    = atmega2560
-ARDUINO_LIBS = SPI MAG3110 arduino-ms5xxx-master Adafruit_ADXL345-master Adafruit_SI1145_Library-master NewliquidCrystal OneWire2 Arduino-Temperature-Control-Library Adafruit_Sensor-master Adafruit_SHT31-master Wire SD-master Adafruit_TSL2561-master SparkFun_LSM9DS1 SparkFun_MAX17043 TinyGPSPlus-0.94b Arduino-DS3231-master
+ARDUINO_LIBS = SPI MAG3110 arduino-ms5xxx-master Adafruit_ADXL345-master Adafruit_SI1145_Library-master NewliquidCrystal OneWire2 Arduino-Temperature-Control-Library Adafruit_Sensor-master Adafruit_SHT31-master Wire SD-master Adafruit_TSL2561-master SparkFun_LSM9DS1 SparkFun_MAX17043 TinyGPSPlus-0.94b Arduino-DS3231-master Arduino-PID-Library
 ISP_PROG     = stk500
 
 
