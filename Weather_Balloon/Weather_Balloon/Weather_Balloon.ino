@@ -8,7 +8,7 @@
  * Robert Susmilch
 */
 
-bool DEBUG = true;
+bool DEBUG = false;
 bool DEBUG_MORE = false;
 volatile uint16_t watchdog = 10;
 
@@ -182,6 +182,10 @@ typedef struct {
         float clock = -1000;
 
     } temp;
+
+    struct {
+        uint8_t main, gps, tsl2561, sht31, uv;
+    } pwm;
 
     struct {
         // Humidity sensor
@@ -926,6 +930,9 @@ void configure_sdcard() {
     if (sdcard.init(SPI_HALF_SPEED, SS_PIN)==0) {
         Serial.print(F("Something wrong initilizing SDCard...\nError: "));
         Serial.println(sdcard.errorCode(), HEX);
+        if (configuration.launched == false) {
+            digitalWrite(RED_LED, LOW);
+        }
     } else {
         Serial.print(F("Card size: "));
         sdcard_data.blocks = sdcard.cardSize() - 1;
@@ -935,10 +942,20 @@ void configure_sdcard() {
 
     uint32_t tail = find_sdcard_tail(1, sdcard_data.blocks);
 
-    if (tail != 0) {
+    if (tail > 1) {
         sdcard_data.current_block = tail;
         Serial.print(F("\nFound tail of log at block: "));
         Serial.println(sdcard_data.current_block);
+        if (configuration.launched == false) {
+            digitalWrite(GREEN_LED, LOW);
+        }
+    } else {
+        Serial.print(F("\nDid NOT find tail of log at block: "));
+        Serial.println(sdcard_data.current_block);
+        if (configuration.launched == false) {
+            digitalWrite(RED_LED, LOW);
+        }
+
     }
 
 }
@@ -1254,7 +1271,9 @@ void setup() {
     Serial.print(F(" Alarm: "));
     Serial.println(configuration.alarm);
 */
-    count_down_led();
+    if (configuration.alarm == true || configuration.launched == true) {
+        count_down_led();
+    }
 
     if (reset_flag == true) {
         wdt_reset();
@@ -1433,9 +1452,16 @@ void read_GPS() {
     if (gps.location.isValid()) {
         dataLog.gps.lat = gps.location.lat();
         dataLog.gps.lng = gps.location.lng();
+
+        if (configuration.launched == false) {
+            digitalWrite(YELLOW_LED, LOW);
+        }
     } else {
         dataLog.gps.lat = 0;
         dataLog.gps.lng = 0;
+        if (configuration.launched == false) {
+            digitalWrite(YELLOW_LED, HIGH);
+        }
     }
 
     if (gps.altitude.isValid() && gps.altitude.age() < 10000L) {
@@ -2775,8 +2801,8 @@ void check_launch() {
         if (pressure_count > 90 || alt_count > 90) {
             // At least 2 intervals with 90 positive readings were spent above the threshold.
             configuration.launched = true;
-        } else if (millis() / 1000L > 1800L) {
-            // We've been awake for 30 minutes. Assume we've launched then.
+        } else if (millis() / 1000L > 7200L) {
+            // We've been awake for 120 minutes. Assume we've launched then.
             configuration.launched = true;
         }
     }
@@ -2839,6 +2865,9 @@ void check_landing() {
         if (pres_threshold == true || alt_threshold == true) {
             configuration.alarm = true;
         }
+    } else if (millis() / 1000L > 14400L) {
+        // We've been awake for 240 minutes. Assume we've landed then.
+        configuration.alarm = true;
     }
 
     if (watchdog == 110) {
@@ -2939,6 +2968,12 @@ void loop() {
 
     dataLog.launched = configuration.launched;
     dataLog.alarm = configuration.alarm;
+
+    dataLog.pwm.main = main_vPID.pwm;
+    dataLog.pwm.gps = gps_vPID.pwm;
+    dataLog.pwm.sht31 = sht_vPID.pwm;
+    dataLog.pwm.tsl2561 = tsl_vPID.pwm;
+    dataLog.pwm.uv = uv_vPID.pwm;
 
     log_data();
 
