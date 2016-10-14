@@ -2053,6 +2053,6 @@ Connection ~ 7550 3200
 Wire Wire Line
 	7750 3450 7750 3000
 Connection ~ 7750 3000
-Text Notes 4100 4100 0    50   ~ 0
-DS18B20s draw parasitic power. \nAlso, MOSFET without capacitor \nacross DS18B20 will not communicate \nfor some reason.
+Text Notes 4350 3850 0    50   ~ 0
+DS18B20s draw parasitic power. 
 $EndSCHEMATC

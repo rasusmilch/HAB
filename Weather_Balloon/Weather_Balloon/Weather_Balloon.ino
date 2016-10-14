@@ -1865,10 +1865,12 @@ void heater_control() {
     if (dataLog.temp.external != -1000) {
         setpoint = dataLog.temp.external + 2;
 
-        // Check for minimum operating temps for electronic components.
-        if (setpoint < -40 + over_ambient) {
-            setpoint = -40 + over_ambient;
-        }
+
+    }
+
+    // Check for minimum operating temps for electronic components.
+    if (setpoint < -40 + over_ambient) {
+        setpoint = -40 + over_ambient;
     }
 
 
@@ -2725,6 +2727,8 @@ void read_sdcard() {
                 Serial.print(F(","));
                 Serial.print(dataLog.tsl.ir);
                 Serial.print(F(","));
+                Serial.print(dataLog.uv);
+                Serial.print(F(","));
                 Serial.print(dataLog.ms5607.pressure);
                 Serial.print(F(","));
                 Serial.print(dataLog.sht31.humidity);
@@ -3136,12 +3140,12 @@ void set_alt_threshold(float altitude) {
     if (altitude > 0 && altitude <= 100000) {
         configuration.altitude_alarm = altitude;
         EEPROM.put(0, configuration);
-        Serial.println(F("Note that a low altitude will disable the altitude arming since\n\rthe GPS signal will never trigger the threshold."))
+        Serial.println(F("Note that a low altitude will disable the altitude arming since\n\rthe GPS signal will never trigger the threshold."));
         Serial.print(F("Altitude threshold set to: "));
         Serial.print(altitude);
         Serial.print(F(" meters..."));
     } else {
-        Serial.println(F("Invalid altitude.\n\rAcceptable range is 0-100000 m."))
+        Serial.println(F("Invalid altitude.\n\rAcceptable range is 0-100000 m."));
     }
 }
 
@@ -3163,14 +3167,19 @@ void read_serial() {
     static String incoming = "";
     String original = "";
     char c;
+    uint8_t loops = 0;
 
-    while (Serial.available()) {
+    while (Serial.available() && loops < 35) {
 
         c = Serial.read();
         incoming += c;
 
         // Echo to the screen.
         Serial.print(c);
+        Serial.print(F(" 0x"));
+        Serial.println(c, HEX);
+        //Serial.print(F(" "));
+        //Serial.println(incoming.length());
 
         if (incoming.length() > 34) {
             // Max length of string to prevent eating all memory.
@@ -3178,8 +3187,10 @@ void read_serial() {
 
             incoming = "";
 
-            Serial.println(F("\n\r*** Command to long, please retry. Max limit is 32 characters. ***"));
+            //Serial.println(F("\n\r***    to long, please retry. Max limit is 32 characters. ***"));
         }
+
+        loops++;
     }
 
     if (c == "\n") {
@@ -3229,6 +3240,9 @@ void loop() {
     if (watchdog == 20) {
         watchdog = 30;
     }
+
+    // Temp override.
+    read_sdcard();
 
     if (reset_flag == true) {
         EEPROM.put(0, default_config);
