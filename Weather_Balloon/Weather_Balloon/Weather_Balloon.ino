@@ -345,6 +345,10 @@ struct {
     // Number of seconds above altitude threshold to "arm"
     uint16_t altitude_time = 120;
 
+    // Number of minutes to assume balloon has launched or has landed.
+    uint32_t launch_time = 120;
+    uint32_t location_time = 240;
+
 } configuration, default_config;
 
 
@@ -2413,6 +2417,8 @@ void log_data() {
 
         // Make sure that registers are flushed and optimizations don't fiddle with our watchdog variable.
         _MemoryBarrier();
+
+        // Stop all interrupts. Prevents the Geiger interrupt from increasing our variables while we copy and zero them for logging.
         cli();
 
         // Copy over Geiger counts for logging
@@ -2426,6 +2432,7 @@ void log_data() {
         geiger.y_count = 0;
         geiger.z_count = 0;
 
+        // Allow interrupts to continue.
         sei();
         _MemoryBarrier();
 
@@ -2467,6 +2474,12 @@ void log_data() {
         // blocks will need to be skipped to get to "good" memory.
         // 8MB = 16384 pages of 512 bytes (we're writing to 512 byte blocks, so
         // so that's what we care about. Add 1 to get over any threshold.
+
+        // Additionally, one may, or may not, want to use a watchdog timer reset
+        // within the code to find an empty block. Thjs may also depend on whether
+        // the controller is feeding radio telemetry. One would not want to get stuck
+        // looking for an open location. This may be a moot point with a properly zeroed
+        // card, but worth considering.
         while(success == false && sdcard_data.current_block <= sdcard_data.blocks) {
             // Reset for loop
             success = true;
@@ -2550,7 +2563,8 @@ void log_data() {
                 // Read the data in for verification
                 sdcard.readBlock(sdcard_data.current_block, sdcard_data.buffer);
 
-                // Copy over the CRC we read
+                // Copy over the CRC we read...
+                // This may not do anything since we set the CRC variable in the next line (over writing it)
                 memcpy(&crc_after, &sdcard_data.buffer[511 - sizeof(crc_before)], sizeof(crc_before));
 
                 // Calculate the CRC after we read back the data.
@@ -2614,6 +2628,192 @@ void log_data() {
     }
         //print_sensors();
 
+}
+
+
+void read_sdcard() {
+    // Reads data off the SD card and spits it out to the serial console as a comma separated value stream.
+
+    // Get size of the data structure
+    static uint16_t data_size = sizeof(dataLog);
+
+    // Save our position.
+    uint32_t saved_current_block = sdcard_data.current_block;
+
+    bool empty_block, crc_match;
+
+    uint16_t crc_read, crc_calculated;
+
+    // Start at the beginning
+    //sdcard_data.current_block = 1;
+
+    // Print column headers
+    Serial.println(F("***** DATA START *****"));
+    Serial.println(F("unix_time,gps_date,gps_time,latitude,longitude,altitude,speed,course,sats,hdop,vdop,lux,broadband,ir,uv,pressure,humidity,accel_x,accel_y,accel_z, mag_x,mag_y,mag_z,gyro_x,gyro_y,gyro_z,temp_main,temp_internal,temp_external,temp_gps,temp_tsl2561,temp_sht31,temp_uv,temp_ms5607,temp_custom,temp_clock,geiger_x,geiger_y,geiger_z,pwm_main,pwm_gps,pwm_tsl2561,pwm_sht31,pwm_uv,max_pwm,voltage,state_of_charge,launched,alarm,found_lsm9ds1,found_sht31,found_ms5607,found_uv,found_ds18b20,found_tsl2561,found_gps,crc_match"));
+
+    for (uint32_t block = 1; block <= sdcard_data.blocks; block++) {
+        // Reset the watchdog, we're going to be here a while.
+        wdt_reset();
+
+        // Zero the buffer
+        memset(sdcard_data.buffer, 0, 512);
+
+        sdcard.readBlock(block, sdcard_data.buffer);
+
+        empty_block = true;
+
+        //Serial.println(F("Verify zero"));
+
+        for (uint16_t i = 0; i < 512; i++) {
+            // Iterate over the block, looking for non-zero values
+
+            //Serial.println(sdcard_data.buffer[i], HEX);
+            if (sdcard_data.buffer[i] != 0) {
+                // Not empty
+                empty_block = false;
+                //success = false;
+
+                // Break for next block.
+                break;
+            }
+        }
+
+        if (empty_block == false) {
+            // Skip all empty blocks. (Only process blocks with any bytes in them.
+
+            // Copy over the CRC we read...
+            memcpy(&crc_read, &sdcard_data.buffer[511 - sizeof(crc_read)], sizeof(crc_read));
+
+            // Calculate the CRC after we read back the data.
+            crc_calculated = sd_calc_crc(sdcard_data.buffer, data_size * (sdcard_data.num_packed + 1));
+
+
+            if (crc_read == crc_calculated) {
+                crc_match = true;
+            } else {
+                crc_match = false;
+            }
+
+            for (uint8_t i = 0; i < 510/data_size; i++) {
+                memcpy(&dataLog, &sdcard_data.buffer[i * data_size], data_size);
+
+                Serial.print(dataLog.unix_time);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.date);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.time);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.lat);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.lng);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.altitude);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.speed);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.course);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.sats);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.hdop);
+                Serial.print(F(","));
+                Serial.print(dataLog.gps.vdop);
+                Serial.print(F(","));
+                Serial.print(dataLog.tsl.lux);
+                Serial.print(F(","));
+                Serial.print(dataLog.tsl.broadband);
+                Serial.print(F(","));
+                Serial.print(dataLog.tsl.ir);
+                Serial.print(F(","));
+                Serial.print(dataLog.ms5607.pressure);
+                Serial.print(F(","));
+                Serial.print(dataLog.sht31.humidity);
+                Serial.print(F(","));
+                Serial.print(dataLog.accel.x);
+                Serial.print(F(","));
+                Serial.print(dataLog.accel.y);
+                Serial.print(F(","));
+                Serial.print(dataLog.accel.z);
+                Serial.print(F(","));
+                Serial.print(dataLog.mag.x);
+                Serial.print(F(","));
+                Serial.print(dataLog.mag.y);
+                Serial.print(F(","));
+                Serial.print(dataLog.mag.z);
+                Serial.print(F(","));
+                Serial.print(dataLog.gyro.x);
+                Serial.print(F(","));
+                Serial.print(dataLog.gyro.y);
+                Serial.print(F(","));
+                Serial.print(dataLog.gyro.z);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.main);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.internal);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.external);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.gps);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.tsl2561);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.sht31);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.uv);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.ms5607);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.custom);
+                Serial.print(F(","));
+                Serial.print(dataLog.temp.clock);
+                Serial.print(F(","));
+                Serial.print(dataLog.geiger.x);
+                Serial.print(F(","));
+                Serial.print(dataLog.geiger.y);
+                Serial.print(F(","));
+                Serial.print(dataLog.geiger.z);
+                Serial.print(F(","));
+                Serial.print(dataLog.pwm.main);
+                Serial.print(F(","));
+                Serial.print(dataLog.pwm.gps);
+                Serial.print(F(","));
+                Serial.print(dataLog.pwm.tsl2561);
+                Serial.print(F(","));
+                Serial.print(dataLog.pwm.sht31);
+                Serial.print(F(","));
+                Serial.print(dataLog.pwm.uv);
+                Serial.print(F(","));
+                Serial.print(dataLog.heater_max);
+                Serial.print(F(","));
+                Serial.print(dataLog.battery.voltage);
+                Serial.print(F(","));
+                Serial.print(dataLog.battery.soc);
+                Serial.print(F(","));
+                Serial.print(dataLog.launched);
+                Serial.print(F(","));
+                Serial.print(dataLog.alarm);
+                Serial.print(F(","));
+                Serial.print(dataLog.found.LSM9DS1);
+                Serial.print(F(","));
+                Serial.print(dataLog.found.SHT31);
+                Serial.print(F(","));
+                Serial.print(dataLog.found.MS5607);
+                Serial.print(F(","));
+                Serial.print(dataLog.found.UV);
+                Serial.print(F(","));
+                Serial.print(dataLog.found.DS18B20);
+                Serial.print(F(","));
+                Serial.print(dataLog.found.TSL2561);
+                Serial.print(F(","));
+                Serial.print(dataLog.found.GPS);
+                Serial.print(F(","));
+                Serial.println(crc_match);
+            }
+        }
+    }
+
+    // Replace the saved block value.
+    //sdcard_data.current_block = saved_current_block;
 }
 
 void queue_altitude(float altitude) {
@@ -2916,11 +3116,105 @@ void check_alarms() {
     }
 }
 
+void print_serial_help() {
+    // Prints the serial command list
+
+    Serial.println(F("\n\n\n\rCommand help list\n\rCommands NOT case sensitive\n\r===========================\n"));
+    Serial.println(F("help                  This command list.\n\r"));
+    Serial.println(F("help sdcard           Help with SDCard commands."));
+    Serial.println(F("help altitude         Help with altitude threshold commands."));
+    Serial.println(F("help pressure         Help with pressure threshold commands."));
+    Serial.println(F("help launch timer     Help with launch timer commands"));
+    Serial.println(F("help location timer   Help with location timer commands\n\r"));
+    Serial.println(F("read sdcard           Output the SDCard data as a CSV to serial console."));
+    Serial.println(F("                      Output needs to be saved from your serial program"));
+    Serial.println(F("                      or through console redirection."));
+    Serial.println(F("==========================="));
+}
+
+void set_alt_threshold(float altitude) {
+    if (altitude > 0 && altitude <= 100000) {
+        configuration.altitude_alarm = altitude;
+        EEPROM.put(0, configuration);
+        Serial.println(F("Note that a low altitude will disable the altitude arming since\n\rthe GPS signal will never trigger the threshold."))
+        Serial.print(F("Altitude threshold set to: "));
+        Serial.print(altitude);
+        Serial.print(F(" meters..."));
+    } else {
+        Serial.println(F("Invalid altitude.\n\rAcceptable range is 0-100000 m."))
+    }
+}
+
+void set_pressure_threshold(float pressure) {
+
+}
+
+void set_launch_timeout(uint32_t timeout) {
+}
+
+void set_location_timeout(uint32_t timeout) {
+
+}
+
+void read_serial() {
+    if (watchdog == 190) {
+        watchdog = 200;
+    }
+    static String incoming = "";
+    String original = "";
+    char c;
+
+    while (Serial.available()) {
+
+        c = Serial.read();
+        incoming += c;
+
+        // Echo to the screen.
+        Serial.print(c);
+
+        if (incoming.length() > 34) {
+            // Max length of string to prevent eating all memory.
+            // Adds 2 characters for a 32 byte command plus a new line and carriage return.
+
+            incoming = "";
+
+            Serial.println(F("\n\r*** Command to long, please retry. Max limit is 32 characters. ***"));
+        }
+    }
+
+    if (c == "\n") {
+        incoming.trim();
+
+        if (incoming.length() > 0) {
+            // The string has length, let's see what it says.
+            original = incoming;
+            // Convert to lower case.
+            incoming.toLowerCase();
+            if (incoming == "read sdcard") {
+                read_sdcard();
+            } else if (incoming == "help" || "?" || "??" || "/?") {
+                print_serial_help();
+            } else {
+                Serial.print(F("*** Command unknown: "));
+                Serial.print(original);
+                Serial.println(F(" ***"));
+                print_serial_help();
+            }
+        }
+    }
+
+
+    if (watchdog == 200) {
+        watchdog = 210;
+    }
+
+}
+
 //int8_t direction = 10;
 void pet_watchdog() {
     // Make sure that registers are flushed and optimizations don't fiddle with our watchdog variable.
     _MemoryBarrier();
-    if (watchdog == 200) {
+    if (watchdog == 210) {
         wdt_reset();
         watchdog = 20;
         _MemoryBarrier();
@@ -2995,8 +3289,10 @@ void loop() {
 
     check_alarms();
 
-    if (watchdog == 190) {
-        watchdog = 200;
+    read_serial();
+
+    if (watchdog == 200) {
+        watchdog = 210;
     }
     pet_watchdog();
     //delay(100);
