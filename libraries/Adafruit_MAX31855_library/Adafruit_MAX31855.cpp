@@ -24,38 +24,36 @@
 #include <stdlib.h>
 #include <SPI.h>
 
-// Delay in milliseconds for software reading of SPI.
-#define DELAY_READ      3
 
-Adafruit_MAX31855::Adafruit_MAX31855(int8_t SCLK, int8_t CS, int8_t MISO) {
-  sclk = SCLK;
-  cs = CS;
-  miso = MISO;
-  hSPI = 0;
+Adafruit_MAX31855::Adafruit_MAX31855(int8_t _sclk, int8_t _cs, int8_t _miso) {
+  sclk = _sclk;
+  cs = _cs;
+  miso = _miso;
 
-  //define pin modes
-  pinMode(cs, OUTPUT);
-  pinMode(sclk, OUTPUT); 
-  pinMode(miso, INPUT);
-
-  digitalWrite(cs, HIGH);
+  initialized = false;
 }
 
-Adafruit_MAX31855::Adafruit_MAX31855(int8_t CS) {
-  cs = CS;
-  hSPI = 1;
+Adafruit_MAX31855::Adafruit_MAX31855(int8_t _cs) {
+  cs = _cs;
+  sclk = miso = -1;
 
+  initialized = false;
+}
+
+void Adafruit_MAX31855::begin(void) {
   //define pin modes
   pinMode(cs, OUTPUT);
-  
-  //start and configure hardware SPI
-  SPI.begin();
-  SPI.setBitOrder(MSBFIRST);
-  SPI.setDataMode(SPI_MODE0);
-  //SPI.setClockDivider(SPI_CLOCK_DIV4);
-  SPI.setClockDivider(SPI_CLOCK_DIV8);
-  
   digitalWrite(cs, HIGH);
+
+  if (sclk == -1) {
+    // hardware SPI
+    //start and configure hardware SPI
+    SPI.begin();
+  } else {
+    pinMode(sclk, OUTPUT); 
+    pinMode(miso, INPUT);
+  }
+  initialized = true;
 }
 
 double Adafruit_MAX31855::readInternal(void) {
@@ -86,7 +84,7 @@ double Adafruit_MAX31855::readCelsius(void) {
   v = spiread32();
 
   //Serial.print("0x"); Serial.println(v, HEX);
-  //Serial.print("0b"); Serial.println(v, BIN);
+
   /*
   float internal = (v >> 4) & 0x7FF;
   internal *= 0.0625;
@@ -108,21 +106,16 @@ double Adafruit_MAX31855::readCelsius(void) {
     // Positive value, just drop the lower 18 bits.
     v >>= 18;
   }
-  //Serial.println(v, BIN);
+  //Serial.println(v, HEX);
   
-  //double centigrade = v;
+  double centigrade = v;
 
   // LSB = 0.25 degrees C
-  //centigrade *= 0.25;
-  return (double)(v * 0.25);
-  //return v;
+  centigrade *= 0.25;
+  return centigrade;
 }
 
 uint8_t Adafruit_MAX31855::readError() {
-    // Return lower 3 bits. Default is 0 unless fault.
-    // Bit 0 is Open circuit
-    // Bit 1 is Short to Ground
-    // Bit 2 is Short to VCC
   return spiread32() & 0x7;
 }
 
@@ -134,87 +127,52 @@ double Adafruit_MAX31855::readFarenheit(void) {
   return f;
 }
 
-
-
-uint32_t Adafruit_MAX31855::MAX31855_spiread32(void) { 
-  int i;
-  uint32_t d = 0;
-
-  if(hSPI) {
-    return hspiread32();
-  }
-
-  digitalWrite(sclk, LOW);
-  delay(DELAY_READ);
-  digitalWrite(cs, LOW);
-  delay(DELAY_READ);
-
-  for (i=31; i>=0; i--)
-  {
-    digitalWrite(sclk, LOW);
-    delay(DELAY_READ);
-    d <<= 1;
-    if (digitalRead(miso)) {
-      d |= 1;
-    }
-
-    digitalWrite(sclk, HIGH);
-    delay(DELAY_READ);
-  }
-
-  digitalWrite(cs, HIGH);
-  //Serial.println(d, HEX);
-  return d;
-}
-
 uint32_t Adafruit_MAX31855::spiread32(void) { 
   int i;
   uint32_t d = 0;
 
-  if(hSPI) {
-    return hspiread32();
+  // backcompatibility!
+  if (! initialized) {
+    begin();
   }
 
-  digitalWrite(sclk, LOW);
-  delay(DELAY_READ);
   digitalWrite(cs, LOW);
-  delay(DELAY_READ);
+  delay(1);
 
-  for (i=31; i>=0; i--)
-  {
+  if(sclk == -1) {
+    // hardware SPI
+
+    SPI.beginTransaction(SPISettings(4000000, MSBFIRST, SPI_MODE0));
+
+    d = SPI.transfer(0);
+    d <<= 8;
+    d |= SPI.transfer(0);
+    d <<= 8;
+    d |= SPI.transfer(0);
+    d <<= 8;
+    d |= SPI.transfer(0);
+
+    SPI.endTransaction();
+  } else {
+    // software SPI
+
     digitalWrite(sclk, LOW);
-    delay(DELAY_READ);
-    d <<= 1;
-    if (digitalRead(miso)) {
-      d |= 1;
-    }
+    delay(1);
 
-    digitalWrite(sclk, HIGH);
-    delay(DELAY_READ);
+    for (i=31; i>=0; i--) {
+      digitalWrite(sclk, LOW);
+      delay(1);
+      d <<= 1;
+      if (digitalRead(miso)) {
+	d |= 1;
+      }
+      
+      digitalWrite(sclk, HIGH);
+      delay(1);
+    }
   }
 
   digitalWrite(cs, HIGH);
   //Serial.println(d, HEX);
   return d;
-}
-
-uint32_t Adafruit_MAX31855::hspiread32(void) {
-  int i;
-  // easy conversion of four uint8_ts to uint32_t
-  union bytes_to_uint32 {
-    uint8_t bytes[4];
-    uint32_t integer;
-  } buffer;
-  
-  digitalWrite(cs, LOW);
-  delay(1);
-  
-  for (i=3;i>=0;i--) {
-    buffer.bytes[i] = SPI.transfer(0x00);
-  }
-  
-  digitalWrite(cs, HIGH);
-  
-  return buffer.integer;
-  
 }
