@@ -1,0 +1,429 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="pgmspace_8h" kind="file" language="C++">
+    <compoundname>pgmspace.h</compoundname>
+    <includes local="no">inttypes.h</includes>
+    <includedby refid="_adafruit___t_s_l2561___u_8cpp" local="yes">Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.cpp</includedby>
+    <incdepgraph>
+      <node id="628">
+        <label>Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h</label>
+        <link refid="pgmspace.h"/>
+        <childnode refid="629" relation="include">
+        </childnode>
+      </node>
+      <node id="629">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="631">
+        <label>Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.cpp</label>
+        <link refid="_adafruit___t_s_l2561___u_8cpp"/>
+      </node>
+      <node id="630">
+        <label>Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h</label>
+        <link refid="pgmspace.h"/>
+        <childnode refid="631" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="pgmspace_8h_1a75acaba9e781937468d0911423bc0c35" prot="public" static="no">
+        <name>PROGMEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="42" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_one_wire_1ad84f9ed7a1b2617f580d0d1e96c52cac" compoundref="_one_wire_8cpp" startline="347" endline="468">OneWire::search</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a963f816fc88a5d8479c285ed4c630229" prot="public" static="no">
+        <name>PGM_P</name>
+        <initializer>const char *</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="43" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a73809107539df84eaf01f6a4dea4fbff" prot="public" static="no">
+        <name>PSTR</name>
+        <param><defname>str</defname></param>
+        <initializer>(str)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="44" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1ae74941b597bdd8ffb5c35f45b636946b" prot="public" static="no">
+        <name>strcpy_P</name>
+        <param><defname>dest</defname></param>
+        <param><defname>src</defname></param>
+        <initializer>strcpy((dest), (src))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="56" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a2ca9304dda7dc2472812baa9e9ede965" prot="public" static="no">
+        <name>strcat_P</name>
+        <param><defname>dest</defname></param>
+        <param><defname>src</defname></param>
+        <initializer>strcat((dest), (src))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="57" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1abbb2cd396dde2d1575948bb16ce2853a" prot="public" static="no">
+        <name>strcmp_P</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>strcmp((a), (b))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="58" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a48c60b057902adf805797f183286728d" prot="public" static="no">
+        <name>pgm_read_byte</name>
+        <param><defname>addr</defname></param>
+        <initializer>(*(const unsigned char *)(addr))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="60" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_one_wire_1ae3486a669581b750e4fdf3f3a12b05f1" compoundref="_one_wire_8cpp" startline="505" endline="513">OneWire::crc8</referencedby>
+        <referencedby refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime::DateTime</referencedby>
+        <referencedby refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" compoundref="_d_s3231_8cpp" startline="931" endline="944">DS3231::isAlarm2</referencedby>
+        <referencedby refid="class_d_s3231_1ac8ccbb72f7cfbb27df1558a8896ef236" compoundref="_d_s3231_8cpp" startline="88" endline="138">DS3231::setDateTime</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a910fb5f01313d339d3b835d45e1e5ad0" prot="public" static="no">
+        <name>pgm_read_word</name>
+        <param><defname>addr</defname></param>
+        <initializer>(*(const unsigned short *)(addr))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="61" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a73cf3e57e32321cb193b3cc4b041cc6c" prot="public" static="no">
+        <name>pgm_read_dword</name>
+        <param><defname>addr</defname></param>
+        <initializer>(*(const unsigned long *)(addr))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="62" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a334426a3824fc08cee3a557ded696128" prot="public" static="no">
+        <name>pgm_read_float</name>
+        <param><defname>addr</defname></param>
+        <initializer>(*(const float *)(addr))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="63" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1ad2b71a6faa0583b51569b531a443cb0a" prot="public" static="no">
+        <name>pgm_read_byte_near</name>
+        <param><defname>addr</defname></param>
+        <initializer><ref refid="_date_strings_8cpp_1a48c60b057902adf805797f183286728d" kindref="member">pgm_read_byte</ref>(addr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="65" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_led_control_1aae9120ce2427b01ffad4cfaa91e5f537" compoundref="_led_control_8cpp" startline="171" endline="190">LedControl::setChar</referencedby>
+        <referencedby refid="class_led_control_1a3ad4b5566c89e3d03c3a58fb19b4354b" compoundref="_led_control_8cpp" startline="155" endline="169">LedControl::setDigit</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a515a845ea5139d8cf1c7f09ad6dad243" prot="public" static="no">
+        <name>pgm_read_word_near</name>
+        <param><defname>addr</defname></param>
+        <initializer><ref refid="_date_strings_8cpp_1a910fb5f01313d339d3b835d45e1e5ad0" kindref="member">pgm_read_word</ref>(addr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="66" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a27619bf0e01033f6049a11a6d5d754f3" prot="public" static="no">
+        <name>pgm_read_dword_near</name>
+        <param><defname>addr</defname></param>
+        <initializer><ref refid="pgmspace_8h_1a73cf3e57e32321cb193b3cc4b041cc6c" kindref="member">pgm_read_dword</ref>(addr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="67" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a93b33ee6ceaf1dd3ebcfa6f4c96f8b27" prot="public" static="no">
+        <name>pgm_read_float_near</name>
+        <param><defname>addr</defname></param>
+        <initializer><ref refid="pgmspace_8h_1a334426a3824fc08cee3a557ded696128" kindref="member">pgm_read_float</ref>(addr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="68" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a96c2bf865e6b08ed5f881ad25f5d47d4" prot="public" static="no">
+        <name>pgm_read_byte_far</name>
+        <param><defname>addr</defname></param>
+        <initializer><ref refid="_date_strings_8cpp_1a48c60b057902adf805797f183286728d" kindref="member">pgm_read_byte</ref>(addr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="69" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a3aaf70e2e58f5749ccbcd36032b1d1b3" prot="public" static="no">
+        <name>pgm_read_word_far</name>
+        <param><defname>addr</defname></param>
+        <initializer><ref refid="_date_strings_8cpp_1a910fb5f01313d339d3b835d45e1e5ad0" kindref="member">pgm_read_word</ref>(addr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="70" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1a2829b030e67c660d451045dd1ee6b1e9" prot="public" static="no">
+        <name>pgm_read_dword_far</name>
+        <param><defname>addr</defname></param>
+        <initializer><ref refid="pgmspace_8h_1a73cf3e57e32321cb193b3cc4b041cc6c" kindref="member">pgm_read_dword</ref>(addr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="71" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="pgmspace_8h_1ac9201560d03a0cfa240d0421a22c74d1" prot="public" static="no">
+        <name>pgm_read_float_far</name>
+        <param><defname>addr</defname></param>
+        <initializer><ref refid="pgmspace_8h_1a334426a3824fc08cee3a557ded696128" kindref="member">pgm_read_float</ref>(addr)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="72" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="pgmspace_8h_1a132cade895232da163e344f296267817" prot="public" static="no">
+        <type>void</type>
+        <definition>typedef void prog_void</definition>
+        <argsstring></argsstring>
+        <name>prog_void</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="46" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pgmspace_8h_1a8c58c1a4bc98cdbf19a2a070cf889524" prot="public" static="no">
+        <type>char</type>
+        <definition>typedef char prog_char</definition>
+        <argsstring></argsstring>
+        <name>prog_char</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="47" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pgmspace_8h_1a5c79ab4508e17a83c5d89c787cbd6774" prot="public" static="no">
+        <type>unsigned char</type>
+        <definition>typedef unsigned char prog_uchar</definition>
+        <argsstring></argsstring>
+        <name>prog_uchar</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="48" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pgmspace_8h_1ae2aefb42a042fa5cb20e06f7fcfa327e" prot="public" static="no">
+        <type>int8_t</type>
+        <definition>typedef int8_t prog_int8_t</definition>
+        <argsstring></argsstring>
+        <name>prog_int8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="49" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pgmspace_8h_1a1292f2f164a1997206e9cf714f2372fe" prot="public" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t prog_uint8_t</definition>
+        <argsstring></argsstring>
+        <name>prog_uint8_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="50" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pgmspace_8h_1a8a3c5c6e2c14ced6f6bb5c68ffc70082" prot="public" static="no">
+        <type>int16_t</type>
+        <definition>typedef int16_t prog_int16_t</definition>
+        <argsstring></argsstring>
+        <name>prog_int16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="51" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pgmspace_8h_1a05ca2f20b55933ad782917161d54287d" prot="public" static="no">
+        <type>uint16_t</type>
+        <definition>typedef uint16_t prog_uint16_t</definition>
+        <argsstring></argsstring>
+        <name>prog_uint16_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="52" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pgmspace_8h_1a9d67538d7ddfd038ce8b0068d03dd679" prot="public" static="no">
+        <type>int32_t</type>
+        <definition>typedef int32_t prog_int32_t</definition>
+        <argsstring></argsstring>
+        <name>prog_int32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="53" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="pgmspace_8h_1a0756e93e3e7d572f24952cbd8e35b158" prot="public" static="no">
+        <type>uint32_t</type>
+        <definition>typedef uint32_t prog_uint32_t</definition>
+        <argsstring></argsstring>
+        <name>prog_uint32_t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" line="54" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>Mike Roberts</para></simplesect>
+</para><sect1 id="pgmspace_8h_1LICENSE">
+<title>LICENSE</title>
+<para>Software License Agreement (BSD License)</para><para>Copyright (c) 2013, Mike Roberts All rights reserved.</para><para>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:<orderedlist>
+<listitem><para>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</para></listitem><listitem><para>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</para></listitem><listitem><para>Neither the name of the copyright holders nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</para></listitem></orderedlist>
+</para><para>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS &apos;&apos;AS IS&apos;&apos; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE. </para></sect1>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>delorean_pgmspace_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>delorean_pgmspace_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="pgmspace_8h_1a75acaba9e781937468d0911423bc0c35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROGMEM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="pgmspace_8h_1a963f816fc88a5d8479c285ed4c630229" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PGM_P<sp/>const<sp/>char<sp/>*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="pgmspace_8h_1a73809107539df84eaf01f6a4dea4fbff" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PSTR(str)<sp/>(str)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="pgmspace_8h_1a132cade895232da163e344f296267817" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="pgmspace_8h_1a132cade895232da163e344f296267817" kindref="member">prog_void</ref>;</highlight></codeline>
+<codeline lineno="47" refid="pgmspace_8h_1a8c58c1a4bc98cdbf19a2a070cf889524" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="pgmspace_8h_1a8c58c1a4bc98cdbf19a2a070cf889524" kindref="member">prog_char</ref>;</highlight></codeline>
+<codeline lineno="48" refid="pgmspace_8h_1a5c79ab4508e17a83c5d89c787cbd6774" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="pgmspace_8h_1a5c79ab4508e17a83c5d89c787cbd6774" kindref="member">prog_uchar</ref>;</highlight></codeline>
+<codeline lineno="49" refid="pgmspace_8h_1ae2aefb42a042fa5cb20e06f7fcfa327e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int8_t<sp/><ref refid="pgmspace_8h_1ae2aefb42a042fa5cb20e06f7fcfa327e" kindref="member">prog_int8_t</ref>;</highlight></codeline>
+<codeline lineno="50" refid="pgmspace_8h_1a1292f2f164a1997206e9cf714f2372fe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="pgmspace_8h_1a1292f2f164a1997206e9cf714f2372fe" kindref="member">prog_uint8_t</ref>;</highlight></codeline>
+<codeline lineno="51" refid="pgmspace_8h_1a8a3c5c6e2c14ced6f6bb5c68ffc70082" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="pgmspace_8h_1a8a3c5c6e2c14ced6f6bb5c68ffc70082" kindref="member">prog_int16_t</ref>;</highlight></codeline>
+<codeline lineno="52" refid="pgmspace_8h_1a05ca2f20b55933ad782917161d54287d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="pgmspace_8h_1a05ca2f20b55933ad782917161d54287d" kindref="member">prog_uint16_t</ref>;</highlight></codeline>
+<codeline lineno="53" refid="pgmspace_8h_1a9d67538d7ddfd038ce8b0068d03dd679" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/><ref refid="pgmspace_8h_1a9d67538d7ddfd038ce8b0068d03dd679" kindref="member">prog_int32_t</ref>;</highlight></codeline>
+<codeline lineno="54" refid="pgmspace_8h_1a0756e93e3e7d572f24952cbd8e35b158" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>uint32_t<sp/><ref refid="pgmspace_8h_1a0756e93e3e7d572f24952cbd8e35b158" kindref="member">prog_uint32_t</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="pgmspace_8h_1ae74941b597bdd8ffb5c35f45b636946b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>strcpy_P(dest,<sp/>src)<sp/>strcpy((dest),<sp/>(src))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="pgmspace_8h_1a2ca9304dda7dc2472812baa9e9ede965" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>strcat_P(dest,<sp/>src)<sp/>strcat((dest),<sp/>(src))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="pgmspace_8h_1abbb2cd396dde2d1575948bb16ce2853a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>strcmp_P(a,<sp/>b)<sp/>strcmp((a),<sp/>(b))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="pgmspace_8h_1a48c60b057902adf805797f183286728d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_byte(addr)<sp/>(*(const<sp/>unsigned<sp/>char<sp/>*)(addr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="pgmspace_8h_1a910fb5f01313d339d3b835d45e1e5ad0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_word(addr)<sp/>(*(const<sp/>unsigned<sp/>short<sp/>*)(addr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="pgmspace_8h_1a73cf3e57e32321cb193b3cc4b041cc6c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_dword(addr)<sp/>(*(const<sp/>unsigned<sp/>long<sp/>*)(addr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="pgmspace_8h_1a334426a3824fc08cee3a557ded696128" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_float(addr)<sp/>(*(const<sp/>float<sp/>*)(addr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="pgmspace_8h_1ad2b71a6faa0583b51569b531a443cb0a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_byte_near(addr)<sp/>pgm_read_byte(addr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="pgmspace_8h_1a515a845ea5139d8cf1c7f09ad6dad243" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_word_near(addr)<sp/>pgm_read_word(addr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="pgmspace_8h_1a27619bf0e01033f6049a11a6d5d754f3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_dword_near(addr)<sp/>pgm_read_dword(addr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="pgmspace_8h_1a93b33ee6ceaf1dd3ebcfa6f4c96f8b27" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_float_near(addr)<sp/>pgm_read_float(addr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="pgmspace_8h_1a96c2bf865e6b08ed5f881ad25f5d47d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_byte_far(addr)<sp/>pgm_read_byte(addr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="pgmspace_8h_1a3aaf70e2e58f5749ccbcd36032b1d1b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_word_far(addr)<sp/>pgm_read_word(addr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="pgmspace_8h_1a2829b030e67c660d451045dd1ee6b1e9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_dword_far(addr)<sp/>pgm_read_dword(addr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="pgmspace_8h_1ac9201560d03a0cfa240d0421a22c74d1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_float_far(addr)<sp/>pgm_read_float(addr)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Adafruit_TSL2561-master/pgmspace.h"/>
+  </compounddef>
+</doxygen>

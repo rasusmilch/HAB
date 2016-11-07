@@ -1,0 +1,7 @@
+<map id="Adafruit_TSL2561_Unified::getEvent" name="Adafruit_TSL2561_Unified::getEvent">
+<area shape="rect" id="node2" href="$class_adafruit___t_s_l2561___unified.html#a5059ebabcbd037d53459ec9f3c6cdc4b" title="Adafruit_TSL2561_Unified\l::calculateLux" alt="" coords="217,5,381,47"/>
+<area shape="rect" id="node3" href="$class_adafruit___t_s_l2561___unified.html#a23378e7c4792b8b8c721d5a4def960fb" title="Gets the broadband (mixed lighting) and IR only values from the TSL2561, adjusting gain if auto&#45;gain ..." alt="" coords="217,71,381,112"/>
+<area shape="rect" id="node4" href="$class_adafruit___t_s_l2561___unified.html#ac2781d263ae73533628d5844ca38b6de" title="Adafruit_TSL2561_Unified\l::begin" alt="" coords="429,100,593,141"/>
+<area shape="rect" id="node5" href="$class_adafruit___t_s_l2561___unified.html#ad4189a1cb97b07366b5014bec629f29a" title="Adafruit_TSL2561_Unified\l::setGain" alt="" coords="641,41,805,83"/>
+<area shape="rect" id="node6" href="$class_adafruit___t_s_l2561___unified.html#a594636810e6e26dc025b7f1b7a16024f" title="Adafruit_TSL2561_Unified\l::setIntegrationTime" alt="" coords="641,107,805,148"/>
+</map>

@@ -1,0 +1,372 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_filter_one_pole" kind="struct" language="C++" prot="public">
+    <compoundname>FilterOnePole</compoundname>
+    <includes refid="_filter_one_pole_8h" local="no">FilterOnePole.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_filter_one_pole_1aed9400fc1b781fc227344d67509394a4" prot="public" static="no" mutable="no">
+        <type><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9a" kindref="member">FILTER_TYPE</ref></type>
+        <definition>FILTER_TYPE FilterOnePole::FT</definition>
+        <argsstring></argsstring>
+        <name>FT</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="18" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="18" bodyend="-1"/>
+        <referencedby refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" compoundref="_filter_one_pole_8cpp" startline="52" endline="75">output</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" compoundref="_filter_one_pole_8cpp" startline="8" endline="17">setFilter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_one_pole_1adbd63db9a63cdd75fea57ad393729d69" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterOnePole::TauUS</definition>
+        <argsstring></argsstring>
+        <name>TauUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="19" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="19" bodyend="-1"/>
+        <referencedby refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" compoundref="_filter_one_pole_8cpp" startline="19" endline="42">input</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" compoundref="_filter_one_pole_8cpp" startline="52" endline="75">output</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a352bdb0ad964ec87a1b936409be05087" compoundref="_filter_one_pole_8cpp" startline="77" endline="87">print</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a90433addfb2a5509e7ace6c4d5da8fe9" compoundref="_filter_one_pole_8cpp" startline="48" endline="50">setTau</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_one_pole_1a7d7271a45a4dbd1c0833c6f840199afc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterOnePole::TauSamps</definition>
+        <argsstring></argsstring>
+        <name>TauSamps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="20" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="20" bodyend="-1"/>
+        <referencedby refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" compoundref="_filter_one_pole_8cpp" startline="19" endline="42">input</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a352bdb0ad964ec87a1b936409be05087" compoundref="_filter_one_pole_8cpp" startline="77" endline="87">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_one_pole_1ad56691be0ad6f6958b9510f4c16538ad" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterOnePole::Y</definition>
+        <argsstring></argsstring>
+        <name>Y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="23" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="23" bodyend="-1"/>
+        <referencedby refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" compoundref="_filter_one_pole_8cpp" startline="19" endline="42">input</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" compoundref="_filter_one_pole_8cpp" startline="52" endline="75">output</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a352bdb0ad964ec87a1b936409be05087" compoundref="_filter_one_pole_8cpp" startline="77" endline="87">print</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" compoundref="_filter_one_pole_8cpp" startline="8" endline="17">setFilter</referencedby>
+        <referencedby refid="struct_filter_one_pole_1ad7393515a5f4d972714321a3a2ab7fdd" compoundref="_filter_one_pole_8cpp" startline="121" endline="123">setToNewValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_one_pole_1aadcc9674d50c233b8fab1228aa338467" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterOnePole::Ylast</definition>
+        <argsstring></argsstring>
+        <name>Ylast</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="24" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="24" bodyend="-1"/>
+        <referencedby refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" compoundref="_filter_one_pole_8cpp" startline="19" endline="42">input</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a352bdb0ad964ec87a1b936409be05087" compoundref="_filter_one_pole_8cpp" startline="77" endline="87">print</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" compoundref="_filter_one_pole_8cpp" startline="8" endline="17">setFilter</referencedby>
+        <referencedby refid="struct_filter_one_pole_1ad7393515a5f4d972714321a3a2ab7fdd" compoundref="_filter_one_pole_8cpp" startline="121" endline="123">setToNewValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_one_pole_1a8270ac992e09c0edd3405a59809f28e5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterOnePole::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="26" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" compoundref="_filter_one_pole_8cpp" startline="19" endline="42">input</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" compoundref="_filter_one_pole_8cpp" startline="52" endline="75">output</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a352bdb0ad964ec87a1b936409be05087" compoundref="_filter_one_pole_8cpp" startline="77" endline="87">print</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" compoundref="_filter_one_pole_8cpp" startline="8" endline="17">setFilter</referencedby>
+        <referencedby refid="struct_filter_one_pole_1ad7393515a5f4d972714321a3a2ab7fdd" compoundref="_filter_one_pole_8cpp" startline="121" endline="123">setToNewValue</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_one_pole_1a0a611284884d31840b2169547f072fba" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterOnePole::ElapsedUS</definition>
+        <argsstring></argsstring>
+        <name>ElapsedUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="31" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" compoundref="_filter_one_pole_8cpp" startline="19" endline="42">input</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a352bdb0ad964ec87a1b936409be05087" compoundref="_filter_one_pole_8cpp" startline="77" endline="87">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_one_pole_1a1d54fb0cd986555060c80d2b502b4200" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterOnePole::LastUS</definition>
+        <argsstring></argsstring>
+        <name>LastUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="32" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" compoundref="_filter_one_pole_8cpp" startline="19" endline="42">input</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" compoundref="_filter_one_pole_8cpp" startline="8" endline="17">setFilter</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_filter_one_pole_1adc98d3d03b508f5796c3971c9d0c1f6a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterOnePole::FilterOnePole</definition>
+        <argsstring>(FILTER_TYPE ft=LOWPASS, float fc=1.0, float initialValue=0)</argsstring>
+        <name>FilterOnePole</name>
+        <param>
+          <type><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9a" kindref="member">FILTER_TYPE</ref></type>
+          <declname>ft</declname>
+          <defval><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa0f056d1892baa220efdb9afeca443025" kindref="member">LOWPASS</ref></defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>fc</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>initialValue</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="34" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="4" bodyend="6"/>
+        <references refid="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" compoundref="_filter_one_pole_8cpp" startline="8" endline="17">setFilter</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterOnePole::setFilter</definition>
+        <argsstring>(FILTER_TYPE ft, float tauS, float initialValue)</argsstring>
+        <name>setFilter</name>
+        <param>
+          <type><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9a" kindref="member">FILTER_TYPE</ref></type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>tauS</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>initialValue</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="37" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="8" bodyend="17"/>
+        <references refid="struct_filter_one_pole_1aed9400fc1b781fc227344d67509394a4" compoundref="_filter_one_pole_8h" startline="18">FT</references>
+        <references refid="struct_filter_one_pole_1a1d54fb0cd986555060c80d2b502b4200" compoundref="_filter_one_pole_8h" startline="32">LastUS</references>
+        <references refid="struct_filter_one_pole_1a258a86ec2ee6db608f5839b3b2995185" compoundref="_filter_one_pole_8cpp" startline="44" endline="46">setFrequency</references>
+        <references refid="struct_filter_one_pole_1a8270ac992e09c0edd3405a59809f28e5" compoundref="_filter_one_pole_8h" startline="26">X</references>
+        <references refid="struct_filter_one_pole_1ad56691be0ad6f6958b9510f4c16538ad" compoundref="_filter_one_pole_8h" startline="23">Y</references>
+        <references refid="struct_filter_one_pole_1aadcc9674d50c233b8fab1228aa338467" compoundref="_filter_one_pole_8h" startline="24">Ylast</references>
+        <referencedby refid="struct_filter_one_pole_1adc98d3d03b508f5796c3971c9d0c1f6a" compoundref="_filter_one_pole_8cpp" startline="4" endline="6">FilterOnePole</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_1a258a86ec2ee6db608f5839b3b2995185" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterOnePole::setFrequency</definition>
+        <argsstring>(float newFrequency)</argsstring>
+        <name>setFrequency</name>
+        <param>
+          <type>float</type>
+          <declname>newFrequency</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="39" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="44" bodyend="46"/>
+        <references refid="struct_filter_one_pole_1a90433addfb2a5509e7ace6c4d5da8fe9" compoundref="_filter_one_pole_8cpp" startline="48" endline="50">setTau</references>
+        <referencedby refid="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" compoundref="_filter_one_pole_8cpp" startline="8" endline="17">setFilter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_1a90433addfb2a5509e7ace6c4d5da8fe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterOnePole::setTau</definition>
+        <argsstring>(float newTau)</argsstring>
+        <name>setTau</name>
+        <param>
+          <type>float</type>
+          <declname>newTau</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="41" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="48" bodyend="50"/>
+        <references refid="struct_filter_one_pole_1adbd63db9a63cdd75fea57ad393729d69" compoundref="_filter_one_pole_8h" startline="19">TauUS</references>
+        <referencedby refid="struct_filter_one_pole_1a258a86ec2ee6db608f5839b3b2995185" compoundref="_filter_one_pole_8cpp" startline="44" endline="46">setFrequency</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FilterOnePole::input</definition>
+        <argsstring>(float inVal)</argsstring>
+        <name>input</name>
+        <param>
+          <type>float</type>
+          <declname>inVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="43" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="19" bodyend="42"/>
+        <references refid="struct_filter_one_pole_1a0a611284884d31840b2169547f072fba" compoundref="_filter_one_pole_8h" startline="31">ElapsedUS</references>
+        <references refid="struct_filter_one_pole_1a1d54fb0cd986555060c80d2b502b4200" compoundref="_filter_one_pole_8h" startline="32">LastUS</references>
+        <references refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" compoundref="_filter_one_pole_8cpp" startline="52" endline="75">output</references>
+        <references refid="struct_filter_one_pole_1a7d7271a45a4dbd1c0833c6f840199afc" compoundref="_filter_one_pole_8h" startline="20">TauSamps</references>
+        <references refid="struct_filter_one_pole_1adbd63db9a63cdd75fea57ad393729d69" compoundref="_filter_one_pole_8h" startline="19">TauUS</references>
+        <references refid="struct_filter_one_pole_1a8270ac992e09c0edd3405a59809f28e5" compoundref="_filter_one_pole_8h" startline="26">X</references>
+        <references refid="struct_filter_one_pole_1ad56691be0ad6f6958b9510f4c16538ad" compoundref="_filter_one_pole_8h" startline="23">Y</references>
+        <references refid="struct_filter_one_pole_1aadcc9674d50c233b8fab1228aa338467" compoundref="_filter_one_pole_8h" startline="24">Ylast</references>
+        <referencedby refid="struct_filter_one_pole_1a5b54248319d02b3f15d93e6333339389" compoundref="_filter_one_pole_8cpp" startline="89" endline="119">test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FilterOnePole::output</definition>
+        <argsstring>()</argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="45" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="52" bodyend="75"/>
+        <references refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa9b851f36799bcb1dcd3606c6fd679d60" compoundref="_filter_one_pole_8h" startline="10">DIFFERENTIATOR</references>
+        <references refid="struct_filter_one_pole_1aed9400fc1b781fc227344d67509394a4" compoundref="_filter_one_pole_8h" startline="18">FT</references>
+        <references refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa2ef4633b5cfe5eacaff1e7cef80a56e8" compoundref="_filter_one_pole_8h" startline="7">HIGHPASS</references>
+        <references refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa3250d36e92bb9547e346c654be8528f8" compoundref="_filter_one_pole_8h" startline="9">INTEGRATOR</references>
+        <references refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa0f056d1892baa220efdb9afeca443025" compoundref="_filter_one_pole_8h" startline="8">LOWPASS</references>
+        <references refid="struct_filter_one_pole_1adbd63db9a63cdd75fea57ad393729d69" compoundref="_filter_one_pole_8h" startline="19">TauUS</references>
+        <references refid="struct_filter_one_pole_1a8270ac992e09c0edd3405a59809f28e5" compoundref="_filter_one_pole_8h" startline="26">X</references>
+        <references refid="struct_filter_one_pole_1ad56691be0ad6f6958b9510f4c16538ad" compoundref="_filter_one_pole_8h" startline="23">Y</references>
+        <referencedby refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" compoundref="_filter_one_pole_8cpp" startline="19" endline="42">input</referencedby>
+        <referencedby refid="struct_filter_one_pole_cascade_1ae35052126bde0f0f197317b2ad003d26" compoundref="_filter_one_pole_8cpp" startline="140" endline="143">FilterOnePoleCascade::input</referencedby>
+        <referencedby refid="struct_filter_one_pole_1a5b54248319d02b3f15d93e6333339389" compoundref="_filter_one_pole_8cpp" startline="89" endline="119">test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_1a352bdb0ad964ec87a1b936409be05087" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterOnePole::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="47" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="77" bodyend="87"/>
+        <references refid="struct_filter_one_pole_1a0a611284884d31840b2169547f072fba" compoundref="_filter_one_pole_8h" startline="31">ElapsedUS</references>
+        <references refid="struct_filter_one_pole_1a7d7271a45a4dbd1c0833c6f840199afc" compoundref="_filter_one_pole_8h" startline="20">TauSamps</references>
+        <references refid="struct_filter_one_pole_1adbd63db9a63cdd75fea57ad393729d69" compoundref="_filter_one_pole_8h" startline="19">TauUS</references>
+        <references refid="struct_filter_one_pole_1a8270ac992e09c0edd3405a59809f28e5" compoundref="_filter_one_pole_8h" startline="26">X</references>
+        <references refid="struct_filter_one_pole_1ad56691be0ad6f6958b9510f4c16538ad" compoundref="_filter_one_pole_8h" startline="23">Y</references>
+        <references refid="struct_filter_one_pole_1aadcc9674d50c233b8fab1228aa338467" compoundref="_filter_one_pole_8h" startline="24">Ylast</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_1a5b54248319d02b3f15d93e6333339389" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterOnePole::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="49" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="89" bodyend="119"/>
+        <references refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa2ef4633b5cfe5eacaff1e7cef80a56e8" compoundref="_filter_one_pole_8h" startline="7">HIGHPASS</references>
+        <references refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" compoundref="_filter_one_pole_8cpp" startline="19" endline="42">input</references>
+        <references refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa0f056d1892baa220efdb9afeca443025" compoundref="_filter_one_pole_8h" startline="8">LOWPASS</references>
+        <references refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" compoundref="_time_8cpp" startline="250" endline="272">now</references>
+        <references refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" compoundref="_filter_one_pole_8cpp" startline="52" endline="75">output</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_1ad7393515a5f4d972714321a3a2ab7fdd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterOnePole::setToNewValue</definition>
+        <argsstring>(float newVal)</argsstring>
+        <name>setToNewValue</name>
+        <param>
+          <type>float</type>
+          <declname>newVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="51" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="121" bodyend="123"/>
+        <references refid="struct_filter_one_pole_1a8270ac992e09c0edd3405a59809f28e5" compoundref="_filter_one_pole_8h" startline="26">X</references>
+        <references refid="struct_filter_one_pole_1ad56691be0ad6f6958b9510f4c16538ad" compoundref="_filter_one_pole_8h" startline="23">Y</references>
+        <references refid="struct_filter_one_pole_1aadcc9674d50c233b8fab1228aa338467" compoundref="_filter_one_pole_8h" startline="24">Ylast</references>
+        <referencedby refid="struct_filter_one_pole_cascade_1a57f396fd01e54c8a6f3d3a6213b4d5a6" compoundref="_filter_one_pole_8cpp" startline="128" endline="131">FilterOnePoleCascade::FilterOnePoleCascade</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="17" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="17" bodyend="52"/>
+    <listofallmembers>
+      <member refid="struct_filter_one_pole_1a0a611284884d31840b2169547f072fba" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>ElapsedUS</name></member>
+      <member refid="struct_filter_one_pole_1adc98d3d03b508f5796c3971c9d0c1f6a" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>FilterOnePole</name></member>
+      <member refid="struct_filter_one_pole_1aed9400fc1b781fc227344d67509394a4" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>FT</name></member>
+      <member refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>input</name></member>
+      <member refid="struct_filter_one_pole_1a1d54fb0cd986555060c80d2b502b4200" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>LastUS</name></member>
+      <member refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>output</name></member>
+      <member refid="struct_filter_one_pole_1a352bdb0ad964ec87a1b936409be05087" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>print</name></member>
+      <member refid="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>setFilter</name></member>
+      <member refid="struct_filter_one_pole_1a258a86ec2ee6db608f5839b3b2995185" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>setFrequency</name></member>
+      <member refid="struct_filter_one_pole_1a90433addfb2a5509e7ace6c4d5da8fe9" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>setTau</name></member>
+      <member refid="struct_filter_one_pole_1ad7393515a5f4d972714321a3a2ab7fdd" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>setToNewValue</name></member>
+      <member refid="struct_filter_one_pole_1a7d7271a45a4dbd1c0833c6f840199afc" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>TauSamps</name></member>
+      <member refid="struct_filter_one_pole_1adbd63db9a63cdd75fea57ad393729d69" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>TauUS</name></member>
+      <member refid="struct_filter_one_pole_1a5b54248319d02b3f15d93e6333339389" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>test</name></member>
+      <member refid="struct_filter_one_pole_1a8270ac992e09c0edd3405a59809f28e5" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>X</name></member>
+      <member refid="struct_filter_one_pole_1ad56691be0ad6f6958b9510f4c16538ad" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>Y</name></member>
+      <member refid="struct_filter_one_pole_1aadcc9674d50c233b8fab1228aa338467" prot="public" virt="non-virtual"><scope>FilterOnePole</scope><name>Ylast</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

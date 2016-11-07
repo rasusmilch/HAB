@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_e_e_p_r_o_m__anything_8h" kind="file" language="C++">
+    <compoundname>EEPROM_anything.h</compoundname>
+    <includes local="no">EEPROM.h</includes>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_weather___balloon_8cpp" local="yes">Weather_Balloon/Weather_Balloon.cpp</includedby>
+    <incdepgraph>
+      <node id="539">
+        <label>Weather_Balloon/EEPROM_anything.h</label>
+        <link refid="EEPROM_anything.h"/>
+        <childnode refid="540" relation="include">
+        </childnode>
+        <childnode refid="541" relation="include">
+        </childnode>
+      </node>
+      <node id="541">
+        <label>Arduino.h</label>
+      </node>
+      <node id="540">
+        <label>EEPROM.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="543">
+        <label>Weather_Balloon/Weather_Balloon.cpp</label>
+        <link refid="_weather___balloon_8cpp"/>
+      </node>
+      <node id="542">
+        <label>Weather_Balloon/EEPROM_anything.h</label>
+        <link refid="EEPROM_anything.h"/>
+        <childnode refid="543" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_e_e_p_r_o_m__anything_8h_1a396fbd5a2d6b5b3f3dac10fec0bdd780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int EEPROM_writeAnything</definition>
+        <argsstring>(int ee, const T &amp;value)</argsstring>
+        <name>EEPROM_writeAnything</name>
+        <param>
+          <type>int</type>
+          <declname>ee</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/EEPROM_anything.h" line="4" column="1" bodyfile="Weather_Balloon/EEPROM_anything.h" bodystart="4" bodyend="11"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+      </memberdef>
+      <memberdef kind="function" id="_e_e_p_r_o_m__anything_8h_1a15fc5dc360b561e03651fd94aa72800f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>class T</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int EEPROM_readAnything</definition>
+        <argsstring>(int ee, T &amp;value)</argsstring>
+        <name>EEPROM_readAnything</name>
+        <param>
+          <type>int</type>
+          <declname>ee</declname>
+        </param>
+        <param>
+          <type>T &amp;</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/EEPROM_anything.h" line="13" column="1" bodyfile="Weather_Balloon/EEPROM_anything.h" bodystart="13" bodyend="20"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;EEPROM.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>type<sp/>definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="_e_e_p_r_o_m__anything_8h_1a396fbd5a2d6b5b3f3dac10fec0bdd780" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_e_e_p_r_o_m__anything_8h_1a396fbd5a2d6b5b3f3dac10fec0bdd780" kindref="member">EEPROM_writeAnything</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ee,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T&amp;<sp/>value)</highlight></codeline>
+<codeline lineno="5"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*<sp/>p<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>byte*)(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)&amp;value;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(value);<sp/>i++)</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EEPROM.write(ee++,<sp/>*p++);</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_e_e_p_r_o_m__anything_8h_1a15fc5dc360b561e03651fd94aa72800f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_e_e_p_r_o_m__anything_8h_1a15fc5dc360b561e03651fd94aa72800f" kindref="member">EEPROM_readAnything</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ee,<sp/>T&amp;<sp/>value)</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>byte*<sp/>p<sp/>=<sp/>(byte*)(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*)&amp;value;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(value);<sp/>i++)</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*p++<sp/>=<sp/>EEPROM.read(ee++);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/EEPROM_anything.h"/>
+  </compounddef>
+</doxygen>

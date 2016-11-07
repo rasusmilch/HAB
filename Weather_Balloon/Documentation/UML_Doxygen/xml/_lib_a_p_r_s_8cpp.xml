@@ -1,0 +1,1588 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_lib_a_p_r_s_8cpp" kind="file" language="C++">
+    <compoundname>LibAPRS.cpp</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes refid="_a_f_s_k_8h" local="yes">AFSK.h</includes>
+    <includes refid="_a_x25_8h" local="yes">AX25.h</includes>
+    <incdepgraph>
+      <node id="1112">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1111">
+        <label>stdint.h</label>
+      </node>
+      <node id="1115">
+        <label>FIFO.h</label>
+        <link refid="_f_i_f_o_8h"/>
+        <childnode refid="1116" relation="include">
+        </childnode>
+        <childnode refid="1117" relation="include">
+        </childnode>
+      </node>
+      <node id="1118">
+        <label>HDLC.h</label>
+        <link refid="_h_d_l_c_8h"/>
+      </node>
+      <node id="1116">
+        <label>stddef.h</label>
+      </node>
+      <node id="1117">
+        <label>util/atomic.h</label>
+      </node>
+      <node id="1119">
+        <label>AX25.h</label>
+        <link refid="_a_x25_8h"/>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1109" relation="include">
+        </childnode>
+      </node>
+      <node id="1108">
+        <label>AFSK.h</label>
+        <link refid="_a_f_s_k_8h"/>
+        <childnode refid="1109" relation="include">
+        </childnode>
+        <childnode refid="1111" relation="include">
+        </childnode>
+        <childnode refid="1112" relation="include">
+        </childnode>
+        <childnode refid="1113" relation="include">
+        </childnode>
+        <childnode refid="1114" relation="include">
+        </childnode>
+        <childnode refid="1115" relation="include">
+        </childnode>
+        <childnode refid="1118" relation="include">
+        </childnode>
+      </node>
+      <node id="1110">
+        <label>constants.h</label>
+        <link refid="constants_8h"/>
+      </node>
+      <node id="1114">
+        <label>avr/pgmspace.h</label>
+      </node>
+      <node id="1107">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1106">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.cpp</label>
+        <link refid="LibAPRS.cpp"/>
+        <childnode refid="1107" relation="include">
+        </childnode>
+        <childnode refid="1108" relation="include">
+        </childnode>
+        <childnode refid="1119" relation="include">
+        </childnode>
+      </node>
+      <node id="1113">
+        <label>stdio.h</label>
+      </node>
+      <node id="1109">
+        <label>device.h</label>
+        <link refid="device_8h"/>
+        <childnode refid="1110" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct____freelist" prot="public">__freelist</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_lib_a_p_r_s_8cpp_1a3c5cd622462bb50b6dab4c189e219eb9" prot="public" static="no">
+        <name>countof</name>
+        <param><defname>a</defname></param>
+        <initializer>sizeof(a)/sizeof(a[0])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="8" column="9" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a83a67f84a390274a7ed49c58f0eb0502" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_afsk" kindref="compound">Afsk</ref></type>
+        <definition>Afsk modem</definition>
+        <argsstring></argsstring>
+        <name>modem</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="5" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1aced1033fabea6b8ddf45afd1cbb76a45" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref></type>
+        <definition>AX25Ctx AX25</definition>
+        <argsstring></argsstring>
+        <name>AX25</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="6" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a2986d8cf0562c17f61a0e69f0548b54d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LibAPRS_vref</definition>
+        <argsstring></argsstring>
+        <name>LibAPRS_vref</name>
+        <initializer>= <ref refid="constants_8h_1afb85aba9013ac48aedc1a81b7c2ff2ff" kindref="member">REF_3V3</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="10" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="10" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1aa88a0244c6e90a933c8292d9ea347d42" compoundref="_a_f_s_k_8cpp" startline="19" endline="26">AFSK_hw_refDetect</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" compoundref="_lib_a_p_r_s_8cpp" startline="54" endline="60">APRS_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LibAPRS_open_squelch</definition>
+        <argsstring></argsstring>
+        <name>LibAPRS_open_squelch</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="11" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" compoundref="_lib_a_p_r_s_8cpp" startline="54" endline="60">APRS_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1aca36a8e2b3f8db1978f37152c411201c" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long custom_preamble</definition>
+        <argsstring></argsstring>
+        <name>custom_preamble</name>
+        <initializer>= 350UL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="13" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="13" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8d2879844f6f9808dc5a101f6eb74e4c" compoundref="_lib_a_p_r_s_8cpp" startline="116" endline="118">APRS_setPreamble</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a258d100e9191b0a720dee2230b376abe" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long custom_tail</definition>
+        <argsstring></argsstring>
+        <name>custom_tail</name>
+        <initializer>= 50UL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="14" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="14" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ab32765e29df288da61f2bda8cf13e276" compoundref="_lib_a_p_r_s_8cpp" startline="120" endline="122">APRS_setTail</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a6d4972a88e5d7cc0aa00e10c5e03e8bc" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref></type>
+        <definition>AX25Call src</definition>
+        <argsstring></argsstring>
+        <name>src</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="16" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="16" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+        <referencedby refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" compoundref="_sd2_card_8cpp" startline="664" endline="672">Sd2Card::writeData</referencedby>
+        <referencedby refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">Sd2Card::type</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1af80502b9580f50d6f8ee6b1e0eaff2ca" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref></type>
+        <definition>AX25Call dst</definition>
+        <argsstring></argsstring>
+        <name>dst</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="17" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+        <referencedby refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" compoundref="_sd2_card_8cpp" startline="503" endline="521">Sd2Card::readEnd</referencedby>
+        <referencedby refid="class_sd2_card_1a73ad7fee10e05439f6ec832ce0eb196f" compoundref="_sd2_card_8h" startline="190" endline="190">Sd2Card::partialBlockRead</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1adf1e23afec8ec69736d3e12b0ad68a8d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref></type>
+        <definition>AX25Call path1</definition>
+        <argsstring></argsstring>
+        <name>path1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="18" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a17d08d3114914911e1e2417940d00868" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref></type>
+        <definition>AX25Call path2</definition>
+        <argsstring></argsstring>
+        <name>path2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="19" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char CALL[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>CALL</name>
+        <initializer>= &quot;NOCALL&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="21" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="21" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1aa36158ec57ff1fc02eaa21e2bb74540d" compoundref="_lib_a_p_r_s_8cpp" startline="66" endline="74">APRS_setCallsign</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int CALL_SSID</definition>
+        <argsstring></argsstring>
+        <name>CALL_SSID</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="22" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1aa36158ec57ff1fc02eaa21e2bb74540d" compoundref="_lib_a_p_r_s_8cpp" startline="66" endline="74">APRS_setCallsign</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char DST[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>DST</name>
+        <initializer>= &quot;APZMDM&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="23" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a21a8a7357b3805665d49c92f0e120a4b" compoundref="_lib_a_p_r_s_8cpp" startline="76" endline="84">APRS_setDestination</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int DST_SSID</definition>
+        <argsstring></argsstring>
+        <name>DST_SSID</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="24" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a21a8a7357b3805665d49c92f0e120a4b" compoundref="_lib_a_p_r_s_8cpp" startline="76" endline="84">APRS_setDestination</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char PATH1[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>PATH1</name>
+        <initializer>= &quot;WIDE1&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="25" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="25" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a893dabee106e6537f9a70b851df3a6fa" compoundref="_lib_a_p_r_s_8cpp" startline="86" endline="94">APRS_setPath1</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PATH1_SSID</definition>
+        <argsstring></argsstring>
+        <name>PATH1_SSID</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="26" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a893dabee106e6537f9a70b851df3a6fa" compoundref="_lib_a_p_r_s_8cpp" startline="86" endline="94">APRS_setPath1</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char PATH2[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>PATH2</name>
+        <initializer>= &quot;WIDE2&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="27" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="27" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1acd65cef84cc868398762c3b50b6e4444" compoundref="_lib_a_p_r_s_8cpp" startline="96" endline="104">APRS_setPath2</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PATH2_SSID</definition>
+        <argsstring></argsstring>
+        <name>PATH2_SSID</name>
+        <initializer>= 2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="28" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="28" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1acd65cef84cc868398762c3b50b6e4444" compoundref="_lib_a_p_r_s_8cpp" startline="96" endline="104">APRS_setPath2</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1ae9279326b6ef5ef489e2c37e8b764a4d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref></type>
+        <definition>AX25Call path[4]</definition>
+        <argsstring>[4]</argsstring>
+        <name>path</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="30" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char latitude[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>latitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="33" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="33" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a4234103a952e958b2b2c6e15d0637efd" compoundref="_lib_a_p_r_s_8cpp" startline="136" endline="143">APRS_setLat</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char longtitude[10]</definition>
+        <argsstring>[10]</argsstring>
+        <name>longtitude</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="34" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="34" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a40002fdeaf4994017005d85c334b6b65" compoundref="_lib_a_p_r_s_8cpp" startline="145" endline="152">APRS_setLon</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char symbolTable</definition>
+        <argsstring></argsstring>
+        <name>symbolTable</name>
+        <initializer>= &apos;/&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="35" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="35" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a36e9ef7abf74277e45ff59b48f7ff545" compoundref="_lib_a_p_r_s_8cpp" startline="124" endline="130">APRS_useAlternateSymbolTable</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char symbol</definition>
+        <argsstring></argsstring>
+        <name>symbol</name>
+        <initializer>= &apos;n&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="36" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="36" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a128fa7c712c53cbba638cab0e42bfb23" compoundref="_lib_a_p_r_s_8cpp" startline="132" endline="134">APRS_setSymbol</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t power</definition>
+        <argsstring></argsstring>
+        <name>power</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="38" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="38" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a88512e86a80a125417651ef2a4f803a0" compoundref="_lib_a_p_r_s_8cpp" startline="154" endline="158">APRS_setPower</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="39" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="39" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1ad9f68984da752ee6d00d9439800debd6" compoundref="_lib_a_p_r_s_8cpp" startline="160" endline="164">APRS_setHeight</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gain</definition>
+        <argsstring></argsstring>
+        <name>gain</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="40" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1ad4189a1cb97b07366b5014bec629f29a" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="256" endline="271">Adafruit_TSL2561_Unified::setGain</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a962ed213cb6b79f710aeb676d2ba53e4" compoundref="_lib_a_p_r_s_8cpp" startline="166" endline="170">APRS_setGain</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t directivity</definition>
+        <argsstring></argsstring>
+        <name>directivity</name>
+        <initializer>= 10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="41" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a37f30cfbe0491e15b0ae232ea9e66358" compoundref="_lib_a_p_r_s_8cpp" startline="172" endline="176">APRS_setDirectivity</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char message_recip[7]</definition>
+        <argsstring>[7]</argsstring>
+        <name>message_recip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="45" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="45" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae027f5d3426daec37661dc7ede9aedf0" compoundref="_lib_a_p_r_s_8cpp" startline="106" endline="114">APRS_setMessageDestination</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" compoundref="_lib_a_p_r_s_8cpp" startline="259" endline="309">APRS_sendMsg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int message_recip_ssid</definition>
+        <argsstring></argsstring>
+        <name>message_recip_ssid</name>
+        <initializer>= -1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="46" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="46" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae027f5d3426daec37661dc7ede9aedf0" compoundref="_lib_a_p_r_s_8cpp" startline="106" endline="114">APRS_setMessageDestination</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" compoundref="_lib_a_p_r_s_8cpp" startline="178" endline="195">APRS_printSettings</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" compoundref="_lib_a_p_r_s_8cpp" startline="259" endline="309">APRS_sendMsg</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int message_seq</definition>
+        <argsstring></argsstring>
+        <name>message_seq</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="48" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="48" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" compoundref="_lib_a_p_r_s_8cpp" startline="259" endline="309">APRS_sendMsg</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" compoundref="_lib_a_p_r_s_8cpp" startline="311" endline="314">APRS_msgRetry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a9d9905079327a4d3523039129c305cf8" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char lastMessage[67]</definition>
+        <argsstring>[67]</argsstring>
+        <name>lastMessage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="49" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" compoundref="_lib_a_p_r_s_8cpp" startline="259" endline="309">APRS_sendMsg</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" compoundref="_lib_a_p_r_s_8cpp" startline="311" endline="314">APRS_msgRetry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1ad2a78273ae56c7bf679e652b558f6da0" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t lastMessageLen</definition>
+        <argsstring></argsstring>
+        <name>lastMessageLen</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="50" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="50" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" compoundref="_lib_a_p_r_s_8cpp" startline="259" endline="309">APRS_sendMsg</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" compoundref="_lib_a_p_r_s_8cpp" startline="311" endline="314">APRS_msgRetry</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1abcc5bf7300c74a46f6e28ad57365b3d8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool message_autoAck</definition>
+        <argsstring></argsstring>
+        <name>message_autoAck</name>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="51" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1aa84b5136d382ee274a86572892e5e007" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int __heap_start</definition>
+        <argsstring></argsstring>
+        <name>__heap_start</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="319" column="1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" compoundref="_lib_a_p_r_s_8cpp" startline="311" endline="314">APRS_msgRetry</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8d862dc01c44bfabc8d952bb77f8da89" compoundref="_lib_a_p_r_s_8cpp" startline="339" endline="348">freeMemory</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a8d18204366e8a385c441663ed41f1ae4" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* __brkval</definition>
+        <argsstring></argsstring>
+        <name>__brkval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="320" column="1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" compoundref="_lib_a_p_r_s_8cpp" startline="311" endline="314">APRS_msgRetry</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8d862dc01c44bfabc8d952bb77f8da89" compoundref="_lib_a_p_r_s_8cpp" startline="339" endline="348">freeMemory</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_lib_a_p_r_s_8cpp_1a9cfd748d9cb8a517422fa4e4f0b3320f" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct____freelist" kindref="compound">__freelist</ref> *</type>
+        <definition>struct __freelist* __flp</definition>
+        <argsstring></argsstring>
+        <name>__flp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="327" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1adbb46a71de14834dbd45a286bd219c7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void aprs_msg_callback</definition>
+        <argsstring>(struct AX25Msg *msg)</argsstring>
+        <name>aprs_msg_callback</name>
+        <param>
+          <type>struct <ref refid="struct_a_x25_msg" kindref="compound">AX25Msg</ref> *</type>
+          <declname>msg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="7" column="1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" compoundref="_lib_a_p_r_s_8cpp" startline="54" endline="60">APRS_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a4112ffe044a152d02f86f8f25a30d45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_init</definition>
+        <argsstring>(int reference, bool open_squelch)</argsstring>
+        <name>APRS_init</name>
+        <param>
+          <type>int</type>
+          <declname>reference</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>open_squelch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="54" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="54" bodyend="60"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a2986d8cf0562c17f61a0e69f0548b54d" compoundref="_lib_a_p_r_s_8cpp" startline="10">LibAPRS_vref</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" compoundref="_lib_a_p_r_s_8cpp" startline="11">LibAPRS_open_squelch</references>
+        <references refid="_a_f_s_k_8cpp_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</references>
+        <references refid="_a_x25_8cpp_1a23e83c05decc0769bfd8f62d860bc636" compoundref="_a_x25_8cpp" startline="19" endline="23">ax25_init</references>
+        <references refid="_lib_a_p_r_s_8cpp_1adbb46a71de14834dbd45a286bd219c7c">aprs_msg_callback</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a0e02a071a97738c3c3d32a6c18f897bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_poll</definition>
+        <argsstring>(void)</argsstring>
+        <name>APRS_poll</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="62" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="62" bodyend="64"/>
+        <references refid="_a_x25_8cpp_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</references>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1a05c2e5b588ced1cd7312f5b0edc5b295" compoundref="_a_f_s_k_8cpp" startline="461" endline="475">ISR</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1aa36158ec57ff1fc02eaa21e2bb74540d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setCallsign</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setCallsign</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="66" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="66" bodyend="74"/>
+        <references refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" compoundref="_lib_a_p_r_s_8cpp" startline="21">CALL</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" compoundref="_lib_a_p_r_s_8cpp" startline="22">CALL_SSID</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a21a8a7357b3805665d49c92f0e120a4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setDestination</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setDestination</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="76" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="76" bodyend="84"/>
+        <references refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" compoundref="_lib_a_p_r_s_8cpp" startline="23">DST</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" compoundref="_lib_a_p_r_s_8cpp" startline="24">DST_SSID</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a893dabee106e6537f9a70b851df3a6fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setPath1</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setPath1</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="86" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="86" bodyend="94"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" compoundref="_lib_a_p_r_s_8cpp" startline="25">PATH1</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" compoundref="_lib_a_p_r_s_8cpp" startline="26">PATH1_SSID</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1acd65cef84cc868398762c3b50b6e4444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setPath2</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setPath2</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="96" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="96" bodyend="104"/>
+        <references refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" compoundref="_lib_a_p_r_s_8cpp" startline="27">PATH2</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" compoundref="_lib_a_p_r_s_8cpp" startline="28">PATH2_SSID</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1ae027f5d3426daec37661dc7ede9aedf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setMessageDestination</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setMessageDestination</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="106" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="106" bodyend="114"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" compoundref="_lib_a_p_r_s_8cpp" startline="45">message_recip</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" compoundref="_lib_a_p_r_s_8cpp" startline="46">message_recip_ssid</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a8d2879844f6f9808dc5a101f6eb74e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setPreamble</definition>
+        <argsstring>(unsigned long pre)</argsstring>
+        <name>APRS_setPreamble</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>pre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="116" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="116" bodyend="118"/>
+        <references refid="_lib_a_p_r_s_8cpp_1aca36a8e2b3f8db1978f37152c411201c" compoundref="_lib_a_p_r_s_8cpp" startline="13">custom_preamble</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1ab32765e29df288da61f2bda8cf13e276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setTail</definition>
+        <argsstring>(unsigned long tail)</argsstring>
+        <name>APRS_setTail</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="120" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="120" bodyend="122"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a258d100e9191b0a720dee2230b376abe" compoundref="_lib_a_p_r_s_8cpp" startline="14">custom_tail</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a36e9ef7abf74277e45ff59b48f7ff545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_useAlternateSymbolTable</definition>
+        <argsstring>(bool use)</argsstring>
+        <name>APRS_useAlternateSymbolTable</name>
+        <param>
+          <type>bool</type>
+          <declname>use</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="124" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="124" bodyend="130"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" compoundref="_lib_a_p_r_s_8cpp" startline="35">symbolTable</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a128fa7c712c53cbba638cab0e42bfb23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setSymbol</definition>
+        <argsstring>(char sym)</argsstring>
+        <name>APRS_setSymbol</name>
+        <param>
+          <type>char</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="132" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="132" bodyend="134"/>
+        <references refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" compoundref="_lib_a_p_r_s_8cpp" startline="36">symbol</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a4234103a952e958b2b2c6e15d0637efd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setLat</definition>
+        <argsstring>(char *lat)</argsstring>
+        <name>APRS_setLat</name>
+        <param>
+          <type>char *</type>
+          <declname>lat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="136" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="136" bodyend="143"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" compoundref="_lib_a_p_r_s_8cpp" startline="33">latitude</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a40002fdeaf4994017005d85c334b6b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setLon</definition>
+        <argsstring>(char *lon)</argsstring>
+        <name>APRS_setLon</name>
+        <param>
+          <type>char *</type>
+          <declname>lon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="145" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="145" bodyend="152"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" compoundref="_lib_a_p_r_s_8cpp" startline="34">longtitude</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a88512e86a80a125417651ef2a4f803a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setPower</definition>
+        <argsstring>(int s)</argsstring>
+        <name>APRS_setPower</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="154" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="154" bodyend="158"/>
+        <references refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" compoundref="_lib_a_p_r_s_8cpp" startline="38">power</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1ad9f68984da752ee6d00d9439800debd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setHeight</definition>
+        <argsstring>(int s)</argsstring>
+        <name>APRS_setHeight</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="160" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="160" bodyend="164"/>
+        <references refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" compoundref="_lib_a_p_r_s_8cpp" startline="39">height</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a962ed213cb6b79f710aeb676d2ba53e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setGain</definition>
+        <argsstring>(int s)</argsstring>
+        <name>APRS_setGain</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="166" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="166" bodyend="170"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" compoundref="_lib_a_p_r_s_8cpp" startline="40">gain</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a37f30cfbe0491e15b0ae232ea9e66358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setDirectivity</definition>
+        <argsstring>(int s)</argsstring>
+        <name>APRS_setDirectivity</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="172" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="172" bodyend="176"/>
+        <references refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" compoundref="_lib_a_p_r_s_8cpp" startline="41">directivity</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a3fffb640ed02c57078f50fd7289c352d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_printSettings</definition>
+        <argsstring>()</argsstring>
+        <name>APRS_printSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="178" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="178" bodyend="195"/>
+        <references refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" compoundref="_lib_a_p_r_s_8cpp" startline="21">CALL</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" compoundref="_lib_a_p_r_s_8cpp" startline="22">CALL_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" compoundref="_lib_a_p_r_s_8cpp" startline="23">DST</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" compoundref="_lib_a_p_r_s_8cpp" startline="24">DST_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" compoundref="_lib_a_p_r_s_8cpp" startline="25">PATH1</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" compoundref="_lib_a_p_r_s_8cpp" startline="26">PATH1_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" compoundref="_lib_a_p_r_s_8cpp" startline="27">PATH2</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" compoundref="_lib_a_p_r_s_8cpp" startline="28">PATH2_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" compoundref="_lib_a_p_r_s_8cpp" startline="45">message_recip</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" compoundref="_lib_a_p_r_s_8cpp" startline="46">message_recip_ssid</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aca36a8e2b3f8db1978f37152c411201c" compoundref="_lib_a_p_r_s_8cpp" startline="13">custom_preamble</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a258d100e9191b0a720dee2230b376abe" compoundref="_lib_a_p_r_s_8cpp" startline="14">custom_tail</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" compoundref="_lib_a_p_r_s_8cpp" startline="35">symbolTable</references>
+        <references refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" compoundref="_lib_a_p_r_s_8cpp" startline="36">symbol</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" compoundref="_lib_a_p_r_s_8cpp" startline="38">power</references>
+        <references refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" compoundref="_lib_a_p_r_s_8cpp" startline="39">height</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" compoundref="_lib_a_p_r_s_8cpp" startline="40">gain</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" compoundref="_lib_a_p_r_s_8cpp" startline="41">directivity</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" compoundref="_lib_a_p_r_s_8cpp" startline="33">latitude</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" compoundref="_lib_a_p_r_s_8cpp" startline="34">longtitude</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1ae5f394441f5ec861b661e0a63e33f44e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_sendPkt</definition>
+        <argsstring>(void *_buffer, size_t length)</argsstring>
+        <name>APRS_sendPkt</name>
+        <param>
+          <type>void *</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="197" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="197" bodyend="219"/>
+        <references refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" compoundref="_a_x25_8h" startline="44">AX25Call::call</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" compoundref="_lib_a_p_r_s_8cpp" startline="23">DST</references>
+        <references refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" compoundref="_a_x25_8h" startline="46">AX25Call::ssid</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" compoundref="_lib_a_p_r_s_8cpp" startline="24">DST_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" compoundref="_lib_a_p_r_s_8cpp" startline="21">CALL</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" compoundref="_lib_a_p_r_s_8cpp" startline="22">CALL_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" compoundref="_lib_a_p_r_s_8cpp" startline="25">PATH1</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" compoundref="_lib_a_p_r_s_8cpp" startline="26">PATH1_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" compoundref="_lib_a_p_r_s_8cpp" startline="27">PATH2</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" compoundref="_lib_a_p_r_s_8cpp" startline="28">PATH2_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1af80502b9580f50d6f8ee6b1e0eaff2ca" compoundref="_lib_a_p_r_s_8cpp" startline="17">dst</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a6d4972a88e5d7cc0aa00e10c5e03e8bc" compoundref="_lib_a_p_r_s_8cpp" startline="16">src</references>
+        <references refid="_lib_a_p_r_s_8cpp_1adf1e23afec8ec69736d3e12b0ad68a8d" compoundref="_lib_a_p_r_s_8cpp" startline="18">path1</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a17d08d3114914911e1e2417940d00868" compoundref="_lib_a_p_r_s_8cpp" startline="19">path2</references>
+        <references refid="_a_x25_8cpp_1aeb4be1c44c0faeb1fc73dbb04ac59a6e" compoundref="_a_x25_8cpp" startline="141" endline="164">ax25_sendVia</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a3c5cd622462bb50b6dab4c189e219eb9" compoundref="_lib_a_p_r_s_8cpp" startline="8">countof</references>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" compoundref="_lib_a_p_r_s_8cpp" startline="259" endline="309">APRS_sendMsg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a8a1dc880a0b1622b68d488a4bb69afa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_sendLoc</definition>
+        <argsstring>(void *_buffer, size_t length)</argsstring>
+        <name>APRS_sendLoc</name>
+        <param>
+          <type>void *</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="222" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="222" bodyend="256"/>
+        <references refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" compoundref="_lib_a_p_r_s_8cpp" startline="38">power</references>
+        <references refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" compoundref="_lib_a_p_r_s_8cpp" startline="39">height</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" compoundref="_lib_a_p_r_s_8cpp" startline="40">gain</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" compoundref="_lib_a_p_r_s_8cpp" startline="41">directivity</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" compoundref="_lib_a_p_r_s_8cpp" startline="35">symbolTable</references>
+        <references refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" compoundref="_lib_a_p_r_s_8cpp" startline="36">symbol</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" compoundref="_lib_a_p_r_s_8cpp" startline="33">latitude</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" compoundref="_lib_a_p_r_s_8cpp" startline="34">longtitude</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a40fd4b0339cc234de92be317d48ea9fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_sendMsg</definition>
+        <argsstring>(void *_buffer, size_t length)</argsstring>
+        <name>APRS_sendMsg</name>
+        <param>
+          <type>void *</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="259" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="259" bodyend="309"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" compoundref="_lib_a_p_r_s_8cpp" startline="45">message_recip</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" compoundref="_lib_a_p_r_s_8cpp" startline="46">message_recip_ssid</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9d9905079327a4d3523039129c305cf8" compoundref="_lib_a_p_r_s_8cpp" startline="49">lastMessage</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ad2a78273ae56c7bf679e652b558f6da0" compoundref="_lib_a_p_r_s_8cpp" startline="50">lastMessageLen</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" compoundref="_lib_a_p_r_s_8cpp" startline="48">message_seq</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</references>
+        <referencedby refid="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" compoundref="_lib_a_p_r_s_8cpp" startline="311" endline="314">APRS_msgRetry</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a46f010ed409b5457f351361c65d47fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_msgRetry</definition>
+        <argsstring>()</argsstring>
+        <name>APRS_msgRetry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="311" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="311" bodyend="314"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" compoundref="_lib_a_p_r_s_8cpp" startline="48">message_seq</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a40fd4b0339cc234de92be317d48ea9fb" compoundref="_lib_a_p_r_s_8cpp" startline="259" endline="309">APRS_sendMsg</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9d9905079327a4d3523039129c305cf8" compoundref="_lib_a_p_r_s_8cpp" startline="49">lastMessage</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ad2a78273ae56c7bf679e652b558f6da0" compoundref="_lib_a_p_r_s_8cpp" startline="50">lastMessageLen</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aa84b5136d382ee274a86572892e5e007">__heap_start</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d18204366e8a385c441663ed41f1ae4">__brkval</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a04e1cfe100b396e57c2581502de5e5ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int freeListSize</definition>
+        <argsstring>()</argsstring>
+        <name>freeListSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="329" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="329" bodyend="337"/>
+        <references refid="struct____freelist_1abfcbc656d931bb3fc6f5b3f3deec41cd" compoundref="_lib_a_p_r_s_8cpp" startline="324">__freelist::nx</references>
+        <references refid="struct____freelist_1a400b91c9baf14861360a1c1caba8309d" compoundref="_lib_a_p_r_s_8cpp" startline="323">__freelist::sz</references>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8d862dc01c44bfabc8d952bb77f8da89" compoundref="_lib_a_p_r_s_8cpp" startline="339" endline="348">freeMemory</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8cpp_1a8d862dc01c44bfabc8d952bb77f8da89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int freeMemory</definition>
+        <argsstring>()</argsstring>
+        <name>freeMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="339" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="339" bodyend="348"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d18204366e8a385c441663ed41f1ae4">__brkval</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aa84b5136d382ee274a86572892e5e007">__heap_start</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a04e1cfe100b396e57c2581502de5e5ca" compoundref="_lib_a_p_r_s_8cpp" startline="329" endline="337">freeListSize</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_f_s_k_8h" kindref="compound">AFSK.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_x25_8h" kindref="compound">AX25.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_lib_a_p_r_s_8cpp_1a83a67f84a390274a7ed49c58f0eb0502" refkind="member"><highlight class="normal"><ref refid="struct_afsk" kindref="compound">Afsk</ref><sp/><ref refid="_lib_a_p_r_s_8cpp_1a83a67f84a390274a7ed49c58f0eb0502" kindref="member">modem</ref>;</highlight></codeline>
+<codeline lineno="6" refid="_lib_a_p_r_s_8cpp_1aced1033fabea6b8ddf45afd1cbb76a45" refkind="member"><highlight class="normal"><ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref><sp/><ref refid="_lib_a_p_r_s_8cpp_1aced1033fabea6b8ddf45afd1cbb76a45" kindref="member">AX25</ref>;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1adbb46a71de14834dbd45a286bd219c7c" kindref="member">aprs_msg_callback</ref>(</highlight><highlight class="keyword">struct</highlight><highlight class="normal"><sp/><ref refid="struct_a_x25_msg" kindref="compound">AX25Msg</ref><sp/>*msg);</highlight></codeline>
+<codeline lineno="8" refid="_lib_a_p_r_s_8cpp_1a3c5cd622462bb50b6dab4c189e219eb9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>countof(a)<sp/>sizeof(a)/sizeof(a[0])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="_lib_a_p_r_s_8cpp_1a2986d8cf0562c17f61a0e69f0548b54d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a2986d8cf0562c17f61a0e69f0548b54d" kindref="member">LibAPRS_vref</ref><sp/>=<sp/><ref refid="constants_8h_1afb85aba9013ac48aedc1a81b7c2ff2ff" kindref="member">REF_3V3</ref>;</highlight></codeline>
+<codeline lineno="11" refid="_lib_a_p_r_s_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" kindref="member">LibAPRS_open_squelch</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_lib_a_p_r_s_8cpp_1aca36a8e2b3f8db1978f37152c411201c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1aca36a8e2b3f8db1978f37152c411201c" kindref="member">custom_preamble</ref><sp/>=<sp/>350UL;</highlight></codeline>
+<codeline lineno="14" refid="_lib_a_p_r_s_8cpp_1a258d100e9191b0a720dee2230b376abe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a258d100e9191b0a720dee2230b376abe" kindref="member">custom_tail</ref><sp/>=<sp/>50UL;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="_lib_a_p_r_s_8cpp_1a6d4972a88e5d7cc0aa00e10c5e03e8bc" refkind="member"><highlight class="normal"><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref><sp/><ref refid="_lib_a_p_r_s_8cpp_1a6d4972a88e5d7cc0aa00e10c5e03e8bc" kindref="member">src</ref>;</highlight></codeline>
+<codeline lineno="17" refid="_lib_a_p_r_s_8cpp_1af80502b9580f50d6f8ee6b1e0eaff2ca" refkind="member"><highlight class="normal"><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref><sp/><ref refid="_lib_a_p_r_s_8cpp_1af80502b9580f50d6f8ee6b1e0eaff2ca" kindref="member">dst</ref>;</highlight></codeline>
+<codeline lineno="18" refid="_lib_a_p_r_s_8cpp_1adf1e23afec8ec69736d3e12b0ad68a8d" refkind="member"><highlight class="normal"><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref><sp/><ref refid="_lib_a_p_r_s_8cpp_1adf1e23afec8ec69736d3e12b0ad68a8d" kindref="member">path1</ref>;</highlight></codeline>
+<codeline lineno="19" refid="_lib_a_p_r_s_8cpp_1a17d08d3114914911e1e2417940d00868" refkind="member"><highlight class="normal"><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref><sp/><ref refid="_lib_a_p_r_s_8cpp_1a17d08d3114914911e1e2417940d00868" kindref="member">path2</ref>;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" kindref="member">CALL</ref>[7]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;NOCALL&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="22" refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" kindref="member">CALL_SSID</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="23" refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" kindref="member">DST</ref>[7]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;APZMDM&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="24" refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" kindref="member">DST_SSID</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="25" refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" kindref="member">PATH1</ref>[7]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;WIDE1&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="26" refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" kindref="member">PATH1_SSID</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="27" refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" kindref="member">PATH2</ref>[7]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;WIDE2&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28" refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" kindref="member">PATH2_SSID</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_lib_a_p_r_s_8cpp_1ae9279326b6ef5ef489e2c37e8b764a4d" refkind="member"><highlight class="normal"><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref><sp/><ref refid="_lib_a_p_r_s_8cpp_1ae9279326b6ef5ef489e2c37e8b764a4d" kindref="member">path</ref>[4];</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Location<sp/>packet<sp/>assembly<sp/>fields</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" kindref="member">latitude</ref>[9];</highlight></codeline>
+<codeline lineno="34" refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" kindref="member">longtitude</ref>[10];</highlight></codeline>
+<codeline lineno="35" refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" kindref="member">symbolTable</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36" refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" kindref="member">symbol</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" kindref="member">power</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="39" refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" kindref="member">height</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="40" refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" kindref="member">gain</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="41" refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" kindref="member">directivity</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Message<sp/>packet<sp/>assembly<sp/>fields</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" kindref="member">message_recip</ref>[7];</highlight></codeline>
+<codeline lineno="46" refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" kindref="member">message_recip_ssid</ref><sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" kindref="member">message_seq</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="49" refid="_lib_a_p_r_s_8cpp_1a9d9905079327a4d3523039129c305cf8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a9d9905079327a4d3523039129c305cf8" kindref="member">lastMessage</ref>[67];</highlight></codeline>
+<codeline lineno="50" refid="_lib_a_p_r_s_8cpp_1ad2a78273ae56c7bf679e652b558f6da0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1ad2a78273ae56c7bf679e652b558f6da0" kindref="member">lastMessageLen</ref>;</highlight></codeline>
+<codeline lineno="51" refid="_lib_a_p_r_s_8cpp_1abcc5bf7300c74a46f6e28ad57365b3d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1abcc5bf7300c74a46f6e28ad57365b3d8" kindref="member">message_autoAck</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a4112ffe044a152d02f86f8f25a30d45a" kindref="member">APRS_init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reference,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>open_squelch)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a2986d8cf0562c17f61a0e69f0548b54d" kindref="member">LibAPRS_vref</ref><sp/>=<sp/>reference;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" kindref="member">LibAPRS_open_squelch</ref><sp/>=<sp/>open_squelch;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_f_s_k_8cpp_1a8d929ae28fa1de2980b46e953fcf0980" kindref="member">AFSK_init</ref>(&amp;modem);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_x25_8cpp_1a23e83c05decc0769bfd8f62d860bc636" kindref="member">ax25_init</ref>(&amp;AX25,<sp/><ref refid="_lib_a_p_r_s_8cpp_1adbb46a71de14834dbd45a286bd219c7c" kindref="member">aprs_msg_callback</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_lib_a_p_r_s_8h_1a0e02a071a97738c3c3d32a6c18f897bc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a0e02a071a97738c3c3d32a6c18f897bc" kindref="member">APRS_poll</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_x25_8cpp_1a852682ef0f0f2764ea1dbacebfa2a4e7" kindref="member">ax25_poll</ref>(&amp;AX25);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_lib_a_p_r_s_8h_1aa36158ec57ff1fc02eaa21e2bb74540d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1aa36158ec57ff1fc02eaa21e2bb74540d" kindref="member">APRS_setCallsign</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" kindref="member">CALL</ref>,<sp/>0,<sp/>7);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>6<sp/>&amp;&amp;<sp/>call[i]<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" kindref="member">CALL</ref>[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>call[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" kindref="member">CALL_SSID</ref><sp/>=<sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_lib_a_p_r_s_8h_1a21a8a7357b3805665d49c92f0e120a4b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a21a8a7357b3805665d49c92f0e120a4b" kindref="member">APRS_setDestination</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" kindref="member">DST</ref>,<sp/>0,<sp/>7);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>6<sp/>&amp;&amp;<sp/>call[i]<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" kindref="member">DST</ref>[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>call[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" kindref="member">DST_SSID</ref><sp/>=<sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_lib_a_p_r_s_8h_1a893dabee106e6537f9a70b851df3a6fa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a893dabee106e6537f9a70b851df3a6fa" kindref="member">APRS_setPath1</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" kindref="member">PATH1</ref>,<sp/>0,<sp/>7);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>6<sp/>&amp;&amp;<sp/>call[i]<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" kindref="member">PATH1</ref>[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>call[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" kindref="member">PATH1_SSID</ref><sp/>=<sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_lib_a_p_r_s_8h_1acd65cef84cc868398762c3b50b6e4444" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1acd65cef84cc868398762c3b50b6e4444" kindref="member">APRS_setPath2</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" kindref="member">PATH2</ref>,<sp/>0,<sp/>7);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>6<sp/>&amp;&amp;<sp/>call[i]<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" kindref="member">PATH2</ref>[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>call[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" kindref="member">PATH2_SSID</ref><sp/>=<sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="_lib_a_p_r_s_8h_1ae027f5d3426daec37661dc7ede9aedf0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1ae027f5d3426daec37661dc7ede9aedf0" kindref="member">APRS_setMessageDestination</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" kindref="member">message_recip</ref>,<sp/>0,<sp/>7);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>6<sp/>&amp;&amp;<sp/>call[i]<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" kindref="member">message_recip</ref>[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>call[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" kindref="member">message_recip_ssid</ref><sp/>=<sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="_lib_a_p_r_s_8h_1a8d2879844f6f9808dc5a101f6eb74e4c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a8d2879844f6f9808dc5a101f6eb74e4c" kindref="member">APRS_setPreamble</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>pre)<sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1aca36a8e2b3f8db1978f37152c411201c" kindref="member">custom_preamble</ref><sp/>=<sp/>pre;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="_lib_a_p_r_s_8h_1ab32765e29df288da61f2bda8cf13e276" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1ab32765e29df288da61f2bda8cf13e276" kindref="member">APRS_setTail</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>tail)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a258d100e9191b0a720dee2230b376abe" kindref="member">custom_tail</ref><sp/>=<sp/>tail;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="_lib_a_p_r_s_8h_1a36e9ef7abf74277e45ff59b48f7ff545" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a36e9ef7abf74277e45ff59b48f7ff545" kindref="member">APRS_useAlternateSymbolTable</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(use)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" kindref="member">symbolTable</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;\\&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" kindref="member">symbolTable</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132" refid="_lib_a_p_r_s_8h_1a128fa7c712c53cbba638cab0e42bfb23" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a128fa7c712c53cbba638cab0e42bfb23" kindref="member">APRS_setSymbol</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sym)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" kindref="member">symbol</ref><sp/>=<sp/>sym;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="_lib_a_p_r_s_8h_1a4234103a952e958b2b2c6e15d0637efd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a4234103a952e958b2b2c6e15d0637efd" kindref="member">APRS_setLat</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lat)<sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" kindref="member">latitude</ref>,<sp/>0,<sp/>9);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>8<sp/>&amp;&amp;<sp/>lat[i]<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" kindref="member">latitude</ref>[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>lat[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="_lib_a_p_r_s_8h_1a40002fdeaf4994017005d85c334b6b65" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a40002fdeaf4994017005d85c334b6b65" kindref="member">APRS_setLon</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lon)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(<ref refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" kindref="member">longtitude</ref>,<sp/>0,<sp/>10);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(i<sp/>&lt;<sp/>9<sp/>&amp;&amp;<sp/>lon[i]<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" kindref="member">longtitude</ref>[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>lon[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>i++;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154" refid="_lib_a_p_r_s_8h_1a88512e86a80a125417651ef2a4f803a0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a88512e86a80a125417651ef2a4f803a0" kindref="member">APRS_setPower</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>s<sp/>&lt;<sp/>10)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" kindref="member">power</ref><sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="_lib_a_p_r_s_8h_1ad9f68984da752ee6d00d9439800debd6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1ad9f68984da752ee6d00d9439800debd6" kindref="member">APRS_setHeight</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>s<sp/>&lt;<sp/>10)<sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" kindref="member">height</ref><sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="_lib_a_p_r_s_8h_1a962ed213cb6b79f710aeb676d2ba53e4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a962ed213cb6b79f710aeb676d2ba53e4" kindref="member">APRS_setGain</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>s<sp/>&lt;<sp/>10)<sp/>{</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" kindref="member">gain</ref><sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="_lib_a_p_r_s_8h_1a37f30cfbe0491e15b0ae232ea9e66358" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a37f30cfbe0491e15b0ae232ea9e66358" kindref="member">APRS_setDirectivity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s<sp/>&gt;=<sp/>0<sp/>&amp;&amp;<sp/>s<sp/>&lt;<sp/>10)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" kindref="member">directivity</ref><sp/>=<sp/>s;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a3fffb640ed02c57078f50fd7289c352d" kindref="member">APRS_printSettings</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;LibAPRS<sp/>Settings:&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Callsign:<sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" kindref="member">CALL</ref>);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">));<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" kindref="member">CALL_SSID</ref>);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Destination:<sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" kindref="member">DST</ref>);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">));<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" kindref="member">DST_SSID</ref>);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Path1:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" kindref="member">PATH1</ref>);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">));<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" kindref="member">PATH1_SSID</ref>);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Path2:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/>Serial.print(<ref refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" kindref="member">PATH2</ref>);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">));<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" kindref="member">PATH2_SSID</ref>);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Message<sp/>dst:<sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" kindref="member">message_recip</ref>[0]<sp/>==<sp/>0)<sp/>{<sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;N/A&quot;</highlight><highlight class="normal">));<sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>Serial.print(<ref refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" kindref="member">message_recip</ref>);<sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal">));<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" kindref="member">message_recip_ssid</ref>);<sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;TX<sp/>Preamble:<sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1aca36a8e2b3f8db1978f37152c411201c" kindref="member">custom_preamble</ref>);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;TX<sp/>Tail:<sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1a258d100e9191b0a720dee2230b376abe" kindref="member">custom_tail</ref>);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Symbol<sp/>table:<sp/>&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" kindref="member">symbolTable</ref><sp/>=<sp/></highlight><highlight class="charliteral">&apos;/&apos;</highlight><highlight class="normal">)<sp/>{<sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;Normal&quot;</highlight><highlight class="normal">));<sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;Alternate&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Symbol:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" kindref="member">symbol</ref>);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Power:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" kindref="member">power</ref><sp/>&lt;<sp/>10)<sp/>{<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" kindref="member">power</ref>);<sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;N/A&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Height:<sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" kindref="member">height</ref><sp/>&lt;<sp/>10)<sp/>{<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" kindref="member">height</ref>);<sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;N/A&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Gain:<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" kindref="member">gain</ref><sp/>&lt;<sp/>10)<sp/>{<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" kindref="member">gain</ref>);<sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;N/A&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Directivity:<sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" kindref="member">directivity</ref><sp/>&lt;<sp/>10)<sp/>{<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" kindref="member">directivity</ref>);<sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;N/A&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Latitude:<sp/><sp/><sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" kindref="member">latitude</ref>[0]<sp/>!=<sp/>0)<sp/>{<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" kindref="member">latitude</ref>);<sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;N/A&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(F(</highlight><highlight class="stringliteral">&quot;Longtitude:<sp/><sp/><sp/>&quot;</highlight><highlight class="normal">));<sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" kindref="member">longtitude</ref>[0]<sp/>!=<sp/>0)<sp/>{<sp/>Serial.println(<ref refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" kindref="member">longtitude</ref>);<sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>Serial.println(F(</highlight><highlight class="stringliteral">&quot;N/A&quot;</highlight><highlight class="normal">));<sp/>}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1ae5f394441f5ec861b661e0a63e33f44e" kindref="member">APRS_sendPkt</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*buffer<sp/>=<sp/>(uint8_t<sp/>*)_buffer;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(dst.<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>,<sp/><ref refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" kindref="member">DST</ref>,<sp/>6);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>dst.<ref refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" kindref="member">ssid</ref><sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" kindref="member">DST_SSID</ref>;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(src.<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>,<sp/><ref refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" kindref="member">CALL</ref>,<sp/>6);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>src.<ref refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" kindref="member">ssid</ref><sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" kindref="member">CALL_SSID</ref>;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(path1.<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>,<sp/><ref refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" kindref="member">PATH1</ref>,<sp/>6);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>path1.<ref refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" kindref="member">ssid</ref><sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" kindref="member">PATH1_SSID</ref>;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(path2.<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>,<sp/><ref refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" kindref="member">PATH2</ref>,<sp/>6);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>path2.<ref refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" kindref="member">ssid</ref><sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" kindref="member">PATH2_SSID</ref>;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>path[0]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1af80502b9580f50d6f8ee6b1e0eaff2ca" kindref="member">dst</ref>;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>path[1]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a6d4972a88e5d7cc0aa00e10c5e03e8bc" kindref="member">src</ref>;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/>path[2]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1adf1e23afec8ec69736d3e12b0ad68a8d" kindref="member">path1</ref>;</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>path[3]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a17d08d3114914911e1e2417940d00868" kindref="member">path2</ref>;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_x25_8cpp_1aeb4be1c44c0faeb1fc73dbb04ac59a6e" kindref="member">ax25_sendVia</ref>(&amp;AX25,<sp/>path,<sp/><ref refid="_lib_a_p_r_s_8cpp_1a3c5cd622462bb50b6dab4c189e219eb9" kindref="member">countof</ref>(path),<sp/>buffer,<sp/>length);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Dynamic<sp/>RAM<sp/>usage<sp/>of<sp/>this<sp/>function<sp/>is<sp/>30<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222" refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a8a1dc880a0b1622b68d488a4bb69afa0" kindref="member">APRS_sendLoc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>payloadLength<sp/>=<sp/>20+length;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>usePHG<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" kindref="member">power</ref><sp/>&lt;<sp/>10<sp/>&amp;&amp;<sp/><ref refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" kindref="member">height</ref><sp/>&lt;<sp/>10<sp/>&amp;&amp;<sp/><ref refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" kindref="member">gain</ref><sp/>&lt;<sp/>10<sp/>&amp;&amp;<sp/><ref refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" kindref="member">directivity</ref><sp/>&lt;<sp/>9)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>usePHG<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>payloadLength<sp/>+=<sp/>7;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*packet<sp/>=<sp/>(uint8_t*)malloc(payloadLength);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*ptr<sp/>=<sp/>packet;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/>packet[0]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;=&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>packet[9]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" kindref="member">symbolTable</ref>;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>packet[19]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" kindref="member">symbol</ref>;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr++;</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(ptr,<sp/><ref refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" kindref="member">latitude</ref>,<sp/>8);</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr<sp/>+=<sp/>9;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/>memcpy(ptr,<sp/><ref refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" kindref="member">longtitude</ref>,<sp/>9);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr<sp/>+=<sp/>10;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(usePHG)<sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[20]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;P&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[21]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;H&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[22]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;G&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[23]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" kindref="member">power</ref>+48;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[24]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" kindref="member">height</ref>+48;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[25]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" kindref="member">gain</ref>+48;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[26]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" kindref="member">directivity</ref>+48;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ptr+=7;</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(length<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*buffer<sp/>=<sp/>(uint8_t<sp/>*)_buffer;</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(ptr,<sp/>buffer,<sp/>length);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1ae5f394441f5ec861b661e0a63e33f44e" kindref="member">APRS_sendPkt</ref>(packet,<sp/>payloadLength);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>free(packet);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Dynamic<sp/>RAM<sp/>usage<sp/>of<sp/>this<sp/>function<sp/>is<sp/>18<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a40fd4b0339cc234de92be317d48ea9fb" kindref="member">APRS_sendMsg</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length)<sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(length<sp/>&gt;<sp/>67)<sp/>length<sp/>=<sp/>67;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>payloadLength<sp/>=<sp/>11+length+4;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*packet<sp/>=<sp/>(uint8_t*)malloc(payloadLength);</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*ptr<sp/>=<sp/>packet;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>packet[0]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>callSize<sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>count<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(callSize--)<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" kindref="member">message_recip</ref>[count]<sp/>!=<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[1+count]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" kindref="member">message_recip</ref>[count];</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>count++;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" kindref="member">message_recip_ssid</ref><sp/>!=<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[1+count]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;-&apos;</highlight><highlight class="normal">;<sp/>count++;</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" kindref="member">message_recip_ssid</ref><sp/>&lt;<sp/>10)<sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[1+count]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" kindref="member">message_recip_ssid</ref>+48;<sp/>count++;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[1+count]<sp/>=<sp/>49;<sp/>count++;</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[1+count]<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" kindref="member">message_recip_ssid</ref>-10+48;<sp/>count++;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(count<sp/>&lt;<sp/>9)<sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>packet[1+count]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal">;<sp/>count++;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/>packet[1+count]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;:&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/>ptr<sp/>+=<sp/>11;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(length<sp/>&gt;<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>*buffer<sp/>=<sp/>(uint8_t<sp/>*)_buffer;</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(ptr,<sp/>buffer,<sp/>length);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>memcpy(<ref refid="_lib_a_p_r_s_8cpp_1a9d9905079327a4d3523039129c305cf8" kindref="member">lastMessage</ref>,<sp/>buffer,<sp/>length);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1ad2a78273ae56c7bf679e652b558f6da0" kindref="member">lastMessageLen</ref><sp/>=<sp/>length;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" kindref="member">message_seq</ref>++;</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" kindref="member">message_seq</ref><sp/>&gt;<sp/>999)<sp/><ref refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" kindref="member">message_seq</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>packet[11+length]<sp/>=<sp/></highlight><highlight class="charliteral">&apos;{&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>n<sp/>=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" kindref="member">message_seq</ref><sp/>%<sp/>10;</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>d<sp/>=<sp/>((<ref refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" kindref="member">message_seq</ref><sp/>%<sp/>100)<sp/>-<sp/>n)/10;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>h<sp/>=<sp/>(<ref refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" kindref="member">message_seq</ref><sp/>-<sp/>d<sp/>-<sp/>n)<sp/>/<sp/>100;</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>packet[12+length]<sp/>=<sp/>h+48;</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>packet[13+length]<sp/>=<sp/>d+48;</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>packet[14+length]<sp/>=<sp/>n+48;</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1ae5f394441f5ec861b661e0a63e33f44e" kindref="member">APRS_sendPkt</ref>(packet,<sp/>payloadLength);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/>free(packet);</highlight></codeline>
+<codeline lineno="309"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311" refid="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a46f010ed409b5457f351361c65d47fe4" kindref="member">APRS_msgRetry</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" kindref="member">message_seq</ref>--;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_lib_a_p_r_s_8cpp_1a40fd4b0339cc234de92be317d48ea9fb" kindref="member">APRS_sendMsg</ref>(<ref refid="_lib_a_p_r_s_8cpp_1a9d9905079327a4d3523039129c305cf8" kindref="member">lastMessage</ref>,<sp/><ref refid="_lib_a_p_r_s_8cpp_1ad2a78273ae56c7bf679e652b558f6da0" kindref="member">lastMessageLen</ref>);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>getting<sp/>free<sp/>memory,<sp/>from:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://www.arduino.cc/cgi-bin/yabb2/YaBB.pl?num=1213583720/15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1aa84b5136d382ee274a86572892e5e007" kindref="member">__heap_start</ref>;</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*<ref refid="_lib_a_p_r_s_8cpp_1a8d18204366e8a385c441663ed41f1ae4" kindref="member">__brkval</ref>;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="struct____freelist" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____freelist" kindref="compound">__freelist</ref><sp/>{</highlight></codeline>
+<codeline lineno="323" refid="struct____freelist_1a400b91c9baf14861360a1c1caba8309d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="struct____freelist_1a400b91c9baf14861360a1c1caba8309d" kindref="member">sz</ref>;</highlight></codeline>
+<codeline lineno="324" refid="struct____freelist_1abfcbc656d931bb3fc6f5b3f3deec41cd" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____freelist" kindref="compound">__freelist</ref><sp/>*<ref refid="struct____freelist_1abfcbc656d931bb3fc6f5b3f3deec41cd" kindref="member">nx</ref>;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____freelist" kindref="compound">__freelist</ref><sp/>*<ref refid="_lib_a_p_r_s_8cpp_1a9cfd748d9cb8a517422fa4e4f0b3320f" kindref="member">__flp</ref>;</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"></highlight></codeline>
+<codeline lineno="329" refid="_lib_a_p_r_s_8cpp_1a04e1cfe100b396e57c2581502de5e5ca" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a04e1cfe100b396e57c2581502de5e5ca" kindref="member">freeListSize</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct____freelist" kindref="compound">__freelist</ref>*<sp/>current;</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>total<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(current<sp/>=<sp/>__flp;<sp/>current;<sp/>current<sp/>=<sp/>current-&gt;<ref refid="struct____freelist_1abfcbc656d931bb3fc6f5b3f3deec41cd" kindref="member">nx</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/>total<sp/>+=<sp/>2;<sp/></highlight><highlight class="comment">/*<sp/>Add<sp/>two<sp/>bytes<sp/>for<sp/>the<sp/>memory<sp/>block&apos;s<sp/>header<sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>total<sp/>+=<sp/>(int)<sp/>current-&gt;<ref refid="struct____freelist_1a400b91c9baf14861360a1c1caba8309d" kindref="member">sz</ref>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>total;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight></codeline>
+<codeline lineno="339" refid="_lib_a_p_r_s_8h_1a8d862dc01c44bfabc8d952bb77f8da89" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8cpp_1a8d862dc01c44bfabc8d952bb77f8da89" kindref="member">freeMemory</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>free_memory;</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">)<ref refid="_lib_a_p_r_s_8cpp_1a8d18204366e8a385c441663ed41f1ae4" kindref="member">__brkval</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/>free_memory<sp/>=<sp/>((int)&amp;free_memory)<sp/>-<sp/>((int)&amp;<ref refid="_lib_a_p_r_s_8cpp_1aa84b5136d382ee274a86572892e5e007" kindref="member">__heap_start</ref>);</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/>free_memory<sp/>=<sp/>((int)&amp;free_memory)<sp/>-<sp/>((int)<ref refid="_lib_a_p_r_s_8cpp_1a8d18204366e8a385c441663ed41f1ae4" kindref="member">__brkval</ref>);</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>free_memory<sp/>+=<sp/><ref refid="_lib_a_p_r_s_8cpp_1a04e1cfe100b396e57c2581502de5e5ca" kindref="member">freeListSize</ref>();</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>free_memory;</highlight></codeline>
+<codeline lineno="348"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,237 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_adafruit___s_i1145_8cpp" kind="file" language="C++">
+    <compoundname>Adafruit_SI1145.cpp</compoundname>
+    <includes refid="_adafruit___s_i1145_8h" local="yes">Adafruit_SI1145.h</includes>
+    <incdepgraph>
+      <node id="602">
+        <label>Adafruit_SI1145.h</label>
+        <link refid="_adafruit___s_i1145_8h"/>
+        <childnode refid="603" relation="include">
+        </childnode>
+        <childnode refid="604" relation="include">
+        </childnode>
+      </node>
+      <node id="603">
+        <label>WProgram.h</label>
+      </node>
+      <node id="604">
+        <label>Wire.h</label>
+      </node>
+      <node id="601">
+        <label>Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp</label>
+        <link refid="Adafruit_SI1145.cpp"/>
+        <childnode refid="602" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>This<sp/>is<sp/>a<sp/>library<sp/>for<sp/>the<sp/>Si1145<sp/>UV/IR/Visible<sp/>Light<sp/>Sensor</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>Designed<sp/>specifically<sp/>to<sp/>work<sp/>with<sp/>the<sp/>Si1145<sp/>sensor<sp/>in<sp/>the</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>adafruit<sp/>shop</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>----&gt;<sp/>https://www.adafruit.com/products/1777</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>These<sp/>sensors<sp/>use<sp/>I2C<sp/>to<sp/>communicate,<sp/>2<sp/>pins<sp/>are<sp/>required<sp/>to<sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>interface</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>Adafruit<sp/>invests<sp/>time<sp/>and<sp/>resources<sp/>providing<sp/>this<sp/>open<sp/>source<sp/>code,<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>please<sp/>support<sp/>Adafruit<sp/>and<sp/>open-source<sp/>hardware<sp/>by<sp/>purchasing<sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>products<sp/>from<sp/>Adafruit!</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>Written<sp/>by<sp/>Limor<sp/>Fried/Ladyada<sp/>for<sp/>Adafruit<sp/>Industries.<sp/><sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>BSD<sp/>license,<sp/>all<sp/>text<sp/>above<sp/>must<sp/>be<sp/>included<sp/>in<sp/>any<sp/>redistribution</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>****************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_adafruit___s_i1145_8h" kindref="compound">Adafruit_SI1145.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_adafruit___s_i1145_1ae89a2548ed17479c42aa011df63160f2" refkind="member"><highlight class="normal"><ref refid="class_adafruit___s_i1145_1ae89a2548ed17479c42aa011df63160f2" kindref="member">Adafruit_SI1145::Adafruit_SI1145</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>_addr<sp/>=<sp/><ref refid="_adafruit___s_i1145_8h_1a51c255c4d28463791d955fef52563f07" kindref="member">SI1145_ADDR</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="class_adafruit___s_i1145_1ad17eb7214e6fba886b5595cf14e45cf0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_i1145_1ad17eb7214e6fba886b5595cf14e45cf0" kindref="member">Adafruit_SI1145::begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.begin();</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>uint8_t<sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>=<sp/>read8(<ref refid="_adafruit___s_i1145_8h_1adef6eef298f4b0cd5c9fa38eb6109178" kindref="member">SI1145_REG_PARTID</ref>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">id</highlight><highlight class="normal"><sp/>!=<sp/>0x45)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/></highlight><highlight class="comment">//<sp/>look<sp/>for<sp/>SI1145</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="class_adafruit___s_i1145_1ab7a22b92c14315e36b84a42498e970ea" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/***********************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>UVindex<sp/>measurement<sp/>coefficients!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a502516f6f75ac687293ae0333c6a66b4" kindref="member">SI1145_REG_UCOEFF0</ref>,<sp/>0x29);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a6d74c31e07b76c14aaafbb7e4e0829e2" kindref="member">SI1145_REG_UCOEFF1</ref>,<sp/>0x89);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a20340653e30bc668f2fc95fffba32172" kindref="member">SI1145_REG_UCOEFF2</ref>,<sp/>0x02);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a486406e5f02e631046051ed72520e90c" kindref="member">SI1145_REG_UCOEFF3</ref>,<sp/>0x00);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>UV<sp/>sensor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1ade895092091a602b01c374a7c987eafd" kindref="member">SI1145_PARAM_CHLIST</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1a73ec52abf6a9adc41f4e8eb2e2236fcd" kindref="member">SI1145_PARAM_CHLIST_ENUV</ref><sp/>|</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___s_i1145_8h_1a62634725410513326198e8a531ab1a92" kindref="member">SI1145_PARAM_CHLIST_ENALSIR</ref><sp/>|<sp/><ref refid="_adafruit___s_i1145_8h_1a2b67a96c7e35ec9050cd0a7ed12d0b1e" kindref="member">SI1145_PARAM_CHLIST_ENALSVIS</ref><sp/>|</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___s_i1145_8h_1a6a4bf08375586170142c8361ac7e82b5" kindref="member">SI1145_PARAM_CHLIST_ENPS1</ref>);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>interrupt<sp/>on<sp/>every<sp/>sample</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a05bd818ebf6e2595bae6febeae0ac3f0" kindref="member">SI1145_REG_INTCFG</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1aadaae0235da5ced5cbb37639ad0fe800" kindref="member">SI1145_REG_INTCFG_INTOE</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a8b994265d5c29c24fd075d0fada144e5" kindref="member">SI1145_REG_IRQEN</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1a0e9f63a2f8d8e33336dcea6bba0a10bb" kindref="member">SI1145_REG_IRQEN_ALSEVERYSAMPLE</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">/******************************<sp/>Prox<sp/>Sense<sp/>1<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>program<sp/>LED<sp/>current</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1ae8f845f2e2f45dd49d59ca721f1f40f9" kindref="member">SI1145_REG_PSLED21</ref>,<sp/>0x03);<sp/></highlight><highlight class="comment">//<sp/>20mA<sp/>for<sp/>LED<sp/>1<sp/>only</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1af3e52eed30a942b4227b2e017d7ee188" kindref="member">SI1145_PARAM_PS1ADCMUX</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1a503e1bea7fa3846144bce79c19c6f65b" kindref="member">SI1145_PARAM_ADCMUX_LARGEIR</ref>);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>prox<sp/>sensor<sp/>#1<sp/>uses<sp/>LED<sp/>#1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1abfebeab9c0155ec206dfd528579a35ca" kindref="member">SI1145_PARAM_PSLED12SEL</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1a8ea2d5479eba863b600bd8d8295b4fed" kindref="member">SI1145_PARAM_PSLED12SEL_PS1LED1</ref>);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>fastest<sp/>clocks,<sp/>clock<sp/>div<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1a55bb9c374f172ab00d3c822cfebbee4c" kindref="member">SI1145_PARAM_PSADCGAIN</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>take<sp/>511<sp/>clocks<sp/>to<sp/>measure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1a56400f77ad4667e8fdf892c4345c0206" kindref="member">SI1145_PARAM_PSADCOUNTER</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1a0ea75a690d0f50864a56ca0b975f43c5" kindref="member">SI1145_PARAM_ADCCOUNTER_511CLK</ref>);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>prox<sp/>mode,<sp/>high<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1aeb87668ba832bba27d071f03e5fad4d2" kindref="member">SI1145_PARAM_PSADCMISC</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1a442fe14c240d2acbb68f775a6f261997" kindref="member">SI1145_PARAM_PSADCMISC_RANGE</ref>|</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_adafruit___s_i1145_8h_1a5295d0c6ac96048480f1e6728b24a869" kindref="member">SI1145_PARAM_PSADCMISC_PSMODE</ref>);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1ae42eeb09ff3fb5906ccce22ed9209cab" kindref="member">SI1145_PARAM_ALSIRADCMUX</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1ae9f6b63c67b6c0a71b2f70533f7a093d" kindref="member">SI1145_PARAM_ADCMUX_SMALLIR</ref>);<sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>fastest<sp/>clocks,<sp/>clock<sp/>div<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1ab81f49de96e7182e9e1da83b7e277b04" kindref="member">SI1145_PARAM_ALSIRADCGAIN</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>take<sp/>511<sp/>clocks<sp/>to<sp/>measure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1a4e1dd177cadb70b3e8bd744630633637" kindref="member">SI1145_PARAM_ALSIRADCOUNTER</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1a0ea75a690d0f50864a56ca0b975f43c5" kindref="member">SI1145_PARAM_ADCCOUNTER_511CLK</ref>);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>high<sp/>range<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1a10b9f965ed07c2e9ca67c37c6e6943ae" kindref="member">SI1145_PARAM_ALSIRADCMISC</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1abaaa73a6a78d11cb81a85d4289ab4673" kindref="member">SI1145_PARAM_ALSIRADCMISC_RANGE</ref>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>fastest<sp/>clocks,<sp/>clock<sp/>div<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1a674b0b0a5410746fa33841842eecfc88" kindref="member">SI1145_PARAM_ALSVISADCGAIN</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>take<sp/>511<sp/>clocks<sp/>to<sp/>measure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1a4ae7af4231cec15ac2c5621fb2332eee" kindref="member">SI1145_PARAM_ALSVISADCOUNTER</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1a0ea75a690d0f50864a56ca0b975f43c5" kindref="member">SI1145_PARAM_ADCCOUNTER_511CLK</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>high<sp/>range<sp/>mode<sp/>(not<sp/>normal<sp/>signal)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>writeParam(<ref refid="_adafruit___s_i1145_8h_1a32c2c15bdc97c8a46ce9eafdcadafde3" kindref="member">SI1145_PARAM_ALSVISADCMISC</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1add7b00f463910fe8f7b3789592211da3" kindref="member">SI1145_PARAM_ALSVISADCMISC_VISRANGE</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment">/************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>measurement<sp/>rate<sp/>for<sp/>auto</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//write8(SI1145_REG_MEASRATE0,<sp/>0xFF);<sp/>//<sp/>255<sp/>*<sp/>31.25uS<sp/>=<sp/>8ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>auto<sp/>run</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//write8(SI1145_REG_COMMAND,<sp/>SI1145_PSALS_AUTO);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="class_adafruit___s_i1145_1ab7a22b92c14315e36b84a42498e970ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_i1145_1ab7a22b92c14315e36b84a42498e970ea" kindref="member">Adafruit_SI1145::reset</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a9ec19435fd37d55ff0154540bb43fb2a" kindref="member">SI1145_REG_MEASRATE0</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a89c16a0a3f1ad9822a818de51593f3c9" kindref="member">SI1145_REG_MEASRATE1</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a8b994265d5c29c24fd075d0fada144e5" kindref="member">SI1145_REG_IRQEN</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a072875e41eaeba0f044fdc9c52008ae9" kindref="member">SI1145_REG_IRQMODE1</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a1bacef4774e340973f2d43232497e7df" kindref="member">SI1145_REG_IRQMODE2</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a05bd818ebf6e2595bae6febeae0ac3f0" kindref="member">SI1145_REG_INTCFG</ref>,<sp/>0);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1ae99958f87686a97cdc5336aa874090e8" kindref="member">SI1145_REG_IRQSTAT</ref>,<sp/>0xFF);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" kindref="member">SI1145_REG_COMMAND</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1ae9159f0a6208c3caedb258b08a7d90e7" kindref="member">SI1145_RESET</ref>);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a188377c7e5f434a4b959460619a31877" kindref="member">SI1145_REG_HWKEY</ref>,<sp/>0x17);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//<sp/>returns<sp/>the<sp/>UV<sp/>index<sp/>*<sp/>100<sp/>(divide<sp/>by<sp/>100<sp/>to<sp/>get<sp/>the<sp/>index)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_adafruit___s_i1145_1a9d1715d966500b5f5f88568a5b4f780b" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_adafruit___s_i1145_1a9d1715d966500b5f5f88568a5b4f780b" kindref="member">Adafruit_SI1145::readUV</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>read16(0x2C);<sp/></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="class_adafruit___s_i1145_1ab0a29c37acf40dd227d7d23c5a5b0254" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_adafruit___s_i1145_1ab0a29c37acf40dd227d7d23c5a5b0254" kindref="member">Adafruit_SI1145::getRegister</ref>(uint8_t<sp/>reg)<sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>readParam(reg);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="122" refid="class_adafruit___s_i1145_1a591ba648b988a5dcb464b9f60a4a2c83" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_adafruit___s_i1145_1a591ba648b988a5dcb464b9f60a4a2c83" kindref="member">Adafruit_SI1145::setRegister</ref>(uint8_t<sp/>reg,<sp/>uint8_t<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>writeParam(reg,<sp/>value);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="125"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="class_adafruit___s_i1145_1a67635a26a9c4c6b2fc2a7ffc86c2b5c9" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_i1145_1a67635a26a9c4c6b2fc2a7ffc86c2b5c9" kindref="member">Adafruit_SI1145::reset_uv</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" kindref="member">SI1145_REG_COMMAND</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1aa3a3cf9cdd3aa9f8cd31f2a2aef7ec58" kindref="member">SI1145_NOP</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="class_adafruit___s_i1145_1a9290b9f5e92874e9e927cb27fd53a2ed" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_i1145_1a9290b9f5e92874e9e927cb27fd53a2ed" kindref="member">Adafruit_SI1145::nop</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" kindref="member">SI1145_REG_COMMAND</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1ae9159f0a6208c3caedb258b08a7d90e7" kindref="member">SI1145_RESET</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="class_adafruit___s_i1145_1ad48796484b0107059cc8a8a33b673390" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_i1145_1ad48796484b0107059cc8a8a33b673390" kindref="member">Adafruit_SI1145::force_convert</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" kindref="member">SI1145_REG_COMMAND</ref>,<sp/><ref refid="_adafruit___s_i1145_8h_1a3f0dd6af9992a5a494b48f1f8d8ce766" kindref="member">SI1145_PSALS_FORCE</ref>);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment">//<sp/>returns<sp/>visible+IR<sp/>light<sp/>levels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140" refid="class_adafruit___s_i1145_1a25bf65464093ec0ba5f9fdd884606a21" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_adafruit___s_i1145_1a25bf65464093ec0ba5f9fdd884606a21" kindref="member">Adafruit_SI1145::readVisible</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>read16(0x22);<sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment">//<sp/>returns<sp/>IR<sp/>light<sp/>levels</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145" refid="class_adafruit___s_i1145_1a7295e72f69a558cd6b3ac382ac791688" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_adafruit___s_i1145_1a7295e72f69a558cd6b3ac382ac791688" kindref="member">Adafruit_SI1145::readIR</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>read16(0x24);<sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">//<sp/>returns<sp/>&quot;Proximity&quot;<sp/>-<sp/>assumes<sp/>an<sp/>IR<sp/>LED<sp/>is<sp/>attached<sp/>to<sp/>LED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="class_adafruit___s_i1145_1a9b058485d8305725020219839285ea16" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_adafruit___s_i1145_1a9b058485d8305725020219839285ea16" kindref="member">Adafruit_SI1145::readProx</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>read16(0x26);<sp/></highlight></codeline>
+<codeline lineno="152"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight><highlight class="comment">/*********************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal">uint8_t<sp/>Adafruit_SI1145::writeParam(uint8_t<sp/>p,<sp/>uint8_t<sp/>v)<sp/>{</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Serial.print(&quot;Param<sp/>0x&quot;);<sp/>Serial.print(p,<sp/>HEX);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Serial.print(&quot;<sp/>=<sp/>0x&quot;);<sp/>Serial.println(v,<sp/>HEX);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1ad8dd6222250f95bf91d550d1ee0f0d07" kindref="member">SI1145_REG_PARAMWR</ref>,<sp/>v);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" kindref="member">SI1145_REG_COMMAND</ref>,<sp/>p<sp/>|<sp/><ref refid="_adafruit___s_i1145_8h_1a48be8d785819eec9ed16cf2c5422829b" kindref="member">SI1145_PARAM_SET</ref>);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>read8(<ref refid="_adafruit___s_i1145_8h_1abb14eb21f8843d383f842e7b8c451370" kindref="member">SI1145_REG_PARAMRD</ref>);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal">uint8_t<sp/>Adafruit_SI1145::readParam(uint8_t<sp/>p)<sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/>write8(<ref refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" kindref="member">SI1145_REG_COMMAND</ref>,<sp/>p<sp/>|<sp/><ref refid="_adafruit___s_i1145_8h_1a8a57f978bf947f658ae8f80af3179e4f" kindref="member">SI1145_PARAM_QUERY</ref>);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>read8(<ref refid="_adafruit___s_i1145_8h_1abb14eb21f8843d383f842e7b8c451370" kindref="member">SI1145_REG_PARAMRD</ref>);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment">/*********************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">uint8_t<sp/><sp/>Adafruit_SI1145::read8(uint8_t<sp/>reg)<sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>uint16_t<sp/>val;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(_addr);</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write((uint8_t)reg);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom((uint8_t)_addr,<sp/>(uint8_t)1);<sp/><sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal">uint16_t<sp/>Adafruit_SI1145::read16(uint8_t<sp/>a)<sp/>{</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>uint16_t<sp/>ret;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(_addr);<sp/></highlight><highlight class="comment">//<sp/>start<sp/>transmission<sp/>to<sp/>device<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(a);<sp/></highlight><highlight class="comment">//<sp/>sends<sp/>register<sp/>address<sp/>to<sp/>read<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/></highlight><highlight class="comment">//<sp/>end<sp/>transmission</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(_addr,<sp/>(uint8_t)2);</highlight><highlight class="comment">//<sp/>send<sp/>data<sp/>n-bytes<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>ret<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();<sp/></highlight><highlight class="comment">//<sp/>receive<sp/>DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>ret<sp/>|=<sp/>(uint16_t)<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read()<sp/>&lt;&lt;<sp/>8;<sp/></highlight><highlight class="comment">//<sp/>receive<sp/>DATA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Adafruit_SI1145::write8(uint8_t<sp/>reg,<sp/>uint8_t<sp/>val)<sp/>{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(_addr);<sp/></highlight><highlight class="comment">//<sp/>start<sp/>transmission<sp/>to<sp/>device<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(reg);<sp/></highlight><highlight class="comment">//<sp/>sends<sp/>register<sp/>address<sp/>to<sp/>write</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(val);<sp/></highlight><highlight class="comment">//<sp/>sends<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/></highlight><highlight class="comment">//<sp/>end<sp/>transmission</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp"/>
+  </compounddef>
+</doxygen>

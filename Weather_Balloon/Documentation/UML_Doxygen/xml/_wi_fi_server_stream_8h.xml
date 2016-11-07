@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_wi_fi_server_stream_8h" kind="file" language="C++">
+    <compoundname>WiFiServerStream.h</compoundname>
+    <includes refid="_wi_fi_stream_8h" local="yes">WiFiStream.h</includes>
+    <incdepgraph>
+      <node id="840">
+        <label>Weather_Balloon/library/Firmata/utility/WiFiServerStream.h</label>
+        <link refid="WiFiServerStream.h"/>
+        <childnode refid="841" relation="include">
+        </childnode>
+      </node>
+      <node id="841">
+        <label>WiFiStream.h</label>
+        <link refid="_wi_fi_stream_8h"/>
+        <childnode refid="842" relation="include">
+        </childnode>
+        <childnode refid="843" relation="include">
+        </childnode>
+      </node>
+      <node id="843">
+        <label>Stream.h</label>
+      </node>
+      <node id="842">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_wi_fi_server_stream" prot="public">WiFiServerStream</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>WiFiServerStream.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>An<sp/>Arduino<sp/>Stream<sp/>extension<sp/>for<sp/>a<sp/>WiFiClient<sp/>or<sp/>WiFiServer<sp/>to<sp/>be<sp/>used</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>with<sp/>legacy<sp/>Arduino<sp/>WiFi<sp/>shield<sp/>and<sp/>other<sp/>boards<sp/>and<sp/>shields<sp/>that</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>are<sp/>compatible<sp/>with<sp/>the<sp/>Arduino<sp/>WiFi<sp/>library.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2016<sp/>Jens<sp/>B.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>See<sp/>file<sp/>LICENSE.txt<sp/>for<sp/>further<sp/>informations<sp/>on<sp/>licensing<sp/>terms.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>Parts<sp/>of<sp/>this<sp/>class<sp/>are<sp/>based<sp/>on</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/><sp/>-<sp/>WiFiStream<sp/>-<sp/>Copyright<sp/>(C)<sp/>2015-2016<sp/>Jesse<sp/>Frush.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/><sp/>published<sp/>under<sp/>the<sp/>same<sp/>license.</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/><sp/>Last<sp/>updated<sp/>April<sp/>23rd,<sp/>2016</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WIFI_SERVER_STREAM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIFI_SERVER_STREAM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_wi_fi_stream_8h" kindref="compound">WiFiStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_wi_fi_server_stream" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_wi_fi_server_stream" kindref="compound">WiFiServerStream</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_wi_fi_stream" kindref="compound">WiFiStream</ref></highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34" refid="class_wi_fi_server_stream_1a8071c6080d96ff5237bfd82ea4b7527b" refkind="member"><highlight class="normal"><sp/><sp/>WiFiServer<sp/><ref refid="class_wi_fi_server_stream_1a8071c6080d96ff5237bfd82ea4b7527b" kindref="member">_server</ref><sp/>=<sp/>WiFiServer(3030);</highlight></codeline>
+<codeline lineno="35" refid="class_wi_fi_server_stream_1a932e0b7ba6cf5dbb293abe159a0e5637" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_wi_fi_server_stream_1a932e0b7ba6cf5dbb293abe159a0e5637" kindref="member">_listening</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="class_wi_fi_server_stream_1a664a448394b896b93ff631e488840e81" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_wi_fi_server_stream_1a664a448394b896b93ff631e488840e81" kindref="member">connect_client</ref>()</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_wi_fi_stream_1abe0341617945c15f2a37d34d7be7e72c" kindref="member">_connected</ref><sp/>)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_wi_fi_stream_1a260e92c25849c88a0d370672eaf390e7" kindref="member">_client</ref><sp/>&amp;&amp;<sp/><ref refid="class_wi_fi_stream_1a260e92c25849c88a0d370672eaf390e7" kindref="member">_client</ref>.connected()<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_wi_fi_server_stream_1a5c70b0545e4150f64ddfe26aeb48a436" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>passive<sp/>TCP<sp/>connect<sp/>(accept)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>WiFiClient<sp/>newClient<sp/>=<sp/>_server.available();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!newClient<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wi_fi_stream_1a260e92c25849c88a0d370672eaf390e7" kindref="member">_client</ref><sp/>=<sp/>newClient;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wi_fi_stream_1abe0341617945c15f2a37d34d7be7e72c" kindref="member">_connected</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_wi_fi_stream_1aa5e5f3cc7bf2e91bf5ee9793fe6a1335" kindref="member">_currentHostConnectionCallback</ref><sp/>)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(*_currentHostConnectionCallback)(<ref refid="_wi_fi_stream_8h_1a47bf7834b3fbc853b600fcc85a13e5a6" kindref="member">HOST_CONNECTION_CONNECTED</ref>);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="66" refid="class_wi_fi_server_stream_1a6fd1524853b4688fe4110651198ce58d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="class_wi_fi_server_stream_1a6fd1524853b4688fe4110651198ce58d" kindref="member">WiFiServerStream</ref>(uint16_t<sp/>server_port)<sp/>:<sp/><ref refid="class_wi_fi_stream" kindref="compound">WiFiStream</ref>(server_port)<sp/>{}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_wi_fi_server_stream_1ad6a4282ab87a5a5b15a5cd1ae2fb2a94" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_wi_fi_server_stream_1ad6a4282ab87a5a5b15a5cd1ae2fb2a94" kindref="member">maintain</ref>()</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_wi_fi_server_stream_1a664a448394b896b93ff631e488840e81" kindref="member">connect_client</ref>()<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wi_fi_server_stream_1a5c70b0545e4150f64ddfe26aeb48a436" kindref="member">stop</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!_listening<sp/>&amp;&amp;<sp/>WiFi.status()<sp/>==<sp/>WL_CONNECTED<sp/>)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>start<sp/>TCP<sp/>server<sp/>after<sp/>first<sp/>WiFi<sp/>connect</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_server<sp/>=<sp/>WiFiServer(<ref refid="class_wi_fi_stream_1aa1137c9058f501876b0967db2baf898a" kindref="member">_port</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_server.begin();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_listening<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_wi_fi_server_stream_1a5c70b0545e4150f64ddfe26aeb48a436" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_wi_fi_server_stream_1a5c70b0545e4150f64ddfe26aeb48a436" kindref="member">stop</ref>()</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_wi_fi_stream_1a260e92c25849c88a0d370672eaf390e7" kindref="member">_client</ref>)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_wi_fi_stream_1a260e92c25849c88a0d370672eaf390e7" kindref="member">_client</ref>.stop();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="class_wi_fi_stream_1aa5e5f3cc7bf2e91bf5ee9793fe6a1335" kindref="member">_currentHostConnectionCallback</ref><sp/>)</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(*_currentHostConnectionCallback)(<ref refid="_wi_fi_stream_8h_1a03dd368c8684838c57562f7bf55d783f" kindref="member">HOST_CONNECTION_DISCONNECTED</ref>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_wi_fi_stream_1abe0341617945c15f2a37d34d7be7e72c" kindref="member">_connected</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//WIFI_SERVER_STREAM_H</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Firmata/utility/WiFiServerStream.h"/>
+  </compounddef>
+</doxygen>

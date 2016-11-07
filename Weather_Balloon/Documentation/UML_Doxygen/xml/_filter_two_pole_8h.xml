@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_filter_two_pole_8h" kind="file" language="C++">
+    <compoundname>FilterTwoPole.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_filters_8h" local="yes">Weather_Balloon/library/Filters/Filters.h</includedby>
+    <includedby refid="_filter_two_pole_8cpp" local="yes">Weather_Balloon/library/Filters/FilterTwoPole.cpp</includedby>
+    <incdepgraph>
+      <node id="736">
+        <label>Arduino.h</label>
+      </node>
+      <node id="735">
+        <label>Weather_Balloon/library/Filters/FilterTwoPole.h</label>
+        <link refid="FilterTwoPole.h"/>
+        <childnode refid="736" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="738">
+        <label>Weather_Balloon/library/Filters/Filters.h</label>
+        <link refid="_filters_8h"/>
+      </node>
+      <node id="737">
+        <label>Weather_Balloon/library/Filters/FilterTwoPole.h</label>
+        <link refid="FilterTwoPole.h"/>
+        <childnode refid="738" relation="include">
+        </childnode>
+        <childnode refid="739" relation="include">
+        </childnode>
+      </node>
+      <node id="739">
+        <label>Weather_Balloon/library/Filters/FilterTwoPole.cpp</label>
+        <link refid="_filter_two_pole_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_filter_two_pole" prot="public">FilterTwoPole</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_filter_two_pole_8h_1aa073280973b66ef99b7ba60ffea5d01d" prot="public" static="no">
+        <name>ATTODUINO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="4" column="18" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448c" prot="public" static="no">
+        <name>OSCILLATOR_TYPE</name>
+        <enumvalue id="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448ca43daaf3ba6e38f8072e1b1b2708eef2d" prot="public">
+          <name>LOWPASS_BESSEL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448cad3e595a2383e6f56842d028c5e852838" prot="public">
+          <name>LOWPASS_BUTTERWORTH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="6" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="6" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FilterTwoPole_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FilterTwoPole_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="_filter_two_pole_8h_1aa073280973b66ef99b7ba60ffea5d01d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ATTODUINO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448c" kindref="member">OSCILLATOR_TYPE</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448ca43daaf3ba6e38f8072e1b1b2708eef2d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448ca43daaf3ba6e38f8072e1b1b2708eef2d" kindref="member">LOWPASS_BESSEL</ref>,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//HIGHPASS_BESSEL,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448cad3e595a2383e6f56842d028c5e852838" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448cad3e595a2383e6f56842d028c5e852838" kindref="member">LOWPASS_BUTTERWORTH</ref>,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//HIGHPASS_BUTTERWORTH,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>implements<sp/>a<sp/>driven<sp/>harmonic<sp/>oscillator,<sp/>which<sp/>can<sp/>be<sp/>used<sp/>as<sp/>a<sp/>filter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>mass<sp/>is<sp/>normalized<sp/>to<sp/>unity<sp/>(does<sp/>not<sp/>appear<sp/>explicity<sp/>in<sp/>the<sp/>equations),</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>the<sp/>driving<sp/>force<sp/>is<sp/>writtin<sp/>in<sp/>units<sp/>of<sp/>spring<sp/>constant,<sp/>so<sp/>a<sp/>static<sp/>force</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>of<sp/>X<sp/>will<sp/>cause<sp/>the<sp/>oscillator<sp/>come<sp/>to<sp/>rest<sp/>at<sp/>X</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>oscillator<sp/>parameters<sp/>are</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>W0<sp/>(undampened<sp/>resonant<sp/>frequency)<sp/>...<sp/>the<sp/>user<sp/>sets<sp/>this<sp/>in<sp/>Hz<sp/>(as<sp/>F0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Q<sp/><sp/>(quality<sp/>factor)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>In<sp/>addition,<sp/>the<sp/>ocillator<sp/>can<sp/>be<sp/>configured<sp/>as<sp/>a<sp/>(two-pole)<sp/>lowpass<sp/>or<sp/>high<sp/>filter,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//<sp/>since<sp/>these<sp/>circuits<sp/>are<sp/>directly<sp/>analogous<sp/>to<sp/>harmonic<sp/>oscillators.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>note<sp/>that<sp/>the<sp/>two-pole<sp/>lowpass<sp/>Bessel,<sp/>the<sp/>rise<sp/>time<sp/>(for<sp/>a<sp/>step)<sp/>and</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>impulse<sp/>response<sp/>width<sp/>are<sp/>approx<sp/>tau/2.0,<sp/>or<sp/>1/(2*w0):</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>a<sp/>tau<sp/>=<sp/>1<sp/>is<sp/>w0<sp/>(and<sp/>wc)<sp/>of<sp/>TWO_PI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>this<sp/>has<sp/>a<sp/>rise<sp/>time<sp/>/<sp/>impulse<sp/>response<sp/>of<sp/>about<sp/>0.4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(i.e.,<sp/>the<sp/>intergration<sp/>time<sp/>is<sp/>about<sp/>0.4<sp/>*<sp/>tau)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="struct_filter_two_pole" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_filter_two_pole" kindref="compound">FilterTwoPole</ref><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//OSCILLATOR_TYPE<sp/>FT;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" kindref="member">X</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" kindref="member">Vprev</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>previously<sp/>computed<sp/>velocity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="struct_filter_two_pole_1a1cf9be9b3615421ad0d4a985f29b223d" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a1cf9be9b3615421ad0d4a985f29b223d" kindref="member">Vavg</ref>;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>average<sp/>of<sp/>the<sp/>last<sp/>two<sp/>calculated<sp/>velocities</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="struct_filter_two_pole_1afeb31882d0e8506a82f4b8cbd5745488" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1afeb31882d0e8506a82f4b8cbd5745488" kindref="member">Fprev</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>previous<sp/>driving<sp/>force<sp/>(not<sp/>frequency!)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="struct_filter_two_pole_1af42fb47a6163a710768a4ab4c6551a08" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1af42fb47a6163a710768a4ab4c6551a08" kindref="member">Q</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>quality<sp/>factor,<sp/>must<sp/>be<sp/>&gt;<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>undamped<sp/>resonance<sp/>frequency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="struct_filter_two_pole_1abda0e3d8797b98981b5827814b56b329" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1abda0e3d8797b98981b5827814b56b329" kindref="member">IsHighpass</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>false<sp/>for<sp/>normal<sp/>output,<sp/>true<sp/>will<sp/>make<sp/>a<sp/>lowpass<sp/>into<sp/>a<sp/>highpass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="struct_filter_two_pole_1a0cb5f7e1f22358a3b80ba1955958082e" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a0cb5f7e1f22358a3b80ba1955958082e" kindref="member">LastTimeUS</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>last<sp/>time<sp/>measured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" kindref="member">FilterTwoPole</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>frequency0<sp/>=<sp/>1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>qualityFactor<sp/>=<sp/>1,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xInit<sp/>=<sp/>0);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" kindref="member">setQ</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>qualityFactor<sp/>);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" kindref="member">setFrequency0</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>f<sp/>);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a65e7ce2eaa6b3c5a79c05b47a00466ad" kindref="member">setAsFilter</ref>(<sp/><ref refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448c" kindref="member">OSCILLATOR_TYPE</ref><sp/>ft,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>frequency3db,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>initialValue=0<sp/>);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" kindref="member">input</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>drive<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" kindref="member">output</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>a<sp/>measure<sp/>for<sp/>the<sp/>energy<sp/>of<sp/>the<sp/>oscillator,<sp/>returns<sp/>the<sp/>maxium<sp/>amplitude</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a3eca794cde885b64dd1ff9236b3e4368" kindref="member">getMaxAmp</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1ac86c21f0dcef76c06fe1102fb7642f2d" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a9d600c9c4c07239f34740f07a1487c2a" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Filters/FilterTwoPole.h"/>
+  </compounddef>
+</doxygen>

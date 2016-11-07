@@ -1,0 +1,935 @@
+#LyX 2.2 created this file. For more info see http://www.lyx.org/
+\lyxformat 508
+\begin_document
+\begin_header
+\save_transient_properties true
+\origin unavailable
+\textclass scrreprt
+\begin_preamble
+\KOMAoption{fontsize}{12pt}\recalctypearea
+\usepackage[libertine]{newtxmath}
+\usepackage{fontspec}
+
+%\usepackage[osf,p,type1]{libertine}
+\defaultfontfeatures{Ligatures={Common,TeX},Numbers={Proportional}, Contextuals = Swash, Fractions=Off}% ,Scale=MatchLowercase} bug in current Biolinum
+\setmainfont{Linux Libertine O}
+\setsansfont{Linux Biolinum O}
+\setmonofont[Numbers={Monospaced, Lining, SlashedZero}]{Linux Libertine Mono O}
+\usepackage[libertine]{newtxmath}
+
+%\setromanfont [Ligatures={Common,TeX}, Numbers={OldStyle}]{Linux Libertine O}
+%\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+%\setsansfont[Ligatures={Common,TeX}, Numbers={OldStyle}]{Linux Biolinum O}
+%\setromanfont [Ligatures={Common,TeX}, Numbers={OldStyle}]{Libertine}
+%\setsansfont [Ligatures={Common}, BoldFont={Fontin Sans Bold}, ItalicFont={Fontin Sans Italic}]{Fontin Sans}
+%\setsansfont[Ligatures={Common,TeX}, Numbers={OldStyle}]{Linux Biolinum O}
+
+\usepackage[letterspace = 0, babel = true, protrusion = true, expansion = true]{microtype}
+%\usepackage{textcomp}
+%\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage{lipsum}
+\usepackage{lettrine}
+\usepackage{minted}
+\usepackage{tcolorbox}
+\usepackage{etoolbox}
+% Wrap minted environment in a pretty box.
+\BeforeBeginEnvironment{minted}{\begin{tcolorbox}}%
+\AfterEndEnvironment{minted}{\end{tcolorbox}}%
+\setminted{breaklines, breakautoindent, autogobble, tabsize=2, samepage=false}
+\newminted[python]{python3}{}
+\newminted[python3]{python3}{}
+\newminted[pycon]{pycon}{}
+\newminted[rcon]{rconsole}{}
+\newminted[html]{html}{}
+\newminted[asm]{nasm}{}
+\newminted[java]{java}{}
+\newminted[bash]{bash}{}
+
+\newcommand{\iasm}[1]{\mintinline{nasm}{#1}}
+%\usepackage{enumitem}
+%\setlist{nosep}
+%\setlist{noitemsep} % to leave space around whole list
+% More control per list
+%\setlist[2]{noitemsep} % sets the itemsep and parsep for all level two lists to 0
+%\setenumerate{noitemsep} % sets no itemsep for enumerate lists only
+%\begin{enumerate}[noitemsep] % sets no itemsep for just this list
+% ITEMS
+%\end{enumerate}
+
+\usepackage{mathdots}
+\usepackage{url}
+
+\usepackage{varioref}
+\usepackage{hyperref}
+\usepackage{cleveref}
+
+\everymath{\displaystyle}
+
+% Vertically stretch a table row this amount
+%\renewcommand*\arraystretch{1.5}
+% Or use this command
+% \setlength{\extrarowheight}{2pt}
+
+
+% Make nicer looking captions
+%\usepackage{caption}
+%\captionsetup{labelfont=bf,format=hang,justification=justified}
+
+% Indent KOMA script captions
+%\setcapindent{1em}
+
+% Make KOMA script caption labels (eg Figure 1:) bold.
+\addtokomafont{captionlabel}{\bfseries}
+
+% Adjust the KOMA caption fonts smaller
+%\setkomafont{caption}{\itshape}
+%\setkomafont{caption}{\small}
+%\setkomafont{captionlabel}{\bfseries}
+\usepackage{subfig}
+\captionsetup[subfloat]{font={it}}
+%\captionsetup[subfloat]{font={small}}
+
+
+% Note that tables should have the caption above the table.
+% Figures should have the caption below the table.
+% Algorithms does not seem to matter above or below, though code above the caption looks nicer in LyX GUI
+% Could adjust the caption spacing depending on the environment (document class)
+%\captionsetup[table]{skip=20pt}
+%\setlength{\abovecaptionskip}{15pt plus 10pt minus 2pt} % Chosen fairly arbitrarily
+
+% Center figures and tables
+\let\originaltable\table
+\let\endoriginaltable\endtable
+\renewenvironment{table}[1][ht]{%
+\originaltable[#1]
+\addfontfeatures{Numbers={Lining, Monospaced, }}%SlashedZero}}
+ \centering}%
+{\endoriginaltable}
+
+\let\originalfigure\figure
+\let\endoriginalfigure\endfigure
+\renewenvironment{figure}[1][ht]{%
+\originalfigure[#1]
+\centering}%
+{\endoriginalfigure}
+
+%\renewcommand*{\figureformat}{}
+%\renewcommand*{\tableformat}{\tablename~\thetable}
+%\renewcommand*{\captionformat}{}
+\renewcommand*\thetable{%
+%  \thechapter.%
+  \@arabic\c@table
+}
+
+\renewcommand*\thefigure{%
+%  \thechapter.%
+  \@arabic\c@figure
+}
+
+
+% Force floats to appear in their respective sections, subsections, and subsubsections.
+%\usepackage[section,subsection,subsubsection]{extraplaceins}
+%\usepackage[section,subsection]{extraplaceins}
+
+%\makeatletter
+\if@twoside % commands below work only for twoside option of \documentclass
+    \newlength{\textblockoffset}
+    \setlength{\textblockoffset}{12mm}
+    \addtolength{\hoffset}{\textblockoffset}
+    \addtolength{\evensidemargin}{-2.0\textblockoffset}
+\fi
+%\makeatother
+
+
+\definecolor{green}{RGB}{0, 180, 0}
+%\definecolor{cyan}{RGB}{0, 180, 180}
+\definecolor{blue}{RGB}{0,130,255}
+\definecolor{yellow}{RGB}{200,200,0}
+\definecolor{Black}{RGB}{0, 0, 0}
+\definecolor{Gray}{RGB}{150, 150, 150}
+\definecolor{teal}{RGB}{64, 128, 128}
+\definecolor{gray}{rgb}{0.95,0.95,0.95}
+\definecolor{muave}{rgb}{0.58,0,0.82}
+
+\usepackage{framed}
+
+\usepackage{xcolor}% http://ctan.org/pkg/xcolor
+\newcommand{\myquote}[2][black!10]{%
+  \medskip
+  {\setlength{\fboxsep}{.1\columnwidth}%
+  \noindent\colorbox{#1}{\begin{minipage}{\dimexpr\columnwidth-2\fboxsep}
+    \raggedright\sffamily\bfseries\Huge#2
+  \end{minipage}}} \par
+  \medskip
+}
+%\newcommand{\hltt}[1]{\textcolor{blue}{#1}}
+\usepackage{footnote}
+
+% Use to include text files into a LaTeX file, such as source files
+%\usepackage{fancyvrb}
+% redefine \VerbatimInput
+%\RecustomVerbatimCommand{\VerbatimInput}{VerbatimInput}%
+%{fontsize=\footnotesize,
+ %
+ %frame=lines,  % top and bottom rule only
+ %framesep=2em, % separation between frame and text
+ %rulecolor=\color{Gray},
+%
+ %label=\fbox{\color{Black}Passwords},
+ %labelposition=topline,
+ %
+ %commandchars=\|\(\), % escape character and argument delimiters for
+                      % commands within the verbatim
+% commentchar=*        % comment character
+%}
+% Then we use
+%\VerbatimInput{yourFileInSameDirectory.txt}
+\usepackage{enumitem}
+\setlist[itemize,1]{label=$\bullet$}
+\setlist[itemize,2]{label=$\diamond$}
+\setlist[itemize,3]{label=$\triangleright$}
+\setlist[itemize,4]{label=$\square$}
+\setlist[itemize,5]{label=$\circ$}
+\setlist[itemize,6]{label=$\blacktriangleright$}
+\setlist[itemize,7]{label=\tiny$\blacksquare$}
+\setlist[itemize,8]{label=$\ast$}
+\setlist[itemize,9]{label=$\star$}
+
+\renewlist{itemize}{itemize}{9}
+
+% KOMA script won't include the nomenclature within the table of contents
+\def\nompreamble{\addcontentsline{toc}{section}{\nomname}\markboth{\nomname}{\nomname}}
+%\DeclareUnicodeCharacter{21AA}{\hookarrow}
+
+\title{CS4360 HAB Design}
+\author{Susmilch, Hewitt}
+\usepackage{scrlayer-scrpage}
+\pagestyle{scrheadings}
+%\makeatletter
+\let\papertitle\@title
+\let\paperauthor\@author
+\let\paperdate\@date
+%\makeatother
+\lehead[\papertitle]{\papertitle}
+\rehead[\paperauthor]{\paperauthor}
+\lohead[\paperauthor]{\paperauthor}
+\rohead[\papertitle]{\papertitle}
+
+% Highlight nomenclature terms in some way.
+\newcommand{\term}[1]{\textcolor{blue}{#1}}
+%\newcommand{\term}[1]{\texttt{#1}}
+\newcommand{\code}[1]{\texttt{#1}}
+\newcommand{\tn}[1]{\term{\noun{#1}}}
+
+\renewcommand{\implies}{\rightarrow}
+\renewcommand{\iff}{\leftrightarrow}
+%\newcommand{\nequiv}{\not \equiv}
+\usepackage{listings}
+
+\lstdefinelanguage{ijvm}
+{morekeywords={BIPUSH, DUP, GOTO, IADD, IAND, IFEQ, IFLT, IF\_ICMPEQ, IINC, ILOAD, INVOKEVIRTUAL, IOR, IRETURN, ISTORE, ISUB, LDC\_W, NOP, POP, SWAP, WIDE, RD, WR, FETCH, if},
+sensitive = false,
+morecomment=[l]{//},
+emph={A, B, N, Z, MDR, PC, MBR, MBRU, SP, LV, CPP, TOS, OPC, MPC},
+emph={[2]H, MAR},
+emphstyle={\color{blue}},
+emphstyle={[2]\color{muave}}
+}
+
+\lstset{%
+language=ijvm,
+numbers=left,
+numberstyle={\footnotesize},
+basicstyle={\ttfamily},
+breaklines=true,
+commentstyle={\color{teal}\textit},
+keywordstyle={\color{green}},
+rulecolor={\color{black}},
+backgroundcolor={\color{gray}},
+stringstyle={\color{muave}},
+frame=single}
+
+\newcommand{\ijvm}[1]{\lstinline[language=ijvm]{#1}}
+\usepackage[maxfloats=25]{morefloats}
+
+
+
+\renewcommand*\titlepagestyle{empty}
+
+\newcommand{\blankpage}{%
+\newpage%
+\thispagestyle{empty}%
+\mbox{}%
+\newpage%
+}
+\end_preamble
+\options headsepline,DIV=15,BCOR=0in,index=totoc,toc=listofnumbered,toc=graduated,unicode=true, twocolumn=false
+\use_default_options true
+\begin_modules
+theorems-ams
+\end_modules
+\maintain_unincluded_children false
+\language english
+\language_package default
+\inputencoding utf8x
+\fontencoding global
+\font_roman "default" "default"
+\font_sans "default" "default"
+\font_typewriter "default" "default"
+\font_math "auto" "auto"
+\font_default_family default
+\use_non_tex_fonts true
+\font_sc false
+\font_osf false
+\font_sf_scale 100 100
+\font_tt_scale 100 100
+\graphics default
+\default_output_format default
+\output_sync 0
+\bibtex_command default
+\index_command default
+\float_placement H
+\paperfontsize default
+\spacing single
+\use_hyperref true
+\pdf_title "CS4360 HAB Design Document"
+\pdf_author "Robert Susmilch, Zachary Hewitt"
+\pdf_subject "Computer Science"
+\pdf_bookmarks true
+\pdf_bookmarksnumbered false
+\pdf_bookmarksopen false
+\pdf_bookmarksopenlevel 1
+\pdf_breaklinks false
+\pdf_pdfborder true
+\pdf_colorlinks false
+\pdf_backref page
+\pdf_pdfusetitle true
+\papersize default
+\use_geometry false
+\use_package amsmath 1
+\use_package amssymb 1
+\use_package cancel 1
+\use_package esint 1
+\use_package mathdots 1
+\use_package mathtools 1
+\use_package mhchem 1
+\use_package stackrel 1
+\use_package stmaryrd 1
+\use_package undertilde 1
+\cite_engine basic
+\cite_engine_type default
+\biblio_style plain
+\use_bibtopic false
+\use_indices false
+\paperorientation portrait
+\suppress_date false
+\justification false
+\use_refstyle 1
+\index Index
+\shortcut idx
+\color #008000
+\end_index
+\secnumdepth 3
+\tocdepth 3
+\paragraph_separation indent
+\paragraph_indentation default
+\quotes_language english
+\papercolumns 1
+\papersides 1
+\paperpagestyle default
+\tracking_changes false
+\output_changes false
+\html_math_output 0
+\html_css_as_file 0
+\html_be_strict false
+\end_header
+
+\begin_body
+
+\begin_layout Title
+CS4360 High Altitude Balloon
+\end_layout
+
+\begin_layout Subtitle
+Software Design Document
+\end_layout
+
+\begin_layout Author
+Robert Susmilch, Zachary Hewitt
+\end_layout
+
+\begin_layout Date
+October 20, 2016
+\end_layout
+
+\begin_layout Titlehead
+Revision: 1.0
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset toc
+LatexCommand tableofcontents
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Chapter
+Introduction
+\end_layout
+
+\begin_layout Section
+Purpose
+\end_layout
+
+\begin_layout Standard
+This document will describe the design implementation of a high-altitude
+ balloon (
+\noun on
+hab
+\noun default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "HAB"
+description "High altitude balloon. A platform tethered to a balloon, designed to achieve a high altitude, allowing scientific experiments and data collection."
+
+\end_inset
+
+) controller.
+ The controller
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Controller"
+description "Generically, the HAB data collection and payload control system."
+
+\end_inset
+
+ will facilitate data collection 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Data collection"
+description "Gathering and logging data retrieved from electronic sensors for later retrieval and analysis."
+
+\end_inset
+
+ and remote management
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Remote management"
+description "Allows communication from a ground station to the HAB controller via radio link. This allows remote control of certain settings and issuance of commands."
+
+\end_inset
+
+ of the payload.
+\end_layout
+
+\begin_layout Section
+Scope
+\end_layout
+
+\begin_layout Standard
+The scope encompasses both software and hardware design:
+\end_layout
+
+\begin_layout Itemize
+The High Altitude Balloon controller requires combining multiple hardware
+ systems in a compact and lightweight payload
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Payload"
+description "The packages attached to the balloon. Typically does not include items such as the parachute and cut-down unit."
+
+\end_inset
+
+.
+ This entails a custom motherboard 
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Motherboard"
+description "The main board in charge of a system. Connects to smaller and more specialized daughter-boards, headers, sensors, etc."
+
+\end_inset
+
+ with separate data collection daughter-boards containing sensors
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Sensor"
+description "An electronic device designed to transform a physical property into an electronic representation to allow recording and analysis."
+
+\end_inset
+
+, break-out headers
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Header"
+description "A place on an electronic board where related signals are routed to allow a cable to connect, thus interconnecting seperate boards or devices."
+
+\end_inset
+
+ and a fail-safe cut-down
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Cut-down"
+description "A device that releases the payload from the balloon upon a specific signal. Eg, time, altitude, GPS coordinants, radio signal."
+
+\end_inset
+
+ system.
+\end_layout
+
+\begin_layout Itemize
+Software ties the hardware to the ultimate aim of data collection.
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Sensor data is recorded and acted upon in the controller logic.
+\end_layout
+
+\begin_layout Itemize
+A radio system to facilitate tracking
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Tracking"
+description "A HAB flight is typically tracked in real-time so that the payload may be recovered after it parachutes back to Earth. Tracking is typically done with radio and direction finding equipment or transmission of GPS coordinants."
+
+\end_inset
+
+, command actions and improve payload retrieval
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Payload retrieval"
+description "Retrieving the payload after it has landed on the ground."
+
+\end_inset
+
+ after flight termination
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Flight termination"
+description "Ending of a flight, either naturally through a balloon bursting at high altitude, or through the mechanical means of a cut-down device."
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+An adjustable cut-down mechanism that releases the payload after a predetermined
+ amount of time or radio signal.
+\end_layout
+
+\end_deeper
+\begin_layout Section
+Audience
+\end_layout
+
+\begin_layout Standard
+The intended audience of this document includes the client and supervising
+ managers.
+ It provides feedback and an overview of the intended system.
+\end_layout
+
+\begin_layout Chapter
+Design Overview
+\end_layout
+
+\begin_layout Section
+Description of the Problem
+\end_layout
+
+\begin_layout Standard
+The scientific community performs experiments and gathers data from high
+ altitudes, typically from flying a weather balloon.
+ At high enough altitudes, the atmosphere can be termed 
+\emph on
+near-space
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Near-space"
+description "Tthe region of Earth's atmosphere that lies between 20 and 100 km (65,000 and 328,000 feet) above sea level, encompassing the stratosphere, mesosphere, and the lower thermosphere."
+
+\end_inset
+
+,
+\emph default
+ and is of interest scientifically due to the benefits of low atmospheric
+ disturbances in experiments—such as gathering cosmological data—at a fraction
+ of the cost of a real-space launch.
+\end_layout
+
+\begin_layout Standard
+Such flights require the ability to gather and record sensor data, such
+ as temperature and pressure, as well as whatever experiment is primarily
+ of interest on the individual flight.
+ In addition, tracking and recovery of the equipment when a flight has ended
+ is important, in light of the cost and time savings associated with equipment
+ reuse.
+\end_layout
+
+\begin_layout Standard
+Lastly, flights are unpredictable and require fail-safe ways to terminate
+ a misbehaving flight for a variety of reasons:
+\end_layout
+
+\begin_layout Itemize
+Unfavorable flight path characteristics.
+\end_layout
+
+\begin_layout Itemize
+Balloon will fail to reach bursting altitude, and thus the payload may not
+ be recoverable.
+\end_layout
+
+\begin_layout Itemize
+Problems with equipment or experiment.
+\end_layout
+
+\begin_layout Section
+Assumptions
+\end_layout
+
+\begin_layout Standard
+It is assumed that the primary user will have an understanding of computers
+ and electronics at a daily-life level.
+ The user will understand how to install software, identify and plug in
+ common ports (including battery connections and 
+\noun on
+usb
+\noun default
+), know basic arithmetic and follow and understand instructions.
+\end_layout
+
+\begin_layout Standard
+It is further assumed that the primary users of this system will include
+ the typical middle school to college level students and teachers.
+ Therefore, while every effort is made to build a reliable system, the current
+ implementation does not implement various system reliability methods that
+ would further complicate and increase the projects costs and time-to-deployment.
+\end_layout
+
+\begin_layout Section
+Constraints
+\end_layout
+
+\begin_layout Standard
+The general constraints around 
+\noun on
+hab
+\noun default
+ flights involve weight, size, cost and ruggedness.
+\end_layout
+
+\begin_layout Standard
+A weather balloon can typically lift a certain amount of weight based on
+ the size of the balloon.
+ Regulatory agencies also limit the payload weight.
+ Thus the controller and related systems should minimize weight to allow
+ cheaper and light balloons, and allow more free payload capacity for other
+ experiments.
+\end_layout
+
+\begin_layout Standard
+Coupled with weight battery capacity.
+ Higher capacity batteries increase run-time, but at the expense of weight.
+ Hence, conservation of energy is important to allow long flights, or extended
+ payload retrieval.
+ 
+\end_layout
+
+\begin_layout Standard
+Additionally, the desire for a compact system to allow room for other experiment
+s and data collection technologies limits the controller size.
+ While size is an important consideration, weight is the overriding constraint
+ due to the hard regulatory limit placed on balloon payloads.
+\end_layout
+
+\begin_layout Standard
+Any system is also constrained by budgetary boundaries.
+ This is especially true outside of the government funded studies in academia.
+\end_layout
+
+\begin_layout Standard
+Lastly, the payload is subjected to accelerations and torque upon liftoff
+ and payload landing that require a secure means of attachment to both the
+ balloon and the payload container.
+\end_layout
+
+\begin_layout Chapter
+Architectural Strategies
+\end_layout
+
+\begin_layout Section
+Technologies Used
+\end_layout
+
+\begin_layout Subsection
+Hardware
+\end_layout
+
+\begin_layout Standard
+The 
+\noun on
+hab
+\noun default
+ controller will be based on:
+\end_layout
+
+\begin_layout Itemize
+An Atmel ATMEGA2560 microcontroller
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Microcontroller"
+description "A small computer; the lower end on the system-on-a-chip spectrum."
+
+\end_inset
+
+.
+ This is a small system-on-a-chip
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "System-on-a-chip"
+description "A single integrated circuit containing a processor core, memory, and programmable input/output peripherals."
+
+\end_inset
+
+ (
+\noun on
+soc
+\noun default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SOC"
+description "System-on-a-chip."
+
+\end_inset
+
+) that allows communication with various sensors without needing additional
+ components.
+\end_layout
+
+\begin_layout Itemize
+Various sensors such as,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Magnetometer
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Magnetometer"
+description "An instrument that measures magnetism, such as the strength and direction of the magnetic field at a point in space."
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Gyroscope
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Gyroscope"
+description "A sensor that measures degree of rotation of a body due to the gyroscopic effect of a spinning mass. Electronic versions are offered today that result in the same function."
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Accelerometer
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Accelerometer"
+description "An accelerometer is a device that measures acceleration."
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Geiger counter
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Geiger counter"
+description "An instrument used for measuring ionizing radiation."
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Temperature
+\end_layout
+
+\begin_layout Itemize
+Barometric pressure
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Barometric pressure"
+description "The local pressure of the atmosphere as measured by a sensor or instrument."
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Humidity
+\end_layout
+
+\begin_layout Itemize
+Light level
+\end_layout
+
+\begin_layout Itemize
+Global Positioning System
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Global Positioning System"
+description "A global navigation satellite system that provides geolocation and time information to a GPS receiver in all weather conditions, anywhere on or near the Earth where there is an unobstructed line of sight to four or more GPS satellites."
+
+\end_inset
+
+ (
+\noun on
+gps
+\noun default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "GPS"
+description "Global Positioning System."
+
+\end_inset
+
+)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Recordable medium such as EEPROM
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "EEPROM"
+description "Electrically Erasable Programmable Read-Only Memory and is a type of non-volatile memory used in computers and other electronic devices to store relatively small amounts of data."
+
+\end_inset
+
+ and SDcards
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SDcard"
+description "A Secure Digital card is a small form factor memory device containing a microcontroller and flash memory."
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Itemize
+Resistive heaters to control sensor and experiment temperatures while in
+ flight.
+\end_layout
+
+\begin_layout Itemize
+Payload retrieval components,
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+A siren or buzzer to allow auditory location of payload once on the ground.
+\end_layout
+
+\begin_layout Itemize
+LEDs
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "LEDs"
+description "Light Emitting Diodes. Small electronic components that emit light when receiving electric current."
+
+\end_inset
+
+ to attract attention getting visually.
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The cut-down unit will include,
+\end_layout
+
+\begin_layout Itemize
+A nichrome resistive wire
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Nichrome resistance wire"
+description "A wire designed to heat up when an electric current is passed through it. Nichrome wire provides oxidation resistance which is important for wire reuse."
+
+\end_inset
+
+ that will cut through the nylon payload supporting cord.
+\end_layout
+
+\begin_layout Itemize
+A microcontroller that will implement a timer and react to barometric pressure.
+\end_layout
+
+\begin_layout Itemize
+A spring loaded housing to provide force to pull the nichrome wire through
+ the payload line when activated.
+\end_layout
+
+\begin_layout Subsection
+Software
+\end_layout
+
+\begin_layout Standard
+The software used during development will include the standard Arduino 
+\noun on
+ide
+\noun default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IDE"
+description "Integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development."
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The Arduino IDE can scarcely be called an IDE.
+ However, time shortages do not allow migration to a more full featured
+ IDE, or distancing from the Arduino core libraries.
+\end_layout
+
+\end_inset
+
+ with various sensor libraries included with many sensors boards upon purchase.
+ The Arduino framework is written in C++ and inline assembly.
+ Custom software will be designed to provide logging and control of the
+ sensors.
+\end_layout
+
+\begin_layout Standard
+\begin_inset CommandInset nomencl_print
+LatexCommand printnomenclature
+set_width "auto"
+
+\end_inset
+
+
+\end_layout
+
+\end_body
+\end_document

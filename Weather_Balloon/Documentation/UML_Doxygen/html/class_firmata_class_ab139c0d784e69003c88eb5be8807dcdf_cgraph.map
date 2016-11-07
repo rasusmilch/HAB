@@ -1,0 +1,6 @@
+<map id="FirmataClass::sendString" name="FirmataClass::sendString">
+<area shape="rect" id="node2" href="$class_firmata_class.html#a81e2de5b37eb2372c8a3d9a43d5eb0cc" title="FirmataClass::sendSysex" alt="" coords="211,64,365,91"/>
+<area shape="rect" id="node3" href="$class_firmata_class.html#a3cc7ea1af348bca3ea0bd570314cada3" title="FirmataClass::startSysex" alt="" coords="420,5,575,32"/>
+<area shape="rect" id="node4" href="$class_firmata_class.html#a770e43f26f18204e43acebf9202a6d39" title="FirmataClass::sendValueAs\lTwo7bitBytes" alt="" coords="413,57,581,98"/>
+<area shape="rect" id="node5" href="$class_firmata_class.html#a9bb68afbb1d37a7990f59a1d419e64c9" title="FirmataClass::endSysex" alt="" coords="422,123,573,149"/>
+</map>

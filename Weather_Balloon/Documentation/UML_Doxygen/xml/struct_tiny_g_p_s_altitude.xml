@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_tiny_g_p_s_altitude" kind="struct" language="C++" prot="public">
+    <compoundname>TinyGPSAltitude</compoundname>
+    <basecompoundref refid="struct_tiny_g_p_s_decimal" prot="public" virt="non-virtual">TinyGPSDecimal</basecompoundref>
+    <includes refid="_tiny_g_p_s_09_09_8h" local="no">TinyGPS++.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_tiny_g_p_s_altitude_1a5a39d145bb1778814007206c765189f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TinyGPSAltitude::meters</definition>
+        <argsstring>()</argsstring>
+        <name>meters</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="181" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="181" bodyend="181"/>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_altitude_1a5ae68d990ea08d4e21cfa6aefb46cc03" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TinyGPSAltitude::miles</definition>
+        <argsstring>()</argsstring>
+        <name>miles</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="182" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="182" bodyend="182"/>
+        <references refid="_tiny_g_p_s_09_09_8h_1a51d2cc47a0dc5655cde4135c24fef480" compoundref="_tiny_g_p_s_09_09_8h" startline="38">_GPS_MILES_PER_METER</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_altitude_1a1eb3e5b425784fc0db3e9ffe0f77f741" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TinyGPSAltitude::kilometers</definition>
+        <argsstring>()</argsstring>
+        <name>kilometers</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="183" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="183" bodyend="183"/>
+        <references refid="_tiny_g_p_s_09_09_8h_1a49b3ac6a23c4f78931942c51810e3439" compoundref="_tiny_g_p_s_09_09_8h" startline="39">_GPS_KM_PER_METER</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_altitude_1ac782babc0c485d47e6f57384e88b8cc8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TinyGPSAltitude::feet</definition>
+        <argsstring>()</argsstring>
+        <name>feet</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="184" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="184" bodyend="184"/>
+        <references refid="_tiny_g_p_s_09_09_8h_1af1a3b64121f34d416925518e994b454f" compoundref="_tiny_g_p_s_09_09_8h" startline="40">_GPS_FEET_PER_METER</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="413">
+        <label>TinyGPSAltitude</label>
+        <link refid="struct_tiny_g_p_s_altitude"/>
+        <childnode refid="414" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="414">
+        <label>TinyGPSDecimal</label>
+        <link refid="struct_tiny_g_p_s_decimal"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="415">
+        <label>TinyGPSAltitude</label>
+        <link refid="struct_tiny_g_p_s_altitude"/>
+        <childnode refid="416" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="416">
+        <label>TinyGPSDecimal</label>
+        <link refid="struct_tiny_g_p_s_decimal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="180" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="179" bodyend="185"/>
+    <listofallmembers>
+      <member refid="struct_tiny_g_p_s_decimal_1ab80191a3e02c92ad3f674b5df2ab752f" prot="public" virt="non-virtual"><scope>TinyGPSAltitude</scope><name>age</name></member>
+      <member refid="struct_tiny_g_p_s_altitude_1ac782babc0c485d47e6f57384e88b8cc8" prot="public" virt="non-virtual"><scope>TinyGPSAltitude</scope><name>feet</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ae8b7f9f7719c2974ebd3b34759493d15" prot="public" virt="non-virtual"><scope>TinyGPSAltitude</scope><name>isUpdated</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1a2a1d868525e903eb193b7a36cdd76984" prot="public" virt="non-virtual"><scope>TinyGPSAltitude</scope><name>isValid</name></member>
+      <member refid="struct_tiny_g_p_s_altitude_1a1eb3e5b425784fc0db3e9ffe0f77f741" prot="public" virt="non-virtual"><scope>TinyGPSAltitude</scope><name>kilometers</name></member>
+      <member refid="struct_tiny_g_p_s_altitude_1a5a39d145bb1778814007206c765189f7" prot="public" virt="non-virtual"><scope>TinyGPSAltitude</scope><name>meters</name></member>
+      <member refid="struct_tiny_g_p_s_altitude_1a5ae68d990ea08d4e21cfa6aefb46cc03" prot="public" virt="non-virtual"><scope>TinyGPSAltitude</scope><name>miles</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ae09cbb1856cd57c7dcee52fb5fb1ba16" prot="public" virt="non-virtual"><scope>TinyGPSAltitude</scope><name>TinyGPSDecimal</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ac3ce80976e5d8456e9f211b910a6cb19" prot="public" virt="non-virtual"><scope>TinyGPSAltitude</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

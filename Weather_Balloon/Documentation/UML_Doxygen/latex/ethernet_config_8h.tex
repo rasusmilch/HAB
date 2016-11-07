@@ -1,0 +1,94 @@
+\hypertarget{ethernet_config_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Firmata/examples/\+Standard\+Firmata\+Ethernet/ethernet\+Config.h File Reference}
+\label{ethernet_config_8h}\index{Weather\+\_\+\+Balloon/library/\+Firmata/examples/\+Standard\+Firmata\+Ethernet/ethernet\+Config.\+h@{Weather\+\_\+\+Balloon/library/\+Firmata/examples/\+Standard\+Firmata\+Ethernet/ethernet\+Config.\+h}}
+{\ttfamily \#include $<$S\+P\+I.\+h$>$}\\*
+{\ttfamily \#include $<$Ethernet.\+h$>$}\\*
+Include dependency graph for ethernet\+Config.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{ethernet_config_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{ethernet_config_8h_a04edf8e622c7ef8aa46a70ae5ecd0dd6}{W\+I\+Z5100\+\_\+\+E\+T\+H\+E\+R\+N\+ET}
+\item 
+\#define \hyperlink{ethernet_config_8h_a1773420c3b93bb8386484fb91849835a}{remote\+\_\+ip}~I\+P\+Address(10, 0, 0, 3)
+\item 
+\#define \hyperlink{ethernet_config_8h_a112f693a9b339eb088a6fb78a644c5cd}{remote\+\_\+port}~3030
+\item 
+\#define \hyperlink{ethernet_config_8h_a2b4b74058584a3b553398a5e5e2f21c8}{local\+\_\+ip}~I\+P\+Address(10, 0, 0, 15)
+\item 
+\#define \hyperlink{ethernet_config_8h_ad5ca2bf3cb6dc465bb1fba6bd8b86a65}{I\+S\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+P\+IN}(p)~((\hyperlink{_boards_8h_a8a60c5a77f46ac40521843cb5648ddd6}{I\+S\+\_\+\+P\+I\+N\+\_\+\+S\+PI}(p) $\vert$$\vert$ (p) == 4) $\vert$$\vert$ (p) == 10)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Ethernet\+Client \hyperlink{ethernet_config_8h_a058da3453d064890d1eb0a5e2f730807}{client}
+\item 
+const byte \hyperlink{ethernet_config_8h_ac678069a2c8ce2ddc5026707bebe34b4}{mac} \mbox{[}$\,$\mbox{]} = \{0x90, 0x\+A2, 0x\+D\+A, 0x00, 0x53, 0x\+E5\}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{ethernet\+Config.\+h@{ethernet\+Config.\+h}!I\+S\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+P\+IN@{I\+S\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+P\+IN}}
+\index{I\+S\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+P\+IN@{I\+S\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+P\+IN}!ethernet\+Config.\+h@{ethernet\+Config.\+h}}
+\subsubsection[{\texorpdfstring{I\+S\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+P\+IN}{IS\_IGNORE\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+S\+\_\+\+I\+G\+N\+O\+R\+E\+\_\+\+P\+IN(
+\begin{DoxyParamCaption}
+\item[{}]{p}
+\end{DoxyParamCaption}
+)~(({\bf I\+S\+\_\+\+P\+I\+N\+\_\+\+S\+PI}(p) $\vert$$\vert$ (p) == 4) $\vert$$\vert$ (p) == 10)}\hypertarget{ethernet_config_8h_ad5ca2bf3cb6dc465bb1fba6bd8b86a65}{}\label{ethernet_config_8h_ad5ca2bf3cb6dc465bb1fba6bd8b86a65}
+
+
+Definition at line 88 of file ethernet\+Config.\+h.
+
+\index{ethernet\+Config.\+h@{ethernet\+Config.\+h}!local\+\_\+ip@{local\+\_\+ip}}
+\index{local\+\_\+ip@{local\+\_\+ip}!ethernet\+Config.\+h@{ethernet\+Config.\+h}}
+\subsubsection[{\texorpdfstring{local\+\_\+ip}{local\_ip}}]{\setlength{\rightskip}{0pt plus 5cm}\#define local\+\_\+ip~I\+P\+Address(10, 0, 0, 15)}\hypertarget{ethernet_config_8h_a2b4b74058584a3b553398a5e5e2f21c8}{}\label{ethernet_config_8h_a2b4b74058584a3b553398a5e5e2f21c8}
+
+
+Definition at line 63 of file ethernet\+Config.\+h.
+
+
+
+Referenced by Wi\+Fi\+Stream\+::config().
+
+\index{ethernet\+Config.\+h@{ethernet\+Config.\+h}!remote\+\_\+ip@{remote\+\_\+ip}}
+\index{remote\+\_\+ip@{remote\+\_\+ip}!ethernet\+Config.\+h@{ethernet\+Config.\+h}}
+\subsubsection[{\texorpdfstring{remote\+\_\+ip}{remote\_ip}}]{\setlength{\rightskip}{0pt plus 5cm}\#define remote\+\_\+ip~I\+P\+Address(10, 0, 0, 3)}\hypertarget{ethernet_config_8h_a1773420c3b93bb8386484fb91849835a}{}\label{ethernet_config_8h_a1773420c3b93bb8386484fb91849835a}
+
+
+Definition at line 51 of file ethernet\+Config.\+h.
+
+\index{ethernet\+Config.\+h@{ethernet\+Config.\+h}!remote\+\_\+port@{remote\+\_\+port}}
+\index{remote\+\_\+port@{remote\+\_\+port}!ethernet\+Config.\+h@{ethernet\+Config.\+h}}
+\subsubsection[{\texorpdfstring{remote\+\_\+port}{remote\_port}}]{\setlength{\rightskip}{0pt plus 5cm}\#define remote\+\_\+port~3030}\hypertarget{ethernet_config_8h_a112f693a9b339eb088a6fb78a644c5cd}{}\label{ethernet_config_8h_a112f693a9b339eb088a6fb78a644c5cd}
+
+
+Definition at line 58 of file ethernet\+Config.\+h.
+
+\index{ethernet\+Config.\+h@{ethernet\+Config.\+h}!W\+I\+Z5100\+\_\+\+E\+T\+H\+E\+R\+N\+ET@{W\+I\+Z5100\+\_\+\+E\+T\+H\+E\+R\+N\+ET}}
+\index{W\+I\+Z5100\+\_\+\+E\+T\+H\+E\+R\+N\+ET@{W\+I\+Z5100\+\_\+\+E\+T\+H\+E\+R\+N\+ET}!ethernet\+Config.\+h@{ethernet\+Config.\+h}}
+\subsubsection[{\texorpdfstring{W\+I\+Z5100\+\_\+\+E\+T\+H\+E\+R\+N\+ET}{WIZ5100\_ETHERNET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+I\+Z5100\+\_\+\+E\+T\+H\+E\+R\+N\+ET}\hypertarget{ethernet_config_8h_a04edf8e622c7ef8aa46a70ae5ecd0dd6}{}\label{ethernet_config_8h_a04edf8e622c7ef8aa46a70ae5ecd0dd6}
+
+
+Definition at line 20 of file ethernet\+Config.\+h.
+
+
+
+\subsection{Variable Documentation}
+\index{ethernet\+Config.\+h@{ethernet\+Config.\+h}!client@{client}}
+\index{client@{client}!ethernet\+Config.\+h@{ethernet\+Config.\+h}}
+\subsubsection[{\texorpdfstring{client}{client}}]{\setlength{\rightskip}{0pt plus 5cm}Ethernet\+Client client}\hypertarget{ethernet_config_8h_a058da3453d064890d1eb0a5e2f730807}{}\label{ethernet_config_8h_a058da3453d064890d1eb0a5e2f730807}
+
+
+Definition at line 25 of file ethernet\+Config.\+h.
+
+\index{ethernet\+Config.\+h@{ethernet\+Config.\+h}!mac@{mac}}
+\index{mac@{mac}!ethernet\+Config.\+h@{ethernet\+Config.\+h}}
+\subsubsection[{\texorpdfstring{mac}{mac}}]{\setlength{\rightskip}{0pt plus 5cm}const byte mac\mbox{[}$\,$\mbox{]} = \{0x90, 0x\+A2, 0x\+D\+A, 0x00, 0x53, 0x\+E5\}}\hypertarget{ethernet_config_8h_ac678069a2c8ce2ddc5026707bebe34b4}{}\label{ethernet_config_8h_ac678069a2c8ce2ddc5026707bebe34b4}
+
+
+Definition at line 67 of file ethernet\+Config.\+h.
+

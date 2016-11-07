@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_7454948375a2344edc9b8aad810b5f19" kind="dir">
+    <compoundname>Weather_Balloon/library/Firmata/examples/StandardFirmataEthernet</compoundname>
+    <innerfile refid="ethernet_config_8h">ethernetConfig.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Firmata/examples/StandardFirmataEthernet/"/>
+  </compounddef>
+</doxygen>

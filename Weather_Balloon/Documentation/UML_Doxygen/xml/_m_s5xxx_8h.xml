@@ -1,0 +1,301 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_m_s5xxx_8h" kind="file" language="C++">
+    <compoundname>MS5xxx.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes local="no">Wire.h</includes>
+    <includedby refid="_m_s5611_8h" local="yes">Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.h</includedby>
+    <includedby refid="_m_s5xxx_8cpp" local="yes">Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.cpp</includedby>
+    <includedby refid="_weather___balloon_8cpp" local="no">Weather_Balloon/Weather_Balloon.cpp</includedby>
+    <incdepgraph>
+      <node id="663">
+        <label>Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h</label>
+        <link refid="MS5xxx.h"/>
+        <childnode refid="664" relation="include">
+        </childnode>
+        <childnode refid="665" relation="include">
+        </childnode>
+      </node>
+      <node id="665">
+        <label>Wire.h</label>
+      </node>
+      <node id="664">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="667">
+        <label>Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.h</label>
+        <link refid="_m_s5611_8h"/>
+        <childnode refid="668" relation="include">
+        </childnode>
+      </node>
+      <node id="670">
+        <label>Weather_Balloon/Weather_Balloon.cpp</label>
+        <link refid="_weather___balloon_8cpp"/>
+      </node>
+      <node id="666">
+        <label>Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h</label>
+        <link refid="MS5xxx.h"/>
+        <childnode refid="667" relation="include">
+        </childnode>
+        <childnode refid="669" relation="include">
+        </childnode>
+        <childnode refid="670" relation="include">
+        </childnode>
+      </node>
+      <node id="669">
+        <label>Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.cpp</label>
+        <link refid="_m_s5xxx_8cpp"/>
+      </node>
+      <node id="668">
+        <label>Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.cpp</label>
+        <link refid="_m_s5611_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_m_s5xxx" prot="public">MS5xxx</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_m_s5xxx_8h_1ab01b73f8778f437bcb9be1021b62a782" prot="public" static="no">
+        <name>I2C_MS5607</name>
+        <initializer>0x76</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="29" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1a905ffdc40c05cd1d52f2c7a1ac2eed28" prot="public" static="no">
+        <name>I2C_MS5611</name>
+        <initializer>0x77</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="30" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_m_s5611_1a48fcc0f37a1c9edcb510811f970b767b" compoundref="_m_s5611_8cpp" startline="24" endline="26">MS5611::MS5611</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1a905e1135b57ec370fa0bc07542ec92d0" prot="public" static="no">
+        <name>MS5xxx_CMD_RESET</name>
+        <initializer>0x1E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="33" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_m_s5xxx_1a654f0608616be8c4b13ec9850caaead0" compoundref="_m_s5xxx_8cpp" startline="47" endline="64">MS5xxx::ReadProm</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1a3b253d2f614a62425e989905fd681cef" prot="public" static="no">
+        <name>MS5xxx_CMD_ADC_READ</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="34" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" compoundref="_m_s5xxx_8cpp" startline="116" endline="146">MS5xxx::read_adc</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1ac56ad621713fd784a2f370d05d0675b1" prot="public" static="no">
+        <name>MS5xxx_CMD_ADC_CONV</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="35" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" compoundref="_m_s5xxx_8cpp" startline="116" endline="146">MS5xxx::read_adc</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1adb410500d0de8950dc7f9f7803f3559a" prot="public" static="no">
+        <name>MS5xxx_CMD_ADC_D1</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="36" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_m_s5611_1a59c247e1180a8c4d62a6dcbe49f22b71" compoundref="_m_s5611_8cpp" startline="28" endline="61">MS5611::Readout</referencedby>
+        <referencedby refid="class_m_s5xxx_1abb83428fd002519dc52a666a70966eda" compoundref="_m_s5xxx_8cpp" startline="148" endline="181">MS5xxx::Readout</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1a1db9bb6ea291989242813f646e5c600f" prot="public" static="no">
+        <name>MS5xxx_CMD_ADC_D2</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="37" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_m_s5611_1a59c247e1180a8c4d62a6dcbe49f22b71" compoundref="_m_s5611_8cpp" startline="28" endline="61">MS5611::Readout</referencedby>
+        <referencedby refid="class_m_s5xxx_1abb83428fd002519dc52a666a70966eda" compoundref="_m_s5xxx_8cpp" startline="148" endline="181">MS5xxx::Readout</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1a094e630e97dca5936f9c11a6fc10319d" prot="public" static="no">
+        <name>MS5xxx_CMD_ADC_256</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="38" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" compoundref="_m_s5xxx_8cpp" startline="116" endline="146">MS5xxx::read_adc</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1ad00e6d97e287b6202e51ba64679aee2d" prot="public" static="no">
+        <name>MS5xxx_CMD_ADC_512</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="39" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" compoundref="_m_s5xxx_8cpp" startline="116" endline="146">MS5xxx::read_adc</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1ae46889f63ec1369cd7ec7a150923c2eb" prot="public" static="no">
+        <name>MS5xxx_CMD_ADC_1024</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="40" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" compoundref="_m_s5xxx_8cpp" startline="116" endline="146">MS5xxx::read_adc</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1afded8aae99bf48b32f1d43fca23c459b" prot="public" static="no">
+        <name>MS5xxx_CMD_ADC_2048</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="41" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" compoundref="_m_s5xxx_8cpp" startline="116" endline="146">MS5xxx::read_adc</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1a7cbabd13f476ab120d0c68ad6a66d079" prot="public" static="no">
+        <name>MS5xxx_CMD_ADC_4096</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="42" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" compoundref="_m_s5xxx_8cpp" startline="116" endline="146">MS5xxx::read_adc</referencedby>
+        <referencedby refid="class_m_s5611_1a59c247e1180a8c4d62a6dcbe49f22b71" compoundref="_m_s5611_8cpp" startline="28" endline="61">MS5611::Readout</referencedby>
+        <referencedby refid="class_m_s5xxx_1abb83428fd002519dc52a666a70966eda" compoundref="_m_s5xxx_8cpp" startline="148" endline="181">MS5xxx::Readout</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_m_s5xxx_8h_1a8d79197600d54e78cb840a9277fc1271" prot="public" static="no">
+        <name>MS5xxx_CMD_PROM_RD</name>
+        <initializer>0xA0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" line="43" column="9" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_m_s5xxx_1a654f0608616be8c4b13ec9850caaead0" compoundref="_m_s5xxx_8cpp" startline="47" endline="64">MS5xxx::ReadProm</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>MS5xxx.h<sp/>-<sp/>Library<sp/>for<sp/>accessing<sp/>MS5xxx<sp/>sensors<sp/>via<sp/>I2C</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2012<sp/>Roman<sp/>Schmitz</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>arduino-ms5xxx.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>arduino-ms5xxx<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>arduino-ms5xxx<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>arduino-ms5xxx.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>MS5xxx_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>typical<sp/>I2C-Address<sp/>of<sp/>chip</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_m_s5xxx_8h_1ab01b73f8778f437bcb9be1021b62a782" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_MS5607<sp/>0x76</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_m_s5xxx_8h_1a905ffdc40c05cd1d52f2c7a1ac2eed28" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>I2C_MS5611<sp/>0x77</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/>I2C<sp/>commands<sp/>of<sp/>chip</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_m_s5xxx_8h_1a905e1135b57ec370fa0bc07542ec92d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_RESET<sp/><sp/><sp/><sp/>0x1E<sp/><sp/><sp/><sp/>//<sp/>perform<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_m_s5xxx_8h_1a3b253d2f614a62425e989905fd681cef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_ADC_READ<sp/>0x00<sp/><sp/><sp/><sp/>//<sp/>initiate<sp/>read<sp/>sequence</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_m_s5xxx_8h_1ac56ad621713fd784a2f370d05d0675b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_ADC_CONV<sp/>0x40<sp/><sp/><sp/><sp/>//<sp/>start<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_m_s5xxx_8h_1adb410500d0de8950dc7f9f7803f3559a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_ADC_D1<sp/><sp/><sp/>0x00<sp/><sp/><sp/><sp/>//<sp/>read<sp/>ADC<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_m_s5xxx_8h_1a1db9bb6ea291989242813f646e5c600f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_ADC_D2<sp/><sp/><sp/>0x10<sp/><sp/><sp/><sp/>//<sp/>read<sp/>ADC<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_m_s5xxx_8h_1a094e630e97dca5936f9c11a6fc10319d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_ADC_256<sp/><sp/>0x00<sp/><sp/><sp/><sp/>//<sp/>set<sp/>ADC<sp/>oversampling<sp/>ratio<sp/>to<sp/>256</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_m_s5xxx_8h_1ad00e6d97e287b6202e51ba64679aee2d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_ADC_512<sp/><sp/>0x02<sp/><sp/><sp/><sp/>//<sp/>set<sp/>ADC<sp/>oversampling<sp/>ratio<sp/>to<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_m_s5xxx_8h_1ae46889f63ec1369cd7ec7a150923c2eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_ADC_1024<sp/>0x04<sp/><sp/><sp/><sp/>//<sp/>set<sp/>ADC<sp/>oversampling<sp/>ratio<sp/>to<sp/>1024</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_m_s5xxx_8h_1afded8aae99bf48b32f1d43fca23c459b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_ADC_2048<sp/>0x06<sp/><sp/><sp/><sp/>//<sp/>set<sp/>ADC<sp/>oversampling<sp/>ratio<sp/>to<sp/>2048</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_m_s5xxx_8h_1a7cbabd13f476ab120d0c68ad6a66d079" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_ADC_4096<sp/>0x08<sp/><sp/><sp/><sp/>//<sp/>set<sp/>ADC<sp/>oversampling<sp/>ratio<sp/>to<sp/>4096</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_m_s5xxx_8h_1a8d79197600d54e78cb840a9277fc1271" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MS5xxx_CMD_PROM_RD<sp/><sp/>0xA0<sp/><sp/><sp/><sp/>//<sp/>initiate<sp/>readout<sp/>of<sp/>PROM<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="class_m_s5xxx" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_s5xxx" kindref="compound">MS5xxx</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="48" refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" kindref="member">C</ref>[8];</highlight></codeline>
+<codeline lineno="49" refid="class_m_s5xxx_1a5bf2b4f5b63d8acd877cc61346587e6a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1a5bf2b4f5b63d8acd877cc61346587e6a" kindref="member">P</ref>;</highlight></codeline>
+<codeline lineno="50" refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>;</highlight></codeline>
+<codeline lineno="51" refid="class_m_s5xxx_1a66741674bcf2bda11f5645b63797a279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1a66741674bcf2bda11f5645b63797a279" kindref="member">i2caddr</ref>;</highlight></codeline>
+<codeline lineno="52" refid="class_m_s5xxx_1aa92f0beac7fdd14803aea7564f760980" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>TwoWire<sp/>*<ref refid="class_m_s5xxx_1aa92f0beac7fdd14803aea7564f760980" kindref="member">_Wire</ref>;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1a8c77c76df98347ebf0bfcafd68825552" kindref="member">send_cmd</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>aCMD);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" kindref="member">read_adc</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>aCMD);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_s5xxx_1a6ed6b66a0c811a9a74f6cdfdfd77e5a9" kindref="member">MS5xxx</ref>(TwoWire<sp/>*aWire);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1a6c3d564fe39d14dfa8804fa1600077d7" kindref="member">setI2Caddr</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>aAddr);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/><ref refid="class_m_s5xxx_1a0ac88722b71ab3d82a9d8888d92fe37d" kindref="member">connect</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1a654f0608616be8c4b13ec9850caaead0" kindref="member">ReadProm</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1abb83428fd002519dc52a666a70966eda" kindref="member">Readout</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1a2789efaa473b6bd09fa5d68d0cd0b838" kindref="member">Calc_CRC4</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>poly=0x30);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1ab931e8cbdfb40384f07ca95139423853" kindref="member">Read_CRC4</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1ab302490c7aeb6cf7ce0f7086f33481cf" kindref="member">CRCcodeTest</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1a94a8aaf538936a871b1753d76ebe0b62" kindref="member">Read_C</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>index);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1ac19e5298f6d3f41c7d0edce1e369c36a" kindref="member">GetTemp</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_m_s5xxx_1aa76127405d9f2ee85eddd92afdb57892" kindref="member">GetPres</ref>();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5xxx.h"/>
+  </compounddef>
+</doxygen>

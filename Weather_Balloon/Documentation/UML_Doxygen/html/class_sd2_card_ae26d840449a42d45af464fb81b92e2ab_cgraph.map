@@ -1,0 +1,10 @@
+<map id="Sd2Card::readBlock" name="Sd2Card::readBlock">
+<area shape="rect" id="node2" href="$class_sd2_card.html#ae2d1396ad30081b4201cd372358ef699" title="Sd2Card::readData" alt="" coords="184,132,307,159"/>
+<area shape="rect" id="node3" href="$class_sd2_card.html#a3ba97504f5928c932c346101d3dabfd2" title="Sd2Card::type" alt="" coords="365,107,463,133"/>
+<area shape="rect" id="node9" href="$class_sd2_card.html#a0de961537d051bbcafd87ed9fff5fe48" title="Sd2Card::readEnd" alt="" coords="355,157,473,184"/>
+<area shape="rect" id="node4" href="$class_sd2_card.html#ae9bdd6cff43b8b694584f9bae7e781b0" title="Sd2Card::writeBlock" alt="" coords="522,5,657,32"/>
+<area shape="rect" id="node5" href="$class_sd2_card.html#af602d107e1ead2d0971e9f4c7b744cf8" title="Sd2Card::writeData" alt="" coords="705,31,833,57"/>
+<area shape="rect" id="node6" href="$class_sd2_card.html#a82a21a07fdfe45c5c75d486a13cded8a" title="Sd2Card::writeStart" alt="" coords="525,107,653,133"/>
+<area shape="rect" id="node7" href="$class_sd2_card.html#a3a60481c0821606546a85d056bb96f47" title="Sd2Card::writeStop" alt="" coords="526,157,653,184"/>
+<area shape="rect" id="node8" href="$class_sd2_card.html#a9a84ec97d0c21e4bef8e41630a795b85" title="Sd2Card::enableCRC" alt="" coords="521,208,657,235"/>
+</map>

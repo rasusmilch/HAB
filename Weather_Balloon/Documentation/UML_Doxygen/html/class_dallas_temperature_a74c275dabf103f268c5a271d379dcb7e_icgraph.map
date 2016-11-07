@@ -1,0 +1,8 @@
+<map id="DallasTemperature::writeScratchPad" name="DallasTemperature::writeScratchPad">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#a48bc1a4d0e33f1735964c22c8bd2f6fb" title="DallasTemperature::\lrawToFahrenheit" alt="" coords="185,5,317,47"/>
+<area shape="rect" id="node5" href="$class_dallas_temperature.html#a394897437dfb8de4c8fd2198a1d1c356" title="DallasTemperature::\lsetResolution" alt="" coords="185,71,317,112"/>
+<area shape="rect" id="node6" href="$class_dallas_temperature.html#a0ed69b03ed848936ea0c8deea0e5c2ba" title="DallasTemperature::\lsetUserData" alt="" coords="185,136,317,177"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#ace033fbd8e4c7e17c4bcd7ecc8f3ebea" title="DallasTemperature::\lgetTempF" alt="" coords="366,5,498,47"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#a96318d36b313e1f4f413e2ed2b7501c7" title="DallasTemperature::\lgetTempFByIndex" alt="" coords="547,5,679,47"/>
+<area shape="rect" id="node7" href="$class_dallas_temperature.html#a65ae6994218200e92ce43bffd122d46b" title="DallasTemperature::\lsetUserDataByIndex" alt="" coords="365,136,499,177"/>
+</map>

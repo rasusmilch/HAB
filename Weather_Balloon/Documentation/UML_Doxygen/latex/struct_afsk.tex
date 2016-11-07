@@ -1,0 +1,250 @@
+\hypertarget{struct_afsk}{}\section{Afsk Struct Reference}
+\label{struct_afsk}\index{Afsk@{Afsk}}
+
+
+{\ttfamily \#include $<$A\+F\+S\+K.\+h$>$}
+
+
+
+Collaboration diagram for Afsk\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=197pt]{struct_afsk__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+F\+I\+LE \hyperlink{struct_afsk_a539f9d0fd0fcdd2523aa9b5694207288}{fd}
+\item 
+\hyperlink{struct_hdlc}{Hdlc} \hyperlink{struct_afsk_a0f2cf84d5882a74b33b54828e4adda6d}{hdlc}
+\item 
+uint16\+\_\+t \hyperlink{struct_afsk_a586542863e66d99dbb7b655fa54af563}{preamble\+Length}
+\item 
+uint16\+\_\+t \hyperlink{struct_afsk_aa3297e8885c70332e9274679b9329937}{tail\+Length}
+\item 
+uint8\+\_\+t \hyperlink{struct_afsk_a6a63466f08a5391a6515479363283fdf}{sample\+Index}
+\item 
+uint8\+\_\+t \hyperlink{struct_afsk_abcc27bcdd8198ea3e46df974f7a17664}{current\+Output\+Byte}
+\item 
+uint8\+\_\+t \hyperlink{struct_afsk_a763bb48860d3ba79de2dd1abffa2ad89}{tx\+Bit}
+\item 
+bool \hyperlink{struct_afsk_aece27671c62a8c93ce32e4bd6c38f312}{bit\+Stuff}
+\item 
+uint8\+\_\+t \hyperlink{struct_afsk_ab6ea81ad33d9cf98080a6e567cfd7887}{bitstuff\+Count}
+\item 
+uint16\+\_\+t \hyperlink{struct_afsk_aa62658bb66ca18cf3d268258ef126283}{phase\+Acc}
+\item 
+uint16\+\_\+t \hyperlink{struct_afsk_ae5f800f21b5aa819af756c5572e63cce}{phase\+Inc}
+\item 
+\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} \hyperlink{struct_afsk_a987e70d174e5cd82f73563d920273cc4}{tx\+Fifo}
+\item 
+uint8\+\_\+t \hyperlink{struct_afsk_a32162873b8784efe43d3f28289c6ea6e}{tx\+Buf} \mbox{[}\hyperlink{_a_f_s_k_8h_adc5f6ad59595e8b2c14827f5012c6f4f}{C\+O\+N\+F\+I\+G\+\_\+\+A\+F\+S\+K\+\_\+\+T\+X\+\_\+\+B\+U\+F\+L\+EN}\mbox{]}
+\item 
+volatile bool \hyperlink{struct_afsk_aea4204b922aaf2c78708bacec08d7888}{sending}
+\item 
+\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} \hyperlink{struct_afsk_a326b5be68b2c9bb6191ac8d76a021999}{delay\+Fifo}
+\item 
+int8\+\_\+t \hyperlink{struct_afsk_aab24e087341259c5e3f9008a8557644e}{delay\+Buf} \mbox{[}\hyperlink{_a_f_s_k_8h_a15440d8d1e6efc47a3263ccf91a8cb74}{S\+A\+M\+P\+L\+E\+S\+P\+E\+R\+B\+IT}/2+1\mbox{]}
+\item 
+\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} \hyperlink{struct_afsk_ac37f5dab53ed2219bbfc0d4c3f2f25b8}{rx\+Fifo}
+\item 
+uint8\+\_\+t \hyperlink{struct_afsk_a8c7ee9d7b92796ccc7c3257b581695cb}{rx\+Buf} \mbox{[}\hyperlink{_a_f_s_k_8h_adb056877043b2fcf1477cf3a69bb89a6}{C\+O\+N\+F\+I\+G\+\_\+\+A\+F\+S\+K\+\_\+\+R\+X\+\_\+\+B\+U\+F\+L\+EN}\mbox{]}
+\item 
+int16\+\_\+t \hyperlink{struct_afsk_a02560c20963adab17b0706c8c69f2ed3}{iirX} \mbox{[}2\mbox{]}
+\item 
+int16\+\_\+t \hyperlink{struct_afsk_a454754399c47bf3514ffc495832b5391}{iirY} \mbox{[}2\mbox{]}
+\item 
+uint8\+\_\+t \hyperlink{struct_afsk_af07324b473ed86d0f79b539d0e76ed8c}{sampled\+Bits}
+\item 
+int8\+\_\+t \hyperlink{struct_afsk_a109e9e878c62839db0f611c8c636ba93}{current\+Phase}
+\item 
+uint8\+\_\+t \hyperlink{struct_afsk_a6f734e90f74a1efd094c9cde6ea9df6d}{actual\+Bits}
+\item 
+volatile int \hyperlink{struct_afsk_a4b90678865e08c02384199c6b10aa5b5}{status}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 66 of file A\+F\+S\+K.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\index{Afsk@{Afsk}!actual\+Bits@{actual\+Bits}}
+\index{actual\+Bits@{actual\+Bits}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{actual\+Bits}{actualBits}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Afsk\+::actual\+Bits}\hypertarget{struct_afsk_a6f734e90f74a1efd094c9cde6ea9df6d}{}\label{struct_afsk_a6f734e90f74a1efd094c9cde6ea9df6d}
+
+
+Definition at line 104 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!bit\+Stuff@{bit\+Stuff}}
+\index{bit\+Stuff@{bit\+Stuff}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{bit\+Stuff}{bitStuff}}]{\setlength{\rightskip}{0pt plus 5cm}bool Afsk\+::bit\+Stuff}\hypertarget{struct_afsk_aece27671c62a8c93ce32e4bd6c38f312}{}\label{struct_afsk_aece27671c62a8c93ce32e4bd6c38f312}
+
+
+Definition at line 80 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!bitstuff\+Count@{bitstuff\+Count}}
+\index{bitstuff\+Count@{bitstuff\+Count}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{bitstuff\+Count}{bitstuffCount}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Afsk\+::bitstuff\+Count}\hypertarget{struct_afsk_ab6ea81ad33d9cf98080a6e567cfd7887}{}\label{struct_afsk_ab6ea81ad33d9cf98080a6e567cfd7887}
+
+
+Definition at line 82 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!current\+Output\+Byte@{current\+Output\+Byte}}
+\index{current\+Output\+Byte@{current\+Output\+Byte}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{current\+Output\+Byte}{currentOutputByte}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Afsk\+::current\+Output\+Byte}\hypertarget{struct_afsk_abcc27bcdd8198ea3e46df974f7a17664}{}\label{struct_afsk_abcc27bcdd8198ea3e46df974f7a17664}
+
+
+Definition at line 78 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!current\+Phase@{current\+Phase}}
+\index{current\+Phase@{current\+Phase}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{current\+Phase}{currentPhase}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Afsk\+::current\+Phase}\hypertarget{struct_afsk_a109e9e878c62839db0f611c8c636ba93}{}\label{struct_afsk_a109e9e878c62839db0f611c8c636ba93}
+
+
+Definition at line 103 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!delay\+Buf@{delay\+Buf}}
+\index{delay\+Buf@{delay\+Buf}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{delay\+Buf}{delayBuf}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t Afsk\+::delay\+Buf\mbox{[}{\bf S\+A\+M\+P\+L\+E\+S\+P\+E\+R\+B\+IT}/2+1\mbox{]}}\hypertarget{struct_afsk_aab24e087341259c5e3f9008a8557644e}{}\label{struct_afsk_aab24e087341259c5e3f9008a8557644e}
+
+
+Definition at line 94 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!delay\+Fifo@{delay\+Fifo}}
+\index{delay\+Fifo@{delay\+Fifo}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{delay\+Fifo}{delayFifo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+I\+F\+O\+Buffer} Afsk\+::delay\+Fifo}\hypertarget{struct_afsk_a326b5be68b2c9bb6191ac8d76a021999}{}\label{struct_afsk_a326b5be68b2c9bb6191ac8d76a021999}
+
+
+Definition at line 93 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!fd@{fd}}
+\index{fd@{fd}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{fd}{fd}}]{\setlength{\rightskip}{0pt plus 5cm}F\+I\+LE Afsk\+::fd}\hypertarget{struct_afsk_a539f9d0fd0fcdd2523aa9b5694207288}{}\label{struct_afsk_a539f9d0fd0fcdd2523aa9b5694207288}
+
+
+Definition at line 69 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!hdlc@{hdlc}}
+\index{hdlc@{hdlc}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{hdlc}{hdlc}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Hdlc} Afsk\+::hdlc}\hypertarget{struct_afsk_a0f2cf84d5882a74b33b54828e4adda6d}{}\label{struct_afsk_a0f2cf84d5882a74b33b54828e4adda6d}
+
+
+Definition at line 72 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!iirX@{iirX}}
+\index{iirX@{iirX}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{iirX}{iirX}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Afsk\+::iirX\mbox{[}2\mbox{]}}\hypertarget{struct_afsk_a02560c20963adab17b0706c8c69f2ed3}{}\label{struct_afsk_a02560c20963adab17b0706c8c69f2ed3}
+
+
+Definition at line 99 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!iirY@{iirY}}
+\index{iirY@{iirY}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{iirY}{iirY}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Afsk\+::iirY\mbox{[}2\mbox{]}}\hypertarget{struct_afsk_a454754399c47bf3514ffc495832b5391}{}\label{struct_afsk_a454754399c47bf3514ffc495832b5391}
+
+
+Definition at line 100 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!phase\+Acc@{phase\+Acc}}
+\index{phase\+Acc@{phase\+Acc}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{phase\+Acc}{phaseAcc}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Afsk\+::phase\+Acc}\hypertarget{struct_afsk_aa62658bb66ca18cf3d268258ef126283}{}\label{struct_afsk_aa62658bb66ca18cf3d268258ef126283}
+
+
+Definition at line 84 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!phase\+Inc@{phase\+Inc}}
+\index{phase\+Inc@{phase\+Inc}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{phase\+Inc}{phaseInc}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Afsk\+::phase\+Inc}\hypertarget{struct_afsk_ae5f800f21b5aa819af756c5572e63cce}{}\label{struct_afsk_ae5f800f21b5aa819af756c5572e63cce}
+
+
+Definition at line 85 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!preamble\+Length@{preamble\+Length}}
+\index{preamble\+Length@{preamble\+Length}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{preamble\+Length}{preambleLength}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Afsk\+::preamble\+Length}\hypertarget{struct_afsk_a586542863e66d99dbb7b655fa54af563}{}\label{struct_afsk_a586542863e66d99dbb7b655fa54af563}
+
+
+Definition at line 73 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!rx\+Buf@{rx\+Buf}}
+\index{rx\+Buf@{rx\+Buf}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{rx\+Buf}{rxBuf}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Afsk\+::rx\+Buf\mbox{[}{\bf C\+O\+N\+F\+I\+G\+\_\+\+A\+F\+S\+K\+\_\+\+R\+X\+\_\+\+B\+U\+F\+L\+EN}\mbox{]}}\hypertarget{struct_afsk_a8c7ee9d7b92796ccc7c3257b581695cb}{}\label{struct_afsk_a8c7ee9d7b92796ccc7c3257b581695cb}
+
+
+Definition at line 97 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!rx\+Fifo@{rx\+Fifo}}
+\index{rx\+Fifo@{rx\+Fifo}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{rx\+Fifo}{rxFifo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+I\+F\+O\+Buffer} Afsk\+::rx\+Fifo}\hypertarget{struct_afsk_ac37f5dab53ed2219bbfc0d4c3f2f25b8}{}\label{struct_afsk_ac37f5dab53ed2219bbfc0d4c3f2f25b8}
+
+
+Definition at line 96 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!sampled\+Bits@{sampled\+Bits}}
+\index{sampled\+Bits@{sampled\+Bits}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{sampled\+Bits}{sampledBits}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Afsk\+::sampled\+Bits}\hypertarget{struct_afsk_af07324b473ed86d0f79b539d0e76ed8c}{}\label{struct_afsk_af07324b473ed86d0f79b539d0e76ed8c}
+
+
+Definition at line 102 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!sample\+Index@{sample\+Index}}
+\index{sample\+Index@{sample\+Index}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{sample\+Index}{sampleIndex}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Afsk\+::sample\+Index}\hypertarget{struct_afsk_a6a63466f08a5391a6515479363283fdf}{}\label{struct_afsk_a6a63466f08a5391a6515479363283fdf}
+
+
+Definition at line 77 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!sending@{sending}}
+\index{sending@{sending}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{sending}{sending}}]{\setlength{\rightskip}{0pt plus 5cm}volatile bool Afsk\+::sending}\hypertarget{struct_afsk_aea4204b922aaf2c78708bacec08d7888}{}\label{struct_afsk_aea4204b922aaf2c78708bacec08d7888}
+
+
+Definition at line 90 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!status@{status}}
+\index{status@{status}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{status}{status}}]{\setlength{\rightskip}{0pt plus 5cm}volatile int Afsk\+::status}\hypertarget{struct_afsk_a4b90678865e08c02384199c6b10aa5b5}{}\label{struct_afsk_a4b90678865e08c02384199c6b10aa5b5}
+
+
+Definition at line 106 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!tail\+Length@{tail\+Length}}
+\index{tail\+Length@{tail\+Length}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{tail\+Length}{tailLength}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Afsk\+::tail\+Length}\hypertarget{struct_afsk_aa3297e8885c70332e9274679b9329937}{}\label{struct_afsk_aa3297e8885c70332e9274679b9329937}
+
+
+Definition at line 74 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!tx\+Bit@{tx\+Bit}}
+\index{tx\+Bit@{tx\+Bit}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{tx\+Bit}{txBit}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Afsk\+::tx\+Bit}\hypertarget{struct_afsk_a763bb48860d3ba79de2dd1abffa2ad89}{}\label{struct_afsk_a763bb48860d3ba79de2dd1abffa2ad89}
+
+
+Definition at line 79 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!tx\+Buf@{tx\+Buf}}
+\index{tx\+Buf@{tx\+Buf}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{tx\+Buf}{txBuf}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Afsk\+::tx\+Buf\mbox{[}{\bf C\+O\+N\+F\+I\+G\+\_\+\+A\+F\+S\+K\+\_\+\+T\+X\+\_\+\+B\+U\+F\+L\+EN}\mbox{]}}\hypertarget{struct_afsk_a32162873b8784efe43d3f28289c6ea6e}{}\label{struct_afsk_a32162873b8784efe43d3f28289c6ea6e}
+
+
+Definition at line 88 of file A\+F\+S\+K.\+h.
+
+\index{Afsk@{Afsk}!tx\+Fifo@{tx\+Fifo}}
+\index{tx\+Fifo@{tx\+Fifo}!Afsk@{Afsk}}
+\subsubsection[{\texorpdfstring{tx\+Fifo}{txFifo}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+I\+F\+O\+Buffer} Afsk\+::tx\+Fifo}\hypertarget{struct_afsk_a987e70d174e5cd82f73563d920273cc4}{}\label{struct_afsk_a987e70d174e5cd82f73563d920273cc4}
+
+
+Definition at line 87 of file A\+F\+S\+K.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\hyperlink{_a_f_s_k_8h}{A\+F\+S\+K.\+h}\end{DoxyCompactItemize}

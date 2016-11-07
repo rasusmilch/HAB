@@ -1,0 +1,6 @@
+<map id="afsk_getchar" name="afsk_getchar">
+<area shape="rect" id="node2" href="$_f_i_f_o_8h.html#aaa89b948af7949dff7c34fd6142f9e0a" title="fifo_isempty_locked" alt="" coords="144,5,277,32"/>
+<area shape="rect" id="node4" href="$_f_i_f_o_8h.html#a2f05edf7653b62251dd66c7ae7ad1bb7" title="fifo_pop_locked" alt="" coords="155,56,266,83"/>
+<area shape="rect" id="node3" href="$_f_i_f_o_8h.html#a74dc98c02cf744306222be8de0b4665e" title="fifo_isempty" alt="" coords="325,5,416,32"/>
+<area shape="rect" id="node5" href="$_f_i_f_o_8h.html#a540ee60aeab738e6e05dd148f5def1a3" title="fifo_pop" alt="" coords="337,56,404,83"/>
+</map>

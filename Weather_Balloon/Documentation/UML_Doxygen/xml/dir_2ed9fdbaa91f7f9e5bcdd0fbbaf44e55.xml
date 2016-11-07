@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_2ed9fdbaa91f7f9e5bcdd0fbbaf44e55" kind="dir">
+    <compoundname>Weather_Balloon/library/Adafruit_Sensor-master</compoundname>
+    <innerfile refid="_adafruit___sensor_8h">Adafruit_Sensor.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_Sensor-master/"/>
+  </compounddef>
+</doxygen>

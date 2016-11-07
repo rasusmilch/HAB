@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_Firmata_test_readme" kind="page">
+    <compoundname>md_Weather_Balloon_library_Firmata_test_readme</compoundname>
+    <title>readme</title>
+    <detaileddescription>
+<para>#Testing Firmata</para><para>Tests tests are written using the <ulink url="https://github.com/mmurdoch/arduinounit">ArduinoUnit</ulink> library (version 2.0).</para><para>Follow the instructions in the https://github.com/mmurdoch/arduinounit/blob/master/readme.md &quot;ArduinoUnit readme&quot; to install the library.</para><para>Compile and upload the test sketch as you would any other sketch. Then open the Serial Monitor to view the test results.</para><para>If you make changes to <ref refid="_firmata_8cpp" kindref="compound">Firmata.cpp</ref>, run the tests in /test/ to ensure that your changes have not produced any unexpected errors.</para><para>You should also perform manual tests against actual hardware. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

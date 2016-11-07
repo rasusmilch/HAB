@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_h_d_l_c_8h" kind="file" language="C++">
+    <compoundname>HDLC.h</compoundname>
+    <includedby refid="_a_f_s_k_8h" local="yes">Weather_Balloon/library/LibAPRS/AFSK.h</includedby>
+    <includedby refid="_a_x25_8cpp" local="yes">Weather_Balloon/library/LibAPRS/AX25.cpp</includedby>
+    <includedby refid="_lib_a_p_r_s_8h" local="yes">Weather_Balloon/library/LibAPRS/LibAPRS.h</includedby>
+    <invincdepgraph>
+      <node id="1102">
+        <label>Weather_Balloon/library/LibAPRS/AFSK.cpp</label>
+        <link refid="_a_f_s_k_8cpp"/>
+      </node>
+      <node id="1100">
+        <label>Weather_Balloon/library/LibAPRS/HDLC.h</label>
+        <link refid="HDLC.h"/>
+        <childnode refid="1101" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+      </node>
+      <node id="1101">
+        <label>Weather_Balloon/library/LibAPRS/AFSK.h</label>
+        <link refid="_a_f_s_k_8h"/>
+        <childnode refid="1102" relation="include">
+        </childnode>
+        <childnode refid="1103" relation="include">
+        </childnode>
+        <childnode refid="1104" relation="include">
+        </childnode>
+        <childnode refid="1105" relation="include">
+        </childnode>
+      </node>
+      <node id="1105">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.h</label>
+        <link refid="_lib_a_p_r_s_8h"/>
+      </node>
+      <node id="1103">
+        <label>Weather_Balloon/library/LibAPRS/AX25.cpp</label>
+        <link refid="_a_x25_8cpp"/>
+      </node>
+      <node id="1104">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.cpp</label>
+        <link refid="_lib_a_p_r_s_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" prot="public" static="no">
+        <name>HDLC_FLAG</name>
+        <initializer>0x7E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/HDLC.h" line="4" column="9" bodyfile="Weather_Balloon/library/LibAPRS/HDLC.h" bodystart="4" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_h_d_l_c_8h_1a69a2c8271c865acf4cfa1c1d8ee9443e" prot="public" static="no">
+        <name>HDLC_RESET</name>
+        <initializer>0x7F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/HDLC.h" line="5" column="9" bodyfile="Weather_Balloon/library/LibAPRS/HDLC.h" bodystart="5" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_h_d_l_c_8h_1ae1d8d5447af97b18578d75c6d69ac46a" prot="public" static="no">
+        <name>AX25_ESC</name>
+        <initializer>0x1B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/HDLC.h" line="6" column="9" bodyfile="Weather_Balloon/library/LibAPRS/HDLC.h" bodystart="6" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>PROTOCOL_HDLC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROTOCOL_HDLC_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HDLC_FLAG<sp/><sp/>0x7E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_h_d_l_c_8h_1a69a2c8271c865acf4cfa1c1d8ee9443e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HDLC_RESET<sp/>0x7F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_h_d_l_c_8h_1ae1d8d5447af97b18578d75c6d69ac46a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AX25_ESC<sp/><sp/><sp/>0x1B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/HDLC.h"/>
+  </compounddef>
+</doxygen>

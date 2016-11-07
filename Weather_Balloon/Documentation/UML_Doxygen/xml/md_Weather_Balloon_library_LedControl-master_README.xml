@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_LedControl-master_README" kind="page">
+    <compoundname>md_Weather_Balloon_library_LedControl-master_README</compoundname>
+    <title>LedControl</title>
+    <detaileddescription>
+<para><ref refid="class_led_control" kindref="compound">LedControl</ref> is an <ulink url="http://arduino.cc">Arduino</ulink> library for MAX7219 and MAX7221 Led display drivers. The code also works with the <ulink url="https://www.pjrc.com/teensy/">Teensy (3.1)</ulink></para><para><heading level="2">Documentation </heading>
+</para><para>Documentation for the library is on the <ulink url="http://wayoda.github.io/LedControl/">Github Project Pages</ulink></para><para><heading level="2">Download </heading>
+</para><para>The lastest binary version of the Library is always available from the <ulink url="https://github.com/wayoda/LedControl/releases">LedControl Release Page</ulink></para><para><heading level="2">Install </heading>
+</para><para>The library can be installed using the <ulink url="http://arduino.cc/en/Guide/Libraries">standard Arduino library install procedure</ulink> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

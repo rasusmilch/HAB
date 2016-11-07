@@ -1,0 +1,27 @@
+var struct_afsk =
+[
+    [ "actualBits", "struct_afsk.html#a6f734e90f74a1efd094c9cde6ea9df6d", null ],
+    [ "bitStuff", "struct_afsk.html#aece27671c62a8c93ce32e4bd6c38f312", null ],
+    [ "bitstuffCount", "struct_afsk.html#ab6ea81ad33d9cf98080a6e567cfd7887", null ],
+    [ "currentOutputByte", "struct_afsk.html#abcc27bcdd8198ea3e46df974f7a17664", null ],
+    [ "currentPhase", "struct_afsk.html#a109e9e878c62839db0f611c8c636ba93", null ],
+    [ "delayBuf", "struct_afsk.html#aab24e087341259c5e3f9008a8557644e", null ],
+    [ "delayFifo", "struct_afsk.html#a326b5be68b2c9bb6191ac8d76a021999", null ],
+    [ "fd", "struct_afsk.html#a539f9d0fd0fcdd2523aa9b5694207288", null ],
+    [ "hdlc", "struct_afsk.html#a0f2cf84d5882a74b33b54828e4adda6d", null ],
+    [ "iirX", "struct_afsk.html#a02560c20963adab17b0706c8c69f2ed3", null ],
+    [ "iirY", "struct_afsk.html#a454754399c47bf3514ffc495832b5391", null ],
+    [ "phaseAcc", "struct_afsk.html#aa62658bb66ca18cf3d268258ef126283", null ],
+    [ "phaseInc", "struct_afsk.html#ae5f800f21b5aa819af756c5572e63cce", null ],
+    [ "preambleLength", "struct_afsk.html#a586542863e66d99dbb7b655fa54af563", null ],
+    [ "rxBuf", "struct_afsk.html#a8c7ee9d7b92796ccc7c3257b581695cb", null ],
+    [ "rxFifo", "struct_afsk.html#ac37f5dab53ed2219bbfc0d4c3f2f25b8", null ],
+    [ "sampledBits", "struct_afsk.html#af07324b473ed86d0f79b539d0e76ed8c", null ],
+    [ "sampleIndex", "struct_afsk.html#a6a63466f08a5391a6515479363283fdf", null ],
+    [ "sending", "struct_afsk.html#aea4204b922aaf2c78708bacec08d7888", null ],
+    [ "status", "struct_afsk.html#a4b90678865e08c02384199c6b10aa5b5", null ],
+    [ "tailLength", "struct_afsk.html#aa3297e8885c70332e9274679b9329937", null ],
+    [ "txBit", "struct_afsk.html#a763bb48860d3ba79de2dd1abffa2ad89", null ],
+    [ "txBuf", "struct_afsk.html#a32162873b8784efe43d3f28289c6ea6e", null ],
+    [ "txFifo", "struct_afsk.html#a987e70d174e5cd82f73563d920273cc4", null ]
+];

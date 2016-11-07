@@ -1,0 +1,28 @@
+var _r_t_c___d_s3231_8h =
+[
+    [ "RTC_DS3231", "class_r_t_c___d_s3231.html", "class_r_t_c___d_s3231" ],
+    [ "DS3231_ADDRESS", "_r_t_c___d_s3231_8h.html#a8076305a342fb38bb70a8dc3555993ae", null ],
+    [ "DS3231_REG_A1DAYDATE", "_r_t_c___d_s3231_8h.html#a9829eec8dbe56f8fdaf4c15f8d00b4fb", null ],
+    [ "DS3231_REG_A1HOURS", "_r_t_c___d_s3231_8h.html#aae42353094fa6e93ce79432627ca791a", null ],
+    [ "DS3231_REG_A1MINUTES", "_r_t_c___d_s3231_8h.html#a20b6d70ac45aa6981569e95acfab4588", null ],
+    [ "DS3231_REG_A1SECONDS", "_r_t_c___d_s3231_8h.html#adfbe02d55daf2a561d1ece5de4894ddd", null ],
+    [ "DS3231_REG_A2DAYDATE", "_r_t_c___d_s3231_8h.html#a65f0251a2f83c9b54bec3a14e181576e", null ],
+    [ "DS3231_REG_A2HOURS", "_r_t_c___d_s3231_8h.html#a9d4462f2048af3065303b4019b9f9044", null ],
+    [ "DS3231_REG_A2MINUTES", "_r_t_c___d_s3231_8h.html#a4e33f97b479da26801f272dbca275c00", null ],
+    [ "DS3231_REG_AGING", "_r_t_c___d_s3231_8h.html#a90dd14910a8b8464f78fc73e90cc12d4", null ],
+    [ "DS3231_REG_CONTROL", "_r_t_c___d_s3231_8h.html#a14b27d8bc32c34f1eaecf569355c84d3", null ],
+    [ "DS3231_REG_DAYOFMONTH", "_r_t_c___d_s3231_8h.html#a8cc833567204ed43927808542e102cee", null ],
+    [ "DS3231_REG_DAYOFWEEK", "_r_t_c___d_s3231_8h.html#a0a9bb29be9c0a88dd7de147ce03b6dec", null ],
+    [ "DS3231_REG_HOURS", "_r_t_c___d_s3231_8h.html#ac54475e0a15745f77a8275a4ddd71574", null ],
+    [ "DS3231_REG_MINUTES", "_r_t_c___d_s3231_8h.html#a0beecd98fb52521b3df1fb020e10bde1", null ],
+    [ "DS3231_REG_MONTH", "_r_t_c___d_s3231_8h.html#aaa4a129d3a1b54e2ab4e77f43a6f4985", null ],
+    [ "DS3231_REG_SECONDS", "_r_t_c___d_s3231_8h.html#ab752aeeb9f43f088ef3ea1e92cf0dd55", null ],
+    [ "DS3231_REG_STATUS_CTL", "_r_t_c___d_s3231_8h.html#a8cfbb825c0f0e51d936f9507d6c14e51", null ],
+    [ "DS3231_REG_TEMP_LSB", "_r_t_c___d_s3231_8h.html#a35ddcaf5258fc941f90f8428c2032fa1", null ],
+    [ "DS3231_REG_TEMP_MSB", "_r_t_c___d_s3231_8h.html#aa03c8831a5b1e11abc00e730c23ecc55", null ],
+    [ "DS3231_REG_YEAR", "_r_t_c___d_s3231_8h.html#a109bb0d6f731ff9453434eb80ded18b3", null ],
+    [ "DS3231_SQW_FREQ_1", "_r_t_c___d_s3231_8h.html#a2a519b18937a8737ed2d09b4acade7a8", null ],
+    [ "DS3231_SQW_FREQ_1024", "_r_t_c___d_s3231_8h.html#a94e91af2ccbf3399b1ffbfc9d9e0190c", null ],
+    [ "DS3231_SQW_FREQ_4096", "_r_t_c___d_s3231_8h.html#a11b26029d012568c75c96c44b78e3c81", null ],
+    [ "DS3231_SQW_FREQ_8192", "_r_t_c___d_s3231_8h.html#a733b2987f9e3e10f21752cb9de2cf380", null ]
+];

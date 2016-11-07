@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_tiny_g_p_s_speed" kind="struct" language="C++" prot="public">
+    <compoundname>TinyGPSSpeed</compoundname>
+    <basecompoundref refid="struct_tiny_g_p_s_decimal" prot="public" virt="non-virtual">TinyGPSDecimal</basecompoundref>
+    <includes refid="_tiny_g_p_s_09_09_8h" local="no">TinyGPS++.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_tiny_g_p_s_speed_1aa3a38ce4ece3d8062c794b73f260395e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TinyGPSSpeed::knots</definition>
+        <argsstring>()</argsstring>
+        <name>knots</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="168" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="168" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_speed_1a1809120167961ea9a85e860a964b1c6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TinyGPSSpeed::mph</definition>
+        <argsstring>()</argsstring>
+        <name>mph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="169" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="169" bodyend="169"/>
+        <references refid="_tiny_g_p_s_09_09_8h_1a15c78046c05b411cbcb3f93b7a452a97" compoundref="_tiny_g_p_s_09_09_8h" startline="35">_GPS_MPH_PER_KNOT</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_speed_1aacee536241e810cdf4ba7846d6c202cb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TinyGPSSpeed::mps</definition>
+        <argsstring>()</argsstring>
+        <name>mps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="170" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="170" bodyend="170"/>
+        <references refid="_tiny_g_p_s_09_09_8h_1a54cbb270522b52fe2c0f14eab76f032b" compoundref="_tiny_g_p_s_09_09_8h" startline="36">_GPS_MPS_PER_KNOT</references>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_speed_1a7fee3c8f9f2fcc5f4a517bd6108f79dd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TinyGPSSpeed::kmph</definition>
+        <argsstring>()</argsstring>
+        <name>kmph</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="171" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="171" bodyend="171"/>
+        <references refid="_tiny_g_p_s_09_09_8h_1a757cab8e33085416dbafbc05cf71f6a9" compoundref="_tiny_g_p_s_09_09_8h" startline="37">_GPS_KMPH_PER_KNOT</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="445">
+        <label>TinyGPSDecimal</label>
+        <link refid="struct_tiny_g_p_s_decimal"/>
+      </node>
+      <node id="444">
+        <label>TinyGPSSpeed</label>
+        <link refid="struct_tiny_g_p_s_speed"/>
+        <childnode refid="445" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="447">
+        <label>TinyGPSDecimal</label>
+        <link refid="struct_tiny_g_p_s_decimal"/>
+      </node>
+      <node id="446">
+        <label>TinyGPSSpeed</label>
+        <link refid="struct_tiny_g_p_s_speed"/>
+        <childnode refid="447" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="167" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="166" bodyend="172"/>
+    <listofallmembers>
+      <member refid="struct_tiny_g_p_s_decimal_1ab80191a3e02c92ad3f674b5df2ab752f" prot="public" virt="non-virtual"><scope>TinyGPSSpeed</scope><name>age</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ae8b7f9f7719c2974ebd3b34759493d15" prot="public" virt="non-virtual"><scope>TinyGPSSpeed</scope><name>isUpdated</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1a2a1d868525e903eb193b7a36cdd76984" prot="public" virt="non-virtual"><scope>TinyGPSSpeed</scope><name>isValid</name></member>
+      <member refid="struct_tiny_g_p_s_speed_1a7fee3c8f9f2fcc5f4a517bd6108f79dd" prot="public" virt="non-virtual"><scope>TinyGPSSpeed</scope><name>kmph</name></member>
+      <member refid="struct_tiny_g_p_s_speed_1aa3a38ce4ece3d8062c794b73f260395e" prot="public" virt="non-virtual"><scope>TinyGPSSpeed</scope><name>knots</name></member>
+      <member refid="struct_tiny_g_p_s_speed_1a1809120167961ea9a85e860a964b1c6e" prot="public" virt="non-virtual"><scope>TinyGPSSpeed</scope><name>mph</name></member>
+      <member refid="struct_tiny_g_p_s_speed_1aacee536241e810cdf4ba7846d6c202cb" prot="public" virt="non-virtual"><scope>TinyGPSSpeed</scope><name>mps</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ae09cbb1856cd57c7dcee52fb5fb1ba16" prot="public" virt="non-virtual"><scope>TinyGPSSpeed</scope><name>TinyGPSDecimal</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ac3ce80976e5d8456e9f211b910a6cb19" prot="public" virt="non-virtual"><scope>TinyGPSSpeed</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

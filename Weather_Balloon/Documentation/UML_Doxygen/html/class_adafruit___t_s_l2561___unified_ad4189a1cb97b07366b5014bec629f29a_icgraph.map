@@ -1,0 +1,10 @@
+<map id="Adafruit_TSL2561_Unified::setGain" name="Adafruit_TSL2561_Unified::setGain">
+<area shape="rect" id="node2" href="$class_adafruit___t_s_l2561___unified.html#ac2781d263ae73533628d5844ca38b6de" title="Adafruit_TSL2561_Unified\l::begin" alt="" coords="217,101,381,142"/>
+<area shape="rect" id="node5" href="$class_adafruit___t_s_l2561___unified.html#a23378e7c4792b8b8c721d5a4def960fb" title="Gets the broadband (mixed lighting) and IR only values from the TSL2561, adjusting gain if auto&#45;gain ..." alt="" coords="429,42,593,83"/>
+<area shape="rect" id="node3" href="$_weather___balloon_8cpp.html#a3f8e34eb2b9d824174dced9eefeecf90" title="configure_TSL2561" alt="" coords="661,152,785,179"/>
+<area shape="rect" id="node9" href="$class_adafruit___t_s_l2561___unified.html#a594636810e6e26dc025b7f1b7a16024f" title="Adafruit_TSL2561_Unified\l::setIntegrationTime" alt="" coords="429,159,593,201"/>
+<area shape="rect" id="node4" href="$_weather___balloon_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="853,152,904,179"/>
+<area shape="rect" id="node6" href="$class_adafruit___t_s_l2561___unified.html#a6a133ea86b7a7158408519214c4d0aef" title="Gets the most recent sensor event returns true if sensor reading is between 0 and 65535 lux returns f..." alt="" coords="641,57,805,98"/>
+<area shape="rect" id="node7" href="$_weather___balloon_8cpp.html#ad40ccf803c2eff76d7e0e7a24c9937ef" title="readSensors" alt="" coords="680,5,767,32"/>
+<area shape="rect" id="node8" href="$_weather___balloon_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="855,5,902,32"/>
+</map>

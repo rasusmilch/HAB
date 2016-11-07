@@ -1,0 +1,199 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_t_clib_8h" kind="file" language="C++">
+    <compoundname>RTClib.h</compoundname>
+    <includedby refid="_r_t_c___d_s1307_8cpp" local="yes">Weather_Balloon/library/RTClib-master/RTC_DS1307.cpp</includedby>
+    <includedby refid="_r_t_c___d_s1307_8h" local="no">Weather_Balloon/library/RTClib-master/RTC_DS1307.h</includedby>
+    <includedby refid="_r_t_c___d_s3231_8cpp" local="yes">Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp</includedby>
+    <includedby refid="_r_t_c___d_s3231_8h" local="no">Weather_Balloon/library/RTClib-master/RTC_DS3231.h</includedby>
+    <includedby refid="_r_t_c___d_s3234_8cpp" local="yes">Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp</includedby>
+    <includedby refid="_r_t_c___d_s3234_8h" local="no">Weather_Balloon/library/RTClib-master/RTC_DS3234.h</includedby>
+    <includedby refid="_r_t_clib_8cpp" local="yes">Weather_Balloon/library/RTClib-master/RTClib.cpp</includedby>
+    <invincdepgraph>
+      <node id="932">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS3234.h</label>
+        <link refid="_r_t_c___d_s3234_8h"/>
+        <childnode refid="931" relation="include">
+        </childnode>
+      </node>
+      <node id="931">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp</label>
+        <link refid="_r_t_c___d_s3234_8cpp"/>
+      </node>
+      <node id="933">
+        <label>Weather_Balloon/library/RTClib-master/RTClib.cpp</label>
+        <link refid="_r_t_clib_8cpp"/>
+      </node>
+      <node id="929">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp</label>
+        <link refid="_r_t_c___d_s3231_8cpp"/>
+      </node>
+      <node id="928">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS1307.h</label>
+        <link refid="_r_t_c___d_s1307_8h"/>
+        <childnode refid="927" relation="include">
+        </childnode>
+      </node>
+      <node id="927">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS1307.cpp</label>
+        <link refid="_r_t_c___d_s1307_8cpp"/>
+      </node>
+      <node id="930">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS3231.h</label>
+        <link refid="_r_t_c___d_s3231_8h"/>
+        <childnode refid="929" relation="include">
+        </childnode>
+      </node>
+      <node id="926">
+        <label>Weather_Balloon/library/RTClib-master/RTClib.h</label>
+        <link refid="RTClib.h"/>
+        <childnode refid="927" relation="include">
+        </childnode>
+        <childnode refid="928" relation="include">
+        </childnode>
+        <childnode refid="929" relation="include">
+        </childnode>
+        <childnode refid="930" relation="include">
+        </childnode>
+        <childnode refid="931" relation="include">
+        </childnode>
+        <childnode refid="932" relation="include">
+        </childnode>
+        <childnode refid="933" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_date_time" prot="public">DateTime</innerclass>
+    <innerclass refid="class_r_t_c___millis" prot="public">RTC_Millis</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_r_t_clib_8h_1a916290df5459cfa1a9d590946ed552ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t bcd2bin</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>bcd2bin</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="55" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="180" bodyend="183"/>
+        <referencedby refid="class_r_t_c___d_s3231_1ad892efd8d357db71da0c672523f6d699" compoundref="_r_t_c___d_s3231_8cpp" startline="164" endline="185">RTC_DS3231::enable32kHz</referencedby>
+        <referencedby refid="class_r_t_c___d_s1307_1a9f5f5dbcce65b67e00b50808a45a4249" compoundref="_r_t_c___d_s1307_8cpp" startline="59" endline="75">RTC_DS1307::now</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a1b22090fcfdbef26725da0232157a3c1" compoundref="_r_t_c___d_s3234_8cpp" startline="87" endline="101">RTC_DS3234::now</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1adc740b28876022b852e0f33842632fab" compoundref="_r_t_c___d_s3231_8cpp" startline="71" endline="88">RTC_DS3231::now</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_r_t_clib_8h_1ab89a9f89f9d868e129c69675bf78d9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t bin2bcd</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>bin2bcd</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="56" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="184" bodyend="187"/>
+        <referencedby refid="class_r_t_c___d_s1307_1a6e38778b577a80008e9dc630384b8520" compoundref="_r_t_c___d_s1307_8cpp" startline="44" endline="57">RTC_DS1307::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" compoundref="_r_t_c___d_s3231_8cpp" startline="51" endline="65">RTC_DS3231::adjust</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Code<sp/>by<sp/>JeeLabs<sp/>http://news.jeelabs.org/code/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Released<sp/>to<sp/>the<sp/>public<sp/>domain!<sp/>Enjoy!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__RTCLIB_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__RTCLIB_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Simple<sp/>general-purpose<sp/>date/time<sp/>class<sp/>(no<sp/>TZ<sp/>/<sp/>DST<sp/>/<sp/>leap<sp/>second<sp/>handling!)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_date_time" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_date_time" kindref="compound">DateTime</ref></highlight></codeline>
+<codeline lineno="9"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" kindref="member">DateTime</ref><sp/>(uint32_t<sp/>t<sp/>=0);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" kindref="member">DateTime</ref><sp/>(uint16_t<sp/><ref refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" kindref="member">year</ref>,<sp/>uint8_t<sp/><ref refid="class_date_time_1a58beb18aec346e7081d02a2962032a43" kindref="member">month</ref>,<sp/>uint8_t<sp/><ref refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" kindref="member">day</ref>,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" kindref="member">hour</ref><sp/>=0,<sp/>uint8_t<sp/>min<sp/>=0,<sp/>uint8_t<sp/>sec<sp/>=0);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" kindref="member">DateTime</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>date,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>time);</highlight></codeline>
+<codeline lineno="15" refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" kindref="member">year</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="16"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>2000<sp/>+<sp/><ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="19" refid="class_date_time_1a58beb18aec346e7081d02a2962032a43" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_date_time_1a58beb18aec346e7081d02a2962032a43" kindref="member">month</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="20"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="23" refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" kindref="member">day</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="24"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" kindref="member">d</ref>;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="27" refid="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" kindref="member">hour</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="28"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" kindref="member">hh</ref>;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31" refid="class_date_time_1a9990c5958c55b3aa7018e21df9d490e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_date_time_1a9990c5958c55b3aa7018e21df9d490e5" kindref="member">minute</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="32"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_date_time_1af2cbffff9349832135c3280a18d21510" kindref="member">mm</ref>;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="35" refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" kindref="member">second</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="36"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" kindref="member">ss</ref>;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" kindref="member">dayOfWeek</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>32-bit<sp/>times<sp/>as<sp/>seconds<sp/>since<sp/>1/1/2000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_date_time_1a6dd7642f7f7a2d7ff7aec465bbc78187" kindref="member">secondstime</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>32-bit<sp/>times<sp/>as<sp/>seconds<sp/>since<sp/>1/1/1970</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/><ref refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" kindref="member">unixtime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>a<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" kindref="member">toString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxlen)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>add<sp/>additional<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_date_time_1a87adbc2ee0bfcb9417ffeadca2e3f375" kindref="member">operator+=</ref>(uint32_t);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="51" refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref>,<sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref>,<sp/><ref refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" kindref="member">d</ref>,<sp/><ref refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" kindref="member">hh</ref>,<sp/><ref refid="class_date_time_1af2cbffff9349832135c3280a18d21510" kindref="member">mm</ref>,<sp/><ref refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" kindref="member">ss</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_r_t_clib_8h_1a916290df5459cfa1a9d590946ed552ac" kindref="member">bcd2bin</ref><sp/>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="_r_t_clib_8h_1ab89a9f89f9d868e129c69675bf78d9b6" kindref="member">bin2bcd</ref><sp/>(uint8_t<sp/>val);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>RTC<sp/>using<sp/>the<sp/>internal<sp/>millis()<sp/>clock,<sp/>has<sp/>to<sp/>be<sp/>initialized<sp/>before<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NOTE:<sp/>this<sp/>clock<sp/>won&apos;t<sp/>be<sp/>correct<sp/>once<sp/>the<sp/>millis()<sp/>timer<sp/>rolls<sp/>over<sp/>(&gt;49d?)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_r_t_c___millis" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_t_c___millis" kindref="compound">RTC_Millis</ref></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="63" refid="class_r_t_c___millis_1a17670c5fcf820867a8018aa2083c62cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___millis_1a17670c5fcf820867a8018aa2083c62cd" kindref="member">begin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date_time" kindref="compound">DateTime</ref>&amp;<sp/>dt)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>adjust(dt);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>adjust(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date_time" kindref="compound">DateTime</ref>&amp;<sp/>dt);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time" kindref="compound">DateTime</ref><sp/><ref refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" kindref="member">now</ref>();</highlight></codeline>
+<codeline lineno="69" refid="class_r_t_c___millis_1a2bf3cc48adda7c115553a499a46b3506" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___millis_1a2bf3cc48adda7c115553a499a46b3506" kindref="member">RTC_Millis</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>adjust(<ref refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" kindref="member">DateTime</ref>(2000,1,1,0,0,0));</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="75" refid="class_r_t_c___millis_1a9e3029d6552e87d7c68a5bd6aa3e6b92" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___millis_1a9e3029d6552e87d7c68a5bd6aa3e6b92" kindref="member">offset</ref>;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__RTCLIB_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment">//<sp/>vim:ci:sw=4<sp/>sts=4<sp/>ft=cpp</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/RTClib-master/RTClib.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="unionsensors__vec__t_8____unnamed____" kind="union" language="C++" prot="public">
+    <compoundname>sensors_vec_t.__unnamed__</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionsensors__vec__t_8____unnamed_____1af493789db894265c54fa31d991268ab8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring>[3]</argsstring>
+        <name>v</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__vec__t_8____unnamed_____1a1378d7d8767899287b0407055215aa4e" prot="public" static="no" mutable="no">
+        <type>struct sensors_vec_t::@0::@2</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>@3</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__vec__t_8____unnamed_____1ae80230e7c0b67771dddc6a497e5e2e5e" prot="public" static="no" mutable="no">
+        <type>struct sensors_vec_t::@0::@4</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>@5</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="78" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="66" column="1" bodyfile="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" bodystart="66" bodyend="79"/>
+    <listofallmembers>
+      <member refid="unionsensors__vec__t_8____unnamed_____1af493789db894265c54fa31d991268ab8" prot="public" virt="non-virtual"><scope>sensors_vec_t.__unnamed__</scope><name>v</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

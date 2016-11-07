@@ -1,0 +1,274 @@
+\hypertarget{class_r_t_c___d_s3231}{}\section{R\+T\+C\+\_\+\+D\+S3231 Class Reference}
+\label{class_r_t_c___d_s3231}\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+
+
+{\ttfamily \#include $<$R\+T\+C\+\_\+\+D\+S3231.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c___d_s3231_a771a62d39534f6689c17f7ebe42aaa34}{isrunning} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint8\+\_\+t \hyperlink{class_r_t_c___d_s3231_ad15c2bb9d853cb1af41e8f35d7ea67db}{begin} (void)
+\item 
+static void \hyperlink{class_r_t_c___d_s3231_ae8d2a40c8ada023f5ab502a77631abb0}{adjust} (const \hyperlink{class_date_time}{Date\+Time} \&dt)
+\item 
+static \hyperlink{class_date_time}{Date\+Time} \hyperlink{class_r_t_c___d_s3231_adc740b28876022b852e0f33842632fab}{now} ()
+\item 
+static float \hyperlink{class_r_t_c___d_s3231_a0c97cca72e971f6b4d7d4a679eac8d5b}{get\+Temp\+As\+Float} ()
+\item 
+static int16\+\_\+t \hyperlink{class_r_t_c___d_s3231_aad9389d7a869971cde87fc81a8b00647}{get\+Temp\+As\+Word} ()
+\item 
+static void \hyperlink{class_r_t_c___d_s3231_ad892efd8d357db71da0c672523f6d699}{enable32k\+Hz} (uint8\+\_\+t enable)
+\item 
+static void \hyperlink{class_r_t_c___d_s3231_a63a667e5cb63ea406315bd42c2037eea}{force\+Temp\+Conv} (uint8\+\_\+t block)
+\item 
+static void \hyperlink{class_r_t_c___d_s3231_a3d54093b096bb5e68f03d66ee1c7e686}{S\+Q\+W\+Enable} (uint8\+\_\+t enable)
+\item 
+static void \hyperlink{class_r_t_c___d_s3231_a08fb5001c43fa4493d370a17ffb14737}{B\+B\+S\+Q\+W\+Enable} (uint8\+\_\+t enable)
+\item 
+static void \hyperlink{class_r_t_c___d_s3231_a85b06cbbd08d71865380e48183ddd26f}{S\+Q\+W\+Frequency} (uint8\+\_\+t freq)
+\item 
+static void \hyperlink{class_r_t_c___d_s3231_a2def91da84612846ecaa3029f8c3b9aa}{get\+Control\+Register\+Data} (char \&datastr)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 19 of file R\+T\+C\+\_\+\+D\+S3231.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!adjust@{adjust}}
+\index{adjust@{adjust}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{adjust(const Date\+Time \&dt)}{adjust(const DateTime \&dt)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+D\+S3231\+::adjust (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date\+Time} \&}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_ae8d2a40c8ada023f5ab502a77631abb0}{}\label{class_r_t_c___d_s3231_ae8d2a40c8ada023f5ab502a77631abb0}
+Set the datetime of the R\+TC 
+
+Definition at line 51 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References bin2bcd(), Date\+Time\+::day(), D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+E\+C\+O\+N\+DS, Date\+Time\+::hour(), Date\+Time\+::minute(), Date\+Time\+::month(), Date\+Time\+::second(), Wire, and Date\+Time\+::year().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c___d_s3231_ae8d2a40c8ada023f5ab502a77631abb0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!B\+B\+S\+Q\+W\+Enable@{B\+B\+S\+Q\+W\+Enable}}
+\index{B\+B\+S\+Q\+W\+Enable@{B\+B\+S\+Q\+W\+Enable}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{B\+B\+S\+Q\+W\+Enable(uint8\+\_\+t enable)}{BBSQWEnable(uint8\_t enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+D\+S3231\+::\+B\+B\+S\+Q\+W\+Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_a08fb5001c43fa4493d370a17ffb14737}{}\label{class_r_t_c___d_s3231_a08fb5001c43fa4493d370a17ffb14737}
+Enable or disable the output to the S\+QW pin. Send 1 or true to enable. This method enables B\+O\+TH the square wave and the battery backed output. 
+
+Definition at line 266 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL, and Wire.
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!begin@{begin}}
+\index{begin@{begin}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{begin(void)}{begin(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+\_\+\+D\+S3231\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_ad15c2bb9d853cb1af41e8f35d7ea67db}{}\label{class_r_t_c___d_s3231_ad15c2bb9d853cb1af41e8f35d7ea67db}
+
+
+Definition at line 32 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!enable32k\+Hz@{enable32k\+Hz}}
+\index{enable32k\+Hz@{enable32k\+Hz}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{enable32k\+Hz(uint8\+\_\+t enable)}{enable32kHz(uint8\_t enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+D\+S3231\+::enable32k\+Hz (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_ad892efd8d357db71da0c672523f6d699}{}\label{class_r_t_c___d_s3231_ad892efd8d357db71da0c672523f6d699}
+Enable or disable the 32k\+Hz pin. When 1 it will output 32768k\+Hz. 
+
+Definition at line 164 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References bcd2bin(), D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+TL, and Wire.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=293pt]{class_r_t_c___d_s3231_ad892efd8d357db71da0c672523f6d699_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!force\+Temp\+Conv@{force\+Temp\+Conv}}
+\index{force\+Temp\+Conv@{force\+Temp\+Conv}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{force\+Temp\+Conv(uint8\+\_\+t block)}{forceTempConv(uint8\_t block)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+D\+S3231\+::force\+Temp\+Conv (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{block}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_a63a667e5cb63ea406315bd42c2037eea}{}\label{class_r_t_c___d_s3231_a63a667e5cb63ea406315bd42c2037eea}
+Force the temp sensor to convert the temp into digital code and execute the T\+C\+XO algorithm. The \hyperlink{class_d_s3231}{D\+S3231} normally does this every 64 seconds anyway.
+
+N\+O\+TE\+: This is a B\+L\+O\+C\+K\+I\+NG method. You have been warned.
+
+This method has not been fully debugged. 
+
+Definition at line 198 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL, and Wire.
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!get\+Control\+Register\+Data@{get\+Control\+Register\+Data}}
+\index{get\+Control\+Register\+Data@{get\+Control\+Register\+Data}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{get\+Control\+Register\+Data(char \&datastr)}{getControlRegisterData(char \&datastr)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+D\+S3231\+::get\+Control\+Register\+Data (
+\begin{DoxyParamCaption}
+\item[{char \&}]{datastr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_a2def91da84612846ecaa3029f8c3b9aa}{}\label{class_r_t_c___d_s3231_a2def91da84612846ecaa3029f8c3b9aa}
+
+
+Definition at line 318 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL, i, and Wire.
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!get\+Temp\+As\+Float@{get\+Temp\+As\+Float}}
+\index{get\+Temp\+As\+Float@{get\+Temp\+As\+Float}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{get\+Temp\+As\+Float()}{getTempAsFloat()}}]{\setlength{\rightskip}{0pt plus 5cm}float R\+T\+C\+\_\+\+D\+S3231\+::get\+Temp\+As\+Float (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_a0c97cca72e971f6b4d7d4a679eac8d5b}{}\label{class_r_t_c___d_s3231_a0c97cca72e971f6b4d7d4a679eac8d5b}
+Return temperature as a float in degrees C Data is 10bits provided in 2 bytes (11h and and 2bits in 12h) Resolution of 0.\+25C e.\+g. 00011001 01 = 25.\+25C 00011001 = 25 01 = 0.\+25 $\ast$ 1 = .25
+
+This function has not been tested 
+
+Definition at line 101 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+\_\+\+M\+SB, and Wire.
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!get\+Temp\+As\+Word@{get\+Temp\+As\+Word}}
+\index{get\+Temp\+As\+Word@{get\+Temp\+As\+Word}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{get\+Temp\+As\+Word()}{getTempAsWord()}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t R\+T\+C\+\_\+\+D\+S3231\+::get\+Temp\+As\+Word (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_aad9389d7a869971cde87fc81a8b00647}{}\label{class_r_t_c___d_s3231_aad9389d7a869971cde87fc81a8b00647}
+Return temperature as a 2 bytes in degrees C M\+SB is the significant 00011001 = 25 L\+SB is the mantissa 00011001 = .25 Display by writing them out to the display M\+SB . L\+SB
+
+Data from the 3231 10bits provided in 2 bytes (11h and and 2bits in 12h) Resolution of 0.\+25C e.\+g. 00011001 01 = 25.\+25C 00011001 = 25 01 = 0.\+25 $\ast$ 1 = .25
+
+This function has not been tested 
+
+Definition at line 136 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+\_\+\+M\+SB, and Wire.
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!isrunning@{isrunning}}
+\index{isrunning@{isrunning}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{isrunning(void)}{isrunning(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+\_\+\+D\+S3231\+::isrunning (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c___d_s3231_a771a62d39534f6689c17f7ebe42aaa34}{}\label{class_r_t_c___d_s3231_a771a62d39534f6689c17f7ebe42aaa34}
+
+
+Definition at line 37 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+U\+S\+\_\+\+C\+TL, and Wire.
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!now@{now}}
+\index{now@{now}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{now()}{now()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\+Time} R\+T\+C\+\_\+\+D\+S3231\+::now (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_adc740b28876022b852e0f33842632fab}{}\label{class_r_t_c___d_s3231_adc740b28876022b852e0f33842632fab}
+Get the datetime from the R\+TC 
+
+Definition at line 71 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References bcd2bin(), D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+E\+C\+O\+N\+DS, and Wire.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_r_t_c___d_s3231_adc740b28876022b852e0f33842632fab_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!S\+Q\+W\+Enable@{S\+Q\+W\+Enable}}
+\index{S\+Q\+W\+Enable@{S\+Q\+W\+Enable}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{S\+Q\+W\+Enable(uint8\+\_\+t enable)}{SQWEnable(uint8\_t enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+D\+S3231\+::\+S\+Q\+W\+Enable (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_a3d54093b096bb5e68f03d66ee1c7e686}{}\label{class_r_t_c___d_s3231_a3d54093b096bb5e68f03d66ee1c7e686}
+Enable or disable the output to the S\+QW pin. Send 1 or true to enable. This function does {\itshape not} enable battery backed output which helps conserve battery life. 
+
+Definition at line 234 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL, and Wire.
+
+\index{R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}!S\+Q\+W\+Frequency@{S\+Q\+W\+Frequency}}
+\index{S\+Q\+W\+Frequency@{S\+Q\+W\+Frequency}!R\+T\+C\+\_\+\+D\+S3231@{R\+T\+C\+\_\+\+D\+S3231}}
+\subsubsection[{\texorpdfstring{S\+Q\+W\+Frequency(uint8\+\_\+t freq)}{SQWFrequency(uint8\_t freq)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+D\+S3231\+::\+S\+Q\+W\+Frequency (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{freq}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s3231_a85b06cbbd08d71865380e48183ddd26f}{}\label{class_r_t_c___d_s3231_a85b06cbbd08d71865380e48183ddd26f}
+Set the output frequence of the squarewave S\+QW pin
+
+H\+I\+NT\+: Use the defined frequencies in the .h file 
+
+Definition at line 298 of file R\+T\+C\+\_\+\+D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL, and Wire.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\hyperlink{_r_t_c___d_s3231_8h}{R\+T\+C\+\_\+\+D\+S3231.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\hyperlink{_r_t_c___d_s3231_8cpp}{R\+T\+C\+\_\+\+D\+S3231.\+cpp}\end{DoxyCompactItemize}

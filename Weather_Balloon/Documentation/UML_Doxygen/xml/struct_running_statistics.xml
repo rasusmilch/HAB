@@ -1,0 +1,250 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_running_statistics" kind="struct" language="C++" prot="public">
+    <compoundname>RunningStatistics</compoundname>
+    <includes refid="_running_statistics_8h" local="no">RunningStatistics.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_running_statistics_1a4ec83fcbddff87169b6aad7fe9784fad" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float RunningStatistics::AverageSecs</definition>
+        <argsstring></argsstring>
+        <name>AverageSecs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="11" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" compoundref="_running_statistics_8cpp" startline="9" endline="14">setWindowSecs</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_filter_one_pole_cascade" kindref="compound">FilterOnePoleCascade</ref></type>
+        <definition>FilterOnePoleCascade RunningStatistics::averageValue</definition>
+        <argsstring></argsstring>
+        <name>averageValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="13" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.h" bodystart="13" bodyend="-1"/>
+        <referencedby refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" compoundref="_running_statistics_8cpp" startline="21" endline="24">input</referencedby>
+        <referencedby refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" compoundref="_running_statistics_8cpp" startline="26" endline="28">mean</referencedby>
+        <referencedby refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" compoundref="_running_statistics_8cpp" startline="16" endline="19">setInitialValue</referencedby>
+        <referencedby refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" compoundref="_running_statistics_8cpp" startline="9" endline="14">setWindowSecs</referencedby>
+        <referencedby refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" compoundref="_running_statistics_8cpp" startline="30" endline="37">variance</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_filter_one_pole_cascade" kindref="compound">FilterOnePoleCascade</ref></type>
+        <definition>FilterOnePoleCascade RunningStatistics::averageSquareValue</definition>
+        <argsstring></argsstring>
+        <name>averageSquareValue</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="14" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.h" bodystart="14" bodyend="-1"/>
+        <referencedby refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" compoundref="_running_statistics_8cpp" startline="21" endline="24">input</referencedby>
+        <referencedby refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" compoundref="_running_statistics_8cpp" startline="16" endline="19">setInitialValue</referencedby>
+        <referencedby refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" compoundref="_running_statistics_8cpp" startline="9" endline="14">setWindowSecs</referencedby>
+        <referencedby refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" compoundref="_running_statistics_8cpp" startline="30" endline="37">variance</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RunningStatistics::input</definition>
+        <argsstring>(float inVal)</argsstring>
+        <name>input</name>
+        <param>
+          <type>float</type>
+          <declname>inVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="16" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="21" bodyend="24"/>
+        <references refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" compoundref="_running_statistics_8h" startline="14">averageSquareValue</references>
+        <references refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" compoundref="_running_statistics_8h" startline="13">averageValue</references>
+        <references refid="struct_filter_one_pole_cascade_1ae35052126bde0f0f197317b2ad003d26" compoundref="_filter_one_pole_8cpp" startline="140" endline="143">FilterOnePoleCascade::input</references>
+        <referencedby refid="_running_statistics_8h_1a67f264182f870b0259cd82e82e5e32cf" compoundref="_running_statistics_8cpp" startline="58" endline="86">testRunningStatistics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_running_statistics_1a5ba923774908f70a5827bcdc18f46477" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RunningStatistics::RunningStatistics</definition>
+        <argsstring>()</argsstring>
+        <name>RunningStatistics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="19" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="4" bodyend="7"/>
+        <references refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" compoundref="_running_statistics_8cpp" startline="16" endline="19">setInitialValue</references>
+        <references refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" compoundref="_running_statistics_8cpp" startline="9" endline="14">setWindowSecs</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RunningStatistics::setWindowSecs</definition>
+        <argsstring>(float windowSecs)</argsstring>
+        <name>setWindowSecs</name>
+        <param>
+          <type>float</type>
+          <declname>windowSecs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="21" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="9" bodyend="14"/>
+        <references refid="struct_running_statistics_1a4ec83fcbddff87169b6aad7fe9784fad" compoundref="_running_statistics_8h" startline="11">AverageSecs</references>
+        <references refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" compoundref="_running_statistics_8h" startline="14">averageSquareValue</references>
+        <references refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" compoundref="_running_statistics_8h" startline="13">averageValue</references>
+        <references refid="struct_filter_one_pole_cascade_1a06aed75defb8dc7cd252436944ca0baf" compoundref="_filter_one_pole_8cpp" startline="133" endline="138">FilterOnePoleCascade::setRiseTime</references>
+        <referencedby refid="struct_running_statistics_1a5ba923774908f70a5827bcdc18f46477" compoundref="_running_statistics_8cpp" startline="4" endline="7">RunningStatistics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RunningStatistics::setInitialValue</definition>
+        <argsstring>(float initialMean, float initialSigma=0)</argsstring>
+        <name>setInitialValue</name>
+        <param>
+          <type>float</type>
+          <declname>initialMean</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>initialSigma</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="23" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="16" bodyend="19"/>
+        <references refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" compoundref="_running_statistics_8h" startline="14">averageSquareValue</references>
+        <references refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" compoundref="_running_statistics_8h" startline="13">averageValue</references>
+        <references refid="struct_filter_one_pole_cascade_1a1bcac6613d187073873a825d9826ed82" compoundref="_filter_one_pole_8cpp" startline="146" endline="149">FilterOnePoleCascade::setToNewValue</references>
+        <referencedby refid="struct_running_statistics_1a5ba923774908f70a5827bcdc18f46477" compoundref="_running_statistics_8cpp" startline="4" endline="7">RunningStatistics</referencedby>
+        <referencedby refid="_running_statistics_8h_1a67f264182f870b0259cd82e82e5e32cf" compoundref="_running_statistics_8cpp" startline="58" endline="86">testRunningStatistics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RunningStatistics::mean</definition>
+        <argsstring>()</argsstring>
+        <name>mean</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="25" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="26" bodyend="28"/>
+        <references refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" compoundref="_running_statistics_8h" startline="13">averageValue</references>
+        <references refid="struct_filter_one_pole_cascade_1ae8ba6b966183057560bb0d84e3ea549a" compoundref="_filter_one_pole_8cpp" startline="151" endline="153">FilterOnePoleCascade::output</references>
+        <referencedby refid="struct_running_statistics_1a5de669afa689ee26e8c3c7286446ef54" compoundref="_running_statistics_8cpp" startline="49" endline="56">CV</referencedby>
+        <referencedby refid="_running_statistics_8h_1a67f264182f870b0259cd82e82e5e32cf" compoundref="_running_statistics_8cpp" startline="58" endline="86">testRunningStatistics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RunningStatistics::variance</definition>
+        <argsstring>()</argsstring>
+        <name>variance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="27" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="30" bodyend="37"/>
+        <references refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" compoundref="_running_statistics_8h" startline="14">averageSquareValue</references>
+        <references refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" compoundref="_running_statistics_8h" startline="13">averageValue</references>
+        <references refid="struct_filter_one_pole_cascade_1ae8ba6b966183057560bb0d84e3ea549a" compoundref="_filter_one_pole_8cpp" startline="151" endline="153">FilterOnePoleCascade::output</references>
+        <referencedby refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" compoundref="_running_statistics_8cpp" startline="39" endline="47">sigma</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RunningStatistics::sigma</definition>
+        <argsstring>()</argsstring>
+        <name>sigma</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="29" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="39" bodyend="47"/>
+        <references refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" compoundref="_running_statistics_8cpp" startline="30" endline="37">variance</references>
+        <referencedby refid="struct_running_statistics_1a5de669afa689ee26e8c3c7286446ef54" compoundref="_running_statistics_8cpp" startline="49" endline="56">CV</referencedby>
+        <referencedby refid="_running_statistics_8h_1a67f264182f870b0259cd82e82e5e32cf" compoundref="_running_statistics_8cpp" startline="58" endline="86">testRunningStatistics</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_running_statistics_1a5de669afa689ee26e8c3c7286446ef54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RunningStatistics::CV</definition>
+        <argsstring>()</argsstring>
+        <name>CV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="31" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="49" bodyend="56"/>
+        <references refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" compoundref="_running_statistics_8cpp" startline="26" endline="28">mean</references>
+        <references refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" compoundref="_running_statistics_8cpp" startline="39" endline="47">sigma</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="381">
+        <label>FilterOnePoleCascade</label>
+        <link refid="struct_filter_one_pole_cascade"/>
+        <childnode refid="382" relation="usage">
+          <edgelabel>Pole1</edgelabel>
+          <edgelabel>Pole2</edgelabel>
+        </childnode>
+      </node>
+      <node id="380">
+        <label>RunningStatistics</label>
+        <link refid="struct_running_statistics"/>
+        <childnode refid="381" relation="usage">
+          <edgelabel>averageValue</edgelabel>
+          <edgelabel>averageSquareValue</edgelabel>
+        </childnode>
+      </node>
+      <node id="382">
+        <label>FilterOnePole</label>
+        <link refid="struct_filter_one_pole"/>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="6" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.h" bodystart="6" bodyend="32"/>
+    <listofallmembers>
+      <member refid="struct_running_statistics_1a4ec83fcbddff87169b6aad7fe9784fad" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>AverageSecs</name></member>
+      <member refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>averageSquareValue</name></member>
+      <member refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>averageValue</name></member>
+      <member refid="struct_running_statistics_1a5de669afa689ee26e8c3c7286446ef54" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>CV</name></member>
+      <member refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>input</name></member>
+      <member refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>mean</name></member>
+      <member refid="struct_running_statistics_1a5ba923774908f70a5827bcdc18f46477" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>RunningStatistics</name></member>
+      <member refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>setInitialValue</name></member>
+      <member refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>setWindowSecs</name></member>
+      <member refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>sigma</name></member>
+      <member refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" prot="public" virt="non-virtual"><scope>RunningStatistics</scope><name>variance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,567 @@
+\hypertarget{class_wi_fi_stream}{}\section{Wi\+Fi\+Stream Class Reference}
+\label{class_wi_fi_stream}\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+
+
+{\ttfamily \#include $<$Wi\+Fi\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Wi\+Fi\+Stream\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_wi_fi_stream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wi\+Fi\+Stream\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=145pt]{class_wi_fi_stream__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_wi_fi_stream_af287098c8a30dbdb4cdd39c39367339b}{Wi\+Fi\+Stream} (uint16\+\_\+t server\+\_\+port)
+\item 
+\hyperlink{class_wi_fi_stream_ac3eaf3da6000ade24eac3c029cad1062}{Wi\+Fi\+Stream} (I\+P\+Address server\+\_\+ip, uint16\+\_\+t server\+\_\+port)
+\item 
+void \hyperlink{class_wi_fi_stream_a4f279f8f5001c615002bf9043a0bc824}{attach} (\hyperlink{_wi_fi_stream_8h_ac590658d84d43947d605be50ab5fbc85}{host\+Connection\+Callback\+Function} new\+Function)
+\item 
+void \hyperlink{class_wi_fi_stream_a7ec6bca5a87c462e2402d12529e13207}{config} (I\+P\+Address \hyperlink{ethernet_config_8h_a2b4b74058584a3b553398a5e5e2f21c8}{local\+\_\+ip})
+\item 
+void \hyperlink{class_wi_fi_stream_a45e8232e467d643738e6a20b5bff909a}{config} (I\+P\+Address \hyperlink{ethernet_config_8h_a2b4b74058584a3b553398a5e5e2f21c8}{local\+\_\+ip}, I\+P\+Address gateway, I\+P\+Address subnet)
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_stream_a8134646bad1d06f4ce61813cafb652ed}{get\+Local\+IP} ()
+\item 
+virtual bool \hyperlink{class_wi_fi_stream_ac7c0c7f36c7cf6b46bebafcbf6b1253b}{maintain} ()=0
+\item 
+virtual void \hyperlink{class_wi_fi_stream_a9438b7e07eae9f8a42af9060e7b330c7}{stop} ()=0
+\item 
+int \hyperlink{class_wi_fi_stream_a3aee2b1e2f93e2c6488051b249467254}{begin} (char $\ast$\hyperlink{wifi_config_8h_a375b545f86fd7e1d5d44926f28b75800}{ssid})
+\item 
+int \hyperlink{class_wi_fi_stream_ad6ac263500c511fad28e4fe8e286e65b}{begin} (char $\ast$\hyperlink{wifi_config_8h_a375b545f86fd7e1d5d44926f28b75800}{ssid}, uint8\+\_\+t key\+\_\+idx, const char $\ast$key)
+\item 
+int \hyperlink{class_wi_fi_stream_a9a37df8979690859e6c4c47752ecc785}{begin} (char $\ast$\hyperlink{wifi_config_8h_a375b545f86fd7e1d5d44926f28b75800}{ssid}, const char $\ast$passphrase)
+\item 
+int \hyperlink{class_wi_fi_stream_a238fc0fc25c4a9bda83e24257587dd64}{available} ()
+\item 
+void \hyperlink{class_wi_fi_stream_ad5a60c69e5aca993e90e8d02c0e9672c}{flush} ()
+\item 
+int \hyperlink{class_wi_fi_stream_a84ea0f80377001e0acf1385645ecaf1a}{peek} ()
+\item 
+int \hyperlink{class_wi_fi_stream_a238960bf0f7a3e3a7c60014a187fe577}{read} ()
+\item 
+size\+\_\+t \hyperlink{class_wi_fi_stream_a0a4dba3370af02570ef0d3429f1a6df2}{write} (uint8\+\_\+t byte)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \hyperlink{class_wi_fi_stream_a2e530346a7edea0326ad2025be42aff1}{connect\+\_\+client} ()=0
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+Wi\+Fi\+Client \hyperlink{class_wi_fi_stream_a260e92c25849c88a0d370672eaf390e7}{\+\_\+client}
+\item 
+bool \hyperlink{class_wi_fi_stream_abe0341617945c15f2a37d34d7be7e72c}{\+\_\+connected} = false
+\item 
+\hyperlink{_wi_fi_stream_8h_ac590658d84d43947d605be50ab5fbc85}{host\+Connection\+Callback\+Function} \hyperlink{class_wi_fi_stream_aa5e5f3cc7bf2e91bf5ee9793fe6a1335}{\+\_\+current\+Host\+Connection\+Callback}
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_stream_a9e5cfe85f7ff186e597e2eb09a75e742}{\+\_\+local\+\_\+ip}
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_stream_aa37dbf267daa7afa939183cd77bb5ee7}{\+\_\+subnet}
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_stream_aee2b9bf291669692faf0c9d52c8dca1d}{\+\_\+gateway}
+\item 
+I\+P\+Address \hyperlink{class_wi_fi_stream_af81541aec7d6be3be1466caf8bc68820}{\+\_\+remote\+\_\+ip}
+\item 
+uint16\+\_\+t \hyperlink{class_wi_fi_stream_aa1137c9058f501876b0967db2baf898a}{\+\_\+port}
+\item 
+uint8\+\_\+t \hyperlink{class_wi_fi_stream_a78fb4d153bfabad324535db5e495d71b}{\+\_\+key\+\_\+idx}
+\item 
+const char $\ast$ \hyperlink{class_wi_fi_stream_ad8d316924c56442f88a85f714a2a6e95}{\+\_\+key} = nullptr
+\item 
+const char $\ast$ \hyperlink{class_wi_fi_stream_a56fb4c68bcf7312361a8fad4328826de}{\+\_\+passphrase} = nullptr
+\item 
+char $\ast$ \hyperlink{class_wi_fi_stream_a428e3d50bc45a3f2de02d7edc7d9509d}{\+\_\+ssid} = nullptr
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 35 of file Wi\+Fi\+Stream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{Wi\+Fi\+Stream(uint16\+\_\+t server\+\_\+port)}{WiFiStream(uint16\_t server\_port)}}]{\setlength{\rightskip}{0pt plus 5cm}Wi\+Fi\+Stream\+::\+Wi\+Fi\+Stream (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{server\+\_\+port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_af287098c8a30dbdb4cdd39c39367339b}{}\label{class_wi_fi_stream_af287098c8a30dbdb4cdd39c39367339b}
+constructor for T\+CP server 
+
+Definition at line 61 of file Wi\+Fi\+Stream.\+h.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{Wi\+Fi\+Stream(\+I\+P\+Address server\+\_\+ip, uint16\+\_\+t server\+\_\+port)}{WiFiStream(IPAddress server\_ip, uint16\_t server\_port)}}]{\setlength{\rightskip}{0pt plus 5cm}Wi\+Fi\+Stream\+::\+Wi\+Fi\+Stream (
+\begin{DoxyParamCaption}
+\item[{I\+P\+Address}]{server\+\_\+ip, }
+\item[{uint16\+\_\+t}]{server\+\_\+port}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_ac3eaf3da6000ade24eac3c029cad1062}{}\label{class_wi_fi_stream_ac3eaf3da6000ade24eac3c029cad1062}
+constructor for T\+CP client 
+
+Definition at line 64 of file Wi\+Fi\+Stream.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!attach@{attach}}
+\index{attach@{attach}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{attach(host\+Connection\+Callback\+Function new\+Function)}{attach(hostConnectionCallbackFunction newFunction)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wi\+Fi\+Stream\+::attach (
+\begin{DoxyParamCaption}
+\item[{{\bf host\+Connection\+Callback\+Function}}]{new\+Function}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a4f279f8f5001c615002bf9043a0bc824}{}\label{class_wi_fi_stream_a4f279f8f5001c615002bf9043a0bc824}
+
+
+Definition at line 66 of file Wi\+Fi\+Stream.\+h.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!available@{available}}
+\index{available@{available}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{available()}{available()}}]{\setlength{\rightskip}{0pt plus 5cm}int Wi\+Fi\+Stream\+::available (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a238fc0fc25c4a9bda83e24257587dd64}{}\label{class_wi_fi_stream_a238fc0fc25c4a9bda83e24257587dd64}
+
+
+Definition at line 199 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References connect\+\_\+client().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_wi_fi_stream_a238fc0fc25c4a9bda83e24257587dd64_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!begin@{begin}}
+\index{begin@{begin}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{begin(char $\ast$ssid)}{begin(char *ssid)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wi\+Fi\+Stream\+::begin (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ssid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a3aee2b1e2f93e2c6488051b249467254}{}\label{class_wi_fi_stream_a3aee2b1e2f93e2c6488051b249467254}
+initialize Wi\+Fi without security (open) and initiate client connection if Wi\+Fi connection is already established \begin{DoxyReturn}{Returns}
+W\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED if Wi\+Fi connection is established 
+\end{DoxyReturn}
+
+
+Definition at line 154 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References ssid.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!begin@{begin}}
+\index{begin@{begin}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{begin(char $\ast$ssid, uint8\+\_\+t key\+\_\+idx, const char $\ast$key)}{begin(char *ssid, uint8\_t key\_idx, const char *key)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wi\+Fi\+Stream\+::begin (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ssid, }
+\item[{uint8\+\_\+t}]{key\+\_\+idx, }
+\item[{const char $\ast$}]{key}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_ad6ac263500c511fad28e4fe8e286e65b}{}\label{class_wi_fi_stream_ad6ac263500c511fad28e4fe8e286e65b}
+initialize Wi\+Fi with W\+EP security and initiate client connection if Wi\+Fi connection is already established \begin{DoxyReturn}{Returns}
+W\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED if Wi\+Fi connection is established 
+\end{DoxyReturn}
+
+
+Definition at line 169 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References ssid.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!begin@{begin}}
+\index{begin@{begin}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{begin(char $\ast$ssid, const char $\ast$passphrase)}{begin(char *ssid, const char *passphrase)}}]{\setlength{\rightskip}{0pt plus 5cm}int Wi\+Fi\+Stream\+::begin (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{ssid, }
+\item[{const char $\ast$}]{passphrase}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a9a37df8979690859e6c4c47752ecc785}{}\label{class_wi_fi_stream_a9a37df8979690859e6c4c47752ecc785}
+initialize Wi\+Fi with W\+P\+A-\/\+P\+SK security and initiate client connection if Wi\+Fi connection is already established \begin{DoxyReturn}{Returns}
+W\+L\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED if Wi\+Fi connection is established 
+\end{DoxyReturn}
+
+
+Definition at line 185 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References ssid.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!config@{config}}
+\index{config@{config}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{config(\+I\+P\+Address local\+\_\+ip)}{config(IPAddress local\_ip)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wi\+Fi\+Stream\+::config (
+\begin{DoxyParamCaption}
+\item[{I\+P\+Address}]{local\+\_\+ip}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a7ec6bca5a87c462e2402d12529e13207}{}\label{class_wi_fi_stream_a7ec6bca5a87c462e2402d12529e13207}
+configure a static local IP address without defining the local network D\+H\+CP will be used as long as local IP address is not defined 
+
+Definition at line 77 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References local\+\_\+ip.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!config@{config}}
+\index{config@{config}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{config(\+I\+P\+Address local\+\_\+ip, I\+P\+Address gateway, I\+P\+Address subnet)}{config(IPAddress local\_ip, IPAddress gateway, IPAddress subnet)}}]{\setlength{\rightskip}{0pt plus 5cm}void Wi\+Fi\+Stream\+::config (
+\begin{DoxyParamCaption}
+\item[{I\+P\+Address}]{local\+\_\+ip, }
+\item[{I\+P\+Address}]{gateway, }
+\item[{I\+P\+Address}]{subnet}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a45e8232e467d643738e6a20b5bff909a}{}\label{class_wi_fi_stream_a45e8232e467d643738e6a20b5bff909a}
+configure a static local IP address D\+H\+CP will be used as long as local IP address is not defined 
+
+Definition at line 88 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References local\+\_\+ip.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!connect\+\_\+client@{connect\+\_\+client}}
+\index{connect\+\_\+client@{connect\+\_\+client}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{connect\+\_\+client()=0}{connect\_client()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wi\+Fi\+Stream\+::connect\+\_\+client (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{class_wi_fi_stream_a2e530346a7edea0326ad2025be42aff1}{}\label{class_wi_fi_stream_a2e530346a7edea0326ad2025be42aff1}
+check if T\+CP client is connected \begin{DoxyReturn}{Returns}
+true if connected 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_wi_fi_client_stream_afb68ea613d492a7b3aebca60ed5a0da6}{Wi\+Fi\+Client\+Stream}, and \hyperlink{class_wi_fi_server_stream_a664a448394b896b93ff631e488840e81}{Wi\+Fi\+Server\+Stream}.
+
+
+
+Referenced by available(), peek(), read(), and write().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_wi_fi_stream_a2e530346a7edea0326ad2025be42aff1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!flush@{flush}}
+\index{flush@{flush}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{flush()}{flush()}}]{\setlength{\rightskip}{0pt plus 5cm}void Wi\+Fi\+Stream\+::flush (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_ad5a60c69e5aca993e90e8d02c0e9672c}{}\label{class_wi_fi_stream_ad5a60c69e5aca993e90e8d02c0e9672c}
+
+
+Definition at line 204 of file Wi\+Fi\+Stream.\+h.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!get\+Local\+IP@{get\+Local\+IP}}
+\index{get\+Local\+IP@{get\+Local\+IP}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{get\+Local\+I\+P()}{getLocalIP()}}]{\setlength{\rightskip}{0pt plus 5cm}I\+P\+Address Wi\+Fi\+Stream\+::get\+Local\+IP (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a8134646bad1d06f4ce61813cafb652ed}{}\label{class_wi_fi_stream_a8134646bad1d06f4ce61813cafb652ed}
+\begin{DoxyReturn}{Returns}
+local IP address 
+\end{DoxyReturn}
+
+
+Definition at line 103 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References maintain(), and stop().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_wi_fi_stream_a8134646bad1d06f4ce61813cafb652ed_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!maintain@{maintain}}
+\index{maintain@{maintain}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{maintain()=0}{maintain()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Wi\+Fi\+Stream\+::maintain (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_wi_fi_stream_ac7c0c7f36c7cf6b46bebafcbf6b1253b}{}\label{class_wi_fi_stream_ac7c0c7f36c7cf6b46bebafcbf6b1253b}
+maintain Wi\+Fi and T\+CP connection \begin{DoxyReturn}{Returns}
+true if Wi\+Fi and T\+CP connection are established 
+\end{DoxyReturn}
+
+
+Implemented in \hyperlink{class_wi_fi_client_stream_a7fd2465acdbb07285fdac25c490c04d6}{Wi\+Fi\+Client\+Stream}, and \hyperlink{class_wi_fi_server_stream_ad6a4282ab87a5a5b15a5cd1ae2fb2a94}{Wi\+Fi\+Server\+Stream}.
+
+
+
+Referenced by get\+Local\+I\+P().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=336pt]{class_wi_fi_stream_ac7c0c7f36c7cf6b46bebafcbf6b1253b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!peek@{peek}}
+\index{peek@{peek}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{peek()}{peek()}}]{\setlength{\rightskip}{0pt plus 5cm}int Wi\+Fi\+Stream\+::peek (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a84ea0f80377001e0acf1385645ecaf1a}{}\label{class_wi_fi_stream_a84ea0f80377001e0acf1385645ecaf1a}
+
+
+Definition at line 209 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References connect\+\_\+client().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_wi_fi_stream_a84ea0f80377001e0acf1385645ecaf1a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!read@{read}}
+\index{read@{read}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{read()}{read()}}]{\setlength{\rightskip}{0pt plus 5cm}int Wi\+Fi\+Stream\+::read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a238960bf0f7a3e3a7c60014a187fe577}{}\label{class_wi_fi_stream_a238960bf0f7a3e3a7c60014a187fe577}
+
+
+Definition at line 214 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References connect\+\_\+client().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_wi_fi_stream_a238960bf0f7a3e3a7c60014a187fe577_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!stop@{stop}}
+\index{stop@{stop}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{stop()=0}{stop()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Wi\+Fi\+Stream\+::stop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\hypertarget{class_wi_fi_stream_a9438b7e07eae9f8a42af9060e7b330c7}{}\label{class_wi_fi_stream_a9438b7e07eae9f8a42af9060e7b330c7}
+close T\+CP client connection 
+
+Implemented in \hyperlink{class_wi_fi_server_stream_a5c70b0545e4150f64ddfe26aeb48a436}{Wi\+Fi\+Server\+Stream}, and \hyperlink{class_wi_fi_client_stream_ac81b72c8c61f10a5f950d9deabc7ffeb}{Wi\+Fi\+Client\+Stream}.
+
+
+
+Referenced by get\+Local\+I\+P().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_wi_fi_stream_a9438b7e07eae9f8a42af9060e7b330c7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!write@{write}}
+\index{write@{write}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{write(uint8\+\_\+t byte)}{write(uint8\_t byte)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Wi\+Fi\+Stream\+::write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{byte}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_wi_fi_stream_a0a4dba3370af02570ef0d3429f1a6df2}{}\label{class_wi_fi_stream_a0a4dba3370af02570ef0d3429f1a6df2}
+
+
+Definition at line 219 of file Wi\+Fi\+Stream.\+h.
+
+
+
+References connect\+\_\+client().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{class_wi_fi_stream_a0a4dba3370af02570ef0d3429f1a6df2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+client@{\+\_\+client}}
+\index{\+\_\+client@{\+\_\+client}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+client}{\_client}}]{\setlength{\rightskip}{0pt plus 5cm}Wi\+Fi\+Client Wi\+Fi\+Stream\+::\+\_\+client\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_a260e92c25849c88a0d370672eaf390e7}{}\label{class_wi_fi_stream_a260e92c25849c88a0d370672eaf390e7}
+
+
+Definition at line 38 of file Wi\+Fi\+Stream.\+h.
+
+
+
+Referenced by Wi\+Fi\+Server\+Stream\+::connect\+\_\+client(), Wi\+Fi\+Client\+Stream\+::connect\+\_\+client(), Wi\+Fi\+Client\+Stream\+::stop(), and Wi\+Fi\+Server\+Stream\+::stop().
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+connected@{\+\_\+connected}}
+\index{\+\_\+connected@{\+\_\+connected}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+connected}{\_connected}}]{\setlength{\rightskip}{0pt plus 5cm}bool Wi\+Fi\+Stream\+::\+\_\+connected = false\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_abe0341617945c15f2a37d34d7be7e72c}{}\label{class_wi_fi_stream_abe0341617945c15f2a37d34d7be7e72c}
+
+
+Definition at line 39 of file Wi\+Fi\+Stream.\+h.
+
+
+
+Referenced by Wi\+Fi\+Server\+Stream\+::connect\+\_\+client(), Wi\+Fi\+Client\+Stream\+::connect\+\_\+client(), Wi\+Fi\+Client\+Stream\+::stop(), and Wi\+Fi\+Server\+Stream\+::stop().
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+current\+Host\+Connection\+Callback@{\+\_\+current\+Host\+Connection\+Callback}}
+\index{\+\_\+current\+Host\+Connection\+Callback@{\+\_\+current\+Host\+Connection\+Callback}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+current\+Host\+Connection\+Callback}{\_currentHostConnectionCallback}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf host\+Connection\+Callback\+Function} Wi\+Fi\+Stream\+::\+\_\+current\+Host\+Connection\+Callback\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_aa5e5f3cc7bf2e91bf5ee9793fe6a1335}{}\label{class_wi_fi_stream_aa5e5f3cc7bf2e91bf5ee9793fe6a1335}
+
+
+Definition at line 40 of file Wi\+Fi\+Stream.\+h.
+
+
+
+Referenced by Wi\+Fi\+Server\+Stream\+::connect\+\_\+client(), Wi\+Fi\+Client\+Stream\+::connect\+\_\+client(), Wi\+Fi\+Client\+Stream\+::stop(), and Wi\+Fi\+Server\+Stream\+::stop().
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+gateway@{\+\_\+gateway}}
+\index{\+\_\+gateway@{\+\_\+gateway}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+gateway}{\_gateway}}]{\setlength{\rightskip}{0pt plus 5cm}I\+P\+Address Wi\+Fi\+Stream\+::\+\_\+gateway\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_aee2b9bf291669692faf0c9d52c8dca1d}{}\label{class_wi_fi_stream_aee2b9bf291669692faf0c9d52c8dca1d}
+
+
+Definition at line 45 of file Wi\+Fi\+Stream.\+h.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+key@{\+\_\+key}}
+\index{\+\_\+key@{\+\_\+key}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+key}{\_key}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wi\+Fi\+Stream\+::\+\_\+key = nullptr\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_ad8d316924c56442f88a85f714a2a6e95}{}\label{class_wi_fi_stream_ad8d316924c56442f88a85f714a2a6e95}
+
+
+Definition at line 49 of file Wi\+Fi\+Stream.\+h.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+key\+\_\+idx@{\+\_\+key\+\_\+idx}}
+\index{\+\_\+key\+\_\+idx@{\+\_\+key\+\_\+idx}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+key\+\_\+idx}{\_key\_idx}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Wi\+Fi\+Stream\+::\+\_\+key\+\_\+idx\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_a78fb4d153bfabad324535db5e495d71b}{}\label{class_wi_fi_stream_a78fb4d153bfabad324535db5e495d71b}
+
+
+Definition at line 48 of file Wi\+Fi\+Stream.\+h.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+local\+\_\+ip@{\+\_\+local\+\_\+ip}}
+\index{\+\_\+local\+\_\+ip@{\+\_\+local\+\_\+ip}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+local\+\_\+ip}{\_local\_ip}}]{\setlength{\rightskip}{0pt plus 5cm}I\+P\+Address Wi\+Fi\+Stream\+::\+\_\+local\+\_\+ip\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_a9e5cfe85f7ff186e597e2eb09a75e742}{}\label{class_wi_fi_stream_a9e5cfe85f7ff186e597e2eb09a75e742}
+
+
+Definition at line 43 of file Wi\+Fi\+Stream.\+h.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+passphrase@{\+\_\+passphrase}}
+\index{\+\_\+passphrase@{\+\_\+passphrase}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+passphrase}{\_passphrase}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ Wi\+Fi\+Stream\+::\+\_\+passphrase = nullptr\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_a56fb4c68bcf7312361a8fad4328826de}{}\label{class_wi_fi_stream_a56fb4c68bcf7312361a8fad4328826de}
+
+
+Definition at line 50 of file Wi\+Fi\+Stream.\+h.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+port@{\+\_\+port}}
+\index{\+\_\+port@{\+\_\+port}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+port}{\_port}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Wi\+Fi\+Stream\+::\+\_\+port\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_aa1137c9058f501876b0967db2baf898a}{}\label{class_wi_fi_stream_aa1137c9058f501876b0967db2baf898a}
+
+
+Definition at line 47 of file Wi\+Fi\+Stream.\+h.
+
+
+
+Referenced by Wi\+Fi\+Client\+Stream\+::connect\+\_\+client(), and Wi\+Fi\+Server\+Stream\+::maintain().
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+remote\+\_\+ip@{\+\_\+remote\+\_\+ip}}
+\index{\+\_\+remote\+\_\+ip@{\+\_\+remote\+\_\+ip}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+remote\+\_\+ip}{\_remote\_ip}}]{\setlength{\rightskip}{0pt plus 5cm}I\+P\+Address Wi\+Fi\+Stream\+::\+\_\+remote\+\_\+ip\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_af81541aec7d6be3be1466caf8bc68820}{}\label{class_wi_fi_stream_af81541aec7d6be3be1466caf8bc68820}
+
+
+Definition at line 46 of file Wi\+Fi\+Stream.\+h.
+
+
+
+Referenced by Wi\+Fi\+Client\+Stream\+::connect\+\_\+client().
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+ssid@{\+\_\+ssid}}
+\index{\+\_\+ssid@{\+\_\+ssid}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+ssid}{\_ssid}}]{\setlength{\rightskip}{0pt plus 5cm}char$\ast$ Wi\+Fi\+Stream\+::\+\_\+ssid = nullptr\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_a428e3d50bc45a3f2de02d7edc7d9509d}{}\label{class_wi_fi_stream_a428e3d50bc45a3f2de02d7edc7d9509d}
+
+
+Definition at line 51 of file Wi\+Fi\+Stream.\+h.
+
+\index{Wi\+Fi\+Stream@{Wi\+Fi\+Stream}!\+\_\+subnet@{\+\_\+subnet}}
+\index{\+\_\+subnet@{\+\_\+subnet}!Wi\+Fi\+Stream@{Wi\+Fi\+Stream}}
+\subsubsection[{\texorpdfstring{\+\_\+subnet}{\_subnet}}]{\setlength{\rightskip}{0pt plus 5cm}I\+P\+Address Wi\+Fi\+Stream\+::\+\_\+subnet\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_wi_fi_stream_aa37dbf267daa7afa939183cd77bb5ee7}{}\label{class_wi_fi_stream_aa37dbf267daa7afa939183cd77bb5ee7}
+
+
+Definition at line 44 of file Wi\+Fi\+Stream.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Firmata/utility/\hyperlink{_wi_fi_stream_8h}{Wi\+Fi\+Stream.\+h}\end{DoxyCompactItemize}

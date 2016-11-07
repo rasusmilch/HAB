@@ -1,0 +1,5 @@
+<map id="PID::PID" name="PID::PID">
+<area shape="rect" id="node2" href="$class_p_i_d.html#a66df966f739e19482aaba38cf9308c4e" title="PID::SetControllerDirection" alt="" coords="121,5,296,32"/>
+<area shape="rect" id="node3" href="$class_p_i_d.html#a5645914427bd740b12faa97cc25a8414" title="PID::SetOutputLimits" alt="" coords="140,56,277,83"/>
+<area shape="rect" id="node4" href="$class_p_i_d.html#a848bb1bbeabd59d38c9c955958e3e798" title="PID::SetTunings" alt="" coords="155,107,263,133"/>
+</map>

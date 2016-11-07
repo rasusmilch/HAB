@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_495c5baa00d25a4b8da329ecd94d8e4d" kind="dir">
+    <compoundname>Weather_Balloon</compoundname>
+    <innerdir refid="dir_1370fe77973c3b1b9016b5ebbb1f36c2">Weather_Balloon/library</innerdir>
+    <innerfile refid="_e_e_p_r_o_m__anything_8h">EEPROM_anything.h</innerfile>
+    <innerfile refid="_weather___balloon_8cpp">Weather_Balloon.cpp</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/"/>
+  </compounddef>
+</doxygen>

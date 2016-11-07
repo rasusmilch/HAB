@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_m_s5611" kind="class" language="C++" prot="public">
+    <compoundname>MS5611</compoundname>
+    <basecompoundref refid="class_m_s5xxx" prot="public" virt="non-virtual">MS5xxx</basecompoundref>
+    <includes refid="_m_s5611_8h" local="no">MS5611.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_s5611_1a48fcc0f37a1c9edcb510811f970b767b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MS5611::MS5611</definition>
+        <argsstring>(TwoWire *aWire)</argsstring>
+        <name>MS5611</name>
+        <param>
+          <type>TwoWire *</type>
+          <declname>aWire</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.h" line="31" column="1" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.cpp" bodystart="24" bodyend="26"/>
+        <references refid="_m_s5xxx_8h_1a905ffdc40c05cd1d52f2c7a1ac2eed28" compoundref="_m_s5xxx_8h" startline="30">I2C_MS5611</references>
+        <references refid="class_m_s5xxx_1a6c3d564fe39d14dfa8804fa1600077d7" compoundref="_m_s5xxx_8cpp" startline="28" endline="30">MS5xxx::setI2Caddr</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_s5611_1a59c247e1180a8c4d62a6dcbe49f22b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void MS5611::Readout</definition>
+        <argsstring>()</argsstring>
+        <name>Readout</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.h" line="32" column="1" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.cpp" bodystart="28" bodyend="61"/>
+        <references refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" compoundref="_m_s5xxx_8h" startline="48">MS5xxx::C</references>
+        <references refid="_m_s5xxx_8h_1a7cbabd13f476ab120d0c68ad6a66d079" compoundref="_m_s5xxx_8h" startline="42">MS5xxx_CMD_ADC_4096</references>
+        <references refid="_m_s5xxx_8h_1adb410500d0de8950dc7f9f7803f3559a" compoundref="_m_s5xxx_8h" startline="36">MS5xxx_CMD_ADC_D1</references>
+        <references refid="_m_s5xxx_8h_1a1db9bb6ea291989242813f646e5c600f" compoundref="_m_s5xxx_8h" startline="37">MS5xxx_CMD_ADC_D2</references>
+        <references refid="class_m_s5xxx_1a5bf2b4f5b63d8acd877cc61346587e6a" compoundref="_m_s5xxx_8h" startline="49">MS5xxx::P</references>
+        <references refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" compoundref="_m_s5xxx_8cpp" startline="116" endline="146">MS5xxx::read_adc</references>
+        <references refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" compoundref="_m_s5xxx_8h" startline="50">MS5xxx::TEMP</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="351">
+        <label>MS5xxx</label>
+        <link refid="class_m_s5xxx"/>
+      </node>
+      <node id="350">
+        <label>MS5611</label>
+        <link refid="class_m_s5611"/>
+        <childnode refid="351" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="353">
+        <label>MS5xxx</label>
+        <link refid="class_m_s5xxx"/>
+      </node>
+      <node id="352">
+        <label>MS5611</label>
+        <link refid="class_m_s5611"/>
+        <childnode refid="353" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.h" line="28" column="1" bodyfile="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.h" bodystart="27" bodyend="33"/>
+    <listofallmembers>
+      <member refid="class_m_s5xxx_1aa92f0beac7fdd14803aea7564f760980" prot="protected" virt="non-virtual"><scope>MS5611</scope><name>_Wire</name></member>
+      <member refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" prot="protected" virt="non-virtual"><scope>MS5611</scope><name>C</name></member>
+      <member refid="class_m_s5xxx_1a2789efaa473b6bd09fa5d68d0cd0b838" prot="public" virt="non-virtual"><scope>MS5611</scope><name>Calc_CRC4</name></member>
+      <member refid="class_m_s5xxx_1a0ac88722b71ab3d82a9d8888d92fe37d" prot="public" virt="non-virtual"><scope>MS5611</scope><name>connect</name></member>
+      <member refid="class_m_s5xxx_1ab302490c7aeb6cf7ce0f7086f33481cf" prot="public" virt="non-virtual"><scope>MS5611</scope><name>CRCcodeTest</name></member>
+      <member refid="class_m_s5xxx_1aa76127405d9f2ee85eddd92afdb57892" prot="public" virt="non-virtual"><scope>MS5611</scope><name>GetPres</name></member>
+      <member refid="class_m_s5xxx_1ac19e5298f6d3f41c7d0edce1e369c36a" prot="public" virt="non-virtual"><scope>MS5611</scope><name>GetTemp</name></member>
+      <member refid="class_m_s5xxx_1a66741674bcf2bda11f5645b63797a279" prot="protected" virt="non-virtual"><scope>MS5611</scope><name>i2caddr</name></member>
+      <member refid="class_m_s5611_1a48fcc0f37a1c9edcb510811f970b767b" prot="public" virt="non-virtual"><scope>MS5611</scope><name>MS5611</name></member>
+      <member refid="class_m_s5xxx_1a6ed6b66a0c811a9a74f6cdfdfd77e5a9" prot="public" virt="non-virtual"><scope>MS5611</scope><name>MS5xxx</name></member>
+      <member refid="class_m_s5xxx_1a5bf2b4f5b63d8acd877cc61346587e6a" prot="protected" virt="non-virtual"><scope>MS5611</scope><name>P</name></member>
+      <member refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" prot="protected" virt="non-virtual"><scope>MS5611</scope><name>read_adc</name></member>
+      <member refid="class_m_s5xxx_1a94a8aaf538936a871b1753d76ebe0b62" prot="public" virt="non-virtual"><scope>MS5611</scope><name>Read_C</name></member>
+      <member refid="class_m_s5xxx_1ab931e8cbdfb40384f07ca95139423853" prot="public" virt="non-virtual"><scope>MS5611</scope><name>Read_CRC4</name></member>
+      <member refid="class_m_s5611_1a59c247e1180a8c4d62a6dcbe49f22b71" prot="public" virt="virtual"><scope>MS5611</scope><name>Readout</name></member>
+      <member refid="class_m_s5xxx_1a654f0608616be8c4b13ec9850caaead0" prot="public" virt="non-virtual"><scope>MS5611</scope><name>ReadProm</name></member>
+      <member refid="class_m_s5xxx_1a8c77c76df98347ebf0bfcafd68825552" prot="protected" virt="non-virtual"><scope>MS5611</scope><name>send_cmd</name></member>
+      <member refid="class_m_s5xxx_1a6c3d564fe39d14dfa8804fa1600077d7" prot="public" virt="non-virtual"><scope>MS5611</scope><name>setI2Caddr</name></member>
+      <member refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" prot="protected" virt="non-virtual"><scope>MS5611</scope><name>TEMP</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,254 @@
+\hypertarget{class_adafruit___s_h_t31}{}\section{Adafruit\+\_\+\+S\+H\+T31 Class Reference}
+\label{class_adafruit___s_h_t31}\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+
+
+{\ttfamily \#include $<$Adafruit\+\_\+\+S\+H\+T31.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_adafruit___s_h_t31_a3c675ce344f1dd28b04764de3d7b5104}{Adafruit\+\_\+\+S\+H\+T31} ()
+\item 
+boolean \hyperlink{class_adafruit___s_h_t31_a104eb2dfd27a732420e1fc3755516690}{begin} (uint8\+\_\+t i2caddr=\hyperlink{_adafruit___s_h_t31_8h_a126bb81a04ac54c61287dd2b106bbfe2}{S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+DR})
+\item 
+float \hyperlink{class_adafruit___s_h_t31_a3b518218705509eb0ab35050bf79f00a}{read\+Temperature} (void)
+\item 
+float \hyperlink{class_adafruit___s_h_t31_a2b522bec65225d5c2aadfccd31bb91e0}{read\+Humidity} (void)
+\item 
+uint16\+\_\+t \hyperlink{class_adafruit___s_h_t31_ae41f7910027c9a39afdb11aef45742ab}{read\+Status} (void)
+\item 
+void \hyperlink{class_adafruit___s_h_t31_a4cfa42c7211e1c5c3de411f3b099c827}{reset} (void)
+\item 
+void \hyperlink{class_adafruit___s_h_t31_a96d0021ed52302e3a47fd2eaa6c1282f}{heater} (boolean)
+\item 
+uint8\+\_\+t \hyperlink{class_adafruit___s_h_t31_a9fe74b3c5be1794ec00a961d91227716}{crc8} (const uint8\+\_\+t $\ast$data, int len)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 37 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}!Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}!Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+\subsubsection[{\texorpdfstring{Adafruit\+\_\+\+S\+H\+T31()}{Adafruit\_SHT31()}}]{\setlength{\rightskip}{0pt plus 5cm}Adafruit\+\_\+\+S\+H\+T31\+::\+Adafruit\+\_\+\+S\+H\+T31 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_h_t31_a3c675ce344f1dd28b04764de3d7b5104}{}\label{class_adafruit___s_h_t31_a3c675ce344f1dd28b04764de3d7b5104}
+
+
+Definition at line 20 of file Adafruit\+\_\+\+S\+H\+T31.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}!begin@{begin}}
+\index{begin@{begin}!Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+\subsubsection[{\texorpdfstring{begin(uint8\+\_\+t i2caddr=\+S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+D\+R)}{begin(uint8\_t i2caddr=SHT31\_DEFAULT\_ADDR)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Adafruit\+\_\+\+S\+H\+T31\+::begin (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{i2caddr = {\ttfamily {\bf S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+DR}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_h_t31_a104eb2dfd27a732420e1fc3755516690}{}\label{class_adafruit___s_h_t31_a104eb2dfd27a732420e1fc3755516690}
+
+
+Definition at line 24 of file Adafruit\+\_\+\+S\+H\+T31.\+cpp.
+
+
+
+References reset(), and Wire.
+
+
+
+Referenced by configure\+\_\+sht31().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=333pt]{class_adafruit___s_h_t31_a104eb2dfd27a732420e1fc3755516690_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_h_t31_a104eb2dfd27a732420e1fc3755516690_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}!crc8@{crc8}}
+\index{crc8@{crc8}!Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+\subsubsection[{\texorpdfstring{crc8(const uint8\+\_\+t $\ast$data, int len)}{crc8(const uint8\_t *data, int len)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Adafruit\+\_\+\+S\+H\+T31\+::crc8 (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{data, }
+\item[{int}]{len}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_h_t31_a9fe74b3c5be1794ec00a961d91227716}{}\label{class_adafruit___s_h_t31_a9fe74b3c5be1794ec00a961d91227716}
+
+
+Definition at line 119 of file Adafruit\+\_\+\+S\+H\+T31.\+cpp.
+
+
+
+References i.
+
+
+
+Referenced by read\+Humidity().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_h_t31_a9fe74b3c5be1794ec00a961d91227716_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}!heater@{heater}}
+\index{heater@{heater}!Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+\subsubsection[{\texorpdfstring{heater(boolean)}{heater(boolean)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+S\+H\+T31\+::heater (
+\begin{DoxyParamCaption}
+\item[{boolean}]{h}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_h_t31_a96d0021ed52302e3a47fd2eaa6c1282f}{}\label{class_adafruit___s_h_t31_a96d0021ed52302e3a47fd2eaa6c1282f}
+
+
+Definition at line 47 of file Adafruit\+\_\+\+S\+H\+T31.\+cpp.
+
+
+
+References S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+D\+IS, and S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+EN.
+
+\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}!read\+Humidity@{read\+Humidity}}
+\index{read\+Humidity@{read\+Humidity}!Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+\subsubsection[{\texorpdfstring{read\+Humidity(void)}{readHumidity(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Adafruit\+\_\+\+S\+H\+T31\+::read\+Humidity (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_h_t31_a2b522bec65225d5c2aadfccd31bb91e0}{}\label{class_adafruit___s_h_t31_a2b522bec65225d5c2aadfccd31bb91e0}
+
+
+Definition at line 62 of file Adafruit\+\_\+\+S\+H\+T31.\+cpp.
+
+
+
+References crc8(), i, S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+EP, and Wire.
+
+
+
+Referenced by read\+Sensors().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_h_t31_a2b522bec65225d5c2aadfccd31bb91e0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_h_t31_a2b522bec65225d5c2aadfccd31bb91e0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}!read\+Status@{read\+Status}}
+\index{read\+Status@{read\+Status}!Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+\subsubsection[{\texorpdfstring{read\+Status(void)}{readStatus(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Adafruit\+\_\+\+S\+H\+T31\+::read\+Status (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_h_t31_ae41f7910027c9a39afdb11aef45742ab}{}\label{class_adafruit___s_h_t31_ae41f7910027c9a39afdb11aef45742ab}
+
+
+Definition at line 32 of file Adafruit\+\_\+\+S\+H\+T31.\+cpp.
+
+
+
+References S\+H\+T31\+\_\+\+R\+E\+A\+D\+S\+T\+A\+T\+US, and Wire.
+
+\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}!read\+Temperature@{read\+Temperature}}
+\index{read\+Temperature@{read\+Temperature}!Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+\subsubsection[{\texorpdfstring{read\+Temperature(void)}{readTemperature(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float Adafruit\+\_\+\+S\+H\+T31\+::read\+Temperature (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_h_t31_a3b518218705509eb0ab35050bf79f00a}{}\label{class_adafruit___s_h_t31_a3b518218705509eb0ab35050bf79f00a}
+
+
+Definition at line 55 of file Adafruit\+\_\+\+S\+H\+T31.\+cpp.
+
+
+
+Referenced by read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_h_t31_a3b518218705509eb0ab35050bf79f00a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}!reset@{reset}}
+\index{reset@{reset}!Adafruit\+\_\+\+S\+H\+T31@{Adafruit\+\_\+\+S\+H\+T31}}
+\subsubsection[{\texorpdfstring{reset(void)}{reset(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+S\+H\+T31\+::reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_h_t31_a4cfa42c7211e1c5c3de411f3b099c827}{}\label{class_adafruit___s_h_t31_a4cfa42c7211e1c5c3de411f3b099c827}
+
+
+Definition at line 42 of file Adafruit\+\_\+\+S\+H\+T31.\+cpp.
+
+
+
+References S\+H\+T31\+\_\+\+S\+O\+F\+T\+R\+E\+S\+ET.
+
+
+
+Referenced by begin().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___s_h_t31_a4cfa42c7211e1c5c3de411f3b099c827_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+S\+H\+T31-\/master/\hyperlink{_adafruit___s_h_t31_8h}{Adafruit\+\_\+\+S\+H\+T31.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+S\+H\+T31-\/master/\hyperlink{_adafruit___s_h_t31_8cpp}{Adafruit\+\_\+\+S\+H\+T31.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_51501d8215cb2b8ae547905c43e36556" kind="dir">
+    <compoundname>Weather_Balloon/library/RTCZero/src</compoundname>
+    <innerfile refid="_r_t_c_zero_8cpp">RTCZero.cpp</innerfile>
+    <innerfile refid="_r_t_c_zero_8h">RTCZero.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/RTCZero/src/"/>
+  </compounddef>
+</doxygen>

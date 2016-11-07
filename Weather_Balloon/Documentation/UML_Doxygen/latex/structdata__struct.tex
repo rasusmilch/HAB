@@ -1,0 +1,546 @@
+\hypertarget{structdata__struct}{}\section{data\+\_\+struct Struct Reference}
+\label{structdata__struct}\index{data\+\_\+struct@{data\+\_\+struct}}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>bool \hyperlink{structdata__struct_a3ebcb5ba29d9ce30ce02d8bf5fa0f997}{LSM9DS1} = false\\
+\>bool \hyperlink{structdata__struct_aa96945729f4df7683668e5ec1de3f669}{SHT31} = false\\
+\>bool \hyperlink{structdata__struct_a5b810c790b9a5d830f15e36045a8d788}{MS5607} = false\\
+\>bool \hyperlink{structdata__struct_a7b1c06118cc557e0b428514c14246726}{UV} = false\\
+\>bool \hyperlink{structdata__struct_abe741a20e8c5e6695ae32937f878a83b}{DS18B20} = false\\
+\>bool \hyperlink{structdata__struct_a660f4a6dd385f71ff63ff0d4319945d9}{TSL2561} = false\\
+\>bool \hyperlink{structdata__struct_a7c48afe86be1096d0e802ab1c9cd4799}{GPS} = false\\
+\} \hyperlink{structdata__struct_a6ca366a5fcb890803160e5ab98344bd1}{found}\\
+
+\end{tabbing}\item 
+bool \hyperlink{structdata__struct_acebeac8bcb741e46517b79c4b8bb8ed5}{launched} = false
+\item 
+bool \hyperlink{structdata__struct_a6882559eb75dfd48ce00d14c2a82121c}{alarm} = false
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float \hyperlink{structdata__struct_ab309ac348ad5259d5c611df96aebfdbe}{main} = -\/1000\\
+\>float \hyperlink{structdata__struct_a63db4d4b848a51e42c86e998e7d75e58}{internal} = -\/1000\\
+\>float \hyperlink{structdata__struct_a3cf72cbfaf7080218fa994af2867e13c}{external} = -\/1000\\
+\>float \hyperlink{structdata__struct_a401fd29b3d3b9c55d18a4c32da1c282e}{gps} = -\/1000\\
+\>float \hyperlink{structdata__struct_a905fd80af00a6ced0390852a03830f56}{tsl2561} = -\/1000\\
+\>float \hyperlink{structdata__struct_a11986539479e2316b0d844a0f6245ab4}{sht31} = -\/1000\\
+\>float \hyperlink{structdata__struct_a0a895e3ba629b91b7b2de586eb442f60}{uv} = -\/1000\\
+\>float \hyperlink{structdata__struct_af1037aded922067ccf1f8317eb76a247}{ms5607} = -\/1000\\
+\>float \hyperlink{structdata__struct_a30f45bc3cbb8da0e26bd13fe3e243759}{custom} = -\/1000\\
+\>float \hyperlink{structdata__struct_ad95ff6e00ca03be5a74e37d831e5530f}{clock} = -\/1000\\
+\} \hyperlink{structdata__struct_ab2ecd8eb6a960f8c8ee0faa0812d0db3}{temp}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint8\_t \hyperlink{structdata__struct_adfb6db8ec836ac9197fc9486dbb1ab71}{main}\\
+\>uint8\_t \hyperlink{structdata__struct_a7624f81e27eedfa09a247bd710e3ac9e}{gps}\\
+\>uint8\_t \hyperlink{structdata__struct_a90bedda6c48b7682713ecf7cf7c5c2ca}{tsl2561}\\
+\>uint8\_t \hyperlink{structdata__struct_af5a30f8e65d752c36b2f36dd5a686f27}{sht31}\\
+\>uint8\_t \hyperlink{structdata__struct_a4013781a3dac77a6ae2f20ff8a869bdb}{uv}\\
+\} \hyperlink{structdata__struct_a707f8d5848359c1b2e948b24a4a22ba5}{pwm}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float \hyperlink{structdata__struct_a629b9280db11d568e378b0cb9330bee7}{humidity} = 0\\
+\} \hyperlink{structdata__struct_a97c2e1e9042cd4bb3125779e96e1852a}{sht31}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float \hyperlink{structdata__struct_aff54c50179e77b9e77f28244e1b6c7ed}{voltage}\\
+\>float \hyperlink{structdata__struct_a3accfbed388d6da43a648bd29a79c7fb}{soc} = 0\\
+\} \hyperlink{structdata__struct_ab563098c74eb5e8c7b3deafc91c30908}{battery}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>double \hyperlink{structdata__struct_a5d0a52f39801cac8ea17a1a57421bee6}{pressure} = 0\\
+\} \hyperlink{structdata__struct_a66a25e7f8b144d70d91ad0a9f7703cb1}{ms5607}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint16\_t \hyperlink{structdata__struct_aa15055b51a5113db435edf1103c4c41a}{ir}\\
+\>uint16\_t \hyperlink{structdata__struct_a1a2ad01e2e7999b77a63d839193b84a1}{broadband} = 0\\
+\>uint32\_t \hyperlink{structdata__struct_ae4d58436614c3a53290c15fb4b1c6a54}{lux} = 0\\
+\} \hyperlink{structdata__struct_ad6c6ac99773f308db955031c4ac87d72}{tsl}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float \hyperlink{structdata__struct_aafb6ee9f998bdf479137e058e54c8605}{x}\\
+\>float \hyperlink{structdata__struct_a907e433dba309a2e973da7f346b8d619}{y}\\
+\>float \hyperlink{structdata__struct_a99537ca31fb73ac23386af3748921b53}{z} = 0\\
+\} \hyperlink{structdata__struct_a3fca2ed772020080d3e4c2311a240933}{accel}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float \hyperlink{structdata__struct_aafb6ee9f998bdf479137e058e54c8605}{x}\\
+\>float \hyperlink{structdata__struct_a907e433dba309a2e973da7f346b8d619}{y}\\
+\>float \hyperlink{structdata__struct_a99537ca31fb73ac23386af3748921b53}{z} = 0\\
+\} \hyperlink{structdata__struct_a30a07c1e9b8dbcf4f0bffcc7bc5794fe}{mag}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>float \hyperlink{structdata__struct_aafb6ee9f998bdf479137e058e54c8605}{x}\\
+\>float \hyperlink{structdata__struct_a907e433dba309a2e973da7f346b8d619}{y}\\
+\>float \hyperlink{structdata__struct_a99537ca31fb73ac23386af3748921b53}{z} = 0\\
+\} \hyperlink{structdata__struct_abda148daacfe93267bf35e5a7ab18c23}{gyro}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>uint16\_t \hyperlink{structdata__struct_a11ce2a30e7dc48b21b7f06b4bb6e4ed7}{x}\\
+\>uint16\_t \hyperlink{structdata__struct_a7555c56e9ddf0a0f0f9a29410f221dec}{y}\\
+\>uint16\_t \hyperlink{structdata__struct_a57bb6a98c0a24ff59ef2decf0d51b611}{z} = 0\\
+\} \hyperlink{structdata__struct_a27a2fc394140d1d68724703f6a50a23c}{geiger}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>double \hyperlink{structdata__struct_a497f7c781a63c489b7fbd8ca4282a055}{lat}\\
+\>double \hyperlink{structdata__struct_a6655cd46a79571a9fc4c3d4c6ece133c}{lng} = 0\\
+\>double \hyperlink{structdata__struct_ab43395cbff83af7b8edfc812f8727b37}{altitude} = 0\\
+\>double \hyperlink{structdata__struct_a2700ca8b5bcfe642e6fdfb2024037636}{speed}\\
+\>double \hyperlink{structdata__struct_a1735175f3eee0249be96517fe2d013fb}{course} = 0\\
+\>uint16\_t \hyperlink{structdata__struct_ad4345066983e4b5b6c2e81287aff545f}{hdop} = 0\\
+\>uint16\_t \hyperlink{structdata__struct_abf304434a69cbc7ddccf5445ac40116b}{vdop} = 0\\
+\>uint8\_t \hyperlink{structdata__struct_a62641633667a56580b5cfed6938a8c0c}{sats} = 0\\
+\>uint32\_t \hyperlink{structdata__struct_ad90875e8758f0f73932943d135e9b831}{date} = 0\\
+\>uint32\_t \hyperlink{structdata__struct_ab0d5edba92538e9baf384967459ec221}{time} = 0\\
+\} \hyperlink{structdata__struct_adc9fc98fd00ac000fde2f2a4e7c2094d}{gps}\\
+
+\end{tabbing}\item 
+uint8\+\_\+t \hyperlink{structdata__struct_a4b4c5b81a3132706b1a85c0cd46164a0}{heater\+\_\+max} = 255
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+\>bool \hyperlink{structdata__struct_a3ebcb5ba29d9ce30ce02d8bf5fa0f997}{LSM9DS1} = false\\
+\>bool \hyperlink{structdata__struct_aa96945729f4df7683668e5ec1de3f669}{SHT31} = false\\
+\>bool \hyperlink{structdata__struct_a5b810c790b9a5d830f15e36045a8d788}{MS5607} = false\\
+\>bool \hyperlink{structdata__struct_a7b1c06118cc557e0b428514c14246726}{UV} = true\\
+\>bool \hyperlink{structdata__struct_abe741a20e8c5e6695ae32937f878a83b}{DS18B20} = false\\
+\>bool \hyperlink{structdata__struct_a660f4a6dd385f71ff63ff0d4319945d9}{TSL2561} = false\\
+\>bool \hyperlink{structdata__struct_a7c48afe86be1096d0e802ab1c9cd4799}{GPS} = true\\
+\} \hyperlink{structdata__struct_a806a54c6a6125ca7b0d2c5d90bb6acec}{enabled}\\
+
+\end{tabbing}\item 
+uint32\+\_\+t \hyperlink{structdata__struct_a37f7a481de32f77f428f03c07d60090e}{unix\+\_\+time}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 158 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+\subsection{Member Data Documentation}
+\index{data\+\_\+struct@{data\+\_\+struct}!accel@{accel}}
+\index{accel@{accel}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{accel}{accel}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::accel}\hypertarget{structdata__struct_a3fca2ed772020080d3e4c2311a240933}{}\label{structdata__struct_a3fca2ed772020080d3e4c2311a240933}
+\index{data\+\_\+struct@{data\+\_\+struct}!alarm@{alarm}}
+\index{alarm@{alarm}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{alarm}{alarm}}]{\setlength{\rightskip}{0pt plus 5cm}bool data\+\_\+struct\+::alarm = false}\hypertarget{structdata__struct_a6882559eb75dfd48ce00d14c2a82121c}{}\label{structdata__struct_a6882559eb75dfd48ce00d14c2a82121c}
+
+
+Definition at line 172 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!altitude@{altitude}}
+\index{altitude@{altitude}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{altitude}{altitude}}]{\setlength{\rightskip}{0pt plus 5cm}double data\+\_\+struct\+::altitude = 0}\hypertarget{structdata__struct_ab43395cbff83af7b8edfc812f8727b37}{}\label{structdata__struct_ab43395cbff83af7b8edfc812f8727b37}
+
+
+Definition at line 249 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!battery@{battery}}
+\index{battery@{battery}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{battery}{battery}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::battery}\hypertarget{structdata__struct_ab563098c74eb5e8c7b3deafc91c30908}{}\label{structdata__struct_ab563098c74eb5e8c7b3deafc91c30908}
+\index{data\+\_\+struct@{data\+\_\+struct}!broadband@{broadband}}
+\index{broadband@{broadband}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{broadband}{broadband}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t data\+\_\+struct\+::broadband = 0}\hypertarget{structdata__struct_a1a2ad01e2e7999b77a63d839193b84a1}{}\label{structdata__struct_a1a2ad01e2e7999b77a63d839193b84a1}
+
+
+Definition at line 221 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!clock@{clock}}
+\index{clock@{clock}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{clock}{clock}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::clock = -\/1000}\hypertarget{structdata__struct_ad95ff6e00ca03be5a74e37d831e5530f}{}\label{structdata__struct_ad95ff6e00ca03be5a74e37d831e5530f}
+
+
+Definition at line 192 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!course@{course}}
+\index{course@{course}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{course}{course}}]{\setlength{\rightskip}{0pt plus 5cm}double data\+\_\+struct\+::course = 0}\hypertarget{structdata__struct_a1735175f3eee0249be96517fe2d013fb}{}\label{structdata__struct_a1735175f3eee0249be96517fe2d013fb}
+
+
+Definition at line 250 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!custom@{custom}}
+\index{custom@{custom}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{custom}{custom}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::custom = -\/1000}\hypertarget{structdata__struct_a30f45bc3cbb8da0e26bd13fe3e243759}{}\label{structdata__struct_a30f45bc3cbb8da0e26bd13fe3e243759}
+
+
+Definition at line 191 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!date@{date}}
+\index{date@{date}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{date}{date}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t data\+\_\+struct\+::date = 0}\hypertarget{structdata__struct_ad90875e8758f0f73932943d135e9b831}{}\label{structdata__struct_ad90875e8758f0f73932943d135e9b831}
+
+
+Definition at line 264 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!D\+S18\+B20@{D\+S18\+B20}}
+\index{D\+S18\+B20@{D\+S18\+B20}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{D\+S18\+B20}{DS18B20}}]{\setlength{\rightskip}{0pt plus 5cm}bool data\+\_\+struct\+::\+D\+S18\+B20 = false}\hypertarget{structdata__struct_abe741a20e8c5e6695ae32937f878a83b}{}\label{structdata__struct_abe741a20e8c5e6695ae32937f878a83b}
+
+
+Definition at line 165 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!enabled@{enabled}}
+\index{enabled@{enabled}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{enabled}{enabled}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::enabled}\hypertarget{structdata__struct_a806a54c6a6125ca7b0d2c5d90bb6acec}{}\label{structdata__struct_a806a54c6a6125ca7b0d2c5d90bb6acec}
+\index{data\+\_\+struct@{data\+\_\+struct}!external@{external}}
+\index{external@{external}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{external}{external}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::external = -\/1000}\hypertarget{structdata__struct_a3cf72cbfaf7080218fa994af2867e13c}{}\label{structdata__struct_a3cf72cbfaf7080218fa994af2867e13c}
+
+
+Definition at line 185 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!found@{found}}
+\index{found@{found}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{found}{found}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::found}\hypertarget{structdata__struct_a6ca366a5fcb890803160e5ab98344bd1}{}\label{structdata__struct_a6ca366a5fcb890803160e5ab98344bd1}
+\index{data\+\_\+struct@{data\+\_\+struct}!geiger@{geiger}}
+\index{geiger@{geiger}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{geiger}{geiger}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::geiger}\hypertarget{structdata__struct_a27a2fc394140d1d68724703f6a50a23c}{}\label{structdata__struct_a27a2fc394140d1d68724703f6a50a23c}
+\index{data\+\_\+struct@{data\+\_\+struct}!G\+PS@{G\+PS}}
+\index{G\+PS@{G\+PS}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{G\+PS}{GPS}}]{\setlength{\rightskip}{0pt plus 5cm}bool data\+\_\+struct\+::\+G\+PS = false}\hypertarget{structdata__struct_a7c48afe86be1096d0e802ab1c9cd4799}{}\label{structdata__struct_a7c48afe86be1096d0e802ab1c9cd4799}
+
+
+Definition at line 167 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!gps@{gps}}
+\index{gps@{gps}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{gps}{gps}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::gps = -\/1000}\hypertarget{structdata__struct_a401fd29b3d3b9c55d18a4c32da1c282e}{}\label{structdata__struct_a401fd29b3d3b9c55d18a4c32da1c282e}
+
+
+Definition at line 186 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!gps@{gps}}
+\index{gps@{gps}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{gps}{gps}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t data\+\_\+struct\+::gps}\hypertarget{structdata__struct_a7624f81e27eedfa09a247bd710e3ac9e}{}\label{structdata__struct_a7624f81e27eedfa09a247bd710e3ac9e}
+
+
+Definition at line 197 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!gps@{gps}}
+\index{gps@{gps}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{gps}{gps}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::gps}\hypertarget{structdata__struct_adc9fc98fd00ac000fde2f2a4e7c2094d}{}\label{structdata__struct_adc9fc98fd00ac000fde2f2a4e7c2094d}
+\index{data\+\_\+struct@{data\+\_\+struct}!gyro@{gyro}}
+\index{gyro@{gyro}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{gyro}{gyro}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::gyro}\hypertarget{structdata__struct_abda148daacfe93267bf35e5a7ab18c23}{}\label{structdata__struct_abda148daacfe93267bf35e5a7ab18c23}
+\index{data\+\_\+struct@{data\+\_\+struct}!hdop@{hdop}}
+\index{hdop@{hdop}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{hdop}{hdop}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t data\+\_\+struct\+::hdop = 0}\hypertarget{structdata__struct_ad4345066983e4b5b6c2e81287aff545f}{}\label{structdata__struct_ad4345066983e4b5b6c2e81287aff545f}
+
+
+Definition at line 259 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!heater\+\_\+max@{heater\+\_\+max}}
+\index{heater\+\_\+max@{heater\+\_\+max}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{heater\+\_\+max}{heater\_max}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t data\+\_\+struct\+::heater\+\_\+max = 255}\hypertarget{structdata__struct_a4b4c5b81a3132706b1a85c0cd46164a0}{}\label{structdata__struct_a4b4c5b81a3132706b1a85c0cd46164a0}
+
+
+Definition at line 270 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!humidity@{humidity}}
+\index{humidity@{humidity}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{humidity}{humidity}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::humidity = 0}\hypertarget{structdata__struct_a629b9280db11d568e378b0cb9330bee7}{}\label{structdata__struct_a629b9280db11d568e378b0cb9330bee7}
+
+
+Definition at line 202 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!internal@{internal}}
+\index{internal@{internal}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{internal}{internal}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::internal = -\/1000}\hypertarget{structdata__struct_a63db4d4b848a51e42c86e998e7d75e58}{}\label{structdata__struct_a63db4d4b848a51e42c86e998e7d75e58}
+
+
+Definition at line 184 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!ir@{ir}}
+\index{ir@{ir}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{ir}{ir}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t data\+\_\+struct\+::ir}\hypertarget{structdata__struct_aa15055b51a5113db435edf1103c4c41a}{}\label{structdata__struct_aa15055b51a5113db435edf1103c4c41a}
+
+
+Definition at line 221 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!lat@{lat}}
+\index{lat@{lat}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{lat}{lat}}]{\setlength{\rightskip}{0pt plus 5cm}double data\+\_\+struct\+::lat}\hypertarget{structdata__struct_a497f7c781a63c489b7fbd8ca4282a055}{}\label{structdata__struct_a497f7c781a63c489b7fbd8ca4282a055}
+
+
+Definition at line 248 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!launched@{launched}}
+\index{launched@{launched}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{launched}{launched}}]{\setlength{\rightskip}{0pt plus 5cm}bool data\+\_\+struct\+::launched = false}\hypertarget{structdata__struct_acebeac8bcb741e46517b79c4b8bb8ed5}{}\label{structdata__struct_acebeac8bcb741e46517b79c4b8bb8ed5}
+
+
+Definition at line 171 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!lng@{lng}}
+\index{lng@{lng}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{lng}{lng}}]{\setlength{\rightskip}{0pt plus 5cm}double data\+\_\+struct\+::lng = 0}\hypertarget{structdata__struct_a6655cd46a79571a9fc4c3d4c6ece133c}{}\label{structdata__struct_a6655cd46a79571a9fc4c3d4c6ece133c}
+
+
+Definition at line 248 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{L\+S\+M9\+D\+S1}{LSM9DS1}}]{\setlength{\rightskip}{0pt plus 5cm}bool data\+\_\+struct\+::\+L\+S\+M9\+D\+S1 = false}\hypertarget{structdata__struct_a3ebcb5ba29d9ce30ce02d8bf5fa0f997}{}\label{structdata__struct_a3ebcb5ba29d9ce30ce02d8bf5fa0f997}
+
+
+Definition at line 161 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!lux@{lux}}
+\index{lux@{lux}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{lux}{lux}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t data\+\_\+struct\+::lux = 0}\hypertarget{structdata__struct_ae4d58436614c3a53290c15fb4b1c6a54}{}\label{structdata__struct_ae4d58436614c3a53290c15fb4b1c6a54}
+
+
+Definition at line 222 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!mag@{mag}}
+\index{mag@{mag}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{mag}{mag}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::mag}\hypertarget{structdata__struct_a30a07c1e9b8dbcf4f0bffcc7bc5794fe}{}\label{structdata__struct_a30a07c1e9b8dbcf4f0bffcc7bc5794fe}
+\index{data\+\_\+struct@{data\+\_\+struct}!main@{main}}
+\index{main@{main}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{main}{main}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::main = -\/1000}\hypertarget{structdata__struct_ab309ac348ad5259d5c611df96aebfdbe}{}\label{structdata__struct_ab309ac348ad5259d5c611df96aebfdbe}
+
+
+Definition at line 183 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!main@{main}}
+\index{main@{main}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{main}{main}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t data\+\_\+struct\+::main}\hypertarget{structdata__struct_adfb6db8ec836ac9197fc9486dbb1ab71}{}\label{structdata__struct_adfb6db8ec836ac9197fc9486dbb1ab71}
+
+
+Definition at line 197 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!M\+S5607@{M\+S5607}}
+\index{M\+S5607@{M\+S5607}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{M\+S5607}{MS5607}}]{\setlength{\rightskip}{0pt plus 5cm}bool data\+\_\+struct\+::\+M\+S5607 = false}\hypertarget{structdata__struct_a5b810c790b9a5d830f15e36045a8d788}{}\label{structdata__struct_a5b810c790b9a5d830f15e36045a8d788}
+
+
+Definition at line 163 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!ms5607@{ms5607}}
+\index{ms5607@{ms5607}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{ms5607}{ms5607}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::ms5607 = -\/1000}\hypertarget{structdata__struct_af1037aded922067ccf1f8317eb76a247}{}\label{structdata__struct_af1037aded922067ccf1f8317eb76a247}
+
+
+Definition at line 190 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!ms5607@{ms5607}}
+\index{ms5607@{ms5607}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{ms5607}{ms5607}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::ms5607}\hypertarget{structdata__struct_a66a25e7f8b144d70d91ad0a9f7703cb1}{}\label{structdata__struct_a66a25e7f8b144d70d91ad0a9f7703cb1}
+\index{data\+\_\+struct@{data\+\_\+struct}!pressure@{pressure}}
+\index{pressure@{pressure}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{pressure}{pressure}}]{\setlength{\rightskip}{0pt plus 5cm}double data\+\_\+struct\+::pressure = 0}\hypertarget{structdata__struct_a5d0a52f39801cac8ea17a1a57421bee6}{}\label{structdata__struct_a5d0a52f39801cac8ea17a1a57421bee6}
+
+
+Definition at line 216 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!pwm@{pwm}}
+\index{pwm@{pwm}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{pwm}{pwm}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::pwm}\hypertarget{structdata__struct_a707f8d5848359c1b2e948b24a4a22ba5}{}\label{structdata__struct_a707f8d5848359c1b2e948b24a4a22ba5}
+\index{data\+\_\+struct@{data\+\_\+struct}!sats@{sats}}
+\index{sats@{sats}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{sats}{sats}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t data\+\_\+struct\+::sats = 0}\hypertarget{structdata__struct_a62641633667a56580b5cfed6938a8c0c}{}\label{structdata__struct_a62641633667a56580b5cfed6938a8c0c}
+
+
+Definition at line 262 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!S\+H\+T31@{S\+H\+T31}}
+\index{S\+H\+T31@{S\+H\+T31}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{S\+H\+T31}{SHT31}}]{\setlength{\rightskip}{0pt plus 5cm}bool data\+\_\+struct\+::\+S\+H\+T31 = false}\hypertarget{structdata__struct_aa96945729f4df7683668e5ec1de3f669}{}\label{structdata__struct_aa96945729f4df7683668e5ec1de3f669}
+
+
+Definition at line 162 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!sht31@{sht31}}
+\index{sht31@{sht31}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{sht31}{sht31}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::sht31 = -\/1000}\hypertarget{structdata__struct_a11986539479e2316b0d844a0f6245ab4}{}\label{structdata__struct_a11986539479e2316b0d844a0f6245ab4}
+
+
+Definition at line 188 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!sht31@{sht31}}
+\index{sht31@{sht31}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{sht31}{sht31}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t data\+\_\+struct\+::sht31}\hypertarget{structdata__struct_af5a30f8e65d752c36b2f36dd5a686f27}{}\label{structdata__struct_af5a30f8e65d752c36b2f36dd5a686f27}
+
+
+Definition at line 197 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!sht31@{sht31}}
+\index{sht31@{sht31}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{sht31}{sht31}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::sht31}\hypertarget{structdata__struct_a97c2e1e9042cd4bb3125779e96e1852a}{}\label{structdata__struct_a97c2e1e9042cd4bb3125779e96e1852a}
+\index{data\+\_\+struct@{data\+\_\+struct}!soc@{soc}}
+\index{soc@{soc}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{soc}{soc}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::soc = 0}\hypertarget{structdata__struct_a3accfbed388d6da43a648bd29a79c7fb}{}\label{structdata__struct_a3accfbed388d6da43a648bd29a79c7fb}
+
+
+Definition at line 211 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!speed@{speed}}
+\index{speed@{speed}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{speed}{speed}}]{\setlength{\rightskip}{0pt plus 5cm}double data\+\_\+struct\+::speed}\hypertarget{structdata__struct_a2700ca8b5bcfe642e6fdfb2024037636}{}\label{structdata__struct_a2700ca8b5bcfe642e6fdfb2024037636}
+
+
+Definition at line 250 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!temp@{temp}}
+\index{temp@{temp}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{temp}{temp}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::temp}\hypertarget{structdata__struct_ab2ecd8eb6a960f8c8ee0faa0812d0db3}{}\label{structdata__struct_ab2ecd8eb6a960f8c8ee0faa0812d0db3}
+\index{data\+\_\+struct@{data\+\_\+struct}!time@{time}}
+\index{time@{time}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{time}{time}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t data\+\_\+struct\+::time = 0}\hypertarget{structdata__struct_ab0d5edba92538e9baf384967459ec221}{}\label{structdata__struct_ab0d5edba92538e9baf384967459ec221}
+
+
+Definition at line 265 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!tsl@{tsl}}
+\index{tsl@{tsl}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{tsl}{tsl}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   data\+\_\+struct\+::tsl}\hypertarget{structdata__struct_ad6c6ac99773f308db955031c4ac87d72}{}\label{structdata__struct_ad6c6ac99773f308db955031c4ac87d72}
+\index{data\+\_\+struct@{data\+\_\+struct}!T\+S\+L2561@{T\+S\+L2561}}
+\index{T\+S\+L2561@{T\+S\+L2561}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561}{TSL2561}}]{\setlength{\rightskip}{0pt plus 5cm}bool data\+\_\+struct\+::\+T\+S\+L2561 = false}\hypertarget{structdata__struct_a660f4a6dd385f71ff63ff0d4319945d9}{}\label{structdata__struct_a660f4a6dd385f71ff63ff0d4319945d9}
+
+
+Definition at line 166 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!tsl2561@{tsl2561}}
+\index{tsl2561@{tsl2561}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{tsl2561}{tsl2561}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::tsl2561 = -\/1000}\hypertarget{structdata__struct_a905fd80af00a6ced0390852a03830f56}{}\label{structdata__struct_a905fd80af00a6ced0390852a03830f56}
+
+
+Definition at line 187 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!tsl2561@{tsl2561}}
+\index{tsl2561@{tsl2561}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{tsl2561}{tsl2561}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t data\+\_\+struct\+::tsl2561}\hypertarget{structdata__struct_a90bedda6c48b7682713ecf7cf7c5c2ca}{}\label{structdata__struct_a90bedda6c48b7682713ecf7cf7c5c2ca}
+
+
+Definition at line 197 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!unix\+\_\+time@{unix\+\_\+time}}
+\index{unix\+\_\+time@{unix\+\_\+time}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{unix\+\_\+time}{unix\_time}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t data\+\_\+struct\+::unix\+\_\+time}\hypertarget{structdata__struct_a37f7a481de32f77f428f03c07d60090e}{}\label{structdata__struct_a37f7a481de32f77f428f03c07d60090e}
+
+
+Definition at line 284 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!UV@{UV}}
+\index{UV@{UV}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{UV}{UV}}]{\setlength{\rightskip}{0pt plus 5cm}bool data\+\_\+struct\+::\+UV = false}\hypertarget{structdata__struct_a7b1c06118cc557e0b428514c14246726}{}\label{structdata__struct_a7b1c06118cc557e0b428514c14246726}
+
+
+Definition at line 164 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!uv@{uv}}
+\index{uv@{uv}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{uv}{uv}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::uv = -\/1000}\hypertarget{structdata__struct_a0a895e3ba629b91b7b2de586eb442f60}{}\label{structdata__struct_a0a895e3ba629b91b7b2de586eb442f60}
+
+
+Definition at line 189 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!uv@{uv}}
+\index{uv@{uv}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{uv}{uv}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t data\+\_\+struct\+::uv}\hypertarget{structdata__struct_a4013781a3dac77a6ae2f20ff8a869bdb}{}\label{structdata__struct_a4013781a3dac77a6ae2f20ff8a869bdb}
+
+
+Definition at line 197 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!vdop@{vdop}}
+\index{vdop@{vdop}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{vdop}{vdop}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t data\+\_\+struct\+::vdop = 0}\hypertarget{structdata__struct_abf304434a69cbc7ddccf5445ac40116b}{}\label{structdata__struct_abf304434a69cbc7ddccf5445ac40116b}
+
+
+Definition at line 260 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!voltage@{voltage}}
+\index{voltage@{voltage}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{voltage}{voltage}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::voltage}\hypertarget{structdata__struct_aff54c50179e77b9e77f28244e1b6c7ed}{}\label{structdata__struct_aff54c50179e77b9e77f28244e1b6c7ed}
+
+
+Definition at line 211 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!x@{x}}
+\index{x@{x}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::x}\hypertarget{structdata__struct_aafb6ee9f998bdf479137e058e54c8605}{}\label{structdata__struct_aafb6ee9f998bdf479137e058e54c8605}
+
+
+Definition at line 226 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!x@{x}}
+\index{x@{x}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t data\+\_\+struct\+::x}\hypertarget{structdata__struct_a11ce2a30e7dc48b21b7f06b4bb6e4ed7}{}\label{structdata__struct_a11ce2a30e7dc48b21b7f06b4bb6e4ed7}
+
+
+Definition at line 243 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!y@{y}}
+\index{y@{y}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::y}\hypertarget{structdata__struct_a907e433dba309a2e973da7f346b8d619}{}\label{structdata__struct_a907e433dba309a2e973da7f346b8d619}
+
+
+Definition at line 226 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!y@{y}}
+\index{y@{y}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t data\+\_\+struct\+::y}\hypertarget{structdata__struct_a7555c56e9ddf0a0f0f9a29410f221dec}{}\label{structdata__struct_a7555c56e9ddf0a0f0f9a29410f221dec}
+
+
+Definition at line 243 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!z@{z}}
+\index{z@{z}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{z}{z}}]{\setlength{\rightskip}{0pt plus 5cm}float data\+\_\+struct\+::z = 0}\hypertarget{structdata__struct_a99537ca31fb73ac23386af3748921b53}{}\label{structdata__struct_a99537ca31fb73ac23386af3748921b53}
+
+
+Definition at line 226 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{data\+\_\+struct@{data\+\_\+struct}!z@{z}}
+\index{z@{z}!data\+\_\+struct@{data\+\_\+struct}}
+\subsubsection[{\texorpdfstring{z}{z}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t data\+\_\+struct\+::z = 0}\hypertarget{structdata__struct_a57bb6a98c0a24ff59ef2decf0d51b611}{}\label{structdata__struct_a57bb6a98c0a24ff59ef2decf0d51b611}
+
+
+Definition at line 243 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/\hyperlink{_weather___balloon_8cpp}{Weather\+\_\+\+Balloon.\+cpp}\end{DoxyCompactItemize}

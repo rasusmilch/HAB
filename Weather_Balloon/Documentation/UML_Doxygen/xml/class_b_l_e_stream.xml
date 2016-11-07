@@ -1,0 +1,533 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_b_l_e_stream" kind="class" language="C++" prot="public">
+    <compoundname>BLEStream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">BLEPeripheral</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">Stream</basecompoundref>
+    <includes refid="_b_l_e_stream_8h" local="no">BLEStream.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_b_l_e_stream_1a7365ba1340e1a3bdf3bd66c7dd0ce6d5" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool BLEStream::_connected</definition>
+        <argsstring></argsstring>
+        <name>_connected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="46" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1ae341bd92f0c33bb32650963035c5abe0" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long BLEStream::_flushed</definition>
+        <argsstring></argsstring>
+        <name>_flushed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="47" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1a3f969db2c883fd9d0599b213850ae6dc" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int BLEStream::_flushInterval</definition>
+        <argsstring></argsstring>
+        <name>_flushInterval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="48" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1aad28ce1d3125e9a703a7c09959d054c8" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BLEStream::_rxHead</definition>
+        <argsstring></argsstring>
+        <name>_rxHead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="51" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1afb25e48774eaff760c13d09207f91b69" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BLEStream::_rxTail</definition>
+        <argsstring></argsstring>
+        <name>_rxTail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="52" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1a6cb76992b5e98efa7220932877ace514" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char BLEStream::_rxBuffer[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>_rxBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="54" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1a37182f0ec95c165d21639f80c70b1a5d" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t BLEStream::_txCount</definition>
+        <argsstring></argsstring>
+        <name>_txCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="55" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1a038e09b717baf31e977bc043458d9329" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char BLEStream::_txBuffer[_MAX_ATTR_DATA_LEN_]</definition>
+        <argsstring>[_MAX_ATTR_DATA_LEN_]</argsstring>
+        <name>_txBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="56" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1a03d929d3626a03afd9bbe31174383e9f" prot="private" static="no" mutable="no">
+        <type>BLEService</type>
+        <definition>BLEService BLEStream::_uartService</definition>
+        <argsstring></argsstring>
+        <name>_uartService</name>
+        <initializer>= BLEService(&quot;6E400001-B5A3-F393-E0A9-E50E24DCCA9E&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="58" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1aafdc35216c065012ea5b8a8fc8842cba" prot="private" static="no" mutable="no">
+        <type>BLEDescriptor</type>
+        <definition>BLEDescriptor BLEStream::_uartNameDescriptor</definition>
+        <argsstring></argsstring>
+        <name>_uartNameDescriptor</name>
+        <initializer>= BLEDescriptor(&quot;2901&quot;, &quot;UART&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="59" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1a24bc040493525b3619fb4e6652c7a966" prot="private" static="no" mutable="no">
+        <type>BLECharacteristic</type>
+        <definition>BLECharacteristic BLEStream::_rxCharacteristic</definition>
+        <argsstring></argsstring>
+        <name>_rxCharacteristic</name>
+        <initializer>= BLECharacteristic(&quot;6E400002-B5A3-F393-E0A9-E50E24DCCA9E&quot;, BLEWriteWithoutResponse, _MAX_ATTR_DATA_LEN_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="60" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1aa327ad41b6262adade951fb46035c221" prot="private" static="no" mutable="no">
+        <type>BLEDescriptor</type>
+        <definition>BLEDescriptor BLEStream::_rxNameDescriptor</definition>
+        <argsstring></argsstring>
+        <name>_rxNameDescriptor</name>
+        <initializer>= BLEDescriptor(&quot;2901&quot;, &quot;RX - Receive Data (Write)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="61" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1ab862b1ee3db1d1dd1a9f52c47e415cd9" prot="private" static="no" mutable="no">
+        <type>BLECharacteristic</type>
+        <definition>BLECharacteristic BLEStream::_txCharacteristic</definition>
+        <argsstring></argsstring>
+        <name>_txCharacteristic</name>
+        <initializer>= BLECharacteristic(&quot;6E400003-B5A3-F393-E0A9-E50E24DCCA9E&quot;, BLENotify, _MAX_ATTR_DATA_LEN_)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="62" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_b_l_e_stream_1ad3ee5845b93333ba443c6445e562fcb6" prot="private" static="no" mutable="no">
+        <type>BLEDescriptor</type>
+        <definition>BLEDescriptor BLEStream::_txNameDescriptor</definition>
+        <argsstring></argsstring>
+        <name>_txNameDescriptor</name>
+        <initializer>= BLEDescriptor(&quot;2901&quot;, &quot;TX - Transfer Data (Notify)&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="63" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_b_l_e_stream_1ac9385ffbf630cb539cb095ebe35f7764" prot="private" static="yes" mutable="no">
+        <type><ref refid="class_b_l_e_stream" kindref="compound">BLEStream</ref> *</type>
+        <definition>BLEStream * BLEStream::_instance</definition>
+        <argsstring></argsstring>
+        <name>_instance</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="49" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_b_l_e_stream_1aa12f9098b653a30c2a152f647ab8bdfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BLEStream::BLEStream</definition>
+        <argsstring>(unsigned char req=0, unsigned char rdy=0, unsigned char rst=0)</argsstring>
+        <name>BLEStream</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>req</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>rdy</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>rst</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="30" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="78" bodyend="99"/>
+        <references refid="_b_l_e_stream_8h_1a4a57a8ae20f942b0efd99e670d66dad0" compoundref="_b_l_e_stream_8h" startline="22">BLESTREAM_TXBUFFER_FLUSH_INTERVAL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1a7cef0d2f7dc431608483c3911e68bb56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BLEStream::begin</definition>
+        <argsstring>(...)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>...</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="32" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="101" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1a58d4d0684a7c9f5434736af31ea2ab98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool BLEStream::poll</definition>
+        <argsstring>()</argsstring>
+        <name>poll</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="33" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="109" bodyend="117"/>
+        <references refid="class_b_l_e_stream_1af22a00b80511025785543d107422874a" compoundref="_b_l_e_stream_8h" startline="174" endline="189">flush</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1a2f571566304b41339d8a74cee6f98d2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BLEStream::end</definition>
+        <argsstring>()</argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="34" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="119" bodyend="125"/>
+        <references refid="class_b_l_e_stream_1af22a00b80511025785543d107422874a" compoundref="_b_l_e_stream_8h" startline="174" endline="189">flush</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1ab05a77032b59c6d3525390e7e6a768ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BLEStream::setFlushInterval</definition>
+        <argsstring>(int)</argsstring>
+        <name>setFlushInterval</name>
+        <param>
+          <type>int</type>
+          <defname>interval</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="35" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="217" bodyend="222"/>
+        <references refid="_b_l_e_stream_8h_1a2b68e96a5633949348a489d1ac2ef025" compoundref="_b_l_e_stream_8h" startline="23">BLESTREAM_MIN_FLUSH_INTERVAL</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1a9b8dd79faf553535df6b68a8d572c8e2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int BLEStream::available</definition>
+        <argsstring>(void)</argsstring>
+        <name>available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="37" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="127" bodyend="143"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1a932edda09fadf9530e2b87bed4d88bed" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int BLEStream::peek</definition>
+        <argsstring>(void)</argsstring>
+        <name>peek</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="38" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="145" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1a607238a23059d0dbe133c3358e7c42ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>int</type>
+        <definition>int BLEStream::read</definition>
+        <argsstring>(void)</argsstring>
+        <name>read</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="39" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="159" bodyend="172"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1af22a00b80511025785543d107422874a" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void BLEStream::flush</definition>
+        <argsstring>(void)</argsstring>
+        <name>flush</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="40" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="174" bodyend="189"/>
+        <referencedby refid="class_b_l_e_stream_1a2f571566304b41339d8a74cee6f98d2d" compoundref="_b_l_e_stream_8h" startline="119" endline="125">end</referencedby>
+        <referencedby refid="class_b_l_e_stream_1a58d4d0684a7c9f5434736af31ea2ab98" compoundref="_b_l_e_stream_8h" startline="109" endline="117">poll</referencedby>
+        <referencedby refid="class_b_l_e_stream_1ad3e299ba3ad439d077f1b7bb74617698" compoundref="_b_l_e_stream_8h" startline="191" endline="205">write</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1ad3e299ba3ad439d077f1b7bb74617698" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>size_t</type>
+        <definition>size_t BLEStream::write</definition>
+        <argsstring>(uint8_t byte)</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>byte</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="41" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="191" bodyend="205"/>
+        <references refid="class_b_l_e_stream_1af22a00b80511025785543d107422874a" compoundref="_b_l_e_stream_8h" startline="174" endline="189">flush</references>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1aded76dc2283104566c13fed9755e21f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type></type>
+        <definition>BLEStream::operator bool</definition>
+        <argsstring>()</argsstring>
+        <name>operator bool</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="43" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="207" bodyend="215"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_b_l_e_stream_1a6ad914f054364ad7bd8ab35d81d1970e" prot="private" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t BLEStream::_rxCount</definition>
+        <argsstring>() const </argsstring>
+        <name>_rxCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="53" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_b_l_e_stream_1a1bd78f155ab1811484d5a941f66586b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BLEStream::_received</definition>
+        <argsstring>(const unsigned char *data, size_t size)</argsstring>
+        <name>_received</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="65" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="224" bodyend="235"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_b_l_e_stream_1a25d63490f5d860437b9cabf5bee8b288" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BLEStream::_received</definition>
+        <argsstring>(BLECentral &amp;, BLECharacteristic &amp;rxCharacteristic)</argsstring>
+        <name>_received</name>
+        <param>
+          <type>BLECentral &amp;</type>
+        </param>
+        <param>
+          <type>BLECharacteristic &amp;</type>
+          <declname>rxCharacteristic</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="66" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="237" bodyend="240"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="253">
+        <label>BLEStream</label>
+        <link refid="class_b_l_e_stream"/>
+        <childnode refid="254" relation="public-inheritance">
+        </childnode>
+        <childnode refid="255" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="254">
+        <label>BLEPeripheral</label>
+      </node>
+      <node id="255">
+        <label>Stream</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="256">
+        <label>BLEStream</label>
+        <link refid="class_b_l_e_stream"/>
+        <childnode refid="257" relation="public-inheritance">
+        </childnode>
+        <childnode refid="258" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="257">
+        <label>BLEPeripheral</label>
+      </node>
+      <node id="258">
+        <label>Stream</label>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/Firmata/utility/BLEStream.h" line="28" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/BLEStream.h" bodystart="27" bodyend="67"/>
+    <listofallmembers>
+      <member refid="class_b_l_e_stream_1a7365ba1340e1a3bdf3bd66c7dd0ce6d5" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_connected</name></member>
+      <member refid="class_b_l_e_stream_1ae341bd92f0c33bb32650963035c5abe0" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_flushed</name></member>
+      <member refid="class_b_l_e_stream_1a3f969db2c883fd9d0599b213850ae6dc" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_flushInterval</name></member>
+      <member refid="class_b_l_e_stream_1ac9385ffbf630cb539cb095ebe35f7764" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_instance</name></member>
+      <member refid="class_b_l_e_stream_1a1bd78f155ab1811484d5a941f66586b8" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_received</name></member>
+      <member refid="class_b_l_e_stream_1a25d63490f5d860437b9cabf5bee8b288" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_received</name></member>
+      <member refid="class_b_l_e_stream_1a6cb76992b5e98efa7220932877ace514" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_rxBuffer</name></member>
+      <member refid="class_b_l_e_stream_1a24bc040493525b3619fb4e6652c7a966" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_rxCharacteristic</name></member>
+      <member refid="class_b_l_e_stream_1a6ad914f054364ad7bd8ab35d81d1970e" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_rxCount</name></member>
+      <member refid="class_b_l_e_stream_1aad28ce1d3125e9a703a7c09959d054c8" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_rxHead</name></member>
+      <member refid="class_b_l_e_stream_1aa327ad41b6262adade951fb46035c221" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_rxNameDescriptor</name></member>
+      <member refid="class_b_l_e_stream_1afb25e48774eaff760c13d09207f91b69" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_rxTail</name></member>
+      <member refid="class_b_l_e_stream_1a038e09b717baf31e977bc043458d9329" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_txBuffer</name></member>
+      <member refid="class_b_l_e_stream_1ab862b1ee3db1d1dd1a9f52c47e415cd9" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_txCharacteristic</name></member>
+      <member refid="class_b_l_e_stream_1a37182f0ec95c165d21639f80c70b1a5d" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_txCount</name></member>
+      <member refid="class_b_l_e_stream_1ad3ee5845b93333ba443c6445e562fcb6" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_txNameDescriptor</name></member>
+      <member refid="class_b_l_e_stream_1aafdc35216c065012ea5b8a8fc8842cba" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_uartNameDescriptor</name></member>
+      <member refid="class_b_l_e_stream_1a03d929d3626a03afd9bbe31174383e9f" prot="private" virt="non-virtual"><scope>BLEStream</scope><name>_uartService</name></member>
+      <member refid="class_b_l_e_stream_1a9b8dd79faf553535df6b68a8d572c8e2" prot="public" virt="virtual"><scope>BLEStream</scope><name>available</name></member>
+      <member refid="class_b_l_e_stream_1a7cef0d2f7dc431608483c3911e68bb56" prot="public" virt="non-virtual"><scope>BLEStream</scope><name>begin</name></member>
+      <member refid="class_b_l_e_stream_1aa12f9098b653a30c2a152f647ab8bdfa" prot="public" virt="non-virtual"><scope>BLEStream</scope><name>BLEStream</name></member>
+      <member refid="class_b_l_e_stream_1a2f571566304b41339d8a74cee6f98d2d" prot="public" virt="non-virtual"><scope>BLEStream</scope><name>end</name></member>
+      <member refid="class_b_l_e_stream_1af22a00b80511025785543d107422874a" prot="public" virt="virtual"><scope>BLEStream</scope><name>flush</name></member>
+      <member refid="class_b_l_e_stream_1aded76dc2283104566c13fed9755e21f5" prot="public" virt="virtual"><scope>BLEStream</scope><name>operator bool</name></member>
+      <member refid="class_b_l_e_stream_1a932edda09fadf9530e2b87bed4d88bed" prot="public" virt="virtual"><scope>BLEStream</scope><name>peek</name></member>
+      <member refid="class_b_l_e_stream_1a58d4d0684a7c9f5434736af31ea2ab98" prot="public" virt="non-virtual"><scope>BLEStream</scope><name>poll</name></member>
+      <member refid="class_b_l_e_stream_1a607238a23059d0dbe133c3358e7c42ca" prot="public" virt="virtual"><scope>BLEStream</scope><name>read</name></member>
+      <member refid="class_b_l_e_stream_1ab05a77032b59c6d3525390e7e6a768ab" prot="public" virt="non-virtual"><scope>BLEStream</scope><name>setFlushInterval</name></member>
+      <member refid="class_b_l_e_stream_1ad3e299ba3ad439d077f1b7bb74617698" prot="public" virt="virtual"><scope>BLEStream</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,251 @@
+\hypertarget{class_serial_firmata}{}\section{Serial\+Firmata Class Reference}
+\label{class_serial_firmata}\index{Serial\+Firmata@{Serial\+Firmata}}
+
+
+{\ttfamily \#include $<$Serial\+Firmata.\+h$>$}
+
+
+
+Inheritance diagram for Serial\+Firmata\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_serial_firmata__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Serial\+Firmata\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=158pt]{class_serial_firmata__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_serial_firmata_a9d8947b656970f9dc87c9aa34aeec6a0}{Serial\+Firmata} ()
+\item 
+boolean \hyperlink{class_serial_firmata_ace960dd7d082caf65f1f3488a7486ef5}{handle\+Pin\+Mode} (byte pin, int mode)
+\item 
+void \hyperlink{class_serial_firmata_af383474fc3a6d1d372489046bbcabc3b}{handle\+Capability} (byte pin)
+\item 
+boolean \hyperlink{class_serial_firmata_a0e13bbb12bd52762cfe2f949bda161ee}{handle\+Sysex} (byte command, byte argc, byte $\ast$argv)
+\item 
+void \hyperlink{class_serial_firmata_a1095729d80e0b18340d6d6d5baca10fc}{update} ()
+\item 
+void \hyperlink{class_serial_firmata_a71cefdb678d792338c2fbc0ba46cfb3d}{reset} ()
+\item 
+void \hyperlink{class_serial_firmata_ab31a76a596ce2430ee3feac525da59f2}{check\+Serial} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 142 of file Serial\+Firmata.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Serial\+Firmata@{Serial\+Firmata}!Serial\+Firmata@{Serial\+Firmata}}
+\index{Serial\+Firmata@{Serial\+Firmata}!Serial\+Firmata@{Serial\+Firmata}}
+\subsubsection[{\texorpdfstring{Serial\+Firmata()}{SerialFirmata()}}]{\setlength{\rightskip}{0pt plus 5cm}Serial\+Firmata\+::\+Serial\+Firmata (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_serial_firmata_a9d8947b656970f9dc87c9aa34aeec6a0}{}\label{class_serial_firmata_a9d8947b656970f9dc87c9aa34aeec6a0}
+
+
+Definition at line 22 of file Serial\+Firmata.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Serial\+Firmata@{Serial\+Firmata}!check\+Serial@{check\+Serial}}
+\index{check\+Serial@{check\+Serial}!Serial\+Firmata@{Serial\+Firmata}}
+\subsubsection[{\texorpdfstring{check\+Serial()}{checkSerial()}}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Firmata\+::check\+Serial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_serial_firmata_ab31a76a596ce2430ee3feac525da59f2}{}\label{class_serial_firmata_ab31a76a596ce2430ee3feac525da59f2}
+
+
+Definition at line 284 of file Serial\+Firmata.\+cpp.
+
+
+
+References E\+N\+D\+\_\+\+S\+Y\+S\+EX, Firmata, i, S\+E\+R\+I\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE, S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+P\+LY, S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX, and Firmata\+Class\+::write().
+
+
+
+Referenced by update().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_serial_firmata_ab31a76a596ce2430ee3feac525da59f2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_serial_firmata_ab31a76a596ce2430ee3feac525da59f2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Serial\+Firmata@{Serial\+Firmata}!handle\+Capability@{handle\+Capability}}
+\index{handle\+Capability@{handle\+Capability}!Serial\+Firmata@{Serial\+Firmata}}
+\subsubsection[{\texorpdfstring{handle\+Capability(byte pin)}{handleCapability(byte pin)}}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Firmata\+::handle\+Capability (
+\begin{DoxyParamCaption}
+\item[{byte}]{pin}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_serial_firmata_af383474fc3a6d1d372489046bbcabc3b}{}\label{class_serial_firmata_af383474fc3a6d1d372489046bbcabc3b}
+
+
+Implements \hyperlink{class_firmata_feature_aa865c5a740a429805855ca1a4576a6f4}{Firmata\+Feature}.
+
+
+
+Definition at line 44 of file Serial\+Firmata.\+cpp.
+
+
+
+References Firmata, I\+S\+\_\+\+P\+I\+N\+\_\+\+S\+E\+R\+I\+AL, P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL, and Firmata\+Class\+::write().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_firmata_af383474fc3a6d1d372489046bbcabc3b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Serial\+Firmata@{Serial\+Firmata}!handle\+Pin\+Mode@{handle\+Pin\+Mode}}
+\index{handle\+Pin\+Mode@{handle\+Pin\+Mode}!Serial\+Firmata@{Serial\+Firmata}}
+\subsubsection[{\texorpdfstring{handle\+Pin\+Mode(byte pin, int mode)}{handlePinMode(byte pin, int mode)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Serial\+Firmata\+::handle\+Pin\+Mode (
+\begin{DoxyParamCaption}
+\item[{byte}]{pin, }
+\item[{int}]{mode}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_serial_firmata_ace960dd7d082caf65f1f3488a7486ef5}{}\label{class_serial_firmata_ace960dd7d082caf65f1f3488a7486ef5}
+
+
+Implements \hyperlink{class_firmata_feature_a6ef5569de60bb31c9eb55f5ebd16d88f}{Firmata\+Feature}.
+
+
+
+Definition at line 34 of file Serial\+Firmata.\+cpp.
+
+
+
+References Firmata, P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL, and Firmata\+Class\+::set\+Pin\+Mode().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_firmata_ace960dd7d082caf65f1f3488a7486ef5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Serial\+Firmata@{Serial\+Firmata}!handle\+Sysex@{handle\+Sysex}}
+\index{handle\+Sysex@{handle\+Sysex}!Serial\+Firmata@{Serial\+Firmata}}
+\subsubsection[{\texorpdfstring{handle\+Sysex(byte command, byte argc, byte $\ast$argv)}{handleSysex(byte command, byte argc, byte *argv)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Serial\+Firmata\+::handle\+Sysex (
+\begin{DoxyParamCaption}
+\item[{byte}]{command, }
+\item[{byte}]{argc, }
+\item[{byte $\ast$}]{argv}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_serial_firmata_a0e13bbb12bd52762cfe2f949bda161ee}{}\label{class_serial_firmata_a0e13bbb12bd52762cfe2f949bda161ee}
+
+
+Implements \hyperlink{class_firmata_feature_a0ce860a9345c81cbe959733e88b188be}{Firmata\+Feature}.
+
+
+
+Definition at line 52 of file Serial\+Firmata.\+cpp.
+
+
+
+References Firmata, i, M\+A\+X\+\_\+\+S\+E\+R\+I\+A\+L\+\_\+\+P\+O\+R\+TS, P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL, Firmata\+Class\+::send\+String(), S\+E\+R\+I\+A\+L\+\_\+\+C\+L\+O\+SE, S\+E\+R\+I\+A\+L\+\_\+\+C\+O\+N\+F\+IG, S\+E\+R\+I\+A\+L\+\_\+\+F\+L\+U\+SH, S\+E\+R\+I\+A\+L\+\_\+\+L\+I\+S\+T\+EN, S\+E\+R\+I\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE, S\+E\+R\+I\+A\+L\+\_\+\+M\+O\+D\+E\+\_\+\+M\+A\+SK, S\+E\+R\+I\+A\+L\+\_\+\+P\+O\+R\+T\+\_\+\+I\+D\+\_\+\+M\+A\+SK, S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+AD, S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+A\+D\+\_\+\+C\+O\+N\+T\+I\+N\+U\+O\+U\+S\+LY, S\+E\+R\+I\+A\+L\+\_\+\+S\+T\+O\+P\+\_\+\+R\+E\+A\+D\+I\+NG, S\+E\+R\+I\+A\+L\+\_\+\+W\+R\+I\+TE, Firmata\+Class\+::set\+Pin\+Mode(), S\+W\+\_\+\+S\+E\+R\+I\+A\+L0, S\+W\+\_\+\+S\+E\+R\+I\+A\+L1, S\+W\+\_\+\+S\+E\+R\+I\+A\+L2, and S\+W\+\_\+\+S\+E\+R\+I\+A\+L3.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_firmata_a0e13bbb12bd52762cfe2f949bda161ee_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Serial\+Firmata@{Serial\+Firmata}!reset@{reset}}
+\index{reset@{reset}!Serial\+Firmata@{Serial\+Firmata}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Firmata\+::reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_serial_firmata_a71cefdb678d792338c2fbc0ba46cfb3d}{}\label{class_serial_firmata_a71cefdb678d792338c2fbc0ba46cfb3d}
+
+
+Implements \hyperlink{class_firmata_feature_a511a8cc9f0e33b392ca729cab0f6e899}{Firmata\+Feature}.
+
+
+
+Definition at line 215 of file Serial\+Firmata.\+cpp.
+
+
+
+References H\+W\+\_\+\+S\+E\+R\+I\+A\+L0, H\+W\+\_\+\+S\+E\+R\+I\+A\+L1, H\+W\+\_\+\+S\+E\+R\+I\+A\+L2, H\+W\+\_\+\+S\+E\+R\+I\+A\+L3, i, S\+E\+R\+I\+A\+L\+\_\+\+R\+E\+A\+D\+\_\+\+A\+R\+R\+\_\+\+L\+EN, S\+W\+\_\+\+S\+E\+R\+I\+A\+L0, S\+W\+\_\+\+S\+E\+R\+I\+A\+L1, S\+W\+\_\+\+S\+E\+R\+I\+A\+L2, and S\+W\+\_\+\+S\+E\+R\+I\+A\+L3.
+
+\index{Serial\+Firmata@{Serial\+Firmata}!update@{update}}
+\index{update@{update}!Serial\+Firmata@{Serial\+Firmata}}
+\subsubsection[{\texorpdfstring{update()}{update()}}]{\setlength{\rightskip}{0pt plus 5cm}void Serial\+Firmata\+::update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_serial_firmata_a1095729d80e0b18340d6d6d5baca10fc}{}\label{class_serial_firmata_a1095729d80e0b18340d6d6d5baca10fc}
+
+
+Definition at line 210 of file Serial\+Firmata.\+cpp.
+
+
+
+References check\+Serial().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_serial_firmata_a1095729d80e0b18340d6d6d5baca10fc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Firmata/utility/\hyperlink{_serial_firmata_8h}{Serial\+Firmata.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Firmata/utility/\hyperlink{_serial_firmata_8cpp}{Serial\+Firmata.\+cpp}\end{DoxyCompactItemize}

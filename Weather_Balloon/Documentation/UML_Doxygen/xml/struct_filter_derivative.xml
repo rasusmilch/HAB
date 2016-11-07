@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_filter_derivative" kind="struct" language="C++" prot="public">
+    <compoundname>FilterDerivative</compoundname>
+    <includes refid="_filter_derivative_8h" local="no">FilterDerivative.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_filter_derivative_1a6e64fea4ef8778deb71cf8df694c8bcf" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterDerivative::LastUS</definition>
+        <argsstring></argsstring>
+        <name>LastUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterDerivative.h" line="6" column="1" bodyfile="Weather_Balloon/library/Filters/FilterDerivative.h" bodystart="6" bodyend="-1"/>
+        <referencedby refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" compoundref="_filter_derivative_8cpp" startline="4" endline="13">input</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_derivative_1af161c7f88a440f7e3c2a7b2c33ed433a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterDerivative::LastInput</definition>
+        <argsstring></argsstring>
+        <name>LastInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterDerivative.h" line="7" column="1" bodyfile="Weather_Balloon/library/Filters/FilterDerivative.h" bodystart="7" bodyend="-1"/>
+        <referencedby refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" compoundref="_filter_derivative_8cpp" startline="4" endline="13">input</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_derivative_1a3cbe0628c52a5853670b0e5daaaaeace" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterDerivative::Derivative</definition>
+        <argsstring></argsstring>
+        <name>Derivative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterDerivative.h" line="9" column="1" bodyfile="Weather_Balloon/library/Filters/FilterDerivative.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" compoundref="_filter_derivative_8cpp" startline="4" endline="13">input</referencedby>
+        <referencedby refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" compoundref="_filter_derivative_8cpp" startline="15" endline="15">output</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FilterDerivative::input</definition>
+        <argsstring>(float inVal)</argsstring>
+        <name>input</name>
+        <param>
+          <type>float</type>
+          <declname>inVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterDerivative.h" line="11" column="1" bodyfile="Weather_Balloon/library/Filters/FilterDerivative.cpp" bodystart="4" bodyend="13"/>
+        <references refid="struct_filter_derivative_1a3cbe0628c52a5853670b0e5daaaaeace" compoundref="_filter_derivative_8h" startline="9">Derivative</references>
+        <references refid="struct_filter_derivative_1af161c7f88a440f7e3c2a7b2c33ed433a" compoundref="_filter_derivative_8h" startline="7">LastInput</references>
+        <references refid="struct_filter_derivative_1a6e64fea4ef8778deb71cf8df694c8bcf" compoundref="_filter_derivative_8h" startline="6">LastUS</references>
+        <references refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" compoundref="_filter_derivative_8cpp" startline="15" endline="15">output</references>
+        <referencedby refid="_filter_derivative_8h_1aa733c0d9f97d55c0efedef0adf130c76" compoundref="_filter_derivative_8cpp" startline="17" endline="32">testFilterDerivative</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FilterDerivative::output</definition>
+        <argsstring>()</argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterDerivative.h" line="13" column="1" bodyfile="Weather_Balloon/library/Filters/FilterDerivative.cpp" bodystart="15" bodyend="15"/>
+        <references refid="struct_filter_derivative_1a3cbe0628c52a5853670b0e5daaaaeace" compoundref="_filter_derivative_8h" startline="9">Derivative</references>
+        <referencedby refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" compoundref="_filter_derivative_8cpp" startline="4" endline="13">input</referencedby>
+        <referencedby refid="_filter_derivative_8h_1aa733c0d9f97d55c0efedef0adf130c76" compoundref="_filter_derivative_8cpp" startline="17" endline="32">testFilterDerivative</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Filters/FilterDerivative.h" line="5" column="1" bodyfile="Weather_Balloon/library/Filters/FilterDerivative.h" bodystart="5" bodyend="14"/>
+    <listofallmembers>
+      <member refid="struct_filter_derivative_1a3cbe0628c52a5853670b0e5daaaaeace" prot="public" virt="non-virtual"><scope>FilterDerivative</scope><name>Derivative</name></member>
+      <member refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" prot="public" virt="non-virtual"><scope>FilterDerivative</scope><name>input</name></member>
+      <member refid="struct_filter_derivative_1af161c7f88a440f7e3c2a7b2c33ed433a" prot="public" virt="non-virtual"><scope>FilterDerivative</scope><name>LastInput</name></member>
+      <member refid="struct_filter_derivative_1a6e64fea4ef8778deb71cf8df694c8bcf" prot="public" virt="non-virtual"><scope>FilterDerivative</scope><name>LastUS</name></member>
+      <member refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" prot="public" virt="non-virtual"><scope>FilterDerivative</scope><name>output</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

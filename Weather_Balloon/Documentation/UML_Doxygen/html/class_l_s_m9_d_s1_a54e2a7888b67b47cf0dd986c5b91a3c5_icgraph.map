@@ -1,0 +1,7 @@
+<map id="LSM9DS1::calcAccel" name="LSM9DS1::calcAccel">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#a97939cb15fcb7e33abcd6d3a9230d943" title="LSM9DS1::calibrate" alt="" coords="185,5,312,32"/>
+<area shape="rect" id="node5" href="$_weather___balloon_8cpp.html#ad40ccf803c2eff76d7e0e7a24c9937ef" title="readSensors" alt="" coords="205,56,292,83"/>
+<area shape="rect" id="node3" href="$_weather___balloon_8cpp.html#a2c2e98945e78daa792b87b30868c3907" title="configure_LSM9DS1" alt="" coords="360,5,491,32"/>
+<area shape="rect" id="node4" href="$_weather___balloon_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="539,5,589,32"/>
+<area shape="rect" id="node6" href="$_weather___balloon_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="402,56,449,83"/>
+</map>

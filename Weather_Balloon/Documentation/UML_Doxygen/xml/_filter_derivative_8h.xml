@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_filter_derivative_8h" kind="file" language="C++">
+    <compoundname>FilterDerivative.h</compoundname>
+    <includedby refid="_filter_derivative_8cpp" local="yes">Weather_Balloon/library/Filters/FilterDerivative.cpp</includedby>
+    <includedby refid="_filters_8h" local="yes">Weather_Balloon/library/Filters/Filters.h</includedby>
+    <invincdepgraph>
+      <node id="709">
+        <label>Weather_Balloon/library/Filters/FilterDerivative.h</label>
+        <link refid="FilterDerivative.h"/>
+        <childnode refid="710" relation="include">
+        </childnode>
+        <childnode refid="711" relation="include">
+        </childnode>
+      </node>
+      <node id="710">
+        <label>Weather_Balloon/library/Filters/FilterDerivative.cpp</label>
+        <link refid="_filter_derivative_8cpp"/>
+      </node>
+      <node id="711">
+        <label>Weather_Balloon/library/Filters/Filters.h</label>
+        <link refid="_filters_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_filter_derivative" prot="public">FilterDerivative</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_filter_derivative_8h_1aa733c0d9f97d55c0efedef0adf130c76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testFilterDerivative</definition>
+        <argsstring>()</argsstring>
+        <name>testFilterDerivative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterDerivative.h" line="16" column="1" bodyfile="Weather_Balloon/library/Filters/FilterDerivative.cpp" bodystart="17" bodyend="32"/>
+        <references refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" compoundref="_filter_derivative_8cpp" startline="4" endline="13">FilterDerivative::input</references>
+        <references refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" compoundref="_filter_derivative_8cpp" startline="15" endline="15">FilterDerivative::output</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FilterDerivative_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FilterDerivative_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>returns<sp/>the<sp/>derivative</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="struct_filter_derivative" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_filter_derivative" kindref="compound">FilterDerivative</ref><sp/>{</highlight></codeline>
+<codeline lineno="6" refid="struct_filter_derivative_1a6e64fea4ef8778deb71cf8df694c8bcf" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="struct_filter_derivative_1a6e64fea4ef8778deb71cf8df694c8bcf" kindref="member">LastUS</ref>;</highlight></codeline>
+<codeline lineno="7" refid="struct_filter_derivative_1af161c7f88a440f7e3c2a7b2c33ed433a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_derivative_1af161c7f88a440f7e3c2a7b2c33ed433a" kindref="member">LastInput</ref>;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="9" refid="struct_filter_derivative_1a3cbe0628c52a5853670b0e5daaaaeace" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_derivative_1a3cbe0628c52a5853670b0e5daaaaeace" kindref="member">Derivative</ref>;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" kindref="member">input</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inVal<sp/>);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" kindref="member">output</ref>();</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_filter_derivative_8h_1aa733c0d9f97d55c0efedef0adf130c76" kindref="member">testFilterDerivative</ref>();</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Filters/FilterDerivative.h"/>
+  </compounddef>
+</doxygen>

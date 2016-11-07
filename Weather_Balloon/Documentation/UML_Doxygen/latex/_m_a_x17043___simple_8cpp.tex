@@ -1,0 +1,118 @@
+\hypertarget{_m_a_x17043___simple_8cpp}{}\section{Weather\+\_\+\+Balloon/library/\+Spark\+Fun\+\_\+\+M\+A\+X17043/examples/\+M\+A\+X17043\+\_\+\+Simple.cpp File Reference}
+\label{_m_a_x17043___simple_8cpp}\index{Weather\+\_\+\+Balloon/library/\+Spark\+Fun\+\_\+\+M\+A\+X17043/examples/\+M\+A\+X17043\+\_\+\+Simple.\+cpp@{Weather\+\_\+\+Balloon/library/\+Spark\+Fun\+\_\+\+M\+A\+X17043/examples/\+M\+A\+X17043\+\_\+\+Simple.\+cpp}}
+{\ttfamily \#include \char`\"{}Spark\+Fun\+M\+A\+X17043/\+Spark\+Fun\+M\+A\+X17043.\+h\char`\"{}}\\*
+Include dependency graph for M\+A\+X17043\+\_\+\+Simple.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{_m_a_x17043___simple_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_m_a_x17043___simple_8cpp_a4fc01d736fe50cf5b977f755b675f11d}{setup} ()
+\item 
+void \hyperlink{_m_a_x17043___simple_8cpp_afe461d27b9c48d5921c00d521181f12f}{loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{_m_a_x17043___simple_8cpp_ad3c64efcaba662da1a2f4393d00584e9}{voltage} = 0
+\item 
+double \hyperlink{_m_a_x17043___simple_8cpp_a991957902833b18d327c2d8a0ea1eb42}{soc} = 0
+\item 
+bool \hyperlink{_m_a_x17043___simple_8cpp_a314d1cb4094807055c27666728aa9f44}{alert}
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}!loop@{loop}}
+\index{loop@{loop}!M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}}
+\subsubsection[{\texorpdfstring{loop()}{loop()}}]{\setlength{\rightskip}{0pt plus 5cm}void loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_m_a_x17043___simple_8cpp_afe461d27b9c48d5921c00d521181f12f}{}\label{_m_a_x17043___simple_8cpp_afe461d27b9c48d5921c00d521181f12f}
+
+
+Definition at line 59 of file M\+A\+X17043\+\_\+\+Simple.\+cpp.
+
+
+
+References alert, M\+A\+X17043\+::get\+Alert(), M\+A\+X17043\+::get\+S\+O\+C(), M\+A\+X17043\+::get\+Voltage(), lipo, soc, and voltage.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{_m_a_x17043___simple_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}!setup@{setup}}
+\index{setup@{setup}!M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}}
+\subsubsection[{\texorpdfstring{setup()}{setup()}}]{\setlength{\rightskip}{0pt plus 5cm}void setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_m_a_x17043___simple_8cpp_a4fc01d736fe50cf5b977f755b675f11d}{}\label{_m_a_x17043___simple_8cpp_a4fc01d736fe50cf5b977f755b675f11d}
+
+
+Definition at line 36 of file M\+A\+X17043\+\_\+\+Simple.\+cpp.
+
+
+
+References alert, M\+A\+X17043\+::begin(), lipo, M\+A\+X17043\+::quick\+Start(), M\+A\+X17043\+::set\+Threshold(), soc, and voltage.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{_m_a_x17043___simple_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}!alert@{alert}}
+\index{alert@{alert}!M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}}
+\subsubsection[{\texorpdfstring{alert}{alert}}]{\setlength{\rightskip}{0pt plus 5cm}bool alert}\hypertarget{_m_a_x17043___simple_8cpp_a314d1cb4094807055c27666728aa9f44}{}\label{_m_a_x17043___simple_8cpp_a314d1cb4094807055c27666728aa9f44}
+
+
+Definition at line 34 of file M\+A\+X17043\+\_\+\+Simple.\+cpp.
+
+
+
+Referenced by loop(), and setup().
+
+\index{M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}!soc@{soc}}
+\index{soc@{soc}!M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}}
+\subsubsection[{\texorpdfstring{soc}{soc}}]{\setlength{\rightskip}{0pt plus 5cm}double soc = 0}\hypertarget{_m_a_x17043___simple_8cpp_a991957902833b18d327c2d8a0ea1eb42}{}\label{_m_a_x17043___simple_8cpp_a991957902833b18d327c2d8a0ea1eb42}
+
+
+Definition at line 33 of file M\+A\+X17043\+\_\+\+Simple.\+cpp.
+
+
+
+Referenced by M\+A\+X17043\+::get\+S\+O\+C(), loop(), and setup().
+
+\index{M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}!voltage@{voltage}}
+\index{voltage@{voltage}!M\+A\+X17043\+\_\+\+Simple.\+cpp@{M\+A\+X17043\+\_\+\+Simple.\+cpp}}
+\subsubsection[{\texorpdfstring{voltage}{voltage}}]{\setlength{\rightskip}{0pt plus 5cm}double voltage = 0}\hypertarget{_m_a_x17043___simple_8cpp_ad3c64efcaba662da1a2f4393d00584e9}{}\label{_m_a_x17043___simple_8cpp_ad3c64efcaba662da1a2f4393d00584e9}
+
+
+Definition at line 32 of file M\+A\+X17043\+\_\+\+Simple.\+cpp.
+
+
+
+Referenced by loop(), and setup().
+

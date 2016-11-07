@@ -1,0 +1,998 @@
+\hypertarget{class_r_t_c_zero}{}\section{R\+T\+C\+Zero Class Reference}
+\label{class_r_t_c_zero}\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+
+
+{\ttfamily \#include $<$R\+T\+C\+Zero.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_r_t_c_zero_a331ac87204394f0e197122b8962149cc}{Alarm\+\_\+\+Match} \+: uint8\+\_\+t \{ \\*
+\hyperlink{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca229a4bf48dedcd24c3058d4659fbdd2b}{M\+A\+T\+C\+H\+\_\+\+O\+FF} = R\+T\+C\+\_\+\+M\+O\+D\+E2\+\_\+\+M\+A\+S\+K\+\_\+\+S\+E\+L\+\_\+\+O\+F\+F\+\_\+\+Val, 
+\hyperlink{class_r_t_c_zero_a331ac87204394f0e197122b8962149ccac5092377f2728d1888a72bfb638c95b9}{M\+A\+T\+C\+H\+\_\+\+SS} = R\+T\+C\+\_\+\+M\+O\+D\+E2\+\_\+\+M\+A\+S\+K\+\_\+\+S\+E\+L\+\_\+\+S\+S\+\_\+\+Val, 
+\hyperlink{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca944f42500c4e4ee3117ff8adcddc4eb1}{M\+A\+T\+C\+H\+\_\+\+M\+M\+SS} = R\+T\+C\+\_\+\+M\+O\+D\+E2\+\_\+\+M\+A\+S\+K\+\_\+\+S\+E\+L\+\_\+\+M\+M\+S\+S\+\_\+\+Val, 
+\hyperlink{class_r_t_c_zero_a331ac87204394f0e197122b8962149ccaf82fa9553250259c004ca80c3f2336cc}{M\+A\+T\+C\+H\+\_\+\+H\+H\+M\+M\+SS} = R\+T\+C\+\_\+\+M\+O\+D\+E2\+\_\+\+M\+A\+S\+K\+\_\+\+S\+E\+L\+\_\+\+H\+H\+M\+M\+S\+S\+\_\+\+Val, 
+\\*
+\hyperlink{class_r_t_c_zero_a331ac87204394f0e197122b8962149ccad27b4eb26b4e2d23b1e74ca8c7b6473a}{M\+A\+T\+C\+H\+\_\+\+D\+H\+H\+M\+M\+SS} = R\+T\+C\+\_\+\+M\+O\+D\+E2\+\_\+\+M\+A\+S\+K\+\_\+\+S\+E\+L\+\_\+\+D\+D\+H\+H\+M\+M\+S\+S\+\_\+\+Val, 
+\hyperlink{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca75b8b65641492bbb35128bddc6164a61}{M\+A\+T\+C\+H\+\_\+\+M\+M\+D\+D\+H\+H\+M\+M\+SS} = R\+T\+C\+\_\+\+M\+O\+D\+E2\+\_\+\+M\+A\+S\+K\+\_\+\+S\+E\+L\+\_\+\+M\+M\+D\+D\+H\+H\+M\+M\+S\+S\+\_\+\+Val, 
+\hyperlink{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca4a9fa9226a47b8b760dd53b2326b7f3e}{M\+A\+T\+C\+H\+\_\+\+Y\+Y\+M\+M\+D\+D\+H\+H\+M\+M\+SS} = R\+T\+C\+\_\+\+M\+O\+D\+E2\+\_\+\+M\+A\+S\+K\+\_\+\+S\+E\+L\+\_\+\+Y\+Y\+M\+M\+D\+D\+H\+H\+M\+M\+S\+S\+\_\+\+Val
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_r_t_c_zero_af74f4cc9bc122628c0023e77b7b18c76}{R\+T\+C\+Zero} ()
+\item 
+void \hyperlink{class_r_t_c_zero_ac6ad9d73cb8d3a0575e7cfc2b26a5412}{begin} (bool reset\+Time=false)
+\item 
+void \hyperlink{class_r_t_c_zero_af2923fee4310485bc922898376f5042c}{enable\+Alarm} (\hyperlink{class_r_t_c_zero_a331ac87204394f0e197122b8962149cc}{Alarm\+\_\+\+Match} match)
+\item 
+void \hyperlink{class_r_t_c_zero_a9c1b7a7b7f8ed3cabbdc039ede726631}{disable\+Alarm} ()
+\item 
+void \hyperlink{class_r_t_c_zero_a306f2bbbdfa83d21f8f577c11b73e76b}{attach\+Interrupt} (\hyperlink{_r_t_c_zero_8h_af47ec912687cb72725d5e529eccdbb48}{void\+Func\+Ptr} callback)
+\item 
+void \hyperlink{class_r_t_c_zero_a6ca6de2448cadaa33a87cdd4278cdf27}{detach\+Interrupt} ()
+\item 
+void \hyperlink{class_r_t_c_zero_a2fab941e64ffe5501c30c085a5b3833e}{standby\+Mode} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a914daa26d6ab1a3637a4696801532377}{get\+Seconds} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a813435838c1c830ab61e81f2c50cd76c}{get\+Minutes} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a4e3c72195b429d690ca5e3febb9a2d8f}{get\+Hours} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a9569ba1ee80390da5c9feb9c33681ac2}{get\+Day} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_ab5a20277839b8d68d7469feb95b027ec}{get\+Month} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a87b268ab9f4e2ea4b0aca4ca7f9d48e6}{get\+Year} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a05ca5622ea0d01662326c251d3f4e960}{get\+Alarm\+Seconds} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a9b689b5208dc3bd0d80524e0d5c52873}{get\+Alarm\+Minutes} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a0758261eb8ba11c90e903b5e38a6cee8}{get\+Alarm\+Hours} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a4b157a1820acba087ea42095505c35cc}{get\+Alarm\+Day} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_a27152748cdb3ebdd15a4a51882dcd28b}{get\+Alarm\+Month} ()
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c_zero_af15b6757eeb9281446b7575c9a15ff19}{get\+Alarm\+Year} ()
+\item 
+void \hyperlink{class_r_t_c_zero_a654ea54b599e9269369c3d329dd41685}{set\+Seconds} (uint8\+\_\+t seconds)
+\item 
+void \hyperlink{class_r_t_c_zero_adeb4f4fbae93c46e227646569113cbd1}{set\+Minutes} (uint8\+\_\+t minutes)
+\item 
+void \hyperlink{class_r_t_c_zero_a4bcc1288366d943f3328386c89d39bf3}{set\+Hours} (uint8\+\_\+t hours)
+\item 
+void \hyperlink{class_r_t_c_zero_a2bd00b1214877c926001a8d60acad72d}{set\+Time} (uint8\+\_\+t hours, uint8\+\_\+t minutes, uint8\+\_\+t seconds)
+\item 
+void \hyperlink{class_r_t_c_zero_aa1d8a2279ae41b6a7b50c5ccc974b29f}{set\+Day} (uint8\+\_\+t \hyperlink{_time_8cpp_a51dcd9f072551ba8f47449a4e7f78c29}{day})
+\item 
+void \hyperlink{class_r_t_c_zero_af91e416057bf96c8ae94b053e94ec722}{set\+Month} (uint8\+\_\+t \hyperlink{_time_8cpp_a726c707dded9d78cf076554eceb956ec}{month})
+\item 
+void \hyperlink{class_r_t_c_zero_ad71c689f526dd7e40c6f134b2a223b81}{set\+Year} (uint8\+\_\+t \hyperlink{_time_8cpp_a8608865f8292c0505e02b67fd1cf39e8}{year})
+\item 
+void \hyperlink{class_r_t_c_zero_ad84a83a503a798c3f90f667de21b8a44}{set\+Date} (uint8\+\_\+t \hyperlink{_time_8cpp_a51dcd9f072551ba8f47449a4e7f78c29}{day}, uint8\+\_\+t \hyperlink{_time_8cpp_a726c707dded9d78cf076554eceb956ec}{month}, uint8\+\_\+t \hyperlink{_time_8cpp_a8608865f8292c0505e02b67fd1cf39e8}{year})
+\item 
+void \hyperlink{class_r_t_c_zero_a1b52a726c30602d3769426974f56710f}{set\+Alarm\+Seconds} (uint8\+\_\+t seconds)
+\item 
+void \hyperlink{class_r_t_c_zero_a06a7ea4b7bc9d61df4fef51329927b22}{set\+Alarm\+Minutes} (uint8\+\_\+t minutes)
+\item 
+void \hyperlink{class_r_t_c_zero_a915e7bc9c446be99d52f87cdb76e6cfe}{set\+Alarm\+Hours} (uint8\+\_\+t hours)
+\item 
+void \hyperlink{class_r_t_c_zero_ac16225fa8a9c07a6e8d1157b6d699747}{set\+Alarm\+Time} (uint8\+\_\+t hours, uint8\+\_\+t minutes, uint8\+\_\+t seconds)
+\item 
+void \hyperlink{class_r_t_c_zero_a4519ba0e3eee8a3bf03f7c14b3ffa902}{set\+Alarm\+Day} (uint8\+\_\+t \hyperlink{_time_8cpp_a51dcd9f072551ba8f47449a4e7f78c29}{day})
+\item 
+void \hyperlink{class_r_t_c_zero_a8fe74d0c1ec7922f893addd67dc16aba}{set\+Alarm\+Month} (uint8\+\_\+t \hyperlink{_time_8cpp_a726c707dded9d78cf076554eceb956ec}{month})
+\item 
+void \hyperlink{class_r_t_c_zero_ae55ef909edbb893eba4becc8676dd8d6}{set\+Alarm\+Year} (uint8\+\_\+t \hyperlink{_time_8cpp_a8608865f8292c0505e02b67fd1cf39e8}{year})
+\item 
+void \hyperlink{class_r_t_c_zero_a12727934884612e1a125e6be3f461058}{set\+Alarm\+Date} (uint8\+\_\+t \hyperlink{_time_8cpp_a51dcd9f072551ba8f47449a4e7f78c29}{day}, uint8\+\_\+t \hyperlink{_time_8cpp_a726c707dded9d78cf076554eceb956ec}{month}, uint8\+\_\+t \hyperlink{_time_8cpp_a8608865f8292c0505e02b67fd1cf39e8}{year})
+\item 
+uint32\+\_\+t \hyperlink{class_r_t_c_zero_aefda208cc548613b8af437ba6e7d1ff3}{get\+Epoch} ()
+\item 
+uint32\+\_\+t \hyperlink{class_r_t_c_zero_ae660721e3ba20b6701431d8cd8bed697}{get\+Y2k\+Epoch} ()
+\item 
+void \hyperlink{class_r_t_c_zero_a5427b2b365b295516944a69b66e506ba}{set\+Epoch} (uint32\+\_\+t ts)
+\item 
+void \hyperlink{class_r_t_c_zero_aea1cc5a935bacd8430cb3be5a87281aa}{set\+Y2k\+Epoch} (uint32\+\_\+t ts)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file R\+T\+C\+Zero.\+h.
+
+
+
+\subsection{Member Enumeration Documentation}
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!Alarm\+\_\+\+Match@{Alarm\+\_\+\+Match}}
+\index{Alarm\+\_\+\+Match@{Alarm\+\_\+\+Match}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{Alarm\+\_\+\+Match}{Alarm\_Match}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf R\+T\+C\+Zero\+::\+Alarm\+\_\+\+Match} \+: uint8\+\_\+t}\hypertarget{class_r_t_c_zero_a331ac87204394f0e197122b8962149cc}{}\label{class_r_t_c_zero_a331ac87204394f0e197122b8962149cc}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{M\+A\+T\+C\+H\+\_\+\+O\+FF@{M\+A\+T\+C\+H\+\_\+\+O\+FF}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!M\+A\+T\+C\+H\+\_\+\+O\+FF@{M\+A\+T\+C\+H\+\_\+\+O\+FF}}\item[{\em 
+M\+A\+T\+C\+H\+\_\+\+O\+FF\hypertarget{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca229a4bf48dedcd24c3058d4659fbdd2b}{}\label{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca229a4bf48dedcd24c3058d4659fbdd2b}
+}]\index{M\+A\+T\+C\+H\+\_\+\+SS@{M\+A\+T\+C\+H\+\_\+\+SS}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!M\+A\+T\+C\+H\+\_\+\+SS@{M\+A\+T\+C\+H\+\_\+\+SS}}\item[{\em 
+M\+A\+T\+C\+H\+\_\+\+SS\hypertarget{class_r_t_c_zero_a331ac87204394f0e197122b8962149ccac5092377f2728d1888a72bfb638c95b9}{}\label{class_r_t_c_zero_a331ac87204394f0e197122b8962149ccac5092377f2728d1888a72bfb638c95b9}
+}]\index{M\+A\+T\+C\+H\+\_\+\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+M\+M\+SS}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!M\+A\+T\+C\+H\+\_\+\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+M\+M\+SS}}\item[{\em 
+M\+A\+T\+C\+H\+\_\+\+M\+M\+SS\hypertarget{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca944f42500c4e4ee3117ff8adcddc4eb1}{}\label{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca944f42500c4e4ee3117ff8adcddc4eb1}
+}]\index{M\+A\+T\+C\+H\+\_\+\+H\+H\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+H\+H\+M\+M\+SS}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!M\+A\+T\+C\+H\+\_\+\+H\+H\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+H\+H\+M\+M\+SS}}\item[{\em 
+M\+A\+T\+C\+H\+\_\+\+H\+H\+M\+M\+SS\hypertarget{class_r_t_c_zero_a331ac87204394f0e197122b8962149ccaf82fa9553250259c004ca80c3f2336cc}{}\label{class_r_t_c_zero_a331ac87204394f0e197122b8962149ccaf82fa9553250259c004ca80c3f2336cc}
+}]\index{M\+A\+T\+C\+H\+\_\+\+D\+H\+H\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+D\+H\+H\+M\+M\+SS}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!M\+A\+T\+C\+H\+\_\+\+D\+H\+H\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+D\+H\+H\+M\+M\+SS}}\item[{\em 
+M\+A\+T\+C\+H\+\_\+\+D\+H\+H\+M\+M\+SS\hypertarget{class_r_t_c_zero_a331ac87204394f0e197122b8962149ccad27b4eb26b4e2d23b1e74ca8c7b6473a}{}\label{class_r_t_c_zero_a331ac87204394f0e197122b8962149ccad27b4eb26b4e2d23b1e74ca8c7b6473a}
+}]\index{M\+A\+T\+C\+H\+\_\+\+M\+M\+D\+D\+H\+H\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+M\+M\+D\+D\+H\+H\+M\+M\+SS}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!M\+A\+T\+C\+H\+\_\+\+M\+M\+D\+D\+H\+H\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+M\+M\+D\+D\+H\+H\+M\+M\+SS}}\item[{\em 
+M\+A\+T\+C\+H\+\_\+\+M\+M\+D\+D\+H\+H\+M\+M\+SS\hypertarget{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca75b8b65641492bbb35128bddc6164a61}{}\label{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca75b8b65641492bbb35128bddc6164a61}
+}]\index{M\+A\+T\+C\+H\+\_\+\+Y\+Y\+M\+M\+D\+D\+H\+H\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+Y\+Y\+M\+M\+D\+D\+H\+H\+M\+M\+SS}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!M\+A\+T\+C\+H\+\_\+\+Y\+Y\+M\+M\+D\+D\+H\+H\+M\+M\+SS@{M\+A\+T\+C\+H\+\_\+\+Y\+Y\+M\+M\+D\+D\+H\+H\+M\+M\+SS}}\item[{\em 
+M\+A\+T\+C\+H\+\_\+\+Y\+Y\+M\+M\+D\+D\+H\+H\+M\+M\+SS\hypertarget{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca4a9fa9226a47b8b760dd53b2326b7f3e}{}\label{class_r_t_c_zero_a331ac87204394f0e197122b8962149cca4a9fa9226a47b8b760dd53b2326b7f3e}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 30 of file R\+T\+C\+Zero.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+Zero()}{RTCZero()}}]{\setlength{\rightskip}{0pt plus 5cm}R\+T\+C\+Zero\+::\+R\+T\+C\+Zero (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_af74f4cc9bc122628c0023e77b7b18c76}{}\label{class_r_t_c_zero_af74f4cc9bc122628c0023e77b7b18c76}
+
+
+Definition at line 29 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!attach\+Interrupt@{attach\+Interrupt}}
+\index{attach\+Interrupt@{attach\+Interrupt}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{attach\+Interrupt(void\+Func\+Ptr callback)}{attachInterrupt(voidFuncPtr callback)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::attach\+Interrupt (
+\begin{DoxyParamCaption}
+\item[{{\bf void\+Func\+Ptr}}]{callback}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a306f2bbbdfa83d21f8f577c11b73e76b}{}\label{class_r_t_c_zero_a306f2bbbdfa83d21f8f577c11b73e76b}
+
+
+Definition at line 131 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References R\+T\+C\+\_\+call\+Back.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!begin@{begin}}
+\index{begin@{begin}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{begin(bool reset\+Time=false)}{begin(bool resetTime=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::begin (
+\begin{DoxyParamCaption}
+\item[{bool}]{reset\+Time = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_ac6ad9d73cb8d3a0575e7cfc2b26a5412}{}\label{class_r_t_c_zero_ac6ad9d73cb8d3a0575e7cfc2b26a5412}
+
+
+Definition at line 34 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References M\+A\+T\+C\+H\+\_\+\+O\+FF.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!detach\+Interrupt@{detach\+Interrupt}}
+\index{detach\+Interrupt@{detach\+Interrupt}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{detach\+Interrupt()}{detachInterrupt()}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::detach\+Interrupt (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a6ca6de2448cadaa33a87cdd4278cdf27}{}\label{class_r_t_c_zero_a6ca6de2448cadaa33a87cdd4278cdf27}
+
+
+Definition at line 136 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References R\+T\+C\+\_\+call\+Back.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!disable\+Alarm@{disable\+Alarm}}
+\index{disable\+Alarm@{disable\+Alarm}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{disable\+Alarm()}{disableAlarm()}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::disable\+Alarm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a9c1b7a7b7f8ed3cabbdc039ede726631}{}\label{class_r_t_c_zero_a9c1b7a7b7f8ed3cabbdc039ede726631}
+
+
+Definition at line 122 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!enable\+Alarm@{enable\+Alarm}}
+\index{enable\+Alarm@{enable\+Alarm}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{enable\+Alarm(\+Alarm\+\_\+\+Match match)}{enableAlarm(Alarm\_Match match)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::enable\+Alarm (
+\begin{DoxyParamCaption}
+\item[{{\bf Alarm\+\_\+\+Match}}]{match}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_af2923fee4310485bc922898376f5042c}{}\label{class_r_t_c_zero_af2923fee4310485bc922898376f5042c}
+
+
+Definition at line 113 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Alarm\+Day@{get\+Alarm\+Day}}
+\index{get\+Alarm\+Day@{get\+Alarm\+Day}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Alarm\+Day()}{getAlarmDay()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Alarm\+Day (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a4b157a1820acba087ea42095505c35cc}{}\label{class_r_t_c_zero_a4b157a1820acba087ea42095505c35cc}
+
+
+Definition at line 204 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Alarm\+Hours@{get\+Alarm\+Hours}}
+\index{get\+Alarm\+Hours@{get\+Alarm\+Hours}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Alarm\+Hours()}{getAlarmHours()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Alarm\+Hours (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a0758261eb8ba11c90e903b5e38a6cee8}{}\label{class_r_t_c_zero_a0758261eb8ba11c90e903b5e38a6cee8}
+
+
+Definition at line 199 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Alarm\+Minutes@{get\+Alarm\+Minutes}}
+\index{get\+Alarm\+Minutes@{get\+Alarm\+Minutes}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Alarm\+Minutes()}{getAlarmMinutes()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Alarm\+Minutes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a9b689b5208dc3bd0d80524e0d5c52873}{}\label{class_r_t_c_zero_a9b689b5208dc3bd0d80524e0d5c52873}
+
+
+Definition at line 194 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Alarm\+Month@{get\+Alarm\+Month}}
+\index{get\+Alarm\+Month@{get\+Alarm\+Month}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Alarm\+Month()}{getAlarmMonth()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Alarm\+Month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a27152748cdb3ebdd15a4a51882dcd28b}{}\label{class_r_t_c_zero_a27152748cdb3ebdd15a4a51882dcd28b}
+
+
+Definition at line 209 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Alarm\+Seconds@{get\+Alarm\+Seconds}}
+\index{get\+Alarm\+Seconds@{get\+Alarm\+Seconds}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Alarm\+Seconds()}{getAlarmSeconds()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Alarm\+Seconds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a05ca5622ea0d01662326c251d3f4e960}{}\label{class_r_t_c_zero_a05ca5622ea0d01662326c251d3f4e960}
+
+
+Definition at line 189 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Alarm\+Year@{get\+Alarm\+Year}}
+\index{get\+Alarm\+Year@{get\+Alarm\+Year}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Alarm\+Year()}{getAlarmYear()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Alarm\+Year (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_af15b6757eeb9281446b7575c9a15ff19}{}\label{class_r_t_c_zero_af15b6757eeb9281446b7575c9a15ff19}
+
+
+Definition at line 214 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Day@{get\+Day}}
+\index{get\+Day@{get\+Day}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Day()}{getDay()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Day (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a9569ba1ee80390da5c9feb9c33681ac2}{}\label{class_r_t_c_zero_a9569ba1ee80390da5c9feb9c33681ac2}
+
+
+Definition at line 171 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Epoch@{get\+Epoch}}
+\index{get\+Epoch@{get\+Epoch}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Epoch()}{getEpoch()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t R\+T\+C\+Zero\+::get\+Epoch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_aefda208cc548613b8af437ba6e7d1ff3}{}\label{class_r_t_c_zero_aefda208cc548613b8af437ba6e7d1ff3}
+
+
+Definition at line 367 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References E\+P\+O\+C\+H\+\_\+\+T\+I\+M\+E\+\_\+\+Y\+E\+A\+R\+\_\+\+O\+FF.
+
+
+
+Referenced by get\+Y2k\+Epoch().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_r_t_c_zero_aefda208cc548613b8af437ba6e7d1ff3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Hours@{get\+Hours}}
+\index{get\+Hours@{get\+Hours}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Hours()}{getHours()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Hours (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a4e3c72195b429d690ca5e3febb9a2d8f}{}\label{class_r_t_c_zero_a4e3c72195b429d690ca5e3febb9a2d8f}
+
+
+Definition at line 165 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Minutes@{get\+Minutes}}
+\index{get\+Minutes@{get\+Minutes}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Minutes()}{getMinutes()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Minutes (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a813435838c1c830ab61e81f2c50cd76c}{}\label{class_r_t_c_zero_a813435838c1c830ab61e81f2c50cd76c}
+
+
+Definition at line 159 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Month@{get\+Month}}
+\index{get\+Month@{get\+Month}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Month()}{getMonth()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_ab5a20277839b8d68d7469feb95b027ec}{}\label{class_r_t_c_zero_ab5a20277839b8d68d7469feb95b027ec}
+
+
+Definition at line 177 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Seconds@{get\+Seconds}}
+\index{get\+Seconds@{get\+Seconds}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Seconds()}{getSeconds()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Seconds (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a914daa26d6ab1a3637a4696801532377}{}\label{class_r_t_c_zero_a914daa26d6ab1a3637a4696801532377}
+
+
+Definition at line 153 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Y2k\+Epoch@{get\+Y2k\+Epoch}}
+\index{get\+Y2k\+Epoch@{get\+Y2k\+Epoch}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Y2k\+Epoch()}{getY2kEpoch()}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t R\+T\+C\+Zero\+::get\+Y2k\+Epoch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_ae660721e3ba20b6701431d8cd8bed697}{}\label{class_r_t_c_zero_ae660721e3ba20b6701431d8cd8bed697}
+
+
+Definition at line 388 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References E\+P\+O\+C\+H\+\_\+\+T\+I\+M\+E\+\_\+\+O\+FF, and get\+Epoch().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_r_t_c_zero_ae660721e3ba20b6701431d8cd8bed697_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!get\+Year@{get\+Year}}
+\index{get\+Year@{get\+Year}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{get\+Year()}{getYear()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+Zero\+::get\+Year (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a87b268ab9f4e2ea4b0aca4ca7f9d48e6}{}\label{class_r_t_c_zero_a87b268ab9f4e2ea4b0aca4ca7f9d48e6}
+
+
+Definition at line 183 of file R\+T\+C\+Zero.\+cpp.
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Alarm\+Date@{set\+Alarm\+Date}}
+\index{set\+Alarm\+Date@{set\+Alarm\+Date}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Alarm\+Date(uint8\+\_\+t day, uint8\+\_\+t month, uint8\+\_\+t year)}{setAlarmDate(uint8\_t day, uint8\_t month, uint8\_t year)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Alarm\+Date (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{day, }
+\item[{uint8\+\_\+t}]{month, }
+\item[{uint8\+\_\+t}]{year}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a12727934884612e1a125e6be3f461058}{}\label{class_r_t_c_zero_a12727934884612e1a125e6be3f461058}
+
+
+Definition at line 358 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References set\+Alarm\+Day(), set\+Alarm\+Month(), and set\+Alarm\+Year().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_a12727934884612e1a125e6be3f461058_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Alarm\+Day@{set\+Alarm\+Day}}
+\index{set\+Alarm\+Day@{set\+Alarm\+Day}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Alarm\+Day(uint8\+\_\+t day)}{setAlarmDay(uint8\_t day)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Alarm\+Day (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{day}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a4519ba0e3eee8a3bf03f7c14b3ffa902}{}\label{class_r_t_c_zero_a4519ba0e3eee8a3bf03f7c14b3ffa902}
+
+
+Definition at line 331 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References day().
+
+
+
+Referenced by set\+Alarm\+Date().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_a4519ba0e3eee8a3bf03f7c14b3ffa902_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{class_r_t_c_zero_a4519ba0e3eee8a3bf03f7c14b3ffa902_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Alarm\+Hours@{set\+Alarm\+Hours}}
+\index{set\+Alarm\+Hours@{set\+Alarm\+Hours}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Alarm\+Hours(uint8\+\_\+t hours)}{setAlarmHours(uint8\_t hours)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Alarm\+Hours (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{hours}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a915e7bc9c446be99d52f87cdb76e6cfe}{}\label{class_r_t_c_zero_a915e7bc9c446be99d52f87cdb76e6cfe}
+
+
+Definition at line 313 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+Referenced by set\+Alarm\+Time().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_a915e7bc9c446be99d52f87cdb76e6cfe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Alarm\+Minutes@{set\+Alarm\+Minutes}}
+\index{set\+Alarm\+Minutes@{set\+Alarm\+Minutes}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Alarm\+Minutes(uint8\+\_\+t minutes)}{setAlarmMinutes(uint8\_t minutes)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Alarm\+Minutes (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{minutes}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a06a7ea4b7bc9d61df4fef51329927b22}{}\label{class_r_t_c_zero_a06a7ea4b7bc9d61df4fef51329927b22}
+
+
+Definition at line 304 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+Referenced by set\+Alarm\+Time().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_a06a7ea4b7bc9d61df4fef51329927b22_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Alarm\+Month@{set\+Alarm\+Month}}
+\index{set\+Alarm\+Month@{set\+Alarm\+Month}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Alarm\+Month(uint8\+\_\+t month)}{setAlarmMonth(uint8\_t month)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Alarm\+Month (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{month}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a8fe74d0c1ec7922f893addd67dc16aba}{}\label{class_r_t_c_zero_a8fe74d0c1ec7922f893addd67dc16aba}
+
+
+Definition at line 340 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References month().
+
+
+
+Referenced by set\+Alarm\+Date().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_a8fe74d0c1ec7922f893addd67dc16aba_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_a8fe74d0c1ec7922f893addd67dc16aba_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Alarm\+Seconds@{set\+Alarm\+Seconds}}
+\index{set\+Alarm\+Seconds@{set\+Alarm\+Seconds}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Alarm\+Seconds(uint8\+\_\+t seconds)}{setAlarmSeconds(uint8\_t seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Alarm\+Seconds (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a1b52a726c30602d3769426974f56710f}{}\label{class_r_t_c_zero_a1b52a726c30602d3769426974f56710f}
+
+
+Definition at line 295 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+Referenced by set\+Alarm\+Time().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_a1b52a726c30602d3769426974f56710f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Alarm\+Time@{set\+Alarm\+Time}}
+\index{set\+Alarm\+Time@{set\+Alarm\+Time}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Alarm\+Time(uint8\+\_\+t hours, uint8\+\_\+t minutes, uint8\+\_\+t seconds)}{setAlarmTime(uint8\_t hours, uint8\_t minutes, uint8\_t seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Alarm\+Time (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{hours, }
+\item[{uint8\+\_\+t}]{minutes, }
+\item[{uint8\+\_\+t}]{seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_ac16225fa8a9c07a6e8d1157b6d699747}{}\label{class_r_t_c_zero_ac16225fa8a9c07a6e8d1157b6d699747}
+
+
+Definition at line 322 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References set\+Alarm\+Hours(), set\+Alarm\+Minutes(), and set\+Alarm\+Seconds().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_ac16225fa8a9c07a6e8d1157b6d699747_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Alarm\+Year@{set\+Alarm\+Year}}
+\index{set\+Alarm\+Year@{set\+Alarm\+Year}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Alarm\+Year(uint8\+\_\+t year)}{setAlarmYear(uint8\_t year)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Alarm\+Year (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{year}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_ae55ef909edbb893eba4becc8676dd8d6}{}\label{class_r_t_c_zero_ae55ef909edbb893eba4becc8676dd8d6}
+
+
+Definition at line 349 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References year().
+
+
+
+Referenced by set\+Alarm\+Date().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_ae55ef909edbb893eba4becc8676dd8d6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_r_t_c_zero_ae55ef909edbb893eba4becc8676dd8d6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Date@{set\+Date}}
+\index{set\+Date@{set\+Date}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Date(uint8\+\_\+t day, uint8\+\_\+t month, uint8\+\_\+t year)}{setDate(uint8\_t day, uint8\_t month, uint8\_t year)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Date (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{day, }
+\item[{uint8\+\_\+t}]{month, }
+\item[{uint8\+\_\+t}]{year}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_ad84a83a503a798c3f90f667de21b8a44}{}\label{class_r_t_c_zero_ad84a83a503a798c3f90f667de21b8a44}
+
+
+Definition at line 286 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References set\+Day(), set\+Month(), and set\+Year().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_ad84a83a503a798c3f90f667de21b8a44_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Day@{set\+Day}}
+\index{set\+Day@{set\+Day}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Day(uint8\+\_\+t day)}{setDay(uint8\_t day)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Day (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{day}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_aa1d8a2279ae41b6a7b50c5ccc974b29f}{}\label{class_r_t_c_zero_aa1d8a2279ae41b6a7b50c5ccc974b29f}
+
+
+Definition at line 259 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References day().
+
+
+
+Referenced by set\+Date().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_aa1d8a2279ae41b6a7b50c5ccc974b29f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{class_r_t_c_zero_aa1d8a2279ae41b6a7b50c5ccc974b29f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Epoch@{set\+Epoch}}
+\index{set\+Epoch@{set\+Epoch}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Epoch(uint32\+\_\+t ts)}{setEpoch(uint32\_t ts)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Epoch (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ts}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a5427b2b365b295516944a69b66e506ba}{}\label{class_r_t_c_zero_a5427b2b365b295516944a69b66e506ba}
+
+
+Definition at line 393 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References E\+P\+O\+C\+H\+\_\+\+T\+I\+M\+E\+\_\+\+O\+FF, and E\+P\+O\+C\+H\+\_\+\+T\+I\+M\+E\+\_\+\+Y\+E\+A\+R\+\_\+\+O\+FF.
+
+
+
+Referenced by set\+Y2k\+Epoch().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_r_t_c_zero_a5427b2b365b295516944a69b66e506ba_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Hours@{set\+Hours}}
+\index{set\+Hours@{set\+Hours}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Hours(uint8\+\_\+t hours)}{setHours(uint8\_t hours)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Hours (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{hours}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a4bcc1288366d943f3328386c89d39bf3}{}\label{class_r_t_c_zero_a4bcc1288366d943f3328386c89d39bf3}
+
+
+Definition at line 241 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+Referenced by set\+Time().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=304pt]{class_r_t_c_zero_a4bcc1288366d943f3328386c89d39bf3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Minutes@{set\+Minutes}}
+\index{set\+Minutes@{set\+Minutes}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Minutes(uint8\+\_\+t minutes)}{setMinutes(uint8\_t minutes)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Minutes (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{minutes}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_adeb4f4fbae93c46e227646569113cbd1}{}\label{class_r_t_c_zero_adeb4f4fbae93c46e227646569113cbd1}
+
+
+Definition at line 232 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+Referenced by set\+Time().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_r_t_c_zero_adeb4f4fbae93c46e227646569113cbd1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Month@{set\+Month}}
+\index{set\+Month@{set\+Month}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Month(uint8\+\_\+t month)}{setMonth(uint8\_t month)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Month (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{month}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_af91e416057bf96c8ae94b053e94ec722}{}\label{class_r_t_c_zero_af91e416057bf96c8ae94b053e94ec722}
+
+
+Definition at line 268 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References month().
+
+
+
+Referenced by set\+Date().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_af91e416057bf96c8ae94b053e94ec722_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=303pt]{class_r_t_c_zero_af91e416057bf96c8ae94b053e94ec722_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Seconds@{set\+Seconds}}
+\index{set\+Seconds@{set\+Seconds}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Seconds(uint8\+\_\+t seconds)}{setSeconds(uint8\_t seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Seconds (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a654ea54b599e9269369c3d329dd41685}{}\label{class_r_t_c_zero_a654ea54b599e9269369c3d329dd41685}
+
+
+Definition at line 223 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+Referenced by set\+Time().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_r_t_c_zero_a654ea54b599e9269369c3d329dd41685_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Time(uint8\+\_\+t hours, uint8\+\_\+t minutes, uint8\+\_\+t seconds)}{setTime(uint8\_t hours, uint8\_t minutes, uint8\_t seconds)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Time (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{hours, }
+\item[{uint8\+\_\+t}]{minutes, }
+\item[{uint8\+\_\+t}]{seconds}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a2bd00b1214877c926001a8d60acad72d}{}\label{class_r_t_c_zero_a2bd00b1214877c926001a8d60acad72d}
+
+
+Definition at line 250 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References set\+Hours(), set\+Minutes(), and set\+Seconds().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{class_r_t_c_zero_a2bd00b1214877c926001a8d60acad72d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Y2k\+Epoch@{set\+Y2k\+Epoch}}
+\index{set\+Y2k\+Epoch@{set\+Y2k\+Epoch}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Y2k\+Epoch(uint32\+\_\+t ts)}{setY2kEpoch(uint32\_t ts)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Y2k\+Epoch (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{ts}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_aea1cc5a935bacd8430cb3be5a87281aa}{}\label{class_r_t_c_zero_aea1cc5a935bacd8430cb3be5a87281aa}
+
+
+Definition at line 415 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References E\+P\+O\+C\+H\+\_\+\+T\+I\+M\+E\+\_\+\+O\+FF, and set\+Epoch().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_r_t_c_zero_aea1cc5a935bacd8430cb3be5a87281aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!set\+Year@{set\+Year}}
+\index{set\+Year@{set\+Year}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{set\+Year(uint8\+\_\+t year)}{setYear(uint8\_t year)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::set\+Year (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{year}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_ad71c689f526dd7e40c6f134b2a223b81}{}\label{class_r_t_c_zero_ad71c689f526dd7e40c6f134b2a223b81}
+
+
+Definition at line 277 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+References year().
+
+
+
+Referenced by set\+Date().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c_zero_ad71c689f526dd7e40c6f134b2a223b81_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{class_r_t_c_zero_ad71c689f526dd7e40c6f134b2a223b81_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+Zero@{R\+T\+C\+Zero}!standby\+Mode@{standby\+Mode}}
+\index{standby\+Mode@{standby\+Mode}!R\+T\+C\+Zero@{R\+T\+C\+Zero}}
+\subsubsection[{\texorpdfstring{standby\+Mode()}{standbyMode()}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+Zero\+::standby\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c_zero_a2fab941e64ffe5501c30c085a5b3833e}{}\label{class_r_t_c_zero_a2fab941e64ffe5501c30c085a5b3833e}
+
+
+Definition at line 141 of file R\+T\+C\+Zero.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+R\+T\+C\+Zero/src/\hyperlink{_r_t_c_zero_8h}{R\+T\+C\+Zero.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+R\+T\+C\+Zero/src/\hyperlink{_r_t_c_zero_8cpp}{R\+T\+C\+Zero.\+cpp}\end{DoxyCompactItemize}

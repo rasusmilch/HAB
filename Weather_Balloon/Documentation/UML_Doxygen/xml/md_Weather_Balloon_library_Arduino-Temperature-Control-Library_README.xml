@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_Arduino-Temperature-Control-Library_README" kind="page">
+    <compoundname>md_Weather_Balloon_library_Arduino-Temperature-Control-Library_README</compoundname>
+    <title>Arduino Library for Maxim Temperature Integrated Circuits</title>
+    <detaileddescription>
+<para><heading level="2">Usage</heading>
+</para><para>This library supports the following devices :</para><para><itemizedlist>
+<listitem><para>DS18B20</para></listitem><listitem><para>DS18S20 - Please note there appears to be an issue with this series.</para></listitem><listitem><para>DS1822</para></listitem><listitem><para>DS1820</para></listitem></itemizedlist>
+</para><para>You will need a pull-up resistor of about 5 KOhm between the 1-Wire data line and your 5V power. If you are using the DS18B20, ground pins 1 and 3. The centre pin is the data line &apos;1-wire&apos;.</para><para>We have included a &quot;REQUIRESNEW&quot; and &quot;REQUIRESALARMS&quot; definition. If you want to slim down the code feel free to use either of these by including</para><para><verbatim>#define REQUIRESNEW 
+</verbatim></para><para>or <verbatim>#define REQUIRESALARMS
+</verbatim></para><para>at the top of <ref refid="_dallas_temperature_8h" kindref="compound">DallasTemperature.h</ref></para><para><heading level="2">Credits</heading>
+</para><para>The <ref refid="class_one_wire" kindref="compound">OneWire</ref> code has been derived from <ulink url="http://www.arduino.cc/playground/Learning/OneWire">http://www.arduino.cc/playground/Learning/OneWire</ulink>. Miles Burton <ulink url="mailto:miles@mnetcs.com">miles@mnetcs.com</ulink> originally developed this library. Tim Newsome <ulink url="mailto:nuisance@casualhacker.net">nuisance@casualhacker.net</ulink> added support for multiple sensors on the same bus. Guil Barros [<ulink url="mailto:gfbarros@bappos.com">gfbarros@bappos.com</ulink>] added getTempByAddress (v3.5) Rob Tillaart [<ulink url="mailto:rob.tillaart@gmail.com">rob.tillaart@gmail.com</ulink>] added async modus (v3.7.0)</para><para><heading level="2">Website</heading>
+</para><para>You can find the latest version of the library at <ulink url="http://milesburton.com/index.php?title=Dallas_Temperature_Control_Library">http://milesburton.com/index.php?title=Dallas_Temperature_Control_Library</ulink></para><para><heading level="1">License</heading>
+</para><para>This library is free software; you can redistribute it and/or modify it under the terms of the GNU Lesser General Public License as published by the Free Software Foundation; either version 2.1 of the License, or (at your option) any later version.</para><para>This library is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU Lesser General Public License for more details.</para><para>You should have received a copy of the GNU Lesser General Public License along with this library; if not, write to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

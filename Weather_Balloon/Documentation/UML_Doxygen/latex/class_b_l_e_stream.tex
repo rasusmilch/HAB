@@ -1,0 +1,259 @@
+\hypertarget{class_b_l_e_stream}{}\section{B\+L\+E\+Stream Class Reference}
+\label{class_b_l_e_stream}\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+
+
+{\ttfamily \#include $<$B\+L\+E\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for B\+L\+E\+Stream\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_b_l_e_stream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for B\+L\+E\+Stream\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=220pt]{class_b_l_e_stream__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_l_e_stream_aa12f9098b653a30c2a152f647ab8bdfa}{B\+L\+E\+Stream} (unsigned char req=0, unsigned char rdy=0, unsigned char rst=0)
+\item 
+void \hyperlink{class_b_l_e_stream_a7cef0d2f7dc431608483c3911e68bb56}{begin} (...)
+\item 
+bool \hyperlink{class_b_l_e_stream_a58d4d0684a7c9f5434736af31ea2ab98}{poll} ()
+\item 
+void \hyperlink{class_b_l_e_stream_a2f571566304b41339d8a74cee6f98d2d}{end} ()
+\item 
+void \hyperlink{class_b_l_e_stream_ab05a77032b59c6d3525390e7e6a768ab}{set\+Flush\+Interval} (int)
+\item 
+virtual int \hyperlink{class_b_l_e_stream_a9b8dd79faf553535df6b68a8d572c8e2}{available} (void)
+\item 
+virtual int \hyperlink{class_b_l_e_stream_a932edda09fadf9530e2b87bed4d88bed}{peek} (void)
+\item 
+virtual int \hyperlink{class_b_l_e_stream_a607238a23059d0dbe133c3358e7c42ca}{read} (void)
+\item 
+virtual void \hyperlink{class_b_l_e_stream_af22a00b80511025785543d107422874a}{flush} (void)
+\item 
+virtual size\+\_\+t \hyperlink{class_b_l_e_stream_ad3e299ba3ad439d077f1b7bb74617698}{write} (uint8\+\_\+t byte)
+\item 
+virtual \hyperlink{class_b_l_e_stream_aded76dc2283104566c13fed9755e21f5}{operator bool} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 27 of file B\+L\+E\+Stream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{B\+L\+E\+Stream(unsigned char req=0, unsigned char rdy=0, unsigned char rst=0)}{BLEStream(unsigned char req=0, unsigned char rdy=0, unsigned char rst=0)}}]{\setlength{\rightskip}{0pt plus 5cm}B\+L\+E\+Stream\+::\+B\+L\+E\+Stream (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{req = {\ttfamily 0}, }
+\item[{unsigned char}]{rdy = {\ttfamily 0}, }
+\item[{unsigned char}]{rst = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_l_e_stream_aa12f9098b653a30c2a152f647ab8bdfa}{}\label{class_b_l_e_stream_aa12f9098b653a30c2a152f647ab8bdfa}
+
+
+Definition at line 78 of file B\+L\+E\+Stream.\+h.
+
+
+
+References B\+L\+E\+S\+T\+R\+E\+A\+M\+\_\+\+T\+X\+B\+U\+F\+F\+E\+R\+\_\+\+F\+L\+U\+S\+H\+\_\+\+I\+N\+T\+E\+R\+V\+AL.
+
+
+
+\subsection{Member Function Documentation}
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!available@{available}}
+\index{available@{available}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{available(void)}{available(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int B\+L\+E\+Stream\+::available (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_l_e_stream_a9b8dd79faf553535df6b68a8d572c8e2}{}\label{class_b_l_e_stream_a9b8dd79faf553535df6b68a8d572c8e2}
+
+
+Definition at line 127 of file B\+L\+E\+Stream.\+h.
+
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!begin@{begin}}
+\index{begin@{begin}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{begin(...)}{begin(...)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+L\+E\+Stream\+::begin (
+\begin{DoxyParamCaption}
+\item[{}]{...}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_l_e_stream_a7cef0d2f7dc431608483c3911e68bb56}{}\label{class_b_l_e_stream_a7cef0d2f7dc431608483c3911e68bb56}
+
+
+Definition at line 101 of file B\+L\+E\+Stream.\+h.
+
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!end@{end}}
+\index{end@{end}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{end()}{end()}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+L\+E\+Stream\+::end (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_l_e_stream_a2f571566304b41339d8a74cee6f98d2d}{}\label{class_b_l_e_stream_a2f571566304b41339d8a74cee6f98d2d}
+
+
+Definition at line 119 of file B\+L\+E\+Stream.\+h.
+
+
+
+References flush().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_b_l_e_stream_a2f571566304b41339d8a74cee6f98d2d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!flush@{flush}}
+\index{flush@{flush}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{flush(void)}{flush(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+L\+E\+Stream\+::flush (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_l_e_stream_af22a00b80511025785543d107422874a}{}\label{class_b_l_e_stream_af22a00b80511025785543d107422874a}
+
+
+Definition at line 174 of file B\+L\+E\+Stream.\+h.
+
+
+
+Referenced by end(), poll(), and write().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_b_l_e_stream_af22a00b80511025785543d107422874a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!operator bool@{operator bool}}
+\index{operator bool@{operator bool}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{operator bool()}{operator bool()}}]{\setlength{\rightskip}{0pt plus 5cm}B\+L\+E\+Stream\+::operator bool (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_l_e_stream_aded76dc2283104566c13fed9755e21f5}{}\label{class_b_l_e_stream_aded76dc2283104566c13fed9755e21f5}
+
+
+Definition at line 207 of file B\+L\+E\+Stream.\+h.
+
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!peek@{peek}}
+\index{peek@{peek}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{peek(void)}{peek(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int B\+L\+E\+Stream\+::peek (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_l_e_stream_a932edda09fadf9530e2b87bed4d88bed}{}\label{class_b_l_e_stream_a932edda09fadf9530e2b87bed4d88bed}
+
+
+Definition at line 145 of file B\+L\+E\+Stream.\+h.
+
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!poll@{poll}}
+\index{poll@{poll}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{poll()}{poll()}}]{\setlength{\rightskip}{0pt plus 5cm}bool B\+L\+E\+Stream\+::poll (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_l_e_stream_a58d4d0684a7c9f5434736af31ea2ab98}{}\label{class_b_l_e_stream_a58d4d0684a7c9f5434736af31ea2ab98}
+
+
+Definition at line 109 of file B\+L\+E\+Stream.\+h.
+
+
+
+References flush().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=285pt]{class_b_l_e_stream_a58d4d0684a7c9f5434736af31ea2ab98_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!read@{read}}
+\index{read@{read}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{read(void)}{read(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int B\+L\+E\+Stream\+::read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_l_e_stream_a607238a23059d0dbe133c3358e7c42ca}{}\label{class_b_l_e_stream_a607238a23059d0dbe133c3358e7c42ca}
+
+
+Definition at line 159 of file B\+L\+E\+Stream.\+h.
+
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!set\+Flush\+Interval@{set\+Flush\+Interval}}
+\index{set\+Flush\+Interval@{set\+Flush\+Interval}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{set\+Flush\+Interval(int)}{setFlushInterval(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void B\+L\+E\+Stream\+::set\+Flush\+Interval (
+\begin{DoxyParamCaption}
+\item[{int}]{interval}
+\end{DoxyParamCaption}
+)}\hypertarget{class_b_l_e_stream_ab05a77032b59c6d3525390e7e6a768ab}{}\label{class_b_l_e_stream_ab05a77032b59c6d3525390e7e6a768ab}
+
+
+Definition at line 217 of file B\+L\+E\+Stream.\+h.
+
+
+
+References B\+L\+E\+S\+T\+R\+E\+A\+M\+\_\+\+M\+I\+N\+\_\+\+F\+L\+U\+S\+H\+\_\+\+I\+N\+T\+E\+R\+V\+AL, and i.
+
+\index{B\+L\+E\+Stream@{B\+L\+E\+Stream}!write@{write}}
+\index{write@{write}!B\+L\+E\+Stream@{B\+L\+E\+Stream}}
+\subsubsection[{\texorpdfstring{write(uint8\+\_\+t byte)}{write(uint8\_t byte)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t B\+L\+E\+Stream\+::write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{byte}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_b_l_e_stream_ad3e299ba3ad439d077f1b7bb74617698}{}\label{class_b_l_e_stream_ad3e299ba3ad439d077f1b7bb74617698}
+
+
+Definition at line 191 of file B\+L\+E\+Stream.\+h.
+
+
+
+References flush().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_b_l_e_stream_ad3e299ba3ad439d077f1b7bb74617698_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Firmata/utility/\hyperlink{_b_l_e_stream_8h}{B\+L\+E\+Stream.\+h}\end{DoxyCompactItemize}

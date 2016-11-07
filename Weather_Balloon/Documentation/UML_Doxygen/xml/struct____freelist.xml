@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct____freelist" kind="struct" language="C++" prot="public">
+    <compoundname>__freelist</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct____freelist_1a400b91c9baf14861360a1c1caba8309d" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t __freelist::sz</definition>
+        <argsstring></argsstring>
+        <name>sz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="323" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="323" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8cpp_1a04e1cfe100b396e57c2581502de5e5ca" compoundref="_lib_a_p_r_s_8cpp" startline="329" endline="337">freeListSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct____freelist_1abfcbc656d931bb3fc6f5b3f3deec41cd" prot="public" static="no" mutable="no">
+        <type>struct <ref refid="struct____freelist" kindref="compound">__freelist</ref> *</type>
+        <definition>struct __freelist* __freelist::nx</definition>
+        <argsstring></argsstring>
+        <name>nx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="324" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="324" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8cpp_1a04e1cfe100b396e57c2581502de5e5ca" compoundref="_lib_a_p_r_s_8cpp" startline="329" endline="337">freeListSize</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="219">
+        <label>__freelist</label>
+        <link refid="struct____freelist"/>
+        <childnode refid="219" relation="usage">
+          <edgelabel>nx</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" line="322" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="322" bodyend="325"/>
+    <listofallmembers>
+      <member refid="struct____freelist_1abfcbc656d931bb3fc6f5b3f3deec41cd" prot="public" virt="non-virtual"><scope>__freelist</scope><name>nx</name></member>
+      <member refid="struct____freelist_1a400b91c9baf14861360a1c1caba8309d" prot="public" virt="non-virtual"><scope>__freelist</scope><name>sz</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

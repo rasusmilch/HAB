@@ -1,0 +1,259 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structgyro_settings" kind="struct" language="C++" prot="public">
+    <compoundname>gyroSettings</compoundname>
+    <includes refid="_l_s_m9_d_s1___types_8h" local="no">LSM9DS1_Types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structgyro_settings_1ac9c769eeefed971baac74a7b81b25e7b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="180" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="180" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a70ced5c47e97d4dd6770954117ad3a9f" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t gyroSettings::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="181" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="181" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a115d304ebcdc8c701f3e5a5d397250aa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="604" endline="627">LSM9DS1::setGyroScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a303e0dd33e000579dc3917aecedb6e63" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="743" endline="746">LSM9DS1::calcgRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="952" endline="971">LSM9DS1::constrainScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a58ebac4d1f242d6b129570396a7355b0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::sampleRate</definition>
+        <argsstring></argsstring>
+        <name>sampleRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="182" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="182" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ab8fc33c8da4fc5c379e880ff57d331fa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="696" endline="711">LSM9DS1::setGyroODR</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1ac3f0782333ec55165c1f589d445ba374" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::bandwidth</definition>
+        <argsstring></argsstring>
+        <name>bandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="184" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="184" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a296a167235d876fa79afc471399e763b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::lowPowerEnable</definition>
+        <argsstring></argsstring>
+        <name>lowPowerEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="185" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="185" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1aa7aa5eba55588e4bcfc0be9ea9b6ed8d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::HPFEnable</definition>
+        <argsstring></argsstring>
+        <name>HPFEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="186" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="186" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a7357a9b858fdf515e969ae4e06459f37" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::HPFCutoff</definition>
+        <argsstring></argsstring>
+        <name>HPFCutoff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="187" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="187" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a877b529e39287bed155acbca97a75540" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::flipX</definition>
+        <argsstring></argsstring>
+        <name>flipX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="188" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="188" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a2137659e07899a0efccc941e003c07e0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::flipY</definition>
+        <argsstring></argsstring>
+        <name>flipY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="189" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="189" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a94c92be9f7c56dd9cd21120307d7373f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::flipZ</definition>
+        <argsstring></argsstring>
+        <name>flipZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="190" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="190" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a33239fd5c4a0fd74670455008c2701ee" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::orientation</definition>
+        <argsstring></argsstring>
+        <name>orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="191" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="191" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a7c1000d1151579743faa376d49751f1d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::enableX</definition>
+        <argsstring></argsstring>
+        <name>enableX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="192" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="192" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a4d6ea95b7a52daab6d48dc128c83f3d8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::enableY</definition>
+        <argsstring></argsstring>
+        <name>enableY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="193" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="193" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a86a86182fd841bd651672d43803b5c63" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::enableZ</definition>
+        <argsstring></argsstring>
+        <name>enableZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="194" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="194" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structgyro_settings_1a3eb9f52cae013b107fbc5059220f9333" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t gyroSettings::latchInterrupt</definition>
+        <argsstring></argsstring>
+        <name>latchInterrupt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="195" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="195" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="178" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="177" bodyend="196"/>
+    <listofallmembers>
+      <member refid="structgyro_settings_1ac3f0782333ec55165c1f589d445ba374" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>bandwidth</name></member>
+      <member refid="structgyro_settings_1ac9c769eeefed971baac74a7b81b25e7b" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>enabled</name></member>
+      <member refid="structgyro_settings_1a7c1000d1151579743faa376d49751f1d" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>enableX</name></member>
+      <member refid="structgyro_settings_1a4d6ea95b7a52daab6d48dc128c83f3d8" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>enableY</name></member>
+      <member refid="structgyro_settings_1a86a86182fd841bd651672d43803b5c63" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>enableZ</name></member>
+      <member refid="structgyro_settings_1a877b529e39287bed155acbca97a75540" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>flipX</name></member>
+      <member refid="structgyro_settings_1a2137659e07899a0efccc941e003c07e0" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>flipY</name></member>
+      <member refid="structgyro_settings_1a94c92be9f7c56dd9cd21120307d7373f" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>flipZ</name></member>
+      <member refid="structgyro_settings_1a7357a9b858fdf515e969ae4e06459f37" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>HPFCutoff</name></member>
+      <member refid="structgyro_settings_1aa7aa5eba55588e4bcfc0be9ea9b6ed8d" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>HPFEnable</name></member>
+      <member refid="structgyro_settings_1a3eb9f52cae013b107fbc5059220f9333" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>latchInterrupt</name></member>
+      <member refid="structgyro_settings_1a296a167235d876fa79afc471399e763b" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>lowPowerEnable</name></member>
+      <member refid="structgyro_settings_1a33239fd5c4a0fd74670455008c2701ee" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>orientation</name></member>
+      <member refid="structgyro_settings_1a58ebac4d1f242d6b129570396a7355b0" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>sampleRate</name></member>
+      <member refid="structgyro_settings_1a70ced5c47e97d4dd6770954117ad3a9f" prot="public" virt="non-virtual"><scope>gyroSettings</scope><name>scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

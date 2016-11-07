@@ -1,0 +1,6 @@
+<map id="DallasTemperature::readScratchPad" name="DallasTemperature::readScratchPad">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#a624f64b186c13927d4f74bd7c5b92c2e" title="DallasTemperature::\lisConnected" alt="" coords="193,5,325,47"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#adaf460a3b8004218e97af7059d41053a" title="DallasTemperature::\lisConversionAvailable" alt="" coords="185,71,332,112"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#aee2a2abd5f8293df9a0a030b3e982c90" title="DallasTemperature::\lrequestTemperaturesByAddress" alt="" coords="380,71,575,112"/>
+<area shape="rect" id="node5" href="$class_dallas_temperature.html#ae9a7bf62321615519242d2421c8b349a" title="DallasTemperature::\lrequestTemperaturesByIndex" alt="" coords="623,71,805,112"/>
+</map>

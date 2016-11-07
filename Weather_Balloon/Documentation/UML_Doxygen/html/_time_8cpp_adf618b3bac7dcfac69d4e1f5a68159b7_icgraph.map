@@ -1,0 +1,7 @@
+<map id="minute" name="minute">
+<area shape="rect" id="node2" href="$class_d_s3231.html#ac8ccbb72f7cfbb27df1558a8896ef236" title="DS3231::setDateTime" alt="" coords="115,5,249,32"/>
+<area shape="rect" id="node3" href="$struct_tiny_g_p_s_time.html#afcdb632fee9d144b1414c9d7b95719f1" title="TinyGPSTime::value" alt="" coords="115,56,249,83"/>
+<area shape="rect" id="node4" href="$_weather___balloon_8cpp.html#ab14d778dd0d52177eb147802a870639d" title="read_GPS" alt="" coords="297,56,372,83"/>
+<area shape="rect" id="node5" href="$_weather___balloon_8cpp.html#ad40ccf803c2eff76d7e0e7a24c9937ef" title="readSensors" alt="" coords="420,56,507,83"/>
+<area shape="rect" id="node6" href="$_weather___balloon_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="555,56,601,83"/>
+</map>

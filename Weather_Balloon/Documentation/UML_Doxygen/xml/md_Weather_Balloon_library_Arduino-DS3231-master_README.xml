@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_Arduino-DS3231-master_README" kind="page">
+    <compoundname>md_Weather_Balloon_library_Arduino-DS3231-master_README</compoundname>
+    <title>Arduino-DS3231</title>
+    <detaileddescription>
+<para><ref refid="class_d_s3231" kindref="compound">DS3231</ref> Real-Time Clock.</para><para><image type="html" name="ds3231-dateformat.png"></image>
+</para><para><heading level="2">Date formats (Day) </heading>
+</para><para><itemizedlist>
+<listitem><para>d : Day of the month, 2 digits with leading zeros (01 to 31)</para></listitem><listitem><para>D : A textual representation of a day, three letters (Mon through Sun)</para></listitem><listitem><para>j : Day of the month without leading zeros (1 to 31)</para></listitem><listitem><para>l : A full textual representation of the day of the week (Sunday through Saturday)</para></listitem><listitem><para>N : ISO-8601 numeric representation of the day of the week (1 for Monday through 7 for Sunday)</para></listitem><listitem><para>S : English ordinal suffix for the day of the month, 2 characters (st, nd, rd or th. Works well with j)</para></listitem><listitem><para>w : Numeric representation of the day of the week (0 for Sunday through 6 for Saturday)</para></listitem><listitem><para>z : The day of the year (0 through 365)</para></listitem></itemizedlist>
+</para><para><heading level="2">Date formats (Month) </heading>
+</para><para><itemizedlist>
+<listitem><para>F : A full textual representation of a month, such as January or March (January through December)</para></listitem><listitem><para>m : Numeric representation of a month, with leading zeros (01 through 12)</para></listitem><listitem><para>M : A short textual representation of a month, three letters (Jan through Dec)</para></listitem><listitem><para>n : Numeric representation of a month, without leading zeros (1 through 12)</para></listitem><listitem><para>t : Number of days in the given month (28 through 31)</para></listitem></itemizedlist>
+</para><para><heading level="2">Date formats (Year) </heading>
+</para><para><itemizedlist>
+<listitem><para>L : Whether it&apos;s a leap year (1 if it is a leap year, 0 otherwise)</para></listitem><listitem><para>Y : A full numeric representation of a year, 4 digits (Examples: 1999 or 2003)</para></listitem><listitem><para>y : A two digit representation of a year (Examples: 99 or 03)</para></listitem></itemizedlist>
+</para><para><heading level="2">Date formats (Time) </heading>
+</para><para><itemizedlist>
+<listitem><para>a : Lowercase Ante meridiem and Post meridiem (am or pm)</para></listitem><listitem><para>A : Uppercase Ante meridiem and Post meridiem (AM or PM)</para></listitem><listitem><para>g : 2-hour format of an hour without leading zeros (1 through 12)</para></listitem><listitem><para>G : 24-hour format of an hour without leading zeros (0 through 23)</para></listitem><listitem><para>h : 12-hour format of an hour with leading zeros (01 through 12)</para></listitem><listitem><para>H : 24-hour format of an hour with leading zeros (00 through 23)</para></listitem><listitem><para>i : Minutes with leading zeros (00 to 59)</para></listitem><listitem><para>s : Seconds, with leading zeros (00 through 59)</para></listitem></itemizedlist>
+</para><para><heading level="2">Dare formats (Full Date/Time) </heading>
+</para><para><itemizedlist>
+<listitem><para>U : Seconds since the Unix Epoch (January 1 1970 00:00:00 GMT)</para></listitem></itemizedlist>
+</para><para><heading level="2">More info </heading>
+</para><para>Tutorials: www.jarzebski.pl/arduino/komponenty/zegar-czasu-rzeczywistego-rtc-ds3231.html</para><para>This library use I2C to communicate, 2 pins are required to interface.</para><para><heading level="2">Credits </heading>
+</para><para>Original Code by JeeLabs <ulink url="http://news.jeelabs.org/code/">http://news.jeelabs.org/code/</ulink></para><para>First fork by adafruit <ulink url="https://github.com/adafruit/RTClib">https://github.com/adafruit/RTClib</ulink> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

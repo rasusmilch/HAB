@@ -1,0 +1,8 @@
+<map id="OneWire::read" name="OneWire::read">
+<area shape="rect" id="node2" href="$class_one_wire.html#a2407440e8e25b624617593f8ad6447d4" title="OneWire::read_bytes" alt="" coords="155,5,291,32"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#a2b55774207d0211fd679247a7137142b" title="DallasTemperature::\lreadScratchPad" alt="" coords="157,57,289,98"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#a624f64b186c13927d4f74bd7c5b92c2e" title="DallasTemperature::\lisConnected" alt="" coords="346,23,478,65"/>
+<area shape="rect" id="node5" href="$class_dallas_temperature.html#adaf460a3b8004218e97af7059d41053a" title="DallasTemperature::\lisConversionAvailable" alt="" coords="339,89,485,130"/>
+<area shape="rect" id="node6" href="$class_dallas_temperature.html#aee2a2abd5f8293df9a0a030b3e982c90" title="DallasTemperature::\lrequestTemperaturesByAddress" alt="" coords="533,89,728,130"/>
+<area shape="rect" id="node7" href="$class_dallas_temperature.html#ae9a7bf62321615519242d2421c8b349a" title="DallasTemperature::\lrequestTemperaturesByIndex" alt="" coords="776,89,959,130"/>
+</map>

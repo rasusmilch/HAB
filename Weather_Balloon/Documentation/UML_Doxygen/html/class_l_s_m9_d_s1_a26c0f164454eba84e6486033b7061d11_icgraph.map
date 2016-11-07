@@ -1,0 +1,36 @@
+<map id="LSM9DS1::SPIreadBytes" name="LSM9DS1::SPIreadBytes">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#acfdf9862cad1e66c9fb61a17bfbe7477" title="LSM9DS1::mReadBytes" alt="" coords="204,1019,351,1045"/>
+<area shape="rect" id="node9" href="$class_l_s_m9_d_s1.html#a6f0f50bb5e9b702d5a19c7441a3f9d8b" title="LSM9DS1::SPIreadByte" alt="" coords="205,588,350,615"/>
+<area shape="rect" id="node32" href="$class_l_s_m9_d_s1.html#ae0a9cbfd74b1f4676f091c2d8e491d77" title="LSM9DS1::xgReadBytes" alt="" coords="399,1108,549,1135"/>
+<area shape="rect" id="node3" href="$class_l_s_m9_d_s1.html#ae127cf75aa5f3c5421e49363795dcd38" title="LSM9DS1::readMag" alt="" coords="617,1019,744,1045"/>
+<area shape="rect" id="node4" href="$class_l_s_m9_d_s1.html#afb45f0bcbcbeb15d4bd1a28821b24d14" title="LSM9DS1::calibrateMag" alt="" coords="812,183,963,209"/>
+<area shape="rect" id="node7" href="$_weather___balloon_8cpp.html#ad40ccf803c2eff76d7e0e7a24c9937ef" title="readSensors" alt="" coords="844,1069,931,1096"/>
+<area shape="rect" id="node5" href="$_weather___balloon_8cpp.html#a2c2e98945e78daa792b87b30868c3907" title="configure_LSM9DS1" alt="" coords="1011,233,1141,260"/>
+<area shape="rect" id="node6" href="$_weather___balloon_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="1189,233,1240,260"/>
+<area shape="rect" id="node8" href="$_weather___balloon_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="1053,1069,1099,1096"/>
+<area shape="rect" id="node10" href="$class_l_s_m9_d_s1.html#ae4e470321567e4f93fc09f4cc6cd9efa" title="LSM9DS1::mReadByte" alt="" coords="403,132,545,159"/>
+<area shape="rect" id="node16" href="$class_l_s_m9_d_s1.html#af7f9789df6f0178764c815a3380c202a" title="LSM9DS1::xgReadByte" alt="" coords="401,588,547,615"/>
+<area shape="rect" id="node11" href="$class_l_s_m9_d_s1.html#a8728e560c76bd120b3711af15a6ecbd6" title="LSM9DS1::begin" alt="" coords="625,208,736,235"/>
+<area shape="rect" id="node12" href="$class_l_s_m9_d_s1.html#a2bc92a37db982059b89e0a06e7d05a95" title="LSM9DS1::getMagIntSrc" alt="" coords="605,5,757,32"/>
+<area shape="rect" id="node13" href="$class_l_s_m9_d_s1.html#a85afd29e95bead7b3f0083a9a235d1df" title="LSM9DS1::magAvailable" alt="" coords="603,157,758,184"/>
+<area shape="rect" id="node14" href="$class_l_s_m9_d_s1.html#a8bc672fba680edc468a643fd58046b41" title="LSM9DS1::setMagODR" alt="" coords="609,56,753,83"/>
+<area shape="rect" id="node15" href="$class_l_s_m9_d_s1.html#ad7604159a07b0d088cdfb6ba4a0093b0" title="LSM9DS1::setMagScale" alt="" coords="607,107,754,133"/>
+<area shape="rect" id="node17" href="$class_l_s_m9_d_s1.html#a97939cb15fcb7e33abcd6d3a9230d943" title="LSM9DS1::calibrate" alt="" coords="824,309,951,336"/>
+<area shape="rect" id="node18" href="$class_l_s_m9_d_s1.html#a515ce6f5c199a86c6aa5be353b2a3a13" title="LSM9DS1::accelAvailable" alt="" coords="601,411,760,437"/>
+<area shape="rect" id="node19" href="$class_l_s_m9_d_s1.html#a65b71a03a30f4e8ed1ffd46de3db0560" title="LSM9DS1::gyroAvailable" alt="" coords="603,461,759,488"/>
+<area shape="rect" id="node20" href="$class_l_s_m9_d_s1.html#aaf6683c6f3f0281d5222b74f580f321b" title="LSM9DS1::tempAvailable" alt="" coords="601,512,760,539"/>
+<area shape="rect" id="node21" href="$class_l_s_m9_d_s1.html#a115d304ebcdc8c701f3e5a5d397250aa" title="LSM9DS1::setGyroScale" alt="" coords="605,563,756,589"/>
+<area shape="rect" id="node22" href="$class_l_s_m9_d_s1.html#a8656d2de1ff9cc4cb76214e4561d02c4" title="LSM9DS1::setAccelScale" alt="" coords="604,613,757,640"/>
+<area shape="rect" id="node23" href="$class_l_s_m9_d_s1.html#ab8fc33c8da4fc5c379e880ff57d331fa" title="LSM9DS1::setGyroODR" alt="" coords="607,664,755,691"/>
+<area shape="rect" id="node24" href="$class_l_s_m9_d_s1.html#a76d72839cdecc3f1c4ee6fff578182c5" title="LSM9DS1::setAccelODR" alt="" coords="605,715,756,741"/>
+<area shape="rect" id="node25" href="$class_l_s_m9_d_s1.html#a5b6948b9d4caf57cfe9e0559a0c7f54c" title="LSM9DS1::configInt" alt="" coords="617,765,745,792"/>
+<area shape="rect" id="node26" href="$class_l_s_m9_d_s1.html#a9dab029d1d24e49709258d893042d28f" title="LSM9DS1::getInactivity" alt="" coords="606,816,755,843"/>
+<area shape="rect" id="node27" href="$class_l_s_m9_d_s1.html#ae42ae3b368370f977d090ba0e53c7f5c" title="LSM9DS1::getAccelIntSrc" alt="" coords="601,867,760,893"/>
+<area shape="rect" id="node28" href="$class_l_s_m9_d_s1.html#aaba6696754df62a411a6a190100f9ca3" title="LSM9DS1::getGyroIntSrc" alt="" coords="603,917,759,944"/>
+<area shape="rect" id="node29" href="$class_l_s_m9_d_s1.html#a13b61812069b399547f177b0b0af8fe3" title="LSM9DS1::sleepGyro" alt="" coords="613,968,748,995"/>
+<area shape="rect" id="node30" href="$class_l_s_m9_d_s1.html#a5f01141131318697838f15d7e5d10f2c" title="LSM9DS1::enableFIFO" alt="" coords="611,309,751,336"/>
+<area shape="rect" id="node31" href="$class_l_s_m9_d_s1.html#ac03ef2ff928a25c4a80af7707cd92dc8" title="LSM9DS1::getFIFOSamples" alt="" coords="597,360,764,387"/>
+<area shape="rect" id="node33" href="$class_l_s_m9_d_s1.html#a9953684a1ff652a7d3a4d91e72bccaa1" title="LSM9DS1::readAccel" alt="" coords="613,1069,748,1096"/>
+<area shape="rect" id="node34" href="$class_l_s_m9_d_s1.html#aca21a51dc79a1287b97ed9c326e2080b" title="LSM9DS1::readTemp" alt="" coords="613,1120,748,1147"/>
+<area shape="rect" id="node35" href="$class_l_s_m9_d_s1.html#a56e9710cb538a4c7f7ab94c2ca256ce9" title="LSM9DS1::readGyro" alt="" coords="615,1171,746,1197"/>
+</map>

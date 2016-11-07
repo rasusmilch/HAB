@@ -1,0 +1,1061 @@
+\hypertarget{_adafruit___t_s_l2561___u_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+T\+S\+L2561-\/master/\+Adafruit\+\_\+\+T\+S\+L2561\+\_\+U.h File Reference}
+\label{_adafruit___t_s_l2561___u_8h}\index{Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+T\+S\+L2561-\/master/\+Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+T\+S\+L2561-\/master/\+Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+{\ttfamily \#include $<$W\+Program.\+h$>$}\\*
+{\ttfamily \#include $<$Adafruit\+\_\+\+Sensor.\+h$>$}\\*
+{\ttfamily \#include $<$Wire.\+h$>$}\\*
+Include dependency graph for Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{_adafruit___t_s_l2561___u_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{_adafruit___t_s_l2561___u_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_adafruit___t_s_l2561___unified}{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a4161237608b9ad014b6fc7e76affb6cb}{T\+S\+L2561\+\_\+\+V\+I\+S\+I\+B\+LE}~2
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a65c7b3d2a51f0a8b6879b2b6d4ee7870}{T\+S\+L2561\+\_\+\+I\+N\+F\+R\+A\+R\+ED}~1
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a7476846e073c7f982c33c1832cee381e}{T\+S\+L2561\+\_\+\+F\+U\+L\+L\+S\+P\+E\+C\+T\+R\+UM}~0
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_affb49bd7afa3145eb9b988cc3bdd7ff4}{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+L\+OW}~(0x29)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ac7cc83a3f07e3073fe2c17deb84e8cfc}{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT}~(0x39)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a165fdc75d9a1583616bc4b0527080869}{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+H\+I\+GH}~(0x49)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_abeaff1c31984430865135952cb6f8fe2}{T\+S\+L2561\+\_\+\+P\+A\+C\+K\+A\+G\+E\+\_\+\+T\+\_\+\+F\+N\+\_\+\+CL}
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a79b7f57e5b18fa44ecd3f6f0cf46dffc}{T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT}~(0x80)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_af62178966502d4c4eecb09824fa19bfa}{T\+S\+L2561\+\_\+\+C\+L\+E\+A\+R\+\_\+\+B\+IT}~(0x40)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_adb0ddd7f64255780596d7be8e02d7745}{T\+S\+L2561\+\_\+\+W\+O\+R\+D\+\_\+\+B\+IT}~(0x20)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_aac8bd42f5795a24d44d030f6022f93b7}{T\+S\+L2561\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+IT}~(0x10)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a1465abbd34c333983420f5644f239fd7}{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+ON}~(0x03)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_aedfdafae91b044746ef8da6bb89b66ec}{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+O\+FF}~(0x00)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a6444753786cd6af180a38fa5a10f6829}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+L\+U\+X\+S\+C\+A\+LE}~(14)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a3155eac331a5f5946d097c1bf0cc65b9}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+R\+A\+T\+I\+O\+S\+C\+A\+LE}~(9)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_aff6d851aed7d3a64a6ef5f7b99c7d916}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+LE}~(10)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a3d24db000dcaa1f9dfb2e610c19fdce1}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T0}~(0x7517)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ab0487a56c1c55f0bb7460895df3e840c}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T1}~(0x0\+F\+E7)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_af60c10ff6e676fad517009d63b46fec3}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1T}~(0x0040)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a5616f586cc9bef37fe8b8d7deac39945}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1T}~(0x01f2)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ab613a4b2b8d312667d3f51d121a6a2c0}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1T}~(0x01be)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a0b3a7f72cd8086ce30c194d4a421aace}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2T}~(0x0080)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ac6e96f5cf30e279a67673dcbdaeb1b30}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2T}~(0x0214)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a86ccc9bbd9d4a6108c74ecb0775c141d}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2T}~(0x02d1)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_acd083de11e526ae1e0ac26bbbf81cf65}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3T}~(0x00c0)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a438019626b45bbcdc11fa9d980929ffc}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3T}~(0x023f)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ac25244168d07b7dbc8ec72b580291a04}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3T}~(0x037b)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ae5fd5107304643a7b18d6226e4f6fccb}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4T}~(0x0100)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a942a646c02c386b0fa86a8e1e3676e0c}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4T}~(0x0270)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a1ec7ad75708aa4f4a7c74fbefeee7664}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4T}~(0x03fe)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_aac19bb4ed796e63d7d6b7dffcbfd2e84}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5T}~(0x0138)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ad87efe789095858d8b2a0be80bb3152f}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5T}~(0x016f)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a9ad281ceb8ced6e4f1f7194fcc59426b}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5T}~(0x01fc)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ad8e97f6722bd5b66236437451dd61d73}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6T}~(0x019a)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a0d3feafd2d09a8970b0a83eeefc8d6bd}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6T}~(0x00d2)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a24b1fea2c6918d70fc9f145839471fd2}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6T}~(0x00fb)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a8de4ec79d68cb0d2a0a43c8e6d3596b7}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7T}~(0x029a)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ae4c0086763efeac75af8fb8d1bdb4994}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7T}~(0x0018)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_aa2c105ab6187ccdc04218f8181d42778}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7T}~(0x0012)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ac80851ebf368258a3caa537201091d22}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8T}~(0x029a)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_aae101cbba5a5ab9dfb653000516e78b1}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8T}~(0x0000)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a0e6cacf4765a8592166ae3eabce341ad}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8T}~(0x0000)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a7c1403a8b01ae12e5ac46420748bc5d0}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1C}~(0x0043)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a26a09c2333ae4002f9e5186a51e13c3a}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1C}~(0x0204)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a0035c4187dc5a4020502d2e6077b3a6e}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1C}~(0x01ad)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a1dd248d7cee70249b02fd3fbc9c2fc83}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2C}~(0x0085)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a9142fa498663b86bee6d4fa0e9c8998e}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2C}~(0x0228)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a01af6304f4f1e2d1c4506aeda9d9dba8}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2C}~(0x02c1)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_aa514263b429c3ef8b4a1ffc9ab93a2a2}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3C}~(0x00c8)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a26ef3863d02561d154b07029fdf38312}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3C}~(0x0253)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a8140888d70b84c3f200a0967a2991040}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3C}~(0x0363)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a4025d35f7fcad575668f64a4edb58610}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4C}~(0x010a)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_adce53ed293eb2e1c51701e3f9a8731d5}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4C}~(0x0282)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_af1bdbd5a2b975a060d541a5f9e385e08}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4C}~(0x03df)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a2c96527dfd325b07fe50a6d1e1343021}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5C}~(0x014d)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_af0e25b511cec1ff5df59d556bb319869}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5C}~(0x0177)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a429c5a251540979c2d9267c3d4a1f889}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5C}~(0x01dd)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_aa921ba6b888218e3930313026b4fd235}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6C}~(0x019a)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a29e287cd8553519649e9b7e2232d3998}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6C}~(0x0101)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ad4d33cb4ccff0cd9dd240664fce2ddfa}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6C}~(0x0127)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a40355db7ead547c8084f583c06234a64}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7C}~(0x029a)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_aa37796e21ef3f12ca9096b5573d85255}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7C}~(0x0037)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a379d222dda7323d65c77decde7f49d01}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7C}~(0x002b)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a5eef1a1c3cb41da21ee086d7fc442ff4}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8C}~(0x029a)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a4df189c4e466003915866b37c940ce09}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8C}~(0x0000)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a6c2d68f7ca71f6e253449102203c10a0}{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8C}~(0x0000)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a2551f7fe21d9ff00a83b8d91ba501849}{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+13\+MS}~(4850)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_ad48ae4def3af8a974deb2db6375ec61d}{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+13\+MS}~(100)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a44597c26c6a0d43c0b6be516bd0b6c76}{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+101\+MS}~(36000)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a1aa7ae9e3509bdbb6bc6b07d85e7629a}{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+101\+MS}~(200)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a4e745b310c6f7bef46e9716f99e5c4ed}{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+402\+MS}~(63000)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a9d697726cbdc140a8b335aab7e940c7c}{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+402\+MS}~(500)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a516453615503a68e3516d50f57176116}{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+13\+MS}~(4900)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a0e1783ebedf5c4a3097be54658d3458f}{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+101\+MS}~(37000)
+\item 
+\#define \hyperlink{_adafruit___t_s_l2561___u_8h_a52ed40f14b2bbfaca4fa2aac9ad674b3}{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+402\+MS}~(65000)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \\*
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a50f71e4c1ac964fa0ffac246629aee40}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+N\+T\+R\+OL} = 0x00, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a3924fa14cb39ddcea2a6a40530e6b9de}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+I\+M\+I\+NG} = 0x01, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a7e8181cb57c30506441628c6be3a409a}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+L\+OW} = 0x02, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a5edeff25758c4543906cc8ae89857a4a}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+H\+I\+GH} = 0x03, 
+\\*
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a8333d864829495d8a150eb5620037881}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+L\+OW} = 0x04, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8aabe97411358d62ab44de9e8b697d84dc}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+H\+I\+GH} = 0x05, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8af26094abfc9b43bebb72e04f1ef9b449}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT} = 0x06, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a5c6faa0735dab9acaa415a008554f61a}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+RC} = 0x08, 
+\\*
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a29b3ff1851ca40e5e230e57d576f061f}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+ID} = 0x0A, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a05d26b8299db5c62242141d9324b4778}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+L\+OW} = 0x0C, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a600077a124dc05b77fc1ae716c48b65c}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+H\+I\+GH} = 0x0D, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a308ebd12169466773d391219c8f7f399}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+L\+OW} = 0x0E, 
+\\*
+\hyperlink{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a2c7c68d5de249239315652f65eca8123}{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+H\+I\+GH} = 0x0F
+ \}
+\item 
+enum \hyperlink{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264a}{tsl2561\+Integration\+Time\+\_\+t} \{ \hyperlink{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264aa2ac9ab3a9e4918833df40bdb2b3b48c3}{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS} = 0x00, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264aac276f46523dbc7ea4a885cdda0826db7}{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS} = 0x01, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264aab8d5aa8b28f2f4acc78eb41cf6a37777}{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+402\+MS} = 0x02
+ \}
+\item 
+enum \hyperlink{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0}{tsl2561\+Gain\+\_\+t} \{ \hyperlink{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0a710ec4a6459d8d6296656db8e7f4fbfe}{T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+1X} = 0x00, 
+\hyperlink{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0a0eb86b759f88be07c2d218e4dc2da13d}{T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+16X} = 0x10
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT@{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT}}
+\index{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT@{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT}{TSL2561\_ADDR\_FLOAT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT~(0x39)}\hypertarget{_adafruit___t_s_l2561___u_8h_ac7cc83a3f07e3073fe2c17deb84e8cfc}{}\label{_adafruit___t_s_l2561___u_8h_ac7cc83a3f07e3073fe2c17deb84e8cfc}
+
+
+Definition at line 60 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+H\+I\+GH}}
+\index{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+H\+I\+GH}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+H\+I\+GH}{TSL2561\_ADDR\_HIGH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+H\+I\+GH~(0x49)}\hypertarget{_adafruit___t_s_l2561___u_8h_a165fdc75d9a1583616bc4b0527080869}{}\label{_adafruit___t_s_l2561___u_8h_a165fdc75d9a1583616bc4b0527080869}
+
+
+Definition at line 61 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+L\+OW}}
+\index{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+L\+OW}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+L\+OW}{TSL2561\_ADDR\_LOW}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+L\+OW~(0x29)}\hypertarget{_adafruit___t_s_l2561___u_8h_affb49bd7afa3145eb9b988cc3bdd7ff4}{}\label{_adafruit___t_s_l2561___u_8h_affb49bd7afa3145eb9b988cc3bdd7ff4}
+
+
+Definition at line 59 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+101\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+101\+MS}}
+\index{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+101\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+101\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+101\+MS}{TSL2561\_AGC\_THI\_101MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+101\+MS~(36000)}\hypertarget{_adafruit___t_s_l2561___u_8h_a44597c26c6a0d43c0b6be516bd0b6c76}{}\label{_adafruit___t_s_l2561___u_8h_a44597c26c6a0d43c0b6be516bd0b6c76}
+
+
+Definition at line 136 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Luminosity().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+13\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+13\+MS}}
+\index{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+13\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+13\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+13\+MS}{TSL2561\_AGC\_THI\_13MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+13\+MS~(4850)}\hypertarget{_adafruit___t_s_l2561___u_8h_a2551f7fe21d9ff00a83b8d91ba501849}{}\label{_adafruit___t_s_l2561___u_8h_a2551f7fe21d9ff00a83b8d91ba501849}
+
+
+Definition at line 134 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Luminosity().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+402\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+402\+MS}}
+\index{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+402\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+402\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+402\+MS}{TSL2561\_AGC\_THI\_402MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+402\+MS~(63000)}\hypertarget{_adafruit___t_s_l2561___u_8h_a4e745b310c6f7bef46e9716f99e5c4ed}{}\label{_adafruit___t_s_l2561___u_8h_a4e745b310c6f7bef46e9716f99e5c4ed}
+
+
+Definition at line 138 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Luminosity().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+101\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+101\+MS}}
+\index{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+101\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+101\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+101\+MS}{TSL2561\_AGC\_TLO\_101MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+101\+MS~(200)}\hypertarget{_adafruit___t_s_l2561___u_8h_a1aa7ae9e3509bdbb6bc6b07d85e7629a}{}\label{_adafruit___t_s_l2561___u_8h_a1aa7ae9e3509bdbb6bc6b07d85e7629a}
+
+
+Definition at line 137 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Luminosity().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+13\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+13\+MS}}
+\index{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+13\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+13\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+13\+MS}{TSL2561\_AGC\_TLO\_13MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+13\+MS~(100)}\hypertarget{_adafruit___t_s_l2561___u_8h_ad48ae4def3af8a974deb2db6375ec61d}{}\label{_adafruit___t_s_l2561___u_8h_ad48ae4def3af8a974deb2db6375ec61d}
+
+
+Definition at line 135 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Luminosity().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+402\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+402\+MS}}
+\index{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+402\+MS@{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+402\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+402\+MS}{TSL2561\_AGC\_TLO\_402MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+402\+MS~(500)}\hypertarget{_adafruit___t_s_l2561___u_8h_a9d697726cbdc140a8b335aab7e940c7c}{}\label{_adafruit___t_s_l2561___u_8h_a9d697726cbdc140a8b335aab7e940c7c}
+
+
+Definition at line 139 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Luminosity().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+IT@{T\+S\+L2561\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+IT}}
+\index{T\+S\+L2561\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+IT@{T\+S\+L2561\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+IT}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+IT}{TSL2561\_BLOCK\_BIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+B\+L\+O\+C\+K\+\_\+\+B\+IT~(0x10)}\hypertarget{_adafruit___t_s_l2561___u_8h_aac8bd42f5795a24d44d030f6022f93b7}{}\label{_adafruit___t_s_l2561___u_8h_aac8bd42f5795a24d44d030f6022f93b7}
+
+
+Definition at line 70 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+C\+L\+E\+A\+R\+\_\+\+B\+IT@{T\+S\+L2561\+\_\+\+C\+L\+E\+A\+R\+\_\+\+B\+IT}}
+\index{T\+S\+L2561\+\_\+\+C\+L\+E\+A\+R\+\_\+\+B\+IT@{T\+S\+L2561\+\_\+\+C\+L\+E\+A\+R\+\_\+\+B\+IT}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+C\+L\+E\+A\+R\+\_\+\+B\+IT}{TSL2561\_CLEAR\_BIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+C\+L\+E\+A\+R\+\_\+\+B\+IT~(0x40)}\hypertarget{_adafruit___t_s_l2561___u_8h_af62178966502d4c4eecb09824fa19bfa}{}\label{_adafruit___t_s_l2561___u_8h_af62178966502d4c4eecb09824fa19bfa}
+
+
+Definition at line 68 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+101\+MS@{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+101\+MS}}
+\index{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+101\+MS@{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+101\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+101\+MS}{TSL2561\_CLIPPING\_101MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+101\+MS~(37000)}\hypertarget{_adafruit___t_s_l2561___u_8h_a0e1783ebedf5c4a3097be54658d3458f}{}\label{_adafruit___t_s_l2561___u_8h_a0e1783ebedf5c4a3097be54658d3458f}
+
+
+Definition at line 143 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+13\+MS@{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+13\+MS}}
+\index{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+13\+MS@{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+13\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+13\+MS}{TSL2561\_CLIPPING\_13MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+13\+MS~(4900)}\hypertarget{_adafruit___t_s_l2561___u_8h_a516453615503a68e3516d50f57176116}{}\label{_adafruit___t_s_l2561___u_8h_a516453615503a68e3516d50f57176116}
+
+
+Definition at line 142 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+402\+MS@{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+402\+MS}}
+\index{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+402\+MS@{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+402\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+402\+MS}{TSL2561\_CLIPPING\_402MS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+402\+MS~(65000)}\hypertarget{_adafruit___t_s_l2561___u_8h_a52ed40f14b2bbfaca4fa2aac9ad674b3}{}\label{_adafruit___t_s_l2561___u_8h_a52ed40f14b2bbfaca4fa2aac9ad674b3}
+
+
+Definition at line 144 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT@{T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT}}
+\index{T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT@{T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT}{TSL2561\_COMMAND\_BIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT~(0x80)}\hypertarget{_adafruit___t_s_l2561___u_8h_a79b7f57e5b18fa44ecd3f6f0cf46dffc}{}\label{_adafruit___t_s_l2561___u_8h_a79b7f57e5b18fa44ecd3f6f0cf46dffc}
+
+
+Definition at line 67 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::set\+Gain(), and Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::set\+Integration\+Time().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+O\+FF@{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+O\+FF}}
+\index{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+O\+FF@{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+O\+FF}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+O\+FF}{TSL2561\_CONTROL\_POWEROFF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+O\+FF~(0x00)}\hypertarget{_adafruit___t_s_l2561___u_8h_aedfdafae91b044746ef8da6bb89b66ec}{}\label{_adafruit___t_s_l2561___u_8h_aedfdafae91b044746ef8da6bb89b66ec}
+
+
+Definition at line 73 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+ON@{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+ON}}
+\index{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+ON@{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+ON}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+ON}{TSL2561\_CONTROL\_POWERON}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+P\+O\+W\+E\+R\+ON~(0x03)}\hypertarget{_adafruit___t_s_l2561___u_8h_a1465abbd34c333983420f5644f239fd7}{}\label{_adafruit___t_s_l2561___u_8h_a1465abbd34c333983420f5644f239fd7}
+
+
+Definition at line 72 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+F\+U\+L\+L\+S\+P\+E\+C\+T\+R\+UM@{T\+S\+L2561\+\_\+\+F\+U\+L\+L\+S\+P\+E\+C\+T\+R\+UM}}
+\index{T\+S\+L2561\+\_\+\+F\+U\+L\+L\+S\+P\+E\+C\+T\+R\+UM@{T\+S\+L2561\+\_\+\+F\+U\+L\+L\+S\+P\+E\+C\+T\+R\+UM}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+F\+U\+L\+L\+S\+P\+E\+C\+T\+R\+UM}{TSL2561\_FULLSPECTRUM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+F\+U\+L\+L\+S\+P\+E\+C\+T\+R\+UM~0}\hypertarget{_adafruit___t_s_l2561___u_8h_a7476846e073c7f982c33c1832cee381e}{}\label{_adafruit___t_s_l2561___u_8h_a7476846e073c7f982c33c1832cee381e}
+
+
+Definition at line 56 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+I\+N\+F\+R\+A\+R\+ED@{T\+S\+L2561\+\_\+\+I\+N\+F\+R\+A\+R\+ED}}
+\index{T\+S\+L2561\+\_\+\+I\+N\+F\+R\+A\+R\+ED@{T\+S\+L2561\+\_\+\+I\+N\+F\+R\+A\+R\+ED}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+I\+N\+F\+R\+A\+R\+ED}{TSL2561\_INFRARED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+I\+N\+F\+R\+A\+R\+ED~1}\hypertarget{_adafruit___t_s_l2561___u_8h_a65c7b3d2a51f0a8b6879b2b6d4ee7870}{}\label{_adafruit___t_s_l2561___u_8h_a65c7b3d2a51f0a8b6879b2b6d4ee7870}
+
+
+Definition at line 55 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1C}{TSL2561\_LUX\_B1C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1C~(0x0204)}\hypertarget{_adafruit___t_s_l2561___u_8h_a26a09c2333ae4002f9e5186a51e13c3a}{}\label{_adafruit___t_s_l2561___u_8h_a26a09c2333ae4002f9e5186a51e13c3a}
+
+
+Definition at line 109 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1T}{TSL2561\_LUX\_B1T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1T~(0x01f2)}\hypertarget{_adafruit___t_s_l2561___u_8h_a5616f586cc9bef37fe8b8d7deac39945}{}\label{_adafruit___t_s_l2561___u_8h_a5616f586cc9bef37fe8b8d7deac39945}
+
+
+Definition at line 83 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2C}{TSL2561\_LUX\_B2C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2C~(0x0228)}\hypertarget{_adafruit___t_s_l2561___u_8h_a9142fa498663b86bee6d4fa0e9c8998e}{}\label{_adafruit___t_s_l2561___u_8h_a9142fa498663b86bee6d4fa0e9c8998e}
+
+
+Definition at line 112 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2T}{TSL2561\_LUX\_B2T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2T~(0x0214)}\hypertarget{_adafruit___t_s_l2561___u_8h_ac6e96f5cf30e279a67673dcbdaeb1b30}{}\label{_adafruit___t_s_l2561___u_8h_ac6e96f5cf30e279a67673dcbdaeb1b30}
+
+
+Definition at line 86 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3C}{TSL2561\_LUX\_B3C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3C~(0x0253)}\hypertarget{_adafruit___t_s_l2561___u_8h_a26ef3863d02561d154b07029fdf38312}{}\label{_adafruit___t_s_l2561___u_8h_a26ef3863d02561d154b07029fdf38312}
+
+
+Definition at line 115 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3T}{TSL2561\_LUX\_B3T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3T~(0x023f)}\hypertarget{_adafruit___t_s_l2561___u_8h_a438019626b45bbcdc11fa9d980929ffc}{}\label{_adafruit___t_s_l2561___u_8h_a438019626b45bbcdc11fa9d980929ffc}
+
+
+Definition at line 89 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4C}{TSL2561\_LUX\_B4C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4C~(0x0282)}\hypertarget{_adafruit___t_s_l2561___u_8h_adce53ed293eb2e1c51701e3f9a8731d5}{}\label{_adafruit___t_s_l2561___u_8h_adce53ed293eb2e1c51701e3f9a8731d5}
+
+
+Definition at line 118 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4T}{TSL2561\_LUX\_B4T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4T~(0x0270)}\hypertarget{_adafruit___t_s_l2561___u_8h_a942a646c02c386b0fa86a8e1e3676e0c}{}\label{_adafruit___t_s_l2561___u_8h_a942a646c02c386b0fa86a8e1e3676e0c}
+
+
+Definition at line 92 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5C}{TSL2561\_LUX\_B5C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5C~(0x0177)}\hypertarget{_adafruit___t_s_l2561___u_8h_af0e25b511cec1ff5df59d556bb319869}{}\label{_adafruit___t_s_l2561___u_8h_af0e25b511cec1ff5df59d556bb319869}
+
+
+Definition at line 121 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5T}{TSL2561\_LUX\_B5T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5T~(0x016f)}\hypertarget{_adafruit___t_s_l2561___u_8h_ad87efe789095858d8b2a0be80bb3152f}{}\label{_adafruit___t_s_l2561___u_8h_ad87efe789095858d8b2a0be80bb3152f}
+
+
+Definition at line 95 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6C}{TSL2561\_LUX\_B6C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6C~(0x0101)}\hypertarget{_adafruit___t_s_l2561___u_8h_a29e287cd8553519649e9b7e2232d3998}{}\label{_adafruit___t_s_l2561___u_8h_a29e287cd8553519649e9b7e2232d3998}
+
+
+Definition at line 124 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6T}{TSL2561\_LUX\_B6T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6T~(0x00d2)}\hypertarget{_adafruit___t_s_l2561___u_8h_a0d3feafd2d09a8970b0a83eeefc8d6bd}{}\label{_adafruit___t_s_l2561___u_8h_a0d3feafd2d09a8970b0a83eeefc8d6bd}
+
+
+Definition at line 98 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7C}{TSL2561\_LUX\_B7C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7C~(0x0037)}\hypertarget{_adafruit___t_s_l2561___u_8h_aa37796e21ef3f12ca9096b5573d85255}{}\label{_adafruit___t_s_l2561___u_8h_aa37796e21ef3f12ca9096b5573d85255}
+
+
+Definition at line 127 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7T}{TSL2561\_LUX\_B7T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7T~(0x0018)}\hypertarget{_adafruit___t_s_l2561___u_8h_ae4c0086763efeac75af8fb8d1bdb4994}{}\label{_adafruit___t_s_l2561___u_8h_ae4c0086763efeac75af8fb8d1bdb4994}
+
+
+Definition at line 101 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8C}{TSL2561\_LUX\_B8C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8C~(0x0000)}\hypertarget{_adafruit___t_s_l2561___u_8h_a4df189c4e466003915866b37c940ce09}{}\label{_adafruit___t_s_l2561___u_8h_a4df189c4e466003915866b37c940ce09}
+
+
+Definition at line 130 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8T}{TSL2561\_LUX\_B8T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8T~(0x0000)}\hypertarget{_adafruit___t_s_l2561___u_8h_aae101cbba5a5ab9dfb653000516e78b1}{}\label{_adafruit___t_s_l2561___u_8h_aae101cbba5a5ab9dfb653000516e78b1}
+
+
+Definition at line 104 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+LE@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+LE}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+LE@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+LE}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+LE}{TSL2561\_LUX\_CHSCALE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+LE~(10)}\hypertarget{_adafruit___t_s_l2561___u_8h_aff6d851aed7d3a64a6ef5f7b99c7d916}{}\label{_adafruit___t_s_l2561___u_8h_aff6d851aed7d3a64a6ef5f7b99c7d916}
+
+
+Definition at line 77 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T0@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T0}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T0@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T0}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T0}{TSL2561\_LUX\_CHSCALE\_TINT0}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T0~(0x7517)}\hypertarget{_adafruit___t_s_l2561___u_8h_a3d24db000dcaa1f9dfb2e610c19fdce1}{}\label{_adafruit___t_s_l2561___u_8h_a3d24db000dcaa1f9dfb2e610c19fdce1}
+
+
+Definition at line 78 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T1@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T1}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T1@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T1}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T1}{TSL2561\_LUX\_CHSCALE\_TINT1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T1~(0x0\+F\+E7)}\hypertarget{_adafruit___t_s_l2561___u_8h_ab0487a56c1c55f0bb7460895df3e840c}{}\label{_adafruit___t_s_l2561___u_8h_ab0487a56c1c55f0bb7460895df3e840c}
+
+
+Definition at line 79 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1C}{TSL2561\_LUX\_K1C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1C~(0x0043)}\hypertarget{_adafruit___t_s_l2561___u_8h_a7c1403a8b01ae12e5ac46420748bc5d0}{}\label{_adafruit___t_s_l2561___u_8h_a7c1403a8b01ae12e5ac46420748bc5d0}
+
+
+Definition at line 108 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1T}{TSL2561\_LUX\_K1T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1T~(0x0040)}\hypertarget{_adafruit___t_s_l2561___u_8h_af60c10ff6e676fad517009d63b46fec3}{}\label{_adafruit___t_s_l2561___u_8h_af60c10ff6e676fad517009d63b46fec3}
+
+
+Definition at line 82 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2C}{TSL2561\_LUX\_K2C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2C~(0x0085)}\hypertarget{_adafruit___t_s_l2561___u_8h_a1dd248d7cee70249b02fd3fbc9c2fc83}{}\label{_adafruit___t_s_l2561___u_8h_a1dd248d7cee70249b02fd3fbc9c2fc83}
+
+
+Definition at line 111 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2T}{TSL2561\_LUX\_K2T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2T~(0x0080)}\hypertarget{_adafruit___t_s_l2561___u_8h_a0b3a7f72cd8086ce30c194d4a421aace}{}\label{_adafruit___t_s_l2561___u_8h_a0b3a7f72cd8086ce30c194d4a421aace}
+
+
+Definition at line 85 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3C}{TSL2561\_LUX\_K3C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3C~(0x00c8)}\hypertarget{_adafruit___t_s_l2561___u_8h_aa514263b429c3ef8b4a1ffc9ab93a2a2}{}\label{_adafruit___t_s_l2561___u_8h_aa514263b429c3ef8b4a1ffc9ab93a2a2}
+
+
+Definition at line 114 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3T}{TSL2561\_LUX\_K3T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3T~(0x00c0)}\hypertarget{_adafruit___t_s_l2561___u_8h_acd083de11e526ae1e0ac26bbbf81cf65}{}\label{_adafruit___t_s_l2561___u_8h_acd083de11e526ae1e0ac26bbbf81cf65}
+
+
+Definition at line 88 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4C}{TSL2561\_LUX\_K4C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4C~(0x010a)}\hypertarget{_adafruit___t_s_l2561___u_8h_a4025d35f7fcad575668f64a4edb58610}{}\label{_adafruit___t_s_l2561___u_8h_a4025d35f7fcad575668f64a4edb58610}
+
+
+Definition at line 117 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4T}{TSL2561\_LUX\_K4T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4T~(0x0100)}\hypertarget{_adafruit___t_s_l2561___u_8h_ae5fd5107304643a7b18d6226e4f6fccb}{}\label{_adafruit___t_s_l2561___u_8h_ae5fd5107304643a7b18d6226e4f6fccb}
+
+
+Definition at line 91 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5C}{TSL2561\_LUX\_K5C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5C~(0x014d)}\hypertarget{_adafruit___t_s_l2561___u_8h_a2c96527dfd325b07fe50a6d1e1343021}{}\label{_adafruit___t_s_l2561___u_8h_a2c96527dfd325b07fe50a6d1e1343021}
+
+
+Definition at line 120 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5T}{TSL2561\_LUX\_K5T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5T~(0x0138)}\hypertarget{_adafruit___t_s_l2561___u_8h_aac19bb4ed796e63d7d6b7dffcbfd2e84}{}\label{_adafruit___t_s_l2561___u_8h_aac19bb4ed796e63d7d6b7dffcbfd2e84}
+
+
+Definition at line 94 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6C}{TSL2561\_LUX\_K6C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6C~(0x019a)}\hypertarget{_adafruit___t_s_l2561___u_8h_aa921ba6b888218e3930313026b4fd235}{}\label{_adafruit___t_s_l2561___u_8h_aa921ba6b888218e3930313026b4fd235}
+
+
+Definition at line 123 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6T}{TSL2561\_LUX\_K6T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6T~(0x019a)}\hypertarget{_adafruit___t_s_l2561___u_8h_ad8e97f6722bd5b66236437451dd61d73}{}\label{_adafruit___t_s_l2561___u_8h_ad8e97f6722bd5b66236437451dd61d73}
+
+
+Definition at line 97 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7C}{TSL2561\_LUX\_K7C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7C~(0x029a)}\hypertarget{_adafruit___t_s_l2561___u_8h_a40355db7ead547c8084f583c06234a64}{}\label{_adafruit___t_s_l2561___u_8h_a40355db7ead547c8084f583c06234a64}
+
+
+Definition at line 126 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7T}{TSL2561\_LUX\_K7T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7T~(0x029a)}\hypertarget{_adafruit___t_s_l2561___u_8h_a8de4ec79d68cb0d2a0a43c8e6d3596b7}{}\label{_adafruit___t_s_l2561___u_8h_a8de4ec79d68cb0d2a0a43c8e6d3596b7}
+
+
+Definition at line 100 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8C}{TSL2561\_LUX\_K8C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8C~(0x029a)}\hypertarget{_adafruit___t_s_l2561___u_8h_a5eef1a1c3cb41da21ee086d7fc442ff4}{}\label{_adafruit___t_s_l2561___u_8h_a5eef1a1c3cb41da21ee086d7fc442ff4}
+
+
+Definition at line 129 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8T}{TSL2561\_LUX\_K8T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8T~(0x029a)}\hypertarget{_adafruit___t_s_l2561___u_8h_ac80851ebf368258a3caa537201091d22}{}\label{_adafruit___t_s_l2561___u_8h_ac80851ebf368258a3caa537201091d22}
+
+
+Definition at line 103 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+L\+U\+X\+S\+C\+A\+LE@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+L\+U\+X\+S\+C\+A\+LE}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+L\+U\+X\+S\+C\+A\+LE@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+L\+U\+X\+S\+C\+A\+LE}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+L\+U\+X\+S\+C\+A\+LE}{TSL2561\_LUX\_LUXSCALE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+L\+U\+X\+S\+C\+A\+LE~(14)}\hypertarget{_adafruit___t_s_l2561___u_8h_a6444753786cd6af180a38fa5a10f6829}{}\label{_adafruit___t_s_l2561___u_8h_a6444753786cd6af180a38fa5a10f6829}
+
+
+Definition at line 75 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1C}{TSL2561\_LUX\_M1C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1C~(0x01ad)}\hypertarget{_adafruit___t_s_l2561___u_8h_a0035c4187dc5a4020502d2e6077b3a6e}{}\label{_adafruit___t_s_l2561___u_8h_a0035c4187dc5a4020502d2e6077b3a6e}
+
+
+Definition at line 110 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1T}{TSL2561\_LUX\_M1T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1T~(0x01be)}\hypertarget{_adafruit___t_s_l2561___u_8h_ab613a4b2b8d312667d3f51d121a6a2c0}{}\label{_adafruit___t_s_l2561___u_8h_ab613a4b2b8d312667d3f51d121a6a2c0}
+
+
+Definition at line 84 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2C}{TSL2561\_LUX\_M2C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2C~(0x02c1)}\hypertarget{_adafruit___t_s_l2561___u_8h_a01af6304f4f1e2d1c4506aeda9d9dba8}{}\label{_adafruit___t_s_l2561___u_8h_a01af6304f4f1e2d1c4506aeda9d9dba8}
+
+
+Definition at line 113 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2T}{TSL2561\_LUX\_M2T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2T~(0x02d1)}\hypertarget{_adafruit___t_s_l2561___u_8h_a86ccc9bbd9d4a6108c74ecb0775c141d}{}\label{_adafruit___t_s_l2561___u_8h_a86ccc9bbd9d4a6108c74ecb0775c141d}
+
+
+Definition at line 87 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3C}{TSL2561\_LUX\_M3C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3C~(0x0363)}\hypertarget{_adafruit___t_s_l2561___u_8h_a8140888d70b84c3f200a0967a2991040}{}\label{_adafruit___t_s_l2561___u_8h_a8140888d70b84c3f200a0967a2991040}
+
+
+Definition at line 116 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3T}{TSL2561\_LUX\_M3T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3T~(0x037b)}\hypertarget{_adafruit___t_s_l2561___u_8h_ac25244168d07b7dbc8ec72b580291a04}{}\label{_adafruit___t_s_l2561___u_8h_ac25244168d07b7dbc8ec72b580291a04}
+
+
+Definition at line 90 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4C}{TSL2561\_LUX\_M4C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4C~(0x03df)}\hypertarget{_adafruit___t_s_l2561___u_8h_af1bdbd5a2b975a060d541a5f9e385e08}{}\label{_adafruit___t_s_l2561___u_8h_af1bdbd5a2b975a060d541a5f9e385e08}
+
+
+Definition at line 119 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4T}{TSL2561\_LUX\_M4T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4T~(0x03fe)}\hypertarget{_adafruit___t_s_l2561___u_8h_a1ec7ad75708aa4f4a7c74fbefeee7664}{}\label{_adafruit___t_s_l2561___u_8h_a1ec7ad75708aa4f4a7c74fbefeee7664}
+
+
+Definition at line 93 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5C}{TSL2561\_LUX\_M5C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5C~(0x01dd)}\hypertarget{_adafruit___t_s_l2561___u_8h_a429c5a251540979c2d9267c3d4a1f889}{}\label{_adafruit___t_s_l2561___u_8h_a429c5a251540979c2d9267c3d4a1f889}
+
+
+Definition at line 122 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5T}{TSL2561\_LUX\_M5T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5T~(0x01fc)}\hypertarget{_adafruit___t_s_l2561___u_8h_a9ad281ceb8ced6e4f1f7194fcc59426b}{}\label{_adafruit___t_s_l2561___u_8h_a9ad281ceb8ced6e4f1f7194fcc59426b}
+
+
+Definition at line 96 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6C}{TSL2561\_LUX\_M6C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6C~(0x0127)}\hypertarget{_adafruit___t_s_l2561___u_8h_ad4d33cb4ccff0cd9dd240664fce2ddfa}{}\label{_adafruit___t_s_l2561___u_8h_ad4d33cb4ccff0cd9dd240664fce2ddfa}
+
+
+Definition at line 125 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6T}{TSL2561\_LUX\_M6T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6T~(0x00fb)}\hypertarget{_adafruit___t_s_l2561___u_8h_a24b1fea2c6918d70fc9f145839471fd2}{}\label{_adafruit___t_s_l2561___u_8h_a24b1fea2c6918d70fc9f145839471fd2}
+
+
+Definition at line 99 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7C}{TSL2561\_LUX\_M7C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7C~(0x002b)}\hypertarget{_adafruit___t_s_l2561___u_8h_a379d222dda7323d65c77decde7f49d01}{}\label{_adafruit___t_s_l2561___u_8h_a379d222dda7323d65c77decde7f49d01}
+
+
+Definition at line 128 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7T}{TSL2561\_LUX\_M7T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7T~(0x0012)}\hypertarget{_adafruit___t_s_l2561___u_8h_aa2c105ab6187ccdc04218f8181d42778}{}\label{_adafruit___t_s_l2561___u_8h_aa2c105ab6187ccdc04218f8181d42778}
+
+
+Definition at line 102 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8C}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8C@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8C}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8C}{TSL2561\_LUX\_M8C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8C~(0x0000)}\hypertarget{_adafruit___t_s_l2561___u_8h_a6c2d68f7ca71f6e253449102203c10a0}{}\label{_adafruit___t_s_l2561___u_8h_a6c2d68f7ca71f6e253449102203c10a0}
+
+
+Definition at line 131 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8T}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8T@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8T}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8T}{TSL2561\_LUX\_M8T}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8T~(0x0000)}\hypertarget{_adafruit___t_s_l2561___u_8h_a0e6cacf4765a8592166ae3eabce341ad}{}\label{_adafruit___t_s_l2561___u_8h_a0e6cacf4765a8592166ae3eabce341ad}
+
+
+Definition at line 105 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+R\+A\+T\+I\+O\+S\+C\+A\+LE@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+R\+A\+T\+I\+O\+S\+C\+A\+LE}}
+\index{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+R\+A\+T\+I\+O\+S\+C\+A\+LE@{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+R\+A\+T\+I\+O\+S\+C\+A\+LE}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+R\+A\+T\+I\+O\+S\+C\+A\+LE}{TSL2561\_LUX\_RATIOSCALE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+R\+A\+T\+I\+O\+S\+C\+A\+LE~(9)}\hypertarget{_adafruit___t_s_l2561___u_8h_a3155eac331a5f5946d097c1bf0cc65b9}{}\label{_adafruit___t_s_l2561___u_8h_a3155eac331a5f5946d097c1bf0cc65b9}
+
+
+Definition at line 76 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux().
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+P\+A\+C\+K\+A\+G\+E\+\_\+\+T\+\_\+\+F\+N\+\_\+\+CL@{T\+S\+L2561\+\_\+\+P\+A\+C\+K\+A\+G\+E\+\_\+\+T\+\_\+\+F\+N\+\_\+\+CL}}
+\index{T\+S\+L2561\+\_\+\+P\+A\+C\+K\+A\+G\+E\+\_\+\+T\+\_\+\+F\+N\+\_\+\+CL@{T\+S\+L2561\+\_\+\+P\+A\+C\+K\+A\+G\+E\+\_\+\+T\+\_\+\+F\+N\+\_\+\+CL}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+P\+A\+C\+K\+A\+G\+E\+\_\+\+T\+\_\+\+F\+N\+\_\+\+CL}{TSL2561\_PACKAGE\_T\_FN\_CL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+P\+A\+C\+K\+A\+G\+E\+\_\+\+T\+\_\+\+F\+N\+\_\+\+CL}\hypertarget{_adafruit___t_s_l2561___u_8h_abeaff1c31984430865135952cb6f8fe2}{}\label{_adafruit___t_s_l2561___u_8h_abeaff1c31984430865135952cb6f8fe2}
+
+
+Definition at line 65 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+V\+I\+S\+I\+B\+LE@{T\+S\+L2561\+\_\+\+V\+I\+S\+I\+B\+LE}}
+\index{T\+S\+L2561\+\_\+\+V\+I\+S\+I\+B\+LE@{T\+S\+L2561\+\_\+\+V\+I\+S\+I\+B\+LE}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+V\+I\+S\+I\+B\+LE}{TSL2561\_VISIBLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+V\+I\+S\+I\+B\+LE~2}\hypertarget{_adafruit___t_s_l2561___u_8h_a4161237608b9ad014b6fc7e76affb6cb}{}\label{_adafruit___t_s_l2561___u_8h_a4161237608b9ad014b6fc7e76affb6cb}
+
+
+Definition at line 54 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+W\+O\+R\+D\+\_\+\+B\+IT@{T\+S\+L2561\+\_\+\+W\+O\+R\+D\+\_\+\+B\+IT}}
+\index{T\+S\+L2561\+\_\+\+W\+O\+R\+D\+\_\+\+B\+IT@{T\+S\+L2561\+\_\+\+W\+O\+R\+D\+\_\+\+B\+IT}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+W\+O\+R\+D\+\_\+\+B\+IT}{TSL2561\_WORD\_BIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+W\+O\+R\+D\+\_\+\+B\+IT~(0x20)}\hypertarget{_adafruit___t_s_l2561___u_8h_adb0ddd7f64255780596d7be8e02d7745}{}\label{_adafruit___t_s_l2561___u_8h_adb0ddd7f64255780596d7be8e02d7745}
+
+
+Definition at line 69 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\subsubsection[{\texorpdfstring{anonymous enum}{anonymous enum}}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+N\+T\+R\+OL@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+N\+T\+R\+OL}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+N\+T\+R\+OL@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+N\+T\+R\+OL}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+O\+N\+T\+R\+OL\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a50f71e4c1ac964fa0ffac246629aee40}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a50f71e4c1ac964fa0ffac246629aee40}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+I\+M\+I\+NG@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+I\+M\+I\+NG}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+I\+M\+I\+NG@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+I\+M\+I\+NG}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+I\+M\+I\+NG\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a3924fa14cb39ddcea2a6a40530e6b9de}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a3924fa14cb39ddcea2a6a40530e6b9de}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+L\+OW}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+L\+OW}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+L\+OW\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a7e8181cb57c30506441628c6be3a409a}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a7e8181cb57c30506441628c6be3a409a}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+H\+I\+GH}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+H\+I\+GH}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+L\+\_\+\+H\+I\+GH\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a5edeff25758c4543906cc8ae89857a4a}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a5edeff25758c4543906cc8ae89857a4a}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+L\+OW}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+L\+OW}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+L\+OW\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a8333d864829495d8a150eb5620037881}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a8333d864829495d8a150eb5620037881}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+H\+I\+GH}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+H\+I\+GH}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+H\+R\+E\+S\+H\+H\+O\+L\+D\+H\+\_\+\+H\+I\+GH\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8aabe97411358d62ab44de9e8b697d84dc}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8aabe97411358d62ab44de9e8b697d84dc}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+T\+E\+R\+R\+U\+PT\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8af26094abfc9b43bebb72e04f1ef9b449}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8af26094abfc9b43bebb72e04f1ef9b449}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+RC@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+RC}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+RC@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+RC}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+RC\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a5c6faa0735dab9acaa415a008554f61a}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a5c6faa0735dab9acaa415a008554f61a}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+ID@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+ID}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+ID@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+ID}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+ID\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a29b3ff1851ca40e5e230e57d576f061f}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a29b3ff1851ca40e5e230e57d576f061f}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+L\+OW}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+L\+OW}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+L\+OW\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a05d26b8299db5c62242141d9324b4778}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a05d26b8299db5c62242141d9324b4778}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+H\+I\+GH}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+H\+I\+GH}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N0\+\_\+\+H\+I\+GH\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a600077a124dc05b77fc1ae716c48b65c}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a600077a124dc05b77fc1ae716c48b65c}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+L\+OW}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+L\+OW@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+L\+OW}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+L\+OW\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a308ebd12169466773d391219c8f7f399}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a308ebd12169466773d391219c8f7f399}
+}]\index{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+H\+I\+GH}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+H\+I\+GH@{T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+H\+I\+GH}}\item[{\em 
+T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+C\+H\+A\+N1\+\_\+\+H\+I\+GH\hypertarget{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a2c7c68d5de249239315652f65eca8123}{}\label{_adafruit___t_s_l2561___u_8h_ac36f475ca5b446f4fde4c9b90bec77c8a2c7c68d5de249239315652f65eca8123}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 146 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!tsl2561\+Gain\+\_\+t@{tsl2561\+Gain\+\_\+t}}
+\index{tsl2561\+Gain\+\_\+t@{tsl2561\+Gain\+\_\+t}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{tsl2561\+Gain\+\_\+t}{tsl2561Gain\_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tsl2561\+Gain\+\_\+t}}\hypertarget{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0}{}\label{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+1X@{T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+1X}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+1X@{T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+1X}}\item[{\em 
+T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+1X\hypertarget{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0a710ec4a6459d8d6296656db8e7f4fbfe}{}\label{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0a710ec4a6459d8d6296656db8e7f4fbfe}
+}]\index{T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+16X@{T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+16X}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+16X@{T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+16X}}\item[{\em 
+T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+16X\hypertarget{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0a0eb86b759f88be07c2d218e4dc2da13d}{}\label{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0a0eb86b759f88be07c2d218e4dc2da13d}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 171 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!tsl2561\+Integration\+Time\+\_\+t@{tsl2561\+Integration\+Time\+\_\+t}}
+\index{tsl2561\+Integration\+Time\+\_\+t@{tsl2561\+Integration\+Time\+\_\+t}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}
+\subsubsection[{\texorpdfstring{tsl2561\+Integration\+Time\+\_\+t}{tsl2561IntegrationTime\_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf tsl2561\+Integration\+Time\+\_\+t}}\hypertarget{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264a}{}\label{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS@{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS@{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS}}\item[{\em 
+T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS\hypertarget{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264aa2ac9ab3a9e4918833df40bdb2b3b48c3}{}\label{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264aa2ac9ab3a9e4918833df40bdb2b3b48c3}
+}]\index{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS@{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS@{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS}}\item[{\em 
+T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS\hypertarget{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264aac276f46523dbc7ea4a885cdda0826db7}{}\label{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264aac276f46523dbc7ea4a885cdda0826db7}
+}]\index{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+402\+MS@{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+402\+MS}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}!T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+402\+MS@{T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+402\+MS}}\item[{\em 
+T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+402\+MS\hypertarget{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264aab8d5aa8b28f2f4acc78eb41cf6a37777}{}\label{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264aab8d5aa8b28f2f4acc78eb41cf6a37777}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 163 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+

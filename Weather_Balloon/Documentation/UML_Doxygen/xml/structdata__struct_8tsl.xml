@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdata__struct_8tsl" kind="struct" language="C++" prot="public">
+    <compoundname>data_struct.tsl</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdata__struct_8tsl_1ad74eea4899a61f9fcbc527ef988ea0ff" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>ir</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8tsl_1a79d76db88cc9aa2cb2d56a16bbce9691" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>broadband</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="221" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8tsl_1ad877c55797fd430ce8150363cd86058f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>lux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="222" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/Weather_Balloon.cpp" line="219" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="219" bodyend="223"/>
+    <listofallmembers>
+      <member refid="structdata__struct_8tsl_1a79d76db88cc9aa2cb2d56a16bbce9691" prot="public" virt="non-virtual"><scope>data_struct.tsl</scope><name>broadband</name></member>
+      <member refid="structdata__struct_8tsl_1ad74eea4899a61f9fcbc527ef988ea0ff" prot="public" virt="non-virtual"><scope>data_struct.tsl</scope><name>ir</name></member>
+      <member refid="structdata__struct_8tsl_1ad877c55797fd430ce8150363cd86058f" prot="public" virt="non-virtual"><scope>data_struct.tsl</scope><name>lux</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_tiny_g_p_s_course" kind="struct" language="C++" prot="public">
+    <compoundname>TinyGPSCourse</compoundname>
+    <basecompoundref refid="struct_tiny_g_p_s_decimal" prot="public" virt="non-virtual">TinyGPSDecimal</basecompoundref>
+    <includes refid="_tiny_g_p_s_09_09_8h" local="no">TinyGPS++.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_tiny_g_p_s_course_1a76dc8ae6c2fe5ead9b44c8d53a3272ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double TinyGPSCourse::deg</definition>
+        <argsstring>()</argsstring>
+        <name>deg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="176" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="176" bodyend="176"/>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="417">
+        <label>TinyGPSCourse</label>
+        <link refid="struct_tiny_g_p_s_course"/>
+        <childnode refid="418" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="418">
+        <label>TinyGPSDecimal</label>
+        <link refid="struct_tiny_g_p_s_decimal"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="419">
+        <label>TinyGPSCourse</label>
+        <link refid="struct_tiny_g_p_s_course"/>
+        <childnode refid="420" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="420">
+        <label>TinyGPSDecimal</label>
+        <link refid="struct_tiny_g_p_s_decimal"/>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="175" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="174" bodyend="177"/>
+    <listofallmembers>
+      <member refid="struct_tiny_g_p_s_decimal_1ab80191a3e02c92ad3f674b5df2ab752f" prot="public" virt="non-virtual"><scope>TinyGPSCourse</scope><name>age</name></member>
+      <member refid="struct_tiny_g_p_s_course_1a76dc8ae6c2fe5ead9b44c8d53a3272ca" prot="public" virt="non-virtual"><scope>TinyGPSCourse</scope><name>deg</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ae8b7f9f7719c2974ebd3b34759493d15" prot="public" virt="non-virtual"><scope>TinyGPSCourse</scope><name>isUpdated</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1a2a1d868525e903eb193b7a36cdd76984" prot="public" virt="non-virtual"><scope>TinyGPSCourse</scope><name>isValid</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ae09cbb1856cd57c7dcee52fb5fb1ba16" prot="public" virt="non-virtual"><scope>TinyGPSCourse</scope><name>TinyGPSDecimal</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ac3ce80976e5d8456e9f211b910a6cb19" prot="public" virt="non-virtual"><scope>TinyGPSCourse</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

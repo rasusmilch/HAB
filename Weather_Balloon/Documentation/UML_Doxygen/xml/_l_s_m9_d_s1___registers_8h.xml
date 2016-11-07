@@ -1,0 +1,1039 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_l_s_m9_d_s1___registers_8h" kind="file" language="C++">
+    <compoundname>LSM9DS1_Registers.h</compoundname>
+    <includedby refid="_l_s_m9_d_s1___types_8h" local="yes">Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h</includedby>
+    <includedby refid="_spark_fun_l_s_m9_d_s1_8h" local="yes">Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h</includedby>
+    <includedby refid="_spark_fun_l_s_m9_d_s1_8cpp" local="yes">Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp</includedby>
+    <invincdepgraph>
+      <node id="973">
+        <label>Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp</label>
+        <link refid="_spark_fun_l_s_m9_d_s1_8cpp"/>
+      </node>
+      <node id="970">
+        <label>Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h</label>
+        <link refid="LSM9DS1_Registers.h"/>
+        <childnode refid="971" relation="include">
+        </childnode>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="973" relation="include">
+        </childnode>
+      </node>
+      <node id="974">
+        <label>Weather_Balloon/Weather_Balloon.cpp</label>
+        <link refid="_weather___balloon_8cpp"/>
+      </node>
+      <node id="972">
+        <label>Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h</label>
+        <link refid="_spark_fun_l_s_m9_d_s1_8h"/>
+        <childnode refid="973" relation="include">
+        </childnode>
+        <childnode refid="974" relation="include">
+        </childnode>
+      </node>
+      <node id="971">
+        <label>Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h</label>
+        <link refid="_l_s_m9_d_s1___types_8h"/>
+        <childnode refid="972" relation="include">
+        </childnode>
+        <childnode refid="973" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1aa7b862d228fc4821ad9e80ea404b6211" prot="public" static="no">
+        <name>ACT_THS</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="28" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a1e318c5e7c1d500c3ab2602c46265354" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="795" endline="804">LSM9DS1::configInactivity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a4a2254de4b303d28b4c0857ecf40a19c" prot="public" static="no">
+        <name>ACT_DUR</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="29" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a1e318c5e7c1d500c3ab2602c46265354" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="795" endline="804">LSM9DS1::configInactivity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a79e53784ade0dbe2317b862854b16526" prot="public" static="no">
+        <name>INT_GEN_CFG_XL</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="30" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a1e8ebc6c1e3876d8936197dc93f76717" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="813" endline="820">LSM9DS1::configAccelInt</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ac101c65560ff469831215ab2491cf760" prot="public" static="no">
+        <name>INT_GEN_THS_X_XL</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="31" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1acebcf64ab4e6ea7ed7a23c09ef16afe9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="822" endline="833">LSM9DS1::configAccelThs</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a263521070f8f94e1222fd134d70b59dc" prot="public" static="no">
+        <name>INT_GEN_THS_Y_XL</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="32" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a64ce34cfa12c8450108e257e35b8c1eb" prot="public" static="no">
+        <name>INT_GEN_THS_Z_XL</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="33" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ad2a0facf510793a8bc708244b3578569" prot="public" static="no">
+        <name>INT_GEN_DUR_XL</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="34" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1acebcf64ab4e6ea7ed7a23c09ef16afe9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="822" endline="833">LSM9DS1::configAccelThs</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a155d0c26a927635e559f28c2c71b36af" prot="public" static="no">
+        <name>REFERENCE_G</name>
+        <initializer>0x0B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="35" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a2fd793f37fec2d8f4c871d2b1396d55a" prot="public" static="no">
+        <name>INT1_CTRL</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="36" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a93fcaece7ef8a204aaaf88df6ea8711e" prot="public" static="no">
+        <name>INT2_CTRL</name>
+        <initializer>0x0D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="37" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a2429bbf601523e5054cc3ef3de989449" prot="public" static="no">
+        <name>WHO_AM_I_XG</name>
+        <initializer>0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="38" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">LSM9DS1::begin</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1aaadaf884e55b59323b03b8c05f80cc4f" prot="public" static="no">
+        <name>CTRL_REG1_G</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="39" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ab8fc33c8da4fc5c379e880ff57d331fa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="696" endline="711">LSM9DS1::setGyroODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a115d304ebcdc8c701f3e5a5d397250aa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="604" endline="627">LSM9DS1::setGyroScale</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a9f8fb3996b44c977ce54f85950599c78" prot="public" static="no">
+        <name>CTRL_REG2_G</name>
+        <initializer>0x11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="40" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a9803391f389c4e31709daa1ef3c2c59c" prot="public" static="no">
+        <name>CTRL_REG3_G</name>
+        <initializer>0x12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="41" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ae694283e32d90de27691b389cf028efc" prot="public" static="no">
+        <name>ORIENT_CFG_G</name>
+        <initializer>0x13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="42" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ae225422f108611ebbad5dde6b8438357" prot="public" static="no">
+        <name>INT_GEN_SRC_G</name>
+        <initializer>0x14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="43" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aaba6696754df62a411a6a190100f9ca3" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="875" endline="886">LSM9DS1::getGyroIntSrc</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a99d7b40624fe2b229cc4e1ab62552ea2" prot="public" static="no">
+        <name>OUT_TEMP_L</name>
+        <initializer>0x15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="44" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aca21a51dc79a1287b97ed9c326e2080b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="549" endline="554">LSM9DS1::readTemp</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a778585848e51228c272f8eb3e5336834" prot="public" static="no">
+        <name>OUT_TEMP_H</name>
+        <initializer>0x16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="45" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1aef1145d8518c8fd83c853e927fb44801" prot="public" static="no">
+        <name>STATUS_REG_0</name>
+        <initializer>0x17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="46" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a9dab029d1d24e49709258d893042d28f" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="806" endline="811">LSM9DS1::getInactivity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a591468875c279c327dbfb8ddd51a2e36" prot="public" static="no">
+        <name>OUT_X_L_G</name>
+        <initializer>0x18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="47" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="556" endline="569">LSM9DS1::readGyro</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a8a40c866d297f3b1e6dd1168806a9f64" prot="public" static="no">
+        <name>OUT_X_H_G</name>
+        <initializer>0x19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="48" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a12f91c20142dda7fd06948494778cb61" prot="public" static="no">
+        <name>OUT_Y_L_G</name>
+        <initializer>0x1A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="49" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ab5c0e92320dfcc66f83d1c688f6f036f" prot="public" static="no">
+        <name>OUT_Y_H_G</name>
+        <initializer>0x1B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="50" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1af4d2818d22f281f9f82ada90699b9da6" prot="public" static="no">
+        <name>OUT_Z_L_G</name>
+        <initializer>0x1C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="51" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a742d8b5d6474c4741447f33a9e3ce93a" prot="public" static="no">
+        <name>OUT_Z_H_G</name>
+        <initializer>0x1D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="52" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a36c532b0a660c101907dcad7ee399fbd" prot="public" static="no">
+        <name>CTRL_REG4</name>
+        <initializer>0x1E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="53" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="53" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ab4fc4d4ec521f1e02a72eef873e447b8" prot="public" static="no">
+        <name>CTRL_REG5_XL</name>
+        <initializer>0x1F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="54" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a3f5b6fd3806c3e13590cc9746410265d" prot="public" static="no">
+        <name>CTRL_REG6_XL</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="55" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a76d72839cdecc3f1c4ee6fff578182c5" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="713" endline="728">LSM9DS1::setAccelODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8656d2de1ff9cc4cb76214e4561d02c4" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="629" endline="658">LSM9DS1::setAccelScale</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a3b06f7bf6d694ff6e4c59271f3399e84" prot="public" static="no">
+        <name>CTRL_REG7_XL</name>
+        <initializer>0x21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="56" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a9c0a349bd992b6f67c98ba9ff7fc4310" prot="public" static="no">
+        <name>CTRL_REG8</name>
+        <initializer>0x22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="57" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a5b6948b9d4caf57cfe9e0559a0c7f54c" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="774" endline="793">LSM9DS1::configInt</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ab2caeb21f8e14a7d5657c523b2553843" prot="public" static="no">
+        <name>CTRL_REG9</name>
+        <initializer>0x23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="58" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a5f01141131318697838f15d7e5d10f2c" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="931" endline="937">LSM9DS1::enableFIFO</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a13b61812069b399547f177b0b0af8fe3" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="923" endline="929">LSM9DS1::sleepGyro</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a1914ea4540a7ad20f3b9502772672c34" prot="public" static="no">
+        <name>CTRL_REG10</name>
+        <initializer>0x24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="59" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a3b3a09387105483a4a5ae85600b07364" prot="public" static="no">
+        <name>INT_GEN_SRC_XL</name>
+        <initializer>0x26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="60" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1ae42ae3b368370f977d090ba0e53c7f5c" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="835" endline="846">LSM9DS1::getAccelIntSrc</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a665c442790206fcce4058d958ca5ec1e" prot="public" static="no">
+        <name>STATUS_REG_1</name>
+        <initializer>0x27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="61" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a515ce6f5c199a86c6aa5be353b2a3a13" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="476" endline="481">LSM9DS1::accelAvailable</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a65b71a03a30f4e8ed1ffd46de3db0560" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="483" endline="488">LSM9DS1::gyroAvailable</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aaf6683c6f3f0281d5222b74f580f321b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="490" endline="495">LSM9DS1::tempAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a938cc6d814aee02d7f4e983d8b2bc6bd" prot="public" static="no">
+        <name>OUT_X_L_XL</name>
+        <initializer>0x28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="62" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="505" endline="518">LSM9DS1::readAccel</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a0d9d44e903ce8d32023a63bb646417f7" prot="public" static="no">
+        <name>OUT_X_H_XL</name>
+        <initializer>0x29</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="63" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a45d2e9765c988c1e197445b3a903d3ad" prot="public" static="no">
+        <name>OUT_Y_L_XL</name>
+        <initializer>0x2A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="64" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a6f0698f0b539ba2c89387650bfcb5cc2" prot="public" static="no">
+        <name>OUT_Y_H_XL</name>
+        <initializer>0x2B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="65" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a4ef82c7c406dc5bf0243cfe3344e7c61" prot="public" static="no">
+        <name>OUT_Z_L_XL</name>
+        <initializer>0x2C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="66" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a0c064d408e6e0c4bbb96b5bf3c41feaf" prot="public" static="no">
+        <name>OUT_Z_H_XL</name>
+        <initializer>0x2D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="67" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1adcd8d113c8791a336768b8da70010ea7" prot="public" static="no">
+        <name>FIFO_CTRL</name>
+        <initializer>0x2E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="68" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="68" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a0ec4a93a34545af1acc336bae9b360f1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="939" endline="945">LSM9DS1::setFIFO</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a8ff327dd2e3548068a66bffdc932d5ad" prot="public" static="no">
+        <name>FIFO_SRC</name>
+        <initializer>0x2F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="69" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="69" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">LSM9DS1::calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ac03ef2ff928a25c4a80af7707cd92dc8" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="947" endline="950">LSM9DS1::getFIFOSamples</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1acc6f2bdcd6a987d9e996b0f147d52a08" prot="public" static="no">
+        <name>INT_GEN_CFG_G</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="70" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a19a341728c4e5b454de045c8a531cf06" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="848" endline="856">LSM9DS1::configGyroInt</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ad004b4050288dc635e68ac2c6a3866a2" prot="public" static="no">
+        <name>INT_GEN_THS_XH_G</name>
+        <initializer>0x31</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="71" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1ad865cc972960ed476fabd54f698adf6e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="858" endline="873">LSM9DS1::configGyroThs</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a0ff6063c4032f492c7d46ff6d308c553" prot="public" static="no">
+        <name>INT_GEN_THS_XL_G</name>
+        <initializer>0x32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="72" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a12da6f5a4ec249305e8d235f38fae7c7" prot="public" static="no">
+        <name>INT_GEN_THS_YH_G</name>
+        <initializer>0x33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="73" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ad7126df674acb2c54dea7040a5a5ee07" prot="public" static="no">
+        <name>INT_GEN_THS_YL_G</name>
+        <initializer>0x34</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="74" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a865508d60fe994896b5a4d786456728d" prot="public" static="no">
+        <name>INT_GEN_THS_ZH_G</name>
+        <initializer>0x35</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="75" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a03e990e4a4664a39fb3d053f8d7731a0" prot="public" static="no">
+        <name>INT_GEN_THS_ZL_G</name>
+        <initializer>0x36</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="76" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a494192ebaf76143c9d377cae11f95d54" prot="public" static="no">
+        <name>INT_GEN_DUR_G</name>
+        <initializer>0x37</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="77" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1ad865cc972960ed476fabd54f698adf6e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="858" endline="873">LSM9DS1::configGyroThs</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a043bf20b279c3ad248ff196af6a1daab" prot="public" static="no">
+        <name>OFFSET_X_REG_L_M</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="82" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a0d461614bd058b082c94481dc916c18b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="396" endline="405">LSM9DS1::magOffset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1aeb2fc84bba390310b1316f0945727306" prot="public" static="no">
+        <name>OFFSET_X_REG_H_M</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="83" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a0d461614bd058b082c94481dc916c18b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="396" endline="405">LSM9DS1::magOffset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1aefea0113ed2f70aff4b7c444ad311dc6" prot="public" static="no">
+        <name>OFFSET_Y_REG_L_M</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="84" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a24e92ee0485f8577eb014dc6b9a17d7d" prot="public" static="no">
+        <name>OFFSET_Y_REG_H_M</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="85" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a2245294a0979a422f6a828e489f78563" prot="public" static="no">
+        <name>OFFSET_Z_REG_L_M</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="86" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1aa9684413ebde4127761ec5874149a7c9" prot="public" static="no">
+        <name>OFFSET_Z_REG_H_M</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="87" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a6f922f874e6ca9b05008b5ada8fd35a5" prot="public" static="no">
+        <name>WHO_AM_I_M</name>
+        <initializer>0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="88" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">LSM9DS1::begin</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a681825dec9359e9d82698edcfec6c24d" prot="public" static="no">
+        <name>CTRL_REG1_M</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="89" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8bc672fba680edc468a643fd58046b41" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="730" endline="741">LSM9DS1::setMagODR</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a86d82a48866508ca682353988132e0d8" prot="public" static="no">
+        <name>CTRL_REG2_M</name>
+        <initializer>0x21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="90" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ad7604159a07b0d088cdfb6ba4a0093b0" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="660" endline="694">LSM9DS1::setMagScale</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ac1890f3762169150ac5efdba82735976" prot="public" static="no">
+        <name>CTRL_REG3_M</name>
+        <initializer>0x22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="91" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ae732f3952adf7b6691e302d7446041a0" prot="public" static="no">
+        <name>CTRL_REG4_M</name>
+        <initializer>0x23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="92" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a75b063b95134015d2f927762f3bc7dad" prot="public" static="no">
+        <name>CTRL_REG5_M</name>
+        <initializer>0x24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="93" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1acdc5b337c11e6ad00f5c1a1653d80cea" prot="public" static="no">
+        <name>STATUS_REG_M</name>
+        <initializer>0x27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="94" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a85afd29e95bead7b3f0083a9a235d1df" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="497" endline="503">LSM9DS1::magAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1abab698c56e01e1fd410398c4e7beaaf3" prot="public" static="no">
+        <name>OUT_X_L_M</name>
+        <initializer>0x28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="95" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1ae127cf75aa5f3c5421e49363795dcd38" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="533" endline="540">LSM9DS1::readMag</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a2489b398fe6a7418ea8f45c61cce4f9b" prot="public" static="no">
+        <name>OUT_X_H_M</name>
+        <initializer>0x29</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="96" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ac2a68cdf4dc38a1e6953a131d193aac2" prot="public" static="no">
+        <name>OUT_Y_L_M</name>
+        <initializer>0x2A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="97" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a296228caa98301cb5cd765cafc9ee7b6" prot="public" static="no">
+        <name>OUT_Y_H_M</name>
+        <initializer>0x2B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="98" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1ae30aefcb21f60ce603a214d5678b8f9d" prot="public" static="no">
+        <name>OUT_Z_L_M</name>
+        <initializer>0x2C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="99" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1abbf1fdc9b183596b72618c113b30718b" prot="public" static="no">
+        <name>OUT_Z_H_M</name>
+        <initializer>0x2D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="100" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a4f5eea68b1f2ce72d284eea60e4553fb" prot="public" static="no">
+        <name>INT_CFG_M</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="101" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a54a521668eb63d504d227c6d460723e0" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="888" endline="900">LSM9DS1::configMagInt</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a5a42ea617d3bb38574b2a19b553b1e1a" prot="public" static="no">
+        <name>INT_SRC_M</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="102" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a2bc92a37db982059b89e0a06e7d05a95" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="910" endline="921">LSM9DS1::getMagIntSrc</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1acefeab011ea4e58c1713737ec1b74532" prot="public" static="no">
+        <name>INT_THS_L_M</name>
+        <initializer>0x32</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="103" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a87cf3dd3a4d9ca79106eb7c1c866a224" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="902" endline="908">LSM9DS1::configMagThs</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a947fca65e458b8a0876fb2081fb3d160" prot="public" static="no">
+        <name>INT_THS_H_M</name>
+        <initializer>0x33</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="104" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a87cf3dd3a4d9ca79106eb7c1c866a224" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="902" endline="908">LSM9DS1::configMagThs</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a8dbbb5c2aaadc877fb71ea4eda9fcbf5" prot="public" static="no">
+        <name>WHO_AM_I_AG_RSP</name>
+        <initializer>0x68</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="109" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">LSM9DS1::begin</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_l_s_m9_d_s1___registers_8h_1a895e051d061b2d053680ab832048b2ad" prot="public" static="no">
+        <name>WHO_AM_I_M_RSP</name>
+        <initializer>0x3D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" line="110" column="9" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">LSM9DS1::begin</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">LSM9DS1_Registers.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">SFE_LSM9DS1<sp/>Library<sp/>-<sp/>LSM9DS1<sp/>Register<sp/>Map</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Jim<sp/>Lindblom<sp/>@<sp/>SparkFun<sp/>Electronics</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Original<sp/>Creation<sp/>Date:<sp/>April<sp/>21,<sp/>2015</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">https://github.com/sparkfun/LSM9DS1_Breakout</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">This<sp/>file<sp/>defines<sp/>all<sp/>registers<sp/>internal<sp/>to<sp/>the<sp/>gyro/accel<sp/>and<sp/>magnetometer</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">devices<sp/>in<sp/>the<sp/>LSM9DS1.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight></codeline>
+<codeline lineno="11"><highlight class="comment">Development<sp/>environment<sp/>specifics:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>IDE:<sp/>Arduino<sp/>1.6.0</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>Hardware<sp/>Platform:<sp/>Arduino<sp/>Uno</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>LSM9DS1<sp/>Breakout<sp/>Version:<sp/>1.0</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">This<sp/>code<sp/>is<sp/>beerware;<sp/>if<sp/>you<sp/>see<sp/>me<sp/>(or<sp/>any<sp/>other<sp/>SparkFun<sp/>employee)<sp/>at<sp/>the</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">local,<sp/>and<sp/>you&apos;ve<sp/>found<sp/>our<sp/>code<sp/>helpful,<sp/>please<sp/>buy<sp/>us<sp/>a<sp/>round!</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">Distributed<sp/>as-is;<sp/>no<sp/>warranty<sp/>is<sp/>given.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__LSM9DS1_Registers_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__LSM9DS1_Registers_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="comment">//<sp/>LSM9DS1<sp/>Accel/Gyro<sp/>(XL/G)<sp/>Registers<sp/>//</highlight></codeline>
+<codeline lineno="28" refid="_l_s_m9_d_s1___registers_8h_1aa7b862d228fc4821ad9e80ea404b6211" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>ACT_THS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_l_s_m9_d_s1___registers_8h_1a4a2254de4b303d28b4c0857ecf40a19c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ACT_DUR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_l_s_m9_d_s1___registers_8h_1a79e53784ade0dbe2317b862854b16526" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_CFG_XL<sp/><sp/><sp/><sp/><sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_l_s_m9_d_s1___registers_8h_1ac101c65560ff469831215ab2491cf760" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_THS_X_XL<sp/><sp/><sp/><sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_l_s_m9_d_s1___registers_8h_1a263521070f8f94e1222fd134d70b59dc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_THS_Y_XL<sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_l_s_m9_d_s1___registers_8h_1a64ce34cfa12c8450108e257e35b8c1eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_THS_Z_XL<sp/><sp/><sp/><sp/>0x09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_l_s_m9_d_s1___registers_8h_1ad2a0facf510793a8bc708244b3578569" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_DUR_XL<sp/><sp/><sp/><sp/><sp/><sp/>0x0A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_l_s_m9_d_s1___registers_8h_1a155d0c26a927635e559f28c2c71b36af" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REFERENCE_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_l_s_m9_d_s1___registers_8h_1a2fd793f37fec2d8f4c871d2b1396d55a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT1_CTRL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_l_s_m9_d_s1___registers_8h_1a93fcaece7ef8a204aaaf88df6ea8711e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT2_CTRL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_l_s_m9_d_s1___registers_8h_1a2429bbf601523e5054cc3ef3de989449" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WHO_AM_I_XG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_l_s_m9_d_s1___registers_8h_1aaadaf884e55b59323b03b8c05f80cc4f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG1_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_l_s_m9_d_s1___registers_8h_1a9f8fb3996b44c977ce54f85950599c78" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG2_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_l_s_m9_d_s1___registers_8h_1a9803391f389c4e31709daa1ef3c2c59c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_l_s_m9_d_s1___registers_8h_1ae694283e32d90de27691b389cf028efc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ORIENT_CFG_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x13</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_l_s_m9_d_s1___registers_8h_1ae225422f108611ebbad5dde6b8438357" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_SRC_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_l_s_m9_d_s1___registers_8h_1a99d7b40624fe2b229cc4e1ab62552ea2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_TEMP_L<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_l_s_m9_d_s1___registers_8h_1a778585848e51228c272f8eb3e5336834" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_TEMP_H<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x16</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_l_s_m9_d_s1___registers_8h_1aef1145d8518c8fd83c853e927fb44801" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATUS_REG_0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x17</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_l_s_m9_d_s1___registers_8h_1a591468875c279c327dbfb8ddd51a2e36" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_X_L_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x18</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_l_s_m9_d_s1___registers_8h_1a8a40c866d297f3b1e6dd1168806a9f64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_X_H_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x19</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_l_s_m9_d_s1___registers_8h_1a12f91c20142dda7fd06948494778cb61" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Y_L_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_l_s_m9_d_s1___registers_8h_1ab5c0e92320dfcc66f83d1c688f6f036f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Y_H_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_l_s_m9_d_s1___registers_8h_1af4d2818d22f281f9f82ada90699b9da6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Z_L_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_l_s_m9_d_s1___registers_8h_1a742d8b5d6474c4741447f33a9e3ce93a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Z_H_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_l_s_m9_d_s1___registers_8h_1a36c532b0a660c101907dcad7ee399fbd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_l_s_m9_d_s1___registers_8h_1ab4fc4d4ec521f1e02a72eef873e447b8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_XL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x1F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_l_s_m9_d_s1___registers_8h_1a3f5b6fd3806c3e13590cc9746410265d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG6_XL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_l_s_m9_d_s1___registers_8h_1a3b06f7bf6d694ff6e4c59271f3399e84" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG7_XL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_l_s_m9_d_s1___registers_8h_1a9c0a349bd992b6f67c98ba9ff7fc4310" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_l_s_m9_d_s1___registers_8h_1ab2caeb21f8e14a7d5657c523b2553843" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG9<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_l_s_m9_d_s1___registers_8h_1a1914ea4540a7ad20f3b9502772672c34" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG10<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_l_s_m9_d_s1___registers_8h_1a3b3a09387105483a4a5ae85600b07364" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_SRC_XL<sp/><sp/><sp/><sp/><sp/><sp/>0x26</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_l_s_m9_d_s1___registers_8h_1a665c442790206fcce4058d958ca5ec1e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATUS_REG_1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_l_s_m9_d_s1___registers_8h_1a938cc6d814aee02d7f4e983d8b2bc6bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_X_L_XL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x28</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_l_s_m9_d_s1___registers_8h_1a0d9d44e903ce8d32023a63bb646417f7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_X_H_XL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x29</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_l_s_m9_d_s1___registers_8h_1a45d2e9765c988c1e197445b3a903d3ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Y_L_XL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_l_s_m9_d_s1___registers_8h_1a6f0698f0b539ba2c89387650bfcb5cc2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Y_H_XL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_l_s_m9_d_s1___registers_8h_1a4ef82c7c406dc5bf0243cfe3344e7c61" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Z_L_XL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_l_s_m9_d_s1___registers_8h_1a0c064d408e6e0c4bbb96b5bf3c41feaf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Z_H_XL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_l_s_m9_d_s1___registers_8h_1adcd8d113c8791a336768b8da70010ea7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIFO_CTRL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_l_s_m9_d_s1___registers_8h_1a8ff327dd2e3548068a66bffdc932d5ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIFO_SRC<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_l_s_m9_d_s1___registers_8h_1acc6f2bdcd6a987d9e996b0f147d52a08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_CFG_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="_l_s_m9_d_s1___registers_8h_1ad004b4050288dc635e68ac2c6a3866a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_THS_XH_G<sp/><sp/><sp/><sp/>0x31</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_l_s_m9_d_s1___registers_8h_1a0ff6063c4032f492c7d46ff6d308c553" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_THS_XL_G<sp/><sp/><sp/><sp/>0x32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_l_s_m9_d_s1___registers_8h_1a12da6f5a4ec249305e8d235f38fae7c7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_THS_YH_G<sp/><sp/><sp/><sp/>0x33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="_l_s_m9_d_s1___registers_8h_1ad7126df674acb2c54dea7040a5a5ee07" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_THS_YL_G<sp/><sp/><sp/><sp/>0x34</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_l_s_m9_d_s1___registers_8h_1a865508d60fe994896b5a4d786456728d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_THS_ZH_G<sp/><sp/><sp/><sp/>0x35</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_l_s_m9_d_s1___registers_8h_1a03e990e4a4664a39fb3d053f8d7731a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_THS_ZL_G<sp/><sp/><sp/><sp/>0x36</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_l_s_m9_d_s1___registers_8h_1a494192ebaf76143c9d377cae11f95d54" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_GEN_DUR_G<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x37</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="comment">//<sp/>LSM9DS1<sp/>Magneto<sp/>Registers<sp/>//</highlight></codeline>
+<codeline lineno="82" refid="_l_s_m9_d_s1___registers_8h_1a043bf20b279c3ad248ff196af6a1daab" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>OFFSET_X_REG_L_M<sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="_l_s_m9_d_s1___registers_8h_1aeb2fc84bba390310b1316f0945727306" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFFSET_X_REG_H_M<sp/><sp/><sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="_l_s_m9_d_s1___registers_8h_1aefea0113ed2f70aff4b7c444ad311dc6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFFSET_Y_REG_L_M<sp/><sp/><sp/><sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="_l_s_m9_d_s1___registers_8h_1a24e92ee0485f8577eb014dc6b9a17d7d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFFSET_Y_REG_H_M<sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_l_s_m9_d_s1___registers_8h_1a2245294a0979a422f6a828e489f78563" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFFSET_Z_REG_L_M<sp/><sp/><sp/><sp/>0x09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="_l_s_m9_d_s1___registers_8h_1aa9684413ebde4127761ec5874149a7c9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OFFSET_Z_REG_H_M<sp/><sp/><sp/><sp/>0x0A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_l_s_m9_d_s1___registers_8h_1a6f922f874e6ca9b05008b5ada8fd35a5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WHO_AM_I_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_l_s_m9_d_s1___registers_8h_1a681825dec9359e9d82698edcfec6c24d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG1_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_l_s_m9_d_s1___registers_8h_1a86d82a48866508ca682353988132e0d8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG2_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x21</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_l_s_m9_d_s1___registers_8h_1ac1890f3762169150ac5efdba82735976" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG3_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x22</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="_l_s_m9_d_s1___registers_8h_1ae732f3952adf7b6691e302d7446041a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG4_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x23</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_l_s_m9_d_s1___registers_8h_1a75b063b95134015d2f927762f3bc7dad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CTRL_REG5_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x24</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="_l_s_m9_d_s1___registers_8h_1acdc5b337c11e6ad00f5c1a1653d80cea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STATUS_REG_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x27</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="_l_s_m9_d_s1___registers_8h_1abab698c56e01e1fd410398c4e7beaaf3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_X_L_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x28</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_l_s_m9_d_s1___registers_8h_1a2489b398fe6a7418ea8f45c61cce4f9b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_X_H_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x29</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="_l_s_m9_d_s1___registers_8h_1ac2a68cdf4dc38a1e6953a131d193aac2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Y_L_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="_l_s_m9_d_s1___registers_8h_1a296228caa98301cb5cd765cafc9ee7b6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Y_H_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="_l_s_m9_d_s1___registers_8h_1ae30aefcb21f60ce603a214d5678b8f9d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Z_L_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="_l_s_m9_d_s1___registers_8h_1abbf1fdc9b183596b72618c113b30718b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OUT_Z_H_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="_l_s_m9_d_s1___registers_8h_1a4f5eea68b1f2ce72d284eea60e4553fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_CFG_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="_l_s_m9_d_s1___registers_8h_1a5a42ea617d3bb38574b2a19b553b1e1a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_SRC_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="_l_s_m9_d_s1___registers_8h_1acefeab011ea4e58c1713737ec1b74532" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_THS_L_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="_l_s_m9_d_s1___registers_8h_1a947fca65e458b8a0876fb2081fb3d160" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>INT_THS_H_M<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x33</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="comment">//<sp/>LSM9DS1<sp/>WHO_AM_I<sp/>Responses<sp/>//</highlight></codeline>
+<codeline lineno="109" refid="_l_s_m9_d_s1___registers_8h_1a8dbbb5c2aaadc877fb71ea4eda9fcbf5" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>WHO_AM_I_AG_RSP<sp/><sp/><sp/><sp/><sp/>0x68</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="_l_s_m9_d_s1___registers_8h_1a895e051d061b2d053680ab832048b2ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WHO_AM_I_M_RSP<sp/><sp/><sp/><sp/><sp/><sp/>0x3D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Registers.h"/>
+  </compounddef>
+</doxygen>

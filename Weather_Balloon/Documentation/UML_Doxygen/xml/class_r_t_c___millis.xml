@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_r_t_c___millis" kind="class" language="C++" prot="public">
+    <compoundname>RTC_Millis</compoundname>
+    <includes refid="_r_t_clib_8h" local="no">RTClib.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_r_t_c___millis_1a9e3029d6552e87d7c68a5bd6aa3e6b92" prot="protected" static="no" mutable="no">
+        <type>long</type>
+        <definition>long RTC_Millis::offset</definition>
+        <argsstring></argsstring>
+        <name>offset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="75" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_t_c___millis_1a17670c5fcf820867a8018aa2083c62cd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_Millis::begin</definition>
+        <argsstring>(const DateTime &amp;dt)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>const <ref refid="class_date_time" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="63" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="63" bodyend="66"/>
+        <references refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" compoundref="_time_8cpp" startline="250" endline="272">now</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___millis_1adcf4a13317d9b785ae79613b3429a46a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_Millis::adjust</definition>
+        <argsstring>(const DateTime &amp;dt)</argsstring>
+        <name>adjust</name>
+        <param>
+          <type>const <ref refid="class_date_time" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="67" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="192" bodyend="195"/>
+        <references refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">DateTime::unixtime</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___millis_1aac263a7087f8603199eb45cdc7c3c146" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime RTC_Millis::now</definition>
+        <argsstring>()</argsstring>
+        <name>now</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="68" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="197" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___millis_1a2bf3cc48adda7c115553a499a46b3506" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RTC_Millis::RTC_Millis</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTC_Millis</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="69" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="69" bodyend="72"/>
+        <references refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime::DateTime</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="61" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="60" bodyend="76"/>
+    <listofallmembers>
+      <member refid="class_r_t_c___millis_1adcf4a13317d9b785ae79613b3429a46a" prot="public" virt="non-virtual"><scope>RTC_Millis</scope><name>adjust</name></member>
+      <member refid="class_r_t_c___millis_1a17670c5fcf820867a8018aa2083c62cd" prot="public" virt="non-virtual"><scope>RTC_Millis</scope><name>begin</name></member>
+      <member refid="class_r_t_c___millis_1aac263a7087f8603199eb45cdc7c3c146" prot="public" virt="non-virtual"><scope>RTC_Millis</scope><name>now</name></member>
+      <member refid="class_r_t_c___millis_1a9e3029d6552e87d7c68a5bd6aa3e6b92" prot="protected" virt="non-virtual"><scope>RTC_Millis</scope><name>offset</name></member>
+      <member refid="class_r_t_c___millis_1a2bf3cc48adda7c115553a499a46b3506" prot="public" virt="non-virtual"><scope>RTC_Millis</scope><name>RTC_Millis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

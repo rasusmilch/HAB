@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structcid__t" kind="struct" language="C++" prot="public">
+    <compoundname>cid_t</compoundname>
+    <includes refid="_sd_info_8h" local="no">SdInfo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcid__t_1a0178335772f2b5988e8d0bb18da944fd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t cid_t::mid</definition>
+        <argsstring></argsstring>
+        <name>mid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="88" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1a8fcb684c469e0564332b1bc59cc86bfe" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char cid_t::oid[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>oid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="90" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1a3175db733ae2cd742dc9ead66b9da4ef" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char cid_t::pnm[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>pnm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="92" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1adca5becaeab0c719f5261326f8240598" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned cid_t::prv_m</definition>
+        <argsstring></argsstring>
+        <name>prv_m</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="94" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1af420a66fc8354b5bcb01bd87000cf260" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned cid_t::prv_n</definition>
+        <argsstring></argsstring>
+        <name>prv_n</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="95" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1ad6bae7c03bd4b288da75f9cdf56bba78" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t cid_t::psn</definition>
+        <argsstring></argsstring>
+        <name>psn</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="97" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1abb520a07c6026ad276cf83553d0ea3ea" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned cid_t::mdt_year_high</definition>
+        <argsstring></argsstring>
+        <name>mdt_year_high</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="99" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1a11aa48c8f08a1f2fddfd22c166e1bc0f" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned cid_t::reserved</definition>
+        <argsstring></argsstring>
+        <name>reserved</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="100" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1ac4e6ab33086fb270d8c99daaa0249c18" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned cid_t::mdt_month</definition>
+        <argsstring></argsstring>
+        <name>mdt_month</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="102" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1a408e10c50e3f647ff82ecdbd2e964bcf" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned cid_t::mdt_year_low</definition>
+        <argsstring></argsstring>
+        <name>mdt_year_low</name>
+        <bitfield>4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="103" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1a21e51cb380893a70acc66eb61a30f950" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned cid_t::always1</definition>
+        <argsstring></argsstring>
+        <name>always1</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="105" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="105" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcid__t_1a6b80ab54c4c6807662ec5a6544c20d56" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned cid_t::crc</definition>
+        <argsstring></argsstring>
+        <name>crc</name>
+        <bitfield> 7</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="106" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="106" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="86" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="86" bodyend="107"/>
+    <listofallmembers>
+      <member refid="structcid__t_1a21e51cb380893a70acc66eb61a30f950" prot="public" virt="non-virtual"><scope>cid_t</scope><name>always1</name></member>
+      <member refid="structcid__t_1a6b80ab54c4c6807662ec5a6544c20d56" prot="public" virt="non-virtual"><scope>cid_t</scope><name>crc</name></member>
+      <member refid="structcid__t_1ac4e6ab33086fb270d8c99daaa0249c18" prot="public" virt="non-virtual"><scope>cid_t</scope><name>mdt_month</name></member>
+      <member refid="structcid__t_1abb520a07c6026ad276cf83553d0ea3ea" prot="public" virt="non-virtual"><scope>cid_t</scope><name>mdt_year_high</name></member>
+      <member refid="structcid__t_1a408e10c50e3f647ff82ecdbd2e964bcf" prot="public" virt="non-virtual"><scope>cid_t</scope><name>mdt_year_low</name></member>
+      <member refid="structcid__t_1a0178335772f2b5988e8d0bb18da944fd" prot="public" virt="non-virtual"><scope>cid_t</scope><name>mid</name></member>
+      <member refid="structcid__t_1a8fcb684c469e0564332b1bc59cc86bfe" prot="public" virt="non-virtual"><scope>cid_t</scope><name>oid</name></member>
+      <member refid="structcid__t_1a3175db733ae2cd742dc9ead66b9da4ef" prot="public" virt="non-virtual"><scope>cid_t</scope><name>pnm</name></member>
+      <member refid="structcid__t_1adca5becaeab0c719f5261326f8240598" prot="public" virt="non-virtual"><scope>cid_t</scope><name>prv_m</name></member>
+      <member refid="structcid__t_1af420a66fc8354b5bcb01bd87000cf260" prot="public" virt="non-virtual"><scope>cid_t</scope><name>prv_n</name></member>
+      <member refid="structcid__t_1ad6bae7c03bd4b288da75f9cdf56bba78" prot="public" virt="non-virtual"><scope>cid_t</scope><name>psn</name></member>
+      <member refid="structcid__t_1a11aa48c8f08a1f2fddfd22c166e1bc0f" prot="public" virt="non-virtual"><scope>cid_t</scope><name>reserved</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

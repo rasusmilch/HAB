@@ -91,7 +91,7 @@ void set_alt_threshold(float altitude, String entered) {
     double sigma,delta,theta;
     double temp,pressure,density,asound;
     double viscosity,kinematicViscosity;
-    if (altitude > 0 && altitude <= 100000) {
+    if (altitude > 0 && altitude <= 50000) {
         Atmosphere(altitude/1000, sigma,delta,theta);
         pressure=PZERO*delta;
         configuration.altitude_alarm = altitude;
@@ -107,7 +107,7 @@ void set_alt_threshold(float altitude, String entered) {
         Serial.print(pressure);
         Serial.println(F(" Pascals"));
     } else {
-        Serial.println(F("Invalid altitude.\n\rAcceptable range is 0-100000 m."));
+        Serial.println(F("Invalid altitude.\n\rAcceptable range is 0-500000 m."));
     }
 }
 

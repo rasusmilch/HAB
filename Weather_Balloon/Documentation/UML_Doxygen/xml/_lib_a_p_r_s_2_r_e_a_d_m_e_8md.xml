@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_lib_a_p_r_s_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">LibAPRS</highlight></codeline>
+<codeline><highlight class="normal">==========</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">LibAPRS<sp/>is<sp/>an<sp/>Arduino<sp/>IDE<sp/>library<sp/>that<sp/>makes<sp/>it<sp/>easy<sp/>to<sp/>send<sp/>and<sp/>receive<sp/>APRS<sp/>packets<sp/>with<sp/>a<sp/>[MicroModem](http://unsigned.io/micromodem)-compatible<sp/>modem.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>buy<sp/>a<sp/>complete<sp/>modem<sp/>from<sp/>[my<sp/>shop](http://unsigned.io/shop),<sp/>or<sp/>you<sp/>can<sp/>build<sp/>one<sp/>yourself<sp/>pretty<sp/>easily.<sp/>Take<sp/>a<sp/>look<sp/>at<sp/>the<sp/>documentation<sp/>in<sp/>the<sp/>[MicroModem](https://github.com/markqvist/MicroModem)<sp/>repository<sp/>for<sp/>information<sp/>and<sp/>getting<sp/>started<sp/>guides!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">See<sp/>the<sp/>example<sp/>included<sp/>in<sp/>the<sp/>library<sp/>for<sp/>info<sp/>on<sp/>how<sp/>to<sp/>use<sp/>it!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Some<sp/>features</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Send<sp/>and<sp/>receive<sp/>AX.25<sp/>APRS<sp/>packets</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Full<sp/>modulation<sp/>and<sp/>demodulation<sp/>in<sp/>software</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Easy<sp/>configuration<sp/>of<sp/>callsign<sp/>and<sp/>path<sp/>settings</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Easily<sp/>process<sp/>incoming<sp/>packets</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Shorthand<sp/>functions<sp/>for<sp/>sending<sp/>location<sp/>updates<sp/>and<sp/>messages,<sp/>so<sp/>you<sp/>don&apos;t<sp/>need<sp/>to<sp/>manually<sp/>create<sp/>the<sp/>packets</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Ability<sp/>to<sp/>send<sp/>raw<sp/>packets</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Support<sp/>for<sp/>settings<sp/>APRS<sp/>symbols</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Support<sp/>for<sp/>power/height/gain<sp/>info<sp/>in<sp/>location<sp/>updates</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Can<sp/>run<sp/>with<sp/>open<sp/>squelch</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Installation</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Place<sp/>the<sp/>&quot;LibAPRS&quot;<sp/>folder<sp/>(the<sp/>one<sp/>in<sp/>the<sp/>same<sp/>folder<sp/>as<sp/>this<sp/>readme<sp/>file)<sp/>inside<sp/>your<sp/>Arduino<sp/>&quot;libraries&quot;<sp/>folder.<sp/>That&apos;s<sp/>all!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Getting<sp/>started</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>should<sp/>read<sp/>through<sp/>the<sp/>&quot;Basic_usage&quot;<sp/>example<sp/>included<sp/>with<sp/>the<sp/>library.<sp/>It<sp/>contains<sp/>an<sp/>explanation<sp/>of<sp/>all<sp/>the<sp/>functions<sp/>and<sp/>a<sp/>basic<sp/>sketch<sp/>to<sp/>get<sp/>you<sp/>up<sp/>and<sp/>running<sp/>with<sp/>sending<sp/>and<sp/>receiving<sp/>packets.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Got<sp/>bugs?</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>library<sp/>is<sp/>very<sp/>early,<sp/>and<sp/>being<sp/>actively<sp/>developed<sp/>all<sp/>the<sp/>time.<sp/>This<sp/>means<sp/>you<sp/>should<sp/>expect<sp/>to<sp/>find<sp/>bugs.<sp/>If<sp/>you<sp/>do,<sp/>please<sp/>report<sp/>them<sp/>here,<sp/>so<sp/>I<sp/>can<sp/>fix<sp/>them!<sp/>It<sp/>also<sp/>means<sp/>I<sp/>might<sp/>have<sp/>to<sp/>make<sp/>changes<sp/>that<sp/>will<sp/>break<sp/>code,<sp/>and<sp/>that<sp/>you<sp/>will<sp/>have<sp/>to<sp/>rewrite<sp/>your<sp/>sketch.<sp/>If<sp/>you<sp/>don&apos;t<sp/>think<sp/>that<sp/>sounds<sp/>good,<sp/>wait<sp/>a<sp/>little<sp/>while<sp/>for<sp/>a<sp/>stable<sp/>release<sp/>of<sp/>the<sp/>library<sp/>:)</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/README.md"/>
+  </compounddef>
+</doxygen>

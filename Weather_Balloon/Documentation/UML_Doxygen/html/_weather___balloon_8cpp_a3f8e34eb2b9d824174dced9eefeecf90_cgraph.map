@@ -1,0 +1,6 @@
+<map id="configure_TSL2561" name="configure_TSL2561">
+<area shape="rect" id="node2" href="$class_adafruit___t_s_l2561___unified.html#ac2781d263ae73533628d5844ca38b6de" title="Adafruit_TSL2561_Unified\l::begin" alt="" coords="177,64,341,105"/>
+<area shape="rect" id="node3" href="$class_adafruit___t_s_l2561___unified.html#a594636810e6e26dc025b7f1b7a16024f" title="Adafruit_TSL2561_Unified\l::setIntegrationTime" alt="" coords="389,5,553,47"/>
+<area shape="rect" id="node5" href="$class_adafruit___t_s_l2561___unified.html#a9bb93fc9a1af24175c9838cdfe7b8904" title="Enables or disables the auto&#45;gain settings when reading data from the sensor. " alt="" coords="177,129,341,171"/>
+<area shape="rect" id="node4" href="$class_adafruit___t_s_l2561___unified.html#ad4189a1cb97b07366b5014bec629f29a" title="Adafruit_TSL2561_Unified\l::setGain" alt="" coords="389,71,553,112"/>
+</map>

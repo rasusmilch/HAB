@@ -1,0 +1,386 @@
+\hypertarget{class_m_a_x17043}{}\section{M\+A\+X17043 Class Reference}
+\label{class_m_a_x17043}\index{M\+A\+X17043@{M\+A\+X17043}}
+
+
+{\ttfamily \#include $<$Spark\+Fun\+M\+A\+X17043.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_m_a_x17043_a355bb280e2fb71a761ac539c5d6b335a}{M\+A\+X17043} ()
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_a7f434b44531c65f4a3b31c4f5ebcb887}{begin} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_a853dbf7908a1c4a37405050ec5e9c9e6}{quick\+Start} ()
+\item 
+float \hyperlink{class_m_a_x17043_afcba3e7ee660335c78995d337cab1678}{get\+Voltage} ()
+\item 
+float \hyperlink{class_m_a_x17043_a9567ba1006631e2d262a01ced542523f}{get\+S\+OC} ()
+\item 
+uint16\+\_\+t \hyperlink{class_m_a_x17043_acca2d36ef6359c085c9fe8bf2eb37ec3}{get\+Version} ()
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_a79f404146d8ad9a0da8e1941f99ab6a1}{get\+Threshold} ()
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_a1399c759fa7039420a2ac324db843a1f}{set\+Threshold} (uint8\+\_\+t percent)
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_ab62ceb6112cf661a9ca4ffa54d4e72c5}{get\+Alert} (bool clear=false)
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_a396806dcd5feff73dfea335a75d2476e}{clear\+Alert} ()
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_ac284bdd3085b45246cc115f2c58dea5f}{sleep} ()
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_a3362df7c61d7a9acf75d1ee83f219b1f}{wake} ()
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_a29130068805144281ce44dc686e8ef1e}{reset} ()
+\item 
+uint16\+\_\+t \hyperlink{class_m_a_x17043_ac9e3d5347ba744323ddcc973d89c15ad}{get\+Config\+Register} ()
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_a644fb0b3b44c57e2d58faeb8190e82cd}{get\+Compensation} ()
+\item 
+uint8\+\_\+t \hyperlink{class_m_a_x17043_a0e65f026d006cd020439329e7230d7c5}{set\+Compensation} (uint8\+\_\+t new\+Compensation)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 28 of file Spark\+Fun\+M\+A\+X17043.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+A\+X17043@{M\+A\+X17043}!M\+A\+X17043@{M\+A\+X17043}}
+\index{M\+A\+X17043@{M\+A\+X17043}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{M\+A\+X17043()}{MAX17043()}}]{\setlength{\rightskip}{0pt plus 5cm}M\+A\+X17043\+::\+M\+A\+X17043 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a355bb280e2fb71a761ac539c5d6b335a}{}\label{class_m_a_x17043_a355bb280e2fb71a761ac539c5d6b335a}
+
+
+Definition at line 56 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{M\+A\+X17043@{M\+A\+X17043}!begin@{begin}}
+\index{begin@{begin}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{begin(void)}{begin(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a7f434b44531c65f4a3b31c4f5ebcb887}{}\label{class_m_a_x17043_a7f434b44531c65f4a3b31c4f5ebcb887}
+
+
+Definition at line 61 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References Wire.
+
+
+
+Referenced by setup().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=243pt]{class_m_a_x17043_a7f434b44531c65f4a3b31c4f5ebcb887_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+A\+X17043@{M\+A\+X17043}!clear\+Alert@{clear\+Alert}}
+\index{clear\+Alert@{clear\+Alert}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{clear\+Alert()}{clearAlert()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::clear\+Alert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a396806dcd5feff73dfea335a75d2476e}{}\label{class_m_a_x17043_a396806dcd5feff73dfea335a75d2476e}
+
+
+Definition at line 135 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+C\+O\+N\+F\+IG.
+
+\index{M\+A\+X17043@{M\+A\+X17043}!get\+Alert@{get\+Alert}}
+\index{get\+Alert@{get\+Alert}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{get\+Alert(bool clear=false)}{getAlert(bool clear=false)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::get\+Alert (
+\begin{DoxyParamCaption}
+\item[{bool}]{clear = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_ab62ceb6112cf661a9ca4ffa54d4e72c5}{}\label{class_m_a_x17043_ab62ceb6112cf661a9ca4ffa54d4e72c5}
+
+
+Definition at line 144 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+C\+O\+N\+F\+IG.
+
+
+
+Referenced by loop().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=250pt]{class_m_a_x17043_ab62ceb6112cf661a9ca4ffa54d4e72c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+A\+X17043@{M\+A\+X17043}!get\+Compensation@{get\+Compensation}}
+\index{get\+Compensation@{get\+Compensation}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{get\+Compensation()}{getCompensation()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::get\+Compensation (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a644fb0b3b44c57e2d58faeb8190e82cd}{}\label{class_m_a_x17043_a644fb0b3b44c57e2d58faeb8190e82cd}
+
+
+Definition at line 188 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+C\+O\+N\+F\+IG.
+
+\index{M\+A\+X17043@{M\+A\+X17043}!get\+Config\+Register@{get\+Config\+Register}}
+\index{get\+Config\+Register@{get\+Config\+Register}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{get\+Config\+Register()}{getConfigRegister()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t M\+A\+X17043\+::get\+Config\+Register (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_ac9e3d5347ba744323ddcc973d89c15ad}{}\label{class_m_a_x17043_ac9e3d5347ba744323ddcc973d89c15ad}
+
+
+Definition at line 195 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+C\+O\+N\+F\+IG.
+
+\index{M\+A\+X17043@{M\+A\+X17043}!get\+S\+OC@{get\+S\+OC}}
+\index{get\+S\+OC@{get\+S\+OC}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{get\+S\+O\+C()}{getSOC()}}]{\setlength{\rightskip}{0pt plus 5cm}float M\+A\+X17043\+::get\+S\+OC (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a9567ba1006631e2d262a01ced542523f}{}\label{class_m_a_x17043_a9567ba1006631e2d262a01ced542523f}
+
+
+Definition at line 88 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+S\+OC, and soc.
+
+
+
+Referenced by loop(), and read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{class_m_a_x17043_a9567ba1006631e2d262a01ced542523f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+A\+X17043@{M\+A\+X17043}!get\+Threshold@{get\+Threshold}}
+\index{get\+Threshold@{get\+Threshold}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{get\+Threshold()}{getThreshold()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::get\+Threshold (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a79f404146d8ad9a0da8e1941f99ab6a1}{}\label{class_m_a_x17043_a79f404146d8ad9a0da8e1941f99ab6a1}
+
+
+Definition at line 104 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+C\+O\+N\+F\+IG.
+
+\index{M\+A\+X17043@{M\+A\+X17043}!get\+Version@{get\+Version}}
+\index{get\+Version@{get\+Version}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{get\+Version()}{getVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t M\+A\+X17043\+::get\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_acca2d36ef6359c085c9fe8bf2eb37ec3}{}\label{class_m_a_x17043_acca2d36ef6359c085c9fe8bf2eb37ec3}
+
+
+Definition at line 99 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+V\+E\+R\+S\+I\+ON.
+
+\index{M\+A\+X17043@{M\+A\+X17043}!get\+Voltage@{get\+Voltage}}
+\index{get\+Voltage@{get\+Voltage}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{get\+Voltage()}{getVoltage()}}]{\setlength{\rightskip}{0pt plus 5cm}float M\+A\+X17043\+::get\+Voltage (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_afcba3e7ee660335c78995d337cab1678}{}\label{class_m_a_x17043_afcba3e7ee660335c78995d337cab1678}
+
+
+Definition at line 78 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+V\+C\+E\+LL.
+
+
+
+Referenced by loop(), and read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_m_a_x17043_afcba3e7ee660335c78995d337cab1678_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+A\+X17043@{M\+A\+X17043}!quick\+Start@{quick\+Start}}
+\index{quick\+Start@{quick\+Start}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{quick\+Start()}{quickStart()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::quick\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a853dbf7908a1c4a37405050ec5e9c9e6}{}\label{class_m_a_x17043_a853dbf7908a1c4a37405050ec5e9c9e6}
+
+
+Definition at line 67 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+M\+O\+DE, and M\+A\+X17043\+\_\+\+M\+O\+D\+E\+\_\+\+Q\+U\+I\+C\+K\+S\+T\+A\+RT.
+
+
+
+Referenced by setup().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{class_m_a_x17043_a853dbf7908a1c4a37405050ec5e9c9e6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+A\+X17043@{M\+A\+X17043}!reset@{reset}}
+\index{reset@{reset}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a29130068805144281ce44dc686e8ef1e}{}\label{class_m_a_x17043_a29130068805144281ce44dc686e8ef1e}
+
+
+Definition at line 183 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+C\+O\+M\+M\+A\+ND, and M\+A\+X17043\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+P\+OR.
+
+\index{M\+A\+X17043@{M\+A\+X17043}!set\+Compensation@{set\+Compensation}}
+\index{set\+Compensation@{set\+Compensation}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{set\+Compensation(uint8\+\_\+t new\+Compensation)}{setCompensation(uint8\_t newCompensation)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::set\+Compensation (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{new\+Compensation}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a0e65f026d006cd020439329e7230d7c5}{}\label{class_m_a_x17043_a0e65f026d006cd020439329e7230d7c5}
+
+
+Definition at line 200 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+A\+D\+D\+R\+E\+SS, M\+A\+X17043\+\_\+\+C\+O\+N\+F\+IG, and Wire.
+
+\index{M\+A\+X17043@{M\+A\+X17043}!set\+Threshold@{set\+Threshold}}
+\index{set\+Threshold@{set\+Threshold}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{set\+Threshold(uint8\+\_\+t percent)}{setThreshold(uint8\_t percent)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::set\+Threshold (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{percent}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a1399c759fa7039420a2ac324db843a1f}{}\label{class_m_a_x17043_a1399c759fa7039420a2ac324db843a1f}
+
+
+Definition at line 116 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+C\+O\+N\+F\+IG.
+
+
+
+Referenced by setup().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{class_m_a_x17043_a1399c759fa7039420a2ac324db843a1f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+A\+X17043@{M\+A\+X17043}!sleep@{sleep}}
+\index{sleep@{sleep}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{sleep()}{sleep()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::sleep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_ac284bdd3085b45246cc115f2c58dea5f}{}\label{class_m_a_x17043_ac284bdd3085b45246cc115f2c58dea5f}
+
+
+Definition at line 161 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+C\+O\+N\+F\+IG.
+
+\index{M\+A\+X17043@{M\+A\+X17043}!wake@{wake}}
+\index{wake@{wake}!M\+A\+X17043@{M\+A\+X17043}}
+\subsubsection[{\texorpdfstring{wake()}{wake()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+A\+X17043\+::wake (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_a_x17043_a3362df7c61d7a9acf75d1ee83f219b1f}{}\label{class_m_a_x17043_a3362df7c61d7a9acf75d1ee83f219b1f}
+
+
+Definition at line 172 of file Spark\+Fun\+M\+A\+X17043.\+cpp.
+
+
+
+References M\+A\+X17043\+\_\+\+C\+O\+N\+F\+IG.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Spark\+Fun\+\_\+\+M\+A\+X17043/\hyperlink{_spark_fun_m_a_x17043_8h}{Spark\+Fun\+M\+A\+X17043.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Spark\+Fun\+\_\+\+M\+A\+X17043/\hyperlink{_spark_fun_m_a_x17043_8cpp}{Spark\+Fun\+M\+A\+X17043.\+cpp}\end{DoxyCompactItemize}

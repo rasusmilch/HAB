@@ -1,0 +1,281 @@
+\hypertarget{class_p_i_d}{}\section{P\+ID Class Reference}
+\label{class_p_i_d}\index{P\+ID@{P\+ID}}
+
+
+{\ttfamily \#include $<$P\+I\+D\+\_\+v1.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_p_i_d_aba833737b9cb8a9da181d392a0306c1b}{P\+ID} (double $\ast$, double $\ast$, double $\ast$, double, double, double, int)
+\item 
+void \hyperlink{class_p_i_d_a68074bad88a8cc442ee03a036073d5d5}{Set\+Mode} (int Mode)
+\item 
+bool \hyperlink{class_p_i_d_a8d154fe921cba7963c49d7d2b42eccf1}{Compute} ()
+\item 
+void \hyperlink{class_p_i_d_a5645914427bd740b12faa97cc25a8414}{Set\+Output\+Limits} (double, double)
+\item 
+void \hyperlink{class_p_i_d_a848bb1bbeabd59d38c9c955958e3e798}{Set\+Tunings} (double, double, double)
+\item 
+void \hyperlink{class_p_i_d_a66df966f739e19482aaba38cf9308c4e}{Set\+Controller\+Direction} (int)
+\item 
+void \hyperlink{class_p_i_d_aaa1e0e67a0c97571bd62b326e6cf3b2e}{Set\+Sample\+Time} (int)
+\item 
+double \hyperlink{class_p_i_d_ae5519c833b2887a0e6aad670d9b3d8b8}{Get\+Kp} ()
+\item 
+double \hyperlink{class_p_i_d_ac7ba6bc99c76c4378d699e176c81491c}{Get\+Ki} ()
+\item 
+double \hyperlink{class_p_i_d_a62b7e8dca41e724e1ad62dec930058d8}{Get\+Kd} ()
+\item 
+int \hyperlink{class_p_i_d_acc325db5e6a140b92c8199a66e03491b}{Get\+Mode} ()
+\item 
+int \hyperlink{class_p_i_d_a2a8674f4c8937dfdf859f6a3ad9f45d5}{Get\+Direction} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 5 of file P\+I\+D\+\_\+v1.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{P\+ID@{P\+ID}!P\+ID@{P\+ID}}
+\index{P\+ID@{P\+ID}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{P\+I\+D(double $\ast$, double $\ast$, double $\ast$, double, double, double, int)}{PID(double *, double *, double *, double, double, double, int)}}]{\setlength{\rightskip}{0pt plus 5cm}P\+I\+D\+::\+P\+ID (
+\begin{DoxyParamCaption}
+\item[{double $\ast$}]{Input, }
+\item[{double $\ast$}]{Output, }
+\item[{double $\ast$}]{Setpoint, }
+\item[{double}]{Kp, }
+\item[{double}]{Ki, }
+\item[{double}]{Kd, }
+\item[{int}]{Controller\+Direction}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_aba833737b9cb8a9da181d392a0306c1b}{}\label{class_p_i_d_aba833737b9cb8a9da181d392a0306c1b}
+
+
+Definition at line 20 of file P\+I\+D\+\_\+v1.\+cpp.
+
+
+
+References Set\+Controller\+Direction(), Set\+Output\+Limits(), and Set\+Tunings().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_p_i_d_aba833737b9cb8a9da181d392a0306c1b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{P\+ID@{P\+ID}!Compute@{Compute}}
+\index{Compute@{Compute}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Compute()}{Compute()}}]{\setlength{\rightskip}{0pt plus 5cm}bool P\+I\+D\+::\+Compute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_a8d154fe921cba7963c49d7d2b42eccf1}{}\label{class_p_i_d_a8d154fe921cba7963c49d7d2b42eccf1}
+
+
+Definition at line 47 of file P\+I\+D\+\_\+v1.\+cpp.
+
+
+
+References now().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{class_p_i_d_a8d154fe921cba7963c49d7d2b42eccf1_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{P\+ID@{P\+ID}!Get\+Direction@{Get\+Direction}}
+\index{Get\+Direction@{Get\+Direction}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Get\+Direction()}{GetDirection()}}]{\setlength{\rightskip}{0pt plus 5cm}int P\+I\+D\+::\+Get\+Direction (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_a2a8674f4c8937dfdf859f6a3ad9f45d5}{}\label{class_p_i_d_a2a8674f4c8937dfdf859f6a3ad9f45d5}
+
+
+Definition at line 194 of file P\+I\+D\+\_\+v1.\+cpp.
+
+\index{P\+ID@{P\+ID}!Get\+Kd@{Get\+Kd}}
+\index{Get\+Kd@{Get\+Kd}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Get\+Kd()}{GetKd()}}]{\setlength{\rightskip}{0pt plus 5cm}double P\+I\+D\+::\+Get\+Kd (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_a62b7e8dca41e724e1ad62dec930058d8}{}\label{class_p_i_d_a62b7e8dca41e724e1ad62dec930058d8}
+
+
+Definition at line 192 of file P\+I\+D\+\_\+v1.\+cpp.
+
+\index{P\+ID@{P\+ID}!Get\+Ki@{Get\+Ki}}
+\index{Get\+Ki@{Get\+Ki}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Get\+Ki()}{GetKi()}}]{\setlength{\rightskip}{0pt plus 5cm}double P\+I\+D\+::\+Get\+Ki (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_ac7ba6bc99c76c4378d699e176c81491c}{}\label{class_p_i_d_ac7ba6bc99c76c4378d699e176c81491c}
+
+
+Definition at line 191 of file P\+I\+D\+\_\+v1.\+cpp.
+
+\index{P\+ID@{P\+ID}!Get\+Kp@{Get\+Kp}}
+\index{Get\+Kp@{Get\+Kp}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Get\+Kp()}{GetKp()}}]{\setlength{\rightskip}{0pt plus 5cm}double P\+I\+D\+::\+Get\+Kp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_ae5519c833b2887a0e6aad670d9b3d8b8}{}\label{class_p_i_d_ae5519c833b2887a0e6aad670d9b3d8b8}
+
+
+Definition at line 190 of file P\+I\+D\+\_\+v1.\+cpp.
+
+\index{P\+ID@{P\+ID}!Get\+Mode@{Get\+Mode}}
+\index{Get\+Mode@{Get\+Mode}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Get\+Mode()}{GetMode()}}]{\setlength{\rightskip}{0pt plus 5cm}int P\+I\+D\+::\+Get\+Mode (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_acc325db5e6a140b92c8199a66e03491b}{}\label{class_p_i_d_acc325db5e6a140b92c8199a66e03491b}
+
+
+Definition at line 193 of file P\+I\+D\+\_\+v1.\+cpp.
+
+
+
+References A\+U\+T\+O\+M\+A\+T\+IC, and M\+A\+N\+U\+AL.
+
+\index{P\+ID@{P\+ID}!Set\+Controller\+Direction@{Set\+Controller\+Direction}}
+\index{Set\+Controller\+Direction@{Set\+Controller\+Direction}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Set\+Controller\+Direction(int)}{SetControllerDirection(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+D\+::\+Set\+Controller\+Direction (
+\begin{DoxyParamCaption}
+\item[{int}]{Direction}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_a66df966f739e19482aaba38cf9308c4e}{}\label{class_p_i_d_a66df966f739e19482aaba38cf9308c4e}
+
+
+Definition at line 174 of file P\+I\+D\+\_\+v1.\+cpp.
+
+
+
+Referenced by P\+I\+D().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{class_p_i_d_a66df966f739e19482aaba38cf9308c4e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{P\+ID@{P\+ID}!Set\+Mode@{Set\+Mode}}
+\index{Set\+Mode@{Set\+Mode}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Set\+Mode(int Mode)}{SetMode(int Mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+D\+::\+Set\+Mode (
+\begin{DoxyParamCaption}
+\item[{int}]{Mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_a68074bad88a8cc442ee03a036073d5d5}{}\label{class_p_i_d_a68074bad88a8cc442ee03a036073d5d5}
+
+
+Definition at line 146 of file P\+I\+D\+\_\+v1.\+cpp.
+
+
+
+References A\+U\+T\+O\+M\+A\+T\+IC.
+
+\index{P\+ID@{P\+ID}!Set\+Output\+Limits@{Set\+Output\+Limits}}
+\index{Set\+Output\+Limits@{Set\+Output\+Limits}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Set\+Output\+Limits(double, double)}{SetOutputLimits(double, double)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+D\+::\+Set\+Output\+Limits (
+\begin{DoxyParamCaption}
+\item[{double}]{Min, }
+\item[{double}]{Max}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_a5645914427bd740b12faa97cc25a8414}{}\label{class_p_i_d_a5645914427bd740b12faa97cc25a8414}
+
+
+Definition at line 125 of file P\+I\+D\+\_\+v1.\+cpp.
+
+
+
+Referenced by P\+I\+D().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{class_p_i_d_a5645914427bd740b12faa97cc25a8414_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{P\+ID@{P\+ID}!Set\+Sample\+Time@{Set\+Sample\+Time}}
+\index{Set\+Sample\+Time@{Set\+Sample\+Time}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Set\+Sample\+Time(int)}{SetSampleTime(int)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+D\+::\+Set\+Sample\+Time (
+\begin{DoxyParamCaption}
+\item[{int}]{New\+Sample\+Time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_aaa1e0e67a0c97571bd62b326e6cf3b2e}{}\label{class_p_i_d_aaa1e0e67a0c97571bd62b326e6cf3b2e}
+
+
+Definition at line 105 of file P\+I\+D\+\_\+v1.\+cpp.
+
+\index{P\+ID@{P\+ID}!Set\+Tunings@{Set\+Tunings}}
+\index{Set\+Tunings@{Set\+Tunings}!P\+ID@{P\+ID}}
+\subsubsection[{\texorpdfstring{Set\+Tunings(double, double, double)}{SetTunings(double, double, double)}}]{\setlength{\rightskip}{0pt plus 5cm}void P\+I\+D\+::\+Set\+Tunings (
+\begin{DoxyParamCaption}
+\item[{double}]{Kp, }
+\item[{double}]{Ki, }
+\item[{double}]{Kd}
+\end{DoxyParamCaption}
+)}\hypertarget{class_p_i_d_a848bb1bbeabd59d38c9c955958e3e798}{}\label{class_p_i_d_a848bb1bbeabd59d38c9c955958e3e798}
+
+
+Definition at line 83 of file P\+I\+D\+\_\+v1.\+cpp.
+
+
+
+References R\+E\+V\+E\+R\+SE.
+
+
+
+Referenced by P\+I\+D().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{class_p_i_d_a848bb1bbeabd59d38c9c955958e3e798_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Arduino-\/\+P\+I\+D-\/\+Library/\hyperlink{_p_i_d__v1_8h}{P\+I\+D\+\_\+v1.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Arduino-\/\+P\+I\+D-\/\+Library/\hyperlink{_p_i_d__v1_8cpp}{P\+I\+D\+\_\+v1.\+cpp}\end{DoxyCompactItemize}

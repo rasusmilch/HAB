@@ -1,0 +1,4 @@
+<map id="DallasTemperature::rawToFahrenheit" name="DallasTemperature::rawToFahrenheit">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#ace033fbd8e4c7e17c4bcd7ecc8f3ebea" title="DallasTemperature::\lgetTempF" alt="" coords="185,5,317,47"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#a96318d36b313e1f4f413e2ed2b7501c7" title="DallasTemperature::\lgetTempFByIndex" alt="" coords="365,5,497,47"/>
+</map>

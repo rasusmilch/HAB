@@ -1,0 +1,17 @@
+<map id="LSM9DS1::calibrate" name="LSM9DS1::calibrate">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#a54e2a7888b67b47cf0dd986c5b91a3c5" title="LSM9DS1::calcAccel" alt="" coords="184,5,316,32"/>
+<area shape="rect" id="node3" href="$class_l_s_m9_d_s1.html#a76707323565bc4170ea8e27a932c95e4" title="LSM9DS1::calcGyro" alt="" coords="185,56,315,83"/>
+<area shape="rect" id="node4" href="$class_l_s_m9_d_s1.html#a5f01141131318697838f15d7e5d10f2c" title="LSM9DS1::enableFIFO" alt="" coords="180,157,320,184"/>
+<area shape="rect" id="node5" href="$class_l_s_m9_d_s1.html#af7f9789df6f0178764c815a3380c202a" title="LSM9DS1::xgReadByte" alt="" coords="371,132,516,159"/>
+<area shape="rect" id="node12" href="$class_l_s_m9_d_s1.html#a9953684a1ff652a7d3a4d91e72bccaa1" title="LSM9DS1::readAccel" alt="" coords="183,259,317,285"/>
+<area shape="rect" id="node15" href="$class_l_s_m9_d_s1.html#a56e9710cb538a4c7f7ab94c2ca256ce9" title="LSM9DS1::readGyro" alt="" coords="185,309,315,336"/>
+<area shape="rect" id="node16" href="$class_l_s_m9_d_s1.html#a0ec4a93a34545af1acc336bae9b360f1" title="LSM9DS1::setFIFO" alt="" coords="191,208,309,235"/>
+<area shape="rect" id="node9" href="$class_l_s_m9_d_s1.html#a263eed4b52ad087a1195755c6ba49e62" title="LSM9DS1::xgWriteByte" alt="" coords="369,201,518,228"/>
+<area shape="rect" id="node6" href="$class_l_s_m9_d_s1.html#a7fc046d4b335494331905fdeb5c81c9e" title="LSM9DS1::I2CreadByte" alt="" coords="569,93,716,120"/>
+<area shape="rect" id="node7" href="$class_l_s_m9_d_s1.html#a6f0f50bb5e9b702d5a19c7441a3f9d8b" title="LSM9DS1::SPIreadByte" alt="" coords="570,144,715,171"/>
+<area shape="rect" id="node8" href="$class_l_s_m9_d_s1.html#a26c0f164454eba84e6486033b7061d11" title="LSM9DS1::SPIreadBytes" alt="" coords="767,220,917,247"/>
+<area shape="rect" id="node10" href="$class_l_s_m9_d_s1.html#a8e66108a002cc15ec4c0db0a608d20c6" title="LSM9DS1::I2CwriteByte" alt="" coords="567,195,719,221"/>
+<area shape="rect" id="node11" href="$class_l_s_m9_d_s1.html#a83321c9d6ec50f6b9944907d2be482cd" title="LSM9DS1::SPIwriteByte" alt="" coords="567,245,718,272"/>
+<area shape="rect" id="node13" href="$class_l_s_m9_d_s1.html#ae0a9cbfd74b1f4676f091c2d8e491d77" title="LSM9DS1::xgReadBytes" alt="" coords="368,303,519,329"/>
+<area shape="rect" id="node14" href="$class_l_s_m9_d_s1.html#adfc9a22290daddd7787e8023fa8f12cc" title="LSM9DS1::I2CreadBytes" alt="" coords="567,347,719,373"/>
+</map>

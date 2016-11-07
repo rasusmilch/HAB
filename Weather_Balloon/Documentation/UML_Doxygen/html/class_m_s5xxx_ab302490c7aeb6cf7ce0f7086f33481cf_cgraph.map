@@ -1,0 +1,5 @@
+<map id="MS5xxx::CRCcodeTest" name="MS5xxx::CRCcodeTest">
+<area shape="rect" id="node2" href="$class_m_s5xxx.html#a2789efaa473b6bd09fa5d68d0cd0b838" title="MS5xxx::Calc_CRC4" alt="" coords="199,5,333,32"/>
+<area shape="rect" id="node3" href="$class_m_s5xxx.html#a654f0608616be8c4b13ec9850caaead0" title="MS5xxx::ReadProm" alt="" coords="201,56,331,83"/>
+<area shape="rect" id="node4" href="$class_m_s5xxx.html#a8c77c76df98347ebf0bfcafd68825552" title="MS5xxx::send_cmd" alt="" coords="381,56,508,83"/>
+</map>

@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_filter_one_pole_cascade" kind="struct" language="C++" prot="public">
+    <compoundname>FilterOnePoleCascade</compoundname>
+    <includes refid="_filter_one_pole_8h" local="no">FilterOnePole.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_filter_one_pole_cascade_1aac9323487315e0d835dd5dfd3e4aed01" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_filter_one_pole" kindref="compound">FilterOnePole</ref></type>
+        <definition>FilterOnePole FilterOnePoleCascade::Pole1</definition>
+        <argsstring></argsstring>
+        <name>Pole1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="57" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_one_pole_cascade_1ab12f11d5af6dc6736e3766a16473220a" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_filter_one_pole" kindref="compound">FilterOnePole</ref></type>
+        <definition>FilterOnePole FilterOnePoleCascade::Pole2</definition>
+        <argsstring></argsstring>
+        <name>Pole2</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="58" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_filter_one_pole_cascade_1a57f396fd01e54c8a6f3d3a6213b4d5a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterOnePoleCascade::FilterOnePoleCascade</definition>
+        <argsstring>(float riseTime=1.0, float initialValue=0)</argsstring>
+        <name>FilterOnePoleCascade</name>
+        <param>
+          <type>float</type>
+          <declname>riseTime</declname>
+          <defval>1.0</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>initialValue</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="60" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="128" bodyend="131"/>
+        <references refid="struct_filter_one_pole_1ad7393515a5f4d972714321a3a2ab7fdd" compoundref="_filter_one_pole_8cpp" startline="121" endline="123">FilterOnePole::setToNewValue</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_cascade_1a06aed75defb8dc7cd252436944ca0baf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterOnePoleCascade::setRiseTime</definition>
+        <argsstring>(float riseTime)</argsstring>
+        <name>setRiseTime</name>
+        <param>
+          <type>float</type>
+          <declname>riseTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="63" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="133" bodyend="138"/>
+        <referencedby refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" compoundref="_running_statistics_8cpp" startline="9" endline="14">RunningStatistics::setWindowSecs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_cascade_1a1bcac6613d187073873a825d9826ed82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterOnePoleCascade::setToNewValue</definition>
+        <argsstring>(float newVal)</argsstring>
+        <name>setToNewValue</name>
+        <param>
+          <type>float</type>
+          <declname>newVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="65" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="146" bodyend="149"/>
+        <referencedby refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" compoundref="_running_statistics_8cpp" startline="16" endline="19">RunningStatistics::setInitialValue</referencedby>
+        <referencedby refid="struct_filter_one_pole_cascade_1a48b7253c9eec2765bce755b6fc985e34" compoundref="_filter_one_pole_8cpp" startline="155" endline="227">test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_cascade_1ae35052126bde0f0f197317b2ad003d26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FilterOnePoleCascade::input</definition>
+        <argsstring>(float inVal)</argsstring>
+        <name>input</name>
+        <param>
+          <type>float</type>
+          <declname>inVal</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="67" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="140" bodyend="143"/>
+        <references refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" compoundref="_filter_one_pole_8cpp" startline="52" endline="75">FilterOnePole::output</references>
+        <referencedby refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" compoundref="_running_statistics_8cpp" startline="21" endline="24">RunningStatistics::input</referencedby>
+        <referencedby refid="struct_filter_one_pole_cascade_1a48b7253c9eec2765bce755b6fc985e34" compoundref="_filter_one_pole_8cpp" startline="155" endline="227">test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_cascade_1ae8ba6b966183057560bb0d84e3ea549a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FilterOnePoleCascade::output</definition>
+        <argsstring>()</argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="69" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="151" bodyend="153"/>
+        <referencedby refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" compoundref="_running_statistics_8cpp" startline="26" endline="28">RunningStatistics::mean</referencedby>
+        <referencedby refid="struct_filter_one_pole_cascade_1a48b7253c9eec2765bce755b6fc985e34" compoundref="_filter_one_pole_8cpp" startline="155" endline="227">test</referencedby>
+        <referencedby refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" compoundref="_running_statistics_8cpp" startline="30" endline="37">RunningStatistics::variance</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_one_pole_cascade_1a48b7253c9eec2765bce755b6fc985e34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterOnePoleCascade::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="71" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.cpp" bodystart="155" bodyend="227"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="struct_filter_one_pole_cascade_1ae35052126bde0f0f197317b2ad003d26" compoundref="_filter_one_pole_8cpp" startline="140" endline="143">input</references>
+        <references refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" compoundref="_time_8cpp" startline="250" endline="272">now</references>
+        <references refid="struct_filter_one_pole_cascade_1ae8ba6b966183057560bb0d84e3ea549a" compoundref="_filter_one_pole_8cpp" startline="151" endline="153">output</references>
+        <references refid="struct_filter_one_pole_cascade_1a1bcac6613d187073873a825d9826ed82" compoundref="_filter_one_pole_8cpp" startline="146" endline="149">setToNewValue</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="316">
+        <label>FilterOnePoleCascade</label>
+        <link refid="struct_filter_one_pole_cascade"/>
+        <childnode refid="317" relation="usage">
+          <edgelabel>Pole1</edgelabel>
+          <edgelabel>Pole2</edgelabel>
+        </childnode>
+      </node>
+      <node id="317">
+        <label>FilterOnePole</label>
+        <link refid="struct_filter_one_pole"/>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="55" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="55" bodyend="72"/>
+    <listofallmembers>
+      <member refid="struct_filter_one_pole_cascade_1a57f396fd01e54c8a6f3d3a6213b4d5a6" prot="public" virt="non-virtual"><scope>FilterOnePoleCascade</scope><name>FilterOnePoleCascade</name></member>
+      <member refid="struct_filter_one_pole_cascade_1ae35052126bde0f0f197317b2ad003d26" prot="public" virt="non-virtual"><scope>FilterOnePoleCascade</scope><name>input</name></member>
+      <member refid="struct_filter_one_pole_cascade_1ae8ba6b966183057560bb0d84e3ea549a" prot="public" virt="non-virtual"><scope>FilterOnePoleCascade</scope><name>output</name></member>
+      <member refid="struct_filter_one_pole_cascade_1aac9323487315e0d835dd5dfd3e4aed01" prot="public" virt="non-virtual"><scope>FilterOnePoleCascade</scope><name>Pole1</name></member>
+      <member refid="struct_filter_one_pole_cascade_1ab12f11d5af6dc6736e3766a16473220a" prot="public" virt="non-virtual"><scope>FilterOnePoleCascade</scope><name>Pole2</name></member>
+      <member refid="struct_filter_one_pole_cascade_1a06aed75defb8dc7cd252436944ca0baf" prot="public" virt="non-virtual"><scope>FilterOnePoleCascade</scope><name>setRiseTime</name></member>
+      <member refid="struct_filter_one_pole_cascade_1a1bcac6613d187073873a825d9826ed82" prot="public" virt="non-virtual"><scope>FilterOnePoleCascade</scope><name>setToNewValue</name></member>
+      <member refid="struct_filter_one_pole_cascade_1a48b7253c9eec2765bce755b6fc985e34" prot="public" virt="non-virtual"><scope>FilterOnePoleCascade</scope><name>test</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

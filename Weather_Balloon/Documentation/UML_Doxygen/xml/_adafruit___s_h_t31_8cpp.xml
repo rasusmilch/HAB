@@ -1,0 +1,183 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_adafruit___s_h_t31_8cpp" kind="file" language="C++">
+    <compoundname>Adafruit_SHT31.cpp</compoundname>
+    <includes refid="_adafruit___s_h_t31_8h" local="yes">Adafruit_SHT31.h</includes>
+    <incdepgraph>
+      <node id="592">
+        <label>WProgram.h</label>
+      </node>
+      <node id="593">
+        <label>Wire.h</label>
+      </node>
+      <node id="591">
+        <label>Adafruit_SHT31.h</label>
+        <link refid="_adafruit___s_h_t31_8h"/>
+        <childnode refid="592" relation="include">
+        </childnode>
+        <childnode refid="593" relation="include">
+        </childnode>
+      </node>
+      <node id="590">
+        <label>Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp</label>
+        <link refid="Adafruit_SHT31.cpp"/>
+        <childnode refid="591" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>This<sp/>is<sp/>a<sp/>library<sp/>for<sp/>the<sp/>SHT31<sp/>Digital<sp/>Humidity<sp/>&amp;<sp/>Temp<sp/>Sensor</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>Designed<sp/>specifically<sp/>to<sp/>work<sp/>with<sp/>the<sp/>SHT31<sp/>Digital<sp/>sensor<sp/>from<sp/>Adafruit</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>----&gt;<sp/>https://www.adafruit.com/products/2857</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>These<sp/>displays<sp/>use<sp/>I2C<sp/>to<sp/>communicate,<sp/>2<sp/>pins<sp/>are<sp/>required<sp/>to<sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>interface</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>Adafruit<sp/>invests<sp/>time<sp/>and<sp/>resources<sp/>providing<sp/>this<sp/>open<sp/>source<sp/>code,<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>please<sp/>support<sp/>Adafruit<sp/>and<sp/>open-source<sp/>hardware<sp/>by<sp/>purchasing<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>products<sp/>from<sp/>Adafruit!</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>Written<sp/>by<sp/>Limor<sp/>Fried/Ladyada<sp/>for<sp/>Adafruit<sp/>Industries.<sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>BSD<sp/>license,<sp/>all<sp/>text<sp/>above<sp/>must<sp/>be<sp/>included<sp/>in<sp/>any<sp/>redistribution</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>****************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_adafruit___s_h_t31_8h" kindref="compound">Adafruit_SHT31.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_adafruit___s_h_t31_1a3c675ce344f1dd28b04764de3d7b5104" refkind="member"><highlight class="normal"><ref refid="class_adafruit___s_h_t31_1a3c675ce344f1dd28b04764de3d7b5104" kindref="member">Adafruit_SHT31::Adafruit_SHT31</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_adafruit___s_h_t31_1a104eb2dfd27a732420e1fc3755516690" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a104eb2dfd27a732420e1fc3755516690" kindref="member">Adafruit_SHT31::begin</ref>(uint8_t<sp/>i2caddr)<sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.begin();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>_i2caddr<sp/>=<sp/>i2caddr;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="class_adafruit___s_h_t31_1a4cfa42c7211e1c5c3de411f3b099c827" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//return<sp/>(readStatus()<sp/>==<sp/>0x40);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="class_adafruit___s_h_t31_1ae41f7910027c9a39afdb11aef45742ab" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_adafruit___s_h_t31_1ae41f7910027c9a39afdb11aef45742ab" kindref="member">Adafruit_SHT31::readStatus</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>writeCommand(<ref refid="_adafruit___s_h_t31_8h_1a6c1bb86c7a247385905fe05e0c520945" kindref="member">SHT31_READSTATUS</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(_i2caddr,<sp/>(uint8_t)3);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/>uint16_t<sp/>stat<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>stat<sp/>&lt;&lt;=<sp/>8;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>stat<sp/>|=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//Serial.println(stat,<sp/>HEX);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>stat;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="class_adafruit___s_h_t31_1a4cfa42c7211e1c5c3de411f3b099c827" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a4cfa42c7211e1c5c3de411f3b099c827" kindref="member">Adafruit_SHT31::reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>writeCommand(<ref refid="_adafruit___s_h_t31_8h_1aab64dcf72dca550bfc3e5f30e5c9ec12" kindref="member">SHT31_SOFTRESET</ref>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="class_adafruit___s_h_t31_1a96d0021ed52302e3a47fd2eaa6c1282f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a96d0021ed52302e3a47fd2eaa6c1282f" kindref="member">Adafruit_SHT31::heater</ref>(</highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>h)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(h)</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>writeCommand(<ref refid="_adafruit___s_h_t31_8h_1a7a966e359de2783149ec4d37d73a3125" kindref="member">SHT31_HEATEREN</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>writeCommand(<ref refid="_adafruit___s_h_t31_8h_1a784f3898eaacc45a75545bb2d0f82485" kindref="member">SHT31_HEATERDIS</ref>);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="class_adafruit___s_h_t31_1a3b518218705509eb0ab35050bf79f00a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a3b518218705509eb0ab35050bf79f00a" kindref="member">Adafruit_SHT31::readTemperature</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<sp/>readTempHum())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NAN;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>temp;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="class_adafruit___s_h_t31_1a2b522bec65225d5c2aadfccd31bb91e0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a2b522bec65225d5c2aadfccd31bb91e0" kindref="member">Adafruit_SHT31::readHumidity</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<sp/>readTempHum())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>NAN;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>humidity;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>Adafruit_SHT31::readTempHum(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>uint8_t<sp/>readbuffer[6];</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>writeCommand(<ref refid="_adafruit___s_h_t31_8h_1a8f2d795cc762c216df48a61c18d78c28" kindref="member">SHT31_MEAS_HIGHREP</ref>);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>delay(500);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(_i2caddr,<sp/>(uint8_t)6);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.available()<sp/>!=<sp/>6)<sp/></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>=0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>&lt;6;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>readbuffer[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>Serial.print(&quot;0x&quot;);<sp/>Serial.println(readbuffer[i],<sp/>HEX);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>uint16_t<sp/>ST,<sp/>SRH;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>ST<sp/>=<sp/>readbuffer[0];</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>ST<sp/>&lt;&lt;=<sp/>8;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>ST<sp/>|=<sp/>readbuffer[1];</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(readbuffer[2]<sp/>!=<sp/><ref refid="class_adafruit___s_h_t31_1a9fe74b3c5be1794ec00a961d91227716" kindref="member">crc8</ref>(readbuffer,<sp/>2))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>SRH<sp/>=<sp/>readbuffer[3];</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>SRH<sp/>&lt;&lt;=<sp/>8;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>SRH<sp/>|=<sp/>readbuffer[4];</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(readbuffer[5]<sp/>!=<sp/><ref refid="class_adafruit___s_h_t31_1a9fe74b3c5be1794ec00a961d91227716" kindref="member">crc8</ref>(readbuffer+3,<sp/>2))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>Serial.print(&quot;ST<sp/>=<sp/>&quot;);<sp/>Serial.println(ST);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>stemp<sp/>=<sp/>ST;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>stemp<sp/>*=<sp/>175;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/>stemp<sp/>/=<sp/>0xffff;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>stemp<sp/>=<sp/>-45<sp/>+<sp/>stemp;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>temp<sp/>=<sp/>stemp;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Serial.print(&quot;SRH<sp/>=<sp/>&quot;);<sp/>Serial.println(SRH);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>shum<sp/>=<sp/>SRH;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/>shum<sp/>*=<sp/>100;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>shum<sp/>/=<sp/>0xFFFF;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>humidity<sp/>=<sp/>shum;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Adafruit_SHT31::writeCommand(uint16_t<sp/>cmd)<sp/>{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(_i2caddr);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(cmd<sp/>&gt;&gt;<sp/>8);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(cmd<sp/>&amp;<sp/>0xFF);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="class_adafruit___s_h_t31_1a9fe74b3c5be1794ec00a961d91227716" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_adafruit___s_h_t31_1a9fe74b3c5be1794ec00a961d91227716" kindref="member">Adafruit_SHT31::crc8</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len)</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="122"><highlight class="comment">*</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*<sp/>CRC-8<sp/>formula<sp/>from<sp/>page<sp/>14<sp/>of<sp/>SHT<sp/>spec<sp/>pdf</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="125"><highlight class="comment"><sp/>*<sp/>Test<sp/>data<sp/>0xBE,<sp/>0xEF<sp/>should<sp/>yield<sp/>0x92</highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/>*<sp/>Initialization<sp/>data<sp/>0xFF</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/>*<sp/>Polynomial<sp/>0x31<sp/>(x8<sp/>+<sp/>x5<sp/>+x4<sp/>+1)</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/>*<sp/>Final<sp/>XOR<sp/>0x00</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>POLYNOMIAL(0x31);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>uint8_t<sp/>crc(0xFF);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j<sp/>=<sp/>len;<sp/>j;<sp/>--j<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>^=<sp/>*data++;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>8;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>;<sp/>--<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>crc<sp/>=<sp/>(<sp/>crc<sp/>&amp;<sp/>0x80<sp/>)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>?<sp/>(crc<sp/>&lt;&lt;<sp/>1)<sp/>^<sp/>POLYNOMIAL</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>(crc<sp/>&lt;&lt;<sp/>1);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>crc;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment">/*********************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="Adafruit_ADXL345_Unified::setRange" name="Adafruit_ADXL345_Unified::setRange">
+<area shape="rect" id="node2" href="$class_adafruit___a_d_x_l345___unified.html#ab56b668f36793605d7be009a7efb74e8" title="Reads 8&#45;bits from the specified register. " alt="" coords="225,5,397,47"/>
+<area shape="rect" id="node3" href="$class_adafruit___a_d_x_l345___unified.html#a8f6b9e9598618fc0cf221c4b62f924d9" title="Writes 8&#45;bits to the specified destination register. " alt="" coords="225,71,397,112"/>
+</map>

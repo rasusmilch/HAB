@@ -1,0 +1,379 @@
+\hypertarget{class_adafruit___t_s_l2561___unified}{}\section{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified Class Reference}
+\label{class_adafruit___t_s_l2561___unified}\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+
+
+{\ttfamily \#include $<$Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h$>$}
+
+
+
+Inheritance diagram for Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{class_adafruit___t_s_l2561___unified__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{class_adafruit___t_s_l2561___unified__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_adafruit___t_s_l2561___unified_abd81c1ca2c46e4d8b9c3f4460a65aa3f}{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified} (uint8\+\_\+t addr, int32\+\_\+t sensor\+ID=-\/1)
+\item 
+boolean \hyperlink{class_adafruit___t_s_l2561___unified_ac2781d263ae73533628d5844ca38b6de}{begin} (void)
+\item 
+void \hyperlink{class_adafruit___t_s_l2561___unified_a9bb93fc9a1af24175c9838cdfe7b8904}{enable\+Auto\+Range} (bool enable)
+\begin{DoxyCompactList}\small\item\em Enables or disables the auto-\/gain settings when reading data from the sensor. \end{DoxyCompactList}\item 
+void \hyperlink{class_adafruit___t_s_l2561___unified_a594636810e6e26dc025b7f1b7a16024f}{set\+Integration\+Time} (\hyperlink{_adafruit___t_s_l2561___u_8h_a541f87fb512c1fd213e23c3a8b23264a}{tsl2561\+Integration\+Time\+\_\+t} time)
+\item 
+void \hyperlink{class_adafruit___t_s_l2561___unified_ad4189a1cb97b07366b5014bec629f29a}{set\+Gain} (\hyperlink{_adafruit___t_s_l2561___u_8h_a8051d9eb664d757f67c0c5ce371cd9d0}{tsl2561\+Gain\+\_\+t} gain)
+\item 
+void \hyperlink{class_adafruit___t_s_l2561___unified_a23378e7c4792b8b8c721d5a4def960fb}{get\+Luminosity} (uint16\+\_\+t $\ast$broadband, uint16\+\_\+t $\ast$ir)
+\begin{DoxyCompactList}\small\item\em Gets the broadband (mixed lighting) and IR only values from the T\+S\+L2561, adjusting gain if auto-\/gain is enabled. \end{DoxyCompactList}\item 
+uint32\+\_\+t \hyperlink{class_adafruit___t_s_l2561___unified_a5059ebabcbd037d53459ec9f3c6cdc4b}{calculate\+Lux} (uint16\+\_\+t broadband, uint16\+\_\+t ir)
+\item 
+bool \hyperlink{class_adafruit___t_s_l2561___unified_a6a133ea86b7a7158408519214c4d0aef}{get\+Event} (\hyperlink{_adafruit___sensor_8h_structsensors__event__t}{sensors\+\_\+event\+\_\+t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Gets the most recent sensor event returns true if sensor reading is between 0 and 65535 lux returns false if sensor is saturated. \end{DoxyCompactList}\item 
+void \hyperlink{class_adafruit___t_s_l2561___unified_a4c8dcb86a371558aba4ddb0a740d9b3c}{get\+Sensor} (\hyperlink{_adafruit___sensor_8h_structsensor__t}{sensor\+\_\+t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{_adafruit___sensor_8h_structsensor__t}{sensor\+\_\+t} data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 178 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified(uint8\+\_\+t addr, int32\+\_\+t sensor\+I\+D=-\/1)}{Adafruit\_TSL2561\_Unified(uint8\_t addr, int32\_t sensorID=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::\+Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{addr, }
+\item[{int32\+\_\+t}]{sensor\+ID = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___t_s_l2561___unified_abd81c1ca2c46e4d8b9c3f4460a65aa3f}{}\label{class_adafruit___t_s_l2561___unified_abd81c1ca2c46e4d8b9c3f4460a65aa3f}
+Constructor 
+
+Definition at line 176 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp.
+
+
+
+References T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+1X, and T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS.
+
+
+
+\subsection{Member Function Documentation}
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!begin@{begin}}
+\index{begin@{begin}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{begin(void)}{begin(void)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___t_s_l2561___unified_ac2781d263ae73533628d5844ca38b6de}{}\label{class_adafruit___t_s_l2561___unified_ac2781d263ae73533628d5844ca38b6de}
+Initializes I2C and configures the sensor (call this function before doing anything else) 
+
+Definition at line 196 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp.
+
+
+
+References set\+Gain(), set\+Integration\+Time(), T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+ID, and Wire.
+
+
+
+Referenced by configure\+\_\+\+T\+S\+L2561(), get\+Luminosity(), set\+Gain(), and set\+Integration\+Time().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_ac2781d263ae73533628d5844ca38b6de_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_ac2781d263ae73533628d5844ca38b6de_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!calculate\+Lux@{calculate\+Lux}}
+\index{calculate\+Lux@{calculate\+Lux}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{calculate\+Lux(uint16\+\_\+t broadband, uint16\+\_\+t ir)}{calculateLux(uint16\_t broadband, uint16\_t ir)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{broadband, }
+\item[{uint16\+\_\+t}]{ir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___t_s_l2561___unified_a5059ebabcbd037d53459ec9f3c6cdc4b}{}\label{class_adafruit___t_s_l2561___unified_a5059ebabcbd037d53459ec9f3c6cdc4b}
+Converts the raw sensor values to the standard SI lux equivalent. Returns 0 if the sensor is saturated and the values are unreliable. 
+
+Definition at line 367 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp.
+
+
+
+References T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+101\+MS, T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+13\+MS, T\+S\+L2561\+\_\+\+C\+L\+I\+P\+P\+I\+N\+G\+\_\+402\+MS, T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS, T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B1T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B2T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B3T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B4T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B5T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B6T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B7T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+B8T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+LE, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T0, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+C\+H\+S\+C\+A\+L\+E\+\_\+\+T\+I\+N\+T1, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K1T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K2T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K3T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K4T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K5T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K6T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K7T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+K8T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+L\+U\+X\+S\+C\+A\+LE, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M1T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M2T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M3T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M4T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M5T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M6T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M7T, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8C, T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+M8T, and T\+S\+L2561\+\_\+\+L\+U\+X\+\_\+\+R\+A\+T\+I\+O\+S\+C\+A\+LE.
+
+
+
+Referenced by get\+Event(), and read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_a5059ebabcbd037d53459ec9f3c6cdc4b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!enable\+Auto\+Range@{enable\+Auto\+Range}}
+\index{enable\+Auto\+Range@{enable\+Auto\+Range}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{enable\+Auto\+Range(bool enable)}{enableAutoRange(bool enable)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::enable\+Auto\+Range (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_adafruit___t_s_l2561___unified_a9bb93fc9a1af24175c9838cdfe7b8904}{}\label{class_adafruit___t_s_l2561___unified_a9bb93fc9a1af24175c9838cdfe7b8904}
+
+
+Enables or disables the auto-\/gain settings when reading data from the sensor. 
+
+
+
+Reimplemented from \hyperlink{class_adafruit___sensor_ace6c1f26eeb956f95801b9fc1841f3a0}{Adafruit\+\_\+\+Sensor}.
+
+
+
+Definition at line 224 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+T\+S\+L2561().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_a9bb93fc9a1af24175c9838cdfe7b8904_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!get\+Event@{get\+Event}}
+\index{get\+Event@{get\+Event}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Event(sensors\+\_\+event\+\_\+t $\ast$)}{getEvent(sensors\_event\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf sensors\+\_\+event\+\_\+t} $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_adafruit___t_s_l2561___unified_a6a133ea86b7a7158408519214c4d0aef}{}\label{class_adafruit___t_s_l2561___unified_a6a133ea86b7a7158408519214c4d0aef}
+
+
+Gets the most recent sensor event returns true if sensor reading is between 0 and 65535 lux returns false if sensor is saturated. 
+
+
+
+Implements \hyperlink{class_adafruit___sensor_a0636562b9bc853b796ecc87b5d4b1bec}{Adafruit\+\_\+\+Sensor}.
+
+
+
+Definition at line 483 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp.
+
+
+
+References calculate\+Lux(), get\+Luminosity(), and S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+G\+HT.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_a6a133ea86b7a7158408519214c4d0aef_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!get\+Luminosity@{get\+Luminosity}}
+\index{get\+Luminosity@{get\+Luminosity}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Luminosity(uint16\+\_\+t $\ast$broadband, uint16\+\_\+t $\ast$ir)}{getLuminosity(uint16\_t *broadband, uint16\_t *ir)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Luminosity (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t $\ast$}]{broadband, }
+\item[{uint16\+\_\+t $\ast$}]{ir}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___t_s_l2561___unified_a23378e7c4792b8b8c721d5a4def960fb}{}\label{class_adafruit___t_s_l2561___unified_a23378e7c4792b8b8c721d5a4def960fb}
+
+
+Gets the broadband (mixed lighting) and IR only values from the T\+S\+L2561, adjusting gain if auto-\/gain is enabled. 
+
+
+
+Definition at line 279 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp.
+
+
+
+References begin(), set\+Gain(), T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+101\+MS, T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+13\+MS, T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+H\+I\+\_\+402\+MS, T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+101\+MS, T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+13\+MS, T\+S\+L2561\+\_\+\+A\+G\+C\+\_\+\+T\+L\+O\+\_\+402\+MS, T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+16X, T\+S\+L2561\+\_\+\+G\+A\+I\+N\+\_\+1X, T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS, and T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+13\+MS.
+
+
+
+Referenced by get\+Event(), and read\+Sensors().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_a23378e7c4792b8b8c721d5a4def960fb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_a23378e7c4792b8b8c721d5a4def960fb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!get\+Sensor@{get\+Sensor}}
+\index{get\+Sensor@{get\+Sensor}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Sensor(sensor\+\_\+t $\ast$)}{getSensor(sensor\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Sensor (
+\begin{DoxyParamCaption}
+\item[{{\bf sensor\+\_\+t} $\ast$}]{sensor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_adafruit___t_s_l2561___unified_a4c8dcb86a371558aba4ddb0a740d9b3c}{}\label{class_adafruit___t_s_l2561___unified_a4c8dcb86a371558aba4ddb0a740d9b3c}
+
+
+Gets the \hyperlink{_adafruit___sensor_8h_structsensor__t}{sensor\+\_\+t} data. 
+
+
+
+Implements \hyperlink{class_adafruit___sensor_a19e844c1eb2dc37cb72705d5572c4676}{Adafruit\+\_\+\+Sensor}.
+
+
+
+Definition at line 511 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp.
+
+
+
+References sensor\+\_\+t\+::max\+\_\+value, sensor\+\_\+t\+::min\+\_\+delay, sensor\+\_\+t\+::min\+\_\+value, sensor\+\_\+t\+::name, sensor\+\_\+t\+::resolution, sensor\+\_\+t\+::sensor\+\_\+id, S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+G\+HT, sensor\+\_\+t\+::type, and sensor\+\_\+t\+::version.
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!set\+Gain@{set\+Gain}}
+\index{set\+Gain@{set\+Gain}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{set\+Gain(tsl2561\+Gain\+\_\+t gain)}{setGain(tsl2561Gain\_t gain)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::set\+Gain (
+\begin{DoxyParamCaption}
+\item[{{\bf tsl2561\+Gain\+\_\+t}}]{gain}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___t_s_l2561___unified_ad4189a1cb97b07366b5014bec629f29a}{}\label{class_adafruit___t_s_l2561___unified_ad4189a1cb97b07366b5014bec629f29a}
+Adjusts the gain on the T\+S\+L2561 (adjusts the sensitivity to light) 
+
+Definition at line 256 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp.
+
+
+
+References begin(), T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT, and T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+I\+M\+I\+NG.
+
+
+
+Referenced by begin(), and get\+Luminosity().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_ad4189a1cb97b07366b5014bec629f29a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_ad4189a1cb97b07366b5014bec629f29a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}!set\+Integration\+Time@{set\+Integration\+Time}}
+\index{set\+Integration\+Time@{set\+Integration\+Time}!Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified@{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{set\+Integration\+Time(tsl2561\+Integration\+Time\+\_\+t time)}{setIntegrationTime(tsl2561IntegrationTime\_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::set\+Integration\+Time (
+\begin{DoxyParamCaption}
+\item[{{\bf tsl2561\+Integration\+Time\+\_\+t}}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___t_s_l2561___unified_a594636810e6e26dc025b7f1b7a16024f}{}\label{class_adafruit___t_s_l2561___unified_a594636810e6e26dc025b7f1b7a16024f}
+Sets the integration time for the T\+S\+L2561 
+
+Definition at line 234 of file Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp.
+
+
+
+References begin(), T\+S\+L2561\+\_\+\+C\+O\+M\+M\+A\+N\+D\+\_\+\+B\+IT, and T\+S\+L2561\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+T\+I\+M\+I\+NG.
+
+
+
+Referenced by begin(), and configure\+\_\+\+T\+S\+L2561().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_a594636810e6e26dc025b7f1b7a16024f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___t_s_l2561___unified_a594636810e6e26dc025b7f1b7a16024f_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+T\+S\+L2561-\/master/\hyperlink{_adafruit___t_s_l2561___u_8h}{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+T\+S\+L2561-\/master/\hyperlink{_adafruit___t_s_l2561___u_8cpp}{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+cpp}\end{DoxyCompactItemize}

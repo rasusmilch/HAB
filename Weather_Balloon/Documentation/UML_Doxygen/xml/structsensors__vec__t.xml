@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsensors__vec__t" kind="struct" language="C++" prot="public">
+    <compoundname>sensors_vec_t</compoundname>
+    <includes refid="_adafruit___sensor_8h" local="no">Adafruit_Sensor.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsensors__vec__t_1a7643befbf9d921d3c6eb53b6053b7562" prot="public" static="no" mutable="no">
+        <type>union sensors_vec_t::@0</type>
+        <definition>union sensors_vec_t::@0 sensors_vec_t::@1</definition>
+        <argsstring></argsstring>
+        <name>@1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsensors__vec__t_1af75d491f35f979932de5609d6ef6c363" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t sensors_vec_t::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="80" column="1" bodyfile="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsensors__vec__t_1acb78c50bdd894d4dd4015f144c4a4488" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sensors_vec_t::reserved[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>reserved</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="81" column="1" bodyfile="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>struct sensors_vec_s is used to return a vector in a common format. </para>    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="65" column="1" bodyfile="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" bodystart="65" bodyend="82"/>
+    <listofallmembers>
+      <member refid="structsensors__vec__t_1acb78c50bdd894d4dd4015f144c4a4488" prot="public" virt="non-virtual"><scope>sensors_vec_t</scope><name>reserved</name></member>
+      <member refid="structsensors__vec__t_1af75d491f35f979932de5609d6ef6c363" prot="public" virt="non-virtual"><scope>sensors_vec_t</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="unionsensors__color__t_8____unnamed____" kind="union" language="C++" prot="public">
+    <compoundname>sensors_color_t.__unnamed__</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionsensors__color__t_8____unnamed_____1aa1546b22624854f5c80617c42baa5829" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring>[3]</argsstring>
+        <name>c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="87" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__color__t_8____unnamed_____1abdca477a0c8312f3fd1c917c21d567cb" prot="public" static="no" mutable="no">
+        <type>struct sensors_color_t::@6::@8</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>@9</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="93" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="86" column="1" bodyfile="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" bodystart="86" bodyend="94"/>
+    <listofallmembers>
+      <member refid="unionsensors__color__t_8____unnamed_____1aa1546b22624854f5c80617c42baa5829" prot="public" virt="non-virtual"><scope>sensors_color_t.__unnamed__</scope><name>c</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

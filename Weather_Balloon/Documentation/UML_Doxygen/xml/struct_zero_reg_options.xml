@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_zero_reg_options" kind="struct" language="C++" prot="public">
+    <compoundname>ZeroRegOptions</compoundname>
+    <includes refid="_zero_regs_8h" local="no">ZeroRegs.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" prot="public" static="no" mutable="no">
+        <type>Stream &amp;</type>
+        <definition>Stream&amp; ZeroRegOptions::ser</definition>
+        <argsstring></argsstring>
+        <name>ser</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="37" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="_zero_regs_8cpp_1a8697ce31d1795964e7b71cea33415b12" compoundref="_zero_regs_8cpp" startline="69" endline="78">printZeroRegEIC_SENSE</referencedby>
+        <referencedby refid="_zero_regs_8h_1ac587593ee2a9ae02c2cfc677fe773c28" compoundref="_zero_regs_8cpp" startline="79" endline="129">printZeroRegEIC</referencedby>
+        <referencedby refid="_zero_regs_8h_1aab346cdb76613ed12e521b2e3ab8e585" compoundref="_zero_regs_8cpp" startline="132" endline="314">printZeroRegEVSYS</referencedby>
+        <referencedby refid="_zero_regs_8h_1a4f780af586626841f0bfd07761caae27" compoundref="_zero_regs_8cpp" startline="360" endline="440">printZeroRegGCLK</referencedby>
+        <referencedby refid="_zero_regs_8h_1a6db7f49d374fa825b83040a5acaf04b2" compoundref="_zero_regs_8cpp" startline="453" endline="546">printZeroRegNVMCTRL</referencedby>
+        <referencedby refid="_zero_regs_8h_1a78c2deb148266895a11f2862a9d27082" compoundref="_zero_regs_8cpp" startline="549" endline="609">printZeroRegPAC</referencedby>
+        <referencedby refid="_zero_regs_8h_1a1807ae19c29483ee063bd225c40e0d36" compoundref="_zero_regs_8cpp" startline="612" endline="710">printZeroRegPM</referencedby>
+        <referencedby refid="_zero_regs_8h_1ac515fdec9d58f6339d3e38cc33c6f74f" compoundref="_zero_regs_8cpp" startline="774" endline="811">printZeroRegPORT</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1af4b043f7c87e4ecaa152fab20b2bd672" compoundref="_zero_regs_8cpp" startline="814" endline="858">printZeroRegRTC_MODE0</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1acba6ab3a1f0ca519efdad9af393fa315" compoundref="_zero_regs_8cpp" startline="861" endline="913">printZeroRegRTC_MODE1</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1a380e1c86b97a256f10b4736f8d158ce8" compoundref="_zero_regs_8cpp" startline="916" endline="984">printZeroRegRTC_MODE2</referencedby>
+        <referencedby refid="_zero_regs_8h_1a91755cc900313248c2a65a925cd46c41" compoundref="_zero_regs_8cpp" startline="997" endline="1017">printZeroRegSBMATRIX</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1a50889259214cfbde5a4f90a97298d68d" compoundref="_zero_regs_8cpp" startline="1020" endline="1070">printZeroRegSERCOM_I2CM</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1a3961ade3c339a628b7174340ef3a8b35" compoundref="_zero_regs_8cpp" startline="1071" endline="1122">printZeroRegSERCOM_I2CS</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1a27f8c7ca875a60890ad70dea014e9df2" compoundref="_zero_regs_8cpp" startline="1123" endline="1203">printZeroRegSERCOM_SPI</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1a612b4e1372fe5ad5fc4f7cab4ceb4ef3" compoundref="_zero_regs_8cpp" startline="1204" endline="1284">printZeroRegSERCOM_USART</referencedby>
+        <referencedby refid="_zero_regs_8h_1a7db1a4f0d10e2e3efcd108837d85ee49" compoundref="_zero_regs_8cpp" startline="1285" endline="1305">printZeroRegSERCOM</referencedby>
+        <referencedby refid="_zero_regs_8h_1a7b606cb3f1144532412356243668c1ce" compoundref="_zero_regs_8cpp" startline="1308" endline="1525">printZeroRegSYSCTRL</referencedby>
+        <referencedby refid="_zero_regs_8h_1a8dd36048a3979014ebb8d385046c91e1" compoundref="_zero_regs_8cpp" startline="1543" endline="1586">printZeroRegWDT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool ZeroRegOptions::showDisabled</definition>
+        <argsstring></argsstring>
+        <name>showDisabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="38" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="_zero_regs_8h_1ac587593ee2a9ae02c2cfc677fe773c28" compoundref="_zero_regs_8cpp" startline="79" endline="129">printZeroRegEIC</referencedby>
+        <referencedby refid="_zero_regs_8h_1aab346cdb76613ed12e521b2e3ab8e585" compoundref="_zero_regs_8cpp" startline="132" endline="314">printZeroRegEVSYS</referencedby>
+        <referencedby refid="_zero_regs_8h_1a4f780af586626841f0bfd07761caae27" compoundref="_zero_regs_8cpp" startline="360" endline="440">printZeroRegGCLK</referencedby>
+        <referencedby refid="_zero_regs_8h_1a78c2deb148266895a11f2862a9d27082" compoundref="_zero_regs_8cpp" startline="549" endline="609">printZeroRegPAC</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1af4b043f7c87e4ecaa152fab20b2bd672" compoundref="_zero_regs_8cpp" startline="814" endline="858">printZeroRegRTC_MODE0</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1acba6ab3a1f0ca519efdad9af393fa315" compoundref="_zero_regs_8cpp" startline="861" endline="913">printZeroRegRTC_MODE1</referencedby>
+        <referencedby refid="_zero_regs_8cpp_1a380e1c86b97a256f10b4736f8d158ce8" compoundref="_zero_regs_8cpp" startline="916" endline="984">printZeroRegRTC_MODE2</referencedby>
+        <referencedby refid="_zero_regs_8h_1a7db1a4f0d10e2e3efcd108837d85ee49" compoundref="_zero_regs_8cpp" startline="1285" endline="1305">printZeroRegSERCOM</referencedby>
+        <referencedby refid="_zero_regs_8h_1a7b606cb3f1144532412356243668c1ce" compoundref="_zero_regs_8cpp" startline="1308" endline="1525">printZeroRegSYSCTRL</referencedby>
+        <referencedby refid="_zero_regs_8h_1a8dd36048a3979014ebb8d385046c91e1" compoundref="_zero_regs_8cpp" startline="1543" endline="1586">printZeroRegWDT</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="36" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" bodystart="36" bodyend="39"/>
+    <listofallmembers>
+      <member refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" prot="public" virt="non-virtual"><scope>ZeroRegOptions</scope><name>ser</name></member>
+      <member refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" prot="public" virt="non-virtual"><scope>ZeroRegOptions</scope><name>showDisabled</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

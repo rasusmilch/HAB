@@ -1,0 +1,166 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_r_t_c_date_time" kind="struct" language="C++" prot="public">
+    <compoundname>RTCDateTime</compoundname>
+    <includes refid="_d_s3231_8h" local="no">DS3231.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_t_c_date_time_1a265de5469447ed7581fec4d3c0c5814d" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t RTCDateTime::year</definition>
+        <argsstring></argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="43" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" compoundref="_d_s3231_8cpp" startline="33" endline="49">DS3231::begin</referencedby>
+        <referencedby refid="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" compoundref="_d_s3231_8cpp" startline="171" endline="297">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" compoundref="_d_s3231_8cpp" startline="384" endline="421">DS3231::getDateTime</referencedby>
+        <referencedby refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" compoundref="_d_s3231_8cpp" startline="931" endline="944">DS3231::isAlarm2</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a8644e7f4d35c348e0292bc7062c5147c" compoundref="_weather___balloon_8cpp" startline="2091" endline="2221">print_sensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_date_time_1a434dc70ef64a1e99201f3765607e8afa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCDateTime::month</definition>
+        <argsstring></argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="44" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" compoundref="_d_s3231_8cpp" startline="33" endline="49">DS3231::begin</referencedby>
+        <referencedby refid="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" compoundref="_d_s3231_8cpp" startline="171" endline="297">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" compoundref="_d_s3231_8cpp" startline="384" endline="421">DS3231::getDateTime</referencedby>
+        <referencedby refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" compoundref="_d_s3231_8cpp" startline="931" endline="944">DS3231::isAlarm2</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a8644e7f4d35c348e0292bc7062c5147c" compoundref="_weather___balloon_8cpp" startline="2091" endline="2221">print_sensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_date_time_1aea80bfd1209e6e459c70ea39bc248407" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCDateTime::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="45" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" compoundref="_d_s3231_8cpp" startline="33" endline="49">DS3231::begin</referencedby>
+        <referencedby refid="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" compoundref="_d_s3231_8cpp" startline="171" endline="297">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" compoundref="_d_s3231_8cpp" startline="384" endline="421">DS3231::getDateTime</referencedby>
+        <referencedby refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" compoundref="_d_s3231_8cpp" startline="931" endline="944">DS3231::isAlarm2</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a8644e7f4d35c348e0292bc7062c5147c" compoundref="_weather___balloon_8cpp" startline="2091" endline="2221">print_sensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_date_time_1aaf23cb6337a6c0cb3bb69ad815f9c1b1" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCDateTime::hour</definition>
+        <argsstring></argsstring>
+        <name>hour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="46" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" compoundref="_d_s3231_8cpp" startline="33" endline="49">DS3231::begin</referencedby>
+        <referencedby refid="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" compoundref="_d_s3231_8cpp" startline="171" endline="297">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" compoundref="_d_s3231_8cpp" startline="384" endline="421">DS3231::getDateTime</referencedby>
+        <referencedby refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" compoundref="_d_s3231_8cpp" startline="931" endline="944">DS3231::isAlarm2</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a8644e7f4d35c348e0292bc7062c5147c" compoundref="_weather___balloon_8cpp" startline="2091" endline="2221">print_sensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_date_time_1a2e9c4e2b54185ec5bb7f328732bc1c63" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCDateTime::minute</definition>
+        <argsstring></argsstring>
+        <name>minute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="47" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="47" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" compoundref="_d_s3231_8cpp" startline="33" endline="49">DS3231::begin</referencedby>
+        <referencedby refid="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" compoundref="_d_s3231_8cpp" startline="171" endline="297">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" compoundref="_d_s3231_8cpp" startline="384" endline="421">DS3231::getDateTime</referencedby>
+        <referencedby refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" compoundref="_d_s3231_8cpp" startline="931" endline="944">DS3231::isAlarm2</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a8644e7f4d35c348e0292bc7062c5147c" compoundref="_weather___balloon_8cpp" startline="2091" endline="2221">print_sensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_date_time_1acf01c0fbd1d95fe33238674641f40027" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCDateTime::second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="48" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" compoundref="_d_s3231_8cpp" startline="33" endline="49">DS3231::begin</referencedby>
+        <referencedby refid="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" compoundref="_d_s3231_8cpp" startline="171" endline="297">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" compoundref="_d_s3231_8cpp" startline="384" endline="421">DS3231::getDateTime</referencedby>
+        <referencedby refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" compoundref="_d_s3231_8cpp" startline="931" endline="944">DS3231::isAlarm2</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a8644e7f4d35c348e0292bc7062c5147c" compoundref="_weather___balloon_8cpp" startline="2091" endline="2221">print_sensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_date_time_1a3fa952239e8a35b7ec390838ae1a6bd0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCDateTime::dayOfWeek</definition>
+        <argsstring></argsstring>
+        <name>dayOfWeek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="49" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" compoundref="_d_s3231_8cpp" startline="33" endline="49">DS3231::begin</referencedby>
+        <referencedby refid="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" compoundref="_d_s3231_8cpp" startline="171" endline="297">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" compoundref="_d_s3231_8cpp" startline="384" endline="421">DS3231::getDateTime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_date_time_1af46df69448c5456b54e9acae7629efa8" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t RTCDateTime::unixtime</definition>
+        <argsstring></argsstring>
+        <name>unixtime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="50" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" compoundref="_d_s3231_8cpp" startline="33" endline="49">DS3231::begin</referencedby>
+        <referencedby refid="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" compoundref="_d_s3231_8cpp" startline="171" endline="297">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" compoundref="_d_s3231_8cpp" startline="384" endline="421">DS3231::getDateTime</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a8644e7f4d35c348e0292bc7062c5147c" compoundref="_weather___balloon_8cpp" startline="2091" endline="2221">print_sensors</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="42" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="41" bodyend="51"/>
+    <listofallmembers>
+      <member refid="struct_r_t_c_date_time_1aea80bfd1209e6e459c70ea39bc248407" prot="public" virt="non-virtual"><scope>RTCDateTime</scope><name>day</name></member>
+      <member refid="struct_r_t_c_date_time_1a3fa952239e8a35b7ec390838ae1a6bd0" prot="public" virt="non-virtual"><scope>RTCDateTime</scope><name>dayOfWeek</name></member>
+      <member refid="struct_r_t_c_date_time_1aaf23cb6337a6c0cb3bb69ad815f9c1b1" prot="public" virt="non-virtual"><scope>RTCDateTime</scope><name>hour</name></member>
+      <member refid="struct_r_t_c_date_time_1a2e9c4e2b54185ec5bb7f328732bc1c63" prot="public" virt="non-virtual"><scope>RTCDateTime</scope><name>minute</name></member>
+      <member refid="struct_r_t_c_date_time_1a434dc70ef64a1e99201f3765607e8afa" prot="public" virt="non-virtual"><scope>RTCDateTime</scope><name>month</name></member>
+      <member refid="struct_r_t_c_date_time_1acf01c0fbd1d95fe33238674641f40027" prot="public" virt="non-virtual"><scope>RTCDateTime</scope><name>second</name></member>
+      <member refid="struct_r_t_c_date_time_1af46df69448c5456b54e9acae7629efa8" prot="public" virt="non-virtual"><scope>RTCDateTime</scope><name>unixtime</name></member>
+      <member refid="struct_r_t_c_date_time_1a265de5469447ed7581fec4d3c0c5814d" prot="public" virt="non-virtual"><scope>RTCDateTime</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

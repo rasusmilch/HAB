@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_c4ab0eab3327ffb69c61ca78dc4c448f" kind="dir">
+    <compoundname>Weather_Balloon/library/Filters</compoundname>
+    <innerfile refid="_filter_derivative_8cpp">FilterDerivative.cpp</innerfile>
+    <innerfile refid="_filter_derivative_8h">FilterDerivative.h</innerfile>
+    <innerfile refid="_filter_one_pole_8cpp">FilterOnePole.cpp</innerfile>
+    <innerfile refid="_filter_one_pole_8h">FilterOnePole.h</innerfile>
+    <innerfile refid="_filters_8h">Filters.h</innerfile>
+    <innerfile refid="_filter_two_pole_8cpp">FilterTwoPole.cpp</innerfile>
+    <innerfile refid="_filter_two_pole_8h">FilterTwoPole.h</innerfile>
+    <innerfile refid="_float_define_8h">FloatDefine.h</innerfile>
+    <innerfile refid="_running_statistics_8cpp">RunningStatistics.cpp</innerfile>
+    <innerfile refid="_running_statistics_8h">RunningStatistics.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Filters/"/>
+  </compounddef>
+</doxygen>

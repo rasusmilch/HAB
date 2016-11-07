@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_d28c8bb5ee29c9d79d049d816f1b9064" kind="dir">
+    <compoundname>Weather_Balloon/library/OneWire2</compoundname>
+    <innerfile refid="_one_wire_8cpp">OneWire.cpp</innerfile>
+    <innerfile refid="_one_wire_8h">OneWire.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/OneWire2/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_r_t_c_alarm_time" kind="struct" language="C++" prot="public">
+    <compoundname>RTCAlarmTime</compoundname>
+    <includes refid="_d_s3231_8h" local="no">DS3231.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_r_t_c_alarm_time_1a16ff7f4abd3d771179c4662c942597aa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCAlarmTime::day</definition>
+        <argsstring></argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="55" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a32cd1432b1c37ea0c36ba57286b764d0" compoundref="_d_s3231_8cpp" startline="299" endline="382">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1a7241d497e56fc0062ad68a9bc31e212a" compoundref="_d_s3231_8cpp" startline="565" endline="599">DS3231::getAlarm1</referencedby>
+        <referencedby refid="class_d_s3231_1a6917f3adf3b16a5d1afb67179461ba95" compoundref="_d_s3231_8cpp" startline="762" endline="796">DS3231::getAlarm2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_alarm_time_1af80194d88cddcc273b97531f8b799138" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCAlarmTime::hour</definition>
+        <argsstring></argsstring>
+        <name>hour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="56" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a32cd1432b1c37ea0c36ba57286b764d0" compoundref="_d_s3231_8cpp" startline="299" endline="382">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1a7241d497e56fc0062ad68a9bc31e212a" compoundref="_d_s3231_8cpp" startline="565" endline="599">DS3231::getAlarm1</referencedby>
+        <referencedby refid="class_d_s3231_1a6917f3adf3b16a5d1afb67179461ba95" compoundref="_d_s3231_8cpp" startline="762" endline="796">DS3231::getAlarm2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_alarm_time_1ae33cf5cda7523c05a3559485d2d26019" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCAlarmTime::minute</definition>
+        <argsstring></argsstring>
+        <name>minute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="57" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a32cd1432b1c37ea0c36ba57286b764d0" compoundref="_d_s3231_8cpp" startline="299" endline="382">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1a7241d497e56fc0062ad68a9bc31e212a" compoundref="_d_s3231_8cpp" startline="565" endline="599">DS3231::getAlarm1</referencedby>
+        <referencedby refid="class_d_s3231_1a6917f3adf3b16a5d1afb67179461ba95" compoundref="_d_s3231_8cpp" startline="762" endline="796">DS3231::getAlarm2</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_r_t_c_alarm_time_1a5367af27263fcbab3975c6c88b1be7bf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCAlarmTime::second</definition>
+        <argsstring></argsstring>
+        <name>second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="58" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_d_s3231_1a32cd1432b1c37ea0c36ba57286b764d0" compoundref="_d_s3231_8cpp" startline="299" endline="382">DS3231::dateFormat</referencedby>
+        <referencedby refid="class_d_s3231_1a7241d497e56fc0062ad68a9bc31e212a" compoundref="_d_s3231_8cpp" startline="565" endline="599">DS3231::getAlarm1</referencedby>
+        <referencedby refid="class_d_s3231_1a6917f3adf3b16a5d1afb67179461ba95" compoundref="_d_s3231_8cpp" startline="762" endline="796">DS3231::getAlarm2</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="54" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="53" bodyend="59"/>
+    <listofallmembers>
+      <member refid="struct_r_t_c_alarm_time_1a16ff7f4abd3d771179c4662c942597aa" prot="public" virt="non-virtual"><scope>RTCAlarmTime</scope><name>day</name></member>
+      <member refid="struct_r_t_c_alarm_time_1af80194d88cddcc273b97531f8b799138" prot="public" virt="non-virtual"><scope>RTCAlarmTime</scope><name>hour</name></member>
+      <member refid="struct_r_t_c_alarm_time_1ae33cf5cda7523c05a3559485d2d26019" prot="public" virt="non-virtual"><scope>RTCAlarmTime</scope><name>minute</name></member>
+      <member refid="struct_r_t_c_alarm_time_1a5367af27263fcbab3975c6c88b1be7bf" prot="public" virt="non-virtual"><scope>RTCAlarmTime</scope><name>second</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,4 @@
+<map id="DS3231::clearAlarm1" name="DS3231::clearAlarm1">
+<area shape="rect" id="node2" href="$class_d_s3231.html#a9e07f99282167c3e799bef2d2d163e17" title="DS3231::isAlarm1" alt="" coords="191,5,308,32"/>
+<area shape="rect" id="node3" href="$class_d_s3231.html#a23cea53349c55fba93c706b6e263e574" title="DS3231::setAlarm1" alt="" coords="188,56,311,83"/>
+</map>

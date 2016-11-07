@@ -1,0 +1,733 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_adafruit___a_d_x_l345___u_8h" kind="file" language="C++">
+    <compoundname>Adafruit_ADXL345_U.h</compoundname>
+    <includes local="yes">WProgram.h</includes>
+    <includes refid="_adafruit___sensor_8h" local="no">Adafruit_Sensor.h</includes>
+    <includes local="no">Wire.h</includes>
+    <includedby refid="_adafruit___a_d_x_l345___u_8cpp" local="yes">Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp</includedby>
+    <includedby refid="_weather___balloon_8cpp" local="no">Weather_Balloon/Weather_Balloon.cpp</includedby>
+    <incdepgraph>
+      <node id="553">
+        <label>Adafruit_Sensor.h</label>
+        <link refid="_adafruit___sensor_8h"/>
+        <childnode refid="552" relation="include">
+        </childnode>
+      </node>
+      <node id="552">
+        <label>WProgram.h</label>
+      </node>
+      <node id="554">
+        <label>Wire.h</label>
+      </node>
+      <node id="551">
+        <label>Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h</label>
+        <link refid="Adafruit_ADXL345_U.h"/>
+        <childnode refid="552" relation="include">
+        </childnode>
+        <childnode refid="553" relation="include">
+        </childnode>
+        <childnode refid="554" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="557">
+        <label>Weather_Balloon/Weather_Balloon.cpp</label>
+        <link refid="_weather___balloon_8cpp"/>
+      </node>
+      <node id="556">
+        <label>Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp</label>
+        <link refid="_adafruit___a_d_x_l345___u_8cpp"/>
+      </node>
+      <node id="555">
+        <label>Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h</label>
+        <link refid="Adafruit_ADXL345_U.h"/>
+        <childnode refid="556" relation="include">
+        </childnode>
+        <childnode refid="557" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_adafruit___a_d_x_l345___unified" prot="public">Adafruit_ADXL345_Unified</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1acebdef7f400bcadad0131b0e4918ff00" prot="public" static="no">
+        <name>ADXL345_ADDRESS</name>
+        <initializer>(0x53)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="32" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a62c1c34b81fdcb7825d7c9911fba988b" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="124" endline="139">Adafruit_ADXL345_Unified::read16</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1ab56b668f36793605d7be009a7efb74e8" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="102" endline="117">Adafruit_ADXL345_Unified::readRegister</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a8f6b9e9598618fc0cf221c4b62f924d9" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="83" endline="95">Adafruit_ADXL345_Unified::writeRegister</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a29b5a30a1bc0cbaaf3f052eaab713ecb" prot="public" static="no">
+        <name>ADXL345_REG_DEVID</name>
+        <initializer>(0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="38" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1acf54ca46aa7e6a613807f489711a8ceb" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="146" endline="149">Adafruit_ADXL345_Unified::getDeviceID</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a4606ede066d6a452645f00652f6f3adc" prot="public" static="no">
+        <name>ADXL345_REG_THRESH_TAP</name>
+        <initializer>(0x1D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="39" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a47ada0987f13abc327791f3b721fc2fa" prot="public" static="no">
+        <name>ADXL345_REG_OFSX</name>
+        <initializer>(0x1E)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="40" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a9f528be643cec2847192f1866705b570" prot="public" static="no">
+        <name>ADXL345_REG_OFSY</name>
+        <initializer>(0x1F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="41" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1ae81729318b7fa11a631c4e1031fe7c97" prot="public" static="no">
+        <name>ADXL345_REG_OFSZ</name>
+        <initializer>(0x20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="42" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a027ffe4ead3047b75f1c15f8ee27acef" prot="public" static="no">
+        <name>ADXL345_REG_DUR</name>
+        <initializer>(0x21)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="43" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a7378c1d55a972c54ce6608c1e32336ef" prot="public" static="no">
+        <name>ADXL345_REG_LATENT</name>
+        <initializer>(0x22)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="44" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1ab8b04304c7de9e6f1b530418b0b9dddd" prot="public" static="no">
+        <name>ADXL345_REG_WINDOW</name>
+        <initializer>(0x23)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="45" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1aed83f0847d342ebbbe0c3eafeb12dda8" prot="public" static="no">
+        <name>ADXL345_REG_THRESH_ACT</name>
+        <initializer>(0x24)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="46" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a6bd7ad5b22116ad715dd655755d8c129" prot="public" static="no">
+        <name>ADXL345_REG_THRESH_INACT</name>
+        <initializer>(0x25)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="47" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1ace645cf273f2c8332d24bb37fea7f725" prot="public" static="no">
+        <name>ADXL345_REG_TIME_INACT</name>
+        <initializer>(0x26)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="48" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1aeade3a2907935b106ffce9c81aedee76" prot="public" static="no">
+        <name>ADXL345_REG_ACT_INACT_CTL</name>
+        <initializer>(0x27)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="49" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a0522945d2a7b9a37f7d76e2620234576" prot="public" static="no">
+        <name>ADXL345_REG_THRESH_FF</name>
+        <initializer>(0x28)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="50" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a5abb839b3f7233cb3882e15899399d4c" prot="public" static="no">
+        <name>ADXL345_REG_TIME_FF</name>
+        <initializer>(0x29)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="51" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a07887f474abd214ba8528cd136bc2b60" prot="public" static="no">
+        <name>ADXL345_REG_TAP_AXES</name>
+        <initializer>(0x2A)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="52" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a10336666b8b1228d08d4e634817832cc" prot="public" static="no">
+        <name>ADXL345_REG_ACT_TAP_STATUS</name>
+        <initializer>(0x2B)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="53" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a51ce19e9e208c52fb41348c472b428ab" prot="public" static="no">
+        <name>ADXL345_REG_BW_RATE</name>
+        <initializer>(0x2C)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="54" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a3b8ae7da9a66e28b38b70a08c5646b02" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="289" endline="292">Adafruit_ADXL345_Unified::getDataRate</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a8e837a3e456e5e17839447bbf65f76bd" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="277" endline="282">Adafruit_ADXL345_Unified::setDataRate</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1aa8b343258a85689467d33fb6e7a92d18" prot="public" static="no">
+        <name>ADXL345_REG_POWER_CTL</name>
+        <initializer>(0x2D)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="55" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a55b74a63bbb1317228d5bb5905589a02" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="210" endline="235">Adafruit_ADXL345_Unified::begin</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1ae54dd63a35ee5baec0ba7bfa8892d005" prot="public" static="no">
+        <name>ADXL345_REG_INT_ENABLE</name>
+        <initializer>(0x2E)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="56" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a725afaaa7d76f0a2b503a32ab8b4a689" prot="public" static="no">
+        <name>ADXL345_REG_INT_MAP</name>
+        <initializer>(0x2F)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="57" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1aa1a2a197465ce44bf8a2c06acc22c561" prot="public" static="no">
+        <name>ADXL345_REG_INT_SOURCE</name>
+        <initializer>(0x30)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="58" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a599ba3e5ed5a1ff931b9b268590a54a3" prot="public" static="no">
+        <name>ADXL345_REG_DATA_FORMAT</name>
+        <initializer>(0x31)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="59" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1adcdcd1ddcd58af6b1d4f85f9ab30d7a4" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="266" endline="270">Adafruit_ADXL345_Unified::getRange</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1ad722e964df59c7691b1666472940aa99" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="242" endline="259">Adafruit_ADXL345_Unified::setRange</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1ad357e2d6384df108aab1cffc6dc32782" prot="public" static="no">
+        <name>ADXL345_REG_DATAX0</name>
+        <initializer>(0x32)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="60" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a5ad11ba3d12aa4f4aaaec38b3400fa6f" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="156" endline="158">Adafruit_ADXL345_Unified::getX</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a104644acecc00a82948a4f1f275f18ee" prot="public" static="no">
+        <name>ADXL345_REG_DATAX1</name>
+        <initializer>(0x33)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="61" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a5a6c961c3b5573ff25525b47941fd8b9" prot="public" static="no">
+        <name>ADXL345_REG_DATAY0</name>
+        <initializer>(0x34)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="62" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1ac745aefc2a66094a9c46115564939610" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="165" endline="167">Adafruit_ADXL345_Unified::getY</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1afc55ed6bd0c938a106b5d08dfec77223" prot="public" static="no">
+        <name>ADXL345_REG_DATAY1</name>
+        <initializer>(0x35)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="63" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a7e8957c91c0f9992a389968510eb0a75" prot="public" static="no">
+        <name>ADXL345_REG_DATAZ0</name>
+        <initializer>(0x36)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="64" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1ae61417ef16d19ff86ecd82efc14e960b" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="174" endline="176">Adafruit_ADXL345_Unified::getZ</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1aac6575491824aee967461dee85eda6cd" prot="public" static="no">
+        <name>ADXL345_REG_DATAZ1</name>
+        <initializer>(0x37)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="65" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a69102d04a2a2c3f5de46b503ea22646e" prot="public" static="no">
+        <name>ADXL345_REG_FIFO_CTL</name>
+        <initializer>(0x38)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="66" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a9ba8252efafd2b9e9a7257a15062c027" prot="public" static="no">
+        <name>ADXL345_REG_FIFO_STATUS</name>
+        <initializer>(0x39)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="67" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___a_d_x_l345___u_8h_1a2dfb2c434a6255167c79af6c06eebc53" prot="public" static="no">
+        <name>ADXL345_MG2G_MULTIPLIER</name>
+        <initializer>(0.004)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="73" column="13" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a830e4a9d1729310c9cf0d0504b3d0229" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="299" endline="312">Adafruit_ADXL345_Unified::getEvent</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0a" prot="public" static="no">
+        <name>dataRate_t</name>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa060adbef1c3b3daf9704b306293c6c4c" prot="public">
+          <name>ADXL345_DATARATE_3200_HZ</name>
+          <initializer>= 0b1111</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa004a20cdc802eb13049e3c2d10020c4f" prot="public">
+          <name>ADXL345_DATARATE_1600_HZ</name>
+          <initializer>= 0b1110</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa961c944329e8b084b61febd52f9889d8" prot="public">
+          <name>ADXL345_DATARATE_800_HZ</name>
+          <initializer>= 0b1101</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa2dc516d7922dd129f55b85256e5b6422" prot="public">
+          <name>ADXL345_DATARATE_400_HZ</name>
+          <initializer>= 0b1100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa07ddfb920f9f6c59cc6cbc6f0166d35e" prot="public">
+          <name>ADXL345_DATARATE_200_HZ</name>
+          <initializer>= 0b1011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa7f2dc2677e505b52a7a62ae4afc999c7" prot="public">
+          <name>ADXL345_DATARATE_100_HZ</name>
+          <initializer>= 0b1010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa5d0619a87b4f6f6a3b6f6b5c53e68a18" prot="public">
+          <name>ADXL345_DATARATE_50_HZ</name>
+          <initializer>= 0b1001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aabe44b71b03868c7faa656c64389eed91" prot="public">
+          <name>ADXL345_DATARATE_25_HZ</name>
+          <initializer>= 0b1000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aaae4ed1e62d0b2fc79fbae8d9102fa1b9" prot="public">
+          <name>ADXL345_DATARATE_12_5_HZ</name>
+          <initializer>= 0b0111</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa2ca5f3f0c789f55f0ea2950e88a0d10f" prot="public">
+          <name>ADXL345_DATARATE_6_25HZ</name>
+          <initializer>= 0b0110</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa04edbbc82fdcac8a6b22747c6f4bcc64" prot="public">
+          <name>ADXL345_DATARATE_3_13_HZ</name>
+          <initializer>= 0b0101</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa236301858ce1bd14b3c9023f80720864" prot="public">
+          <name>ADXL345_DATARATE_1_56_HZ</name>
+          <initializer>= 0b0100</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aad5bd8bbd075d1211a54819167c535432" prot="public">
+          <name>ADXL345_DATARATE_0_78_HZ</name>
+          <initializer>= 0b0011</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aaa337a2f9c43707b419b6922921209d8f" prot="public">
+          <name>ADXL345_DATARATE_0_39_HZ</name>
+          <initializer>= 0b0010</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa9bbc45eb7790e0b7bc3a490e937d5965" prot="public">
+          <name>ADXL345_DATARATE_0_20_HZ</name>
+          <initializer>= 0b0001</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa9510de83f534bae91a7e4e0005bb2691" prot="public">
+          <name>ADXL345_DATARATE_0_10_HZ</name>
+          <initializer>= 0b0000</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="78" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="77" bodyend="95"/>
+      </memberdef>
+      <memberdef kind="enum" id="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5b" prot="public" static="no">
+        <name>range_t</name>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5bafd8f689faf57790d644f8c979c6a144f" prot="public">
+          <name>ADXL345_RANGE_16_G</name>
+          <initializer>= 0b11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5bab9ef72b0ee4c72b0ec832db33c0533fd" prot="public">
+          <name>ADXL345_RANGE_8_G</name>
+          <initializer>= 0b10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5ba7b2d6d92cefe293c32f5ecdbc37c7cd3" prot="public">
+          <name>ADXL345_RANGE_4_G</name>
+          <initializer>= 0b01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5ba444aa38d83d28043ebfcf0ea6459296f" prot="public">
+          <name>ADXL345_RANGE_2_G</name>
+          <initializer>= 0b00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="99" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="98" bodyend="104"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&quot;WProgram.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_adafruit___sensor_8h" kindref="compound">Adafruit_Sensor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">/*=========================================================================</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/>I2C<sp/>ADDRESS/BITS</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/>-----------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_adafruit___a_d_x_l345___u_8h_1acebdef7f400bcadad0131b0e4918ff00" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_ADDRESS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x53)<sp/><sp/><sp/><sp/>//<sp/>Assumes<sp/>ALT<sp/>address<sp/>pin<sp/>low</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">/*=========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">/*=========================================================================</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/>REGISTERS</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/><sp/>-----------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_adafruit___a_d_x_l345___u_8h_1a29b5a30a1bc0cbaaf3f052eaab713ecb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_DEVID<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00)<sp/><sp/><sp/><sp/>//<sp/>Device<sp/>ID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_adafruit___a_d_x_l345___u_8h_1a4606ede066d6a452645f00652f6f3adc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_THRESH_TAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1D)<sp/><sp/><sp/><sp/>//<sp/>Tap<sp/>threshold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_adafruit___a_d_x_l345___u_8h_1a47ada0987f13abc327791f3b721fc2fa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_OFSX<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1E)<sp/><sp/><sp/><sp/>//<sp/>X-axis<sp/>offset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_adafruit___a_d_x_l345___u_8h_1a9f528be643cec2847192f1866705b570" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_OFSY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x1F)<sp/><sp/><sp/><sp/>//<sp/>Y-axis<sp/>offset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_adafruit___a_d_x_l345___u_8h_1ae81729318b7fa11a631c4e1031fe7c97" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_OFSZ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x20)<sp/><sp/><sp/><sp/>//<sp/>Z-axis<sp/>offset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_adafruit___a_d_x_l345___u_8h_1a027ffe4ead3047b75f1c15f8ee27acef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_DUR<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x21)<sp/><sp/><sp/><sp/>//<sp/>Tap<sp/>duration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_adafruit___a_d_x_l345___u_8h_1a7378c1d55a972c54ce6608c1e32336ef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_LATENT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x22)<sp/><sp/><sp/><sp/>//<sp/>Tap<sp/>latency</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_adafruit___a_d_x_l345___u_8h_1ab8b04304c7de9e6f1b530418b0b9dddd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_WINDOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x23)<sp/><sp/><sp/><sp/>//<sp/>Tap<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_adafruit___a_d_x_l345___u_8h_1aed83f0847d342ebbbe0c3eafeb12dda8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_THRESH_ACT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x24)<sp/><sp/><sp/><sp/>//<sp/>Activity<sp/>threshold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_adafruit___a_d_x_l345___u_8h_1a6bd7ad5b22116ad715dd655755d8c129" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_THRESH_INACT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x25)<sp/><sp/><sp/><sp/>//<sp/>Inactivity<sp/>threshold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_adafruit___a_d_x_l345___u_8h_1ace645cf273f2c8332d24bb37fea7f725" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_TIME_INACT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x26)<sp/><sp/><sp/><sp/>//<sp/>Inactivity<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_adafruit___a_d_x_l345___u_8h_1aeade3a2907935b106ffce9c81aedee76" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_ACT_INACT_CTL<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x27)<sp/><sp/><sp/><sp/>//<sp/>Axis<sp/>enable<sp/>control<sp/>for<sp/>activity<sp/>and<sp/>inactivity<sp/>detection</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_adafruit___a_d_x_l345___u_8h_1a0522945d2a7b9a37f7d76e2620234576" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_THRESH_FF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x28)<sp/><sp/><sp/><sp/>//<sp/>Free-fall<sp/>threshold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_adafruit___a_d_x_l345___u_8h_1a5abb839b3f7233cb3882e15899399d4c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_TIME_FF<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x29)<sp/><sp/><sp/><sp/>//<sp/>Free-fall<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_adafruit___a_d_x_l345___u_8h_1a07887f474abd214ba8528cd136bc2b60" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_TAP_AXES<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2A)<sp/><sp/><sp/><sp/>//<sp/>Axis<sp/>control<sp/>for<sp/>single/double<sp/>tap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_adafruit___a_d_x_l345___u_8h_1a10336666b8b1228d08d4e634817832cc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_ACT_TAP_STATUS<sp/><sp/><sp/><sp/><sp/><sp/>(0x2B)<sp/><sp/><sp/><sp/>//<sp/>Source<sp/>for<sp/>single/double<sp/>tap</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_adafruit___a_d_x_l345___u_8h_1a51ce19e9e208c52fb41348c472b428ab" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_BW_RATE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2C)<sp/><sp/><sp/><sp/>//<sp/>Data<sp/>rate<sp/>and<sp/>power<sp/>mode<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_adafruit___a_d_x_l345___u_8h_1aa8b343258a85689467d33fb6e7a92d18" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_POWER_CTL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2D)<sp/><sp/><sp/><sp/>//<sp/>Power-saving<sp/>features<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_adafruit___a_d_x_l345___u_8h_1ae54dd63a35ee5baec0ba7bfa8892d005" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_INT_ENABLE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2E)<sp/><sp/><sp/><sp/>//<sp/>Interrupt<sp/>enable<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_adafruit___a_d_x_l345___u_8h_1a725afaaa7d76f0a2b503a32ab8b4a689" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_INT_MAP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x2F)<sp/><sp/><sp/><sp/>//<sp/>Interrupt<sp/>mapping<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_adafruit___a_d_x_l345___u_8h_1aa1a2a197465ce44bf8a2c06acc22c561" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_INT_SOURCE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x30)<sp/><sp/><sp/><sp/>//<sp/>Source<sp/>of<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_adafruit___a_d_x_l345___u_8h_1a599ba3e5ed5a1ff931b9b268590a54a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_DATA_FORMAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x31)<sp/><sp/><sp/><sp/>//<sp/>Data<sp/>format<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_adafruit___a_d_x_l345___u_8h_1ad357e2d6384df108aab1cffc6dc32782" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_DATAX0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x32)<sp/><sp/><sp/><sp/>//<sp/>X-axis<sp/>data<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_adafruit___a_d_x_l345___u_8h_1a104644acecc00a82948a4f1f275f18ee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_DATAX1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x33)<sp/><sp/><sp/><sp/>//<sp/>X-axis<sp/>data<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_adafruit___a_d_x_l345___u_8h_1a5a6c961c3b5573ff25525b47941fd8b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_DATAY0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x34)<sp/><sp/><sp/><sp/>//<sp/>Y-axis<sp/>data<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_adafruit___a_d_x_l345___u_8h_1afc55ed6bd0c938a106b5d08dfec77223" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_DATAY1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x35)<sp/><sp/><sp/><sp/>//<sp/>Y-axis<sp/>data<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_adafruit___a_d_x_l345___u_8h_1a7e8957c91c0f9992a389968510eb0a75" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_DATAZ0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x36)<sp/><sp/><sp/><sp/>//<sp/>Z-axis<sp/>data<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_adafruit___a_d_x_l345___u_8h_1aac6575491824aee967461dee85eda6cd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_DATAZ1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x37)<sp/><sp/><sp/><sp/>//<sp/>Z-axis<sp/>data<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_adafruit___a_d_x_l345___u_8h_1a69102d04a2a2c3f5de46b503ea22646e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_FIFO_CTL<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x38)<sp/><sp/><sp/><sp/>//<sp/>FIFO<sp/>control</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_adafruit___a_d_x_l345___u_8h_1a9ba8252efafd2b9e9a7257a15062c027" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_REG_FIFO_STATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x39)<sp/><sp/><sp/><sp/>//<sp/>FIFO<sp/>status</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*=========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*=========================================================================</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/>REGISTERS</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/>-----------------------------------------------------------------------*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_adafruit___a_d_x_l345___u_8h_1a2dfb2c434a6255167c79af6c06eebc53" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADXL345_MG2G_MULTIPLIER<sp/>(0.004)<sp/><sp/>//<sp/>4mg<sp/>per<sp/>lsb</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment">/*=========================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Used<sp/>with<sp/>register<sp/>0x2C<sp/>(ADXL345_REG_BW_RATE)<sp/>to<sp/>set<sp/>bandwidth<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa060adbef1c3b3daf9704b306293c6c4c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa060adbef1c3b3daf9704b306293c6c4c" kindref="member">ADXL345_DATARATE_3200_HZ</ref><sp/><sp/><sp/><sp/>=<sp/>0b1111,<sp/></highlight><highlight class="comment">//<sp/>1600Hz<sp/>Bandwidth<sp/><sp/><sp/>140µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa004a20cdc802eb13049e3c2d10020c4f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa004a20cdc802eb13049e3c2d10020c4f" kindref="member">ADXL345_DATARATE_1600_HZ</ref><sp/><sp/><sp/><sp/>=<sp/>0b1110,<sp/></highlight><highlight class="comment">//<sp/><sp/>800Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>90µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa961c944329e8b084b61febd52f9889d8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa961c944329e8b084b61febd52f9889d8" kindref="member">ADXL345_DATARATE_800_HZ</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0b1101,<sp/></highlight><highlight class="comment">//<sp/><sp/>400Hz<sp/>Bandwidth<sp/><sp/><sp/>140µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa2dc516d7922dd129f55b85256e5b6422" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa2dc516d7922dd129f55b85256e5b6422" kindref="member">ADXL345_DATARATE_400_HZ</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0b1100,<sp/></highlight><highlight class="comment">//<sp/><sp/>200Hz<sp/>Bandwidth<sp/><sp/><sp/>140µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa07ddfb920f9f6c59cc6cbc6f0166d35e" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa07ddfb920f9f6c59cc6cbc6f0166d35e" kindref="member">ADXL345_DATARATE_200_HZ</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0b1011,<sp/></highlight><highlight class="comment">//<sp/><sp/>100Hz<sp/>Bandwidth<sp/><sp/><sp/>140µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa7f2dc2677e505b52a7a62ae4afc999c7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa7f2dc2677e505b52a7a62ae4afc999c7" kindref="member">ADXL345_DATARATE_100_HZ</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0b1010,<sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>50Hz<sp/>Bandwidth<sp/><sp/><sp/>140µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa5d0619a87b4f6f6a3b6f6b5c53e68a18" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa5d0619a87b4f6f6a3b6f6b5c53e68a18" kindref="member">ADXL345_DATARATE_50_HZ</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0b1001,<sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>25Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>90µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aabe44b71b03868c7faa656c64389eed91" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aabe44b71b03868c7faa656c64389eed91" kindref="member">ADXL345_DATARATE_25_HZ</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0b1000,<sp/></highlight><highlight class="comment">//<sp/>12.5Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>60µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aaae4ed1e62d0b2fc79fbae8d9102fa1b9" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aaae4ed1e62d0b2fc79fbae8d9102fa1b9" kindref="member">ADXL345_DATARATE_12_5_HZ</ref><sp/><sp/><sp/><sp/>=<sp/>0b0111,<sp/></highlight><highlight class="comment">//<sp/>6.25Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>50µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa2ca5f3f0c789f55f0ea2950e88a0d10f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa2ca5f3f0c789f55f0ea2950e88a0d10f" kindref="member">ADXL345_DATARATE_6_25HZ</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0b0110,<sp/></highlight><highlight class="comment">//<sp/>3.13Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>45µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa04edbbc82fdcac8a6b22747c6f4bcc64" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa04edbbc82fdcac8a6b22747c6f4bcc64" kindref="member">ADXL345_DATARATE_3_13_HZ</ref><sp/><sp/><sp/><sp/>=<sp/>0b0101,<sp/></highlight><highlight class="comment">//<sp/>1.56Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>40µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa236301858ce1bd14b3c9023f80720864" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa236301858ce1bd14b3c9023f80720864" kindref="member">ADXL345_DATARATE_1_56_HZ</ref><sp/><sp/><sp/><sp/>=<sp/>0b0100,<sp/></highlight><highlight class="comment">//<sp/>0.78Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>34µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aad5bd8bbd075d1211a54819167c535432" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aad5bd8bbd075d1211a54819167c535432" kindref="member">ADXL345_DATARATE_0_78_HZ</ref><sp/><sp/><sp/><sp/>=<sp/>0b0011,<sp/></highlight><highlight class="comment">//<sp/>0.39Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>23µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aaa337a2f9c43707b419b6922921209d8f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aaa337a2f9c43707b419b6922921209d8f" kindref="member">ADXL345_DATARATE_0_39_HZ</ref><sp/><sp/><sp/><sp/>=<sp/>0b0010,<sp/></highlight><highlight class="comment">//<sp/>0.20Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>23µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa9bbc45eb7790e0b7bc3a490e937d5965" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa9bbc45eb7790e0b7bc3a490e937d5965" kindref="member">ADXL345_DATARATE_0_20_HZ</ref><sp/><sp/><sp/><sp/>=<sp/>0b0001,<sp/></highlight><highlight class="comment">//<sp/>0.10Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>23µA<sp/>IDD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa9510de83f534bae91a7e4e0005bb2691" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0aa9510de83f534bae91a7e4e0005bb2691" kindref="member">ADXL345_DATARATE_0_10_HZ</ref><sp/><sp/><sp/><sp/>=<sp/>0b0000<sp/><sp/></highlight><highlight class="comment">//<sp/>0.05Hz<sp/>Bandwidth<sp/><sp/><sp/><sp/>23µA<sp/>IDD<sp/>(default<sp/>value)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal">}<sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0a" kindref="member">dataRate_t</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Used<sp/>with<sp/>register<sp/>0x31<sp/>(ADXL345_REG_DATA_FORMAT)<sp/>to<sp/>set<sp/>g<sp/>range<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="100" refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5bafd8f689faf57790d644f8c979c6a144f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5bafd8f689faf57790d644f8c979c6a144f" kindref="member">ADXL345_RANGE_16_G</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0b11,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>+/-<sp/>16g</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5bab9ef72b0ee4c72b0ec832db33c0533fd" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5bab9ef72b0ee4c72b0ec832db33c0533fd" kindref="member">ADXL345_RANGE_8_G</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0b10,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>+/-<sp/>8g</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5ba7b2d6d92cefe293c32f5ecdbc37c7cd3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5ba7b2d6d92cefe293c32f5ecdbc37c7cd3" kindref="member">ADXL345_RANGE_4_G</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0b01,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>+/-<sp/>4g</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5ba444aa38d83d28043ebfcf0ea6459296f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5ba444aa38d83d28043ebfcf0ea6459296f" kindref="member">ADXL345_RANGE_2_G</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0b00<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>+/-<sp/>2g<sp/>(default<sp/>value)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal">}<sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5b" kindref="member">range_t</ref>;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="class_adafruit___a_d_x_l345___unified" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adafruit___a_d_x_l345___unified" kindref="compound">Adafruit_ADXL345_Unified</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___sensor" kindref="compound">Adafruit_Sensor</ref><sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a34c57b807ceb0636ab79320231e51dd6" kindref="member">Adafruit_ADXL345_Unified</ref>(int32_t<sp/>sensorID<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a34c57b807ceb0636ab79320231e51dd6" kindref="member">Adafruit_ADXL345_Unified</ref>(uint8_t<sp/><ref refid="_weather___balloon_8cpp_1a65f172682710866247eacb1ef68df619" kindref="member">clock</ref>,<sp/>uint8_t<sp/>miso,<sp/>uint8_t<sp/>mosi,<sp/>uint8_t<sp/>cs,<sp/>int32_t<sp/>sensorID<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a55b74a63bbb1317228d5bb5905589a02" kindref="member">begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1ad722e964df59c7691b1666472940aa99" kindref="member">setRange</ref>(<ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5b" kindref="member">range_t</ref><sp/>range);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5b" kindref="member">range_t</ref><sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1adcdcd1ddcd58af6b1d4f85f9ab30d7a4" kindref="member">getRange</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a8e837a3e456e5e17839447bbf65f76bd" kindref="member">setDataRate</ref>(<ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0a" kindref="member">dataRate_t</ref><sp/>dataRate);</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0a" kindref="member">dataRate_t</ref><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a3b8ae7da9a66e28b38b70a08c5646b02" kindref="member">getDataRate</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a830e4a9d1729310c9cf0d0504b3d0229" kindref="member">getEvent</ref>(<ref refid="structsensors__event__t" kindref="compound">sensors_event_t</ref>*);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1ac53068bb82bd03fc492542b468a30478" kindref="member">getSensor</ref>(<ref refid="structsensor__t" kindref="compound">sensor_t</ref>*);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1acf54ca46aa7e6a613807f489711a8ceb" kindref="member">getDeviceID</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a8f6b9e9598618fc0cf221c4b62f924d9" kindref="member">writeRegister</ref>(uint8_t<sp/>reg,<sp/>uint8_t<sp/>value);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1ab56b668f36793605d7be009a7efb74e8" kindref="member">readRegister</ref>(uint8_t<sp/>reg);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/>int16_t<sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a62c1c34b81fdcb7825d7c9911fba988b" kindref="member">read16</ref>(uint8_t<sp/>reg);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>int16_t<sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a5ad11ba3d12aa4f4aaaec38b3400fa6f" kindref="member">getX</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">),<sp/><ref refid="class_adafruit___a_d_x_l345___unified_1ac745aefc2a66094a9c46115564939610" kindref="member">getY</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">),<sp/><ref refid="class_adafruit___a_d_x_l345___unified_1ae61417ef16d19ff86ecd82efc14e960b" kindref="member">getZ</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_adafruit___a_d_x_l345___unified_1a812faf0e78b3f34a7dfe2fc701baedd7" kindref="member">setCorrection</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8_t<sp/><sp/>i2cread(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>i2cwrite(uint8_t<sp/>x);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/>int32_t<sp/>_sensorID;</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5b" kindref="member">range_t</ref><sp/>_range;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>uint8_t<sp/>_clk,<sp/>_do,<sp/>_di,<sp/>_cs;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/>_i2c;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Correction<sp/>value<sp/>for<sp/>output<sp/>in<sp/>m/s^2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>correction;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h"/>
+  </compounddef>
+</doxygen>

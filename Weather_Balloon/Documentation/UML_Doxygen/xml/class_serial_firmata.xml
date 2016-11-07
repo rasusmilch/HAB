@@ -1,0 +1,278 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_serial_firmata" kind="class" language="C++" prot="public">
+    <compoundname>SerialFirmata</compoundname>
+    <basecompoundref refid="class_firmata_feature" prot="public" virt="non-virtual">FirmataFeature</basecompoundref>
+    <includes refid="_serial_firmata_8h" local="no">SerialFirmata.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_serial_firmata_1a4b4334f9bc5aa528d087b2fd7b5ffcda" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte SerialFirmata::reportSerial[MAX_SERIAL_PORTS]</definition>
+        <argsstring>[MAX_SERIAL_PORTS]</argsstring>
+        <name>reportSerial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="154" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="154" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_serial_firmata_1a1f8192952cfc25b525dfee3d7dc45f54" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int SerialFirmata::serialBytesToRead[SERIAL_READ_ARR_LEN]</definition>
+        <argsstring>[SERIAL_READ_ARR_LEN]</argsstring>
+        <name>serialBytesToRead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="155" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="155" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_serial_firmata_1a0805d6a2cd389e150a23d921025489d5" prot="private" static="no" mutable="no">
+        <type>signed char</type>
+        <definition>signed char SerialFirmata::serialIndex</definition>
+        <argsstring></argsstring>
+        <name>serialIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="156" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="156" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_serial_firmata_1a9d8947b656970f9dc87c9aa34aeec6a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>SerialFirmata::SerialFirmata</definition>
+        <argsstring>()</argsstring>
+        <name>SerialFirmata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="145" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp" bodystart="22" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_serial_firmata_1ace960dd7d082caf65f1f3488a7486ef5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>boolean</type>
+        <definition>boolean SerialFirmata::handlePinMode</definition>
+        <argsstring>(byte pin, int mode)</argsstring>
+        <name>handlePinMode</name>
+        <reimplements refid="class_firmata_feature_1a6ef5569de60bb31c9eb55f5ebd16d88f">handlePinMode</reimplements>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="146" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp" bodystart="34" bodyend="42"/>
+        <references refid="_firmata_8cpp_1a986c68fac4f21302213e609c277710d7" compoundref="_firmata_8cpp" startline="669">Firmata</references>
+        <references refid="_firmata_8h_1aa3f71832c389f7ed6c263af7e097b4ef" compoundref="_firmata_8h" startline="105">PIN_MODE_SERIAL</references>
+        <references refid="class_firmata_class_1a32c41dd94c1d23aa0e6d3d1dbe5c0c04" compoundref="_firmata_8cpp" startline="576" endline="582">FirmataClass::setPinMode</references>
+      </memberdef>
+      <memberdef kind="function" id="class_serial_firmata_1af383474fc3a6d1d372489046bbcabc3b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SerialFirmata::handleCapability</definition>
+        <argsstring>(byte pin)</argsstring>
+        <name>handleCapability</name>
+        <reimplements refid="class_firmata_feature_1aa865c5a740a429805855ca1a4576a6f4">handleCapability</reimplements>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="147" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp" bodystart="44" bodyend="50"/>
+        <references refid="_firmata_8cpp_1a986c68fac4f21302213e609c277710d7" compoundref="_firmata_8cpp" startline="669">Firmata</references>
+        <references refid="_boards_8h_1a1ad05c1c9edb5c67ecfc8f43e2899aea" compoundref="_boards_8h" startline="747">IS_PIN_SERIAL</references>
+        <references refid="_firmata_8h_1aa3f71832c389f7ed6c263af7e097b4ef" compoundref="_firmata_8h" startline="105">PIN_MODE_SERIAL</references>
+        <references refid="class_firmata_class_1ae8f29a829e17379602fcb9fd6a497807" compoundref="_firmata_8cpp" startline="487" endline="490">FirmataClass::write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>boolean</type>
+        <definition>boolean SerialFirmata::handleSysex</definition>
+        <argsstring>(byte command, byte argc, byte *argv)</argsstring>
+        <name>handleSysex</name>
+        <reimplements refid="class_firmata_feature_1a0ce860a9345c81cbe959733e88b188be">handleSysex</reimplements>
+        <param>
+          <type>byte</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>byte *</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="148" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp" bodystart="52" bodyend="208"/>
+        <references refid="_firmata_8cpp_1a986c68fac4f21302213e609c277710d7" compoundref="_firmata_8cpp" startline="669">Firmata</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_serial_firmata_8h_1a5111e506db798f016bf509d7909a5c65" compoundref="_serial_firmata_8h" startline="49">MAX_SERIAL_PORTS</references>
+        <references refid="_firmata_8h_1aa3f71832c389f7ed6c263af7e097b4ef" compoundref="_firmata_8h" startline="105">PIN_MODE_SERIAL</references>
+        <references refid="class_firmata_class_1abe11f621154afd308926129de349fc6e" compoundref="_firmata_8cpp" startline="477" endline="480">FirmataClass::sendString</references>
+        <references refid="_serial_firmata_8h_1ad304b125713f3450cafd0de4da26f006" compoundref="_serial_firmata_8h" startline="65">SERIAL_CLOSE</references>
+        <references refid="_serial_firmata_8h_1a76e6fb108715443df6d7a5f85975731a" compoundref="_serial_firmata_8h" startline="61">SERIAL_CONFIG</references>
+        <references refid="_serial_firmata_8h_1a6789a06a5b32fae47375237d2353d1ca" compoundref="_serial_firmata_8h" startline="66">SERIAL_FLUSH</references>
+        <references refid="_serial_firmata_8h_1aded602187eefbcd6c33fdde9c5ed80e5" compoundref="_serial_firmata_8h" startline="67">SERIAL_LISTEN</references>
+        <references refid="_firmata_8h_1ab36390a5dc093b72f4923bc0417fef24" compoundref="_firmata_8h" startline="66">SERIAL_MESSAGE</references>
+        <references refid="_serial_firmata_8h_1afa10f200a03d8c4555555c63d8eb1ea6" compoundref="_serial_firmata_8h" startline="72">SERIAL_MODE_MASK</references>
+        <references refid="_serial_firmata_8h_1a6c61795269e38acfe6638b96ee14d605" compoundref="_serial_firmata_8h" startline="48">SERIAL_PORT_ID_MASK</references>
+        <references refid="_serial_firmata_8h_1ad8fc4f648b97f1a183f242b6c63daab1" compoundref="_serial_firmata_8h" startline="63">SERIAL_READ</references>
+        <references refid="_serial_firmata_8h_1aae7d93ba6f6cf4b484f1ca7e49a69b01" compoundref="_serial_firmata_8h" startline="70">SERIAL_READ_CONTINUOUSLY</references>
+        <references refid="_serial_firmata_8h_1a2a5c705ec3a399c9930260003f008af7" compoundref="_serial_firmata_8h" startline="71">SERIAL_STOP_READING</references>
+        <references refid="_serial_firmata_8h_1afb8ec1cba0a522c04f925bad0b2f3d9b" compoundref="_serial_firmata_8h" startline="62">SERIAL_WRITE</references>
+        <references refid="class_firmata_class_1a32c41dd94c1d23aa0e6d3d1dbe5c0c04" compoundref="_firmata_8cpp" startline="576" endline="582">FirmataClass::setPinMode</references>
+        <references refid="_serial_firmata_8h_1a669dd72611e460ea21388f62bb7ea713" compoundref="_serial_firmata_8h" startline="42">SW_SERIAL0</references>
+        <references refid="_serial_firmata_8h_1ae85c489fafeab0f8d4cf63866876eeca" compoundref="_serial_firmata_8h" startline="43">SW_SERIAL1</references>
+        <references refid="_serial_firmata_8h_1ac11cf9c5a36937c5357b112ec776d4cb" compoundref="_serial_firmata_8h" startline="44">SW_SERIAL2</references>
+        <references refid="_serial_firmata_8h_1aa8d8df1e8ad118cc64bbe18e8e8a3628" compoundref="_serial_firmata_8h" startline="45">SW_SERIAL3</references>
+      </memberdef>
+      <memberdef kind="function" id="class_serial_firmata_1a1095729d80e0b18340d6d6d5baca10fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SerialFirmata::update</definition>
+        <argsstring>()</argsstring>
+        <name>update</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="149" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp" bodystart="210" bodyend="213"/>
+        <references refid="class_serial_firmata_1ab31a76a596ce2430ee3feac525da59f2" compoundref="_serial_firmata_8cpp" startline="284" endline="330">checkSerial</references>
+      </memberdef>
+      <memberdef kind="function" id="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void SerialFirmata::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <reimplements refid="class_firmata_feature_1a511a8cc9f0e33b392ca729cab0f6e899">reset</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="150" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp" bodystart="215" bodyend="233"/>
+        <references refid="_serial_firmata_8h_1af3b91eec9b8ba6ba183cae8b87715e87" compoundref="_serial_firmata_8h" startline="36">HW_SERIAL0</references>
+        <references refid="_serial_firmata_8h_1aeb9a79ef851ece005de2b3018169d056" compoundref="_serial_firmata_8h" startline="37">HW_SERIAL1</references>
+        <references refid="_serial_firmata_8h_1adc7fabce0c0b1228ab25c9937a3015cf" compoundref="_serial_firmata_8h" startline="38">HW_SERIAL2</references>
+        <references refid="_serial_firmata_8h_1a6849362229e853b1d89ef1095efbbefd" compoundref="_serial_firmata_8h" startline="39">HW_SERIAL3</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_serial_firmata_8h_1a446255494bac53f4def0f97794935102" compoundref="_serial_firmata_8h" startline="50">SERIAL_READ_ARR_LEN</references>
+        <references refid="_serial_firmata_8h_1a669dd72611e460ea21388f62bb7ea713" compoundref="_serial_firmata_8h" startline="42">SW_SERIAL0</references>
+        <references refid="_serial_firmata_8h_1ae85c489fafeab0f8d4cf63866876eeca" compoundref="_serial_firmata_8h" startline="43">SW_SERIAL1</references>
+        <references refid="_serial_firmata_8h_1ac11cf9c5a36937c5357b112ec776d4cb" compoundref="_serial_firmata_8h" startline="44">SW_SERIAL2</references>
+        <references refid="_serial_firmata_8h_1aa8d8df1e8ad118cc64bbe18e8e8a3628" compoundref="_serial_firmata_8h" startline="45">SW_SERIAL3</references>
+      </memberdef>
+      <memberdef kind="function" id="class_serial_firmata_1ab31a76a596ce2430ee3feac525da59f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void SerialFirmata::checkSerial</definition>
+        <argsstring>()</argsstring>
+        <name>checkSerial</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="151" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp" bodystart="284" bodyend="330"/>
+        <references refid="_firmata_8h_1a59b17efb4e682f59d0f8179aea08474f" compoundref="_firmata_8h" startline="62">END_SYSEX</references>
+        <references refid="_firmata_8cpp_1a986c68fac4f21302213e609c277710d7" compoundref="_firmata_8cpp" startline="669">Firmata</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_firmata_8h_1ab36390a5dc093b72f4923bc0417fef24" compoundref="_firmata_8h" startline="66">SERIAL_MESSAGE</references>
+        <references refid="_serial_firmata_8h_1a21271d6f9809fc3b6cc2599e53a545b1" compoundref="_serial_firmata_8h" startline="64">SERIAL_REPLY</references>
+        <references refid="_firmata_8h_1a59347abb8dbf9faf06194cce640f59b6" compoundref="_firmata_8h" startline="61">START_SYSEX</references>
+        <references refid="class_firmata_class_1ae8f29a829e17379602fcb9fd6a497807" compoundref="_firmata_8cpp" startline="487" endline="490">FirmataClass::write</references>
+        <referencedby refid="class_serial_firmata_1a1095729d80e0b18340d6d6d5baca10fc" compoundref="_serial_firmata_8cpp" startline="210" endline="213">update</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_serial_firmata_1a60bcfa35fab3601a86e465ed8d8acbce" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Stream *</type>
+        <definition>Stream * SerialFirmata::getPortFromId</definition>
+        <argsstring>(byte portId)</argsstring>
+        <name>getPortFromId</name>
+        <param>
+          <type>byte</type>
+          <declname>portId</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="165" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp" bodystart="236" bodyend="280"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="408">
+        <label>FirmataFeature</label>
+        <link refid="class_firmata_feature"/>
+      </node>
+      <node id="407">
+        <label>SerialFirmata</label>
+        <link refid="class_serial_firmata"/>
+        <childnode refid="408" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="410">
+        <label>FirmataFeature</label>
+        <link refid="class_firmata_feature"/>
+      </node>
+      <node id="409">
+        <label>SerialFirmata</label>
+        <link refid="class_serial_firmata"/>
+        <childnode refid="410" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="143" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="142" bodyend="167"/>
+    <listofallmembers>
+      <member refid="class_serial_firmata_1ab31a76a596ce2430ee3feac525da59f2" prot="public" virt="non-virtual"><scope>SerialFirmata</scope><name>checkSerial</name></member>
+      <member refid="class_serial_firmata_1a60bcfa35fab3601a86e465ed8d8acbce" prot="private" virt="non-virtual"><scope>SerialFirmata</scope><name>getPortFromId</name></member>
+      <member refid="class_serial_firmata_1af383474fc3a6d1d372489046bbcabc3b" prot="public" virt="virtual"><scope>SerialFirmata</scope><name>handleCapability</name></member>
+      <member refid="class_serial_firmata_1ace960dd7d082caf65f1f3488a7486ef5" prot="public" virt="virtual"><scope>SerialFirmata</scope><name>handlePinMode</name></member>
+      <member refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" prot="public" virt="virtual"><scope>SerialFirmata</scope><name>handleSysex</name></member>
+      <member refid="class_serial_firmata_1a4b4334f9bc5aa528d087b2fd7b5ffcda" prot="private" virt="non-virtual"><scope>SerialFirmata</scope><name>reportSerial</name></member>
+      <member refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" prot="public" virt="virtual"><scope>SerialFirmata</scope><name>reset</name></member>
+      <member refid="class_serial_firmata_1a1f8192952cfc25b525dfee3d7dc45f54" prot="private" virt="non-virtual"><scope>SerialFirmata</scope><name>serialBytesToRead</name></member>
+      <member refid="class_serial_firmata_1a9d8947b656970f9dc87c9aa34aeec6a0" prot="public" virt="non-virtual"><scope>SerialFirmata</scope><name>SerialFirmata</name></member>
+      <member refid="class_serial_firmata_1a0805d6a2cd389e150a23d921025489d5" prot="private" virt="non-virtual"><scope>SerialFirmata</scope><name>serialIndex</name></member>
+      <member refid="class_serial_firmata_1a1095729d80e0b18340d6d6d5baca10fc" prot="public" virt="non-virtual"><scope>SerialFirmata</scope><name>update</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

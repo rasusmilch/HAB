@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="unionsensors__event__t_8____unnamed____" kind="union" language="C++" prot="public">
+    <compoundname>sensors_event_t.__unnamed__</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1a3fbd200a7024d776bc2a6eae2ca0c5b7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring>[4]</argsstring>
+        <name>data</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="109" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1ad3879b8802412d8dc066fd9f1a6dd2b4" prot="public" static="no" mutable="no">
+        <type><ref refid="structsensors__vec__t" kindref="compound">sensors_vec_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>acceleration</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>acceleration values are in meter per second per second (m/s^2) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1a718c286432b20095a446ff2e851bc2f2" prot="public" static="no" mutable="no">
+        <type><ref refid="structsensors__vec__t" kindref="compound">sensors_vec_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>magnetic</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>magnetic vector values are in micro-Tesla (uT) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="111" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1ada1639422ad8f355d2371428471379b5" prot="public" static="no" mutable="no">
+        <type><ref refid="structsensors__vec__t" kindref="compound">sensors_vec_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>orientation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>orientation values are in degrees </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="112" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1a41e1db589d90cecf09838a038ebc8aa1" prot="public" static="no" mutable="no">
+        <type><ref refid="structsensors__vec__t" kindref="compound">sensors_vec_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>gyro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>gyroscope values are in rad/s </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="113" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1aeef438f7e448aa48c1f8db568d27b591" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>temperature is in degrees centigrade (Celsius) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="114" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1aa74ec9c5b6882f79e32a8fbd8da90c1b" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>distance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>distance in centimeters </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="115" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1a2ac43aa43bf473f9a9c09b4b608619d3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>light</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>light in SI lux units </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1ad99fad96a5d0a7cb2eb41341ea556093" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pressure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>pressure in hectopascal (hPa) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="117" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1a25aa3a770084203444b1aab490832b11" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>relative_humidity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>relative humidity in percent </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="118" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1a43b5c9175984c071f30b873fdce0a000" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>current</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>current in milliamps (mA) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="119" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1ae437ba437f4106903e619bb380574954" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>voltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>voltage in volts (V) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="120" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="unionsensors__event__t_8____unnamed_____1a70dda5dfb8053dc6d1c492574bce9bfd" prot="public" static="no" mutable="no">
+        <type><ref refid="structsensors__color__t" kindref="compound">sensors_color_t</ref></type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>color</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>color in RGB component values </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="121" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="108" column="1" bodyfile="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" bodystart="107" bodyend="122"/>
+    <listofallmembers>
+      <member refid="unionsensors__event__t_8____unnamed_____1ad3879b8802412d8dc066fd9f1a6dd2b4" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>acceleration</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1a70dda5dfb8053dc6d1c492574bce9bfd" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>color</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1a43b5c9175984c071f30b873fdce0a000" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>current</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1a3fbd200a7024d776bc2a6eae2ca0c5b7" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>data</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1aa74ec9c5b6882f79e32a8fbd8da90c1b" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>distance</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1a41e1db589d90cecf09838a038ebc8aa1" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>gyro</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1a2ac43aa43bf473f9a9c09b4b608619d3" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>light</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1a718c286432b20095a446ff2e851bc2f2" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>magnetic</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1ada1639422ad8f355d2371428471379b5" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>orientation</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1ad99fad96a5d0a7cb2eb41341ea556093" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>pressure</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1a25aa3a770084203444b1aab490832b11" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>relative_humidity</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1aeef438f7e448aa48c1f8db568d27b591" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>temperature</name></member>
+      <member refid="unionsensors__event__t_8____unnamed_____1ae437ba437f4106903e619bb380574954" prot="public" virt="non-virtual"><scope>sensors_event_t.__unnamed__</scope><name>voltage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1303 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_adafruit___t_s_l2561___u_8h" kind="file" language="C++">
+    <compoundname>Adafruit_TSL2561_U.h</compoundname>
+    <includes local="no">WProgram.h</includes>
+    <includes refid="_adafruit___sensor_8h" local="no">Adafruit_Sensor.h</includes>
+    <includes local="no">Wire.h</includes>
+    <includedby refid="_adafruit___t_s_l2561___u_8cpp" local="yes">Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.cpp</includedby>
+    <includedby refid="_weather___balloon_8cpp" local="yes">Weather_Balloon/Weather_Balloon.cpp</includedby>
+    <incdepgraph>
+      <node id="623">
+        <label>Adafruit_Sensor.h</label>
+        <link refid="_adafruit___sensor_8h"/>
+        <childnode refid="622" relation="include">
+        </childnode>
+      </node>
+      <node id="621">
+        <label>Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h</label>
+        <link refid="Adafruit_TSL2561_U.h"/>
+        <childnode refid="622" relation="include">
+        </childnode>
+        <childnode refid="623" relation="include">
+        </childnode>
+        <childnode refid="624" relation="include">
+        </childnode>
+      </node>
+      <node id="622">
+        <label>WProgram.h</label>
+      </node>
+      <node id="624">
+        <label>Wire.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="626">
+        <label>Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.cpp</label>
+        <link refid="_adafruit___t_s_l2561___u_8cpp"/>
+      </node>
+      <node id="627">
+        <label>Weather_Balloon/Weather_Balloon.cpp</label>
+        <link refid="_weather___balloon_8cpp"/>
+      </node>
+      <node id="625">
+        <label>Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h</label>
+        <link refid="Adafruit_TSL2561_U.h"/>
+        <childnode refid="626" relation="include">
+        </childnode>
+        <childnode refid="627" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_adafruit___t_s_l2561___unified" prot="public">Adafruit_TSL2561_Unified</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a4161237608b9ad014b6fc7e76affb6cb" prot="public" static="no">
+        <name>TSL2561_VISIBLE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="54" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a65c7b3d2a51f0a8b6879b2b6d4ee7870" prot="public" static="no">
+        <name>TSL2561_INFRARED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="55" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a7476846e073c7f982c33c1832cee381e" prot="public" static="no">
+        <name>TSL2561_FULLSPECTRUM</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="56" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1affb49bd7afa3145eb9b988cc3bdd7ff4" prot="public" static="no">
+        <name>TSL2561_ADDR_LOW</name>
+        <initializer>(0x29)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="59" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ac7cc83a3f07e3073fe2c17deb84e8cfc" prot="public" static="no">
+        <name>TSL2561_ADDR_FLOAT</name>
+        <initializer>(0x39)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="60" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a165fdc75d9a1583616bc4b0527080869" prot="public" static="no">
+        <name>TSL2561_ADDR_HIGH</name>
+        <initializer>(0x49)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="61" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1abeaff1c31984430865135952cb6f8fe2" prot="public" static="no">
+        <name>TSL2561_PACKAGE_T_FN_CL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="65" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a79b7f57e5b18fa44ecd3f6f0cf46dffc" prot="public" static="no">
+        <name>TSL2561_COMMAND_BIT</name>
+        <initializer>(0x80)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="67" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1ad4189a1cb97b07366b5014bec629f29a" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="256" endline="271">Adafruit_TSL2561_Unified::setGain</referencedby>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a594636810e6e26dc025b7f1b7a16024f" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="234" endline="249">Adafruit_TSL2561_Unified::setIntegrationTime</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1af62178966502d4c4eecb09824fa19bfa" prot="public" static="no">
+        <name>TSL2561_CLEAR_BIT</name>
+        <initializer>(0x40)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="68" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1adb0ddd7f64255780596d7be8e02d7745" prot="public" static="no">
+        <name>TSL2561_WORD_BIT</name>
+        <initializer>(0x20)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="69" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1aac8bd42f5795a24d44d030f6022f93b7" prot="public" static="no">
+        <name>TSL2561_BLOCK_BIT</name>
+        <initializer>(0x10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="70" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a1465abbd34c333983420f5644f239fd7" prot="public" static="no">
+        <name>TSL2561_CONTROL_POWERON</name>
+        <initializer>(0x03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="72" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1aedfdafae91b044746ef8da6bb89b66ec" prot="public" static="no">
+        <name>TSL2561_CONTROL_POWEROFF</name>
+        <initializer>(0x00)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="73" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a6444753786cd6af180a38fa5a10f6829" prot="public" static="no">
+        <name>TSL2561_LUX_LUXSCALE</name>
+        <initializer>(14)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="75" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="75" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a3155eac331a5f5946d097c1bf0cc65b9" prot="public" static="no">
+        <name>TSL2561_LUX_RATIOSCALE</name>
+        <initializer>(9)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="76" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="76" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1aff6d851aed7d3a64a6ef5f7b99c7d916" prot="public" static="no">
+        <name>TSL2561_LUX_CHSCALE</name>
+        <initializer>(10)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="77" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a3d24db000dcaa1f9dfb2e610c19fdce1" prot="public" static="no">
+        <name>TSL2561_LUX_CHSCALE_TINT0</name>
+        <initializer>(0x7517)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="78" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ab0487a56c1c55f0bb7460895df3e840c" prot="public" static="no">
+        <name>TSL2561_LUX_CHSCALE_TINT1</name>
+        <initializer>(0x0FE7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="79" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1af60c10ff6e676fad517009d63b46fec3" prot="public" static="no">
+        <name>TSL2561_LUX_K1T</name>
+        <initializer>(0x0040)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="82" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a5616f586cc9bef37fe8b8d7deac39945" prot="public" static="no">
+        <name>TSL2561_LUX_B1T</name>
+        <initializer>(0x01f2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="83" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="83" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ab613a4b2b8d312667d3f51d121a6a2c0" prot="public" static="no">
+        <name>TSL2561_LUX_M1T</name>
+        <initializer>(0x01be)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="84" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a0b3a7f72cd8086ce30c194d4a421aace" prot="public" static="no">
+        <name>TSL2561_LUX_K2T</name>
+        <initializer>(0x0080)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="85" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ac6e96f5cf30e279a67673dcbdaeb1b30" prot="public" static="no">
+        <name>TSL2561_LUX_B2T</name>
+        <initializer>(0x0214)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="86" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="86" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a86ccc9bbd9d4a6108c74ecb0775c141d" prot="public" static="no">
+        <name>TSL2561_LUX_M2T</name>
+        <initializer>(0x02d1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="87" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1acd083de11e526ae1e0ac26bbbf81cf65" prot="public" static="no">
+        <name>TSL2561_LUX_K3T</name>
+        <initializer>(0x00c0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="88" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a438019626b45bbcdc11fa9d980929ffc" prot="public" static="no">
+        <name>TSL2561_LUX_B3T</name>
+        <initializer>(0x023f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="89" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="89" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ac25244168d07b7dbc8ec72b580291a04" prot="public" static="no">
+        <name>TSL2561_LUX_M3T</name>
+        <initializer>(0x037b)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="90" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ae5fd5107304643a7b18d6226e4f6fccb" prot="public" static="no">
+        <name>TSL2561_LUX_K4T</name>
+        <initializer>(0x0100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="91" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="91" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a942a646c02c386b0fa86a8e1e3676e0c" prot="public" static="no">
+        <name>TSL2561_LUX_B4T</name>
+        <initializer>(0x0270)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="92" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="92" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a1ec7ad75708aa4f4a7c74fbefeee7664" prot="public" static="no">
+        <name>TSL2561_LUX_M4T</name>
+        <initializer>(0x03fe)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="93" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1aac19bb4ed796e63d7d6b7dffcbfd2e84" prot="public" static="no">
+        <name>TSL2561_LUX_K5T</name>
+        <initializer>(0x0138)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="94" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ad87efe789095858d8b2a0be80bb3152f" prot="public" static="no">
+        <name>TSL2561_LUX_B5T</name>
+        <initializer>(0x016f)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="95" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="95" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a9ad281ceb8ced6e4f1f7194fcc59426b" prot="public" static="no">
+        <name>TSL2561_LUX_M5T</name>
+        <initializer>(0x01fc)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="96" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ad8e97f6722bd5b66236437451dd61d73" prot="public" static="no">
+        <name>TSL2561_LUX_K6T</name>
+        <initializer>(0x019a)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="97" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a0d3feafd2d09a8970b0a83eeefc8d6bd" prot="public" static="no">
+        <name>TSL2561_LUX_B6T</name>
+        <initializer>(0x00d2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="98" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="98" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a24b1fea2c6918d70fc9f145839471fd2" prot="public" static="no">
+        <name>TSL2561_LUX_M6T</name>
+        <initializer>(0x00fb)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="99" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a8de4ec79d68cb0d2a0a43c8e6d3596b7" prot="public" static="no">
+        <name>TSL2561_LUX_K7T</name>
+        <initializer>(0x029a)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="100" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ae4c0086763efeac75af8fb8d1bdb4994" prot="public" static="no">
+        <name>TSL2561_LUX_B7T</name>
+        <initializer>(0x0018)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="101" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="101" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1aa2c105ab6187ccdc04218f8181d42778" prot="public" static="no">
+        <name>TSL2561_LUX_M7T</name>
+        <initializer>(0x0012)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="102" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ac80851ebf368258a3caa537201091d22" prot="public" static="no">
+        <name>TSL2561_LUX_K8T</name>
+        <initializer>(0x029a)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="103" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1aae101cbba5a5ab9dfb653000516e78b1" prot="public" static="no">
+        <name>TSL2561_LUX_B8T</name>
+        <initializer>(0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="104" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a0e6cacf4765a8592166ae3eabce341ad" prot="public" static="no">
+        <name>TSL2561_LUX_M8T</name>
+        <initializer>(0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="105" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="105" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a7c1403a8b01ae12e5ac46420748bc5d0" prot="public" static="no">
+        <name>TSL2561_LUX_K1C</name>
+        <initializer>(0x0043)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="108" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="108" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a26a09c2333ae4002f9e5186a51e13c3a" prot="public" static="no">
+        <name>TSL2561_LUX_B1C</name>
+        <initializer>(0x0204)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="109" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="109" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a0035c4187dc5a4020502d2e6077b3a6e" prot="public" static="no">
+        <name>TSL2561_LUX_M1C</name>
+        <initializer>(0x01ad)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="110" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="110" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a1dd248d7cee70249b02fd3fbc9c2fc83" prot="public" static="no">
+        <name>TSL2561_LUX_K2C</name>
+        <initializer>(0x0085)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="111" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="111" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a9142fa498663b86bee6d4fa0e9c8998e" prot="public" static="no">
+        <name>TSL2561_LUX_B2C</name>
+        <initializer>(0x0228)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="112" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="112" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a01af6304f4f1e2d1c4506aeda9d9dba8" prot="public" static="no">
+        <name>TSL2561_LUX_M2C</name>
+        <initializer>(0x02c1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="113" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="113" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1aa514263b429c3ef8b4a1ffc9ab93a2a2" prot="public" static="no">
+        <name>TSL2561_LUX_K3C</name>
+        <initializer>(0x00c8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="114" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="114" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a26ef3863d02561d154b07029fdf38312" prot="public" static="no">
+        <name>TSL2561_LUX_B3C</name>
+        <initializer>(0x0253)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="115" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="115" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a8140888d70b84c3f200a0967a2991040" prot="public" static="no">
+        <name>TSL2561_LUX_M3C</name>
+        <initializer>(0x0363)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="116" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="116" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a4025d35f7fcad575668f64a4edb58610" prot="public" static="no">
+        <name>TSL2561_LUX_K4C</name>
+        <initializer>(0x010a)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="117" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="117" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1adce53ed293eb2e1c51701e3f9a8731d5" prot="public" static="no">
+        <name>TSL2561_LUX_B4C</name>
+        <initializer>(0x0282)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="118" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="118" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1af1bdbd5a2b975a060d541a5f9e385e08" prot="public" static="no">
+        <name>TSL2561_LUX_M4C</name>
+        <initializer>(0x03df)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="119" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a2c96527dfd325b07fe50a6d1e1343021" prot="public" static="no">
+        <name>TSL2561_LUX_K5C</name>
+        <initializer>(0x014d)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="120" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="120" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1af0e25b511cec1ff5df59d556bb319869" prot="public" static="no">
+        <name>TSL2561_LUX_B5C</name>
+        <initializer>(0x0177)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="121" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="121" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a429c5a251540979c2d9267c3d4a1f889" prot="public" static="no">
+        <name>TSL2561_LUX_M5C</name>
+        <initializer>(0x01dd)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="122" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="122" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1aa921ba6b888218e3930313026b4fd235" prot="public" static="no">
+        <name>TSL2561_LUX_K6C</name>
+        <initializer>(0x019a)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="123" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="123" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a29e287cd8553519649e9b7e2232d3998" prot="public" static="no">
+        <name>TSL2561_LUX_B6C</name>
+        <initializer>(0x0101)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="124" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="124" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ad4d33cb4ccff0cd9dd240664fce2ddfa" prot="public" static="no">
+        <name>TSL2561_LUX_M6C</name>
+        <initializer>(0x0127)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="125" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="125" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a40355db7ead547c8084f583c06234a64" prot="public" static="no">
+        <name>TSL2561_LUX_K7C</name>
+        <initializer>(0x029a)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="126" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="126" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1aa37796e21ef3f12ca9096b5573d85255" prot="public" static="no">
+        <name>TSL2561_LUX_B7C</name>
+        <initializer>(0x0037)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="127" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="127" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a379d222dda7323d65c77decde7f49d01" prot="public" static="no">
+        <name>TSL2561_LUX_M7C</name>
+        <initializer>(0x002b)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="128" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="128" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a5eef1a1c3cb41da21ee086d7fc442ff4" prot="public" static="no">
+        <name>TSL2561_LUX_K8C</name>
+        <initializer>(0x029a)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="129" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="129" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a4df189c4e466003915866b37c940ce09" prot="public" static="no">
+        <name>TSL2561_LUX_B8C</name>
+        <initializer>(0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="130" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="130" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a6c2d68f7ca71f6e253449102203c10a0" prot="public" static="no">
+        <name>TSL2561_LUX_M8C</name>
+        <initializer>(0x0000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="131" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="131" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a2551f7fe21d9ff00a83b8d91ba501849" prot="public" static="no">
+        <name>TSL2561_AGC_THI_13MS</name>
+        <initializer>(4850)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="134" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="134" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a23378e7c4792b8b8c721d5a4def960fb" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="279" endline="359">Adafruit_TSL2561_Unified::getLuminosity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1ad48ae4def3af8a974deb2db6375ec61d" prot="public" static="no">
+        <name>TSL2561_AGC_TLO_13MS</name>
+        <initializer>(100)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="135" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="135" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a23378e7c4792b8b8c721d5a4def960fb" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="279" endline="359">Adafruit_TSL2561_Unified::getLuminosity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a44597c26c6a0d43c0b6be516bd0b6c76" prot="public" static="no">
+        <name>TSL2561_AGC_THI_101MS</name>
+        <initializer>(36000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="136" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="136" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a23378e7c4792b8b8c721d5a4def960fb" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="279" endline="359">Adafruit_TSL2561_Unified::getLuminosity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a1aa7ae9e3509bdbb6bc6b07d85e7629a" prot="public" static="no">
+        <name>TSL2561_AGC_TLO_101MS</name>
+        <initializer>(200)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="137" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="137" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a23378e7c4792b8b8c721d5a4def960fb" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="279" endline="359">Adafruit_TSL2561_Unified::getLuminosity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a4e745b310c6f7bef46e9716f99e5c4ed" prot="public" static="no">
+        <name>TSL2561_AGC_THI_402MS</name>
+        <initializer>(63000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="138" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="138" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a23378e7c4792b8b8c721d5a4def960fb" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="279" endline="359">Adafruit_TSL2561_Unified::getLuminosity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a9d697726cbdc140a8b335aab7e940c7c" prot="public" static="no">
+        <name>TSL2561_AGC_TLO_402MS</name>
+        <initializer>(500)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="139" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="139" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a23378e7c4792b8b8c721d5a4def960fb" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="279" endline="359">Adafruit_TSL2561_Unified::getLuminosity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a516453615503a68e3516d50f57176116" prot="public" static="no">
+        <name>TSL2561_CLIPPING_13MS</name>
+        <initializer>(4900)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="142" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="142" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a0e1783ebedf5c4a3097be54658d3458f" prot="public" static="no">
+        <name>TSL2561_CLIPPING_101MS</name>
+        <initializer>(37000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="143" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="143" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___t_s_l2561___u_8h_1a52ed40f14b2bbfaca4fa2aac9ad674b3" prot="public" static="no">
+        <name>TSL2561_CLIPPING_402MS</name>
+        <initializer>(65000)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="144" column="9" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="144" bodyend="-1"/>
+        <referencedby refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" compoundref="_adafruit___t_s_l2561___u_8cpp" startline="367" endline="474">Adafruit_TSL2561_Unified::calculateLux</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8" prot="public" static="no">
+        <name>@12</name>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a50f71e4c1ac964fa0ffac246629aee40" prot="public">
+          <name>TSL2561_REGISTER_CONTROL</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a3924fa14cb39ddcea2a6a40530e6b9de" prot="public">
+          <name>TSL2561_REGISTER_TIMING</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a7e8181cb57c30506441628c6be3a409a" prot="public">
+          <name>TSL2561_REGISTER_THRESHHOLDL_LOW</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a5edeff25758c4543906cc8ae89857a4a" prot="public">
+          <name>TSL2561_REGISTER_THRESHHOLDL_HIGH</name>
+          <initializer>= 0x03</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a8333d864829495d8a150eb5620037881" prot="public">
+          <name>TSL2561_REGISTER_THRESHHOLDH_LOW</name>
+          <initializer>= 0x04</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8aabe97411358d62ab44de9e8b697d84dc" prot="public">
+          <name>TSL2561_REGISTER_THRESHHOLDH_HIGH</name>
+          <initializer>= 0x05</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8af26094abfc9b43bebb72e04f1ef9b449" prot="public">
+          <name>TSL2561_REGISTER_INTERRUPT</name>
+          <initializer>= 0x06</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a5c6faa0735dab9acaa415a008554f61a" prot="public">
+          <name>TSL2561_REGISTER_CRC</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a29b3ff1851ca40e5e230e57d576f061f" prot="public">
+          <name>TSL2561_REGISTER_ID</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a05d26b8299db5c62242141d9324b4778" prot="public">
+          <name>TSL2561_REGISTER_CHAN0_LOW</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a600077a124dc05b77fc1ae716c48b65c" prot="public">
+          <name>TSL2561_REGISTER_CHAN0_HIGH</name>
+          <initializer>= 0x0D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a308ebd12169466773d391219c8f7f399" prot="public">
+          <name>TSL2561_REGISTER_CHAN1_LOW</name>
+          <initializer>= 0x0E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a2c7c68d5de249239315652f65eca8123" prot="public">
+          <name>TSL2561_REGISTER_CHAN1_HIGH</name>
+          <initializer>= 0x0F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="147" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="146" bodyend="161"/>
+      </memberdef>
+      <memberdef kind="enum" id="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264a" prot="public" static="no">
+        <name>tsl2561IntegrationTime_t</name>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264aa2ac9ab3a9e4918833df40bdb2b3b48c3" prot="public">
+          <name>TSL2561_INTEGRATIONTIME_13MS</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264aac276f46523dbc7ea4a885cdda0826db7" prot="public">
+          <name>TSL2561_INTEGRATIONTIME_101MS</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264aab8d5aa8b28f2f4acc78eb41cf6a37777" prot="public">
+          <name>TSL2561_INTEGRATIONTIME_402MS</name>
+          <initializer>= 0x02</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="164" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="163" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="enum" id="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0" prot="public" static="no">
+        <name>tsl2561Gain_t</name>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0a710ec4a6459d8d6296656db8e7f4fbfe" prot="public">
+          <name>TSL2561_GAIN_1X</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0a0eb86b759f88be07c2d218e4dc2da13d" prot="public">
+          <name>TSL2561_GAIN_16X</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" line="172" column="1" bodyfile="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h" bodystart="171" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**************************************************************************/</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">/**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>_TSL2561_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>_TSL2561_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&lt;WProgram.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_adafruit___sensor_8h" kindref="compound">Adafruit_Sensor.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__AVR_ATtiny85__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;TinyWireM.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>Wire<sp/>TinyWireM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_adafruit___t_s_l2561___u_8h_1a4161237608b9ad014b6fc7e76affb6cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_VISIBLE<sp/>2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>channel<sp/>0<sp/>-<sp/>channel<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_adafruit___t_s_l2561___u_8h_1a65c7b3d2a51f0a8b6879b2b6d4ee7870" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_INFRARED<sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>channel<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_adafruit___t_s_l2561___u_8h_1a7476846e073c7f982c33c1832cee381e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_FULLSPECTRUM<sp/>0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>channel<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/>I2C<sp/>address<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_adafruit___t_s_l2561___u_8h_1affb49bd7afa3145eb9b988cc3bdd7ff4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_ADDR_LOW<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x29)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_adafruit___t_s_l2561___u_8h_1ac7cc83a3f07e3073fe2c17deb84e8cfc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_ADDR_FLOAT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x39)<sp/><sp/><sp/><sp/>//<sp/>Default<sp/>address<sp/>(pin<sp/>left<sp/>floating)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_adafruit___t_s_l2561___u_8h_1a165fdc75d9a1583616bc4b0527080869" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_ADDR_HIGH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x49)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Lux<sp/>calculations<sp/>differ<sp/>slightly<sp/>for<sp/>CS<sp/>package</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>TSL2561_PACKAGE_CS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_adafruit___t_s_l2561___u_8h_1abeaff1c31984430865135952cb6f8fe2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_PACKAGE_T_FN_CL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_adafruit___t_s_l2561___u_8h_1a79b7f57e5b18fa44ecd3f6f0cf46dffc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_COMMAND_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x80)<sp/><sp/><sp/><sp/>//<sp/>Must<sp/>be<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_adafruit___t_s_l2561___u_8h_1af62178966502d4c4eecb09824fa19bfa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_CLEAR_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x40)<sp/><sp/><sp/><sp/>//<sp/>Clears<sp/>any<sp/>pending<sp/>interrupt<sp/>(write<sp/>1<sp/>to<sp/>clear)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_adafruit___t_s_l2561___u_8h_1adb0ddd7f64255780596d7be8e02d7745" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_WORD_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x20)<sp/><sp/><sp/><sp/>//<sp/>1<sp/>=<sp/>read/write<sp/>word<sp/>(rather<sp/>than<sp/>byte)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_adafruit___t_s_l2561___u_8h_1aac8bd42f5795a24d44d030f6022f93b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_BLOCK_BIT<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x10)<sp/><sp/><sp/><sp/>//<sp/>1<sp/>=<sp/>using<sp/>block<sp/>read/write</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_adafruit___t_s_l2561___u_8h_1a1465abbd34c333983420f5644f239fd7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_CONTROL_POWERON<sp/><sp/><sp/>(0x03)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="_adafruit___t_s_l2561___u_8h_1aedfdafae91b044746ef8da6bb89b66ec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_CONTROL_POWEROFF<sp/><sp/>(0x00)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="_adafruit___t_s_l2561___u_8h_1a6444753786cd6af180a38fa5a10f6829" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_LUXSCALE<sp/><sp/><sp/><sp/><sp/><sp/>(14)<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Scale<sp/>by<sp/>2^14</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_adafruit___t_s_l2561___u_8h_1a3155eac331a5f5946d097c1bf0cc65b9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_RATIOSCALE<sp/><sp/><sp/><sp/>(9)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Scale<sp/>ratio<sp/>by<sp/>2^9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_adafruit___t_s_l2561___u_8h_1aff6d851aed7d3a64a6ef5f7b99c7d916" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_CHSCALE<sp/><sp/><sp/><sp/><sp/><sp/><sp/>(10)<sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Scale<sp/>channel<sp/>values<sp/>by<sp/>2^10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_adafruit___t_s_l2561___u_8h_1a3d24db000dcaa1f9dfb2e610c19fdce1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_CHSCALE_TINT0<sp/>(0x7517)<sp/><sp/>//<sp/>322/11<sp/>*<sp/>2^TSL2561_LUX_CHSCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_adafruit___t_s_l2561___u_8h_1ab0487a56c1c55f0bb7460895df3e840c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_CHSCALE_TINT1<sp/>(0x0FE7)<sp/><sp/>//<sp/>322/81<sp/>*<sp/>2^TSL2561_LUX_CHSCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//<sp/>T,<sp/>FN<sp/>and<sp/>CL<sp/>package<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_adafruit___t_s_l2561___u_8h_1af60c10ff6e676fad517009d63b46fec3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K1T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0040)<sp/><sp/>//<sp/>0.125<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="_adafruit___t_s_l2561___u_8h_1a5616f586cc9bef37fe8b8d7deac39945" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B1T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01f2)<sp/><sp/>//<sp/>0.0304<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="_adafruit___t_s_l2561___u_8h_1ab613a4b2b8d312667d3f51d121a6a2c0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M1T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01be)<sp/><sp/>//<sp/>0.0272<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="_adafruit___t_s_l2561___u_8h_1a0b3a7f72cd8086ce30c194d4a421aace" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K2T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0080)<sp/><sp/>//<sp/>0.250<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_adafruit___t_s_l2561___u_8h_1ac6e96f5cf30e279a67673dcbdaeb1b30" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B2T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0214)<sp/><sp/>//<sp/>0.0325<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="_adafruit___t_s_l2561___u_8h_1a86ccc9bbd9d4a6108c74ecb0775c141d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M2T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02d1)<sp/><sp/>//<sp/>0.0440<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="_adafruit___t_s_l2561___u_8h_1acd083de11e526ae1e0ac26bbbf81cf65" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K3T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00c0)<sp/><sp/>//<sp/>0.375<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_adafruit___t_s_l2561___u_8h_1a438019626b45bbcdc11fa9d980929ffc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B3T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x023f)<sp/><sp/>//<sp/>0.0351<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_adafruit___t_s_l2561___u_8h_1ac25244168d07b7dbc8ec72b580291a04" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M3T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x037b)<sp/><sp/>//<sp/>0.0544<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_adafruit___t_s_l2561___u_8h_1ae5fd5107304643a7b18d6226e4f6fccb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K4T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0100)<sp/><sp/>//<sp/>0.50<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="_adafruit___t_s_l2561___u_8h_1a942a646c02c386b0fa86a8e1e3676e0c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B4T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0270)<sp/><sp/>//<sp/>0.0381<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="_adafruit___t_s_l2561___u_8h_1a1ec7ad75708aa4f4a7c74fbefeee7664" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M4T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x03fe)<sp/><sp/>//<sp/>0.0624<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="_adafruit___t_s_l2561___u_8h_1aac19bb4ed796e63d7d6b7dffcbfd2e84" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K5T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0138)<sp/><sp/>//<sp/>0.61<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="_adafruit___t_s_l2561___u_8h_1ad87efe789095858d8b2a0be80bb3152f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B5T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x016f)<sp/><sp/>//<sp/>0.0224<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_adafruit___t_s_l2561___u_8h_1a9ad281ceb8ced6e4f1f7194fcc59426b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M5T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01fc)<sp/><sp/>//<sp/>0.0310<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="_adafruit___t_s_l2561___u_8h_1ad8e97f6722bd5b66236437451dd61d73" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K6T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x019a)<sp/><sp/>//<sp/>0.80<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="_adafruit___t_s_l2561___u_8h_1a0d3feafd2d09a8970b0a83eeefc8d6bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B6T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00d2)<sp/><sp/>//<sp/>0.0128<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="_adafruit___t_s_l2561___u_8h_1a24b1fea2c6918d70fc9f145839471fd2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M6T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00fb)<sp/><sp/>//<sp/>0.0153<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="_adafruit___t_s_l2561___u_8h_1a8de4ec79d68cb0d2a0a43c8e6d3596b7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K7T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x029a)<sp/><sp/>//<sp/>1.3<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="_adafruit___t_s_l2561___u_8h_1ae4c0086763efeac75af8fb8d1bdb4994" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B7T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0018)<sp/><sp/>//<sp/>0.00146<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="_adafruit___t_s_l2561___u_8h_1aa2c105ab6187ccdc04218f8181d42778" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M7T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0012)<sp/><sp/>//<sp/>0.00112<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="_adafruit___t_s_l2561___u_8h_1ac80851ebf368258a3caa537201091d22" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K8T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x029a)<sp/><sp/>//<sp/>1.3<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="_adafruit___t_s_l2561___u_8h_1aae101cbba5a5ab9dfb653000516e78b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B8T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0000)<sp/><sp/>//<sp/>0.000<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="_adafruit___t_s_l2561___u_8h_1a0e6cacf4765a8592166ae3eabce341ad" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M8T<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0000)<sp/><sp/>//<sp/>0.000<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CS<sp/>package<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="_adafruit___t_s_l2561___u_8h_1a7c1403a8b01ae12e5ac46420748bc5d0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K1C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0043)<sp/><sp/>//<sp/>0.130<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="_adafruit___t_s_l2561___u_8h_1a26a09c2333ae4002f9e5186a51e13c3a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B1C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0204)<sp/><sp/>//<sp/>0.0315<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="_adafruit___t_s_l2561___u_8h_1a0035c4187dc5a4020502d2e6077b3a6e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M1C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01ad)<sp/><sp/>//<sp/>0.0262<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="_adafruit___t_s_l2561___u_8h_1a1dd248d7cee70249b02fd3fbc9c2fc83" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K2C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0085)<sp/><sp/>//<sp/>0.260<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="_adafruit___t_s_l2561___u_8h_1a9142fa498663b86bee6d4fa0e9c8998e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B2C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0228)<sp/><sp/>//<sp/>0.0337<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="_adafruit___t_s_l2561___u_8h_1a01af6304f4f1e2d1c4506aeda9d9dba8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M2C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x02c1)<sp/><sp/>//<sp/>0.0430<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="_adafruit___t_s_l2561___u_8h_1aa514263b429c3ef8b4a1ffc9ab93a2a2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K3C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x00c8)<sp/><sp/>//<sp/>0.390<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="_adafruit___t_s_l2561___u_8h_1a26ef3863d02561d154b07029fdf38312" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B3C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0253)<sp/><sp/>//<sp/>0.0363<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="_adafruit___t_s_l2561___u_8h_1a8140888d70b84c3f200a0967a2991040" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M3C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0363)<sp/><sp/>//<sp/>0.0529<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="_adafruit___t_s_l2561___u_8h_1a4025d35f7fcad575668f64a4edb58610" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K4C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x010a)<sp/><sp/>//<sp/>0.520<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="_adafruit___t_s_l2561___u_8h_1adce53ed293eb2e1c51701e3f9a8731d5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B4C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0282)<sp/><sp/>//<sp/>0.0392<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="_adafruit___t_s_l2561___u_8h_1af1bdbd5a2b975a060d541a5f9e385e08" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M4C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x03df)<sp/><sp/>//<sp/>0.0605<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="_adafruit___t_s_l2561___u_8h_1a2c96527dfd325b07fe50a6d1e1343021" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K5C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x014d)<sp/><sp/>//<sp/>0.65<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="_adafruit___t_s_l2561___u_8h_1af0e25b511cec1ff5df59d556bb319869" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B5C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0177)<sp/><sp/>//<sp/>0.0229<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="_adafruit___t_s_l2561___u_8h_1a429c5a251540979c2d9267c3d4a1f889" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M5C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x01dd)<sp/><sp/>//<sp/>0.0291<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="_adafruit___t_s_l2561___u_8h_1aa921ba6b888218e3930313026b4fd235" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K6C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x019a)<sp/><sp/>//<sp/>0.80<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="_adafruit___t_s_l2561___u_8h_1a29e287cd8553519649e9b7e2232d3998" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B6C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0101)<sp/><sp/>//<sp/>0.0157<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="_adafruit___t_s_l2561___u_8h_1ad4d33cb4ccff0cd9dd240664fce2ddfa" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M6C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0127)<sp/><sp/>//<sp/>0.0180<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126" refid="_adafruit___t_s_l2561___u_8h_1a40355db7ead547c8084f583c06234a64" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K7C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x029a)<sp/><sp/>//<sp/>1.3<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="_adafruit___t_s_l2561___u_8h_1aa37796e21ef3f12ca9096b5573d85255" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B7C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0037)<sp/><sp/>//<sp/>0.00338<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="_adafruit___t_s_l2561___u_8h_1a379d222dda7323d65c77decde7f49d01" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M7C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x002b)<sp/><sp/>//<sp/>0.00260<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="_adafruit___t_s_l2561___u_8h_1a5eef1a1c3cb41da21ee086d7fc442ff4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_K8C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x029a)<sp/><sp/>//<sp/>1.3<sp/>*<sp/>2^RATIO_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="_adafruit___t_s_l2561___u_8h_1a4df189c4e466003915866b37c940ce09" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_B8C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0000)<sp/><sp/>//<sp/>0.000<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="_adafruit___t_s_l2561___u_8h_1a6c2d68f7ca71f6e253449102203c10a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_LUX_M8C<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(0x0000)<sp/><sp/>//<sp/>0.000<sp/>*<sp/>2^LUX_SCALE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Auto-gain<sp/>thresholds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134" refid="_adafruit___t_s_l2561___u_8h_1a2551f7fe21d9ff00a83b8d91ba501849" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_AGC_THI_13MS<sp/><sp/><sp/><sp/><sp/><sp/>(4850)<sp/><sp/><sp/><sp/>//<sp/>Max<sp/>value<sp/>at<sp/>Ti<sp/>13ms<sp/>=<sp/>5047</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="_adafruit___t_s_l2561___u_8h_1ad48ae4def3af8a974deb2db6375ec61d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_AGC_TLO_13MS<sp/><sp/><sp/><sp/><sp/><sp/>(100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="_adafruit___t_s_l2561___u_8h_1a44597c26c6a0d43c0b6be516bd0b6c76" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_AGC_THI_101MS<sp/><sp/><sp/><sp/><sp/>(36000)<sp/><sp/><sp/>//<sp/>Max<sp/>value<sp/>at<sp/>Ti<sp/>101ms<sp/>=<sp/>37177</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137" refid="_adafruit___t_s_l2561___u_8h_1a1aa7ae9e3509bdbb6bc6b07d85e7629a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_AGC_TLO_101MS<sp/><sp/><sp/><sp/><sp/>(200)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138" refid="_adafruit___t_s_l2561___u_8h_1a4e745b310c6f7bef46e9716f99e5c4ed" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_AGC_THI_402MS<sp/><sp/><sp/><sp/><sp/>(63000)<sp/><sp/><sp/>//<sp/>Max<sp/>value<sp/>at<sp/>Ti<sp/>402ms<sp/>=<sp/>65535</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="_adafruit___t_s_l2561___u_8h_1a9d697726cbdc140a8b335aab7e940c7c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_AGC_TLO_402MS<sp/><sp/><sp/><sp/><sp/>(500)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Clipping<sp/>thresholds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="_adafruit___t_s_l2561___u_8h_1a516453615503a68e3516d50f57176116" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_CLIPPING_13MS<sp/><sp/><sp/><sp/><sp/>(4900)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143" refid="_adafruit___t_s_l2561___u_8h_1a0e1783ebedf5c4a3097be54658d3458f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_CLIPPING_101MS<sp/><sp/><sp/><sp/>(37000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="_adafruit___t_s_l2561___u_8h_1a52ed40f14b2bbfaca4fa2aac9ad674b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TSL2561_CLIPPING_402MS<sp/><sp/><sp/><sp/>(65000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a50f71e4c1ac964fa0ffac246629aee40" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a50f71e4c1ac964fa0ffac246629aee40" kindref="member">TSL2561_REGISTER_CONTROL</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="149" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a3924fa14cb39ddcea2a6a40530e6b9de" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a3924fa14cb39ddcea2a6a40530e6b9de" kindref="member">TSL2561_REGISTER_TIMING</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="150" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a7e8181cb57c30506441628c6be3a409a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a7e8181cb57c30506441628c6be3a409a" kindref="member">TSL2561_REGISTER_THRESHHOLDL_LOW</ref><sp/><sp/>=<sp/>0x02,</highlight></codeline>
+<codeline lineno="151" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a5edeff25758c4543906cc8ae89857a4a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a5edeff25758c4543906cc8ae89857a4a" kindref="member">TSL2561_REGISTER_THRESHHOLDL_HIGH</ref><sp/>=<sp/>0x03,</highlight></codeline>
+<codeline lineno="152" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a8333d864829495d8a150eb5620037881" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a8333d864829495d8a150eb5620037881" kindref="member">TSL2561_REGISTER_THRESHHOLDH_LOW</ref><sp/><sp/>=<sp/>0x04,</highlight></codeline>
+<codeline lineno="153" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8aabe97411358d62ab44de9e8b697d84dc" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8aabe97411358d62ab44de9e8b697d84dc" kindref="member">TSL2561_REGISTER_THRESHHOLDH_HIGH</ref><sp/>=<sp/>0x05,</highlight></codeline>
+<codeline lineno="154" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8af26094abfc9b43bebb72e04f1ef9b449" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8af26094abfc9b43bebb72e04f1ef9b449" kindref="member">TSL2561_REGISTER_INTERRUPT</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x06,</highlight></codeline>
+<codeline lineno="155" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a5c6faa0735dab9acaa415a008554f61a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a5c6faa0735dab9acaa415a008554f61a" kindref="member">TSL2561_REGISTER_CRC</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x08,</highlight></codeline>
+<codeline lineno="156" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a29b3ff1851ca40e5e230e57d576f061f" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a29b3ff1851ca40e5e230e57d576f061f" kindref="member">TSL2561_REGISTER_ID</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0A,</highlight></codeline>
+<codeline lineno="157" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a05d26b8299db5c62242141d9324b4778" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a05d26b8299db5c62242141d9324b4778" kindref="member">TSL2561_REGISTER_CHAN0_LOW</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0C,</highlight></codeline>
+<codeline lineno="158" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a600077a124dc05b77fc1ae716c48b65c" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a600077a124dc05b77fc1ae716c48b65c" kindref="member">TSL2561_REGISTER_CHAN0_HIGH</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0D,</highlight></codeline>
+<codeline lineno="159" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a308ebd12169466773d391219c8f7f399" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a308ebd12169466773d391219c8f7f399" kindref="member">TSL2561_REGISTER_CHAN1_LOW</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0E,</highlight></codeline>
+<codeline lineno="160" refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a2c7c68d5de249239315652f65eca8123" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1ac36f475ca5b446f4fde4c9b90bec77c8a2c7c68d5de249239315652f65eca8123" kindref="member">TSL2561_REGISTER_CHAN1_HIGH</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x0F</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163" refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="165" refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264aa2ac9ab3a9e4918833df40bdb2b3b48c3" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264aa2ac9ab3a9e4918833df40bdb2b3b48c3" kindref="member">TSL2561_INTEGRATIONTIME_13MS</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>13.7ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166" refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264aac276f46523dbc7ea4a885cdda0826db7" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264aac276f46523dbc7ea4a885cdda0826db7" kindref="member">TSL2561_INTEGRATIONTIME_101MS</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x01,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>101ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167" refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264aab8d5aa8b28f2f4acc78eb41cf6a37777" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264aab8d5aa8b28f2f4acc78eb41cf6a37777" kindref="member">TSL2561_INTEGRATIONTIME_402MS</ref><sp/><sp/><sp/><sp/><sp/>=<sp/>0x02<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>402ms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><ref refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264a" kindref="member">tsl2561IntegrationTime_t</ref>;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="173" refid="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0a710ec4a6459d8d6296656db8e7f4fbfe" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0a710ec4a6459d8d6296656db8e7f4fbfe" kindref="member">TSL2561_GAIN_1X</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x00,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>No<sp/>gain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0a0eb86b759f88be07c2d218e4dc2da13d" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0a0eb86b759f88be07c2d218e4dc2da13d" kindref="member">TSL2561_GAIN_16X</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>0x10,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>16x<sp/>gain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><ref refid="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0" kindref="member">tsl2561Gain_t</ref>;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178" refid="class_adafruit___t_s_l2561___unified" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adafruit___t_s_l2561___unified" kindref="compound">Adafruit_TSL2561_Unified</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___sensor" kindref="compound">Adafruit_Sensor</ref><sp/>{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><ref refid="class_adafruit___t_s_l2561___unified_1abd81c1ca2c46e4d8b9c3f4460a65aa3f" kindref="member">Adafruit_TSL2561_Unified</ref>(uint8_t<sp/>addr,<sp/>int32_t<sp/>sensorID<sp/>=<sp/>-1);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_s_l2561___unified_1ac2781d263ae73533628d5844ca38b6de" kindref="member">begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>TSL2561<sp/>Functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_s_l2561___unified_1a9bb93fc9a1af24175c9838cdfe7b8904" kindref="member">enableAutoRange</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>enable);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_s_l2561___unified_1a594636810e6e26dc025b7f1b7a16024f" kindref="member">setIntegrationTime</ref>(<ref refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264a" kindref="member">tsl2561IntegrationTime_t</ref><sp/>time);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_s_l2561___unified_1ad4189a1cb97b07366b5014bec629f29a" kindref="member">setGain</ref>(<ref refid="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0" kindref="member">tsl2561Gain_t</ref><sp/>gain);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_s_l2561___unified_1a23378e7c4792b8b8c721d5a4def960fb" kindref="member">getLuminosity</ref><sp/>(uint16_t<sp/>*broadband,<sp/>uint16_t<sp/>*ir);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="class_adafruit___t_s_l2561___unified_1a5059ebabcbd037d53459ec9f3c6cdc4b" kindref="member">calculateLux</ref>(uint16_t<sp/>broadband,<sp/>uint16_t<sp/>ir);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Unified<sp/>Sensor<sp/>API<sp/>Functions<sp/>*/</highlight><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_s_l2561___unified_1a6a133ea86b7a7158408519214c4d0aef" kindref="member">getEvent</ref>(<ref refid="structsensors__event__t" kindref="compound">sensors_event_t</ref>*);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___t_s_l2561___unified_1a4c8dcb86a371558aba4ddb0a740d9b3c" kindref="member">getSensor</ref>(<ref refid="structsensor__t" kindref="compound">sensor_t</ref>*);</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>int8_t<sp/>_addr;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>_tsl2561Initialised;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>_tsl2561AutoGain;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1a541f87fb512c1fd213e23c3a8b23264a" kindref="member">tsl2561IntegrationTime_t</ref><sp/>_tsl2561IntegrationTime;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><ref refid="_adafruit___t_s_l2561___u_8h_1a8051d9eb664d757f67c0c5ce371cd9d0" kindref="member">tsl2561Gain_t</ref><sp/>_tsl2561Gain;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/>int32_t<sp/>_tsl2561SensorID;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>enable<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>disable<sp/>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>write8<sp/>(uint8_t<sp/>reg,<sp/>uint32_t<sp/>value);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>uint8_t<sp/><sp/>read8<sp/>(uint8_t<sp/>reg);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>uint16_t<sp/>read16<sp/>(uint8_t<sp/>reg);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>getData<sp/>(uint16_t<sp/>*broadband,<sp/>uint16_t<sp/>*ir);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Adafruit_TSL2561-master/Adafruit_TSL2561_U.h"/>
+  </compounddef>
+</doxygen>

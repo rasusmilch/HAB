@@ -57,6 +57,19 @@
 					<Add option="-s" />
 				</Linker>
 			</Target>
+			<Target title="array_value">
+				<Option output="bin/array_value/Weather_Balloon" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="bin/array_value/" />
+				<Option object_output="obj/array_value/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
 			<Environment>
 				<Variable name="MCU" value="atmega2560" />
 			</Environment>

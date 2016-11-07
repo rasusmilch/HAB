@@ -1,0 +1,7 @@
+<map id="LSM9DS1::readMag" name="LSM9DS1::readMag">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#afb45f0bcbcbeb15d4bd1a28821b24d14" title="LSM9DS1::calibrateMag" alt="" coords="180,5,331,32"/>
+<area shape="rect" id="node5" href="$_weather___balloon_8cpp.html#ad40ccf803c2eff76d7e0e7a24c9937ef" title="readSensors" alt="" coords="212,56,299,83"/>
+<area shape="rect" id="node3" href="$_weather___balloon_8cpp.html#a2c2e98945e78daa792b87b30868c3907" title="configure_LSM9DS1" alt="" coords="379,5,509,32"/>
+<area shape="rect" id="node4" href="$_weather___balloon_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="557,5,608,32"/>
+<area shape="rect" id="node6" href="$_weather___balloon_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="421,56,467,83"/>
+</map>

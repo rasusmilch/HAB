@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_SparkFun_MAX17043_README" kind="page">
+    <compoundname>md_Weather_Balloon_library_SparkFun_MAX17043_README</compoundname>
+    <title>SparkFun MAX17043 Particle Library</title>
+    <detaileddescription>
+<para>Firmware library SparkFun&apos;s Photon Battery Shield and the <ref refid="class_m_a_x17043" kindref="compound">MAX17043</ref> Breakout.</para><para><heading level="2">About </heading>
+</para><para>This is a firmware library for <ulink url="https://www.sparkfun.com/products/13626">SparkFun&apos;s Photon Battery Shield</ulink>.</para><para><ulink url="https://www.sparkfun.com/products/13626"></ulink>.</para><para>The <ref refid="class_m_a_x17043" kindref="compound">MAX17043</ref> interfaces between a LiPo battery and a microcontroller. The <ref refid="class_m_a_x17043" kindref="compound">MAX17043</ref> can read a battery&apos;s voltage and, using a sophisticated battery-modelling algorithm, estimate the state of charge (SOC).</para><para><heading level="2">Repository Contents </heading>
+</para><para><itemizedlist>
+<listitem><para>**/doc** - Additional documentation for the user. These files are ignored by the IDE.</para></listitem><listitem><para>**/firmware** - Source files for the library (.cpp, .h).</para></listitem><listitem><para>**/firmware/examples** - Example sketches for the library (.cpp). Run these from the Particle IDE.</para></listitem><listitem><para><bold>spark.json</bold> - General library properties for the Particel library manager.</para></listitem></itemizedlist>
+</para><para><heading level="2">Example Usage </heading>
+</para><para>Include the <ref refid="class_m_a_x17043" kindref="compound">MAX17043</ref> library: <verbatim>#include &quot;SparkFunMAX17043.h&quot; // Include the SparkFun MAX17043 library
+</verbatim></para><para>Then use the <computeroutput>lipo</computeroutput> object to interact with it. Begin by initializing the IC: <verbatim>void setup()
+{
+    // Set up the MAX17043 LiPo fuel gauge:
+    lipo.begin(); // Initialize the MAX17043 LiPo fuel gauge
+
+    // Quick start restarts the MAX17043 in hopes of getting a more accurate
+    // guess for the SOC.
+    lipo.quickStart();
+
+    // We can set an interrupt to alert when the battery SoC gets too low.
+    // We can alert at anywhere between 1% - 32%:
+    lipo.setThreshold(10); // Set alert threshold to 10%.
+}
+</verbatim></para><para>Then you can read the voltage and state-of-charge (SOC) values like this: <verbatim>// lipo.getVoltage() returns a voltage value (e.g. 3.93)
+voltage = lipo.getVoltage();
+// lipo.getSOC() returns the estimated state of charge (e.g. 79%)
+soc = lipo.getSOC();
+</verbatim></para><para>Check out the example files in the <ulink url="https://github.com/sparkfun/SparkFun_MAX17043_Particle_Library/tree/master/firmware/examples">examples directory</ulink> for more guidance.</para><para><heading level="2">Recommended Components </heading>
+</para><para><itemizedlist>
+<listitem><para><ulink url="https://www.sparkfun.com/products/13345">Particle Photon</ulink></para></listitem><listitem><para><ulink url="https://www.sparkfun.com/products/13626">SparkFun Photon Battery Shield</ulink></para></listitem></itemizedlist>
+</para><para><heading level="2">License Information </heading>
+</para><para>This product is _**open source**_!</para><para>Please review the LICENSE.md file for license information.</para><para>If you have any questions or concerns on licensing, please contact <ulink url="mailto:techsupport@sparkfun.com">techsupport@sparkfun.com</ulink>.</para><para>Distributed as-is; no warranty is given.</para><para><itemizedlist>
+<listitem><para>Your friends at SparkFun. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

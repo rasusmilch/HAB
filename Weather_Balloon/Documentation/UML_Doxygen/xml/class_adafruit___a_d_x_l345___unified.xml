@@ -1,0 +1,577 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_adafruit___a_d_x_l345___unified" kind="class" language="C++" prot="public">
+    <compoundname>Adafruit_ADXL345_Unified</compoundname>
+    <basecompoundref refid="class_adafruit___sensor" prot="public" virt="non-virtual">Adafruit_Sensor</basecompoundref>
+    <includes refid="_adafruit___a_d_x_l345___u_8h" local="no">Adafruit_ADXL345_U.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adafruit___a_d_x_l345___unified_1abcec00b328995d0d5e0be587e697d6f3" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t Adafruit_ADXL345_Unified::_sensorID</definition>
+        <argsstring></argsstring>
+        <name>_sensorID</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="132" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___a_d_x_l345___unified_1ae974b1cccac9bcc764a8c0ce95ce9a40" prot="private" static="no" mutable="no">
+        <type><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5b" kindref="member">range_t</ref></type>
+        <definition>range_t Adafruit_ADXL345_Unified::_range</definition>
+        <argsstring></argsstring>
+        <name>_range</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="133" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___a_d_x_l345___unified_1ae8117f671ea96e5d7806fd1f83b98001" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_ADXL345_Unified::_clk</definition>
+        <argsstring></argsstring>
+        <name>_clk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="134" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___a_d_x_l345___unified_1a5e02ac69039f506df96a2e0cd30a638d" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_ADXL345_Unified::_do</definition>
+        <argsstring></argsstring>
+        <name>_do</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="134" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___a_d_x_l345___unified_1a0657629a08a4a1edbd573dab4ad1aee2" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_ADXL345_Unified::_di</definition>
+        <argsstring></argsstring>
+        <name>_di</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="134" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___a_d_x_l345___unified_1af1eb0136c3b467d032002af1585a563a" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_ADXL345_Unified::_cs</definition>
+        <argsstring></argsstring>
+        <name>_cs</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="134" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___a_d_x_l345___unified_1afd05e7641b71fc83e18065f4ec9b1046" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Adafruit_ADXL345_Unified::_i2c</definition>
+        <argsstring></argsstring>
+        <name>_i2c</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="135" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___a_d_x_l345___unified_1ae2064280241446fa2ff04f5007c46887" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Adafruit_ADXL345_Unified::correction</definition>
+        <argsstring></argsstring>
+        <name>correction</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="138" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a34c57b807ceb0636ab79320231e51dd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adafruit_ADXL345_Unified::Adafruit_ADXL345_Unified</definition>
+        <argsstring>(int32_t sensorID=-1)</argsstring>
+        <name>Adafruit_ADXL345_Unified</name>
+        <param>
+          <type>int32_t</type>
+          <declname>sensorID</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Instantiates a new ADXL345 class. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="108" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="183" bodyend="188"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5ba444aa38d83d28043ebfcf0ea6459296f" compoundref="_adafruit___a_d_x_l345___u_8h" startline="103">ADXL345_RANGE_2_G</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a7e0409063a7441c35044902b947d661d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adafruit_ADXL345_Unified::Adafruit_ADXL345_Unified</definition>
+        <argsstring>(uint8_t clock, uint8_t miso, uint8_t mosi, uint8_t cs, int32_t sensorID=-1)</argsstring>
+        <name>Adafruit_ADXL345_Unified</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>clock</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>miso</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mosi</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>cs</declname>
+        </param>
+        <param>
+          <type>int32_t</type>
+          <declname>sensorID</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+<para>Instantiates a new ADXL345 class in SPI mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="109" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="195" bodyend="203"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5ba444aa38d83d28043ebfcf0ea6459296f" compoundref="_adafruit___a_d_x_l345___u_8h" startline="103">ADXL345_RANGE_2_G</references>
+        <references refid="_weather___balloon_8cpp_1a65f172682710866247eacb1ef68df619" compoundref="_weather___balloon_8cpp" startline="413">clock</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a55b74a63bbb1317228d5bb5905589a02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Adafruit_ADXL345_Unified::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Setups the HW (reads coefficients values, etc.) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="111" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="210" bodyend="235"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1aa8b343258a85689467d33fb6e7a92d18" compoundref="_adafruit___a_d_x_l345___u_8h" startline="55">ADXL345_REG_POWER_CTL</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1acf54ca46aa7e6a613807f489711a8ceb" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="146" endline="149">getDeviceID</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1a8f6b9e9598618fc0cf221c4b62f924d9" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="83" endline="95">writeRegister</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1ad722e964df59c7691b1666472940aa99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_ADXL345_Unified::setRange</definition>
+        <argsstring>(range_t range)</argsstring>
+        <name>setRange</name>
+        <param>
+          <type><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5b" kindref="member">range_t</ref></type>
+          <declname>range</declname>
+        </param>
+        <briefdescription>
+<para>Sets the g range for the accelerometer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="112" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="242" bodyend="259"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a599ba3e5ed5a1ff931b9b268590a54a3" compoundref="_adafruit___a_d_x_l345___u_8h" startline="59">ADXL345_REG_DATA_FORMAT</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1ab56b668f36793605d7be009a7efb74e8" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="102" endline="117">readRegister</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1a8f6b9e9598618fc0cf221c4b62f924d9" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="83" endline="95">writeRegister</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1adcdcd1ddcd58af6b1d4f85f9ab30d7a4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_adafruit___a_d_x_l345___u_8h_1a23c78f6ff1abdabd74f657e54e415e5b" kindref="member">range_t</ref></type>
+        <definition>range_t Adafruit_ADXL345_Unified::getRange</definition>
+        <argsstring>(void)</argsstring>
+        <name>getRange</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Sets the g range for the accelerometer. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="113" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="266" bodyend="270"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a599ba3e5ed5a1ff931b9b268590a54a3" compoundref="_adafruit___a_d_x_l345___u_8h" startline="59">ADXL345_REG_DATA_FORMAT</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1ab56b668f36793605d7be009a7efb74e8" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="102" endline="117">readRegister</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a8e837a3e456e5e17839447bbf65f76bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_ADXL345_Unified::setDataRate</definition>
+        <argsstring>(dataRate_t dataRate)</argsstring>
+        <name>setDataRate</name>
+        <param>
+          <type><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0a" kindref="member">dataRate_t</ref></type>
+          <declname>dataRate</declname>
+        </param>
+        <briefdescription>
+<para>Sets the data rate for the ADXL345 (controls power consumption) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="114" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="277" bodyend="282"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a51ce19e9e208c52fb41348c472b428ab" compoundref="_adafruit___a_d_x_l345___u_8h" startline="54">ADXL345_REG_BW_RATE</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1a8f6b9e9598618fc0cf221c4b62f924d9" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="83" endline="95">writeRegister</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a3b8ae7da9a66e28b38b70a08c5646b02" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_adafruit___a_d_x_l345___u_8h_1a7b8465343401971414c6cc2581f28b0a" kindref="member">dataRate_t</ref></type>
+        <definition>dataRate_t Adafruit_ADXL345_Unified::getDataRate</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDataRate</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the data rate for the ADXL345 (controls power consumption) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="115" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="289" bodyend="292"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a51ce19e9e208c52fb41348c472b428ab" compoundref="_adafruit___a_d_x_l345___u_8h" startline="54">ADXL345_REG_BW_RATE</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1ab56b668f36793605d7be009a7efb74e8" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="102" endline="117">readRegister</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a830e4a9d1729310c9cf0d0504b3d0229" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>bool</type>
+        <definition>bool Adafruit_ADXL345_Unified::getEvent</definition>
+        <argsstring>(sensors_event_t *)</argsstring>
+        <name>getEvent</name>
+        <reimplements refid="class_adafruit___sensor_1a0636562b9bc853b796ecc87b5d4b1bec">getEvent</reimplements>
+        <param>
+          <type><ref refid="structsensors__event__t" kindref="compound">sensors_event_t</ref> *</type>
+          <defname>event</defname>
+        </param>
+        <briefdescription>
+<para>Gets the most recent sensor event. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="116" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="299" bodyend="312"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a2dfb2c434a6255167c79af6c06eebc53" compoundref="_adafruit___a_d_x_l345___u_8h" startline="73">ADXL345_MG2G_MULTIPLIER</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1a5ad11ba3d12aa4f4aaaec38b3400fa6f" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="156" endline="158">getX</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1ac745aefc2a66094a9c46115564939610" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="165" endline="167">getY</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1ae61417ef16d19ff86ecd82efc14e960b" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="174" endline="176">getZ</references>
+        <references refid="_adafruit___sensor_8h_1af0bc43b5dae696582a77176e6e4ff643abd9779b04292b5e8054485b10fccb99c" compoundref="_adafruit___sensor_8h" startline="47">SENSOR_TYPE_ACCELEROMETER</references>
+        <references refid="_adafruit___sensor_8h_1ab70b42e9de016c42388ff5d293b75712" compoundref="_adafruit___sensor_8h" startline="37">SENSORS_GRAVITY_STANDARD</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1ac53068bb82bd03fc492542b468a30478" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>void</type>
+        <definition>void Adafruit_ADXL345_Unified::getSensor</definition>
+        <argsstring>(sensor_t *)</argsstring>
+        <name>getSensor</name>
+        <reimplements refid="class_adafruit___sensor_1a19e844c1eb2dc37cb72705d5572c4676">getSensor</reimplements>
+        <param>
+          <type><ref refid="structsensor__t" kindref="compound">sensor_t</ref> *</type>
+          <defname>sensor</defname>
+        </param>
+        <briefdescription>
+<para>Gets the <ref refid="structsensor__t" kindref="compound">sensor_t</ref> data. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="117" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="319" bodyend="333"/>
+        <references refid="structsensor__t_1a1a17359f1080eb169a452656f7dec1ee" compoundref="_adafruit___sensor_8h" startline="133">sensor_t::max_value</references>
+        <references refid="structsensor__t_1a1cd271377ff25ec9ca54886f876c87ec" compoundref="_adafruit___sensor_8h" startline="136">sensor_t::min_delay</references>
+        <references refid="structsensor__t_1a4556ed82a0389a7f6af25a6fd0ee1431" compoundref="_adafruit___sensor_8h" startline="134">sensor_t::min_value</references>
+        <references refid="structsensor__t_1a4383b68d36f9dc4096d83583c3b009bf" compoundref="_adafruit___sensor_8h" startline="129">sensor_t::name</references>
+        <references refid="structsensor__t_1a926aba3216afd50e62c0a6cdbcc7433a" compoundref="_adafruit___sensor_8h" startline="135">sensor_t::resolution</references>
+        <references refid="structsensor__t_1a224f6201d59873cc1b6e9dd8a1894736" compoundref="_adafruit___sensor_8h" startline="131">sensor_t::sensor_id</references>
+        <references refid="_adafruit___sensor_8h_1af0bc43b5dae696582a77176e6e4ff643a81634a16935829065d399d686c44ad86" compoundref="_adafruit___sensor_8h" startline="52">SENSOR_TYPE_PRESSURE</references>
+        <references refid="structsensor__t_1ae1d59df64438923d3bd95f2416c32203" compoundref="_adafruit___sensor_8h" startline="132">sensor_t::type</references>
+        <references refid="structsensor__t_1a274f12a47669fbd2b61935706339e1c2" compoundref="_adafruit___sensor_8h" startline="130">sensor_t::version</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1acf54ca46aa7e6a613807f489711a8ceb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_ADXL345_Unified::getDeviceID</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDeviceID</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Read the device ID (can be used to check connection) </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="119" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="146" bodyend="149"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a29b5a30a1bc0cbaaf3f052eaab713ecb" compoundref="_adafruit___a_d_x_l345___u_8h" startline="38">ADXL345_REG_DEVID</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1ab56b668f36793605d7be009a7efb74e8" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="102" endline="117">readRegister</references>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a55b74a63bbb1317228d5bb5905589a02" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="210" endline="235">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a8f6b9e9598618fc0cf221c4b62f924d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_ADXL345_Unified::writeRegister</definition>
+        <argsstring>(uint8_t reg, uint8_t value)</argsstring>
+        <name>writeRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+<para>Writes 8-bits to the specified destination register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="120" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="83" bodyend="95"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1acebdef7f400bcadad0131b0e4918ff00" compoundref="_adafruit___a_d_x_l345___u_8h" startline="32">ADXL345_ADDRESS</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a55b74a63bbb1317228d5bb5905589a02" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="210" endline="235">begin</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a8e837a3e456e5e17839447bbf65f76bd" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="277" endline="282">setDataRate</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1ad722e964df59c7691b1666472940aa99" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="242" endline="259">setRange</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1ab56b668f36793605d7be009a7efb74e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_ADXL345_Unified::readRegister</definition>
+        <argsstring>(uint8_t reg)</argsstring>
+        <name>readRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+<para>Reads 8-bits from the specified register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="121" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="102" bodyend="117"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1acebdef7f400bcadad0131b0e4918ff00" compoundref="_adafruit___a_d_x_l345___u_8h" startline="32">ADXL345_ADDRESS</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a3b8ae7da9a66e28b38b70a08c5646b02" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="289" endline="292">getDataRate</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1acf54ca46aa7e6a613807f489711a8ceb" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="146" endline="149">getDeviceID</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1adcdcd1ddcd58af6b1d4f85f9ab30d7a4" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="266" endline="270">getRange</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1ad722e964df59c7691b1666472940aa99" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="242" endline="259">setRange</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a62c1c34b81fdcb7825d7c9911fba988b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Adafruit_ADXL345_Unified::read16</definition>
+        <argsstring>(uint8_t reg)</argsstring>
+        <name>read16</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+<para>Reads 16-bits from the specified register. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="122" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="124" bodyend="139"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1acebdef7f400bcadad0131b0e4918ff00" compoundref="_adafruit___a_d_x_l345___u_8h" startline="32">ADXL345_ADDRESS</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a5ad11ba3d12aa4f4aaaec38b3400fa6f" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="156" endline="158">getX</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1ac745aefc2a66094a9c46115564939610" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="165" endline="167">getY</referencedby>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1ae61417ef16d19ff86ecd82efc14e960b" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="174" endline="176">getZ</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a5ad11ba3d12aa4f4aaaec38b3400fa6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Adafruit_ADXL345_Unified::getX</definition>
+        <argsstring>(void)</argsstring>
+        <name>getX</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the most recent X axis value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="124" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="156" bodyend="158"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1ad357e2d6384df108aab1cffc6dc32782" compoundref="_adafruit___a_d_x_l345___u_8h" startline="60">ADXL345_REG_DATAX0</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1a62c1c34b81fdcb7825d7c9911fba988b" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="124" endline="139">read16</references>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a830e4a9d1729310c9cf0d0504b3d0229" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="299" endline="312">getEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1ac745aefc2a66094a9c46115564939610" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Adafruit_ADXL345_Unified::getY</definition>
+        <argsstring>(void)</argsstring>
+        <name>getY</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the most recent Y axis value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="124" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="165" bodyend="167"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a5a6c961c3b5573ff25525b47941fd8b9" compoundref="_adafruit___a_d_x_l345___u_8h" startline="62">ADXL345_REG_DATAY0</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1a62c1c34b81fdcb7825d7c9911fba988b" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="124" endline="139">read16</references>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a830e4a9d1729310c9cf0d0504b3d0229" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="299" endline="312">getEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1ae61417ef16d19ff86ecd82efc14e960b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t Adafruit_ADXL345_Unified::getZ</definition>
+        <argsstring>(void)</argsstring>
+        <name>getZ</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Gets the most recent Z axis value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="124" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="174" bodyend="176"/>
+        <references refid="_adafruit___a_d_x_l345___u_8h_1a7e8957c91c0f9992a389968510eb0a75" compoundref="_adafruit___a_d_x_l345___u_8h" startline="64">ADXL345_REG_DATAZ0</references>
+        <references refid="class_adafruit___a_d_x_l345___unified_1a62c1c34b81fdcb7825d7c9911fba988b" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="124" endline="139">read16</references>
+        <referencedby refid="class_adafruit___a_d_x_l345___unified_1a830e4a9d1729310c9cf0d0504b3d0229" compoundref="_adafruit___a_d_x_l345___u_8cpp" startline="299" endline="312">getEvent</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a812faf0e78b3f34a7dfe2fc701baedd7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_ADXL345_Unified::setCorrection</definition>
+        <argsstring>(double)</argsstring>
+        <name>setCorrection</name>
+        <param>
+          <type>double</type>
+          <defname>correction_value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="125" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="335" bodyend="337"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1af89bc764dd643002610f3a7d858d04c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_ADXL345_Unified::i2cread</definition>
+        <argsstring>(void)</argsstring>
+        <name>i2cread</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+<para>Abstract away platform differences in Arduino wire library. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="129" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="39" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___a_d_x_l345___unified_1a3fd048381f5a1d6f2e717049052aa4e0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_ADXL345_Unified::i2cwrite</definition>
+        <argsstring>(uint8_t x)</argsstring>
+        <name>i2cwrite</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+<para>Abstract away platform differences in Arduino wire library. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="130" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.cpp" bodystart="52" bodyend="58"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="238">
+        <label>Adafruit_Sensor</label>
+        <link refid="class_adafruit___sensor"/>
+      </node>
+      <node id="237">
+        <label>Adafruit_ADXL345_Unified</label>
+        <link refid="class_adafruit___a_d_x_l345___unified"/>
+        <childnode refid="238" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="240">
+        <label>Adafruit_Sensor</label>
+        <link refid="class_adafruit___sensor"/>
+      </node>
+      <node id="239">
+        <label>Adafruit_ADXL345_Unified</label>
+        <link refid="class_adafruit___a_d_x_l345___unified"/>
+        <childnode refid="240" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" line="106" column="1" bodyfile="Weather_Balloon/library/Adafruit_ADXL345-master/Adafruit_ADXL345_U.h" bodystart="106" bodyend="139"/>
+    <listofallmembers>
+      <member refid="class_adafruit___a_d_x_l345___unified_1ae8117f671ea96e5d7806fd1f83b98001" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>_clk</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1af1eb0136c3b467d032002af1585a563a" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>_cs</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a0657629a08a4a1edbd573dab4ad1aee2" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>_di</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a5e02ac69039f506df96a2e0cd30a638d" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>_do</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1afd05e7641b71fc83e18065f4ec9b1046" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>_i2c</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1ae974b1cccac9bcc764a8c0ce95ce9a40" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>_range</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1abcec00b328995d0d5e0be587e697d6f3" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>_sensorID</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a34c57b807ceb0636ab79320231e51dd6" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>Adafruit_ADXL345_Unified</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a7e0409063a7441c35044902b947d661d" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>Adafruit_ADXL345_Unified</name></member>
+      <member refid="class_adafruit___sensor_1a1d06c6f2b9d014894f47102fc1effddf" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>Adafruit_Sensor</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a55b74a63bbb1317228d5bb5905589a02" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>begin</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1ae2064280241446fa2ff04f5007c46887" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>correction</name></member>
+      <member refid="class_adafruit___sensor_1ace6c1f26eeb956f95801b9fc1841f3a0" prot="public" virt="virtual"><scope>Adafruit_ADXL345_Unified</scope><name>enableAutoRange</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a3b8ae7da9a66e28b38b70a08c5646b02" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>getDataRate</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1acf54ca46aa7e6a613807f489711a8ceb" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>getDeviceID</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a830e4a9d1729310c9cf0d0504b3d0229" prot="public" virt="virtual"><scope>Adafruit_ADXL345_Unified</scope><name>getEvent</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1adcdcd1ddcd58af6b1d4f85f9ab30d7a4" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>getRange</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1ac53068bb82bd03fc492542b468a30478" prot="public" virt="virtual"><scope>Adafruit_ADXL345_Unified</scope><name>getSensor</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a5ad11ba3d12aa4f4aaaec38b3400fa6f" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>getX</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1ac745aefc2a66094a9c46115564939610" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>getY</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1ae61417ef16d19ff86ecd82efc14e960b" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>getZ</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1af89bc764dd643002610f3a7d858d04c0" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>i2cread</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a3fd048381f5a1d6f2e717049052aa4e0" prot="private" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>i2cwrite</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a62c1c34b81fdcb7825d7c9911fba988b" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>read16</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1ab56b668f36793605d7be009a7efb74e8" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>readRegister</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a812faf0e78b3f34a7dfe2fc701baedd7" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>setCorrection</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a8e837a3e456e5e17839447bbf65f76bd" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>setDataRate</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1ad722e964df59c7691b1666472940aa99" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>setRange</name></member>
+      <member refid="class_adafruit___a_d_x_l345___unified_1a8f6b9e9598618fc0cf221c4b62f924d9" prot="public" virt="non-virtual"><scope>Adafruit_ADXL345_Unified</scope><name>writeRegister</name></member>
+      <member refid="class_adafruit___sensor_1ac98df73e0cd9367a226b96668417e2e6" prot="public" virt="virtual"><scope>Adafruit_ADXL345_Unified</scope><name>~Adafruit_Sensor</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

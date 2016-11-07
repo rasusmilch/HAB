@@ -1,0 +1,70 @@
+\hyperlink{class_d_s3231}{D\+S3231} Real-\/\+Time Clock.
+
+
+
+\subsection*{Date formats (Day) }
+
+
+\begin{DoxyItemize}
+\item d \+: Day of the month, 2 digits with leading zeros (01 to 31)
+\item D \+: A textual representation of a day, three letters (Mon through Sun)
+\item j \+: Day of the month without leading zeros (1 to 31)
+\item l \+: A full textual representation of the day of the week (Sunday through Saturday)
+\item N \+: I\+S\+O-\/8601 numeric representation of the day of the week (1 for Monday through 7 for Sunday)
+\item S \+: English ordinal suffix for the day of the month, 2 characters (st, nd, rd or th. Works well with j)
+\item w \+: Numeric representation of the day of the week (0 for Sunday through 6 for Saturday)
+\item z \+: The day of the year (0 through 365)
+\end{DoxyItemize}
+
+\subsection*{Date formats (Month) }
+
+
+\begin{DoxyItemize}
+\item F \+: A full textual representation of a month, such as January or March (January through December)
+\item m \+: Numeric representation of a month, with leading zeros (01 through 12)
+\item M \+: A short textual representation of a month, three letters (Jan through Dec)
+\item n \+: Numeric representation of a month, without leading zeros (1 through 12)
+\item t \+: Number of days in the given month (28 through 31)
+\end{DoxyItemize}
+
+\subsection*{Date formats (Year) }
+
+
+\begin{DoxyItemize}
+\item L \+: Whether it\textquotesingle{}s a leap year (1 if it is a leap year, 0 otherwise)
+\item Y \+: A full numeric representation of a year, 4 digits (Examples\+: 1999 or 2003)
+\item y \+: A two digit representation of a year (Examples\+: 99 or 03)
+\end{DoxyItemize}
+
+\subsection*{Date formats (Time) }
+
+
+\begin{DoxyItemize}
+\item a \+: Lowercase Ante meridiem and Post meridiem (am or pm)
+\item A \+: Uppercase Ante meridiem and Post meridiem (AM or PM)
+\item g \+: 2-\/hour format of an hour without leading zeros (1 through 12)
+\item G \+: 24-\/hour format of an hour without leading zeros (0 through 23)
+\item h \+: 12-\/hour format of an hour with leading zeros (01 through 12)
+\item H \+: 24-\/hour format of an hour with leading zeros (00 through 23)
+\item i \+: Minutes with leading zeros (00 to 59)
+\item s \+: Seconds, with leading zeros (00 through 59)
+\end{DoxyItemize}
+
+\subsection*{Dare formats (Full Date/\+Time) }
+
+
+\begin{DoxyItemize}
+\item U \+: Seconds since the Unix Epoch (January 1 1970 00\+:00\+:00 G\+MT)
+\end{DoxyItemize}
+
+\subsection*{More info }
+
+Tutorials\+: www.\+jarzebski.\+pl/arduino/komponenty/zegar-\/czasu-\/rzeczywistego-\/rtc-\/ds3231.html
+
+This library use I2C to communicate, 2 pins are required to interface.
+
+\subsection*{Credits }
+
+Original Code by Jee\+Labs \href{http://news.jeelabs.org/code/}{\tt http\+://news.\+jeelabs.\+org/code/}
+
+First fork by adafruit \href{https://github.com/adafruit/RTClib}{\tt https\+://github.\+com/adafruit/\+R\+T\+Clib} 

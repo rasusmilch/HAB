@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_arduino-_temperature-_control-_library_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Arduino<sp/>Library<sp/>for<sp/>Maxim<sp/>Temperature<sp/>Integrated<sp/>Circuits</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Usage</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>library<sp/>supports<sp/>the<sp/>following<sp/>devices<sp/>:</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>DS18B20</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>DS18S20<sp/>-<sp/>Please<sp/>note<sp/>there<sp/>appears<sp/>to<sp/>be<sp/>an<sp/>issue<sp/>with<sp/>this<sp/>series.</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>DS1822</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>DS1820</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>will<sp/>need<sp/>a<sp/>pull-up<sp/>resistor<sp/>of<sp/>about<sp/>5<sp/>KOhm<sp/>between<sp/>the<sp/>1-Wire<sp/>data<sp/>line</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>your<sp/>5V<sp/>power.<sp/>If<sp/>you<sp/>are<sp/>using<sp/>the<sp/>DS18B20,<sp/>ground<sp/>pins<sp/>1<sp/>and<sp/>3.<sp/>The</highlight></codeline>
+<codeline><highlight class="normal">centre<sp/>pin<sp/>is<sp/>the<sp/>data<sp/>line<sp/>&apos;1-wire&apos;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">We<sp/>have<sp/>included<sp/>a<sp/>&quot;REQUIRESNEW&quot;<sp/>and<sp/>&quot;REQUIRESALARMS&quot;<sp/>definition.<sp/>If<sp/>you<sp/></highlight></codeline>
+<codeline><highlight class="normal">want<sp/>to<sp/>slim<sp/>down<sp/>the<sp/>code<sp/>feel<sp/>free<sp/>to<sp/>use<sp/>either<sp/>of<sp/>these<sp/>by<sp/>including</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#define<sp/>REQUIRESNEW<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">or<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#define<sp/>REQUIRESALARMS</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">at<sp/>the<sp/>top<sp/>of<sp/>DallasTemperature.h</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Credits</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>OneWire<sp/>code<sp/>has<sp/>been<sp/>derived<sp/>from</highlight></codeline>
+<codeline><highlight class="normal">http://www.arduino.cc/playground/Learning/OneWire.</highlight></codeline>
+<codeline><highlight class="normal">Miles<sp/>Burton<sp/>&lt;miles@mnetcs.com&gt;<sp/>originally<sp/>developed<sp/>this<sp/>library.</highlight></codeline>
+<codeline><highlight class="normal">Tim<sp/>Newsome<sp/>&lt;nuisance@casualhacker.net&gt;<sp/>added<sp/>support<sp/>for<sp/>multiple<sp/>sensors<sp/>on</highlight></codeline>
+<codeline><highlight class="normal">the<sp/>same<sp/>bus.</highlight></codeline>
+<codeline><highlight class="normal">Guil<sp/>Barros<sp/>[gfbarros@bappos.com]<sp/>added<sp/>getTempByAddress<sp/>(v3.5)</highlight></codeline>
+<codeline><highlight class="normal">Rob<sp/>Tillaart<sp/>[rob.tillaart@gmail.com]<sp/>added<sp/>async<sp/>modus<sp/>(v3.7.0)</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Website</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>can<sp/>find<sp/>the<sp/>latest<sp/>version<sp/>of<sp/>the<sp/>library<sp/>at</highlight></codeline>
+<codeline><highlight class="normal">http://milesburton.com/index.php?title=Dallas_Temperature_Control_Library</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">#<sp/>License</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline><highlight class="normal">modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline><highlight class="normal">License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline><highlight class="normal">version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline><highlight class="normal">but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline><highlight class="normal">MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline><highlight class="normal">Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline><highlight class="normal">License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline><highlight class="normal">Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/><sp/>02110-1301<sp/><sp/>USA</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/README.md"/>
+  </compounddef>
+</doxygen>

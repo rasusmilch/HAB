@@ -1,0 +1,594 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_a_x25_8cpp" kind="file" language="C++">
+    <compoundname>AX25.cpp</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes local="no">string.h</includes>
+    <includes local="no">ctype.h</includes>
+    <includes refid="_a_x25_8h" local="yes">AX25.h</includes>
+    <includes refid="_h_d_l_c_8h" local="yes">HDLC.h</includes>
+    <includes refid="_c_r_c-_c_c_i_t_8h" local="yes">CRC-CCIT.h</includes>
+    <includes refid="_a_f_s_k_8h" local="yes">AFSK.h</includes>
+    <incdepgraph>
+      <node id="1039">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1044">
+        <label>stdint.h</label>
+      </node>
+      <node id="1043">
+        <label>CRC-CCIT.h</label>
+        <link refid="_c_r_c-_c_c_i_t_8h"/>
+        <childnode refid="1044" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+      </node>
+      <node id="1047">
+        <label>FIFO.h</label>
+        <link refid="_f_i_f_o_8h"/>
+        <childnode refid="1048" relation="include">
+        </childnode>
+        <childnode refid="1049" relation="include">
+        </childnode>
+      </node>
+      <node id="1042">
+        <label>HDLC.h</label>
+        <link refid="_h_d_l_c_8h"/>
+      </node>
+      <node id="1048">
+        <label>stddef.h</label>
+      </node>
+      <node id="1049">
+        <label>util/atomic.h</label>
+      </node>
+      <node id="1037">
+        <label>AX25.h</label>
+        <link refid="_a_x25_8h"/>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1040" relation="include">
+        </childnode>
+      </node>
+      <node id="1046">
+        <label>AFSK.h</label>
+        <link refid="_a_f_s_k_8h"/>
+        <childnode refid="1040" relation="include">
+        </childnode>
+        <childnode refid="1044" relation="include">
+        </childnode>
+        <childnode refid="1039" relation="include">
+        </childnode>
+        <childnode refid="1038" relation="include">
+        </childnode>
+        <childnode refid="1045" relation="include">
+        </childnode>
+        <childnode refid="1047" relation="include">
+        </childnode>
+        <childnode refid="1042" relation="include">
+        </childnode>
+      </node>
+      <node id="1033">
+        <label>Weather_Balloon/library/LibAPRS/AX25.cpp</label>
+        <link refid="AX25.cpp"/>
+        <childnode refid="1034" relation="include">
+        </childnode>
+        <childnode refid="1035" relation="include">
+        </childnode>
+        <childnode refid="1036" relation="include">
+        </childnode>
+        <childnode refid="1037" relation="include">
+        </childnode>
+        <childnode refid="1042" relation="include">
+        </childnode>
+        <childnode refid="1043" relation="include">
+        </childnode>
+        <childnode refid="1046" relation="include">
+        </childnode>
+      </node>
+      <node id="1035">
+        <label>string.h</label>
+      </node>
+      <node id="1041">
+        <label>constants.h</label>
+        <link refid="constants_8h"/>
+      </node>
+      <node id="1045">
+        <label>avr/pgmspace.h</label>
+      </node>
+      <node id="1034">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1036">
+        <label>ctype.h</label>
+      </node>
+      <node id="1038">
+        <label>stdio.h</label>
+      </node>
+      <node id="1040">
+        <label>device.h</label>
+        <link refid="device_8h"/>
+        <childnode refid="1041" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_a_x25_8cpp_1a3c5cd622462bb50b6dab4c189e219eb9" prot="public" static="no">
+        <name>countof</name>
+        <param><defname>a</defname></param>
+        <initializer>sizeof(a)/sizeof(a[0])</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="11" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_x25_8cpp_1a3acffbd305ee72dcd4593c0d8af64a4f" prot="public" static="no">
+        <name>MIN</name>
+        <param><defname>a</defname></param>
+        <param><defname>b</defname></param>
+        <initializer>({ typeof(a) _a = (a); typeof(b) _b = (b); ((typeof(_a))((_a &lt; _b) ? _a : _b)); })</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="12" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_x25_8cpp_1a9811a94def98591b5b05aa6491bbcfef" prot="public" static="no">
+        <name>DECODE_CALL</name>
+        <param><defname>buf</defname></param>
+        <param><defname>addr</defname></param>
+        <initializer>for (unsigned <ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref> = 0; <ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref> &lt; sizeof((addr))-<ref refid="_a_x25_8h_1a52717a0e06746d47ce30bc51123ff655" kindref="member">CALL_OVERSPACE</ref>; <ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++) { char c = (*(buf)++ &gt;&gt; 1); (addr)[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>] = (c == &apos; &apos;) ? &apos;\x0&apos; : c; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="13" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_x25_8cpp_1ae3bbef27f5837cc521995314afbf622b" prot="public" static="no">
+        <name>AX25_SET_REPEATED</name>
+        <param><defname>msg</defname></param>
+        <param><defname>idx</defname></param>
+        <param><defname>val</defname></param>
+        <initializer>do { if (val) { (msg)-&gt;rpt_flags |= _BV(idx); } else { (msg)-&gt;rpt_flags &amp;= ~_BV(idx) ; } } while(0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="14" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_a_x25_8cpp_1a2986d8cf0562c17f61a0e69f0548b54d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LibAPRS_vref</definition>
+        <argsstring></argsstring>
+        <name>LibAPRS_vref</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="16" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="10" bodyend="-1"/>
+        <referencedby refid="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" compoundref="_lib_a_p_r_s_8cpp" startline="54" endline="60">APRS_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_a_x25_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LibAPRS_open_squelch</definition>
+        <argsstring></argsstring>
+        <name>LibAPRS_open_squelch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="17" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="11" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" compoundref="_lib_a_p_r_s_8cpp" startline="54" endline="60">APRS_init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_a_x25_8cpp_1a23e83c05decc0769bfd8f62d860bc636" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ax25_init</definition>
+        <argsstring>(AX25Ctx *ctx, ax25_callback_t hook)</argsstring>
+        <name>ax25_init</name>
+        <param>
+          <type><ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type><ref refid="_a_x25_8h_1a15689cdcc5425113afb9b0588d76c273" kindref="member">ax25_callback_t</ref></type>
+          <declname>hook</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="19" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="19" bodyend="23"/>
+        <references refid="struct_a_x25_ctx_1aaf4149ca8e0ac15cb846f57b5a2056cd" compoundref="_a_x25_8h" startline="31">AX25Ctx::hook</references>
+        <references refid="struct_a_x25_ctx_1acba5c6c48b277cd5520a4060abac3a63" compoundref="_a_x25_8h" startline="29">AX25Ctx::crc_in</references>
+        <references refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" compoundref="_a_x25_8h" startline="30">AX25Ctx::crc_out</references>
+        <references refid="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" compoundref="_c_r_c-_c_c_i_t_8h" startline="9">CRC_CCIT_INIT_VAL</references>
+        <references refid="struct_a_x25_ctx_1aa1dc2643a8179b3a662cbe8b1e78433e" compoundref="_a_x25_8h" startline="26">AX25Ctx::buf</references>
+        <references refid="_a_x25_8cpp_1a9811a94def98591b5b05aa6491bbcfef" compoundref="_a_x25_8cpp" startline="13">DECODE_CALL</references>
+        <references refid="struct_a_x25_msg_1a38dc18966290b4f8cb24651e9e75ef66" compoundref="_a_x25_8h" startline="51">AX25Msg::dst</references>
+        <references refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" compoundref="_a_x25_8h" startline="44">AX25Call::call</references>
+        <references refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" compoundref="_a_x25_8h" startline="46">AX25Call::ssid</references>
+        <references refid="struct_a_x25_msg_1a1f0571ab6f708e1725ad9a8be8e6b28a" compoundref="_a_x25_8h" startline="50">AX25Msg::src</references>
+        <references refid="struct_a_x25_msg_1ab4a4b29611190548f3cba0c0f4969f24" compoundref="_a_x25_8h" startline="53">AX25Msg::rpt_count</references>
+        <references refid="_a_x25_8cpp_1a3c5cd622462bb50b6dab4c189e219eb9" compoundref="_a_x25_8cpp" startline="11">countof</references>
+        <references refid="struct_a_x25_msg_1aca3c075fa9ad0af3cea5c850153e7b83" compoundref="_a_x25_8h" startline="52">AX25Msg::rpt_list</references>
+        <references refid="_a_x25_8cpp_1ae3bbef27f5837cc521995314afbf622b" compoundref="_a_x25_8cpp" startline="14">AX25_SET_REPEATED</references>
+        <references refid="struct_a_x25_msg_1a375105fdcb83cb525082d8dbc22c2d33" compoundref="_a_x25_8h" startline="55">AX25Msg::ctrl</references>
+        <references refid="_a_x25_8h_1a814fed3e2218ff674eb8866493379c66" compoundref="_a_x25_8h" startline="17">AX25_CTRL_UI</references>
+        <references refid="struct_a_x25_msg_1ae2e8532da38c1a6fac980377ab9b494b" compoundref="_a_x25_8h" startline="56">AX25Msg::pid</references>
+        <references refid="_a_x25_8h_1a88892802325a651f80dcc1c7947ad2eb" compoundref="_a_x25_8h" startline="18">AX25_PID_NOLAYER3</references>
+        <references refid="struct_a_x25_msg_1a45b0f4c6c77aec02cd647b51e0f736e1" compoundref="_a_x25_8h" startline="58">AX25Msg::len</references>
+        <references refid="struct_a_x25_ctx_1a4863474d8ded80b51d5cc1c2aff9f840" compoundref="_a_x25_8h" startline="28">AX25Ctx::frame_len</references>
+        <references refid="struct_a_x25_msg_1ac2aec986679b69baa42af40caf9a48bd" compoundref="_a_x25_8h" startline="57">AX25Msg::info</references>
+        <referencedby refid="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" compoundref="_lib_a_p_r_s_8cpp" startline="54" endline="60">APRS_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_a_x25_8cpp_1ae7e848390bb1d0f72c0d6e941bb48044" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ax25_decode</definition>
+        <argsstring>(AX25Ctx *ctx)</argsstring>
+        <name>ax25_decode</name>
+        <param>
+          <type><ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="25" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="25" bodyend="58"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_x25_8cpp_1a852682ef0f0f2764ea1dbacebfa2a4e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ax25_poll</definition>
+        <argsstring>(AX25Ctx *ctx)</argsstring>
+        <name>ax25_poll</name>
+        <param>
+          <type><ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="60" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="60" bodyend="99"/>
+        <references refid="_a_f_s_k_8cpp_1a52e815cce13ae490f2fed9988b75c16c" compoundref="_a_f_s_k_8cpp" startline="101" endline="107">afsk_getchar</references>
+        <references refid="struct_a_x25_ctx_1a2cf354b3ec66e851815667cf1ac43c06" compoundref="_a_x25_8h" startline="33">AX25Ctx::escape</references>
+        <references refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" compoundref="_h_d_l_c_8h" startline="4">HDLC_FLAG</references>
+        <references refid="struct_a_x25_ctx_1a4863474d8ded80b51d5cc1c2aff9f840" compoundref="_a_x25_8h" startline="28">AX25Ctx::frame_len</references>
+        <references refid="_a_x25_8h_1a4dc6bc53a35714e315e64780885500d5" compoundref="_a_x25_8h" startline="8">AX25_MIN_FRAME_LEN</references>
+        <references refid="struct_a_x25_ctx_1acba5c6c48b277cd5520a4060abac3a63" compoundref="_a_x25_8h" startline="29">AX25Ctx::crc_in</references>
+        <references refid="_a_x25_8h_1ae8a60e641e91e4c15b901fdefa6809cf" compoundref="_a_x25_8h" startline="15">AX25_CRC_CORRECT</references>
+        <references refid="_a_x25_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" compoundref="_lib_a_p_r_s_8cpp" startline="11">LibAPRS_open_squelch</references>
+        <references refid="_a_f_s_k_8h_1a8581cc8306ae1bd1d32e66a01889a0de" compoundref="_a_f_s_k_8h" startline="128">LED_RX_ON</references>
+        <references refid="struct_a_x25_ctx_1a9ff9110cc05e86005aaab19c41aa3237" compoundref="_a_x25_8h" startline="32">AX25Ctx::sync</references>
+        <references refid="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" compoundref="_c_r_c-_c_c_i_t_8h" startline="9">CRC_CCIT_INIT_VAL</references>
+        <references refid="_h_d_l_c_8h_1a69a2c8271c865acf4cfa1c1d8ee9443e" compoundref="_h_d_l_c_8h" startline="5">HDLC_RESET</references>
+        <references refid="_h_d_l_c_8h_1ae1d8d5447af97b18578d75c6d69ac46a" compoundref="_h_d_l_c_8h" startline="6">AX25_ESC</references>
+        <references refid="_a_x25_8h_1a84c25cdacf7147bae59a835fe317c865" compoundref="_a_x25_8h" startline="10">AX25_MAX_FRAME_LEN</references>
+        <references refid="struct_a_x25_ctx_1aa1dc2643a8179b3a662cbe8b1e78433e" compoundref="_a_x25_8h" startline="26">AX25Ctx::buf</references>
+        <references refid="_c_r_c-_c_c_i_t_8h_1a290cec53667d36f549f18f42d1539442" compoundref="_c_r_c-_c_c_i_t_8h" startline="13" endline="15">update_crc_ccit</references>
+        <references refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" compoundref="_a_f_s_k_8cpp" startline="95" endline="99">afsk_putchar</references>
+        <references refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" compoundref="_a_x25_8h" startline="30">AX25Ctx::crc_out</references>
+        <referencedby refid="_lib_a_p_r_s_8h_1a0e02a071a97738c3c3d32a6c18f897bc" compoundref="_lib_a_p_r_s_8cpp" startline="62" endline="64">APRS_poll</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_a_x25_8cpp_1afbd43903c386154389054d7df365098b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ax25_putchar</definition>
+        <argsstring>(AX25Ctx *ctx, uint8_t c)</argsstring>
+        <name>ax25_putchar</name>
+        <param>
+          <type><ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="101" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="101" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_x25_8cpp_1ab37e8746a65819795b43d43072ce4555" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ax25_sendRaw</definition>
+        <argsstring>(AX25Ctx *ctx, void *_buf, size_t len)</argsstring>
+        <name>ax25_sendRaw</name>
+        <param>
+          <type><ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>_buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="108" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="108" bodyend="120"/>
+        <references refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" compoundref="_a_x25_8h" startline="30">AX25Ctx::crc_out</references>
+        <references refid="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" compoundref="_c_r_c-_c_c_i_t_8h" startline="9">CRC_CCIT_INIT_VAL</references>
+        <references refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" compoundref="_a_f_s_k_8cpp" startline="95" endline="99">afsk_putchar</references>
+        <references refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" compoundref="_h_d_l_c_8h" startline="4">HDLC_FLAG</references>
+        <references refid="_a_x25_8cpp_1a3acffbd305ee72dcd4593c0d8af64a4f" compoundref="_a_x25_8cpp" startline="12">MIN</references>
+        <references refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" compoundref="_a_x25_8h" startline="44">AX25Call::call</references>
+        <references refid="_a_x25_8h_1a52717a0e06746d47ce30bc51123ff655" compoundref="_a_x25_8h" startline="41">CALL_OVERSPACE</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+        <references refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" compoundref="_a_x25_8h" startline="46">AX25Call::ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_a_x25_8cpp_1a93b1844dd909a547e7dbe16220487864" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void ax25_sendCall</definition>
+        <argsstring>(AX25Ctx *ctx, const AX25Call *addr, bool last)</argsstring>
+        <name>ax25_sendCall</name>
+        <param>
+          <type><ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref> *</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>last</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="122" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="122" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_x25_8cpp_1aeb4be1c44c0faeb1fc73dbb04ac59a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void ax25_sendVia</definition>
+        <argsstring>(AX25Ctx *ctx, const AX25Call *path, size_t path_len, const void *_buf, size_t len)</argsstring>
+        <name>ax25_sendVia</name>
+        <param>
+          <type><ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref> *</type>
+          <declname>ctx</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref> *</type>
+          <declname>path</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>path_len</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>_buf</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.cpp" line="141" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.cpp" bodystart="141" bodyend="164"/>
+        <references refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" compoundref="_a_x25_8h" startline="30">AX25Ctx::crc_out</references>
+        <references refid="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" compoundref="_c_r_c-_c_c_i_t_8h" startline="9">CRC_CCIT_INIT_VAL</references>
+        <references refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" compoundref="_a_f_s_k_8cpp" startline="95" endline="99">afsk_putchar</references>
+        <references refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" compoundref="_h_d_l_c_8h" startline="4">HDLC_FLAG</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_a_x25_8h_1a814fed3e2218ff674eb8866493379c66" compoundref="_a_x25_8h" startline="17">AX25_CTRL_UI</references>
+        <references refid="_a_x25_8h_1a88892802325a651f80dcc1c7947ad2eb" compoundref="_a_x25_8h" startline="18">AX25_PID_NOLAYER3</references>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Based<sp/>on<sp/>work<sp/>by<sp/>Francesco<sp/>Sacchi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ctype.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_x25_8h" kindref="compound">AX25.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_h_d_l_c_8h" kindref="compound">HDLC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_r_c-_c_c_i_t_8h" kindref="compound">CRC-CCIT.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_f_s_k_8h" kindref="compound">AFSK.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="_a_x25_8cpp_1a3c5cd622462bb50b6dab4c189e219eb9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>countof(a)<sp/>sizeof(a)/sizeof(a[0])</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_a_x25_8cpp_1a3acffbd305ee72dcd4593c0d8af64a4f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MIN(a,b)<sp/>({<sp/>typeof(a)<sp/>_a<sp/>=<sp/>(a);<sp/>typeof(b)<sp/>_b<sp/>=<sp/>(b);<sp/>((typeof(_a))((_a<sp/>&lt;<sp/>_b)<sp/>?<sp/>_a<sp/>:<sp/>_b));<sp/>})</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_a_x25_8cpp_1a9811a94def98591b5b05aa6491bbcfef" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DECODE_CALL(buf,<sp/>addr)<sp/>for<sp/>(unsigned<sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>sizeof((addr))-CALL_OVERSPACE;<sp/>i++)<sp/>{<sp/>char<sp/>c<sp/>=<sp/>(*(buf)++<sp/>&gt;&gt;<sp/>1);<sp/>(addr)[i]<sp/>=<sp/>(c<sp/>==<sp/>&apos;<sp/>&apos;)<sp/>?<sp/>&apos;\x0&apos;<sp/>:<sp/>c;<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14" refid="_a_x25_8cpp_1ae3bbef27f5837cc521995314afbf622b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AX25_SET_REPEATED(msg,<sp/>idx,<sp/>val)<sp/>do<sp/>{<sp/>if<sp/>(val)<sp/>{<sp/>(msg)-&gt;rpt_flags<sp/>|=<sp/>_BV(idx);<sp/>}<sp/>else<sp/>{<sp/>(msg)-&gt;rpt_flags<sp/>&amp;=<sp/>~_BV(idx)<sp/>;<sp/>}<sp/>}<sp/>while(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_a_x25_8cpp_1a2986d8cf0562c17f61a0e69f0548b54d" kindref="member">LibAPRS_vref</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_a_x25_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" kindref="member">LibAPRS_open_squelch</ref>;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_a_x25_8h_1a23e83c05decc0769bfd8f62d860bc636" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_x25_8cpp_1a23e83c05decc0769bfd8f62d860bc636" kindref="member">ax25_init</ref>(<ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref><sp/>*ctx,<sp/><ref refid="_a_x25_8h_1a15689cdcc5425113afb9b0588d76c273" kindref="member">ax25_callback_t</ref><sp/>hook)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>memset(ctx,<sp/>0,<sp/></highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(*ctx));</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aaf4149ca8e0ac15cb846f57b5a2056cd" kindref="member">hook</ref><sp/>=<sp/>hook;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1acba5c6c48b277cd5520a4060abac3a63" kindref="member">crc_in</ref><sp/>=<sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" kindref="member">crc_out</ref><sp/>=<sp/><ref refid="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" kindref="member">CRC_CCIT_INIT_VAL</ref>;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ax25_decode(<ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref><sp/>*ctx)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_a_x25_msg" kindref="compound">AX25Msg</ref><sp/>msg;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>*buf<sp/>=<sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aa1dc2643a8179b3a662cbe8b1e78433e" kindref="member">buf</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_x25_8cpp_1a9811a94def98591b5b05aa6491bbcfef" kindref="member">DECODE_CALL</ref>(buf,<sp/>msg.<ref refid="struct_a_x25_msg_1a38dc18966290b4f8cb24651e9e75ef66" kindref="member">dst</ref>.<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="struct_a_x25_msg_1a38dc18966290b4f8cb24651e9e75ef66" kindref="member">dst</ref>.<ref refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" kindref="member">ssid</ref><sp/>=<sp/>(*buf++<sp/>&gt;&gt;<sp/>1)<sp/>&amp;<sp/>0x0F;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="struct_a_x25_msg_1a38dc18966290b4f8cb24651e9e75ef66" kindref="member">dst</ref>.<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>[6]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_x25_8cpp_1a9811a94def98591b5b05aa6491bbcfef" kindref="member">DECODE_CALL</ref>(buf,<sp/>msg.<ref refid="struct_a_x25_msg_1a1f0571ab6f708e1725ad9a8be8e6b28a" kindref="member">src</ref>.<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="struct_a_x25_msg_1a1f0571ab6f708e1725ad9a8be8e6b28a" kindref="member">src</ref>.<ref refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" kindref="member">ssid</ref><sp/>=<sp/>(*buf<sp/>&gt;&gt;<sp/>1)<sp/>&amp;<sp/>0x0F;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="struct_a_x25_msg_1a1f0571ab6f708e1725ad9a8be8e6b28a" kindref="member">src</ref>.<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>[6]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(msg.<ref refid="struct_a_x25_msg_1ab4a4b29611190548f3cba0c0f4969f24" kindref="member">rpt_count</ref><sp/>=<sp/>0;<sp/>!(*buf++<sp/>&amp;<sp/>0x01)<sp/>&amp;&amp;<sp/>(msg.<ref refid="struct_a_x25_msg_1ab4a4b29611190548f3cba0c0f4969f24" kindref="member">rpt_count</ref><sp/>&lt;<sp/><ref refid="_a_x25_8cpp_1a3c5cd622462bb50b6dab4c189e219eb9" kindref="member">countof</ref>(msg.<ref refid="struct_a_x25_msg_1aca3c075fa9ad0af3cea5c850153e7b83" kindref="member">rpt_list</ref>));<sp/>msg.<ref refid="struct_a_x25_msg_1ab4a4b29611190548f3cba0c0f4969f24" kindref="member">rpt_count</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_x25_8cpp_1a9811a94def98591b5b05aa6491bbcfef" kindref="member">DECODE_CALL</ref>(buf,<sp/>msg.<ref refid="struct_a_x25_msg_1aca3c075fa9ad0af3cea5c850153e7b83" kindref="member">rpt_list</ref>[msg.<ref refid="struct_a_x25_msg_1ab4a4b29611190548f3cba0c0f4969f24" kindref="member">rpt_count</ref>].<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>msg.<ref refid="struct_a_x25_msg_1aca3c075fa9ad0af3cea5c850153e7b83" kindref="member">rpt_list</ref>[msg.<ref refid="struct_a_x25_msg_1ab4a4b29611190548f3cba0c0f4969f24" kindref="member">rpt_count</ref>].<ref refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" kindref="member">ssid</ref><sp/>=<sp/>(*buf<sp/>&gt;&gt;<sp/>1)<sp/>&amp;<sp/>0x0F;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_x25_8cpp_1ae3bbef27f5837cc521995314afbf622b" kindref="member">AX25_SET_REPEATED</ref>(&amp;msg,<sp/>msg.<ref refid="struct_a_x25_msg_1ab4a4b29611190548f3cba0c0f4969f24" kindref="member">rpt_count</ref>,<sp/>(*buf<sp/>&amp;<sp/>0x80));</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="struct_a_x25_msg_1a375105fdcb83cb525082d8dbc22c2d33" kindref="member">ctrl</ref><sp/>=<sp/>*buf++;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg.<ref refid="struct_a_x25_msg_1a375105fdcb83cb525082d8dbc22c2d33" kindref="member">ctrl</ref><sp/>!=<sp/><ref refid="_a_x25_8h_1a814fed3e2218ff674eb8866493379c66" kindref="member">AX25_CTRL_UI</ref>)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="struct_a_x25_msg_1ae2e8532da38c1a6fac980377ab9b494b" kindref="member">pid</ref><sp/>=<sp/>*buf++;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(msg.<ref refid="struct_a_x25_msg_1ae2e8532da38c1a6fac980377ab9b494b" kindref="member">pid</ref><sp/>!=<sp/><ref refid="_a_x25_8h_1a88892802325a651f80dcc1c7947ad2eb" kindref="member">AX25_PID_NOLAYER3</ref>)<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="struct_a_x25_msg_1a45b0f4c6c77aec02cd647b51e0f736e1" kindref="member">len</ref><sp/>=<sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1a4863474d8ded80b51d5cc1c2aff9f840" kindref="member">frame_len</ref><sp/>-<sp/>2<sp/>-<sp/>(buf<sp/>-<sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aa1dc2643a8179b3a662cbe8b1e78433e" kindref="member">buf</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>msg.<ref refid="struct_a_x25_msg_1ac2aec986679b69baa42af40caf9a48bd" kindref="member">info</ref><sp/>=<sp/>buf;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctx-&gt;<ref refid="struct_a_x25_ctx_1aaf4149ca8e0ac15cb846f57b5a2056cd" kindref="member">hook</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cli();</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aaf4149ca8e0ac15cb846f57b5a2056cd" kindref="member">hook</ref>(&amp;msg);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sei();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_x25_8cpp_1a852682ef0f0f2764ea1dbacebfa2a4e7" kindref="member">ax25_poll</ref>(<ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref><sp/>*ctx)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((c<sp/>=<sp/><ref refid="_a_f_s_k_8cpp_1a52e815cce13ae490f2fed9988b75c16c" kindref="member">afsk_getchar</ref>())<sp/>!=<sp/>EOF)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ctx-&gt;<ref refid="struct_a_x25_ctx_1a2cf354b3ec66e851815667cf1ac43c06" kindref="member">escape</ref><sp/>&amp;&amp;<sp/>c<sp/>==<sp/><ref refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" kindref="member">HDLC_FLAG</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctx-&gt;<ref refid="struct_a_x25_ctx_1a4863474d8ded80b51d5cc1c2aff9f840" kindref="member">frame_len</ref><sp/>&gt;=<sp/><ref refid="_a_x25_8h_1a4dc6bc53a35714e315e64780885500d5" kindref="member">AX25_MIN_FRAME_LEN</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctx-&gt;<ref refid="struct_a_x25_ctx_1acba5c6c48b277cd5520a4060abac3a63" kindref="member">crc_in</ref><sp/>==<sp/><ref refid="_a_x25_8h_1ae8a60e641e91e4c15b901fdefa6809cf" kindref="member">AX25_CRC_CORRECT</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="_a_x25_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" kindref="member">LibAPRS_open_squelch</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_a_f_s_k_8h_1a8581cc8306ae1bd1d32e66a01889a0de" kindref="member">LED_RX_ON</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax25_decode(ctx);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1a9ff9110cc05e86005aaab19c41aa3237" kindref="member">sync</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1acba5c6c48b277cd5520a4060abac3a63" kindref="member">crc_in</ref><sp/>=<sp/><ref refid="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" kindref="member">CRC_CCIT_INIT_VAL</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1a4863474d8ded80b51d5cc1c2aff9f840" kindref="member">frame_len</ref><sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ctx-&gt;<ref refid="struct_a_x25_ctx_1a2cf354b3ec66e851815667cf1ac43c06" kindref="member">escape</ref><sp/>&amp;&amp;<sp/>c<sp/>==<sp/><ref refid="_h_d_l_c_8h_1a69a2c8271c865acf4cfa1c1d8ee9443e" kindref="member">HDLC_RESET</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1a9ff9110cc05e86005aaab19c41aa3237" kindref="member">sync</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!ctx-&gt;<ref refid="struct_a_x25_ctx_1a2cf354b3ec66e851815667cf1ac43c06" kindref="member">escape</ref><sp/>&amp;&amp;<sp/>c<sp/>==<sp/><ref refid="_h_d_l_c_8h_1ae1d8d5447af97b18578d75c6d69ac46a" kindref="member">AX25_ESC</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1a2cf354b3ec66e851815667cf1ac43c06" kindref="member">escape</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">continue</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctx-&gt;<ref refid="struct_a_x25_ctx_1a9ff9110cc05e86005aaab19c41aa3237" kindref="member">sync</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ctx-&gt;<ref refid="struct_a_x25_ctx_1a4863474d8ded80b51d5cc1c2aff9f840" kindref="member">frame_len</ref><sp/>&lt;<sp/><ref refid="_a_x25_8h_1a84c25cdacf7147bae59a835fe317c865" kindref="member">AX25_MAX_FRAME_LEN</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aa1dc2643a8179b3a662cbe8b1e78433e" kindref="member">buf</ref>[ctx-&gt;<ref refid="struct_a_x25_ctx_1a4863474d8ded80b51d5cc1c2aff9f840" kindref="member">frame_len</ref>++]<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1acba5c6c48b277cd5520a4060abac3a63" kindref="member">crc_in</ref><sp/>=<sp/><ref refid="_c_r_c-_c_c_i_t_8h_1a290cec53667d36f549f18f42d1539442" kindref="member">update_crc_ccit</ref>(c,<sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1acba5c6c48b277cd5520a4060abac3a63" kindref="member">crc_in</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1a9ff9110cc05e86005aaab19c41aa3237" kindref="member">sync</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1a2cf354b3ec66e851815667cf1ac43c06" kindref="member">escape</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ax25_putchar(<ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref><sp/>*ctx,<sp/>uint8_t<sp/>c)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(c<sp/>==<sp/><ref refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" kindref="member">HDLC_FLAG</ref><sp/>||<sp/>c<sp/>==<sp/><ref refid="_h_d_l_c_8h_1a69a2c8271c865acf4cfa1c1d8ee9443e" kindref="member">HDLC_RESET</ref><sp/>||<sp/>c<sp/>==<sp/><ref refid="_h_d_l_c_8h_1ae1d8d5447af97b18578d75c6d69ac46a" kindref="member">AX25_ESC</ref>)<sp/><ref refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" kindref="member">afsk_putchar</ref>(<ref refid="_h_d_l_c_8h_1ae1d8d5447af97b18578d75c6d69ac46a" kindref="member">AX25_ESC</ref>);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" kindref="member">crc_out</ref><sp/>=<sp/><ref refid="_c_r_c-_c_c_i_t_8h_1a290cec53667d36f549f18f42d1539442" kindref="member">update_crc_ccit</ref>(c,<sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" kindref="member">crc_out</ref>);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" kindref="member">afsk_putchar</ref>(c);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="_a_x25_8h_1ab37e8746a65819795b43d43072ce4555" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_x25_8cpp_1ab37e8746a65819795b43d43072ce4555" kindref="member">ax25_sendRaw</ref>(<ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref><sp/>*ctx,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" kindref="member">crc_out</ref><sp/>=<sp/><ref refid="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" kindref="member">CRC_CCIT_INIT_VAL</ref>;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" kindref="member">afsk_putchar</ref>(<ref refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" kindref="member">HDLC_FLAG</ref>);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*buf<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*)_buf;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(len--)<sp/>ax25_putchar(ctx,<sp/>*buf++);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>crcl<sp/>=<sp/>(ctx-&gt;<ref refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" kindref="member">crc_out</ref><sp/>&amp;<sp/>0xff)<sp/>^<sp/>0xff;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>crch<sp/>=<sp/>(ctx-&gt;<ref refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" kindref="member">crc_out</ref><sp/>&gt;&gt;<sp/>8)<sp/>^<sp/>0xff;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/>crcl);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/>crch);</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" kindref="member">afsk_putchar</ref>(<ref refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" kindref="member">HDLC_FLAG</ref>);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>ax25_sendCall(<ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref><sp/>*addr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>last){</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>len<sp/>=<sp/><ref refid="_a_x25_8cpp_1a3acffbd305ee72dcd4593c0d8af64a4f" kindref="member">MIN</ref>((</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(addr-&gt;<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>)<sp/>-<sp/><ref refid="_a_x25_8h_1a52717a0e06746d47ce30bc51123ff655" kindref="member">CALL_OVERSPACE</ref>),<sp/>strlen(addr-&gt;<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>));</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>len;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>c<sp/>=<sp/>addr-&gt;<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>c<sp/>=<sp/>toupper(c);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/>c<sp/>&lt;&lt;<sp/>1);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(len<sp/>&lt;<sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(addr-&gt;<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>)<sp/>-<sp/><ref refid="_a_x25_8h_1a52717a0e06746d47ce30bc51123ff655" kindref="member">CALL_OVERSPACE</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>(</highlight><highlight class="keyword">sizeof</highlight><highlight class="normal">(addr-&gt;<ref refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" kindref="member">call</ref>)<sp/>-<sp/><ref refid="_a_x25_8h_1a52717a0e06746d47ce30bc51123ff655" kindref="member">CALL_OVERSPACE</ref>)<sp/>-<sp/>len;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/></highlight><highlight class="charliteral">&apos;<sp/>&apos;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>1);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref><sp/>=<sp/>0x60<sp/>|<sp/>(addr-&gt;<ref refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" kindref="member">ssid</ref><sp/>&lt;&lt;<sp/>1)<sp/>|<sp/>(last<sp/>?<sp/>0x01<sp/>:<sp/>0);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/>ssid);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="_a_x25_8h_1aeb4be1c44c0faeb1fc73dbb04ac59a6e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_x25_8cpp_1aeb4be1c44c0faeb1fc73dbb04ac59a6e" kindref="member">ax25_sendVia</ref>(<ref refid="struct_a_x25_ctx" kindref="compound">AX25Ctx</ref><sp/>*ctx,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_a_x25_call" kindref="compound">AX25Call</ref><sp/>*<ref refid="_lib_a_p_r_s_8cpp_1ae9279326b6ef5ef489e2c37e8b764a4d" kindref="member">path</ref>,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>path_len,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_buf,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>len)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*buf<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*)_buf;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>ctx-&gt;<ref refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" kindref="member">crc_out</ref><sp/>=<sp/><ref refid="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" kindref="member">CRC_CCIT_INIT_VAL</ref>;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" kindref="member">afsk_putchar</ref>(<ref refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" kindref="member">HDLC_FLAG</ref>);</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>path_len;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax25_sendCall(ctx,<sp/>&amp;path[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>],<sp/>(i<sp/>==<sp/>path_len<sp/>-<sp/>1));</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/><ref refid="_a_x25_8h_1a814fed3e2218ff674eb8866493379c66" kindref="member">AX25_CTRL_UI</ref>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/><ref refid="_a_x25_8h_1a88892802325a651f80dcc1c7947ad2eb" kindref="member">AX25_PID_NOLAYER3</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(len--)<sp/>{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/>*buf++);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>crcl<sp/>=<sp/>(ctx-&gt;<ref refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" kindref="member">crc_out</ref><sp/>&amp;<sp/>0xff)<sp/>^<sp/>0xff;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>crch<sp/>=<sp/>(ctx-&gt;<ref refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" kindref="member">crc_out</ref><sp/>&gt;&gt;<sp/>8)<sp/>^<sp/>0xff;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/>crcl);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>ax25_putchar(ctx,<sp/>crch);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" kindref="member">afsk_putchar</ref>(<ref refid="_h_d_l_c_8h_1a7dfaac00ac4dc67fd47f2cbdf51d5c72" kindref="member">HDLC_FLAG</ref>);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/AX25.cpp"/>
+  </compounddef>
+</doxygen>

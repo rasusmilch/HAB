@@ -1,0 +1,799 @@
+\hypertarget{class_d_s3231}{}\section{D\+S3231 Class Reference}
+\label{class_d_s3231}\index{D\+S3231@{D\+S3231}}
+
+
+{\ttfamily \#include $<$D\+S3231.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_d_s3231_a1b6b23f76ae2a8c27f78e946608467ae}{begin} (void)
+\item 
+void \hyperlink{class_d_s3231_a15eb3576feaa3535415e9b82367c344c}{set\+Date\+Time} (uint16\+\_\+t \hyperlink{_time_8cpp_a8608865f8292c0505e02b67fd1cf39e8}{year}, uint8\+\_\+t \hyperlink{_time_8cpp_a726c707dded9d78cf076554eceb956ec}{month}, uint8\+\_\+t \hyperlink{_time_8cpp_a51dcd9f072551ba8f47449a4e7f78c29}{day}, uint8\+\_\+t \hyperlink{_time_8cpp_ac4706d0cffc9e111a6c6a757b462e88e}{hour}, uint8\+\_\+t \hyperlink{_time_8cpp_a88285e3771bcb970424122a6ee4b40fa}{minute}, uint8\+\_\+t \hyperlink{_time_8cpp_a10a4dd811353baa12dadadee7c7e5099}{second})
+\item 
+void \hyperlink{class_d_s3231_ac8ccbb72f7cfbb27df1558a8896ef236}{set\+Date\+Time} (uint32\+\_\+t t)
+\item 
+void \hyperlink{class_d_s3231_a95352ab8a40b383e4680e489ec3ee68a}{set\+Date\+Time} (const char $\ast$date, const char $\ast$time)
+\item 
+\hyperlink{_d_s3231_8h_struct_r_t_c_date_time}{R\+T\+C\+Date\+Time} \hyperlink{class_d_s3231_adc4bc3149377fef827a7e504264fbd40}{get\+Date\+Time} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_d_s3231_ad5c01a51a34c83a2309694a653b4daf4}{is\+Ready} (void)
+\item 
+\hyperlink{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1}{D\+S3231\+\_\+sqw\+\_\+t} \hyperlink{class_d_s3231_a43521db28f7a704e5f6364e03e73f820}{get\+Output} (void)
+\item 
+void \hyperlink{class_d_s3231_a1eafc57831fe8fc1ce4145911980e0f7}{set\+Output} (\hyperlink{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1}{D\+S3231\+\_\+sqw\+\_\+t} mode)
+\item 
+void \hyperlink{class_d_s3231_a67d438ac8a42dfdf68454444a3df336f}{enable\+Output} (bool enabled)
+\item 
+bool \hyperlink{class_d_s3231_a33a730f793ad488fe55362525da2c548}{is\+Output} (void)
+\item 
+void \hyperlink{class_d_s3231_a615d932043f11f513468d4ab97833fd3}{enable32k\+Hz} (bool enabled)
+\item 
+bool \hyperlink{class_d_s3231_a5cb71b75ea98cbb7493610d5552bc771}{is32k\+Hz} (void)
+\item 
+void \hyperlink{class_d_s3231_ad398fd513aae24b219d19574e20da550}{force\+Conversion} (void)
+\item 
+float \hyperlink{class_d_s3231_a82074e0d3f0a4a646fc14f1afcb80448}{read\+Temperature} (void)
+\item 
+void \hyperlink{class_d_s3231_a23cea53349c55fba93c706b6e263e574}{set\+Alarm1} (uint8\+\_\+t dydw, uint8\+\_\+t \hyperlink{_time_8cpp_ac4706d0cffc9e111a6c6a757b462e88e}{hour}, uint8\+\_\+t \hyperlink{_time_8cpp_a88285e3771bcb970424122a6ee4b40fa}{minute}, uint8\+\_\+t \hyperlink{_time_8cpp_a10a4dd811353baa12dadadee7c7e5099}{second}, \hyperlink{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6}{D\+S3231\+\_\+alarm1\+\_\+t} mode, bool armed=true)
+\item 
+\hyperlink{_d_s3231_8h_struct_r_t_c_alarm_time}{R\+T\+C\+Alarm\+Time} \hyperlink{class_d_s3231_a7241d497e56fc0062ad68a9bc31e212a}{get\+Alarm1} (void)
+\item 
+\hyperlink{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6}{D\+S3231\+\_\+alarm1\+\_\+t} \hyperlink{class_d_s3231_a20d9f5ec608a5b0a5010ad1a91cf667b}{get\+Alarm\+Type1} (void)
+\item 
+bool \hyperlink{class_d_s3231_a9e07f99282167c3e799bef2d2d163e17}{is\+Alarm1} (bool clear=true)
+\item 
+void \hyperlink{class_d_s3231_ad8333b85e1bcbf40e471e67ed63cc4bc}{arm\+Alarm1} (bool armed)
+\item 
+bool \hyperlink{class_d_s3231_a5654d336dd345f7db3a4867cfe1b6f20}{is\+Armed1} (void)
+\item 
+void \hyperlink{class_d_s3231_aad73bcd32141177f36dbf0dc10feb2fd}{clear\+Alarm1} (void)
+\item 
+void \hyperlink{class_d_s3231_ad505857c3594da9a4c159f607845364e}{set\+Alarm2} (uint8\+\_\+t dydw, uint8\+\_\+t \hyperlink{_time_8cpp_ac4706d0cffc9e111a6c6a757b462e88e}{hour}, uint8\+\_\+t \hyperlink{_time_8cpp_a88285e3771bcb970424122a6ee4b40fa}{minute}, \hyperlink{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0}{D\+S3231\+\_\+alarm2\+\_\+t} mode, bool armed=true)
+\item 
+\hyperlink{_d_s3231_8h_struct_r_t_c_alarm_time}{R\+T\+C\+Alarm\+Time} \hyperlink{class_d_s3231_a6917f3adf3b16a5d1afb67179461ba95}{get\+Alarm2} (void)
+\item 
+\hyperlink{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0}{D\+S3231\+\_\+alarm2\+\_\+t} \hyperlink{class_d_s3231_aef2ea43f887cd0444dbc233cfbe46033}{get\+Alarm\+Type2} (void)
+\item 
+bool \hyperlink{class_d_s3231_ace5ee2a9d9cc6b6ecb16ca749514d2a3}{is\+Alarm2} (bool clear=true)
+\item 
+void \hyperlink{class_d_s3231_a40cab51de53184c4be9c68cc41b9468c}{arm\+Alarm2} (bool armed)
+\item 
+bool \hyperlink{class_d_s3231_a8c1a20f425e7cbc3fc728aef9c326dff}{is\+Armed2} (void)
+\item 
+void \hyperlink{class_d_s3231_a950e95ad7dd8658037a3a4d08e83cf64}{clear\+Alarm2} (void)
+\item 
+void \hyperlink{class_d_s3231_a7a92e389dd214168bb73fcf2d1b88e8c}{set\+Battery} (bool time\+Battery, bool square\+Battery)
+\item 
+char $\ast$ \hyperlink{class_d_s3231_a80608a18964804b175fbbf3ca83d7a99}{date\+Format} (const char $\ast$date\+Format, \hyperlink{_d_s3231_8h_struct_r_t_c_date_time}{R\+T\+C\+Date\+Time} dt)
+\item 
+char $\ast$ \hyperlink{class_d_s3231_a32cd1432b1c37ea0c36ba57286b764d0}{date\+Format} (const char $\ast$date\+Format, \hyperlink{_d_s3231_8h_struct_r_t_c_alarm_time}{R\+T\+C\+Alarm\+Time} dt)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 89 of file D\+S3231.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{D\+S3231@{D\+S3231}!arm\+Alarm1@{arm\+Alarm1}}
+\index{arm\+Alarm1@{arm\+Alarm1}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{arm\+Alarm1(bool armed)}{armAlarm1(bool armed)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::arm\+Alarm1 (
+\begin{DoxyParamCaption}
+\item[{bool}]{armed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_ad8333b85e1bcbf40e471e67ed63cc4bc}{}\label{class_d_s3231_ad8333b85e1bcbf40e471e67ed63cc4bc}
+
+
+Definition at line 728 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+
+
+Referenced by set\+Alarm1().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_d_s3231_ad8333b85e1bcbf40e471e67ed63cc4bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!arm\+Alarm2@{arm\+Alarm2}}
+\index{arm\+Alarm2@{arm\+Alarm2}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{arm\+Alarm2(bool armed)}{armAlarm2(bool armed)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::arm\+Alarm2 (
+\begin{DoxyParamCaption}
+\item[{bool}]{armed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a40cab51de53184c4be9c68cc41b9468c}{}\label{class_d_s3231_a40cab51de53184c4be9c68cc41b9468c}
+
+
+Definition at line 894 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+
+
+Referenced by set\+Alarm2().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{class_d_s3231_a40cab51de53184c4be9c68cc41b9468c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!begin@{begin}}
+\index{begin@{begin}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{begin(void)}{begin(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S3231\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a1b6b23f76ae2a8c27f78e946608467ae}{}\label{class_d_s3231_a1b6b23f76ae2a8c27f78e946608467ae}
+
+
+Definition at line 33 of file D\+S3231.\+cpp.
+
+
+
+References R\+T\+C\+Date\+Time\+::day, R\+T\+C\+Date\+Time\+::day\+Of\+Week, R\+T\+C\+Date\+Time\+::hour, R\+T\+C\+Date\+Time\+::minute, R\+T\+C\+Date\+Time\+::month, R\+T\+C\+Date\+Time\+::second, set\+Battery(), R\+T\+C\+Date\+Time\+::unixtime, Wire, and R\+T\+C\+Date\+Time\+::year.
+
+
+
+Referenced by setup().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{class_d_s3231_a1b6b23f76ae2a8c27f78e946608467ae_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{class_d_s3231_a1b6b23f76ae2a8c27f78e946608467ae_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!clear\+Alarm1@{clear\+Alarm1}}
+\index{clear\+Alarm1@{clear\+Alarm1}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{clear\+Alarm1(void)}{clearAlarm1(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::clear\+Alarm1 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_aad73bcd32141177f36dbf0dc10feb2fd}{}\label{class_d_s3231_aad73bcd32141177f36dbf0dc10feb2fd}
+
+
+Definition at line 752 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US.
+
+
+
+Referenced by is\+Alarm1(), and set\+Alarm1().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_d_s3231_aad73bcd32141177f36dbf0dc10feb2fd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!clear\+Alarm2@{clear\+Alarm2}}
+\index{clear\+Alarm2@{clear\+Alarm2}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{clear\+Alarm2(void)}{clearAlarm2(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::clear\+Alarm2 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a950e95ad7dd8658037a3a4d08e83cf64}{}\label{class_d_s3231_a950e95ad7dd8658037a3a4d08e83cf64}
+
+
+Definition at line 920 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US.
+
+
+
+Referenced by is\+Alarm2(), and set\+Alarm2().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_d_s3231_a950e95ad7dd8658037a3a4d08e83cf64_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!date\+Format@{date\+Format}}
+\index{date\+Format@{date\+Format}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{date\+Format(const char $\ast$date\+Format, R\+T\+C\+Date\+Time dt)}{dateFormat(const char *dateFormat, RTCDateTime dt)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ D\+S3231\+::date\+Format (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{date\+Format, }
+\item[{{\bf R\+T\+C\+Date\+Time}}]{dt}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a80608a18964804b175fbbf3ca83d7a99}{}\label{class_d_s3231_a80608a18964804b175fbbf3ca83d7a99}
+
+
+Definition at line 171 of file D\+S3231.\+cpp.
+
+
+
+References R\+T\+C\+Date\+Time\+::day, R\+T\+C\+Date\+Time\+::day\+Of\+Week, R\+T\+C\+Date\+Time\+::hour, R\+T\+C\+Date\+Time\+::minute, R\+T\+C\+Date\+Time\+::month, R\+T\+C\+Date\+Time\+::second, R\+T\+C\+Date\+Time\+::unixtime, and R\+T\+C\+Date\+Time\+::year.
+
+\index{D\+S3231@{D\+S3231}!date\+Format@{date\+Format}}
+\index{date\+Format@{date\+Format}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{date\+Format(const char $\ast$date\+Format, R\+T\+C\+Alarm\+Time dt)}{dateFormat(const char *dateFormat, RTCAlarmTime dt)}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ D\+S3231\+::date\+Format (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{date\+Format, }
+\item[{{\bf R\+T\+C\+Alarm\+Time}}]{dt}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a32cd1432b1c37ea0c36ba57286b764d0}{}\label{class_d_s3231_a32cd1432b1c37ea0c36ba57286b764d0}
+
+
+Definition at line 299 of file D\+S3231.\+cpp.
+
+
+
+References R\+T\+C\+Alarm\+Time\+::day, R\+T\+C\+Alarm\+Time\+::hour, R\+T\+C\+Alarm\+Time\+::minute, and R\+T\+C\+Alarm\+Time\+::second.
+
+\index{D\+S3231@{D\+S3231}!enable32k\+Hz@{enable32k\+Hz}}
+\index{enable32k\+Hz@{enable32k\+Hz}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{enable32k\+Hz(bool enabled)}{enable32kHz(bool enabled)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::enable32k\+Hz (
+\begin{DoxyParamCaption}
+\item[{bool}]{enabled}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a615d932043f11f513468d4ab97833fd3}{}\label{class_d_s3231_a615d932043f11f513468d4ab97833fd3}
+
+
+Definition at line 501 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US.
+
+\index{D\+S3231@{D\+S3231}!enable\+Output@{enable\+Output}}
+\index{enable\+Output@{enable\+Output}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{enable\+Output(bool enabled)}{enableOutput(bool enabled)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::enable\+Output (
+\begin{DoxyParamCaption}
+\item[{bool}]{enabled}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a67d438ac8a42dfdf68454444a3df336f}{}\label{class_d_s3231_a67d438ac8a42dfdf68454444a3df336f}
+
+
+Definition at line 428 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+\index{D\+S3231@{D\+S3231}!force\+Conversion@{force\+Conversion}}
+\index{force\+Conversion@{force\+Conversion}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{force\+Conversion(void)}{forceConversion(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::force\+Conversion (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_ad398fd513aae24b219d19574e20da550}{}\label{class_d_s3231_ad398fd513aae24b219d19574e20da550}
+
+
+Definition at line 525 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+
+
+Referenced by read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_s3231_ad398fd513aae24b219d19574e20da550_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!get\+Alarm1@{get\+Alarm1}}
+\index{get\+Alarm1@{get\+Alarm1}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{get\+Alarm1(void)}{getAlarm1(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+T\+C\+Alarm\+Time} D\+S3231\+::get\+Alarm1 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a7241d497e56fc0062ad68a9bc31e212a}{}\label{class_d_s3231_a7241d497e56fc0062ad68a9bc31e212a}
+
+
+Definition at line 565 of file D\+S3231.\+cpp.
+
+
+
+References R\+T\+C\+Alarm\+Time\+::day, D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1, R\+T\+C\+Alarm\+Time\+::hour, i, R\+T\+C\+Alarm\+Time\+::minute, R\+T\+C\+Alarm\+Time\+::second, and Wire.
+
+\index{D\+S3231@{D\+S3231}!get\+Alarm2@{get\+Alarm2}}
+\index{get\+Alarm2@{get\+Alarm2}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{get\+Alarm2(void)}{getAlarm2(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+T\+C\+Alarm\+Time} D\+S3231\+::get\+Alarm2 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a6917f3adf3b16a5d1afb67179461ba95}{}\label{class_d_s3231_a6917f3adf3b16a5d1afb67179461ba95}
+
+
+Definition at line 762 of file D\+S3231.\+cpp.
+
+
+
+References R\+T\+C\+Alarm\+Time\+::day, D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2, R\+T\+C\+Alarm\+Time\+::hour, i, R\+T\+C\+Alarm\+Time\+::minute, R\+T\+C\+Alarm\+Time\+::second, and Wire.
+
+\index{D\+S3231@{D\+S3231}!get\+Alarm\+Type1@{get\+Alarm\+Type1}}
+\index{get\+Alarm\+Type1@{get\+Alarm\+Type1}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{get\+Alarm\+Type1(void)}{getAlarmType1(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S3231\+\_\+alarm1\+\_\+t} D\+S3231\+::get\+Alarm\+Type1 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a20d9f5ec608a5b0a5010ad1a91cf667b}{}\label{class_d_s3231_a20d9f5ec608a5b0a5010ad1a91cf667b}
+
+
+Definition at line 601 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1, i, and Wire.
+
+\index{D\+S3231@{D\+S3231}!get\+Alarm\+Type2@{get\+Alarm\+Type2}}
+\index{get\+Alarm\+Type2@{get\+Alarm\+Type2}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{get\+Alarm\+Type2(void)}{getAlarmType2(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S3231\+\_\+alarm2\+\_\+t} D\+S3231\+::get\+Alarm\+Type2 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_aef2ea43f887cd0444dbc233cfbe46033}{}\label{class_d_s3231_aef2ea43f887cd0444dbc233cfbe46033}
+
+
+Definition at line 798 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2, i, and Wire.
+
+\index{D\+S3231@{D\+S3231}!get\+Date\+Time@{get\+Date\+Time}}
+\index{get\+Date\+Time@{get\+Date\+Time}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{get\+Date\+Time(void)}{getDateTime(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+T\+C\+Date\+Time} D\+S3231\+::get\+Date\+Time (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_adc4bc3149377fef827a7e504264fbd40}{}\label{class_d_s3231_adc4bc3149377fef827a7e504264fbd40}
+
+
+Definition at line 384 of file D\+S3231.\+cpp.
+
+
+
+References R\+T\+C\+Date\+Time\+::day, R\+T\+C\+Date\+Time\+::day\+Of\+Week, D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+I\+ME, R\+T\+C\+Date\+Time\+::hour, i, R\+T\+C\+Date\+Time\+::minute, R\+T\+C\+Date\+Time\+::month, R\+T\+C\+Date\+Time\+::second, R\+T\+C\+Date\+Time\+::unixtime, Wire, and R\+T\+C\+Date\+Time\+::year.
+
+
+
+Referenced by read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_s3231_adc4bc3149377fef827a7e504264fbd40_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!get\+Output@{get\+Output}}
+\index{get\+Output@{get\+Output}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{get\+Output(void)}{getOutput(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S3231\+\_\+sqw\+\_\+t} D\+S3231\+::get\+Output (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a43521db28f7a704e5f6364e03e73f820}{}\label{class_d_s3231_a43521db28f7a704e5f6364e03e73f820}
+
+
+Definition at line 489 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+\index{D\+S3231@{D\+S3231}!is32k\+Hz@{is32k\+Hz}}
+\index{is32k\+Hz@{is32k\+Hz}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{is32k\+Hz(void)}{is32kHz(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S3231\+::is32k\+Hz (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a5cb71b75ea98cbb7493610d5552bc771}{}\label{class_d_s3231_a5cb71b75ea98cbb7493610d5552bc771}
+
+
+Definition at line 513 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US.
+
+\index{D\+S3231@{D\+S3231}!is\+Alarm1@{is\+Alarm1}}
+\index{is\+Alarm1@{is\+Alarm1}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{is\+Alarm1(bool clear=true)}{isAlarm1(bool clear=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S3231\+::is\+Alarm1 (
+\begin{DoxyParamCaption}
+\item[{bool}]{clear = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a9e07f99282167c3e799bef2d2d163e17}{}\label{class_d_s3231_a9e07f99282167c3e799bef2d2d163e17}
+
+
+Definition at line 713 of file D\+S3231.\+cpp.
+
+
+
+References clear\+Alarm1(), and D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=305pt]{class_d_s3231_a9e07f99282167c3e799bef2d2d163e17_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!is\+Alarm2@{is\+Alarm2}}
+\index{is\+Alarm2@{is\+Alarm2}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{is\+Alarm2(bool clear=true)}{isAlarm2(bool clear=true)}}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S3231\+::is\+Alarm2 (
+\begin{DoxyParamCaption}
+\item[{bool}]{clear = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_ace5ee2a9d9cc6b6ecb16ca749514d2a3}{}\label{class_d_s3231_ace5ee2a9d9cc6b6ecb16ca749514d2a3}
+
+
+Definition at line 931 of file D\+S3231.\+cpp.
+
+
+
+References clear\+Alarm2(), R\+T\+C\+Date\+Time\+::day, day(), D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US, R\+T\+C\+Date\+Time\+::hour, hour(), i, R\+T\+C\+Date\+Time\+::minute, R\+T\+C\+Date\+Time\+::month, month(), pgm\+\_\+read\+\_\+byte, R\+T\+C\+Date\+Time\+::second, Wire, R\+T\+C\+Date\+Time\+::year, and year().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_s3231_ace5ee2a9d9cc6b6ecb16ca749514d2a3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!is\+Armed1@{is\+Armed1}}
+\index{is\+Armed1@{is\+Armed1}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{is\+Armed1(void)}{isArmed1(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S3231\+::is\+Armed1 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a5654d336dd345f7db3a4867cfe1b6f20}{}\label{class_d_s3231_a5654d336dd345f7db3a4867cfe1b6f20}
+
+
+Definition at line 744 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+\index{D\+S3231@{D\+S3231}!is\+Armed2@{is\+Armed2}}
+\index{is\+Armed2@{is\+Armed2}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{is\+Armed2(void)}{isArmed2(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S3231\+::is\+Armed2 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a8c1a20f425e7cbc3fc728aef9c326dff}{}\label{class_d_s3231_a8c1a20f425e7cbc3fc728aef9c326dff}
+
+
+Definition at line 910 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+\index{D\+S3231@{D\+S3231}!is\+Output@{is\+Output}}
+\index{is\+Output@{is\+Output}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{is\+Output(void)}{isOutput(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+S3231\+::is\+Output (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a33a730f793ad488fe55362525da2c548}{}\label{class_d_s3231_a33a730f793ad488fe55362525da2c548}
+
+
+Definition at line 465 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+\index{D\+S3231@{D\+S3231}!is\+Ready@{is\+Ready}}
+\index{is\+Ready@{is\+Ready}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{is\+Ready(void)}{isReady(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t D\+S3231\+::is\+Ready (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_ad5c01a51a34c83a2309694a653b4daf4}{}\label{class_d_s3231_ad5c01a51a34c83a2309694a653b4daf4}
+
+
+Definition at line 423 of file D\+S3231.\+cpp.
+
+\index{D\+S3231@{D\+S3231}!read\+Temperature@{read\+Temperature}}
+\index{read\+Temperature@{read\+Temperature}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{read\+Temperature(void)}{readTemperature(void)}}]{\setlength{\rightskip}{0pt plus 5cm}float D\+S3231\+::read\+Temperature (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a82074e0d3f0a4a646fc14f1afcb80448}{}\label{class_d_s3231_a82074e0d3f0a4a646fc14f1afcb80448}
+
+
+Definition at line 538 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE, and Wire.
+
+
+
+Referenced by read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_s3231_a82074e0d3f0a4a646fc14f1afcb80448_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!set\+Alarm1@{set\+Alarm1}}
+\index{set\+Alarm1@{set\+Alarm1}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{set\+Alarm1(uint8\+\_\+t dydw, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second, D\+S3231\+\_\+alarm1\+\_\+t mode, bool armed=true)}{setAlarm1(uint8\_t dydw, uint8\_t hour, uint8\_t minute, uint8\_t second, DS3231\_alarm1\_t mode, bool armed=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::set\+Alarm1 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dydw, }
+\item[{uint8\+\_\+t}]{hour, }
+\item[{uint8\+\_\+t}]{minute, }
+\item[{uint8\+\_\+t}]{second, }
+\item[{{\bf D\+S3231\+\_\+alarm1\+\_\+t}}]{mode, }
+\item[{bool}]{armed = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a23cea53349c55fba93c706b6e263e574}{}\label{class_d_s3231_a23cea53349c55fba93c706b6e263e574}
+
+
+Definition at line 638 of file D\+S3231.\+cpp.
+
+
+
+References arm\+Alarm1(), clear\+Alarm1(), D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+S\+E\+C\+O\+ND, D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+\+M\+\_\+S, D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+\+M\+\_\+S, D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+\+M\+\_\+S, D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+M\+\_\+S, D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+S, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1, and Wire.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_d_s3231_a23cea53349c55fba93c706b6e263e574_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!set\+Alarm2@{set\+Alarm2}}
+\index{set\+Alarm2@{set\+Alarm2}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{set\+Alarm2(uint8\+\_\+t dydw, uint8\+\_\+t hour, uint8\+\_\+t minute, D\+S3231\+\_\+alarm2\+\_\+t mode, bool armed=true)}{setAlarm2(uint8\_t dydw, uint8\_t hour, uint8\_t minute, DS3231\_alarm2\_t mode, bool armed=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::set\+Alarm2 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{dydw, }
+\item[{uint8\+\_\+t}]{hour, }
+\item[{uint8\+\_\+t}]{minute, }
+\item[{{\bf D\+S3231\+\_\+alarm2\+\_\+t}}]{mode, }
+\item[{bool}]{armed = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_ad505857c3594da9a4c159f607845364e}{}\label{class_d_s3231_ad505857c3594da9a4c159f607845364e}
+
+
+Definition at line 834 of file D\+S3231.\+cpp.
+
+
+
+References arm\+Alarm2(), clear\+Alarm2(), D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+M\+I\+N\+U\+TE, D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+M, D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+M, D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+M, D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+M, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2, and Wire.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{class_d_s3231_ad505857c3594da9a4c159f607845364e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!set\+Battery@{set\+Battery}}
+\index{set\+Battery@{set\+Battery}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{set\+Battery(bool time\+Battery, bool square\+Battery)}{setBattery(bool timeBattery, bool squareBattery)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::set\+Battery (
+\begin{DoxyParamCaption}
+\item[{bool}]{time\+Battery, }
+\item[{bool}]{square\+Battery}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a7a92e389dd214168bb73fcf2d1b88e8c}{}\label{class_d_s3231_a7a92e389dd214168bb73fcf2d1b88e8c}
+
+
+Definition at line 440 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+
+
+Referenced by begin().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_s3231_a7a92e389dd214168bb73fcf2d1b88e8c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!set\+Date\+Time@{set\+Date\+Time}}
+\index{set\+Date\+Time@{set\+Date\+Time}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{set\+Date\+Time(uint16\+\_\+t year, uint8\+\_\+t month, uint8\+\_\+t day, uint8\+\_\+t hour, uint8\+\_\+t minute, uint8\+\_\+t second)}{setDateTime(uint16\_t year, uint8\_t month, uint8\_t day, uint8\_t hour, uint8\_t minute, uint8\_t second)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::set\+Date\+Time (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{year, }
+\item[{uint8\+\_\+t}]{month, }
+\item[{uint8\+\_\+t}]{day, }
+\item[{uint8\+\_\+t}]{hour, }
+\item[{uint8\+\_\+t}]{minute, }
+\item[{uint8\+\_\+t}]{second}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a15eb3576feaa3535415e9b82367c344c}{}\label{class_d_s3231_a15eb3576feaa3535415e9b82367c344c}
+
+
+Definition at line 51 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS, D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+I\+ME, and Wire.
+
+
+
+Referenced by read\+\_\+\+G\+P\+S(), and set\+Date\+Time().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_s3231_a15eb3576feaa3535415e9b82367c344c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!set\+Date\+Time@{set\+Date\+Time}}
+\index{set\+Date\+Time@{set\+Date\+Time}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{set\+Date\+Time(uint32\+\_\+t t)}{setDateTime(uint32\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::set\+Date\+Time (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_ac8ccbb72f7cfbb27df1558a8896ef236}{}\label{class_d_s3231_ac8ccbb72f7cfbb27df1558a8896ef236}
+
+
+Definition at line 88 of file D\+S3231.\+cpp.
+
+
+
+References day(), hour(), minute(), month(), pgm\+\_\+read\+\_\+byte, second(), set\+Date\+Time(), and year().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_s3231_ac8ccbb72f7cfbb27df1558a8896ef236_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!set\+Date\+Time@{set\+Date\+Time}}
+\index{set\+Date\+Time@{set\+Date\+Time}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{set\+Date\+Time(const char $\ast$date, const char $\ast$time)}{setDateTime(const char *date, const char *time)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::set\+Date\+Time (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{date, }
+\item[{const char $\ast$}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a95352ab8a40b383e4680e489ec3ee68a}{}\label{class_d_s3231_a95352ab8a40b383e4680e489ec3ee68a}
+
+
+Definition at line 140 of file D\+S3231.\+cpp.
+
+
+
+References day(), hour(), minute(), month(), second(), set\+Date\+Time(), and year().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_d_s3231_a95352ab8a40b383e4680e489ec3ee68a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{D\+S3231@{D\+S3231}!set\+Output@{set\+Output}}
+\index{set\+Output@{set\+Output}!D\+S3231@{D\+S3231}}
+\subsubsection[{\texorpdfstring{set\+Output(\+D\+S3231\+\_\+sqw\+\_\+t mode)}{setOutput(DS3231\_sqw\_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void D\+S3231\+::set\+Output (
+\begin{DoxyParamCaption}
+\item[{{\bf D\+S3231\+\_\+sqw\+\_\+t}}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_d_s3231_a1eafc57831fe8fc1ce4145911980e0f7}{}\label{class_d_s3231_a1eafc57831fe8fc1ce4145911980e0f7}
+
+
+Definition at line 477 of file D\+S3231.\+cpp.
+
+
+
+References D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Arduino-\/\+D\+S3231-\/master/\hyperlink{_d_s3231_8h}{D\+S3231.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Arduino-\/\+D\+S3231-\/master/\hyperlink{_d_s3231_8cpp}{D\+S3231.\+cpp}\end{DoxyCompactItemize}

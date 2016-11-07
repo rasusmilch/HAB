@@ -1,0 +1,242 @@
+\hypertarget{_one_wire_8h}{}\section{Weather\+\_\+\+Balloon/library/\+One\+Wire2/\+One\+Wire.h File Reference}
+\label{_one_wire_8h}\index{Weather\+\_\+\+Balloon/library/\+One\+Wire2/\+One\+Wire.\+h@{Weather\+\_\+\+Balloon/library/\+One\+Wire2/\+One\+Wire.\+h}}
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}W\+Program.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}pins\+\_\+arduino.\+h\char`\"{}}\\*
+Include dependency graph for One\+Wire.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{_one_wire_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_one_wire_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_one_wire}{One\+Wire}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_one_wire_8h_a54d103f9749934ceeb9e6bf1268365e5}{O\+N\+E\+W\+I\+R\+E\+\_\+\+S\+E\+A\+R\+CH}~1
+\item 
+\#define \hyperlink{_one_wire_8h_a8e51c50263d3dcc4b5e4596c0021722a}{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+RC}~1
+\item 
+\#define \hyperlink{_one_wire_8h_a62b54381428ba2f8d44a1b11f47b10de}{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C8\+\_\+\+T\+A\+B\+LE}~1
+\item 
+\#define \hyperlink{_one_wire_8h_af218a02bdd87cddd058147e435a6b1ee}{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C16}~1
+\item 
+\#define \hyperlink{_one_wire_8h_aa93f0eb578d23995850d61f7d61c55c1}{F\+A\+L\+SE}~0
+\item 
+\#define \hyperlink{_one_wire_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{T\+R\+UE}~1
+\item 
+\#define \hyperlink{_one_wire_8h_a86c55041aed9e4d747e93d8f1813b64e}{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+A\+S\+E\+R\+EG}(pin)                      ~(0)
+\item 
+\#define \hyperlink{_one_wire_8h_a805593ed59e404096eb0d1e80e4833f9}{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+I\+T\+M\+A\+SK}(pin)                      ~(pin)
+\item 
+\#define \hyperlink{_one_wire_8h_a706e3b043aa3584577353e72d50cfb00}{I\+O\+\_\+\+R\+E\+G\+\_\+\+T\+Y\+PE}~unsigned int
+\item 
+\#define \hyperlink{_one_wire_8h_aa73b840a7c266531a1641d7972ac04ab}{I\+O\+\_\+\+R\+E\+G\+\_\+\+A\+SM}
+\item 
+\#define \hyperlink{_one_wire_8h_a351eb007f4504f51c82e4a025cd09109}{D\+I\+R\+E\+C\+T\+\_\+\+R\+E\+AD}(base,  pin)                ~digital\+Read(pin)
+\item 
+\#define \hyperlink{_one_wire_8h_aac2a594ea29b8297d0307675ef8b2a29}{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+OW}(base,  pin)      ~digital\+Write(pin, L\+OW)
+\item 
+\#define \hyperlink{_one_wire_8h_a31366a5a60072a48aa0520b8454c50dc}{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+I\+GH}(base,  pin)    ~digital\+Write(pin, H\+I\+GH)
+\item 
+\#define \hyperlink{_one_wire_8h_ad7c4f302cfedf8b0b7b5dd7b1c7a013a}{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+P\+UT}(base,  pin)    ~pin\+Mode(pin,I\+N\+P\+UT)
+\item 
+\#define \hyperlink{_one_wire_8h_a2b4b02a47e04f87cc7f91ca3d2b62a88}{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+U\+T\+P\+UT}(base,  pin)  ~pin\+Mode(pin,O\+U\+T\+P\+UT)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{One\+Wire.\+h@{One\+Wire.\+h}!D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+P\+UT@{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+P\+UT}}
+\index{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+P\+UT@{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+P\+UT}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+P\+UT}{DIRECT\_MODE\_INPUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+I\+N\+P\+UT(
+\begin{DoxyParamCaption}
+\item[{}]{base, }
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~pin\+Mode(pin,I\+N\+P\+UT)}\hypertarget{_one_wire_8h_ad7c4f302cfedf8b0b7b5dd7b1c7a013a}{}\label{_one_wire_8h_ad7c4f302cfedf8b0b7b5dd7b1c7a013a}
+
+
+Definition at line 247 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::depower(), One\+Wire\+::read\+\_\+bit(), One\+Wire\+::reset(), One\+Wire\+::write(), and One\+Wire\+::write\+\_\+bytes().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+U\+T\+P\+UT@{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+U\+T\+P\+UT}}
+\index{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+U\+T\+P\+UT@{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+U\+T\+P\+UT}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+U\+T\+P\+UT}{DIRECT\_MODE\_OUTPUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+I\+R\+E\+C\+T\+\_\+\+M\+O\+D\+E\+\_\+\+O\+U\+T\+P\+UT(
+\begin{DoxyParamCaption}
+\item[{}]{base, }
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~pin\+Mode(pin,O\+U\+T\+P\+UT)}\hypertarget{_one_wire_8h_a2b4b02a47e04f87cc7f91ca3d2b62a88}{}\label{_one_wire_8h_a2b4b02a47e04f87cc7f91ca3d2b62a88}
+
+
+Definition at line 248 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::read\+\_\+bit(), One\+Wire\+::reset(), and One\+Wire\+::write\+\_\+bit().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!D\+I\+R\+E\+C\+T\+\_\+\+R\+E\+AD@{D\+I\+R\+E\+C\+T\+\_\+\+R\+E\+AD}}
+\index{D\+I\+R\+E\+C\+T\+\_\+\+R\+E\+AD@{D\+I\+R\+E\+C\+T\+\_\+\+R\+E\+AD}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{D\+I\+R\+E\+C\+T\+\_\+\+R\+E\+AD}{DIRECT\_READ}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+I\+R\+E\+C\+T\+\_\+\+R\+E\+AD(
+\begin{DoxyParamCaption}
+\item[{}]{base, }
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~digital\+Read(pin)}\hypertarget{_one_wire_8h_a351eb007f4504f51c82e4a025cd09109}{}\label{_one_wire_8h_a351eb007f4504f51c82e4a025cd09109}
+
+
+Definition at line 244 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::read\+\_\+bit(), and One\+Wire\+::reset().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+I\+GH@{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+I\+GH}}
+\index{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+I\+GH@{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+I\+GH}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+I\+GH}{DIRECT\_WRITE\_HIGH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+H\+I\+GH(
+\begin{DoxyParamCaption}
+\item[{}]{base, }
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~digital\+Write(pin, H\+I\+GH)}\hypertarget{_one_wire_8h_a31366a5a60072a48aa0520b8454c50dc}{}\label{_one_wire_8h_a31366a5a60072a48aa0520b8454c50dc}
+
+
+Definition at line 246 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::write\+\_\+bit().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+OW@{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+OW}}
+\index{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+OW@{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+OW}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+OW}{DIRECT\_WRITE\_LOW}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+I\+R\+E\+C\+T\+\_\+\+W\+R\+I\+T\+E\+\_\+\+L\+OW(
+\begin{DoxyParamCaption}
+\item[{}]{base, }
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~digital\+Write(pin, L\+OW)}\hypertarget{_one_wire_8h_aac2a594ea29b8297d0307675ef8b2a29}{}\label{_one_wire_8h_aac2a594ea29b8297d0307675ef8b2a29}
+
+
+Definition at line 245 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::read\+\_\+bit(), One\+Wire\+::reset(), One\+Wire\+::write(), One\+Wire\+::write\+\_\+bit(), and One\+Wire\+::write\+\_\+bytes().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!F\+A\+L\+SE@{F\+A\+L\+SE}}
+\index{F\+A\+L\+SE@{F\+A\+L\+SE}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{F\+A\+L\+SE}{FALSE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+A\+L\+SE~0}\hypertarget{_one_wire_8h_aa93f0eb578d23995850d61f7d61c55c1}{}\label{_one_wire_8h_aa93f0eb578d23995850d61f7d61c55c1}
+
+
+Definition at line 53 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::reset\+\_\+search(), One\+Wire\+::search(), and One\+Wire\+::target\+\_\+search().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!I\+O\+\_\+\+R\+E\+G\+\_\+\+A\+SM@{I\+O\+\_\+\+R\+E\+G\+\_\+\+A\+SM}}
+\index{I\+O\+\_\+\+R\+E\+G\+\_\+\+A\+SM@{I\+O\+\_\+\+R\+E\+G\+\_\+\+A\+SM}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{I\+O\+\_\+\+R\+E\+G\+\_\+\+A\+SM}{IO\_REG\_ASM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+O\+\_\+\+R\+E\+G\+\_\+\+A\+SM}\hypertarget{_one_wire_8h_aa73b840a7c266531a1641d7972ac04ab}{}\label{_one_wire_8h_aa73b840a7c266531a1641d7972ac04ab}
+
+
+Definition at line 243 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::read\+\_\+bit(), One\+Wire\+::reset(), and One\+Wire\+::write\+\_\+bit().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!I\+O\+\_\+\+R\+E\+G\+\_\+\+T\+Y\+PE@{I\+O\+\_\+\+R\+E\+G\+\_\+\+T\+Y\+PE}}
+\index{I\+O\+\_\+\+R\+E\+G\+\_\+\+T\+Y\+PE@{I\+O\+\_\+\+R\+E\+G\+\_\+\+T\+Y\+PE}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{I\+O\+\_\+\+R\+E\+G\+\_\+\+T\+Y\+PE}{IO\_REG\_TYPE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+O\+\_\+\+R\+E\+G\+\_\+\+T\+Y\+PE~unsigned int}\hypertarget{_one_wire_8h_a706e3b043aa3584577353e72d50cfb00}{}\label{_one_wire_8h_a706e3b043aa3584577353e72d50cfb00}
+
+
+Definition at line 242 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::read\+\_\+bit(), One\+Wire\+::reset(), and One\+Wire\+::write\+\_\+bit().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+RC@{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+RC}}
+\index{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+RC@{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+RC}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+RC}{ONEWIRE\_CRC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+RC~1}\hypertarget{_one_wire_8h_a8e51c50263d3dcc4b5e4596c0021722a}{}\label{_one_wire_8h_a8e51c50263d3dcc4b5e4596c0021722a}
+
+
+Definition at line 34 of file One\+Wire.\+h.
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C16@{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C16}}
+\index{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C16@{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C16}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C16}{ONEWIRE\_CRC16}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C16~1}\hypertarget{_one_wire_8h_af218a02bdd87cddd058147e435a6b1ee}{}\label{_one_wire_8h_af218a02bdd87cddd058147e435a6b1ee}
+
+
+Definition at line 49 of file One\+Wire.\+h.
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C8\+\_\+\+T\+A\+B\+LE@{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C8\+\_\+\+T\+A\+B\+LE}}
+\index{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C8\+\_\+\+T\+A\+B\+LE@{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C8\+\_\+\+T\+A\+B\+LE}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C8\+\_\+\+T\+A\+B\+LE}{ONEWIRE\_CRC8\_TABLE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+N\+E\+W\+I\+R\+E\+\_\+\+C\+R\+C8\+\_\+\+T\+A\+B\+LE~1}\hypertarget{_one_wire_8h_a62b54381428ba2f8d44a1b11f47b10de}{}\label{_one_wire_8h_a62b54381428ba2f8d44a1b11f47b10de}
+
+
+Definition at line 43 of file One\+Wire.\+h.
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!O\+N\+E\+W\+I\+R\+E\+\_\+\+S\+E\+A\+R\+CH@{O\+N\+E\+W\+I\+R\+E\+\_\+\+S\+E\+A\+R\+CH}}
+\index{O\+N\+E\+W\+I\+R\+E\+\_\+\+S\+E\+A\+R\+CH@{O\+N\+E\+W\+I\+R\+E\+\_\+\+S\+E\+A\+R\+CH}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{O\+N\+E\+W\+I\+R\+E\+\_\+\+S\+E\+A\+R\+CH}{ONEWIRE\_SEARCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+N\+E\+W\+I\+R\+E\+\_\+\+S\+E\+A\+R\+CH~1}\hypertarget{_one_wire_8h_a54d103f9749934ceeb9e6bf1268365e5}{}\label{_one_wire_8h_a54d103f9749934ceeb9e6bf1268365e5}
+
+
+Definition at line 29 of file One\+Wire.\+h.
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+A\+S\+E\+R\+EG@{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+A\+S\+E\+R\+EG}}
+\index{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+A\+S\+E\+R\+EG@{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+A\+S\+E\+R\+EG}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+A\+S\+E\+R\+EG}{PIN\_TO\_BASEREG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+A\+S\+E\+R\+EG(
+\begin{DoxyParamCaption}
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~(0)}\hypertarget{_one_wire_8h_a86c55041aed9e4d747e93d8f1813b64e}{}\label{_one_wire_8h_a86c55041aed9e4d747e93d8f1813b64e}
+
+
+Definition at line 240 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::\+One\+Wire().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+I\+T\+M\+A\+SK@{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+I\+T\+M\+A\+SK}}
+\index{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+I\+T\+M\+A\+SK@{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+I\+T\+M\+A\+SK}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+I\+T\+M\+A\+SK}{PIN\_TO\_BITMASK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+T\+O\+\_\+\+B\+I\+T\+M\+A\+SK(
+\begin{DoxyParamCaption}
+\item[{}]{pin}
+\end{DoxyParamCaption}
+)~(pin)}\hypertarget{_one_wire_8h_a805593ed59e404096eb0d1e80e4833f9}{}\label{_one_wire_8h_a805593ed59e404096eb0d1e80e4833f9}
+
+
+Definition at line 241 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::\+One\+Wire().
+
+\index{One\+Wire.\+h@{One\+Wire.\+h}!T\+R\+UE@{T\+R\+UE}}
+\index{T\+R\+UE@{T\+R\+UE}!One\+Wire.\+h@{One\+Wire.\+h}}
+\subsubsection[{\texorpdfstring{T\+R\+UE}{TRUE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+R\+UE~1}\hypertarget{_one_wire_8h_aa8cecfc5c5c054d2875c03e77b7be15d}{}\label{_one_wire_8h_aa8cecfc5c5c054d2875c03e77b7be15d}
+
+
+Definition at line 56 of file One\+Wire.\+h.
+
+
+
+Referenced by One\+Wire\+::search().
+

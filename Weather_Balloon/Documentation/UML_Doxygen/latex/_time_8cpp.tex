@@ -1,0 +1,1047 @@
+\hypertarget{_time_8cpp}{}\section{Weather\+\_\+\+Balloon/library/\+Time-\/master/\+Time.cpp File Reference}
+\label{_time_8cpp}\index{Weather\+\_\+\+Balloon/library/\+Time-\/master/\+Time.\+cpp@{Weather\+\_\+\+Balloon/library/\+Time-\/master/\+Time.\+cpp}}
+{\ttfamily \#include $<$W\+Program.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Time\+Lib.\+h\char`\"{}}\\*
+Include dependency graph for Time.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_time_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_time_8cpp_a7408f7b32a75c5f071a8096be049bc4d}{L\+E\+A\+P\+\_\+\+Y\+E\+AR}(Y)      ~( ((1970+Y)$>$0) \&\& !((1970+Y)\%4) \&\& ( ((1970+Y)\%100) $\vert$$\vert$ !((1970+Y)\%400) ) )
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_time_8cpp_a1f13327e0831cde49d525fe035d55fd8}{refresh\+Cache} (time\+\_\+t t)
+\item 
+int \hyperlink{_time_8cpp_a721ff0d06e8367ee5d2c5cf1a2c40ab5}{hour} ()
+\item 
+int \hyperlink{_time_8cpp_ac4706d0cffc9e111a6c6a757b462e88e}{hour} (time\+\_\+t t)
+\item 
+int \hyperlink{_time_8cpp_a5a99d1c070206fef196539dec629443e}{hour\+Format12} ()
+\item 
+int \hyperlink{_time_8cpp_a3cf3a2a5bc98d77739dd1c8c4c0909b9}{hour\+Format12} (time\+\_\+t t)
+\item 
+uint8\+\_\+t \hyperlink{_time_8cpp_a93f95d54044b6bea7e53d820c2b3ac45}{is\+AM} ()
+\item 
+uint8\+\_\+t \hyperlink{_time_8cpp_a4334ceb57e1ed381be82347e196aabc6}{is\+AM} (time\+\_\+t t)
+\item 
+uint8\+\_\+t \hyperlink{_time_8cpp_a25dad3cd574983eff789b04781e57de8}{is\+PM} ()
+\item 
+uint8\+\_\+t \hyperlink{_time_8cpp_af53f46c9c1e0ad141f99045e3f96d688}{is\+PM} (time\+\_\+t t)
+\item 
+int \hyperlink{_time_8cpp_adf618b3bac7dcfac69d4e1f5a68159b7}{minute} ()
+\item 
+int \hyperlink{_time_8cpp_a88285e3771bcb970424122a6ee4b40fa}{minute} (time\+\_\+t t)
+\item 
+int \hyperlink{_time_8cpp_aed5657208944fe098e4e5f3380e0a1f9}{second} ()
+\item 
+int \hyperlink{_time_8cpp_a10a4dd811353baa12dadadee7c7e5099}{second} (time\+\_\+t t)
+\item 
+int \hyperlink{_time_8cpp_a075786e0a525a2bba638889efcc42385}{day} ()
+\item 
+int \hyperlink{_time_8cpp_a51dcd9f072551ba8f47449a4e7f78c29}{day} (time\+\_\+t t)
+\item 
+int \hyperlink{_time_8cpp_a73117e8164575afa4e25dab22d4f3ff0}{weekday} ()
+\item 
+int \hyperlink{_time_8cpp_a397d9b2a739891092b487211668b496f}{weekday} (time\+\_\+t t)
+\item 
+int \hyperlink{_time_8cpp_a3f3be7ce4301fc1896efac6f0952f772}{month} ()
+\item 
+int \hyperlink{_time_8cpp_a726c707dded9d78cf076554eceb956ec}{month} (time\+\_\+t t)
+\item 
+int \hyperlink{_time_8cpp_a98bf680dbfa28f79514ba50d33fee63f}{year} ()
+\item 
+int \hyperlink{_time_8cpp_a8608865f8292c0505e02b67fd1cf39e8}{year} (time\+\_\+t t)
+\item 
+void \hyperlink{_time_8cpp_af08cc091ce5590067f695e51bfdefd17}{break\+Time} (time\+\_\+t time\+Input, tm\+Elements\+\_\+t \&tm)
+\item 
+time\+\_\+t \hyperlink{_time_8cpp_a0b205c43ee3c17d8d84a83b6f2f77bc8}{make\+Time} (tm\+Elements\+\_\+t \&tm)
+\item 
+time\+\_\+t \hyperlink{_time_8cpp_adea6c108853185c1d856fa38ec74992c}{now} ()
+\item 
+void \hyperlink{_time_8cpp_a1ce752bee962425a697f513db46964d4}{set\+Time} (time\+\_\+t t)
+\item 
+void \hyperlink{_time_8cpp_a6b60a4747bafcd553c95a2110649c31d}{set\+Time} (int hr, int min, int sec, int dy, int mnth, int yr)
+\item 
+void \hyperlink{_time_8cpp_acc6ec9a3678824ee0b252511300cf070}{adjust\+Time} (long adjustment)
+\item 
+time\+Status\+\_\+t \hyperlink{_time_8cpp_a9d95a01859478796c4d60525bdaa9c59}{time\+Status} ()
+\item 
+void \hyperlink{_time_8cpp_afb0bd098acb0d2ab18392313c38c636d}{set\+Sync\+Provider} (get\+External\+Time get\+Time\+Function)
+\item 
+void \hyperlink{_time_8cpp_a1cc2f564b2cdcbfdea2d9d65378878ee}{set\+Sync\+Interval} (time\+\_\+t interval)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+get\+External\+Time \hyperlink{_time_8cpp_adfb6edd80f1ed7139bc779b8aaada8b7}{get\+Time\+Ptr}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Time.\+cpp@{Time.\+cpp}!L\+E\+A\+P\+\_\+\+Y\+E\+AR@{L\+E\+A\+P\+\_\+\+Y\+E\+AR}}
+\index{L\+E\+A\+P\+\_\+\+Y\+E\+AR@{L\+E\+A\+P\+\_\+\+Y\+E\+AR}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{L\+E\+A\+P\+\_\+\+Y\+E\+AR}{LEAP\_YEAR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+E\+A\+P\+\_\+\+Y\+E\+AR(
+\begin{DoxyParamCaption}
+\item[{}]{Y}
+\end{DoxyParamCaption}
+)~( ((1970+Y)$>$0) \&\& !((1970+Y)\%4) \&\& ( ((1970+Y)\%100) $\vert$$\vert$ !((1970+Y)\%400) ) )}\hypertarget{_time_8cpp_a7408f7b32a75c5f071a8096be049bc4d}{}\label{_time_8cpp_a7408f7b32a75c5f071a8096be049bc4d}
+
+
+Definition at line 147 of file Time.\+cpp.
+
+
+
+Referenced by break\+Time(), and make\+Time().
+
+
+
+\subsection{Function Documentation}
+\index{Time.\+cpp@{Time.\+cpp}!adjust\+Time@{adjust\+Time}}
+\index{adjust\+Time@{adjust\+Time}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{adjust\+Time(long adjustment)}{adjustTime(long adjustment)}}]{\setlength{\rightskip}{0pt plus 5cm}void adjust\+Time (
+\begin{DoxyParamCaption}
+\item[{long}]{adjustment}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_acc6ec9a3678824ee0b252511300cf070}{}\label{_time_8cpp_acc6ec9a3678824ee0b252511300cf070}
+
+
+Definition at line 302 of file Time.\+cpp.
+
+\index{Time.\+cpp@{Time.\+cpp}!break\+Time@{break\+Time}}
+\index{break\+Time@{break\+Time}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{break\+Time(time\+\_\+t time\+Input, tm\+Elements\+\_\+t \&tm)}{breakTime(time\_t timeInput, tmElements\_t \&tm)}}]{\setlength{\rightskip}{0pt plus 5cm}void break\+Time (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{time\+Input, }
+\item[{tm\+Elements\+\_\+t \&}]{tm}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_af08cc091ce5590067f695e51bfdefd17}{}\label{_time_8cpp_af08cc091ce5590067f695e51bfdefd17}
+
+
+Definition at line 151 of file Time.\+cpp.
+
+
+
+References L\+E\+A\+P\+\_\+\+Y\+E\+AR, month(), and year().
+
+
+
+Referenced by refresh\+Cache().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_af08cc091ce5590067f695e51bfdefd17_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_af08cc091ce5590067f695e51bfdefd17_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!day@{day}}
+\index{day@{day}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{day()}{day()}}]{\setlength{\rightskip}{0pt plus 5cm}int day (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a075786e0a525a2bba638889efcc42385}{}\label{_time_8cpp_a075786e0a525a2bba638889efcc42385}
+
+
+Definition at line 106 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Referenced by D\+S3231\+::is\+Alarm2(), R\+T\+C\+Zero\+::set\+Alarm\+Day(), D\+S3231\+::set\+Date\+Time(), R\+T\+C\+Zero\+::set\+Day(), and Tiny\+G\+P\+S\+Date\+::value().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{_time_8cpp_a075786e0a525a2bba638889efcc42385_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a075786e0a525a2bba638889efcc42385_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!day@{day}}
+\index{day@{day}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{day(time\+\_\+t t)}{day(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}int day (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a51dcd9f072551ba8f47449a4e7f78c29}{}\label{_time_8cpp_a51dcd9f072551ba8f47449a4e7f78c29}
+
+
+Definition at line 110 of file Time.\+cpp.
+
+
+
+References refresh\+Cache().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a51dcd9f072551ba8f47449a4e7f78c29_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!hour@{hour}}
+\index{hour@{hour}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{hour()}{hour()}}]{\setlength{\rightskip}{0pt plus 5cm}int hour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a721ff0d06e8367ee5d2c5cf1a2c40ab5}{}\label{_time_8cpp_a721ff0d06e8367ee5d2c5cf1a2c40ab5}
+
+
+Definition at line 49 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Referenced by D\+S3231\+::is\+Alarm2(), is\+P\+M(), D\+S3231\+::set\+Date\+Time(), and Tiny\+G\+P\+S\+Time\+::value().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{_time_8cpp_a721ff0d06e8367ee5d2c5cf1a2c40ab5_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a721ff0d06e8367ee5d2c5cf1a2c40ab5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!hour@{hour}}
+\index{hour@{hour}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{hour(time\+\_\+t t)}{hour(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}int hour (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_ac4706d0cffc9e111a6c6a757b462e88e}{}\label{_time_8cpp_ac4706d0cffc9e111a6c6a757b462e88e}
+
+
+Definition at line 53 of file Time.\+cpp.
+
+
+
+References refresh\+Cache().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_ac4706d0cffc9e111a6c6a757b462e88e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!hour\+Format12@{hour\+Format12}}
+\index{hour\+Format12@{hour\+Format12}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{hour\+Format12()}{hourFormat12()}}]{\setlength{\rightskip}{0pt plus 5cm}int hour\+Format12 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a5a99d1c070206fef196539dec629443e}{}\label{_time_8cpp_a5a99d1c070206fef196539dec629443e}
+
+
+Definition at line 58 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=311pt]{_time_8cpp_a5a99d1c070206fef196539dec629443e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!hour\+Format12@{hour\+Format12}}
+\index{hour\+Format12@{hour\+Format12}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{hour\+Format12(time\+\_\+t t)}{hourFormat12(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}int hour\+Format12 (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a3cf3a2a5bc98d77739dd1c8c4c0909b9}{}\label{_time_8cpp_a3cf3a2a5bc98d77739dd1c8c4c0909b9}
+
+
+Definition at line 62 of file Time.\+cpp.
+
+
+
+References refresh\+Cache().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a3cf3a2a5bc98d77739dd1c8c4c0909b9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!is\+AM@{is\+AM}}
+\index{is\+AM@{is\+AM}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{is\+A\+M()}{isAM()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t is\+AM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a93f95d54044b6bea7e53d820c2b3ac45}{}\label{_time_8cpp_a93f95d54044b6bea7e53d820c2b3ac45}
+
+
+Definition at line 72 of file Time.\+cpp.
+
+
+
+References is\+P\+M(), and now().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{_time_8cpp_a93f95d54044b6bea7e53d820c2b3ac45_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!is\+AM@{is\+AM}}
+\index{is\+AM@{is\+AM}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{is\+A\+M(time\+\_\+t t)}{isAM(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t is\+AM (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a4334ceb57e1ed381be82347e196aabc6}{}\label{_time_8cpp_a4334ceb57e1ed381be82347e196aabc6}
+
+
+Definition at line 76 of file Time.\+cpp.
+
+
+
+References is\+P\+M().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{_time_8cpp_a4334ceb57e1ed381be82347e196aabc6_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!is\+PM@{is\+PM}}
+\index{is\+PM@{is\+PM}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{is\+P\+M()}{isPM()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t is\+PM (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a25dad3cd574983eff789b04781e57de8}{}\label{_time_8cpp_a25dad3cd574983eff789b04781e57de8}
+
+
+Definition at line 80 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Referenced by is\+A\+M().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=274pt]{_time_8cpp_a25dad3cd574983eff789b04781e57de8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=191pt]{_time_8cpp_a25dad3cd574983eff789b04781e57de8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!is\+PM@{is\+PM}}
+\index{is\+PM@{is\+PM}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{is\+P\+M(time\+\_\+t t)}{isPM(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t is\+PM (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_af53f46c9c1e0ad141f99045e3f96d688}{}\label{_time_8cpp_af53f46c9c1e0ad141f99045e3f96d688}
+
+
+Definition at line 84 of file Time.\+cpp.
+
+
+
+References hour().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{_time_8cpp_af53f46c9c1e0ad141f99045e3f96d688_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!make\+Time@{make\+Time}}
+\index{make\+Time@{make\+Time}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{make\+Time(tm\+Elements\+\_\+t \&tm)}{makeTime(tmElements\_t \&tm)}}]{\setlength{\rightskip}{0pt plus 5cm}time\+\_\+t make\+Time (
+\begin{DoxyParamCaption}
+\item[{tm\+Elements\+\_\+t \&}]{tm}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a0b205c43ee3c17d8d84a83b6f2f77bc8}{}\label{_time_8cpp_a0b205c43ee3c17d8d84a83b6f2f77bc8}
+
+
+Definition at line 204 of file Time.\+cpp.
+
+
+
+References i, and L\+E\+A\+P\+\_\+\+Y\+E\+AR.
+
+
+
+Referenced by set\+Time().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{_time_8cpp_a0b205c43ee3c17d8d84a83b6f2f77bc8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!minute@{minute}}
+\index{minute@{minute}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{minute()}{minute()}}]{\setlength{\rightskip}{0pt plus 5cm}int minute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_adf618b3bac7dcfac69d4e1f5a68159b7}{}\label{_time_8cpp_adf618b3bac7dcfac69d4e1f5a68159b7}
+
+
+Definition at line 88 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Referenced by D\+S3231\+::set\+Date\+Time(), and Tiny\+G\+P\+S\+Time\+::value().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{_time_8cpp_adf618b3bac7dcfac69d4e1f5a68159b7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_adf618b3bac7dcfac69d4e1f5a68159b7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!minute@{minute}}
+\index{minute@{minute}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{minute(time\+\_\+t t)}{minute(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}int minute (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a88285e3771bcb970424122a6ee4b40fa}{}\label{_time_8cpp_a88285e3771bcb970424122a6ee4b40fa}
+
+
+Definition at line 92 of file Time.\+cpp.
+
+
+
+References refresh\+Cache().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a88285e3771bcb970424122a6ee4b40fa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!month@{month}}
+\index{month@{month}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{month()}{month()}}]{\setlength{\rightskip}{0pt plus 5cm}int month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a3f3be7ce4301fc1896efac6f0952f772}{}\label{_time_8cpp_a3f3be7ce4301fc1896efac6f0952f772}
+
+
+Definition at line 124 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Referenced by break\+Time(), D\+S3231\+::is\+Alarm2(), R\+T\+C\+Zero\+::set\+Alarm\+Month(), D\+S3231\+::set\+Date\+Time(), R\+T\+C\+Zero\+::set\+Month(), and Tiny\+G\+P\+S\+Date\+::value().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{_time_8cpp_a3f3be7ce4301fc1896efac6f0952f772_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a3f3be7ce4301fc1896efac6f0952f772_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!month@{month}}
+\index{month@{month}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{month(time\+\_\+t t)}{month(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}int month (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a726c707dded9d78cf076554eceb956ec}{}\label{_time_8cpp_a726c707dded9d78cf076554eceb956ec}
+
+
+Definition at line 128 of file Time.\+cpp.
+
+
+
+References refresh\+Cache().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a726c707dded9d78cf076554eceb956ec_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!now@{now}}
+\index{now@{now}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{now()}{now()}}]{\setlength{\rightskip}{0pt plus 5cm}time\+\_\+t now (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_adea6c108853185c1d856fa38ec74992c}{}\label{_time_8cpp_adea6c108853185c1d856fa38ec74992c}
+
+
+Definition at line 250 of file Time.\+cpp.
+
+
+
+References get\+Time\+Ptr, and set\+Time().
+
+
+
+Referenced by R\+T\+C\+\_\+\+Millis\+::begin(), P\+I\+D\+::\+Compute(), day(), hour(), hour\+Format12(), Filter\+Two\+Pole\+::input(), is\+A\+M(), is\+P\+M(), minute(), month(), Dallas\+Temperature\+::request\+Temperatures\+By\+Address(), second(), set\+Sync\+Provider(), Filter\+One\+Pole\+::test(), Filter\+Two\+Pole\+::test(), Filter\+One\+Pole\+Cascade\+::test(), time\+Status(), weekday(), and year().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=201pt]{_time_8cpp_adea6c108853185c1d856fa38ec74992c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_adea6c108853185c1d856fa38ec74992c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!refresh\+Cache@{refresh\+Cache}}
+\index{refresh\+Cache@{refresh\+Cache}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{refresh\+Cache(time\+\_\+t t)}{refreshCache(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}void refresh\+Cache (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a1f13327e0831cde49d525fe035d55fd8}{}\label{_time_8cpp_a1f13327e0831cde49d525fe035d55fd8}
+
+
+Definition at line 42 of file Time.\+cpp.
+
+
+
+References break\+Time().
+
+
+
+Referenced by day(), hour(), hour\+Format12(), minute(), month(), second(), weekday(), and year().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a1f13327e0831cde49d525fe035d55fd8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{_time_8cpp_a1f13327e0831cde49d525fe035d55fd8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!second@{second}}
+\index{second@{second}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{second()}{second()}}]{\setlength{\rightskip}{0pt plus 5cm}int second (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_aed5657208944fe098e4e5f3380e0a1f9}{}\label{_time_8cpp_aed5657208944fe098e4e5f3380e0a1f9}
+
+
+Definition at line 97 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Referenced by D\+S3231\+::set\+Date\+Time(), and Tiny\+G\+P\+S\+Time\+::value().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=282pt]{_time_8cpp_aed5657208944fe098e4e5f3380e0a1f9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_aed5657208944fe098e4e5f3380e0a1f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!second@{second}}
+\index{second@{second}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{second(time\+\_\+t t)}{second(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}int second (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a10a4dd811353baa12dadadee7c7e5099}{}\label{_time_8cpp_a10a4dd811353baa12dadadee7c7e5099}
+
+
+Definition at line 101 of file Time.\+cpp.
+
+
+
+References refresh\+Cache().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a10a4dd811353baa12dadadee7c7e5099_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!set\+Sync\+Interval@{set\+Sync\+Interval}}
+\index{set\+Sync\+Interval@{set\+Sync\+Interval}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+Sync\+Interval(time\+\_\+t interval)}{setSyncInterval(time\_t interval)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Sync\+Interval (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{interval}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a1cc2f564b2cdcbfdea2d9d65378878ee}{}\label{_time_8cpp_a1cc2f564b2cdcbfdea2d9d65378878ee}
+
+
+Definition at line 318 of file Time.\+cpp.
+
+\index{Time.\+cpp@{Time.\+cpp}!set\+Sync\+Provider@{set\+Sync\+Provider}}
+\index{set\+Sync\+Provider@{set\+Sync\+Provider}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+Sync\+Provider(get\+External\+Time get\+Time\+Function)}{setSyncProvider(getExternalTime getTimeFunction)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Sync\+Provider (
+\begin{DoxyParamCaption}
+\item[{get\+External\+Time}]{get\+Time\+Function}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_afb0bd098acb0d2ab18392313c38c636d}{}\label{_time_8cpp_afb0bd098acb0d2ab18392313c38c636d}
+
+
+Definition at line 312 of file Time.\+cpp.
+
+
+
+References get\+Time\+Ptr, and now().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{_time_8cpp_afb0bd098acb0d2ab18392313c38c636d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+Time(time\+\_\+t t)}{setTime(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Time (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a1ce752bee962425a697f513db46964d4}{}\label{_time_8cpp_a1ce752bee962425a697f513db46964d4}
+
+
+Definition at line 274 of file Time.\+cpp.
+
+
+
+Referenced by now(), set\+Time(), and Tiny\+G\+P\+S\+Time\+::\+Tiny\+G\+P\+S\+Time().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a1ce752bee962425a697f513db46964d4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!set\+Time@{set\+Time}}
+\index{set\+Time@{set\+Time}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+Time(int hr, int min, int sec, int dy, int mnth, int yr)}{setTime(int hr, int min, int sec, int dy, int mnth, int yr)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+Time (
+\begin{DoxyParamCaption}
+\item[{int}]{hr, }
+\item[{int}]{min, }
+\item[{int}]{sec, }
+\item[{int}]{dy, }
+\item[{int}]{mnth, }
+\item[{int}]{yr}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a6b60a4747bafcd553c95a2110649c31d}{}\label{_time_8cpp_a6b60a4747bafcd553c95a2110649c31d}
+
+
+Definition at line 286 of file Time.\+cpp.
+
+
+
+References make\+Time(), and set\+Time().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{_time_8cpp_a6b60a4747bafcd553c95a2110649c31d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!time\+Status@{time\+Status}}
+\index{time\+Status@{time\+Status}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{time\+Status()}{timeStatus()}}]{\setlength{\rightskip}{0pt plus 5cm}time\+Status\+\_\+t time\+Status (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a9d95a01859478796c4d60525bdaa9c59}{}\label{_time_8cpp_a9d95a01859478796c4d60525bdaa9c59}
+
+
+Definition at line 307 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_time_8cpp_a9d95a01859478796c4d60525bdaa9c59_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!weekday@{weekday}}
+\index{weekday@{weekday}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{weekday()}{weekday()}}]{\setlength{\rightskip}{0pt plus 5cm}int weekday (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a73117e8164575afa4e25dab22d4f3ff0}{}\label{_time_8cpp_a73117e8164575afa4e25dab22d4f3ff0}
+
+
+Definition at line 115 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{_time_8cpp_a73117e8164575afa4e25dab22d4f3ff0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!weekday@{weekday}}
+\index{weekday@{weekday}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{weekday(time\+\_\+t t)}{weekday(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}int weekday (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a397d9b2a739891092b487211668b496f}{}\label{_time_8cpp_a397d9b2a739891092b487211668b496f}
+
+
+Definition at line 119 of file Time.\+cpp.
+
+
+
+References refresh\+Cache().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a397d9b2a739891092b487211668b496f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!year@{year}}
+\index{year@{year}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{year()}{year()}}]{\setlength{\rightskip}{0pt plus 5cm}int year (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a98bf680dbfa28f79514ba50d33fee63f}{}\label{_time_8cpp_a98bf680dbfa28f79514ba50d33fee63f}
+
+
+Definition at line 133 of file Time.\+cpp.
+
+
+
+References now().
+
+
+
+Referenced by break\+Time(), D\+S3231\+::is\+Alarm2(), R\+T\+C\+Zero\+::set\+Alarm\+Year(), D\+S3231\+::set\+Date\+Time(), R\+T\+C\+Zero\+::set\+Year(), Tiny\+G\+P\+S\+Date\+::value(), and Tiny\+G\+P\+S\+Date\+::year().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=272pt]{_time_8cpp_a98bf680dbfa28f79514ba50d33fee63f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a98bf680dbfa28f79514ba50d33fee63f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Time.\+cpp@{Time.\+cpp}!year@{year}}
+\index{year@{year}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{year(time\+\_\+t t)}{year(time\_t t)}}]{\setlength{\rightskip}{0pt plus 5cm}int year (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{t}
+\end{DoxyParamCaption}
+)}\hypertarget{_time_8cpp_a8608865f8292c0505e02b67fd1cf39e8}{}\label{_time_8cpp_a8608865f8292c0505e02b67fd1cf39e8}
+
+
+Definition at line 137 of file Time.\+cpp.
+
+
+
+References refresh\+Cache().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_time_8cpp_a8608865f8292c0505e02b67fd1cf39e8_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{Time.\+cpp@{Time.\+cpp}!get\+Time\+Ptr@{get\+Time\+Ptr}}
+\index{get\+Time\+Ptr@{get\+Time\+Ptr}!Time.\+cpp@{Time.\+cpp}}
+\subsubsection[{\texorpdfstring{get\+Time\+Ptr}{getTimePtr}}]{\setlength{\rightskip}{0pt plus 5cm}get\+External\+Time get\+Time\+Ptr}\hypertarget{_time_8cpp_adfb6edd80f1ed7139bc779b8aaada8b7}{}\label{_time_8cpp_adfb6edd80f1ed7139bc779b8aaada8b7}
+
+
+Definition at line 242 of file Time.\+cpp.
+
+
+
+Referenced by now(), and set\+Sync\+Provider().
+

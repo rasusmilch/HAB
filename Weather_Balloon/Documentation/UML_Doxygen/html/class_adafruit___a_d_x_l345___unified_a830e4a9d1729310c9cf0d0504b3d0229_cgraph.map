@@ -1,0 +1,6 @@
+<map id="Adafruit_ADXL345_Unified::getEvent" name="Adafruit_ADXL345_Unified::getEvent">
+<area shape="rect" id="node2" href="$class_adafruit___a_d_x_l345___unified.html#a5ad11ba3d12aa4f4aaaec38b3400fa6f" title="Gets the most recent X axis value. " alt="" coords="225,5,397,47"/>
+<area shape="rect" id="node4" href="$class_adafruit___a_d_x_l345___unified.html#ac745aefc2a66094a9c46115564939610" title="Gets the most recent Y axis value. " alt="" coords="225,71,397,112"/>
+<area shape="rect" id="node5" href="$class_adafruit___a_d_x_l345___unified.html#ae61417ef16d19ff86ecd82efc14e960b" title="Gets the most recent Z axis value. " alt="" coords="225,136,397,177"/>
+<area shape="rect" id="node3" href="$class_adafruit___a_d_x_l345___unified.html#a62c1c34b81fdcb7825d7c9911fba988b" title="Reads 16&#45;bits from the specified register. " alt="" coords="445,71,617,112"/>
+</map>

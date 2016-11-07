@@ -1,0 +1,47 @@
+\#\+Adafruit A\+D\+X\+L345 Accelerometer Driver \#
+
+This driver is for the Adafruit A\+D\+X\+L345 Breakout (\href{http://www.adafruit.com/products/1231}{\tt http\+://www.\+adafruit.\+com/products/1231}), and is based on Adafruit\textquotesingle{}s Unified Sensor Library (\hyperlink{class_adafruit___sensor}{Adafruit\+\_\+\+Sensor}).
+
+\subsection*{About the A\+D\+X\+L345}
+
+The A\+D\+X\+L345 is a digital accelerometer that supports both S\+PI and I2C mode, with adjustable data rata and \textquotesingle{}range\textquotesingle{} (+/-\/2/4/8/16g). The Adafruit\+\_\+\+A\+D\+X\+L345 driver takes advantage of I2C mode to reduce the total pin count required to use the sensor.
+
+More information on the A\+D\+X\+L345 can be found in the datasheet\+: \href{http://www.analog.com/static/imported-files/data_sheets/ADXL345.pdf}{\tt http\+://www.\+analog.\+com/static/imported-\/files/data\+\_\+sheets/\+A\+D\+X\+L345.\+pdf}
+
+\subsection*{What is the Adafruit Unified Sensor Library?}
+
+The Adafruit Unified Sensor Library (\href{https://github.com/adafruit/Adafruit_Sensor}{\tt https\+://github.\+com/adafruit/\+Adafruit\+\_\+\+Sensor}) provides a common interface and data type for any supported sensor. It defines some basic information about the sensor (sensor limits, etc.), and returns standard SI units of a specific type and scale for each supported sensor type.
+
+It provides a simple abstraction layer between your application and the actual sensor HW, allowing you to drop in any comparable sensor with only one or two lines of code to change in your project (essentially the constructor since the functions to read sensor data and get information about the sensor are defined in the base \hyperlink{class_adafruit___sensor}{Adafruit\+\_\+\+Sensor} class).
+
+This is imporant useful for two reasons\+:
+
+1.) You can use the data right away because it\textquotesingle{}s already converted to SI units that you understand and can compare, rather than meaningless values like 0..1023.
+
+2.) Because SI units are standardised in the sensor library, you can also do quick sanity checks working with new sensors, or drop in any comparable sensor if you need better sensitivity or if a lower cost unit becomes available, etc.
+
+Light sensors will always report units in lux, gyroscopes will always report units in rad/s, etc. ... freeing you up to focus on the data, rather than digging through the datasheet to understand what the sensor\textquotesingle{}s raw numbers really mean.
+
+\subsection*{About this Driver}
+
+Adafruit invests time and resources providing this open source code. Please support Adafruit and open-\/source hardware by purchasing products from Adafruit!
+
+Written by Kevin (K\+T\+O\+WN) Townsend for Adafruit Industries.
+
+\subsection*{Compatibility}
+
+M\+CU $\vert$ Tested Works $\vert$ Doesn\textquotesingle{}t Work $\vert$ Not Tested $\vert$ Notes -\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/-\/--- $\vert$ \+:-\/-\/-\/-\/-\/-\/-\/---\+: $\vert$ \+:-\/-\/-\/-\/-\/-\/-\/---\+: $\vert$ \+:-\/-\/-\/-\/-\/-\/---\+: $\vert$ -\/-\/--- Atmega328 @ 16\+M\+Hz $\vert$ X $\vert$ $\vert$ $\vert$ Atmega328 @ 12\+M\+Hz $\vert$ X $\vert$ $\vert$ $\vert$ Atmega32u4 @ 16\+M\+Hz $\vert$ X $\vert$ $\vert$ $\vert$ Atmega32u4 @ 8\+M\+Hz $\vert$ X $\vert$ $\vert$ $\vert$ E\+S\+P8266 $\vert$ X $\vert$ $\vert$ $\vert$ Atmega2560 @ 16\+M\+Hz $\vert$ X $\vert$ $\vert$ $\vert$ A\+T\+S\+A\+M3\+X8E $\vert$ X $\vert$ $\vert$ $\vert$ A\+T\+S\+A\+M21D $\vert$ X $\vert$ $\vert$ $\vert$ A\+Ttiny85 @ 16\+M\+Hz $\vert$ $\vert$ X $\vert$ $\vert$ sketch too big A\+Ttiny85 @ 8\+M\+Hz $\vert$ $\vert$ X $\vert$ $\vert$ sketch too big Intel Curie @ 32\+M\+Hz $\vert$ X $\vert$ $\vert$ $\vert$ S\+T\+M32\+F2 $\vert$ $\vert$ $\vert$ X $\vert$
+
+
+\begin{DoxyItemize}
+\item A\+Tmega328 @ 16\+M\+Hz \+: Arduino U\+NO, Adafruit Pro Trinket 5V, Adafruit Metro 328, Adafruit Metro Mini
+\item A\+Tmega328 @ 12\+M\+Hz \+: Adafruit Pro Trinket 3V
+\item A\+Tmega32u4 @ 16\+M\+Hz \+: Arduino Leonardo, Arduino Micro, Arduino Yun, Teensy 2.\+0
+\item A\+Tmega32u4 @ 8\+M\+Hz \+: Adafruit Flora, Bluefruit Micro
+\item E\+S\+P8266 \+: Adafruit Huzzah
+\item A\+Tmega2560 @ 16\+M\+Hz \+: Arduino Mega
+\item A\+T\+S\+A\+M3\+X8E \+: Arduino Due
+\item A\+T\+S\+A\+M21D \+: Arduino Zero, M0 Pro
+\item A\+Ttiny85 @ 16\+M\+Hz \+: Adafruit Trinket 5V
+\item A\+Ttiny85 @ 8\+M\+Hz \+: Adafruit Gemma, Arduino Gemma, Adafruit Trinket 3V 
+\end{DoxyItemize}

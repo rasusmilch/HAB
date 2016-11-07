@@ -1,0 +1,919 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_r_t_c_zero" kind="class" language="C++" prot="public">
+    <compoundname>RTCZero</compoundname>
+    <includes refid="_r_t_c_zero_8h" local="no">RTCZero.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="enum" id="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cc" prot="public" static="no">
+        <name>Alarm_Match</name>
+        <enumvalue id="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca229a4bf48dedcd24c3058d4659fbdd2b" prot="public">
+          <name>MATCH_OFF</name>
+          <initializer>= RTC_MODE2_MASK_SEL_OFF_Val</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccac5092377f2728d1888a72bfb638c95b9" prot="public">
+          <name>MATCH_SS</name>
+          <initializer>= RTC_MODE2_MASK_SEL_SS_Val</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca944f42500c4e4ee3117ff8adcddc4eb1" prot="public">
+          <name>MATCH_MMSS</name>
+          <initializer>= RTC_MODE2_MASK_SEL_MMSS_Val</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccaf82fa9553250259c004ca80c3f2336cc" prot="public">
+          <name>MATCH_HHMMSS</name>
+          <initializer>= RTC_MODE2_MASK_SEL_HHMMSS_Val</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccad27b4eb26b4e2d23b1e74ca8c7b6473a" prot="public">
+          <name>MATCH_DHHMMSS</name>
+          <initializer>= RTC_MODE2_MASK_SEL_DDHHMMSS_Val</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca75b8b65641492bbb35128bddc6164a61" prot="public">
+          <name>MATCH_MMDDHHMMSS</name>
+          <initializer>= RTC_MODE2_MASK_SEL_MMDDHHMMSS_Val</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca4a9fa9226a47b8b760dd53b2326b7f3e" prot="public">
+          <name>MATCH_YYMMDDHHMMSS</name>
+          <initializer>= RTC_MODE2_MASK_SEL_YYMMDDHHMMSS_Val</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="31" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.h" bodystart="30" bodyend="39"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_t_c_zero_1aee025785e3f9dc3a0c893023f6145293" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool RTCZero::_configured</definition>
+        <argsstring></argsstring>
+        <name>_configured</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="100" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_t_c_zero_1af74f4cc9bc122628c0023e77b7b18c76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>RTCZero::RTCZero</definition>
+        <argsstring>()</argsstring>
+        <name>RTCZero</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="41" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="29" bodyend="32"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1ac6ad9d73cb8d3a0575e7cfc2b26a5412" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::begin</definition>
+        <argsstring>(bool resetTime=false)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>bool</type>
+          <declname>resetTime</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="42" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="34" bodyend="102"/>
+        <references refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca229a4bf48dedcd24c3058d4659fbdd2b" compoundref="_r_t_c_zero_8h" startline="32">MATCH_OFF</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1af2923fee4310485bc922898376f5042c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::enableAlarm</definition>
+        <argsstring>(Alarm_Match match)</argsstring>
+        <name>enableAlarm</name>
+        <param>
+          <type><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cc" kindref="member">Alarm_Match</ref></type>
+          <declname>match</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="44" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="113" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a9c1b7a7b7f8ed3cabbdc039ede726631" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::disableAlarm</definition>
+        <argsstring>()</argsstring>
+        <name>disableAlarm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="45" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="122" bodyend="129"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a306f2bbbdfa83d21f8f577c11b73e76b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::attachInterrupt</definition>
+        <argsstring>(voidFuncPtr callback)</argsstring>
+        <name>attachInterrupt</name>
+        <param>
+          <type><ref refid="_r_t_c_zero_8h_1af47ec912687cb72725d5e529eccdbb48" kindref="member">voidFuncPtr</ref></type>
+          <declname>callback</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="47" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="131" bodyend="134"/>
+        <references refid="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" compoundref="_r_t_c_zero_8cpp" startline="27">RTC_callBack</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a6ca6de2448cadaa33a87cdd4278cdf27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::detachInterrupt</definition>
+        <argsstring>()</argsstring>
+        <name>detachInterrupt</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="48" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="136" bodyend="139"/>
+        <references refid="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" compoundref="_r_t_c_zero_8cpp" startline="27">RTC_callBack</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a2fab941e64ffe5501c30c085a5b3833e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::standbyMode</definition>
+        <argsstring>()</argsstring>
+        <name>standbyMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="50" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="141" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a914daa26d6ab1a3637a4696801532377" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getSeconds</definition>
+        <argsstring>()</argsstring>
+        <name>getSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="54" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="153" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a813435838c1c830ab61e81f2c50cd76c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getMinutes</definition>
+        <argsstring>()</argsstring>
+        <name>getMinutes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="55" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="159" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a4e3c72195b429d690ca5e3febb9a2d8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getHours</definition>
+        <argsstring>()</argsstring>
+        <name>getHours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="56" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="165" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a9569ba1ee80390da5c9feb9c33681ac2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getDay</definition>
+        <argsstring>()</argsstring>
+        <name>getDay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="58" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="171" bodyend="175"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1ab5a20277839b8d68d7469feb95b027ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getMonth</definition>
+        <argsstring>()</argsstring>
+        <name>getMonth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="59" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="177" bodyend="181"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a87b268ab9f4e2ea4b0aca4ca7f9d48e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getYear</definition>
+        <argsstring>()</argsstring>
+        <name>getYear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="60" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="183" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a05ca5622ea0d01662326c251d3f4e960" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getAlarmSeconds</definition>
+        <argsstring>()</argsstring>
+        <name>getAlarmSeconds</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="62" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="189" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a9b689b5208dc3bd0d80524e0d5c52873" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getAlarmMinutes</definition>
+        <argsstring>()</argsstring>
+        <name>getAlarmMinutes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="63" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="194" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a0758261eb8ba11c90e903b5e38a6cee8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getAlarmHours</definition>
+        <argsstring>()</argsstring>
+        <name>getAlarmHours</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="64" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="199" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a4b157a1820acba087ea42095505c35cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getAlarmDay</definition>
+        <argsstring>()</argsstring>
+        <name>getAlarmDay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="66" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="204" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a27152748cdb3ebdd15a4a51882dcd28b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getAlarmMonth</definition>
+        <argsstring>()</argsstring>
+        <name>getAlarmMonth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="67" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1af15b6757eeb9281446b7575c9a15ff19" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTCZero::getAlarmYear</definition>
+        <argsstring>()</argsstring>
+        <name>getAlarmYear</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="68" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a654ea54b599e9269369c3d329dd41685" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setSeconds</definition>
+        <argsstring>(uint8_t seconds)</argsstring>
+        <name>setSeconds</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="72" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="223" bodyend="230"/>
+        <referencedby refid="class_r_t_c_zero_1a2bd00b1214877c926001a8d60acad72d" compoundref="_r_t_c_zero_8cpp" startline="250" endline="257">setTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1adeb4f4fbae93c46e227646569113cbd1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setMinutes</definition>
+        <argsstring>(uint8_t minutes)</argsstring>
+        <name>setMinutes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>minutes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="73" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="232" bodyend="239"/>
+        <referencedby refid="class_r_t_c_zero_1a2bd00b1214877c926001a8d60acad72d" compoundref="_r_t_c_zero_8cpp" startline="250" endline="257">setTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a4bcc1288366d943f3328386c89d39bf3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setHours</definition>
+        <argsstring>(uint8_t hours)</argsstring>
+        <name>setHours</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>hours</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="74" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="241" bodyend="248"/>
+        <referencedby refid="class_r_t_c_zero_1a2bd00b1214877c926001a8d60acad72d" compoundref="_r_t_c_zero_8cpp" startline="250" endline="257">setTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a2bd00b1214877c926001a8d60acad72d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setTime</definition>
+        <argsstring>(uint8_t hours, uint8_t minutes, uint8_t seconds)</argsstring>
+        <name>setTime</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="75" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="250" bodyend="257"/>
+        <references refid="class_r_t_c_zero_1a4bcc1288366d943f3328386c89d39bf3" compoundref="_r_t_c_zero_8cpp" startline="241" endline="248">setHours</references>
+        <references refid="class_r_t_c_zero_1adeb4f4fbae93c46e227646569113cbd1" compoundref="_r_t_c_zero_8cpp" startline="232" endline="239">setMinutes</references>
+        <references refid="class_r_t_c_zero_1a654ea54b599e9269369c3d329dd41685" compoundref="_r_t_c_zero_8cpp" startline="223" endline="230">setSeconds</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1aa1d8a2279ae41b6a7b50c5ccc974b29f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setDay</definition>
+        <argsstring>(uint8_t day)</argsstring>
+        <name>setDay</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="77" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="259" bodyend="266"/>
+        <references refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" compoundref="_time_8cpp" startline="106" endline="108">day</references>
+        <referencedby refid="class_r_t_c_zero_1ad84a83a503a798c3f90f667de21b8a44" compoundref="_r_t_c_zero_8cpp" startline="286" endline="293">setDate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1af91e416057bf96c8ae94b053e94ec722" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setMonth</definition>
+        <argsstring>(uint8_t month)</argsstring>
+        <name>setMonth</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="78" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="268" bodyend="275"/>
+        <references refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" compoundref="_time_8cpp" startline="124" endline="126">month</references>
+        <referencedby refid="class_r_t_c_zero_1ad84a83a503a798c3f90f667de21b8a44" compoundref="_r_t_c_zero_8cpp" startline="286" endline="293">setDate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1ad71c689f526dd7e40c6f134b2a223b81" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setYear</definition>
+        <argsstring>(uint8_t year)</argsstring>
+        <name>setYear</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="79" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="277" bodyend="284"/>
+        <references refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" compoundref="_time_8cpp" startline="133" endline="135">year</references>
+        <referencedby refid="class_r_t_c_zero_1ad84a83a503a798c3f90f667de21b8a44" compoundref="_r_t_c_zero_8cpp" startline="286" endline="293">setDate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1ad84a83a503a798c3f90f667de21b8a44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setDate</definition>
+        <argsstring>(uint8_t day, uint8_t month, uint8_t year)</argsstring>
+        <name>setDate</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="80" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="286" bodyend="293"/>
+        <references refid="class_r_t_c_zero_1aa1d8a2279ae41b6a7b50c5ccc974b29f" compoundref="_r_t_c_zero_8cpp" startline="259" endline="266">setDay</references>
+        <references refid="class_r_t_c_zero_1af91e416057bf96c8ae94b053e94ec722" compoundref="_r_t_c_zero_8cpp" startline="268" endline="275">setMonth</references>
+        <references refid="class_r_t_c_zero_1ad71c689f526dd7e40c6f134b2a223b81" compoundref="_r_t_c_zero_8cpp" startline="277" endline="284">setYear</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a1b52a726c30602d3769426974f56710f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setAlarmSeconds</definition>
+        <argsstring>(uint8_t seconds)</argsstring>
+        <name>setAlarmSeconds</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="82" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="295" bodyend="302"/>
+        <referencedby refid="class_r_t_c_zero_1ac16225fa8a9c07a6e8d1157b6d699747" compoundref="_r_t_c_zero_8cpp" startline="322" endline="329">setAlarmTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a06a7ea4b7bc9d61df4fef51329927b22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setAlarmMinutes</definition>
+        <argsstring>(uint8_t minutes)</argsstring>
+        <name>setAlarmMinutes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>minutes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="83" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="304" bodyend="311"/>
+        <referencedby refid="class_r_t_c_zero_1ac16225fa8a9c07a6e8d1157b6d699747" compoundref="_r_t_c_zero_8cpp" startline="322" endline="329">setAlarmTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a915e7bc9c446be99d52f87cdb76e6cfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setAlarmHours</definition>
+        <argsstring>(uint8_t hours)</argsstring>
+        <name>setAlarmHours</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>hours</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="84" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="313" bodyend="320"/>
+        <referencedby refid="class_r_t_c_zero_1ac16225fa8a9c07a6e8d1157b6d699747" compoundref="_r_t_c_zero_8cpp" startline="322" endline="329">setAlarmTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1ac16225fa8a9c07a6e8d1157b6d699747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setAlarmTime</definition>
+        <argsstring>(uint8_t hours, uint8_t minutes, uint8_t seconds)</argsstring>
+        <name>setAlarmTime</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="85" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="322" bodyend="329"/>
+        <references refid="class_r_t_c_zero_1a915e7bc9c446be99d52f87cdb76e6cfe" compoundref="_r_t_c_zero_8cpp" startline="313" endline="320">setAlarmHours</references>
+        <references refid="class_r_t_c_zero_1a06a7ea4b7bc9d61df4fef51329927b22" compoundref="_r_t_c_zero_8cpp" startline="304" endline="311">setAlarmMinutes</references>
+        <references refid="class_r_t_c_zero_1a1b52a726c30602d3769426974f56710f" compoundref="_r_t_c_zero_8cpp" startline="295" endline="302">setAlarmSeconds</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a4519ba0e3eee8a3bf03f7c14b3ffa902" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setAlarmDay</definition>
+        <argsstring>(uint8_t day)</argsstring>
+        <name>setAlarmDay</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="87" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="331" bodyend="338"/>
+        <references refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" compoundref="_time_8cpp" startline="106" endline="108">day</references>
+        <referencedby refid="class_r_t_c_zero_1a12727934884612e1a125e6be3f461058" compoundref="_r_t_c_zero_8cpp" startline="358" endline="365">setAlarmDate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a8fe74d0c1ec7922f893addd67dc16aba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setAlarmMonth</definition>
+        <argsstring>(uint8_t month)</argsstring>
+        <name>setAlarmMonth</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="88" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="340" bodyend="347"/>
+        <references refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" compoundref="_time_8cpp" startline="124" endline="126">month</references>
+        <referencedby refid="class_r_t_c_zero_1a12727934884612e1a125e6be3f461058" compoundref="_r_t_c_zero_8cpp" startline="358" endline="365">setAlarmDate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1ae55ef909edbb893eba4becc8676dd8d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setAlarmYear</definition>
+        <argsstring>(uint8_t year)</argsstring>
+        <name>setAlarmYear</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="89" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="349" bodyend="356"/>
+        <references refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" compoundref="_time_8cpp" startline="133" endline="135">year</references>
+        <referencedby refid="class_r_t_c_zero_1a12727934884612e1a125e6be3f461058" compoundref="_r_t_c_zero_8cpp" startline="358" endline="365">setAlarmDate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a12727934884612e1a125e6be3f461058" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setAlarmDate</definition>
+        <argsstring>(uint8_t day, uint8_t month, uint8_t year)</argsstring>
+        <name>setAlarmDate</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="90" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="358" bodyend="365"/>
+        <references refid="class_r_t_c_zero_1a4519ba0e3eee8a3bf03f7c14b3ffa902" compoundref="_r_t_c_zero_8cpp" startline="331" endline="338">setAlarmDay</references>
+        <references refid="class_r_t_c_zero_1a8fe74d0c1ec7922f893addd67dc16aba" compoundref="_r_t_c_zero_8cpp" startline="340" endline="347">setAlarmMonth</references>
+        <references refid="class_r_t_c_zero_1ae55ef909edbb893eba4becc8676dd8d6" compoundref="_r_t_c_zero_8cpp" startline="349" endline="356">setAlarmYear</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1aefda208cc548613b8af437ba6e7d1ff3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t RTCZero::getEpoch</definition>
+        <argsstring>()</argsstring>
+        <name>getEpoch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="94" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="367" bodyend="386"/>
+        <references refid="_r_t_c_zero_8cpp_1a4bc95e574565f8bbb72cc536258ad25b" compoundref="_r_t_c_zero_8cpp" startline="25">EPOCH_TIME_YEAR_OFF</references>
+        <referencedby refid="class_r_t_c_zero_1ae660721e3ba20b6701431d8cd8bed697" compoundref="_r_t_c_zero_8cpp" startline="388" endline="391">getY2kEpoch</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1ae660721e3ba20b6701431d8cd8bed697" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t RTCZero::getY2kEpoch</definition>
+        <argsstring>()</argsstring>
+        <name>getY2kEpoch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="95" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="388" bodyend="391"/>
+        <references refid="_r_t_c_zero_8cpp_1a0c71a1835572d6242a3741c3a28b3972" compoundref="_r_t_c_zero_8cpp" startline="24">EPOCH_TIME_OFF</references>
+        <references refid="class_r_t_c_zero_1aefda208cc548613b8af437ba6e7d1ff3" compoundref="_r_t_c_zero_8cpp" startline="367" endline="386">getEpoch</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a5427b2b365b295516944a69b66e506ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setEpoch</definition>
+        <argsstring>(uint32_t ts)</argsstring>
+        <name>setEpoch</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="96" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="393" bodyend="413"/>
+        <references refid="_r_t_c_zero_8cpp_1a0c71a1835572d6242a3741c3a28b3972" compoundref="_r_t_c_zero_8cpp" startline="24">EPOCH_TIME_OFF</references>
+        <references refid="_r_t_c_zero_8cpp_1a4bc95e574565f8bbb72cc536258ad25b" compoundref="_r_t_c_zero_8cpp" startline="25">EPOCH_TIME_YEAR_OFF</references>
+        <referencedby refid="class_r_t_c_zero_1aea1cc5a935bacd8430cb3be5a87281aa" compoundref="_r_t_c_zero_8cpp" startline="415" endline="420">setY2kEpoch</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1aea1cc5a935bacd8430cb3be5a87281aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::setY2kEpoch</definition>
+        <argsstring>(uint32_t ts)</argsstring>
+        <name>setY2kEpoch</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>ts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="97" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="415" bodyend="420"/>
+        <references refid="_r_t_c_zero_8cpp_1a0c71a1835572d6242a3741c3a28b3972" compoundref="_r_t_c_zero_8cpp" startline="24">EPOCH_TIME_OFF</references>
+        <references refid="class_r_t_c_zero_1a5427b2b365b295516944a69b66e506ba" compoundref="_r_t_c_zero_8cpp" startline="393" endline="413">setEpoch</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_r_t_c_zero_1a7b6759f33f27e2df12d6d7cd51bf1af7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::config32kOSC</definition>
+        <argsstring>(void)</argsstring>
+        <name>config32kOSC</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="102" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="427" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a5909856bcb9b9c052ba11de033c65614" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::RTCreadRequest</definition>
+        <argsstring>()</argsstring>
+        <name>RTCreadRequest</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="103" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="438" bodyend="444"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a4f570d694041da470252759cde11ba43" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool RTCZero::RTCisSyncing</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTCisSyncing</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="104" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="447" bodyend="450"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1af95ecb5697f52979911c5a5ee078b20b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::RTCdisable</definition>
+        <argsstring>()</argsstring>
+        <name>RTCdisable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="105" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="452" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1afebce5db8b501de821c88488ecb17da5" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::RTCenable</definition>
+        <argsstring>()</argsstring>
+        <name>RTCenable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="106" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="459" bodyend="464"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1ae98d7164b0890cbca54e39398fa2891d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::RTCreset</definition>
+        <argsstring>()</argsstring>
+        <name>RTCreset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="107" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="466" bodyend="471"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c_zero_1a0ae57150b7c883d8fe41bae7fba0fd1f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTCZero::RTCresetRemove</definition>
+        <argsstring>()</argsstring>
+        <name>RTCresetRemove</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="108" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="473" bodyend="478"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="27" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.h" bodystart="27" bodyend="109"/>
+    <listofallmembers>
+      <member refid="class_r_t_c_zero_1aee025785e3f9dc3a0c893023f6145293" prot="private" virt="non-virtual"><scope>RTCZero</scope><name>_configured</name></member>
+      <member refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cc" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>Alarm_Match</name></member>
+      <member refid="class_r_t_c_zero_1a306f2bbbdfa83d21f8f577c11b73e76b" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>attachInterrupt</name></member>
+      <member refid="class_r_t_c_zero_1ac6ad9d73cb8d3a0575e7cfc2b26a5412" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>begin</name></member>
+      <member refid="class_r_t_c_zero_1a7b6759f33f27e2df12d6d7cd51bf1af7" prot="private" virt="non-virtual"><scope>RTCZero</scope><name>config32kOSC</name></member>
+      <member refid="class_r_t_c_zero_1a6ca6de2448cadaa33a87cdd4278cdf27" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>detachInterrupt</name></member>
+      <member refid="class_r_t_c_zero_1a9c1b7a7b7f8ed3cabbdc039ede726631" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>disableAlarm</name></member>
+      <member refid="class_r_t_c_zero_1af2923fee4310485bc922898376f5042c" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>enableAlarm</name></member>
+      <member refid="class_r_t_c_zero_1a4b157a1820acba087ea42095505c35cc" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getAlarmDay</name></member>
+      <member refid="class_r_t_c_zero_1a0758261eb8ba11c90e903b5e38a6cee8" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getAlarmHours</name></member>
+      <member refid="class_r_t_c_zero_1a9b689b5208dc3bd0d80524e0d5c52873" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getAlarmMinutes</name></member>
+      <member refid="class_r_t_c_zero_1a27152748cdb3ebdd15a4a51882dcd28b" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getAlarmMonth</name></member>
+      <member refid="class_r_t_c_zero_1a05ca5622ea0d01662326c251d3f4e960" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getAlarmSeconds</name></member>
+      <member refid="class_r_t_c_zero_1af15b6757eeb9281446b7575c9a15ff19" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getAlarmYear</name></member>
+      <member refid="class_r_t_c_zero_1a9569ba1ee80390da5c9feb9c33681ac2" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getDay</name></member>
+      <member refid="class_r_t_c_zero_1aefda208cc548613b8af437ba6e7d1ff3" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getEpoch</name></member>
+      <member refid="class_r_t_c_zero_1a4e3c72195b429d690ca5e3febb9a2d8f" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getHours</name></member>
+      <member refid="class_r_t_c_zero_1a813435838c1c830ab61e81f2c50cd76c" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getMinutes</name></member>
+      <member refid="class_r_t_c_zero_1ab5a20277839b8d68d7469feb95b027ec" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getMonth</name></member>
+      <member refid="class_r_t_c_zero_1a914daa26d6ab1a3637a4696801532377" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getSeconds</name></member>
+      <member refid="class_r_t_c_zero_1ae660721e3ba20b6701431d8cd8bed697" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getY2kEpoch</name></member>
+      <member refid="class_r_t_c_zero_1a87b268ab9f4e2ea4b0aca4ca7f9d48e6" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>getYear</name></member>
+      <member refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccad27b4eb26b4e2d23b1e74ca8c7b6473a" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>MATCH_DHHMMSS</name></member>
+      <member refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccaf82fa9553250259c004ca80c3f2336cc" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>MATCH_HHMMSS</name></member>
+      <member refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca75b8b65641492bbb35128bddc6164a61" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>MATCH_MMDDHHMMSS</name></member>
+      <member refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca944f42500c4e4ee3117ff8adcddc4eb1" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>MATCH_MMSS</name></member>
+      <member refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca229a4bf48dedcd24c3058d4659fbdd2b" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>MATCH_OFF</name></member>
+      <member refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccac5092377f2728d1888a72bfb638c95b9" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>MATCH_SS</name></member>
+      <member refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca4a9fa9226a47b8b760dd53b2326b7f3e" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>MATCH_YYMMDDHHMMSS</name></member>
+      <member refid="class_r_t_c_zero_1af95ecb5697f52979911c5a5ee078b20b" prot="private" virt="non-virtual"><scope>RTCZero</scope><name>RTCdisable</name></member>
+      <member refid="class_r_t_c_zero_1afebce5db8b501de821c88488ecb17da5" prot="private" virt="non-virtual"><scope>RTCZero</scope><name>RTCenable</name></member>
+      <member refid="class_r_t_c_zero_1a4f570d694041da470252759cde11ba43" prot="private" virt="non-virtual"><scope>RTCZero</scope><name>RTCisSyncing</name></member>
+      <member refid="class_r_t_c_zero_1a5909856bcb9b9c052ba11de033c65614" prot="private" virt="non-virtual"><scope>RTCZero</scope><name>RTCreadRequest</name></member>
+      <member refid="class_r_t_c_zero_1ae98d7164b0890cbca54e39398fa2891d" prot="private" virt="non-virtual"><scope>RTCZero</scope><name>RTCreset</name></member>
+      <member refid="class_r_t_c_zero_1a0ae57150b7c883d8fe41bae7fba0fd1f" prot="private" virt="non-virtual"><scope>RTCZero</scope><name>RTCresetRemove</name></member>
+      <member refid="class_r_t_c_zero_1af74f4cc9bc122628c0023e77b7b18c76" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>RTCZero</name></member>
+      <member refid="class_r_t_c_zero_1a12727934884612e1a125e6be3f461058" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setAlarmDate</name></member>
+      <member refid="class_r_t_c_zero_1a4519ba0e3eee8a3bf03f7c14b3ffa902" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setAlarmDay</name></member>
+      <member refid="class_r_t_c_zero_1a915e7bc9c446be99d52f87cdb76e6cfe" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setAlarmHours</name></member>
+      <member refid="class_r_t_c_zero_1a06a7ea4b7bc9d61df4fef51329927b22" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setAlarmMinutes</name></member>
+      <member refid="class_r_t_c_zero_1a8fe74d0c1ec7922f893addd67dc16aba" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setAlarmMonth</name></member>
+      <member refid="class_r_t_c_zero_1a1b52a726c30602d3769426974f56710f" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setAlarmSeconds</name></member>
+      <member refid="class_r_t_c_zero_1ac16225fa8a9c07a6e8d1157b6d699747" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setAlarmTime</name></member>
+      <member refid="class_r_t_c_zero_1ae55ef909edbb893eba4becc8676dd8d6" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setAlarmYear</name></member>
+      <member refid="class_r_t_c_zero_1ad84a83a503a798c3f90f667de21b8a44" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setDate</name></member>
+      <member refid="class_r_t_c_zero_1aa1d8a2279ae41b6a7b50c5ccc974b29f" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setDay</name></member>
+      <member refid="class_r_t_c_zero_1a5427b2b365b295516944a69b66e506ba" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setEpoch</name></member>
+      <member refid="class_r_t_c_zero_1a4bcc1288366d943f3328386c89d39bf3" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setHours</name></member>
+      <member refid="class_r_t_c_zero_1adeb4f4fbae93c46e227646569113cbd1" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setMinutes</name></member>
+      <member refid="class_r_t_c_zero_1af91e416057bf96c8ae94b053e94ec722" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setMonth</name></member>
+      <member refid="class_r_t_c_zero_1a654ea54b599e9269369c3d329dd41685" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setSeconds</name></member>
+      <member refid="class_r_t_c_zero_1a2bd00b1214877c926001a8d60acad72d" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setTime</name></member>
+      <member refid="class_r_t_c_zero_1aea1cc5a935bacd8430cb3be5a87281aa" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setY2kEpoch</name></member>
+      <member refid="class_r_t_c_zero_1ad71c689f526dd7e40c6f134b2a223b81" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>setYear</name></member>
+      <member refid="class_r_t_c_zero_1a2fab941e64ffe5501c30c085a5b3833e" prot="public" virt="non-virtual"><scope>RTCZero</scope><name>standbyMode</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

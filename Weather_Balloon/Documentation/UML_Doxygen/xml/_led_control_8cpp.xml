@@ -1,0 +1,408 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_led_control_8cpp" kind="file" language="C++">
+    <compoundname>LedControl.cpp</compoundname>
+    <includes refid="_led_control_8h" local="yes">LedControl.h</includes>
+    <incdepgraph>
+      <node id="856">
+        <label>WProgram.h</label>
+      </node>
+      <node id="855">
+        <label>avr/pgmspace.h</label>
+      </node>
+      <node id="854">
+        <label>LedControl.h</label>
+        <link refid="_led_control_8h"/>
+        <childnode refid="855" relation="include">
+        </childnode>
+        <childnode refid="856" relation="include">
+        </childnode>
+      </node>
+      <node id="853">
+        <label>Weather_Balloon/library/LedControl-master/src/LedControl.cpp</label>
+        <link refid="LedControl.cpp"/>
+        <childnode refid="854" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_led_control_8cpp_1a6c542d212fef9a9b5ba82222089a306b" prot="public" static="no">
+        <name>OP_NOOP</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="31" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1ac2dcbbd3fef01a1defd3aa5f8a8c612a" prot="public" static="no">
+        <name>OP_DIGIT0</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="32" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a6c8209744590cd0cc8495cc6de58ab02" prot="public" static="no">
+        <name>OP_DIGIT1</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="33" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a430d77ba70abea8e61820aaa3f27c28b" prot="public" static="no">
+        <name>OP_DIGIT2</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="34" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a03d3bd8cd1b468b4a9cb473036f65747" prot="public" static="no">
+        <name>OP_DIGIT3</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="35" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1ac3d2e72ba1cca69133e4dcbc478f616b" prot="public" static="no">
+        <name>OP_DIGIT4</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="36" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a021f910b62cdaa529fcea36791df7028" prot="public" static="no">
+        <name>OP_DIGIT5</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="37" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a5a12c4b35c924fec89c3b71246b7b7e2" prot="public" static="no">
+        <name>OP_DIGIT6</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="38" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a3a1210173fb70a66f649b93eb62e0884" prot="public" static="no">
+        <name>OP_DIGIT7</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="39" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a318b32d905ce8e57d7caec133ec7d712" prot="public" static="no">
+        <name>OP_DECODEMODE</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="40" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="40" bodyend="-1"/>
+        <referencedby refid="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" compoundref="_led_control_8cpp" startline="46" endline="70">LedControl::LedControl</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a4f47ca7a01008a4d918302ece5314ed4" prot="public" static="no">
+        <name>OP_INTENSITY</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="41" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="41" bodyend="-1"/>
+        <referencedby refid="class_led_control_1a540e6ea4f3d393c1131f4bb7f5b9353d" compoundref="_led_control_8cpp" startline="92" endline="97">LedControl::setIntensity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a13d91ddca53029535b6cf314b28ed15e" prot="public" static="no">
+        <name>OP_SCANLIMIT</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="42" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_led_control_1a2d32bbde945924b1389df8cc158c821a" compoundref="_led_control_8cpp" startline="85" endline="90">LedControl::setScanLimit</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1ac4772c1c1c24a4b5837a2000c62aa0a3" prot="public" static="no">
+        <name>OP_SHUTDOWN</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="43" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_led_control_1acae3eb6d78fc9b978fe6968611e48466" compoundref="_led_control_8cpp" startline="76" endline="83">LedControl::shutdown</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_led_control_8cpp_1a7ef59a31858360d26d5dade28441598c" prot="public" static="no">
+        <name>OP_DISPLAYTEST</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" line="44" column="9" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" compoundref="_led_control_8cpp" startline="46" endline="70">LedControl::LedControl</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>LedControl.cpp<sp/>-<sp/>A<sp/>library<sp/>for<sp/>controling<sp/>Leds<sp/>with<sp/>a<sp/>MAX7219/MAX7221</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2007<sp/>Eberhard<sp/>Fahle</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>obtaining<sp/>a<sp/>copy<sp/>of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal<sp/>in<sp/>the<sp/>Software<sp/>without</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights<sp/>to<sp/>use,</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>Software<sp/>is<sp/>furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>conditions:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>This<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all<sp/>copies<sp/>or<sp/></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>EXPRESS<sp/>OR<sp/>IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>OF<sp/>MERCHANTABILITY,<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE<sp/>AUTHORS<sp/>OR<sp/>COPYRIGHT</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER<sp/>LIABILITY,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>FROM,<sp/>OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE<sp/>SOFTWARE.</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_led_control_8h" kindref="compound">LedControl.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//the<sp/>opcodes<sp/>for<sp/>the<sp/>MAX7221<sp/>and<sp/>MAX7219</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_led_control_8cpp_1a6c542d212fef9a9b5ba82222089a306b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_NOOP<sp/><sp/><sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_led_control_8cpp_1ac2dcbbd3fef01a1defd3aa5f8a8c612a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DIGIT0<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_led_control_8cpp_1a6c8209744590cd0cc8495cc6de58ab02" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DIGIT1<sp/>2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_led_control_8cpp_1a430d77ba70abea8e61820aaa3f27c28b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DIGIT2<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_led_control_8cpp_1a03d3bd8cd1b468b4a9cb473036f65747" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DIGIT3<sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_led_control_8cpp_1ac3d2e72ba1cca69133e4dcbc478f616b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DIGIT4<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_led_control_8cpp_1a021f910b62cdaa529fcea36791df7028" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DIGIT5<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_led_control_8cpp_1a5a12c4b35c924fec89c3b71246b7b7e2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DIGIT6<sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_led_control_8cpp_1a3a1210173fb70a66f649b93eb62e0884" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DIGIT7<sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_led_control_8cpp_1a318b32d905ce8e57d7caec133ec7d712" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DECODEMODE<sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_led_control_8cpp_1a4f47ca7a01008a4d918302ece5314ed4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_INTENSITY<sp/><sp/><sp/>10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_led_control_8cpp_1a13d91ddca53029535b6cf314b28ed15e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_SCANLIMIT<sp/><sp/><sp/>11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_led_control_8cpp_1ac4772c1c1c24a4b5837a2000c62aa0a3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_SHUTDOWN<sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_led_control_8cpp_1a7ef59a31858360d26d5dade28441598c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>OP_DISPLAYTEST<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" refkind="member"><highlight class="normal"><ref refid="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" kindref="member">LedControl::LedControl</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>dataPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>clkPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>csPin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numDevices)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI_MOSI=dataPin;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI_CLK=clkPin;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI_CS=csPin;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(numDevices&lt;=0<sp/>||<sp/>numDevices&gt;8<sp/>)</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>numDevices=8;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>maxDevices=numDevices;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(SPI_MOSI,OUTPUT);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(SPI_CLK,OUTPUT);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(SPI_CS,OUTPUT);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(SPI_CS,HIGH);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI_MOSI=dataPin;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>=0;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>&lt;64;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]=0x00;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>=0;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>&lt;maxDevices;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spiTransfer(<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>,<ref refid="_led_control_8cpp_1a7ef59a31858360d26d5dade28441598c" kindref="member">OP_DISPLAYTEST</ref>,0);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//scanlimit<sp/>is<sp/>set<sp/>to<sp/>max<sp/>on<sp/>startup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_led_control_1a2d32bbde945924b1389df8cc158c821a" kindref="member">setScanLimit</ref>(<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>,7);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//decode<sp/>is<sp/>done<sp/>in<sp/>source</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spiTransfer(<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>,<ref refid="_led_control_8cpp_1a318b32d905ce8e57d7caec133ec7d712" kindref="member">OP_DECODEMODE</ref>,0);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_led_control_1ae162b960d838588bf5cfafc1ba3858bc" kindref="member">clearDisplay</ref>(<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//we<sp/>go<sp/>into<sp/>shutdown-mode<sp/>on<sp/>startup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_led_control_1acae3eb6d78fc9b978fe6968611e48466" kindref="member">shutdown</ref>(<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>,</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_led_control_1a30139662e87b4a1d693646ac1df97523" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1a30139662e87b4a1d693646ac1df97523" kindref="member">LedControl::getDeviceCount</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxDevices;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_led_control_1acae3eb6d78fc9b978fe6968611e48466" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1acae3eb6d78fc9b978fe6968611e48466" kindref="member">LedControl::shutdown</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(addr&lt;0<sp/>||<sp/>addr&gt;=maxDevices)</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(b)</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spiTransfer(addr,<sp/><ref refid="_led_control_8cpp_1ac4772c1c1c24a4b5837a2000c62aa0a3" kindref="member">OP_SHUTDOWN</ref>,0);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spiTransfer(addr,<sp/><ref refid="_led_control_8cpp_1ac4772c1c1c24a4b5837a2000c62aa0a3" kindref="member">OP_SHUTDOWN</ref>,1);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="class_led_control_1a2d32bbde945924b1389df8cc158c821a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1a2d32bbde945924b1389df8cc158c821a" kindref="member">LedControl::setScanLimit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>limit)<sp/>{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(addr&lt;0<sp/>||<sp/>addr&gt;=maxDevices)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(limit&gt;=0<sp/>&amp;&amp;<sp/>limit&lt;8)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spiTransfer(addr,<sp/><ref refid="_led_control_8cpp_1a13d91ddca53029535b6cf314b28ed15e" kindref="member">OP_SCANLIMIT</ref>,limit);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92" refid="class_led_control_1a540e6ea4f3d393c1131f4bb7f5b9353d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1a540e6ea4f3d393c1131f4bb7f5b9353d" kindref="member">LedControl::setIntensity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>intensity)<sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(addr&lt;0<sp/>||<sp/>addr&gt;=maxDevices)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(intensity&gt;=0<sp/>&amp;&amp;<sp/>intensity&lt;16)<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spiTransfer(addr,<sp/><ref refid="_led_control_8cpp_1a4f47ca7a01008a4d918302ece5314ed4" kindref="member">OP_INTENSITY</ref>,intensity);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_led_control_1ae162b960d838588bf5cfafc1ba3858bc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1ae162b960d838588bf5cfafc1ba3858bc" kindref="member">LedControl::clearDisplay</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr)<sp/>{</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(addr&lt;0<sp/>||<sp/>addr&gt;=maxDevices)</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>offset=addr*8;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>=0;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>&lt;8;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status[offset+<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]=0;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spiTransfer(addr,<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>+1,status[offset+<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="class_led_control_1aca456866199ac52f40e0a6e91c57b443" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1aca456866199ac52f40e0a6e91c57b443" kindref="member">LedControl::setLed</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>column,<sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>state)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>val=0x00;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(addr&lt;0<sp/>||<sp/>addr&gt;=maxDevices)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(row&lt;0<sp/>||<sp/>row&gt;7<sp/>||<sp/>column&lt;0<sp/>||<sp/>column&gt;7)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/>offset=addr*8;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>val=B10000000<sp/>&gt;&gt;<sp/>column;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(state)</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status[offset+row]=status[offset+row]|val;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val=~val;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>status[offset+row]=status[offset+row]&amp;val;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/>spiTransfer(addr,<sp/>row+1,status[offset+row]);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="class_led_control_1a471116c0c2d2552dec7c4dda6506d7e7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1a471116c0c2d2552dec7c4dda6506d7e7" kindref="member">LedControl::setRow</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row,<sp/>byte<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(addr&lt;0<sp/>||<sp/>addr&gt;=maxDevices)</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(row&lt;0<sp/>||<sp/>row&gt;7)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>offset=addr*8;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>status[offset+row]=value;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>spiTransfer(addr,<sp/>row+1,status[offset+row]);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="class_led_control_1af3cb40a45c736af5a3b3b970510d6b84" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1af3cb40a45c736af5a3b3b970510d6b84" kindref="member">LedControl::setColumn</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/>byte<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>val;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(addr&lt;0<sp/>||<sp/>addr&gt;=maxDevices)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(col&lt;0<sp/>||<sp/>col&gt;7)<sp/></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>row=0;row&lt;8;row++)<sp/>{</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val=value<sp/>&gt;&gt;<sp/>(7-row);</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>val=val<sp/>&amp;<sp/>0x01;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_led_control_1aca456866199ac52f40e0a6e91c57b443" kindref="member">setLed</ref>(addr,row,col,val);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155" refid="class_led_control_1a3ad4b5566c89e3d03c3a58fb19b4354b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1a3ad4b5566c89e3d03c3a58fb19b4354b" kindref="member">LedControl::setDigit</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>digit,<sp/>byte<sp/>value,<sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>dp)<sp/>{</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>v;</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(addr&lt;0<sp/>||<sp/>addr&gt;=maxDevices)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(digit&lt;0<sp/>||<sp/>digit&gt;7<sp/>||<sp/>value&gt;15)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>offset=addr*8;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>v=<ref refid="pgmspace_8h_1ad2b71a6faa0583b51569b531a443cb0a" kindref="member">pgm_read_byte_near</ref>(charTable<sp/>+<sp/>value);<sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dp)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v|=B10000000;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>status[offset+digit]=v;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>spiTransfer(addr,<sp/>digit+1,v);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="class_led_control_1aae9120ce2427b01ffad4cfaa91e5f537" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_led_control_1aae9120ce2427b01ffad4cfaa91e5f537" kindref="member">LedControl::setChar</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>digit,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>value,<sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>dp)<sp/>{</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>index,v;</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(addr&lt;0<sp/>||<sp/>addr&gt;=maxDevices)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(digit&lt;0<sp/>||<sp/>digit&gt;7)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/>offset=addr*8;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/>index=(byte)value;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(index<sp/>&gt;127)<sp/>{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//no<sp/>defined<sp/>beyond<sp/>index<sp/>127,<sp/>so<sp/>we<sp/>use<sp/>the<sp/>space<sp/>char</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>index=32;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/>v=<ref refid="pgmspace_8h_1ad2b71a6faa0583b51569b531a443cb0a" kindref="member">pgm_read_byte_near</ref>(charTable<sp/>+<sp/>index);<sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(dp)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v|=B10000000;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>status[offset+digit]=v;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>spiTransfer(addr,<sp/>digit+1,v);</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LedControl::spiTransfer(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>addr,<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>byte<sp/>opcode,<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>byte<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Create<sp/>an<sp/>array<sp/>with<sp/>the<sp/>data<sp/>to<sp/>shift<sp/>out</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>offset=addr*2;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxbytes=maxDevices*2;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>=0;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>&lt;maxbytes;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spidata[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]=(byte)0;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//put<sp/>our<sp/>device<sp/>data<sp/>into<sp/>the<sp/>array</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>spidata[offset+1]=opcode;</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/>spidata[offset]=data;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//enable<sp/>the<sp/>line<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(SPI_CS,LOW);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Now<sp/>shift<sp/>out<sp/>the<sp/>data<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>=maxbytes;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>&gt;0;<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>--)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shiftOut(SPI_MOSI,SPI_CLK,MSBFIRST,spidata[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>-1]);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//latch<sp/>the<sp/>data<sp/>onto<sp/>the<sp/>display</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(SPI_CS,HIGH);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LedControl-master/src/LedControl.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,189 @@
+\hypertarget{structsensors__event__t}{}\section{sensors\+\_\+event\+\_\+t Struct Reference}
+\label{structsensors__event__t}\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+
+
+{\ttfamily \#include $<$Adafruit\+\_\+\+Sensor.\+h$>$}
+
+
+
+Collaboration diagram for sensors\+\_\+event\+\_\+t\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=257pt]{structsensors__event__t__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int32\+\_\+t \hyperlink{structsensors__event__t_a2134d60fdb21e3495c595a2df2f5cece}{version}
+\item 
+int32\+\_\+t \hyperlink{structsensors__event__t_a6b06d35b17afbee79de7f45d9d71ed0b}{sensor\+\_\+id}
+\item 
+int32\+\_\+t \hyperlink{structsensors__event__t_a58401dd7f3400d9eb96c71b8fba9f8e8}{type}
+\item 
+int32\+\_\+t \hyperlink{structsensors__event__t_a8be4dc00344f46abf29e06251bf9fad9}{reserved0}
+\item 
+int32\+\_\+t \hyperlink{structsensors__event__t_acd3be1560458b3e3bf52f93f744e8238}{timestamp}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>float \hyperlink{structsensors__event__t_addee33a715123e16eb463e5cc9024fe2}{data} \mbox{[}4\mbox{]}\\
+\>\hyperlink{structsensors__vec__t}{sensors\_vec\_t} \hyperlink{structsensors__event__t_a91a4325f468d3155e6921358a6f61baa}{acceleration}\\
+\>\hyperlink{structsensors__vec__t}{sensors\_vec\_t} \hyperlink{structsensors__event__t_aa634d41a024e1cacdceecf85ec326698}{magnetic}\\
+\>\hyperlink{structsensors__vec__t}{sensors\_vec\_t} \hyperlink{structsensors__event__t_acbe3c50a256fa9423bc9e3a6e0da7ebf}{orientation}\\
+\>\hyperlink{structsensors__vec__t}{sensors\_vec\_t} \hyperlink{structsensors__event__t_ad108ea8c3a18d02cfc674ba27e94a2c4}{gyro}\\
+\>float \hyperlink{structsensors__event__t_a914f76beb75bd99aa3c13d3a8e56e21c}{temperature}\\
+\>float \hyperlink{structsensors__event__t_a456259aaeb265913281d7ffbd8ad8697}{distance}\\
+\>float \hyperlink{structsensors__event__t_adefd2ce2da44e4449ef7cadeaecc6cfd}{light}\\
+\>float \hyperlink{structsensors__event__t_a2ec6e34e1a6cf832d85ca19066bd38f0}{pressure}\\
+\>float \hyperlink{structsensors__event__t_a577b73698368fb061382ce9f31052417}{relative\_humidity}\\
+\>float \hyperlink{structsensors__event__t_ad34303af57d6bce18c34862a887fc005}{current}\\
+\>float \hyperlink{structsensors__event__t_ab01b52f6b83f390a6370d319ded97b28}{voltage}\\
+\>\hyperlink{structsensors__color__t}{sensors\_color\_t} \hyperlink{structsensors__event__t_a56b4d05fbf47013727ec1a0a94db91e6}{color}\\
+\}; \\
+
+\end{tabbing}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+struct sensor\+\_\+event\+\_\+s is used to provide a single sensor event in a common format. 
+
+Definition at line 100 of file Adafruit\+\_\+\+Sensor.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\subsubsection[{\texorpdfstring{"@11}{@11}}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }\hypertarget{structsensors__event__t_a65765f2fda6943ab0fa6ef1d4b9d7d35}{}\label{structsensors__event__t_a65765f2fda6943ab0fa6ef1d4b9d7d35}
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!acceleration@{acceleration}}
+\index{acceleration@{acceleration}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{acceleration}{acceleration}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sensors\+\_\+vec\+\_\+t} sensors\+\_\+event\+\_\+t\+::acceleration}\hypertarget{structsensors__event__t_a91a4325f468d3155e6921358a6f61baa}{}\label{structsensors__event__t_a91a4325f468d3155e6921358a6f61baa}
+acceleration values are in meter per second per second (m/s$^\wedge$2) 
+
+Definition at line 110 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!color@{color}}
+\index{color@{color}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{color}{color}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sensors\+\_\+color\+\_\+t} sensors\+\_\+event\+\_\+t\+::color}\hypertarget{structsensors__event__t_a56b4d05fbf47013727ec1a0a94db91e6}{}\label{structsensors__event__t_a56b4d05fbf47013727ec1a0a94db91e6}
+color in R\+GB component values 
+
+Definition at line 121 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!current@{current}}
+\index{current@{current}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{current}{current}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+event\+\_\+t\+::current}\hypertarget{structsensors__event__t_ad34303af57d6bce18c34862a887fc005}{}\label{structsensors__event__t_ad34303af57d6bce18c34862a887fc005}
+current in milliamps (mA) 
+
+Definition at line 119 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!data@{data}}
+\index{data@{data}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{data}{data}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+event\+\_\+t\+::data\mbox{[}4\mbox{]}}\hypertarget{structsensors__event__t_addee33a715123e16eb463e5cc9024fe2}{}\label{structsensors__event__t_addee33a715123e16eb463e5cc9024fe2}
+
+
+Definition at line 109 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!distance@{distance}}
+\index{distance@{distance}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{distance}{distance}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+event\+\_\+t\+::distance}\hypertarget{structsensors__event__t_a456259aaeb265913281d7ffbd8ad8697}{}\label{structsensors__event__t_a456259aaeb265913281d7ffbd8ad8697}
+distance in centimeters 
+
+Definition at line 115 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!gyro@{gyro}}
+\index{gyro@{gyro}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{gyro}{gyro}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sensors\+\_\+vec\+\_\+t} sensors\+\_\+event\+\_\+t\+::gyro}\hypertarget{structsensors__event__t_ad108ea8c3a18d02cfc674ba27e94a2c4}{}\label{structsensors__event__t_ad108ea8c3a18d02cfc674ba27e94a2c4}
+gyroscope values are in rad/s 
+
+Definition at line 113 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!light@{light}}
+\index{light@{light}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{light}{light}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+event\+\_\+t\+::light}\hypertarget{structsensors__event__t_adefd2ce2da44e4449ef7cadeaecc6cfd}{}\label{structsensors__event__t_adefd2ce2da44e4449ef7cadeaecc6cfd}
+light in SI lux units 
+
+Definition at line 116 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!magnetic@{magnetic}}
+\index{magnetic@{magnetic}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{magnetic}{magnetic}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sensors\+\_\+vec\+\_\+t} sensors\+\_\+event\+\_\+t\+::magnetic}\hypertarget{structsensors__event__t_aa634d41a024e1cacdceecf85ec326698}{}\label{structsensors__event__t_aa634d41a024e1cacdceecf85ec326698}
+magnetic vector values are in micro-\/\+Tesla (uT) 
+
+Definition at line 111 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!orientation@{orientation}}
+\index{orientation@{orientation}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{orientation}{orientation}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sensors\+\_\+vec\+\_\+t} sensors\+\_\+event\+\_\+t\+::orientation}\hypertarget{structsensors__event__t_acbe3c50a256fa9423bc9e3a6e0da7ebf}{}\label{structsensors__event__t_acbe3c50a256fa9423bc9e3a6e0da7ebf}
+orientation values are in degrees 
+
+Definition at line 112 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!pressure@{pressure}}
+\index{pressure@{pressure}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{pressure}{pressure}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+event\+\_\+t\+::pressure}\hypertarget{structsensors__event__t_a2ec6e34e1a6cf832d85ca19066bd38f0}{}\label{structsensors__event__t_a2ec6e34e1a6cf832d85ca19066bd38f0}
+pressure in hectopascal (h\+Pa) 
+
+Definition at line 117 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!relative\+\_\+humidity@{relative\+\_\+humidity}}
+\index{relative\+\_\+humidity@{relative\+\_\+humidity}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{relative\+\_\+humidity}{relative\_humidity}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+event\+\_\+t\+::relative\+\_\+humidity}\hypertarget{structsensors__event__t_a577b73698368fb061382ce9f31052417}{}\label{structsensors__event__t_a577b73698368fb061382ce9f31052417}
+relative humidity in percent 
+
+Definition at line 118 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!reserved0@{reserved0}}
+\index{reserved0@{reserved0}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{reserved0}{reserved0}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t sensors\+\_\+event\+\_\+t\+::reserved0}\hypertarget{structsensors__event__t_a8be4dc00344f46abf29e06251bf9fad9}{}\label{structsensors__event__t_a8be4dc00344f46abf29e06251bf9fad9}
+reserved 
+
+Definition at line 105 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!sensor\+\_\+id@{sensor\+\_\+id}}
+\index{sensor\+\_\+id@{sensor\+\_\+id}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{sensor\+\_\+id}{sensor\_id}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t sensors\+\_\+event\+\_\+t\+::sensor\+\_\+id}\hypertarget{structsensors__event__t_a6b06d35b17afbee79de7f45d9d71ed0b}{}\label{structsensors__event__t_a6b06d35b17afbee79de7f45d9d71ed0b}
+unique sensor identifier 
+
+Definition at line 103 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!temperature@{temperature}}
+\index{temperature@{temperature}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{temperature}{temperature}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+event\+\_\+t\+::temperature}\hypertarget{structsensors__event__t_a914f76beb75bd99aa3c13d3a8e56e21c}{}\label{structsensors__event__t_a914f76beb75bd99aa3c13d3a8e56e21c}
+temperature is in degrees centigrade (Celsius) 
+
+Definition at line 114 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!timestamp@{timestamp}}
+\index{timestamp@{timestamp}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{timestamp}{timestamp}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t sensors\+\_\+event\+\_\+t\+::timestamp}\hypertarget{structsensors__event__t_acd3be1560458b3e3bf52f93f744e8238}{}\label{structsensors__event__t_acd3be1560458b3e3bf52f93f744e8238}
+time is in milliseconds 
+
+Definition at line 106 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!type@{type}}
+\index{type@{type}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{type}{type}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t sensors\+\_\+event\+\_\+t\+::type}\hypertarget{structsensors__event__t_a58401dd7f3400d9eb96c71b8fba9f8e8}{}\label{structsensors__event__t_a58401dd7f3400d9eb96c71b8fba9f8e8}
+sensor type 
+
+Definition at line 104 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!version@{version}}
+\index{version@{version}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{version}{version}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t sensors\+\_\+event\+\_\+t\+::version}\hypertarget{structsensors__event__t_a2134d60fdb21e3495c595a2df2f5cece}{}\label{structsensors__event__t_a2134d60fdb21e3495c595a2df2f5cece}
+must be sizeof(struct sensors\+\_\+event\+\_\+t) 
+
+Definition at line 102 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}!voltage@{voltage}}
+\index{voltage@{voltage}!sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}
+\subsubsection[{\texorpdfstring{voltage}{voltage}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+event\+\_\+t\+::voltage}\hypertarget{structsensors__event__t_ab01b52f6b83f390a6370d319ded97b28}{}\label{structsensors__event__t_ab01b52f6b83f390a6370d319ded97b28}
+voltage in volts (V) 
+
+Definition at line 120 of file Adafruit\+\_\+\+Sensor.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+Sensor-\/master/\hyperlink{_adafruit___sensor_8h}{Adafruit\+\_\+\+Sensor.\+h}\end{DoxyCompactItemize}

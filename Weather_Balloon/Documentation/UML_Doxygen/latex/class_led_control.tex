@@ -1,0 +1,305 @@
+\hypertarget{class_led_control}{}\section{Led\+Control Class Reference}
+\label{class_led_control}\index{Led\+Control@{Led\+Control}}
+
+
+{\ttfamily \#include $<$Led\+Control.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_led_control_ab478602bf6a1bd9a6b2bc72d9700794e}{Led\+Control} (int data\+Pin, int clk\+Pin, int cs\+Pin, int num\+Devices=1)
+\item 
+int \hyperlink{class_led_control_a30139662e87b4a1d693646ac1df97523}{get\+Device\+Count} ()
+\item 
+void \hyperlink{class_led_control_acae3eb6d78fc9b978fe6968611e48466}{shutdown} (int addr, bool status)
+\item 
+void \hyperlink{class_led_control_a2d32bbde945924b1389df8cc158c821a}{set\+Scan\+Limit} (int addr, int limit)
+\item 
+void \hyperlink{class_led_control_a540e6ea4f3d393c1131f4bb7f5b9353d}{set\+Intensity} (int addr, int intensity)
+\item 
+void \hyperlink{class_led_control_ae162b960d838588bf5cfafc1ba3858bc}{clear\+Display} (int addr)
+\item 
+void \hyperlink{class_led_control_aca456866199ac52f40e0a6e91c57b443}{set\+Led} (int addr, int row, int col, boolean state)
+\item 
+void \hyperlink{class_led_control_a471116c0c2d2552dec7c4dda6506d7e7}{set\+Row} (int addr, int row, byte value)
+\item 
+void \hyperlink{class_led_control_af3cb40a45c736af5a3b3b970510d6b84}{set\+Column} (int addr, int col, byte value)
+\item 
+void \hyperlink{class_led_control_a3ad4b5566c89e3d03c3a58fb19b4354b}{set\+Digit} (int addr, int digit, byte value, boolean dp)
+\item 
+void \hyperlink{class_led_control_aae9120ce2427b01ffad4cfaa91e5f537}{set\+Char} (int addr, int digit, char value, boolean dp)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 199 of file Led\+Control.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Led\+Control@{Led\+Control}!Led\+Control@{Led\+Control}}
+\index{Led\+Control@{Led\+Control}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{Led\+Control(int data\+Pin, int clk\+Pin, int cs\+Pin, int num\+Devices=1)}{LedControl(int dataPin, int clkPin, int csPin, int numDevices=1)}}]{\setlength{\rightskip}{0pt plus 5cm}Led\+Control\+::\+Led\+Control (
+\begin{DoxyParamCaption}
+\item[{int}]{data\+Pin, }
+\item[{int}]{clk\+Pin, }
+\item[{int}]{cs\+Pin, }
+\item[{int}]{num\+Devices = {\ttfamily 1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_ab478602bf6a1bd9a6b2bc72d9700794e}{}\label{class_led_control_ab478602bf6a1bd9a6b2bc72d9700794e}
+
+
+Definition at line 46 of file Led\+Control.\+cpp.
+
+
+
+References clear\+Display(), i, O\+P\+\_\+\+D\+E\+C\+O\+D\+E\+M\+O\+DE, O\+P\+\_\+\+D\+I\+S\+P\+L\+A\+Y\+T\+E\+ST, set\+Scan\+Limit(), and shutdown().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_led_control_ab478602bf6a1bd9a6b2bc72d9700794e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Led\+Control@{Led\+Control}!clear\+Display@{clear\+Display}}
+\index{clear\+Display@{clear\+Display}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{clear\+Display(int addr)}{clearDisplay(int addr)}}]{\setlength{\rightskip}{0pt plus 5cm}void Led\+Control\+::clear\+Display (
+\begin{DoxyParamCaption}
+\item[{int}]{addr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_ae162b960d838588bf5cfafc1ba3858bc}{}\label{class_led_control_ae162b960d838588bf5cfafc1ba3858bc}
+
+
+Definition at line 99 of file Led\+Control.\+cpp.
+
+
+
+References i.
+
+
+
+Referenced by Led\+Control().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_led_control_ae162b960d838588bf5cfafc1ba3858bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Led\+Control@{Led\+Control}!get\+Device\+Count@{get\+Device\+Count}}
+\index{get\+Device\+Count@{get\+Device\+Count}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{get\+Device\+Count()}{getDeviceCount()}}]{\setlength{\rightskip}{0pt plus 5cm}int Led\+Control\+::get\+Device\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_a30139662e87b4a1d693646ac1df97523}{}\label{class_led_control_a30139662e87b4a1d693646ac1df97523}
+
+
+Definition at line 72 of file Led\+Control.\+cpp.
+
+\index{Led\+Control@{Led\+Control}!set\+Char@{set\+Char}}
+\index{set\+Char@{set\+Char}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{set\+Char(int addr, int digit, char value, boolean dp)}{setChar(int addr, int digit, char value, boolean dp)}}]{\setlength{\rightskip}{0pt plus 5cm}void Led\+Control\+::set\+Char (
+\begin{DoxyParamCaption}
+\item[{int}]{addr, }
+\item[{int}]{digit, }
+\item[{char}]{value, }
+\item[{boolean}]{dp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_aae9120ce2427b01ffad4cfaa91e5f537}{}\label{class_led_control_aae9120ce2427b01ffad4cfaa91e5f537}
+
+
+Definition at line 171 of file Led\+Control.\+cpp.
+
+
+
+References i, and pgm\+\_\+read\+\_\+byte\+\_\+near.
+
+\index{Led\+Control@{Led\+Control}!set\+Column@{set\+Column}}
+\index{set\+Column@{set\+Column}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{set\+Column(int addr, int col, byte value)}{setColumn(int addr, int col, byte value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Led\+Control\+::set\+Column (
+\begin{DoxyParamCaption}
+\item[{int}]{addr, }
+\item[{int}]{col, }
+\item[{byte}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_af3cb40a45c736af5a3b3b970510d6b84}{}\label{class_led_control_af3cb40a45c736af5a3b3b970510d6b84}
+
+
+Definition at line 141 of file Led\+Control.\+cpp.
+
+
+
+References set\+Led().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_led_control_af3cb40a45c736af5a3b3b970510d6b84_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Led\+Control@{Led\+Control}!set\+Digit@{set\+Digit}}
+\index{set\+Digit@{set\+Digit}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{set\+Digit(int addr, int digit, byte value, boolean dp)}{setDigit(int addr, int digit, byte value, boolean dp)}}]{\setlength{\rightskip}{0pt plus 5cm}void Led\+Control\+::set\+Digit (
+\begin{DoxyParamCaption}
+\item[{int}]{addr, }
+\item[{int}]{digit, }
+\item[{byte}]{value, }
+\item[{boolean}]{dp}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_a3ad4b5566c89e3d03c3a58fb19b4354b}{}\label{class_led_control_a3ad4b5566c89e3d03c3a58fb19b4354b}
+
+
+Definition at line 155 of file Led\+Control.\+cpp.
+
+
+
+References pgm\+\_\+read\+\_\+byte\+\_\+near.
+
+\index{Led\+Control@{Led\+Control}!set\+Intensity@{set\+Intensity}}
+\index{set\+Intensity@{set\+Intensity}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{set\+Intensity(int addr, int intensity)}{setIntensity(int addr, int intensity)}}]{\setlength{\rightskip}{0pt plus 5cm}void Led\+Control\+::set\+Intensity (
+\begin{DoxyParamCaption}
+\item[{int}]{addr, }
+\item[{int}]{intensity}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_a540e6ea4f3d393c1131f4bb7f5b9353d}{}\label{class_led_control_a540e6ea4f3d393c1131f4bb7f5b9353d}
+
+
+Definition at line 92 of file Led\+Control.\+cpp.
+
+
+
+References O\+P\+\_\+\+I\+N\+T\+E\+N\+S\+I\+TY.
+
+\index{Led\+Control@{Led\+Control}!set\+Led@{set\+Led}}
+\index{set\+Led@{set\+Led}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{set\+Led(int addr, int row, int col, boolean state)}{setLed(int addr, int row, int col, boolean state)}}]{\setlength{\rightskip}{0pt plus 5cm}void Led\+Control\+::set\+Led (
+\begin{DoxyParamCaption}
+\item[{int}]{addr, }
+\item[{int}]{row, }
+\item[{int}]{col, }
+\item[{boolean}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_aca456866199ac52f40e0a6e91c57b443}{}\label{class_led_control_aca456866199ac52f40e0a6e91c57b443}
+
+
+Definition at line 111 of file Led\+Control.\+cpp.
+
+
+
+Referenced by set\+Column().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_led_control_aca456866199ac52f40e0a6e91c57b443_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Led\+Control@{Led\+Control}!set\+Row@{set\+Row}}
+\index{set\+Row@{set\+Row}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{set\+Row(int addr, int row, byte value)}{setRow(int addr, int row, byte value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Led\+Control\+::set\+Row (
+\begin{DoxyParamCaption}
+\item[{int}]{addr, }
+\item[{int}]{row, }
+\item[{byte}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_a471116c0c2d2552dec7c4dda6506d7e7}{}\label{class_led_control_a471116c0c2d2552dec7c4dda6506d7e7}
+
+
+Definition at line 130 of file Led\+Control.\+cpp.
+
+\index{Led\+Control@{Led\+Control}!set\+Scan\+Limit@{set\+Scan\+Limit}}
+\index{set\+Scan\+Limit@{set\+Scan\+Limit}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{set\+Scan\+Limit(int addr, int limit)}{setScanLimit(int addr, int limit)}}]{\setlength{\rightskip}{0pt plus 5cm}void Led\+Control\+::set\+Scan\+Limit (
+\begin{DoxyParamCaption}
+\item[{int}]{addr, }
+\item[{int}]{limit}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_a2d32bbde945924b1389df8cc158c821a}{}\label{class_led_control_a2d32bbde945924b1389df8cc158c821a}
+
+
+Definition at line 85 of file Led\+Control.\+cpp.
+
+
+
+References O\+P\+\_\+\+S\+C\+A\+N\+L\+I\+M\+IT.
+
+
+
+Referenced by Led\+Control().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_led_control_a2d32bbde945924b1389df8cc158c821a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Led\+Control@{Led\+Control}!shutdown@{shutdown}}
+\index{shutdown@{shutdown}!Led\+Control@{Led\+Control}}
+\subsubsection[{\texorpdfstring{shutdown(int addr, bool status)}{shutdown(int addr, bool status)}}]{\setlength{\rightskip}{0pt plus 5cm}void Led\+Control\+::shutdown (
+\begin{DoxyParamCaption}
+\item[{int}]{addr, }
+\item[{bool}]{status}
+\end{DoxyParamCaption}
+)}\hypertarget{class_led_control_acae3eb6d78fc9b978fe6968611e48466}{}\label{class_led_control_acae3eb6d78fc9b978fe6968611e48466}
+
+
+Definition at line 76 of file Led\+Control.\+cpp.
+
+
+
+References O\+P\+\_\+\+S\+H\+U\+T\+D\+O\+WN.
+
+
+
+Referenced by Led\+Control().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=341pt]{class_led_control_acae3eb6d78fc9b978fe6968611e48466_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Led\+Control-\/master/src/\hyperlink{_led_control_8h}{Led\+Control.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Led\+Control-\/master/src/\hyperlink{_led_control_8cpp}{Led\+Control.\+cpp}\end{DoxyCompactItemize}

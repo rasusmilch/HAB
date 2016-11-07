@@ -1,0 +1,5 @@
+<map id="DallasTemperature::getTempC" name="DallasTemperature::getTempC">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#a37c3723cc15d5e46d0a6caa96a3c4781" title="DallasTemperature::\lgetTemp" alt="" coords="185,5,317,47"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#a75accb4a56858189accda00e5eabb06e" title="DallasTemperature::\lrawToCelsius" alt="" coords="185,71,317,112"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#a19afa5e594de0ab6caa5a48a70650927" title="DallasTemperature::\lisConnected" alt="" coords="365,5,497,47"/>
+</map>

@@ -1,0 +1,410 @@
+\hypertarget{_dallas_temperature_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Arduino-\/\+Temperature-\/\+Control-\/\+Library/\+Dallas\+Temperature.h File Reference}
+\label{_dallas_temperature_8h}\index{Weather\+\_\+\+Balloon/library/\+Arduino-\/\+Temperature-\/\+Control-\/\+Library/\+Dallas\+Temperature.\+h@{Weather\+\_\+\+Balloon/library/\+Arduino-\/\+Temperature-\/\+Control-\/\+Library/\+Dallas\+Temperature.\+h}}
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include $<$One\+Wire.\+h$>$}\\*
+Include dependency graph for Dallas\+Temperature.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{_dallas_temperature_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_dallas_temperature_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_dallas_temperature}{Dallas\+Temperature}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a2cb396fa143856c141c5bc62a73a0da4}{D\+A\+L\+L\+A\+S\+T\+E\+M\+P\+L\+I\+B\+V\+E\+R\+S\+I\+ON}~\char`\"{}3.\+7.\+7\char`\"{}
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a97e7894dad22248672f1a0c15ff5e89e}{R\+E\+Q\+U\+I\+R\+E\+S\+N\+EW}~false
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a77eede0598df5e35ecccadade2614420}{R\+E\+Q\+U\+I\+R\+E\+S\+A\+L\+A\+R\+MS}~true
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a35995eb038ced9c7c25f6c13126be9f1}{D\+S18\+S20\+M\+O\+D\+EL}~0x10
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a18255739b20e4f701b40d18aefcb8130}{D\+S18\+B20\+M\+O\+D\+EL}~0x28
+\item 
+\#define \hyperlink{_dallas_temperature_8h_adfdf0cdd9ef4946e5a8a637bd5fc8c25}{D\+S1822\+M\+O\+D\+EL}~0x22
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a090e56ed1226c81a311516443b657b3d}{D\+S1825\+M\+O\+D\+EL}~0x3B
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a8825862e1ce7be4f9bc841b9fb38fa2d}{S\+T\+A\+R\+T\+C\+O\+N\+VO}~0x44
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a155b81d518ec23fcf76f324eafe7f79d}{C\+O\+P\+Y\+S\+C\+R\+A\+T\+CH}~0x48
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a52761121324a6ee83ca7d1949ed21fbc}{R\+E\+A\+D\+S\+C\+R\+A\+T\+CH}~0x\+BE
+\item 
+\#define \hyperlink{_dallas_temperature_8h_aa41d45853aeac8f06955e4f944c19b33}{W\+R\+I\+T\+E\+S\+C\+R\+A\+T\+CH}~0x4E
+\item 
+\#define \hyperlink{_dallas_temperature_8h_ae245ed53b4cd94ae3aecb51396c403e2}{R\+E\+C\+A\+L\+L\+S\+C\+R\+A\+T\+CH}~0x\+B8
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a13d91396539a459622333016e7caf065}{R\+E\+A\+D\+P\+O\+W\+E\+R\+S\+U\+P\+P\+LY}~0x\+B4
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a6de67dc22cbcbf14db5697ab89987c33}{A\+L\+A\+R\+M\+S\+E\+A\+R\+CH}~0x\+EC
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a50c6fe6c933616d6e014716c450b250d}{T\+E\+M\+P\+\_\+\+L\+SB}~0
+\item 
+\#define \hyperlink{_dallas_temperature_8h_abca29bf63807a8319b6b8ee7af2bba53}{T\+E\+M\+P\+\_\+\+M\+SB}~1
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a80e085e8540d59e6a84c59e12a4bcfc2}{H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP}~2
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a5cabe4c79bafbac7653fcc7acec33a9b}{L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP}~3
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a5fa120064b78d91b6a77f868bbda5a99}{C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON}~4
+\item 
+\#define \hyperlink{_dallas_temperature_8h_aebc03f6ec6012ce2ccdad56fef72f796}{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+B\+Y\+TE}~5
+\item 
+\#define \hyperlink{_dallas_temperature_8h_ad4f3030cdf560af74faf18a34c155f27}{C\+O\+U\+N\+T\+\_\+\+R\+E\+M\+A\+IN}~6
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a32ec8a9a258e8a70c4125d14b71ca7b2}{C\+O\+U\+N\+T\+\_\+\+P\+E\+R\+\_\+C}~7
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a1dac037795f975b12a8914cbd5667711}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+RC}~8
+\item 
+\#define \hyperlink{_dallas_temperature_8h_ad8c0a8d6cdda8e4c7904db527d4201ee}{T\+E\+M\+P\+\_\+9\+\_\+\+B\+IT}~0x1F
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a4dbc2b2f097e32571b1d432114847677}{T\+E\+M\+P\+\_\+10\+\_\+\+B\+IT}~0x3F
+\item 
+\#define \hyperlink{_dallas_temperature_8h_afe512788bd1d37ff9f7388a2889261fe}{T\+E\+M\+P\+\_\+11\+\_\+\+B\+IT}~0x5F
+\item 
+\#define \hyperlink{_dallas_temperature_8h_ae328535feed86c66430a4f5f550d909e}{T\+E\+M\+P\+\_\+12\+\_\+\+B\+IT}~0x7F
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a164f6f267818ab7c75490529f046f28a}{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C}~-\/127
+\item 
+\#define \hyperlink{_dallas_temperature_8h_ae9200847ca4d6801b55a353d5682d2ff}{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+F}~-\/196.\+6
+\item 
+\#define \hyperlink{_dallas_temperature_8h_a34f9f3fbd4210dade23b0b82d2aa7eef}{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW}~-\/7040
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef uint8\+\_\+t \hyperlink{_dallas_temperature_8h_a7a5445edfac5eacc4404ae5ed58d7880}{Device\+Address}\mbox{[}8\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!A\+L\+A\+R\+M\+S\+E\+A\+R\+CH@{A\+L\+A\+R\+M\+S\+E\+A\+R\+CH}}
+\index{A\+L\+A\+R\+M\+S\+E\+A\+R\+CH@{A\+L\+A\+R\+M\+S\+E\+A\+R\+CH}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{A\+L\+A\+R\+M\+S\+E\+A\+R\+CH}{ALARMSEARCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+L\+A\+R\+M\+S\+E\+A\+R\+CH~0x\+EC}\hypertarget{_dallas_temperature_8h_a6de67dc22cbcbf14db5697ab89987c33}{}\label{_dallas_temperature_8h_a6de67dc22cbcbf14db5697ab89987c33}
+
+
+Definition at line 37 of file Dallas\+Temperature.\+h.
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON@{C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON}}
+\index{C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON@{C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON}{CONFIGURATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON~4}\hypertarget{_dallas_temperature_8h_a5fa120064b78d91b6a77f868bbda5a99}{}\label{_dallas_temperature_8h_a5fa120064b78d91b6a77f868bbda5a99}
+
+
+Definition at line 44 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Resolution(), Dallas\+Temperature\+::set\+Resolution(), and Dallas\+Temperature\+::write\+Scratch\+Pad().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!C\+O\+P\+Y\+S\+C\+R\+A\+T\+CH@{C\+O\+P\+Y\+S\+C\+R\+A\+T\+CH}}
+\index{C\+O\+P\+Y\+S\+C\+R\+A\+T\+CH@{C\+O\+P\+Y\+S\+C\+R\+A\+T\+CH}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+P\+Y\+S\+C\+R\+A\+T\+CH}{COPYSCRATCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+P\+Y\+S\+C\+R\+A\+T\+CH~0x48}\hypertarget{_dallas_temperature_8h_a155b81d518ec23fcf76f324eafe7f79d}{}\label{_dallas_temperature_8h_a155b81d518ec23fcf76f324eafe7f79d}
+
+
+Definition at line 32 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::write\+Scratch\+Pad().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!C\+O\+U\+N\+T\+\_\+\+P\+E\+R\+\_\+C@{C\+O\+U\+N\+T\+\_\+\+P\+E\+R\+\_\+C}}
+\index{C\+O\+U\+N\+T\+\_\+\+P\+E\+R\+\_\+C@{C\+O\+U\+N\+T\+\_\+\+P\+E\+R\+\_\+C}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+U\+N\+T\+\_\+\+P\+E\+R\+\_\+C}{COUNT\_PER\_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+U\+N\+T\+\_\+\+P\+E\+R\+\_\+C~7}\hypertarget{_dallas_temperature_8h_a32ec8a9a258e8a70c4125d14b71ca7b2}{}\label{_dallas_temperature_8h_a32ec8a9a258e8a70c4125d14b71ca7b2}
+
+
+Definition at line 47 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Temp\+F\+By\+Index().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!C\+O\+U\+N\+T\+\_\+\+R\+E\+M\+A\+IN@{C\+O\+U\+N\+T\+\_\+\+R\+E\+M\+A\+IN}}
+\index{C\+O\+U\+N\+T\+\_\+\+R\+E\+M\+A\+IN@{C\+O\+U\+N\+T\+\_\+\+R\+E\+M\+A\+IN}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{C\+O\+U\+N\+T\+\_\+\+R\+E\+M\+A\+IN}{COUNT\_REMAIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O\+U\+N\+T\+\_\+\+R\+E\+M\+A\+IN~6}\hypertarget{_dallas_temperature_8h_ad4f3030cdf560af74faf18a34c155f27}{}\label{_dallas_temperature_8h_ad4f3030cdf560af74faf18a34c155f27}
+
+
+Definition at line 46 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Temp\+F\+By\+Index().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!D\+A\+L\+L\+A\+S\+T\+E\+M\+P\+L\+I\+B\+V\+E\+R\+S\+I\+ON@{D\+A\+L\+L\+A\+S\+T\+E\+M\+P\+L\+I\+B\+V\+E\+R\+S\+I\+ON}}
+\index{D\+A\+L\+L\+A\+S\+T\+E\+M\+P\+L\+I\+B\+V\+E\+R\+S\+I\+ON@{D\+A\+L\+L\+A\+S\+T\+E\+M\+P\+L\+I\+B\+V\+E\+R\+S\+I\+ON}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{D\+A\+L\+L\+A\+S\+T\+E\+M\+P\+L\+I\+B\+V\+E\+R\+S\+I\+ON}{DALLASTEMPLIBVERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+A\+L\+L\+A\+S\+T\+E\+M\+P\+L\+I\+B\+V\+E\+R\+S\+I\+ON~\char`\"{}3.\+7.\+7\char`\"{}}\hypertarget{_dallas_temperature_8h_a2cb396fa143856c141c5bc62a73a0da4}{}\label{_dallas_temperature_8h_a2cb396fa143856c141c5bc62a73a0da4}
+
+
+Definition at line 4 of file Dallas\+Temperature.\+h.
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C@{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C}}
+\index{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C@{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C}{DEVICE\_DISCONNECTED\_C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C~-\/127}\hypertarget{_dallas_temperature_8h_a164f6f267818ab7c75490529f046f28a}{}\label{_dallas_temperature_8h_a164f6f267818ab7c75490529f046f28a}
+
+
+Definition at line 57 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Temp\+C\+By\+Index(), Dallas\+Temperature\+::raw\+To\+Celsius(), and Dallas\+Temperature\+::raw\+To\+Fahrenheit().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+F@{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+F}}
+\index{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+F@{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+F}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+F}{DEVICE\_DISCONNECTED\_F}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+F~-\/196.\+6}\hypertarget{_dallas_temperature_8h_ae9200847ca4d6801b55a353d5682d2ff}{}\label{_dallas_temperature_8h_ae9200847ca4d6801b55a353d5682d2ff}
+
+
+Definition at line 58 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Temp\+F\+By\+Index(), and Dallas\+Temperature\+::raw\+To\+Fahrenheit().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW@{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW}}
+\index{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW@{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW}{DEVICE\_DISCONNECTED\_RAW}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW~-\/7040}\hypertarget{_dallas_temperature_8h_a34f9f3fbd4210dade23b0b82d2aa7eef}{}\label{_dallas_temperature_8h_a34f9f3fbd4210dade23b0b82d2aa7eef}
+
+
+Definition at line 59 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Temp(), Dallas\+Temperature\+::raw\+To\+Celsius(), and Dallas\+Temperature\+::raw\+To\+Fahrenheit().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!D\+S1822\+M\+O\+D\+EL@{D\+S1822\+M\+O\+D\+EL}}
+\index{D\+S1822\+M\+O\+D\+EL@{D\+S1822\+M\+O\+D\+EL}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{D\+S1822\+M\+O\+D\+EL}{DS1822MODEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S1822\+M\+O\+D\+EL~0x22}\hypertarget{_dallas_temperature_8h_adfdf0cdd9ef4946e5a8a637bd5fc8c25}{}\label{_dallas_temperature_8h_adfdf0cdd9ef4946e5a8a637bd5fc8c25}
+
+
+Definition at line 27 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::valid\+Family().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!D\+S1825\+M\+O\+D\+EL@{D\+S1825\+M\+O\+D\+EL}}
+\index{D\+S1825\+M\+O\+D\+EL@{D\+S1825\+M\+O\+D\+EL}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{D\+S1825\+M\+O\+D\+EL}{DS1825MODEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S1825\+M\+O\+D\+EL~0x3B}\hypertarget{_dallas_temperature_8h_a090e56ed1226c81a311516443b657b3d}{}\label{_dallas_temperature_8h_a090e56ed1226c81a311516443b657b3d}
+
+
+Definition at line 28 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::valid\+Family().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!D\+S18\+B20\+M\+O\+D\+EL@{D\+S18\+B20\+M\+O\+D\+EL}}
+\index{D\+S18\+B20\+M\+O\+D\+EL@{D\+S18\+B20\+M\+O\+D\+EL}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{D\+S18\+B20\+M\+O\+D\+EL}{DS18B20MODEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S18\+B20\+M\+O\+D\+EL~0x28}\hypertarget{_dallas_temperature_8h_a18255739b20e4f701b40d18aefcb8130}{}\label{_dallas_temperature_8h_a18255739b20e4f701b40d18aefcb8130}
+
+
+Definition at line 26 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::valid\+Family().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!D\+S18\+S20\+M\+O\+D\+EL@{D\+S18\+S20\+M\+O\+D\+EL}}
+\index{D\+S18\+S20\+M\+O\+D\+EL@{D\+S18\+S20\+M\+O\+D\+EL}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{D\+S18\+S20\+M\+O\+D\+EL}{DS18S20MODEL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S18\+S20\+M\+O\+D\+EL~0x10}\hypertarget{_dallas_temperature_8h_a35995eb038ced9c7c25f6c13126be9f1}{}\label{_dallas_temperature_8h_a35995eb038ced9c7c25f6c13126be9f1}
+
+
+Definition at line 25 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Resolution(), Dallas\+Temperature\+::get\+Temp\+F\+By\+Index(), Dallas\+Temperature\+::set\+Resolution(), Dallas\+Temperature\+::valid\+Family(), and Dallas\+Temperature\+::write\+Scratch\+Pad().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP@{H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP}}
+\index{H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP@{H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP}{HIGH\_ALARM\_TEMP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP~2}\hypertarget{_dallas_temperature_8h_a80e085e8540d59e6a84c59e12a4bcfc2}{}\label{_dallas_temperature_8h_a80e085e8540d59e6a84c59e12a4bcfc2}
+
+
+Definition at line 42 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+User\+Data(), Dallas\+Temperature\+::raw\+To\+Fahrenheit(), Dallas\+Temperature\+::set\+User\+Data(), and Dallas\+Temperature\+::write\+Scratch\+Pad().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+B\+Y\+TE@{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+B\+Y\+TE}}
+\index{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+B\+Y\+TE@{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+B\+Y\+TE}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+B\+Y\+TE}{INTERNAL\_BYTE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+B\+Y\+TE~5}\hypertarget{_dallas_temperature_8h_aebc03f6ec6012ce2ccdad56fef72f796}{}\label{_dallas_temperature_8h_aebc03f6ec6012ce2ccdad56fef72f796}
+
+
+Definition at line 45 of file Dallas\+Temperature.\+h.
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP@{L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP}}
+\index{L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP@{L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP}{LOW\_ALARM\_TEMP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP~3}\hypertarget{_dallas_temperature_8h_a5cabe4c79bafbac7653fcc7acec33a9b}{}\label{_dallas_temperature_8h_a5cabe4c79bafbac7653fcc7acec33a9b}
+
+
+Definition at line 43 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+User\+Data(), Dallas\+Temperature\+::raw\+To\+Fahrenheit(), Dallas\+Temperature\+::set\+User\+Data(), and Dallas\+Temperature\+::write\+Scratch\+Pad().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!R\+E\+A\+D\+P\+O\+W\+E\+R\+S\+U\+P\+P\+LY@{R\+E\+A\+D\+P\+O\+W\+E\+R\+S\+U\+P\+P\+LY}}
+\index{R\+E\+A\+D\+P\+O\+W\+E\+R\+S\+U\+P\+P\+LY@{R\+E\+A\+D\+P\+O\+W\+E\+R\+S\+U\+P\+P\+LY}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+A\+D\+P\+O\+W\+E\+R\+S\+U\+P\+P\+LY}{READPOWERSUPPLY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+A\+D\+P\+O\+W\+E\+R\+S\+U\+P\+P\+LY~0x\+B4}\hypertarget{_dallas_temperature_8h_a13d91396539a459622333016e7caf065}{}\label{_dallas_temperature_8h_a13d91396539a459622333016e7caf065}
+
+
+Definition at line 36 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::read\+Power\+Supply().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!R\+E\+A\+D\+S\+C\+R\+A\+T\+CH@{R\+E\+A\+D\+S\+C\+R\+A\+T\+CH}}
+\index{R\+E\+A\+D\+S\+C\+R\+A\+T\+CH@{R\+E\+A\+D\+S\+C\+R\+A\+T\+CH}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+A\+D\+S\+C\+R\+A\+T\+CH}{READSCRATCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+A\+D\+S\+C\+R\+A\+T\+CH~0x\+BE}\hypertarget{_dallas_temperature_8h_a52761121324a6ee83ca7d1949ed21fbc}{}\label{_dallas_temperature_8h_a52761121324a6ee83ca7d1949ed21fbc}
+
+
+Definition at line 33 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::read\+Scratch\+Pad().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!R\+E\+C\+A\+L\+L\+S\+C\+R\+A\+T\+CH@{R\+E\+C\+A\+L\+L\+S\+C\+R\+A\+T\+CH}}
+\index{R\+E\+C\+A\+L\+L\+S\+C\+R\+A\+T\+CH@{R\+E\+C\+A\+L\+L\+S\+C\+R\+A\+T\+CH}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+C\+A\+L\+L\+S\+C\+R\+A\+T\+CH}{RECALLSCRATCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+C\+A\+L\+L\+S\+C\+R\+A\+T\+CH~0x\+B8}\hypertarget{_dallas_temperature_8h_ae245ed53b4cd94ae3aecb51396c403e2}{}\label{_dallas_temperature_8h_ae245ed53b4cd94ae3aecb51396c403e2}
+
+
+Definition at line 35 of file Dallas\+Temperature.\+h.
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!R\+E\+Q\+U\+I\+R\+E\+S\+A\+L\+A\+R\+MS@{R\+E\+Q\+U\+I\+R\+E\+S\+A\+L\+A\+R\+MS}}
+\index{R\+E\+Q\+U\+I\+R\+E\+S\+A\+L\+A\+R\+MS@{R\+E\+Q\+U\+I\+R\+E\+S\+A\+L\+A\+R\+MS}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+Q\+U\+I\+R\+E\+S\+A\+L\+A\+R\+MS}{REQUIRESALARMS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+Q\+U\+I\+R\+E\+S\+A\+L\+A\+R\+MS~true}\hypertarget{_dallas_temperature_8h_a77eede0598df5e35ecccadade2614420}{}\label{_dallas_temperature_8h_a77eede0598df5e35ecccadade2614420}
+
+
+Definition at line 18 of file Dallas\+Temperature.\+h.
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!R\+E\+Q\+U\+I\+R\+E\+S\+N\+EW@{R\+E\+Q\+U\+I\+R\+E\+S\+N\+EW}}
+\index{R\+E\+Q\+U\+I\+R\+E\+S\+N\+EW@{R\+E\+Q\+U\+I\+R\+E\+S\+N\+EW}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+Q\+U\+I\+R\+E\+S\+N\+EW}{REQUIRESNEW}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+Q\+U\+I\+R\+E\+S\+N\+EW~false}\hypertarget{_dallas_temperature_8h_a97e7894dad22248672f1a0c15ff5e89e}{}\label{_dallas_temperature_8h_a97e7894dad22248672f1a0c15ff5e89e}
+
+
+Definition at line 13 of file Dallas\+Temperature.\+h.
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+RC@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+RC}}
+\index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+RC@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+RC}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+RC}{SCRATCHPAD\_CRC}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+RC~8}\hypertarget{_dallas_temperature_8h_a1dac037795f975b12a8914cbd5667711}{}\label{_dallas_temperature_8h_a1dac037795f975b12a8914cbd5667711}
+
+
+Definition at line 48 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::is\+Connected().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!S\+T\+A\+R\+T\+C\+O\+N\+VO@{S\+T\+A\+R\+T\+C\+O\+N\+VO}}
+\index{S\+T\+A\+R\+T\+C\+O\+N\+VO@{S\+T\+A\+R\+T\+C\+O\+N\+VO}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{S\+T\+A\+R\+T\+C\+O\+N\+VO}{STARTCONVO}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+A\+R\+T\+C\+O\+N\+VO~0x44}\hypertarget{_dallas_temperature_8h_a8825862e1ce7be4f9bc841b9fb38fa2d}{}\label{_dallas_temperature_8h_a8825862e1ce7be4f9bc841b9fb38fa2d}
+
+
+Definition at line 31 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::request\+Temperatures(), and Dallas\+Temperature\+::request\+Temperatures\+By\+Address().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!T\+E\+M\+P\+\_\+10\+\_\+\+B\+IT@{T\+E\+M\+P\+\_\+10\+\_\+\+B\+IT}}
+\index{T\+E\+M\+P\+\_\+10\+\_\+\+B\+IT@{T\+E\+M\+P\+\_\+10\+\_\+\+B\+IT}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{T\+E\+M\+P\+\_\+10\+\_\+\+B\+IT}{TEMP\_10\_BIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+M\+P\+\_\+10\+\_\+\+B\+IT~0x3F}\hypertarget{_dallas_temperature_8h_a4dbc2b2f097e32571b1d432114847677}{}\label{_dallas_temperature_8h_a4dbc2b2f097e32571b1d432114847677}
+
+
+Definition at line 52 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Resolution(), and Dallas\+Temperature\+::set\+Resolution().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!T\+E\+M\+P\+\_\+11\+\_\+\+B\+IT@{T\+E\+M\+P\+\_\+11\+\_\+\+B\+IT}}
+\index{T\+E\+M\+P\+\_\+11\+\_\+\+B\+IT@{T\+E\+M\+P\+\_\+11\+\_\+\+B\+IT}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{T\+E\+M\+P\+\_\+11\+\_\+\+B\+IT}{TEMP\_11\_BIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+M\+P\+\_\+11\+\_\+\+B\+IT~0x5F}\hypertarget{_dallas_temperature_8h_afe512788bd1d37ff9f7388a2889261fe}{}\label{_dallas_temperature_8h_afe512788bd1d37ff9f7388a2889261fe}
+
+
+Definition at line 53 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Resolution(), and Dallas\+Temperature\+::set\+Resolution().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!T\+E\+M\+P\+\_\+12\+\_\+\+B\+IT@{T\+E\+M\+P\+\_\+12\+\_\+\+B\+IT}}
+\index{T\+E\+M\+P\+\_\+12\+\_\+\+B\+IT@{T\+E\+M\+P\+\_\+12\+\_\+\+B\+IT}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{T\+E\+M\+P\+\_\+12\+\_\+\+B\+IT}{TEMP\_12\_BIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+M\+P\+\_\+12\+\_\+\+B\+IT~0x7F}\hypertarget{_dallas_temperature_8h_ae328535feed86c66430a4f5f550d909e}{}\label{_dallas_temperature_8h_ae328535feed86c66430a4f5f550d909e}
+
+
+Definition at line 54 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Resolution(), and Dallas\+Temperature\+::set\+Resolution().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!T\+E\+M\+P\+\_\+9\+\_\+\+B\+IT@{T\+E\+M\+P\+\_\+9\+\_\+\+B\+IT}}
+\index{T\+E\+M\+P\+\_\+9\+\_\+\+B\+IT@{T\+E\+M\+P\+\_\+9\+\_\+\+B\+IT}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{T\+E\+M\+P\+\_\+9\+\_\+\+B\+IT}{TEMP\_9\_BIT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+M\+P\+\_\+9\+\_\+\+B\+IT~0x1F}\hypertarget{_dallas_temperature_8h_ad8c0a8d6cdda8e4c7904db527d4201ee}{}\label{_dallas_temperature_8h_ad8c0a8d6cdda8e4c7904db527d4201ee}
+
+
+Definition at line 51 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Resolution(), and Dallas\+Temperature\+::set\+Resolution().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!T\+E\+M\+P\+\_\+\+L\+SB@{T\+E\+M\+P\+\_\+\+L\+SB}}
+\index{T\+E\+M\+P\+\_\+\+L\+SB@{T\+E\+M\+P\+\_\+\+L\+SB}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{T\+E\+M\+P\+\_\+\+L\+SB}{TEMP\_LSB}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+M\+P\+\_\+\+L\+SB~0}\hypertarget{_dallas_temperature_8h_a50c6fe6c933616d6e014716c450b250d}{}\label{_dallas_temperature_8h_a50c6fe6c933616d6e014716c450b250d}
+
+
+Definition at line 40 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Temp\+F\+By\+Index().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!T\+E\+M\+P\+\_\+\+M\+SB@{T\+E\+M\+P\+\_\+\+M\+SB}}
+\index{T\+E\+M\+P\+\_\+\+M\+SB@{T\+E\+M\+P\+\_\+\+M\+SB}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{T\+E\+M\+P\+\_\+\+M\+SB}{TEMP\_MSB}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+E\+M\+P\+\_\+\+M\+SB~1}\hypertarget{_dallas_temperature_8h_abca29bf63807a8319b6b8ee7af2bba53}{}\label{_dallas_temperature_8h_abca29bf63807a8319b6b8ee7af2bba53}
+
+
+Definition at line 41 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::get\+Temp\+F\+By\+Index().
+
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!W\+R\+I\+T\+E\+S\+C\+R\+A\+T\+CH@{W\+R\+I\+T\+E\+S\+C\+R\+A\+T\+CH}}
+\index{W\+R\+I\+T\+E\+S\+C\+R\+A\+T\+CH@{W\+R\+I\+T\+E\+S\+C\+R\+A\+T\+CH}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{W\+R\+I\+T\+E\+S\+C\+R\+A\+T\+CH}{WRITESCRATCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define W\+R\+I\+T\+E\+S\+C\+R\+A\+T\+CH~0x4E}\hypertarget{_dallas_temperature_8h_aa41d45853aeac8f06955e4f944c19b33}{}\label{_dallas_temperature_8h_aa41d45853aeac8f06955e4f944c19b33}
+
+
+Definition at line 34 of file Dallas\+Temperature.\+h.
+
+
+
+Referenced by Dallas\+Temperature\+::write\+Scratch\+Pad().
+
+
+
+\subsection{Typedef Documentation}
+\index{Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}!Device\+Address@{Device\+Address}}
+\index{Device\+Address@{Device\+Address}!Dallas\+Temperature.\+h@{Dallas\+Temperature.\+h}}
+\subsubsection[{\texorpdfstring{Device\+Address}{DeviceAddress}}]{\setlength{\rightskip}{0pt plus 5cm}typedef uint8\+\_\+t Device\+Address\mbox{[}8\mbox{]}}\hypertarget{_dallas_temperature_8h_a7a5445edfac5eacc4404ae5ed58d7880}{}\label{_dallas_temperature_8h_a7a5445edfac5eacc4404ae5ed58d7880}
+
+
+Definition at line 61 of file Dallas\+Temperature.\+h.
+

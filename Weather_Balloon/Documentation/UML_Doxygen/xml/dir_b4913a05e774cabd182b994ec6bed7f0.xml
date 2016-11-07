@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_b4913a05e774cabd182b994ec6bed7f0" kind="dir">
+    <compoundname>Weather_Balloon/library/RTClib-master</compoundname>
+    <innerfile refid="_r_t_c___d_s1307_8cpp">RTC_DS1307.cpp</innerfile>
+    <innerfile refid="_r_t_c___d_s1307_8h">RTC_DS1307.h</innerfile>
+    <innerfile refid="_r_t_c___d_s3231_8cpp">RTC_DS3231.cpp</innerfile>
+    <innerfile refid="_r_t_c___d_s3231_8h">RTC_DS3231.h</innerfile>
+    <innerfile refid="_r_t_c___d_s3234_8cpp">RTC_DS3234.cpp</innerfile>
+    <innerfile refid="_r_t_c___d_s3234_8h">RTC_DS3234.h</innerfile>
+    <innerfile refid="_r_t_clib_8cpp">RTClib.cpp</innerfile>
+    <innerfile refid="_r_t_clib_8h">RTClib.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/RTClib-master/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,136 @@
+\hypertarget{_r_t_clib_8cpp}{}\section{Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\+R\+T\+Clib.cpp File Reference}
+\label{_r_t_clib_8cpp}\index{Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\+R\+T\+Clib.\+cpp@{Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\+R\+T\+Clib.\+cpp}}
+{\ttfamily \#include $<$avr/pgmspace.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}R\+T\+Clib.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$W\+Program.\+h$>$}\\*
+Include dependency graph for R\+T\+Clib.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{_r_t_clib_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_r_t_clib_8cpp_a427ffe4394306d962b8972b3bc952e1c}{S\+E\+C\+O\+N\+D\+S\+\_\+\+P\+E\+R\+\_\+\+D\+AY}~86400L
+\item 
+\#define \hyperlink{_r_t_clib_8cpp_a1a4c3c6b78fa47471646f18b572ddd46}{S\+E\+C\+O\+N\+D\+S\+\_\+\+F\+R\+O\+M\+\_\+1970\+\_\+\+T\+O\+\_\+2000}~946684800
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{_r_t_clib_8cpp_a916290df5459cfa1a9d590946ed552ac}{bcd2bin} (uint8\+\_\+t val)
+\item 
+uint8\+\_\+t \hyperlink{_r_t_clib_8cpp_ab89a9f89f9d868e129c69675bf78d9b6}{bin2bcd} (uint8\+\_\+t val)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{_r_t_clib_8cpp_acb559820d9ca11295b4500f179ef6392}{i} = 0
+\item 
+const char $\ast$ \hyperlink{_r_t_clib_8cpp_a3dd31d96db8edd1409dce1fc3560e4eb}{months} \mbox{[}$\,$\mbox{]} = \{ \char`\"{}Jan\char`\"{}, \char`\"{}Feb\char`\"{}, \char`\"{}Mar\char`\"{}, \char`\"{}Apr\char`\"{}, \char`\"{}May\char`\"{}, \char`\"{}Jun\char`\"{}, \char`\"{}Jul\char`\"{}, \char`\"{}Aug\char`\"{}, \char`\"{}Sep\char`\"{}, \char`\"{}Oct\char`\"{}, \char`\"{}Nov\char`\"{}, \char`\"{}Dec\char`\"{} \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}!S\+E\+C\+O\+N\+D\+S\+\_\+\+F\+R\+O\+M\+\_\+1970\+\_\+\+T\+O\+\_\+2000@{S\+E\+C\+O\+N\+D\+S\+\_\+\+F\+R\+O\+M\+\_\+1970\+\_\+\+T\+O\+\_\+2000}}
+\index{S\+E\+C\+O\+N\+D\+S\+\_\+\+F\+R\+O\+M\+\_\+1970\+\_\+\+T\+O\+\_\+2000@{S\+E\+C\+O\+N\+D\+S\+\_\+\+F\+R\+O\+M\+\_\+1970\+\_\+\+T\+O\+\_\+2000}!R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+C\+O\+N\+D\+S\+\_\+\+F\+R\+O\+M\+\_\+1970\+\_\+\+T\+O\+\_\+2000}{SECONDS\_FROM\_1970\_TO\_2000}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+C\+O\+N\+D\+S\+\_\+\+F\+R\+O\+M\+\_\+1970\+\_\+\+T\+O\+\_\+2000~946684800}\hypertarget{_r_t_clib_8cpp_a1a4c3c6b78fa47471646f18b572ddd46}{}\label{_r_t_clib_8cpp_a1a4c3c6b78fa47471646f18b572ddd46}
+
+
+Definition at line 8 of file R\+T\+Clib.\+cpp.
+
+
+
+Referenced by Date\+Time\+::\+Date\+Time(), and Date\+Time\+::unixtime().
+
+\index{R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}!S\+E\+C\+O\+N\+D\+S\+\_\+\+P\+E\+R\+\_\+\+D\+AY@{S\+E\+C\+O\+N\+D\+S\+\_\+\+P\+E\+R\+\_\+\+D\+AY}}
+\index{S\+E\+C\+O\+N\+D\+S\+\_\+\+P\+E\+R\+\_\+\+D\+AY@{S\+E\+C\+O\+N\+D\+S\+\_\+\+P\+E\+R\+\_\+\+D\+AY}!R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+C\+O\+N\+D\+S\+\_\+\+P\+E\+R\+\_\+\+D\+AY}{SECONDS\_PER\_DAY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+C\+O\+N\+D\+S\+\_\+\+P\+E\+R\+\_\+\+D\+AY~86400L}\hypertarget{_r_t_clib_8cpp_a427ffe4394306d962b8972b3bc952e1c}{}\label{_r_t_clib_8cpp_a427ffe4394306d962b8972b3bc952e1c}
+
+
+Definition at line 7 of file R\+T\+Clib.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\index{R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}!bcd2bin@{bcd2bin}}
+\index{bcd2bin@{bcd2bin}!R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}}
+\subsubsection[{\texorpdfstring{bcd2bin(uint8\+\_\+t val)}{bcd2bin(uint8\_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t bcd2bin (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{_r_t_clib_8cpp_a916290df5459cfa1a9d590946ed552ac}{}\label{_r_t_clib_8cpp_a916290df5459cfa1a9d590946ed552ac}
+
+
+Definition at line 180 of file R\+T\+Clib.\+cpp.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S3231\+::enable32k\+Hz(), R\+T\+C\+\_\+\+D\+S1307\+::now(), R\+T\+C\+\_\+\+D\+S3234\+::now(), and R\+T\+C\+\_\+\+D\+S3231\+::now().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_r_t_clib_8cpp_a916290df5459cfa1a9d590946ed552ac_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}!bin2bcd@{bin2bcd}}
+\index{bin2bcd@{bin2bcd}!R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}}
+\subsubsection[{\texorpdfstring{bin2bcd(uint8\+\_\+t val)}{bin2bcd(uint8\_t val)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t bin2bcd (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{_r_t_clib_8cpp_ab89a9f89f9d868e129c69675bf78d9b6}{}\label{_r_t_clib_8cpp_ab89a9f89f9d868e129c69675bf78d9b6}
+
+
+Definition at line 184 of file R\+T\+Clib.\+cpp.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S1307\+::adjust(), R\+T\+C\+\_\+\+D\+S3234\+::adjust(), and R\+T\+C\+\_\+\+D\+S3231\+::adjust().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_r_t_clib_8cpp_ab89a9f89f9d868e129c69675bf78d9b6_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}!i@{i}}
+\index{i@{i}!R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}}
+\subsubsection[{\texorpdfstring{i}{i}}]{\setlength{\rightskip}{0pt plus 5cm}int i = 0}\hypertarget{_r_t_clib_8cpp_acb559820d9ca11295b4500f179ef6392}{}\label{_r_t_clib_8cpp_acb559820d9ca11295b4500f179ef6392}
+
+
+Definition at line 18 of file R\+T\+Clib.\+cpp.
+
+
+
+Referenced by Atmosphere(), Firmata\+Class\+::available(), beep\+\_\+piezo(), L\+S\+M9\+D\+S1\+::calibrate\+Mag(), check\+\_\+landing(), check\+\_\+launch(), Serial\+Firmata\+::check\+Serial(), Led\+Control\+::clear\+Display(), compare\+\_\+buffers(), configure\+\_\+ds18b20(), configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+E\+A(), One\+Wire\+::crc16(), Adafruit\+\_\+\+S\+H\+T31\+::crc8(), One\+Wire\+::crc8(), M\+S5xxx\+::\+C\+R\+Ccode\+Test(), day\+Short\+Str(), E\+E\+P\+R\+O\+M\+\_\+read\+Anything(), E\+E\+P\+R\+O\+M\+\_\+write\+Anything(), find\+\_\+sdcard\+\_\+tail(), D\+S3231\+::get\+Alarm1(), D\+S3231\+::get\+Alarm2(), D\+S3231\+::get\+Alarm\+Type1(), D\+S3231\+::get\+Alarm\+Type2(), R\+T\+C\+\_\+\+D\+S3231\+::get\+Control\+Register\+Data(), D\+S3231\+::get\+Date\+Time(), G\+P\+S\+\_\+\+C\+R\+C(), Serial\+Firmata\+::handle\+Sysex(), L\+S\+M9\+D\+S1\+::\+I2\+Cread\+Bytes(), Sd2\+Card\+::init(), L\+S\+M9\+D\+S1\+::init(), D\+S3231\+::is\+Alarm2(), Led\+Control\+::\+Led\+Control(), log\+\_\+data(), make\+Time(), month\+Short\+Str(), Firmata\+Class\+::print\+Firmware\+Version(), print\+Zero\+Reg\+S\+B\+M\+A\+T\+R\+I\+X(), Dallas\+Temperature\+::raw\+To\+Fahrenheit(), One\+Wire\+::read\+\_\+bytes(), read\+\_\+sdcard(), Sd2\+Card\+::read\+Data(), Sd2\+Card\+::read\+End(), Adafruit\+\_\+\+S\+H\+T31\+::read\+Humidity(), M\+S5xxx\+::\+Read\+Prom(), Dallas\+Temperature\+::read\+Scratch\+Pad(), Serial\+Firmata\+::reset(), One\+Wire\+::reset\+\_\+search(), sd\+\_\+calc\+\_\+crc(), One\+Wire\+::search(), One\+Wire\+::select(), Firmata\+Class\+::send\+Sysex(), Led\+Control\+::set\+Char(), B\+L\+E\+Stream\+::set\+Flush\+Interval(), Firmata\+Class\+::set\+Pin\+State(), Dallas\+Temperature\+::set\+Resolution(), L\+S\+M9\+D\+S1\+::\+S\+P\+Iread\+Bytes(), One\+Wire\+::target\+\_\+search(), Filter\+One\+Pole\+Cascade\+::test(), test\+\_\+logging(), One\+Wire\+::write\+\_\+bytes(), and Sd2\+Card\+::write\+Data().
+
+\index{R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}!months@{months}}
+\index{months@{months}!R\+T\+Clib.\+cpp@{R\+T\+Clib.\+cpp}}
+\subsubsection[{\texorpdfstring{months}{months}}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ months\mbox{[}$\,$\mbox{]} = \{ \char`\"{}Jan\char`\"{}, \char`\"{}Feb\char`\"{}, \char`\"{}Mar\char`\"{}, \char`\"{}Apr\char`\"{}, \char`\"{}May\char`\"{}, \char`\"{}Jun\char`\"{}, \char`\"{}Jul\char`\"{}, \char`\"{}Aug\char`\"{}, \char`\"{}Sep\char`\"{}, \char`\"{}Oct\char`\"{}, \char`\"{}Nov\char`\"{}, \char`\"{}Dec\char`\"{} \}}\hypertarget{_r_t_clib_8cpp_a3dd31d96db8edd1409dce1fc3560e4eb}{}\label{_r_t_clib_8cpp_a3dd31d96db8edd1409dce1fc3560e4eb}
+
+
+Definition at line 158 of file R\+T\+Clib.\+cpp.
+
+
+
+Referenced by Date\+Time\+::to\+String().
+

@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_tiny_g_p_s_date" kind="struct" language="C++" prot="public">
+    <compoundname>TinyGPSDate</compoundname>
+    <includes refid="_tiny_g_p_s_09_09_8h" local="no">TinyGPS++.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_tiny_g_p_s_date_1a6501fd5ef19ae166d43e0e5781609ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TinyGPSPlus</definition>
+        <argsstring></argsstring>
+        <name>TinyGPSPlus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="79" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_tiny_g_p_s_date_1a6b312ccebe3537eb9687211622bc5f26" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TinyGPSDate::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="94" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tiny_g_p_s_date_1af92ee9facc35b637b589320ddffcce32" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TinyGPSDate::updated</definition>
+        <argsstring></argsstring>
+        <name>updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="94" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tiny_g_p_s_date_1ab141f37e0dda429ad041f9a951564677" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TinyGPSDate::date</definition>
+        <argsstring></argsstring>
+        <name>date</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="95" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tiny_g_p_s_date_1a81d6d90be898cf44e804e86a2f4a3d2d" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TinyGPSDate::newDate</definition>
+        <argsstring></argsstring>
+        <name>newDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="95" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tiny_g_p_s_date_1acbece939f279507806570bb108311a88" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TinyGPSDate::lastCommitTime</definition>
+        <argsstring></argsstring>
+        <name>lastCommitTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="96" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1a0ef145848ab03e4e9db0e2cf3a4c42cd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TinyGPSDate::isValid</definition>
+        <argsstring>() const </argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="81" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="81" bodyend="81"/>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1aed8706c1c3e67558fec2b94476c144e0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TinyGPSDate::isUpdated</definition>
+        <argsstring>() const </argsstring>
+        <name>isUpdated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="82" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="82" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1a7b92ac9058dbde1770eb52ce5da890c1" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t TinyGPSDate::age</definition>
+        <argsstring>() const </argsstring>
+        <name>age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="83" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="83" bodyend="83"/>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1a718150ae16f68afa9ae81f9d1b3ce3f4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t TinyGPSDate::value</definition>
+        <argsstring>()</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="85" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="85" bodyend="85"/>
+        <references refid="class_tiny_g_p_s_plus_1a83a70812b432d7f51c7c735bfe7be0f0" compoundref="_tiny_g_p_s_09_09_8h" startline="222">TinyGPSPlus::date</references>
+        <references refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" compoundref="_time_8cpp" startline="106" endline="108">day</references>
+        <references refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" compoundref="_time_8cpp" startline="124" endline="126">month</references>
+        <references refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" compoundref="_time_8cpp" startline="133" endline="135">year</references>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1ae2cc914fec377b429d99f01204f50d60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t TinyGPSDate::year</definition>
+        <argsstring>()</argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="86" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.cpp" bodystart="391" bodyend="396"/>
+        <references refid="class_tiny_g_p_s_plus_1a83a70812b432d7f51c7c735bfe7be0f0" compoundref="_tiny_g_p_s_09_09_8h" startline="222">TinyGPSPlus::date</references>
+        <references refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" compoundref="_time_8cpp" startline="133" endline="135">year</references>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1a6f3c5b4e72ef28b010f94ac9016315f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TinyGPSDate::month</definition>
+        <argsstring>()</argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="87" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.cpp" bodystart="398" bodyend="402"/>
+        <references refid="class_tiny_g_p_s_plus_1a83a70812b432d7f51c7c735bfe7be0f0" compoundref="_tiny_g_p_s_09_09_8h" startline="222">TinyGPSPlus::date</references>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1ae8cc5f80c49e328f792d168a44062000" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t TinyGPSDate::day</definition>
+        <argsstring>()</argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="88" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.cpp" bodystart="404" bodyend="408"/>
+        <references refid="class_tiny_g_p_s_plus_1a83a70812b432d7f51c7c735bfe7be0f0" compoundref="_tiny_g_p_s_09_09_8h" startline="222">TinyGPSPlus::date</references>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1a4d5f23eb008cbfd385343687bf902003" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TinyGPSDate::TinyGPSDate</definition>
+        <argsstring>()</argsstring>
+        <name>TinyGPSDate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="90" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="90" bodyend="91"/>
+        <references refid="class_tiny_g_p_s_plus_1a83a70812b432d7f51c7c735bfe7be0f0" compoundref="_tiny_g_p_s_09_09_8h" startline="222">TinyGPSPlus::date</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1af5b0da173842da219e7c90d16e54c3e2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TinyGPSDate::commit</definition>
+        <argsstring>()</argsstring>
+        <name>commit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="97" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.cpp" bodystart="367" bodyend="372"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_date_1a2ff2893de6b59fd4dcf828c6296e2e2e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TinyGPSDate::setDate</definition>
+        <argsstring>(const char *term)</argsstring>
+        <name>setDate</name>
+        <param>
+          <type>const char *</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="98" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.cpp" bodystart="386" bodyend="389"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="78" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="77" bodyend="99"/>
+    <listofallmembers>
+      <member refid="struct_tiny_g_p_s_date_1a7b92ac9058dbde1770eb52ce5da890c1" prot="public" virt="non-virtual"><scope>TinyGPSDate</scope><name>age</name></member>
+      <member refid="struct_tiny_g_p_s_date_1af5b0da173842da219e7c90d16e54c3e2" prot="private" virt="non-virtual"><scope>TinyGPSDate</scope><name>commit</name></member>
+      <member refid="struct_tiny_g_p_s_date_1ab141f37e0dda429ad041f9a951564677" prot="private" virt="non-virtual"><scope>TinyGPSDate</scope><name>date</name></member>
+      <member refid="struct_tiny_g_p_s_date_1ae8cc5f80c49e328f792d168a44062000" prot="public" virt="non-virtual"><scope>TinyGPSDate</scope><name>day</name></member>
+      <member refid="struct_tiny_g_p_s_date_1aed8706c1c3e67558fec2b94476c144e0" prot="public" virt="non-virtual"><scope>TinyGPSDate</scope><name>isUpdated</name></member>
+      <member refid="struct_tiny_g_p_s_date_1a0ef145848ab03e4e9db0e2cf3a4c42cd" prot="public" virt="non-virtual"><scope>TinyGPSDate</scope><name>isValid</name></member>
+      <member refid="struct_tiny_g_p_s_date_1acbece939f279507806570bb108311a88" prot="private" virt="non-virtual"><scope>TinyGPSDate</scope><name>lastCommitTime</name></member>
+      <member refid="struct_tiny_g_p_s_date_1a6f3c5b4e72ef28b010f94ac9016315f3" prot="public" virt="non-virtual"><scope>TinyGPSDate</scope><name>month</name></member>
+      <member refid="struct_tiny_g_p_s_date_1a81d6d90be898cf44e804e86a2f4a3d2d" prot="private" virt="non-virtual"><scope>TinyGPSDate</scope><name>newDate</name></member>
+      <member refid="struct_tiny_g_p_s_date_1a2ff2893de6b59fd4dcf828c6296e2e2e" prot="private" virt="non-virtual"><scope>TinyGPSDate</scope><name>setDate</name></member>
+      <member refid="struct_tiny_g_p_s_date_1a4d5f23eb008cbfd385343687bf902003" prot="public" virt="non-virtual"><scope>TinyGPSDate</scope><name>TinyGPSDate</name></member>
+      <member refid="struct_tiny_g_p_s_date_1a6501fd5ef19ae166d43e0e5781609ee2" prot="public" virt="non-virtual"><scope>TinyGPSDate</scope><name>TinyGPSPlus</name></member>
+      <member refid="struct_tiny_g_p_s_date_1af92ee9facc35b637b589320ddffcce32" prot="private" virt="non-virtual"><scope>TinyGPSDate</scope><name>updated</name></member>
+      <member refid="struct_tiny_g_p_s_date_1a6b312ccebe3537eb9687211622bc5f26" prot="private" virt="non-virtual"><scope>TinyGPSDate</scope><name>valid</name></member>
+      <member refid="struct_tiny_g_p_s_date_1a718150ae16f68afa9ae81f9d1b3ce3f4" prot="public" virt="non-virtual"><scope>TinyGPSDate</scope><name>value</name></member>
+      <member refid="struct_tiny_g_p_s_date_1ae2cc914fec377b429d99f01204f50d60" prot="public" virt="non-virtual"><scope>TinyGPSDate</scope><name>year</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

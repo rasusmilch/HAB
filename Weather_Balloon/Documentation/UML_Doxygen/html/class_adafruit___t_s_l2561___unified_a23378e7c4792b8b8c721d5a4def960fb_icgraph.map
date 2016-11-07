@@ -1,0 +1,5 @@
+<map id="Adafruit_TSL2561_Unified::getLuminosity" name="Adafruit_TSL2561_Unified::getLuminosity">
+<area shape="rect" id="node2" href="$class_adafruit___t_s_l2561___unified.html#a6a133ea86b7a7158408519214c4d0aef" title="Gets the most recent sensor event returns true if sensor reading is between 0 and 65535 lux returns f..." alt="" coords="217,5,381,47"/>
+<area shape="rect" id="node3" href="$_weather___balloon_8cpp.html#ad40ccf803c2eff76d7e0e7a24c9937ef" title="readSensors" alt="" coords="256,71,343,98"/>
+<area shape="rect" id="node4" href="$_weather___balloon_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="429,71,476,98"/>
+</map>

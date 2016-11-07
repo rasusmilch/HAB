@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_RTClib-master_README" kind="page">
+    <compoundname>md_Weather_Balloon_library_RTClib-master_README</compoundname>
+    <title>RTClib</title>
+    <detaileddescription>
+<para>A fork of Jeelab&apos;s fantastic RTC library updated to add support for the high accuracy <ref refid="class_d_s3231" kindref="compound">DS3231</ref> and the wonderful CHRONODOT by macetech.com. Includes full-functioned example set for Chronodot. </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

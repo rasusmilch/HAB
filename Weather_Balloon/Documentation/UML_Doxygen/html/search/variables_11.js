@@ -1,0 +1,24 @@
+var searchData=
+[
+  ['r1_5fidle_5fstate',['R1_IDLE_STATE',['../_sd_info_8h.html#a180d34bf6496bc49f34e750d3878c528',1,'SdInfo.h']]],
+  ['r1_5fillegal_5fcommand',['R1_ILLEGAL_COMMAND',['../_sd_info_8h.html#a0299085ef0457c2d8714c838beaead80',1,'SdInfo.h']]],
+  ['r1_5fready_5fstate',['R1_READY_STATE',['../_sd_info_8h.html#abd9bae6aca26cbe7e75dac573bb98ed9',1,'SdInfo.h']]],
+  ['r2w_5ffactor',['r2w_factor',['../_sd_info_8h.html#a9c6747c486c01c21890fe14707b577aa',1,'csd1_t::r2w_factor()'],['../_sd_info_8h.html#a08cfa785c1aa7e60b781c6dcace02d59',1,'csd2_t::r2w_factor()']]],
+  ['read_5fbl_5flen',['read_bl_len',['../_sd_info_8h.html#a60d9786b4495206c238a0615be870003',1,'csd1_t::read_bl_len()'],['../_sd_info_8h.html#aafef0057172ed42e93107ba4045064f6',1,'csd2_t::read_bl_len()']]],
+  ['read_5fbl_5fpartial',['read_bl_partial',['../_sd_info_8h.html#a1f6c4338fb999fd55f87b626b1778bb1',1,'csd1_t::read_bl_partial()'],['../_sd_info_8h.html#abcbabaf624f7576c1509fdc39f4d4ec0',1,'csd2_t::read_bl_partial()']]],
+  ['read_5fblk_5fmisalign',['read_blk_misalign',['../_sd_info_8h.html#aa92d780805cef74786df475bd9faa3f2',1,'csd1_t::read_blk_misalign()'],['../_sd_info_8h.html#ae719c56f235310780189d55f6cfed981',1,'csd2_t::read_blk_misalign()']]],
+  ['reserved',['reserved',['../_adafruit___sensor_8h.html#acb78c50bdd894d4dd4015f144c4a4488',1,'sensors_vec_t::reserved()'],['../_sd_info_8h.html#a11aa48c8f08a1f2fddfd22c166e1bc0f',1,'cid_t::reserved()']]],
+  ['reserved0',['reserved0',['../_adafruit___sensor_8h.html#a8be4dc00344f46abf29e06251bf9fad9',1,'sensors_event_t']]],
+  ['reserved1',['reserved1',['../_sd_info_8h.html#a76da1d1c25939d917c5d9e1fee67c9d0',1,'csd1_t::reserved1()'],['../_sd_info_8h.html#ad5a58e895c52d40e6df77413441e1d9d',1,'csd2_t::reserved1()']]],
+  ['reserved2',['reserved2',['../_sd_info_8h.html#a0106a7e24ca2a299b35fe4eeea9c8be0',1,'csd1_t::reserved2()'],['../_sd_info_8h.html#a8219c92685fbdcf8764945ec4e56ed81',1,'csd2_t::reserved2()']]],
+  ['reserved3',['reserved3',['../_sd_info_8h.html#a4af5451f87f92cf7dcee336901cf6c71',1,'csd1_t::reserved3()'],['../_sd_info_8h.html#af59fa2cea5afefd6e0f526ce0686b565',1,'csd2_t::reserved3()']]],
+  ['reserved4',['reserved4',['../_sd_info_8h.html#a70ef54dc352f370c0064e65d14df6989',1,'csd1_t::reserved4()'],['../_sd_info_8h.html#ae739f1971c481ccc4256e29f55e34042',1,'csd2_t::reserved4()']]],
+  ['reserved5',['reserved5',['../_sd_info_8h.html#a1db81a0130e2ec9ef91d71848c344de2',1,'csd1_t::reserved5()'],['../_sd_info_8h.html#a5cdc4e6f17f9101e10f0006c18986725',1,'csd2_t::reserved5()']]],
+  ['reserved6',['reserved6',['../_sd_info_8h.html#a5cfd6fee5f16f4a93d8b4cf792d3c707',1,'csd2_t']]],
+  ['reserved7',['reserved7',['../_sd_info_8h.html#ac2468e71b8b7e9c89e4c833d75f70596',1,'csd2_t']]],
+  ['reset_5fflag',['reset_flag',['../_weather___balloon_8cpp.html#a01160b0d5f07d7951ac857adf93c33b3',1,'Weather_Balloon.cpp']]],
+  ['resolution',['resolution',['../_adafruit___sensor_8h.html#a926aba3216afd50e62c0a6cdbcc7433a',1,'sensor_t']]],
+  ['rgba',['rgba',['../_adafruit___sensor_8h.html#a0afbff980c17fbacdab1666735f3d3e6',1,'sensors_color_t']]],
+  ['rhozero',['RHOZERO',['../_weather___balloon_8cpp.html#a8b35237530df0b0d6241a52f61589fee',1,'Weather_Balloon.cpp']]],
+  ['rtc_5fcallback',['RTC_callBack',['../_r_t_c_zero_8cpp.html#a09299a68da7a03891152805591a5e52b',1,'RTCZero.cpp']]]
+];

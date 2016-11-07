@@ -1,0 +1,1353 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_firmata_class" kind="class" language="C++" prot="public">
+    <compoundname>FirmataClass</compoundname>
+    <includes refid="_firmata_8h" local="no">Firmata.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_firmata_class_1a2bfad72245c92a33b441267829d372a0" prot="private" static="no" mutable="no">
+        <type>Stream *</type>
+        <definition>Stream* FirmataClass::FirmataStream</definition>
+        <argsstring></argsstring>
+        <name>FirmataStream</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="177" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="177" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1aea8133f91f0c71ef24e76440ed09b7c3" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte FirmataClass::firmwareVersionCount</definition>
+        <argsstring></argsstring>
+        <name>firmwareVersionCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="179" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1a3b9f8f80db09abe87d4c11b2ddffe29a" prot="private" static="no" mutable="no">
+        <type>byte *</type>
+        <definition>byte* FirmataClass::firmwareVersionVector</definition>
+        <argsstring></argsstring>
+        <name>firmwareVersionVector</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="180" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1a9aa170fe9385a57960faa3963894e79c" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte FirmataClass::waitForData</definition>
+        <argsstring></argsstring>
+        <name>waitForData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="182" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1a79988e9684ab4b14009bfe8ddf801f84" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte FirmataClass::executeMultiByteCommand</definition>
+        <argsstring></argsstring>
+        <name>executeMultiByteCommand</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="183" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="183" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1a9554f400cd0a9ee98b618a9d4ad0f0ff" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte FirmataClass::multiByteChannel</definition>
+        <argsstring></argsstring>
+        <name>multiByteChannel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="184" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1a89fc389779f9c0a75eca4c98100785e6" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte FirmataClass::storedInputData[MAX_DATA_BYTES]</definition>
+        <argsstring>[MAX_DATA_BYTES]</argsstring>
+        <name>storedInputData</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="185" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1ab8923f3c576f6d6a6924f2e7266fe100" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean FirmataClass::parsingSysex</definition>
+        <argsstring></argsstring>
+        <name>parsingSysex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="187" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1ac17dde1c3e6409d32c4ab046eb0d8f0e" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FirmataClass::sysexBytesRead</definition>
+        <argsstring></argsstring>
+        <name>sysexBytesRead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="188" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1a22d181e555b2982962bc7b303b86543f" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte FirmataClass::pinConfig[TOTAL_PINS]</definition>
+        <argsstring>[TOTAL_PINS]</argsstring>
+        <name>pinConfig</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="190" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1af655b166ce1f82896c2147b769393541" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FirmataClass::pinState[TOTAL_PINS]</definition>
+        <argsstring>[TOTAL_PINS]</argsstring>
+        <name>pinState</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="191" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1aa43a6bab813f495b4f6e74b8258b9458" prot="private" static="no" mutable="no">
+        <type><ref refid="_firmata_8h_1abb0d9dbaf4bb25bc00924808c5616aa5" kindref="member">callbackFunction</ref></type>
+        <definition>callbackFunction FirmataClass::currentAnalogCallback</definition>
+        <argsstring></argsstring>
+        <name>currentAnalogCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="194" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1aa15a8c9ab2b97f167ea438159bf90851" prot="private" static="no" mutable="no">
+        <type><ref refid="_firmata_8h_1abb0d9dbaf4bb25bc00924808c5616aa5" kindref="member">callbackFunction</ref></type>
+        <definition>callbackFunction FirmataClass::currentDigitalCallback</definition>
+        <argsstring></argsstring>
+        <name>currentDigitalCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="195" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1a940366a7f67f3cc32bb4906a89e93c5a" prot="private" static="no" mutable="no">
+        <type><ref refid="_firmata_8h_1abb0d9dbaf4bb25bc00924808c5616aa5" kindref="member">callbackFunction</ref></type>
+        <definition>callbackFunction FirmataClass::currentReportAnalogCallback</definition>
+        <argsstring></argsstring>
+        <name>currentReportAnalogCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="196" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="196" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1af93379692618e082abf82df67fac215d" prot="private" static="no" mutable="no">
+        <type><ref refid="_firmata_8h_1abb0d9dbaf4bb25bc00924808c5616aa5" kindref="member">callbackFunction</ref></type>
+        <definition>callbackFunction FirmataClass::currentReportDigitalCallback</definition>
+        <argsstring></argsstring>
+        <name>currentReportDigitalCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="197" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1ac18c917533c09ebf162a61eae719f960" prot="private" static="no" mutable="no">
+        <type><ref refid="_firmata_8h_1abb0d9dbaf4bb25bc00924808c5616aa5" kindref="member">callbackFunction</ref></type>
+        <definition>callbackFunction FirmataClass::currentPinModeCallback</definition>
+        <argsstring></argsstring>
+        <name>currentPinModeCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="198" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="198" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1a2f5030633b92a8ca5f1c148629391d48" prot="private" static="no" mutable="no">
+        <type><ref refid="_firmata_8h_1abb0d9dbaf4bb25bc00924808c5616aa5" kindref="member">callbackFunction</ref></type>
+        <definition>callbackFunction FirmataClass::currentPinValueCallback</definition>
+        <argsstring></argsstring>
+        <name>currentPinValueCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="199" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="199" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1af018ed4b0c12c4500c6c4256d7852cb0" prot="private" static="no" mutable="no">
+        <type><ref refid="_firmata_8h_1a29f7a316045cd131238d6e3f9cdb8140" kindref="member">systemResetCallbackFunction</ref></type>
+        <definition>systemResetCallbackFunction FirmataClass::currentSystemResetCallback</definition>
+        <argsstring></argsstring>
+        <name>currentSystemResetCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="200" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1ad56e72ab5683486ece2b64e933dc9520" prot="private" static="no" mutable="no">
+        <type><ref refid="_firmata_8h_1a6557a1064a699527f15a5d4d44c9c76d" kindref="member">stringCallbackFunction</ref></type>
+        <definition>stringCallbackFunction FirmataClass::currentStringCallback</definition>
+        <argsstring></argsstring>
+        <name>currentStringCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="201" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1a854f0987eb3573bc2c9d4457787b2877" prot="private" static="no" mutable="no">
+        <type><ref refid="_firmata_8h_1a382e396031e042c702aebc1eac88c8da" kindref="member">sysexCallbackFunction</ref></type>
+        <definition>sysexCallbackFunction FirmataClass::currentSysexCallback</definition>
+        <argsstring></argsstring>
+        <name>currentSysexCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="202" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_firmata_class_1aadce13c33b30528376a73bcdfdd62f9d" prot="private" static="no" mutable="no">
+        <type>boolean</type>
+        <definition>boolean FirmataClass::blinkVersionDisabled</definition>
+        <argsstring></argsstring>
+        <name>blinkVersionDisabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="204" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_firmata_class_1a75b035ab8d96d87d28deeb87badfe11a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FirmataClass::FirmataClass</definition>
+        <argsstring>()</argsstring>
+        <name>FirmataClass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>The Firmata class. An instance named &quot;Firmata&quot; is created automatically for the user. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="132" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="64" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a2fddcc643892bec2f4aa7aef6dba70eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the default Serial transport at the default baud of 57600. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="134" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="79" bodyend="82"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1ab0b7b837d2c32b4ce79e62895ced2731" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::begin</definition>
+        <argsstring>(long)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>long</type>
+          <defname>speed</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize the default Serial transport and override the default baud. Sends the protocol version to the host application followed by the firmware version and name. blinkVersion is also called. To skip the call to blinkVersion, call Firmata.disableBlinkVersion() before calling Firmata.begin(baud). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>speed</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The baud to use. 57600 baud is the default value. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="135" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="91" bodyend="98"/>
+        <references refid="class_firmata_class_1a9421550f2501fc1df60fd174b154e606" compoundref="_firmata_8cpp" startline="132" endline="143">blinkVersion</references>
+        <references refid="class_firmata_class_1abe49261eab0bd4892a09fa8b8980b11a" compoundref="_firmata_8cpp" startline="160" endline="174">printFirmwareVersion</references>
+        <references refid="class_firmata_class_1abd8a0370db6d9e923e7e3d5836e78d7a" compoundref="_firmata_8cpp" startline="118" endline="123">printVersion</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a0c7b0e10168e3c5dc6442d77c65a156e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::begin</definition>
+        <argsstring>(Stream &amp;s)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>Stream &amp;</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Reassign the Firmata stream transport. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>s</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the Stream transport object. This can be any type of transport that implements the Stream interface. Some examples include Ethernet, WiFi and other UARTs on the board (Serial1, Serial2, etc). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="136" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="106" bodyend="113"/>
+        <references refid="class_firmata_class_1abe49261eab0bd4892a09fa8b8980b11a" compoundref="_firmata_8cpp" startline="160" endline="174">printFirmwareVersion</references>
+        <references refid="class_firmata_class_1abd8a0370db6d9e923e7e3d5836e78d7a" compoundref="_firmata_8cpp" startline="118" endline="123">printVersion</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1abd8a0370db6d9e923e7e3d5836e78d7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::printVersion</definition>
+        <argsstring>(void)</argsstring>
+        <name>printVersion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send the Firmata protocol version to the Firmata host application. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="138" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="118" bodyend="123"/>
+        <references refid="_firmata_8h_1afa9a1d1c37c3f731317e30fb878cdd85" compoundref="_firmata_8h" startline="23">FIRMATA_PROTOCOL_MAJOR_VERSION</references>
+        <references refid="_firmata_8h_1a8a9497c6c1f6dfe9a3b829134bae23ac" compoundref="_firmata_8h" startline="24">FIRMATA_PROTOCOL_MINOR_VERSION</references>
+        <references refid="_firmata_8h_1a1e535c7bc7a99574600e94972f748cd9" compoundref="_firmata_8h" startline="58">REPORT_VERSION</references>
+        <referencedby refid="class_firmata_class_1ab0b7b837d2c32b4ce79e62895ced2731" compoundref="_firmata_8cpp" startline="91" endline="98">begin</referencedby>
+        <referencedby refid="class_firmata_class_1aaeaac8b1f8facf070615b0035120c432" compoundref="_firmata_8cpp" startline="286" endline="373">parse</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a9421550f2501fc1df60fd174b154e606" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::blinkVersion</definition>
+        <argsstring>(void)</argsstring>
+        <name>blinkVersion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blink the Firmata protocol version to the onboard LEDs (if the board has an onboard LED). If VERSION_BLINK_PIN is not defined in <ref refid="_boards_8h" kindref="compound">Boards.h</ref> for a particular board, then this method does nothing. The first series of flashes indicates the firmware major version (2 flashes = 2). The second series of flashes indicates the firmware minor version (5 flashes = 5). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="139" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="132" bodyend="143"/>
+        <references refid="_firmata_8h_1aeab219e509c31f82bf63d465571d06c2" compoundref="_firmata_8h" startline="31">FIRMATA_FIRMWARE_MAJOR_VERSION</references>
+        <references refid="_firmata_8h_1a131668cd19362aee81144d79e0f46451" compoundref="_firmata_8h" startline="32">FIRMATA_FIRMWARE_MINOR_VERSION</references>
+        <referencedby refid="class_firmata_class_1ab0b7b837d2c32b4ce79e62895ced2731" compoundref="_firmata_8cpp" startline="91" endline="98">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1abe49261eab0bd4892a09fa8b8980b11a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::printFirmwareVersion</definition>
+        <argsstring>(void)</argsstring>
+        <name>printFirmwareVersion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sends the firmware name and version to the Firmata host application. The major and minor version numbers are the first 2 bytes in the message. The following bytes are the characters of the firmware name. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="140" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="160" bodyend="174"/>
+        <references refid="class_firmata_class_1a9bb68afbb1d37a7990f59a1d419e64c9" compoundref="_firmata_8cpp" startline="51" endline="54">endSysex</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_firmata_8h_1aed4357ba338c3ed1447886262397da57" compoundref="_firmata_8h" startline="83">REPORT_FIRMWARE</references>
+        <references refid="class_firmata_class_1a770e43f26f18204e43acebf9202a6d39" compoundref="_firmata_8cpp" startline="34" endline="38">sendValueAsTwo7bitBytes</references>
+        <references refid="class_firmata_class_1a3cc7ea1af348bca3ea0bd570314cada3" compoundref="_firmata_8cpp" startline="43" endline="46">startSysex</references>
+        <referencedby refid="class_firmata_class_1a119734b867186567c1cd011e52e59d2d" compoundref="_firmata_8cpp" startline="226" endline="229">available</referencedby>
+        <referencedby refid="class_firmata_class_1ab0b7b837d2c32b4ce79e62895ced2731" compoundref="_firmata_8cpp" startline="91" endline="98">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1ab7aa66b528027566c15b7d64c8cd0f89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::setFirmwareNameAndVersion</definition>
+        <argsstring>(const char *name, byte major, byte minor)</argsstring>
+        <name>setFirmwareNameAndVersion</name>
+        <param>
+          <type>const char *</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>major</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>minor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Sets the name and version of the firmware. This is not the same version as the Firmata protocol (although at times the firmware version and protocol version may be the same number). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>name</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the name char array </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>major</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The major version number </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>minor</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The minor version number </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="142" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="183" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a5ddba465c3772f841828ef82c79d4307" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::disableBlinkVersion</definition>
+        <argsstring>()</argsstring>
+        <name>disableBlinkVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Provides a means to disable the version blink sequence on the onboard LED, trimming startup time by a couple of seconds. Call this before Firmata.begin(). It only applies when using the default Serial transport. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="143" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="150" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a119734b867186567c1cd011e52e59d2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FirmataClass::available</definition>
+        <argsstring>(void)</argsstring>
+        <name>available</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A wrapper for Stream::available() <simplesect kind="return"><para>The number of bytes remaining in the input stream buffer. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="145" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="226" bodyend="229"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="class_firmata_class_1abe49261eab0bd4892a09fa8b8980b11a" compoundref="_firmata_8cpp" startline="160" endline="174">printFirmwareVersion</references>
+        <references refid="_firmata_8h_1aed4357ba338c3ed1447886262397da57" compoundref="_firmata_8h" startline="83">REPORT_FIRMWARE</references>
+        <references refid="_firmata_8h_1adfeb1346f4b239a5dcab64b53b52c63d" compoundref="_firmata_8h" startline="69">STRING_DATA</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1aa698f5f5a234173d5eebb54831350676" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::processInput</definition>
+        <argsstring>(void)</argsstring>
+        <name>processInput</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a single int from the input stream. If the value is not = -1, pass it on to parse(byte) </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="146" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="274" bodyend="280"/>
+        <references refid="class_firmata_class_1aaeaac8b1f8facf070615b0035120c432" compoundref="_firmata_8cpp" startline="286" endline="373">parse</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1aaeaac8b1f8facf070615b0035120c432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::parse</definition>
+        <argsstring>(unsigned char value)</argsstring>
+        <name>parse</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parse data from the input stream. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>inputData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A single byte to be added to the parser. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="147" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="286" bodyend="373"/>
+        <references refid="_firmata_8h_1ac6c2d8bf5c6fe108ad48388cd0968ae3" compoundref="_firmata_8h" startline="51">ANALOG_MESSAGE</references>
+        <references refid="_firmata_8h_1a5d13e7a0887f0341ff75e75a3b21b252" compoundref="_firmata_8h" startline="50">DIGITAL_MESSAGE</references>
+        <references refid="_firmata_8h_1a59b17efb4e682f59d0f8179aea08474f" compoundref="_firmata_8h" startline="62">END_SYSEX</references>
+        <references refid="_firmata_8cpp_1a986c68fac4f21302213e609c277710d7" compoundref="_firmata_8cpp" startline="669">Firmata</references>
+        <references refid="class_firmata_class_1abd8a0370db6d9e923e7e3d5836e78d7a" compoundref="_firmata_8cpp" startline="118" endline="123">printVersion</references>
+        <references refid="_firmata_8h_1af4baffb940dcf4c23ca5b4885d2cb08c" compoundref="_firmata_8h" startline="52">REPORT_ANALOG</references>
+        <references refid="_firmata_8h_1a5ed985b07a03217fc9b28f5c4c5bad50" compoundref="_firmata_8h" startline="53">REPORT_DIGITAL</references>
+        <references refid="_firmata_8h_1a1e535c7bc7a99574600e94972f748cd9" compoundref="_firmata_8h" startline="58">REPORT_VERSION</references>
+        <references refid="_firmata_8h_1ae92fc2bad46d86be11130689f9491155" compoundref="_firmata_8h" startline="56">SET_DIGITAL_PIN_VALUE</references>
+        <references refid="_firmata_8h_1a2aa56be69d612b274deae2bde636b054" compoundref="_firmata_8h" startline="55">SET_PIN_MODE</references>
+        <references refid="_firmata_8h_1a59347abb8dbf9faf06194cce640f59b6" compoundref="_firmata_8h" startline="61">START_SYSEX</references>
+        <references refid="_firmata_8h_1a9605413125c76e4fa6ab70fd508e61d6" compoundref="_firmata_8h" startline="59">SYSTEM_RESET</references>
+        <referencedby refid="class_firmata_class_1aa698f5f5a234173d5eebb54831350676" compoundref="_firmata_8cpp" startline="274" endline="280">processInput</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a58e9d787957c3085f22d33b59b1f6ea6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean FirmataClass::isParsingMessage</definition>
+        <argsstring>(void)</argsstring>
+        <name>isParsingMessage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>Returns true if the parser is actively parsing data. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="148" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="378" bodyend="381"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1ae14e1d8d9bd72068f6e8ca07721e8dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::sendAnalog</definition>
+        <argsstring>(byte pin, int value)</argsstring>
+        <name>sendAnalog</name>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an analog message to the Firmata host application. The range of pins is limited to [0..15] when using the ANALOG_MESSAGE. The maximum value of the ANALOG_MESSAGE is limited to 14 bits (16384). To increase the pin range or value, see the documentation for the EXTENDED_ANALOG message. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The analog pin to send the value of (limited to pins 0 - 15). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the analog pin (0 - 1024 for 10-bit analog, 0 - 4096 for 12-bit, etc). The maximum value is 14-bits (16384). </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="150" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="395" bodyend="400"/>
+        <references refid="_firmata_8h_1ac6c2d8bf5c6fe108ad48388cd0968ae3" compoundref="_firmata_8h" startline="51">ANALOG_MESSAGE</references>
+        <references refid="class_firmata_class_1a770e43f26f18204e43acebf9202a6d39" compoundref="_firmata_8cpp" startline="34" endline="38">sendValueAsTwo7bitBytes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a50a87e8339cf46fb787759603603e225" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::sendDigital</definition>
+        <argsstring>(byte pin, int value)</argsstring>
+        <name>sendDigital</name>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="151" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="408" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a799b91e5a888dd21b066a2020d8e2b68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::sendDigitalPort</definition>
+        <argsstring>(byte portNumber, int portData)</argsstring>
+        <name>sendDigitalPort</name>
+        <param>
+          <type>byte</type>
+          <declname>portNumber</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>portData</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send an 8-bit port in a single digital message (protocol v2 and later). Send 14-bits in a single digital message (protocol v1). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>portNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The port number to send. Note that this is not the same as a &quot;port&quot; on the physical microcontroller. Ports are defined in order per every 8 pins in ascending order of the Arduino digital pin numbering scheme. Port 0 = pins D0 - D7, port 1 = pins D8 - D15, etc. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>portData</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value of the port. The value of each pin in the port is represented by a bit. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="152" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="436" bodyend="441"/>
+        <references refid="_firmata_8h_1a5d13e7a0887f0341ff75e75a3b21b252" compoundref="_firmata_8h" startline="50">DIGITAL_MESSAGE</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1abe11f621154afd308926129de349fc6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::sendString</definition>
+        <argsstring>(const char *string)</argsstring>
+        <name>sendString</name>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a string to the Firmata host application. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the char string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="153" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="477" bodyend="480"/>
+        <references refid="_firmata_8h_1adfeb1346f4b239a5dcab64b53b52c63d" compoundref="_firmata_8h" startline="69">STRING_DATA</references>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1ab139c0d784e69003c88eb5be8807dcdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::sendString</definition>
+        <argsstring>(byte command, const char *string)</argsstring>
+        <name>sendString</name>
+        <param>
+          <type>byte</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>string</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a string to the Firmata host application. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be STRING_DATA </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>string</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the char string </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="154" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="466" bodyend="471"/>
+        <references refid="class_firmata_class_1a81e2de5b37eb2372c8a3d9a43d5eb0cc" compoundref="_firmata_8cpp" startline="450" endline="459">sendSysex</references>
+        <references refid="_firmata_8h_1adfeb1346f4b239a5dcab64b53b52c63d" compoundref="_firmata_8h" startline="69">STRING_DATA</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a81e2de5b37eb2372c8a3d9a43d5eb0cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::sendSysex</definition>
+        <argsstring>(byte command, byte bytec, byte *bytev)</argsstring>
+        <name>sendSysex</name>
+        <param>
+          <type>byte</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>bytec</declname>
+        </param>
+        <param>
+          <type>byte *</type>
+          <declname>bytev</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a sysex message where all values after the command byte are packet as 2 7-bit bytes (this is not always the case so this function is not always used to send sysex messages). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The sysex command byte. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytec</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of data bytes in the message (excludes start, command and end bytes). </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>bytev</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A pointer to the array of data bytes to send in the message. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="155" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="450" bodyend="459"/>
+        <references refid="class_firmata_class_1a9bb68afbb1d37a7990f59a1d419e64c9" compoundref="_firmata_8cpp" startline="51" endline="54">endSysex</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="class_firmata_class_1a770e43f26f18204e43acebf9202a6d39" compoundref="_firmata_8cpp" startline="34" endline="38">sendValueAsTwo7bitBytes</references>
+        <references refid="class_firmata_class_1a3cc7ea1af348bca3ea0bd570314cada3" compoundref="_firmata_8cpp" startline="43" endline="46">startSysex</references>
+        <referencedby refid="class_firmata_class_1ab139c0d784e69003c88eb5be8807dcdf" compoundref="_firmata_8cpp" startline="466" endline="471">sendString</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1ae8f29a829e17379602fcb9fd6a497807" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::write</definition>
+        <argsstring>(byte c)</argsstring>
+        <name>write</name>
+        <param>
+          <type>byte</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A wrapper for Stream::available(). Write a single byte to the output stream. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>c</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The byte to be written. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="156" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="487" bodyend="490"/>
+        <referencedby refid="class_serial_firmata_1ab31a76a596ce2430ee3feac525da59f2" compoundref="_serial_firmata_8cpp" startline="284" endline="330">SerialFirmata::checkSerial</referencedby>
+        <referencedby refid="class_serial_firmata_1af383474fc3a6d1d372489046bbcabc3b" compoundref="_serial_firmata_8cpp" startline="44" endline="50">SerialFirmata::handleCapability</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a94d53e24e973eb18fd4202b9d26a87c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::attach</definition>
+        <argsstring>(byte command, callbackFunction newFunction)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>byte</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type><ref refid="_firmata_8h_1abb0d9dbaf4bb25bc00924808c5616aa5" kindref="member">callbackFunction</ref></type>
+          <declname>newFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attach a generic sysex callback function to a command (options are: ANALOG_MESSAGE, DIGITAL_MESSAGE, REPORT_ANALOG, REPORT DIGITAL, SET_PIN_MODE and SET_DIGITAL_PIN_VALUE). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the command to attach a callback function to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the callback function to attach. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="158" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="498" bodyend="508"/>
+        <references refid="_firmata_8h_1ac6c2d8bf5c6fe108ad48388cd0968ae3" compoundref="_firmata_8h" startline="51">ANALOG_MESSAGE</references>
+        <references refid="_firmata_8h_1a5d13e7a0887f0341ff75e75a3b21b252" compoundref="_firmata_8h" startline="50">DIGITAL_MESSAGE</references>
+        <references refid="_firmata_8h_1af4baffb940dcf4c23ca5b4885d2cb08c" compoundref="_firmata_8h" startline="52">REPORT_ANALOG</references>
+        <references refid="_firmata_8h_1a5ed985b07a03217fc9b28f5c4c5bad50" compoundref="_firmata_8h" startline="53">REPORT_DIGITAL</references>
+        <references refid="_firmata_8h_1ae92fc2bad46d86be11130689f9491155" compoundref="_firmata_8h" startline="56">SET_DIGITAL_PIN_VALUE</references>
+        <references refid="_firmata_8h_1a2aa56be69d612b274deae2bde636b054" compoundref="_firmata_8h" startline="55">SET_PIN_MODE</references>
+        <referencedby refid="class_firmata_class_1a8f6441132a0ffa4e548e9e9bce89044a" compoundref="_firmata_8cpp" startline="549" endline="558">detach</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a5e6b3ec98bd2e616678ac0d6f3be60ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::attach</definition>
+        <argsstring>(byte command, systemResetCallbackFunction newFunction)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>byte</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type><ref refid="_firmata_8h_1a29f7a316045cd131238d6e3f9cdb8140" kindref="member">systemResetCallbackFunction</ref></type>
+          <declname>newFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attach a callback function for the SYSTEM_RESET command. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be set to SYSTEM_RESET or it will be ignored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the system reset callback function to attach. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="159" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="515" bodyend="520"/>
+        <references refid="_firmata_8h_1a9605413125c76e4fa6ab70fd508e61d6" compoundref="_firmata_8h" startline="59">SYSTEM_RESET</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a3c3c11878d74fabadd50c66badf953ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::attach</definition>
+        <argsstring>(byte command, stringCallbackFunction newFunction)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>byte</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type><ref refid="_firmata_8h_1a6557a1064a699527f15a5d4d44c9c76d" kindref="member">stringCallbackFunction</ref></type>
+          <declname>newFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attach a callback function for the STRING_DATA command. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Must be set to STRING_DATA or it will be ignored. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the string callback function to attach. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="160" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="527" bodyend="532"/>
+        <references refid="_firmata_8h_1adfeb1346f4b239a5dcab64b53b52c63d" compoundref="_firmata_8h" startline="69">STRING_DATA</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a81c394577d72b48bf74bdf47427562ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::attach</definition>
+        <argsstring>(byte command, sysexCallbackFunction newFunction)</argsstring>
+        <name>attach</name>
+        <param>
+          <type>byte</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type><ref refid="_firmata_8h_1a382e396031e042c702aebc1eac88c8da" kindref="member">sysexCallbackFunction</ref></type>
+          <declname>newFunction</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Attach a generic sysex callback function to sysex command. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the command to attach a callback function to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>newFunction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A reference to the sysex callback function to attach. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="161" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="539" bodyend="542"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a8f6441132a0ffa4e548e9e9bce89044a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::detach</definition>
+        <argsstring>(byte command)</argsstring>
+        <name>detach</name>
+        <param>
+          <type>byte</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Detach a callback function for a specified command (such as SYSTEM_RESET, STRING_DATA, ANALOG_MESSAGE, DIGITAL_MESSAGE, etc). <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>command</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The ID of the command to detatch the callback function from. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="162" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="549" bodyend="558"/>
+        <references refid="class_firmata_class_1a94d53e24e973eb18fd4202b9d26a87c1" compoundref="_firmata_8cpp" startline="498" endline="508">attach</references>
+        <references refid="_firmata_8h_1a59347abb8dbf9faf06194cce640f59b6" compoundref="_firmata_8h" startline="61">START_SYSEX</references>
+        <references refid="_firmata_8h_1adfeb1346f4b239a5dcab64b53b52c63d" compoundref="_firmata_8h" startline="69">STRING_DATA</references>
+        <references refid="_firmata_8h_1a9605413125c76e4fa6ab70fd508e61d6" compoundref="_firmata_8h" startline="59">SYSTEM_RESET</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a0c434227456ce2ba97b3b1142c329f96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>byte</type>
+        <definition>byte FirmataClass::getPinMode</definition>
+        <argsstring>(byte pin)</argsstring>
+        <name>getPinMode</name>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pin to get the configuration of. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The configuration of the specified pin. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="165" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="564" bodyend="567"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a32c41dd94c1d23aa0e6d3d1dbe5c0c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::setPinMode</definition>
+        <argsstring>(byte pin, byte config)</argsstring>
+        <name>setPinMode</name>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>config</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the pin mode/configuration. The pin configuration (or mode) in Firmata represents the current function of the pin. Examples are digital input or output, analog input, pwm, i2c, serial (uart), etc. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pin to configure. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The configuration value for the specified pin. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="166" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="576" bodyend="582"/>
+        <references refid="_firmata_8h_1a6b76273f884decca728afea748713e04" compoundref="_firmata_8h" startline="107">PIN_MODE_IGNORE</references>
+        <referencedby refid="class_serial_firmata_1ace960dd7d082caf65f1f3488a7486ef5" compoundref="_serial_firmata_8cpp" startline="34" endline="42">SerialFirmata::handlePinMode</referencedby>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1acf5d4f460b9a2298653d4a71de918dfe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int FirmataClass::getPinState</definition>
+        <argsstring>(byte pin)</argsstring>
+        <name>getPinState</name>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pin to get the state of. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The state of the specified pin. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="168" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="588" bodyend="591"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1aa9f98ba5069823b4c1d08db9f8999ba8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::setPinState</definition>
+        <argsstring>(byte pin, int state)</argsstring>
+        <name>setPinState</name>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the pin state. The pin state of an output pin is the pin value. The state of an input pin is 0, unless the pin has it&apos;s internal pull up resistor enabled, then the value is 1. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pin to set the state of </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Set the state of the specified pin </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="169" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="599" bodyend="602"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_firmata_8h_1ae57c9e215ed764e1cd1f5fe392472c39" compoundref="_firmata_8h" startline="42">MAX_DATA_BYTES</references>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a770e43f26f18204e43acebf9202a6d39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::sendValueAsTwo7bitBytes</definition>
+        <argsstring>(int value)</argsstring>
+        <name>sendValueAsTwo7bitBytes</name>
+        <param>
+          <type>int</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Split a 16-bit byte into two 7-bit values and write each value. <parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The 16-bit value to be split and written separately. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="172" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="34" bodyend="38"/>
+        <referencedby refid="class_firmata_class_1abe49261eab0bd4892a09fa8b8980b11a" compoundref="_firmata_8cpp" startline="160" endline="174">printFirmwareVersion</referencedby>
+        <referencedby refid="class_firmata_class_1ae14e1d8d9bd72068f6e8ca07721e8dda" compoundref="_firmata_8cpp" startline="395" endline="400">sendAnalog</referencedby>
+        <referencedby refid="class_firmata_class_1a81e2de5b37eb2372c8a3d9a43d5eb0cc" compoundref="_firmata_8cpp" startline="450" endline="459">sendSysex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a3cc7ea1af348bca3ea0bd570314cada3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::startSysex</definition>
+        <argsstring>(void)</argsstring>
+        <name>startSysex</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A helper method to write the beginning of a Sysex message transmission. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="173" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="43" bodyend="46"/>
+        <references refid="_firmata_8h_1a59347abb8dbf9faf06194cce640f59b6" compoundref="_firmata_8h" startline="61">START_SYSEX</references>
+        <referencedby refid="class_firmata_class_1abe49261eab0bd4892a09fa8b8980b11a" compoundref="_firmata_8cpp" startline="160" endline="174">printFirmwareVersion</referencedby>
+        <referencedby refid="class_firmata_class_1a81e2de5b37eb2372c8a3d9a43d5eb0cc" compoundref="_firmata_8cpp" startline="450" endline="459">sendSysex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a9bb68afbb1d37a7990f59a1d419e64c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::endSysex</definition>
+        <argsstring>(void)</argsstring>
+        <name>endSysex</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A helper method to write the end of a Sysex message transmission. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="174" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="51" bodyend="54"/>
+        <references refid="_firmata_8h_1a59b17efb4e682f59d0f8179aea08474f" compoundref="_firmata_8h" startline="62">END_SYSEX</references>
+        <referencedby refid="class_firmata_class_1abe49261eab0bd4892a09fa8b8980b11a" compoundref="_firmata_8cpp" startline="160" endline="174">printFirmwareVersion</referencedby>
+        <referencedby refid="class_firmata_class_1a81e2de5b37eb2372c8a3d9a43d5eb0cc" compoundref="_firmata_8cpp" startline="450" endline="459">sendSysex</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_firmata_class_1aa01a1484ce39228066cc02c737c28f28" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::processSysexMessage</definition>
+        <argsstring>(void)</argsstring>
+        <name>processSysexMessage</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Process incoming sysex messages. Handles REPORT_FIRMWARE and STRING_DATA internally. Calls callback function for STRING_DATA and all other sysex messages. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="207" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="236" bodyend="269"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a833713e8cfe6664b9586264d0b3d2958" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::systemReset</definition>
+        <argsstring>(void)</argsstring>
+        <name>systemReset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Resets the system state upon a SYSTEM_RESET message from the host software. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="208" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="630" bodyend="647"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_class_1a4893ccec400cdb2ab5c073ff9f22e65e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FirmataClass::strobeBlinkPin</definition>
+        <argsstring>(byte pin, int count, int onInterval, int offInterval)</argsstring>
+        <name>strobeBlinkPin</name>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>onInterval</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>offInterval</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Flashing the pin for the version number</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>pin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pin the LED is attached to. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of times to flash the LED. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>onInterval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of milliseconds for the LED to be ON during each interval. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>offInterval</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of milliseconds for the LED to be OFF during each interval. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/Firmata.h" line="209" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.cpp" bodystart="657" bodyend="666"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Firmata/Firmata.h" line="130" column="1" bodyfile="Weather_Balloon/library/Firmata/Firmata.h" bodystart="129" bodyend="210"/>
+    <listofallmembers>
+      <member refid="class_firmata_class_1a94d53e24e973eb18fd4202b9d26a87c1" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>attach</name></member>
+      <member refid="class_firmata_class_1a5e6b3ec98bd2e616678ac0d6f3be60ba" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>attach</name></member>
+      <member refid="class_firmata_class_1a3c3c11878d74fabadd50c66badf953ae" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>attach</name></member>
+      <member refid="class_firmata_class_1a81c394577d72b48bf74bdf47427562ab" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>attach</name></member>
+      <member refid="class_firmata_class_1a119734b867186567c1cd011e52e59d2d" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>available</name></member>
+      <member refid="class_firmata_class_1a2fddcc643892bec2f4aa7aef6dba70eb" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>begin</name></member>
+      <member refid="class_firmata_class_1ab0b7b837d2c32b4ce79e62895ced2731" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>begin</name></member>
+      <member refid="class_firmata_class_1a0c7b0e10168e3c5dc6442d77c65a156e" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>begin</name></member>
+      <member refid="class_firmata_class_1a9421550f2501fc1df60fd174b154e606" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>blinkVersion</name></member>
+      <member refid="class_firmata_class_1aadce13c33b30528376a73bcdfdd62f9d" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>blinkVersionDisabled</name></member>
+      <member refid="class_firmata_class_1aa43a6bab813f495b4f6e74b8258b9458" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>currentAnalogCallback</name></member>
+      <member refid="class_firmata_class_1aa15a8c9ab2b97f167ea438159bf90851" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>currentDigitalCallback</name></member>
+      <member refid="class_firmata_class_1ac18c917533c09ebf162a61eae719f960" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>currentPinModeCallback</name></member>
+      <member refid="class_firmata_class_1a2f5030633b92a8ca5f1c148629391d48" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>currentPinValueCallback</name></member>
+      <member refid="class_firmata_class_1a940366a7f67f3cc32bb4906a89e93c5a" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>currentReportAnalogCallback</name></member>
+      <member refid="class_firmata_class_1af93379692618e082abf82df67fac215d" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>currentReportDigitalCallback</name></member>
+      <member refid="class_firmata_class_1ad56e72ab5683486ece2b64e933dc9520" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>currentStringCallback</name></member>
+      <member refid="class_firmata_class_1a854f0987eb3573bc2c9d4457787b2877" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>currentSysexCallback</name></member>
+      <member refid="class_firmata_class_1af018ed4b0c12c4500c6c4256d7852cb0" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>currentSystemResetCallback</name></member>
+      <member refid="class_firmata_class_1a8f6441132a0ffa4e548e9e9bce89044a" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>detach</name></member>
+      <member refid="class_firmata_class_1a5ddba465c3772f841828ef82c79d4307" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>disableBlinkVersion</name></member>
+      <member refid="class_firmata_class_1a9bb68afbb1d37a7990f59a1d419e64c9" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>endSysex</name></member>
+      <member refid="class_firmata_class_1a79988e9684ab4b14009bfe8ddf801f84" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>executeMultiByteCommand</name></member>
+      <member refid="class_firmata_class_1a75b035ab8d96d87d28deeb87badfe11a" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>FirmataClass</name></member>
+      <member refid="class_firmata_class_1a2bfad72245c92a33b441267829d372a0" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>FirmataStream</name></member>
+      <member refid="class_firmata_class_1aea8133f91f0c71ef24e76440ed09b7c3" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>firmwareVersionCount</name></member>
+      <member refid="class_firmata_class_1a3b9f8f80db09abe87d4c11b2ddffe29a" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>firmwareVersionVector</name></member>
+      <member refid="class_firmata_class_1a0c434227456ce2ba97b3b1142c329f96" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>getPinMode</name></member>
+      <member refid="class_firmata_class_1acf5d4f460b9a2298653d4a71de918dfe" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>getPinState</name></member>
+      <member refid="class_firmata_class_1a58e9d787957c3085f22d33b59b1f6ea6" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>isParsingMessage</name></member>
+      <member refid="class_firmata_class_1a9554f400cd0a9ee98b618a9d4ad0f0ff" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>multiByteChannel</name></member>
+      <member refid="class_firmata_class_1aaeaac8b1f8facf070615b0035120c432" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>parse</name></member>
+      <member refid="class_firmata_class_1ab8923f3c576f6d6a6924f2e7266fe100" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>parsingSysex</name></member>
+      <member refid="class_firmata_class_1a22d181e555b2982962bc7b303b86543f" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>pinConfig</name></member>
+      <member refid="class_firmata_class_1af655b166ce1f82896c2147b769393541" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>pinState</name></member>
+      <member refid="class_firmata_class_1abe49261eab0bd4892a09fa8b8980b11a" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>printFirmwareVersion</name></member>
+      <member refid="class_firmata_class_1abd8a0370db6d9e923e7e3d5836e78d7a" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>printVersion</name></member>
+      <member refid="class_firmata_class_1aa698f5f5a234173d5eebb54831350676" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>processInput</name></member>
+      <member refid="class_firmata_class_1aa01a1484ce39228066cc02c737c28f28" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>processSysexMessage</name></member>
+      <member refid="class_firmata_class_1ae14e1d8d9bd72068f6e8ca07721e8dda" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>sendAnalog</name></member>
+      <member refid="class_firmata_class_1a50a87e8339cf46fb787759603603e225" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>sendDigital</name></member>
+      <member refid="class_firmata_class_1a799b91e5a888dd21b066a2020d8e2b68" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>sendDigitalPort</name></member>
+      <member refid="class_firmata_class_1abe11f621154afd308926129de349fc6e" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>sendString</name></member>
+      <member refid="class_firmata_class_1ab139c0d784e69003c88eb5be8807dcdf" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>sendString</name></member>
+      <member refid="class_firmata_class_1a81e2de5b37eb2372c8a3d9a43d5eb0cc" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>sendSysex</name></member>
+      <member refid="class_firmata_class_1a770e43f26f18204e43acebf9202a6d39" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>sendValueAsTwo7bitBytes</name></member>
+      <member refid="class_firmata_class_1ab7aa66b528027566c15b7d64c8cd0f89" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>setFirmwareNameAndVersion</name></member>
+      <member refid="class_firmata_class_1a32c41dd94c1d23aa0e6d3d1dbe5c0c04" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>setPinMode</name></member>
+      <member refid="class_firmata_class_1aa9f98ba5069823b4c1d08db9f8999ba8" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>setPinState</name></member>
+      <member refid="class_firmata_class_1a3cc7ea1af348bca3ea0bd570314cada3" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>startSysex</name></member>
+      <member refid="class_firmata_class_1a89fc389779f9c0a75eca4c98100785e6" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>storedInputData</name></member>
+      <member refid="class_firmata_class_1a4893ccec400cdb2ab5c073ff9f22e65e" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>strobeBlinkPin</name></member>
+      <member refid="class_firmata_class_1ac17dde1c3e6409d32c4ab046eb0d8f0e" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>sysexBytesRead</name></member>
+      <member refid="class_firmata_class_1a833713e8cfe6664b9586264d0b3d2958" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>systemReset</name></member>
+      <member refid="class_firmata_class_1a9aa170fe9385a57960faa3963894e79c" prot="private" virt="non-virtual"><scope>FirmataClass</scope><name>waitForData</name></member>
+      <member refid="class_firmata_class_1ae8f29a829e17379602fcb9fd6a497807" prot="public" virt="non-virtual"><scope>FirmataClass</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

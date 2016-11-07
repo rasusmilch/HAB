@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_dfd25e3f2c7da10f8daad299002d4404" kind="dir">
+    <compoundname>Weather_Balloon/library/Firmata/examples</compoundname>
+    <innerdir refid="dir_daa0e1d2d9bef98361003439052c7b03">Weather_Balloon/library/Firmata/examples/StandardFirmataBLE</innerdir>
+    <innerdir refid="dir_7454948375a2344edc9b8aad810b5f19">Weather_Balloon/library/Firmata/examples/StandardFirmataEthernet</innerdir>
+    <innerdir refid="dir_04ea55eac1c77a4cedfe1ae9c96295d7">Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Firmata/examples/"/>
+  </compounddef>
+</doxygen>

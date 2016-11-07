@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="arduino-_zero_regs_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">arduino<sp/>ZeroRegs</highlight></codeline>
+<codeline><highlight class="normal">================</highlight></codeline>
+<codeline><highlight class="normal">prints<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>Arduino<sp/>Zero<sp/>(and<sp/>similar<sp/>boards)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">**Intended<sp/>Audience:**<sp/>advanced<sp/>users<sp/>who<sp/>have<sp/>already<sp/>looked<sp/>at<sp/>the<sp/>SAM<sp/>D21<sp/>datasheet</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Simple<sp/>Example</highlight></codeline>
+<codeline><highlight class="normal">--------------</highlight></codeline>
+<codeline><highlight class="normal">```cpp</highlight></codeline>
+<codeline><highlight class="normal">#include<sp/>&lt;ZeroRegs.h&gt;</highlight></codeline>
+<codeline><highlight class="normal">void<sp/>setup()<sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>SerialUSB.begin(9600);</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>while<sp/>(!<sp/>SerialUSB)<sp/>{}<sp/><sp/>//<sp/>wait<sp/>for<sp/>serial<sp/>monitor<sp/>to<sp/>attach</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>ZeroRegOptions<sp/>opts<sp/>=<sp/>{<sp/>SerialUSB,<sp/>false<sp/>};</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>printZeroRegs(opts);</highlight></codeline>
+<codeline><highlight class="normal">}</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Function<sp/>Reference</highlight></codeline>
+<codeline><highlight class="normal">------------------</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>struct<sp/>ZeroRegOptions</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">|<sp/>type<sp/>|<sp/>name<sp/>|<sp/>description<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>----<sp/>|<sp/>----<sp/>|<sp/>----<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`Stream&amp;`<sp/>|<sp/>`ser`<sp/>|<sp/>stream<sp/>used<sp/>for<sp/>printing<sp/>output<sp/>|</highlight></codeline>
+<codeline><highlight class="normal">|<sp/>`bool`<sp/>|<sp/>`showDisabled`<sp/>|<sp/>whether<sp/>to<sp/>show<sp/>itmes<sp/>which<sp/>are<sp/>disabled<sp/>|</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegs(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>configuration<sp/>registers,<sp/>as<sp/>many<sp/>as<sp/>the<sp/>library<sp/>knows<sp/>how.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegAC(ZeroRegOptions<sp/>&amp;opts)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`AC`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegADC(ZeroRegOptions<sp/>&amp;opts)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`ADC`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegDAC(ZeroRegOptions<sp/>&amp;opts)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`DAC`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegDMAC(ZeroRegOptions<sp/>&amp;opts)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`DMAC`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegDSU(ZeroRegOptions<sp/>&amp;opts)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`DSU`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegEIC(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`EIC`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegEVSYS(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`EVSYS`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegGCLK(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`GCLK`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegI2S(ZeroRegOptions<sp/>&amp;opts)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`I2S`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegMTB(ZeroRegOptions<sp/>&amp;opts)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`MTB`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegNVMCTRL(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`NVMCTRL`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegPACs(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`PAC`<sp/>peripherals.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegPM(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`PM`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegPORT(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`PORT`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegRTC(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`RTC`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegSBMATRIX(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`SBMATRIX`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegSERCOM(ZeroRegOptions<sp/>&amp;opts,<sp/>Sercom*<sp/>sercom,<sp/>uint8_t<sp/>idx)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>a<sp/>`SERCOM`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegSYSCTRL(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`SYSCTRL`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegTC(ZeroRegOptions<sp/>&amp;opts,<sp/>Tc*<sp/>tc,<sp/>uint8_t<sp/>idx)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>a<sp/>`TC`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegTCC(ZeroRegOptions<sp/>&amp;opts,<sp/>Tcc*<sp/>tcc,<sp/>uint8_t<sp/>idx)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>a<sp/>`TCC`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegUSB(ZeroRegOptions<sp/>&amp;opts)<sp/>--<sp/>**NOT<sp/>YET<sp/>IMPLEMENTED**</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`USB`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>void<sp/>printZeroRegWDT(ZeroRegOptions<sp/>&amp;opts)</highlight></codeline>
+<codeline><highlight class="normal">Prints<sp/>out<sp/>the<sp/>configuration<sp/>registers<sp/>for<sp/>the<sp/>`WDT`<sp/>peripheral.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">License</highlight></codeline>
+<codeline><highlight class="normal">-------</highlight></codeline>
+<codeline><highlight class="normal">This<sp/>code<sp/>is<sp/>licensed<sp/>under<sp/>the<sp/>MIT<sp/>license.</highlight></codeline>
+<codeline><highlight class="normal">See<sp/>the<sp/>`LICENSE`<sp/>file<sp/>for<sp/>details.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/arduino-ZeroRegs/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_a_x25_call" kind="struct" language="C++" prot="public">
+    <compoundname>AX25Call</compoundname>
+    <includes refid="_a_x25_8h" local="no">AX25.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char AX25Call::call[6+CALL_OVERSPACE]</definition>
+        <argsstring>[6+CALL_OVERSPACE]</argsstring>
+        <name>call</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="44" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a23e83c05decc0769bfd8f62d860bc636" compoundref="_a_x25_8cpp" startline="19" endline="23">ax25_init</referencedby>
+        <referencedby refid="_a_x25_8h_1ab37e8746a65819795b43d43072ce4555" compoundref="_a_x25_8cpp" startline="108" endline="120">ax25_sendRaw</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AX25Call::ssid</definition>
+        <argsstring></argsstring>
+        <name>ssid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="46" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="46" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a23e83c05decc0769bfd8f62d860bc636" compoundref="_a_x25_8cpp" startline="19" endline="23">ax25_init</referencedby>
+        <referencedby refid="_a_x25_8h_1ab37e8746a65819795b43d43072ce4555" compoundref="_a_x25_8cpp" startline="108" endline="120">ax25_sendRaw</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="43" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="43" bodyend="47"/>
+    <listofallmembers>
+      <member refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" prot="public" virt="non-virtual"><scope>AX25Call</scope><name>call</name></member>
+      <member refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" prot="public" virt="non-virtual"><scope>AX25Call</scope><name>ssid</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

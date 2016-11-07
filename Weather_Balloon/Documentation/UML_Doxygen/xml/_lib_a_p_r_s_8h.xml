@@ -1,0 +1,678 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_lib_a_p_r_s_8h" kind="file" language="C++">
+    <compoundname>LibAPRS.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes refid="_f_i_f_o_8h" local="yes">FIFO.h</includes>
+    <includes refid="_c_r_c-_c_c_i_t_8h" local="yes">CRC-CCIT.h</includes>
+    <includes refid="_h_d_l_c_8h" local="yes">HDLC.h</includes>
+    <includes refid="_a_f_s_k_8h" local="yes">AFSK.h</includes>
+    <includes refid="_a_x25_8h" local="yes">AX25.h</includes>
+    <incdepgraph>
+      <node id="1124">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1123">
+        <label>stdint.h</label>
+      </node>
+      <node id="1128">
+        <label>CRC-CCIT.h</label>
+        <link refid="_c_r_c-_c_c_i_t_8h"/>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1129" relation="include">
+        </childnode>
+      </node>
+      <node id="1125">
+        <label>FIFO.h</label>
+        <link refid="_f_i_f_o_8h"/>
+        <childnode refid="1126" relation="include">
+        </childnode>
+        <childnode refid="1127" relation="include">
+        </childnode>
+      </node>
+      <node id="1130">
+        <label>HDLC.h</label>
+        <link refid="_h_d_l_c_8h"/>
+      </node>
+      <node id="1126">
+        <label>stddef.h</label>
+      </node>
+      <node id="1127">
+        <label>util/atomic.h</label>
+      </node>
+      <node id="1135">
+        <label>AX25.h</label>
+        <link refid="_a_x25_8h"/>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1132" relation="include">
+        </childnode>
+      </node>
+      <node id="1131">
+        <label>AFSK.h</label>
+        <link refid="_a_f_s_k_8h"/>
+        <childnode refid="1132" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1134" relation="include">
+        </childnode>
+        <childnode refid="1129" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1130" relation="include">
+        </childnode>
+      </node>
+      <node id="1121">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.h</label>
+        <link refid="LibAPRS.h"/>
+        <childnode refid="1122" relation="include">
+        </childnode>
+        <childnode refid="1123" relation="include">
+        </childnode>
+        <childnode refid="1124" relation="include">
+        </childnode>
+        <childnode refid="1125" relation="include">
+        </childnode>
+        <childnode refid="1128" relation="include">
+        </childnode>
+        <childnode refid="1130" relation="include">
+        </childnode>
+        <childnode refid="1131" relation="include">
+        </childnode>
+        <childnode refid="1135" relation="include">
+        </childnode>
+      </node>
+      <node id="1133">
+        <label>constants.h</label>
+        <link refid="constants_8h"/>
+      </node>
+      <node id="1129">
+        <label>avr/pgmspace.h</label>
+      </node>
+      <node id="1122">
+        <label>Arduino.h</label>
+      </node>
+      <node id="1134">
+        <label>stdio.h</label>
+      </node>
+      <node id="1132">
+        <label>device.h</label>
+        <link refid="device_8h"/>
+        <childnode refid="1133" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_init</definition>
+        <argsstring>(int reference, bool open_squelch)</argsstring>
+        <name>APRS_init</name>
+        <param>
+          <type>int</type>
+          <declname>reference</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>open_squelch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="11" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="54" bodyend="60"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a2986d8cf0562c17f61a0e69f0548b54d" compoundref="_lib_a_p_r_s_8cpp" startline="10">LibAPRS_vref</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a2218d613dcf94d2a7c6385575ffb7955" compoundref="_lib_a_p_r_s_8cpp" startline="11">LibAPRS_open_squelch</references>
+        <references refid="_a_f_s_k_8cpp_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</references>
+        <references refid="_a_x25_8cpp_1a23e83c05decc0769bfd8f62d860bc636" compoundref="_a_x25_8cpp" startline="19" endline="23">ax25_init</references>
+        <references refid="_lib_a_p_r_s_8cpp_1adbb46a71de14834dbd45a286bd219c7c">aprs_msg_callback</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a0e02a071a97738c3c3d32a6c18f897bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_poll</definition>
+        <argsstring>(void)</argsstring>
+        <name>APRS_poll</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="12" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="62" bodyend="64"/>
+        <references refid="_a_x25_8cpp_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1aa36158ec57ff1fc02eaa21e2bb74540d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setCallsign</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setCallsign</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="14" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="66" bodyend="74"/>
+        <references refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" compoundref="_lib_a_p_r_s_8cpp" startline="21">CALL</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" compoundref="_lib_a_p_r_s_8cpp" startline="22">CALL_SSID</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a21a8a7357b3805665d49c92f0e120a4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setDestination</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setDestination</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="15" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="76" bodyend="84"/>
+        <references refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" compoundref="_lib_a_p_r_s_8cpp" startline="23">DST</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" compoundref="_lib_a_p_r_s_8cpp" startline="24">DST_SSID</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1ae027f5d3426daec37661dc7ede9aedf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setMessageDestination</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setMessageDestination</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="16" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="106" bodyend="114"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" compoundref="_lib_a_p_r_s_8cpp" startline="45">message_recip</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" compoundref="_lib_a_p_r_s_8cpp" startline="46">message_recip_ssid</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a893dabee106e6537f9a70b851df3a6fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setPath1</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setPath1</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="17" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="86" bodyend="94"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" compoundref="_lib_a_p_r_s_8cpp" startline="25">PATH1</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" compoundref="_lib_a_p_r_s_8cpp" startline="26">PATH1_SSID</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1acd65cef84cc868398762c3b50b6e4444" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setPath2</definition>
+        <argsstring>(char *call, int ssid)</argsstring>
+        <name>APRS_setPath2</name>
+        <param>
+          <type>char *</type>
+          <declname>call</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ssid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="18" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="96" bodyend="104"/>
+        <references refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" compoundref="_lib_a_p_r_s_8cpp" startline="27">PATH2</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" compoundref="_lib_a_p_r_s_8cpp" startline="28">PATH2_SSID</references>
+        <references refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" compoundref="wifi_config_8h" startline="119">ssid</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a8d2879844f6f9808dc5a101f6eb74e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setPreamble</definition>
+        <argsstring>(unsigned long pre)</argsstring>
+        <name>APRS_setPreamble</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>pre</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="20" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="116" bodyend="118"/>
+        <references refid="_lib_a_p_r_s_8cpp_1aca36a8e2b3f8db1978f37152c411201c" compoundref="_lib_a_p_r_s_8cpp" startline="13">custom_preamble</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1ab32765e29df288da61f2bda8cf13e276" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setTail</definition>
+        <argsstring>(unsigned long tail)</argsstring>
+        <name>APRS_setTail</name>
+        <param>
+          <type>unsigned long</type>
+          <declname>tail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="21" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="120" bodyend="122"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a258d100e9191b0a720dee2230b376abe" compoundref="_lib_a_p_r_s_8cpp" startline="14">custom_tail</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a36e9ef7abf74277e45ff59b48f7ff545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_useAlternateSymbolTable</definition>
+        <argsstring>(bool use)</argsstring>
+        <name>APRS_useAlternateSymbolTable</name>
+        <param>
+          <type>bool</type>
+          <declname>use</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="22" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="124" bodyend="130"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" compoundref="_lib_a_p_r_s_8cpp" startline="35">symbolTable</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a128fa7c712c53cbba638cab0e42bfb23" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setSymbol</definition>
+        <argsstring>(char sym)</argsstring>
+        <name>APRS_setSymbol</name>
+        <param>
+          <type>char</type>
+          <declname>sym</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="23" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="132" bodyend="134"/>
+        <references refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" compoundref="_lib_a_p_r_s_8cpp" startline="36">symbol</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a4234103a952e958b2b2c6e15d0637efd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setLat</definition>
+        <argsstring>(char *lat)</argsstring>
+        <name>APRS_setLat</name>
+        <param>
+          <type>char *</type>
+          <declname>lat</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="25" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="136" bodyend="143"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" compoundref="_lib_a_p_r_s_8cpp" startline="33">latitude</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a40002fdeaf4994017005d85c334b6b65" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setLon</definition>
+        <argsstring>(char *lon)</argsstring>
+        <name>APRS_setLon</name>
+        <param>
+          <type>char *</type>
+          <declname>lon</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="26" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="145" bodyend="152"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" compoundref="_lib_a_p_r_s_8cpp" startline="34">longtitude</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a88512e86a80a125417651ef2a4f803a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setPower</definition>
+        <argsstring>(int s)</argsstring>
+        <name>APRS_setPower</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="27" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="154" bodyend="158"/>
+        <references refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" compoundref="_lib_a_p_r_s_8cpp" startline="38">power</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1ad9f68984da752ee6d00d9439800debd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setHeight</definition>
+        <argsstring>(int s)</argsstring>
+        <name>APRS_setHeight</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="28" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="160" bodyend="164"/>
+        <references refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" compoundref="_lib_a_p_r_s_8cpp" startline="39">height</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a962ed213cb6b79f710aeb676d2ba53e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setGain</definition>
+        <argsstring>(int s)</argsstring>
+        <name>APRS_setGain</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="29" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="166" bodyend="170"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" compoundref="_lib_a_p_r_s_8cpp" startline="40">gain</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a37f30cfbe0491e15b0ae232ea9e66358" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_setDirectivity</definition>
+        <argsstring>(int s)</argsstring>
+        <name>APRS_setDirectivity</name>
+        <param>
+          <type>int</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="30" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="172" bodyend="176"/>
+        <references refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" compoundref="_lib_a_p_r_s_8cpp" startline="41">directivity</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_sendPkt</definition>
+        <argsstring>(void *_buffer, size_t length)</argsstring>
+        <name>APRS_sendPkt</name>
+        <param>
+          <type>void *</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="32" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="197" bodyend="219"/>
+        <references refid="struct_a_x25_call_1a6700a0ae4644c06bf1637e9cf91f48ce" compoundref="_a_x25_8h" startline="44">AX25Call::call</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" compoundref="_lib_a_p_r_s_8cpp" startline="23">DST</references>
+        <references refid="struct_a_x25_call_1aab01f56f5e1cd0599dcf01f6a65b2415" compoundref="_a_x25_8h" startline="46">AX25Call::ssid</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" compoundref="_lib_a_p_r_s_8cpp" startline="24">DST_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" compoundref="_lib_a_p_r_s_8cpp" startline="21">CALL</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" compoundref="_lib_a_p_r_s_8cpp" startline="22">CALL_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" compoundref="_lib_a_p_r_s_8cpp" startline="25">PATH1</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" compoundref="_lib_a_p_r_s_8cpp" startline="26">PATH1_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" compoundref="_lib_a_p_r_s_8cpp" startline="27">PATH2</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" compoundref="_lib_a_p_r_s_8cpp" startline="28">PATH2_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1af80502b9580f50d6f8ee6b1e0eaff2ca" compoundref="_lib_a_p_r_s_8cpp" startline="17">dst</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a6d4972a88e5d7cc0aa00e10c5e03e8bc" compoundref="_lib_a_p_r_s_8cpp" startline="16">src</references>
+        <references refid="_lib_a_p_r_s_8cpp_1adf1e23afec8ec69736d3e12b0ad68a8d" compoundref="_lib_a_p_r_s_8cpp" startline="18">path1</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a17d08d3114914911e1e2417940d00868" compoundref="_lib_a_p_r_s_8cpp" startline="19">path2</references>
+        <references refid="_a_x25_8cpp_1aeb4be1c44c0faeb1fc73dbb04ac59a6e" compoundref="_a_x25_8cpp" startline="141" endline="164">ax25_sendVia</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a3c5cd622462bb50b6dab4c189e219eb9" compoundref="_lib_a_p_r_s_8cpp" startline="8">countof</references>
+        <referencedby refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" compoundref="_lib_a_p_r_s_8cpp" startline="222" endline="256">APRS_sendLoc</referencedby>
+        <referencedby refid="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" compoundref="_lib_a_p_r_s_8cpp" startline="259" endline="309">APRS_sendMsg</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_sendLoc</definition>
+        <argsstring>(void *_buffer, size_t length)</argsstring>
+        <name>APRS_sendLoc</name>
+        <param>
+          <type>void *</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="33" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="222" bodyend="256"/>
+        <references refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" compoundref="_lib_a_p_r_s_8cpp" startline="38">power</references>
+        <references refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" compoundref="_lib_a_p_r_s_8cpp" startline="39">height</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" compoundref="_lib_a_p_r_s_8cpp" startline="40">gain</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" compoundref="_lib_a_p_r_s_8cpp" startline="41">directivity</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" compoundref="_lib_a_p_r_s_8cpp" startline="35">symbolTable</references>
+        <references refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" compoundref="_lib_a_p_r_s_8cpp" startline="36">symbol</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" compoundref="_lib_a_p_r_s_8cpp" startline="33">latitude</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" compoundref="_lib_a_p_r_s_8cpp" startline="34">longtitude</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_sendMsg</definition>
+        <argsstring>(void *_buffer, size_t length)</argsstring>
+        <name>APRS_sendMsg</name>
+        <param>
+          <type>void *</type>
+          <declname>_buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="34" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="259" bodyend="309"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" compoundref="_lib_a_p_r_s_8cpp" startline="45">message_recip</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" compoundref="_lib_a_p_r_s_8cpp" startline="46">message_recip_ssid</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9d9905079327a4d3523039129c305cf8" compoundref="_lib_a_p_r_s_8cpp" startline="49">lastMessage</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ad2a78273ae56c7bf679e652b558f6da0" compoundref="_lib_a_p_r_s_8cpp" startline="50">lastMessageLen</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" compoundref="_lib_a_p_r_s_8cpp" startline="48">message_seq</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ae5f394441f5ec861b661e0a63e33f44e" compoundref="_lib_a_p_r_s_8cpp" startline="197" endline="219">APRS_sendPkt</references>
+        <referencedby refid="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" compoundref="_lib_a_p_r_s_8cpp" startline="311" endline="314">APRS_msgRetry</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_msgRetry</definition>
+        <argsstring>()</argsstring>
+        <name>APRS_msgRetry</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="35" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="311" bodyend="314"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a5dc93e8d217d02b3e2eac4198b01b4f5" compoundref="_lib_a_p_r_s_8cpp" startline="48">message_seq</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a40fd4b0339cc234de92be317d48ea9fb" compoundref="_lib_a_p_r_s_8cpp" startline="259" endline="309">APRS_sendMsg</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9d9905079327a4d3523039129c305cf8" compoundref="_lib_a_p_r_s_8cpp" startline="49">lastMessage</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ad2a78273ae56c7bf679e652b558f6da0" compoundref="_lib_a_p_r_s_8cpp" startline="50">lastMessageLen</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aa84b5136d382ee274a86572892e5e007">__heap_start</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d18204366e8a385c441663ed41f1ae4">__brkval</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void APRS_printSettings</definition>
+        <argsstring>()</argsstring>
+        <name>APRS_printSettings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="37" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="178" bodyend="195"/>
+        <references refid="_lib_a_p_r_s_8cpp_1abb79d0690ba3798aedf264923065b022" compoundref="_lib_a_p_r_s_8cpp" startline="21">CALL</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5be191605a6e961a3853ec2d1f0e6322" compoundref="_lib_a_p_r_s_8cpp" startline="22">CALL_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ac91bbcd8d66fd19c746e60c50207c50e" compoundref="_lib_a_p_r_s_8cpp" startline="23">DST</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a9f7248093e797158ed21ba8e5161dee5" compoundref="_lib_a_p_r_s_8cpp" startline="24">DST_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a4a1d1088b6603e9ca5d701423d197c93" compoundref="_lib_a_p_r_s_8cpp" startline="25">PATH1</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a73c70bdb738a6eb999e3c4b2d1b30540" compoundref="_lib_a_p_r_s_8cpp" startline="26">PATH1_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ab768e2a120dd995a1a7dc9ab5e504ff8" compoundref="_lib_a_p_r_s_8cpp" startline="27">PATH2</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5149ae684d38506097d065c8212bcdbf" compoundref="_lib_a_p_r_s_8cpp" startline="28">PATH2_SSID</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a7aa72fc52d9723e72bd78ffda5d60a61" compoundref="_lib_a_p_r_s_8cpp" startline="45">message_recip</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aef7d01373974f7e9222ff7600f06b857" compoundref="_lib_a_p_r_s_8cpp" startline="46">message_recip_ssid</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aca36a8e2b3f8db1978f37152c411201c" compoundref="_lib_a_p_r_s_8cpp" startline="13">custom_preamble</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a258d100e9191b0a720dee2230b376abe" compoundref="_lib_a_p_r_s_8cpp" startline="14">custom_tail</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5e4a36ca770b277b7337ac10ad35aab8" compoundref="_lib_a_p_r_s_8cpp" startline="35">symbolTable</references>
+        <references refid="_lib_a_p_r_s_8cpp_1af7565614b2ea8e3f98b39303ae09ebca" compoundref="_lib_a_p_r_s_8cpp" startline="36">symbol</references>
+        <references refid="_lib_a_p_r_s_8cpp_1ae4e2435f6842b9dc5bf5c5a09a6374ca" compoundref="_lib_a_p_r_s_8cpp" startline="38">power</references>
+        <references refid="_lib_a_p_r_s_8cpp_1adcf201a8aabf55cb352ec05331242594" compoundref="_lib_a_p_r_s_8cpp" startline="39">height</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a5c9c0f59d06b7360c990c3f49be81fa7" compoundref="_lib_a_p_r_s_8cpp" startline="40">gain</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aa04b16f2efc73dccfb93cca42dcb1a92" compoundref="_lib_a_p_r_s_8cpp" startline="41">directivity</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d9ef129d714588cbbc55beec54cb795" compoundref="_lib_a_p_r_s_8cpp" startline="33">latitude</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a0c4b784cf0d8dc9b4b31db688b61c116" compoundref="_lib_a_p_r_s_8cpp" startline="34">longtitude</references>
+      </memberdef>
+      <memberdef kind="function" id="_lib_a_p_r_s_8h_1a8d862dc01c44bfabc8d952bb77f8da89" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int freeMemory</definition>
+        <argsstring>()</argsstring>
+        <name>freeMemory</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h" line="39" column="1" bodyfile="Weather_Balloon/library/LibAPRS/LibAPRS.cpp" bodystart="339" bodyend="348"/>
+        <references refid="_lib_a_p_r_s_8cpp_1a8d18204366e8a385c441663ed41f1ae4">__brkval</references>
+        <references refid="_lib_a_p_r_s_8cpp_1aa84b5136d382ee274a86572892e5e007">__heap_start</references>
+        <references refid="_lib_a_p_r_s_8cpp_1a04e1cfe100b396e57c2581502de5e5ca" compoundref="_lib_a_p_r_s_8cpp" startline="329" endline="337">freeListSize</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_f_i_f_o_8h" kindref="compound">FIFO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_r_c-_c_c_i_t_8h" kindref="compound">CRC-CCIT.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_h_d_l_c_8h" kindref="compound">HDLC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_f_s_k_8h" kindref="compound">AFSK.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_a_x25_8h" kindref="compound">AX25.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" kindref="member">APRS_init</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>reference,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>open_squelch);</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a0e02a071a97738c3c3d32a6c18f897bc" kindref="member">APRS_poll</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1aa36158ec57ff1fc02eaa21e2bb74540d" kindref="member">APRS_setCallsign</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a21a8a7357b3805665d49c92f0e120a4b" kindref="member">APRS_setDestination</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>);</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1ae027f5d3426daec37661dc7ede9aedf0" kindref="member">APRS_setMessageDestination</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a893dabee106e6537f9a70b851df3a6fa" kindref="member">APRS_setPath1</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1acd65cef84cc868398762c3b50b6e4444" kindref="member">APRS_setPath2</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*call,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a8d2879844f6f9808dc5a101f6eb74e4c" kindref="member">APRS_setPreamble</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>pre);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1ab32765e29df288da61f2bda8cf13e276" kindref="member">APRS_setTail</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>tail);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a36e9ef7abf74277e45ff59b48f7ff545" kindref="member">APRS_useAlternateSymbolTable</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a128fa7c712c53cbba638cab0e42bfb23" kindref="member">APRS_setSymbol</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>sym);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a4234103a952e958b2b2c6e15d0637efd" kindref="member">APRS_setLat</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lat);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a40002fdeaf4994017005d85c334b6b65" kindref="member">APRS_setLon</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*lon);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a88512e86a80a125417651ef2a4f803a0" kindref="member">APRS_setPower</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1ad9f68984da752ee6d00d9439800debd6" kindref="member">APRS_setHeight</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a962ed213cb6b79f710aeb676d2ba53e4" kindref="member">APRS_setGain</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a37f30cfbe0491e15b0ae232ea9e66358" kindref="member">APRS_setDirectivity</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>s);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1ae5f394441f5ec861b661e0a63e33f44e" kindref="member">APRS_sendPkt</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a8a1dc880a0b1622b68d488a4bb69afa0" kindref="member">APRS_sendLoc</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a40fd4b0339cc234de92be317d48ea9fb" kindref="member">APRS_sendMsg</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>*_buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>length);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a46f010ed409b5457f351361c65d47fe4" kindref="member">APRS_msgRetry</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a3fffb640ed02c57078f50fd7289c352d" kindref="member">APRS_printSettings</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_lib_a_p_r_s_8h_1a8d862dc01c44bfabc8d952bb77f8da89" kindref="member">freeMemory</ref>();</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/LibAPRS.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,6 @@
+<map id="DallasTemperature::requestTemperatures" name="DallasTemperature::requestTemperatures">
+<area shape="rect" id="node2" href="$class_one_wire.html#a6a742a9112392567eae3d06dde067c07" title="OneWire::reset" alt="" coords="191,5,293,32"/>
+<area shape="rect" id="node3" href="$class_one_wire.html#ae3780e2b0ea2ebf6be88298412ac7798" title="OneWire::skip" alt="" coords="192,56,292,83"/>
+<area shape="rect" id="node4" href="$class_one_wire.html#a843e9e7e57ed615b4880be0b76b40b7d" title="OneWire::write" alt="" coords="341,81,448,108"/>
+<area shape="rect" id="node5" href="$class_one_wire.html#a6bbc58276d1cb08653dab3ea35378f94" title="OneWire::write_bit" alt="" coords="496,81,623,108"/>
+</map>

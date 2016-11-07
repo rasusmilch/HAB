@@ -1,0 +1,4010 @@
+\hypertarget{_weather___balloon_8cpp}{}\section{Weather\+\_\+\+Balloon/\+Weather\+\_\+\+Balloon.cpp File Reference}
+\label{_weather___balloon_8cpp}\index{Weather\+\_\+\+Balloon/\+Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon/\+Weather\+\_\+\+Balloon.\+cpp}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$Wire.\+h$>$}\\*
+{\ttfamily \#include $<$util/atomic.\+h$>$}\\*
+{\ttfamily \#include $<$avr/cpufunc.\+h$>$}\\*
+{\ttfamily \#include $<$avr/interrupt.\+h$>$}\\*
+{\ttfamily \#include $<$avr/sleep.\+h$>$}\\*
+{\ttfamily \#include $<$avr/power.\+h$>$}\\*
+{\ttfamily \#include $<$avr/wdt.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Adafruit\+\_\+\+S\+I1145.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}One\+Wire.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Dallas\+Temperature.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}M\+A\+G3110.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$Adafruit\+\_\+\+Sensor.\+h$>$}\\*
+{\ttfamily \#include $<$Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+h$>$}\\*
+{\ttfamily \#include $<$M\+S5xxx.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}Adafruit\+\_\+\+S\+H\+T31.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Sd2\+Card.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+U.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Spark\+Fun\+M\+A\+X17043.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Spark\+Fun\+L\+S\+M9\+D\+S1.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Tiny\+G\+P\+S++.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}D\+S3231.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}P\+I\+D\+\_\+v1.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$E\+E\+P\+R\+O\+M.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}E\+E\+P\+R\+O\+M\+\_\+anything.\+h\char`\"{}}\\*
+Include dependency graph for Weather\+\_\+\+Balloon.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct}{data\+\_\+struct}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structsd__data}{sd\+\_\+data}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structeeprom__struct}{eeprom\+\_\+struct}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8found}{data\+\_\+struct.\+found}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8temp}{data\+\_\+struct.\+temp}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8pwm}{data\+\_\+struct.\+pwm}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8sht31}{data\+\_\+struct.\+sht31}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8battery}{data\+\_\+struct.\+battery}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8ms5607}{data\+\_\+struct.\+ms5607}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8tsl}{data\+\_\+struct.\+tsl}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8accel}{data\+\_\+struct.\+accel}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8mag}{data\+\_\+struct.\+mag}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8gyro}{data\+\_\+struct.\+gyro}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8geiger}{data\+\_\+struct.\+geiger}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8gps}{data\+\_\+struct.\+gps}
+\item 
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8enabled}{data\+\_\+struct.\+enabled}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a4260ed8874da804fb9ef9abba200b487}{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+B\+US}~4
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_aae0736ba082f8ff448826f4b1bad56c0}{U\+V\+\_\+\+P\+IN}~A0
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a698f3df552cd6ec0d639151634bf7f96}{C\+O2\+\_\+\+P\+IN}~A3
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a9c5a2d5d726c32c4b09f1d2de0355a7d}{P\+I\+E\+Z\+O\+\_\+\+P\+IN}~A2
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a01649d652fa50957c6ef3c32b1238038}{G\+R\+E\+E\+N\+\_\+\+L\+ED}~22
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_aaa9a0918932bceef70e8eb4dbb988fbe}{Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED}~23
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a073dbcb7f5bc4f4b45dc048b55eaff3d}{R\+E\+D\+\_\+\+L\+ED}~24
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_adc5a223dccf8bbdeb83b1e98c1a5e068}{M\+A\+I\+N\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}~45
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_afa22ab511c2e1ff0c2b6d670fb54b907}{G\+P\+S\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}~44
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a86a504b275408486d19f32e6923e6c10}{U\+V\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}~11
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a9bd50323652c3e5de42af2a1d65e7930}{T\+S\+L2561\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}~46
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_aad36752a9ec8083497dc972e71dade95}{C\+U\+S\+T\+O\+M\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}~12
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a126d5b2f190e7e95a7b8877c920a2258}{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}~5
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a62875728932bfc6752ba857df3fdb182}{G\+E\+I\+G\+E\+R\+\_\+\+P\+W\+R\+\_\+\+P\+IN}~39
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a6f6f49388c74bb24a8f63771bd997d97}{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+ME}~1000
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a2042d0bb2f483912475a0570f65887e9}{D\+S18\+B20\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}~11
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a1786def7b6707fbead3e6e07b8948528}{A\+D\+X\+L345\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}~0.\+911265
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a9bb94ac54f97758f53ae168206e48061}{L\+S\+M9\+D\+S1\+\_\+M}~0x1E
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a733d92c87c7253b93ad4bf6a6ed54952}{L\+S\+M9\+D\+S1\+\_\+\+AG}~0x6B
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_ad337b69f79bb731012571f96b472df45}{D\+E\+C\+L\+I\+N\+A\+T\+I\+ON}~-\/8.\+58
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_aacfac138026d1b146c60efb2f40aa5fe}{P\+R\+I\+N\+T\+\_\+\+R\+AW}
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_ae54089afd7925e1d4d4599a9925ba7d4}{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+1}~0x\+A0
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a41c61b54b6c4e8df2ab8540312ea578f}{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+2}~0x\+A1
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_af33afafa7f1cda9d36801855fda7def3}{G\+P\+S\+\_\+\+E\+N\+D\+\_\+1}~0x0D
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_adc8803fa8bafb4b8793b13f3325aee70}{G\+P\+S\+\_\+\+E\+N\+D\+\_\+2}~0x0A
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a9ec60d321bbe0674b50ee8528c1c8b8a}{G\+P\+S\+\_\+\+R\+E\+S\+T\+A\+RT}~0x01
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a450249148bd85e8396ad71ce44a0e11a}{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+M\+EA}~0x08
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_ae52863898b89c9232c92c1b6e1d76c2b}{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+O\+UT}~0x09
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_ac6adf6372ba4fc55bb81e6a1b62e59d8}{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+WR}~0x12
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a335669658677baf0a51458e3055f97b0}{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+A\+AS}~0x37
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_adbe0ec6abc2a7aad14739af2084e7261}{G\+P\+S\+\_\+\+A\+CK}~0x83
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_a3b24d3a4f5c25565a114df73a9c203cc}{G\+P\+S\+\_\+\+N\+A\+CK}~0x84
+\item 
+\#define \hyperlink{_weather___balloon_8cpp_af01c2d0b190db0e453c4dabc1fcd2a04}{G\+P\+S\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}~2.\+5
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_weather___balloon_8cpp_a538a7506e344ec9bf046564b160e9e7f}{beep\+\_\+piezo} (unsigned long, unsigned long, unsigned int)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a807f93d1e791a191cfeceae0e12e02ed}{configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+EA} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_aebe7b86629932aff68df05ed2eb74682}{configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+AS} ()
+\item 
+uint32\+\_\+t \hyperlink{_weather___balloon_8cpp_a276e156004c668500daa7aaa9a770585}{find\+\_\+sdcard\+\_\+tail} (const uint32\+\_\+t, const uint32\+\_\+t)
+\item 
+void \hyperlink{_weather___balloon_8cpp_af51f9e3565b0bfa3e28998f39b6a5217}{flash\+\_\+landing} (uint16\+\_\+t)
+\item 
+{\footnotesize template$<$typename T , size\+\_\+t N$>$ }\\size\+\_\+t \hyperlink{_weather___balloon_8cpp_abe49854f4db78d08b8cab487faefddef}{countof} (T(\&array)\mbox{[}N\mbox{]})
+\item 
+int16\+\_\+t \hyperlink{_weather___balloon_8cpp_a3d30b497ce4c43d95b30a95944f9d8be}{sd\+\_\+calc\+\_\+crc} (const uint8\+\_\+t $\ast$src, const uint8\+\_\+t block\+\_\+size)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a3f8e34eb2b9d824174dced9eefeecf90}{configure\+\_\+\+T\+S\+L2561} (void)
+\item 
+\hyperlink{_weather___balloon_8cpp_afe6035149a64d5f448fbda08e9d1b67f}{I\+SR} (P\+C\+I\+N\+T1\+\_\+vect)
+\item 
+\hyperlink{_weather___balloon_8cpp_a9c4665742c6b6eb1f0bb9dde41f7cba3}{I\+SR} (P\+C\+I\+N\+T2\+\_\+vect)
+\item 
+\hyperlink{_weather___balloon_8cpp_a98a290ada01eb27fd2ff4564371566e5}{I\+SR} (I\+N\+T4\+\_\+vect)
+\item 
+\hyperlink{_weather___balloon_8cpp_a43905d6fb5c4d433a49f527fa6ab811f}{I\+SR} (W\+D\+T\+\_\+vect)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a7a7c74cf298c3aefb3d55c6e9b926321}{configure\+\_\+button} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_ad38c713e780279c311e2e78a03b4f5bf}{configure\+\_\+geiger} ()
+\item 
+bool \hyperlink{_weather___balloon_8cpp_af4255510c1c5b3a92802bd817bb379c6}{compare\+\_\+buffers} (uint8\+\_\+t $\ast$first, uint8\+\_\+t $\ast$\hyperlink{_time_8cpp_a10a4dd811353baa12dadadee7c7e5099}{second}, uint16\+\_\+t bytes)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a0493b2a2e791c613e271755e39c7ff02}{configure\+\_\+ds18b20} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a94cd393dc19bb016dfea24631d4a3615}{configure\+\_\+ms5607} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a2c2e98945e78daa792b87b30868c3907}{configure\+\_\+\+L\+S\+M9\+D\+S1} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_abb8700028b489f20622252823d383f2d}{configure\+\_\+sht31} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_ab21671796ffdb5448be7facdbae0a1fa}{print\+\_\+found} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_aec2dcfe4cd6ca84e8df5730d179fdc6f}{configure\+\_\+sdcard} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a24d559ff8c4c36c0c5b27749ec0f1db7}{configure\+\_\+\+P\+ID} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a8cc7d86d6ef1fa4f680bfe19b3246307}{piezo\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_aa1ddd1a74edee558cd1f5bbf58c32eba}{tsl2561\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_aa705df77518e8cb907ba58c825af7531}{ms5607\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a19d08a06df1dca8e8a9be91e9de13f33}{sht31\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_ae30e39a79eefe72511818815ea7276eb}{geiger\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_aeea7cb9977724d0eff70fb24d03ef572}{sd\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a4535edf461b17f1e616af9db0447dc01}{gps\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_af2d24e60ddd98c1e2d7ebb921f6d7f46}{ds18b20\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a4e9c8d405702380dcc2cb85707283b71}{dof\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a63f902cc1f2e24f8a484f7ef780dda08}{led\+\_\+power} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a36e4683d7523a3b1e303d70a2989af58}{power\+\_\+sensors} (bool power)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a905910daced665e99b1c14fa51ef9938}{watchdog\+\_\+sleep} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_ac41bb5082e170a29d9fac793b99d2888}{watchdog\+\_\+reset\+\_\+only} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a822a13dcab2c88f65ce6db0a3039596d}{disable\+\_\+peripherals} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a38dae68379e12eee7b465eac207d9e27}{enter\+\_\+sleep} (void)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a6cc16c4213f4098ade81a6c9a7919bf7}{location\+\_\+alarm} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a381ac8dbd73c0461a2bc7169fbc63e61}{count\+\_\+down\+\_\+led} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a4fc01d736fe50cf5b977f755b675f11d}{setup} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_ab14d778dd0d52177eb147802a870639d}{read\+\_\+\+G\+PS} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a4d230d8f4d47ce65d33e15a1dc1dec76}{print\+Attitude} (float ax, float ay, float az, float mx, float my, float mz)
+\item 
+void \hyperlink{_weather___balloon_8cpp_ad40ccf803c2eff76d7e0e7a24c9937ef}{read\+Sensors} ()
+\item 
+uint8\+\_\+t \hyperlink{_weather___balloon_8cpp_a83c4c9265bfb7ab061bf1313dfad3857}{G\+P\+S\+\_\+\+C\+RC} (uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a337f8319327997530d76011aac7bfa15}{adjust\+\_\+heaters} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_ad3d8902d8758d33ba2a536403243f47c}{check\+\_\+battery} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_aef763e1e054693bbaf47392b64590d72}{heater\+\_\+control} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a8644e7f4d35c348e0292bc7062c5147c}{print\+\_\+sensors} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_af7b5da3129c5c87915394c2b8394aafe}{power\+\_\+control} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_acbeafc32c286c932b7f4e012cf3ef829}{reset\+\_\+sdcard} ()
+\item 
+uint8\+\_\+t \hyperlink{_weather___balloon_8cpp_a507cc28668dfd87892b99466e32b4b0b}{E\+E\+P\+R\+O\+M\+\_\+read} (uint16\+\_\+t ui\+Address)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a36234eb6bc49c0c10ed75b5fddadc4da}{E\+E\+P\+R\+O\+M\+\_\+update} (uint16\+\_\+t ui\+Address, uint8\+\_\+t uc\+Data)
+\item 
+void \hyperlink{_weather___balloon_8cpp_af7115da2fa844da13b6bd31bf8a206f1}{read\+\_\+configuration} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a22feff51a4b8144a2264bc812eedaddb}{test\+\_\+logging} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a66d17868f5a5bcc68dc70243bb439959}{log\+\_\+data} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a450f53a446d117859c49aeaac6c31f9f}{read\+\_\+sdcard} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_aef169403f1360281f7d4532c26949b6a}{queue\+\_\+altitude} (float altitude)
+\item 
+void \hyperlink{_weather___balloon_8cpp_adeef8e326e21e271b7542e6e7c4e4bd9}{queue\+\_\+pressure} (float pressure)
+\item 
+void \hyperlink{_weather___balloon_8cpp_ad470b7ae913b35bcd1e424b925a0277b}{check\+\_\+launch} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a3151528daf13a7c96e797c4ab9e5e08a}{check\+\_\+decent} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a15e6d9ae56a77e3b476ba9804077a809}{check\+\_\+landing} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a4a9cf795fe57230a3204ad8a66f4144d}{configure\+\_\+write} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a3f16b26bef419adf4e427a66af7fad37}{check\+\_\+alarms} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a23601be8cb3753e62a44c58a70575fe8}{print\+\_\+serial\+\_\+help} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_a15ac45cd15b43e174eeb8f4272f0c875}{Atmosphere} (const double alt, double \&sigma, double \&delta, double \&theta)    
+\item 
+void \hyperlink{_weather___balloon_8cpp_ad125fd2e1dac4c129e6735549100fc2b}{set\+\_\+alt\+\_\+threshold} (float altitude, String entered)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a5bd0afab414acd06263043d17db76643}{set\+\_\+pressure\+\_\+threshold} (float pressure)
+\item 
+void \hyperlink{_weather___balloon_8cpp_ac3c063a9e5c7c5bc74ee3ebd70141634}{set\+\_\+launch\+\_\+timeout} (uint32\+\_\+t timeout)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a0d89228eb4827497c54f4628c463e5bc}{set\+\_\+location\+\_\+timeout} (uint32\+\_\+t timeout)
+\item 
+void \hyperlink{_weather___balloon_8cpp_a65d5c1fd6eda6f08406245b655c69907}{read\+\_\+serial} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_abdf5b290d72a0f43221cc3461db70810}{pet\+\_\+watchdog} ()
+\item 
+void \hyperlink{_weather___balloon_8cpp_afe461d27b9c48d5921c00d521181f12f}{loop} ()
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_weather___balloon_8cpp_a117352cc494cc62c6b2f1882786a332c}{D\+E\+B\+UG} = false
+\item 
+bool \hyperlink{_weather___balloon_8cpp_a0006c1addcca85ed3a78cce0d5ab8810}{D\+E\+B\+U\+G\+\_\+\+M\+O\+RE} = false
+\item 
+volatile uint16\+\_\+t \hyperlink{_weather___balloon_8cpp_ac273c0e3f7143f7d3c6227763c4da844}{watchdog} = 10
+\item 
+const double \hyperlink{_weather___balloon_8cpp_adab320fba7526e8277ddabb382395609}{F\+T2\+M\+E\+T\+E\+RS} = 0.\+3048
+\item 
+const double \hyperlink{_weather___balloon_8cpp_a19b91bab81470b4820cbd27986bbb1a8}{K\+E\+L\+V\+I\+N2\+R\+A\+N\+K\+I\+NE} = 1.\+8
+\item 
+const double \hyperlink{_weather___balloon_8cpp_a950f5d29e2685b850c7c11c7a70e3586}{P\+S\+F2\+N\+SM} = 47.\+880258
+\item 
+const double \hyperlink{_weather___balloon_8cpp_a05e8a82a0d190e77cf4a5df2ea878799}{S\+C\+F2\+K\+CM} = 515.\+379
+\item 
+const double \hyperlink{_weather___balloon_8cpp_ad3209c000f37747eff86c69863d3d0d1}{T\+Z\+E\+RO} = 288.\+15
+\item 
+const double \hyperlink{_weather___balloon_8cpp_a728acecfd86626b2ad3b9cf88c206434}{P\+Z\+E\+RO} = 101325.\+0
+\item 
+const double \hyperlink{_weather___balloon_8cpp_a8b35237530df0b0d6241a52f61589fee}{R\+H\+O\+Z\+E\+RO} = 1.\+225
+\item 
+const double \hyperlink{_weather___balloon_8cpp_a9d985b447de8617c091480f9f572fe58}{A\+Z\+E\+RO} = 340.\+294
+\item 
+float \hyperlink{_weather___balloon_8cpp_a025e0782db77609f8bde58b6e2b07405}{hyster} = 0.\+5
+\item 
+float \hyperlink{_weather___balloon_8cpp_a7b0dae08d630995fb336f20fca25b324}{over\+\_\+ambient} = 2
+\item 
+\hyperlink{_weather___balloon_8cpp_structdata__struct}{data\+\_\+struct} \hyperlink{_weather___balloon_8cpp_a1d510f4282e450e51a322aadb779f979}{data\+Log}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+volatile uint16\_t {\bfseries x\_count}\\
+volatile uint16\_t {\bfseries y\_count}\\
+volatile uint16\_t {\bfseries z\_count} = 0\\
+\} \hyperlink{_weather___balloon_8cpp_aef03a40c11d98638a61a75a4a2bb75dc}{geiger}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+uint8\_t {\bfseries INTERNAL\_ADDR} \mbox{[}8\mbox{]} = \{0x28, 0x70, 0x95, 0x22, 0x05, 0x00, 0x00, 0xA1\}\\
+uint8\_t {\bfseries TSL2561\_ADDR} \mbox{[}8\mbox{]} = \{0x28, 0x57, 0x8C, 0x22, 0x05, 0x00, 0x00, 0x1D\}\\
+uint8\_t {\bfseries UV\_ADDR} \mbox{[}8\mbox{]} = \{0x28, 0xFF, 0xB6, 0x50, 0x6A, 0x14, 0x03, 0xB9\}\\
+uint8\_t {\bfseries GPS\_ADDR} \mbox{[}8\mbox{]} = \{0x28, 0xFF, 0x4D, 0x7F, 0x6F, 0x14, 0x04, 0x33\}\\
+uint8\_t {\bfseries MAIN\_ADDR} \mbox{[}8\mbox{]} = \{0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00\}\\
+uint8\_t {\bfseries EXTERNAL\_ADDR} \mbox{[}8\mbox{]} = \{0x28, 0xFF, 0x8C, 0x54, 0x6F, 0x14, 0x04, 0x38\}\\
+uint8\_t {\bfseries CUSTOM\_ADDR} \mbox{[}8\mbox{]} = \{0x28, 0x1B, 0x46, 0x6E, 0x00, 0x00, 0x00, 0x4D\}\\
+bool {\bfseries main} = false\\
+bool {\bfseries internal} = false\\
+bool {\bfseries external} = false\\
+bool {\bfseries gps} = false\\
+bool {\bfseries tsl2561} = false\\
+bool {\bfseries uv} = false\\
+bool {\bfseries custom} = false\\
+uint8\_t {\bfseries num\_found} = 0\\
+\} \hyperlink{_weather___balloon_8cpp_a514d67a20adb3bc72c1466b627930374}{temp\_sensors}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+float {\bfseries pressure\_alarm} = 82553\\
+float {\bfseries altitude\_alarm} = 1800\\
+bool {\bfseries launched} = false\\
+bool {\bfseries alarm} = false\\
+bool {\bfseries decent} = false\\
+uint16\_t {\bfseries altitude\_time} = 120\\
+uint32\_t {\bfseries launch\_time} = 120\\
+uint32\_t {\bfseries location\_time} = 240\\
+bool {\bfseries DEBUG} = false\\
+bool {\bfseries DEBUG\_MORE} = false\\
+\} \hyperlink{_weather___balloon_8cpp_ab910b93345327069fe8f3809d819b669}{configuration}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+float {\bfseries pressure\_alarm} = 82553\\
+float {\bfseries altitude\_alarm} = 1800\\
+bool {\bfseries launched} = false\\
+bool {\bfseries alarm} = false\\
+bool {\bfseries decent} = false\\
+uint16\_t {\bfseries altitude\_time} = 120\\
+uint32\_t {\bfseries launch\_time} = 120\\
+uint32\_t {\bfseries location\_time} = 240\\
+bool {\bfseries DEBUG} = false\\
+bool {\bfseries DEBUG\_MORE} = false\\
+\} \hyperlink{_weather___balloon_8cpp_af913d90b1b4908442e095aaba6f05119}{default\_config}\\
+
+\end{tabbing}\item 
+uint16\+\_\+t \hyperlink{_weather___balloon_8cpp_a0ccc5fb483a33a339b8a07b5f0251c02}{count\+\_\+at\+\_\+altitude} = 0
+\item 
+float \hyperlink{_weather___balloon_8cpp_ad4d2baeae9f4dcfffceaf318c35b77a4}{pressure\+\_\+hist} \mbox{[}120\mbox{]}
+\item 
+float \hyperlink{_weather___balloon_8cpp_abf83abf80c4f9710e3d5aafce776fe41}{altitude\+\_\+hist} \mbox{[}120\mbox{]}
+\item 
+int16\+\_\+t \hyperlink{_weather___balloon_8cpp_a0f650962534ec0668deb66f3237e9eed}{pressure\+\_\+hist\+\_\+head} = 0
+\item 
+int16\+\_\+t \hyperlink{_weather___balloon_8cpp_a96c477bde962eaccf0ae6b1505ffa47b}{pressure\+\_\+hist\+\_\+tail} = -\/1
+\item 
+int16\+\_\+t \hyperlink{_weather___balloon_8cpp_a01f6f8f79051a19987e9d93f549cd7be}{altitude\+\_\+hist\+\_\+head} = 0
+\item 
+int16\+\_\+t \hyperlink{_weather___balloon_8cpp_a90b100050af8f0504debe37992583950}{altitude\+\_\+hist\+\_\+tail} = -\/1
+\item 
+\hyperlink{class_one_wire}{One\+Wire} \hyperlink{_weather___balloon_8cpp_a6914ee42e75580dd30542e2b70531a1a}{one\+Wire} (\hyperlink{_weather___balloon_8cpp_a4260ed8874da804fb9ef9abba200b487}{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+B\+US})
+\item 
+\hyperlink{class_m_s5xxx}{M\+S5xxx} ms5607 \& \hyperlink{_weather___balloon_8cpp_a5924c9408a49897f2752e9c95b091461}{Wire}
+\item 
+\hyperlink{class_adafruit___s_h_t31}{Adafruit\+\_\+\+S\+H\+T31} \hyperlink{_weather___balloon_8cpp_a4cc868f67bc519384a9e92cd96d408c9}{sht31} = \hyperlink{class_adafruit___s_h_t31}{Adafruit\+\_\+\+S\+H\+T31}()
+\item 
+\hyperlink{class_adafruit___t_s_l2561___unified}{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified} \hyperlink{_weather___balloon_8cpp_a34dc1ffbb166b7afbf402f717b871f77}{tsl} = \hyperlink{class_adafruit___t_s_l2561___unified}{Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}(\hyperlink{_adafruit___t_s_l2561___u_8h_ac7cc83a3f07e3073fe2c17deb84e8cfc}{T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT}, 12345)
+\item 
+\hyperlink{class_m_a_x17043}{M\+A\+X17043} \hyperlink{_weather___balloon_8cpp_abcf177193a1fa6196dec86446b427a38}{fuel\+\_\+gauge}
+\item 
+\hyperlink{class_l_s_m9_d_s1}{L\+S\+M9\+D\+S1} \hyperlink{_weather___balloon_8cpp_a1251d2baa2da9ec9bae71ac224641f41}{D\+OF}
+\item 
+\hyperlink{class_sd2_card}{Sd2\+Card} \hyperlink{_weather___balloon_8cpp_af20e11a25c386bfa74e56ad408215877}{sdcard}
+\item 
+\hyperlink{class_d_s3231}{D\+S3231} \hyperlink{_weather___balloon_8cpp_a65f172682710866247eacb1ef68df619}{clock}
+\item 
+\hyperlink{_d_s3231_8h_struct_r_t_c_date_time}{R\+T\+C\+Date\+Time} \hyperlink{_weather___balloon_8cpp_a392e8b82028f7ad3f0bf9c13abc9ce14}{date\+\_\+time}
+\item 
+\hyperlink{_weather___balloon_8cpp_structsd__data}{sd\+\_\+data} \hyperlink{_weather___balloon_8cpp_a809288b73e21bab0f06787e2d2d01222}{sdcard\+\_\+data}
+\item 
+\hyperlink{_weather___balloon_8cpp_structeeprom__struct}{eeprom\+\_\+struct} \hyperlink{_weather___balloon_8cpp_a440561e67c2eadefd39ca49856c16b16}{eeprom}
+\item 
+\hyperlink{class_tiny_g_p_s_plus}{Tiny\+G\+P\+S\+Plus} \hyperlink{_weather___balloon_8cpp_a169c53997a7da1d0fb99aec1b4675ce8}{gps}
+\item 
+\hyperlink{class_tiny_g_p_s_custom}{Tiny\+G\+P\+S\+Custom} \hyperlink{_weather___balloon_8cpp_acaaa1b97759f106aaf5c83f39c17c58b}{vdop} (\hyperlink{_weather___balloon_8cpp_a169c53997a7da1d0fb99aec1b4675ce8}{gps},\char`\"{}G\+P\+G\+SA\char`\"{}, 17)
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+double {\bfseries temp}\\
+double {\bfseries pwm}\\
+double {\bfseries setpoint}\\
+double {\bfseries Kp} = 176.47\\
+double {\bfseries Ki} = 7\\
+double {\bfseries Kd} = 1.75\\
+\} \hyperlink{_weather___balloon_8cpp_af8d9b98a57487d52e092fcf34476b905}{gps\_vPID}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+double {\bfseries temp}\\
+double {\bfseries pwm}\\
+double {\bfseries setpoint}\\
+double {\bfseries Kp} = 176.47\\
+double {\bfseries Ki} = 7\\
+double {\bfseries Kd} = 1.75\\
+\} \hyperlink{_weather___balloon_8cpp_a225972b886c522ebff85e388a404ef52}{uv\_vPID}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+double {\bfseries temp}\\
+double {\bfseries pwm}\\
+double {\bfseries setpoint}\\
+double {\bfseries Kp} = 176.47\\
+double {\bfseries Ki} = 7\\
+double {\bfseries Kd} = 1.75\\
+\} \hyperlink{_weather___balloon_8cpp_ae2e19feb6f43ef5148ce00d74d9bc31d}{tsl\_vPID}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+double {\bfseries temp}\\
+double {\bfseries pwm}\\
+double {\bfseries setpoint}\\
+double {\bfseries Kp} = 176.47\\
+double {\bfseries Ki} = 7\\
+double {\bfseries Kd} = 1.75\\
+\} \hyperlink{_weather___balloon_8cpp_ae24ff64da9bc21ba0e9b46918a60a2d9}{sht\_vPID}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+double {\bfseries temp}\\
+double {\bfseries pwm}\\
+double {\bfseries setpoint}\\
+double {\bfseries Kp} = 176.47\\
+double {\bfseries Ki} = 7\\
+double {\bfseries Kd} = 1.75\\
+\} \hyperlink{_weather___balloon_8cpp_aaa100c603ac5c37761e50431d68a8923}{custom\_vPID}\\
+
+\end{tabbing}\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+struct \{\\
+double {\bfseries temp}\\
+double {\bfseries pwm}\\
+double {\bfseries setpoint}\\
+double {\bfseries Kp} = 352.94\\
+double {\bfseries Ki} = 30\\
+double {\bfseries Kd} = 9\\
+\} \hyperlink{_weather___balloon_8cpp_a42c24a594dab5a32356a22bfbece40e8}{main\_vPID}\\
+
+\end{tabbing}\item 
+bool \hyperlink{_weather___balloon_8cpp_afcc3b8eb63a92e9f7b96be31ceda6701}{Heat\+\_\+\+Enable} = false
+\item 
+bool \hyperlink{_weather___balloon_8cpp_a322075e5a178d4b804a56490a0fc9737}{set\+\_\+clock} = false
+\item 
+volatile bool \hyperlink{_weather___balloon_8cpp_a01160b0d5f07d7951ac857adf93c33b3}{reset\+\_\+flag} = false
+\end{DoxyCompactItemize}
+
+
+\subsection{Class Documentation}
+\index{data\+\_\+struct@{data\+\_\+struct}}\label{structdata__struct}
+\hypertarget{_weather___balloon_8cpp_structdata__struct}{}
+\subsubsection{struct data\+\_\+struct}
+
+
+Definition at line 158 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8accel}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_a3fca2ed772020080d3e4c2311a240933}{}\label{_weather___balloon_8cpp_a3fca2ed772020080d3e4c2311a240933}
+&
+accel&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_a6882559eb75dfd48ce00d14c2a82121c}{}\label{_weather___balloon_8cpp_a6882559eb75dfd48ce00d14c2a82121c}
+&
+alarm&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8battery}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_ab563098c74eb5e8c7b3deafc91c30908}{}\label{_weather___balloon_8cpp_ab563098c74eb5e8c7b3deafc91c30908}
+&
+battery&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8enabled}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_a806a54c6a6125ca7b0d2c5d90bb6acec}{}\label{_weather___balloon_8cpp_a806a54c6a6125ca7b0d2c5d90bb6acec}
+&
+enabled&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8found}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_a6ca366a5fcb890803160e5ab98344bd1}{}\label{_weather___balloon_8cpp_a6ca366a5fcb890803160e5ab98344bd1}
+&
+found&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8geiger}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_a27a2fc394140d1d68724703f6a50a23c}{}\label{_weather___balloon_8cpp_a27a2fc394140d1d68724703f6a50a23c}
+&
+geiger&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8gps}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_adc9fc98fd00ac000fde2f2a4e7c2094d}{}\label{_weather___balloon_8cpp_adc9fc98fd00ac000fde2f2a4e7c2094d}
+&
+gps&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8gyro}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_abda148daacfe93267bf35e5a7ab18c23}{}\label{_weather___balloon_8cpp_abda148daacfe93267bf35e5a7ab18c23}
+&
+gyro&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_a4b4c5b81a3132706b1a85c0cd46164a0}{}\label{_weather___balloon_8cpp_a4b4c5b81a3132706b1a85c0cd46164a0}
+&
+heater\+\_\+max&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_acebeac8bcb741e46517b79c4b8bb8ed5}{}\label{_weather___balloon_8cpp_acebeac8bcb741e46517b79c4b8bb8ed5}
+&
+launched&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8mag}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_a30a07c1e9b8dbcf4f0bffcc7bc5794fe}{}\label{_weather___balloon_8cpp_a30a07c1e9b8dbcf4f0bffcc7bc5794fe}
+&
+mag&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8ms5607}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_a66a25e7f8b144d70d91ad0a9f7703cb1}{}\label{_weather___balloon_8cpp_a66a25e7f8b144d70d91ad0a9f7703cb1}
+&
+ms5607&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8pwm}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_a707f8d5848359c1b2e948b24a4a22ba5}{}\label{_weather___balloon_8cpp_a707f8d5848359c1b2e948b24a4a22ba5}
+&
+pwm&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8sht31}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_a97c2e1e9042cd4bb3125779e96e1852a}{}\label{_weather___balloon_8cpp_a97c2e1e9042cd4bb3125779e96e1852a}
+&
+sht31&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8temp}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_ab2ecd8eb6a960f8c8ee0faa0812d0db3}{}\label{_weather___balloon_8cpp_ab2ecd8eb6a960f8c8ee0faa0812d0db3}
+&
+temp&
+\\
+\hline
+
+struct \hyperlink{_weather___balloon_8cpp_structdata__struct_8tsl}{data\+\_\+struct}\hypertarget{_weather___balloon_8cpp_ad6c6ac99773f308db955031c4ac87d72}{}\label{_weather___balloon_8cpp_ad6c6ac99773f308db955031c4ac87d72}
+&
+tsl&
+\\
+\hline
+
+uint32\+\_\+t\hypertarget{_weather___balloon_8cpp_a37f7a481de32f77f428f03c07d60090e}{}\label{_weather___balloon_8cpp_a37f7a481de32f77f428f03c07d60090e}
+&
+unix\+\_\+time&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a0a895e3ba629b91b7b2de586eb442f60}{}\label{_weather___balloon_8cpp_a0a895e3ba629b91b7b2de586eb442f60}
+&
+uv&
+\\
+\hline
+
+\end{DoxyFields}
+\index{sd\+\_\+data@{sd\+\_\+data}}\label{structsd__data}
+\hypertarget{_weather___balloon_8cpp_structsd__data}{}
+\subsubsection{struct sd\+\_\+data}
+
+
+Definition at line 416 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+uint32\+\_\+t\hypertarget{_weather___balloon_8cpp_a5ebf26ae306ca7d48713664f309ef62f}{}\label{_weather___balloon_8cpp_a5ebf26ae306ca7d48713664f309ef62f}
+&
+blocks&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_ab3590a9446d96dd2d7527a8b69d6a7e4}{}\label{_weather___balloon_8cpp_ab3590a9446d96dd2d7527a8b69d6a7e4}
+&
+buffer\mbox{[}512\mbox{]}&
+\\
+\hline
+
+int16\+\_\+t\hypertarget{_weather___balloon_8cpp_a3e3831d75c0cbbc4f4bc83f20c57c4d7}{}\label{_weather___balloon_8cpp_a3e3831d75c0cbbc4f4bc83f20c57c4d7}
+&
+crc&
+\\
+\hline
+
+uint32\+\_\+t\hypertarget{_weather___balloon_8cpp_a803add843065a08b411291e34786dac3}{}\label{_weather___balloon_8cpp_a803add843065a08b411291e34786dac3}
+&
+crc\+\_\+errors&
+\\
+\hline
+
+uint32\+\_\+t\hypertarget{_weather___balloon_8cpp_a2d9191a0c849f5ee3b3714159dbd065d}{}\label{_weather___balloon_8cpp_a2d9191a0c849f5ee3b3714159dbd065d}
+&
+current\+\_\+block&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_a8c7d8aeb42db3bbd384026be5d5e0bbd}{}\label{_weather___balloon_8cpp_a8c7d8aeb42db3bbd384026be5d5e0bbd}
+&
+hold\+\_\+buffer\mbox{[}512\mbox{]}&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_ada768338826445661ce665fc7bb9b8a0}{}\label{_weather___balloon_8cpp_ada768338826445661ce665fc7bb9b8a0}
+&
+num\+\_\+packed&
+\\
+\hline
+
+uint32\+\_\+t\hypertarget{_weather___balloon_8cpp_ac1410d5750aa9c7a30041b0ac94cbc80}{}\label{_weather___balloon_8cpp_ac1410d5750aa9c7a30041b0ac94cbc80}
+&
+write\+\_\+errors&
+\\
+\hline
+
+\end{DoxyFields}
+\index{eeprom\+\_\+struct@{eeprom\+\_\+struct}}\label{structeeprom__struct}
+\hypertarget{_weather___balloon_8cpp_structeeprom__struct}{}
+\subsubsection{struct eeprom\+\_\+struct}
+
+
+Definition at line 443 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+uint16\+\_\+t\hypertarget{_weather___balloon_8cpp_a9c95773929c39be73375f839d44050dd}{}\label{_weather___balloon_8cpp_a9c95773929c39be73375f839d44050dd}
+&
+address&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_abdd1ffbd2d5cf7b991f6e0a7cd951c39}{}\label{_weather___balloon_8cpp_abdd1ffbd2d5cf7b991f6e0a7cd951c39}
+&
+queue\+\_\+loc&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+found@{data\+\_\+struct.\+found}}\label{structdata__struct_8found}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8found}{}
+\subsubsection{struct data\+\_\+struct.\+found}
+
+
+Definition at line 159 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+bool\hypertarget{_weather___balloon_8cpp_aac1bc058b939e1c55e1496c8574f3691}{}\label{_weather___balloon_8cpp_aac1bc058b939e1c55e1496c8574f3691}
+&
+D\+S18\+B20&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_a8c578de37278ada488d763ea86c5cf20}{}\label{_weather___balloon_8cpp_a8c578de37278ada488d763ea86c5cf20}
+&
+G\+PS&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_ac681b711bc68bd078f7e2af67de68b75}{}\label{_weather___balloon_8cpp_ac681b711bc68bd078f7e2af67de68b75}
+&
+L\+S\+M9\+D\+S1&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_ac9af1708d08a487e50a7662adaa77347}{}\label{_weather___balloon_8cpp_ac9af1708d08a487e50a7662adaa77347}
+&
+M\+S5607&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_ac0c8ae9a2e6a58c9259c26b3f423c33b}{}\label{_weather___balloon_8cpp_ac0c8ae9a2e6a58c9259c26b3f423c33b}
+&
+S\+H\+T31&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_aa9d22d3b656f50802d180ec6d21a7437}{}\label{_weather___balloon_8cpp_aa9d22d3b656f50802d180ec6d21a7437}
+&
+T\+S\+L2561&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_adeaa2adbeb26802ae61609c3f3642d82}{}\label{_weather___balloon_8cpp_adeaa2adbeb26802ae61609c3f3642d82}
+&
+UV&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+temp@{data\+\_\+struct.\+temp}}\label{structdata__struct_8temp}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8temp}{}
+\subsubsection{struct data\+\_\+struct.\+temp}
+
+
+Definition at line 182 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_weather___balloon_8cpp_a05531b19bb846b18c09f979eeb429ad3}{}\label{_weather___balloon_8cpp_a05531b19bb846b18c09f979eeb429ad3}
+&
+clock&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a8b9035807842a4e4dbe009f3f1478127}{}\label{_weather___balloon_8cpp_a8b9035807842a4e4dbe009f3f1478127}
+&
+custom&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a6a21b6995a068148bbb65c8f949b3fb2}{}\label{_weather___balloon_8cpp_a6a21b6995a068148bbb65c8f949b3fb2}
+&
+external&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a11648e4e66e7ed6a86cb7f1d0cf604fe}{}\label{_weather___balloon_8cpp_a11648e4e66e7ed6a86cb7f1d0cf604fe}
+&
+gps&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_ad1efad72dc5b17dc66a46767c32fff40}{}\label{_weather___balloon_8cpp_ad1efad72dc5b17dc66a46767c32fff40}
+&
+internal&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_afad58de7366495db4650cfefac2fcd61}{}\label{_weather___balloon_8cpp_afad58de7366495db4650cfefac2fcd61}
+&
+main&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a63dee2803479f4d975963a0805dec70e}{}\label{_weather___balloon_8cpp_a63dee2803479f4d975963a0805dec70e}
+&
+ms5607&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_afa7bc2fcb1ec58d462249615bcdea607}{}\label{_weather___balloon_8cpp_afa7bc2fcb1ec58d462249615bcdea607}
+&
+sht31&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a01a1f9db856468530986ed6aab9ac3c9}{}\label{_weather___balloon_8cpp_a01a1f9db856468530986ed6aab9ac3c9}
+&
+tsl2561&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a45210da832f9626829457a65e9e7c4d0}{}\label{_weather___balloon_8cpp_a45210da832f9626829457a65e9e7c4d0}
+&
+uv&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+pwm@{data\+\_\+struct.\+pwm}}\label{structdata__struct_8pwm}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8pwm}{}
+\subsubsection{struct data\+\_\+struct.\+pwm}
+
+
+Definition at line 196 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_a11648e4e66e7ed6a86cb7f1d0cf604fe}{}\label{_weather___balloon_8cpp_a11648e4e66e7ed6a86cb7f1d0cf604fe}
+&
+gps&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_afad58de7366495db4650cfefac2fcd61}{}\label{_weather___balloon_8cpp_afad58de7366495db4650cfefac2fcd61}
+&
+main&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_afa7bc2fcb1ec58d462249615bcdea607}{}\label{_weather___balloon_8cpp_afa7bc2fcb1ec58d462249615bcdea607}
+&
+sht31&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_a01a1f9db856468530986ed6aab9ac3c9}{}\label{_weather___balloon_8cpp_a01a1f9db856468530986ed6aab9ac3c9}
+&
+tsl2561&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_a45210da832f9626829457a65e9e7c4d0}{}\label{_weather___balloon_8cpp_a45210da832f9626829457a65e9e7c4d0}
+&
+uv&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+sht31@{data\+\_\+struct.\+sht31}}\label{structdata__struct_8sht31}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8sht31}{}
+\subsubsection{struct data\+\_\+struct.\+sht31}
+
+
+Definition at line 200 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_weather___balloon_8cpp_a43aa11d087acb432f887266cf9128bc3}{}\label{_weather___balloon_8cpp_a43aa11d087acb432f887266cf9128bc3}
+&
+humidity&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+battery@{data\+\_\+struct.\+battery}}\label{structdata__struct_8battery}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8battery}{}
+\subsubsection{struct data\+\_\+struct.\+battery}
+
+
+Definition at line 209 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_weather___balloon_8cpp_ac7d5f8495162588e6bb8a9e1975c45e7}{}\label{_weather___balloon_8cpp_ac7d5f8495162588e6bb8a9e1975c45e7}
+&
+soc&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_ae437ba437f4106903e619bb380574954}{}\label{_weather___balloon_8cpp_ae437ba437f4106903e619bb380574954}
+&
+voltage&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+ms5607@{data\+\_\+struct.\+ms5607}}\label{structdata__struct_8ms5607}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8ms5607}{}
+\subsubsection{struct data\+\_\+struct.\+ms5607}
+
+
+Definition at line 214 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+double\hypertarget{_weather___balloon_8cpp_ad99fad96a5d0a7cb2eb41341ea556093}{}\label{_weather___balloon_8cpp_ad99fad96a5d0a7cb2eb41341ea556093}
+&
+pressure&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+tsl@{data\+\_\+struct.\+tsl}}\label{structdata__struct_8tsl}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8tsl}{}
+\subsubsection{struct data\+\_\+struct.\+tsl}
+
+
+Definition at line 219 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+uint16\+\_\+t\hypertarget{_weather___balloon_8cpp_a79d76db88cc9aa2cb2d56a16bbce9691}{}\label{_weather___balloon_8cpp_a79d76db88cc9aa2cb2d56a16bbce9691}
+&
+broadband&
+\\
+\hline
+
+uint16\+\_\+t\hypertarget{_weather___balloon_8cpp_ad74eea4899a61f9fcbc527ef988ea0ff}{}\label{_weather___balloon_8cpp_ad74eea4899a61f9fcbc527ef988ea0ff}
+&
+ir&
+\\
+\hline
+
+uint32\+\_\+t\hypertarget{_weather___balloon_8cpp_ad877c55797fd430ce8150363cd86058f}{}\label{_weather___balloon_8cpp_ad877c55797fd430ce8150363cd86058f}
+&
+lux&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+accel@{data\+\_\+struct.\+accel}}\label{structdata__struct_8accel}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8accel}{}
+\subsubsection{struct data\+\_\+struct.\+accel}
+
+
+Definition at line 225 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_weather___balloon_8cpp_a9dd4e461268c8034f5c8564e155c67a6}{}\label{_weather___balloon_8cpp_a9dd4e461268c8034f5c8564e155c67a6}
+&
+x&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a415290769594460e2e485922904f345d}{}\label{_weather___balloon_8cpp_a415290769594460e2e485922904f345d}
+&
+y&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_afbade9e36a3f36d3d676c1b808451dd7}{}\label{_weather___balloon_8cpp_afbade9e36a3f36d3d676c1b808451dd7}
+&
+z&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+mag@{data\+\_\+struct.\+mag}}\label{structdata__struct_8mag}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8mag}{}
+\subsubsection{struct data\+\_\+struct.\+mag}
+
+
+Definition at line 229 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_weather___balloon_8cpp_a9dd4e461268c8034f5c8564e155c67a6}{}\label{_weather___balloon_8cpp_a9dd4e461268c8034f5c8564e155c67a6}
+&
+x&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a415290769594460e2e485922904f345d}{}\label{_weather___balloon_8cpp_a415290769594460e2e485922904f345d}
+&
+y&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_afbade9e36a3f36d3d676c1b808451dd7}{}\label{_weather___balloon_8cpp_afbade9e36a3f36d3d676c1b808451dd7}
+&
+z&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+gyro@{data\+\_\+struct.\+gyro}}\label{structdata__struct_8gyro}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8gyro}{}
+\subsubsection{struct data\+\_\+struct.\+gyro}
+
+
+Definition at line 233 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_weather___balloon_8cpp_a9dd4e461268c8034f5c8564e155c67a6}{}\label{_weather___balloon_8cpp_a9dd4e461268c8034f5c8564e155c67a6}
+&
+x&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_a415290769594460e2e485922904f345d}{}\label{_weather___balloon_8cpp_a415290769594460e2e485922904f345d}
+&
+y&
+\\
+\hline
+
+float\hypertarget{_weather___balloon_8cpp_afbade9e36a3f36d3d676c1b808451dd7}{}\label{_weather___balloon_8cpp_afbade9e36a3f36d3d676c1b808451dd7}
+&
+z&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+geiger@{data\+\_\+struct.\+geiger}}\label{structdata__struct_8geiger}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8geiger}{}
+\subsubsection{struct data\+\_\+struct.\+geiger}
+
+
+Definition at line 238 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+uint16\+\_\+t\hypertarget{_weather___balloon_8cpp_a9dd4e461268c8034f5c8564e155c67a6}{}\label{_weather___balloon_8cpp_a9dd4e461268c8034f5c8564e155c67a6}
+&
+x&
+\\
+\hline
+
+uint16\+\_\+t\hypertarget{_weather___balloon_8cpp_a415290769594460e2e485922904f345d}{}\label{_weather___balloon_8cpp_a415290769594460e2e485922904f345d}
+&
+y&
+\\
+\hline
+
+uint16\+\_\+t\hypertarget{_weather___balloon_8cpp_afbade9e36a3f36d3d676c1b808451dd7}{}\label{_weather___balloon_8cpp_afbade9e36a3f36d3d676c1b808451dd7}
+&
+z&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+gps@{data\+\_\+struct.\+gps}}\label{structdata__struct_8gps}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8gps}{}
+\subsubsection{struct data\+\_\+struct.\+gps}
+
+
+Definition at line 247 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+double\hypertarget{_weather___balloon_8cpp_a14d893303d2d61e5965e96e2c9fe3bfa}{}\label{_weather___balloon_8cpp_a14d893303d2d61e5965e96e2c9fe3bfa}
+&
+altitude&
+\\
+\hline
+
+double\hypertarget{_weather___balloon_8cpp_a046d47672cf6212d201d6e8b0c191e73}{}\label{_weather___balloon_8cpp_a046d47672cf6212d201d6e8b0c191e73}
+&
+course&
+\\
+\hline
+
+uint32\+\_\+t\hypertarget{_weather___balloon_8cpp_a5fc732311905cb27e82d67f4f6511f7f}{}\label{_weather___balloon_8cpp_a5fc732311905cb27e82d67f4f6511f7f}
+&
+date&
+\\
+\hline
+
+uint16\+\_\+t\hypertarget{_weather___balloon_8cpp_a92801e4be8085f0c78391cc609f2fefa}{}\label{_weather___balloon_8cpp_a92801e4be8085f0c78391cc609f2fefa}
+&
+hdop&
+\\
+\hline
+
+double\hypertarget{_weather___balloon_8cpp_a4073d41bb178273881fbc975e1af6118}{}\label{_weather___balloon_8cpp_a4073d41bb178273881fbc975e1af6118}
+&
+lat&
+\\
+\hline
+
+double\hypertarget{_weather___balloon_8cpp_a8b8a2268b5d3a89f348d5990b846c29b}{}\label{_weather___balloon_8cpp_a8b8a2268b5d3a89f348d5990b846c29b}
+&
+lng&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_weather___balloon_8cpp_af6fc93b8e2c582e48a789d64318124ad}{}\label{_weather___balloon_8cpp_af6fc93b8e2c582e48a789d64318124ad}
+&
+sats&
+\\
+\hline
+
+double\hypertarget{_weather___balloon_8cpp_ace4ef3ec98443ed10da505114b58f153}{}\label{_weather___balloon_8cpp_ace4ef3ec98443ed10da505114b58f153}
+&
+speed&
+\\
+\hline
+
+uint32\+\_\+t\hypertarget{_weather___balloon_8cpp_a07cc694b9b3fc636710fa08b6922c42b}{}\label{_weather___balloon_8cpp_a07cc694b9b3fc636710fa08b6922c42b}
+&
+time&
+\\
+\hline
+
+uint16\+\_\+t\hypertarget{_weather___balloon_8cpp_ad0b79cf097db4e453cfc99cf64807ff6}{}\label{_weather___balloon_8cpp_ad0b79cf097db4e453cfc99cf64807ff6}
+&
+vdop&
+\\
+\hline
+
+\end{DoxyFields}
+\index{data\+\_\+struct.\+enabled@{data\+\_\+struct.\+enabled}}\label{structdata__struct_8enabled}
+\hypertarget{_weather___balloon_8cpp_structdata__struct_8enabled}{}
+\subsubsection{struct data\+\_\+struct.\+enabled}
+
+
+Definition at line 272 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\begin{DoxyFields}{Class Members}
+bool\hypertarget{_weather___balloon_8cpp_aac1bc058b939e1c55e1496c8574f3691}{}\label{_weather___balloon_8cpp_aac1bc058b939e1c55e1496c8574f3691}
+&
+D\+S18\+B20&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_a8c578de37278ada488d763ea86c5cf20}{}\label{_weather___balloon_8cpp_a8c578de37278ada488d763ea86c5cf20}
+&
+G\+PS&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_ac681b711bc68bd078f7e2af67de68b75}{}\label{_weather___balloon_8cpp_ac681b711bc68bd078f7e2af67de68b75}
+&
+L\+S\+M9\+D\+S1&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_ac9af1708d08a487e50a7662adaa77347}{}\label{_weather___balloon_8cpp_ac9af1708d08a487e50a7662adaa77347}
+&
+M\+S5607&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_ac0c8ae9a2e6a58c9259c26b3f423c33b}{}\label{_weather___balloon_8cpp_ac0c8ae9a2e6a58c9259c26b3f423c33b}
+&
+S\+H\+T31&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_aa9d22d3b656f50802d180ec6d21a7437}{}\label{_weather___balloon_8cpp_aa9d22d3b656f50802d180ec6d21a7437}
+&
+T\+S\+L2561&
+\\
+\hline
+
+bool\hypertarget{_weather___balloon_8cpp_adeaa2adbeb26802ae61609c3f3642d82}{}\label{_weather___balloon_8cpp_adeaa2adbeb26802ae61609c3f3642d82}
+&
+UV&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Macro Definition Documentation}
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!A\+D\+X\+L345\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON@{A\+D\+X\+L345\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}}
+\index{A\+D\+X\+L345\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON@{A\+D\+X\+L345\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{A\+D\+X\+L345\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON}{ADXL345\_CORRECTION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+D\+X\+L345\+\_\+\+C\+O\+R\+R\+E\+C\+T\+I\+ON~0.\+911265}\hypertarget{_weather___balloon_8cpp_a1786def7b6707fbead3e6e07b8948528}{}\label{_weather___balloon_8cpp_a1786def7b6707fbead3e6e07b8948528}
+
+
+Definition at line 143 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!C\+O2\+\_\+\+P\+IN@{C\+O2\+\_\+\+P\+IN}}
+\index{C\+O2\+\_\+\+P\+IN@{C\+O2\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{C\+O2\+\_\+\+P\+IN}{CO2\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+O2\+\_\+\+P\+IN~A3}\hypertarget{_weather___balloon_8cpp_a698f3df552cd6ec0d639151634bf7f96}{}\label{_weather___balloon_8cpp_a698f3df552cd6ec0d639151634bf7f96}
+
+
+Definition at line 87 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!C\+U\+S\+T\+O\+M\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{C\+U\+S\+T\+O\+M\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}}
+\index{C\+U\+S\+T\+O\+M\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{C\+U\+S\+T\+O\+M\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{C\+U\+S\+T\+O\+M\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}{CUSTOM\_HEATER\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+U\+S\+T\+O\+M\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN~12}\hypertarget{_weather___balloon_8cpp_aad36752a9ec8083497dc972e71dade95}{}\label{_weather___balloon_8cpp_aad36752a9ec8083497dc972e71dade95}
+
+
+Definition at line 112 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!D\+E\+C\+L\+I\+N\+A\+T\+I\+ON@{D\+E\+C\+L\+I\+N\+A\+T\+I\+ON}}
+\index{D\+E\+C\+L\+I\+N\+A\+T\+I\+ON@{D\+E\+C\+L\+I\+N\+A\+T\+I\+ON}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{D\+E\+C\+L\+I\+N\+A\+T\+I\+ON}{DECLINATION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+E\+C\+L\+I\+N\+A\+T\+I\+ON~-\/8.\+58}\hypertarget{_weather___balloon_8cpp_ad337b69f79bb731012571f96b472df45}{}\label{_weather___balloon_8cpp_ad337b69f79bb731012571f96b472df45}
+
+
+Definition at line 153 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by print\+Attitude().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!D\+S18\+B20\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{D\+S18\+B20\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}
+\index{D\+S18\+B20\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{D\+S18\+B20\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{D\+S18\+B20\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}{DS18B20\_RESOLUTION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S18\+B20\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON~11}\hypertarget{_weather___balloon_8cpp_a2042d0bb2f483912475a0570f65887e9}{}\label{_weather___balloon_8cpp_a2042d0bb2f483912475a0570f65887e9}
+
+
+Definition at line 140 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+ds18b20().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+E\+I\+G\+E\+R\+\_\+\+P\+W\+R\+\_\+\+P\+IN@{G\+E\+I\+G\+E\+R\+\_\+\+P\+W\+R\+\_\+\+P\+IN}}
+\index{G\+E\+I\+G\+E\+R\+\_\+\+P\+W\+R\+\_\+\+P\+IN@{G\+E\+I\+G\+E\+R\+\_\+\+P\+W\+R\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+E\+I\+G\+E\+R\+\_\+\+P\+W\+R\+\_\+\+P\+IN}{GEIGER\_PWR\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+E\+I\+G\+E\+R\+\_\+\+P\+W\+R\+\_\+\+P\+IN~39}\hypertarget{_weather___balloon_8cpp_a62875728932bfc6752ba857df3fdb182}{}\label{_weather___balloon_8cpp_a62875728932bfc6752ba857df3fdb182}
+
+
+Definition at line 115 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by geiger\+\_\+power(), and power\+\_\+sensors().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+A\+CK@{G\+P\+S\+\_\+\+A\+CK}}
+\index{G\+P\+S\+\_\+\+A\+CK@{G\+P\+S\+\_\+\+A\+CK}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+A\+CK}{GPS\_ACK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+A\+CK~0x83}\hypertarget{_weather___balloon_8cpp_adbe0ec6abc2a7aad14739af2084e7261}{}\label{_weather___balloon_8cpp_adbe0ec6abc2a7aad14739af2084e7261}
+
+
+Definition at line 505 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+M\+EA@{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+M\+EA}}
+\index{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+M\+EA@{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+M\+EA}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+M\+EA}{GPS\_CONFIG\_NMEA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+M\+EA~0x08}\hypertarget{_weather___balloon_8cpp_a450249148bd85e8396ad71ce44a0e11a}{}\label{_weather___balloon_8cpp_a450249148bd85e8396ad71ce44a0e11a}
+
+
+Definition at line 500 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+E\+A().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+O\+UT@{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+O\+UT}}
+\index{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+O\+UT@{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+O\+UT}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+O\+UT}{GPS\_CONFIG\_OUT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+O\+UT~0x09}\hypertarget{_weather___balloon_8cpp_ae52863898b89c9232c92c1b6e1d76c2b}{}\label{_weather___balloon_8cpp_ae52863898b89c9232c92c1b6e1d76c2b}
+
+
+Definition at line 501 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+WR@{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+WR}}
+\index{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+WR@{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+WR}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+WR}{GPS\_CONFIG\_PWR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+P\+WR~0x12}\hypertarget{_weather___balloon_8cpp_ac6adf6372ba4fc55bb81e6a1b62e59d8}{}\label{_weather___balloon_8cpp_ac6adf6372ba4fc55bb81e6a1b62e59d8}
+
+
+Definition at line 502 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+A\+AS@{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+A\+AS}}
+\index{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+A\+AS@{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+A\+AS}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+A\+AS}{GPS\_CONFIG\_WAAS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+A\+AS~0x37}\hypertarget{_weather___balloon_8cpp_a335669658677baf0a51458e3055f97b0}{}\label{_weather___balloon_8cpp_a335669658677baf0a51458e3055f97b0}
+
+
+Definition at line 503 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+A\+S().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+E\+N\+D\+\_\+1@{G\+P\+S\+\_\+\+E\+N\+D\+\_\+1}}
+\index{G\+P\+S\+\_\+\+E\+N\+D\+\_\+1@{G\+P\+S\+\_\+\+E\+N\+D\+\_\+1}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+E\+N\+D\+\_\+1}{GPS\_END\_1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+E\+N\+D\+\_\+1~0x0D}\hypertarget{_weather___balloon_8cpp_af33afafa7f1cda9d36801855fda7def3}{}\label{_weather___balloon_8cpp_af33afafa7f1cda9d36801855fda7def3}
+
+
+Definition at line 495 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+E\+A(), and configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+A\+S().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+E\+N\+D\+\_\+2@{G\+P\+S\+\_\+\+E\+N\+D\+\_\+2}}
+\index{G\+P\+S\+\_\+\+E\+N\+D\+\_\+2@{G\+P\+S\+\_\+\+E\+N\+D\+\_\+2}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+E\+N\+D\+\_\+2}{GPS\_END\_2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+E\+N\+D\+\_\+2~0x0A}\hypertarget{_weather___balloon_8cpp_adc8803fa8bafb4b8793b13f3325aee70}{}\label{_weather___balloon_8cpp_adc8803fa8bafb4b8793b13f3325aee70}
+
+
+Definition at line 496 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+E\+A(), and configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+A\+S().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{G\+P\+S\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}}
+\index{G\+P\+S\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{G\+P\+S\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}{GPS\_HEATER\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN~44}\hypertarget{_weather___balloon_8cpp_afa22ab511c2e1ff0c2b6d670fb54b907}{}\label{_weather___balloon_8cpp_afa22ab511c2e1ff0c2b6d670fb54b907}
+
+
+Definition at line 109 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and power\+\_\+sensors().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+N\+A\+CK@{G\+P\+S\+\_\+\+N\+A\+CK}}
+\index{G\+P\+S\+\_\+\+N\+A\+CK@{G\+P\+S\+\_\+\+N\+A\+CK}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+N\+A\+CK}{GPS\_NACK}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+N\+A\+CK~0x84}\hypertarget{_weather___balloon_8cpp_a3b24d3a4f5c25565a114df73a9c203cc}{}\label{_weather___balloon_8cpp_a3b24d3a4f5c25565a114df73a9c203cc}
+
+
+Definition at line 506 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON@{G\+P\+S\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}}
+\index{G\+P\+S\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON@{G\+P\+S\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON}{GPS\_PRECISION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+P\+R\+E\+C\+I\+S\+I\+ON~2.\+5}\hypertarget{_weather___balloon_8cpp_af01c2d0b190db0e453c4dabc1fcd2a04}{}\label{_weather___balloon_8cpp_af01c2d0b190db0e453c4dabc1fcd2a04}
+
+
+Definition at line 509 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+R\+E\+S\+T\+A\+RT@{G\+P\+S\+\_\+\+R\+E\+S\+T\+A\+RT}}
+\index{G\+P\+S\+\_\+\+R\+E\+S\+T\+A\+RT@{G\+P\+S\+\_\+\+R\+E\+S\+T\+A\+RT}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+R\+E\+S\+T\+A\+RT}{GPS\_RESTART}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+R\+E\+S\+T\+A\+RT~0x01}\hypertarget{_weather___balloon_8cpp_a9ec60d321bbe0674b50ee8528c1c8b8a}{}\label{_weather___balloon_8cpp_a9ec60d321bbe0674b50ee8528c1c8b8a}
+
+
+Definition at line 499 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+1@{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+1}}
+\index{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+1@{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+1}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+1}{GPS\_SBYTE\_1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+1~0x\+A0}\hypertarget{_weather___balloon_8cpp_ae54089afd7925e1d4d4599a9925ba7d4}{}\label{_weather___balloon_8cpp_ae54089afd7925e1d4d4599a9925ba7d4}
+
+
+Definition at line 493 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+E\+A(), and configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+A\+S().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+2@{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+2}}
+\index{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+2@{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+2}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+2}{GPS\_SBYTE\_2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+2~0x\+A1}\hypertarget{_weather___balloon_8cpp_a41c61b54b6c4e8df2ab8540312ea578f}{}\label{_weather___balloon_8cpp_a41c61b54b6c4e8df2ab8540312ea578f}
+
+
+Definition at line 494 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+E\+A(), and configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+A\+S().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+R\+E\+E\+N\+\_\+\+L\+ED@{G\+R\+E\+E\+N\+\_\+\+L\+ED}}
+\index{G\+R\+E\+E\+N\+\_\+\+L\+ED@{G\+R\+E\+E\+N\+\_\+\+L\+ED}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+R\+E\+E\+N\+\_\+\+L\+ED}{GREEN\_LED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define G\+R\+E\+E\+N\+\_\+\+L\+ED~22}\hypertarget{_weather___balloon_8cpp_a01649d652fa50957c6ef3c32b1238038}{}\label{_weather___balloon_8cpp_a01649d652fa50957c6ef3c32b1238038}
+
+
+Definition at line 92 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+sdcard(), count\+\_\+down\+\_\+led(), and led\+\_\+power().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!L\+S\+M9\+D\+S1\+\_\+\+AG@{L\+S\+M9\+D\+S1\+\_\+\+AG}}
+\index{L\+S\+M9\+D\+S1\+\_\+\+AG@{L\+S\+M9\+D\+S1\+\_\+\+AG}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{L\+S\+M9\+D\+S1\+\_\+\+AG}{LSM9DS1\_AG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+S\+M9\+D\+S1\+\_\+\+AG~0x6B}\hypertarget{_weather___balloon_8cpp_a733d92c87c7253b93ad4bf6a6ed54952}{}\label{_weather___balloon_8cpp_a733d92c87c7253b93ad4bf6a6ed54952}
+
+
+Definition at line 147 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+L\+S\+M9\+D\+S1().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!L\+S\+M9\+D\+S1\+\_\+M@{L\+S\+M9\+D\+S1\+\_\+M}}
+\index{L\+S\+M9\+D\+S1\+\_\+M@{L\+S\+M9\+D\+S1\+\_\+M}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{L\+S\+M9\+D\+S1\+\_\+M}{LSM9DS1\_M}}]{\setlength{\rightskip}{0pt plus 5cm}\#define L\+S\+M9\+D\+S1\+\_\+M~0x1E}\hypertarget{_weather___balloon_8cpp_a9bb94ac54f97758f53ae168206e48061}{}\label{_weather___balloon_8cpp_a9bb94ac54f97758f53ae168206e48061}
+
+
+Definition at line 146 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+L\+S\+M9\+D\+S1().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!M\+A\+I\+N\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{M\+A\+I\+N\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}}
+\index{M\+A\+I\+N\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{M\+A\+I\+N\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{M\+A\+I\+N\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}{MAIN\_HEATER\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+I\+N\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN~45}\hypertarget{_weather___balloon_8cpp_adc5a223dccf8bbdeb83b1e98c1a5e068}{}\label{_weather___balloon_8cpp_adc5a223dccf8bbdeb83b1e98c1a5e068}
+
+
+Definition at line 108 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and power\+\_\+sensors().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+B\+US@{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+B\+US}}
+\index{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+B\+US@{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+B\+US}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+B\+US}{ONE\_WIRE\_BUS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+B\+US~4}\hypertarget{_weather___balloon_8cpp_a4260ed8874da804fb9ef9abba200b487}{}\label{_weather___balloon_8cpp_a4260ed8874da804fb9ef9abba200b487}
+
+
+Definition at line 81 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!P\+I\+E\+Z\+O\+\_\+\+P\+IN@{P\+I\+E\+Z\+O\+\_\+\+P\+IN}}
+\index{P\+I\+E\+Z\+O\+\_\+\+P\+IN@{P\+I\+E\+Z\+O\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{P\+I\+E\+Z\+O\+\_\+\+P\+IN}{PIEZO\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+E\+Z\+O\+\_\+\+P\+IN~A2}\hypertarget{_weather___balloon_8cpp_a9c5a2d5d726c32c4b09f1d2de0355a7d}{}\label{_weather___balloon_8cpp_a9c5a2d5d726c32c4b09f1d2de0355a7d}
+
+
+Definition at line 90 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+alarms(), location\+\_\+alarm(), loop(), and setup().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!P\+R\+I\+N\+T\+\_\+\+R\+AW@{P\+R\+I\+N\+T\+\_\+\+R\+AW}}
+\index{P\+R\+I\+N\+T\+\_\+\+R\+AW@{P\+R\+I\+N\+T\+\_\+\+R\+AW}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{P\+R\+I\+N\+T\+\_\+\+R\+AW}{PRINT\_RAW}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+R\+I\+N\+T\+\_\+\+R\+AW}\hypertarget{_weather___balloon_8cpp_aacfac138026d1b146c60efb2f40aa5fe}{}\label{_weather___balloon_8cpp_aacfac138026d1b146c60efb2f40aa5fe}
+
+
+Definition at line 156 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!R\+E\+D\+\_\+\+L\+ED@{R\+E\+D\+\_\+\+L\+ED}}
+\index{R\+E\+D\+\_\+\+L\+ED@{R\+E\+D\+\_\+\+L\+ED}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{R\+E\+D\+\_\+\+L\+ED}{RED\_LED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+D\+\_\+\+L\+ED~24}\hypertarget{_weather___balloon_8cpp_a073dbcb7f5bc4f4b45dc048b55eaff3d}{}\label{_weather___balloon_8cpp_a073dbcb7f5bc4f4b45dc048b55eaff3d}
+
+
+Definition at line 94 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+sdcard(), count\+\_\+down\+\_\+led(), and led\+\_\+power().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+ME@{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+ME}}
+\index{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+ME@{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+ME}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+ME}{SAMPLE\_TIME}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+ME~1000}\hypertarget{_weather___balloon_8cpp_a6f6f49388c74bb24a8f63771bd997d97}{}\label{_weather___balloon_8cpp_a6f6f49388c74bb24a8f63771bd997d97}
+
+
+Definition at line 124 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by configure\+\_\+\+P\+I\+D().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}}
+\index{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}{SHT31\_HEATER\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN~5}\hypertarget{_weather___balloon_8cpp_a126d5b2f190e7e95a7b8877c920a2258}{}\label{_weather___balloon_8cpp_a126d5b2f190e7e95a7b8877c920a2258}
+
+
+Definition at line 113 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and power\+\_\+sensors().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!T\+S\+L2561\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{T\+S\+L2561\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}}
+\index{T\+S\+L2561\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{T\+S\+L2561\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+S\+L2561\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}{TSL2561\_HEATER\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+S\+L2561\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN~46}\hypertarget{_weather___balloon_8cpp_a9bd50323652c3e5de42af2a1d65e7930}{}\label{_weather___balloon_8cpp_a9bd50323652c3e5de42af2a1d65e7930}
+
+
+Definition at line 111 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and power\+\_\+sensors().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!U\+V\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{U\+V\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}}
+\index{U\+V\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN@{U\+V\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{U\+V\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN}{UV\_HEATER\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+V\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN~11}\hypertarget{_weather___balloon_8cpp_a86a504b275408486d19f32e6923e6c10}{}\label{_weather___balloon_8cpp_a86a504b275408486d19f32e6923e6c10}
+
+
+Definition at line 110 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and power\+\_\+sensors().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!U\+V\+\_\+\+P\+IN@{U\+V\+\_\+\+P\+IN}}
+\index{U\+V\+\_\+\+P\+IN@{U\+V\+\_\+\+P\+IN}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{U\+V\+\_\+\+P\+IN}{UV\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+V\+\_\+\+P\+IN~A0}\hypertarget{_weather___balloon_8cpp_aae0736ba082f8ff448826f4b1bad56c0}{}\label{_weather___balloon_8cpp_aae0736ba082f8ff448826f4b1bad56c0}
+
+
+Definition at line 84 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by read\+Sensors(), and setup().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED@{Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED}}
+\index{Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED@{Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED}{YELLOW\_LED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED~23}\hypertarget{_weather___balloon_8cpp_aaa9a0918932bceef70e8eb4dbb988fbe}{}\label{_weather___balloon_8cpp_aaa9a0918932bceef70e8eb4dbb988fbe}
+
+
+Definition at line 93 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by count\+\_\+down\+\_\+led(), led\+\_\+power(), and read\+\_\+\+G\+P\+S().
+
+
+
+\subsection{Function Documentation}
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!adjust\+\_\+heaters@{adjust\+\_\+heaters}}
+\index{adjust\+\_\+heaters@{adjust\+\_\+heaters}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{adjust\+\_\+heaters()}{adjust\_heaters()}}]{\setlength{\rightskip}{0pt plus 5cm}void adjust\+\_\+heaters (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a337f8319327997530d76011aac7bfa15}{}\label{_weather___balloon_8cpp_a337f8319327997530d76011aac7bfa15}
+
+
+Definition at line 1846 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!Atmosphere@{Atmosphere}}
+\index{Atmosphere@{Atmosphere}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{Atmosphere(const double alt, double \&sigma, double \&delta, double \&theta)    }{Atmosphere(const double alt, double \&sigma, double \&delta, double \&theta)    }}]{\setlength{\rightskip}{0pt plus 5cm}void Atmosphere (
+\begin{DoxyParamCaption}
+\item[{const double}]{alt, }
+\item[{double \&}]{sigma, }
+\item[{double \&}]{delta, }
+\item[{double \&}]{theta}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a15ac45cd15b43e174eeb8f4272f0c875}{}\label{_weather___balloon_8cpp_a15ac45cd15b43e174eeb8f4272f0c875}
+
+
+Definition at line 3163 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References i.
+
+
+
+Referenced by set\+\_\+alt\+\_\+threshold().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a15ac45cd15b43e174eeb8f4272f0c875_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!beep\+\_\+piezo@{beep\+\_\+piezo}}
+\index{beep\+\_\+piezo@{beep\+\_\+piezo}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{beep\+\_\+piezo(unsigned long, unsigned long, unsigned int)}{beep\_piezo(unsigned long, unsigned long, unsigned int)}}]{\setlength{\rightskip}{0pt plus 5cm}void beep\+\_\+piezo (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{freq, }
+\item[{unsigned long}]{millisecs, }
+\item[{unsigned int}]{pin}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a538a7506e344ec9bf046564b160e9e7f}{}\label{_weather___balloon_8cpp_a538a7506e344ec9bf046564b160e9e7f}
+
+
+Definition at line 1432 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References i.
+
+
+
+Referenced by check\+\_\+alarms(), location\+\_\+alarm(), loop(), and setup().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a538a7506e344ec9bf046564b160e9e7f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!check\+\_\+alarms@{check\+\_\+alarms}}
+\index{check\+\_\+alarms@{check\+\_\+alarms}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{check\+\_\+alarms()}{check\_alarms()}}]{\setlength{\rightskip}{0pt plus 5cm}void check\+\_\+alarms (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a3f16b26bef419adf4e427a66af7fad37}{}\label{_weather___balloon_8cpp_a3f16b26bef419adf4e427a66af7fad37}
+
+
+Definition at line 3103 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References beep\+\_\+piezo(), configuration, flash\+\_\+landing(), led\+\_\+power(), location\+\_\+alarm(), P\+I\+E\+Z\+O\+\_\+\+P\+IN, piezo\+\_\+power(), power\+\_\+sensors(), watchdog, and watchdog\+\_\+sleep().
+
+
+
+Referenced by loop().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{_weather___balloon_8cpp_a3f16b26bef419adf4e427a66af7fad37_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{_weather___balloon_8cpp_a3f16b26bef419adf4e427a66af7fad37_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!check\+\_\+battery@{check\+\_\+battery}}
+\index{check\+\_\+battery@{check\+\_\+battery}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{check\+\_\+battery()}{check\_battery()}}]{\setlength{\rightskip}{0pt plus 5cm}void check\+\_\+battery (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ad3d8902d8758d33ba2a536403243f47c}{}\label{_weather___balloon_8cpp_ad3d8902d8758d33ba2a536403243f47c}
+
+
+Definition at line 1852 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References data\+\_\+struct\+::battery, Heat\+\_\+\+Enable, and watchdog.
+
+
+
+Referenced by loop().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{_weather___balloon_8cpp_ad3d8902d8758d33ba2a536403243f47c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!check\+\_\+decent@{check\+\_\+decent}}
+\index{check\+\_\+decent@{check\+\_\+decent}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{check\+\_\+decent()}{check\_decent()}}]{\setlength{\rightskip}{0pt plus 5cm}void check\+\_\+decent (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a3151528daf13a7c96e797c4ab9e5e08a}{}\label{_weather___balloon_8cpp_a3151528daf13a7c96e797c4ab9e5e08a}
+
+
+Definition at line 3043 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References altitude\+\_\+hist, altitude\+\_\+hist\+\_\+head, altitude\+\_\+hist\+\_\+tail, configuration, pressure\+\_\+hist, pressure\+\_\+hist\+\_\+head, and pressure\+\_\+hist\+\_\+tail.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!check\+\_\+landing@{check\+\_\+landing}}
+\index{check\+\_\+landing@{check\+\_\+landing}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{check\+\_\+landing()}{check\_landing()}}]{\setlength{\rightskip}{0pt plus 5cm}void check\+\_\+landing (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a15e6d9ae56a77e3b476ba9804077a809}{}\label{_weather___balloon_8cpp_a15e6d9ae56a77e3b476ba9804077a809}
+
+
+Definition at line 3063 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References altitude\+\_\+hist, configuration, i, pressure\+\_\+hist, and watchdog.
+
+
+
+Referenced by loop().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_weather___balloon_8cpp_a15e6d9ae56a77e3b476ba9804077a809_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!check\+\_\+launch@{check\+\_\+launch}}
+\index{check\+\_\+launch@{check\+\_\+launch}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{check\+\_\+launch()}{check\_launch()}}]{\setlength{\rightskip}{0pt plus 5cm}void check\+\_\+launch (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ad470b7ae913b35bcd1e424b925a0277b}{}\label{_weather___balloon_8cpp_ad470b7ae913b35bcd1e424b925a0277b}
+
+
+Definition at line 3000 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References altitude\+\_\+hist, configuration, i, pressure\+\_\+hist, and watchdog.
+
+
+
+Referenced by loop().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{_weather___balloon_8cpp_ad470b7ae913b35bcd1e424b925a0277b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!compare\+\_\+buffers@{compare\+\_\+buffers}}
+\index{compare\+\_\+buffers@{compare\+\_\+buffers}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{compare\+\_\+buffers(uint8\+\_\+t $\ast$first, uint8\+\_\+t $\ast$second, uint16\+\_\+t bytes)}{compare\_buffers(uint8\_t *first, uint8\_t *second, uint16\_t bytes)}}]{\setlength{\rightskip}{0pt plus 5cm}bool compare\+\_\+buffers (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{first, }
+\item[{uint8\+\_\+t $\ast$}]{second, }
+\item[{uint16\+\_\+t}]{bytes}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_af4255510c1c5b3a92802bd817bb379c6}{}\label{_weather___balloon_8cpp_af4255510c1c5b3a92802bd817bb379c6}
+
+
+Definition at line 748 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References configuration, and i.
+
+
+
+Referenced by configure\+\_\+ds18b20().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_af4255510c1c5b3a92802bd817bb379c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+button@{configure\+\_\+button}}
+\index{configure\+\_\+button@{configure\+\_\+button}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+button()}{configure\_button()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+button (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a7a7c74cf298c3aefb3d55c6e9b926321}{}\label{_weather___balloon_8cpp_a7a7c74cf298c3aefb3d55c6e9b926321}
+
+
+Definition at line 688 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by setup().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{_weather___balloon_8cpp_a7a7c74cf298c3aefb3d55c6e9b926321_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+ds18b20@{configure\+\_\+ds18b20}}
+\index{configure\+\_\+ds18b20@{configure\+\_\+ds18b20}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+ds18b20()}{configure\_ds18b20()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+ds18b20 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a0493b2a2e791c613e271755e39c7ff02}{}\label{_weather___balloon_8cpp_a0493b2a2e791c613e271755e39c7ff02}
+
+
+Definition at line 770 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References compare\+\_\+buffers(), configuration, D\+S18\+B20\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON, data\+\_\+struct\+::enabled, data\+\_\+struct\+::found, i, and temp\+\_\+sensors.
+
+
+
+Referenced by setup().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=294pt]{_weather___balloon_8cpp_a0493b2a2e791c613e271755e39c7ff02_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=246pt]{_weather___balloon_8cpp_a0493b2a2e791c613e271755e39c7ff02_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+geiger@{configure\+\_\+geiger}}
+\index{configure\+\_\+geiger@{configure\+\_\+geiger}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+geiger()}{configure\_geiger()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+geiger (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ad38c713e780279c311e2e78a03b4f5bf}{}\label{_weather___balloon_8cpp_ad38c713e780279c311e2e78a03b4f5bf}
+
+
+Definition at line 708 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by setup().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=240pt]{_weather___balloon_8cpp_ad38c713e780279c311e2e78a03b4f5bf_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+EA@{configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+EA}}
+\index{configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+EA@{configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+EA}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+E\+A()}{configure\_GPS\_NMEA()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+EA (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a807f93d1e791a191cfeceae0e12e02ed}{}\label{_weather___balloon_8cpp_a807f93d1e791a191cfeceae0e12e02ed}
+
+
+Definition at line 1772 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+N\+M\+EA, G\+P\+S\+\_\+\+C\+R\+C(), G\+P\+S\+\_\+\+E\+N\+D\+\_\+1, G\+P\+S\+\_\+\+E\+N\+D\+\_\+2, G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+1, G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+2, and i.
+
+
+
+Referenced by setup().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=281pt]{_weather___balloon_8cpp_a807f93d1e791a191cfeceae0e12e02ed_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=262pt]{_weather___balloon_8cpp_a807f93d1e791a191cfeceae0e12e02ed_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+AS@{configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+AS}}
+\index{configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+AS@{configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+AS}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+A\+S()}{configure\_GPS\_WAAS()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+AS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_aebe7b86629932aff68df05ed2eb74682}{}\label{_weather___balloon_8cpp_aebe7b86629932aff68df05ed2eb74682}
+
+
+Definition at line 1822 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References G\+P\+S\+\_\+\+C\+O\+N\+F\+I\+G\+\_\+\+W\+A\+AS, G\+P\+S\+\_\+\+C\+R\+C(), G\+P\+S\+\_\+\+E\+N\+D\+\_\+1, G\+P\+S\+\_\+\+E\+N\+D\+\_\+2, G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+1, and G\+P\+S\+\_\+\+S\+B\+Y\+T\+E\+\_\+2.
+
+
+
+Referenced by setup().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=280pt]{_weather___balloon_8cpp_aebe7b86629932aff68df05ed2eb74682_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{_weather___balloon_8cpp_aebe7b86629932aff68df05ed2eb74682_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+\+L\+S\+M9\+D\+S1@{configure\+\_\+\+L\+S\+M9\+D\+S1}}
+\index{configure\+\_\+\+L\+S\+M9\+D\+S1@{configure\+\_\+\+L\+S\+M9\+D\+S1}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+\+L\+S\+M9\+D\+S1()}{configure\_LSM9DS1()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+\+L\+S\+M9\+D\+S1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a2c2e98945e78daa792b87b30868c3907}{}\label{_weather___balloon_8cpp_a2c2e98945e78daa792b87b30868c3907}
+
+
+Definition at line 884 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References device\+Settings\+::ag\+Address, L\+S\+M9\+D\+S1\+::begin(), L\+S\+M9\+D\+S1\+::calibrate(), L\+S\+M9\+D\+S1\+::calibrate\+Mag(), device\+Settings\+::comm\+Interface, I\+M\+U\+Settings\+::device, data\+\_\+struct\+::enabled, data\+\_\+struct\+::found, I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+I2C, L\+S\+M9\+D\+S1\+\_\+\+AG, L\+S\+M9\+D\+S1\+\_\+M, device\+Settings\+::m\+Address, and L\+S\+M9\+D\+S1\+::settings.
+
+
+
+Referenced by setup().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a2c2e98945e78daa792b87b30868c3907_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=252pt]{_weather___balloon_8cpp_a2c2e98945e78daa792b87b30868c3907_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+ms5607@{configure\+\_\+ms5607}}
+\index{configure\+\_\+ms5607@{configure\+\_\+ms5607}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+ms5607()}{configure\_ms5607()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+ms5607 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a94cd393dc19bb016dfea24631d4a3615}{}\label{_weather___balloon_8cpp_a94cd393dc19bb016dfea24631d4a3615}
+
+
+Definition at line 868 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References data\+\_\+struct\+::enabled, and data\+\_\+struct\+::found.
+
+
+
+Referenced by setup().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=244pt]{_weather___balloon_8cpp_a94cd393dc19bb016dfea24631d4a3615_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+\+P\+ID@{configure\+\_\+\+P\+ID}}
+\index{configure\+\_\+\+P\+ID@{configure\+\_\+\+P\+ID}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+\+P\+I\+D()}{configure\_PID()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+\+P\+ID (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a24d559ff8c4c36c0c5b27749ec0f1db7}{}\label{_weather___balloon_8cpp_a24d559ff8c4c36c0c5b27749ec0f1db7}
+
+
+Definition at line 981 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References M\+A\+N\+U\+AL, and S\+A\+M\+P\+L\+E\+\_\+\+T\+I\+ME.
+
+
+
+Referenced by setup().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=229pt]{_weather___balloon_8cpp_a24d559ff8c4c36c0c5b27749ec0f1db7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+sdcard@{configure\+\_\+sdcard}}
+\index{configure\+\_\+sdcard@{configure\+\_\+sdcard}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+sdcard()}{configure\_sdcard()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+sdcard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_aec2dcfe4cd6ca84e8df5730d179fdc6f}{}\label{_weather___balloon_8cpp_aec2dcfe4cd6ca84e8df5730d179fdc6f}
+
+
+Definition at line 946 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References sd\+\_\+data\+::blocks, Sd2\+Card\+::card\+Size(), configuration, sd\+\_\+data\+::current\+\_\+block, Sd2\+Card\+::error\+Code(), find\+\_\+sdcard\+\_\+tail(), G\+R\+E\+E\+N\+\_\+\+L\+ED, Sd2\+Card\+::init(), R\+E\+D\+\_\+\+L\+ED, and S\+P\+I\+\_\+\+H\+A\+L\+F\+\_\+\+S\+P\+E\+ED.
+
+
+
+Referenced by setup().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_aec2dcfe4cd6ca84e8df5730d179fdc6f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{_weather___balloon_8cpp_aec2dcfe4cd6ca84e8df5730d179fdc6f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+sht31@{configure\+\_\+sht31}}
+\index{configure\+\_\+sht31@{configure\+\_\+sht31}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+sht31()}{configure\_sht31()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+sht31 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_abb8700028b489f20622252823d383f2d}{}\label{_weather___balloon_8cpp_abb8700028b489f20622252823d383f2d}
+
+
+Definition at line 909 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References Adafruit\+\_\+\+S\+H\+T31\+::begin(), data\+\_\+struct\+::enabled, and data\+\_\+struct\+::found.
+
+
+
+Referenced by setup().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_abb8700028b489f20622252823d383f2d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=235pt]{_weather___balloon_8cpp_abb8700028b489f20622252823d383f2d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+\+T\+S\+L2561@{configure\+\_\+\+T\+S\+L2561}}
+\index{configure\+\_\+\+T\+S\+L2561@{configure\+\_\+\+T\+S\+L2561}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+\+T\+S\+L2561(void)}{configure\_TSL2561(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+\+T\+S\+L2561 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a3f8e34eb2b9d824174dced9eefeecf90}{}\label{_weather___balloon_8cpp_a3f8e34eb2b9d824174dced9eefeecf90}
+
+
+Definition at line 556 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::begin(), Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::enable\+Auto\+Range(), data\+\_\+struct\+::enabled, data\+\_\+struct\+::found, Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::set\+Integration\+Time(), and T\+S\+L2561\+\_\+\+I\+N\+T\+E\+G\+R\+A\+T\+I\+O\+N\+T\+I\+M\+E\+\_\+101\+MS.
+
+
+
+Referenced by setup().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a3f8e34eb2b9d824174dced9eefeecf90_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=247pt]{_weather___balloon_8cpp_a3f8e34eb2b9d824174dced9eefeecf90_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configure\+\_\+write@{configure\+\_\+write}}
+\index{configure\+\_\+write@{configure\+\_\+write}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configure\+\_\+write()}{configure\_write()}}]{\setlength{\rightskip}{0pt plus 5cm}void configure\+\_\+write (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a4a9cf795fe57230a3204ad8a66f4144d}{}\label{_weather___balloon_8cpp_a4a9cf795fe57230a3204ad8a66f4144d}
+
+
+Definition at line 3099 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!count\+\_\+down\+\_\+led@{count\+\_\+down\+\_\+led}}
+\index{count\+\_\+down\+\_\+led@{count\+\_\+down\+\_\+led}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{count\+\_\+down\+\_\+led()}{count\_down\_led()}}]{\setlength{\rightskip}{0pt plus 5cm}void count\+\_\+down\+\_\+led (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a381ac8dbd73c0461a2bc7169fbc63e61}{}\label{_weather___balloon_8cpp_a381ac8dbd73c0461a2bc7169fbc63e61}
+
+
+Definition at line 1252 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References G\+R\+E\+E\+N\+\_\+\+L\+ED, led\+\_\+power(), R\+E\+D\+\_\+\+L\+ED, and Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED.
+
+
+
+Referenced by setup().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{_weather___balloon_8cpp_a381ac8dbd73c0461a2bc7169fbc63e61_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{_weather___balloon_8cpp_a381ac8dbd73c0461a2bc7169fbc63e61_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!countof@{countof}}
+\index{countof@{countof}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{countof(\+T(\&array)[N])}{countof(T(\&array)[N])}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T , size\+\_\+t N$>$ size\+\_\+t countof (
+\begin{DoxyParamCaption}
+\item[{T(\&)}]{array\mbox{[}\+N\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_abe49854f4db78d08b8cab487faefddef}{}\label{_weather___balloon_8cpp_abe49854f4db78d08b8cab487faefddef}
+
+
+Definition at line 528 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!disable\+\_\+peripherals@{disable\+\_\+peripherals}}
+\index{disable\+\_\+peripherals@{disable\+\_\+peripherals}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{disable\+\_\+peripherals()}{disable\_peripherals()}}]{\setlength{\rightskip}{0pt plus 5cm}void disable\+\_\+peripherals (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a822a13dcab2c88f65ce6db0a3039596d}{}\label{_weather___balloon_8cpp_a822a13dcab2c88f65ce6db0a3039596d}
+
+
+Definition at line 1206 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by location\+\_\+alarm().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a822a13dcab2c88f65ce6db0a3039596d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!dof\+\_\+power@{dof\+\_\+power}}
+\index{dof\+\_\+power@{dof\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{dof\+\_\+power(bool power)}{dof\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void dof\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a4e9c8d405702380dcc2cb85707283b71}{}\label{_weather___balloon_8cpp_a4e9c8d405702380dcc2cb85707283b71}
+
+
+Definition at line 1098 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by power\+\_\+sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a4e9c8d405702380dcc2cb85707283b71_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!ds18b20\+\_\+power@{ds18b20\+\_\+power}}
+\index{ds18b20\+\_\+power@{ds18b20\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{ds18b20\+\_\+power(bool power)}{ds18b20\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void ds18b20\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_af2d24e60ddd98c1e2d7ebb921f6d7f46}{}\label{_weather___balloon_8cpp_af2d24e60ddd98c1e2d7ebb921f6d7f46}
+
+
+Definition at line 1086 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by power\+\_\+sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_af2d24e60ddd98c1e2d7ebb921f6d7f46_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!E\+E\+P\+R\+O\+M\+\_\+read@{E\+E\+P\+R\+O\+M\+\_\+read}}
+\index{E\+E\+P\+R\+O\+M\+\_\+read@{E\+E\+P\+R\+O\+M\+\_\+read}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{E\+E\+P\+R\+O\+M\+\_\+read(uint16\+\_\+t ui\+Address)}{EEPROM\_read(uint16\_t uiAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t E\+E\+P\+R\+O\+M\+\_\+read (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{ui\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a507cc28668dfd87892b99466e32b4b0b}{}\label{_weather___balloon_8cpp_a507cc28668dfd87892b99466e32b4b0b}
+
+
+Definition at line 2233 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by E\+E\+P\+R\+O\+M\+\_\+update().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{_weather___balloon_8cpp_a507cc28668dfd87892b99466e32b4b0b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!E\+E\+P\+R\+O\+M\+\_\+update@{E\+E\+P\+R\+O\+M\+\_\+update}}
+\index{E\+E\+P\+R\+O\+M\+\_\+update@{E\+E\+P\+R\+O\+M\+\_\+update}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{E\+E\+P\+R\+O\+M\+\_\+update(uint16\+\_\+t ui\+Address, uint8\+\_\+t uc\+Data)}{EEPROM\_update(uint16\_t uiAddress, uint8\_t ucData)}}]{\setlength{\rightskip}{0pt plus 5cm}void E\+E\+P\+R\+O\+M\+\_\+update (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{ui\+Address, }
+\item[{uint8\+\_\+t}]{uc\+Data}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a36234eb6bc49c0c10ed75b5fddadc4da}{}\label{_weather___balloon_8cpp_a36234eb6bc49c0c10ed75b5fddadc4da}
+
+
+Definition at line 2247 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References E\+E\+P\+R\+O\+M\+\_\+read().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=278pt]{_weather___balloon_8cpp_a36234eb6bc49c0c10ed75b5fddadc4da_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!enter\+\_\+sleep@{enter\+\_\+sleep}}
+\index{enter\+\_\+sleep@{enter\+\_\+sleep}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{enter\+\_\+sleep(void)}{enter\_sleep(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void enter\+\_\+sleep (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a38dae68379e12eee7b465eac207d9e27}{}\label{_weather___balloon_8cpp_a38dae68379e12eee7b465eac207d9e27}
+
+
+Definition at line 1219 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by location\+\_\+alarm().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a38dae68379e12eee7b465eac207d9e27_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!find\+\_\+sdcard\+\_\+tail@{find\+\_\+sdcard\+\_\+tail}}
+\index{find\+\_\+sdcard\+\_\+tail@{find\+\_\+sdcard\+\_\+tail}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{find\+\_\+sdcard\+\_\+tail(const uint32\+\_\+t, const uint32\+\_\+t)}{find\_sdcard\_tail(const uint32\_t, const uint32\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t find\+\_\+sdcard\+\_\+tail (
+\begin{DoxyParamCaption}
+\item[{const uint32\+\_\+t}]{first = {\ttfamily 1}, }
+\item[{const uint32\+\_\+t}]{last = {\ttfamily sdcard\+\_\+data.blocks}}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a276e156004c668500daa7aaa9a770585}{}\label{_weather___balloon_8cpp_a276e156004c668500daa7aaa9a770585}
+
+
+Definition at line 2278 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References sd\+\_\+data\+::buffer, configuration, sd\+\_\+data\+::current\+\_\+block, data\+Log, i, and Sd2\+Card\+::read\+Data().
+
+
+
+Referenced by configure\+\_\+sdcard().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a276e156004c668500daa7aaa9a770585_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a276e156004c668500daa7aaa9a770585_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!flash\+\_\+landing@{flash\+\_\+landing}}
+\index{flash\+\_\+landing@{flash\+\_\+landing}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{flash\+\_\+landing(uint16\+\_\+t)}{flash\_landing(uint16\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}void flash\+\_\+landing (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_af51f9e3565b0bfa3e28998f39b6a5217}{}\label{_weather___balloon_8cpp_af51f9e3565b0bfa3e28998f39b6a5217}
+
+
+Definition at line 1422 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+alarms(), location\+\_\+alarm(), loop(), and setup().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_af51f9e3565b0bfa3e28998f39b6a5217_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!geiger\+\_\+power@{geiger\+\_\+power}}
+\index{geiger\+\_\+power@{geiger\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{geiger\+\_\+power(bool power)}{geiger\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void geiger\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ae30e39a79eefe72511818815ea7276eb}{}\label{_weather___balloon_8cpp_ae30e39a79eefe72511818815ea7276eb}
+
+
+Definition at line 1052 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References G\+E\+I\+G\+E\+R\+\_\+\+P\+W\+R\+\_\+\+P\+IN.
+
+
+
+Referenced by power\+\_\+sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_ae30e39a79eefe72511818815ea7276eb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!G\+P\+S\+\_\+\+C\+RC@{G\+P\+S\+\_\+\+C\+RC}}
+\index{G\+P\+S\+\_\+\+C\+RC@{G\+P\+S\+\_\+\+C\+RC}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{G\+P\+S\+\_\+\+C\+R\+C(uint8\+\_\+t $\ast$payload, uint16\+\_\+t length)}{GPS\_CRC(uint8\_t *payload, uint16\_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t G\+P\+S\+\_\+\+C\+RC (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{payload, }
+\item[{uint16\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a83c4c9265bfb7ab061bf1313dfad3857}{}\label{_weather___balloon_8cpp_a83c4c9265bfb7ab061bf1313dfad3857}
+
+
+Definition at line 1754 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References i.
+
+
+
+Referenced by configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+E\+A(), and configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+A\+S().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a83c4c9265bfb7ab061bf1313dfad3857_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!gps\+\_\+power@{gps\+\_\+power}}
+\index{gps\+\_\+power@{gps\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{gps\+\_\+power(bool power)}{gps\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void gps\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a4535edf461b17f1e616af9db0447dc01}{}\label{_weather___balloon_8cpp_a4535edf461b17f1e616af9db0447dc01}
+
+
+Definition at line 1074 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by power\+\_\+sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a4535edf461b17f1e616af9db0447dc01_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!heater\+\_\+control@{heater\+\_\+control}}
+\index{heater\+\_\+control@{heater\+\_\+control}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{heater\+\_\+control()}{heater\_control()}}]{\setlength{\rightskip}{0pt plus 5cm}void heater\+\_\+control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_aef763e1e054693bbaf47392b64590d72}{}\label{_weather___balloon_8cpp_aef763e1e054693bbaf47392b64590d72}
+
+
+Definition at line 1872 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References A\+U\+T\+O\+M\+A\+T\+IC, configuration, C\+U\+S\+T\+O\+M\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, custom\+\_\+v\+P\+ID, data\+\_\+struct\+::found, data\+\_\+struct\+::gps, G\+P\+S\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, gps\+\_\+v\+P\+ID, Heat\+\_\+\+Enable, hyster, M\+A\+I\+N\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, main\+\_\+v\+P\+ID, M\+A\+N\+U\+AL, over\+\_\+ambient, data\+\_\+struct\+::sht31, S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, sht\+\_\+v\+P\+ID, data\+\_\+struct\+::temp, temp\+\_\+sensors, T\+S\+L2561\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, tsl\+\_\+v\+P\+ID, data\+\_\+struct\+::uv, U\+V\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, uv\+\_\+v\+P\+ID, and watchdog.
+
+
+
+Referenced by loop().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_weather___balloon_8cpp_aef763e1e054693bbaf47392b64590d72_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!I\+SR@{I\+SR}}
+\index{I\+SR@{I\+SR}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+S\+R(\+P\+C\+I\+N\+T1\+\_\+vect)}{ISR(PCINT1\_vect)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+SR (
+\begin{DoxyParamCaption}
+\item[{P\+C\+I\+N\+T1\+\_\+vect}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_afe6035149a64d5f448fbda08e9d1b67f}{}\label{_weather___balloon_8cpp_afe6035149a64d5f448fbda08e9d1b67f}
+
+
+Definition at line 582 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References geiger.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!I\+SR@{I\+SR}}
+\index{I\+SR@{I\+SR}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+S\+R(\+P\+C\+I\+N\+T2\+\_\+vect)}{ISR(PCINT2\_vect)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+SR (
+\begin{DoxyParamCaption}
+\item[{P\+C\+I\+N\+T2\+\_\+vect}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a9c4665742c6b6eb1f0bb9dde41f7cba3}{}\label{_weather___balloon_8cpp_a9c4665742c6b6eb1f0bb9dde41f7cba3}
+
+
+Definition at line 612 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References geiger.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!I\+SR@{I\+SR}}
+\index{I\+SR@{I\+SR}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+S\+R(\+I\+N\+T4\+\_\+vect)}{ISR(INT4\_vect)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+SR (
+\begin{DoxyParamCaption}
+\item[{I\+N\+T4\+\_\+vect}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a98a290ada01eb27fd2ff4564371566e5}{}\label{_weather___balloon_8cpp_a98a290ada01eb27fd2ff4564371566e5}
+
+
+Definition at line 637 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References reset\+\_\+flag.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!I\+SR@{I\+SR}}
+\index{I\+SR@{I\+SR}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{I\+S\+R(\+W\+D\+T\+\_\+vect)}{ISR(WDT\_vect)}}]{\setlength{\rightskip}{0pt plus 5cm}I\+SR (
+\begin{DoxyParamCaption}
+\item[{W\+D\+T\+\_\+vect}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a43905d6fb5c4d433a49f527fa6ab811f}{}\label{_weather___balloon_8cpp_a43905d6fb5c4d433a49f527fa6ab811f}
+
+
+Definition at line 683 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!led\+\_\+power@{led\+\_\+power}}
+\index{led\+\_\+power@{led\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{led\+\_\+power(bool power)}{led\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void led\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a63f902cc1f2e24f8a484f7ef780dda08}{}\label{_weather___balloon_8cpp_a63f902cc1f2e24f8a484f7ef780dda08}
+
+
+Definition at line 1110 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References G\+R\+E\+E\+N\+\_\+\+L\+ED, R\+E\+D\+\_\+\+L\+ED, and Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED.
+
+
+
+Referenced by check\+\_\+alarms(), count\+\_\+down\+\_\+led(), power\+\_\+sensors(), and setup().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a63f902cc1f2e24f8a484f7ef780dda08_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!location\+\_\+alarm@{location\+\_\+alarm}}
+\index{location\+\_\+alarm@{location\+\_\+alarm}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{location\+\_\+alarm()}{location\_alarm()}}]{\setlength{\rightskip}{0pt plus 5cm}void location\+\_\+alarm (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a6cc16c4213f4098ade81a6c9a7919bf7}{}\label{_weather___balloon_8cpp_a6cc16c4213f4098ade81a6c9a7919bf7}
+
+
+Definition at line 1235 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References beep\+\_\+piezo(), disable\+\_\+peripherals(), enter\+\_\+sleep(), flash\+\_\+landing(), P\+I\+E\+Z\+O\+\_\+\+P\+IN, piezo\+\_\+power(), and watchdog\+\_\+sleep().
+
+
+
+Referenced by check\+\_\+alarms(), and setup().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=292pt]{_weather___balloon_8cpp_a6cc16c4213f4098ade81a6c9a7919bf7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{_weather___balloon_8cpp_a6cc16c4213f4098ade81a6c9a7919bf7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!log\+\_\+data@{log\+\_\+data}}
+\index{log\+\_\+data@{log\+\_\+data}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{log\+\_\+data()}{log\_data()}}]{\setlength{\rightskip}{0pt plus 5cm}void log\+\_\+data (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a66d17868f5a5bcc68dc70243bb439959}{}\label{_weather___balloon_8cpp_a66d17868f5a5bcc68dc70243bb439959}
+
+
+Definition at line 2413 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References sd\+\_\+data\+::blocks, sd\+\_\+data\+::buffer, configuration, sd\+\_\+data\+::crc\+\_\+errors, sd\+\_\+data\+::current\+\_\+block, data\+Log, Sd2\+Card\+::error\+Code(), Sd2\+Card\+::error\+Data(), data\+\_\+struct\+::geiger, geiger, sd\+\_\+data\+::hold\+\_\+buffer, i, sd\+\_\+data\+::num\+\_\+packed, Sd2\+Card\+::read\+Block(), reset\+\_\+sdcard(), sd\+\_\+calc\+\_\+crc(), test\+\_\+logging(), watchdog, sd\+\_\+data\+::write\+\_\+errors, and Sd2\+Card\+::write\+Block().
+
+
+
+Referenced by loop().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a66d17868f5a5bcc68dc70243bb439959_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{_weather___balloon_8cpp_a66d17868f5a5bcc68dc70243bb439959_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!loop@{loop}}
+\index{loop@{loop}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{loop()}{loop()}}]{\setlength{\rightskip}{0pt plus 5cm}void loop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_afe461d27b9c48d5921c00d521181f12f}{}\label{_weather___balloon_8cpp_afe461d27b9c48d5921c00d521181f12f}
+
+
+Definition at line 3330 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References data\+\_\+struct\+::alarm, beep\+\_\+piezo(), check\+\_\+alarms(), check\+\_\+battery(), check\+\_\+landing(), check\+\_\+launch(), configuration, default\+\_\+config, flash\+\_\+landing(), data\+\_\+struct\+::gps, gps\+\_\+v\+P\+ID, heater\+\_\+control(), data\+\_\+struct\+::launched, log\+\_\+data(), main\+\_\+v\+P\+ID, data\+\_\+struct\+::ms5607, pet\+\_\+watchdog(), P\+I\+E\+Z\+O\+\_\+\+P\+IN, print\+\_\+sensors(), data\+\_\+struct\+::pwm, queue\+\_\+altitude(), queue\+\_\+pressure(), read\+\_\+sdcard(), read\+\_\+serial(), read\+Sensors(), reset\+\_\+flag, data\+\_\+struct\+::sht31, sht\+\_\+v\+P\+ID, tsl\+\_\+v\+P\+ID, data\+\_\+struct\+::uv, uv\+\_\+v\+P\+ID, and watchdog.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{_weather___balloon_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!ms5607\+\_\+power@{ms5607\+\_\+power}}
+\index{ms5607\+\_\+power@{ms5607\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{ms5607\+\_\+power(bool power)}{ms5607\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void ms5607\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_aa705df77518e8cb907ba58c825af7531}{}\label{_weather___balloon_8cpp_aa705df77518e8cb907ba58c825af7531}
+
+
+Definition at line 1025 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by power\+\_\+sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_aa705df77518e8cb907ba58c825af7531_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!pet\+\_\+watchdog@{pet\+\_\+watchdog}}
+\index{pet\+\_\+watchdog@{pet\+\_\+watchdog}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{pet\+\_\+watchdog()}{pet\_watchdog()}}]{\setlength{\rightskip}{0pt plus 5cm}void pet\+\_\+watchdog (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_abdf5b290d72a0f43221cc3461db70810}{}\label{_weather___balloon_8cpp_abdf5b290d72a0f43221cc3461db70810}
+
+
+Definition at line 3317 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References watchdog.
+
+
+
+Referenced by loop().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=225pt]{_weather___balloon_8cpp_abdf5b290d72a0f43221cc3461db70810_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!piezo\+\_\+power@{piezo\+\_\+power}}
+\index{piezo\+\_\+power@{piezo\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{piezo\+\_\+power(bool power)}{piezo\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void piezo\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a8cc7d86d6ef1fa4f680bfe19b3246307}{}\label{_weather___balloon_8cpp_a8cc7d86d6ef1fa4f680bfe19b3246307}
+
+
+Definition at line 1000 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+alarms(), location\+\_\+alarm(), power\+\_\+sensors(), and setup().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a8cc7d86d6ef1fa4f680bfe19b3246307_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!power\+\_\+control@{power\+\_\+control}}
+\index{power\+\_\+control@{power\+\_\+control}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{power\+\_\+control()}{power\_control()}}]{\setlength{\rightskip}{0pt plus 5cm}void power\+\_\+control (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_af7b5da3129c5c87915394c2b8394aafe}{}\label{_weather___balloon_8cpp_af7b5da3129c5c87915394c2b8394aafe}
+
+
+Definition at line 2223 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!power\+\_\+sensors@{power\+\_\+sensors}}
+\index{power\+\_\+sensors@{power\+\_\+sensors}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{power\+\_\+sensors(bool power)}{power\_sensors(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void power\+\_\+sensors (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a36e4683d7523a3b1e303d70a2989af58}{}\label{_weather___balloon_8cpp_a36e4683d7523a3b1e303d70a2989af58}
+
+
+Definition at line 1126 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References dof\+\_\+power(), ds18b20\+\_\+power(), geiger\+\_\+power(), G\+E\+I\+G\+E\+R\+\_\+\+P\+W\+R\+\_\+\+P\+IN, G\+P\+S\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, gps\+\_\+power(), led\+\_\+power(), M\+A\+I\+N\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, ms5607\+\_\+power(), piezo\+\_\+power(), sd\+\_\+power(), S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, sht31\+\_\+power(), T\+S\+L2561\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN, tsl2561\+\_\+power(), and U\+V\+\_\+\+H\+E\+A\+T\+E\+R\+\_\+\+P\+IN.
+
+
+
+Referenced by check\+\_\+alarms(), and setup().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=273pt]{_weather___balloon_8cpp_a36e4683d7523a3b1e303d70a2989af58_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{_weather___balloon_8cpp_a36e4683d7523a3b1e303d70a2989af58_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!print\+\_\+found@{print\+\_\+found}}
+\index{print\+\_\+found@{print\+\_\+found}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{print\+\_\+found()}{print\_found()}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+\_\+found (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ab21671796ffdb5448be7facdbae0a1fa}{}\label{_weather___balloon_8cpp_ab21671796ffdb5448be7facdbae0a1fa}
+
+
+Definition at line 928 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References data\+\_\+struct\+::found, and temp\+\_\+sensors.
+
+
+
+Referenced by setup().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{_weather___balloon_8cpp_ab21671796ffdb5448be7facdbae0a1fa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!print\+\_\+sensors@{print\+\_\+sensors}}
+\index{print\+\_\+sensors@{print\+\_\+sensors}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{print\+\_\+sensors()}{print\_sensors()}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+\_\+sensors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a8644e7f4d35c348e0292bc7062c5147c}{}\label{_weather___balloon_8cpp_a8644e7f4d35c348e0292bc7062c5147c}
+
+
+Definition at line 2091 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References data\+\_\+struct\+::accel, data\+\_\+struct\+::battery, R\+T\+C\+Date\+Time\+::day, Tiny\+G\+P\+S\+Plus\+::failed\+Checksum(), data\+\_\+struct\+::geiger, data\+\_\+struct\+::gps, data\+\_\+struct\+::gyro, R\+T\+C\+Date\+Time\+::hour, data\+\_\+struct\+::mag, R\+T\+C\+Date\+Time\+::minute, R\+T\+C\+Date\+Time\+::month, data\+\_\+struct\+::ms5607, R\+T\+C\+Date\+Time\+::second, data\+\_\+struct\+::sht31, data\+\_\+struct\+::temp, data\+\_\+struct\+::tsl, R\+T\+C\+Date\+Time\+::unixtime, data\+\_\+struct\+::uv, and R\+T\+C\+Date\+Time\+::year.
+
+
+
+Referenced by loop(), and test\+\_\+logging().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=328pt]{_weather___balloon_8cpp_a8644e7f4d35c348e0292bc7062c5147c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a8644e7f4d35c348e0292bc7062c5147c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!print\+\_\+serial\+\_\+help@{print\+\_\+serial\+\_\+help}}
+\index{print\+\_\+serial\+\_\+help@{print\+\_\+serial\+\_\+help}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{print\+\_\+serial\+\_\+help()}{print\_serial\_help()}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+\_\+serial\+\_\+help (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a23601be8cb3753e62a44c58a70575fe8}{}\label{_weather___balloon_8cpp_a23601be8cb3753e62a44c58a70575fe8}
+
+
+Definition at line 3140 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by read\+\_\+serial().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{_weather___balloon_8cpp_a23601be8cb3753e62a44c58a70575fe8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!print\+Attitude@{print\+Attitude}}
+\index{print\+Attitude@{print\+Attitude}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{print\+Attitude(float ax, float ay, float az, float mx, float my, float mz)}{printAttitude(float ax, float ay, float az, float mx, float my, float mz)}}]{\setlength{\rightskip}{0pt plus 5cm}void print\+Attitude (
+\begin{DoxyParamCaption}
+\item[{float}]{ax, }
+\item[{float}]{ay, }
+\item[{float}]{az, }
+\item[{float}]{mx, }
+\item[{float}]{my, }
+\item[{float}]{mz}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a4d230d8f4d47ce65d33e15a1dc1dec76}{}\label{_weather___balloon_8cpp_a4d230d8f4d47ce65d33e15a1dc1dec76}
+
+
+Definition at line 1566 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References D\+E\+C\+L\+I\+N\+A\+T\+I\+ON.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!queue\+\_\+altitude@{queue\+\_\+altitude}}
+\index{queue\+\_\+altitude@{queue\+\_\+altitude}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{queue\+\_\+altitude(float altitude)}{queue\_altitude(float altitude)}}]{\setlength{\rightskip}{0pt plus 5cm}void queue\+\_\+altitude (
+\begin{DoxyParamCaption}
+\item[{float}]{altitude}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_aef169403f1360281f7d4532c26949b6a}{}\label{_weather___balloon_8cpp_aef169403f1360281f7d4532c26949b6a}
+
+
+Definition at line 2840 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References altitude\+\_\+hist, altitude\+\_\+hist\+\_\+head, altitude\+\_\+hist\+\_\+tail, and watchdog.
+
+
+
+Referenced by loop().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_weather___balloon_8cpp_aef169403f1360281f7d4532c26949b6a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!queue\+\_\+pressure@{queue\+\_\+pressure}}
+\index{queue\+\_\+pressure@{queue\+\_\+pressure}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{queue\+\_\+pressure(float pressure)}{queue\_pressure(float pressure)}}]{\setlength{\rightskip}{0pt plus 5cm}void queue\+\_\+pressure (
+\begin{DoxyParamCaption}
+\item[{float}]{pressure}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_adeef8e326e21e271b7542e6e7c4e4bd9}{}\label{_weather___balloon_8cpp_adeef8e326e21e271b7542e6e7c4e4bd9}
+
+
+Definition at line 2920 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References pressure\+\_\+hist, pressure\+\_\+hist\+\_\+head, pressure\+\_\+hist\+\_\+tail, and watchdog.
+
+
+
+Referenced by loop().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=231pt]{_weather___balloon_8cpp_adeef8e326e21e271b7542e6e7c4e4bd9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!read\+\_\+configuration@{read\+\_\+configuration}}
+\index{read\+\_\+configuration@{read\+\_\+configuration}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{read\+\_\+configuration()}{read\_configuration()}}]{\setlength{\rightskip}{0pt plus 5cm}void read\+\_\+configuration (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_af7115da2fa844da13b6bd31bf8a206f1}{}\label{_weather___balloon_8cpp_af7115da2fa844da13b6bd31bf8a206f1}
+
+
+Definition at line 2270 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References configuration.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!read\+\_\+\+G\+PS@{read\+\_\+\+G\+PS}}
+\index{read\+\_\+\+G\+PS@{read\+\_\+\+G\+PS}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{read\+\_\+\+G\+P\+S()}{read\_GPS()}}]{\setlength{\rightskip}{0pt plus 5cm}void read\+\_\+\+G\+PS (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ab14d778dd0d52177eb147802a870639d}{}\label{_weather___balloon_8cpp_ab14d778dd0d52177eb147802a870639d}
+
+
+Definition at line 1458 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References Tiny\+G\+P\+S\+Date\+::age(), Tiny\+G\+P\+S\+Time\+::age(), Tiny\+G\+P\+S\+Decimal\+::age(), Tiny\+G\+P\+S\+Plus\+::altitude, configuration, Tiny\+G\+P\+S\+Plus\+::course, Tiny\+G\+P\+S\+Plus\+::date, Tiny\+G\+P\+S\+Date\+::day(), Tiny\+G\+P\+S\+Course\+::deg(), Tiny\+G\+P\+S\+Plus\+::encode(), data\+\_\+struct\+::gps, Tiny\+G\+P\+S\+Plus\+::hdop, Tiny\+G\+P\+S\+Time\+::hour(), Tiny\+G\+P\+S\+Location\+::is\+Valid(), Tiny\+G\+P\+S\+Date\+::is\+Valid(), Tiny\+G\+P\+S\+Time\+::is\+Valid(), Tiny\+G\+P\+S\+Decimal\+::is\+Valid(), Tiny\+G\+P\+S\+Integer\+::is\+Valid(), Tiny\+G\+P\+S\+Custom\+::is\+Valid(), Tiny\+G\+P\+S\+Location\+::lat(), Tiny\+G\+P\+S\+Location\+::lng(), Tiny\+G\+P\+S\+Plus\+::location, Tiny\+G\+P\+S\+Altitude\+::meters(), Tiny\+G\+P\+S\+Time\+::minute(), Tiny\+G\+P\+S\+Date\+::month(), Tiny\+G\+P\+S\+Speed\+::mps(), Tiny\+G\+P\+S\+Plus\+::satellites, Tiny\+G\+P\+S\+Time\+::second(), set\+\_\+clock, D\+S3231\+::set\+Date\+Time(), Tiny\+G\+P\+S\+Plus\+::speed, Tiny\+G\+P\+S\+Plus\+::time, Tiny\+G\+P\+S\+Date\+::value(), Tiny\+G\+P\+S\+Time\+::value(), Tiny\+G\+P\+S\+Decimal\+::value(), Tiny\+G\+P\+S\+Integer\+::value(), Tiny\+G\+P\+S\+Custom\+::value(), vdop, Tiny\+G\+P\+S\+Date\+::year(), and Y\+E\+L\+L\+O\+W\+\_\+\+L\+ED.
+
+
+
+Referenced by read\+Sensors().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{_weather___balloon_8cpp_ab14d778dd0d52177eb147802a870639d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{_weather___balloon_8cpp_ab14d778dd0d52177eb147802a870639d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!read\+\_\+sdcard@{read\+\_\+sdcard}}
+\index{read\+\_\+sdcard@{read\+\_\+sdcard}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{read\+\_\+sdcard()}{read\_sdcard()}}]{\setlength{\rightskip}{0pt plus 5cm}void read\+\_\+sdcard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a450f53a446d117859c49aeaac6c31f9f}{}\label{_weather___balloon_8cpp_a450f53a446d117859c49aeaac6c31f9f}
+
+
+Definition at line 2653 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References data\+\_\+struct\+::accel, data\+\_\+struct\+::alarm, data\+\_\+struct\+::battery, sd\+\_\+data\+::blocks, sd\+\_\+data\+::buffer, sd\+\_\+data\+::current\+\_\+block, data\+Log, data\+\_\+struct\+::found, data\+\_\+struct\+::geiger, data\+\_\+struct\+::gps, data\+\_\+struct\+::gyro, data\+\_\+struct\+::heater\+\_\+max, i, data\+\_\+struct\+::launched, data\+\_\+struct\+::mag, data\+\_\+struct\+::ms5607, sd\+\_\+data\+::num\+\_\+packed, data\+\_\+struct\+::pwm, Sd2\+Card\+::read\+Block(), sd\+\_\+calc\+\_\+crc(), data\+\_\+struct\+::sht31, data\+\_\+struct\+::temp, data\+\_\+struct\+::tsl, data\+\_\+struct\+::unix\+\_\+time, and data\+\_\+struct\+::uv.
+
+
+
+Referenced by loop(), and read\+\_\+serial().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a450f53a446d117859c49aeaac6c31f9f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{_weather___balloon_8cpp_a450f53a446d117859c49aeaac6c31f9f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!read\+\_\+serial@{read\+\_\+serial}}
+\index{read\+\_\+serial@{read\+\_\+serial}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{read\+\_\+serial()}{read\_serial()}}]{\setlength{\rightskip}{0pt plus 5cm}void read\+\_\+serial (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a65d5c1fd6eda6f08406245b655c69907}{}\label{_weather___balloon_8cpp_a65d5c1fd6eda6f08406245b655c69907}
+
+
+Definition at line 3242 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References configuration, D\+E\+B\+UG, print\+\_\+serial\+\_\+help(), read\+\_\+sdcard(), and set\+\_\+alt\+\_\+threshold().
+
+
+
+Referenced by loop().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a65d5c1fd6eda6f08406245b655c69907_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{_weather___balloon_8cpp_a65d5c1fd6eda6f08406245b655c69907_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!read\+Sensors@{read\+Sensors}}
+\index{read\+Sensors@{read\+Sensors}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{read\+Sensors()}{readSensors()}}]{\setlength{\rightskip}{0pt plus 5cm}void read\+Sensors (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ad40ccf803c2eff76d7e0e7a24c9937ef}{}\label{_weather___balloon_8cpp_ad40ccf803c2eff76d7e0e7a24c9937ef}
+
+
+Definition at line 1596 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References data\+\_\+struct\+::accel, L\+S\+M9\+D\+S1\+::ax, L\+S\+M9\+D\+S1\+::ay, L\+S\+M9\+D\+S1\+::az, data\+\_\+struct\+::battery, L\+S\+M9\+D\+S1\+::calc\+Accel(), L\+S\+M9\+D\+S1\+::calc\+Gyro(), L\+S\+M9\+D\+S1\+::calc\+Mag(), Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::calculate\+Lux(), configuration, D\+S3231\+::force\+Conversion(), data\+\_\+struct\+::found, D\+S3231\+::get\+Date\+Time(), Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::get\+Luminosity(), M\+A\+X17043\+::get\+S\+O\+C(), M\+A\+X17043\+::get\+Voltage(), data\+\_\+struct\+::gps, L\+S\+M9\+D\+S1\+::gx, L\+S\+M9\+D\+S1\+::gy, data\+\_\+struct\+::gyro, L\+S\+M9\+D\+S1\+::gz, data\+\_\+struct\+::mag, data\+\_\+struct\+::ms5607, L\+S\+M9\+D\+S1\+::mx, L\+S\+M9\+D\+S1\+::my, L\+S\+M9\+D\+S1\+::mz, read\+\_\+\+G\+P\+S(), L\+S\+M9\+D\+S1\+::read\+Accel(), L\+S\+M9\+D\+S1\+::read\+Gyro(), Adafruit\+\_\+\+S\+H\+T31\+::read\+Humidity(), L\+S\+M9\+D\+S1\+::read\+Mag(), Adafruit\+\_\+\+S\+H\+T31\+::read\+Temperature(), D\+S3231\+::read\+Temperature(), data\+\_\+struct\+::sht31, data\+\_\+struct\+::temp, temp\+\_\+sensors, data\+\_\+struct\+::tsl, data\+\_\+struct\+::unix\+\_\+time, R\+T\+C\+Date\+Time\+::unixtime, data\+\_\+struct\+::uv, U\+V\+\_\+\+P\+IN, and watchdog.
+
+
+
+Referenced by loop().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{_weather___balloon_8cpp_ad40ccf803c2eff76d7e0e7a24c9937ef_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{_weather___balloon_8cpp_ad40ccf803c2eff76d7e0e7a24c9937ef_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!reset\+\_\+sdcard@{reset\+\_\+sdcard}}
+\index{reset\+\_\+sdcard@{reset\+\_\+sdcard}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{reset\+\_\+sdcard()}{reset\_sdcard()}}]{\setlength{\rightskip}{0pt plus 5cm}void reset\+\_\+sdcard (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_acbeafc32c286c932b7f4e012cf3ef829}{}\label{_weather___balloon_8cpp_acbeafc32c286c932b7f4e012cf3ef829}
+
+
+Definition at line 2228 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by log\+\_\+data().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{_weather___balloon_8cpp_acbeafc32c286c932b7f4e012cf3ef829_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!sd\+\_\+calc\+\_\+crc@{sd\+\_\+calc\+\_\+crc}}
+\index{sd\+\_\+calc\+\_\+crc@{sd\+\_\+calc\+\_\+crc}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{sd\+\_\+calc\+\_\+crc(const uint8\+\_\+t $\ast$src, const uint8\+\_\+t block\+\_\+size)}{sd\_calc\_crc(const uint8\_t *src, const uint8\_t block\_size)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t sd\+\_\+calc\+\_\+crc (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{src, }
+\item[{const uint8\+\_\+t}]{block\+\_\+size}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a3d30b497ce4c43d95b30a95944f9d8be}{}\label{_weather___balloon_8cpp_a3d30b497ce4c43d95b30a95944f9d8be}
+
+
+Definition at line 536 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References i.
+
+
+
+Referenced by log\+\_\+data(), and read\+\_\+sdcard().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a3d30b497ce4c43d95b30a95944f9d8be_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!sd\+\_\+power@{sd\+\_\+power}}
+\index{sd\+\_\+power@{sd\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{sd\+\_\+power(bool power)}{sd\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void sd\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_aeea7cb9977724d0eff70fb24d03ef572}{}\label{_weather___balloon_8cpp_aeea7cb9977724d0eff70fb24d03ef572}
+
+
+Definition at line 1062 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by power\+\_\+sensors().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_aeea7cb9977724d0eff70fb24d03ef572_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!set\+\_\+alt\+\_\+threshold@{set\+\_\+alt\+\_\+threshold}}
+\index{set\+\_\+alt\+\_\+threshold@{set\+\_\+alt\+\_\+threshold}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+\_\+alt\+\_\+threshold(float altitude, String entered)}{set\_alt\_threshold(float altitude, String entered)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+\_\+alt\+\_\+threshold (
+\begin{DoxyParamCaption}
+\item[{float}]{altitude, }
+\item[{String}]{entered}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ad125fd2e1dac4c129e6735549100fc2b}{}\label{_weather___balloon_8cpp_ad125fd2e1dac4c129e6735549100fc2b}
+
+
+Definition at line 3207 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References Atmosphere(), configuration, and P\+Z\+E\+RO.
+
+
+
+Referenced by read\+\_\+serial().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=269pt]{_weather___balloon_8cpp_ad125fd2e1dac4c129e6735549100fc2b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{_weather___balloon_8cpp_ad125fd2e1dac4c129e6735549100fc2b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!set\+\_\+launch\+\_\+timeout@{set\+\_\+launch\+\_\+timeout}}
+\index{set\+\_\+launch\+\_\+timeout@{set\+\_\+launch\+\_\+timeout}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+\_\+launch\+\_\+timeout(uint32\+\_\+t timeout)}{set\_launch\_timeout(uint32\_t timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+\_\+launch\+\_\+timeout (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ac3c063a9e5c7c5bc74ee3ebd70141634}{}\label{_weather___balloon_8cpp_ac3c063a9e5c7c5bc74ee3ebd70141634}
+
+
+Definition at line 3235 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!set\+\_\+location\+\_\+timeout@{set\+\_\+location\+\_\+timeout}}
+\index{set\+\_\+location\+\_\+timeout@{set\+\_\+location\+\_\+timeout}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+\_\+location\+\_\+timeout(uint32\+\_\+t timeout)}{set\_location\_timeout(uint32\_t timeout)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+\_\+location\+\_\+timeout (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{timeout}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a0d89228eb4827497c54f4628c463e5bc}{}\label{_weather___balloon_8cpp_a0d89228eb4827497c54f4628c463e5bc}
+
+
+Definition at line 3238 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!set\+\_\+pressure\+\_\+threshold@{set\+\_\+pressure\+\_\+threshold}}
+\index{set\+\_\+pressure\+\_\+threshold@{set\+\_\+pressure\+\_\+threshold}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+\_\+pressure\+\_\+threshold(float pressure)}{set\_pressure\_threshold(float pressure)}}]{\setlength{\rightskip}{0pt plus 5cm}void set\+\_\+pressure\+\_\+threshold (
+\begin{DoxyParamCaption}
+\item[{float}]{pressure}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a5bd0afab414acd06263043d17db76643}{}\label{_weather___balloon_8cpp_a5bd0afab414acd06263043d17db76643}
+
+
+Definition at line 3231 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!setup@{setup}}
+\index{setup@{setup}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{setup()}{setup()}}]{\setlength{\rightskip}{0pt plus 5cm}void setup (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a4fc01d736fe50cf5b977f755b675f11d}{}\label{_weather___balloon_8cpp_a4fc01d736fe50cf5b977f755b675f11d}
+
+
+Definition at line 1274 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References beep\+\_\+piezo(), M\+A\+X17043\+::begin(), D\+S3231\+::begin(), configuration, configure\+\_\+button(), configure\+\_\+ds18b20(), configure\+\_\+geiger(), configure\+\_\+\+G\+P\+S\+\_\+\+N\+M\+E\+A(), configure\+\_\+\+G\+P\+S\+\_\+\+W\+A\+A\+S(), configure\+\_\+\+L\+S\+M9\+D\+S1(), configure\+\_\+ms5607(), configure\+\_\+\+P\+I\+D(), configure\+\_\+sdcard(), configure\+\_\+sht31(), configure\+\_\+\+T\+S\+L2561(), count\+\_\+down\+\_\+led(), default\+\_\+config, flash\+\_\+landing(), Heat\+\_\+\+Enable, led\+\_\+power(), location\+\_\+alarm(), P\+I\+E\+Z\+O\+\_\+\+P\+IN, piezo\+\_\+power(), power\+\_\+sensors(), print\+\_\+found(), M\+A\+X17043\+::quick\+Start(), reset\+\_\+flag, U\+V\+\_\+\+P\+IN, watchdog, watchdog\+\_\+reset\+\_\+only(), and watchdog\+\_\+sleep().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{_weather___balloon_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!sht31\+\_\+power@{sht31\+\_\+power}}
+\index{sht31\+\_\+power@{sht31\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{sht31\+\_\+power(bool power)}{sht31\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void sht31\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a19d08a06df1dca8e8a9be91e9de13f33}{}\label{_weather___balloon_8cpp_a19d08a06df1dca8e8a9be91e9de13f33}
+
+
+Definition at line 1038 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by power\+\_\+sensors().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a19d08a06df1dca8e8a9be91e9de13f33_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!test\+\_\+logging@{test\+\_\+logging}}
+\index{test\+\_\+logging@{test\+\_\+logging}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{test\+\_\+logging()}{test\_logging()}}]{\setlength{\rightskip}{0pt plus 5cm}void test\+\_\+logging (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a22feff51a4b8144a2264bc812eedaddb}{}\label{_weather___balloon_8cpp_a22feff51a4b8144a2264bc812eedaddb}
+
+
+Definition at line 2397 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+References sd\+\_\+data\+::buffer, data\+Log, i, and print\+\_\+sensors().
+
+
+
+Referenced by log\+\_\+data().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a22feff51a4b8144a2264bc812eedaddb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{_weather___balloon_8cpp_a22feff51a4b8144a2264bc812eedaddb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!tsl2561\+\_\+power@{tsl2561\+\_\+power}}
+\index{tsl2561\+\_\+power@{tsl2561\+\_\+power}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{tsl2561\+\_\+power(bool power)}{tsl2561\_power(bool power)}}]{\setlength{\rightskip}{0pt plus 5cm}void tsl2561\+\_\+power (
+\begin{DoxyParamCaption}
+\item[{bool}]{power}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_aa1ddd1a74edee558cd1f5bbf58c32eba}{}\label{_weather___balloon_8cpp_aa1ddd1a74edee558cd1f5bbf58c32eba}
+
+
+Definition at line 1012 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by power\+\_\+sensors().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_aa1ddd1a74edee558cd1f5bbf58c32eba_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!watchdog\+\_\+reset\+\_\+only@{watchdog\+\_\+reset\+\_\+only}}
+\index{watchdog\+\_\+reset\+\_\+only@{watchdog\+\_\+reset\+\_\+only}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{watchdog\+\_\+reset\+\_\+only()}{watchdog\_reset\_only()}}]{\setlength{\rightskip}{0pt plus 5cm}void watchdog\+\_\+reset\+\_\+only (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_ac41bb5082e170a29d9fac793b99d2888}{}\label{_weather___balloon_8cpp_ac41bb5082e170a29d9fac793b99d2888}
+
+
+Definition at line 1183 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by setup().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{_weather___balloon_8cpp_ac41bb5082e170a29d9fac793b99d2888_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!watchdog\+\_\+sleep@{watchdog\+\_\+sleep}}
+\index{watchdog\+\_\+sleep@{watchdog\+\_\+sleep}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{watchdog\+\_\+sleep()}{watchdog\_sleep()}}]{\setlength{\rightskip}{0pt plus 5cm}void watchdog\+\_\+sleep (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_weather___balloon_8cpp_a905910daced665e99b1c14fa51ef9938}{}\label{_weather___balloon_8cpp_a905910daced665e99b1c14fa51ef9938}
+
+
+Definition at line 1161 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+alarms(), location\+\_\+alarm(), and setup().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_weather___balloon_8cpp_a905910daced665e99b1c14fa51ef9938_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!altitude\+\_\+hist@{altitude\+\_\+hist}}
+\index{altitude\+\_\+hist@{altitude\+\_\+hist}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{altitude\+\_\+hist}{altitude\_hist}}]{\setlength{\rightskip}{0pt plus 5cm}float altitude\+\_\+hist\mbox{[}120\mbox{]}}\hypertarget{_weather___balloon_8cpp_abf83abf80c4f9710e3d5aafce776fe41}{}\label{_weather___balloon_8cpp_abf83abf80c4f9710e3d5aafce776fe41}
+
+
+Definition at line 375 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+decent(), check\+\_\+landing(), check\+\_\+launch(), and queue\+\_\+altitude().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!altitude\+\_\+hist\+\_\+head@{altitude\+\_\+hist\+\_\+head}}
+\index{altitude\+\_\+hist\+\_\+head@{altitude\+\_\+hist\+\_\+head}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{altitude\+\_\+hist\+\_\+head}{altitude\_hist\_head}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t altitude\+\_\+hist\+\_\+head = 0}\hypertarget{_weather___balloon_8cpp_a01f6f8f79051a19987e9d93f549cd7be}{}\label{_weather___balloon_8cpp_a01f6f8f79051a19987e9d93f549cd7be}
+
+
+Definition at line 380 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+decent(), and queue\+\_\+altitude().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!altitude\+\_\+hist\+\_\+tail@{altitude\+\_\+hist\+\_\+tail}}
+\index{altitude\+\_\+hist\+\_\+tail@{altitude\+\_\+hist\+\_\+tail}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{altitude\+\_\+hist\+\_\+tail}{altitude\_hist\_tail}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t altitude\+\_\+hist\+\_\+tail = -\/1}\hypertarget{_weather___balloon_8cpp_a90b100050af8f0504debe37992583950}{}\label{_weather___balloon_8cpp_a90b100050af8f0504debe37992583950}
+
+
+Definition at line 381 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+decent(), and queue\+\_\+altitude().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!A\+Z\+E\+RO@{A\+Z\+E\+RO}}
+\index{A\+Z\+E\+RO@{A\+Z\+E\+RO}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{A\+Z\+E\+RO}{AZERO}}]{\setlength{\rightskip}{0pt plus 5cm}const double A\+Z\+E\+RO = 340.\+294}\hypertarget{_weather___balloon_8cpp_a9d985b447de8617c091480f9f572fe58}{}\label{_weather___balloon_8cpp_a9d985b447de8617c091480f9f572fe58}
+
+
+Definition at line 66 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!clock@{clock}}
+\index{clock@{clock}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{clock}{clock}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf D\+S3231} clock}\hypertarget{_weather___balloon_8cpp_a65f172682710866247eacb1ef68df619}{}\label{_weather___balloon_8cpp_a65f172682710866247eacb1ef68df619}
+
+
+Definition at line 413 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::\+Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!configuration@{configuration}}
+\index{configuration@{configuration}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{configuration}{configuration}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   configuration}\hypertarget{_weather___balloon_8cpp_ab910b93345327069fe8f3809d819b669}{}\label{_weather___balloon_8cpp_ab910b93345327069fe8f3809d819b669}
+
+
+Referenced by check\+\_\+alarms(), check\+\_\+decent(), check\+\_\+landing(), check\+\_\+launch(), compare\+\_\+buffers(), configure\+\_\+ds18b20(), configure\+\_\+sdcard(), find\+\_\+sdcard\+\_\+tail(), heater\+\_\+control(), log\+\_\+data(), loop(), read\+\_\+configuration(), read\+\_\+\+G\+P\+S(), read\+\_\+serial(), read\+Sensors(), set\+\_\+alt\+\_\+threshold(), and setup().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!count\+\_\+at\+\_\+altitude@{count\+\_\+at\+\_\+altitude}}
+\index{count\+\_\+at\+\_\+altitude@{count\+\_\+at\+\_\+altitude}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{count\+\_\+at\+\_\+altitude}{count\_at\_altitude}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t count\+\_\+at\+\_\+altitude = 0}\hypertarget{_weather___balloon_8cpp_a0ccc5fb483a33a339b8a07b5f0251c02}{}\label{_weather___balloon_8cpp_a0ccc5fb483a33a339b8a07b5f0251c02}
+
+
+Definition at line 371 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!custom\+\_\+v\+P\+ID@{custom\+\_\+v\+P\+ID}}
+\index{custom\+\_\+v\+P\+ID@{custom\+\_\+v\+P\+ID}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{custom\+\_\+v\+P\+ID}{custom\_vPID}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+ID} P\+I\+D\+\_\+custom \& custom\+\_\+v\+P\+ID}\hypertarget{_weather___balloon_8cpp_aaa100c603ac5c37761e50431d68a8923}{}\label{_weather___balloon_8cpp_aaa100c603ac5c37761e50431d68a8923}
+
+
+Definition at line 490 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!data\+Log@{data\+Log}}
+\index{data\+Log@{data\+Log}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{data\+Log}{dataLog}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf data\+\_\+struct} data\+Log}\hypertarget{_weather___balloon_8cpp_a1d510f4282e450e51a322aadb779f979}{}\label{_weather___balloon_8cpp_a1d510f4282e450e51a322aadb779f979}
+
+
+Definition at line 290 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by find\+\_\+sdcard\+\_\+tail(), log\+\_\+data(), read\+\_\+sdcard(), and test\+\_\+logging().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!date\+\_\+time@{date\+\_\+time}}
+\index{date\+\_\+time@{date\+\_\+time}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{date\+\_\+time}{date\_time}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+T\+C\+Date\+Time} date\+\_\+time}\hypertarget{_weather___balloon_8cpp_a392e8b82028f7ad3f0bf9c13abc9ce14}{}\label{_weather___balloon_8cpp_a392e8b82028f7ad3f0bf9c13abc9ce14}
+
+
+Definition at line 414 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!D\+E\+B\+UG@{D\+E\+B\+UG}}
+\index{D\+E\+B\+UG@{D\+E\+B\+UG}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+UG}{DEBUG}}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+E\+B\+UG = false}\hypertarget{_weather___balloon_8cpp_a117352cc494cc62c6b2f1882786a332c}{}\label{_weather___balloon_8cpp_a117352cc494cc62c6b2f1882786a332c}
+
+
+Definition at line 11 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by read\+\_\+serial().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!D\+E\+B\+U\+G\+\_\+\+M\+O\+RE@{D\+E\+B\+U\+G\+\_\+\+M\+O\+RE}}
+\index{D\+E\+B\+U\+G\+\_\+\+M\+O\+RE@{D\+E\+B\+U\+G\+\_\+\+M\+O\+RE}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{D\+E\+B\+U\+G\+\_\+\+M\+O\+RE}{DEBUG\_MORE}}]{\setlength{\rightskip}{0pt plus 5cm}bool D\+E\+B\+U\+G\+\_\+\+M\+O\+RE = false}\hypertarget{_weather___balloon_8cpp_a0006c1addcca85ed3a78cce0d5ab8810}{}\label{_weather___balloon_8cpp_a0006c1addcca85ed3a78cce0d5ab8810}
+
+
+Definition at line 12 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!default\+\_\+config@{default\+\_\+config}}
+\index{default\+\_\+config@{default\+\_\+config}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{default\+\_\+config}{default\_config}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   default\+\_\+config}\hypertarget{_weather___balloon_8cpp_af913d90b1b4908442e095aaba6f05119}{}\label{_weather___balloon_8cpp_af913d90b1b4908442e095aaba6f05119}
+
+
+Referenced by loop(), and setup().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!D\+OF@{D\+OF}}
+\index{D\+OF@{D\+OF}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{D\+OF}{DOF}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+S\+M9\+D\+S1} D\+OF}\hypertarget{_weather___balloon_8cpp_a1251d2baa2da9ec9bae71ac224641f41}{}\label{_weather___balloon_8cpp_a1251d2baa2da9ec9bae71ac224641f41}
+
+
+Definition at line 409 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!eeprom@{eeprom}}
+\index{eeprom@{eeprom}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{eeprom}{eeprom}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf eeprom\+\_\+struct} eeprom}\hypertarget{_weather___balloon_8cpp_a440561e67c2eadefd39ca49856c16b16}{}\label{_weather___balloon_8cpp_a440561e67c2eadefd39ca49856c16b16}
+
+
+Definition at line 451 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!F\+T2\+M\+E\+T\+E\+RS@{F\+T2\+M\+E\+T\+E\+RS}}
+\index{F\+T2\+M\+E\+T\+E\+RS@{F\+T2\+M\+E\+T\+E\+RS}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{F\+T2\+M\+E\+T\+E\+RS}{FT2METERS}}]{\setlength{\rightskip}{0pt plus 5cm}const double F\+T2\+M\+E\+T\+E\+RS = 0.\+3048}\hypertarget{_weather___balloon_8cpp_adab320fba7526e8277ddabb382395609}{}\label{_weather___balloon_8cpp_adab320fba7526e8277ddabb382395609}
+
+
+Definition at line 59 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!fuel\+\_\+gauge@{fuel\+\_\+gauge}}
+\index{fuel\+\_\+gauge@{fuel\+\_\+gauge}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{fuel\+\_\+gauge}{fuel\_gauge}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+A\+X17043} fuel\+\_\+gauge}\hypertarget{_weather___balloon_8cpp_abcf177193a1fa6196dec86446b427a38}{}\label{_weather___balloon_8cpp_abcf177193a1fa6196dec86446b427a38}
+
+
+Definition at line 407 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!geiger@{geiger}}
+\index{geiger@{geiger}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{geiger}{geiger}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   geiger}\hypertarget{_weather___balloon_8cpp_aef03a40c11d98638a61a75a4a2bb75dc}{}\label{_weather___balloon_8cpp_aef03a40c11d98638a61a75a4a2bb75dc}
+
+
+Referenced by I\+S\+R(), and log\+\_\+data().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!gps@{gps}}
+\index{gps@{gps}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{gps}{gps}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Plus} gps}\hypertarget{_weather___balloon_8cpp_a169c53997a7da1d0fb99aec1b4675ce8}{}\label{_weather___balloon_8cpp_a169c53997a7da1d0fb99aec1b4675ce8}
+
+
+Definition at line 456 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by Tiny\+G\+P\+S\+Custom\+::\+Tiny\+G\+P\+S\+Custom().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!gps\+\_\+v\+P\+ID@{gps\+\_\+v\+P\+ID}}
+\index{gps\+\_\+v\+P\+ID@{gps\+\_\+v\+P\+ID}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{gps\+\_\+v\+P\+ID}{gps\_vPID}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+ID} P\+I\+D\+\_\+gps \& gps\+\_\+v\+P\+ID}\hypertarget{_weather___balloon_8cpp_af8d9b98a57487d52e092fcf34476b905}{}\label{_weather___balloon_8cpp_af8d9b98a57487d52e092fcf34476b905}
+
+
+Definition at line 486 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and loop().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!Heat\+\_\+\+Enable@{Heat\+\_\+\+Enable}}
+\index{Heat\+\_\+\+Enable@{Heat\+\_\+\+Enable}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{Heat\+\_\+\+Enable}{Heat\_Enable}}]{\setlength{\rightskip}{0pt plus 5cm}bool Heat\+\_\+\+Enable = false}\hypertarget{_weather___balloon_8cpp_afcc3b8eb63a92e9f7b96be31ceda6701}{}\label{_weather___balloon_8cpp_afcc3b8eb63a92e9f7b96be31ceda6701}
+
+
+Definition at line 519 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+battery(), heater\+\_\+control(), and setup().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!hyster@{hyster}}
+\index{hyster@{hyster}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{hyster}{hyster}}]{\setlength{\rightskip}{0pt plus 5cm}float hyster = 0.\+5}\hypertarget{_weather___balloon_8cpp_a025e0782db77609f8bde58b6e2b07405}{}\label{_weather___balloon_8cpp_a025e0782db77609f8bde58b6e2b07405}
+
+
+Definition at line 119 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!K\+E\+L\+V\+I\+N2\+R\+A\+N\+K\+I\+NE@{K\+E\+L\+V\+I\+N2\+R\+A\+N\+K\+I\+NE}}
+\index{K\+E\+L\+V\+I\+N2\+R\+A\+N\+K\+I\+NE@{K\+E\+L\+V\+I\+N2\+R\+A\+N\+K\+I\+NE}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{K\+E\+L\+V\+I\+N2\+R\+A\+N\+K\+I\+NE}{KELVIN2RANKINE}}]{\setlength{\rightskip}{0pt plus 5cm}const double K\+E\+L\+V\+I\+N2\+R\+A\+N\+K\+I\+NE = 1.\+8}\hypertarget{_weather___balloon_8cpp_a19b91bab81470b4820cbd27986bbb1a8}{}\label{_weather___balloon_8cpp_a19b91bab81470b4820cbd27986bbb1a8}
+
+
+Definition at line 60 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!main\+\_\+v\+P\+ID@{main\+\_\+v\+P\+ID}}
+\index{main\+\_\+v\+P\+ID@{main\+\_\+v\+P\+ID}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{main\+\_\+v\+P\+ID}{main\_vPID}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+ID} P\+I\+D\+\_\+main \& main\+\_\+v\+P\+ID}\hypertarget{_weather___balloon_8cpp_a42c24a594dab5a32356a22bfbece40e8}{}\label{_weather___balloon_8cpp_a42c24a594dab5a32356a22bfbece40e8}
+
+
+Definition at line 485 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and loop().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!one\+Wire@{one\+Wire}}
+\index{one\+Wire@{one\+Wire}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{one\+Wire}{oneWire}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Dallas\+Temperature} D\+S18\+B20 \& one\+Wire}\hypertarget{_weather___balloon_8cpp_a6914ee42e75580dd30542e2b70531a1a}{}\label{_weather___balloon_8cpp_a6914ee42e75580dd30542e2b70531a1a}
+
+
+Definition at line 394 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!over\+\_\+ambient@{over\+\_\+ambient}}
+\index{over\+\_\+ambient@{over\+\_\+ambient}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{over\+\_\+ambient}{over\_ambient}}]{\setlength{\rightskip}{0pt plus 5cm}float over\+\_\+ambient = 2}\hypertarget{_weather___balloon_8cpp_a7b0dae08d630995fb336f20fca25b324}{}\label{_weather___balloon_8cpp_a7b0dae08d630995fb336f20fca25b324}
+
+
+Definition at line 122 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!pressure\+\_\+hist@{pressure\+\_\+hist}}
+\index{pressure\+\_\+hist@{pressure\+\_\+hist}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{pressure\+\_\+hist}{pressure\_hist}}]{\setlength{\rightskip}{0pt plus 5cm}float pressure\+\_\+hist\mbox{[}120\mbox{]}}\hypertarget{_weather___balloon_8cpp_ad4d2baeae9f4dcfffceaf318c35b77a4}{}\label{_weather___balloon_8cpp_ad4d2baeae9f4dcfffceaf318c35b77a4}
+
+
+Definition at line 374 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+decent(), check\+\_\+landing(), check\+\_\+launch(), and queue\+\_\+pressure().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!pressure\+\_\+hist\+\_\+head@{pressure\+\_\+hist\+\_\+head}}
+\index{pressure\+\_\+hist\+\_\+head@{pressure\+\_\+hist\+\_\+head}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{pressure\+\_\+hist\+\_\+head}{pressure\_hist\_head}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t pressure\+\_\+hist\+\_\+head = 0}\hypertarget{_weather___balloon_8cpp_a0f650962534ec0668deb66f3237e9eed}{}\label{_weather___balloon_8cpp_a0f650962534ec0668deb66f3237e9eed}
+
+
+Definition at line 378 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+decent(), and queue\+\_\+pressure().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!pressure\+\_\+hist\+\_\+tail@{pressure\+\_\+hist\+\_\+tail}}
+\index{pressure\+\_\+hist\+\_\+tail@{pressure\+\_\+hist\+\_\+tail}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{pressure\+\_\+hist\+\_\+tail}{pressure\_hist\_tail}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t pressure\+\_\+hist\+\_\+tail = -\/1}\hypertarget{_weather___balloon_8cpp_a96c477bde962eaccf0ae6b1505ffa47b}{}\label{_weather___balloon_8cpp_a96c477bde962eaccf0ae6b1505ffa47b}
+
+
+Definition at line 379 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+decent(), and queue\+\_\+pressure().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!P\+S\+F2\+N\+SM@{P\+S\+F2\+N\+SM}}
+\index{P\+S\+F2\+N\+SM@{P\+S\+F2\+N\+SM}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{P\+S\+F2\+N\+SM}{PSF2NSM}}]{\setlength{\rightskip}{0pt plus 5cm}const double P\+S\+F2\+N\+SM = 47.\+880258}\hypertarget{_weather___balloon_8cpp_a950f5d29e2685b850c7c11c7a70e3586}{}\label{_weather___balloon_8cpp_a950f5d29e2685b850c7c11c7a70e3586}
+
+
+Definition at line 61 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!P\+Z\+E\+RO@{P\+Z\+E\+RO}}
+\index{P\+Z\+E\+RO@{P\+Z\+E\+RO}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{P\+Z\+E\+RO}{PZERO}}]{\setlength{\rightskip}{0pt plus 5cm}const double P\+Z\+E\+RO = 101325.\+0}\hypertarget{_weather___balloon_8cpp_a728acecfd86626b2ad3b9cf88c206434}{}\label{_weather___balloon_8cpp_a728acecfd86626b2ad3b9cf88c206434}
+
+
+Definition at line 64 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by set\+\_\+alt\+\_\+threshold().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!reset\+\_\+flag@{reset\+\_\+flag}}
+\index{reset\+\_\+flag@{reset\+\_\+flag}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{reset\+\_\+flag}{reset\_flag}}]{\setlength{\rightskip}{0pt plus 5cm}volatile bool reset\+\_\+flag = false}\hypertarget{_weather___balloon_8cpp_a01160b0d5f07d7951ac857adf93c33b3}{}\label{_weather___balloon_8cpp_a01160b0d5f07d7951ac857adf93c33b3}
+
+
+Definition at line 524 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by I\+S\+R(), loop(), and setup().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!R\+H\+O\+Z\+E\+RO@{R\+H\+O\+Z\+E\+RO}}
+\index{R\+H\+O\+Z\+E\+RO@{R\+H\+O\+Z\+E\+RO}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{R\+H\+O\+Z\+E\+RO}{RHOZERO}}]{\setlength{\rightskip}{0pt plus 5cm}const double R\+H\+O\+Z\+E\+RO = 1.\+225}\hypertarget{_weather___balloon_8cpp_a8b35237530df0b0d6241a52f61589fee}{}\label{_weather___balloon_8cpp_a8b35237530df0b0d6241a52f61589fee}
+
+
+Definition at line 65 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!S\+C\+F2\+K\+CM@{S\+C\+F2\+K\+CM}}
+\index{S\+C\+F2\+K\+CM@{S\+C\+F2\+K\+CM}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+C\+F2\+K\+CM}{SCF2KCM}}]{\setlength{\rightskip}{0pt plus 5cm}const double S\+C\+F2\+K\+CM = 515.\+379}\hypertarget{_weather___balloon_8cpp_a05e8a82a0d190e77cf4a5df2ea878799}{}\label{_weather___balloon_8cpp_a05e8a82a0d190e77cf4a5df2ea878799}
+
+
+Definition at line 62 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!sdcard@{sdcard}}
+\index{sdcard@{sdcard}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{sdcard}{sdcard}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Sd2\+Card} sdcard}\hypertarget{_weather___balloon_8cpp_af20e11a25c386bfa74e56ad408215877}{}\label{_weather___balloon_8cpp_af20e11a25c386bfa74e56ad408215877}
+
+
+Definition at line 411 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!sdcard\+\_\+data@{sdcard\+\_\+data}}
+\index{sdcard\+\_\+data@{sdcard\+\_\+data}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{sdcard\+\_\+data}{sdcard\_data}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf sd\+\_\+data} sdcard\+\_\+data}\hypertarget{_weather___balloon_8cpp_a809288b73e21bab0f06787e2d2d01222}{}\label{_weather___balloon_8cpp_a809288b73e21bab0f06787e2d2d01222}
+
+
+Definition at line 441 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!set\+\_\+clock@{set\+\_\+clock}}
+\index{set\+\_\+clock@{set\+\_\+clock}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{set\+\_\+clock}{set\_clock}}]{\setlength{\rightskip}{0pt plus 5cm}bool set\+\_\+clock = false}\hypertarget{_weather___balloon_8cpp_a322075e5a178d4b804a56490a0fc9737}{}\label{_weather___balloon_8cpp_a322075e5a178d4b804a56490a0fc9737}
+
+
+Definition at line 522 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by read\+\_\+\+G\+P\+S().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!sht31@{sht31}}
+\index{sht31@{sht31}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{sht31}{sht31}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Adafruit\+\_\+\+S\+H\+T31} sht31 = {\bf Adafruit\+\_\+\+S\+H\+T31}()}\hypertarget{_weather___balloon_8cpp_a4cc868f67bc519384a9e92cd96d408c9}{}\label{_weather___balloon_8cpp_a4cc868f67bc519384a9e92cd96d408c9}
+
+
+Definition at line 403 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!sht\+\_\+v\+P\+ID@{sht\+\_\+v\+P\+ID}}
+\index{sht\+\_\+v\+P\+ID@{sht\+\_\+v\+P\+ID}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{sht\+\_\+v\+P\+ID}{sht\_vPID}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+ID} P\+I\+D\+\_\+sht \& sht\+\_\+v\+P\+ID}\hypertarget{_weather___balloon_8cpp_ae24ff64da9bc21ba0e9b46918a60a2d9}{}\label{_weather___balloon_8cpp_ae24ff64da9bc21ba0e9b46918a60a2d9}
+
+
+Definition at line 489 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and loop().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!temp\+\_\+sensors@{temp\+\_\+sensors}}
+\index{temp\+\_\+sensors@{temp\+\_\+sensors}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{temp\+\_\+sensors}{temp\_sensors}}]{\setlength{\rightskip}{0pt plus 5cm}struct \{ ... \}   temp\+\_\+sensors}\hypertarget{_weather___balloon_8cpp_a514d67a20adb3bc72c1466b627930374}{}\label{_weather___balloon_8cpp_a514d67a20adb3bc72c1466b627930374}
+
+
+Referenced by configure\+\_\+ds18b20(), heater\+\_\+control(), print\+\_\+found(), and read\+Sensors().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!tsl@{tsl}}
+\index{tsl@{tsl}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{tsl}{tsl}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified} tsl = {\bf Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified}({\bf T\+S\+L2561\+\_\+\+A\+D\+D\+R\+\_\+\+F\+L\+O\+AT}, 12345)}\hypertarget{_weather___balloon_8cpp_a34dc1ffbb166b7afbf402f717b871f77}{}\label{_weather___balloon_8cpp_a34dc1ffbb166b7afbf402f717b871f77}
+
+
+Definition at line 405 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!tsl\+\_\+v\+P\+ID@{tsl\+\_\+v\+P\+ID}}
+\index{tsl\+\_\+v\+P\+ID@{tsl\+\_\+v\+P\+ID}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{tsl\+\_\+v\+P\+ID}{tsl\_vPID}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+ID} P\+I\+D\+\_\+tsl \& tsl\+\_\+v\+P\+ID}\hypertarget{_weather___balloon_8cpp_ae2e19feb6f43ef5148ce00d74d9bc31d}{}\label{_weather___balloon_8cpp_ae2e19feb6f43ef5148ce00d74d9bc31d}
+
+
+Definition at line 488 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and loop().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!T\+Z\+E\+RO@{T\+Z\+E\+RO}}
+\index{T\+Z\+E\+RO@{T\+Z\+E\+RO}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{T\+Z\+E\+RO}{TZERO}}]{\setlength{\rightskip}{0pt plus 5cm}const double T\+Z\+E\+RO = 288.\+15}\hypertarget{_weather___balloon_8cpp_ad3209c000f37747eff86c69863d3d0d1}{}\label{_weather___balloon_8cpp_ad3209c000f37747eff86c69863d3d0d1}
+
+
+Definition at line 63 of file Weather\+\_\+\+Balloon.\+cpp.
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!uv\+\_\+v\+P\+ID@{uv\+\_\+v\+P\+ID}}
+\index{uv\+\_\+v\+P\+ID@{uv\+\_\+v\+P\+ID}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{uv\+\_\+v\+P\+ID}{uv\_vPID}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf P\+ID} P\+I\+D\+\_\+uv \& uv\+\_\+v\+P\+ID}\hypertarget{_weather___balloon_8cpp_a225972b886c522ebff85e388a404ef52}{}\label{_weather___balloon_8cpp_a225972b886c522ebff85e388a404ef52}
+
+
+Definition at line 487 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by heater\+\_\+control(), and loop().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!vdop@{vdop}}
+\index{vdop@{vdop}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{vdop}{vdop}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Custom} vdop({\bf gps},\char`\"{}G\+P\+G\+SA\char`\"{}, 17)}\hypertarget{_weather___balloon_8cpp_acaaa1b97759f106aaf5c83f39c17c58b}{}\label{_weather___balloon_8cpp_acaaa1b97759f106aaf5c83f39c17c58b}
+
+
+Referenced by read\+\_\+\+G\+P\+S().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!watchdog@{watchdog}}
+\index{watchdog@{watchdog}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{watchdog}{watchdog}}]{\setlength{\rightskip}{0pt plus 5cm}volatile uint16\+\_\+t watchdog = 10}\hypertarget{_weather___balloon_8cpp_ac273c0e3f7143f7d3c6227763c4da844}{}\label{_weather___balloon_8cpp_ac273c0e3f7143f7d3c6227763c4da844}
+
+
+Definition at line 13 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by check\+\_\+alarms(), check\+\_\+battery(), check\+\_\+landing(), check\+\_\+launch(), heater\+\_\+control(), log\+\_\+data(), loop(), pet\+\_\+watchdog(), queue\+\_\+altitude(), queue\+\_\+pressure(), read\+Sensors(), and setup().
+
+\index{Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}!Wire@{Wire}}
+\index{Wire@{Wire}!Weather\+\_\+\+Balloon.\+cpp@{Weather\+\_\+\+Balloon.\+cpp}}
+\subsubsection[{\texorpdfstring{Wire}{Wire}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf M\+S5xxx} ms5607\& Wire}\hypertarget{_weather___balloon_8cpp_a5924c9408a49897f2752e9c95b091461}{}\label{_weather___balloon_8cpp_a5924c9408a49897f2752e9c95b091461}
+
+
+Definition at line 400 of file Weather\+\_\+\+Balloon.\+cpp.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S1307\+::adjust(), R\+T\+C\+\_\+\+D\+S3231\+::adjust(), R\+T\+C\+\_\+\+D\+S3231\+::\+B\+B\+S\+Q\+W\+Enable(), M\+A\+X17043\+::begin(), Adafruit\+\_\+\+S\+H\+T31\+::begin(), D\+S3231\+::begin(), Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::begin(), Adafruit\+\_\+\+S\+I1145\+::begin(), Adafruit\+\_\+\+T\+S\+L2561\+\_\+\+Unified\+::begin(), M\+A\+G3110\+::config(), R\+T\+C\+\_\+\+D\+S3231\+::enable32k\+Hz(), R\+T\+C\+\_\+\+D\+S3231\+::force\+Temp\+Conv(), D\+S3231\+::get\+Alarm1(), D\+S3231\+::get\+Alarm2(), D\+S3231\+::get\+Alarm\+Type1(), D\+S3231\+::get\+Alarm\+Type2(), R\+T\+C\+\_\+\+D\+S3231\+::get\+Control\+Register\+Data(), D\+S3231\+::get\+Date\+Time(), R\+T\+C\+\_\+\+D\+S3231\+::get\+Temp\+As\+Float(), R\+T\+C\+\_\+\+D\+S3231\+::get\+Temp\+As\+Word(), L\+S\+M9\+D\+S1\+::\+I2\+Cread\+Byte(), L\+S\+M9\+D\+S1\+::\+I2\+Cread\+Bytes(), L\+S\+M9\+D\+S1\+::\+I2\+Cwrite\+Byte(), L\+S\+M9\+D\+S1\+::init\+I2\+C(), D\+S3231\+::is\+Alarm2(), R\+T\+C\+\_\+\+D\+S1307\+::isrunning(), R\+T\+C\+\_\+\+D\+S3231\+::isrunning(), R\+T\+C\+\_\+\+D\+S1307\+::now(), R\+T\+C\+\_\+\+D\+S3231\+::now(), Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::read16(), M\+A\+G3110\+::read\+\_\+x(), M\+A\+G3110\+::read\+\_\+y(), M\+A\+G3110\+::read\+\_\+z(), Adafruit\+\_\+\+S\+H\+T31\+::read\+Humidity(), Adafruit\+\_\+\+S\+I1145\+::read\+Prox(), Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::read\+Register(), Adafruit\+\_\+\+S\+H\+T31\+::read\+Status(), D\+S3231\+::read\+Temperature(), D\+S3231\+::set\+Alarm1(), D\+S3231\+::set\+Alarm2(), M\+A\+X17043\+::set\+Compensation(), D\+S3231\+::set\+Date\+Time(), R\+T\+C\+\_\+\+D\+S3231\+::\+S\+Q\+W\+Enable(), R\+T\+C\+\_\+\+D\+S3231\+::\+S\+Q\+W\+Frequency(), and Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::write\+Register().
+

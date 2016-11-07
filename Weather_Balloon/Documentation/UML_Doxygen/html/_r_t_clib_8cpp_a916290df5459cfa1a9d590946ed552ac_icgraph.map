@@ -1,0 +1,7 @@
+<map id="bcd2bin" name="bcd2bin">
+<area shape="rect" id="node2" href="$class_r_t_c___d_s3231.html#ad892efd8d357db71da0c672523f6d699" title="RTC_DS3231::enable32kHz" alt="" coords="120,5,289,32"/>
+<area shape="rect" id="node3" href="$class_r_t_c___d_s1307.html#a9f5f5dbcce65b67e00b50808a45a4249" title="RTC_DS1307::now" alt="" coords="143,56,266,83"/>
+<area shape="rect" id="node4" href="$class_r_t_c___d_s3234.html#a1b22090fcfdbef26725da0232157a3c1" title="RTC_DS3234::now" alt="" coords="143,107,266,133"/>
+<area shape="rect" id="node6" href="$class_r_t_c___d_s3231.html#adc740b28876022b852e0f33842632fab" title="RTC_DS3231::now" alt="" coords="143,157,266,184"/>
+<area shape="rect" id="node5" href="$class_r_t_c___d_s3234.html#a28e48a48c9b04692e5c5049e94e389f1" title="RTC_DS3234::RTC_DS3234" alt="" coords="337,107,505,133"/>
+</map>

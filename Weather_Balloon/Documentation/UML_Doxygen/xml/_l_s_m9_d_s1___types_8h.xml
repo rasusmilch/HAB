@@ -1,0 +1,1037 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_l_s_m9_d_s1___types_8h" kind="file" language="C++">
+    <compoundname>LSM9DS1_Types.h</compoundname>
+    <includes refid="_l_s_m9_d_s1___registers_8h" local="yes">LSM9DS1_Registers.h</includes>
+    <includedby refid="_spark_fun_l_s_m9_d_s1_8h" local="yes">Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h</includedby>
+    <includedby refid="_spark_fun_l_s_m9_d_s1_8cpp" local="yes">Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp</includedby>
+    <incdepgraph>
+      <node id="976">
+        <label>LSM9DS1_Registers.h</label>
+        <link refid="_l_s_m9_d_s1___registers_8h"/>
+      </node>
+      <node id="975">
+        <label>Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h</label>
+        <link refid="LSM9DS1_Types.h"/>
+        <childnode refid="976" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="979">
+        <label>Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp</label>
+        <link refid="_spark_fun_l_s_m9_d_s1_8cpp"/>
+      </node>
+      <node id="980">
+        <label>Weather_Balloon/Weather_Balloon.cpp</label>
+        <link refid="_weather___balloon_8cpp"/>
+      </node>
+      <node id="978">
+        <label>Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h</label>
+        <link refid="_spark_fun_l_s_m9_d_s1_8h"/>
+        <childnode refid="979" relation="include">
+        </childnode>
+        <childnode refid="980" relation="include">
+        </childnode>
+      </node>
+      <node id="977">
+        <label>Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h</label>
+        <link refid="LSM9DS1_Types.h"/>
+        <childnode refid="978" relation="include">
+        </childnode>
+        <childnode refid="979" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structgyro_settings" prot="public">gyroSettings</innerclass>
+    <innerclass refid="structdevice_settings" prot="public">deviceSettings</innerclass>
+    <innerclass refid="structaccel_settings" prot="public">accelSettings</innerclass>
+    <innerclass refid="structmag_settings" prot="public">magSettings</innerclass>
+    <innerclass refid="structtemperature_settings" prot="public">temperatureSettings</innerclass>
+    <innerclass refid="struct_i_m_u_settings" prot="public">IMUSettings</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adf" prot="public" static="no">
+        <name>interface_mode</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" prot="public">
+          <name>IMU_MODE_SPI</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" prot="public">
+          <name>IMU_MODE_I2C</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="30" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="29" bodyend="33"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5" prot="public" static="no">
+        <name>accel_scale</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5a9f13a7adb3d15b6f7fde45dbad3cad79" prot="public">
+          <name>A_SCALE_2G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5aeca8698a139e3fc87586f146b9d3de6d" prot="public">
+          <name>A_SCALE_16G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5acae590a6103345d19fd0baff549704cd" prot="public">
+          <name>A_SCALE_4G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5a6ed9d49bcd9f5126385f96e9cc2815dc" prot="public">
+          <name>A_SCALE_8G</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="37" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="36" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7" prot="public" static="no">
+        <name>gyro_scale</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7afad4e9baa5094130c2bc658eb246bf28" prot="public">
+          <name>G_SCALE_245DPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7a1aec6f4922f5ea2acdf6906adeb59e74" prot="public">
+          <name>G_SCALE_500DPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7aed3f7451d700c367afa9e460b585e325" prot="public">
+          <name>G_SCALE_2000DPS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="46" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="45" bodyend="50"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12" prot="public" static="no">
+        <name>mag_scale</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a748d21a4cb33dadf28ca7714f4cddcda" prot="public">
+          <name>M_SCALE_4GS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a5fff9e998fac7b01fc03b0e31304fdef" prot="public">
+          <name>M_SCALE_8GS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a077e507d00ffa3900cca06f0468662ec" prot="public">
+          <name>M_SCALE_12GS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a92c1e164e0a4a175017ba364fbf35039" prot="public">
+          <name>M_SCALE_16GS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="54" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="53" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0da" prot="public" static="no">
+        <name>gyro_odr</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa46e4b9ddaa07070ee3877e73d4fbb102" prot="public">
+          <name>G_ODR_PD</name>
+          <briefdescription>
+<para>TODO. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa3b869da1db5ef385bef59afde908f0d4" prot="public">
+          <name>G_ODR_149</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa1547375b27d30eff96b3ada412232582" prot="public">
+          <name>G_ODR_595</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa5aa95e91100e9e4578c4e5dbc74e338e" prot="public">
+          <name>G_ODR_119</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa40f6c04efec46c070acc270de8fef90f" prot="public">
+          <name>G_ODR_238</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daaac86d493f5ea2ab4f079f33fc2af49b5" prot="public">
+          <name>G_ODR_476</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa40a6bcf15420dac8a940d881b3327f1a" prot="public">
+          <name>G_ODR_952</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="63" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="62" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4c" prot="public" static="no">
+        <name>accel_odr</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca00f262f56e7fe288b51692de4a0db637" prot="public">
+          <name>XL_POWER_DOWN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4cab52d017f3a29b0524c06a031aa911200" prot="public">
+          <name>XL_ODR_10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca05b65a0b6d1562f42eb8ad6f578189c2" prot="public">
+          <name>XL_ODR_50</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca656b9a352c5f810f92b694839e4de427" prot="public">
+          <name>XL_ODR_119</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4caa5ff3320426dfcba12155d5568638713" prot="public">
+          <name>XL_ODR_238</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca449a0936289054357bd8cd3e87f87188" prot="public">
+          <name>XL_ODR_476</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca5e04d1c5bf2149823530b66e6385ebfe" prot="public">
+          <name>XL_ODR_952</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="75" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="74" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070f" prot="public" static="no">
+        <name>accel_abw</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fabc80fa7e8dc62583a0e8c0ed8ae71a1a" prot="public">
+          <name>A_ABW_408</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fadbca3954ae463631547f490de293a9f9" prot="public">
+          <name>A_ABW_211</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fa844f937fb20e996b0461df77704da6f5" prot="public">
+          <name>A_ABW_105</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fa6ad0ca76c4f69cbace639bdaff7b5abb" prot="public">
+          <name>A_ABW_50</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="87" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="86" bodyend="92"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1" prot="public" static="no">
+        <name>mag_odr</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1ad03993e445a080f73055d9f05c478775" prot="public">
+          <name>M_ODR_0625</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1aa0fe25fb66797a2cc909ea593d8d0bd1" prot="public">
+          <name>M_ODR_125</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1ad0c6e92baec8bf8bff8f98187669ff8f" prot="public">
+          <name>M_ODR_250</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1acdeb477f611df5dc135cddab105ee4ef" prot="public">
+          <name>M_ODR_5</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1a47d39a827b553f3e548017464dac48e5" prot="public">
+          <name>M_ODR_10</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1ae9ab071d026a36cb822398bc139d09fd" prot="public">
+          <name>M_ODR_20</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1a762b676daab994808adfccf37d61bab2" prot="public">
+          <name>M_ODR_40</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1a8b9a584b1bea939481c55e37d793b664" prot="public">
+          <name>M_ODR_80</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="97" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="96" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40" prot="public" static="no">
+        <name>interrupt_select</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40aacd3924d1fe4c8f8633e449dc59cb49b" prot="public">
+          <name>XG_INT1</name>
+          <initializer>= INT1_CTRL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40ab66e78d48944867a818ebd243b772bc6" prot="public">
+          <name>XG_INT2</name>
+          <initializer>= INT2_CTRL</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="109" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="108" bodyend="112"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44" prot="public" static="no">
+        <name>interrupt_generators</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a58828ad8c29289f7a1c8b6cc8279cd6b" prot="public">
+          <name>INT_DRDY_XL</name>
+          <initializer>= (1&lt;&lt;0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a05fdb684eb83bc1c773ca651f81233cc" prot="public">
+          <name>INT_DRDY_G</name>
+          <initializer>= (1&lt;&lt;1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a5b25ca60c7b16d86e6b93a51b6f90f03" prot="public">
+          <name>INT1_BOOT</name>
+          <initializer>= (1&lt;&lt;2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a69969616fb624e4d58ef1fb1fa3d18e5" prot="public">
+          <name>INT2_DRDY_TEMP</name>
+          <initializer>= (1&lt;&lt;2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a6ef9975e529e82b435a598a7dfbb6c07" prot="public">
+          <name>INT_FTH</name>
+          <initializer>= (1&lt;&lt;3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a3bf078657eaab8cf968ccf169d7e6db5" prot="public">
+          <name>INT_OVR</name>
+          <initializer>= (1&lt;&lt;4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a8e331b7b15ff4d4c00288383878447d8" prot="public">
+          <name>INT_FSS5</name>
+          <initializer>= (1&lt;&lt;5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a6a1da1fe6320283c6ffa97c238581e2c" prot="public">
+          <name>INT_IG_XL</name>
+          <initializer>= (1&lt;&lt;6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a209f0e20661cdbb83a5fe40a7c9e077b" prot="public">
+          <name>INT1_IG_G</name>
+          <initializer>= (1&lt;&lt;7)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a9a072d556529afa0efe8214122ec06c1" prot="public">
+          <name>INT2_INACT</name>
+          <initializer>= (1&lt;&lt;7)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="115" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="114" bodyend="126"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0" prot="public" static="no">
+        <name>accel_interrupt_generator</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0aa39192671e0f8b53c36f8ee39ef8e35c" prot="public">
+          <name>XLIE_XL</name>
+          <initializer>= (1&lt;&lt;0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a91ecf3a5c71111d0fb4e5bd3cb7c447f" prot="public">
+          <name>XHIE_XL</name>
+          <initializer>= (1&lt;&lt;1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a7fbabf403cd24d8106ac11fac63e6726" prot="public">
+          <name>YLIE_XL</name>
+          <initializer>= (1&lt;&lt;2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a2ad1bf16493fbe040393f3a94612ccff" prot="public">
+          <name>YHIE_XL</name>
+          <initializer>= (1&lt;&lt;3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0aaa6c03020dd419325c0d7e1430b5f25a" prot="public">
+          <name>ZLIE_XL</name>
+          <initializer>= (1&lt;&lt;4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a0dba78c800ebf6150631277fc30dc9c3" prot="public">
+          <name>ZHIE_XL</name>
+          <initializer>= (1&lt;&lt;5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a1a9a1a63454023b9334a653429af9700" prot="public">
+          <name>GEN_6D</name>
+          <initializer>= (1&lt;&lt;6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="129" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="128" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fe" prot="public" static="no">
+        <name>gyro_interrupt_generator</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781feaae4cdb05c82052a84fabcaa5744c9b32" prot="public">
+          <name>XLIE_G</name>
+          <initializer>= (1&lt;&lt;0)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fead11c5fe61d6433be7496d064e68c373a" prot="public">
+          <name>XHIE_G</name>
+          <initializer>= (1&lt;&lt;1)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fea47d0fa6f93eb39d783453c31b1d7cb8f" prot="public">
+          <name>YLIE_G</name>
+          <initializer>= (1&lt;&lt;2)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fea1af3b20faa2600ebf98d88a415a2770e" prot="public">
+          <name>YHIE_G</name>
+          <initializer>= (1&lt;&lt;3)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781feabdc8ed0e0fe4ae1c700c80e6dfdd57ab" prot="public">
+          <name>ZLIE_G</name>
+          <initializer>= (1&lt;&lt;4)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fea5477978c9962d8db31e389dcaa9dae10" prot="public">
+          <name>ZHIE_G</name>
+          <initializer>= (1&lt;&lt;5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="140" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="139" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09" prot="public" static="no">
+        <name>mag_interrupt_generator</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09a2973fcb9d1987e2613a4aa8a670012fa" prot="public">
+          <name>ZIEN</name>
+          <initializer>= (1&lt;&lt;5)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09a7a55213b6ec1e3eaa2b4884ce9690ecf" prot="public">
+          <name>YIEN</name>
+          <initializer>= (1&lt;&lt;6)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09a0ab2ee771a701832c52ef0a9e420b26f" prot="public">
+          <name>XIEN</name>
+          <initializer>= (1&lt;&lt;7)</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="150" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="149" bodyend="154"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7" prot="public" static="no">
+        <name>h_lactive</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7a7c5c74ecf9a0ae6739fe2a9e4cd76a2f" prot="public">
+          <name>INT_ACTIVE_HIGH</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7a3f37d3df875092889b3df55cb542f6be" prot="public">
+          <name>INT_ACTIVE_LOW</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="157" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="156" bodyend="160"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053" prot="public" static="no">
+        <name>pp_od</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053a68a6e4216b18873633e97522e231fd8e" prot="public">
+          <name>INT_PUSH_PULL</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053ae391fc3fa86500815fd0b8640a076475" prot="public">
+          <name>INT_OPEN_DRAIN</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="163" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="162" bodyend="166"/>
+      </memberdef>
+      <memberdef kind="enum" id="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266db" prot="public" static="no">
+        <name>fifoMode_type</name>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbac872bd466c3f62c86a9efe3f29fb18f9" prot="public">
+          <name>FIFO_OFF</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbada3b77d422419e73618e6e9ad2bd797c" prot="public">
+          <name>FIFO_THS</name>
+          <initializer>= 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbab8ea2d0a3714dcdd938cc528fb193cc2" prot="public">
+          <name>FIFO_CONT_TRIGGER</name>
+          <initializer>= 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbafcad54b1e76bcc1098adaabef5f324a3" prot="public">
+          <name>FIFO_OFF_TRIGGER</name>
+          <initializer>= 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbac98044d9eb040eef7c05f211679aa7b3" prot="public">
+          <name>FIFO_CONT</name>
+          <initializer>= 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="169" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="168" bodyend="175"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">LSM9DS1_Types.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">SFE_LSM9DS1<sp/>Library<sp/>-<sp/>LSM9DS1<sp/>Types<sp/>and<sp/>Enumerations</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Jim<sp/>Lindblom<sp/>@<sp/>SparkFun<sp/>Electronics</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Original<sp/>Creation<sp/>Date:<sp/>April<sp/>21,<sp/>2015</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">https://github.com/sparkfun/LSM9DS1_Breakout</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">This<sp/>file<sp/>defines<sp/>all<sp/>types<sp/>and<sp/>enumerations<sp/>used<sp/>by<sp/>the<sp/>LSM9DS1<sp/>class.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Development<sp/>environment<sp/>specifics:</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/><sp/><sp/>IDE:<sp/>Arduino<sp/>1.6.0</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>Hardware<sp/>Platform:<sp/>Arduino<sp/>Uno</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>LSM9DS1<sp/>Breakout<sp/>Version:<sp/>1.0</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment">This<sp/>code<sp/>is<sp/>beerware;<sp/>if<sp/>you<sp/>see<sp/>me<sp/>(or<sp/>any<sp/>other<sp/>SparkFun<sp/>employee)<sp/>at<sp/>the</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">local,<sp/>and<sp/>you&apos;ve<sp/>found<sp/>our<sp/>code<sp/>helpful,<sp/>please<sp/>buy<sp/>us<sp/>a<sp/>round!</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment">Distributed<sp/>as-is;<sp/>no<sp/>warranty<sp/>is<sp/>given.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__LSM9DS1_Types_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__LSM9DS1_Types_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_l_s_m9_d_s1___registers_8h" kindref="compound">LSM9DS1_Registers.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>LSM9DS1<sp/>functions<sp/>over<sp/>both<sp/>I2C<sp/>or<sp/>SPI.<sp/>This<sp/>library<sp/>supports<sp/>both.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>But<sp/>the<sp/>interface<sp/>mode<sp/>used<sp/>must<sp/>be<sp/>sent<sp/>to<sp/>the<sp/>LSM9DS1<sp/>constructor.<sp/>Use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>one<sp/>of<sp/>these<sp/>two<sp/>as<sp/>the<sp/>first<sp/>parameter<sp/>of<sp/>the<sp/>constructor.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adf" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adf" kindref="member">interface_mode</ref></highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31" refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" kindref="member">IMU_MODE_SPI</ref>,</highlight></codeline>
+<codeline lineno="32" refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" kindref="member">IMU_MODE_I2C</ref>,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>accel_scale<sp/>defines<sp/>all<sp/>possible<sp/>FSR&apos;s<sp/>of<sp/>the<sp/>accelerometer:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5" kindref="member">accel_scale</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="38" refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5a9f13a7adb3d15b6f7fde45dbad3cad79" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5a9f13a7adb3d15b6f7fde45dbad3cad79" kindref="member">A_SCALE_2G</ref>,<sp/></highlight><highlight class="comment">//<sp/>00:<sp/><sp/>2g</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5aeca8698a139e3fc87586f146b9d3de6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5aeca8698a139e3fc87586f146b9d3de6d" kindref="member">A_SCALE_16G</ref>,</highlight><highlight class="comment">//<sp/>01:<sp/><sp/>16g</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40" refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5acae590a6103345d19fd0baff549704cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5acae590a6103345d19fd0baff549704cd" kindref="member">A_SCALE_4G</ref>,<sp/></highlight><highlight class="comment">//<sp/>10:<sp/><sp/>4g</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5a6ed9d49bcd9f5126385f96e9cc2815dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a673b4d5fae609f3439299512239f16d5a6ed9d49bcd9f5126385f96e9cc2815dc" kindref="member">A_SCALE_8G</ref><sp/><sp/></highlight><highlight class="comment">//<sp/>11:<sp/><sp/>8g</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>gyro_scale<sp/>defines<sp/>the<sp/>possible<sp/>full-scale<sp/>ranges<sp/>of<sp/>the<sp/>gyroscope:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7" kindref="member">gyro_scale</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47" refid="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7afad4e9baa5094130c2bc658eb246bf28" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7afad4e9baa5094130c2bc658eb246bf28" kindref="member">G_SCALE_245DPS</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>00:<sp/><sp/>245<sp/>degrees<sp/>per<sp/>second</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7a1aec6f4922f5ea2acdf6906adeb59e74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7a1aec6f4922f5ea2acdf6906adeb59e74" kindref="member">G_SCALE_500DPS</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>01:<sp/><sp/>500<sp/>dps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7aed3f7451d700c367afa9e460b585e325" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1aaefcfc776c48cc3dadde638a460a41f7aed3f7451d700c367afa9e460b585e325" kindref="member">G_SCALE_2000DPS</ref>,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>11:<sp/><sp/>2000<sp/>dps</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>mag_scale<sp/>defines<sp/>all<sp/>possible<sp/>FSR&apos;s<sp/>of<sp/>the<sp/>magnetometer:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12" kindref="member">mag_scale</ref></highlight></codeline>
+<codeline lineno="54"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="55" refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a748d21a4cb33dadf28ca7714f4cddcda" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a748d21a4cb33dadf28ca7714f4cddcda" kindref="member">M_SCALE_4GS</ref>,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>00:<sp/><sp/>4Gs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a5fff9e998fac7b01fc03b0e31304fdef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a5fff9e998fac7b01fc03b0e31304fdef" kindref="member">M_SCALE_8GS</ref>,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>01:<sp/><sp/>8Gs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a077e507d00ffa3900cca06f0468662ec" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a077e507d00ffa3900cca06f0468662ec" kindref="member">M_SCALE_12GS</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>10:<sp/><sp/>12Gs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a92c1e164e0a4a175017ba364fbf35039" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a84f71ddfd863e44aed142156f8314f12a92c1e164e0a4a175017ba364fbf35039" kindref="member">M_SCALE_16GS</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>11:<sp/><sp/>16Gs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>gyro_odr<sp/>defines<sp/>all<sp/>possible<sp/>data<sp/>rate/bandwidth<sp/>combos<sp/>of<sp/>the<sp/>gyro:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0da" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0da" kindref="member">gyro_odr</ref></highlight></codeline>
+<codeline lineno="63"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65" refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa46e4b9ddaa07070ee3877e73d4fbb102" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa46e4b9ddaa07070ee3877e73d4fbb102" kindref="member">G_ODR_PD</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Power<sp/>down<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa3b869da1db5ef385bef59afde908f0d4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa3b869da1db5ef385bef59afde908f0d4" kindref="member">G_ODR_149</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>14.9<sp/>Hz<sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa1547375b27d30eff96b3ada412232582" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa1547375b27d30eff96b3ada412232582" kindref="member">G_ODR_595</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>59.5<sp/>Hz<sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa5aa95e91100e9e4578c4e5dbc74e338e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa5aa95e91100e9e4578c4e5dbc74e338e" kindref="member">G_ODR_119</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>119<sp/>Hz<sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa40f6c04efec46c070acc270de8fef90f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa40f6c04efec46c070acc270de8fef90f" kindref="member">G_ODR_238</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>238<sp/>Hz<sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daaac86d493f5ea2ab4f079f33fc2af49b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daaac86d493f5ea2ab4f079f33fc2af49b5" kindref="member">G_ODR_476</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>476<sp/>Hz<sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa40a6bcf15420dac8a940d881b3327f1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1af4749d8ab55f522c4ec64885dfd5b0daa40a6bcf15420dac8a940d881b3327f1a" kindref="member">G_ODR_952</ref><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>952<sp/>Hz<sp/>(6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment">//<sp/>accel_oder<sp/>defines<sp/>all<sp/>possible<sp/>output<sp/>data<sp/>rates<sp/>of<sp/>the<sp/>accelerometer:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4c" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4c" kindref="member">accel_odr</ref></highlight></codeline>
+<codeline lineno="75"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="76" refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca00f262f56e7fe288b51692de4a0db637" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca00f262f56e7fe288b51692de4a0db637" kindref="member">XL_POWER_DOWN</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>Power-down<sp/>mode<sp/>(0x0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4cab52d017f3a29b0524c06a031aa911200" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4cab52d017f3a29b0524c06a031aa911200" kindref="member">XL_ODR_10</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>10<sp/>Hz<sp/>(0x1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca05b65a0b6d1562f42eb8ad6f578189c2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca05b65a0b6d1562f42eb8ad6f578189c2" kindref="member">XL_ODR_50</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>50<sp/>Hz<sp/>(0x02)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca656b9a352c5f810f92b694839e4de427" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca656b9a352c5f810f92b694839e4de427" kindref="member">XL_ODR_119</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>119<sp/>Hz<sp/>(0x3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4caa5ff3320426dfcba12155d5568638713" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4caa5ff3320426dfcba12155d5568638713" kindref="member">XL_ODR_238</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>238<sp/>Hz<sp/>(0x4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca449a0936289054357bd8cd3e87f87188" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca449a0936289054357bd8cd3e87f87188" kindref="member">XL_ODR_476</ref>,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>476<sp/>Hz<sp/>(0x5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca5e04d1c5bf2149823530b66e6385ebfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a0fa3cd8bd1e1395c6f4b7d122e568a4ca5e04d1c5bf2149823530b66e6385ebfe" kindref="member">XL_ODR_952</ref><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>952<sp/>Hz<sp/>(0x6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>accel_abw<sp/>defines<sp/>all<sp/>possible<sp/>anti-aliasing<sp/>filter<sp/>rates<sp/>of<sp/>the<sp/>accelerometer:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070f" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070f" kindref="member">accel_abw</ref></highlight></codeline>
+<codeline lineno="87"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="88" refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fabc80fa7e8dc62583a0e8c0ed8ae71a1a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fabc80fa7e8dc62583a0e8c0ed8ae71a1a" kindref="member">A_ABW_408</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>408<sp/>Hz<sp/>(0x0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89" refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fadbca3954ae463631547f490de293a9f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fadbca3954ae463631547f490de293a9f9" kindref="member">A_ABW_211</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>211<sp/>Hz<sp/>(0x1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fa844f937fb20e996b0461df77704da6f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fa844f937fb20e996b0461df77704da6f5" kindref="member">A_ABW_105</ref>,<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>105<sp/>Hz<sp/>(0x2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91" refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fa6ad0ca76c4f69cbace639bdaff7b5abb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a2b328447d0889d8b2a7d8b66ac7f070fa6ad0ca76c4f69cbace639bdaff7b5abb" kindref="member">A_ABW_50</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>50<sp/>Hz<sp/>(0x3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment">//<sp/>mag_odr<sp/>defines<sp/>all<sp/>possible<sp/>output<sp/>data<sp/>rates<sp/>of<sp/>the<sp/>magnetometer:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1" kindref="member">mag_odr</ref></highlight></codeline>
+<codeline lineno="97"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="98" refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1ad03993e445a080f73055d9f05c478775" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1ad03993e445a080f73055d9f05c478775" kindref="member">M_ODR_0625</ref>,<sp/></highlight><highlight class="comment">//<sp/>0.625<sp/>Hz<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1aa0fe25fb66797a2cc909ea593d8d0bd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1aa0fe25fb66797a2cc909ea593d8d0bd1" kindref="member">M_ODR_125</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>1.25<sp/>Hz<sp/>(1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1ad0c6e92baec8bf8bff8f98187669ff8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1ad0c6e92baec8bf8bff8f98187669ff8f" kindref="member">M_ODR_250</ref>,<sp/><sp/></highlight><highlight class="comment">//<sp/>2.5<sp/>Hz<sp/>(2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1acdeb477f611df5dc135cddab105ee4ef" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1acdeb477f611df5dc135cddab105ee4ef" kindref="member">M_ODR_5</ref>,<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>5<sp/>Hz<sp/>(3)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1a47d39a827b553f3e548017464dac48e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1a47d39a827b553f3e548017464dac48e5" kindref="member">M_ODR_10</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>10<sp/>Hz<sp/>(4)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1ae9ab071d026a36cb822398bc139d09fd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1ae9ab071d026a36cb822398bc139d09fd" kindref="member">M_ODR_20</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>20<sp/>Hz<sp/>(5)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1a762b676daab994808adfccf37d61bab2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1a762b676daab994808adfccf37d61bab2" kindref="member">M_ODR_40</ref>,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>40<sp/>Hz<sp/>(6)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1a8b9a584b1bea939481c55e37d793b664" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a766d6813f2dbc4e79cd5491bf8cffba1a8b9a584b1bea939481c55e37d793b664" kindref="member">M_ODR_80</ref><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>80<sp/>Hz<sp/>(7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108" refid="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40" kindref="member">interrupt_select</ref></highlight></codeline>
+<codeline lineno="109"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="110" refid="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40aacd3924d1fe4c8f8633e449dc59cb49b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40aacd3924d1fe4c8f8633e449dc59cb49b" kindref="member">XG_INT1</ref><sp/>=<sp/><ref refid="_l_s_m9_d_s1___registers_8h_1a2fd793f37fec2d8f4c871d2b1396d55a" kindref="member">INT1_CTRL</ref>,</highlight></codeline>
+<codeline lineno="111" refid="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40ab66e78d48944867a818ebd243b772bc6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40ab66e78d48944867a818ebd243b772bc6" kindref="member">XG_INT2</ref><sp/>=<sp/><ref refid="_l_s_m9_d_s1___registers_8h_1a93fcaece7ef8a204aaaf88df6ea8711e" kindref="member">INT2_CTRL</ref></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44" kindref="member">interrupt_generators</ref></highlight></codeline>
+<codeline lineno="115"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="116" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a58828ad8c29289f7a1c8b6cc8279cd6b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a58828ad8c29289f7a1c8b6cc8279cd6b" kindref="member">INT_DRDY_XL</ref><sp/>=<sp/>(1&lt;&lt;0),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Accelerometer<sp/>data<sp/>ready<sp/>(INT1<sp/>&amp;<sp/>INT2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a05fdb684eb83bc1c773ca651f81233cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a05fdb684eb83bc1c773ca651f81233cc" kindref="member">INT_DRDY_G</ref><sp/>=<sp/>(1&lt;&lt;1),<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Gyroscope<sp/>data<sp/>ready<sp/>(INT1<sp/>&amp;<sp/>INT2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a5b25ca60c7b16d86e6b93a51b6f90f03" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a5b25ca60c7b16d86e6b93a51b6f90f03" kindref="member">INT1_BOOT</ref><sp/>=<sp/>(1&lt;&lt;2),<sp/><sp/></highlight><highlight class="comment">//<sp/>Boot<sp/>status<sp/>(INT1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a69969616fb624e4d58ef1fb1fa3d18e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a69969616fb624e4d58ef1fb1fa3d18e5" kindref="member">INT2_DRDY_TEMP</ref><sp/>=<sp/>(1&lt;&lt;2),</highlight><highlight class="comment">//<sp/>Temp<sp/>data<sp/>ready<sp/>(INT2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a6ef9975e529e82b435a598a7dfbb6c07" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a6ef9975e529e82b435a598a7dfbb6c07" kindref="member">INT_FTH</ref><sp/>=<sp/>(1&lt;&lt;3),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIFO<sp/>threshold<sp/>interrupt<sp/>(INT1<sp/>&amp;<sp/>INT2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a3bf078657eaab8cf968ccf169d7e6db5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a3bf078657eaab8cf968ccf169d7e6db5" kindref="member">INT_OVR</ref><sp/>=<sp/>(1&lt;&lt;4),<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Overrun<sp/>interrupt<sp/>(INT1<sp/>&amp;<sp/>INT2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a8e331b7b15ff4d4c00288383878447d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a8e331b7b15ff4d4c00288383878447d8" kindref="member">INT_FSS5</ref><sp/>=<sp/>(1&lt;&lt;5),<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FSS5<sp/>interrupt<sp/>(INT1<sp/>&amp;<sp/>INT2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a6a1da1fe6320283c6ffa97c238581e2c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a6a1da1fe6320283c6ffa97c238581e2c" kindref="member">INT_IG_XL</ref><sp/>=<sp/>(1&lt;&lt;6),<sp/><sp/></highlight><highlight class="comment">//<sp/>Accel<sp/>interrupt<sp/>generator<sp/>(INT1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a209f0e20661cdbb83a5fe40a7c9e077b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a209f0e20661cdbb83a5fe40a7c9e077b" kindref="member">INT1_IG_G</ref><sp/>=<sp/>(1&lt;&lt;7),<sp/><sp/></highlight><highlight class="comment">//<sp/>Gyro<sp/>interrupt<sp/>enable<sp/>(INT1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a9a072d556529afa0efe8214122ec06c1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ab022e85f0d7bd904980613c510088d44a9a072d556529afa0efe8214122ec06c1" kindref="member">INT2_INACT</ref><sp/>=<sp/>(1&lt;&lt;7),<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Inactivity<sp/>interrupt<sp/>output<sp/>(INT2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal">};<sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0" kindref="member">accel_interrupt_generator</ref></highlight></codeline>
+<codeline lineno="129"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="130" refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0aa39192671e0f8b53c36f8ee39ef8e35c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0aa39192671e0f8b53c36f8ee39ef8e35c" kindref="member">XLIE_XL</ref><sp/>=<sp/>(1&lt;&lt;0),</highlight></codeline>
+<codeline lineno="131" refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a91ecf3a5c71111d0fb4e5bd3cb7c447f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a91ecf3a5c71111d0fb4e5bd3cb7c447f" kindref="member">XHIE_XL</ref><sp/>=<sp/>(1&lt;&lt;1),</highlight></codeline>
+<codeline lineno="132" refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a7fbabf403cd24d8106ac11fac63e6726" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a7fbabf403cd24d8106ac11fac63e6726" kindref="member">YLIE_XL</ref><sp/>=<sp/>(1&lt;&lt;2),</highlight></codeline>
+<codeline lineno="133" refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a2ad1bf16493fbe040393f3a94612ccff" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a2ad1bf16493fbe040393f3a94612ccff" kindref="member">YHIE_XL</ref><sp/>=<sp/>(1&lt;&lt;3),</highlight></codeline>
+<codeline lineno="134" refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0aaa6c03020dd419325c0d7e1430b5f25a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0aaa6c03020dd419325c0d7e1430b5f25a" kindref="member">ZLIE_XL</ref><sp/>=<sp/>(1&lt;&lt;4),</highlight></codeline>
+<codeline lineno="135" refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a0dba78c800ebf6150631277fc30dc9c3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a0dba78c800ebf6150631277fc30dc9c3" kindref="member">ZHIE_XL</ref><sp/>=<sp/>(1&lt;&lt;5),</highlight></codeline>
+<codeline lineno="136" refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a1a9a1a63454023b9334a653429af9700" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a08bd882cbecf2dfc74b8f4b9b64739b0a1a9a1a63454023b9334a653429af9700" kindref="member">GEN_6D</ref><sp/>=<sp/>(1&lt;&lt;6)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139" refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fe" kindref="member">gyro_interrupt_generator</ref></highlight></codeline>
+<codeline lineno="140"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="141" refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781feaae4cdb05c82052a84fabcaa5744c9b32" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781feaae4cdb05c82052a84fabcaa5744c9b32" kindref="member">XLIE_G</ref><sp/>=<sp/>(1&lt;&lt;0),</highlight></codeline>
+<codeline lineno="142" refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fead11c5fe61d6433be7496d064e68c373a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fead11c5fe61d6433be7496d064e68c373a" kindref="member">XHIE_G</ref><sp/>=<sp/>(1&lt;&lt;1),</highlight></codeline>
+<codeline lineno="143" refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fea47d0fa6f93eb39d783453c31b1d7cb8f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fea47d0fa6f93eb39d783453c31b1d7cb8f" kindref="member">YLIE_G</ref><sp/>=<sp/>(1&lt;&lt;2),</highlight></codeline>
+<codeline lineno="144" refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fea1af3b20faa2600ebf98d88a415a2770e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fea1af3b20faa2600ebf98d88a415a2770e" kindref="member">YHIE_G</ref><sp/>=<sp/>(1&lt;&lt;3),</highlight></codeline>
+<codeline lineno="145" refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781feabdc8ed0e0fe4ae1c700c80e6dfdd57ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781feabdc8ed0e0fe4ae1c700c80e6dfdd57ab" kindref="member">ZLIE_G</ref><sp/>=<sp/>(1&lt;&lt;4),</highlight></codeline>
+<codeline lineno="146" refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fea5477978c9962d8db31e389dcaa9dae10" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a15d5248e57e0a507b46cbf5d57a781fea5477978c9962d8db31e389dcaa9dae10" kindref="member">ZHIE_G</ref><sp/>=<sp/>(1&lt;&lt;5)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149" refid="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09" kindref="member">mag_interrupt_generator</ref></highlight></codeline>
+<codeline lineno="150"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="151" refid="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09a2973fcb9d1987e2613a4aa8a670012fa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09a2973fcb9d1987e2613a4aa8a670012fa" kindref="member">ZIEN</ref><sp/>=<sp/>(1&lt;&lt;5),</highlight></codeline>
+<codeline lineno="152" refid="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09a7a55213b6ec1e3eaa2b4884ce9690ecf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09a7a55213b6ec1e3eaa2b4884ce9690ecf" kindref="member">YIEN</ref><sp/>=<sp/>(1&lt;&lt;6),</highlight></codeline>
+<codeline lineno="153" refid="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09a0ab2ee771a701832c52ef0a9e420b26f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a7f8abc75a35e68f3effa0881f95daa09a0ab2ee771a701832c52ef0a9e420b26f" kindref="member">XIEN</ref><sp/>=<sp/>(1&lt;&lt;7)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156" refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7" kindref="member">h_lactive</ref></highlight></codeline>
+<codeline lineno="157"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="158" refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7a7c5c74ecf9a0ae6739fe2a9e4cd76a2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7a7c5c74ecf9a0ae6739fe2a9e4cd76a2f" kindref="member">INT_ACTIVE_HIGH</ref>,</highlight></codeline>
+<codeline lineno="159" refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7a3f37d3df875092889b3df55cb542f6be" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7a3f37d3df875092889b3df55cb542f6be" kindref="member">INT_ACTIVE_LOW</ref></highlight></codeline>
+<codeline lineno="160"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight></codeline>
+<codeline lineno="162" refid="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053" kindref="member">pp_od</ref></highlight></codeline>
+<codeline lineno="163"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164" refid="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053a68a6e4216b18873633e97522e231fd8e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053a68a6e4216b18873633e97522e231fd8e" kindref="member">INT_PUSH_PULL</ref>,</highlight></codeline>
+<codeline lineno="165" refid="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053ae391fc3fa86500815fd0b8640a076475" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053ae391fc3fa86500815fd0b8640a076475" kindref="member">INT_OPEN_DRAIN</ref></highlight></codeline>
+<codeline lineno="166"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168" refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266db" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266db" kindref="member">fifoMode_type</ref></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="170" refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbac872bd466c3f62c86a9efe3f29fb18f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbac872bd466c3f62c86a9efe3f29fb18f9" kindref="member">FIFO_OFF</ref><sp/>=<sp/>0,</highlight></codeline>
+<codeline lineno="171" refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbada3b77d422419e73618e6e9ad2bd797c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbada3b77d422419e73618e6e9ad2bd797c" kindref="member">FIFO_THS</ref><sp/>=<sp/>1,</highlight></codeline>
+<codeline lineno="172" refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbab8ea2d0a3714dcdd938cc528fb193cc2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbab8ea2d0a3714dcdd938cc528fb193cc2" kindref="member">FIFO_CONT_TRIGGER</ref><sp/>=<sp/>3,</highlight></codeline>
+<codeline lineno="173" refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbafcad54b1e76bcc1098adaabef5f324a3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbafcad54b1e76bcc1098adaabef5f324a3" kindref="member">FIFO_OFF_TRIGGER</ref><sp/>=<sp/>4,</highlight></codeline>
+<codeline lineno="174" refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbac98044d9eb040eef7c05f211679aa7b3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbac98044d9eb040eef7c05f211679aa7b3" kindref="member">FIFO_CONT</ref><sp/>=<sp/>5</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="structgyro_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structgyro_settings" kindref="compound">gyroSettings</ref></highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Gyroscope<sp/>settings:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="structgyro_settings_1ac9c769eeefed971baac74a7b81b25e7b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1ac9c769eeefed971baac74a7b81b25e7b" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="181" refid="structgyro_settings_1a70ced5c47e97d4dd6770954117ad3a9f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="structgyro_settings_1a70ced5c47e97d4dd6770954117ad3a9f" kindref="member">scale</ref>;<sp/></highlight><highlight class="comment">//<sp/>Changed<sp/>this<sp/>to<sp/>16-bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182" refid="structgyro_settings_1a58ebac4d1f242d6b129570396a7355b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a58ebac4d1f242d6b129570396a7355b0" kindref="member">sampleRate</ref>;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>New<sp/>gyro<sp/>stuff:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="structgyro_settings_1ac3f0782333ec55165c1f589d445ba374" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1ac3f0782333ec55165c1f589d445ba374" kindref="member">bandwidth</ref>;</highlight></codeline>
+<codeline lineno="185" refid="structgyro_settings_1a296a167235d876fa79afc471399e763b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a296a167235d876fa79afc471399e763b" kindref="member">lowPowerEnable</ref>;</highlight></codeline>
+<codeline lineno="186" refid="structgyro_settings_1aa7aa5eba55588e4bcfc0be9ea9b6ed8d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1aa7aa5eba55588e4bcfc0be9ea9b6ed8d" kindref="member">HPFEnable</ref>;</highlight></codeline>
+<codeline lineno="187" refid="structgyro_settings_1a7357a9b858fdf515e969ae4e06459f37" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a7357a9b858fdf515e969ae4e06459f37" kindref="member">HPFCutoff</ref>;</highlight></codeline>
+<codeline lineno="188" refid="structgyro_settings_1a877b529e39287bed155acbca97a75540" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a877b529e39287bed155acbca97a75540" kindref="member">flipX</ref>;</highlight></codeline>
+<codeline lineno="189" refid="structgyro_settings_1a2137659e07899a0efccc941e003c07e0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a2137659e07899a0efccc941e003c07e0" kindref="member">flipY</ref>;</highlight></codeline>
+<codeline lineno="190" refid="structgyro_settings_1a94c92be9f7c56dd9cd21120307d7373f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a94c92be9f7c56dd9cd21120307d7373f" kindref="member">flipZ</ref>;</highlight></codeline>
+<codeline lineno="191" refid="structgyro_settings_1a33239fd5c4a0fd74670455008c2701ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a33239fd5c4a0fd74670455008c2701ee" kindref="member">orientation</ref>;</highlight></codeline>
+<codeline lineno="192" refid="structgyro_settings_1a7c1000d1151579743faa376d49751f1d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a7c1000d1151579743faa376d49751f1d" kindref="member">enableX</ref>;</highlight></codeline>
+<codeline lineno="193" refid="structgyro_settings_1a4d6ea95b7a52daab6d48dc128c83f3d8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a4d6ea95b7a52daab6d48dc128c83f3d8" kindref="member">enableY</ref>;</highlight></codeline>
+<codeline lineno="194" refid="structgyro_settings_1a86a86182fd841bd651672d43803b5c63" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a86a86182fd841bd651672d43803b5c63" kindref="member">enableZ</ref>;</highlight></codeline>
+<codeline lineno="195" refid="structgyro_settings_1a3eb9f52cae013b107fbc5059220f9333" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structgyro_settings_1a3eb9f52cae013b107fbc5059220f9333" kindref="member">latchInterrupt</ref>;</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198" refid="structdevice_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structdevice_settings" kindref="compound">deviceSettings</ref></highlight></codeline>
+<codeline lineno="199"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="200" refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" kindref="member">commInterface</ref>;<sp/></highlight><highlight class="comment">//<sp/>Can<sp/>be<sp/>I2C,<sp/>SPI<sp/>4-wire<sp/>or<sp/>SPI<sp/>3-wire</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201" refid="structdevice_settings_1a2f43ac785e01fcbcfaf8436885f638ab" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structdevice_settings_1a2f43ac785e01fcbcfaf8436885f638ab" kindref="member">agAddress</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>I2C<sp/>address<sp/>or<sp/>SPI<sp/>CS<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202" refid="structdevice_settings_1aec4e1d3e3f38b4e3e0f74f1640e16faa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structdevice_settings_1aec4e1d3e3f38b4e3e0f74f1640e16faa" kindref="member">mAddress</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>I2C<sp/>address<sp/>or<sp/>SPI<sp/>CS<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205" refid="structaccel_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structaccel_settings" kindref="compound">accelSettings</ref></highlight></codeline>
+<codeline lineno="206"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Accelerometer<sp/>settings:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208" refid="structaccel_settings_1a6ecaf7abfbaf7e74c6986fd93798ad4b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structaccel_settings_1a6ecaf7abfbaf7e74c6986fd93798ad4b" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="209" refid="structaccel_settings_1a3a0a38e5e32ad21fcf8e880f37c0de1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structaccel_settings_1a3a0a38e5e32ad21fcf8e880f37c0de1e" kindref="member">scale</ref>;</highlight></codeline>
+<codeline lineno="210" refid="structaccel_settings_1a51704cb40f1e72ec298f601fedcc6092" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structaccel_settings_1a51704cb40f1e72ec298f601fedcc6092" kindref="member">sampleRate</ref>;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>New<sp/>accel<sp/>stuff:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212" refid="structaccel_settings_1a8cd5546cda8657ad2405d378fc815b9a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structaccel_settings_1a8cd5546cda8657ad2405d378fc815b9a" kindref="member">enableX</ref>;</highlight></codeline>
+<codeline lineno="213" refid="structaccel_settings_1a3f9ff5abfde83c5a59808faeb5ad4c6c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structaccel_settings_1a3f9ff5abfde83c5a59808faeb5ad4c6c" kindref="member">enableY</ref>;</highlight></codeline>
+<codeline lineno="214" refid="structaccel_settings_1abdb5ee5fb9a802315d8340ea5d83b587" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structaccel_settings_1abdb5ee5fb9a802315d8340ea5d83b587" kindref="member">enableZ</ref>;</highlight></codeline>
+<codeline lineno="215" refid="structaccel_settings_1ab64c80f62ecfeb3041744febaed9407b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><sp/><ref refid="structaccel_settings_1ab64c80f62ecfeb3041744febaed9407b" kindref="member">bandwidth</ref>;</highlight></codeline>
+<codeline lineno="216" refid="structaccel_settings_1ad165444ae7996ff6160be01d77d33b62" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structaccel_settings_1ad165444ae7996ff6160be01d77d33b62" kindref="member">highResEnable</ref>;</highlight></codeline>
+<codeline lineno="217" refid="structaccel_settings_1a3925a8342b5a4b3caecd187e729954f3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structaccel_settings_1a3925a8342b5a4b3caecd187e729954f3" kindref="member">highResBandwidth</ref>;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220" refid="structmag_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structmag_settings" kindref="compound">magSettings</ref></highlight></codeline>
+<codeline lineno="221"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Magnetometer<sp/>settings:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="structmag_settings_1a97f8e5c4baf3fc9a662f84fedb188f3c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structmag_settings_1a97f8e5c4baf3fc9a662f84fedb188f3c" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="224" refid="structmag_settings_1a5966915104376cb76d9eb787bab024bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structmag_settings_1a5966915104376cb76d9eb787bab024bc" kindref="member">scale</ref>;</highlight></codeline>
+<codeline lineno="225" refid="structmag_settings_1aca3dbf81e533dce344e618a3df199c1e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structmag_settings_1aca3dbf81e533dce344e618a3df199c1e" kindref="member">sampleRate</ref>;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>New<sp/>mag<sp/>stuff:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227" refid="structmag_settings_1afcfa1e532fa140e42dc34a4abd7926ae" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structmag_settings_1afcfa1e532fa140e42dc34a4abd7926ae" kindref="member">tempCompensationEnable</ref>;</highlight></codeline>
+<codeline lineno="228" refid="structmag_settings_1ad36c7bb251858fb289841c91fb615a5f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structmag_settings_1ad36c7bb251858fb289841c91fb615a5f" kindref="member">XYPerformance</ref>;</highlight></codeline>
+<codeline lineno="229" refid="structmag_settings_1a0ab41f0670a3fd20ce1a43332f6fe949" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structmag_settings_1a0ab41f0670a3fd20ce1a43332f6fe949" kindref="member">ZPerformance</ref>;</highlight></codeline>
+<codeline lineno="230" refid="structmag_settings_1abd59df268c0798fceacea68b956009df" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structmag_settings_1abd59df268c0798fceacea68b956009df" kindref="member">lowPowerEnable</ref>;</highlight></codeline>
+<codeline lineno="231" refid="structmag_settings_1ae3f0044de2fbdff6d7b830c36f26c450" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structmag_settings_1ae3f0044de2fbdff6d7b830c36f26c450" kindref="member">operatingMode</ref>;</highlight></codeline>
+<codeline lineno="232"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight></codeline>
+<codeline lineno="234" refid="structtemperature_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structtemperature_settings" kindref="compound">temperatureSettings</ref></highlight></codeline>
+<codeline lineno="235"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Temperature<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="structtemperature_settings_1aeb258e2620d85e2f72fc057dbffa9715" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="structtemperature_settings_1aeb258e2620d85e2f72fc057dbffa9715" kindref="member">enabled</ref>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240" refid="struct_i_m_u_settings" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_i_m_u_settings" kindref="compound">IMUSettings</ref></highlight></codeline>
+<codeline lineno="241"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="242" refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structdevice_settings" kindref="compound">deviceSettings</ref><sp/><ref refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" kindref="member">device</ref>;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244" refid="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structgyro_settings" kindref="compound">gyroSettings</ref><sp/><ref refid="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" kindref="member">gyro</ref>;</highlight></codeline>
+<codeline lineno="245" refid="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structaccel_settings" kindref="compound">accelSettings</ref><sp/><ref refid="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" kindref="member">accel</ref>;</highlight></codeline>
+<codeline lineno="246" refid="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structmag_settings" kindref="compound">magSettings</ref><sp/><ref refid="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" kindref="member">mag</ref>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="248" refid="struct_i_m_u_settings_1a55a77555f1843c186db02080078632f2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structtemperature_settings" kindref="compound">temperatureSettings</ref><sp/><ref refid="struct_i_m_u_settings_1a55a77555f1843c186db02080078632f2" kindref="member">temp</ref>;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h"/>
+  </compounddef>
+</doxygen>

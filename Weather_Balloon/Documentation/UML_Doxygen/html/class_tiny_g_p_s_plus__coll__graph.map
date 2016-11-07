@@ -1,0 +1,10 @@
+<map id="TinyGPSPlus" name="TinyGPSPlus">
+<area shape="rect" id="node2" href="$struct_tiny_g_p_s_decimal.html" title="TinyGPSDecimal" alt="" coords="5,68,121,95"/>
+<area shape="rect" id="node4" href="$struct_tiny_g_p_s_course.html" title="TinyGPSCourse" alt="" coords="175,40,285,67"/>
+<area shape="rect" id="node5" href="$struct_tiny_g_p_s_speed.html" title="TinyGPSSpeed" alt="" coords="179,91,281,117"/>
+<area shape="rect" id="node8" href="$struct_tiny_g_p_s_altitude.html" title="TinyGPSAltitude" alt="" coords="173,141,287,168"/>
+<area shape="rect" id="node3" href="$struct_tiny_g_p_s_location.html" title="TinyGPSLocation" alt="" coords="171,192,289,219"/>
+<area shape="rect" id="node6" href="$struct_tiny_g_p_s_time.html" title="TinyGPSTime" alt="" coords="181,243,279,269"/>
+<area shape="rect" id="node7" href="$struct_tiny_g_p_s_date.html" title="TinyGPSDate" alt="" coords="183,293,277,320"/>
+<area shape="rect" id="node9" href="$struct_tiny_g_p_s_integer.html" title="TinyGPSInteger" alt="" coords="175,344,285,371"/>
+</map>

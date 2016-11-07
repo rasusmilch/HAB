@@ -1,0 +1,246 @@
+\hypertarget{class_ethernet_client_stream}{}\section{Ethernet\+Client\+Stream Class Reference}
+\label{class_ethernet_client_stream}\index{Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}}
+
+
+{\ttfamily \#include $<$Ethernet\+Client\+Stream.\+h$>$}
+
+
+
+Inheritance diagram for Ethernet\+Client\+Stream\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_ethernet_client_stream__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Ethernet\+Client\+Stream\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_ethernet_client_stream__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_ethernet_client_stream_ad0fc03caf9c77123d2557404b4e13904}{Ethernet\+Client\+Stream} (Client \&client, I\+P\+Address localip, I\+P\+Address ip, const char $\ast$host, uint16\+\_\+t port)
+\item 
+int \hyperlink{class_ethernet_client_stream_af791449a05185d079c66a3ce7ceb8867}{available} ()
+\item 
+int \hyperlink{class_ethernet_client_stream_ab09d7fee2e6e57a4ae63227226991673}{read} ()
+\item 
+int \hyperlink{class_ethernet_client_stream_ab48794c4ecdcf568ca915c54849e33d3}{peek} ()
+\item 
+void \hyperlink{class_ethernet_client_stream_a6bfd307971b4f6936cbb00eb04276e7f}{flush} ()
+\item 
+size\+\_\+t \hyperlink{class_ethernet_client_stream_aca0236433d48beb3ada438dbdb425bbd}{write} (uint8\+\_\+t)
+\item 
+void \hyperlink{class_ethernet_client_stream_a2cb7fc9f588d352ad57527e7189196ea}{maintain} (I\+P\+Address localip)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file Ethernet\+Client\+Stream.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}!Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}}
+\index{Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}!Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}}
+\subsubsection[{\texorpdfstring{Ethernet\+Client\+Stream(\+Client \&client, I\+P\+Address localip, I\+P\+Address ip, const char $\ast$host, uint16\+\_\+t port)}{EthernetClientStream(Client \&client, IPAddress localip, IPAddress ip, const char *host, uint16\_t port)}}]{\setlength{\rightskip}{0pt plus 5cm}Ethernet\+Client\+Stream\+::\+Ethernet\+Client\+Stream (
+\begin{DoxyParamCaption}
+\item[{Client \&}]{client, }
+\item[{I\+P\+Address}]{localip, }
+\item[{I\+P\+Address}]{ip, }
+\item[{const char $\ast$}]{host, }
+\item[{uint16\+\_\+t}]{port}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ethernet_client_stream_ad0fc03caf9c77123d2557404b4e13904}{}\label{class_ethernet_client_stream_ad0fc03caf9c77123d2557404b4e13904}
+
+
+Definition at line 60 of file Ethernet\+Client\+Stream.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}!available@{available}}
+\index{available@{available}!Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}}
+\subsubsection[{\texorpdfstring{available()}{available()}}]{\setlength{\rightskip}{0pt plus 5cm}int Ethernet\+Client\+Stream\+::available (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ethernet_client_stream_af791449a05185d079c66a3ce7ceb8867}{}\label{class_ethernet_client_stream_af791449a05185d079c66a3ce7ceb8867}
+
+
+Definition at line 71 of file Ethernet\+Client\+Stream.\+h.
+
+
+
+References maintain().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_ethernet_client_stream_af791449a05185d079c66a3ce7ceb8867_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}!flush@{flush}}
+\index{flush@{flush}!Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}}
+\subsubsection[{\texorpdfstring{flush()}{flush()}}]{\setlength{\rightskip}{0pt plus 5cm}void Ethernet\+Client\+Stream\+::flush (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ethernet_client_stream_a6bfd307971b4f6936cbb00eb04276e7f}{}\label{class_ethernet_client_stream_a6bfd307971b4f6936cbb00eb04276e7f}
+
+
+Definition at line 88 of file Ethernet\+Client\+Stream.\+h.
+
+
+
+References maintain().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_ethernet_client_stream_a6bfd307971b4f6936cbb00eb04276e7f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}!maintain@{maintain}}
+\index{maintain@{maintain}!Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}}
+\subsubsection[{\texorpdfstring{maintain(\+I\+P\+Address localip)}{maintain(IPAddress localip)}}]{\setlength{\rightskip}{0pt plus 5cm}void Ethernet\+Client\+Stream\+::maintain (
+\begin{DoxyParamCaption}
+\item[{I\+P\+Address}]{localip}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ethernet_client_stream_a2cb7fc9f588d352ad57527e7189196ea}{}\label{class_ethernet_client_stream_a2cb7fc9f588d352ad57527e7189196ea}
+
+
+Definition at line 101 of file Ethernet\+Client\+Stream.\+h.
+
+
+
+References D\+E\+B\+U\+G\+\_\+\+P\+R\+I\+N\+T\+LN, maintain(), and M\+I\+L\+L\+I\+S\+\_\+\+R\+E\+C\+O\+N\+N\+E\+CT.
+
+
+
+Referenced by available(), flush(), maintain(), peek(), read(), and write().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=185pt]{class_ethernet_client_stream_a2cb7fc9f588d352ad57527e7189196ea_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_ethernet_client_stream_a2cb7fc9f588d352ad57527e7189196ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}!peek@{peek}}
+\index{peek@{peek}!Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}}
+\subsubsection[{\texorpdfstring{peek()}{peek()}}]{\setlength{\rightskip}{0pt plus 5cm}int Ethernet\+Client\+Stream\+::peek (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ethernet_client_stream_ab48794c4ecdcf568ca915c54849e33d3}{}\label{class_ethernet_client_stream_ab48794c4ecdcf568ca915c54849e33d3}
+
+
+Definition at line 83 of file Ethernet\+Client\+Stream.\+h.
+
+
+
+References maintain().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_ethernet_client_stream_ab48794c4ecdcf568ca915c54849e33d3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}!read@{read}}
+\index{read@{read}!Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}}
+\subsubsection[{\texorpdfstring{read()}{read()}}]{\setlength{\rightskip}{0pt plus 5cm}int Ethernet\+Client\+Stream\+::read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ethernet_client_stream_ab09d7fee2e6e57a4ae63227226991673}{}\label{class_ethernet_client_stream_ab09d7fee2e6e57a4ae63227226991673}
+
+
+Definition at line 77 of file Ethernet\+Client\+Stream.\+h.
+
+
+
+References maintain().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_ethernet_client_stream_ab09d7fee2e6e57a4ae63227226991673_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}!write@{write}}
+\index{write@{write}!Ethernet\+Client\+Stream@{Ethernet\+Client\+Stream}}
+\subsubsection[{\texorpdfstring{write(uint8\+\_\+t)}{write(uint8\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t Ethernet\+Client\+Stream\+::write (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_ethernet_client_stream_aca0236433d48beb3ada438dbdb425bbd}{}\label{class_ethernet_client_stream_aca0236433d48beb3ada438dbdb425bbd}
+
+
+Definition at line 95 of file Ethernet\+Client\+Stream.\+h.
+
+
+
+References maintain().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_ethernet_client_stream_aca0236433d48beb3ada438dbdb425bbd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Firmata/utility/\hyperlink{_ethernet_client_stream_8h}{Ethernet\+Client\+Stream.\+h}\end{DoxyCompactItemize}

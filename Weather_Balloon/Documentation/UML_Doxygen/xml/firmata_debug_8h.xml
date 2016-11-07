@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="firmata_debug_8h" kind="file" language="C++">
+    <compoundname>firmataDebug.h</compoundname>
+    <includedby refid="_ethernet_client_stream_8h" local="yes">Weather_Balloon/library/Firmata/utility/EthernetClientStream.h</includedby>
+    <invincdepgraph>
+      <node id="810">
+        <label>Weather_Balloon/library/Firmata/utility/EthernetClientStream.h</label>
+        <link refid="_ethernet_client_stream_8h"/>
+      </node>
+      <node id="809">
+        <label>Weather_Balloon/library/Firmata/utility/firmataDebug.h</label>
+        <link refid="firmataDebug.h"/>
+        <childnode refid="810" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="firmata_debug_8h_1aa13ce4e79fa7e62c8716cc31e158e5a6" prot="public" static="no">
+        <name>DEBUG_BEGIN</name>
+        <param><defname>baud</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/firmataDebug.h" line="9" column="12" bodyfile="Weather_Balloon/library/Firmata/utility/firmataDebug.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="firmata_debug_8h_1a8e30ff0704664fcb13dabf0c4dc5c8f5" prot="public" static="no">
+        <name>DEBUG_PRINTLN</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/firmataDebug.h" line="10" column="11" bodyfile="Weather_Balloon/library/Firmata/utility/firmataDebug.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" compoundref="_ethernet_client_stream_8h" startline="101" endline="109">EthernetClientStream::maintain</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="firmata_debug_8h_1af6551f0b4c3964c3128f808e7bf987c7" prot="public" static="no">
+        <name>DEBUG_PRINT</name>
+        <param><defname>x</defname></param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/firmataDebug.h" line="11" column="11" bodyfile="Weather_Balloon/library/Firmata/utility/firmataDebug.h" bodystart="11" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FIRMATA_DEBUG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIRMATA_DEBUG_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SERIAL_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>DEBUG_BEGIN(baud)<sp/>Serial.begin(baud);<sp/>while(!Serial)<sp/>{;}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>DEBUG_PRINTLN(x)<sp/><sp/>Serial.println<sp/>(x);<sp/>Serial.flush()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>DEBUG_PRINT(x)<sp/><sp/><sp/><sp/>Serial.print<sp/>(x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="firmata_debug_8h_1aa13ce4e79fa7e62c8716cc31e158e5a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>DEBUG_BEGIN(baud)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10" refid="firmata_debug_8h_1a8e30ff0704664fcb13dabf0c4dc5c8f5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>DEBUG_PRINTLN(x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11" refid="firmata_debug_8h_1af6551f0b4c3964c3128f808e7bf987c7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>DEBUG_PRINT(x)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>FIRMATA_DEBUG_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Firmata/utility/firmataDebug.h"/>
+  </compounddef>
+</doxygen>

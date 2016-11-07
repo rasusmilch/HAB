@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_e0929f836d6dd2a2ac2657f49f55ddfb" kind="dir">
+    <compoundname>Weather_Balloon/library/TinyGPSPlus-0.94b</compoundname>
+    <innerfile refid="_tiny_g_p_s_09_09_8cpp">TinyGPS++.cpp</innerfile>
+    <innerfile refid="_tiny_g_p_s_09_09_8h">TinyGPS++.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,6 @@
+<map id="sht31_power" name="sht31_power">
+<area shape="rect" id="node2" href="$_weather___balloon_8cpp.html#a36e4683d7523a3b1e303d70a2989af58" title="power_sensors" alt="" coords="144,31,247,57"/>
+<area shape="rect" id="node3" href="$_weather___balloon_8cpp.html#a3f16b26bef419adf4e427a66af7fad37" title="check_alarms" alt="" coords="295,5,392,32"/>
+<area shape="rect" id="node5" href="$_weather___balloon_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="318,56,369,83"/>
+<area shape="rect" id="node4" href="$_weather___balloon_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="440,5,487,32"/>
+</map>

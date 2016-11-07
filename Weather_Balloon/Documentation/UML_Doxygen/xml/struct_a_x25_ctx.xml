@@ -1,0 +1,163 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_a_x25_ctx" kind="struct" language="C++" prot="public">
+    <compoundname>AX25Ctx</compoundname>
+    <includes refid="_a_x25_8h" local="no">AX25.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_a_x25_ctx_1aa1dc2643a8179b3a662cbe8b1e78433e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t AX25Ctx::buf[AX25_MAX_FRAME_LEN]</definition>
+        <argsstring>[AX25_MAX_FRAME_LEN]</argsstring>
+        <name>buf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="26" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="26" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a23e83c05decc0769bfd8f62d860bc636" compoundref="_a_x25_8cpp" startline="19" endline="23">ax25_init</referencedby>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_x25_ctx_1a1e358851f9443aae7fb781c76044e62f" prot="public" static="no" mutable="no">
+        <type>FILE *</type>
+        <definition>FILE* AX25Ctx::ch</definition>
+        <argsstring></argsstring>
+        <name>ch</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="27" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_x25_ctx_1a4863474d8ded80b51d5cc1c2aff9f840" prot="public" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t AX25Ctx::frame_len</definition>
+        <argsstring></argsstring>
+        <name>frame_len</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="28" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a23e83c05decc0769bfd8f62d860bc636" compoundref="_a_x25_8cpp" startline="19" endline="23">ax25_init</referencedby>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_x25_ctx_1acba5c6c48b277cd5520a4060abac3a63" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AX25Ctx::crc_in</definition>
+        <argsstring></argsstring>
+        <name>crc_in</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="29" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a23e83c05decc0769bfd8f62d860bc636" compoundref="_a_x25_8cpp" startline="19" endline="23">ax25_init</referencedby>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t AX25Ctx::crc_out</definition>
+        <argsstring></argsstring>
+        <name>crc_out</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="30" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="30" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a23e83c05decc0769bfd8f62d860bc636" compoundref="_a_x25_8cpp" startline="19" endline="23">ax25_init</referencedby>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+        <referencedby refid="_a_x25_8h_1ab37e8746a65819795b43d43072ce4555" compoundref="_a_x25_8cpp" startline="108" endline="120">ax25_sendRaw</referencedby>
+        <referencedby refid="_a_x25_8h_1aeb4be1c44c0faeb1fc73dbb04ac59a6e" compoundref="_a_x25_8cpp" startline="141" endline="164">ax25_sendVia</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_x25_ctx_1aaf4149ca8e0ac15cb846f57b5a2056cd" prot="public" static="no" mutable="no">
+        <type><ref refid="_a_x25_8h_1a15689cdcc5425113afb9b0588d76c273" kindref="member">ax25_callback_t</ref></type>
+        <definition>ax25_callback_t AX25Ctx::hook</definition>
+        <argsstring></argsstring>
+        <name>hook</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="31" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a23e83c05decc0769bfd8f62d860bc636" compoundref="_a_x25_8cpp" startline="19" endline="23">ax25_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_x25_ctx_1a9ff9110cc05e86005aaab19c41aa3237" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AX25Ctx::sync</definition>
+        <argsstring></argsstring>
+        <name>sync</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="32" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="32" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_a_x25_ctx_1a2cf354b3ec66e851815667cf1ac43c06" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool AX25Ctx::escape</definition>
+        <argsstring></argsstring>
+        <name>escape</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="33" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="246">
+        <label>AX25Msg</label>
+        <link refid="struct_a_x25_msg"/>
+        <childnode refid="247" relation="usage">
+          <edgelabel>rpt_list</edgelabel>
+          <edgelabel>src</edgelabel>
+          <edgelabel>dst</edgelabel>
+        </childnode>
+      </node>
+      <node id="247">
+        <label>AX25Call</label>
+        <link refid="struct_a_x25_call"/>
+      </node>
+      <node id="245">
+        <label>AX25Ctx</label>
+        <link refid="struct_a_x25_ctx"/>
+        <childnode refid="246" relation="usage">
+          <edgelabel>hook</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/LibAPRS/AX25.h" line="25" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AX25.h" bodystart="25" bodyend="34"/>
+    <listofallmembers>
+      <member refid="struct_a_x25_ctx_1aa1dc2643a8179b3a662cbe8b1e78433e" prot="public" virt="non-virtual"><scope>AX25Ctx</scope><name>buf</name></member>
+      <member refid="struct_a_x25_ctx_1a1e358851f9443aae7fb781c76044e62f" prot="public" virt="non-virtual"><scope>AX25Ctx</scope><name>ch</name></member>
+      <member refid="struct_a_x25_ctx_1acba5c6c48b277cd5520a4060abac3a63" prot="public" virt="non-virtual"><scope>AX25Ctx</scope><name>crc_in</name></member>
+      <member refid="struct_a_x25_ctx_1aea6a6b921e34e3ed514e4598a907adf1" prot="public" virt="non-virtual"><scope>AX25Ctx</scope><name>crc_out</name></member>
+      <member refid="struct_a_x25_ctx_1a2cf354b3ec66e851815667cf1ac43c06" prot="public" virt="non-virtual"><scope>AX25Ctx</scope><name>escape</name></member>
+      <member refid="struct_a_x25_ctx_1a4863474d8ded80b51d5cc1c2aff9f840" prot="public" virt="non-virtual"><scope>AX25Ctx</scope><name>frame_len</name></member>
+      <member refid="struct_a_x25_ctx_1aaf4149ca8e0ac15cb846f57b5a2056cd" prot="public" virt="non-virtual"><scope>AX25Ctx</scope><name>hook</name></member>
+      <member refid="struct_a_x25_ctx_1a9ff9110cc05e86005aaab19c41aa3237" prot="public" virt="non-virtual"><scope>AX25Ctx</scope><name>sync</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

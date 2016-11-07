@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_c_r_c-_c_c_i_t_8h" kind="file" language="C++">
+    <compoundname>CRC-CCIT.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">avr/pgmspace.h</includes>
+    <includedby refid="_a_x25_8cpp" local="yes">Weather_Balloon/library/LibAPRS/AX25.cpp</includedby>
+    <includedby refid="_c_r_c-_c_c_i_t_8c" local="yes">Weather_Balloon/library/LibAPRS/CRC-CCIT.c</includedby>
+    <includedby refid="_lib_a_p_r_s_8h" local="yes">Weather_Balloon/library/LibAPRS/LibAPRS.h</includedby>
+    <incdepgraph>
+      <node id="1075">
+        <label>stdint.h</label>
+      </node>
+      <node id="1074">
+        <label>Weather_Balloon/library/LibAPRS/CRC-CCIT.h</label>
+        <link refid="CRC-CCIT.h"/>
+        <childnode refid="1075" relation="include">
+        </childnode>
+        <childnode refid="1076" relation="include">
+        </childnode>
+      </node>
+      <node id="1076">
+        <label>avr/pgmspace.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1079">
+        <label>Weather_Balloon/library/LibAPRS/CRC-CCIT.c</label>
+        <link refid="_c_r_c-_c_c_i_t_8c"/>
+      </node>
+      <node id="1077">
+        <label>Weather_Balloon/library/LibAPRS/CRC-CCIT.h</label>
+        <link refid="CRC-CCIT.h"/>
+        <childnode refid="1078" relation="include">
+        </childnode>
+        <childnode refid="1079" relation="include">
+        </childnode>
+        <childnode refid="1080" relation="include">
+        </childnode>
+      </node>
+      <node id="1080">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.h</label>
+        <link refid="_lib_a_p_r_s_8h"/>
+      </node>
+      <node id="1078">
+        <label>Weather_Balloon/library/LibAPRS/AX25.cpp</label>
+        <link refid="_a_x25_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" prot="public" static="no">
+        <name>CRC_CCIT_INIT_VAL</name>
+        <initializer>((uint16_t)0xFFFF)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/CRC-CCIT.h" line="9" column="9" bodyfile="Weather_Balloon/library/LibAPRS/CRC-CCIT.h" bodystart="9" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_c_r_c-_c_c_i_t_8h_1aada4617cdcf1f888402be21cb0e7215d" prot="public" static="no" mutable="no">
+        <type>const uint16_t</type>
+        <definition>const uint16_t crc_ccit_table[256]</definition>
+        <argsstring>[256]</argsstring>
+        <name>crc_ccit_table</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/CRC-CCIT.h" line="11" column="1"/>
+        <referencedby refid="_c_r_c-_c_c_i_t_8h_1a290cec53667d36f549f18f42d1539442" compoundref="_c_r_c-_c_c_i_t_8h" startline="13" endline="15">update_crc_ccit</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_c_r_c-_c_c_i_t_8h_1a290cec53667d36f549f18f42d1539442" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t update_crc_ccit</definition>
+        <argsstring>(uint8_t c, uint16_t prev_crc)</argsstring>
+        <name>update_crc_ccit</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>prev_crc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/CRC-CCIT.h" line="13" column="1" bodyfile="Weather_Balloon/library/LibAPRS/CRC-CCIT.h" bodystart="13" bodyend="15"/>
+        <references refid="pgmspace_8h_1a910fb5f01313d339d3b835d45e1e5ad0" compoundref="pgmspace_8h" startline="61">pgm_read_word</references>
+        <references refid="_c_r_c-_c_c_i_t_8h_1aada4617cdcf1f888402be21cb0e7215d">crc_ccit_table</references>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>CRC-CCIT<sp/>Implementation<sp/>based<sp/>on<sp/>work<sp/>by<sp/>Francesco<sp/>Sacchi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CRC_CCIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRC_CCIT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/pgmspace.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="_c_r_c-_c_c_i_t_8h_1ae53bd48601e15e51c3d3c658afae6419" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CRC_CCIT_INIT_VAL<sp/>((uint16_t)0xFFFF)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="_c_r_c-_c_c_i_t_8h_1aada4617cdcf1f888402be21cb0e7215d" kindref="member">crc_ccit_table</ref>[256];</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13" refid="_c_r_c-_c_c_i_t_8h_1a290cec53667d36f549f18f42d1539442" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="_c_r_c-_c_c_i_t_8h_1a290cec53667d36f549f18f42d1539442" kindref="member">update_crc_ccit</ref>(uint8_t<sp/>c,<sp/>uint16_t<sp/>prev_crc)<sp/>{</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(prev_crc<sp/>&gt;&gt;<sp/>8)<sp/>^<sp/><ref refid="pgmspace_8h_1a910fb5f01313d339d3b835d45e1e5ad0" kindref="member">pgm_read_word</ref>(&amp;<ref refid="_c_r_c-_c_c_i_t_8h_1aada4617cdcf1f888402be21cb0e7215d" kindref="member">crc_ccit_table</ref>[(prev_crc<sp/>^<sp/>c)<sp/>&amp;<sp/>0xff]);</highlight></codeline>
+<codeline lineno="15"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/CRC-CCIT.h"/>
+  </compounddef>
+</doxygen>

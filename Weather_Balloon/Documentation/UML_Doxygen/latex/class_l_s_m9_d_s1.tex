@@ -1,0 +1,2555 @@
+\hypertarget{class_l_s_m9_d_s1}{}\section{L\+S\+M9\+D\+S1 Class Reference}
+\label{class_l_s_m9_d_s1}\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+
+
+{\ttfamily \#include $<$Spark\+Fun\+L\+S\+M9\+D\+S1.\+h$>$}
+
+
+
+Collaboration diagram for L\+S\+M9\+D\+S1\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_l_s_m9_d_s1_ab62923063ffc49dca82e6f311c5c8764}{L\+S\+M9\+D\+S1} (\hyperlink{_l_s_m9_d_s1___types_8h_abd62c19dfd2401eba73af16c64296adf}{interface\+\_\+mode} interface, uint8\+\_\+t xg\+Addr, uint8\+\_\+t m\+Addr)
+\item 
+\hyperlink{class_l_s_m9_d_s1_a399a80ee541823b301e81d1afab32b28}{L\+S\+M9\+D\+S1} ()
+\item 
+uint16\+\_\+t \hyperlink{class_l_s_m9_d_s1_a8728e560c76bd120b3711af15a6ecbd6}{begin} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a97939cb15fcb7e33abcd6d3a9230d943}{calibrate} (bool auto\+Calc=true)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_afb45f0bcbcbeb15d4bd1a28821b24d14}{calibrate\+Mag} (bool load\+In=true)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a0d461614bd058b082c94481dc916c18b}{mag\+Offset} (uint8\+\_\+t axis, int16\+\_\+t offset)
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_a515ce6f5c199a86c6aa5be353b2a3a13}{accel\+Available} ()
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_a65b71a03a30f4e8ed1ffd46de3db0560}{gyro\+Available} ()
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_aaf6683c6f3f0281d5222b74f580f321b}{temp\+Available} ()
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_a85afd29e95bead7b3f0083a9a235d1df}{mag\+Available} (\hyperlink{_spark_fun_l_s_m9_d_s1_8h_adcbc07abda18c22c46d0a1129bb61164}{lsm9ds1\+\_\+axis} axis=\hyperlink{_spark_fun_l_s_m9_d_s1_8h_adcbc07abda18c22c46d0a1129bb61164a8a4cd6c8a7401ef4e548059cf12006c0}{A\+L\+L\+\_\+\+A\+X\+IS})
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a56e9710cb538a4c7f7ab94c2ca256ce9}{read\+Gyro} ()
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_adc1b37609a6c850328b16da4f911cefd}{read\+Gyro} (\hyperlink{_spark_fun_l_s_m9_d_s1_8h_adcbc07abda18c22c46d0a1129bb61164}{lsm9ds1\+\_\+axis} axis)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a9953684a1ff652a7d3a4d91e72bccaa1}{read\+Accel} ()
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_acbe3bfc0b8db7fe3f77893d22c394594}{read\+Accel} (\hyperlink{_spark_fun_l_s_m9_d_s1_8h_adcbc07abda18c22c46d0a1129bb61164}{lsm9ds1\+\_\+axis} axis)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_ae127cf75aa5f3c5421e49363795dcd38}{read\+Mag} ()
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_a615fd3ab32a9af833ef9899663100330}{read\+Mag} (\hyperlink{_spark_fun_l_s_m9_d_s1_8h_adcbc07abda18c22c46d0a1129bb61164}{lsm9ds1\+\_\+axis} axis)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_aca21a51dc79a1287b97ed9c326e2080b}{read\+Temp} ()
+\item 
+float \hyperlink{class_l_s_m9_d_s1_a76707323565bc4170ea8e27a932c95e4}{calc\+Gyro} (int16\+\_\+t gyro)
+\item 
+float \hyperlink{class_l_s_m9_d_s1_a54e2a7888b67b47cf0dd986c5b91a3c5}{calc\+Accel} (int16\+\_\+t accel)
+\item 
+float \hyperlink{class_l_s_m9_d_s1_a7d0b0740497b1a10cd3e46a282a143ec}{calc\+Mag} (int16\+\_\+t mag)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a115d304ebcdc8c701f3e5a5d397250aa}{set\+Gyro\+Scale} (uint16\+\_\+t g\+Scl)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a8656d2de1ff9cc4cb76214e4561d02c4}{set\+Accel\+Scale} (uint8\+\_\+t a\+Scl)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_ad7604159a07b0d088cdfb6ba4a0093b0}{set\+Mag\+Scale} (uint8\+\_\+t m\+Scl)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_ab8fc33c8da4fc5c379e880ff57d331fa}{set\+Gyro\+O\+DR} (uint8\+\_\+t g\+Rate)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a76d72839cdecc3f1c4ee6fff578182c5}{set\+Accel\+O\+DR} (uint8\+\_\+t a\+Rate)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a8bc672fba680edc468a643fd58046b41}{set\+Mag\+O\+DR} (uint8\+\_\+t m\+Rate)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a1e318c5e7c1d500c3ab2602c46265354}{config\+Inactivity} (uint8\+\_\+t duration, uint8\+\_\+t threshold, bool sleep\+On)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a1e8ebc6c1e3876d8936197dc93f76717}{config\+Accel\+Int} (uint8\+\_\+t generator, bool and\+Interrupts=false)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_acebcf64ab4e6ea7ed7a23c09ef16afe9}{config\+Accel\+Ths} (uint8\+\_\+t threshold, \hyperlink{_spark_fun_l_s_m9_d_s1_8h_adcbc07abda18c22c46d0a1129bb61164}{lsm9ds1\+\_\+axis} axis, uint8\+\_\+t duration=0, bool wait=0)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a19a341728c4e5b454de045c8a531cf06}{config\+Gyro\+Int} (uint8\+\_\+t generator, bool aoi, bool latch)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_ad865cc972960ed476fabd54f698adf6e}{config\+Gyro\+Ths} (int16\+\_\+t threshold, \hyperlink{_spark_fun_l_s_m9_d_s1_8h_adcbc07abda18c22c46d0a1129bb61164}{lsm9ds1\+\_\+axis} axis, uint8\+\_\+t duration, bool wait)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a5b6948b9d4caf57cfe9e0559a0c7f54c}{config\+Int} (\hyperlink{_l_s_m9_d_s1___types_8h_a6261e8b8f54e4b66959cf92f93141a40}{interrupt\+\_\+select} interupt, uint8\+\_\+t generator, \hyperlink{_l_s_m9_d_s1___types_8h_ac99a793e4542699cb1b621bdac865ba7}{h\+\_\+lactive} active\+Low=\hyperlink{_l_s_m9_d_s1___types_8h_ac99a793e4542699cb1b621bdac865ba7a3f37d3df875092889b3df55cb542f6be}{I\+N\+T\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+OW}, \hyperlink{_l_s_m9_d_s1___types_8h_a60d66fa4435ec836a2f1e82fa6b10053}{pp\+\_\+od} push\+Pull=\hyperlink{_l_s_m9_d_s1___types_8h_a60d66fa4435ec836a2f1e82fa6b10053a68a6e4216b18873633e97522e231fd8e}{I\+N\+T\+\_\+\+P\+U\+S\+H\+\_\+\+P\+U\+LL})
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a54a521668eb63d504d227c6d460723e0}{config\+Mag\+Int} (uint8\+\_\+t generator, \hyperlink{_l_s_m9_d_s1___types_8h_ac99a793e4542699cb1b621bdac865ba7}{h\+\_\+lactive} active\+Low, bool latch=true)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a87cf3dd3a4d9ca79106eb7c1c866a224}{config\+Mag\+Ths} (uint16\+\_\+t threshold)
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_aaba6696754df62a411a6a190100f9ca3}{get\+Gyro\+Int\+Src} ()
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_ae42ae3b368370f977d090ba0e53c7f5c}{get\+Accel\+Int\+Src} ()
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_a2bc92a37db982059b89e0a06e7d05a95}{get\+Mag\+Int\+Src} ()
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_a9dab029d1d24e49709258d893042d28f}{get\+Inactivity} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a13b61812069b399547f177b0b0af8fe3}{sleep\+Gyro} (bool enable=true)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a5f01141131318697838f15d7e5d10f2c}{enable\+F\+I\+FO} (bool enable=true)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a0ec4a93a34545af1acc336bae9b360f1}{set\+F\+I\+FO} (\hyperlink{_l_s_m9_d_s1___types_8h_abd0fd05ddd88dadb906475b36c8266db}{fifo\+Mode\+\_\+type} fifo\+Mode, uint8\+\_\+t fifo\+Ths)
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_ac03ef2ff928a25c4a80af7707cd92dc8}{get\+F\+I\+F\+O\+Samples} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_l_s_m9_d_s1___types_8h_struct_i_m_u_settings}{I\+M\+U\+Settings} \hyperlink{class_l_s_m9_d_s1_a8397fc6c94a11a8a09f3dd17b28cf2a4}{settings}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_abf02b4544b5d529036adbac02e7b9f02}{gx}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_a0c351823fd094ff24ff245dd951cf783}{gy}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_ad4d0f0585398ff917afcba1b4a73e519}{gz}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_adac13514d176cfb54aed8cda9a056335}{ax}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_a978a357dedfa574d6e0fad33ad71e23f}{ay}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_aa631c8a90b90130b5be147dd4fae0841}{az}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_a0e68eb9e44969070b6d84a93ba252f71}{mx}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_a773f80f9b7cdf8375c84a4209895d732}{my}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_aafe23993500ece9efd161e564787dce2}{mz}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_a92791effe47c0f8c93505e53496266e5}{temperature}
+\item 
+float \hyperlink{class_l_s_m9_d_s1_a8c0354ee78e029b6715ee7110bcd8753}{g\+Bias} \mbox{[}3\mbox{]}
+\item 
+float \hyperlink{class_l_s_m9_d_s1_abe998fcc50cfe729c13ab535337849c7}{a\+Bias} \mbox{[}3\mbox{]}
+\item 
+float \hyperlink{class_l_s_m9_d_s1_aab3753b958a1eaabfb48ffaf837dfadc}{m\+Bias} \mbox{[}3\mbox{]}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_ab2e59e0460cf88a12765238506031f2a}{g\+Bias\+Raw} \mbox{[}3\mbox{]}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_ae42dc2f2b9f2df223c853e233191313a}{a\+Bias\+Raw} \mbox{[}3\mbox{]}
+\item 
+int16\+\_\+t \hyperlink{class_l_s_m9_d_s1_ad0e3ab0b7eeee5378ab91dd20270a9b5}{m\+Bias\+Raw} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_l_s_m9_d_s1_aa4f74e09e93c0133dc30545d4492849e}{init} (\hyperlink{_l_s_m9_d_s1___types_8h_abd62c19dfd2401eba73af16c64296adf}{interface\+\_\+mode} interface, uint8\+\_\+t xg\+Addr, uint8\+\_\+t m\+Addr)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a66a7b02acb28964ffc9362f25988e270}{init\+Gyro} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a143ff5abf4f7ba8e1c42325859106f84}{init\+Accel} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a492aa6edcf891f273d932636e3cc470d}{init\+Mag} ()
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_ae4e470321567e4f93fc09f4cc6cd9efa}{m\+Read\+Byte} (uint8\+\_\+t sub\+Address)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_acfdf9862cad1e66c9fb61a17bfbe7477}{m\+Read\+Bytes} (uint8\+\_\+t sub\+Address, uint8\+\_\+t $\ast$dest, uint8\+\_\+t count)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_afc171c924102c97fa1d88fa7f48bd167}{m\+Write\+Byte} (uint8\+\_\+t sub\+Address, uint8\+\_\+t data)
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_af7f9789df6f0178764c815a3380c202a}{xg\+Read\+Byte} (uint8\+\_\+t sub\+Address)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_ae0a9cbfd74b1f4676f091c2d8e491d77}{xg\+Read\+Bytes} (uint8\+\_\+t sub\+Address, uint8\+\_\+t $\ast$dest, uint8\+\_\+t count)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a263eed4b52ad087a1195755c6ba49e62}{xg\+Write\+Byte} (uint8\+\_\+t sub\+Address, uint8\+\_\+t data)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a303e0dd33e000579dc3917aecedb6e63}{calcg\+Res} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a830dfc95c7e2d8524720d78357b053cb}{calcm\+Res} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a31597c9ae6c5a7de64a50cbbbcd24297}{calca\+Res} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a5aadcd09cf9157de817c359e49304ca7}{constrain\+Scales} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a4286d5803ab028c657e007ae99acc60a}{init\+S\+PI} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a83321c9d6ec50f6b9944907d2be482cd}{S\+P\+Iwrite\+Byte} (uint8\+\_\+t cs\+Pin, uint8\+\_\+t sub\+Address, uint8\+\_\+t data)
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_a6f0f50bb5e9b702d5a19c7441a3f9d8b}{S\+P\+Iread\+Byte} (uint8\+\_\+t cs\+Pin, uint8\+\_\+t sub\+Address)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a26c0f164454eba84e6486033b7061d11}{S\+P\+Iread\+Bytes} (uint8\+\_\+t cs\+Pin, uint8\+\_\+t sub\+Address, uint8\+\_\+t $\ast$dest, uint8\+\_\+t count)
+\item 
+void \hyperlink{class_l_s_m9_d_s1_ae60332c2836bd3f19846b7a44c015ddd}{init\+I2C} ()
+\item 
+void \hyperlink{class_l_s_m9_d_s1_a8e66108a002cc15ec4c0db0a608d20c6}{I2\+Cwrite\+Byte} (uint8\+\_\+t address, uint8\+\_\+t sub\+Address, uint8\+\_\+t data)
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_a7fc046d4b335494331905fdeb5c81c9e}{I2\+Cread\+Byte} (uint8\+\_\+t address, uint8\+\_\+t sub\+Address)
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_adfc9a22290daddd7787e8023fa8f12cc}{I2\+Cread\+Bytes} (uint8\+\_\+t address, uint8\+\_\+t sub\+Address, uint8\+\_\+t $\ast$dest, uint8\+\_\+t count)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_a7141933a2ccde95976e4eecd598ecb17}{\+\_\+m\+Address}
+\item 
+uint8\+\_\+t \hyperlink{class_l_s_m9_d_s1_ac78b7fab605570a16433a4636f91451e}{\+\_\+xg\+Address}
+\item 
+float \hyperlink{class_l_s_m9_d_s1_a2d8654ebb35177088a67e67a944bd998}{g\+Res}
+\item 
+float \hyperlink{class_l_s_m9_d_s1_acdc1f9b300b3c349e17dd21c9bb37c40}{a\+Res}
+\item 
+float \hyperlink{class_l_s_m9_d_s1_aac7ae43adf399e8052464b966aec8472}{m\+Res}
+\item 
+bool \hyperlink{class_l_s_m9_d_s1_a8460d00ea0bb496c5d49190a34e54588}{\+\_\+auto\+Calc}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 45 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{L\+S\+M9\+D\+S1(interface\+\_\+mode interface, uint8\+\_\+t xg\+Addr, uint8\+\_\+t m\+Addr)}{LSM9DS1(interface\_mode interface, uint8\_t xgAddr, uint8\_t mAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}L\+S\+M9\+D\+S1\+::\+L\+S\+M9\+D\+S1 (
+\begin{DoxyParamCaption}
+\item[{{\bf interface\+\_\+mode}}]{interface, }
+\item[{uint8\+\_\+t}]{xg\+Addr, }
+\item[{uint8\+\_\+t}]{m\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_ab62923063ffc49dca82e6f311c5c8764}{}\label{class_l_s_m9_d_s1_ab62923063ffc49dca82e6f311c5c8764}
+
+
+Definition at line 45 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References init().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_l_s_m9_d_s1_ab62923063ffc49dca82e6f311c5c8764_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{L\+S\+M9\+D\+S1()}{LSM9DS1()}}]{\setlength{\rightskip}{0pt plus 5cm}L\+S\+M9\+D\+S1\+::\+L\+S\+M9\+D\+S1 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a399a80ee541823b301e81d1afab32b28}{}\label{class_l_s_m9_d_s1_a399a80ee541823b301e81d1afab32b28}
+
+
+Definition at line 40 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+I2C, init(), L\+S\+M9\+D\+S1\+\_\+\+A\+G\+\_\+\+A\+D\+DR, and L\+S\+M9\+D\+S1\+\_\+\+M\+\_\+\+A\+D\+DR.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_l_s_m9_d_s1_a399a80ee541823b301e81d1afab32b28_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!accel\+Available@{accel\+Available}}
+\index{accel\+Available@{accel\+Available}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{accel\+Available()}{accelAvailable()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::accel\+Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a515ce6f5c199a86c6aa5be353b2a3a13}{}\label{class_l_s_m9_d_s1_a515ce6f5c199a86c6aa5be353b2a3a13}
+
+
+Definition at line 476 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G\+\_\+1, and xg\+Read\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a515ce6f5c199a86c6aa5be353b2a3a13_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!begin@{begin}}
+\index{begin@{begin}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t L\+S\+M9\+D\+S1\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a8728e560c76bd120b3711af15a6ecbd6}{}\label{class_l_s_m9_d_s1_a8728e560c76bd120b3711af15a6ecbd6}
+Todo\+: don\textquotesingle{}t use \+\_\+xg\+Address or \+\_\+m\+Address, duplicating memory 
+
+Definition at line 142 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+m\+Address, \+\_\+xg\+Address, device\+Settings\+::ag\+Address, calca\+Res(), calcg\+Res(), calcm\+Res(), device\+Settings\+::comm\+Interface, constrain\+Scales(), I\+M\+U\+Settings\+::device, I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+I2C, I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+S\+PI, init\+Accel(), init\+Gyro(), init\+I2\+C(), init\+Mag(), init\+S\+P\+I(), device\+Settings\+::m\+Address, m\+Read\+Byte(), settings, W\+H\+O\+\_\+\+A\+M\+\_\+\+I\+\_\+\+A\+G\+\_\+\+R\+SP, W\+H\+O\+\_\+\+A\+M\+\_\+\+I\+\_\+M, W\+H\+O\+\_\+\+A\+M\+\_\+\+I\+\_\+\+M\+\_\+\+R\+SP, W\+H\+O\+\_\+\+A\+M\+\_\+\+I\+\_\+\+XG, and xg\+Read\+Byte().
+
+
+
+Referenced by configure\+\_\+\+L\+S\+M9\+D\+S1().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a8728e560c76bd120b3711af15a6ecbd6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a8728e560c76bd120b3711af15a6ecbd6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!calc\+Accel@{calc\+Accel}}
+\index{calc\+Accel@{calc\+Accel}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{calc\+Accel(int16\+\_\+t accel)}{calcAccel(int16\_t accel)}}]{\setlength{\rightskip}{0pt plus 5cm}float L\+S\+M9\+D\+S1\+::calc\+Accel (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{accel}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a54e2a7888b67b47cf0dd986c5b91a3c5}{}\label{class_l_s_m9_d_s1_a54e2a7888b67b47cf0dd986c5b91a3c5}
+
+
+Definition at line 592 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References a\+Res.
+
+
+
+Referenced by calibrate(), and read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a54e2a7888b67b47cf0dd986c5b91a3c5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!calca\+Res@{calca\+Res}}
+\index{calca\+Res@{calca\+Res}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{calca\+Res()}{calcaRes()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::calca\+Res (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a31597c9ae6c5a7de64a50cbbbcd24297}{}\label{class_l_s_m9_d_s1_a31597c9ae6c5a7de64a50cbbbcd24297}
+
+
+Definition at line 748 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+M\+U\+Settings\+::accel, a\+Res, accel\+Settings\+::scale, and settings.
+
+
+
+Referenced by begin(), and set\+Accel\+Scale().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a31597c9ae6c5a7de64a50cbbbcd24297_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!calcg\+Res@{calcg\+Res}}
+\index{calcg\+Res@{calcg\+Res}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{calcg\+Res()}{calcgRes()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::calcg\+Res (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a303e0dd33e000579dc3917aecedb6e63}{}\label{class_l_s_m9_d_s1_a303e0dd33e000579dc3917aecedb6e63}
+
+
+Definition at line 743 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References g\+Res, I\+M\+U\+Settings\+::gyro, gyro\+Settings\+::scale, and settings.
+
+
+
+Referenced by begin(), and set\+Gyro\+Scale().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a303e0dd33e000579dc3917aecedb6e63_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!calc\+Gyro@{calc\+Gyro}}
+\index{calc\+Gyro@{calc\+Gyro}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{calc\+Gyro(int16\+\_\+t gyro)}{calcGyro(int16\_t gyro)}}]{\setlength{\rightskip}{0pt plus 5cm}float L\+S\+M9\+D\+S1\+::calc\+Gyro (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{gyro}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a76707323565bc4170ea8e27a932c95e4}{}\label{class_l_s_m9_d_s1_a76707323565bc4170ea8e27a932c95e4}
+
+
+Definition at line 586 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References g\+Res.
+
+
+
+Referenced by calibrate(), and read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a76707323565bc4170ea8e27a932c95e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!calc\+Mag@{calc\+Mag}}
+\index{calc\+Mag@{calc\+Mag}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{calc\+Mag(int16\+\_\+t mag)}{calcMag(int16\_t mag)}}]{\setlength{\rightskip}{0pt plus 5cm}float L\+S\+M9\+D\+S1\+::calc\+Mag (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{mag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a7d0b0740497b1a10cd3e46a282a143ec}{}\label{class_l_s_m9_d_s1_a7d0b0740497b1a10cd3e46a282a143ec}
+
+
+Definition at line 598 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References m\+Res.
+
+
+
+Referenced by calibrate\+Mag(), and read\+Sensors().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a7d0b0740497b1a10cd3e46a282a143ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!calcm\+Res@{calcm\+Res}}
+\index{calcm\+Res@{calcm\+Res}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{calcm\+Res()}{calcmRes()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::calcm\+Res (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a830dfc95c7e2d8524720d78357b053cb}{}\label{class_l_s_m9_d_s1_a830dfc95c7e2d8524720d78357b053cb}
+
+
+Definition at line 753 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+M\+U\+Settings\+::mag, mag\+Sensitivity, m\+Res, mag\+Settings\+::scale, and settings.
+
+
+
+Referenced by begin(), and set\+Mag\+Scale().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a830dfc95c7e2d8524720d78357b053cb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!calibrate@{calibrate}}
+\index{calibrate@{calibrate}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{calibrate(bool auto\+Calc=true)}{calibrate(bool autoCalc=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::calibrate (
+\begin{DoxyParamCaption}
+\item[{bool}]{auto\+Calc = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a97939cb15fcb7e33abcd6d3a9230d943}{}\label{class_l_s_m9_d_s1_a97939cb15fcb7e33abcd6d3a9230d943}
+
+
+Definition at line 326 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+auto\+Calc, a\+Bias, a\+Bias\+Raw, a\+Res, ax, ay, az, calc\+Accel(), calc\+Gyro(), enable\+F\+I\+F\+O(), F\+I\+F\+O\+\_\+\+O\+FF, F\+I\+F\+O\+\_\+\+S\+RC, F\+I\+F\+O\+\_\+\+T\+HS, g\+Bias, g\+Bias\+Raw, gx, gy, gz, read\+Accel(), read\+Gyro(), set\+F\+I\+F\+O(), and xg\+Read\+Byte().
+
+
+
+Referenced by configure\+\_\+\+L\+S\+M9\+D\+S1().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a97939cb15fcb7e33abcd6d3a9230d943_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a97939cb15fcb7e33abcd6d3a9230d943_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!calibrate\+Mag@{calibrate\+Mag}}
+\index{calibrate\+Mag@{calibrate\+Mag}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{calibrate\+Mag(bool load\+In=true)}{calibrateMag(bool loadIn=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::calibrate\+Mag (
+\begin{DoxyParamCaption}
+\item[{bool}]{load\+In = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_afb45f0bcbcbeb15d4bd1a28821b24d14}{}\label{class_l_s_m9_d_s1_afb45f0bcbcbeb15d4bd1a28821b24d14}
+
+
+Definition at line 366 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References calc\+Mag(), i, mag\+Available(), mag\+Offset(), m\+Bias, m\+Bias\+Raw, mx, my, mz, and read\+Mag().
+
+
+
+Referenced by configure\+\_\+\+L\+S\+M9\+D\+S1().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_afb45f0bcbcbeb15d4bd1a28821b24d14_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_afb45f0bcbcbeb15d4bd1a28821b24d14_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!config\+Accel\+Int@{config\+Accel\+Int}}
+\index{config\+Accel\+Int@{config\+Accel\+Int}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{config\+Accel\+Int(uint8\+\_\+t generator, bool and\+Interrupts=false)}{configAccelInt(uint8\_t generator, bool andInterrupts=false)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::config\+Accel\+Int (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{generator, }
+\item[{bool}]{and\+Interrupts = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a1e8ebc6c1e3876d8936197dc93f76717}{}\label{class_l_s_m9_d_s1_a1e8ebc6c1e3876d8936197dc93f76717}
+
+
+Definition at line 813 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+N\+T\+\_\+\+G\+E\+N\+\_\+\+C\+F\+G\+\_\+\+XL, and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a1e8ebc6c1e3876d8936197dc93f76717_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!config\+Accel\+Ths@{config\+Accel\+Ths}}
+\index{config\+Accel\+Ths@{config\+Accel\+Ths}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{config\+Accel\+Ths(uint8\+\_\+t threshold, lsm9ds1\+\_\+axis axis, uint8\+\_\+t duration=0, bool wait=0)}{configAccelThs(uint8\_t threshold, lsm9ds1\_axis axis, uint8\_t duration=0, bool wait=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::config\+Accel\+Ths (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{threshold, }
+\item[{{\bf lsm9ds1\+\_\+axis}}]{axis, }
+\item[{uint8\+\_\+t}]{duration = {\ttfamily 0}, }
+\item[{bool}]{wait = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_acebcf64ab4e6ea7ed7a23c09ef16afe9}{}\label{class_l_s_m9_d_s1_acebcf64ab4e6ea7ed7a23c09ef16afe9}
+
+
+Definition at line 822 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+N\+T\+\_\+\+G\+E\+N\+\_\+\+D\+U\+R\+\_\+\+XL, I\+N\+T\+\_\+\+G\+E\+N\+\_\+\+T\+H\+S\+\_\+\+X\+\_\+\+XL, and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_acebcf64ab4e6ea7ed7a23c09ef16afe9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!config\+Gyro\+Int@{config\+Gyro\+Int}}
+\index{config\+Gyro\+Int@{config\+Gyro\+Int}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{config\+Gyro\+Int(uint8\+\_\+t generator, bool aoi, bool latch)}{configGyroInt(uint8\_t generator, bool aoi, bool latch)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::config\+Gyro\+Int (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{generator, }
+\item[{bool}]{aoi, }
+\item[{bool}]{latch}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a19a341728c4e5b454de045c8a531cf06}{}\label{class_l_s_m9_d_s1_a19a341728c4e5b454de045c8a531cf06}
+
+
+Definition at line 848 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+N\+T\+\_\+\+G\+E\+N\+\_\+\+C\+F\+G\+\_\+G, and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a19a341728c4e5b454de045c8a531cf06_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!config\+Gyro\+Ths@{config\+Gyro\+Ths}}
+\index{config\+Gyro\+Ths@{config\+Gyro\+Ths}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{config\+Gyro\+Ths(int16\+\_\+t threshold, lsm9ds1\+\_\+axis axis, uint8\+\_\+t duration, bool wait)}{configGyroThs(int16\_t threshold, lsm9ds1\_axis axis, uint8\_t duration, bool wait)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::config\+Gyro\+Ths (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{threshold, }
+\item[{{\bf lsm9ds1\+\_\+axis}}]{axis, }
+\item[{uint8\+\_\+t}]{duration, }
+\item[{bool}]{wait}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_ad865cc972960ed476fabd54f698adf6e}{}\label{class_l_s_m9_d_s1_ad865cc972960ed476fabd54f698adf6e}
+
+
+Definition at line 858 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+N\+T\+\_\+\+G\+E\+N\+\_\+\+D\+U\+R\+\_\+G, I\+N\+T\+\_\+\+G\+E\+N\+\_\+\+T\+H\+S\+\_\+\+X\+H\+\_\+G, and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ad865cc972960ed476fabd54f698adf6e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!config\+Inactivity@{config\+Inactivity}}
+\index{config\+Inactivity@{config\+Inactivity}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{config\+Inactivity(uint8\+\_\+t duration, uint8\+\_\+t threshold, bool sleep\+On)}{configInactivity(uint8\_t duration, uint8\_t threshold, bool sleepOn)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::config\+Inactivity (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{duration, }
+\item[{uint8\+\_\+t}]{threshold, }
+\item[{bool}]{sleep\+On}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a1e318c5e7c1d500c3ab2602c46265354}{}\label{class_l_s_m9_d_s1_a1e318c5e7c1d500c3ab2602c46265354}
+
+
+Definition at line 795 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References A\+C\+T\+\_\+\+D\+UR, A\+C\+T\+\_\+\+T\+HS, and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a1e318c5e7c1d500c3ab2602c46265354_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!config\+Int@{config\+Int}}
+\index{config\+Int@{config\+Int}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{config\+Int(interrupt\+\_\+select interupt, uint8\+\_\+t generator, h\+\_\+lactive active\+Low=\+I\+N\+T\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+O\+W, pp\+\_\+od push\+Pull=\+I\+N\+T\+\_\+\+P\+U\+S\+H\+\_\+\+P\+U\+L\+L)}{configInt(interrupt\_select interupt, uint8\_t generator, h\_lactive activeLow=INT\_ACTIVE\_LOW, pp\_od pushPull=INT\_PUSH\_PULL)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::config\+Int (
+\begin{DoxyParamCaption}
+\item[{{\bf interrupt\+\_\+select}}]{interupt, }
+\item[{uint8\+\_\+t}]{generator, }
+\item[{{\bf h\+\_\+lactive}}]{active\+Low = {\ttfamily {\bf I\+N\+T\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+L\+OW}}, }
+\item[{{\bf pp\+\_\+od}}]{push\+Pull = {\ttfamily {\bf I\+N\+T\+\_\+\+P\+U\+S\+H\+\_\+\+P\+U\+LL}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a5b6948b9d4caf57cfe9e0559a0c7f54c}{}\label{class_l_s_m9_d_s1_a5b6948b9d4caf57cfe9e0559a0c7f54c}
+
+
+Definition at line 774 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References C\+T\+R\+L\+\_\+\+R\+E\+G8, xg\+Read\+Byte(), and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a5b6948b9d4caf57cfe9e0559a0c7f54c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!config\+Mag\+Int@{config\+Mag\+Int}}
+\index{config\+Mag\+Int@{config\+Mag\+Int}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{config\+Mag\+Int(uint8\+\_\+t generator, h\+\_\+lactive active\+Low, bool latch=true)}{configMagInt(uint8\_t generator, h\_lactive activeLow, bool latch=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::config\+Mag\+Int (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{generator, }
+\item[{{\bf h\+\_\+lactive}}]{active\+Low, }
+\item[{bool}]{latch = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a54a521668eb63d504d227c6d460723e0}{}\label{class_l_s_m9_d_s1_a54a521668eb63d504d227c6d460723e0}
+
+
+Definition at line 888 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+N\+T\+\_\+\+A\+C\+T\+I\+V\+E\+\_\+\+H\+I\+GH, I\+N\+T\+\_\+\+C\+F\+G\+\_\+M, and m\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a54a521668eb63d504d227c6d460723e0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!config\+Mag\+Ths@{config\+Mag\+Ths}}
+\index{config\+Mag\+Ths@{config\+Mag\+Ths}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{config\+Mag\+Ths(uint16\+\_\+t threshold)}{configMagThs(uint16\_t threshold)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::config\+Mag\+Ths (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{threshold}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a87cf3dd3a4d9ca79106eb7c1c866a224}{}\label{class_l_s_m9_d_s1_a87cf3dd3a4d9ca79106eb7c1c866a224}
+
+
+Definition at line 902 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+N\+T\+\_\+\+T\+H\+S\+\_\+\+H\+\_\+M, I\+N\+T\+\_\+\+T\+H\+S\+\_\+\+L\+\_\+M, and m\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a87cf3dd3a4d9ca79106eb7c1c866a224_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!constrain\+Scales@{constrain\+Scales}}
+\index{constrain\+Scales@{constrain\+Scales}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{constrain\+Scales()}{constrainScales()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::constrain\+Scales (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a5aadcd09cf9157de817c359e49304ca7}{}\label{class_l_s_m9_d_s1_a5aadcd09cf9157de817c359e49304ca7}
+
+
+Definition at line 952 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+M\+U\+Settings\+::accel, I\+M\+U\+Settings\+::gyro, I\+M\+U\+Settings\+::mag, gyro\+Settings\+::scale, accel\+Settings\+::scale, mag\+Settings\+::scale, and settings.
+
+
+
+Referenced by begin().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a5aadcd09cf9157de817c359e49304ca7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!enable\+F\+I\+FO@{enable\+F\+I\+FO}}
+\index{enable\+F\+I\+FO@{enable\+F\+I\+FO}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{enable\+F\+I\+F\+O(bool enable=true)}{enableFIFO(bool enable=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::enable\+F\+I\+FO (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a5f01141131318697838f15d7e5d10f2c}{}\label{class_l_s_m9_d_s1_a5f01141131318697838f15d7e5d10f2c}
+
+
+Definition at line 931 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References C\+T\+R\+L\+\_\+\+R\+E\+G9, xg\+Read\+Byte(), and xg\+Write\+Byte().
+
+
+
+Referenced by calibrate().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a5f01141131318697838f15d7e5d10f2c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a5f01141131318697838f15d7e5d10f2c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!get\+Accel\+Int\+Src@{get\+Accel\+Int\+Src}}
+\index{get\+Accel\+Int\+Src@{get\+Accel\+Int\+Src}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{get\+Accel\+Int\+Src()}{getAccelIntSrc()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::get\+Accel\+Int\+Src (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_ae42ae3b368370f977d090ba0e53c7f5c}{}\label{class_l_s_m9_d_s1_ae42ae3b368370f977d090ba0e53c7f5c}
+
+
+Definition at line 835 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+N\+T\+\_\+\+G\+E\+N\+\_\+\+S\+R\+C\+\_\+\+XL, and xg\+Read\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ae42ae3b368370f977d090ba0e53c7f5c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!get\+F\+I\+F\+O\+Samples@{get\+F\+I\+F\+O\+Samples}}
+\index{get\+F\+I\+F\+O\+Samples@{get\+F\+I\+F\+O\+Samples}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{get\+F\+I\+F\+O\+Samples()}{getFIFOSamples()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::get\+F\+I\+F\+O\+Samples (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_ac03ef2ff928a25c4a80af7707cd92dc8}{}\label{class_l_s_m9_d_s1_ac03ef2ff928a25c4a80af7707cd92dc8}
+
+
+Definition at line 947 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References F\+I\+F\+O\+\_\+\+S\+RC, and xg\+Read\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ac03ef2ff928a25c4a80af7707cd92dc8_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!get\+Gyro\+Int\+Src@{get\+Gyro\+Int\+Src}}
+\index{get\+Gyro\+Int\+Src@{get\+Gyro\+Int\+Src}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{get\+Gyro\+Int\+Src()}{getGyroIntSrc()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::get\+Gyro\+Int\+Src (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_aaba6696754df62a411a6a190100f9ca3}{}\label{class_l_s_m9_d_s1_aaba6696754df62a411a6a190100f9ca3}
+
+
+Definition at line 875 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+N\+T\+\_\+\+G\+E\+N\+\_\+\+S\+R\+C\+\_\+G, and xg\+Read\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_aaba6696754df62a411a6a190100f9ca3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!get\+Inactivity@{get\+Inactivity}}
+\index{get\+Inactivity@{get\+Inactivity}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{get\+Inactivity()}{getInactivity()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::get\+Inactivity (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a9dab029d1d24e49709258d893042d28f}{}\label{class_l_s_m9_d_s1_a9dab029d1d24e49709258d893042d28f}
+
+
+Definition at line 806 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G\+\_\+0, and xg\+Read\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a9dab029d1d24e49709258d893042d28f_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!get\+Mag\+Int\+Src@{get\+Mag\+Int\+Src}}
+\index{get\+Mag\+Int\+Src@{get\+Mag\+Int\+Src}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{get\+Mag\+Int\+Src()}{getMagIntSrc()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::get\+Mag\+Int\+Src (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a2bc92a37db982059b89e0a06e7d05a95}{}\label{class_l_s_m9_d_s1_a2bc92a37db982059b89e0a06e7d05a95}
+
+
+Definition at line 910 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+N\+T\+\_\+\+S\+R\+C\+\_\+M, and m\+Read\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a2bc92a37db982059b89e0a06e7d05a95_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!gyro\+Available@{gyro\+Available}}
+\index{gyro\+Available@{gyro\+Available}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{gyro\+Available()}{gyroAvailable()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::gyro\+Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a65b71a03a30f4e8ed1ffd46de3db0560}{}\label{class_l_s_m9_d_s1_a65b71a03a30f4e8ed1ffd46de3db0560}
+
+
+Definition at line 483 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G\+\_\+1, and xg\+Read\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a65b71a03a30f4e8ed1ffd46de3db0560_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!I2\+Cread\+Byte@{I2\+Cread\+Byte}}
+\index{I2\+Cread\+Byte@{I2\+Cread\+Byte}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{I2\+Cread\+Byte(uint8\+\_\+t address, uint8\+\_\+t sub\+Address)}{I2CreadByte(uint8\_t address, uint8\_t subAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::\+I2\+Cread\+Byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address, }
+\item[{uint8\+\_\+t}]{sub\+Address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a7fc046d4b335494331905fdeb5c81c9e}{}\label{class_l_s_m9_d_s1_a7fc046d4b335494331905fdeb5c81c9e}
+Bad! 255 will be misinterpreted as a good value. 
+
+Definition at line 1104 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References L\+S\+M9\+D\+S1\+\_\+\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT, and Wire.
+
+
+
+Referenced by m\+Read\+Byte(), and xg\+Read\+Byte().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a7fc046d4b335494331905fdeb5c81c9e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!I2\+Cread\+Bytes@{I2\+Cread\+Bytes}}
+\index{I2\+Cread\+Bytes@{I2\+Cread\+Bytes}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{I2\+Cread\+Bytes(uint8\+\_\+t address, uint8\+\_\+t sub\+Address, uint8\+\_\+t $\ast$dest, uint8\+\_\+t count)}{I2CreadBytes(uint8\_t address, uint8\_t subAddress, uint8\_t *dest, uint8\_t count)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::\+I2\+Cread\+Bytes (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address, }
+\item[{uint8\+\_\+t}]{sub\+Address, }
+\item[{uint8\+\_\+t $\ast$}]{dest, }
+\item[{uint8\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_adfc9a22290daddd7787e8023fa8f12cc}{}\label{class_l_s_m9_d_s1_adfc9a22290daddd7787e8023fa8f12cc}
+
+
+Definition at line 1123 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References i, L\+S\+M9\+D\+S1\+\_\+\+C\+O\+M\+M\+U\+N\+I\+C\+A\+T\+I\+O\+N\+\_\+\+T\+I\+M\+E\+O\+UT, and Wire.
+
+
+
+Referenced by m\+Read\+Bytes(), and xg\+Read\+Bytes().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_adfc9a22290daddd7787e8023fa8f12cc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!I2\+Cwrite\+Byte@{I2\+Cwrite\+Byte}}
+\index{I2\+Cwrite\+Byte@{I2\+Cwrite\+Byte}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{I2\+Cwrite\+Byte(uint8\+\_\+t address, uint8\+\_\+t sub\+Address, uint8\+\_\+t data)}{I2CwriteByte(uint8\_t address, uint8\_t subAddress, uint8\_t data)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::\+I2\+Cwrite\+Byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{address, }
+\item[{uint8\+\_\+t}]{sub\+Address, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a8e66108a002cc15ec4c0db0a608d20c6}{}\label{class_l_s_m9_d_s1_a8e66108a002cc15ec4c0db0a608d20c6}
+
+
+Definition at line 1096 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References Wire.
+
+
+
+Referenced by m\+Write\+Byte(), and xg\+Write\+Byte().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a8e66108a002cc15ec4c0db0a608d20c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!init@{init}}
+\index{init@{init}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{init(interface\+\_\+mode interface, uint8\+\_\+t xg\+Addr, uint8\+\_\+t m\+Addr)}{init(interface\_mode interface, uint8\_t xgAddr, uint8\_t mAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::init (
+\begin{DoxyParamCaption}
+\item[{{\bf interface\+\_\+mode}}]{interface, }
+\item[{uint8\+\_\+t}]{xg\+Addr, }
+\item[{uint8\+\_\+t}]{m\+Addr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_aa4f74e09e93c0133dc30545d4492849e}{}\label{class_l_s_m9_d_s1_aa4f74e09e93c0133dc30545d4492849e}
+
+
+Definition at line 50 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+auto\+Calc, a\+Bias, a\+Bias\+Raw, I\+M\+U\+Settings\+::accel, device\+Settings\+::ag\+Address, gyro\+Settings\+::bandwidth, accel\+Settings\+::bandwidth, device\+Settings\+::comm\+Interface, I\+M\+U\+Settings\+::device, gyro\+Settings\+::enabled, accel\+Settings\+::enabled, mag\+Settings\+::enabled, temperature\+Settings\+::enabled, gyro\+Settings\+::enableX, accel\+Settings\+::enableX, gyro\+Settings\+::enableY, accel\+Settings\+::enableY, gyro\+Settings\+::enableZ, accel\+Settings\+::enableZ, gyro\+Settings\+::flipX, gyro\+Settings\+::flipY, gyro\+Settings\+::flipZ, g\+Bias, g\+Bias\+Raw, I\+M\+U\+Settings\+::gyro, accel\+Settings\+::high\+Res\+Bandwidth, accel\+Settings\+::high\+Res\+Enable, gyro\+Settings\+::\+H\+P\+F\+Cutoff, gyro\+Settings\+::\+H\+P\+F\+Enable, i, gyro\+Settings\+::latch\+Interrupt, gyro\+Settings\+::low\+Power\+Enable, mag\+Settings\+::low\+Power\+Enable, device\+Settings\+::m\+Address, I\+M\+U\+Settings\+::mag, m\+Bias, m\+Bias\+Raw, mag\+Settings\+::operating\+Mode, gyro\+Settings\+::orientation, gyro\+Settings\+::sample\+Rate, accel\+Settings\+::sample\+Rate, mag\+Settings\+::sample\+Rate, gyro\+Settings\+::scale, accel\+Settings\+::scale, mag\+Settings\+::scale, settings, I\+M\+U\+Settings\+::temp, mag\+Settings\+::temp\+Compensation\+Enable, mag\+Settings\+::\+X\+Y\+Performance, and mag\+Settings\+::\+Z\+Performance.
+
+
+
+Referenced by L\+S\+M9\+D\+S1().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=288pt]{class_l_s_m9_d_s1_aa4f74e09e93c0133dc30545d4492849e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!init\+Accel@{init\+Accel}}
+\index{init\+Accel@{init\+Accel}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{init\+Accel()}{initAccel()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::init\+Accel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a143ff5abf4f7ba8e1c42325859106f84}{}\label{class_l_s_m9_d_s1_a143ff5abf4f7ba8e1c42325859106f84}
+
+
+Definition at line 255 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+M\+U\+Settings\+::accel, accel\+Settings\+::bandwidth, C\+T\+R\+L\+\_\+\+R\+E\+G5\+\_\+\+XL, C\+T\+R\+L\+\_\+\+R\+E\+G6\+\_\+\+XL, C\+T\+R\+L\+\_\+\+R\+E\+G7\+\_\+\+XL, accel\+Settings\+::enabled, accel\+Settings\+::enableX, accel\+Settings\+::enableY, accel\+Settings\+::enableZ, accel\+Settings\+::high\+Res\+Bandwidth, accel\+Settings\+::high\+Res\+Enable, accel\+Settings\+::sample\+Rate, accel\+Settings\+::scale, settings, and xg\+Write\+Byte().
+
+
+
+Referenced by begin().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a143ff5abf4f7ba8e1c42325859106f84_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a143ff5abf4f7ba8e1c42325859106f84_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!init\+Gyro@{init\+Gyro}}
+\index{init\+Gyro@{init\+Gyro}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{init\+Gyro()}{initGyro()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::init\+Gyro (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a66a7b02acb28964ffc9362f25988e270}{}\label{class_l_s_m9_d_s1_a66a7b02acb28964ffc9362f25988e270}
+
+
+Definition at line 183 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References gyro\+Settings\+::bandwidth, C\+T\+R\+L\+\_\+\+R\+E\+G1\+\_\+G, C\+T\+R\+L\+\_\+\+R\+E\+G2\+\_\+G, C\+T\+R\+L\+\_\+\+R\+E\+G3\+\_\+G, C\+T\+R\+L\+\_\+\+R\+E\+G4, gyro\+Settings\+::enabled, gyro\+Settings\+::enableX, gyro\+Settings\+::enableY, gyro\+Settings\+::enableZ, gyro\+Settings\+::flipX, gyro\+Settings\+::flipY, gyro\+Settings\+::flipZ, I\+M\+U\+Settings\+::gyro, gyro\+Settings\+::\+H\+P\+F\+Cutoff, gyro\+Settings\+::\+H\+P\+F\+Enable, gyro\+Settings\+::latch\+Interrupt, gyro\+Settings\+::low\+Power\+Enable, O\+R\+I\+E\+N\+T\+\_\+\+C\+F\+G\+\_\+G, gyro\+Settings\+::sample\+Rate, gyro\+Settings\+::scale, settings, and xg\+Write\+Byte().
+
+
+
+Referenced by begin().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a66a7b02acb28964ffc9362f25988e270_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a66a7b02acb28964ffc9362f25988e270_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!init\+I2C@{init\+I2C}}
+\index{init\+I2C@{init\+I2C}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{init\+I2\+C()}{initI2C()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::init\+I2C (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_ae60332c2836bd3f19846b7a44c015ddd}{}\label{class_l_s_m9_d_s1_ae60332c2836bd3f19846b7a44c015ddd}
+
+
+Definition at line 1090 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References Wire.
+
+
+
+Referenced by begin().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ae60332c2836bd3f19846b7a44c015ddd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!init\+Mag@{init\+Mag}}
+\index{init\+Mag@{init\+Mag}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{init\+Mag()}{initMag()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::init\+Mag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a492aa6edcf891f273d932636e3cc470d}{}\label{class_l_s_m9_d_s1_a492aa6edcf891f273d932636e3cc470d}
+
+
+Definition at line 407 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References C\+T\+R\+L\+\_\+\+R\+E\+G1\+\_\+M, C\+T\+R\+L\+\_\+\+R\+E\+G2\+\_\+M, C\+T\+R\+L\+\_\+\+R\+E\+G3\+\_\+M, C\+T\+R\+L\+\_\+\+R\+E\+G4\+\_\+M, C\+T\+R\+L\+\_\+\+R\+E\+G5\+\_\+M, mag\+Settings\+::low\+Power\+Enable, I\+M\+U\+Settings\+::mag, m\+Write\+Byte(), mag\+Settings\+::operating\+Mode, mag\+Settings\+::sample\+Rate, mag\+Settings\+::scale, settings, mag\+Settings\+::temp\+Compensation\+Enable, mag\+Settings\+::\+X\+Y\+Performance, and mag\+Settings\+::\+Z\+Performance.
+
+
+
+Referenced by begin().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a492aa6edcf891f273d932636e3cc470d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a492aa6edcf891f273d932636e3cc470d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!init\+S\+PI@{init\+S\+PI}}
+\index{init\+S\+PI@{init\+S\+PI}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{init\+S\+P\+I()}{initSPI()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::init\+S\+PI (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a4286d5803ab028c657e007ae99acc60a}{}\label{class_l_s_m9_d_s1_a4286d5803ab028c657e007ae99acc60a}
+
+
+Definition at line 1033 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+m\+Address, and \+\_\+xg\+Address.
+
+
+
+Referenced by begin().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a4286d5803ab028c657e007ae99acc60a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!mag\+Available@{mag\+Available}}
+\index{mag\+Available@{mag\+Available}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{mag\+Available(lsm9ds1\+\_\+axis axis=\+A\+L\+L\+\_\+\+A\+X\+I\+S)}{magAvailable(lsm9ds1\_axis axis=ALL\_AXIS)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::mag\+Available (
+\begin{DoxyParamCaption}
+\item[{{\bf lsm9ds1\+\_\+axis}}]{axis = {\ttfamily {\bf A\+L\+L\+\_\+\+A\+X\+IS}}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a85afd29e95bead7b3f0083a9a235d1df}{}\label{class_l_s_m9_d_s1_a85afd29e95bead7b3f0083a9a235d1df}
+
+
+Definition at line 497 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References m\+Read\+Byte(), and S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G\+\_\+M.
+
+
+
+Referenced by calibrate\+Mag().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a85afd29e95bead7b3f0083a9a235d1df_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a85afd29e95bead7b3f0083a9a235d1df_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!mag\+Offset@{mag\+Offset}}
+\index{mag\+Offset@{mag\+Offset}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{mag\+Offset(uint8\+\_\+t axis, int16\+\_\+t offset)}{magOffset(uint8\_t axis, int16\_t offset)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::mag\+Offset (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{axis, }
+\item[{int16\+\_\+t}]{offset}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a0d461614bd058b082c94481dc916c18b}{}\label{class_l_s_m9_d_s1_a0d461614bd058b082c94481dc916c18b}
+
+
+Definition at line 396 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References m\+Write\+Byte(), O\+F\+F\+S\+E\+T\+\_\+\+X\+\_\+\+R\+E\+G\+\_\+\+H\+\_\+M, and O\+F\+F\+S\+E\+T\+\_\+\+X\+\_\+\+R\+E\+G\+\_\+\+L\+\_\+M.
+
+
+
+Referenced by calibrate\+Mag().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a0d461614bd058b082c94481dc916c18b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a0d461614bd058b082c94481dc916c18b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!m\+Read\+Byte@{m\+Read\+Byte}}
+\index{m\+Read\+Byte@{m\+Read\+Byte}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{m\+Read\+Byte(uint8\+\_\+t sub\+Address)}{mReadByte(uint8\_t subAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::m\+Read\+Byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sub\+Address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_ae4e470321567e4f93fc09f4cc6cd9efa}{}\label{class_l_s_m9_d_s1_ae4e470321567e4f93fc09f4cc6cd9efa}
+
+
+Definition at line 1013 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+m\+Address, device\+Settings\+::comm\+Interface, I\+M\+U\+Settings\+::device, I2\+Cread\+Byte(), I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+I2C, I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+S\+PI, settings, and S\+P\+Iread\+Byte().
+
+
+
+Referenced by begin(), get\+Mag\+Int\+Src(), mag\+Available(), set\+Mag\+O\+D\+R(), and set\+Mag\+Scale().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ae4e470321567e4f93fc09f4cc6cd9efa_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ae4e470321567e4f93fc09f4cc6cd9efa_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!m\+Read\+Bytes@{m\+Read\+Bytes}}
+\index{m\+Read\+Bytes@{m\+Read\+Bytes}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{m\+Read\+Bytes(uint8\+\_\+t sub\+Address, uint8\+\_\+t $\ast$dest, uint8\+\_\+t count)}{mReadBytes(uint8\_t subAddress, uint8\_t *dest, uint8\_t count)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::m\+Read\+Bytes (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sub\+Address, }
+\item[{uint8\+\_\+t $\ast$}]{dest, }
+\item[{uint8\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_acfdf9862cad1e66c9fb61a17bfbe7477}{}\label{class_l_s_m9_d_s1_acfdf9862cad1e66c9fb61a17bfbe7477}
+
+
+Definition at line 1023 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+m\+Address, device\+Settings\+::comm\+Interface, I\+M\+U\+Settings\+::device, I2\+Cread\+Bytes(), I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+I2C, I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+S\+PI, settings, and S\+P\+Iread\+Bytes().
+
+
+
+Referenced by read\+Mag().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_l_s_m9_d_s1_acfdf9862cad1e66c9fb61a17bfbe7477_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_acfdf9862cad1e66c9fb61a17bfbe7477_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!m\+Write\+Byte@{m\+Write\+Byte}}
+\index{m\+Write\+Byte@{m\+Write\+Byte}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{m\+Write\+Byte(uint8\+\_\+t sub\+Address, uint8\+\_\+t data)}{mWriteByte(uint8\_t subAddress, uint8\_t data)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::m\+Write\+Byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sub\+Address, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_afc171c924102c97fa1d88fa7f48bd167}{}\label{class_l_s_m9_d_s1_afc171c924102c97fa1d88fa7f48bd167}
+
+
+Definition at line 983 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+m\+Address, device\+Settings\+::comm\+Interface, I\+M\+U\+Settings\+::device, I2\+Cwrite\+Byte(), I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+I2C, I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+S\+PI, settings, and S\+P\+Iwrite\+Byte().
+
+
+
+Referenced by config\+Mag\+Int(), config\+Mag\+Ths(), init\+Mag(), mag\+Offset(), set\+Mag\+O\+D\+R(), and set\+Mag\+Scale().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_l_s_m9_d_s1_afc171c924102c97fa1d88fa7f48bd167_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_afc171c924102c97fa1d88fa7f48bd167_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!read\+Accel@{read\+Accel}}
+\index{read\+Accel@{read\+Accel}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{read\+Accel()}{readAccel()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::read\+Accel (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a9953684a1ff652a7d3a4d91e72bccaa1}{}\label{class_l_s_m9_d_s1_a9953684a1ff652a7d3a4d91e72bccaa1}
+
+
+Definition at line 505 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+auto\+Calc, a\+Bias\+Raw, ax, ay, az, O\+U\+T\+\_\+\+X\+\_\+\+L\+\_\+\+XL, X\+\_\+\+A\+X\+IS, xg\+Read\+Bytes(), Y\+\_\+\+A\+X\+IS, and Z\+\_\+\+A\+X\+IS.
+
+
+
+Referenced by calibrate(), and read\+Sensors().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a9953684a1ff652a7d3a4d91e72bccaa1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a9953684a1ff652a7d3a4d91e72bccaa1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!read\+Accel@{read\+Accel}}
+\index{read\+Accel@{read\+Accel}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{read\+Accel(lsm9ds1\+\_\+axis axis)}{readAccel(lsm9ds1\_axis axis)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::read\+Accel (
+\begin{DoxyParamCaption}
+\item[{{\bf lsm9ds1\+\_\+axis}}]{axis}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_acbe3bfc0b8db7fe3f77893d22c394594}{}\label{class_l_s_m9_d_s1_acbe3bfc0b8db7fe3f77893d22c394594}
+
+
+Definition at line 520 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+auto\+Calc, a\+Bias\+Raw, O\+U\+T\+\_\+\+X\+\_\+\+L\+\_\+\+XL, and xg\+Read\+Bytes().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_acbe3bfc0b8db7fe3f77893d22c394594_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!read\+Gyro@{read\+Gyro}}
+\index{read\+Gyro@{read\+Gyro}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{read\+Gyro()}{readGyro()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::read\+Gyro (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a56e9710cb538a4c7f7ab94c2ca256ce9}{}\label{class_l_s_m9_d_s1_a56e9710cb538a4c7f7ab94c2ca256ce9}
+
+
+Definition at line 556 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+auto\+Calc, g\+Bias\+Raw, gx, gy, gz, O\+U\+T\+\_\+\+X\+\_\+\+L\+\_\+G, X\+\_\+\+A\+X\+IS, xg\+Read\+Bytes(), Y\+\_\+\+A\+X\+IS, and Z\+\_\+\+A\+X\+IS.
+
+
+
+Referenced by calibrate(), and read\+Sensors().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a56e9710cb538a4c7f7ab94c2ca256ce9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a56e9710cb538a4c7f7ab94c2ca256ce9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!read\+Gyro@{read\+Gyro}}
+\index{read\+Gyro@{read\+Gyro}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{read\+Gyro(lsm9ds1\+\_\+axis axis)}{readGyro(lsm9ds1\_axis axis)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::read\+Gyro (
+\begin{DoxyParamCaption}
+\item[{{\bf lsm9ds1\+\_\+axis}}]{axis}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_adc1b37609a6c850328b16da4f911cefd}{}\label{class_l_s_m9_d_s1_adc1b37609a6c850328b16da4f911cefd}
+
+
+Definition at line 571 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+auto\+Calc, g\+Bias\+Raw, O\+U\+T\+\_\+\+X\+\_\+\+L\+\_\+G, and xg\+Read\+Bytes().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_adc1b37609a6c850328b16da4f911cefd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!read\+Mag@{read\+Mag}}
+\index{read\+Mag@{read\+Mag}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{read\+Mag()}{readMag()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::read\+Mag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_ae127cf75aa5f3c5421e49363795dcd38}{}\label{class_l_s_m9_d_s1_ae127cf75aa5f3c5421e49363795dcd38}
+
+
+Definition at line 533 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References m\+Read\+Bytes(), mx, my, mz, and O\+U\+T\+\_\+\+X\+\_\+\+L\+\_\+M.
+
+
+
+Referenced by calibrate\+Mag(), and read\+Sensors().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ae127cf75aa5f3c5421e49363795dcd38_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ae127cf75aa5f3c5421e49363795dcd38_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!read\+Mag@{read\+Mag}}
+\index{read\+Mag@{read\+Mag}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{read\+Mag(lsm9ds1\+\_\+axis axis)}{readMag(lsm9ds1\_axis axis)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::read\+Mag (
+\begin{DoxyParamCaption}
+\item[{{\bf lsm9ds1\+\_\+axis}}]{axis}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a615fd3ab32a9af833ef9899663100330}{}\label{class_l_s_m9_d_s1_a615fd3ab32a9af833ef9899663100330}
+
+
+Definition at line 542 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References m\+Read\+Bytes(), and O\+U\+T\+\_\+\+X\+\_\+\+L\+\_\+M.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a615fd3ab32a9af833ef9899663100330_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!read\+Temp@{read\+Temp}}
+\index{read\+Temp@{read\+Temp}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{read\+Temp()}{readTemp()}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::read\+Temp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_aca21a51dc79a1287b97ed9c326e2080b}{}\label{class_l_s_m9_d_s1_aca21a51dc79a1287b97ed9c326e2080b}
+
+
+Definition at line 549 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References O\+U\+T\+\_\+\+T\+E\+M\+P\+\_\+L, temperature, and xg\+Read\+Bytes().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_aca21a51dc79a1287b97ed9c326e2080b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!set\+Accel\+O\+DR@{set\+Accel\+O\+DR}}
+\index{set\+Accel\+O\+DR@{set\+Accel\+O\+DR}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{set\+Accel\+O\+D\+R(uint8\+\_\+t a\+Rate)}{setAccelODR(uint8\_t aRate)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::set\+Accel\+O\+DR (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{a\+Rate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a76d72839cdecc3f1c4ee6fff578182c5}{}\label{class_l_s_m9_d_s1_a76d72839cdecc3f1c4ee6fff578182c5}
+
+
+Definition at line 713 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+M\+U\+Settings\+::accel, C\+T\+R\+L\+\_\+\+R\+E\+G6\+\_\+\+XL, accel\+Settings\+::sample\+Rate, settings, xg\+Read\+Byte(), and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a76d72839cdecc3f1c4ee6fff578182c5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!set\+Accel\+Scale@{set\+Accel\+Scale}}
+\index{set\+Accel\+Scale@{set\+Accel\+Scale}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{set\+Accel\+Scale(uint8\+\_\+t a\+Scl)}{setAccelScale(uint8\_t aScl)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::set\+Accel\+Scale (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{a\+Scl}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a8656d2de1ff9cc4cb76214e4561d02c4}{}\label{class_l_s_m9_d_s1_a8656d2de1ff9cc4cb76214e4561d02c4}
+
+
+Definition at line 629 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References I\+M\+U\+Settings\+::accel, calca\+Res(), C\+T\+R\+L\+\_\+\+R\+E\+G6\+\_\+\+XL, accel\+Settings\+::scale, settings, xg\+Read\+Byte(), and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a8656d2de1ff9cc4cb76214e4561d02c4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!set\+F\+I\+FO@{set\+F\+I\+FO}}
+\index{set\+F\+I\+FO@{set\+F\+I\+FO}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{set\+F\+I\+F\+O(fifo\+Mode\+\_\+type fifo\+Mode, uint8\+\_\+t fifo\+Ths)}{setFIFO(fifoMode\_type fifoMode, uint8\_t fifoThs)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::set\+F\+I\+FO (
+\begin{DoxyParamCaption}
+\item[{{\bf fifo\+Mode\+\_\+type}}]{fifo\+Mode, }
+\item[{uint8\+\_\+t}]{fifo\+Ths}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a0ec4a93a34545af1acc336bae9b360f1}{}\label{class_l_s_m9_d_s1_a0ec4a93a34545af1acc336bae9b360f1}
+
+
+Definition at line 939 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References F\+I\+F\+O\+\_\+\+C\+T\+RL, and xg\+Write\+Byte().
+
+
+
+Referenced by calibrate().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a0ec4a93a34545af1acc336bae9b360f1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a0ec4a93a34545af1acc336bae9b360f1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!set\+Gyro\+O\+DR@{set\+Gyro\+O\+DR}}
+\index{set\+Gyro\+O\+DR@{set\+Gyro\+O\+DR}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{set\+Gyro\+O\+D\+R(uint8\+\_\+t g\+Rate)}{setGyroODR(uint8\_t gRate)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::set\+Gyro\+O\+DR (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{g\+Rate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_ab8fc33c8da4fc5c379e880ff57d331fa}{}\label{class_l_s_m9_d_s1_ab8fc33c8da4fc5c379e880ff57d331fa}
+
+
+Definition at line 696 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References C\+T\+R\+L\+\_\+\+R\+E\+G1\+\_\+G, I\+M\+U\+Settings\+::gyro, gyro\+Settings\+::sample\+Rate, settings, xg\+Read\+Byte(), and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ab8fc33c8da4fc5c379e880ff57d331fa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!set\+Gyro\+Scale@{set\+Gyro\+Scale}}
+\index{set\+Gyro\+Scale@{set\+Gyro\+Scale}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{set\+Gyro\+Scale(uint16\+\_\+t g\+Scl)}{setGyroScale(uint16\_t gScl)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::set\+Gyro\+Scale (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{g\+Scl}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a115d304ebcdc8c701f3e5a5d397250aa}{}\label{class_l_s_m9_d_s1_a115d304ebcdc8c701f3e5a5d397250aa}
+
+
+Definition at line 604 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References calcg\+Res(), C\+T\+R\+L\+\_\+\+R\+E\+G1\+\_\+G, I\+M\+U\+Settings\+::gyro, gyro\+Settings\+::scale, settings, xg\+Read\+Byte(), and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a115d304ebcdc8c701f3e5a5d397250aa_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!set\+Mag\+O\+DR@{set\+Mag\+O\+DR}}
+\index{set\+Mag\+O\+DR@{set\+Mag\+O\+DR}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{set\+Mag\+O\+D\+R(uint8\+\_\+t m\+Rate)}{setMagODR(uint8\_t mRate)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::set\+Mag\+O\+DR (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{m\+Rate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a8bc672fba680edc468a643fd58046b41}{}\label{class_l_s_m9_d_s1_a8bc672fba680edc468a643fd58046b41}
+
+
+Definition at line 730 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References C\+T\+R\+L\+\_\+\+R\+E\+G1\+\_\+M, I\+M\+U\+Settings\+::mag, m\+Read\+Byte(), m\+Write\+Byte(), mag\+Settings\+::sample\+Rate, and settings.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a8bc672fba680edc468a643fd58046b41_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!set\+Mag\+Scale@{set\+Mag\+Scale}}
+\index{set\+Mag\+Scale@{set\+Mag\+Scale}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{set\+Mag\+Scale(uint8\+\_\+t m\+Scl)}{setMagScale(uint8\_t mScl)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::set\+Mag\+Scale (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{m\+Scl}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_ad7604159a07b0d088cdfb6ba4a0093b0}{}\label{class_l_s_m9_d_s1_ad7604159a07b0d088cdfb6ba4a0093b0}
+
+
+Definition at line 660 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References calcm\+Res(), C\+T\+R\+L\+\_\+\+R\+E\+G2\+\_\+M, I\+M\+U\+Settings\+::mag, m\+Read\+Byte(), m\+Write\+Byte(), mag\+Settings\+::scale, and settings.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ad7604159a07b0d088cdfb6ba4a0093b0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!sleep\+Gyro@{sleep\+Gyro}}
+\index{sleep\+Gyro@{sleep\+Gyro}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{sleep\+Gyro(bool enable=true)}{sleepGyro(bool enable=true)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::sleep\+Gyro (
+\begin{DoxyParamCaption}
+\item[{bool}]{enable = {\ttfamily true}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_a13b61812069b399547f177b0b0af8fe3}{}\label{class_l_s_m9_d_s1_a13b61812069b399547f177b0b0af8fe3}
+
+
+Definition at line 923 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References C\+T\+R\+L\+\_\+\+R\+E\+G9, xg\+Read\+Byte(), and xg\+Write\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a13b61812069b399547f177b0b0af8fe3_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!S\+P\+Iread\+Byte@{S\+P\+Iread\+Byte}}
+\index{S\+P\+Iread\+Byte@{S\+P\+Iread\+Byte}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{S\+P\+Iread\+Byte(uint8\+\_\+t cs\+Pin, uint8\+\_\+t sub\+Address)}{SPIreadByte(uint8\_t csPin, uint8\_t subAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::\+S\+P\+Iread\+Byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{cs\+Pin, }
+\item[{uint8\+\_\+t}]{sub\+Address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a6f0f50bb5e9b702d5a19c7441a3f9d8b}{}\label{class_l_s_m9_d_s1_a6f0f50bb5e9b702d5a19c7441a3f9d8b}
+
+
+Definition at line 1062 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References S\+P\+Iread\+Bytes().
+
+
+
+Referenced by m\+Read\+Byte(), and xg\+Read\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_l_s_m9_d_s1_a6f0f50bb5e9b702d5a19c7441a3f9d8b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a6f0f50bb5e9b702d5a19c7441a3f9d8b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!S\+P\+Iread\+Bytes@{S\+P\+Iread\+Bytes}}
+\index{S\+P\+Iread\+Bytes@{S\+P\+Iread\+Bytes}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{S\+P\+Iread\+Bytes(uint8\+\_\+t cs\+Pin, uint8\+\_\+t sub\+Address, uint8\+\_\+t $\ast$dest, uint8\+\_\+t count)}{SPIreadBytes(uint8\_t csPin, uint8\_t subAddress, uint8\_t *dest, uint8\_t count)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::\+S\+P\+Iread\+Bytes (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{cs\+Pin, }
+\item[{uint8\+\_\+t}]{sub\+Address, }
+\item[{uint8\+\_\+t $\ast$}]{dest, }
+\item[{uint8\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a26c0f164454eba84e6486033b7061d11}{}\label{class_l_s_m9_d_s1_a26c0f164454eba84e6486033b7061d11}
+
+
+Definition at line 1071 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+m\+Address, and i.
+
+
+
+Referenced by m\+Read\+Bytes(), S\+P\+Iread\+Byte(), and xg\+Read\+Bytes().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a26c0f164454eba84e6486033b7061d11_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!S\+P\+Iwrite\+Byte@{S\+P\+Iwrite\+Byte}}
+\index{S\+P\+Iwrite\+Byte@{S\+P\+Iwrite\+Byte}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{S\+P\+Iwrite\+Byte(uint8\+\_\+t cs\+Pin, uint8\+\_\+t sub\+Address, uint8\+\_\+t data)}{SPIwriteByte(uint8\_t csPin, uint8\_t subAddress, uint8\_t data)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::\+S\+P\+Iwrite\+Byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{cs\+Pin, }
+\item[{uint8\+\_\+t}]{sub\+Address, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a83321c9d6ec50f6b9944907d2be482cd}{}\label{class_l_s_m9_d_s1_a83321c9d6ec50f6b9944907d2be482cd}
+
+
+Definition at line 1050 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+Referenced by m\+Write\+Byte(), and xg\+Write\+Byte().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a83321c9d6ec50f6b9944907d2be482cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!temp\+Available@{temp\+Available}}
+\index{temp\+Available@{temp\+Available}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{temp\+Available()}{tempAvailable()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::temp\+Available (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_l_s_m9_d_s1_aaf6683c6f3f0281d5222b74f580f321b}{}\label{class_l_s_m9_d_s1_aaf6683c6f3f0281d5222b74f580f321b}
+
+
+Definition at line 490 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References S\+T\+A\+T\+U\+S\+\_\+\+R\+E\+G\+\_\+1, and xg\+Read\+Byte().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_aaf6683c6f3f0281d5222b74f580f321b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!xg\+Read\+Byte@{xg\+Read\+Byte}}
+\index{xg\+Read\+Byte@{xg\+Read\+Byte}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{xg\+Read\+Byte(uint8\+\_\+t sub\+Address)}{xgReadByte(uint8\_t subAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::xg\+Read\+Byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sub\+Address}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_af7f9789df6f0178764c815a3380c202a}{}\label{class_l_s_m9_d_s1_af7f9789df6f0178764c815a3380c202a}
+
+
+Definition at line 993 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+xg\+Address, device\+Settings\+::comm\+Interface, I\+M\+U\+Settings\+::device, I2\+Cread\+Byte(), I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+I2C, I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+S\+PI, settings, and S\+P\+Iread\+Byte().
+
+
+
+Referenced by accel\+Available(), begin(), calibrate(), config\+Int(), enable\+F\+I\+F\+O(), get\+Accel\+Int\+Src(), get\+F\+I\+F\+O\+Samples(), get\+Gyro\+Int\+Src(), get\+Inactivity(), gyro\+Available(), set\+Accel\+O\+D\+R(), set\+Accel\+Scale(), set\+Gyro\+O\+D\+R(), set\+Gyro\+Scale(), sleep\+Gyro(), and temp\+Available().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_af7f9789df6f0178764c815a3380c202a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_af7f9789df6f0178764c815a3380c202a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!xg\+Read\+Bytes@{xg\+Read\+Bytes}}
+\index{xg\+Read\+Bytes@{xg\+Read\+Bytes}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{xg\+Read\+Bytes(uint8\+\_\+t sub\+Address, uint8\+\_\+t $\ast$dest, uint8\+\_\+t count)}{xgReadBytes(uint8\_t subAddress, uint8\_t *dest, uint8\_t count)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::xg\+Read\+Bytes (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sub\+Address, }
+\item[{uint8\+\_\+t $\ast$}]{dest, }
+\item[{uint8\+\_\+t}]{count}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_ae0a9cbfd74b1f4676f091c2d8e491d77}{}\label{class_l_s_m9_d_s1_ae0a9cbfd74b1f4676f091c2d8e491d77}
+
+
+Definition at line 1003 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+xg\+Address, device\+Settings\+::comm\+Interface, I\+M\+U\+Settings\+::device, I2\+Cread\+Bytes(), I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+I2C, I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+S\+PI, settings, and S\+P\+Iread\+Bytes().
+
+
+
+Referenced by read\+Accel(), read\+Gyro(), and read\+Temp().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=343pt]{class_l_s_m9_d_s1_ae0a9cbfd74b1f4676f091c2d8e491d77_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_ae0a9cbfd74b1f4676f091c2d8e491d77_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!xg\+Write\+Byte@{xg\+Write\+Byte}}
+\index{xg\+Write\+Byte@{xg\+Write\+Byte}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{xg\+Write\+Byte(uint8\+\_\+t sub\+Address, uint8\+\_\+t data)}{xgWriteByte(uint8\_t subAddress, uint8\_t data)}}]{\setlength{\rightskip}{0pt plus 5cm}void L\+S\+M9\+D\+S1\+::xg\+Write\+Byte (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sub\+Address, }
+\item[{uint8\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a263eed4b52ad087a1195755c6ba49e62}{}\label{class_l_s_m9_d_s1_a263eed4b52ad087a1195755c6ba49e62}
+
+
+Definition at line 973 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp.
+
+
+
+References \+\_\+xg\+Address, device\+Settings\+::comm\+Interface, I\+M\+U\+Settings\+::device, I2\+Cwrite\+Byte(), I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+I2C, I\+M\+U\+\_\+\+M\+O\+D\+E\+\_\+\+S\+PI, settings, and S\+P\+Iwrite\+Byte().
+
+
+
+Referenced by config\+Accel\+Int(), config\+Accel\+Ths(), config\+Gyro\+Int(), config\+Gyro\+Ths(), config\+Inactivity(), config\+Int(), enable\+F\+I\+F\+O(), init\+Accel(), init\+Gyro(), set\+Accel\+O\+D\+R(), set\+Accel\+Scale(), set\+F\+I\+F\+O(), set\+Gyro\+O\+D\+R(), set\+Gyro\+Scale(), and sleep\+Gyro().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_l_s_m9_d_s1_a263eed4b52ad087a1195755c6ba49e62_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_l_s_m9_d_s1_a263eed4b52ad087a1195755c6ba49e62_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!\+\_\+auto\+Calc@{\+\_\+auto\+Calc}}
+\index{\+\_\+auto\+Calc@{\+\_\+auto\+Calc}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{\+\_\+auto\+Calc}{\_autoCalc}}]{\setlength{\rightskip}{0pt plus 5cm}bool L\+S\+M9\+D\+S1\+::\+\_\+auto\+Calc\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a8460d00ea0bb496c5d49190a34e54588}{}\label{class_l_s_m9_d_s1_a8460d00ea0bb496c5d49190a34e54588}
+
+
+Definition at line 345 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), init(), read\+Accel(), and read\+Gyro().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!\+\_\+m\+Address@{\+\_\+m\+Address}}
+\index{\+\_\+m\+Address@{\+\_\+m\+Address}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{\+\_\+m\+Address}{\_mAddress}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::\+\_\+m\+Address\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a7141933a2ccde95976e4eecd598ecb17}{}\label{class_l_s_m9_d_s1_a7141933a2ccde95976e4eecd598ecb17}
+
+
+Definition at line 336 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by begin(), init\+S\+P\+I(), m\+Read\+Byte(), m\+Read\+Bytes(), m\+Write\+Byte(), and S\+P\+Iread\+Bytes().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!\+\_\+xg\+Address@{\+\_\+xg\+Address}}
+\index{\+\_\+xg\+Address@{\+\_\+xg\+Address}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{\+\_\+xg\+Address}{\_xgAddress}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t L\+S\+M9\+D\+S1\+::\+\_\+xg\+Address\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_ac78b7fab605570a16433a4636f91451e}{}\label{class_l_s_m9_d_s1_ac78b7fab605570a16433a4636f91451e}
+
+
+Definition at line 336 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by begin(), init\+S\+P\+I(), xg\+Read\+Byte(), xg\+Read\+Bytes(), and xg\+Write\+Byte().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!a\+Bias@{a\+Bias}}
+\index{a\+Bias@{a\+Bias}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{a\+Bias}{aBias}}]{\setlength{\rightskip}{0pt plus 5cm}float L\+S\+M9\+D\+S1\+::a\+Bias\mbox{[}3\mbox{]}}\hypertarget{class_l_s_m9_d_s1_abe998fcc50cfe729c13ab535337849c7}{}\label{class_l_s_m9_d_s1_abe998fcc50cfe729c13ab535337849c7}
+
+
+Definition at line 59 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), and init().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!a\+Bias\+Raw@{a\+Bias\+Raw}}
+\index{a\+Bias\+Raw@{a\+Bias\+Raw}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{a\+Bias\+Raw}{aBiasRaw}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::a\+Bias\+Raw\mbox{[}3\mbox{]}}\hypertarget{class_l_s_m9_d_s1_ae42dc2f2b9f2df223c853e233191313a}{}\label{class_l_s_m9_d_s1_ae42dc2f2b9f2df223c853e233191313a}
+
+
+Definition at line 60 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), init(), and read\+Accel().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!a\+Res@{a\+Res}}
+\index{a\+Res@{a\+Res}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{a\+Res}{aRes}}]{\setlength{\rightskip}{0pt plus 5cm}float L\+S\+M9\+D\+S1\+::a\+Res\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_acdc1f9b300b3c349e17dd21c9bb37c40}{}\label{class_l_s_m9_d_s1_acdc1f9b300b3c349e17dd21c9bb37c40}
+
+
+Definition at line 341 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calc\+Accel(), calca\+Res(), and calibrate().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!ax@{ax}}
+\index{ax@{ax}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{ax}{ax}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::ax}\hypertarget{class_l_s_m9_d_s1_adac13514d176cfb54aed8cda9a056335}{}\label{class_l_s_m9_d_s1_adac13514d176cfb54aed8cda9a056335}
+
+
+Definition at line 56 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), read\+Accel(), and read\+Sensors().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!ay@{ay}}
+\index{ay@{ay}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{ay}{ay}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::ay}\hypertarget{class_l_s_m9_d_s1_a978a357dedfa574d6e0fad33ad71e23f}{}\label{class_l_s_m9_d_s1_a978a357dedfa574d6e0fad33ad71e23f}
+
+
+Definition at line 56 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), read\+Accel(), and read\+Sensors().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!az@{az}}
+\index{az@{az}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{az}{az}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::az}\hypertarget{class_l_s_m9_d_s1_aa631c8a90b90130b5be147dd4fae0841}{}\label{class_l_s_m9_d_s1_aa631c8a90b90130b5be147dd4fae0841}
+
+
+Definition at line 56 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), read\+Accel(), and read\+Sensors().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!g\+Bias@{g\+Bias}}
+\index{g\+Bias@{g\+Bias}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{g\+Bias}{gBias}}]{\setlength{\rightskip}{0pt plus 5cm}float L\+S\+M9\+D\+S1\+::g\+Bias\mbox{[}3\mbox{]}}\hypertarget{class_l_s_m9_d_s1_a8c0354ee78e029b6715ee7110bcd8753}{}\label{class_l_s_m9_d_s1_a8c0354ee78e029b6715ee7110bcd8753}
+
+
+Definition at line 59 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), and init().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!g\+Bias\+Raw@{g\+Bias\+Raw}}
+\index{g\+Bias\+Raw@{g\+Bias\+Raw}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{g\+Bias\+Raw}{gBiasRaw}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::g\+Bias\+Raw\mbox{[}3\mbox{]}}\hypertarget{class_l_s_m9_d_s1_ab2e59e0460cf88a12765238506031f2a}{}\label{class_l_s_m9_d_s1_ab2e59e0460cf88a12765238506031f2a}
+
+
+Definition at line 60 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), init(), and read\+Gyro().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!g\+Res@{g\+Res}}
+\index{g\+Res@{g\+Res}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{g\+Res}{gRes}}]{\setlength{\rightskip}{0pt plus 5cm}float L\+S\+M9\+D\+S1\+::g\+Res\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_a2d8654ebb35177088a67e67a944bd998}{}\label{class_l_s_m9_d_s1_a2d8654ebb35177088a67e67a944bd998}
+
+
+Definition at line 341 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calcg\+Res(), and calc\+Gyro().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!gx@{gx}}
+\index{gx@{gx}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{gx}{gx}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::gx}\hypertarget{class_l_s_m9_d_s1_abf02b4544b5d529036adbac02e7b9f02}{}\label{class_l_s_m9_d_s1_abf02b4544b5d529036adbac02e7b9f02}
+
+
+Definition at line 55 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), read\+Gyro(), and read\+Sensors().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!gy@{gy}}
+\index{gy@{gy}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{gy}{gy}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::gy}\hypertarget{class_l_s_m9_d_s1_a0c351823fd094ff24ff245dd951cf783}{}\label{class_l_s_m9_d_s1_a0c351823fd094ff24ff245dd951cf783}
+
+
+Definition at line 55 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), read\+Gyro(), and read\+Sensors().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!gz@{gz}}
+\index{gz@{gz}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{gz}{gz}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::gz}\hypertarget{class_l_s_m9_d_s1_ad4d0f0585398ff917afcba1b4a73e519}{}\label{class_l_s_m9_d_s1_ad4d0f0585398ff917afcba1b4a73e519}
+
+
+Definition at line 55 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate(), read\+Gyro(), and read\+Sensors().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!m\+Bias@{m\+Bias}}
+\index{m\+Bias@{m\+Bias}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{m\+Bias}{mBias}}]{\setlength{\rightskip}{0pt plus 5cm}float L\+S\+M9\+D\+S1\+::m\+Bias\mbox{[}3\mbox{]}}\hypertarget{class_l_s_m9_d_s1_aab3753b958a1eaabfb48ffaf837dfadc}{}\label{class_l_s_m9_d_s1_aab3753b958a1eaabfb48ffaf837dfadc}
+
+
+Definition at line 59 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate\+Mag(), and init().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!m\+Bias\+Raw@{m\+Bias\+Raw}}
+\index{m\+Bias\+Raw@{m\+Bias\+Raw}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{m\+Bias\+Raw}{mBiasRaw}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::m\+Bias\+Raw\mbox{[}3\mbox{]}}\hypertarget{class_l_s_m9_d_s1_ad0e3ab0b7eeee5378ab91dd20270a9b5}{}\label{class_l_s_m9_d_s1_ad0e3ab0b7eeee5378ab91dd20270a9b5}
+
+
+Definition at line 60 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate\+Mag(), and init().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!m\+Res@{m\+Res}}
+\index{m\+Res@{m\+Res}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{m\+Res}{mRes}}]{\setlength{\rightskip}{0pt plus 5cm}float L\+S\+M9\+D\+S1\+::m\+Res\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_l_s_m9_d_s1_aac7ae43adf399e8052464b966aec8472}{}\label{class_l_s_m9_d_s1_aac7ae43adf399e8052464b966aec8472}
+
+
+Definition at line 341 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calc\+Mag(), and calcm\+Res().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!mx@{mx}}
+\index{mx@{mx}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{mx}{mx}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::mx}\hypertarget{class_l_s_m9_d_s1_a0e68eb9e44969070b6d84a93ba252f71}{}\label{class_l_s_m9_d_s1_a0e68eb9e44969070b6d84a93ba252f71}
+
+
+Definition at line 57 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate\+Mag(), read\+Mag(), and read\+Sensors().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!my@{my}}
+\index{my@{my}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{my}{my}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::my}\hypertarget{class_l_s_m9_d_s1_a773f80f9b7cdf8375c84a4209895d732}{}\label{class_l_s_m9_d_s1_a773f80f9b7cdf8375c84a4209895d732}
+
+
+Definition at line 57 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate\+Mag(), read\+Mag(), and read\+Sensors().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!mz@{mz}}
+\index{mz@{mz}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{mz}{mz}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::mz}\hypertarget{class_l_s_m9_d_s1_aafe23993500ece9efd161e564787dce2}{}\label{class_l_s_m9_d_s1_aafe23993500ece9efd161e564787dce2}
+
+
+Definition at line 57 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by calibrate\+Mag(), read\+Mag(), and read\+Sensors().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!settings@{settings}}
+\index{settings@{settings}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{settings}{settings}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+M\+U\+Settings} L\+S\+M9\+D\+S1\+::settings}\hypertarget{class_l_s_m9_d_s1_a8397fc6c94a11a8a09f3dd17b28cf2a4}{}\label{class_l_s_m9_d_s1_a8397fc6c94a11a8a09f3dd17b28cf2a4}
+
+
+Definition at line 48 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by begin(), calca\+Res(), calcg\+Res(), calcm\+Res(), configure\+\_\+\+L\+S\+M9\+D\+S1(), constrain\+Scales(), init(), init\+Accel(), init\+Gyro(), init\+Mag(), m\+Read\+Byte(), m\+Read\+Bytes(), m\+Write\+Byte(), set\+Accel\+O\+D\+R(), set\+Accel\+Scale(), set\+Gyro\+O\+D\+R(), set\+Gyro\+Scale(), set\+Mag\+O\+D\+R(), set\+Mag\+Scale(), xg\+Read\+Byte(), xg\+Read\+Bytes(), and xg\+Write\+Byte().
+
+\index{L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}!temperature@{temperature}}
+\index{temperature@{temperature}!L\+S\+M9\+D\+S1@{L\+S\+M9\+D\+S1}}
+\subsubsection[{\texorpdfstring{temperature}{temperature}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t L\+S\+M9\+D\+S1\+::temperature}\hypertarget{class_l_s_m9_d_s1_a92791effe47c0f8c93505e53496266e5}{}\label{class_l_s_m9_d_s1_a92791effe47c0f8c93505e53496266e5}
+
+
+Definition at line 58 of file Spark\+Fun\+L\+S\+M9\+D\+S1.\+h.
+
+
+
+Referenced by read\+Temp().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Spark\+Fun\+\_\+\+L\+S\+M9\+D\+S1/src/\hyperlink{_spark_fun_l_s_m9_d_s1_8h}{Spark\+Fun\+L\+S\+M9\+D\+S1.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Spark\+Fun\+\_\+\+L\+S\+M9\+D\+S1/src/\hyperlink{_spark_fun_l_s_m9_d_s1_8cpp}{Spark\+Fun\+L\+S\+M9\+D\+S1.\+cpp}\end{DoxyCompactItemize}

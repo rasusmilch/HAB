@@ -1,0 +1,6 @@
+<map id="RunningStatistics::RunningStatistics" name="RunningStatistics::RunningStatistics">
+<area shape="rect" id="node2" href="$struct_running_statistics.html#a0695a069bf0f534f3a1987699bdfb7ea" title="RunningStatistics::\lsetInitialValue" alt="" coords="176,5,299,47"/>
+<area shape="rect" id="node4" href="$struct_running_statistics.html#a035fade92bd2f6fb0bbde8e4857c33f7" title="RunningStatistics::\lsetWindowSecs" alt="" coords="176,71,299,112"/>
+<area shape="rect" id="node3" href="$struct_filter_one_pole_cascade.html#a1bcac6613d187073873a825d9826ed82" title="FilterOnePoleCascade\l::setToNewValue" alt="" coords="347,5,489,47"/>
+<area shape="rect" id="node5" href="$struct_filter_one_pole_cascade.html#a06aed75defb8dc7cd252436944ca0baf" title="FilterOnePoleCascade\l::setRiseTime" alt="" coords="347,71,489,112"/>
+</map>

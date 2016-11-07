@@ -1,0 +1,6 @@
+<map id="DallasTemperature::writeScratchPad" name="DallasTemperature::writeScratchPad">
+<area shape="rect" id="node2" href="$class_one_wire.html#a6a742a9112392567eae3d06dde067c07" title="OneWire::reset" alt="" coords="188,5,291,32"/>
+<area shape="rect" id="node3" href="$class_one_wire.html#accf808390abd63d3c7bce35677784384" title="OneWire::select" alt="" coords="185,56,293,83"/>
+<area shape="rect" id="node4" href="$class_one_wire.html#a843e9e7e57ed615b4880be0b76b40b7d" title="OneWire::write" alt="" coords="341,81,448,108"/>
+<area shape="rect" id="node5" href="$class_one_wire.html#a6bbc58276d1cb08653dab3ea35378f94" title="OneWire::write_bit" alt="" coords="496,81,623,108"/>
+</map>

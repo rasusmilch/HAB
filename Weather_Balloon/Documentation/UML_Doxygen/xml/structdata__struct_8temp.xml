@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdata__struct_8temp" kind="struct" language="C++" prot="public">
+    <compoundname>data_struct.temp</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdata__struct_8temp_1afad58de7366495db4650cfefac2fcd61" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="183" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8temp_1ad1efad72dc5b17dc66a46767c32fff40" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>internal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="184" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8temp_1a6a21b6995a068148bbb65c8f949b3fb2" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>external</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="185" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8temp_1a11648e4e66e7ed6a86cb7f1d0cf604fe" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>gps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="186" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8temp_1a01a1f9db856468530986ed6aab9ac3c9" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>tsl2561</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="187" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8temp_1afa7bc2fcb1ec58d462249615bcdea607" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>sht31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="188" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8temp_1a45210da832f9626829457a65e9e7c4d0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>uv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="189" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8temp_1a63dee2803479f4d975963a0805dec70e" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>ms5607</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="190" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8temp_1a8b9035807842a4e4dbe009f3f1478127" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>custom</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="191" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8temp_1a05531b19bb846b18c09f979eeb429ad3" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>clock</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="192" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/Weather_Balloon.cpp" line="182" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="182" bodyend="194"/>
+    <listofallmembers>
+      <member refid="structdata__struct_8temp_1a05531b19bb846b18c09f979eeb429ad3" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>clock</name></member>
+      <member refid="structdata__struct_8temp_1a8b9035807842a4e4dbe009f3f1478127" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>custom</name></member>
+      <member refid="structdata__struct_8temp_1a6a21b6995a068148bbb65c8f949b3fb2" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>external</name></member>
+      <member refid="structdata__struct_8temp_1a11648e4e66e7ed6a86cb7f1d0cf604fe" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>gps</name></member>
+      <member refid="structdata__struct_8temp_1ad1efad72dc5b17dc66a46767c32fff40" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>internal</name></member>
+      <member refid="structdata__struct_8temp_1afad58de7366495db4650cfefac2fcd61" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>main</name></member>
+      <member refid="structdata__struct_8temp_1a63dee2803479f4d975963a0805dec70e" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>ms5607</name></member>
+      <member refid="structdata__struct_8temp_1afa7bc2fcb1ec58d462249615bcdea607" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>sht31</name></member>
+      <member refid="structdata__struct_8temp_1a01a1f9db856468530986ed6aab9ac3c9" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>tsl2561</name></member>
+      <member refid="structdata__struct_8temp_1a45210da832f9626829457a65e9e7c4d0" prot="public" virt="non-virtual"><scope>data_struct.temp</scope><name>uv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

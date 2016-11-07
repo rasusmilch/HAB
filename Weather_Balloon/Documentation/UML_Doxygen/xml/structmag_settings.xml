@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structmag_settings" kind="struct" language="C++" prot="public">
+    <compoundname>magSettings</compoundname>
+    <includes refid="_l_s_m9_d_s1___types_8h" local="no">LSM9DS1_Types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structmag_settings_1a97f8e5c4baf3fc9a662f84fedb188f3c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t magSettings::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="223" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="223" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmag_settings_1a5966915104376cb76d9eb787bab024bc" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t magSettings::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="224" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="224" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ad7604159a07b0d088cdfb6ba4a0093b0" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="660" endline="694">LSM9DS1::setMagScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a830dfc95c7e2d8524720d78357b053cb" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="753" endline="772">LSM9DS1::calcmRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="952" endline="971">LSM9DS1::constrainScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmag_settings_1aca3dbf81e533dce344e618a3df199c1e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t magSettings::sampleRate</definition>
+        <argsstring></argsstring>
+        <name>sampleRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="225" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="225" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8bc672fba680edc468a643fd58046b41" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="730" endline="741">LSM9DS1::setMagODR</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmag_settings_1afcfa1e532fa140e42dc34a4abd7926ae" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t magSettings::tempCompensationEnable</definition>
+        <argsstring></argsstring>
+        <name>tempCompensationEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="227" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="227" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmag_settings_1ad36c7bb251858fb289841c91fb615a5f" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t magSettings::XYPerformance</definition>
+        <argsstring></argsstring>
+        <name>XYPerformance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="228" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="228" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmag_settings_1a0ab41f0670a3fd20ce1a43332f6fe949" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t magSettings::ZPerformance</definition>
+        <argsstring></argsstring>
+        <name>ZPerformance</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="229" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="229" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmag_settings_1abd59df268c0798fceacea68b956009df" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t magSettings::lowPowerEnable</definition>
+        <argsstring></argsstring>
+        <name>lowPowerEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="230" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="230" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structmag_settings_1ae3f0044de2fbdff6d7b830c36f26c450" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t magSettings::operatingMode</definition>
+        <argsstring></argsstring>
+        <name>operatingMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="231" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="231" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="221" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="220" bodyend="232"/>
+    <listofallmembers>
+      <member refid="structmag_settings_1a97f8e5c4baf3fc9a662f84fedb188f3c" prot="public" virt="non-virtual"><scope>magSettings</scope><name>enabled</name></member>
+      <member refid="structmag_settings_1abd59df268c0798fceacea68b956009df" prot="public" virt="non-virtual"><scope>magSettings</scope><name>lowPowerEnable</name></member>
+      <member refid="structmag_settings_1ae3f0044de2fbdff6d7b830c36f26c450" prot="public" virt="non-virtual"><scope>magSettings</scope><name>operatingMode</name></member>
+      <member refid="structmag_settings_1aca3dbf81e533dce344e618a3df199c1e" prot="public" virt="non-virtual"><scope>magSettings</scope><name>sampleRate</name></member>
+      <member refid="structmag_settings_1a5966915104376cb76d9eb787bab024bc" prot="public" virt="non-virtual"><scope>magSettings</scope><name>scale</name></member>
+      <member refid="structmag_settings_1afcfa1e532fa140e42dc34a4abd7926ae" prot="public" virt="non-virtual"><scope>magSettings</scope><name>tempCompensationEnable</name></member>
+      <member refid="structmag_settings_1ad36c7bb251858fb289841c91fb615a5f" prot="public" virt="non-virtual"><scope>magSettings</scope><name>XYPerformance</name></member>
+      <member refid="structmag_settings_1a0ab41f0670a3fd20ce1a43332f6fe949" prot="public" virt="non-virtual"><scope>magSettings</scope><name>ZPerformance</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

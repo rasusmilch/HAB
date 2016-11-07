@@ -1,0 +1,5 @@
+<map id="LSM9DS1::initGyro" name="LSM9DS1::initGyro">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#a263eed4b52ad087a1195755c6ba49e62" title="LSM9DS1::xgWriteByte" alt="" coords="180,31,329,57"/>
+<area shape="rect" id="node3" href="$class_l_s_m9_d_s1.html#a8e66108a002cc15ec4c0db0a608d20c6" title="LSM9DS1::I2CwriteByte" alt="" coords="377,5,529,32"/>
+<area shape="rect" id="node4" href="$class_l_s_m9_d_s1.html#a83321c9d6ec50f6b9944907d2be482cd" title="LSM9DS1::SPIwriteByte" alt="" coords="378,56,529,83"/>
+</map>

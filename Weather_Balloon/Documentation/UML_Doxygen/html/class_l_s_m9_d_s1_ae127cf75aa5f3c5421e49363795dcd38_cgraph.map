@@ -1,0 +1,5 @@
+<map id="LSM9DS1::readMag" name="LSM9DS1::readMag">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#acfdf9862cad1e66c9fb61a17bfbe7477" title="LSM9DS1::mReadBytes" alt="" coords="180,31,327,57"/>
+<area shape="rect" id="node3" href="$class_l_s_m9_d_s1.html#adfc9a22290daddd7787e8023fa8f12cc" title="LSM9DS1::I2CreadBytes" alt="" coords="375,5,527,32"/>
+<area shape="rect" id="node4" href="$class_l_s_m9_d_s1.html#a26c0f164454eba84e6486033b7061d11" title="LSM9DS1::SPIreadBytes" alt="" coords="375,56,526,83"/>
+</map>

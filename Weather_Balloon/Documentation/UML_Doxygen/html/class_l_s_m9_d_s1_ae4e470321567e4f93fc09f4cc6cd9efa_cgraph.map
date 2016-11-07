@@ -1,0 +1,5 @@
+<map id="LSM9DS1::mReadByte" name="LSM9DS1::mReadByte">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#a7fc046d4b335494331905fdeb5c81c9e" title="LSM9DS1::I2CreadByte" alt="" coords="196,5,343,32"/>
+<area shape="rect" id="node3" href="$class_l_s_m9_d_s1.html#a6f0f50bb5e9b702d5a19c7441a3f9d8b" title="LSM9DS1::SPIreadByte" alt="" coords="197,56,342,83"/>
+<area shape="rect" id="node4" href="$class_l_s_m9_d_s1.html#a26c0f164454eba84e6486033b7061d11" title="LSM9DS1::SPIreadBytes" alt="" coords="391,56,541,83"/>
+</map>

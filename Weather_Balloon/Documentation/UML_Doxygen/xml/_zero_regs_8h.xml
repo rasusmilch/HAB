@@ -1,0 +1,621 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_zero_regs_8h" kind="file" language="C++">
+    <compoundname>ZeroRegs.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_zero_regs_8cpp" local="yes">Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp</includedby>
+    <incdepgraph>
+      <node id="700">
+        <label>Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h</label>
+        <link refid="ZeroRegs.h"/>
+        <childnode refid="701" relation="include">
+        </childnode>
+      </node>
+      <node id="701">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="702">
+        <label>Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h</label>
+        <link refid="ZeroRegs.h"/>
+        <childnode refid="703" relation="include">
+        </childnode>
+      </node>
+      <node id="703">
+        <label>Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp</label>
+        <link refid="_zero_regs_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_zero_reg_options" prot="public">ZeroRegOptions</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_zero_regs_8h_1a147a30d688c41a0d39922ca6d2cd6bfb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegAC</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegAC</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="42" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="44" bodyend="46"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a67d77c008fc2ce98d2d78168aa64e9d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegADC</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegADC</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="43" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="49" bodyend="51"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a1095e7bbe04b7d3f6b4d58d8e7a42df8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegDAC</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegDAC</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="44" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="54" bodyend="56"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a9a5372cd2135bb853cfdbf3db45dd79c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegDMAC</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegDMAC</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="45" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="59" bodyend="61"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a06b2995104e4c1cbc2f61e11e3a3e484" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegDSU</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegDSU</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="46" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="64" bodyend="66"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1ac587593ee2a9ae02c2cfc677fe773c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegEIC</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegEIC</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="47" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="79" bodyend="129"/>
+        <references refid="_zero_regs_8cpp_1ac12b43bbcf1e169948740b458a496285" compoundref="_zero_regs_8cpp" startline="37">PRINTPAD2</references>
+        <references refid="_zero_regs_8cpp_1a8697ce31d1795964e7b71cea33415b12" compoundref="_zero_regs_8cpp" startline="69" endline="78">printZeroRegEIC_SENSE</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <references refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" compoundref="_zero_regs_8h" startline="38">ZeroRegOptions::showDisabled</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1aab346cdb76613ed12e521b2e3ab8e585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegEVSYS</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegEVSYS</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="48" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="132" bodyend="314"/>
+        <references refid="_zero_regs_8cpp_1a8a176c3af1264297ba123dd5866e8d98" compoundref="_zero_regs_8cpp" startline="34">PRINTFLAG</references>
+        <references refid="_zero_regs_8cpp_1ac12b43bbcf1e169948740b458a496285" compoundref="_zero_regs_8cpp" startline="37">PRINTPAD2</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <references refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" compoundref="_zero_regs_8h" startline="38">ZeroRegOptions::showDisabled</references>
+        <references refid="_zero_regs_8cpp_1a0e28fa19ee05619a0f584490c7e2bdc6" compoundref="_zero_regs_8cpp" startline="38">WRITE8</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a4f780af586626841f0bfd07761caae27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegGCLK</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegGCLK</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="49" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="360" bodyend="440"/>
+        <references refid="_zero_regs_8cpp_1a8a176c3af1264297ba123dd5866e8d98" compoundref="_zero_regs_8cpp" startline="34">PRINTFLAG</references>
+        <references refid="_zero_regs_8cpp_1ac12b43bbcf1e169948740b458a496285" compoundref="_zero_regs_8cpp" startline="37">PRINTPAD2</references>
+        <references refid="_zero_regs_8cpp_1a7743332c844ef9e4662b595fea87a97a" compoundref="_zero_regs_8cpp" startline="36">PRINTSCALE</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <references refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" compoundref="_zero_regs_8h" startline="38">ZeroRegOptions::showDisabled</references>
+        <references refid="_zero_regs_8cpp_1a0e28fa19ee05619a0f584490c7e2bdc6" compoundref="_zero_regs_8cpp" startline="38">WRITE8</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1ad986e6312220f31739dbe2c5e4c9326d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegI2S</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegI2S</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="50" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="443" bodyend="445"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1aaac9e29b52fd1df890dfa14c2f502420" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegMTB</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegMTB</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="51" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="448" bodyend="450"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a6db7f49d374fa825b83040a5acaf04b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegNVMCTRL</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegNVMCTRL</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="52" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="453" bodyend="546"/>
+        <references refid="_zero_regs_8cpp_1a8a176c3af1264297ba123dd5866e8d98" compoundref="_zero_regs_8cpp" startline="34">PRINTFLAG</references>
+        <references refid="_zero_regs_8cpp_1ae8f6df3c01a5ced49a82070fa737f588" compoundref="_zero_regs_8cpp" startline="35">PRINTHEX</references>
+        <references refid="_zero_regs_8cpp_1a85a8cdce9c48f3cec29652a37eb9aa95" compoundref="_zero_regs_8cpp" startline="41">READADDR32</references>
+        <references refid="_zero_regs_8cpp_1a8476227e03098b30d9e6a2f4fd3aa978" compoundref="_zero_regs_8cpp" startline="39">READFUSE</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a78c2deb148266895a11f2862a9d27082" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegPAC</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegPAC</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="53" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="549" bodyend="609"/>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <references refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" compoundref="_zero_regs_8h" startline="38">ZeroRegOptions::showDisabled</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a1807ae19c29483ee063bd225c40e0d36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegPM</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegPM</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="54" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="612" bodyend="710"/>
+        <references refid="_zero_regs_8cpp_1a8a176c3af1264297ba123dd5866e8d98" compoundref="_zero_regs_8cpp" startline="34">PRINTFLAG</references>
+        <references refid="_zero_regs_8cpp_1a7743332c844ef9e4662b595fea87a97a" compoundref="_zero_regs_8cpp" startline="36">PRINTSCALE</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1ac515fdec9d58f6339d3e38cc33c6f74f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegPORT</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegPORT</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="55" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="774" bodyend="811"/>
+        <references refid="struct_port___pin_1a4815156f6ae00fafe5a9dd5f725f06e8" compoundref="_zero_regs_8cpp" startline="715">Port_Pin::grp</references>
+        <references refid="struct_port___pin_1aa0152a075f602f9ea1be98921844f981" compoundref="_zero_regs_8cpp" startline="716">Port_Pin::idx</references>
+        <references refid="struct_port___pin_1abdb274a593040cfbdbb903fac65e8a1f" compoundref="_zero_regs_8cpp" startline="714">Port_Pin::name</references>
+        <references refid="struct_port___pin_1a7818a63c184b495208403621b5fe7f11" compoundref="_zero_regs_8cpp" startline="717">Port_Pin::pmux</references>
+        <references refid="_zero_regs_8cpp_1afcac0cf192584de0c1b442c79f5e6ec3" compoundref="_zero_regs_8cpp" startline="773">port_pin_count</references>
+        <references refid="_zero_regs_8cpp_1a8a176c3af1264297ba123dd5866e8d98" compoundref="_zero_regs_8cpp" startline="34">PRINTFLAG</references>
+        <references refid="_zero_regs_8cpp_1ae8f6df3c01a5ced49a82070fa737f588" compoundref="_zero_regs_8cpp" startline="35">PRINTHEX</references>
+        <references refid="_zero_regs_8cpp_1ac12b43bbcf1e169948740b458a496285" compoundref="_zero_regs_8cpp" startline="37">PRINTPAD2</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1abd5756f7cbf2e09db78469867a6c5051" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegRTC</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegRTC</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="56" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="987" bodyend="994"/>
+        <references refid="_zero_regs_8cpp_1af4b043f7c87e4ecaa152fab20b2bd672" compoundref="_zero_regs_8cpp" startline="814" endline="858">printZeroRegRTC_MODE0</references>
+        <references refid="_zero_regs_8cpp_1acba6ab3a1f0ca519efdad9af393fa315" compoundref="_zero_regs_8cpp" startline="861" endline="913">printZeroRegRTC_MODE1</references>
+        <references refid="_zero_regs_8cpp_1a380e1c86b97a256f10b4736f8d158ce8" compoundref="_zero_regs_8cpp" startline="916" endline="984">printZeroRegRTC_MODE2</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a91755cc900313248c2a65a925cd46c41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegSBMATRIX</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegSBMATRIX</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="57" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="997" bodyend="1017"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_zero_regs_8cpp_1ae8f6df3c01a5ced49a82070fa737f588" compoundref="_zero_regs_8cpp" startline="35">PRINTHEX</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a7db1a4f0d10e2e3efcd108837d85ee49" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegSERCOM</definition>
+        <argsstring>(ZeroRegOptions &amp;opts, Sercom *sercom, uint8_t idx)</argsstring>
+        <name>printZeroRegSERCOM</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <param>
+          <type>Sercom *</type>
+          <declname>sercom</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="58" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="1285" bodyend="1305"/>
+        <references refid="_zero_regs_8cpp_1a50889259214cfbde5a4f90a97298d68d" compoundref="_zero_regs_8cpp" startline="1020" endline="1070">printZeroRegSERCOM_I2CM</references>
+        <references refid="_zero_regs_8cpp_1a3961ade3c339a628b7174340ef3a8b35" compoundref="_zero_regs_8cpp" startline="1071" endline="1122">printZeroRegSERCOM_I2CS</references>
+        <references refid="_zero_regs_8cpp_1a27f8c7ca875a60890ad70dea014e9df2" compoundref="_zero_regs_8cpp" startline="1123" endline="1203">printZeroRegSERCOM_SPI</references>
+        <references refid="_zero_regs_8cpp_1a612b4e1372fe5ad5fc4f7cab4ceb4ef3" compoundref="_zero_regs_8cpp" startline="1204" endline="1284">printZeroRegSERCOM_USART</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <references refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" compoundref="_zero_regs_8h" startline="38">ZeroRegOptions::showDisabled</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a7b606cb3f1144532412356243668c1ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegSYSCTRL</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegSYSCTRL</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="59" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="1308" bodyend="1525"/>
+        <references refid="_zero_regs_8cpp_1a8a176c3af1264297ba123dd5866e8d98" compoundref="_zero_regs_8cpp" startline="34">PRINTFLAG</references>
+        <references refid="_zero_regs_8cpp_1ae8f6df3c01a5ced49a82070fa737f588" compoundref="_zero_regs_8cpp" startline="35">PRINTHEX</references>
+        <references refid="_zero_regs_8cpp_1a7743332c844ef9e4662b595fea87a97a" compoundref="_zero_regs_8cpp" startline="36">PRINTSCALE</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <references refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" compoundref="_zero_regs_8h" startline="38">ZeroRegOptions::showDisabled</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a0f776ca1e5a274dd72257e015eba2f98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegTC</definition>
+        <argsstring>(ZeroRegOptions &amp;opts, Tc *tc, uint8_t idx)</argsstring>
+        <name>printZeroRegTC</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <param>
+          <type>Tc *</type>
+          <declname>tc</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="60" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="1528" bodyend="1530"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1acdcf41658b0d0b0747a170019743e2b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegTCC</definition>
+        <argsstring>(ZeroRegOptions &amp;opts, Tcc *tcc, uint8_t idx)</argsstring>
+        <name>printZeroRegTCC</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <param>
+          <type>Tcc *</type>
+          <declname>tcc</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>idx</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="61" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="1533" bodyend="1535"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a0f50e185fe18ba9749b55a6d7ac781f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegUSB</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegUSB</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="62" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="1538" bodyend="1540"/>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1a8dd36048a3979014ebb8d385046c91e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegWDT</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegWDT</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="63" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="1543" bodyend="1586"/>
+        <references refid="_zero_regs_8cpp_1a8a176c3af1264297ba123dd5866e8d98" compoundref="_zero_regs_8cpp" startline="34">PRINTFLAG</references>
+        <references refid="_zero_regs_8cpp_1a7743332c844ef9e4662b595fea87a97a" compoundref="_zero_regs_8cpp" startline="36">PRINTSCALE</references>
+        <references refid="_zero_regs_8cpp_1a87f0dce9c6dcc5958e0fb406fc9f17c1" compoundref="_zero_regs_8cpp" startline="40">READ2FUSES</references>
+        <references refid="_zero_regs_8cpp_1a8476227e03098b30d9e6a2f4fd3aa978" compoundref="_zero_regs_8cpp" startline="39">READFUSE</references>
+        <references refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" compoundref="_zero_regs_8h" startline="37">ZeroRegOptions::ser</references>
+        <references refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" compoundref="_zero_regs_8h" startline="38">ZeroRegOptions::showDisabled</references>
+        <referencedby refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" compoundref="_zero_regs_8cpp" startline="1589" endline="1621">printZeroRegs</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void printZeroRegs</definition>
+        <argsstring>(ZeroRegOptions &amp;opts)</argsstring>
+        <name>printZeroRegs</name>
+        <param>
+          <type><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref> &amp;</type>
+          <declname>opts</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h" line="64" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="1589" bodyend="1621"/>
+        <references refid="_zero_regs_8cpp_1a147a30d688c41a0d39922ca6d2cd6bfb" compoundref="_zero_regs_8cpp" startline="44" endline="46">printZeroRegAC</references>
+        <references refid="_zero_regs_8cpp_1a67d77c008fc2ce98d2d78168aa64e9d8" compoundref="_zero_regs_8cpp" startline="49" endline="51">printZeroRegADC</references>
+        <references refid="_zero_regs_8cpp_1a1095e7bbe04b7d3f6b4d58d8e7a42df8" compoundref="_zero_regs_8cpp" startline="54" endline="56">printZeroRegDAC</references>
+        <references refid="_zero_regs_8cpp_1a9a5372cd2135bb853cfdbf3db45dd79c" compoundref="_zero_regs_8cpp" startline="59" endline="61">printZeroRegDMAC</references>
+        <references refid="_zero_regs_8cpp_1a06b2995104e4c1cbc2f61e11e3a3e484" compoundref="_zero_regs_8cpp" startline="64" endline="66">printZeroRegDSU</references>
+        <references refid="_zero_regs_8cpp_1ac587593ee2a9ae02c2cfc677fe773c28" compoundref="_zero_regs_8cpp" startline="79" endline="129">printZeroRegEIC</references>
+        <references refid="_zero_regs_8cpp_1aab346cdb76613ed12e521b2e3ab8e585" compoundref="_zero_regs_8cpp" startline="132" endline="314">printZeroRegEVSYS</references>
+        <references refid="_zero_regs_8cpp_1a4f780af586626841f0bfd07761caae27" compoundref="_zero_regs_8cpp" startline="360" endline="440">printZeroRegGCLK</references>
+        <references refid="_zero_regs_8cpp_1ad986e6312220f31739dbe2c5e4c9326d" compoundref="_zero_regs_8cpp" startline="443" endline="445">printZeroRegI2S</references>
+        <references refid="_zero_regs_8cpp_1aaac9e29b52fd1df890dfa14c2f502420" compoundref="_zero_regs_8cpp" startline="448" endline="450">printZeroRegMTB</references>
+        <references refid="_zero_regs_8cpp_1a6db7f49d374fa825b83040a5acaf04b2" compoundref="_zero_regs_8cpp" startline="453" endline="546">printZeroRegNVMCTRL</references>
+        <references refid="_zero_regs_8cpp_1a78c2deb148266895a11f2862a9d27082" compoundref="_zero_regs_8cpp" startline="549" endline="609">printZeroRegPAC</references>
+        <references refid="_zero_regs_8cpp_1a1807ae19c29483ee063bd225c40e0d36" compoundref="_zero_regs_8cpp" startline="612" endline="710">printZeroRegPM</references>
+        <references refid="_zero_regs_8cpp_1ac515fdec9d58f6339d3e38cc33c6f74f" compoundref="_zero_regs_8cpp" startline="774" endline="811">printZeroRegPORT</references>
+        <references refid="_zero_regs_8cpp_1abd5756f7cbf2e09db78469867a6c5051" compoundref="_zero_regs_8cpp" startline="987" endline="994">printZeroRegRTC</references>
+        <references refid="_zero_regs_8cpp_1a7db1a4f0d10e2e3efcd108837d85ee49" compoundref="_zero_regs_8cpp" startline="1285" endline="1305">printZeroRegSERCOM</references>
+        <references refid="_zero_regs_8cpp_1a7b606cb3f1144532412356243668c1ce" compoundref="_zero_regs_8cpp" startline="1308" endline="1525">printZeroRegSYSCTRL</references>
+        <references refid="_zero_regs_8cpp_1a0f776ca1e5a274dd72257e015eba2f98" compoundref="_zero_regs_8cpp" startline="1528" endline="1530">printZeroRegTC</references>
+        <references refid="_zero_regs_8cpp_1acdcf41658b0d0b0747a170019743e2b8" compoundref="_zero_regs_8cpp" startline="1533" endline="1535">printZeroRegTCC</references>
+        <references refid="_zero_regs_8cpp_1a0f50e185fe18ba9749b55a6d7ac781f1" compoundref="_zero_regs_8cpp" startline="1538" endline="1540">printZeroRegUSB</references>
+        <references refid="_zero_regs_8cpp_1a8dd36048a3979014ebb8d385046c91e1" compoundref="_zero_regs_8cpp" startline="1543" endline="1586">printZeroRegWDT</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>vim:<sp/>ts=4<sp/>sts=4<sp/>sw=4<sp/>et<sp/>si<sp/>ai</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">ZeroRegs.h<sp/>-<sp/>Library<sp/>for<sp/>printing<sp/>the<sp/>low-level<sp/>SAM<sp/>D21<sp/>configuration<sp/>registers</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Created<sp/>by<sp/>Drew<sp/>Folta,<sp/>November<sp/>27,<sp/>2015.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">The<sp/>MIT<sp/>License<sp/>(MIT)</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">Copyright<sp/>(c)<sp/>2015<sp/>Drew<sp/>Folta</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment">Permission<sp/>is<sp/>hereby<sp/>granted,<sp/>free<sp/>of<sp/>charge,<sp/>to<sp/>any<sp/>person<sp/>obtaining<sp/>a<sp/>copy</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">of<sp/>this<sp/>software<sp/>and<sp/>associated<sp/>documentation<sp/>files<sp/>(the<sp/>&quot;Software&quot;),<sp/>to<sp/>deal</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">in<sp/>the<sp/>Software<sp/>without<sp/>restriction,<sp/>including<sp/>without<sp/>limitation<sp/>the<sp/>rights</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">to<sp/>use,<sp/>copy,<sp/>modify,<sp/>merge,<sp/>publish,<sp/>distribute,<sp/>sublicense,<sp/>and/or<sp/>sell</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">copies<sp/>of<sp/>the<sp/>Software,<sp/>and<sp/>to<sp/>permit<sp/>persons<sp/>to<sp/>whom<sp/>the<sp/>Software<sp/>is</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">furnished<sp/>to<sp/>do<sp/>so,<sp/>subject<sp/>to<sp/>the<sp/>following<sp/>conditions:</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">The<sp/>above<sp/>copyright<sp/>notice<sp/>and<sp/>this<sp/>permission<sp/>notice<sp/>shall<sp/>be<sp/>included<sp/>in<sp/>all</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">copies<sp/>or<sp/>substantial<sp/>portions<sp/>of<sp/>the<sp/>Software.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">THE<sp/>SOFTWARE<sp/>IS<sp/>PROVIDED<sp/>&quot;AS<sp/>IS&quot;,<sp/>WITHOUT<sp/>WARRANTY<sp/>OF<sp/>ANY<sp/>KIND,<sp/>EXPRESS<sp/>OR</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">IMPLIED,<sp/>INCLUDING<sp/>BUT<sp/>NOT<sp/>LIMITED<sp/>TO<sp/>THE<sp/>WARRANTIES<sp/>OF<sp/>MERCHANTABILITY,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE<sp/>AND<sp/>NONINFRINGEMENT.<sp/>IN<sp/>NO<sp/>EVENT<sp/>SHALL<sp/>THE</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">AUTHORS<sp/>OR<sp/>COPYRIGHT<sp/>HOLDERS<sp/>BE<sp/>LIABLE<sp/>FOR<sp/>ANY<sp/>CLAIM,<sp/>DAMAGES<sp/>OR<sp/>OTHER</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">LIABILITY,<sp/>WHETHER<sp/>IN<sp/>AN<sp/>ACTION<sp/>OF<sp/>CONTRACT,<sp/>TORT<sp/>OR<sp/>OTHERWISE,<sp/>ARISING<sp/>FROM,</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">OUT<sp/>OF<sp/>OR<sp/>IN<sp/>CONNECTION<sp/>WITH<sp/>THE<sp/>SOFTWARE<sp/>OR<sp/>THE<sp/>USE<sp/>OR<sp/>OTHER<sp/>DEALINGS<sp/>IN<sp/>THE</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">SOFTWARE.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ZERO_REGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ZERO_REGS_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>a<sp/>wild<sp/>experiment<sp/>in<sp/>API<sp/>design.<sp/>The<sp/>idea<sp/>is<sp/>to<sp/>make<sp/>it<sp/>easy<sp/>to<sp/>add</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>new<sp/>configuration<sp/>options<sp/>in<sp/>the<sp/>future<sp/>without<sp/>a<sp/>long<sp/>list<sp/>of<sp/>arguments.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="struct_zero_reg_options" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>{</highlight></codeline>
+<codeline lineno="37" refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>Stream<sp/><sp/>&amp;<ref refid="struct_zero_reg_options_1a0935abfae59db8dd1ffedd20c2c6e88b" kindref="member">ser</ref>;</highlight></codeline>
+<codeline lineno="38" refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_zero_reg_options_1ab2481a6642758da88f86fdcf9d66a8d9" kindref="member">showDisabled</ref>;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a147a30d688c41a0d39922ca6d2cd6bfb" kindref="member">printZeroRegAC</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a67d77c008fc2ce98d2d78168aa64e9d8" kindref="member">printZeroRegADC</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a1095e7bbe04b7d3f6b4d58d8e7a42df8" kindref="member">printZeroRegDAC</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a9a5372cd2135bb853cfdbf3db45dd79c" kindref="member">printZeroRegDMAC</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a06b2995104e4c1cbc2f61e11e3a3e484" kindref="member">printZeroRegDSU</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1ac587593ee2a9ae02c2cfc677fe773c28" kindref="member">printZeroRegEIC</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1aab346cdb76613ed12e521b2e3ab8e585" kindref="member">printZeroRegEVSYS</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a4f780af586626841f0bfd07761caae27" kindref="member">printZeroRegGCLK</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1ad986e6312220f31739dbe2c5e4c9326d" kindref="member">printZeroRegI2S</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1aaac9e29b52fd1df890dfa14c2f502420" kindref="member">printZeroRegMTB</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a6db7f49d374fa825b83040a5acaf04b2" kindref="member">printZeroRegNVMCTRL</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a78c2deb148266895a11f2862a9d27082" kindref="member">printZeroRegPAC</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a1807ae19c29483ee063bd225c40e0d36" kindref="member">printZeroRegPM</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1ac515fdec9d58f6339d3e38cc33c6f74f" kindref="member">printZeroRegPORT</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1abd5756f7cbf2e09db78469867a6c5051" kindref="member">printZeroRegRTC</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a91755cc900313248c2a65a925cd46c41" kindref="member">printZeroRegSBMATRIX</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a7db1a4f0d10e2e3efcd108837d85ee49" kindref="member">printZeroRegSERCOM</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts,<sp/>Sercom*<sp/>sercom,<sp/>uint8_t<sp/>idx);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a7b606cb3f1144532412356243668c1ce" kindref="member">printZeroRegSYSCTRL</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a0f776ca1e5a274dd72257e015eba2f98" kindref="member">printZeroRegTC</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts,<sp/>Tc*<sp/>tc,<sp/>uint8_t<sp/>idx);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1acdcf41658b0d0b0747a170019743e2b8" kindref="member">printZeroRegTCC</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts,<sp/>Tcc*<sp/>tcc,<sp/>uint8_t<sp/>idx);</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a0f50e185fe18ba9749b55a6d7ac781f1" kindref="member">printZeroRegUSB</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1a8dd36048a3979014ebb8d385046c91e1" kindref="member">printZeroRegWDT</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_zero_regs_8h_1af97a7289c40861b813fab70cfb71db67" kindref="member">printZeroRegs</ref>(<ref refid="struct_zero_reg_options" kindref="compound">ZeroRegOptions</ref><sp/>&amp;opts);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>ZERO_REGS_H</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.h"/>
+  </compounddef>
+</doxygen>

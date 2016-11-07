@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_running_statistics_8h" kind="file" language="C++">
+    <compoundname>RunningStatistics.h</compoundname>
+    <includes refid="_filter_one_pole_8h" local="yes">FilterOnePole.h</includes>
+    <includedby refid="_filters_8h" local="yes">Weather_Balloon/library/Filters/Filters.h</includedby>
+    <includedby refid="_running_statistics_8cpp" local="yes">Weather_Balloon/library/Filters/RunningStatistics.cpp</includedby>
+    <incdepgraph>
+      <node id="750">
+        <label>Weather_Balloon/library/Filters/RunningStatistics.h</label>
+        <link refid="RunningStatistics.h"/>
+        <childnode refid="751" relation="include">
+        </childnode>
+      </node>
+      <node id="751">
+        <label>FilterOnePole.h</label>
+        <link refid="_filter_one_pole_8h"/>
+        <childnode refid="752" relation="include">
+        </childnode>
+      </node>
+      <node id="752">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="753">
+        <label>Weather_Balloon/library/Filters/RunningStatistics.h</label>
+        <link refid="RunningStatistics.h"/>
+        <childnode refid="754" relation="include">
+        </childnode>
+        <childnode refid="755" relation="include">
+        </childnode>
+      </node>
+      <node id="754">
+        <label>Weather_Balloon/library/Filters/Filters.h</label>
+        <link refid="_filters_8h"/>
+      </node>
+      <node id="755">
+        <label>Weather_Balloon/library/Filters/RunningStatistics.cpp</label>
+        <link refid="_running_statistics_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_running_statistics" prot="public">RunningStatistics</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_running_statistics_8h_1a67f264182f870b0259cd82e82e5e32cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testRunningStatistics</definition>
+        <argsstring>()</argsstring>
+        <name>testRunningStatistics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.h" line="34" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="58" bodyend="86"/>
+        <references refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" compoundref="_running_statistics_8cpp" startline="21" endline="24">RunningStatistics::input</references>
+        <references refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" compoundref="_running_statistics_8cpp" startline="26" endline="28">RunningStatistics::mean</references>
+        <references refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" compoundref="_running_statistics_8cpp" startline="16" endline="19">RunningStatistics::setInitialValue</references>
+        <references refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" compoundref="_running_statistics_8cpp" startline="39" endline="47">RunningStatistics::sigma</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>RunningStatistics_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RunningStatistics_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_filter_one_pole_8h" kindref="compound">FilterOnePole.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="struct_running_statistics" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_running_statistics" kindref="compound">RunningStatistics</ref><sp/>{</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>statistics,<sp/>SigmaSqr<sp/>is:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>σ^2<sp/>=<sp/>&lt;x^2&gt;<sp/>-<sp/>&lt;x&gt;^2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>averages<sp/>can<sp/>be<sp/>taken<sp/>by<sp/>low-pass<sp/>smoothing<sp/>with<sp/>a<sp/>(two-pole)<sp/>filter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="11" refid="struct_running_statistics_1a4ec83fcbddff87169b6aad7fe9784fad" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a4ec83fcbddff87169b6aad7fe9784fad" kindref="member">AverageSecs</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>seconds<sp/>to<sp/>average<sp/>over</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="13" refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_one_pole_cascade" kindref="compound">FilterOnePoleCascade</ref><sp/><ref refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" kindref="member">averageValue</ref>;</highlight></codeline>
+<codeline lineno="14" refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_one_pole_cascade" kindref="compound">FilterOnePoleCascade</ref><sp/><ref refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" kindref="member">averageSquareValue</ref>;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" kindref="member">input</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inVal<sp/>);</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>constructor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1a5ba923774908f70a5827bcdc18f46477" kindref="member">RunningStatistics</ref>();</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" kindref="member">setWindowSecs</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>windowSecs<sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" kindref="member">setInitialValue</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>initialMean,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>initialSigma<sp/>=<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" kindref="member">mean</ref>();</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" kindref="member">variance</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" kindref="member">sigma</ref>();</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a5de669afa689ee26e8c3c7286446ef54" kindref="member">CV</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_running_statistics_8h_1a67f264182f870b0259cd82e82e5e32cf" kindref="member">testRunningStatistics</ref>();</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Filters/RunningStatistics.h"/>
+  </compounddef>
+</doxygen>

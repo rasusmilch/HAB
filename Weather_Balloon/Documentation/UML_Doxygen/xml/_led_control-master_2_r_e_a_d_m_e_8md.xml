@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_led_control-master_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">LedControl</highlight></codeline>
+<codeline><highlight class="normal">==========</highlight></codeline>
+<codeline><highlight class="normal">LedControl<sp/>is<sp/>an<sp/>[Arduino](http://arduino.cc)<sp/>library<sp/>for<sp/>MAX7219<sp/>and<sp/>MAX7221<sp/>Led<sp/>display<sp/>drivers.</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>code<sp/>also<sp/>works<sp/>with<sp/>the<sp/>[Teensy<sp/>(3.1)](https://www.pjrc.com/teensy/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Documentation</highlight></codeline>
+<codeline><highlight class="normal">-------------</highlight></codeline>
+<codeline><highlight class="normal">Documentation<sp/>for<sp/>the<sp/>library<sp/>is<sp/>on<sp/>the<sp/>[Github<sp/>Project<sp/>Pages](http://wayoda.github.io/LedControl/)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Download</highlight></codeline>
+<codeline><highlight class="normal">--------</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>lastest<sp/>binary<sp/>version<sp/>of<sp/>the<sp/>Library<sp/>is<sp/>always<sp/>available<sp/>from<sp/>the<sp/></highlight></codeline>
+<codeline><highlight class="normal">[LedControl<sp/>Release<sp/>Page](https://github.com/wayoda/LedControl/releases)<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Install</highlight></codeline>
+<codeline><highlight class="normal">-------</highlight></codeline>
+<codeline><highlight class="normal">The<sp/>library<sp/>can<sp/>be<sp/>installed<sp/>using<sp/>the<sp/>[standard<sp/>Arduino<sp/>library<sp/>install<sp/>procedure](http://arduino.cc/en/Guide/Libraries)<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LedControl-master/README.md"/>
+  </compounddef>
+</doxygen>

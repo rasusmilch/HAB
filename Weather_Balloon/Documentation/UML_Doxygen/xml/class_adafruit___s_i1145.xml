@@ -1,0 +1,376 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_adafruit___s_i1145" kind="class" language="C++" prot="public">
+    <compoundname>Adafruit_SI1145</compoundname>
+    <includes refid="_adafruit___s_i1145_8h" local="no">Adafruit_SI1145.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adafruit___s_i1145_1a5d9f234ce36cf7e9978eb1a66757f470" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_SI1145::_addr</definition>
+        <argsstring></argsstring>
+        <name>_addr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="179" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adafruit___s_i1145_1ae89a2548ed17479c42aa011df63160f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adafruit_SI1145::Adafruit_SI1145</definition>
+        <argsstring>(void)</argsstring>
+        <name>Adafruit_SI1145</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="158" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="20" bodyend="22"/>
+        <references refid="_adafruit___s_i1145_8h_1a51c255c4d28463791d955fef52563f07" compoundref="_adafruit___s_i1145_8h" startline="154">SI1145_ADDR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1ad17eb7214e6fba886b5595cf14e45cf0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Adafruit_SI1145::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="159" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="25" bodyend="91"/>
+        <references refid="class_adafruit___s_i1145_1ab7a22b92c14315e36b84a42498e970ea" compoundref="_adafruit___s_i1145_8cpp" startline="93" endline="107">reset</references>
+        <references refid="_adafruit___s_i1145_8h_1a0ea75a690d0f50864a56ca0b975f43c5" compoundref="_adafruit___s_i1145_8h" startline="97">SI1145_PARAM_ADCCOUNTER_511CLK</references>
+        <references refid="_adafruit___s_i1145_8h_1a503e1bea7fa3846144bce79c19c6f65b" compoundref="_adafruit___s_i1145_8h" startline="100">SI1145_PARAM_ADCMUX_LARGEIR</references>
+        <references refid="_adafruit___s_i1145_8h_1ae9f6b63c67b6c0a71b2f70533f7a093d" compoundref="_adafruit___s_i1145_8h" startline="99">SI1145_PARAM_ADCMUX_SMALLIR</references>
+        <references refid="_adafruit___s_i1145_8h_1ab81f49de96e7182e9e1da83b7e277b04" compoundref="_adafruit___s_i1145_8h" startline="86">SI1145_PARAM_ALSIRADCGAIN</references>
+        <references refid="_adafruit___s_i1145_8h_1a10b9f965ed07c2e9ca67c37c6e6943ae" compoundref="_adafruit___s_i1145_8h" startline="87">SI1145_PARAM_ALSIRADCMISC</references>
+        <references refid="_adafruit___s_i1145_8h_1abaaa73a6a78d11cb81a85d4289ab4673" compoundref="_adafruit___s_i1145_8h" startline="88">SI1145_PARAM_ALSIRADCMISC_RANGE</references>
+        <references refid="_adafruit___s_i1145_8h_1ae42eeb09ff3fb5906ccce22ed9209cab" compoundref="_adafruit___s_i1145_8h" startline="77">SI1145_PARAM_ALSIRADCMUX</references>
+        <references refid="_adafruit___s_i1145_8h_1a4e1dd177cadb70b3e8bd744630633637" compoundref="_adafruit___s_i1145_8h" startline="85">SI1145_PARAM_ALSIRADCOUNTER</references>
+        <references refid="_adafruit___s_i1145_8h_1a674b0b0a5410746fa33841842eecfc88" compoundref="_adafruit___s_i1145_8h" startline="81">SI1145_PARAM_ALSVISADCGAIN</references>
+        <references refid="_adafruit___s_i1145_8h_1a32c2c15bdc97c8a46ce9eafdcadafde3" compoundref="_adafruit___s_i1145_8h" startline="82">SI1145_PARAM_ALSVISADCMISC</references>
+        <references refid="_adafruit___s_i1145_8h_1add7b00f463910fe8f7b3789592211da3" compoundref="_adafruit___s_i1145_8h" startline="83">SI1145_PARAM_ALSVISADCMISC_VISRANGE</references>
+        <references refid="_adafruit___s_i1145_8h_1a4ae7af4231cec15ac2c5621fb2332eee" compoundref="_adafruit___s_i1145_8h" startline="80">SI1145_PARAM_ALSVISADCOUNTER</references>
+        <references refid="_adafruit___s_i1145_8h_1ade895092091a602b01c374a7c987eafd" compoundref="_adafruit___s_i1145_8h" startline="45">SI1145_PARAM_CHLIST</references>
+        <references refid="_adafruit___s_i1145_8h_1a62634725410513326198e8a531ab1a92" compoundref="_adafruit___s_i1145_8h" startline="48">SI1145_PARAM_CHLIST_ENALSIR</references>
+        <references refid="_adafruit___s_i1145_8h_1a2b67a96c7e35ec9050cd0a7ed12d0b1e" compoundref="_adafruit___s_i1145_8h" startline="49">SI1145_PARAM_CHLIST_ENALSVIS</references>
+        <references refid="_adafruit___s_i1145_8h_1a6a4bf08375586170142c8361ac7e82b5" compoundref="_adafruit___s_i1145_8h" startline="50">SI1145_PARAM_CHLIST_ENPS1</references>
+        <references refid="_adafruit___s_i1145_8h_1a73ec52abf6a9adc41f4e8eb2e2236fcd" compoundref="_adafruit___s_i1145_8h" startline="46">SI1145_PARAM_CHLIST_ENUV</references>
+        <references refid="_adafruit___s_i1145_8h_1af3e52eed30a942b4227b2e017d7ee188" compoundref="_adafruit___s_i1145_8h" startline="68">SI1145_PARAM_PS1ADCMUX</references>
+        <references refid="_adafruit___s_i1145_8h_1a55bb9c374f172ab00d3c822cfebbee4c" compoundref="_adafruit___s_i1145_8h" startline="72">SI1145_PARAM_PSADCGAIN</references>
+        <references refid="_adafruit___s_i1145_8h_1aeb87668ba832bba27d071f03e5fad4d2" compoundref="_adafruit___s_i1145_8h" startline="73">SI1145_PARAM_PSADCMISC</references>
+        <references refid="_adafruit___s_i1145_8h_1a5295d0c6ac96048480f1e6728b24a869" compoundref="_adafruit___s_i1145_8h" startline="75">SI1145_PARAM_PSADCMISC_PSMODE</references>
+        <references refid="_adafruit___s_i1145_8h_1a442fe14c240d2acbb68f775a6f261997" compoundref="_adafruit___s_i1145_8h" startline="74">SI1145_PARAM_PSADCMISC_RANGE</references>
+        <references refid="_adafruit___s_i1145_8h_1a56400f77ad4667e8fdf892c4345c0206" compoundref="_adafruit___s_i1145_8h" startline="71">SI1145_PARAM_PSADCOUNTER</references>
+        <references refid="_adafruit___s_i1145_8h_1abfebeab9c0155ec206dfd528579a35ca" compoundref="_adafruit___s_i1145_8h" startline="54">SI1145_PARAM_PSLED12SEL</references>
+        <references refid="_adafruit___s_i1145_8h_1a8ea2d5479eba863b600bd8d8295b4fed" compoundref="_adafruit___s_i1145_8h" startline="60">SI1145_PARAM_PSLED12SEL_PS1LED1</references>
+        <references refid="_adafruit___s_i1145_8h_1a05bd818ebf6e2595bae6febeae0ac3f0" compoundref="_adafruit___s_i1145_8h" startline="109">SI1145_REG_INTCFG</references>
+        <references refid="_adafruit___s_i1145_8h_1aadaae0235da5ced5cbb37639ad0fe800" compoundref="_adafruit___s_i1145_8h" startline="110">SI1145_REG_INTCFG_INTOE</references>
+        <references refid="_adafruit___s_i1145_8h_1a8b994265d5c29c24fd075d0fada144e5" compoundref="_adafruit___s_i1145_8h" startline="113">SI1145_REG_IRQEN</references>
+        <references refid="_adafruit___s_i1145_8h_1a0e9f63a2f8d8e33336dcea6bba0a10bb" compoundref="_adafruit___s_i1145_8h" startline="114">SI1145_REG_IRQEN_ALSEVERYSAMPLE</references>
+        <references refid="_adafruit___s_i1145_8h_1adef6eef298f4b0cd5c9fa38eb6109178" compoundref="_adafruit___s_i1145_8h" startline="105">SI1145_REG_PARTID</references>
+        <references refid="_adafruit___s_i1145_8h_1ae8f845f2e2f45dd49d59ca721f1f40f9" compoundref="_adafruit___s_i1145_8h" startline="127">SI1145_REG_PSLED21</references>
+        <references refid="_adafruit___s_i1145_8h_1a502516f6f75ac687293ae0333c6a66b4" compoundref="_adafruit___s_i1145_8h" startline="129">SI1145_REG_UCOEFF0</references>
+        <references refid="_adafruit___s_i1145_8h_1a6d74c31e07b76c14aaafbb7e4e0829e2" compoundref="_adafruit___s_i1145_8h" startline="130">SI1145_REG_UCOEFF1</references>
+        <references refid="_adafruit___s_i1145_8h_1a20340653e30bc668f2fc95fffba32172" compoundref="_adafruit___s_i1145_8h" startline="131">SI1145_REG_UCOEFF2</references>
+        <references refid="_adafruit___s_i1145_8h_1a486406e5f02e631046051ed72520e90c" compoundref="_adafruit___s_i1145_8h" startline="132">SI1145_REG_UCOEFF3</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1ab7a22b92c14315e36b84a42498e970ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_SI1145::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="160" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="93" bodyend="107"/>
+        <references refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" compoundref="_adafruit___s_i1145_8h" startline="134">SI1145_REG_COMMAND</references>
+        <references refid="_adafruit___s_i1145_8h_1a188377c7e5f434a4b959460619a31877" compoundref="_adafruit___s_i1145_8h" startline="123">SI1145_REG_HWKEY</references>
+        <references refid="_adafruit___s_i1145_8h_1a05bd818ebf6e2595bae6febeae0ac3f0" compoundref="_adafruit___s_i1145_8h" startline="109">SI1145_REG_INTCFG</references>
+        <references refid="_adafruit___s_i1145_8h_1a8b994265d5c29c24fd075d0fada144e5" compoundref="_adafruit___s_i1145_8h" startline="113">SI1145_REG_IRQEN</references>
+        <references refid="_adafruit___s_i1145_8h_1a072875e41eaeba0f044fdc9c52008ae9" compoundref="_adafruit___s_i1145_8h" startline="120">SI1145_REG_IRQMODE1</references>
+        <references refid="_adafruit___s_i1145_8h_1a1bacef4774e340973f2d43232497e7df" compoundref="_adafruit___s_i1145_8h" startline="121">SI1145_REG_IRQMODE2</references>
+        <references refid="_adafruit___s_i1145_8h_1ae99958f87686a97cdc5336aa874090e8" compoundref="_adafruit___s_i1145_8h" startline="136">SI1145_REG_IRQSTAT</references>
+        <references refid="_adafruit___s_i1145_8h_1a9ec19435fd37d55ff0154540bb43fb2a" compoundref="_adafruit___s_i1145_8h" startline="124">SI1145_REG_MEASRATE0</references>
+        <references refid="_adafruit___s_i1145_8h_1a89c16a0a3f1ad9822a818de51593f3c9" compoundref="_adafruit___s_i1145_8h" startline="125">SI1145_REG_MEASRATE1</references>
+        <references refid="_adafruit___s_i1145_8h_1ae9159f0a6208c3caedb258b08a7d90e7" compoundref="_adafruit___s_i1145_8h" startline="30">SI1145_RESET</references>
+        <referencedby refid="class_adafruit___s_i1145_1ad17eb7214e6fba886b5595cf14e45cf0" compoundref="_adafruit___s_i1145_8cpp" startline="25" endline="91">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a9d1715d966500b5f5f88568a5b4f780b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Adafruit_SI1145::readUV</definition>
+        <argsstring>()</argsstring>
+        <name>readUV</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="162" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="113" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a7295e72f69a558cd6b3ac382ac791688" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Adafruit_SI1145::readIR</definition>
+        <argsstring>()</argsstring>
+        <name>readIR</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="163" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="145" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a25bf65464093ec0ba5f9fdd884606a21" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Adafruit_SI1145::readVisible</definition>
+        <argsstring>()</argsstring>
+        <name>readVisible</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="164" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="140" bodyend="142"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a9b058485d8305725020219839285ea16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Adafruit_SI1145::readProx</definition>
+        <argsstring>()</argsstring>
+        <name>readProx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="165" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="150" bodyend="152"/>
+        <references refid="_adafruit___s_i1145_8h_1a8a57f978bf947f658ae8f80af3179e4f" compoundref="_adafruit___s_i1145_8h" startline="27">SI1145_PARAM_QUERY</references>
+        <references refid="_adafruit___s_i1145_8h_1a48be8d785819eec9ed16cf2c5422829b" compoundref="_adafruit___s_i1145_8h" startline="28">SI1145_PARAM_SET</references>
+        <references refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" compoundref="_adafruit___s_i1145_8h" startline="134">SI1145_REG_COMMAND</references>
+        <references refid="_adafruit___s_i1145_8h_1abb14eb21f8843d383f842e7b8c451370" compoundref="_adafruit___s_i1145_8h" startline="151">SI1145_REG_PARAMRD</references>
+        <references refid="_adafruit___s_i1145_8h_1ad8dd6222250f95bf91d550d1ee0f0d07" compoundref="_adafruit___s_i1145_8h" startline="133">SI1145_REG_PARAMWR</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1ab0a29c37acf40dd227d7d23c5a5b0254" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_SI1145::getRegister</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>getRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>reg</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="166" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a591ba648b988a5dcb464b9f60a4a2c83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_SI1145::setRegister</definition>
+        <argsstring>(uint8_t, uint8_t)</argsstring>
+        <name>setRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>reg</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="167" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a67635a26a9c4c6b2fc2a7ffc86c2b5c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_SI1145::reset_uv</definition>
+        <argsstring>()</argsstring>
+        <name>reset_uv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="168" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="127" bodyend="129"/>
+        <references refid="_adafruit___s_i1145_8h_1aa3a3cf9cdd3aa9f8cd31f2a2aef7ec58" compoundref="_adafruit___s_i1145_8h" startline="29">SI1145_NOP</references>
+        <references refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" compoundref="_adafruit___s_i1145_8h" startline="134">SI1145_REG_COMMAND</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a9290b9f5e92874e9e927cb27fd53a2ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_SI1145::nop</definition>
+        <argsstring>()</argsstring>
+        <name>nop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="169" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="131" bodyend="133"/>
+        <references refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" compoundref="_adafruit___s_i1145_8h" startline="134">SI1145_REG_COMMAND</references>
+        <references refid="_adafruit___s_i1145_8h_1ae9159f0a6208c3caedb258b08a7d90e7" compoundref="_adafruit___s_i1145_8h" startline="30">SI1145_RESET</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1ad48796484b0107059cc8a8a33b673390" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_SI1145::force_convert</definition>
+        <argsstring>()</argsstring>
+        <name>force_convert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="170" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="135" bodyend="137"/>
+        <references refid="_adafruit___s_i1145_8h_1a3f0dd6af9992a5a494b48f1f8d8ce766" compoundref="_adafruit___s_i1145_8h" startline="34">SI1145_PSALS_FORCE</references>
+        <references refid="_adafruit___s_i1145_8h_1a37e20034898a54dbcc43572565e8064c" compoundref="_adafruit___s_i1145_8h" startline="134">SI1145_REG_COMMAND</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a021989c1f46249bb64ae12863d80bf23" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Adafruit_SI1145::read16</definition>
+        <argsstring>(uint8_t addr)</argsstring>
+        <name>read16</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="173" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="182" bodyend="194"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1af36fbd1a7ec186e847ed2edba00d057a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_SI1145::read8</definition>
+        <argsstring>(uint8_t addr)</argsstring>
+        <name>read8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="174" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="172" bodyend="180"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1af4646fb64d134f452d91aba415dd6b46" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_SI1145::write8</definition>
+        <argsstring>(uint8_t reg, uint8_t val)</argsstring>
+        <name>write8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="175" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="196" bodyend="202"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a89da21e0788a2aab7511489bb39eda88" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_SI1145::readParam</definition>
+        <argsstring>(uint8_t p)</argsstring>
+        <name>readParam</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="176" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="165" bodyend="168"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_i1145_1a9ebc22c8989babd8f17636a69e77e952" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_SI1145::writeParam</definition>
+        <argsstring>(uint8_t p, uint8_t v)</argsstring>
+        <name>writeParam</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>p</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="177" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.cpp" bodystart="156" bodyend="163"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" line="156" column="1" bodyfile="Weather_Balloon/library/Adafruit_SI1145_Library-master/Adafruit_SI1145.h" bodystart="156" bodyend="180"/>
+    <listofallmembers>
+      <member refid="class_adafruit___s_i1145_1a5d9f234ce36cf7e9978eb1a66757f470" prot="private" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>_addr</name></member>
+      <member refid="class_adafruit___s_i1145_1ae89a2548ed17479c42aa011df63160f2" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>Adafruit_SI1145</name></member>
+      <member refid="class_adafruit___s_i1145_1ad17eb7214e6fba886b5595cf14e45cf0" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>begin</name></member>
+      <member refid="class_adafruit___s_i1145_1ad48796484b0107059cc8a8a33b673390" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>force_convert</name></member>
+      <member refid="class_adafruit___s_i1145_1ab0a29c37acf40dd227d7d23c5a5b0254" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>getRegister</name></member>
+      <member refid="class_adafruit___s_i1145_1a9290b9f5e92874e9e927cb27fd53a2ed" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>nop</name></member>
+      <member refid="class_adafruit___s_i1145_1a021989c1f46249bb64ae12863d80bf23" prot="private" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>read16</name></member>
+      <member refid="class_adafruit___s_i1145_1af36fbd1a7ec186e847ed2edba00d057a" prot="private" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>read8</name></member>
+      <member refid="class_adafruit___s_i1145_1a7295e72f69a558cd6b3ac382ac791688" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>readIR</name></member>
+      <member refid="class_adafruit___s_i1145_1a89da21e0788a2aab7511489bb39eda88" prot="private" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>readParam</name></member>
+      <member refid="class_adafruit___s_i1145_1a9b058485d8305725020219839285ea16" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>readProx</name></member>
+      <member refid="class_adafruit___s_i1145_1a9d1715d966500b5f5f88568a5b4f780b" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>readUV</name></member>
+      <member refid="class_adafruit___s_i1145_1a25bf65464093ec0ba5f9fdd884606a21" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>readVisible</name></member>
+      <member refid="class_adafruit___s_i1145_1ab7a22b92c14315e36b84a42498e970ea" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>reset</name></member>
+      <member refid="class_adafruit___s_i1145_1a67635a26a9c4c6b2fc2a7ffc86c2b5c9" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>reset_uv</name></member>
+      <member refid="class_adafruit___s_i1145_1a591ba648b988a5dcb464b9f60a4a2c83" prot="public" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>setRegister</name></member>
+      <member refid="class_adafruit___s_i1145_1af4646fb64d134f452d91aba415dd6b46" prot="private" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>write8</name></member>
+      <member refid="class_adafruit___s_i1145_1a9ebc22c8989babd8f17636a69e77e952" prot="private" virt="non-virtual"><scope>Adafruit_SI1145</scope><name>writeParam</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsd__data" kind="struct" language="C++" prot="public">
+    <compoundname>sd_data</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsd__data_1a5ebf26ae306ca7d48713664f309ef62f" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sd_data::blocks</definition>
+        <argsstring></argsstring>
+        <name>blocks</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="418" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="418" bodyend="-1"/>
+        <referencedby refid="_weather___balloon_8cpp_1aec2dcfe4cd6ca84e8df5730d179fdc6f" compoundref="_weather___balloon_8cpp" startline="946" endline="979">configure_sdcard</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a450f53a446d117859c49aeaac6c31f9f" compoundref="_weather___balloon_8cpp" startline="2653" endline="2838">read_sdcard</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__data_1a2d9191a0c849f5ee3b3714159dbd065d" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sd_data::current_block</definition>
+        <argsstring></argsstring>
+        <name>current_block</name>
+        <initializer>= 1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="422" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="422" bodyend="-1"/>
+        <referencedby refid="_weather___balloon_8cpp_1aec2dcfe4cd6ca84e8df5730d179fdc6f" compoundref="_weather___balloon_8cpp" startline="946" endline="979">configure_sdcard</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a276e156004c668500daa7aaa9a770585" compoundref="_weather___balloon_8cpp" startline="2278" endline="2395">find_sdcard_tail</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a450f53a446d117859c49aeaac6c31f9f" compoundref="_weather___balloon_8cpp" startline="2653" endline="2838">read_sdcard</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__data_1ac1410d5750aa9c7a30041b0ac94cbc80" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sd_data::write_errors</definition>
+        <argsstring></argsstring>
+        <name>write_errors</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="424" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="424" bodyend="-1"/>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__data_1a803add843065a08b411291e34786dac3" prot="public" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t sd_data::crc_errors</definition>
+        <argsstring></argsstring>
+        <name>crc_errors</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="424" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="424" bodyend="-1"/>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__data_1a3e3831d75c0cbbc4f4bc83f20c57c4d7" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t sd_data::crc</definition>
+        <argsstring></argsstring>
+        <name>crc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="427" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="427" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__data_1ab3590a9446d96dd2d7527a8b69d6a7e4" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sd_data::buffer[512]</definition>
+        <argsstring>[512]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="430" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="430" bodyend="-1"/>
+        <referencedby refid="_weather___balloon_8cpp_1a276e156004c668500daa7aaa9a770585" compoundref="_weather___balloon_8cpp" startline="2278" endline="2395">find_sdcard_tail</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a22feff51a4b8144a2264bc812eedaddb" compoundref="_weather___balloon_8cpp" startline="2397" endline="2410">test_logging</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a450f53a446d117859c49aeaac6c31f9f" compoundref="_weather___balloon_8cpp" startline="2653" endline="2838">read_sdcard</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__data_1a8c7d8aeb42db3bbd384026be5d5e0bbd" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sd_data::hold_buffer[512]</definition>
+        <argsstring>[512]</argsstring>
+        <name>hold_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="433" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="433" bodyend="-1"/>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structsd__data_1ada768338826445661ce665fc7bb9b8a0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t sd_data::num_packed</definition>
+        <argsstring></argsstring>
+        <name>num_packed</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="437" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="437" bodyend="-1"/>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a450f53a446d117859c49aeaac6c31f9f" compoundref="_weather___balloon_8cpp" startline="2653" endline="2838">read_sdcard</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/Weather_Balloon.cpp" line="416" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="416" bodyend="439"/>
+    <listofallmembers>
+      <member refid="structsd__data_1a5ebf26ae306ca7d48713664f309ef62f" prot="public" virt="non-virtual"><scope>sd_data</scope><name>blocks</name></member>
+      <member refid="structsd__data_1ab3590a9446d96dd2d7527a8b69d6a7e4" prot="public" virt="non-virtual"><scope>sd_data</scope><name>buffer</name></member>
+      <member refid="structsd__data_1a3e3831d75c0cbbc4f4bc83f20c57c4d7" prot="public" virt="non-virtual"><scope>sd_data</scope><name>crc</name></member>
+      <member refid="structsd__data_1a803add843065a08b411291e34786dac3" prot="public" virt="non-virtual"><scope>sd_data</scope><name>crc_errors</name></member>
+      <member refid="structsd__data_1a2d9191a0c849f5ee3b3714159dbd065d" prot="public" virt="non-virtual"><scope>sd_data</scope><name>current_block</name></member>
+      <member refid="structsd__data_1a8c7d8aeb42db3bbd384026be5d5e0bbd" prot="public" virt="non-virtual"><scope>sd_data</scope><name>hold_buffer</name></member>
+      <member refid="structsd__data_1ada768338826445661ce665fc7bb9b8a0" prot="public" virt="non-virtual"><scope>sd_data</scope><name>num_packed</name></member>
+      <member refid="structsd__data_1ac1410d5750aa9c7a30041b0ac94cbc80" prot="public" virt="non-virtual"><scope>sd_data</scope><name>write_errors</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

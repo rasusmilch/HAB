@@ -1,0 +1,9 @@
+<map id="DallasTemperature::setUserData" name="DallasTemperature::setUserData">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#a3601e8ee63c4770b716817ed68664400" title="DallasTemperature::\lgetUserData" alt="" coords="185,5,317,47"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#a19afa5e594de0ab6caa5a48a70650927" title="DallasTemperature::\lisConnected" alt="" coords="365,9,497,51"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#a74c275dabf103f268c5a271d379dcb7e" title="DallasTemperature::\lwriteScratchPad" alt="" coords="185,123,317,164"/>
+<area shape="rect" id="node5" href="$class_one_wire.html#a6a742a9112392567eae3d06dde067c07" title="OneWire::reset" alt="" coords="380,79,483,106"/>
+<area shape="rect" id="node6" href="$class_one_wire.html#accf808390abd63d3c7bce35677784384" title="OneWire::select" alt="" coords="377,130,485,157"/>
+<area shape="rect" id="node7" href="$class_one_wire.html#a843e9e7e57ed615b4880be0b76b40b7d" title="OneWire::write" alt="" coords="545,155,652,182"/>
+<area shape="rect" id="node8" href="$class_one_wire.html#a6bbc58276d1cb08653dab3ea35378f94" title="OneWire::write_bit" alt="" coords="700,155,827,182"/>
+</map>

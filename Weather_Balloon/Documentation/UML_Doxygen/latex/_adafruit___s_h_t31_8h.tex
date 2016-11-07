@@ -1,0 +1,157 @@
+\hypertarget{_adafruit___s_h_t31_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+S\+H\+T31-\/master/\+Adafruit\+\_\+\+S\+H\+T31.h File Reference}
+\label{_adafruit___s_h_t31_8h}\index{Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+S\+H\+T31-\/master/\+Adafruit\+\_\+\+S\+H\+T31.\+h@{Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+S\+H\+T31-\/master/\+Adafruit\+\_\+\+S\+H\+T31.\+h}}
+{\ttfamily \#include \char`\"{}W\+Program.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Wire.\+h\char`\"{}}\\*
+Include dependency graph for Adafruit\+\_\+\+S\+H\+T31.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{_adafruit___s_h_t31_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{_adafruit___s_h_t31_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_adafruit___s_h_t31}{Adafruit\+\_\+\+S\+H\+T31}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_a126bb81a04ac54c61287dd2b106bbfe2}{S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+DR}~0x44
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_a6c1080037a520d003d76ce2c7a3ee83d}{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}~0x2\+C06
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_a12be5d5a3bf97262d44ff4c212b107a9}{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}~0x2\+C0D
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_a82991434dd6a17cd4436c472ba57d20b}{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}~0x2\+C10
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_a8f2d795cc762c216df48a61c18d78c28}{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+EP}~0x2400
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_abb77d0d6f5621d847e0faccfef864586}{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+EP}~0x240B
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_ae081e5ca6089e55a0876dcd63590c2ae}{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+EP}~0x2416
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_a6c1bb86c7a247385905fe05e0c520945}{S\+H\+T31\+\_\+\+R\+E\+A\+D\+S\+T\+A\+T\+US}~0x\+F32D
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_a411f9db85b42acc85045a09289f4751a}{S\+H\+T31\+\_\+\+C\+L\+E\+A\+R\+S\+T\+A\+T\+US}~0x3041
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_aab64dcf72dca550bfc3e5f30e5c9ec12}{S\+H\+T31\+\_\+\+S\+O\+F\+T\+R\+E\+S\+ET}~0x30\+A2
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_a7a966e359de2783149ec4d37d73a3125}{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+EN}~0x306D
+\item 
+\#define \hyperlink{_adafruit___s_h_t31_8h_a784f3898eaacc45a75545bb2d0f82485}{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+D\+IS}~0x3066
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+C\+L\+E\+A\+R\+S\+T\+A\+T\+US@{S\+H\+T31\+\_\+\+C\+L\+E\+A\+R\+S\+T\+A\+T\+US}}
+\index{S\+H\+T31\+\_\+\+C\+L\+E\+A\+R\+S\+T\+A\+T\+US@{S\+H\+T31\+\_\+\+C\+L\+E\+A\+R\+S\+T\+A\+T\+US}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+C\+L\+E\+A\+R\+S\+T\+A\+T\+US}{SHT31\_CLEARSTATUS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+C\+L\+E\+A\+R\+S\+T\+A\+T\+US~0x3041}\hypertarget{_adafruit___s_h_t31_8h_a411f9db85b42acc85045a09289f4751a}{}\label{_adafruit___s_h_t31_8h_a411f9db85b42acc85045a09289f4751a}
+
+
+Definition at line 32 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+DR@{S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+DR}}
+\index{S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+DR@{S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+DR}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+DR}{SHT31\_DEFAULT\_ADDR}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+D\+E\+F\+A\+U\+L\+T\+\_\+\+A\+D\+DR~0x44}\hypertarget{_adafruit___s_h_t31_8h_a126bb81a04ac54c61287dd2b106bbfe2}{}\label{_adafruit___s_h_t31_8h_a126bb81a04ac54c61287dd2b106bbfe2}
+
+
+Definition at line 24 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+D\+IS@{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+D\+IS}}
+\index{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+D\+IS@{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+D\+IS}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+D\+IS}{SHT31\_HEATERDIS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+D\+IS~0x3066}\hypertarget{_adafruit___s_h_t31_8h_a784f3898eaacc45a75545bb2d0f82485}{}\label{_adafruit___s_h_t31_8h_a784f3898eaacc45a75545bb2d0f82485}
+
+
+Definition at line 35 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+S\+H\+T31\+::heater().
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+EN@{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+EN}}
+\index{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+EN@{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+EN}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+EN}{SHT31\_HEATEREN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+H\+E\+A\+T\+E\+R\+EN~0x306D}\hypertarget{_adafruit___s_h_t31_8h_a7a966e359de2783149ec4d37d73a3125}{}\label{_adafruit___s_h_t31_8h_a7a966e359de2783149ec4d37d73a3125}
+
+
+Definition at line 34 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+S\+H\+T31\+::heater().
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+EP@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+EP}}
+\index{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+EP@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+EP}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+EP}{SHT31\_MEAS\_HIGHREP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+EP~0x2400}\hypertarget{_adafruit___s_h_t31_8h_a8f2d795cc762c216df48a61c18d78c28}{}\label{_adafruit___s_h_t31_8h_a8f2d795cc762c216df48a61c18d78c28}
+
+
+Definition at line 28 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+S\+H\+T31\+::read\+Humidity().
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}}
+\index{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}{SHT31\_MEAS\_HIGHREP\_STRETCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+H\+I\+G\+H\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH~0x2\+C06}\hypertarget{_adafruit___s_h_t31_8h_a6c1080037a520d003d76ce2c7a3ee83d}{}\label{_adafruit___s_h_t31_8h_a6c1080037a520d003d76ce2c7a3ee83d}
+
+
+Definition at line 25 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+EP@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+EP}}
+\index{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+EP@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+EP}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+EP}{SHT31\_MEAS\_LOWREP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+EP~0x2416}\hypertarget{_adafruit___s_h_t31_8h_ae081e5ca6089e55a0876dcd63590c2ae}{}\label{_adafruit___s_h_t31_8h_ae081e5ca6089e55a0876dcd63590c2ae}
+
+
+Definition at line 30 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}}
+\index{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}{SHT31\_MEAS\_LOWREP\_STRETCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+L\+O\+W\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH~0x2\+C10}\hypertarget{_adafruit___s_h_t31_8h_a82991434dd6a17cd4436c472ba57d20b}{}\label{_adafruit___s_h_t31_8h_a82991434dd6a17cd4436c472ba57d20b}
+
+
+Definition at line 27 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+EP@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+EP}}
+\index{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+EP@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+EP}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+EP}{SHT31\_MEAS\_MEDREP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+EP~0x240B}\hypertarget{_adafruit___s_h_t31_8h_abb77d0d6f5621d847e0faccfef864586}{}\label{_adafruit___s_h_t31_8h_abb77d0d6f5621d847e0faccfef864586}
+
+
+Definition at line 29 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}}
+\index{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH@{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH}{SHT31\_MEAS\_MEDREP\_STRETCH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+M\+E\+A\+S\+\_\+\+M\+E\+D\+R\+E\+P\+\_\+\+S\+T\+R\+E\+T\+CH~0x2\+C0D}\hypertarget{_adafruit___s_h_t31_8h_a12be5d5a3bf97262d44ff4c212b107a9}{}\label{_adafruit___s_h_t31_8h_a12be5d5a3bf97262d44ff4c212b107a9}
+
+
+Definition at line 26 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+R\+E\+A\+D\+S\+T\+A\+T\+US@{S\+H\+T31\+\_\+\+R\+E\+A\+D\+S\+T\+A\+T\+US}}
+\index{S\+H\+T31\+\_\+\+R\+E\+A\+D\+S\+T\+A\+T\+US@{S\+H\+T31\+\_\+\+R\+E\+A\+D\+S\+T\+A\+T\+US}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+R\+E\+A\+D\+S\+T\+A\+T\+US}{SHT31\_READSTATUS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+R\+E\+A\+D\+S\+T\+A\+T\+US~0x\+F32D}\hypertarget{_adafruit___s_h_t31_8h_a6c1bb86c7a247385905fe05e0c520945}{}\label{_adafruit___s_h_t31_8h_a6c1bb86c7a247385905fe05e0c520945}
+
+
+Definition at line 31 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+S\+H\+T31\+::read\+Status().
+
+\index{Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}!S\+H\+T31\+\_\+\+S\+O\+F\+T\+R\+E\+S\+ET@{S\+H\+T31\+\_\+\+S\+O\+F\+T\+R\+E\+S\+ET}}
+\index{S\+H\+T31\+\_\+\+S\+O\+F\+T\+R\+E\+S\+ET@{S\+H\+T31\+\_\+\+S\+O\+F\+T\+R\+E\+S\+ET}!Adafruit\+\_\+\+S\+H\+T31.\+h@{Adafruit\+\_\+\+S\+H\+T31.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+T31\+\_\+\+S\+O\+F\+T\+R\+E\+S\+ET}{SHT31\_SOFTRESET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+T31\+\_\+\+S\+O\+F\+T\+R\+E\+S\+ET~0x30\+A2}\hypertarget{_adafruit___s_h_t31_8h_aab64dcf72dca550bfc3e5f30e5c9ec12}{}\label{_adafruit___s_h_t31_8h_aab64dcf72dca550bfc3e5f30e5c9ec12}
+
+
+Definition at line 33 of file Adafruit\+\_\+\+S\+H\+T31.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+S\+H\+T31\+::reset().
+

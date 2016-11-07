@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdata__struct_8gyro" kind="struct" language="C++" prot="public">
+    <compoundname>data_struct.gyro</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdata__struct_8gyro_1a9dd4e461268c8034f5c8564e155c67a6" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8gyro_1a415290769594460e2e485922904f345d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="234" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8gyro_1afbade9e36a3f36d3d676c1b808451dd7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>z</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="234" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/Weather_Balloon.cpp" line="233" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="233" bodyend="235"/>
+    <listofallmembers>
+      <member refid="structdata__struct_8gyro_1a9dd4e461268c8034f5c8564e155c67a6" prot="public" virt="non-virtual"><scope>data_struct.gyro</scope><name>x</name></member>
+      <member refid="structdata__struct_8gyro_1a415290769594460e2e485922904f345d" prot="public" virt="non-virtual"><scope>data_struct.gyro</scope><name>y</name></member>
+      <member refid="structdata__struct_8gyro_1afbade9e36a3f36d3d676c1b808451dd7" prot="public" virt="non-virtual"><scope>data_struct.gyro</scope><name>z</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

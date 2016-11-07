@@ -1,0 +1,419 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_led_control" kind="class" language="C++" prot="public">
+    <compoundname>LedControl</compoundname>
+    <includes refid="_led_control_8h" local="no">LedControl.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_led_control_1a1fc67a5a679aa3143fe380de3f3e1304" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte LedControl::spidata[16]</definition>
+        <argsstring>[16]</argsstring>
+        <name>spidata</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="202" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_led_control_1a37bc46afcfc608ae911dd8f14723fc8c" prot="private" static="no" mutable="no">
+        <type>byte</type>
+        <definition>byte LedControl::status[64]</definition>
+        <argsstring>[64]</argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="207" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_led_control_1a0e498ed6bafc7e976519e02c584a21a1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LedControl::SPI_MOSI</definition>
+        <argsstring></argsstring>
+        <name>SPI_MOSI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="209" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_led_control_1afc7d4adadb968d29e4c6581c529d1256" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LedControl::SPI_CLK</definition>
+        <argsstring></argsstring>
+        <name>SPI_CLK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="211" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.h" bodystart="211" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_led_control_1a5a929a990cf53b4c6975bbcc4ad626c1" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LedControl::SPI_CS</definition>
+        <argsstring></argsstring>
+        <name>SPI_CS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="213" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_led_control_1ac425f2b9da24395989cf3f0ac4ba3197" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int LedControl::maxDevices</definition>
+        <argsstring></argsstring>
+        <name>maxDevices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="215" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_led_control_1ad8f3852b0676a5b52e911208bbbe7954" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::spiTransfer</definition>
+        <argsstring>(int addr, byte opcode, byte data)</argsstring>
+        <name>spiTransfer</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>opcode</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="204" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="192" bodyend="209"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LedControl::LedControl</definition>
+        <argsstring>(int dataPin, int clkPin, int csPin, int numDevices=1)</argsstring>
+        <name>LedControl</name>
+        <param>
+          <type>int</type>
+          <declname>dataPin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>clkPin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>csPin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>numDevices</declname>
+          <defval>1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="226" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="46" bodyend="70"/>
+        <references refid="class_led_control_1ae162b960d838588bf5cfafc1ba3858bc" compoundref="_led_control_8cpp" startline="99" endline="109">clearDisplay</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_led_control_8cpp_1a318b32d905ce8e57d7caec133ec7d712" compoundref="_led_control_8cpp" startline="40">OP_DECODEMODE</references>
+        <references refid="_led_control_8cpp_1a7ef59a31858360d26d5dade28441598c" compoundref="_led_control_8cpp" startline="44">OP_DISPLAYTEST</references>
+        <references refid="class_led_control_1a2d32bbde945924b1389df8cc158c821a" compoundref="_led_control_8cpp" startline="85" endline="90">setScanLimit</references>
+        <references refid="class_led_control_1acae3eb6d78fc9b978fe6968611e48466" compoundref="_led_control_8cpp" startline="76" endline="83">shutdown</references>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1a30139662e87b4a1d693646ac1df97523" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int LedControl::getDeviceCount</definition>
+        <argsstring>()</argsstring>
+        <name>getDeviceCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="233" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="72" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1acae3eb6d78fc9b978fe6968611e48466" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::shutdown</definition>
+        <argsstring>(int addr, bool status)</argsstring>
+        <name>shutdown</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>status</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="242" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="76" bodyend="83"/>
+        <references refid="_led_control_8cpp_1ac4772c1c1c24a4b5837a2000c62aa0a3" compoundref="_led_control_8cpp" startline="43">OP_SHUTDOWN</references>
+        <referencedby refid="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" compoundref="_led_control_8cpp" startline="46" endline="70">LedControl</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1a2d32bbde945924b1389df8cc158c821a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::setScanLimit</definition>
+        <argsstring>(int addr, int limit)</argsstring>
+        <name>setScanLimit</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>limit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="252" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="85" bodyend="90"/>
+        <references refid="_led_control_8cpp_1a13d91ddca53029535b6cf314b28ed15e" compoundref="_led_control_8cpp" startline="42">OP_SCANLIMIT</references>
+        <referencedby refid="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" compoundref="_led_control_8cpp" startline="46" endline="70">LedControl</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1a540e6ea4f3d393c1131f4bb7f5b9353d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::setIntensity</definition>
+        <argsstring>(int addr, int intensity)</argsstring>
+        <name>setIntensity</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>intensity</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="260" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="92" bodyend="97"/>
+        <references refid="_led_control_8cpp_1a4f47ca7a01008a4d918302ece5314ed4" compoundref="_led_control_8cpp" startline="41">OP_INTENSITY</references>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1ae162b960d838588bf5cfafc1ba3858bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::clearDisplay</definition>
+        <argsstring>(int addr)</argsstring>
+        <name>clearDisplay</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="267" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="99" bodyend="109"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <referencedby refid="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" compoundref="_led_control_8cpp" startline="46" endline="70">LedControl</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1aca456866199ac52f40e0a6e91c57b443" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::setLed</definition>
+        <argsstring>(int addr, int row, int col, boolean state)</argsstring>
+        <name>setLed</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>state</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="278" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="111" bodyend="128"/>
+        <referencedby refid="class_led_control_1af3cb40a45c736af5a3b3b970510d6b84" compoundref="_led_control_8cpp" startline="141" endline="153">setColumn</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1a471116c0c2d2552dec7c4dda6506d7e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::setRow</definition>
+        <argsstring>(int addr, int row, byte value)</argsstring>
+        <name>setRow</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>row</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="288" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="130" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1af3cb40a45c736af5a3b3b970510d6b84" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::setColumn</definition>
+        <argsstring>(int addr, int col, byte value)</argsstring>
+        <name>setColumn</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>col</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="298" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="141" bodyend="153"/>
+        <references refid="class_led_control_1aca456866199ac52f40e0a6e91c57b443" compoundref="_led_control_8cpp" startline="111" endline="128">setLed</references>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1a3ad4b5566c89e3d03c3a58fb19b4354b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::setDigit</definition>
+        <argsstring>(int addr, int digit, byte value, boolean dp)</argsstring>
+        <name>setDigit</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>digit</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>dp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="308" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="155" bodyend="169"/>
+        <references refid="pgmspace_8h_1ad2b71a6faa0583b51569b531a443cb0a" compoundref="pgmspace_8h" startline="65">pgm_read_byte_near</references>
+      </memberdef>
+      <memberdef kind="function" id="class_led_control_1aae9120ce2427b01ffad4cfaa91e5f537" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LedControl::setChar</definition>
+        <argsstring>(int addr, int digit, char value, boolean dp)</argsstring>
+        <name>setChar</name>
+        <param>
+          <type>int</type>
+          <declname>addr</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>digit</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>boolean</type>
+          <declname>dp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="322" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.cpp" bodystart="171" bodyend="190"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="pgmspace_8h_1ad2b71a6faa0583b51569b531a443cb0a" compoundref="pgmspace_8h" startline="65">pgm_read_byte_near</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/LedControl-master/src/LedControl.h" line="199" column="1" bodyfile="Weather_Balloon/library/LedControl-master/src/LedControl.h" bodystart="199" bodyend="323"/>
+    <listofallmembers>
+      <member refid="class_led_control_1ae162b960d838588bf5cfafc1ba3858bc" prot="public" virt="non-virtual"><scope>LedControl</scope><name>clearDisplay</name></member>
+      <member refid="class_led_control_1a30139662e87b4a1d693646ac1df97523" prot="public" virt="non-virtual"><scope>LedControl</scope><name>getDeviceCount</name></member>
+      <member refid="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" prot="public" virt="non-virtual"><scope>LedControl</scope><name>LedControl</name></member>
+      <member refid="class_led_control_1ac425f2b9da24395989cf3f0ac4ba3197" prot="private" virt="non-virtual"><scope>LedControl</scope><name>maxDevices</name></member>
+      <member refid="class_led_control_1aae9120ce2427b01ffad4cfaa91e5f537" prot="public" virt="non-virtual"><scope>LedControl</scope><name>setChar</name></member>
+      <member refid="class_led_control_1af3cb40a45c736af5a3b3b970510d6b84" prot="public" virt="non-virtual"><scope>LedControl</scope><name>setColumn</name></member>
+      <member refid="class_led_control_1a3ad4b5566c89e3d03c3a58fb19b4354b" prot="public" virt="non-virtual"><scope>LedControl</scope><name>setDigit</name></member>
+      <member refid="class_led_control_1a540e6ea4f3d393c1131f4bb7f5b9353d" prot="public" virt="non-virtual"><scope>LedControl</scope><name>setIntensity</name></member>
+      <member refid="class_led_control_1aca456866199ac52f40e0a6e91c57b443" prot="public" virt="non-virtual"><scope>LedControl</scope><name>setLed</name></member>
+      <member refid="class_led_control_1a471116c0c2d2552dec7c4dda6506d7e7" prot="public" virt="non-virtual"><scope>LedControl</scope><name>setRow</name></member>
+      <member refid="class_led_control_1a2d32bbde945924b1389df8cc158c821a" prot="public" virt="non-virtual"><scope>LedControl</scope><name>setScanLimit</name></member>
+      <member refid="class_led_control_1acae3eb6d78fc9b978fe6968611e48466" prot="public" virt="non-virtual"><scope>LedControl</scope><name>shutdown</name></member>
+      <member refid="class_led_control_1afc7d4adadb968d29e4c6581c529d1256" prot="private" virt="non-virtual"><scope>LedControl</scope><name>SPI_CLK</name></member>
+      <member refid="class_led_control_1a5a929a990cf53b4c6975bbcc4ad626c1" prot="private" virt="non-virtual"><scope>LedControl</scope><name>SPI_CS</name></member>
+      <member refid="class_led_control_1a0e498ed6bafc7e976519e02c584a21a1" prot="private" virt="non-virtual"><scope>LedControl</scope><name>SPI_MOSI</name></member>
+      <member refid="class_led_control_1a1fc67a5a679aa3143fe380de3f3e1304" prot="private" virt="non-virtual"><scope>LedControl</scope><name>spidata</name></member>
+      <member refid="class_led_control_1ad8f3852b0676a5b52e911208bbbe7954" prot="private" virt="non-virtual"><scope>LedControl</scope><name>spiTransfer</name></member>
+      <member refid="class_led_control_1a37bc46afcfc608ae911dd8f14723fc8c" prot="private" virt="non-virtual"><scope>LedControl</scope><name>status</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

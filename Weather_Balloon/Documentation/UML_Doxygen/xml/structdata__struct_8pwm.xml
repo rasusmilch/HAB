@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdata__struct_8pwm" kind="struct" language="C++" prot="public">
+    <compoundname>data_struct.pwm</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdata__struct_8pwm_1afad58de7366495db4650cfefac2fcd61" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>main</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8pwm_1a11648e4e66e7ed6a86cb7f1d0cf604fe" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>gps</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8pwm_1a01a1f9db856468530986ed6aab9ac3c9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>tsl2561</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8pwm_1afa7bc2fcb1ec58d462249615bcdea607" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>sht31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="197" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8pwm_1a45210da832f9626829457a65e9e7c4d0" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>uv</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="197" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/Weather_Balloon.cpp" line="196" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="196" bodyend="198"/>
+    <listofallmembers>
+      <member refid="structdata__struct_8pwm_1a11648e4e66e7ed6a86cb7f1d0cf604fe" prot="public" virt="non-virtual"><scope>data_struct.pwm</scope><name>gps</name></member>
+      <member refid="structdata__struct_8pwm_1afad58de7366495db4650cfefac2fcd61" prot="public" virt="non-virtual"><scope>data_struct.pwm</scope><name>main</name></member>
+      <member refid="structdata__struct_8pwm_1afa7bc2fcb1ec58d462249615bcdea607" prot="public" virt="non-virtual"><scope>data_struct.pwm</scope><name>sht31</name></member>
+      <member refid="structdata__struct_8pwm_1a01a1f9db856468530986ed6aab9ac3c9" prot="public" virt="non-virtual"><scope>data_struct.pwm</scope><name>tsl2561</name></member>
+      <member refid="structdata__struct_8pwm_1a45210da832f9626829457a65e9e7c4d0" prot="public" virt="non-virtual"><scope>data_struct.pwm</scope><name>uv</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

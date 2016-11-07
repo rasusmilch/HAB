@@ -1,0 +1,1230 @@
+\hypertarget{class_dallas_temperature}{}\section{Dallas\+Temperature Class Reference}
+\label{class_dallas_temperature}\index{Dallas\+Temperature@{Dallas\+Temperature}}
+
+
+{\ttfamily \#include $<$Dallas\+Temperature.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_dallas_temperature_af46e868b6702ff5f77263985cd990e01}{Dallas\+Temperature} ()
+\item 
+\hyperlink{class_dallas_temperature_a37139ebd1a6122e232800528aee8cb2b}{Dallas\+Temperature} (\hyperlink{class_one_wire}{One\+Wire} $\ast$)
+\item 
+void \hyperlink{class_dallas_temperature_af985bf5f9ed6857424e8a9532eaf5e2f}{set\+One\+Wire} (\hyperlink{class_one_wire}{One\+Wire} $\ast$)
+\item 
+void \hyperlink{class_dallas_temperature_aea297b5f2a720a5455245c0fbf7333ec}{begin} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_dallas_temperature_a8bf92c0b6b8c3167daca4c2046ade13a}{get\+Device\+Count} (void)
+\item 
+bool \hyperlink{class_dallas_temperature_a71e4744b8d7b2f1c05a96cd158c83007}{valid\+Address} (const uint8\+\_\+t $\ast$)
+\item 
+bool \hyperlink{class_dallas_temperature_a3f3678c8defd473e8eebd9cfe793b329}{valid\+Family} (const uint8\+\_\+t $\ast$device\+Address)
+\item 
+bool \hyperlink{class_dallas_temperature_afa644bebf50c81b6641a31c585b62538}{get\+Address} (uint8\+\_\+t $\ast$, uint8\+\_\+t)
+\item 
+bool \hyperlink{class_dallas_temperature_a19afa5e594de0ab6caa5a48a70650927}{is\+Connected} (const uint8\+\_\+t $\ast$)
+\item 
+bool \hyperlink{class_dallas_temperature_a624f64b186c13927d4f74bd7c5b92c2e}{is\+Connected} (const uint8\+\_\+t $\ast$, uint8\+\_\+t $\ast$)
+\item 
+bool \hyperlink{class_dallas_temperature_a2b55774207d0211fd679247a7137142b}{read\+Scratch\+Pad} (const uint8\+\_\+t $\ast$, uint8\+\_\+t $\ast$)
+\item 
+void \hyperlink{class_dallas_temperature_a74c275dabf103f268c5a271d379dcb7e}{write\+Scratch\+Pad} (const uint8\+\_\+t $\ast$, const uint8\+\_\+t $\ast$)
+\item 
+bool \hyperlink{class_dallas_temperature_af6a28c1d1009dd6d010d97dffaf5942d}{read\+Power\+Supply} (const uint8\+\_\+t $\ast$)
+\item 
+uint8\+\_\+t \hyperlink{class_dallas_temperature_a9dac13206229d7c8fb75f21bf44e75ed}{get\+Resolution} ()
+\item 
+void \hyperlink{class_dallas_temperature_a43363ee4b227f1ecf9c33cd4e072c0c9}{set\+Resolution} (uint8\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_dallas_temperature_a2266822561e864c4921955697c1ac7f5}{get\+Resolution} (const uint8\+\_\+t $\ast$)
+\item 
+bool \hyperlink{class_dallas_temperature_a394897437dfb8de4c8fd2198a1d1c356}{set\+Resolution} (const uint8\+\_\+t $\ast$, uint8\+\_\+t, bool skip\+Global\+Bit\+Resolution\+Calculation=false)
+\item 
+void \hyperlink{class_dallas_temperature_aa5f90d9f12327f39de97ed2244a4ad6f}{set\+Wait\+For\+Conversion} (bool)
+\item 
+bool \hyperlink{class_dallas_temperature_abb49c5903d68b86c0cf2da5e2b849a43}{get\+Wait\+For\+Conversion} (void)
+\item 
+void \hyperlink{class_dallas_temperature_ae8ef644d60236af12963f37fe145a49a}{set\+Check\+For\+Conversion} (bool)
+\item 
+bool \hyperlink{class_dallas_temperature_a7541728802904b0ed8d17a7f5ef00801}{get\+Check\+For\+Conversion} (void)
+\item 
+void \hyperlink{class_dallas_temperature_a5d28cff0d7e317c28e28c0f1a62fbe6d}{request\+Temperatures} (void)
+\item 
+bool \hyperlink{class_dallas_temperature_aee2a2abd5f8293df9a0a030b3e982c90}{request\+Temperatures\+By\+Address} (const uint8\+\_\+t $\ast$)
+\item 
+bool \hyperlink{class_dallas_temperature_ae9a7bf62321615519242d2421c8b349a}{request\+Temperatures\+By\+Index} (uint8\+\_\+t)
+\item 
+int16\+\_\+t \hyperlink{class_dallas_temperature_a37c3723cc15d5e46d0a6caa96a3c4781}{get\+Temp} (const uint8\+\_\+t $\ast$)
+\item 
+float \hyperlink{class_dallas_temperature_a20f94b59909b46e55a77b399d99591a2}{get\+TempC} (const uint8\+\_\+t $\ast$)
+\item 
+float \hyperlink{class_dallas_temperature_ace033fbd8e4c7e17c4bcd7ecc8f3ebea}{get\+TempF} (const uint8\+\_\+t $\ast$)
+\item 
+float \hyperlink{class_dallas_temperature_a7e3e2e23257aac6b6c896df205d5b3b5}{get\+Temp\+C\+By\+Index} (uint8\+\_\+t)
+\item 
+float \hyperlink{class_dallas_temperature_a96318d36b313e1f4f413e2ed2b7501c7}{get\+Temp\+F\+By\+Index} (uint8\+\_\+t)
+\item 
+bool \hyperlink{class_dallas_temperature_a835945ed3e8d78c31791e55f22084691}{is\+Parasite\+Power\+Mode} (void)
+\item 
+bool \hyperlink{class_dallas_temperature_adaf460a3b8004218e97af7059d41053a}{is\+Conversion\+Available} (const uint8\+\_\+t $\ast$)
+\item 
+bool \hyperlink{class_dallas_temperature_a9e92719781d3ead44b95964d59edd41d}{is\+Conversion\+Complete} (void)
+\item 
+void \hyperlink{class_dallas_temperature_a0ed69b03ed848936ea0c8deea0e5c2ba}{set\+User\+Data} (const uint8\+\_\+t $\ast$, int16\+\_\+t)
+\item 
+void \hyperlink{class_dallas_temperature_a65ae6994218200e92ce43bffd122d46b}{set\+User\+Data\+By\+Index} (uint8\+\_\+t, int16\+\_\+t)
+\item 
+int16\+\_\+t \hyperlink{class_dallas_temperature_a3601e8ee63c4770b716817ed68664400}{get\+User\+Data} (const uint8\+\_\+t $\ast$)
+\item 
+int16\+\_\+t \hyperlink{class_dallas_temperature_a4af999e72b9c5b85430666ad90fa9644}{get\+User\+Data\+By\+Index} (uint8\+\_\+t)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static float \hyperlink{class_dallas_temperature_a2169f7bdd26479bbbf9f6fb3bf4e5bb2}{to\+Fahrenheit} (float)
+\item 
+static float \hyperlink{class_dallas_temperature_af6dfbcc587ae244c0508b6a51f2085a5}{to\+Celsius} (float)
+\item 
+static float \hyperlink{class_dallas_temperature_a75accb4a56858189accda00e5eabb06e}{raw\+To\+Celsius} (int16\+\_\+t)
+\item 
+static float \hyperlink{class_dallas_temperature_a48bc1a4d0e33f1735964c22c8bd2f6fb}{raw\+To\+Fahrenheit} (int16\+\_\+t)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 63 of file Dallas\+Temperature.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Dallas\+Temperature@{Dallas\+Temperature}!Dallas\+Temperature@{Dallas\+Temperature}}
+\index{Dallas\+Temperature@{Dallas\+Temperature}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{Dallas\+Temperature()}{DallasTemperature()}}]{\setlength{\rightskip}{0pt plus 5cm}Dallas\+Temperature\+::\+Dallas\+Temperature (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_af46e868b6702ff5f77263985cd990e01}{}\label{class_dallas_temperature_af46e868b6702ff5f77263985cd990e01}
+
+
+Definition at line 17 of file Dallas\+Temperature.\+cpp.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!Dallas\+Temperature@{Dallas\+Temperature}}
+\index{Dallas\+Temperature@{Dallas\+Temperature}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{Dallas\+Temperature(\+One\+Wire $\ast$)}{DallasTemperature(OneWire *)}}]{\setlength{\rightskip}{0pt plus 5cm}Dallas\+Temperature\+::\+Dallas\+Temperature (
+\begin{DoxyParamCaption}
+\item[{{\bf One\+Wire} $\ast$}]{\+\_\+one\+Wire}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a37139ebd1a6122e232800528aee8cb2b}{}\label{class_dallas_temperature_a37139ebd1a6122e232800528aee8cb2b}
+
+
+Definition at line 18 of file Dallas\+Temperature.\+cpp.
+
+
+
+References set\+One\+Wire().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_dallas_temperature_a37139ebd1a6122e232800528aee8cb2b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Dallas\+Temperature@{Dallas\+Temperature}!begin@{begin}}
+\index{begin@{begin}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{begin(void)}{begin(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Dallas\+Temperature\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_aea297b5f2a720a5455245c0fbf7333ec}{}\label{class_dallas_temperature_aea297b5f2a720a5455245c0fbf7333ec}
+
+
+Definition at line 51 of file Dallas\+Temperature.\+cpp.
+
+
+
+References get\+Resolution(), read\+Power\+Supply(), One\+Wire\+::reset\+\_\+search(), One\+Wire\+::search(), and valid\+Address().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_aea297b5f2a720a5455245c0fbf7333ec_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+Address@{get\+Address}}
+\index{get\+Address@{get\+Address}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Address(uint8\+\_\+t $\ast$, uint8\+\_\+t)}{getAddress(uint8\_t *, uint8\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::get\+Address (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t $\ast$}]{device\+Address, }
+\item[{uint8\+\_\+t}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_afa644bebf50c81b6641a31c585b62538}{}\label{class_dallas_temperature_afa644bebf50c81b6641a31c585b62538}
+
+
+Definition at line 84 of file Dallas\+Temperature.\+cpp.
+
+
+
+References One\+Wire\+::reset\+\_\+search(), and valid\+Address().
+
+
+
+Referenced by get\+Temp\+C\+By\+Index(), get\+Temp\+F\+By\+Index(), get\+User\+Data\+By\+Index(), request\+Temperatures\+By\+Index(), set\+Resolution(), and set\+User\+Data\+By\+Index().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_afa644bebf50c81b6641a31c585b62538_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_afa644bebf50c81b6641a31c585b62538_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+Check\+For\+Conversion@{get\+Check\+For\+Conversion}}
+\index{get\+Check\+For\+Conversion@{get\+Check\+For\+Conversion}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Check\+For\+Conversion(void)}{getCheckForConversion(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::get\+Check\+For\+Conversion (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a7541728802904b0ed8d17a7f5ef00801}{}\label{class_dallas_temperature_a7541728802904b0ed8d17a7f5ef00801}
+
+
+Definition at line 307 of file Dallas\+Temperature.\+cpp.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+Device\+Count@{get\+Device\+Count}}
+\index{get\+Device\+Count@{get\+Device\+Count}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Device\+Count(void)}{getDeviceCount(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Dallas\+Temperature\+::get\+Device\+Count (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a8bf92c0b6b8c3167daca4c2046ade13a}{}\label{class_dallas_temperature_a8bf92c0b6b8c3167daca4c2046ade13a}
+
+
+Definition at line 73 of file Dallas\+Temperature.\+cpp.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+Resolution@{get\+Resolution}}
+\index{get\+Resolution@{get\+Resolution}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Resolution()}{getResolution()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Dallas\+Temperature\+::get\+Resolution (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a9dac13206229d7c8fb75f21bf44e75ed}{}\label{class_dallas_temperature_a9dac13206229d7c8fb75f21bf44e75ed}
+
+
+Definition at line 250 of file Dallas\+Temperature.\+cpp.
+
+
+
+Referenced by begin(), request\+Temperatures\+By\+Address(), and set\+Resolution().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a9dac13206229d7c8fb75f21bf44e75ed_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+Resolution@{get\+Resolution}}
+\index{get\+Resolution@{get\+Resolution}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Resolution(const uint8\+\_\+t $\ast$)}{getResolution(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Dallas\+Temperature\+::get\+Resolution (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a2266822561e864c4921955697c1ac7f5}{}\label{class_dallas_temperature_a2266822561e864c4921955697c1ac7f5}
+
+
+Definition at line 256 of file Dallas\+Temperature.\+cpp.
+
+
+
+References C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON, D\+S18\+S20\+M\+O\+D\+EL, is\+Connected(), T\+E\+M\+P\+\_\+10\+\_\+\+B\+IT, T\+E\+M\+P\+\_\+11\+\_\+\+B\+IT, T\+E\+M\+P\+\_\+12\+\_\+\+B\+IT, and T\+E\+M\+P\+\_\+9\+\_\+\+B\+IT.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_dallas_temperature_a2266822561e864c4921955697c1ac7f5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+Temp@{get\+Temp}}
+\index{get\+Temp@{get\+Temp}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Temp(const uint8\+\_\+t $\ast$)}{getTemp(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Dallas\+Temperature\+::get\+Temp (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a37c3723cc15d5e46d0a6caa96a3c4781}{}\label{class_dallas_temperature_a37c3723cc15d5e46d0a6caa96a3c4781}
+
+
+Definition at line 481 of file Dallas\+Temperature.\+cpp.
+
+
+
+References D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW, and is\+Connected().
+
+
+
+Referenced by get\+Temp\+C(), and get\+Temp\+F().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_dallas_temperature_a37c3723cc15d5e46d0a6caa96a3c4781_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a37c3723cc15d5e46d0a6caa96a3c4781_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+TempC@{get\+TempC}}
+\index{get\+TempC@{get\+TempC}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Temp\+C(const uint8\+\_\+t $\ast$)}{getTempC(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}float Dallas\+Temperature\+::get\+TempC (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a20f94b59909b46e55a77b399d99591a2}{}\label{class_dallas_temperature_a20f94b59909b46e55a77b399d99591a2}
+
+
+Definition at line 494 of file Dallas\+Temperature.\+cpp.
+
+
+
+References get\+Temp(), and raw\+To\+Celsius().
+
+
+
+Referenced by get\+Temp\+C\+By\+Index().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a20f94b59909b46e55a77b399d99591a2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_dallas_temperature_a20f94b59909b46e55a77b399d99591a2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+Temp\+C\+By\+Index@{get\+Temp\+C\+By\+Index}}
+\index{get\+Temp\+C\+By\+Index@{get\+Temp\+C\+By\+Index}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Temp\+C\+By\+Index(uint8\+\_\+t)}{getTempCByIndex(uint8\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}float Dallas\+Temperature\+::get\+Temp\+C\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{device\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a7e3e2e23257aac6b6c896df205d5b3b5}{}\label{class_dallas_temperature_a7e3e2e23257aac6b6c896df205d5b3b5}
+
+
+Definition at line 408 of file Dallas\+Temperature.\+cpp.
+
+
+
+References D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C, get\+Address(), and get\+Temp\+C().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a7e3e2e23257aac6b6c896df205d5b3b5_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+TempF@{get\+TempF}}
+\index{get\+TempF@{get\+TempF}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Temp\+F(const uint8\+\_\+t $\ast$)}{getTempF(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}float Dallas\+Temperature\+::get\+TempF (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_ace033fbd8e4c7e17c4bcd7ecc8f3ebea}{}\label{class_dallas_temperature_ace033fbd8e4c7e17c4bcd7ecc8f3ebea}
+
+
+Definition at line 503 of file Dallas\+Temperature.\+cpp.
+
+
+
+References get\+Temp(), and raw\+To\+Fahrenheit().
+
+
+
+Referenced by get\+Temp\+F\+By\+Index().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_ace033fbd8e4c7e17c4bcd7ecc8f3ebea_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_dallas_temperature_ace033fbd8e4c7e17c4bcd7ecc8f3ebea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+Temp\+F\+By\+Index@{get\+Temp\+F\+By\+Index}}
+\index{get\+Temp\+F\+By\+Index@{get\+Temp\+F\+By\+Index}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Temp\+F\+By\+Index(uint8\+\_\+t)}{getTempFByIndex(uint8\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}float Dallas\+Temperature\+::get\+Temp\+F\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{device\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a96318d36b313e1f4f413e2ed2b7501c7}{}\label{class_dallas_temperature_a96318d36b313e1f4f413e2ed2b7501c7}
+
+
+Definition at line 420 of file Dallas\+Temperature.\+cpp.
+
+
+
+References C\+O\+U\+N\+T\+\_\+\+P\+E\+R\+\_\+C, C\+O\+U\+N\+T\+\_\+\+R\+E\+M\+A\+IN, D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+F, D\+S18\+S20\+M\+O\+D\+EL, get\+Address(), get\+Temp\+F(), T\+E\+M\+P\+\_\+\+L\+SB, and T\+E\+M\+P\+\_\+\+M\+SB.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a96318d36b313e1f4f413e2ed2b7501c7_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+User\+Data@{get\+User\+Data}}
+\index{get\+User\+Data@{get\+User\+Data}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+User\+Data(const uint8\+\_\+t $\ast$)}{getUserData(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Dallas\+Temperature\+::get\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a3601e8ee63c4770b716817ed68664400}{}\label{class_dallas_temperature_a3601e8ee63c4770b716817ed68664400}
+
+
+Definition at line 532 of file Dallas\+Temperature.\+cpp.
+
+
+
+References H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP, is\+Connected(), and L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP.
+
+
+
+Referenced by get\+User\+Data\+By\+Index(), and set\+User\+Data().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_dallas_temperature_a3601e8ee63c4770b716817ed68664400_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a3601e8ee63c4770b716817ed68664400_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+User\+Data\+By\+Index@{get\+User\+Data\+By\+Index}}
+\index{get\+User\+Data\+By\+Index@{get\+User\+Data\+By\+Index}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+User\+Data\+By\+Index(uint8\+\_\+t)}{getUserDataByIndex(uint8\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Dallas\+Temperature\+::get\+User\+Data\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{device\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a4af999e72b9c5b85430666ad90fa9644}{}\label{class_dallas_temperature_a4af999e72b9c5b85430666ad90fa9644}
+
+
+Definition at line 545 of file Dallas\+Temperature.\+cpp.
+
+
+
+References get\+Address(), and get\+User\+Data().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a4af999e72b9c5b85430666ad90fa9644_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!get\+Wait\+For\+Conversion@{get\+Wait\+For\+Conversion}}
+\index{get\+Wait\+For\+Conversion@{get\+Wait\+For\+Conversion}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{get\+Wait\+For\+Conversion(void)}{getWaitForConversion(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::get\+Wait\+For\+Conversion (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_abb49c5903d68b86c0cf2da5e2b849a43}{}\label{class_dallas_temperature_abb49c5903d68b86c0cf2da5e2b849a43}
+
+
+Definition at line 294 of file Dallas\+Temperature.\+cpp.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{is\+Connected(const uint8\+\_\+t $\ast$)}{isConnected(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::is\+Connected (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a19afa5e594de0ab6caa5a48a70650927}{}\label{class_dallas_temperature_a19afa5e594de0ab6caa5a48a70650927}
+
+
+Definition at line 100 of file Dallas\+Temperature.\+cpp.
+
+
+
+Referenced by get\+Resolution(), get\+Temp(), get\+User\+Data(), raw\+To\+Fahrenheit(), set\+Resolution(), and set\+User\+Data().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a19afa5e594de0ab6caa5a48a70650927_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!is\+Connected@{is\+Connected}}
+\index{is\+Connected@{is\+Connected}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{is\+Connected(const uint8\+\_\+t $\ast$, uint8\+\_\+t $\ast$)}{isConnected(const uint8\_t *, uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::is\+Connected (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address, }
+\item[{uint8\+\_\+t $\ast$}]{scratch\+Pad}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a624f64b186c13927d4f74bd7c5b92c2e}{}\label{class_dallas_temperature_a624f64b186c13927d4f74bd7c5b92c2e}
+
+
+Definition at line 109 of file Dallas\+Temperature.\+cpp.
+
+
+
+References One\+Wire\+::crc8(), read\+Scratch\+Pad(), and S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+RC.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a624f64b186c13927d4f74bd7c5b92c2e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!is\+Conversion\+Available@{is\+Conversion\+Available}}
+\index{is\+Conversion\+Available@{is\+Conversion\+Available}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{is\+Conversion\+Available(const uint8\+\_\+t $\ast$)}{isConversionAvailable(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::is\+Conversion\+Available (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_adaf460a3b8004218e97af7059d41053a}{}\label{class_dallas_temperature_adaf460a3b8004218e97af7059d41053a}
+
+
+Definition at line 311 of file Dallas\+Temperature.\+cpp.
+
+
+
+References read\+Scratch\+Pad().
+
+
+
+Referenced by request\+Temperatures\+By\+Address().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_adaf460a3b8004218e97af7059d41053a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_adaf460a3b8004218e97af7059d41053a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!is\+Conversion\+Complete@{is\+Conversion\+Complete}}
+\index{is\+Conversion\+Complete@{is\+Conversion\+Complete}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{is\+Conversion\+Complete(void)}{isConversionComplete(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::is\+Conversion\+Complete (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a9e92719781d3ead44b95964d59edd41d}{}\label{class_dallas_temperature_a9e92719781d3ead44b95964d59edd41d}
+
+
+Definition at line 320 of file Dallas\+Temperature.\+cpp.
+
+
+
+References One\+Wire\+::read\+\_\+bit().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=320pt]{class_dallas_temperature_a9e92719781d3ead44b95964d59edd41d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!is\+Parasite\+Power\+Mode@{is\+Parasite\+Power\+Mode}}
+\index{is\+Parasite\+Power\+Mode@{is\+Parasite\+Power\+Mode}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{is\+Parasite\+Power\+Mode(void)}{isParasitePowerMode(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::is\+Parasite\+Power\+Mode (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a835945ed3e8d78c31791e55f22084691}{}\label{class_dallas_temperature_a835945ed3e8d78c31791e55f22084691}
+
+
+Definition at line 508 of file Dallas\+Temperature.\+cpp.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!raw\+To\+Celsius@{raw\+To\+Celsius}}
+\index{raw\+To\+Celsius@{raw\+To\+Celsius}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{raw\+To\+Celsius(int16\+\_\+t)}{rawToCelsius(int16\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}float Dallas\+Temperature\+::raw\+To\+Celsius (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{raw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_dallas_temperature_a75accb4a56858189accda00e5eabb06e}{}\label{class_dallas_temperature_a75accb4a56858189accda00e5eabb06e}
+
+
+Definition at line 571 of file Dallas\+Temperature.\+cpp.
+
+
+
+References D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C, and D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW.
+
+
+
+Referenced by get\+Temp\+C().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a75accb4a56858189accda00e5eabb06e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!raw\+To\+Fahrenheit@{raw\+To\+Fahrenheit}}
+\index{raw\+To\+Fahrenheit@{raw\+To\+Fahrenheit}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{raw\+To\+Fahrenheit(int16\+\_\+t)}{rawToFahrenheit(int16\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}float Dallas\+Temperature\+::raw\+To\+Fahrenheit (
+\begin{DoxyParamCaption}
+\item[{int16\+\_\+t}]{raw}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_dallas_temperature_a48bc1a4d0e33f1735964c22c8bd2f6fb}{}\label{class_dallas_temperature_a48bc1a4d0e33f1735964c22c8bd2f6fb}
+
+
+Definition at line 581 of file Dallas\+Temperature.\+cpp.
+
+
+
+References D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+C, D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+F, D\+E\+V\+I\+C\+E\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+E\+D\+\_\+\+R\+AW, H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP, i, is\+Connected(), L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP, One\+Wire\+::read\+\_\+bit(), One\+Wire\+::reset(), valid\+Address(), One\+Wire\+::write(), One\+Wire\+::write\+\_\+bit(), and write\+Scratch\+Pad().
+
+
+
+Referenced by get\+Temp\+F().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a48bc1a4d0e33f1735964c22c8bd2f6fb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a48bc1a4d0e33f1735964c22c8bd2f6fb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!read\+Power\+Supply@{read\+Power\+Supply}}
+\index{read\+Power\+Supply@{read\+Power\+Supply}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{read\+Power\+Supply(const uint8\+\_\+t $\ast$)}{readPowerSupply(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::read\+Power\+Supply (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_af6a28c1d1009dd6d010d97dffaf5942d}{}\label{class_dallas_temperature_af6a28c1d1009dd6d010d97dffaf5942d}
+
+
+Definition at line 169 of file Dallas\+Temperature.\+cpp.
+
+
+
+References One\+Wire\+::read\+\_\+bit(), R\+E\+A\+D\+P\+O\+W\+E\+R\+S\+U\+P\+P\+LY, One\+Wire\+::reset(), One\+Wire\+::select(), and One\+Wire\+::write().
+
+
+
+Referenced by begin().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_af6a28c1d1009dd6d010d97dffaf5942d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_dallas_temperature_af6a28c1d1009dd6d010d97dffaf5942d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!read\+Scratch\+Pad@{read\+Scratch\+Pad}}
+\index{read\+Scratch\+Pad@{read\+Scratch\+Pad}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{read\+Scratch\+Pad(const uint8\+\_\+t $\ast$, uint8\+\_\+t $\ast$)}{readScratchPad(const uint8\_t *, uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::read\+Scratch\+Pad (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address, }
+\item[{uint8\+\_\+t $\ast$}]{scratch\+Pad}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a2b55774207d0211fd679247a7137142b}{}\label{class_dallas_temperature_a2b55774207d0211fd679247a7137142b}
+
+
+Definition at line 115 of file Dallas\+Temperature.\+cpp.
+
+
+
+References i, One\+Wire\+::read(), R\+E\+A\+D\+S\+C\+R\+A\+T\+CH, One\+Wire\+::reset(), One\+Wire\+::select(), and One\+Wire\+::write().
+
+
+
+Referenced by is\+Connected(), and is\+Conversion\+Available().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a2b55774207d0211fd679247a7137142b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a2b55774207d0211fd679247a7137142b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!request\+Temperatures@{request\+Temperatures}}
+\index{request\+Temperatures@{request\+Temperatures}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{request\+Temperatures(void)}{requestTemperatures(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Dallas\+Temperature\+::request\+Temperatures (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a5d28cff0d7e317c28e28c0f1a62fbe6d}{}\label{class_dallas_temperature_a5d28cff0d7e317c28e28c0f1a62fbe6d}
+
+
+Definition at line 327 of file Dallas\+Temperature.\+cpp.
+
+
+
+References One\+Wire\+::reset(), One\+Wire\+::skip(), S\+T\+A\+R\+T\+C\+O\+N\+VO, and One\+Wire\+::write().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a5d28cff0d7e317c28e28c0f1a62fbe6d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!request\+Temperatures\+By\+Address@{request\+Temperatures\+By\+Address}}
+\index{request\+Temperatures\+By\+Address@{request\+Temperatures\+By\+Address}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{request\+Temperatures\+By\+Address(const uint8\+\_\+t $\ast$)}{requestTemperaturesByAddress(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::request\+Temperatures\+By\+Address (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_aee2a2abd5f8293df9a0a030b3e982c90}{}\label{class_dallas_temperature_aee2a2abd5f8293df9a0a030b3e982c90}
+
+
+Definition at line 342 of file Dallas\+Temperature.\+cpp.
+
+
+
+References get\+Resolution(), is\+Conversion\+Available(), now(), One\+Wire\+::reset(), One\+Wire\+::select(), S\+T\+A\+R\+T\+C\+O\+N\+VO, and One\+Wire\+::write().
+
+
+
+Referenced by request\+Temperatures\+By\+Index().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_aee2a2abd5f8293df9a0a030b3e982c90_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_aee2a2abd5f8293df9a0a030b3e982c90_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!request\+Temperatures\+By\+Index@{request\+Temperatures\+By\+Index}}
+\index{request\+Temperatures\+By\+Index@{request\+Temperatures\+By\+Index}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{request\+Temperatures\+By\+Index(uint8\+\_\+t)}{requestTemperaturesByIndex(uint8\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::request\+Temperatures\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{device\+Index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_ae9a7bf62321615519242d2421c8b349a}{}\label{class_dallas_temperature_ae9a7bf62321615519242d2421c8b349a}
+
+
+Definition at line 398 of file Dallas\+Temperature.\+cpp.
+
+
+
+References get\+Address(), and request\+Temperatures\+By\+Address().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_ae9a7bf62321615519242d2421c8b349a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!set\+Check\+For\+Conversion@{set\+Check\+For\+Conversion}}
+\index{set\+Check\+For\+Conversion@{set\+Check\+For\+Conversion}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{set\+Check\+For\+Conversion(bool)}{setCheckForConversion(bool)}}]{\setlength{\rightskip}{0pt plus 5cm}void Dallas\+Temperature\+::set\+Check\+For\+Conversion (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_ae8ef644d60236af12963f37fe145a49a}{}\label{class_dallas_temperature_ae8ef644d60236af12963f37fe145a49a}
+
+
+Definition at line 302 of file Dallas\+Temperature.\+cpp.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!set\+One\+Wire@{set\+One\+Wire}}
+\index{set\+One\+Wire@{set\+One\+Wire}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{set\+One\+Wire(\+One\+Wire $\ast$)}{setOneWire(OneWire *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Dallas\+Temperature\+::set\+One\+Wire (
+\begin{DoxyParamCaption}
+\item[{{\bf One\+Wire} $\ast$}]{\+\_\+one\+Wire}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_af985bf5f9ed6857424e8a9532eaf5e2f}{}\label{class_dallas_temperature_af985bf5f9ed6857424e8a9532eaf5e2f}
+
+
+Definition at line 39 of file Dallas\+Temperature.\+cpp.
+
+
+
+Referenced by Dallas\+Temperature().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{class_dallas_temperature_af985bf5f9ed6857424e8a9532eaf5e2f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!set\+Resolution@{set\+Resolution}}
+\index{set\+Resolution@{set\+Resolution}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{set\+Resolution(uint8\+\_\+t)}{setResolution(uint8\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Dallas\+Temperature\+::set\+Resolution (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{new\+Resolution}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a43363ee4b227f1ecf9c33cd4e072c0c9}{}\label{class_dallas_temperature_a43363ee4b227f1ecf9c33cd4e072c0c9}
+
+
+Definition at line 184 of file Dallas\+Temperature.\+cpp.
+
+
+
+References get\+Address(), and i.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a43363ee4b227f1ecf9c33cd4e072c0c9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!set\+Resolution@{set\+Resolution}}
+\index{set\+Resolution@{set\+Resolution}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{set\+Resolution(const uint8\+\_\+t $\ast$, uint8\+\_\+t, bool skip\+Global\+Bit\+Resolution\+Calculation=false)}{setResolution(const uint8\_t *, uint8\_t, bool skipGlobalBitResolutionCalculation=false)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::set\+Resolution (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address, }
+\item[{uint8\+\_\+t}]{new\+Resolution, }
+\item[{bool}]{skip\+Global\+Bit\+Resolution\+Calculation = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a394897437dfb8de4c8fd2198a1d1c356}{}\label{class_dallas_temperature_a394897437dfb8de4c8fd2198a1d1c356}
+
+
+Definition at line 198 of file Dallas\+Temperature.\+cpp.
+
+
+
+References C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON, D\+S18\+S20\+M\+O\+D\+EL, get\+Address(), get\+Resolution(), i, is\+Connected(), T\+E\+M\+P\+\_\+10\+\_\+\+B\+IT, T\+E\+M\+P\+\_\+11\+\_\+\+B\+IT, T\+E\+M\+P\+\_\+12\+\_\+\+B\+IT, T\+E\+M\+P\+\_\+9\+\_\+\+B\+IT, and write\+Scratch\+Pad().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a394897437dfb8de4c8fd2198a1d1c356_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!set\+User\+Data@{set\+User\+Data}}
+\index{set\+User\+Data@{set\+User\+Data}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{set\+User\+Data(const uint8\+\_\+t $\ast$, int16\+\_\+t)}{setUserData(const uint8\_t *, int16\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Dallas\+Temperature\+::set\+User\+Data (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address, }
+\item[{int16\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a0ed69b03ed848936ea0c8deea0e5c2ba}{}\label{class_dallas_temperature_a0ed69b03ed848936ea0c8deea0e5c2ba}
+
+
+Definition at line 518 of file Dallas\+Temperature.\+cpp.
+
+
+
+References get\+User\+Data(), H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP, is\+Connected(), L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP, and write\+Scratch\+Pad().
+
+
+
+Referenced by set\+User\+Data\+By\+Index().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a0ed69b03ed848936ea0c8deea0e5c2ba_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{class_dallas_temperature_a0ed69b03ed848936ea0c8deea0e5c2ba_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!set\+User\+Data\+By\+Index@{set\+User\+Data\+By\+Index}}
+\index{set\+User\+Data\+By\+Index@{set\+User\+Data\+By\+Index}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{set\+User\+Data\+By\+Index(uint8\+\_\+t, int16\+\_\+t)}{setUserDataByIndex(uint8\_t, int16\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Dallas\+Temperature\+::set\+User\+Data\+By\+Index (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{device\+Index, }
+\item[{int16\+\_\+t}]{data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a65ae6994218200e92ce43bffd122d46b}{}\label{class_dallas_temperature_a65ae6994218200e92ce43bffd122d46b}
+
+
+Definition at line 552 of file Dallas\+Temperature.\+cpp.
+
+
+
+References get\+Address(), and set\+User\+Data().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a65ae6994218200e92ce43bffd122d46b_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!set\+Wait\+For\+Conversion@{set\+Wait\+For\+Conversion}}
+\index{set\+Wait\+For\+Conversion@{set\+Wait\+For\+Conversion}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{set\+Wait\+For\+Conversion(bool)}{setWaitForConversion(bool)}}]{\setlength{\rightskip}{0pt plus 5cm}void Dallas\+Temperature\+::set\+Wait\+For\+Conversion (
+\begin{DoxyParamCaption}
+\item[{bool}]{flag}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_aa5f90d9f12327f39de97ed2244a4ad6f}{}\label{class_dallas_temperature_aa5f90d9f12327f39de97ed2244a4ad6f}
+
+
+Definition at line 289 of file Dallas\+Temperature.\+cpp.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!to\+Celsius@{to\+Celsius}}
+\index{to\+Celsius@{to\+Celsius}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{to\+Celsius(float)}{toCelsius(float)}}]{\setlength{\rightskip}{0pt plus 5cm}float Dallas\+Temperature\+::to\+Celsius (
+\begin{DoxyParamCaption}
+\item[{float}]{fahrenheit}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_dallas_temperature_af6dfbcc587ae244c0508b6a51f2085a5}{}\label{class_dallas_temperature_af6dfbcc587ae244c0508b6a51f2085a5}
+
+
+Definition at line 566 of file Dallas\+Temperature.\+cpp.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!to\+Fahrenheit@{to\+Fahrenheit}}
+\index{to\+Fahrenheit@{to\+Fahrenheit}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{to\+Fahrenheit(float)}{toFahrenheit(float)}}]{\setlength{\rightskip}{0pt plus 5cm}float Dallas\+Temperature\+::to\+Fahrenheit (
+\begin{DoxyParamCaption}
+\item[{float}]{celsius}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_dallas_temperature_a2169f7bdd26479bbbf9f6fb3bf4e5bb2}{}\label{class_dallas_temperature_a2169f7bdd26479bbbf9f6fb3bf4e5bb2}
+
+
+Definition at line 561 of file Dallas\+Temperature.\+cpp.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!valid\+Address@{valid\+Address}}
+\index{valid\+Address@{valid\+Address}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{valid\+Address(const uint8\+\_\+t $\ast$)}{validAddress(const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::valid\+Address (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a71e4744b8d7b2f1c05a96cd158c83007}{}\label{class_dallas_temperature_a71e4744b8d7b2f1c05a96cd158c83007}
+
+
+Definition at line 78 of file Dallas\+Temperature.\+cpp.
+
+
+
+References One\+Wire\+::crc8().
+
+
+
+Referenced by begin(), get\+Address(), and raw\+To\+Fahrenheit().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=290pt]{class_dallas_temperature_a71e4744b8d7b2f1c05a96cd158c83007_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a71e4744b8d7b2f1c05a96cd158c83007_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!valid\+Family@{valid\+Family}}
+\index{valid\+Family@{valid\+Family}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{valid\+Family(const uint8\+\_\+t $\ast$device\+Address)}{validFamily(const uint8\_t *deviceAddress)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Dallas\+Temperature\+::valid\+Family (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a3f3678c8defd473e8eebd9cfe793b329}{}\label{class_dallas_temperature_a3f3678c8defd473e8eebd9cfe793b329}
+
+
+Definition at line 27 of file Dallas\+Temperature.\+cpp.
+
+
+
+References D\+S1822\+M\+O\+D\+EL, D\+S1825\+M\+O\+D\+EL, D\+S18\+B20\+M\+O\+D\+EL, and D\+S18\+S20\+M\+O\+D\+EL.
+
+\index{Dallas\+Temperature@{Dallas\+Temperature}!write\+Scratch\+Pad@{write\+Scratch\+Pad}}
+\index{write\+Scratch\+Pad@{write\+Scratch\+Pad}!Dallas\+Temperature@{Dallas\+Temperature}}
+\subsubsection[{\texorpdfstring{write\+Scratch\+Pad(const uint8\+\_\+t $\ast$, const uint8\+\_\+t $\ast$)}{writeScratchPad(const uint8\_t *, const uint8\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Dallas\+Temperature\+::write\+Scratch\+Pad (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{device\+Address, }
+\item[{const uint8\+\_\+t $\ast$}]{scratch\+Pad}
+\end{DoxyParamCaption}
+)}\hypertarget{class_dallas_temperature_a74c275dabf103f268c5a271d379dcb7e}{}\label{class_dallas_temperature_a74c275dabf103f268c5a271d379dcb7e}
+
+
+Definition at line 146 of file Dallas\+Temperature.\+cpp.
+
+
+
+References C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+ON, C\+O\+P\+Y\+S\+C\+R\+A\+T\+CH, D\+S18\+S20\+M\+O\+D\+EL, H\+I\+G\+H\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP, L\+O\+W\+\_\+\+A\+L\+A\+R\+M\+\_\+\+T\+E\+MP, One\+Wire\+::reset(), One\+Wire\+::select(), One\+Wire\+::write(), and W\+R\+I\+T\+E\+S\+C\+R\+A\+T\+CH.
+
+
+
+Referenced by raw\+To\+Fahrenheit(), set\+Resolution(), and set\+User\+Data().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a74c275dabf103f268c5a271d379dcb7e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_dallas_temperature_a74c275dabf103f268c5a271d379dcb7e_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Arduino-\/\+Temperature-\/\+Control-\/\+Library/\hyperlink{_dallas_temperature_8h}{Dallas\+Temperature.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Arduino-\/\+Temperature-\/\+Control-\/\+Library/\hyperlink{_dallas_temperature_8cpp}{Dallas\+Temperature.\+cpp}\end{DoxyCompactItemize}

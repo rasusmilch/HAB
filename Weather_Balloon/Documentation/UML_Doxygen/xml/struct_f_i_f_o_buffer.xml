@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_f_i_f_o_buffer" kind="struct" language="C++" prot="public">
+    <compoundname>FIFOBuffer</compoundname>
+    <includes refid="_f_i_f_o_8h" local="no">FIFO.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* FIFOBuffer::begin</definition>
+        <argsstring></argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="9" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="9" bodyend="-1"/>
+        <referencedby refid="_f_i_f_o_8h_1ab4d69b9b4cf6ace05b4a3c2fddb0b7fe" compoundref="_f_i_f_o_8h" startline="19" endline="21">fifo_isfull</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1af58b59a5f3814ca6c0415a66797ab9f7" compoundref="_f_i_f_o_8h" startline="23" endline="31">fifo_push</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1a540ee60aeab738e6e05dd148f5def1a3" compoundref="_f_i_f_o_8h" startline="33" endline="40">fifo_pop</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1ae09eab69a9cb5c4d330aa248db01b5af" compoundref="_f_i_f_o_8h" startline="76" endline="79">fifo_init</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1a1e22de9de6255d54f759912ba4c09b78" compoundref="_f_i_f_o_8h" startline="81" endline="83">fifo_len</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" prot="public" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* FIFOBuffer::end</definition>
+        <argsstring></argsstring>
+        <name>end</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="10" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="10" bodyend="-1"/>
+        <referencedby refid="_f_i_f_o_8h_1ab4d69b9b4cf6ace05b4a3c2fddb0b7fe" compoundref="_f_i_f_o_8h" startline="19" endline="21">fifo_isfull</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1af58b59a5f3814ca6c0415a66797ab9f7" compoundref="_f_i_f_o_8h" startline="23" endline="31">fifo_push</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1a540ee60aeab738e6e05dd148f5def1a3" compoundref="_f_i_f_o_8h" startline="33" endline="40">fifo_pop</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1ae09eab69a9cb5c4d330aa248db01b5af" compoundref="_f_i_f_o_8h" startline="76" endline="79">fifo_init</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1a1e22de9de6255d54f759912ba4c09b78" compoundref="_f_i_f_o_8h" startline="81" endline="83">fifo_len</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" prot="public" static="no" mutable="no">
+        <type>unsigned char *volatile</type>
+        <definition>unsigned char* volatile FIFOBuffer::head</definition>
+        <argsstring></argsstring>
+        <name>head</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="11" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="11" bodyend="-1"/>
+        <referencedby refid="_f_i_f_o_8h_1a74dc98c02cf744306222be8de0b4665e" compoundref="_f_i_f_o_8h" startline="15" endline="17">fifo_isempty</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1ab4d69b9b4cf6ace05b4a3c2fddb0b7fe" compoundref="_f_i_f_o_8h" startline="19" endline="21">fifo_isfull</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1a540ee60aeab738e6e05dd148f5def1a3" compoundref="_f_i_f_o_8h" startline="33" endline="40">fifo_pop</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1a8751dcbd047df6062c655c205b81e825" compoundref="_f_i_f_o_8h" startline="42" endline="44">fifo_flush</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1ae09eab69a9cb5c4d330aa248db01b5af" compoundref="_f_i_f_o_8h" startline="76" endline="79">fifo_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" prot="public" static="no" mutable="no">
+        <type>unsigned char *volatile</type>
+        <definition>unsigned char* volatile FIFOBuffer::tail</definition>
+        <argsstring></argsstring>
+        <name>tail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="12" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="12" bodyend="-1"/>
+        <referencedby refid="_f_i_f_o_8h_1a74dc98c02cf744306222be8de0b4665e" compoundref="_f_i_f_o_8h" startline="15" endline="17">fifo_isempty</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1ab4d69b9b4cf6ace05b4a3c2fddb0b7fe" compoundref="_f_i_f_o_8h" startline="19" endline="21">fifo_isfull</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1af58b59a5f3814ca6c0415a66797ab9f7" compoundref="_f_i_f_o_8h" startline="23" endline="31">fifo_push</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1a8751dcbd047df6062c655c205b81e825" compoundref="_f_i_f_o_8h" startline="42" endline="44">fifo_flush</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1ae09eab69a9cb5c4d330aa248db01b5af" compoundref="_f_i_f_o_8h" startline="76" endline="79">fifo_init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="8" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="7" bodyend="13"/>
+    <listofallmembers>
+      <member refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" prot="public" virt="non-virtual"><scope>FIFOBuffer</scope><name>begin</name></member>
+      <member refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" prot="public" virt="non-virtual"><scope>FIFOBuffer</scope><name>end</name></member>
+      <member refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" prot="public" virt="non-virtual"><scope>FIFOBuffer</scope><name>head</name></member>
+      <member refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" prot="public" virt="non-virtual"><scope>FIFOBuffer</scope><name>tail</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

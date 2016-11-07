@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdata__struct_8ms5607" kind="struct" language="C++" prot="public">
+    <compoundname>data_struct.ms5607</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdata__struct_8ms5607_1ad99fad96a5d0a7cb2eb41341ea556093" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>pressure</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="216" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/Weather_Balloon.cpp" line="214" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="214" bodyend="217"/>
+    <listofallmembers>
+      <member refid="structdata__struct_8ms5607_1ad99fad96a5d0a7cb2eb41341ea556093" prot="public" virt="non-virtual"><scope>data_struct.ms5607</scope><name>pressure</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

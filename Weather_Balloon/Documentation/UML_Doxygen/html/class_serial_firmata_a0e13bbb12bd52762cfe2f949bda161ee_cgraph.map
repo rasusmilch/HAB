@@ -1,0 +1,4 @@
+<map id="SerialFirmata::handleSysex" name="SerialFirmata::handleSysex">
+<area shape="rect" id="node2" href="$class_firmata_class.html#abe11f621154afd308926129de349fc6e" title="FirmataClass::sendString" alt="" coords="225,5,383,32"/>
+<area shape="rect" id="node3" href="$class_firmata_class.html#a32c41dd94c1d23aa0e6d3d1dbe5c0c04" title="FirmataClass::setPinMode" alt="" coords="223,56,385,83"/>
+</map>

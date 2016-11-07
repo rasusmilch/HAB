@@ -1,0 +1,23 @@
+<map id="year" name="year">
+<area shape="rect" id="node2" href="$_time_8cpp.html#af08cc091ce5590067f695e51bfdefd17" title="breakTime" alt="" coords="135,183,218,209"/>
+<area shape="rect" id="node12" href="$class_d_s3231.html#ace5ee2a9d9cc6b6ecb16ca749514d2a3" title="DS3231::isAlarm2" alt="" coords="118,233,235,260"/>
+<area shape="rect" id="node13" href="$class_r_t_c_zero.html#ae55ef909edbb893eba4becc8676dd8d6" title="RTCZero::setAlarmYear" alt="" coords="100,284,253,311"/>
+<area shape="rect" id="node15" href="$class_d_s3231.html#ac8ccbb72f7cfbb27df1558a8896ef236" title="DS3231::setDateTime" alt="" coords="109,335,244,361"/>
+<area shape="rect" id="node16" href="$class_r_t_c_zero.html#ad71c689f526dd7e40c6f134b2a223b81" title="RTCZero::setYear" alt="" coords="117,385,236,412"/>
+<area shape="rect" id="node18" href="$struct_tiny_g_p_s_date.html#a718150ae16f68afa9ae81f9d1b3ce3f4" title="TinyGPSDate::value" alt="" coords="111,436,242,463"/>
+<area shape="rect" id="node22" href="$struct_tiny_g_p_s_date.html#ae2cc914fec377b429d99f01204f50d60" title="TinyGPSDate::year" alt="" coords="114,487,239,513"/>
+<area shape="rect" id="node3" href="$_time_8cpp.html#a1f13327e0831cde49d525fe035d55fd8" title="refreshCache" alt="" coords="331,183,426,209"/>
+<area shape="rect" id="node4" href="$_time_8cpp.html#a51dcd9f072551ba8f47449a4e7f78c29" title="day" alt="" coords="532,5,575,32"/>
+<area shape="rect" id="node5" href="$_time_8cpp.html#ac4706d0cffc9e111a6c6a757b462e88e" title="hour" alt="" coords="529,56,577,83"/>
+<area shape="rect" id="node6" href="$_time_8cpp.html#a3cf3a2a5bc98d77739dd1c8c4c0909b9" title="hourFormat12" alt="" coords="504,107,603,133"/>
+<area shape="rect" id="node7" href="$_time_8cpp.html#a88285e3771bcb970424122a6ee4b40fa" title="minute" alt="" coords="523,157,584,184"/>
+<area shape="rect" id="node8" href="$_time_8cpp.html#a726c707dded9d78cf076554eceb956ec" title="month" alt="" coords="524,208,583,235"/>
+<area shape="rect" id="node9" href="$_time_8cpp.html#a10a4dd811353baa12dadadee7c7e5099" title="second" alt="" coords="523,259,583,285"/>
+<area shape="rect" id="node10" href="$_time_8cpp.html#a397d9b2a739891092b487211668b496f" title="weekday" alt="" coords="518,309,589,336"/>
+<area shape="rect" id="node11" href="$_time_8cpp.html#a8608865f8292c0505e02b67fd1cf39e8" title="year" alt="" coords="530,360,577,387"/>
+<area shape="rect" id="node14" href="$class_r_t_c_zero.html#a12727934884612e1a125e6be3f461058" title="RTCZero::setAlarmDate" alt="" coords="301,284,456,311"/>
+<area shape="rect" id="node17" href="$class_r_t_c_zero.html#ad84a83a503a798c3f90f667de21b8a44" title="RTCZero::setDate" alt="" coords="319,385,438,412"/>
+<area shape="rect" id="node19" href="$_weather___balloon_8cpp.html#ab14d778dd0d52177eb147802a870639d" title="read_GPS" alt="" coords="341,436,416,463"/>
+<area shape="rect" id="node20" href="$_weather___balloon_8cpp.html#ad40ccf803c2eff76d7e0e7a24c9937ef" title="readSensors" alt="" coords="510,436,597,463"/>
+<area shape="rect" id="node21" href="$_weather___balloon_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="651,436,697,463"/>
+</map>

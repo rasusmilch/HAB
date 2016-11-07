@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_t_c_zero_8h" kind="file" language="C++">
+    <compoundname>RTCZero.h</compoundname>
+    <includes local="yes">Arduino.h</includes>
+    <includedby refid="_r_t_c_zero_8cpp" local="yes">Weather_Balloon/library/RTCZero/src/RTCZero.cpp</includedby>
+    <incdepgraph>
+      <node id="939">
+        <label>Weather_Balloon/library/RTCZero/src/RTCZero.h</label>
+        <link refid="RTCZero.h"/>
+        <childnode refid="940" relation="include">
+        </childnode>
+      </node>
+      <node id="940">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="941">
+        <label>Weather_Balloon/library/RTCZero/src/RTCZero.h</label>
+        <link refid="RTCZero.h"/>
+        <childnode refid="942" relation="include">
+        </childnode>
+      </node>
+      <node id="942">
+        <label>Weather_Balloon/library/RTCZero/src/RTCZero.cpp</label>
+        <link refid="_r_t_c_zero_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_r_t_c_zero" prot="public">RTCZero</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_r_t_c_zero_8h_1af47ec912687cb72725d5e529eccdbb48" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* voidFuncPtr) (void)</definition>
+        <argsstring>)(void)</argsstring>
+        <name>voidFuncPtr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h" line="25" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>RTC<sp/>library<sp/>for<sp/>Arduino<sp/>Zero.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Copyright<sp/>(c)<sp/>2015<sp/>Arduino<sp/>LLC.<sp/>All<sp/>right<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>RTC_ZERO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RTC_ZERO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_r_t_c_zero_8h_1af47ec912687cb72725d5e529eccdbb48" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>void(*<ref refid="_r_t_c_zero_8h_1af47ec912687cb72725d5e529eccdbb48" kindref="member">voidFuncPtr</ref>)(void);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="class_r_t_c_zero" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_t_c_zero" kindref="compound">RTCZero</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cc" kindref="member">Alarm_Match</ref>:<sp/>uint8_t<sp/></highlight><highlight class="comment">//<sp/>Should<sp/>we<sp/>have<sp/>this<sp/>enum<sp/>or<sp/>just<sp/>use<sp/>the<sp/>identifiers<sp/>from<sp/>/component/rtc.h<sp/>?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32" refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca229a4bf48dedcd24c3058d4659fbdd2b" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca229a4bf48dedcd24c3058d4659fbdd2b" kindref="member">MATCH_OFF</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>RTC_MODE2_MASK_SEL_OFF_Val,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Never</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccac5092377f2728d1888a72bfb638c95b9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccac5092377f2728d1888a72bfb638c95b9" kindref="member">MATCH_SS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>RTC_MODE2_MASK_SEL_SS_Val,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Every<sp/>Minute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca944f42500c4e4ee3117ff8adcddc4eb1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca944f42500c4e4ee3117ff8adcddc4eb1" kindref="member">MATCH_MMSS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>RTC_MODE2_MASK_SEL_MMSS_Val,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Every<sp/>Hour</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccaf82fa9553250259c004ca80c3f2336cc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccaf82fa9553250259c004ca80c3f2336cc" kindref="member">MATCH_HHMMSS</ref><sp/><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>RTC_MODE2_MASK_SEL_HHMMSS_Val,<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Every<sp/>Day</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccad27b4eb26b4e2d23b1e74ca8c7b6473a" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149ccad27b4eb26b4e2d23b1e74ca8c7b6473a" kindref="member">MATCH_DHHMMSS</ref><sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>RTC_MODE2_MASK_SEL_DDHHMMSS_Val,<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Every<sp/>Month</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca75b8b65641492bbb35128bddc6164a61" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca75b8b65641492bbb35128bddc6164a61" kindref="member">MATCH_MMDDHHMMSS</ref><sp/><sp/><sp/>=<sp/>RTC_MODE2_MASK_SEL_MMDDHHMMSS_Val,<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Every<sp/>Year</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca4a9fa9226a47b8b760dd53b2326b7f3e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca4a9fa9226a47b8b760dd53b2326b7f3e" kindref="member">MATCH_YYMMDDHHMMSS</ref><sp/>=<sp/>RTC_MODE2_MASK_SEL_YYMMDDHHMMSS_Val<sp/><sp/></highlight><highlight class="comment">//<sp/>Once,<sp/>on<sp/>a<sp/>specific<sp/>date<sp/>and<sp/>a<sp/>specific<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><ref refid="class_r_t_c_zero_1af74f4cc9bc122628c0023e77b7b18c76" kindref="member">RTCZero</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ac6ad9d73cb8d3a0575e7cfc2b26a5412" kindref="member">begin</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resetTime<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1af2923fee4310485bc922898376f5042c" kindref="member">enableAlarm</ref>(<ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cc" kindref="member">Alarm_Match</ref><sp/>match);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a9c1b7a7b7f8ed3cabbdc039ede726631" kindref="member">disableAlarm</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a306f2bbbdfa83d21f8f577c11b73e76b" kindref="member">attachInterrupt</ref>(<ref refid="_r_t_c_zero_8h_1af47ec912687cb72725d5e529eccdbb48" kindref="member">voidFuncPtr</ref><sp/>callback);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a6ca6de2448cadaa33a87cdd4278cdf27" kindref="member">detachInterrupt</ref>();</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a2fab941e64ffe5501c30c085a5b3833e" kindref="member">standbyMode</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Get<sp/>Functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a914daa26d6ab1a3637a4696801532377" kindref="member">getSeconds</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a813435838c1c830ab61e81f2c50cd76c" kindref="member">getMinutes</ref>();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a4e3c72195b429d690ca5e3febb9a2d8f" kindref="member">getHours</ref>();</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a9569ba1ee80390da5c9feb9c33681ac2" kindref="member">getDay</ref>();</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1ab5a20277839b8d68d7469feb95b027ec" kindref="member">getMonth</ref>();</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a87b268ab9f4e2ea4b0aca4ca7f9d48e6" kindref="member">getYear</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a05ca5622ea0d01662326c251d3f4e960" kindref="member">getAlarmSeconds</ref>();</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a9b689b5208dc3bd0d80524e0d5c52873" kindref="member">getAlarmMinutes</ref>();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a0758261eb8ba11c90e903b5e38a6cee8" kindref="member">getAlarmHours</ref>();</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a4b157a1820acba087ea42095505c35cc" kindref="member">getAlarmDay</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1a27152748cdb3ebdd15a4a51882dcd28b" kindref="member">getAlarmMonth</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c_zero_1af15b6757eeb9281446b7575c9a15ff19" kindref="member">getAlarmYear</ref>();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Set<sp/>Functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a654ea54b599e9269369c3d329dd41685" kindref="member">setSeconds</ref>(uint8_t<sp/>seconds);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1adeb4f4fbae93c46e227646569113cbd1" kindref="member">setMinutes</ref>(uint8_t<sp/>minutes);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a4bcc1288366d943f3328386c89d39bf3" kindref="member">setHours</ref>(uint8_t<sp/>hours);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a2bd00b1214877c926001a8d60acad72d" kindref="member">setTime</ref>(uint8_t<sp/>hours,<sp/>uint8_t<sp/>minutes,<sp/>uint8_t<sp/>seconds);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1aa1d8a2279ae41b6a7b50c5ccc974b29f" kindref="member">setDay</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1af91e416057bf96c8ae94b053e94ec722" kindref="member">setMonth</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ad71c689f526dd7e40c6f134b2a223b81" kindref="member">setYear</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ad84a83a503a798c3f90f667de21b8a44" kindref="member">setDate</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>,<sp/>uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>,<sp/>uint8_t<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a1b52a726c30602d3769426974f56710f" kindref="member">setAlarmSeconds</ref>(uint8_t<sp/>seconds);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a06a7ea4b7bc9d61df4fef51329927b22" kindref="member">setAlarmMinutes</ref>(uint8_t<sp/>minutes);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a915e7bc9c446be99d52f87cdb76e6cfe" kindref="member">setAlarmHours</ref>(uint8_t<sp/>hours);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ac16225fa8a9c07a6e8d1157b6d699747" kindref="member">setAlarmTime</ref>(uint8_t<sp/>hours,<sp/>uint8_t<sp/>minutes,<sp/>uint8_t<sp/>seconds);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a4519ba0e3eee8a3bf03f7c14b3ffa902" kindref="member">setAlarmDay</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a8fe74d0c1ec7922f893addd67dc16aba" kindref="member">setAlarmMonth</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ae55ef909edbb893eba4becc8676dd8d6" kindref="member">setAlarmYear</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a12727934884612e1a125e6be3f461058" kindref="member">setAlarmDate</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>,<sp/>uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>,<sp/>uint8_t<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*<sp/>Epoch<sp/>Functions<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="class_r_t_c_zero_1aefda208cc548613b8af437ba6e7d1ff3" kindref="member">getEpoch</ref>();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/>uint32_t<sp/><ref refid="class_r_t_c_zero_1ae660721e3ba20b6701431d8cd8bed697" kindref="member">getY2kEpoch</ref>();</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a5427b2b365b295516944a69b66e506ba" kindref="member">setEpoch</ref>(uint32_t<sp/>ts);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1aea1cc5a935bacd8430cb3be5a87281aa" kindref="member">setY2kEpoch</ref>(uint32_t<sp/>ts);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_configured;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>config32kOSC(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCreadRequest();</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>RTCisSyncing(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCdisable();</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCenable();</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCreset();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCresetRemove();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>RTC_ZERO_H</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/RTCZero/src/RTCZero.h"/>
+  </compounddef>
+</doxygen>

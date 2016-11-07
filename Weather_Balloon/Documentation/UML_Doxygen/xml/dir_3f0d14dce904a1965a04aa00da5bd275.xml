@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_3f0d14dce904a1965a04aa00da5bd275" kind="dir">
+    <compoundname>Weather_Balloon/library/Adafruit_TSL2561-master</compoundname>
+    <innerfile refid="_adafruit___t_s_l2561___u_8cpp">Adafruit_TSL2561_U.cpp</innerfile>
+    <innerfile refid="_adafruit___t_s_l2561___u_8h">Adafruit_TSL2561_U.h</innerfile>
+    <innerfile refid="pgmspace_8h">pgmspace.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_TSL2561-master/"/>
+  </compounddef>
+</doxygen>

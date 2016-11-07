@@ -1,0 +1,4 @@
+<map id="MS5xxx::read_adc" name="MS5xxx::read_adc">
+<area shape="rect" id="node2" href="$class_m_s5611.html#a59c247e1180a8c4d62a6dcbe49f22b71" title="MS5611::Readout" alt="" coords="176,5,291,32"/>
+<area shape="rect" id="node3" href="$class_m_s5xxx.html#abb83428fd002519dc52a666a70966eda" title="MS5xxx::Readout" alt="" coords="175,56,292,83"/>
+</map>

@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_ed6deb52b2f08272037e97f769d57099" kind="dir">
+    <compoundname>Weather_Balloon/library/Time-master</compoundname>
+    <innerfile refid="_date_strings_8cpp">DateStrings.cpp</innerfile>
+    <innerfile refid="_time_8cpp">Time.cpp</innerfile>
+    <innerfile refid="_time_8h">Time.h</innerfile>
+    <innerfile refid="_time_lib_8h">TimeLib.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Time-master/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,180 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_wi_fi_client_stream" kind="class" language="C++" prot="public">
+    <compoundname>WiFiClientStream</compoundname>
+    <basecompoundref refid="class_wi_fi_stream" prot="public" virt="non-virtual">WiFiStream</basecompoundref>
+    <includes refid="_wi_fi_client_stream_8h" local="no">WiFiClientStream.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_wi_fi_client_stream_1a9d0a90467736b552cd89b5eec494ef50" prot="protected" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t WiFiClientStream::_time_connect</definition>
+        <argsstring></argsstring>
+        <name>_time_connect</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" line="36" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_wi_fi_client_stream_1afb68ea613d492a7b3aebca60ed5a0da6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool WiFiClientStream::connect_client</definition>
+        <argsstring>()</argsstring>
+        <name>connect_client</name>
+        <reimplements refid="class_wi_fi_stream_1a2e530346a7edea0326ad2025be42aff1">connect_client</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>check if TCP client is connected <simplesect kind="return"><para>true if connected </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" line="42" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" bodystart="42" bodyend="69"/>
+        <references refid="class_wi_fi_stream_1a260e92c25849c88a0d370672eaf390e7" compoundref="_wi_fi_stream_8h" startline="38">WiFiStream::_client</references>
+        <references refid="class_wi_fi_stream_1abe0341617945c15f2a37d34d7be7e72c" compoundref="_wi_fi_stream_8h" startline="39">WiFiStream::_connected</references>
+        <references refid="class_wi_fi_stream_1aa5e5f3cc7bf2e91bf5ee9793fe6a1335" compoundref="_wi_fi_stream_8h" startline="40">WiFiStream::_currentHostConnectionCallback</references>
+        <references refid="class_wi_fi_stream_1aa1137c9058f501876b0967db2baf898a" compoundref="_wi_fi_stream_8h" startline="47">WiFiStream::_port</references>
+        <references refid="class_wi_fi_stream_1af81541aec7d6be3be1466caf8bc68820" compoundref="_wi_fi_stream_8h" startline="46">WiFiStream::_remote_ip</references>
+        <references refid="_wi_fi_stream_8h_1a47bf7834b3fbc853b600fcc85a13e5a6" compoundref="_wi_fi_stream_8h" startline="28">HOST_CONNECTION_CONNECTED</references>
+        <references refid="_wi_fi_client_stream_8h_1a78cc2de9e5e51df6bd9f014636a97fea" compoundref="_wi_fi_client_stream_8h" startline="31">MILLIS_RECONNECT</references>
+        <references refid="class_wi_fi_client_stream_1ac81b72c8c61f10a5f950d9deabc7ffeb" compoundref="_wi_fi_client_stream_8h" startline="89" endline="101">stop</references>
+        <referencedby refid="class_wi_fi_client_stream_1a7fd2465acdbb07285fdac25c490c04d6" compoundref="_wi_fi_client_stream_8h" startline="81" endline="84">maintain</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_wi_fi_client_stream_1a73570f630cb7f9fe40466f24266c5828" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>WiFiClientStream::WiFiClientStream</definition>
+        <argsstring>(IPAddress server_ip, uint16_t server_port)</argsstring>
+        <name>WiFiClientStream</name>
+        <param>
+          <type>IPAddress</type>
+          <declname>server_ip</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>server_port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>create a WiFi stream with a TCP client </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" line="75" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_wi_fi_client_stream_1a7fd2465acdbb07285fdac25c490c04d6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>bool</type>
+        <definition>virtual bool WiFiClientStream::maintain</definition>
+        <argsstring>()</argsstring>
+        <name>maintain</name>
+        <reimplements refid="class_wi_fi_stream_1ac7c0c7f36c7cf6b46bebafcbf6b1253b">maintain</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>maintain WiFi and TCP connection <simplesect kind="return"><para>true if WiFi and TCP connection are established </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" line="81" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" bodystart="81" bodyend="84"/>
+        <references refid="class_wi_fi_client_stream_1afb68ea613d492a7b3aebca60ed5a0da6" compoundref="_wi_fi_client_stream_8h" startline="42" endline="69">connect_client</references>
+      </memberdef>
+      <memberdef kind="function" id="class_wi_fi_client_stream_1ac81b72c8c61f10a5f950d9deabc7ffeb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>virtual void WiFiClientStream::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <reimplements refid="class_wi_fi_stream_1a9438b7e07eae9f8a42af9060e7b330c7">stop</reimplements>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>stop client connection </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" line="89" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" bodystart="89" bodyend="101"/>
+        <references refid="class_wi_fi_stream_1a260e92c25849c88a0d370672eaf390e7" compoundref="_wi_fi_stream_8h" startline="38">WiFiStream::_client</references>
+        <references refid="class_wi_fi_stream_1abe0341617945c15f2a37d34d7be7e72c" compoundref="_wi_fi_stream_8h" startline="39">WiFiStream::_connected</references>
+        <references refid="class_wi_fi_stream_1aa5e5f3cc7bf2e91bf5ee9793fe6a1335" compoundref="_wi_fi_stream_8h" startline="40">WiFiStream::_currentHostConnectionCallback</references>
+        <references refid="_wi_fi_stream_8h_1a03dd368c8684838c57562f7bf55d783f" compoundref="_wi_fi_stream_8h" startline="27">HOST_CONNECTION_DISCONNECTED</references>
+        <referencedby refid="class_wi_fi_client_stream_1afb68ea613d492a7b3aebca60ed5a0da6" compoundref="_wi_fi_client_stream_8h" startline="42" endline="69">connect_client</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="451">
+        <label>WiFiStream</label>
+        <link refid="class_wi_fi_stream"/>
+        <childnode refid="452" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="450">
+        <label>WiFiClientStream</label>
+        <link refid="class_wi_fi_client_stream"/>
+        <childnode refid="451" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="452">
+        <label>Stream</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="454">
+        <label>WiFiStream</label>
+        <link refid="class_wi_fi_stream"/>
+        <childnode refid="455" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="453">
+        <label>WiFiClientStream</label>
+        <link refid="class_wi_fi_client_stream"/>
+        <childnode refid="454" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="455">
+        <label>Stream</label>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" line="34" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/WiFiClientStream.h" bodystart="33" bodyend="103"/>
+    <listofallmembers>
+      <member refid="class_wi_fi_stream_1a260e92c25849c88a0d370672eaf390e7" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_client</name></member>
+      <member refid="class_wi_fi_stream_1abe0341617945c15f2a37d34d7be7e72c" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_connected</name></member>
+      <member refid="class_wi_fi_stream_1aa5e5f3cc7bf2e91bf5ee9793fe6a1335" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_currentHostConnectionCallback</name></member>
+      <member refid="class_wi_fi_stream_1aee2b9bf291669692faf0c9d52c8dca1d" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_gateway</name></member>
+      <member refid="class_wi_fi_stream_1ad8d316924c56442f88a85f714a2a6e95" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_key</name></member>
+      <member refid="class_wi_fi_stream_1a78fb4d153bfabad324535db5e495d71b" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_key_idx</name></member>
+      <member refid="class_wi_fi_stream_1a9e5cfe85f7ff186e597e2eb09a75e742" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_local_ip</name></member>
+      <member refid="class_wi_fi_stream_1a56fb4c68bcf7312361a8fad4328826de" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_passphrase</name></member>
+      <member refid="class_wi_fi_stream_1aa1137c9058f501876b0967db2baf898a" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_port</name></member>
+      <member refid="class_wi_fi_stream_1af81541aec7d6be3be1466caf8bc68820" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_remote_ip</name></member>
+      <member refid="class_wi_fi_stream_1a428e3d50bc45a3f2de02d7edc7d9509d" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_ssid</name></member>
+      <member refid="class_wi_fi_stream_1aa37dbf267daa7afa939183cd77bb5ee7" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_subnet</name></member>
+      <member refid="class_wi_fi_client_stream_1a9d0a90467736b552cd89b5eec494ef50" prot="protected" virt="non-virtual"><scope>WiFiClientStream</scope><name>_time_connect</name></member>
+      <member refid="class_wi_fi_stream_1a4f279f8f5001c615002bf9043a0bc824" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>attach</name></member>
+      <member refid="class_wi_fi_stream_1a238fc0fc25c4a9bda83e24257587dd64" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>available</name></member>
+      <member refid="class_wi_fi_stream_1a3aee2b1e2f93e2c6488051b249467254" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>begin</name></member>
+      <member refid="class_wi_fi_stream_1ad6ac263500c511fad28e4fe8e286e65b" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>begin</name></member>
+      <member refid="class_wi_fi_stream_1a9a37df8979690859e6c4c47752ecc785" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>begin</name></member>
+      <member refid="class_wi_fi_stream_1a7ec6bca5a87c462e2402d12529e13207" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>config</name></member>
+      <member refid="class_wi_fi_stream_1a45e8232e467d643738e6a20b5bff909a" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>config</name></member>
+      <member refid="class_wi_fi_client_stream_1afb68ea613d492a7b3aebca60ed5a0da6" prot="protected" virt="virtual"><scope>WiFiClientStream</scope><name>connect_client</name></member>
+      <member refid="class_wi_fi_stream_1ad5a60c69e5aca993e90e8d02c0e9672c" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>flush</name></member>
+      <member refid="class_wi_fi_stream_1a8134646bad1d06f4ce61813cafb652ed" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>getLocalIP</name></member>
+      <member refid="class_wi_fi_client_stream_1a7fd2465acdbb07285fdac25c490c04d6" prot="public" virt="virtual"><scope>WiFiClientStream</scope><name>maintain</name></member>
+      <member refid="class_wi_fi_stream_1a84ea0f80377001e0acf1385645ecaf1a" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>peek</name></member>
+      <member refid="class_wi_fi_stream_1a238960bf0f7a3e3a7c60014a187fe577" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>read</name></member>
+      <member refid="class_wi_fi_client_stream_1ac81b72c8c61f10a5f950d9deabc7ffeb" prot="public" virt="virtual"><scope>WiFiClientStream</scope><name>stop</name></member>
+      <member refid="class_wi_fi_client_stream_1a73570f630cb7f9fe40466f24266c5828" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>WiFiClientStream</name></member>
+      <member refid="class_wi_fi_stream_1af287098c8a30dbdb4cdd39c39367339b" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>WiFiStream</name></member>
+      <member refid="class_wi_fi_stream_1ac3eaf3da6000ade24eac3c029cad1062" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>WiFiStream</name></member>
+      <member refid="class_wi_fi_stream_1a0a4dba3370af02570ef0d3429f1a6df2" prot="public" virt="non-virtual"><scope>WiFiClientStream</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

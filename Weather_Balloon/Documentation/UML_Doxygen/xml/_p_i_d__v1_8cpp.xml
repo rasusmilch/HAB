@@ -1,0 +1,227 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_p_i_d__v1_8cpp" kind="file" language="C++">
+    <compoundname>PID_v1.cpp</compoundname>
+    <includes local="yes">WProgram.h</includes>
+    <includes refid="_p_i_d__v1_8h" local="no">PID_v1.h</includes>
+    <incdepgraph>
+      <node id="671">
+        <label>Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp</label>
+        <link refid="PID_v1.cpp"/>
+        <childnode refid="672" relation="include">
+        </childnode>
+        <childnode refid="673" relation="include">
+        </childnode>
+      </node>
+      <node id="672">
+        <label>WProgram.h</label>
+      </node>
+      <node id="673">
+        <label>PID_v1.h</label>
+        <link refid="_p_i_d__v1_8h"/>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/**********************************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Arduino<sp/>PID<sp/>Library<sp/>-<sp/>Version<sp/>1.1.1</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>by<sp/>Brett<sp/>Beauregard<sp/>&lt;br3ttb@gmail.com&gt;<sp/>brettbeauregard.com</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>This<sp/>Library<sp/>is<sp/>licensed<sp/>under<sp/>a<sp/>GPLv3<sp/>License</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>**********************************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;WProgram.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_p_i_d__v1_8h" kindref="compound">PID_v1.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">/*Constructor<sp/>(...)*********************************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>The<sp/>parameters<sp/>specified<sp/>here<sp/>are<sp/>those<sp/>for<sp/>for<sp/>which<sp/>we<sp/>can&apos;t<sp/>set<sp/>up<sp/></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/>reliable<sp/>defaults,<sp/>so<sp/>we<sp/>need<sp/>to<sp/>have<sp/>the<sp/>user<sp/>set<sp/>them.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>***************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" refkind="member"><highlight class="normal"><ref refid="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" kindref="member">PID::PID</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>Input,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>Output,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>Setpoint,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Kp,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ki,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Kd,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ControllerDirection)</highlight></codeline>
+<codeline lineno="22"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>myOutput<sp/>=<sp/>Output;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>myInput<sp/>=<sp/>Input;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>mySetpoint<sp/>=<sp/>Setpoint;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>inAuto<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" kindref="member">PID::SetOutputLimits</ref>(0,<sp/>255);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//default<sp/>output<sp/>limit<sp/>corresponds<sp/>to<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//the<sp/>arduino<sp/>pwm<sp/>limits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>SampleTime<sp/>=<sp/>100;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//default<sp/>Controller<sp/>Sample<sp/>Time<sp/>is<sp/>0.1<sp/>seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" kindref="member">PID::SetControllerDirection</ref>(ControllerDirection);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" kindref="member">PID::SetTunings</ref>(Kp,<sp/>Ki,<sp/>Kd);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/>millis()-SampleTime;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Compute()<sp/>**********************************************************************</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>This,<sp/>as<sp/>they<sp/>say,<sp/>is<sp/>where<sp/>the<sp/>magic<sp/>happens.<sp/><sp/>this<sp/>function<sp/>should<sp/>be<sp/>called</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/>*<sp/><sp/><sp/>every<sp/>time<sp/>&quot;void<sp/>loop()&quot;<sp/>executes.<sp/><sp/>the<sp/>function<sp/>will<sp/>decide<sp/>for<sp/>itself<sp/>whether<sp/>a<sp/>new</highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/>*<sp/><sp/><sp/>pid<sp/>Output<sp/>needs<sp/>to<sp/>be<sp/>computed.<sp/><sp/>returns<sp/>true<sp/>when<sp/>the<sp/>output<sp/>is<sp/>computed,</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/>*<sp/><sp/><sp/>false<sp/>when<sp/>nothing<sp/>has<sp/>been<sp/>done.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>**********************************************************************************/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="47" refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" kindref="member">PID::Compute</ref>()</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(!inAuto)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" kindref="member">now</ref><sp/>=<sp/>millis();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>timeChange<sp/>=<sp/>(now<sp/>-<sp/>lastTime);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(timeChange&gt;=SampleTime)</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Compute<sp/>all<sp/>the<sp/>working<sp/>error<sp/>variables*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>input<sp/>=<sp/>*myInput;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>error<sp/>=<sp/>*mySetpoint<sp/>-<sp/>input;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ITerm+=<sp/>(ki<sp/>*<sp/>error);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ITerm<sp/>&gt;<sp/>outMax)<sp/>ITerm=<sp/>outMax;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ITerm<sp/>&lt;<sp/>outMin)<sp/>ITerm=<sp/>outMin;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dInput<sp/>=<sp/>(input<sp/>-<sp/>lastInput);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Compute<sp/>PID<sp/>Output*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>output<sp/>=<sp/>kp<sp/>*<sp/>error<sp/>+<sp/>ITerm-<sp/>kd<sp/>*<sp/>dInput;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(output<sp/>&gt;<sp/>outMax)<sp/>output<sp/>=<sp/>outMax;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(output<sp/>&lt;<sp/>outMin)<sp/>output<sp/>=<sp/>outMin;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*myOutput<sp/>=<sp/>output;</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*Remember<sp/>some<sp/>variables<sp/>for<sp/>next<sp/>time*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>lastInput<sp/>=<sp/>input;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>lastTime<sp/>=<sp/><ref refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" kindref="member">now</ref>;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SetTunings(...)*************************************************************</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>This<sp/>function<sp/>allows<sp/>the<sp/>controller&apos;s<sp/>dynamic<sp/>performance<sp/>to<sp/>be<sp/>adjusted.<sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>it&apos;s<sp/>called<sp/>automatically<sp/>from<sp/>the<sp/>constructor,<sp/>but<sp/>tunings<sp/>can<sp/>also</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>be<sp/>adjusted<sp/>on<sp/>the<sp/>fly<sp/>during<sp/>normal<sp/>operation</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="83" refid="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" kindref="member">PID::SetTunings</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Kp,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ki,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Kd)</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Kp&lt;0<sp/>||<sp/>Ki&lt;0<sp/>||<sp/>Kd&lt;0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/>dispKp<sp/>=<sp/>Kp;<sp/>dispKi<sp/>=<sp/>Ki;<sp/>dispKd<sp/>=<sp/>Kd;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>SampleTimeInSec<sp/>=<sp/>((double)SampleTime)/1000;<sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/>kp<sp/>=<sp/>Kp;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/>ki<sp/>=<sp/>Ki<sp/>*<sp/>SampleTimeInSec;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/>kd<sp/>=<sp/>Kd<sp/>/<sp/>SampleTimeInSec;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(controllerDirection<sp/>==<ref refid="_p_i_d__v1_8h_1a00548cec6d104932bf79a65bac1c47e8" kindref="member">REVERSE</ref>)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kp<sp/>=<sp/>(0<sp/>-<sp/>kp);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ki<sp/>=<sp/>(0<sp/>-<sp/>ki);</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kd<sp/>=<sp/>(0<sp/>-<sp/>kd);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SetSampleTime(...)<sp/>*********************************************************</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*<sp/>sets<sp/>the<sp/>period,<sp/>in<sp/>Milliseconds,<sp/>at<sp/>which<sp/>the<sp/>calculation<sp/>is<sp/>performed<sp/><sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" kindref="member">PID::SetSampleTime</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>NewSampleTime)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(NewSampleTime<sp/>&gt;<sp/>0)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>ratio<sp/><sp/>=<sp/>(double)NewSampleTime</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/<sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">)SampleTime;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ki<sp/>*=<sp/>ratio;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kd<sp/>/=<sp/>ratio;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SampleTime<sp/>=<sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/>long)NewSampleTime;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SetOutputLimits(...)****************************************************</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/>*<sp/><sp/><sp/><sp/><sp/>This<sp/>function<sp/>will<sp/>be<sp/>used<sp/>far<sp/>more<sp/>often<sp/>than<sp/>SetInputLimits.<sp/><sp/>while</highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>input<sp/>to<sp/>the<sp/>controller<sp/>will<sp/>generally<sp/>be<sp/>in<sp/>the<sp/>0-1023<sp/>range<sp/>(which<sp/>is</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/>*<sp/><sp/>the<sp/>default<sp/>already,)<sp/><sp/>the<sp/>output<sp/>will<sp/>be<sp/>a<sp/>little<sp/>different.<sp/><sp/>maybe<sp/>they&apos;ll</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"><sp/>*<sp/><sp/>be<sp/>doing<sp/>a<sp/>time<sp/>window<sp/>and<sp/>will<sp/>need<sp/>0-8000<sp/>or<sp/>something.<sp/><sp/>or<sp/>maybe<sp/>they&apos;ll</highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/>*<sp/><sp/>want<sp/>to<sp/>clamp<sp/>it<sp/>from<sp/>0-125.<sp/><sp/>who<sp/>knows.<sp/><sp/>at<sp/>any<sp/>rate,<sp/>that<sp/>can<sp/>all<sp/>be<sp/>done</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/>*<sp/><sp/>here.</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/>**************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" kindref="member">PID::SetOutputLimits</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Min,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Max)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(Min<sp/>&gt;=<sp/>Max)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/>outMin<sp/>=<sp/>Min;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/>outMax<sp/>=<sp/>Max;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(inAuto)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*myOutput<sp/>&gt;<sp/>outMax)<sp/>*myOutput<sp/>=<sp/>outMax;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*myOutput<sp/>&lt;<sp/>outMin)<sp/>*myOutput<sp/>=<sp/>outMin;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ITerm<sp/>&gt;<sp/>outMax)<sp/>ITerm=<sp/>outMax;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ITerm<sp/>&lt;<sp/>outMin)<sp/>ITerm=<sp/>outMin;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SetMode(...)****************************************************************</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*<sp/>Allows<sp/>the<sp/>controller<sp/>Mode<sp/>to<sp/>be<sp/>set<sp/>to<sp/>manual<sp/>(0)<sp/>or<sp/>Automatic<sp/>(non-zero)</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*<sp/>when<sp/>the<sp/>transition<sp/>from<sp/>manual<sp/>to<sp/>auto<sp/>occurs,<sp/>the<sp/>controller<sp/>is</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>*<sp/>automatically<sp/>initialized</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="146" refid="class_p_i_d_1a68074bad88a8cc442ee03a036073d5d5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1a68074bad88a8cc442ee03a036073d5d5" kindref="member">PID::SetMode</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Mode)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>newAuto<sp/>=<sp/>(Mode<sp/>==<sp/><ref refid="_p_i_d__v1_8h_1a3851a1a8ddec9eacd2e30a8a19bb8cc8" kindref="member">AUTOMATIC</ref>);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(newAuto<sp/>==<sp/>!inAuto)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{<sp/><sp/></highlight><highlight class="comment">/*we<sp/>just<sp/>went<sp/>from<sp/>manual<sp/>to<sp/>auto*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>PID::Initialize();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>inAuto<sp/>=<sp/>newAuto;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Initialize()****************************************************************</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*<sp/><sp/>does<sp/>all<sp/>the<sp/>things<sp/>that<sp/>need<sp/>to<sp/>happen<sp/>to<sp/>ensure<sp/>a<sp/>bumpless<sp/>transfer</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/>*<sp/><sp/>from<sp/>manual<sp/>to<sp/>automatic<sp/>mode.</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PID::Initialize()</highlight></codeline>
+<codeline lineno="161"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/>ITerm<sp/>=<sp/>*myOutput;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/>lastInput<sp/>=<sp/>*myInput;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ITerm<sp/>&gt;<sp/>outMax)<sp/>ITerm<sp/>=<sp/>outMax;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(ITerm<sp/>&lt;<sp/>outMin)<sp/>ITerm<sp/>=<sp/>outMin;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>SetControllerDirection(...)*************************************************</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/>*<sp/>The<sp/>PID<sp/>will<sp/>either<sp/>be<sp/>connected<sp/>to<sp/>a<sp/>DIRECT<sp/>acting<sp/>process<sp/>(+Output<sp/>leads<sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/>*<sp/>to<sp/>+Input)<sp/>or<sp/>a<sp/>REVERSE<sp/>acting<sp/>process(+Output<sp/>leads<sp/>to<sp/>-Input.)<sp/><sp/>we<sp/>need<sp/>to</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/>*<sp/>know<sp/>which<sp/>one,<sp/>because<sp/>otherwise<sp/>we<sp/>may<sp/>increase<sp/>the<sp/>output<sp/>when<sp/>we<sp/>should</highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/>*<sp/>be<sp/>decreasing.<sp/><sp/>This<sp/>is<sp/>called<sp/>from<sp/>the<sp/>constructor.</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" kindref="member">PID::SetControllerDirection</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>Direction)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(inAuto<sp/>&amp;&amp;<sp/>Direction<sp/>!=controllerDirection)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kp<sp/>=<sp/>(0<sp/>-<sp/>kp);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ki<sp/>=<sp/>(0<sp/>-<sp/>ki);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>kd<sp/>=<sp/>(0<sp/>-<sp/>kd);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/>}<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/>controllerDirection<sp/>=<sp/>Direction;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Status<sp/>Funcions*************************************************************</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/>Just<sp/>because<sp/>you<sp/>set<sp/>the<sp/>Kp=-1<sp/>doesn&apos;t<sp/>mean<sp/>it<sp/>actually<sp/>happened.<sp/><sp/>these</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*<sp/>functions<sp/>query<sp/>the<sp/>internal<sp/>state<sp/>of<sp/>the<sp/>PID.<sp/><sp/>they&apos;re<sp/>here<sp/>for<sp/>display<sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/>*<sp/>purposes.<sp/><sp/>this<sp/>are<sp/>the<sp/>functions<sp/>the<sp/>PID<sp/>Front-end<sp/>uses<sp/>for<sp/>example</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/>******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190" refid="class_p_i_d_1ae5519c833b2887a0e6aad670d9b3d8b8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1ae5519c833b2887a0e6aad670d9b3d8b8" kindref="member">PID::GetKp</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>dispKp;<sp/>}</highlight></codeline>
+<codeline lineno="191" refid="class_p_i_d_1ac7ba6bc99c76c4378d699e176c81491c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1ac7ba6bc99c76c4378d699e176c81491c" kindref="member">PID::GetKi</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>dispKi;}</highlight></codeline>
+<codeline lineno="192" refid="class_p_i_d_1a62b7e8dca41e724e1ad62dec930058d8" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1a62b7e8dca41e724e1ad62dec930058d8" kindref="member">PID::GetKd</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>dispKd;}</highlight></codeline>
+<codeline lineno="193" refid="class_p_i_d_1acc325db5e6a140b92c8199a66e03491b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1acc325db5e6a140b92c8199a66e03491b" kindref="member">PID::GetMode</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><sp/>inAuto<sp/>?<sp/><ref refid="_p_i_d__v1_8h_1a3851a1a8ddec9eacd2e30a8a19bb8cc8" kindref="member">AUTOMATIC</ref><sp/>:<sp/><ref refid="_p_i_d__v1_8h_1a8187a9af791c0a44ba67edd9cf266961" kindref="member">MANUAL</ref>;}</highlight></codeline>
+<codeline lineno="194" refid="class_p_i_d_1a2a8674f4c8937dfdf859f6a3ad9f45d5" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_p_i_d_1a2a8674f4c8937dfdf859f6a3ad9f45d5" kindref="member">PID::GetDirection</ref>(){<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>controllerDirection;}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp"/>
+  </compounddef>
+</doxygen>

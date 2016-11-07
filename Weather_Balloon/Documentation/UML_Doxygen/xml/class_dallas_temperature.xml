@@ -1,0 +1,1073 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_dallas_temperature" kind="class" language="C++" prot="public">
+    <compoundname>DallasTemperature</compoundname>
+    <includes refid="_dallas_temperature_8h" local="no">DallasTemperature.h</includes>
+      <sectiondef kind="private-type">
+      <memberdef kind="typedef" id="class_dallas_temperature_1aa7e6595cece289fed54cab6577c1ce9f" prot="private" static="no">
+        <type>uint8_t</type>
+        <definition>typedef uint8_t DallasTemperature::ScratchPad[9]</definition>
+        <argsstring>[9]</argsstring>
+        <name>ScratchPad</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="231" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" bodystart="231" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_dallas_temperature_1a8e7e1f32daf75637d9dfc119f7b6e922" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DallasTemperature::parasite</definition>
+        <argsstring></argsstring>
+        <name>parasite</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="234" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dallas_temperature_1aadda277b261573062fead457552d9be6" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DallasTemperature::bitResolution</definition>
+        <argsstring></argsstring>
+        <name>bitResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="238" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dallas_temperature_1ab92a1dab9945bf41bb1044cf63abb73b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DallasTemperature::waitForConversion</definition>
+        <argsstring></argsstring>
+        <name>waitForConversion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="241" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" bodystart="241" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dallas_temperature_1a60788371290c97ee586b8f5558ee8f92" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool DallasTemperature::checkForConversion</definition>
+        <argsstring></argsstring>
+        <name>checkForConversion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="244" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" bodystart="244" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dallas_temperature_1a92f8955b1d83d341202af62823e17ed6" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DallasTemperature::devices</definition>
+        <argsstring></argsstring>
+        <name>devices</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="247" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" bodystart="247" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_dallas_temperature_1a8b11f739e5f4e2e7cddc21b47b28eab9" prot="private" static="no" mutable="no">
+        <type><ref refid="class_one_wire" kindref="compound">OneWire</ref> *</type>
+        <definition>OneWire* DallasTemperature::_wire</definition>
+        <argsstring></argsstring>
+        <name>_wire</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="250" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_dallas_temperature_1af46e868b6702ff5f77263985cd990e01" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DallasTemperature::DallasTemperature</definition>
+        <argsstring>()</argsstring>
+        <name>DallasTemperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="67" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="17" bodyend="17"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a37139ebd1a6122e232800528aee8cb2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DallasTemperature::DallasTemperature</definition>
+        <argsstring>(OneWire *)</argsstring>
+        <name>DallasTemperature</name>
+        <param>
+          <type><ref refid="class_one_wire" kindref="compound">OneWire</ref> *</type>
+          <defname>_oneWire</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="68" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="18" bodyend="25"/>
+        <references refid="class_dallas_temperature_1af985bf5f9ed6857424e8a9532eaf5e2f" compoundref="_dallas_temperature_8cpp" startline="39" endline="48">setOneWire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1af985bf5f9ed6857424e8a9532eaf5e2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::setOneWire</definition>
+        <argsstring>(OneWire *)</argsstring>
+        <name>setOneWire</name>
+        <param>
+          <type><ref refid="class_one_wire" kindref="compound">OneWire</ref> *</type>
+          <defname>_oneWire</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="70" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="39" bodyend="48"/>
+        <referencedby refid="class_dallas_temperature_1a37139ebd1a6122e232800528aee8cb2b" compoundref="_dallas_temperature_8cpp" startline="18" endline="25">DallasTemperature</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1aea297b5f2a720a5455245c0fbf7333ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="73" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="51" bodyend="70"/>
+        <references refid="class_dallas_temperature_1a9dac13206229d7c8fb75f21bf44e75ed" compoundref="_dallas_temperature_8cpp" startline="250" endline="252">getResolution</references>
+        <references refid="class_dallas_temperature_1af6a28c1d1009dd6d010d97dffaf5942d" compoundref="_dallas_temperature_8cpp" startline="169" endline="179">readPowerSupply</references>
+        <references refid="class_one_wire_1aae5efdf67928b5ee312ab7d7906416fa" compoundref="_one_wire_8cpp" startline="305" endline="315">OneWire::reset_search</references>
+        <references refid="class_one_wire_1ad84f9ed7a1b2617f580d0d1e96c52cac" compoundref="_one_wire_8cpp" startline="347" endline="468">OneWire::search</references>
+        <references refid="class_dallas_temperature_1a71e4744b8d7b2f1c05a96cd158c83007" compoundref="_dallas_temperature_8cpp" startline="78" endline="80">validAddress</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a8bf92c0b6b8c3167daca4c2046ade13a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DallasTemperature::getDeviceCount</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDeviceCount</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="76" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="73" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a71e4744b8d7b2f1c05a96cd158c83007" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::validAddress</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>validAddress</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="79" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="78" bodyend="80"/>
+        <references refid="class_one_wire_1ae3486a669581b750e4fdf3f3a12b05f1" compoundref="_one_wire_8cpp" startline="505" endline="513">OneWire::crc8</references>
+        <referencedby refid="class_dallas_temperature_1aea297b5f2a720a5455245c0fbf7333ec" compoundref="_dallas_temperature_8cpp" startline="51" endline="70">begin</referencedby>
+        <referencedby refid="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" compoundref="_dallas_temperature_8cpp" startline="84" endline="97">getAddress</referencedby>
+        <referencedby refid="class_dallas_temperature_1a48bc1a4d0e33f1735964c22c8bd2f6fb" compoundref="_dallas_temperature_8cpp" startline="581" endline="589">rawToFahrenheit</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a3f3678c8defd473e8eebd9cfe793b329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::validFamily</definition>
+        <argsstring>(const uint8_t *deviceAddress)</argsstring>
+        <name>validFamily</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>deviceAddress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="82" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="27" bodyend="37"/>
+        <references refid="_dallas_temperature_8h_1adfdf0cdd9ef4946e5a8a637bd5fc8c25" compoundref="_dallas_temperature_8h" startline="27">DS1822MODEL</references>
+        <references refid="_dallas_temperature_8h_1a090e56ed1226c81a311516443b657b3d" compoundref="_dallas_temperature_8h" startline="28">DS1825MODEL</references>
+        <references refid="_dallas_temperature_8h_1a18255739b20e4f701b40d18aefcb8130" compoundref="_dallas_temperature_8h" startline="26">DS18B20MODEL</references>
+        <references refid="_dallas_temperature_8h_1a35995eb038ced9c7c25f6c13126be9f1" compoundref="_dallas_temperature_8h" startline="25">DS18S20MODEL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::getAddress</definition>
+        <argsstring>(uint8_t *, uint8_t)</argsstring>
+        <name>getAddress</name>
+        <param>
+          <type>uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>index</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="85" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="84" bodyend="97"/>
+        <references refid="class_one_wire_1aae5efdf67928b5ee312ab7d7906416fa" compoundref="_one_wire_8cpp" startline="305" endline="315">OneWire::reset_search</references>
+        <references refid="class_dallas_temperature_1a71e4744b8d7b2f1c05a96cd158c83007" compoundref="_dallas_temperature_8cpp" startline="78" endline="80">validAddress</references>
+        <referencedby refid="class_dallas_temperature_1a7e3e2e23257aac6b6c896df205d5b3b5" compoundref="_dallas_temperature_8cpp" startline="408" endline="417">getTempCByIndex</referencedby>
+        <referencedby refid="class_dallas_temperature_1a96318d36b313e1f4f413e2ed2b7501c7" compoundref="_dallas_temperature_8cpp" startline="420" endline="430">getTempFByIndex</referencedby>
+        <referencedby refid="class_dallas_temperature_1a4af999e72b9c5b85430666ad90fa9644" compoundref="_dallas_temperature_8cpp" startline="545" endline="550">getUserDataByIndex</referencedby>
+        <referencedby refid="class_dallas_temperature_1ae9a7bf62321615519242d2421c8b349a" compoundref="_dallas_temperature_8cpp" startline="398" endline="405">requestTemperaturesByIndex</referencedby>
+        <referencedby refid="class_dallas_temperature_1a43363ee4b227f1ecf9c33cd4e072c0c9" compoundref="_dallas_temperature_8cpp" startline="184" endline="194">setResolution</referencedby>
+        <referencedby refid="class_dallas_temperature_1a65ae6994218200e92ce43bffd122d46b" compoundref="_dallas_temperature_8cpp" startline="552" endline="557">setUserDataByIndex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a19afa5e594de0ab6caa5a48a70650927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::isConnected</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>isConnected</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="88" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="100" bodyend="105"/>
+        <referencedby refid="class_dallas_temperature_1a2266822561e864c4921955697c1ac7f5" compoundref="_dallas_temperature_8cpp" startline="256" endline="281">getResolution</referencedby>
+        <referencedby refid="class_dallas_temperature_1a37c3723cc15d5e46d0a6caa96a3c4781" compoundref="_dallas_temperature_8cpp" startline="481" endline="487">getTemp</referencedby>
+        <referencedby refid="class_dallas_temperature_1a3601e8ee63c4770b716817ed68664400" compoundref="_dallas_temperature_8cpp" startline="532" endline="542">getUserData</referencedby>
+        <referencedby refid="class_dallas_temperature_1a48bc1a4d0e33f1735964c22c8bd2f6fb" compoundref="_dallas_temperature_8cpp" startline="581" endline="589">rawToFahrenheit</referencedby>
+        <referencedby refid="class_dallas_temperature_1a394897437dfb8de4c8fd2198a1d1c356" compoundref="_dallas_temperature_8cpp" startline="198" endline="247">setResolution</referencedby>
+        <referencedby refid="class_dallas_temperature_1a0ed69b03ed848936ea0c8deea0e5c2ba" compoundref="_dallas_temperature_8cpp" startline="518" endline="530">setUserData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a624f64b186c13927d4f74bd7c5b92c2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::isConnected</definition>
+        <argsstring>(const uint8_t *, uint8_t *)</argsstring>
+        <name>isConnected</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <defname>scratchPad</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="92" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="109" bodyend="113"/>
+        <references refid="class_one_wire_1ae3486a669581b750e4fdf3f3a12b05f1" compoundref="_one_wire_8cpp" startline="505" endline="513">OneWire::crc8</references>
+        <references refid="class_dallas_temperature_1a2b55774207d0211fd679247a7137142b" compoundref="_dallas_temperature_8cpp" startline="115" endline="143">readScratchPad</references>
+        <references refid="_dallas_temperature_8h_1a1dac037795f975b12a8914cbd5667711" compoundref="_dallas_temperature_8h" startline="48">SCRATCHPAD_CRC</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a2b55774207d0211fd679247a7137142b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::readScratchPad</definition>
+        <argsstring>(const uint8_t *, uint8_t *)</argsstring>
+        <name>readScratchPad</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <defname>scratchPad</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="95" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="115" bodyend="143"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="class_one_wire_1afd9bdb8b5a5b69b394dfc76352e00e21" compoundref="_one_wire_8cpp" startline="257" endline="265">OneWire::read</references>
+        <references refid="_dallas_temperature_8h_1a52761121324a6ee83ca7d1949ed21fbc" compoundref="_dallas_temperature_8h" startline="33">READSCRATCH</references>
+        <references refid="class_one_wire_1a6a742a9112392567eae3d06dde067c07" compoundref="_one_wire_8cpp" startline="142" endline="170">OneWire::reset</references>
+        <references refid="class_one_wire_1accf808390abd63d3c7bce35677784384" compoundref="_one_wire_8cpp" startline="275" endline="282">OneWire::select</references>
+        <references refid="class_one_wire_1a843e9e7e57ed615b4880be0b76b40b7d" compoundref="_one_wire_8cpp" startline="229" endline="241">OneWire::write</references>
+        <referencedby refid="class_dallas_temperature_1a624f64b186c13927d4f74bd7c5b92c2e" compoundref="_dallas_temperature_8cpp" startline="109" endline="113">isConnected</referencedby>
+        <referencedby refid="class_dallas_temperature_1adaf460a3b8004218e97af7059d41053a" compoundref="_dallas_temperature_8cpp" startline="311" endline="318">isConversionAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a74c275dabf103f268c5a271d379dcb7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::writeScratchPad</definition>
+        <argsstring>(const uint8_t *, const uint8_t *)</argsstring>
+        <name>writeScratchPad</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>scratchPad</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="98" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="146" bodyend="167"/>
+        <references refid="_dallas_temperature_8h_1a5fa120064b78d91b6a77f868bbda5a99" compoundref="_dallas_temperature_8h" startline="44">CONFIGURATION</references>
+        <references refid="_dallas_temperature_8h_1a155b81d518ec23fcf76f324eafe7f79d" compoundref="_dallas_temperature_8h" startline="32">COPYSCRATCH</references>
+        <references refid="_dallas_temperature_8h_1a35995eb038ced9c7c25f6c13126be9f1" compoundref="_dallas_temperature_8h" startline="25">DS18S20MODEL</references>
+        <references refid="_dallas_temperature_8h_1a80e085e8540d59e6a84c59e12a4bcfc2" compoundref="_dallas_temperature_8h" startline="42">HIGH_ALARM_TEMP</references>
+        <references refid="_dallas_temperature_8h_1a5cabe4c79bafbac7653fcc7acec33a9b" compoundref="_dallas_temperature_8h" startline="43">LOW_ALARM_TEMP</references>
+        <references refid="class_one_wire_1a6a742a9112392567eae3d06dde067c07" compoundref="_one_wire_8cpp" startline="142" endline="170">OneWire::reset</references>
+        <references refid="class_one_wire_1accf808390abd63d3c7bce35677784384" compoundref="_one_wire_8cpp" startline="275" endline="282">OneWire::select</references>
+        <references refid="class_one_wire_1a843e9e7e57ed615b4880be0b76b40b7d" compoundref="_one_wire_8cpp" startline="229" endline="241">OneWire::write</references>
+        <references refid="_dallas_temperature_8h_1aa41d45853aeac8f06955e4f944c19b33" compoundref="_dallas_temperature_8h" startline="34">WRITESCRATCH</references>
+        <referencedby refid="class_dallas_temperature_1a48bc1a4d0e33f1735964c22c8bd2f6fb" compoundref="_dallas_temperature_8cpp" startline="581" endline="589">rawToFahrenheit</referencedby>
+        <referencedby refid="class_dallas_temperature_1a394897437dfb8de4c8fd2198a1d1c356" compoundref="_dallas_temperature_8cpp" startline="198" endline="247">setResolution</referencedby>
+        <referencedby refid="class_dallas_temperature_1a0ed69b03ed848936ea0c8deea0e5c2ba" compoundref="_dallas_temperature_8cpp" startline="518" endline="530">setUserData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1af6a28c1d1009dd6d010d97dffaf5942d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::readPowerSupply</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>readPowerSupply</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="101" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="169" bodyend="179"/>
+        <references refid="class_one_wire_1aeae4c2798b70d9d0ba3091c03ee2d056" compoundref="_one_wire_8cpp" startline="204" endline="220">OneWire::read_bit</references>
+        <references refid="_dallas_temperature_8h_1a13d91396539a459622333016e7caf065" compoundref="_dallas_temperature_8h" startline="36">READPOWERSUPPLY</references>
+        <references refid="class_one_wire_1a6a742a9112392567eae3d06dde067c07" compoundref="_one_wire_8cpp" startline="142" endline="170">OneWire::reset</references>
+        <references refid="class_one_wire_1accf808390abd63d3c7bce35677784384" compoundref="_one_wire_8cpp" startline="275" endline="282">OneWire::select</references>
+        <references refid="class_one_wire_1a843e9e7e57ed615b4880be0b76b40b7d" compoundref="_one_wire_8cpp" startline="229" endline="241">OneWire::write</references>
+        <referencedby refid="class_dallas_temperature_1aea297b5f2a720a5455245c0fbf7333ec" compoundref="_dallas_temperature_8cpp" startline="51" endline="70">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a9dac13206229d7c8fb75f21bf44e75ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DallasTemperature::getResolution</definition>
+        <argsstring>()</argsstring>
+        <name>getResolution</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="104" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="250" bodyend="252"/>
+        <referencedby refid="class_dallas_temperature_1aea297b5f2a720a5455245c0fbf7333ec" compoundref="_dallas_temperature_8cpp" startline="51" endline="70">begin</referencedby>
+        <referencedby refid="class_dallas_temperature_1aee2a2abd5f8293df9a0a030b3e982c90" compoundref="_dallas_temperature_8cpp" startline="342" endline="364">requestTemperaturesByAddress</referencedby>
+        <referencedby refid="class_dallas_temperature_1a394897437dfb8de4c8fd2198a1d1c356" compoundref="_dallas_temperature_8cpp" startline="198" endline="247">setResolution</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a43363ee4b227f1ecf9c33cd4e072c0c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::setResolution</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>setResolution</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>newResolution</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="107" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="184" bodyend="194"/>
+        <references refid="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" compoundref="_dallas_temperature_8cpp" startline="84" endline="97">getAddress</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a2266822561e864c4921955697c1ac7f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DallasTemperature::getResolution</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>getResolution</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="110" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="256" bodyend="281"/>
+        <references refid="_dallas_temperature_8h_1a5fa120064b78d91b6a77f868bbda5a99" compoundref="_dallas_temperature_8h" startline="44">CONFIGURATION</references>
+        <references refid="_dallas_temperature_8h_1a35995eb038ced9c7c25f6c13126be9f1" compoundref="_dallas_temperature_8h" startline="25">DS18S20MODEL</references>
+        <references refid="class_dallas_temperature_1a19afa5e594de0ab6caa5a48a70650927" compoundref="_dallas_temperature_8cpp" startline="100" endline="105">isConnected</references>
+        <references refid="_dallas_temperature_8h_1a4dbc2b2f097e32571b1d432114847677" compoundref="_dallas_temperature_8h" startline="52">TEMP_10_BIT</references>
+        <references refid="_dallas_temperature_8h_1afe512788bd1d37ff9f7388a2889261fe" compoundref="_dallas_temperature_8h" startline="53">TEMP_11_BIT</references>
+        <references refid="_dallas_temperature_8h_1ae328535feed86c66430a4f5f550d909e" compoundref="_dallas_temperature_8h" startline="54">TEMP_12_BIT</references>
+        <references refid="_dallas_temperature_8h_1ad8c0a8d6cdda8e4c7904db527d4201ee" compoundref="_dallas_temperature_8h" startline="51">TEMP_9_BIT</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a394897437dfb8de4c8fd2198a1d1c356" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::setResolution</definition>
+        <argsstring>(const uint8_t *, uint8_t, bool skipGlobalBitResolutionCalculation=false)</argsstring>
+        <name>setResolution</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <defname>newResolution</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>skipGlobalBitResolutionCalculation</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="113" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="198" bodyend="247"/>
+        <references refid="_dallas_temperature_8h_1a5fa120064b78d91b6a77f868bbda5a99" compoundref="_dallas_temperature_8h" startline="44">CONFIGURATION</references>
+        <references refid="_dallas_temperature_8h_1a35995eb038ced9c7c25f6c13126be9f1" compoundref="_dallas_temperature_8h" startline="25">DS18S20MODEL</references>
+        <references refid="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" compoundref="_dallas_temperature_8cpp" startline="84" endline="97">getAddress</references>
+        <references refid="class_dallas_temperature_1a9dac13206229d7c8fb75f21bf44e75ed" compoundref="_dallas_temperature_8cpp" startline="250" endline="252">getResolution</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="class_dallas_temperature_1a19afa5e594de0ab6caa5a48a70650927" compoundref="_dallas_temperature_8cpp" startline="100" endline="105">isConnected</references>
+        <references refid="_dallas_temperature_8h_1a4dbc2b2f097e32571b1d432114847677" compoundref="_dallas_temperature_8h" startline="52">TEMP_10_BIT</references>
+        <references refid="_dallas_temperature_8h_1afe512788bd1d37ff9f7388a2889261fe" compoundref="_dallas_temperature_8h" startline="53">TEMP_11_BIT</references>
+        <references refid="_dallas_temperature_8h_1ae328535feed86c66430a4f5f550d909e" compoundref="_dallas_temperature_8h" startline="54">TEMP_12_BIT</references>
+        <references refid="_dallas_temperature_8h_1ad8c0a8d6cdda8e4c7904db527d4201ee" compoundref="_dallas_temperature_8h" startline="51">TEMP_9_BIT</references>
+        <references refid="class_dallas_temperature_1a74c275dabf103f268c5a271d379dcb7e" compoundref="_dallas_temperature_8cpp" startline="146" endline="167">writeScratchPad</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1aa5f90d9f12327f39de97ed2244a4ad6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::setWaitForConversion</definition>
+        <argsstring>(bool)</argsstring>
+        <name>setWaitForConversion</name>
+        <param>
+          <type>bool</type>
+          <defname>flag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="116" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="289" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1abb49c5903d68b86c0cf2da5e2b849a43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::getWaitForConversion</definition>
+        <argsstring>(void)</argsstring>
+        <name>getWaitForConversion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="117" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="294" bodyend="296"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1ae8ef644d60236af12963f37fe145a49a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::setCheckForConversion</definition>
+        <argsstring>(bool)</argsstring>
+        <name>setCheckForConversion</name>
+        <param>
+          <type>bool</type>
+          <defname>flag</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="120" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="302" bodyend="304"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a7541728802904b0ed8d17a7f5ef00801" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::getCheckForConversion</definition>
+        <argsstring>(void)</argsstring>
+        <name>getCheckForConversion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="121" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="307" bodyend="309"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a5d28cff0d7e317c28e28c0f1a62fbe6d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::requestTemperatures</definition>
+        <argsstring>(void)</argsstring>
+        <name>requestTemperatures</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="124" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="327" bodyend="337"/>
+        <references refid="class_one_wire_1a6a742a9112392567eae3d06dde067c07" compoundref="_one_wire_8cpp" startline="142" endline="170">OneWire::reset</references>
+        <references refid="class_one_wire_1ae3780e2b0ea2ebf6be88298412ac7798" compoundref="_one_wire_8cpp" startline="287" endline="290">OneWire::skip</references>
+        <references refid="_dallas_temperature_8h_1a8825862e1ce7be4f9bc841b9fb38fa2d" compoundref="_dallas_temperature_8h" startline="31">STARTCONVO</references>
+        <references refid="class_one_wire_1a843e9e7e57ed615b4880be0b76b40b7d" compoundref="_one_wire_8cpp" startline="229" endline="241">OneWire::write</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1aee2a2abd5f8293df9a0a030b3e982c90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::requestTemperaturesByAddress</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>requestTemperaturesByAddress</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="127" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="342" bodyend="364"/>
+        <references refid="class_dallas_temperature_1a9dac13206229d7c8fb75f21bf44e75ed" compoundref="_dallas_temperature_8cpp" startline="250" endline="252">getResolution</references>
+        <references refid="class_dallas_temperature_1adaf460a3b8004218e97af7059d41053a" compoundref="_dallas_temperature_8cpp" startline="311" endline="318">isConversionAvailable</references>
+        <references refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" compoundref="_time_8cpp" startline="250" endline="272">now</references>
+        <references refid="class_one_wire_1a6a742a9112392567eae3d06dde067c07" compoundref="_one_wire_8cpp" startline="142" endline="170">OneWire::reset</references>
+        <references refid="class_one_wire_1accf808390abd63d3c7bce35677784384" compoundref="_one_wire_8cpp" startline="275" endline="282">OneWire::select</references>
+        <references refid="_dallas_temperature_8h_1a8825862e1ce7be4f9bc841b9fb38fa2d" compoundref="_dallas_temperature_8h" startline="31">STARTCONVO</references>
+        <references refid="class_one_wire_1a843e9e7e57ed615b4880be0b76b40b7d" compoundref="_one_wire_8cpp" startline="229" endline="241">OneWire::write</references>
+        <referencedby refid="class_dallas_temperature_1ae9a7bf62321615519242d2421c8b349a" compoundref="_dallas_temperature_8cpp" startline="398" endline="405">requestTemperaturesByIndex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1ae9a7bf62321615519242d2421c8b349a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::requestTemperaturesByIndex</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>requestTemperaturesByIndex</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>deviceIndex</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="130" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="398" bodyend="405"/>
+        <references refid="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" compoundref="_dallas_temperature_8cpp" startline="84" endline="97">getAddress</references>
+        <references refid="class_dallas_temperature_1aee2a2abd5f8293df9a0a030b3e982c90" compoundref="_dallas_temperature_8cpp" startline="342" endline="364">requestTemperaturesByAddress</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a37c3723cc15d5e46d0a6caa96a3c4781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t DallasTemperature::getTemp</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>getTemp</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="133" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="481" bodyend="487"/>
+        <references refid="_dallas_temperature_8h_1a34f9f3fbd4210dade23b0b82d2aa7eef" compoundref="_dallas_temperature_8h" startline="59">DEVICE_DISCONNECTED_RAW</references>
+        <references refid="class_dallas_temperature_1a19afa5e594de0ab6caa5a48a70650927" compoundref="_dallas_temperature_8cpp" startline="100" endline="105">isConnected</references>
+        <referencedby refid="class_dallas_temperature_1a20f94b59909b46e55a77b399d99591a2" compoundref="_dallas_temperature_8cpp" startline="494" endline="496">getTempC</referencedby>
+        <referencedby refid="class_dallas_temperature_1ace033fbd8e4c7e17c4bcd7ecc8f3ebea" compoundref="_dallas_temperature_8cpp" startline="503" endline="505">getTempF</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a20f94b59909b46e55a77b399d99591a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float DallasTemperature::getTempC</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>getTempC</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="136" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="494" bodyend="496"/>
+        <references refid="class_dallas_temperature_1a37c3723cc15d5e46d0a6caa96a3c4781" compoundref="_dallas_temperature_8cpp" startline="481" endline="487">getTemp</references>
+        <references refid="class_dallas_temperature_1a75accb4a56858189accda00e5eabb06e" compoundref="_dallas_temperature_8cpp" startline="571" endline="578">rawToCelsius</references>
+        <referencedby refid="class_dallas_temperature_1a7e3e2e23257aac6b6c896df205d5b3b5" compoundref="_dallas_temperature_8cpp" startline="408" endline="417">getTempCByIndex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1ace033fbd8e4c7e17c4bcd7ecc8f3ebea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float DallasTemperature::getTempF</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>getTempF</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="139" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="503" bodyend="505"/>
+        <references refid="class_dallas_temperature_1a37c3723cc15d5e46d0a6caa96a3c4781" compoundref="_dallas_temperature_8cpp" startline="481" endline="487">getTemp</references>
+        <references refid="class_dallas_temperature_1a48bc1a4d0e33f1735964c22c8bd2f6fb" compoundref="_dallas_temperature_8cpp" startline="581" endline="589">rawToFahrenheit</references>
+        <referencedby refid="class_dallas_temperature_1a96318d36b313e1f4f413e2ed2b7501c7" compoundref="_dallas_temperature_8cpp" startline="420" endline="430">getTempFByIndex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a7e3e2e23257aac6b6c896df205d5b3b5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float DallasTemperature::getTempCByIndex</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>getTempCByIndex</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>deviceIndex</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="142" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="408" bodyend="417"/>
+        <references refid="_dallas_temperature_8h_1a164f6f267818ab7c75490529f046f28a" compoundref="_dallas_temperature_8h" startline="57">DEVICE_DISCONNECTED_C</references>
+        <references refid="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" compoundref="_dallas_temperature_8cpp" startline="84" endline="97">getAddress</references>
+        <references refid="class_dallas_temperature_1a20f94b59909b46e55a77b399d99591a2" compoundref="_dallas_temperature_8cpp" startline="494" endline="496">getTempC</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a96318d36b313e1f4f413e2ed2b7501c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float DallasTemperature::getTempFByIndex</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>getTempFByIndex</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>deviceIndex</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="145" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="420" bodyend="430"/>
+        <references refid="_dallas_temperature_8h_1a32ec8a9a258e8a70c4125d14b71ca7b2" compoundref="_dallas_temperature_8h" startline="47">COUNT_PER_C</references>
+        <references refid="_dallas_temperature_8h_1ad4f3030cdf560af74faf18a34c155f27" compoundref="_dallas_temperature_8h" startline="46">COUNT_REMAIN</references>
+        <references refid="_dallas_temperature_8h_1ae9200847ca4d6801b55a353d5682d2ff" compoundref="_dallas_temperature_8h" startline="58">DEVICE_DISCONNECTED_F</references>
+        <references refid="_dallas_temperature_8h_1a35995eb038ced9c7c25f6c13126be9f1" compoundref="_dallas_temperature_8h" startline="25">DS18S20MODEL</references>
+        <references refid="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" compoundref="_dallas_temperature_8cpp" startline="84" endline="97">getAddress</references>
+        <references refid="class_dallas_temperature_1ace033fbd8e4c7e17c4bcd7ecc8f3ebea" compoundref="_dallas_temperature_8cpp" startline="503" endline="505">getTempF</references>
+        <references refid="_dallas_temperature_8h_1a50c6fe6c933616d6e014716c450b250d" compoundref="_dallas_temperature_8h" startline="40">TEMP_LSB</references>
+        <references refid="_dallas_temperature_8h_1abca29bf63807a8319b6b8ee7af2bba53" compoundref="_dallas_temperature_8h" startline="41">TEMP_MSB</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a835945ed3e8d78c31791e55f22084691" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::isParasitePowerMode</definition>
+        <argsstring>(void)</argsstring>
+        <name>isParasitePowerMode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="148" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="508" bodyend="510"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1adaf460a3b8004218e97af7059d41053a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::isConversionAvailable</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>isConversionAvailable</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="150" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="311" bodyend="318"/>
+        <references refid="class_dallas_temperature_1a2b55774207d0211fd679247a7137142b" compoundref="_dallas_temperature_8cpp" startline="115" endline="143">readScratchPad</references>
+        <referencedby refid="class_dallas_temperature_1aee2a2abd5f8293df9a0a030b3e982c90" compoundref="_dallas_temperature_8cpp" startline="342" endline="364">requestTemperaturesByAddress</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a9e92719781d3ead44b95964d59edd41d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DallasTemperature::isConversionComplete</definition>
+        <argsstring>(void)</argsstring>
+        <name>isConversionComplete</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="153" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="320" bodyend="324"/>
+        <references refid="class_one_wire_1aeae4c2798b70d9d0ba3091c03ee2d056" compoundref="_one_wire_8cpp" startline="204" endline="220">OneWire::read_bit</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a0ed69b03ed848936ea0c8deea0e5c2ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::setUserData</definition>
+        <argsstring>(const uint8_t *, int16_t)</argsstring>
+        <name>setUserData</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="203" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="518" bodyend="530"/>
+        <references refid="class_dallas_temperature_1a3601e8ee63c4770b716817ed68664400" compoundref="_dallas_temperature_8cpp" startline="532" endline="542">getUserData</references>
+        <references refid="_dallas_temperature_8h_1a80e085e8540d59e6a84c59e12a4bcfc2" compoundref="_dallas_temperature_8h" startline="42">HIGH_ALARM_TEMP</references>
+        <references refid="class_dallas_temperature_1a19afa5e594de0ab6caa5a48a70650927" compoundref="_dallas_temperature_8cpp" startline="100" endline="105">isConnected</references>
+        <references refid="_dallas_temperature_8h_1a5cabe4c79bafbac7653fcc7acec33a9b" compoundref="_dallas_temperature_8h" startline="43">LOW_ALARM_TEMP</references>
+        <references refid="class_dallas_temperature_1a74c275dabf103f268c5a271d379dcb7e" compoundref="_dallas_temperature_8cpp" startline="146" endline="167">writeScratchPad</references>
+        <referencedby refid="class_dallas_temperature_1a65ae6994218200e92ce43bffd122d46b" compoundref="_dallas_temperature_8cpp" startline="552" endline="557">setUserDataByIndex</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a65ae6994218200e92ce43bffd122d46b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::setUserDataByIndex</definition>
+        <argsstring>(uint8_t, int16_t)</argsstring>
+        <name>setUserDataByIndex</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>deviceIndex</defname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <defname>data</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="204" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="552" bodyend="557"/>
+        <references refid="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" compoundref="_dallas_temperature_8cpp" startline="84" endline="97">getAddress</references>
+        <references refid="class_dallas_temperature_1a0ed69b03ed848936ea0c8deea0e5c2ba" compoundref="_dallas_temperature_8cpp" startline="518" endline="530">setUserData</references>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a3601e8ee63c4770b716817ed68664400" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t DallasTemperature::getUserData</definition>
+        <argsstring>(const uint8_t *)</argsstring>
+        <name>getUserData</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="205" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="532" bodyend="542"/>
+        <references refid="_dallas_temperature_8h_1a80e085e8540d59e6a84c59e12a4bcfc2" compoundref="_dallas_temperature_8h" startline="42">HIGH_ALARM_TEMP</references>
+        <references refid="class_dallas_temperature_1a19afa5e594de0ab6caa5a48a70650927" compoundref="_dallas_temperature_8cpp" startline="100" endline="105">isConnected</references>
+        <references refid="_dallas_temperature_8h_1a5cabe4c79bafbac7653fcc7acec33a9b" compoundref="_dallas_temperature_8h" startline="43">LOW_ALARM_TEMP</references>
+        <referencedby refid="class_dallas_temperature_1a4af999e72b9c5b85430666ad90fa9644" compoundref="_dallas_temperature_8cpp" startline="545" endline="550">getUserDataByIndex</referencedby>
+        <referencedby refid="class_dallas_temperature_1a0ed69b03ed848936ea0c8deea0e5c2ba" compoundref="_dallas_temperature_8cpp" startline="518" endline="530">setUserData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a4af999e72b9c5b85430666ad90fa9644" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t DallasTemperature::getUserDataByIndex</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>getUserDataByIndex</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>deviceIndex</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="206" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="545" bodyend="550"/>
+        <references refid="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" compoundref="_dallas_temperature_8cpp" startline="84" endline="97">getAddress</references>
+        <references refid="class_dallas_temperature_1a3601e8ee63c4770b716817ed68664400" compoundref="_dallas_temperature_8cpp" startline="532" endline="542">getUserData</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_dallas_temperature_1a2169f7bdd26479bbbf9f6fb3bf4e5bb2" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float DallasTemperature::toFahrenheit</definition>
+        <argsstring>(float)</argsstring>
+        <name>toFahrenheit</name>
+        <param>
+          <type>float</type>
+          <defname>celsius</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="209" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="561" bodyend="563"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1af6dfbcc587ae244c0508b6a51f2085a5" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float DallasTemperature::toCelsius</definition>
+        <argsstring>(float)</argsstring>
+        <name>toCelsius</name>
+        <param>
+          <type>float</type>
+          <defname>fahrenheit</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="212" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="566" bodyend="568"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a75accb4a56858189accda00e5eabb06e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float DallasTemperature::rawToCelsius</definition>
+        <argsstring>(int16_t)</argsstring>
+        <name>rawToCelsius</name>
+        <param>
+          <type>int16_t</type>
+          <defname>raw</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="215" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="571" bodyend="578"/>
+        <references refid="_dallas_temperature_8h_1a164f6f267818ab7c75490529f046f28a" compoundref="_dallas_temperature_8h" startline="57">DEVICE_DISCONNECTED_C</references>
+        <references refid="_dallas_temperature_8h_1a34f9f3fbd4210dade23b0b82d2aa7eef" compoundref="_dallas_temperature_8h" startline="59">DEVICE_DISCONNECTED_RAW</references>
+        <referencedby refid="class_dallas_temperature_1a20f94b59909b46e55a77b399d99591a2" compoundref="_dallas_temperature_8cpp" startline="494" endline="496">getTempC</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a48bc1a4d0e33f1735964c22c8bd2f6fb" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float DallasTemperature::rawToFahrenheit</definition>
+        <argsstring>(int16_t)</argsstring>
+        <name>rawToFahrenheit</name>
+        <param>
+          <type>int16_t</type>
+          <defname>raw</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="218" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="581" bodyend="589"/>
+        <references refid="_dallas_temperature_8h_1a164f6f267818ab7c75490529f046f28a" compoundref="_dallas_temperature_8h" startline="57">DEVICE_DISCONNECTED_C</references>
+        <references refid="_dallas_temperature_8h_1ae9200847ca4d6801b55a353d5682d2ff" compoundref="_dallas_temperature_8h" startline="58">DEVICE_DISCONNECTED_F</references>
+        <references refid="_dallas_temperature_8h_1a34f9f3fbd4210dade23b0b82d2aa7eef" compoundref="_dallas_temperature_8h" startline="59">DEVICE_DISCONNECTED_RAW</references>
+        <references refid="_dallas_temperature_8h_1a80e085e8540d59e6a84c59e12a4bcfc2" compoundref="_dallas_temperature_8h" startline="42">HIGH_ALARM_TEMP</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="class_dallas_temperature_1a19afa5e594de0ab6caa5a48a70650927" compoundref="_dallas_temperature_8cpp" startline="100" endline="105">isConnected</references>
+        <references refid="_dallas_temperature_8h_1a5cabe4c79bafbac7653fcc7acec33a9b" compoundref="_dallas_temperature_8h" startline="43">LOW_ALARM_TEMP</references>
+        <references refid="class_one_wire_1aeae4c2798b70d9d0ba3091c03ee2d056" compoundref="_one_wire_8cpp" startline="204" endline="220">OneWire::read_bit</references>
+        <references refid="class_one_wire_1a6a742a9112392567eae3d06dde067c07" compoundref="_one_wire_8cpp" startline="142" endline="170">OneWire::reset</references>
+        <references refid="class_dallas_temperature_1a71e4744b8d7b2f1c05a96cd158c83007" compoundref="_dallas_temperature_8cpp" startline="78" endline="80">validAddress</references>
+        <references refid="class_one_wire_1a843e9e7e57ed615b4880be0b76b40b7d" compoundref="_one_wire_8cpp" startline="229" endline="241">OneWire::write</references>
+        <references refid="class_one_wire_1a6bbc58276d1cb08653dab3ea35378f94" compoundref="_one_wire_8cpp" startline="176" endline="198">OneWire::write_bit</references>
+        <references refid="class_dallas_temperature_1a74c275dabf103f268c5a271d379dcb7e" compoundref="_dallas_temperature_8cpp" startline="146" endline="167">writeScratchPad</references>
+        <referencedby refid="class_dallas_temperature_1ace033fbd8e4c7e17c4bcd7ecc8f3ebea" compoundref="_dallas_temperature_8cpp" startline="503" endline="505">getTempF</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_dallas_temperature_1a94616dd5cee7dcbe196a36a560d78974" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t DallasTemperature::calculateTemperature</definition>
+        <argsstring>(const uint8_t *, uint8_t *)</argsstring>
+        <name>calculateTemperature</name>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <defname>scratchPad</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="253" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="433" bodyend="473"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1a4af3e6e257a48ad41f03ec3ae1a9b64f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t DallasTemperature::millisToWaitForConversion</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>millisToWaitForConversion</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>bitResolution</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="255" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="381" bodyend="394"/>
+      </memberdef>
+      <memberdef kind="function" id="class_dallas_temperature_1aca929fd4548a765d29549b34c2561e79" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DallasTemperature::blockTillConversionComplete</definition>
+        <argsstring>(uint8_t, const uint8_t *)</argsstring>
+        <name>blockTillConversionComplete</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>bitResolution</defname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <defname>deviceAddress</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="257" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.cpp" bodystart="368" bodyend="378"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" line="64" column="1" bodyfile="Weather_Balloon/library/Arduino-Temperature-Control-Library/DallasTemperature.h" bodystart="63" bodyend="271"/>
+    <listofallmembers>
+      <member refid="class_dallas_temperature_1a8b11f739e5f4e2e7cddc21b47b28eab9" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>_wire</name></member>
+      <member refid="class_dallas_temperature_1aea297b5f2a720a5455245c0fbf7333ec" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>begin</name></member>
+      <member refid="class_dallas_temperature_1aadda277b261573062fead457552d9be6" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>bitResolution</name></member>
+      <member refid="class_dallas_temperature_1aca929fd4548a765d29549b34c2561e79" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>blockTillConversionComplete</name></member>
+      <member refid="class_dallas_temperature_1a94616dd5cee7dcbe196a36a560d78974" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>calculateTemperature</name></member>
+      <member refid="class_dallas_temperature_1a60788371290c97ee586b8f5558ee8f92" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>checkForConversion</name></member>
+      <member refid="class_dallas_temperature_1af46e868b6702ff5f77263985cd990e01" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>DallasTemperature</name></member>
+      <member refid="class_dallas_temperature_1a37139ebd1a6122e232800528aee8cb2b" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>DallasTemperature</name></member>
+      <member refid="class_dallas_temperature_1a92f8955b1d83d341202af62823e17ed6" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>devices</name></member>
+      <member refid="class_dallas_temperature_1afa644bebf50c81b6641a31c585b62538" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getAddress</name></member>
+      <member refid="class_dallas_temperature_1a7541728802904b0ed8d17a7f5ef00801" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getCheckForConversion</name></member>
+      <member refid="class_dallas_temperature_1a8bf92c0b6b8c3167daca4c2046ade13a" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getDeviceCount</name></member>
+      <member refid="class_dallas_temperature_1a9dac13206229d7c8fb75f21bf44e75ed" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getResolution</name></member>
+      <member refid="class_dallas_temperature_1a2266822561e864c4921955697c1ac7f5" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getResolution</name></member>
+      <member refid="class_dallas_temperature_1a37c3723cc15d5e46d0a6caa96a3c4781" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getTemp</name></member>
+      <member refid="class_dallas_temperature_1a20f94b59909b46e55a77b399d99591a2" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getTempC</name></member>
+      <member refid="class_dallas_temperature_1a7e3e2e23257aac6b6c896df205d5b3b5" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getTempCByIndex</name></member>
+      <member refid="class_dallas_temperature_1ace033fbd8e4c7e17c4bcd7ecc8f3ebea" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getTempF</name></member>
+      <member refid="class_dallas_temperature_1a96318d36b313e1f4f413e2ed2b7501c7" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getTempFByIndex</name></member>
+      <member refid="class_dallas_temperature_1a3601e8ee63c4770b716817ed68664400" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getUserData</name></member>
+      <member refid="class_dallas_temperature_1a4af999e72b9c5b85430666ad90fa9644" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getUserDataByIndex</name></member>
+      <member refid="class_dallas_temperature_1abb49c5903d68b86c0cf2da5e2b849a43" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>getWaitForConversion</name></member>
+      <member refid="class_dallas_temperature_1a19afa5e594de0ab6caa5a48a70650927" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>isConnected</name></member>
+      <member refid="class_dallas_temperature_1a624f64b186c13927d4f74bd7c5b92c2e" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>isConnected</name></member>
+      <member refid="class_dallas_temperature_1adaf460a3b8004218e97af7059d41053a" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>isConversionAvailable</name></member>
+      <member refid="class_dallas_temperature_1a9e92719781d3ead44b95964d59edd41d" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>isConversionComplete</name></member>
+      <member refid="class_dallas_temperature_1a835945ed3e8d78c31791e55f22084691" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>isParasitePowerMode</name></member>
+      <member refid="class_dallas_temperature_1a4af3e6e257a48ad41f03ec3ae1a9b64f" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>millisToWaitForConversion</name></member>
+      <member refid="class_dallas_temperature_1a8e7e1f32daf75637d9dfc119f7b6e922" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>parasite</name></member>
+      <member refid="class_dallas_temperature_1a75accb4a56858189accda00e5eabb06e" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>rawToCelsius</name></member>
+      <member refid="class_dallas_temperature_1a48bc1a4d0e33f1735964c22c8bd2f6fb" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>rawToFahrenheit</name></member>
+      <member refid="class_dallas_temperature_1af6a28c1d1009dd6d010d97dffaf5942d" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>readPowerSupply</name></member>
+      <member refid="class_dallas_temperature_1a2b55774207d0211fd679247a7137142b" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>readScratchPad</name></member>
+      <member refid="class_dallas_temperature_1a5d28cff0d7e317c28e28c0f1a62fbe6d" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>requestTemperatures</name></member>
+      <member refid="class_dallas_temperature_1aee2a2abd5f8293df9a0a030b3e982c90" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>requestTemperaturesByAddress</name></member>
+      <member refid="class_dallas_temperature_1ae9a7bf62321615519242d2421c8b349a" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>requestTemperaturesByIndex</name></member>
+      <member refid="class_dallas_temperature_1aa7e6595cece289fed54cab6577c1ce9f" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>ScratchPad</name></member>
+      <member refid="class_dallas_temperature_1ae8ef644d60236af12963f37fe145a49a" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>setCheckForConversion</name></member>
+      <member refid="class_dallas_temperature_1af985bf5f9ed6857424e8a9532eaf5e2f" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>setOneWire</name></member>
+      <member refid="class_dallas_temperature_1a43363ee4b227f1ecf9c33cd4e072c0c9" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>setResolution</name></member>
+      <member refid="class_dallas_temperature_1a394897437dfb8de4c8fd2198a1d1c356" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>setResolution</name></member>
+      <member refid="class_dallas_temperature_1a0ed69b03ed848936ea0c8deea0e5c2ba" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>setUserData</name></member>
+      <member refid="class_dallas_temperature_1a65ae6994218200e92ce43bffd122d46b" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>setUserDataByIndex</name></member>
+      <member refid="class_dallas_temperature_1aa5f90d9f12327f39de97ed2244a4ad6f" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>setWaitForConversion</name></member>
+      <member refid="class_dallas_temperature_1af6dfbcc587ae244c0508b6a51f2085a5" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>toCelsius</name></member>
+      <member refid="class_dallas_temperature_1a2169f7bdd26479bbbf9f6fb3bf4e5bb2" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>toFahrenheit</name></member>
+      <member refid="class_dallas_temperature_1a71e4744b8d7b2f1c05a96cd158c83007" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>validAddress</name></member>
+      <member refid="class_dallas_temperature_1a3f3678c8defd473e8eebd9cfe793b329" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>validFamily</name></member>
+      <member refid="class_dallas_temperature_1ab92a1dab9945bf41bb1044cf63abb73b" prot="private" virt="non-virtual"><scope>DallasTemperature</scope><name>waitForConversion</name></member>
+      <member refid="class_dallas_temperature_1a74c275dabf103f268c5a271d379dcb7e" prot="public" virt="non-virtual"><scope>DallasTemperature</scope><name>writeScratchPad</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

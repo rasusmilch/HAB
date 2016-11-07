@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="arduino-ms5xxx-master_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">arduino-ms5xxx</highlight></codeline>
+<codeline><highlight class="normal">==============</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Arduino<sp/>Library<sp/>with<sp/>examples<sp/>for<sp/>using<sp/>digital<sp/>pressure<sp/>sensors<sp/>MS5607/MS5611<sp/>(and<sp/>MS56xx,<sp/>MS57xx,<sp/>MS58xx)<sp/>based<sp/>on<sp/>AN520<sp/>by<sp/>manufacturer<sp/>and<sp/>the<sp/>datasheets.<sp/>This<sp/>library<sp/>has<sp/>been<sp/>tested<sp/>extensively<sp/>(over<sp/>almost<sp/>a<sp/>year<sp/>of<sp/>datataking)<sp/>with<sp/>MS5607<sp/>and<sp/>also<sp/>tested<sp/>newer<sp/>MS5611<sp/>sensors.<sp/></highlight></codeline>
+<codeline><highlight class="normal">Note<sp/>the<sp/>different<sp/>I2C-addresses,<sp/>calculations<sp/>and<sp/>correction<sp/>functions<sp/>between<sp/>the<sp/>different<sp/>chips.<sp/>One<sp/>generic<sp/>MS5xxx-class<sp/>as<sp/>well<sp/>as<sp/>a<sp/>derived<sp/>class<sp/>MS5611<sp/>with<sp/>the<sp/>new<sp/>I2C<sp/>address<sp/>and<sp/>the<sp/>new<sp/>calculations<sp/>have<sp/>been<sp/>implemented.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>examples<sp/>nicely<sp/>show<sp/>how<sp/>to<sp/>use<sp/>this<sp/>library<sp/>with<sp/>the<sp/>standard<sp/>MS5xxx-class.<sp/>For<sp/>usage<sp/>with<sp/>MS5611<sp/>chips<sp/>just<sp/>use<sp/>the<sp/>class<sp/>MS5611<sp/>in<sp/>the<sp/>same<sp/>way.</highlight></codeline>
+<codeline><highlight class="normal">&quot;Standard<sp/>units&quot;<sp/>are<sp/>Pascals<sp/>for<sp/>pressure<sp/>and<sp/>0.01<sp/>°C<sp/>for<sp/>temperature<sp/>as<sp/>calculations<sp/>are<sp/>done<sp/>exactly<sp/>as<sp/>shown<sp/>in<sp/>the<sp/>manufacturers<sp/>datasheet.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![DOI](https://zenodo.org/badge/doi/10.5281/zenodo.47085.svg)](http://dx.doi.org/10.5281/zenodo.47085)</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/arduino-ms5xxx-master/README.md"/>
+  </compounddef>
+</doxygen>

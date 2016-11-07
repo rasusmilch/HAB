@@ -1,0 +1,8 @@
+<map id="location_alarm" name="location_alarm">
+<area shape="rect" id="node2" href="$_weather___balloon_8cpp.html#a538a7506e344ec9bf046564b160e9e7f" title="beep_piezo" alt="" coords="181,5,265,32"/>
+<area shape="rect" id="node3" href="$_weather___balloon_8cpp.html#a822a13dcab2c88f65ce6db0a3039596d" title="disable_peripherals" alt="" coords="159,56,288,83"/>
+<area shape="rect" id="node4" href="$_weather___balloon_8cpp.html#a38dae68379e12eee7b465eac207d9e27" title="enter_sleep" alt="" coords="181,107,265,133"/>
+<area shape="rect" id="node5" href="$_weather___balloon_8cpp.html#af51f9e3565b0bfa3e28998f39b6a5217" title="flash_landing" alt="" coords="176,157,271,184"/>
+<area shape="rect" id="node6" href="$_weather___balloon_8cpp.html#a8cc7d86d6ef1fa4f680bfe19b3246307" title="piezo_power" alt="" coords="177,208,270,235"/>
+<area shape="rect" id="node7" href="$_weather___balloon_8cpp.html#a905910daced665e99b1c14fa51ef9938" title="watchdog_sleep" alt="" coords="168,259,279,285"/>
+</map>

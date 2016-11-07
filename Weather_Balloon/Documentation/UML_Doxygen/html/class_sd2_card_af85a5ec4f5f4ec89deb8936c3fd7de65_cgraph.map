@@ -1,0 +1,8 @@
+<map id="Sd2Card::Sd2Card" name="Sd2Card::Sd2Card">
+<area shape="rect" id="node2" href="$class_sd2_card.html#a862473431cc314238bfccdc531a70d3a" title="Sd2Card::cardSize" alt="" coords="348,5,468,32"/>
+<area shape="rect" id="node6" href="$class_sd2_card.html#af49fb720fad1d3ea9f5782da0d87fc0b" title="Sd2Card::erase" alt="" coords="173,56,276,83"/>
+<area shape="rect" id="node7" href="$class_sd2_card.html#a2e3998f6e910a2936d3ef54bf082b2ce" title="Sd2Card::eraseSingleBlock\lEnable" alt="" coords="324,57,492,98"/>
+<area shape="rect" id="node3" href="$class_sd2_card.html#a79845d8d4593cb3b1b7641ba27edddfb" title="Sd2Card::readCSD" alt="" coords="540,35,663,61"/>
+<area shape="rect" id="node4" href="$class_sd2_card.html#a0de961537d051bbcafd87ed9fff5fe48" title="Sd2Card::readEnd" alt="" coords="717,9,836,36"/>
+<area shape="rect" id="node5" href="$class_sd2_card.html#ad849b8896de9abd4e24bd98f4204ccc4" title="Sd2Card::setSckRate" alt="" coords="711,60,843,87"/>
+</map>

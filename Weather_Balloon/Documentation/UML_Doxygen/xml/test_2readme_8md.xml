@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="test_2readme_8md" kind="file" language="Markdown">
+    <compoundname>readme.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#Testing<sp/>Firmata</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Tests<sp/>tests<sp/>are<sp/>written<sp/>using<sp/>the<sp/>[ArduinoUnit](https://github.com/mmurdoch/arduinounit)<sp/>library<sp/>(version<sp/>2.0).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Follow<sp/>the<sp/>instructions<sp/>in<sp/>the<sp/>[ArduinoUnit<sp/>readme](https://github.com/mmurdoch/arduinounit/blob/master/readme.md)<sp/>to<sp/>install<sp/>the<sp/>library.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Compile<sp/>and<sp/>upload<sp/>the<sp/>test<sp/>sketch<sp/>as<sp/>you<sp/>would<sp/>any<sp/>other<sp/>sketch.<sp/>Then<sp/>open<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">Serial<sp/>Monitor<sp/>to<sp/>view<sp/>the<sp/>test<sp/>results.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>make<sp/>changes<sp/>to<sp/>Firmata.cpp,<sp/>run<sp/>the<sp/>tests<sp/>in<sp/>/test/<sp/>to<sp/>ensure</highlight></codeline>
+<codeline><highlight class="normal">that<sp/>your<sp/>changes<sp/>have<sp/>not<sp/>produced<sp/>any<sp/>unexpected<sp/>errors.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>should<sp/>also<sp/>perform<sp/>manual<sp/>tests<sp/>against<sp/>actual<sp/>hardware.</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Firmata/test/readme.md"/>
+  </compounddef>
+</doxygen>

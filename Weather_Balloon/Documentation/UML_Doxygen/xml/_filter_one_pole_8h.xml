@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_filter_one_pole_8h" kind="file" language="C++">
+    <compoundname>FilterOnePole.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includedby refid="_filter_one_pole_8cpp" local="yes">Weather_Balloon/library/Filters/FilterOnePole.cpp</includedby>
+    <includedby refid="_filters_8h" local="yes">Weather_Balloon/library/Filters/Filters.h</includedby>
+    <includedby refid="_running_statistics_8h" local="yes">Weather_Balloon/library/Filters/RunningStatistics.h</includedby>
+    <incdepgraph>
+      <node id="717">
+        <label>Weather_Balloon/library/Filters/FilterOnePole.h</label>
+        <link refid="FilterOnePole.h"/>
+        <childnode refid="718" relation="include">
+        </childnode>
+      </node>
+      <node id="718">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="722">
+        <label>Weather_Balloon/library/Filters/RunningStatistics.h</label>
+        <link refid="_running_statistics_8h"/>
+        <childnode refid="721" relation="include">
+        </childnode>
+        <childnode refid="723" relation="include">
+        </childnode>
+      </node>
+      <node id="719">
+        <label>Weather_Balloon/library/Filters/FilterOnePole.h</label>
+        <link refid="FilterOnePole.h"/>
+        <childnode refid="720" relation="include">
+        </childnode>
+        <childnode refid="721" relation="include">
+        </childnode>
+        <childnode refid="722" relation="include">
+        </childnode>
+      </node>
+      <node id="720">
+        <label>Weather_Balloon/library/Filters/FilterOnePole.cpp</label>
+        <link refid="_filter_one_pole_8cpp"/>
+      </node>
+      <node id="721">
+        <label>Weather_Balloon/library/Filters/Filters.h</label>
+        <link refid="_filters_8h"/>
+      </node>
+      <node id="723">
+        <label>Weather_Balloon/library/Filters/RunningStatistics.cpp</label>
+        <link refid="_running_statistics_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_filter_one_pole" prot="public">FilterOnePole</innerclass>
+    <innerclass refid="struct_filter_one_pole_cascade" prot="public">FilterOnePoleCascade</innerclass>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9a" prot="public" static="no">
+        <name>FILTER_TYPE</name>
+        <enumvalue id="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa2ef4633b5cfe5eacaff1e7cef80a56e8" prot="public">
+          <name>HIGHPASS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa0f056d1892baa220efdb9afeca443025" prot="public">
+          <name>LOWPASS</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa3250d36e92bb9547e346c654be8528f8" prot="public">
+          <name>INTEGRATOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa9b851f36799bcb1dcd3606c6fd679d60" prot="public">
+          <name>DIFFERENTIATOR</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterOnePole.h" line="6" column="1" bodyfile="Weather_Balloon/library/Filters/FilterOnePole.h" bodystart="6" bodyend="11"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FilterOnePole_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FilterOnePole_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6" refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9a" kindref="member">FILTER_TYPE</ref><sp/>{</highlight></codeline>
+<codeline lineno="7" refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa2ef4633b5cfe5eacaff1e7cef80a56e8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa2ef4633b5cfe5eacaff1e7cef80a56e8" kindref="member">HIGHPASS</ref>,</highlight></codeline>
+<codeline lineno="8" refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa0f056d1892baa220efdb9afeca443025" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa0f056d1892baa220efdb9afeca443025" kindref="member">LOWPASS</ref>,</highlight></codeline>
+<codeline lineno="9" refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa3250d36e92bb9547e346c654be8528f8" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa3250d36e92bb9547e346c654be8528f8" kindref="member">INTEGRATOR</ref>,</highlight></codeline>
+<codeline lineno="10" refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa9b851f36799bcb1dcd3606c6fd679d60" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa9b851f36799bcb1dcd3606c6fd679d60" kindref="member">DIFFERENTIATOR</ref></highlight></codeline>
+<codeline lineno="11"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>recursive<sp/>filter<sp/>class<sp/>implements<sp/>a<sp/>recursive<sp/>filter<sp/>(low<sp/>/<sp/>pass<sp/>/<sp/>highpass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/>note<sp/>that<sp/>this<sp/>must<sp/>be<sp/>updated<sp/>in<sp/>a<sp/>loop,<sp/>using<sp/>the<sp/>most<sp/>recent<sp/>acquired<sp/>values<sp/>and<sp/>the<sp/>time<sp/>acquired</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Y<sp/>=<sp/>a0*X<sp/>+<sp/>a1*Xm1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>+<sp/>b1*Ylast</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="struct_filter_one_pole" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_filter_one_pole" kindref="compound">FilterOnePole</ref><sp/>{</highlight></codeline>
+<codeline lineno="18" refid="struct_filter_one_pole_1aed9400fc1b781fc227344d67509394a4" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9a" kindref="member">FILTER_TYPE</ref><sp/><ref refid="struct_filter_one_pole_1aed9400fc1b781fc227344d67509394a4" kindref="member">FT</ref>;</highlight></codeline>
+<codeline lineno="19" refid="struct_filter_one_pole_1adbd63db9a63cdd75fea57ad393729d69" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1adbd63db9a63cdd75fea57ad393729d69" kindref="member">TauUS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>decay<sp/>constant<sp/>of<sp/>the<sp/>filter,<sp/>in<sp/>US</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="struct_filter_one_pole_1a7d7271a45a4dbd1c0833c6f840199afc" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a7d7271a45a4dbd1c0833c6f840199afc" kindref="member">TauSamps</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tau,<sp/>measued<sp/>in<sp/>samples<sp/>(this<sp/>changes,<sp/>depending<sp/>on<sp/>how<sp/>long<sp/>between<sp/>input()s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>filter<sp/>values<sp/>-<sp/>these<sp/>are<sp/>public,<sp/>but<sp/>should<sp/>not<sp/>be<sp/>set<sp/>externally</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="struct_filter_one_pole_1ad56691be0ad6f6958b9510f4c16538ad" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1ad56691be0ad6f6958b9510f4c16538ad" kindref="member">Y</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>most<sp/>recent<sp/>output<sp/>value<sp/>(gets<sp/>computed<sp/>on<sp/>update)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="struct_filter_one_pole_1aadcc9674d50c233b8fab1228aa338467" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1aadcc9674d50c233b8fab1228aa338467" kindref="member">Ylast</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>prevous<sp/>output<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="struct_filter_one_pole_1a8270ac992e09c0edd3405a59809f28e5" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a8270ac992e09c0edd3405a59809f28e5" kindref="member">X</ref>;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>most<sp/>recent<sp/>input<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>elapsed<sp/>times<sp/>are<sp/>kept<sp/>in<sp/>long,<sp/>and<sp/>will<sp/>wrap<sp/>every</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>35<sp/>mins,<sp/>47<sp/>seconds<sp/>...<sp/>however,<sp/>the<sp/>wrap<sp/>does<sp/>not<sp/>matter,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>because<sp/>the<sp/>delta<sp/>will<sp/>still<sp/>be<sp/>correct<sp/>(always<sp/>positive<sp/>and<sp/>small)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="struct_filter_one_pole_1a0a611284884d31840b2169547f072fba" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a0a611284884d31840b2169547f072fba" kindref="member">ElapsedUS</ref>;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>time<sp/>since<sp/>last<sp/>update</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="struct_filter_one_pole_1a1d54fb0cd986555060c80d2b502b4200" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a1d54fb0cd986555060c80d2b502b4200" kindref="member">LastUS</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>last<sp/>time<sp/>measured</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_one_pole_1adc98d3d03b508f5796c3971c9d0c1f6a" kindref="member">FilterOnePole</ref>(<sp/><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9a" kindref="member">FILTER_TYPE</ref><sp/>ft=<ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9aa0f056d1892baa220efdb9afeca443025" kindref="member">LOWPASS</ref>,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>fc=1.0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>initialValue=0<sp/>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>sets<sp/>or<sp/>resets<sp/>the<sp/>parameters<sp/>and<sp/>state<sp/>of<sp/>the<sp/>filter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a7fe2658a2bf6d171895586d0bb9fba8f" kindref="member">setFilter</ref>(<sp/><ref refid="_filter_one_pole_8h_1a291796f7a1d5a022401edc940d62db9a" kindref="member">FILTER_TYPE</ref><sp/>ft,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>tauS,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>initialValue<sp/>);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a258a86ec2ee6db608f5839b3b2995185" kindref="member">setFrequency</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newFrequency<sp/>);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a90433addfb2a5509e7ace6c4d5da8fe9" kindref="member">setTau</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newTau<sp/>);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" kindref="member">input</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inVal<sp/>);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" kindref="member">output</ref>();</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a352bdb0ad964ec87a1b936409be05087" kindref="member">print</ref>();</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a5b54248319d02b3f15d93e6333339389" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1ad7393515a5f4d972714321a3a2ab7fdd" kindref="member">setToNewValue</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newVal<sp/>);<sp/><sp/></highlight><highlight class="comment">//<sp/>resets<sp/>the<sp/>filter<sp/>to<sp/>a<sp/>new<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/>two<sp/>pole<sp/>filter,<sp/>these<sp/>are<sp/>very<sp/>useful</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="struct_filter_one_pole_cascade" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_filter_one_pole_cascade" kindref="compound">FilterOnePoleCascade</ref><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="struct_filter_one_pole_cascade_1aac9323487315e0d835dd5dfd3e4aed01" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_one_pole" kindref="compound">FilterOnePole</ref><sp/><ref refid="struct_filter_one_pole_cascade_1aac9323487315e0d835dd5dfd3e4aed01" kindref="member">Pole1</ref>;</highlight></codeline>
+<codeline lineno="58" refid="struct_filter_one_pole_cascade_1ab12f11d5af6dc6736e3766a16473220a" refkind="member"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_one_pole" kindref="compound">FilterOnePole</ref><sp/><ref refid="struct_filter_one_pole_cascade_1ab12f11d5af6dc6736e3766a16473220a" kindref="member">Pole2</ref>;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_one_pole_cascade" kindref="compound">FilterOnePoleCascade</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>riseTime=1.0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>initialValue=0<sp/>);<sp/><sp/></highlight><highlight class="comment">//<sp/>rise<sp/>time<sp/>to<sp/>step<sp/>function,<sp/>10%<sp/>to<sp/>90%</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>rise<sp/>time<sp/>is<sp/>10%<sp/>to<sp/>90%,<sp/>for<sp/>a<sp/>step<sp/>input</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setRiseTime(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>riseTime<sp/>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1ad7393515a5f4d972714321a3a2ab7fdd" kindref="member">setToNewValue</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>newVal<sp/>);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a90ad61a0bbbf2b6db7c6b281f2747c24" kindref="member">input</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inVal<sp/>);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a571c2df141dab2b1072afcd192623f76" kindref="member">output</ref>();</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_one_pole_1a5b54248319d02b3f15d93e6333339389" kindref="member">test</ref>();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Filters/FilterOnePole.h"/>
+  </compounddef>
+</doxygen>

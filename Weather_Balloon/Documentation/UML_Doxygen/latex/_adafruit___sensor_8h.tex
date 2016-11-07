@@ -1,0 +1,571 @@
+\hypertarget{_adafruit___sensor_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+Sensor-\/master/\+Adafruit\+\_\+\+Sensor.h File Reference}
+\label{_adafruit___sensor_8h}\index{Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+Sensor-\/master/\+Adafruit\+\_\+\+Sensor.\+h@{Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+Sensor-\/master/\+Adafruit\+\_\+\+Sensor.\+h}}
+{\ttfamily \#include \char`\"{}W\+Program.\+h\char`\"{}}\\*
+Include dependency graph for Adafruit\+\_\+\+Sensor.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{_adafruit___sensor_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_adafruit___sensor_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{_adafruit___sensor_8h_structsensors__vec__t}{sensors\+\_\+vec\+\_\+t}
+\item 
+struct \hyperlink{_adafruit___sensor_8h_structsensors__color__t}{sensors\+\_\+color\+\_\+t}
+\item 
+struct \hyperlink{_adafruit___sensor_8h_structsensors__event__t}{sensors\+\_\+event\+\_\+t}
+\item 
+struct \hyperlink{_adafruit___sensor_8h_structsensor__t}{sensor\+\_\+t}
+\item 
+class \hyperlink{class_adafruit___sensor}{Adafruit\+\_\+\+Sensor}
+\item 
+union \hyperlink{_adafruit___sensor_8h_unionsensors__vec__t_8____unnamed____}{sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+\item 
+struct \hyperlink{_adafruit___sensor_8h_structsensors__vec__t_8____unnamed_____8____unnamed____}{sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+\item 
+struct \hyperlink{_adafruit___sensor_8h_structsensors__vec__t_8____unnamed_____8____unnamed____}{sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+\item 
+union \hyperlink{_adafruit___sensor_8h_unionsensors__color__t_8____unnamed____}{sensors\+\_\+color\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+\item 
+struct \hyperlink{_adafruit___sensor_8h_structsensors__color__t_8____unnamed_____8____unnamed____}{sensors\+\_\+color\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+\item 
+union \hyperlink{_adafruit___sensor_8h_unionsensors__event__t_8____unnamed____}{sensors\+\_\+event\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_adafruit___sensor_8h_adf2baeb9499e0aae21699e2345fd51bd}{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+E\+A\+R\+TH}~(9.\+80665\+F)
+\item 
+\#define \hyperlink{_adafruit___sensor_8h_a4c728b30ce5e9479e6fa974f6d10d03a}{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+M\+O\+ON}~(1.\+6\+F)
+\item 
+\#define \hyperlink{_adafruit___sensor_8h_a9520402939315a287a0ab085f6b21a5b}{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+UN}~(275.\+0\+F)
+\item 
+\#define \hyperlink{_adafruit___sensor_8h_ab70b42e9de016c42388ff5d293b75712}{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+T\+A\+N\+D\+A\+RD}~(\hyperlink{_adafruit___sensor_8h_adf2baeb9499e0aae21699e2345fd51bd}{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+E\+A\+R\+TH})
+\item 
+\#define \hyperlink{_adafruit___sensor_8h_a23db0dca57c605a25ddfcdc0e349fd27}{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+AX}~(60.\+0\+F)
+\item 
+\#define \hyperlink{_adafruit___sensor_8h_a7a7347c9dd68408657c181e16d75472d}{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+IN}~(30.\+0\+F)
+\item 
+\#define \hyperlink{_adafruit___sensor_8h_ad12eded4725631bfb3a662e743fe3bfb}{S\+E\+N\+S\+O\+R\+S\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+A\+L\+E\+V\+E\+L\+H\+PA}~(1013.\+25\+F)
+\item 
+\#define \hyperlink{_adafruit___sensor_8h_a54bd9549d7c88977f8769fac7be4578d}{S\+E\+N\+S\+O\+R\+S\+\_\+\+D\+P\+S\+\_\+\+T\+O\+\_\+\+R\+A\+DS}~(0.\+017453293\+F)
+\item 
+\#define \hyperlink{_adafruit___sensor_8h_ac6c93a70e05c30bcd40f68a0621b8d52}{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+A\+U\+S\+S\+\_\+\+T\+O\+\_\+\+M\+I\+C\+R\+O\+T\+E\+S\+LA}~(100)
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643}{sensors\+\_\+type\+\_\+t} \{ \\*
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643abd9779b04292b5e8054485b10fccb99c}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+ER} = (1), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a74438e3f4f1f8cb1e97ccebbd1096fe8}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+G\+N\+E\+T\+I\+C\+\_\+\+F\+I\+E\+LD} = (2), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643af2ccaca19bdabe513c45c058003ed596}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON} = (3), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643adc01250dcba5642d294f74ba4d115c28}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+Y\+R\+O\+S\+C\+O\+PE} = (4), 
+\\*
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ae19c28b874a4ef6706d44af6f373f743}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+G\+HT} = (5), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a81634a16935829065d399d686c44ad86}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+E\+S\+S\+U\+RE} = (6), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a47912cab9ef79bbe4eb20538a88ce59c}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+O\+X\+I\+M\+I\+TY} = (8), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ac7d364262029cc21bc865577d5288a1e}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+R\+A\+V\+I\+TY} = (9), 
+\\*
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a914a1f090dcc61586318fd4eb4cb1384}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+ON} = (10), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ac407aca03c7ce72ea55e52f40477561b}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+V\+E\+C\+T\+OR} = (11), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ad9ebf0d3f835c55738b4d4e915768875}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+U\+M\+I\+D\+I\+TY} = (12), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a7d9456395f361833de2ee3ef12a1af2a}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE} = (13), 
+\\*
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643aac4a182cee3a61ab359afa073b352b02}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+L\+T\+A\+GE} = (15), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ac822523f1553bc62459b208283e27fa5}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+R\+R\+E\+NT} = (16), 
+\hyperlink{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ae41c2d95d02910a0e15266a9f4f1ed63}{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+L\+OR} = (17)
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Class Documentation}
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}\label{structsensors__vec__t}
+\hypertarget{_adafruit___sensor_8h_structsensors__vec__t}{}
+\subsubsection{struct sensors\+\_\+vec\+\_\+t}
+struct sensors\+\_\+vec\+\_\+s is used to return a vector in a common format. 
+
+Definition at line 65 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+union \hyperlink{_adafruit___sensor_8h_unionsensors__vec__t_8____unnamed____}{sensors\+\_\+vec\+\_\+t}\hypertarget{_adafruit___sensor_8h_a7643befbf9d921d3c6eb53b6053b7562}{}\label{_adafruit___sensor_8h_a7643befbf9d921d3c6eb53b6053b7562}
+&
+\+\_\+\+\_\+unnamed\+\_\+\+\_\+&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_adafruit___sensor_8h_acb78c50bdd894d4dd4015f144c4a4488}{}\label{_adafruit___sensor_8h_acb78c50bdd894d4dd4015f144c4a4488}
+&
+reserved\mbox{[}3\mbox{]}&
+\\
+\hline
+
+int8\+\_\+t\hypertarget{_adafruit___sensor_8h_af75d491f35f979932de5609d6ef6c363}{}\label{_adafruit___sensor_8h_af75d491f35f979932de5609d6ef6c363}
+&
+status&
+\\
+\hline
+
+\end{DoxyFields}
+\index{sensors\+\_\+color\+\_\+t@{sensors\+\_\+color\+\_\+t}}\label{structsensors__color__t}
+\hypertarget{_adafruit___sensor_8h_structsensors__color__t}{}
+\subsubsection{struct sensors\+\_\+color\+\_\+t}
+struct sensors\+\_\+color\+\_\+s is used to return color data in a common format. 
+
+Definition at line 85 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+union \hyperlink{_adafruit___sensor_8h_unionsensors__color__t_8____unnamed____}{sensors\+\_\+color\+\_\+t}\hypertarget{_adafruit___sensor_8h_a713da7fcd97cbfeb045b7477716b730c}{}\label{_adafruit___sensor_8h_a713da7fcd97cbfeb045b7477716b730c}
+&
+\+\_\+\+\_\+unnamed\+\_\+\+\_\+&
+\\
+\hline
+
+uint32\+\_\+t\hypertarget{_adafruit___sensor_8h_a0afbff980c17fbacdab1666735f3d3e6}{}\label{_adafruit___sensor_8h_a0afbff980c17fbacdab1666735f3d3e6}
+&
+rgba&
+24-\/bit R\+G\+BA value \\
+\hline
+
+\end{DoxyFields}
+\index{sensors\+\_\+event\+\_\+t@{sensors\+\_\+event\+\_\+t}}\label{structsensors__event__t}
+\hypertarget{_adafruit___sensor_8h_structsensors__event__t}{}
+\subsubsection{struct sensors\+\_\+event\+\_\+t}
+struct sensor\+\_\+event\+\_\+s is used to provide a single sensor event in a common format. 
+
+Definition at line 100 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+union \hyperlink{_adafruit___sensor_8h_unionsensors__event__t_8____unnamed____}{sensors\+\_\+event\+\_\+t}\hypertarget{_adafruit___sensor_8h_a65765f2fda6943ab0fa6ef1d4b9d7d35}{}\label{_adafruit___sensor_8h_a65765f2fda6943ab0fa6ef1d4b9d7d35}
+&
+\+\_\+\+\_\+unnamed\+\_\+\+\_\+&
+\\
+\hline
+
+int32\+\_\+t\hypertarget{_adafruit___sensor_8h_a8be4dc00344f46abf29e06251bf9fad9}{}\label{_adafruit___sensor_8h_a8be4dc00344f46abf29e06251bf9fad9}
+&
+reserved0&
+reserved \\
+\hline
+
+int32\+\_\+t\hypertarget{_adafruit___sensor_8h_a6b06d35b17afbee79de7f45d9d71ed0b}{}\label{_adafruit___sensor_8h_a6b06d35b17afbee79de7f45d9d71ed0b}
+&
+sensor\+\_\+id&
+unique sensor identifier \\
+\hline
+
+int32\+\_\+t\hypertarget{_adafruit___sensor_8h_acd3be1560458b3e3bf52f93f744e8238}{}\label{_adafruit___sensor_8h_acd3be1560458b3e3bf52f93f744e8238}
+&
+timestamp&
+time is in milliseconds \\
+\hline
+
+int32\+\_\+t\hypertarget{_adafruit___sensor_8h_a58401dd7f3400d9eb96c71b8fba9f8e8}{}\label{_adafruit___sensor_8h_a58401dd7f3400d9eb96c71b8fba9f8e8}
+&
+type&
+sensor type \\
+\hline
+
+int32\+\_\+t\hypertarget{_adafruit___sensor_8h_a2134d60fdb21e3495c595a2df2f5cece}{}\label{_adafruit___sensor_8h_a2134d60fdb21e3495c595a2df2f5cece}
+&
+version&
+must be sizeof(struct sensors\+\_\+event\+\_\+t) \\
+\hline
+
+\end{DoxyFields}
+\index{sensor\+\_\+t@{sensor\+\_\+t}}\label{structsensor__t}
+\hypertarget{_adafruit___sensor_8h_structsensor__t}{}
+\subsubsection{struct sensor\+\_\+t}
+struct sensor\+\_\+s is used to describe basic information about a specific sensor. 
+
+Definition at line 127 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_adafruit___sensor_8h_a1a17359f1080eb169a452656f7dec1ee}{}\label{_adafruit___sensor_8h_a1a17359f1080eb169a452656f7dec1ee}
+&
+max\+\_\+value&
+maximum value of this sensor\textquotesingle{}s value in SI units \\
+\hline
+
+int32\+\_\+t\hypertarget{_adafruit___sensor_8h_a1cd271377ff25ec9ca54886f876c87ec}{}\label{_adafruit___sensor_8h_a1cd271377ff25ec9ca54886f876c87ec}
+&
+min\+\_\+delay&
+min delay in microseconds between events. zero = not a constant rate \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_a4556ed82a0389a7f6af25a6fd0ee1431}{}\label{_adafruit___sensor_8h_a4556ed82a0389a7f6af25a6fd0ee1431}
+&
+min\+\_\+value&
+minimum value of this sensor\textquotesingle{}s value in SI units \\
+\hline
+
+char\hypertarget{_adafruit___sensor_8h_a4383b68d36f9dc4096d83583c3b009bf}{}\label{_adafruit___sensor_8h_a4383b68d36f9dc4096d83583c3b009bf}
+&
+name\mbox{[}12\mbox{]}&
+sensor name \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_a926aba3216afd50e62c0a6cdbcc7433a}{}\label{_adafruit___sensor_8h_a926aba3216afd50e62c0a6cdbcc7433a}
+&
+resolution&
+smallest difference between two values reported by this sensor \\
+\hline
+
+int32\+\_\+t\hypertarget{_adafruit___sensor_8h_a224f6201d59873cc1b6e9dd8a1894736}{}\label{_adafruit___sensor_8h_a224f6201d59873cc1b6e9dd8a1894736}
+&
+sensor\+\_\+id&
+unique sensor identifier \\
+\hline
+
+int32\+\_\+t\hypertarget{_adafruit___sensor_8h_ae1d59df64438923d3bd95f2416c32203}{}\label{_adafruit___sensor_8h_ae1d59df64438923d3bd95f2416c32203}
+&
+type&
+this sensor\textquotesingle{}s type (ex. S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+G\+HT) \\
+\hline
+
+int32\+\_\+t\hypertarget{_adafruit___sensor_8h_a274f12a47669fbd2b61935706339e1c2}{}\label{_adafruit___sensor_8h_a274f12a47669fbd2b61935706339e1c2}
+&
+version&
+version of the hardware + driver \\
+\hline
+
+\end{DoxyFields}
+\index{sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+@{sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}}\label{unionsensors__vec__t_8____unnamed____}
+\hypertarget{_adafruit___sensor_8h_unionsensors__vec__t_8____unnamed____}{}
+\subsubsection{union sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+
+
+Definition at line 66 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+\hyperlink{_adafruit___sensor_8h_structsensors__vec__t_8____unnamed_____8____unnamed____}{\+\_\+\+\_\+unnamed\+\_\+\+\_\+}\hypertarget{_adafruit___sensor_8h_a1378d7d8767899287b0407055215aa4e}{}\label{_adafruit___sensor_8h_a1378d7d8767899287b0407055215aa4e}
+&
+\+\_\+\+\_\+unnamed\+\_\+\+\_\+&
+\\
+\hline
+
+\hyperlink{_adafruit___sensor_8h_structsensors__vec__t_8____unnamed_____8____unnamed____}{\+\_\+\+\_\+unnamed\+\_\+\+\_\+}\hypertarget{_adafruit___sensor_8h_ae80230e7c0b67771dddc6a497e5e2e5e}{}\label{_adafruit___sensor_8h_ae80230e7c0b67771dddc6a497e5e2e5e}
+&
+\+\_\+\+\_\+unnamed\+\_\+\+\_\+&
+\\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_af493789db894265c54fa31d991268ab8}{}\label{_adafruit___sensor_8h_af493789db894265c54fa31d991268ab8}
+&
+v\mbox{[}3\mbox{]}&
+\\
+\hline
+
+\end{DoxyFields}
+\index{sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+@{sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}}\label{structsensors__vec__t_8____unnamed_____8____unnamed____}
+\hypertarget{_adafruit___sensor_8h_structsensors__vec__t_8____unnamed_____8____unnamed____}{}
+\subsubsection{struct sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+
+
+Definition at line 68 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_adafruit___sensor_8h_a9dd4e461268c8034f5c8564e155c67a6}{}\label{_adafruit___sensor_8h_a9dd4e461268c8034f5c8564e155c67a6}
+&
+x&
+\\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_a415290769594460e2e485922904f345d}{}\label{_adafruit___sensor_8h_a415290769594460e2e485922904f345d}
+&
+y&
+\\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_afbade9e36a3f36d3d676c1b808451dd7}{}\label{_adafruit___sensor_8h_afbade9e36a3f36d3d676c1b808451dd7}
+&
+z&
+\\
+\hline
+
+\end{DoxyFields}
+\index{sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+@{sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}}\label{structsensors__vec__t_8____unnamed_____8____unnamed____}
+\hypertarget{_adafruit___sensor_8h_structsensors__vec__t_8____unnamed_____8____unnamed____}{}
+\subsubsection{struct sensors\+\_\+vec\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+
+
+Definition at line 74 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_adafruit___sensor_8h_af74f539fcf46601998e5b17104c7f4c1}{}\label{_adafruit___sensor_8h_af74f539fcf46601998e5b17104c7f4c1}
+&
+heading&
+Angle between the longitudinal axis (the plane body) and magnetic north, measured clockwise when viewing from the top of the device. 0-\/359° \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_a8ee0b79fb35b0efe85b44c0ee243f8d5}{}\label{_adafruit___sensor_8h_a8ee0b79fb35b0efe85b44c0ee243f8d5}
+&
+pitch&
+Rotation around the lateral axis (the wing span, \textquotesingle{}Y axis\textquotesingle{}). Pitch is positive and increasing when moving upwards. -\/180°$<$=pitch$<$=180°) \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_ab6a5d96a4e99b63723ab54ddb471baad}{}\label{_adafruit___sensor_8h_ab6a5d96a4e99b63723ab54ddb471baad}
+&
+roll&
+Rotation around the longitudinal axis (the plane body, \textquotesingle{}X axis\textquotesingle{}). Roll is positive and increasing when moving downward. -\/90°$<$=roll$<$=90° \\
+\hline
+
+\end{DoxyFields}
+\index{sensors\+\_\+color\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+@{sensors\+\_\+color\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}}\label{unionsensors__color__t_8____unnamed____}
+\hypertarget{_adafruit___sensor_8h_unionsensors__color__t_8____unnamed____}{}
+\subsubsection{union sensors\+\_\+color\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+
+
+Definition at line 86 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+\hyperlink{_adafruit___sensor_8h_structsensors__color__t_8____unnamed_____8____unnamed____}{\+\_\+\+\_\+unnamed\+\_\+\+\_\+}\hypertarget{_adafruit___sensor_8h_abdca477a0c8312f3fd1c917c21d567cb}{}\label{_adafruit___sensor_8h_abdca477a0c8312f3fd1c917c21d567cb}
+&
+\+\_\+\+\_\+unnamed\+\_\+\+\_\+&
+\\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_aa1546b22624854f5c80617c42baa5829}{}\label{_adafruit___sensor_8h_aa1546b22624854f5c80617c42baa5829}
+&
+c\mbox{[}3\mbox{]}&
+\\
+\hline
+
+\end{DoxyFields}
+\index{sensors\+\_\+color\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+@{sensors\+\_\+color\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}}\label{structsensors__color__t_8____unnamed_____8____unnamed____}
+\hypertarget{_adafruit___sensor_8h_structsensors__color__t_8____unnamed_____8____unnamed____}{}
+\subsubsection{struct sensors\+\_\+color\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+
+
+Definition at line 89 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+float\hypertarget{_adafruit___sensor_8h_a92eb5ffee6ae2fec3ad71c777531578f}{}\label{_adafruit___sensor_8h_a92eb5ffee6ae2fec3ad71c777531578f}
+&
+b&
+Blue component \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_ab2f5ff47436671b6e533d8dc3614845d}{}\label{_adafruit___sensor_8h_ab2f5ff47436671b6e533d8dc3614845d}
+&
+g&
+Green component \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_a4b43b0aee35624cd95b910189b3dc231}{}\label{_adafruit___sensor_8h_a4b43b0aee35624cd95b910189b3dc231}
+&
+r&
+Red component \\
+\hline
+
+\end{DoxyFields}
+\index{sensors\+\_\+event\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+@{sensors\+\_\+event\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}}\label{unionsensors__event__t_8____unnamed____}
+\hypertarget{_adafruit___sensor_8h_unionsensors__event__t_8____unnamed____}{}
+\subsubsection{union sensors\+\_\+event\+\_\+t.\+\_\+\+\_\+unnamed\+\_\+\+\_\+}
+
+
+Definition at line 107 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\begin{DoxyFields}{Class Members}
+\hyperlink{_adafruit___sensor_8h_structsensors__vec__t}{sensors\+\_\+vec\+\_\+t}\hypertarget{_adafruit___sensor_8h_ad3879b8802412d8dc066fd9f1a6dd2b4}{}\label{_adafruit___sensor_8h_ad3879b8802412d8dc066fd9f1a6dd2b4}
+&
+acceleration&
+acceleration values are in meter per second per second (m/s$^\wedge$2) \\
+\hline
+
+\hyperlink{_adafruit___sensor_8h_structsensors__color__t}{sensors\+\_\+color\+\_\+t}\hypertarget{_adafruit___sensor_8h_a70dda5dfb8053dc6d1c492574bce9bfd}{}\label{_adafruit___sensor_8h_a70dda5dfb8053dc6d1c492574bce9bfd}
+&
+color&
+color in R\+GB component values \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_a43b5c9175984c071f30b873fdce0a000}{}\label{_adafruit___sensor_8h_a43b5c9175984c071f30b873fdce0a000}
+&
+current&
+current in milliamps (mA) \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_a3fbd200a7024d776bc2a6eae2ca0c5b7}{}\label{_adafruit___sensor_8h_a3fbd200a7024d776bc2a6eae2ca0c5b7}
+&
+data\mbox{[}4\mbox{]}&
+\\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_aa74ec9c5b6882f79e32a8fbd8da90c1b}{}\label{_adafruit___sensor_8h_aa74ec9c5b6882f79e32a8fbd8da90c1b}
+&
+distance&
+distance in centimeters \\
+\hline
+
+\hyperlink{_adafruit___sensor_8h_structsensors__vec__t}{sensors\+\_\+vec\+\_\+t}\hypertarget{_adafruit___sensor_8h_a41e1db589d90cecf09838a038ebc8aa1}{}\label{_adafruit___sensor_8h_a41e1db589d90cecf09838a038ebc8aa1}
+&
+gyro&
+gyroscope values are in rad/s \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_a2ac43aa43bf473f9a9c09b4b608619d3}{}\label{_adafruit___sensor_8h_a2ac43aa43bf473f9a9c09b4b608619d3}
+&
+light&
+light in SI lux units \\
+\hline
+
+\hyperlink{_adafruit___sensor_8h_structsensors__vec__t}{sensors\+\_\+vec\+\_\+t}\hypertarget{_adafruit___sensor_8h_a718c286432b20095a446ff2e851bc2f2}{}\label{_adafruit___sensor_8h_a718c286432b20095a446ff2e851bc2f2}
+&
+magnetic&
+magnetic vector values are in micro-\/\+Tesla (uT) \\
+\hline
+
+\hyperlink{_adafruit___sensor_8h_structsensors__vec__t}{sensors\+\_\+vec\+\_\+t}\hypertarget{_adafruit___sensor_8h_ada1639422ad8f355d2371428471379b5}{}\label{_adafruit___sensor_8h_ada1639422ad8f355d2371428471379b5}
+&
+orientation&
+orientation values are in degrees \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_ad99fad96a5d0a7cb2eb41341ea556093}{}\label{_adafruit___sensor_8h_ad99fad96a5d0a7cb2eb41341ea556093}
+&
+pressure&
+pressure in hectopascal (h\+Pa) \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_a25aa3a770084203444b1aab490832b11}{}\label{_adafruit___sensor_8h_a25aa3a770084203444b1aab490832b11}
+&
+relative\+\_\+humidity&
+relative humidity in percent \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_aeef438f7e448aa48c1f8db568d27b591}{}\label{_adafruit___sensor_8h_aeef438f7e448aa48c1f8db568d27b591}
+&
+temperature&
+temperature is in degrees centigrade (Celsius) \\
+\hline
+
+float\hypertarget{_adafruit___sensor_8h_ae437ba437f4106903e619bb380574954}{}\label{_adafruit___sensor_8h_ae437ba437f4106903e619bb380574954}
+&
+voltage&
+voltage in volts (V) \\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Macro Definition Documentation}
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+S\+\_\+\+D\+P\+S\+\_\+\+T\+O\+\_\+\+R\+A\+DS@{S\+E\+N\+S\+O\+R\+S\+\_\+\+D\+P\+S\+\_\+\+T\+O\+\_\+\+R\+A\+DS}}
+\index{S\+E\+N\+S\+O\+R\+S\+\_\+\+D\+P\+S\+\_\+\+T\+O\+\_\+\+R\+A\+DS@{S\+E\+N\+S\+O\+R\+S\+\_\+\+D\+P\+S\+\_\+\+T\+O\+\_\+\+R\+A\+DS}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+S\+\_\+\+D\+P\+S\+\_\+\+T\+O\+\_\+\+R\+A\+DS}{SENSORS\_DPS\_TO\_RADS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+S\+\_\+\+D\+P\+S\+\_\+\+T\+O\+\_\+\+R\+A\+DS~(0.\+017453293\+F)}\hypertarget{_adafruit___sensor_8h_a54bd9549d7c88977f8769fac7be4578d}{}\label{_adafruit___sensor_8h_a54bd9549d7c88977f8769fac7be4578d}
+Degrees/s to rad/s multiplier 
+
+Definition at line 41 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+A\+U\+S\+S\+\_\+\+T\+O\+\_\+\+M\+I\+C\+R\+O\+T\+E\+S\+LA@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+A\+U\+S\+S\+\_\+\+T\+O\+\_\+\+M\+I\+C\+R\+O\+T\+E\+S\+LA}}
+\index{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+A\+U\+S\+S\+\_\+\+T\+O\+\_\+\+M\+I\+C\+R\+O\+T\+E\+S\+LA@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+A\+U\+S\+S\+\_\+\+T\+O\+\_\+\+M\+I\+C\+R\+O\+T\+E\+S\+LA}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+A\+U\+S\+S\+\_\+\+T\+O\+\_\+\+M\+I\+C\+R\+O\+T\+E\+S\+LA}{SENSORS\_GAUSS\_TO\_MICROTESLA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+A\+U\+S\+S\+\_\+\+T\+O\+\_\+\+M\+I\+C\+R\+O\+T\+E\+S\+LA~(100)}\hypertarget{_adafruit___sensor_8h_ac6c93a70e05c30bcd40f68a0621b8d52}{}\label{_adafruit___sensor_8h_ac6c93a70e05c30bcd40f68a0621b8d52}
+Gauss to micro-\/\+Tesla multiplier 
+
+Definition at line 42 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+E\+A\+R\+TH@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+E\+A\+R\+TH}}
+\index{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+E\+A\+R\+TH@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+E\+A\+R\+TH}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+E\+A\+R\+TH}{SENSORS\_GRAVITY\_EARTH}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+E\+A\+R\+TH~(9.\+80665\+F)}\hypertarget{_adafruit___sensor_8h_adf2baeb9499e0aae21699e2345fd51bd}{}\label{_adafruit___sensor_8h_adf2baeb9499e0aae21699e2345fd51bd}
+Earth\textquotesingle{}s gravity in m/s$^\wedge$2 
+
+Definition at line 34 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+M\+O\+ON@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+M\+O\+ON}}
+\index{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+M\+O\+ON@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+M\+O\+ON}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+M\+O\+ON}{SENSORS\_GRAVITY\_MOON}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+M\+O\+ON~(1.\+6\+F)}\hypertarget{_adafruit___sensor_8h_a4c728b30ce5e9479e6fa974f6d10d03a}{}\label{_adafruit___sensor_8h_a4c728b30ce5e9479e6fa974f6d10d03a}
+The moon\textquotesingle{}s gravity in m/s$^\wedge$2 
+
+Definition at line 35 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+T\+A\+N\+D\+A\+RD@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+T\+A\+N\+D\+A\+RD}}
+\index{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+T\+A\+N\+D\+A\+RD@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+T\+A\+N\+D\+A\+RD}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+T\+A\+N\+D\+A\+RD}{SENSORS\_GRAVITY\_STANDARD}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+T\+A\+N\+D\+A\+RD~({\bf S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+E\+A\+R\+TH})}\hypertarget{_adafruit___sensor_8h_ab70b42e9de016c42388ff5d293b75712}{}\label{_adafruit___sensor_8h_ab70b42e9de016c42388ff5d293b75712}
+
+
+Definition at line 37 of file Adafruit\+\_\+\+Sensor.\+h.
+
+
+
+Referenced by Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::get\+Event().
+
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+UN@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+UN}}
+\index{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+UN@{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+UN}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+UN}{SENSORS\_GRAVITY\_SUN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+UN~(275.\+0\+F)}\hypertarget{_adafruit___sensor_8h_a9520402939315a287a0ab085f6b21a5b}{}\label{_adafruit___sensor_8h_a9520402939315a287a0ab085f6b21a5b}
+The sun\textquotesingle{}s gravity in m/s$^\wedge$2 
+
+Definition at line 36 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+AX@{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+AX}}
+\index{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+AX@{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+AX}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+AX}{SENSORS\_MAGFIELD\_EARTH\_MAX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+AX~(60.\+0\+F)}\hypertarget{_adafruit___sensor_8h_a23db0dca57c605a25ddfcdc0e349fd27}{}\label{_adafruit___sensor_8h_a23db0dca57c605a25ddfcdc0e349fd27}
+Maximum magnetic field on Earth\textquotesingle{}s surface 
+
+Definition at line 38 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+IN@{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+IN}}
+\index{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+IN@{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+IN}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+IN}{SENSORS\_MAGFIELD\_EARTH\_MIN}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+S\+\_\+\+M\+A\+G\+F\+I\+E\+L\+D\+\_\+\+E\+A\+R\+T\+H\+\_\+\+M\+IN~(30.\+0\+F)}\hypertarget{_adafruit___sensor_8h_a7a7347c9dd68408657c181e16d75472d}{}\label{_adafruit___sensor_8h_a7a7347c9dd68408657c181e16d75472d}
+Minimum magnetic field on Earth\textquotesingle{}s surface 
+
+Definition at line 39 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+S\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+A\+L\+E\+V\+E\+L\+H\+PA@{S\+E\+N\+S\+O\+R\+S\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+A\+L\+E\+V\+E\+L\+H\+PA}}
+\index{S\+E\+N\+S\+O\+R\+S\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+A\+L\+E\+V\+E\+L\+H\+PA@{S\+E\+N\+S\+O\+R\+S\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+A\+L\+E\+V\+E\+L\+H\+PA}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+N\+S\+O\+R\+S\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+A\+L\+E\+V\+E\+L\+H\+PA}{SENSORS\_PRESSURE\_SEALEVELHPA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+N\+S\+O\+R\+S\+\_\+\+P\+R\+E\+S\+S\+U\+R\+E\+\_\+\+S\+E\+A\+L\+E\+V\+E\+L\+H\+PA~(1013.\+25\+F)}\hypertarget{_adafruit___sensor_8h_ad12eded4725631bfb3a662e743fe3bfb}{}\label{_adafruit___sensor_8h_ad12eded4725631bfb3a662e743fe3bfb}
+Average sea level pressure is 1013.\+25 h\+Pa 
+
+Definition at line 40 of file Adafruit\+\_\+\+Sensor.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!sensors\+\_\+type\+\_\+t@{sensors\+\_\+type\+\_\+t}}
+\index{sensors\+\_\+type\+\_\+t@{sensors\+\_\+type\+\_\+t}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{sensors\+\_\+type\+\_\+t}{sensors\_type\_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf sensors\+\_\+type\+\_\+t}}\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643}
+Sensor types \begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+ER@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+ER}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+ER@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+ER}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+ER\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643abd9779b04292b5e8054485b10fccb99c}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643abd9779b04292b5e8054485b10fccb99c}
+}]Gravity + linear acceleration \index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+G\+N\+E\+T\+I\+C\+\_\+\+F\+I\+E\+LD@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+G\+N\+E\+T\+I\+C\+\_\+\+F\+I\+E\+LD}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+G\+N\+E\+T\+I\+C\+\_\+\+F\+I\+E\+LD@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+G\+N\+E\+T\+I\+C\+\_\+\+F\+I\+E\+LD}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+M\+A\+G\+N\+E\+T\+I\+C\+\_\+\+F\+I\+E\+LD\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a74438e3f4f1f8cb1e97ccebbd1096fe8}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a74438e3f4f1f8cb1e97ccebbd1096fe8}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+R\+I\+E\+N\+T\+A\+T\+I\+ON\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643af2ccaca19bdabe513c45c058003ed596}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643af2ccaca19bdabe513c45c058003ed596}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+Y\+R\+O\+S\+C\+O\+PE@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+Y\+R\+O\+S\+C\+O\+PE}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+Y\+R\+O\+S\+C\+O\+PE@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+Y\+R\+O\+S\+C\+O\+PE}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+Y\+R\+O\+S\+C\+O\+PE\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643adc01250dcba5642d294f74ba4d115c28}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643adc01250dcba5642d294f74ba4d115c28}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+G\+HT@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+G\+HT}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+G\+HT@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+G\+HT}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+G\+HT\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ae19c28b874a4ef6706d44af6f373f743}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ae19c28b874a4ef6706d44af6f373f743}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+E\+S\+S\+U\+RE@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+E\+S\+S\+U\+RE}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+E\+S\+S\+U\+RE@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+E\+S\+S\+U\+RE}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+E\+S\+S\+U\+RE\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a81634a16935829065d399d686c44ad86}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a81634a16935829065d399d686c44ad86}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+O\+X\+I\+M\+I\+TY@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+O\+X\+I\+M\+I\+TY}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+O\+X\+I\+M\+I\+TY@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+O\+X\+I\+M\+I\+TY}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+O\+X\+I\+M\+I\+TY\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a47912cab9ef79bbe4eb20538a88ce59c}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a47912cab9ef79bbe4eb20538a88ce59c}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+R\+A\+V\+I\+TY@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+R\+A\+V\+I\+TY}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+R\+A\+V\+I\+TY@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+R\+A\+V\+I\+TY}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+G\+R\+A\+V\+I\+TY\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ac7d364262029cc21bc865577d5288a1e}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ac7d364262029cc21bc865577d5288a1e}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+ON@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+ON}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+ON@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+ON}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+L\+I\+N\+E\+A\+R\+\_\+\+A\+C\+C\+E\+L\+E\+R\+A\+T\+I\+ON\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a914a1f090dcc61586318fd4eb4cb1384}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a914a1f090dcc61586318fd4eb4cb1384}
+}]Acceleration not including gravity \index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+V\+E\+C\+T\+OR@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+V\+E\+C\+T\+OR}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+V\+E\+C\+T\+OR@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+V\+E\+C\+T\+OR}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+O\+T\+A\+T\+I\+O\+N\+\_\+\+V\+E\+C\+T\+OR\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ac407aca03c7ce72ea55e52f40477561b}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ac407aca03c7ce72ea55e52f40477561b}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+U\+M\+I\+D\+I\+TY@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+U\+M\+I\+D\+I\+TY}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+U\+M\+I\+D\+I\+TY@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+U\+M\+I\+D\+I\+TY}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+R\+E\+L\+A\+T\+I\+V\+E\+\_\+\+H\+U\+M\+I\+D\+I\+TY\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ad9ebf0d3f835c55738b4d4e915768875}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ad9ebf0d3f835c55738b4d4e915768875}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+M\+B\+I\+E\+N\+T\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a7d9456395f361833de2ee3ef12a1af2a}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643a7d9456395f361833de2ee3ef12a1af2a}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+L\+T\+A\+GE@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+L\+T\+A\+GE}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+L\+T\+A\+GE@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+L\+T\+A\+GE}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+V\+O\+L\+T\+A\+GE\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643aac4a182cee3a61ab359afa073b352b02}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643aac4a182cee3a61ab359afa073b352b02}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+R\+R\+E\+NT@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+R\+R\+E\+NT}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+R\+R\+E\+NT@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+R\+R\+E\+NT}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+U\+R\+R\+E\+NT\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ac822523f1553bc62459b208283e27fa5}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ac822523f1553bc62459b208283e27fa5}
+}]\index{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+L\+OR@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+L\+OR}!Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}}\index{Adafruit\+\_\+\+Sensor.\+h@{Adafruit\+\_\+\+Sensor.\+h}!S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+L\+OR@{S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+L\+OR}}\item[{\em 
+S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+C\+O\+L\+OR\hypertarget{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ae41c2d95d02910a0e15266a9f4f1ed63}{}\label{_adafruit___sensor_8h_af0bc43b5dae696582a77176e6e4ff643ae41c2d95d02910a0e15266a9f4f1ed63}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 45 of file Adafruit\+\_\+\+Sensor.\+h.
+

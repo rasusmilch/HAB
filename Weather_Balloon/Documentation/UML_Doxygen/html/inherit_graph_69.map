@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$struct_tiny_g_p_s_decimal.html" title="TinyGPSDecimal" alt="" coords="5,56,121,83"/>
+<area shape="rect" id="node2" href="$struct_tiny_g_p_s_altitude.html" title="TinyGPSAltitude" alt="" coords="169,5,284,32"/>
+<area shape="rect" id="node3" href="$struct_tiny_g_p_s_course.html" title="TinyGPSCourse" alt="" coords="172,56,281,83"/>
+<area shape="rect" id="node4" href="$struct_tiny_g_p_s_speed.html" title="TinyGPSSpeed" alt="" coords="175,107,278,133"/>
+</map>

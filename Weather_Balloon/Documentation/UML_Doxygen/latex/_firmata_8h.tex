@@ -1,0 +1,786 @@
+\hypertarget{_firmata_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Firmata/\+Firmata.h File Reference}
+\label{_firmata_8h}\index{Weather\+\_\+\+Balloon/library/\+Firmata/\+Firmata.\+h@{Weather\+\_\+\+Balloon/library/\+Firmata/\+Firmata.\+h}}
+{\ttfamily \#include \char`\"{}Boards.\+h\char`\"{}}\\*
+Include dependency graph for Firmata.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{_firmata_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_firmata_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_firmata_class}{Firmata\+Class}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_firmata_8h_afa9a1d1c37c3f731317e30fb878cdd85}{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}~2
+\item 
+\#define \hyperlink{_firmata_8h_a8a9497c6c1f6dfe9a3b829134bae23ac}{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}~5
+\item 
+\#define \hyperlink{_firmata_8h_a25cea0770006c202cbbaae04a249555f}{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}~1
+\item 
+\#define \hyperlink{_firmata_8h_aeab219e509c31f82bf63d465571d06c2}{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}~2
+\item 
+\#define \hyperlink{_firmata_8h_a131668cd19362aee81144d79e0f46451}{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}~5
+\item 
+\#define \hyperlink{_firmata_8h_a541d4e88401a21f2e573a26b7111b09c}{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}~4
+\item 
+\#define \hyperlink{_firmata_8h_aaf7fe5483ddb14af12856ba8c20fc961}{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}~2
+\item 
+\#define \hyperlink{_firmata_8h_a4ccbfa7d5df56de079344468949bbe40}{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}~5
+\item 
+\#define \hyperlink{_firmata_8h_a56dcb16cb883b31245ea601962d25e8e}{F\+I\+R\+M\+A\+T\+A\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}~1
+\item 
+\#define \hyperlink{_firmata_8h_ae57c9e215ed764e1cd1f5fe392472c39}{M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+B\+Y\+T\+ES}~64
+\item 
+\#define \hyperlink{_firmata_8h_a5d13e7a0887f0341ff75e75a3b21b252}{D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE}~0x90
+\item 
+\#define \hyperlink{_firmata_8h_ac6c2d8bf5c6fe108ad48388cd0968ae3}{A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE}~0x\+E0
+\item 
+\#define \hyperlink{_firmata_8h_af4baffb940dcf4c23ca5b4885d2cb08c}{R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG}~0x\+C0
+\item 
+\#define \hyperlink{_firmata_8h_a5ed985b07a03217fc9b28f5c4c5bad50}{R\+E\+P\+O\+R\+T\+\_\+\+D\+I\+G\+I\+T\+AL}~0x\+D0
+\item 
+\#define \hyperlink{_firmata_8h_a2aa56be69d612b274deae2bde636b054}{S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE}~0x\+F4
+\item 
+\#define \hyperlink{_firmata_8h_ae92fc2bad46d86be11130689f9491155}{S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE}~0x\+F5
+\item 
+\#define \hyperlink{_firmata_8h_a1e535c7bc7a99574600e94972f748cd9}{R\+E\+P\+O\+R\+T\+\_\+\+V\+E\+R\+S\+I\+ON}~0x\+F9
+\item 
+\#define \hyperlink{_firmata_8h_a9605413125c76e4fa6ab70fd508e61d6}{S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET}~0x\+FF
+\item 
+\#define \hyperlink{_firmata_8h_a59347abb8dbf9faf06194cce640f59b6}{S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX}~0x\+F0
+\item 
+\#define \hyperlink{_firmata_8h_a59b17efb4e682f59d0f8179aea08474f}{E\+N\+D\+\_\+\+S\+Y\+S\+EX}~0x\+F7
+\item 
+\#define \hyperlink{_firmata_8h_ab36390a5dc093b72f4923bc0417fef24}{S\+E\+R\+I\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE}~0x60
+\item 
+\#define \hyperlink{_firmata_8h_a22c350ed1fd8ae78386073b4c9fde7cd}{E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+A\+TA}~0x61
+\item 
+\#define \hyperlink{_firmata_8h_a04a021e63e3a6048b23e3c91e8424079}{S\+E\+R\+V\+O\+\_\+\+C\+O\+N\+F\+IG}~0x70
+\item 
+\#define \hyperlink{_firmata_8h_adfeb1346f4b239a5dcab64b53b52c63d}{S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA}~0x71
+\item 
+\#define \hyperlink{_firmata_8h_adab08254a5a1978581da65378bfbd2ae}{S\+T\+E\+P\+P\+E\+R\+\_\+\+D\+A\+TA}~0x72
+\item 
+\#define \hyperlink{_firmata_8h_ac0dcb696cb4229d6ed1bffa190b55fbe}{O\+N\+E\+W\+I\+R\+E\+\_\+\+D\+A\+TA}~0x73
+\item 
+\#define \hyperlink{_firmata_8h_a616db7a36b772511eca293613d15c36b}{S\+H\+I\+F\+T\+\_\+\+D\+A\+TA}~0x75
+\item 
+\#define \hyperlink{_firmata_8h_a20b05d8f183170e02df5fc4e6ec0116f}{I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST}~0x76
+\item 
+\#define \hyperlink{_firmata_8h_a46aaa2293185dfc3cd655f65bea7f614}{I2\+C\+\_\+\+R\+E\+P\+LY}~0x77
+\item 
+\#define \hyperlink{_firmata_8h_a94122c44db7a01c6f6035bdcc5f40905}{I2\+C\+\_\+\+C\+O\+N\+F\+IG}~0x78
+\item 
+\#define \hyperlink{_firmata_8h_a6b1a9cda8c6ee228df3ed787d1278a15}{E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+A\+N\+A\+L\+OG}~0x6F
+\item 
+\#define \hyperlink{_firmata_8h_a67f7b22e5ccc4e60bbb29da457396f65}{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Q\+U\+E\+RY}~0x6D
+\item 
+\#define \hyperlink{_firmata_8h_a9f8f0145aba7e3c3875d437dfd297efa}{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE}~0x6E
+\item 
+\#define \hyperlink{_firmata_8h_ae9f1ac062b9f73c9814219ec6a0131b2}{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+Q\+U\+E\+RY}~0x6B
+\item 
+\#define \hyperlink{_firmata_8h_a18014587c29c9ed92c025e38827bd30a}{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+R\+E\+S\+P\+O\+N\+SE}~0x6C
+\item 
+\#define \hyperlink{_firmata_8h_a4c572bc2c43ff5952378fdd91eae9b88}{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+Q\+U\+E\+RY}~0x69
+\item 
+\#define \hyperlink{_firmata_8h_ac97ec6eb3e72f83450a66bd8a08911f4}{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE}~0x6A
+\item 
+\#define \hyperlink{_firmata_8h_aed4357ba338c3ed1447886262397da57}{R\+E\+P\+O\+R\+T\+\_\+\+F\+I\+R\+M\+W\+A\+RE}~0x79
+\item 
+\#define \hyperlink{_firmata_8h_a06387eb92a3708a2c132287d100d44d7}{S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL}~0x7A
+\item 
+\#define \hyperlink{_firmata_8h_ab3a363a2f3a787039e8ad0661f513b1d}{S\+C\+H\+E\+D\+U\+L\+E\+R\+\_\+\+D\+A\+TA}~0x7B
+\item 
+\#define \hyperlink{_firmata_8h_a4e5359fd6e88add21751b8cec23f1d8a}{S\+Y\+S\+E\+X\+\_\+\+N\+O\+N\+\_\+\+R\+E\+A\+L\+T\+I\+ME}~0x7E
+\item 
+\#define \hyperlink{_firmata_8h_ad6ea7e4de462dd736e48602c39387596}{S\+Y\+S\+E\+X\+\_\+\+R\+E\+A\+L\+T\+I\+ME}~0x7F
+\item 
+\#define \hyperlink{_firmata_8h_ac3e6b2f09a110d8c771267a203bf5d35}{F\+I\+R\+M\+A\+T\+A\+\_\+\+S\+T\+R\+I\+NG}~0x71
+\item 
+\#define \hyperlink{_firmata_8h_a7f738d147e4656076db07806682c35b4}{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST}~0x76
+\item 
+\#define \hyperlink{_firmata_8h_aba37be7c4f8686ba6b923a1205eaa791}{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+P\+LY}~0x77
+\item 
+\#define \hyperlink{_firmata_8h_a7a8b7eac6d6905920573eb7eb1f905f0}{S\+Y\+S\+E\+X\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL}~0x7A
+\item 
+\#define \hyperlink{_firmata_8h_aa32c6369cfcb72a926ad3a3ce8a97e93}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+A\+N\+A\+L\+OG}~0x02
+\item 
+\#define \hyperlink{_firmata_8h_a4b882da38492b2fbd2f84d8d0470c193}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+WM}~0x03
+\item 
+\#define \hyperlink{_firmata_8h_af21baff9e3f72275b76b05ab17cbcf55}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+VO}~0x04
+\item 
+\#define \hyperlink{_firmata_8h_abee34f13d529bf9fd8b86f085100f012}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+H\+I\+FT}~0x05
+\item 
+\#define \hyperlink{_firmata_8h_ae874208ec2383667289373163b39d45c}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I2C}~0x06
+\item 
+\#define \hyperlink{_firmata_8h_a2a650dd9a8f769264ec16214b6248337}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+O\+N\+E\+W\+I\+RE}~0x07
+\item 
+\#define \hyperlink{_firmata_8h_a3d1aa0fa65f0eabdeb7a660af8356195}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+E\+P\+P\+ER}~0x08
+\item 
+\#define \hyperlink{_firmata_8h_af99f6059a313516ab9f22fe11f8530f2}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+E\+N\+C\+O\+D\+ER}~0x09
+\item 
+\#define \hyperlink{_firmata_8h_aa3f71832c389f7ed6c263af7e097b4ef}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL}~0x0A
+\item 
+\#define \hyperlink{_firmata_8h_a5934000fe326afd3f6a9e5cd772d6e27}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+U\+L\+L\+UP}~0x0B
+\item 
+\#define \hyperlink{_firmata_8h_a6b76273f884decca728afea748713e04}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I\+G\+N\+O\+RE}~0x7F
+\item 
+\#define \hyperlink{_firmata_8h_a71fb14b7d1dfa89eda085b52b9f5c754}{T\+O\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+M\+O\+D\+ES}~13
+\item 
+\#define \hyperlink{_firmata_8h_ad42aa2404559d4a465d5d45e857f2881}{A\+N\+A\+L\+OG}~0x02
+\item 
+\#define \hyperlink{_firmata_8h_a538e3ec60828cfabae7e3011d73d2093}{P\+WM}~0x03
+\item 
+\#define \hyperlink{_firmata_8h_a316d1bbf3dcf9c43e56fe4e25addf626}{S\+E\+R\+VO}~0x04
+\item 
+\#define \hyperlink{_firmata_8h_ac179eef68bcc694aa0ef8dd1eb09950b}{S\+H\+I\+FT}~0x05
+\item 
+\#define \hyperlink{_firmata_8h_a457a9aa93dbb216459873a30bdb4d84a}{I2C}~0x06
+\item 
+\#define \hyperlink{_firmata_8h_a37c094d8e1be6ffd310eb63851b2f6b8}{O\+N\+E\+W\+I\+RE}~0x07
+\item 
+\#define \hyperlink{_firmata_8h_aabf41ec36ff3dfa5e82c2328e88d8dcf}{S\+T\+E\+P\+P\+ER}~0x08
+\item 
+\#define \hyperlink{_firmata_8h_a4d3ccf6f12fbff52bbb7e35b4d92584f}{E\+N\+C\+O\+D\+ER}~0x09
+\item 
+\#define \hyperlink{_firmata_8h_aabed7f7d1400564ec843acd4dfb72e59}{I\+G\+N\+O\+RE}~0x7F
+\item 
+\#define \hyperlink{_firmata_8h_aa53684b5fb81f3c9792a5bd3555b6229}{set\+Firmware\+Version}(x,  y)  ~set\+Firmware\+Name\+And\+Version(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, x, y)
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{_firmata_8h_abb0d9dbaf4bb25bc00924808c5616aa5}{callback\+Function}) (byte, int)
+\item 
+typedef void($\ast$ \hyperlink{_firmata_8h_a29f7a316045cd131238d6e3f9cdb8140}{system\+Reset\+Callback\+Function}) (void)
+\item 
+typedef void($\ast$ \hyperlink{_firmata_8h_a6557a1064a699527f15a5d4d44c9c76d}{string\+Callback\+Function}) (char $\ast$)
+\item 
+typedef void($\ast$ \hyperlink{_firmata_8h_a382e396031e042c702aebc1eac88c8da}{sysex\+Callback\+Function}) (byte command, byte argc, byte $\ast$argv)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_firmata_class}{Firmata\+Class} \hyperlink{_firmata_8h_a986c68fac4f21302213e609c277710d7}{Firmata}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Firmata.\+h@{Firmata.\+h}!A\+N\+A\+L\+OG@{A\+N\+A\+L\+OG}}
+\index{A\+N\+A\+L\+OG@{A\+N\+A\+L\+OG}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{A\+N\+A\+L\+OG}{ANALOG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+A\+L\+OG~0x02}\hypertarget{_firmata_8h_ad42aa2404559d4a465d5d45e857f2881}{}\label{_firmata_8h_ad42aa2404559d4a465d5d45e857f2881}
+
+
+Definition at line 110 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+Q\+U\+E\+RY@{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+Q\+U\+E\+RY}}
+\index{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+Q\+U\+E\+RY@{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+Q\+U\+E\+RY}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+Q\+U\+E\+RY}{ANALOG\_MAPPING\_QUERY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+Q\+U\+E\+RY~0x69}\hypertarget{_firmata_8h_a4c572bc2c43ff5952378fdd91eae9b88}{}\label{_firmata_8h_a4c572bc2c43ff5952378fdd91eae9b88}
+
+
+Definition at line 81 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE}}
+\index{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE}{ANALOG\_MAPPING\_RESPONSE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+A\+L\+O\+G\+\_\+\+M\+A\+P\+P\+I\+N\+G\+\_\+\+R\+E\+S\+P\+O\+N\+SE~0x6A}\hypertarget{_firmata_8h_ac97ec6eb3e72f83450a66bd8a08911f4}{}\label{_firmata_8h_ac97ec6eb3e72f83450a66bd8a08911f4}
+
+
+Definition at line 82 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE@{A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE}}
+\index{A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE@{A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE}{ANALOG\_MESSAGE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE~0x\+E0}\hypertarget{_firmata_8h_ac6c2d8bf5c6fe108ad48388cd0968ae3}{}\label{_firmata_8h_ac6c2d8bf5c6fe108ad48388cd0968ae3}
+
+
+Definition at line 51 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::attach(), Firmata\+Class\+::parse(), and Firmata\+Class\+::send\+Analog().
+
+\index{Firmata.\+h@{Firmata.\+h}!C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+Q\+U\+E\+RY@{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+Q\+U\+E\+RY}}
+\index{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+Q\+U\+E\+RY@{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+Q\+U\+E\+RY}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+Q\+U\+E\+RY}{CAPABILITY\_QUERY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+Q\+U\+E\+RY~0x6B}\hypertarget{_firmata_8h_ae9f1ac062b9f73c9814219ec6a0131b2}{}\label{_firmata_8h_ae9f1ac062b9f73c9814219ec6a0131b2}
+
+
+Definition at line 79 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+R\+E\+S\+P\+O\+N\+SE}}
+\index{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+R\+E\+S\+P\+O\+N\+SE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+R\+E\+S\+P\+O\+N\+SE}{CAPABILITY\_RESPONSE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+A\+P\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+R\+E\+S\+P\+O\+N\+SE~0x6C}\hypertarget{_firmata_8h_a18014587c29c9ed92c025e38827bd30a}{}\label{_firmata_8h_a18014587c29c9ed92c025e38827bd30a}
+
+
+Definition at line 80 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE@{D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE}}
+\index{D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE@{D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE}{DIGITAL\_MESSAGE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE~0x90}\hypertarget{_firmata_8h_a5d13e7a0887f0341ff75e75a3b21b252}{}\label{_firmata_8h_a5d13e7a0887f0341ff75e75a3b21b252}
+
+
+Definition at line 50 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::attach(), Firmata\+Class\+::parse(), and Firmata\+Class\+::send\+Digital\+Port().
+
+\index{Firmata.\+h@{Firmata.\+h}!E\+N\+C\+O\+D\+ER@{E\+N\+C\+O\+D\+ER}}
+\index{E\+N\+C\+O\+D\+ER@{E\+N\+C\+O\+D\+ER}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{E\+N\+C\+O\+D\+ER}{ENCODER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+N\+C\+O\+D\+ER~0x09}\hypertarget{_firmata_8h_a4d3ccf6f12fbff52bbb7e35b4d92584f}{}\label{_firmata_8h_a4d3ccf6f12fbff52bbb7e35b4d92584f}
+
+
+Definition at line 117 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+A\+TA@{E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+A\+TA}}
+\index{E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+A\+TA@{E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+A\+TA}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+A\+TA}{ENCODER\_DATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+N\+C\+O\+D\+E\+R\+\_\+\+D\+A\+TA~0x61}\hypertarget{_firmata_8h_a22c350ed1fd8ae78386073b4c9fde7cd}{}\label{_firmata_8h_a22c350ed1fd8ae78386073b4c9fde7cd}
+
+
+Definition at line 67 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!E\+N\+D\+\_\+\+S\+Y\+S\+EX@{E\+N\+D\+\_\+\+S\+Y\+S\+EX}}
+\index{E\+N\+D\+\_\+\+S\+Y\+S\+EX@{E\+N\+D\+\_\+\+S\+Y\+S\+EX}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{E\+N\+D\+\_\+\+S\+Y\+S\+EX}{END\_SYSEX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+N\+D\+\_\+\+S\+Y\+S\+EX~0x\+F7}\hypertarget{_firmata_8h_a59b17efb4e682f59d0f8179aea08474f}{}\label{_firmata_8h_a59b17efb4e682f59d0f8179aea08474f}
+
+
+Definition at line 62 of file Firmata.\+h.
+
+
+
+Referenced by Serial\+Firmata\+::check\+Serial(), Firmata\+Class\+::end\+Sysex(), and Firmata\+Class\+::parse().
+
+\index{Firmata.\+h@{Firmata.\+h}!E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+A\+N\+A\+L\+OG@{E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+A\+N\+A\+L\+OG}}
+\index{E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+A\+N\+A\+L\+OG@{E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+A\+N\+A\+L\+OG}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+A\+N\+A\+L\+OG}{EXTENDED\_ANALOG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+A\+N\+A\+L\+OG~0x6F}\hypertarget{_firmata_8h_a6b1a9cda8c6ee228df3ed787d1278a15}{}\label{_firmata_8h_a6b1a9cda8c6ee228df3ed787d1278a15}
+
+
+Definition at line 76 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}{FIRMATA\_BUGFIX\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON~1}\hypertarget{_firmata_8h_a56dcb16cb883b31245ea601962d25e8e}{}\label{_firmata_8h_a56dcb16cb883b31245ea601962d25e8e}
+
+
+Definition at line 40 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}{FIRMATA\_FIRMWARE\_BUGFIX\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON~4}\hypertarget{_firmata_8h_a541d4e88401a21f2e573a26b7111b09c}{}\label{_firmata_8h_a541d4e88401a21f2e573a26b7111b09c}
+
+
+Definition at line 33 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}{FIRMATA\_FIRMWARE\_MAJOR\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~2}\hypertarget{_firmata_8h_aeab219e509c31f82bf63d465571d06c2}{}\label{_firmata_8h_aeab219e509c31f82bf63d465571d06c2}
+
+
+Definition at line 31 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::blink\+Version().
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}{FIRMATA\_FIRMWARE\_MINOR\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~5}\hypertarget{_firmata_8h_a131668cd19362aee81144d79e0f46451}{}\label{_firmata_8h_a131668cd19362aee81144d79e0f46451}
+
+
+Definition at line 32 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::blink\+Version().
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}{FIRMATA\_MAJOR\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~2}\hypertarget{_firmata_8h_aaf7fe5483ddb14af12856ba8c20fc961}{}\label{_firmata_8h_aaf7fe5483ddb14af12856ba8c20fc961}
+
+
+Definition at line 38 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}{FIRMATA\_MINOR\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~5}\hypertarget{_firmata_8h_a4ccbfa7d5df56de079344468949bbe40}{}\label{_firmata_8h_a4ccbfa7d5df56de079344468949bbe40}
+
+
+Definition at line 39 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON}{FIRMATA\_PROTOCOL\_BUGFIX\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+B\+U\+G\+F\+I\+X\+\_\+\+V\+E\+R\+S\+I\+ON~1}\hypertarget{_firmata_8h_a25cea0770006c202cbbaae04a249555f}{}\label{_firmata_8h_a25cea0770006c202cbbaae04a249555f}
+
+
+Definition at line 25 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}{FIRMATA\_PROTOCOL\_MAJOR\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~2}\hypertarget{_firmata_8h_afa9a1d1c37c3f731317e30fb878cdd85}{}\label{_firmata_8h_afa9a1d1c37c3f731317e30fb878cdd85}
+
+
+Definition at line 23 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::print\+Version().
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON@{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}{FIRMATA\_PROTOCOL\_MINOR\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~5}\hypertarget{_firmata_8h_a8a9497c6c1f6dfe9a3b829134bae23ac}{}\label{_firmata_8h_a8a9497c6c1f6dfe9a3b829134bae23ac}
+
+
+Definition at line 24 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::print\+Version().
+
+\index{Firmata.\+h@{Firmata.\+h}!F\+I\+R\+M\+A\+T\+A\+\_\+\+S\+T\+R\+I\+NG@{F\+I\+R\+M\+A\+T\+A\+\_\+\+S\+T\+R\+I\+NG}}
+\index{F\+I\+R\+M\+A\+T\+A\+\_\+\+S\+T\+R\+I\+NG@{F\+I\+R\+M\+A\+T\+A\+\_\+\+S\+T\+R\+I\+NG}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+R\+M\+A\+T\+A\+\_\+\+S\+T\+R\+I\+NG}{FIRMATA\_STRING}}]{\setlength{\rightskip}{0pt plus 5cm}\#define F\+I\+R\+M\+A\+T\+A\+\_\+\+S\+T\+R\+I\+NG~0x71}\hypertarget{_firmata_8h_ac3e6b2f09a110d8c771267a203bf5d35}{}\label{_firmata_8h_ac3e6b2f09a110d8c771267a203bf5d35}
+
+
+Definition at line 89 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!I2C@{I2C}}
+\index{I2C@{I2C}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{I2C}{I2C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I2C~0x06}\hypertarget{_firmata_8h_a457a9aa93dbb216459873a30bdb4d84a}{}\label{_firmata_8h_a457a9aa93dbb216459873a30bdb4d84a}
+
+
+Definition at line 114 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!I2\+C\+\_\+\+C\+O\+N\+F\+IG@{I2\+C\+\_\+\+C\+O\+N\+F\+IG}}
+\index{I2\+C\+\_\+\+C\+O\+N\+F\+IG@{I2\+C\+\_\+\+C\+O\+N\+F\+IG}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{I2\+C\+\_\+\+C\+O\+N\+F\+IG}{I2C\_CONFIG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I2\+C\+\_\+\+C\+O\+N\+F\+IG~0x78}\hypertarget{_firmata_8h_a94122c44db7a01c6f6035bdcc5f40905}{}\label{_firmata_8h_a94122c44db7a01c6f6035bdcc5f40905}
+
+
+Definition at line 75 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!I2\+C\+\_\+\+R\+E\+P\+LY@{I2\+C\+\_\+\+R\+E\+P\+LY}}
+\index{I2\+C\+\_\+\+R\+E\+P\+LY@{I2\+C\+\_\+\+R\+E\+P\+LY}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{I2\+C\+\_\+\+R\+E\+P\+LY}{I2C\_REPLY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I2\+C\+\_\+\+R\+E\+P\+LY~0x77}\hypertarget{_firmata_8h_a46aaa2293185dfc3cd655f65bea7f614}{}\label{_firmata_8h_a46aaa2293185dfc3cd655f65bea7f614}
+
+
+Definition at line 74 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST@{I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST}}
+\index{I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST@{I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST}{I2C\_REQUEST}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST~0x76}\hypertarget{_firmata_8h_a20b05d8f183170e02df5fc4e6ec0116f}{}\label{_firmata_8h_a20b05d8f183170e02df5fc4e6ec0116f}
+
+
+Definition at line 73 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!I\+G\+N\+O\+RE@{I\+G\+N\+O\+RE}}
+\index{I\+G\+N\+O\+RE@{I\+G\+N\+O\+RE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{I\+G\+N\+O\+RE}{IGNORE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define I\+G\+N\+O\+RE~0x7F}\hypertarget{_firmata_8h_aabed7f7d1400564ec843acd4dfb72e59}{}\label{_firmata_8h_aabed7f7d1400564ec843acd4dfb72e59}
+
+
+Definition at line 118 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+B\+Y\+T\+ES@{M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+B\+Y\+T\+ES}}
+\index{M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+B\+Y\+T\+ES@{M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+B\+Y\+T\+ES}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+B\+Y\+T\+ES}{MAX\_DATA\_BYTES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+B\+Y\+T\+ES~64}\hypertarget{_firmata_8h_ae57c9e215ed764e1cd1f5fe392472c39}{}\label{_firmata_8h_ae57c9e215ed764e1cd1f5fe392472c39}
+
+
+Definition at line 42 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::set\+Pin\+State().
+
+\index{Firmata.\+h@{Firmata.\+h}!O\+N\+E\+W\+I\+RE@{O\+N\+E\+W\+I\+RE}}
+\index{O\+N\+E\+W\+I\+RE@{O\+N\+E\+W\+I\+RE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{O\+N\+E\+W\+I\+RE}{ONEWIRE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+N\+E\+W\+I\+RE~0x07}\hypertarget{_firmata_8h_a37c094d8e1be6ffd310eb63851b2f6b8}{}\label{_firmata_8h_a37c094d8e1be6ffd310eb63851b2f6b8}
+
+
+Definition at line 115 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!O\+N\+E\+W\+I\+R\+E\+\_\+\+D\+A\+TA@{O\+N\+E\+W\+I\+R\+E\+\_\+\+D\+A\+TA}}
+\index{O\+N\+E\+W\+I\+R\+E\+\_\+\+D\+A\+TA@{O\+N\+E\+W\+I\+R\+E\+\_\+\+D\+A\+TA}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{O\+N\+E\+W\+I\+R\+E\+\_\+\+D\+A\+TA}{ONEWIRE\_DATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define O\+N\+E\+W\+I\+R\+E\+\_\+\+D\+A\+TA~0x73}\hypertarget{_firmata_8h_ac0dcb696cb4229d6ed1bffa190b55fbe}{}\label{_firmata_8h_ac0dcb696cb4229d6ed1bffa190b55fbe}
+
+
+Definition at line 71 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+A\+N\+A\+L\+OG@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+A\+N\+A\+L\+OG}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+A\+N\+A\+L\+OG@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+A\+N\+A\+L\+OG}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+A\+N\+A\+L\+OG}{PIN\_MODE\_ANALOG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+A\+N\+A\+L\+OG~0x02}\hypertarget{_firmata_8h_aa32c6369cfcb72a926ad3a3ce8a97e93}{}\label{_firmata_8h_aa32c6369cfcb72a926ad3a3ce8a97e93}
+
+
+Definition at line 97 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+E\+N\+C\+O\+D\+ER@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+E\+N\+C\+O\+D\+ER}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+E\+N\+C\+O\+D\+ER@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+E\+N\+C\+O\+D\+ER}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+E\+N\+C\+O\+D\+ER}{PIN\_MODE\_ENCODER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+E\+N\+C\+O\+D\+ER~0x09}\hypertarget{_firmata_8h_af99f6059a313516ab9f22fe11f8530f2}{}\label{_firmata_8h_af99f6059a313516ab9f22fe11f8530f2}
+
+
+Definition at line 104 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I2C@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I2C}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I2C@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I2C}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I2C}{PIN\_MODE\_I2C}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I2C~0x06}\hypertarget{_firmata_8h_ae874208ec2383667289373163b39d45c}{}\label{_firmata_8h_ae874208ec2383667289373163b39d45c}
+
+
+Definition at line 101 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I\+G\+N\+O\+RE@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I\+G\+N\+O\+RE}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I\+G\+N\+O\+RE@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I\+G\+N\+O\+RE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I\+G\+N\+O\+RE}{PIN\_MODE\_IGNORE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I\+G\+N\+O\+RE~0x7F}\hypertarget{_firmata_8h_a6b76273f884decca728afea748713e04}{}\label{_firmata_8h_a6b76273f884decca728afea748713e04}
+
+
+Definition at line 107 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::set\+Pin\+Mode().
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+O\+N\+E\+W\+I\+RE@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+O\+N\+E\+W\+I\+RE}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+O\+N\+E\+W\+I\+RE@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+O\+N\+E\+W\+I\+RE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+O\+N\+E\+W\+I\+RE}{PIN\_MODE\_ONEWIRE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+O\+N\+E\+W\+I\+RE~0x07}\hypertarget{_firmata_8h_a2a650dd9a8f769264ec16214b6248337}{}\label{_firmata_8h_a2a650dd9a8f769264ec16214b6248337}
+
+
+Definition at line 102 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+U\+L\+L\+UP@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+U\+L\+L\+UP}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+U\+L\+L\+UP@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+U\+L\+L\+UP}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+U\+L\+L\+UP}{PIN\_MODE\_PULLUP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+U\+L\+L\+UP~0x0B}\hypertarget{_firmata_8h_a5934000fe326afd3f6a9e5cd772d6e27}{}\label{_firmata_8h_a5934000fe326afd3f6a9e5cd772d6e27}
+
+
+Definition at line 106 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+WM@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+WM}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+WM@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+WM}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+WM}{PIN\_MODE\_PWM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+P\+WM~0x03}\hypertarget{_firmata_8h_a4b882da38492b2fbd2f84d8d0470c193}{}\label{_firmata_8h_a4b882da38492b2fbd2f84d8d0470c193}
+
+
+Definition at line 98 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL}{PIN\_MODE\_SERIAL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+I\+AL~0x0A}\hypertarget{_firmata_8h_aa3f71832c389f7ed6c263af7e097b4ef}{}\label{_firmata_8h_aa3f71832c389f7ed6c263af7e097b4ef}
+
+
+Definition at line 105 of file Firmata.\+h.
+
+
+
+Referenced by Serial\+Firmata\+::handle\+Capability(), Serial\+Firmata\+::handle\+Pin\+Mode(), and Serial\+Firmata\+::handle\+Sysex().
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+VO@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+VO}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+VO@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+VO}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+VO}{PIN\_MODE\_SERVO}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+R\+VO~0x04}\hypertarget{_firmata_8h_af21baff9e3f72275b76b05ab17cbcf55}{}\label{_firmata_8h_af21baff9e3f72275b76b05ab17cbcf55}
+
+
+Definition at line 99 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+H\+I\+FT@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+H\+I\+FT}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+H\+I\+FT@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+H\+I\+FT}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+H\+I\+FT}{PIN\_MODE\_SHIFT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+H\+I\+FT~0x05}\hypertarget{_firmata_8h_abee34f13d529bf9fd8b86f085100f012}{}\label{_firmata_8h_abee34f13d529bf9fd8b86f085100f012}
+
+
+Definition at line 100 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+E\+P\+P\+ER@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+E\+P\+P\+ER}}
+\index{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+E\+P\+P\+ER@{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+E\+P\+P\+ER}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+E\+P\+P\+ER}{PIN\_MODE\_STEPPER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+T\+E\+P\+P\+ER~0x08}\hypertarget{_firmata_8h_a3d1aa0fa65f0eabdeb7a660af8356195}{}\label{_firmata_8h_a3d1aa0fa65f0eabdeb7a660af8356195}
+
+
+Definition at line 103 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Q\+U\+E\+RY@{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Q\+U\+E\+RY}}
+\index{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Q\+U\+E\+RY@{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Q\+U\+E\+RY}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Q\+U\+E\+RY}{PIN\_STATE\_QUERY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+Q\+U\+E\+RY~0x6D}\hypertarget{_firmata_8h_a67f7b22e5ccc4e60bbb29da457396f65}{}\label{_firmata_8h_a67f7b22e5ccc4e60bbb29da457396f65}
+
+
+Definition at line 77 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE}}
+\index{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE@{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE}{PIN\_STATE\_RESPONSE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+I\+N\+\_\+\+S\+T\+A\+T\+E\+\_\+\+R\+E\+S\+P\+O\+N\+SE~0x6E}\hypertarget{_firmata_8h_a9f8f0145aba7e3c3875d437dfd297efa}{}\label{_firmata_8h_a9f8f0145aba7e3c3875d437dfd297efa}
+
+
+Definition at line 78 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!P\+WM@{P\+WM}}
+\index{P\+WM@{P\+WM}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{P\+WM}{PWM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define P\+WM~0x03}\hypertarget{_firmata_8h_a538e3ec60828cfabae7e3011d73d2093}{}\label{_firmata_8h_a538e3ec60828cfabae7e3011d73d2093}
+
+
+Definition at line 111 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG@{R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG}}
+\index{R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG@{R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG}{REPORT\_ANALOG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG~0x\+C0}\hypertarget{_firmata_8h_af4baffb940dcf4c23ca5b4885d2cb08c}{}\label{_firmata_8h_af4baffb940dcf4c23ca5b4885d2cb08c}
+
+
+Definition at line 52 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::attach(), and Firmata\+Class\+::parse().
+
+\index{Firmata.\+h@{Firmata.\+h}!R\+E\+P\+O\+R\+T\+\_\+\+D\+I\+G\+I\+T\+AL@{R\+E\+P\+O\+R\+T\+\_\+\+D\+I\+G\+I\+T\+AL}}
+\index{R\+E\+P\+O\+R\+T\+\_\+\+D\+I\+G\+I\+T\+AL@{R\+E\+P\+O\+R\+T\+\_\+\+D\+I\+G\+I\+T\+AL}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+P\+O\+R\+T\+\_\+\+D\+I\+G\+I\+T\+AL}{REPORT\_DIGITAL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+P\+O\+R\+T\+\_\+\+D\+I\+G\+I\+T\+AL~0x\+D0}\hypertarget{_firmata_8h_a5ed985b07a03217fc9b28f5c4c5bad50}{}\label{_firmata_8h_a5ed985b07a03217fc9b28f5c4c5bad50}
+
+
+Definition at line 53 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::attach(), and Firmata\+Class\+::parse().
+
+\index{Firmata.\+h@{Firmata.\+h}!R\+E\+P\+O\+R\+T\+\_\+\+F\+I\+R\+M\+W\+A\+RE@{R\+E\+P\+O\+R\+T\+\_\+\+F\+I\+R\+M\+W\+A\+RE}}
+\index{R\+E\+P\+O\+R\+T\+\_\+\+F\+I\+R\+M\+W\+A\+RE@{R\+E\+P\+O\+R\+T\+\_\+\+F\+I\+R\+M\+W\+A\+RE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+P\+O\+R\+T\+\_\+\+F\+I\+R\+M\+W\+A\+RE}{REPORT\_FIRMWARE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+P\+O\+R\+T\+\_\+\+F\+I\+R\+M\+W\+A\+RE~0x79}\hypertarget{_firmata_8h_aed4357ba338c3ed1447886262397da57}{}\label{_firmata_8h_aed4357ba338c3ed1447886262397da57}
+
+
+Definition at line 83 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::available(), and Firmata\+Class\+::print\+Firmware\+Version().
+
+\index{Firmata.\+h@{Firmata.\+h}!R\+E\+P\+O\+R\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{R\+E\+P\+O\+R\+T\+\_\+\+V\+E\+R\+S\+I\+ON}}
+\index{R\+E\+P\+O\+R\+T\+\_\+\+V\+E\+R\+S\+I\+ON@{R\+E\+P\+O\+R\+T\+\_\+\+V\+E\+R\+S\+I\+ON}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{R\+E\+P\+O\+R\+T\+\_\+\+V\+E\+R\+S\+I\+ON}{REPORT\_VERSION}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+P\+O\+R\+T\+\_\+\+V\+E\+R\+S\+I\+ON~0x\+F9}\hypertarget{_firmata_8h_a1e535c7bc7a99574600e94972f748cd9}{}\label{_firmata_8h_a1e535c7bc7a99574600e94972f748cd9}
+
+
+Definition at line 58 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::parse(), and Firmata\+Class\+::print\+Version().
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL@{S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL}}
+\index{S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL@{S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL}{SAMPLING\_INTERVAL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL~0x7A}\hypertarget{_firmata_8h_a06387eb92a3708a2c132287d100d44d7}{}\label{_firmata_8h_a06387eb92a3708a2c132287d100d44d7}
+
+
+Definition at line 84 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+C\+H\+E\+D\+U\+L\+E\+R\+\_\+\+D\+A\+TA@{S\+C\+H\+E\+D\+U\+L\+E\+R\+\_\+\+D\+A\+TA}}
+\index{S\+C\+H\+E\+D\+U\+L\+E\+R\+\_\+\+D\+A\+TA@{S\+C\+H\+E\+D\+U\+L\+E\+R\+\_\+\+D\+A\+TA}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+C\+H\+E\+D\+U\+L\+E\+R\+\_\+\+D\+A\+TA}{SCHEDULER\_DATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+C\+H\+E\+D\+U\+L\+E\+R\+\_\+\+D\+A\+TA~0x7B}\hypertarget{_firmata_8h_ab3a363a2f3a787039e8ad0661f513b1d}{}\label{_firmata_8h_ab3a363a2f3a787039e8ad0661f513b1d}
+
+
+Definition at line 85 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+E\+R\+I\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE@{S\+E\+R\+I\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE}}
+\index{S\+E\+R\+I\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE@{S\+E\+R\+I\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+R\+I\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE}{SERIAL\_MESSAGE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+R\+I\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE~0x60}\hypertarget{_firmata_8h_ab36390a5dc093b72f4923bc0417fef24}{}\label{_firmata_8h_ab36390a5dc093b72f4923bc0417fef24}
+
+
+Definition at line 66 of file Firmata.\+h.
+
+
+
+Referenced by Serial\+Firmata\+::check\+Serial(), and Serial\+Firmata\+::handle\+Sysex().
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+E\+R\+VO@{S\+E\+R\+VO}}
+\index{S\+E\+R\+VO@{S\+E\+R\+VO}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+R\+VO}{SERVO}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+R\+VO~0x04}\hypertarget{_firmata_8h_a316d1bbf3dcf9c43e56fe4e25addf626}{}\label{_firmata_8h_a316d1bbf3dcf9c43e56fe4e25addf626}
+
+
+Definition at line 112 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+E\+R\+V\+O\+\_\+\+C\+O\+N\+F\+IG@{S\+E\+R\+V\+O\+\_\+\+C\+O\+N\+F\+IG}}
+\index{S\+E\+R\+V\+O\+\_\+\+C\+O\+N\+F\+IG@{S\+E\+R\+V\+O\+\_\+\+C\+O\+N\+F\+IG}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+R\+V\+O\+\_\+\+C\+O\+N\+F\+IG}{SERVO\_CONFIG}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+R\+V\+O\+\_\+\+C\+O\+N\+F\+IG~0x70}\hypertarget{_firmata_8h_a04a021e63e3a6048b23e3c91e8424079}{}\label{_firmata_8h_a04a021e63e3a6048b23e3c91e8424079}
+
+
+Definition at line 68 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE@{S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE}}
+\index{S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE@{S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE}{SET\_DIGITAL\_PIN\_VALUE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE~0x\+F5}\hypertarget{_firmata_8h_ae92fc2bad46d86be11130689f9491155}{}\label{_firmata_8h_ae92fc2bad46d86be11130689f9491155}
+
+
+Definition at line 56 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::attach(), and Firmata\+Class\+::parse().
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE@{S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE}}
+\index{S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE@{S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE}{SET\_PIN\_MODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE~0x\+F4}\hypertarget{_firmata_8h_a2aa56be69d612b274deae2bde636b054}{}\label{_firmata_8h_a2aa56be69d612b274deae2bde636b054}
+
+
+Definition at line 55 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::attach(), and Firmata\+Class\+::parse().
+
+\index{Firmata.\+h@{Firmata.\+h}!set\+Firmware\+Version@{set\+Firmware\+Version}}
+\index{set\+Firmware\+Version@{set\+Firmware\+Version}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{set\+Firmware\+Version}{setFirmwareVersion}}]{\setlength{\rightskip}{0pt plus 5cm}\#define set\+Firmware\+Version(
+\begin{DoxyParamCaption}
+\item[{}]{x, }
+\item[{}]{y}
+\end{DoxyParamCaption}
+)~set\+Firmware\+Name\+And\+Version(\+\_\+\+\_\+\+F\+I\+L\+E\+\_\+\+\_\+, x, y)}\hypertarget{_firmata_8h_aa53684b5fb81f3c9792a5bd3555b6229}{}\label{_firmata_8h_aa53684b5fb81f3c9792a5bd3555b6229}
+
+
+Definition at line 222 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+H\+I\+FT@{S\+H\+I\+FT}}
+\index{S\+H\+I\+FT@{S\+H\+I\+FT}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+I\+FT}{SHIFT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+I\+FT~0x05}\hypertarget{_firmata_8h_ac179eef68bcc694aa0ef8dd1eb09950b}{}\label{_firmata_8h_ac179eef68bcc694aa0ef8dd1eb09950b}
+
+
+Definition at line 113 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+H\+I\+F\+T\+\_\+\+D\+A\+TA@{S\+H\+I\+F\+T\+\_\+\+D\+A\+TA}}
+\index{S\+H\+I\+F\+T\+\_\+\+D\+A\+TA@{S\+H\+I\+F\+T\+\_\+\+D\+A\+TA}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+H\+I\+F\+T\+\_\+\+D\+A\+TA}{SHIFT\_DATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+H\+I\+F\+T\+\_\+\+D\+A\+TA~0x75}\hypertarget{_firmata_8h_a616db7a36b772511eca293613d15c36b}{}\label{_firmata_8h_a616db7a36b772511eca293613d15c36b}
+
+
+Definition at line 72 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX@{S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX}}
+\index{S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX@{S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX}{START\_SYSEX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX~0x\+F0}\hypertarget{_firmata_8h_a59347abb8dbf9faf06194cce640f59b6}{}\label{_firmata_8h_a59347abb8dbf9faf06194cce640f59b6}
+
+
+Definition at line 61 of file Firmata.\+h.
+
+
+
+Referenced by Serial\+Firmata\+::check\+Serial(), Firmata\+Class\+::detach(), Firmata\+Class\+::parse(), and Firmata\+Class\+::start\+Sysex().
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+T\+E\+P\+P\+ER@{S\+T\+E\+P\+P\+ER}}
+\index{S\+T\+E\+P\+P\+ER@{S\+T\+E\+P\+P\+ER}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+T\+E\+P\+P\+ER}{STEPPER}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+E\+P\+P\+ER~0x08}\hypertarget{_firmata_8h_aabf41ec36ff3dfa5e82c2328e88d8dcf}{}\label{_firmata_8h_aabf41ec36ff3dfa5e82c2328e88d8dcf}
+
+
+Definition at line 116 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+T\+E\+P\+P\+E\+R\+\_\+\+D\+A\+TA@{S\+T\+E\+P\+P\+E\+R\+\_\+\+D\+A\+TA}}
+\index{S\+T\+E\+P\+P\+E\+R\+\_\+\+D\+A\+TA@{S\+T\+E\+P\+P\+E\+R\+\_\+\+D\+A\+TA}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+T\+E\+P\+P\+E\+R\+\_\+\+D\+A\+TA}{STEPPER\_DATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+E\+P\+P\+E\+R\+\_\+\+D\+A\+TA~0x72}\hypertarget{_firmata_8h_adab08254a5a1978581da65378bfbd2ae}{}\label{_firmata_8h_adab08254a5a1978581da65378bfbd2ae}
+
+
+Definition at line 70 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA@{S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA}}
+\index{S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA@{S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA}{STRING\_DATA}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA~0x71}\hypertarget{_firmata_8h_adfeb1346f4b239a5dcab64b53b52c63d}{}\label{_firmata_8h_adfeb1346f4b239a5dcab64b53b52c63d}
+
+
+Definition at line 69 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::attach(), Firmata\+Class\+::available(), Firmata\+Class\+::detach(), and Firmata\+Class\+::send\+String().
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+P\+LY@{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+P\+LY}}
+\index{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+P\+LY@{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+P\+LY}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+P\+LY}{SYSEX\_I2C\_REPLY}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+P\+LY~0x77}\hypertarget{_firmata_8h_aba37be7c4f8686ba6b923a1205eaa791}{}\label{_firmata_8h_aba37be7c4f8686ba6b923a1205eaa791}
+
+
+Definition at line 91 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST@{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST}}
+\index{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST@{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST}{SYSEX\_I2C\_REQUEST}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+Y\+S\+E\+X\+\_\+\+I2\+C\+\_\+\+R\+E\+Q\+U\+E\+ST~0x76}\hypertarget{_firmata_8h_a7f738d147e4656076db07806682c35b4}{}\label{_firmata_8h_a7f738d147e4656076db07806682c35b4}
+
+
+Definition at line 90 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+Y\+S\+E\+X\+\_\+\+N\+O\+N\+\_\+\+R\+E\+A\+L\+T\+I\+ME@{S\+Y\+S\+E\+X\+\_\+\+N\+O\+N\+\_\+\+R\+E\+A\+L\+T\+I\+ME}}
+\index{S\+Y\+S\+E\+X\+\_\+\+N\+O\+N\+\_\+\+R\+E\+A\+L\+T\+I\+ME@{S\+Y\+S\+E\+X\+\_\+\+N\+O\+N\+\_\+\+R\+E\+A\+L\+T\+I\+ME}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+Y\+S\+E\+X\+\_\+\+N\+O\+N\+\_\+\+R\+E\+A\+L\+T\+I\+ME}{SYSEX\_NON\_REALTIME}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+Y\+S\+E\+X\+\_\+\+N\+O\+N\+\_\+\+R\+E\+A\+L\+T\+I\+ME~0x7E}\hypertarget{_firmata_8h_a4e5359fd6e88add21751b8cec23f1d8a}{}\label{_firmata_8h_a4e5359fd6e88add21751b8cec23f1d8a}
+
+
+Definition at line 86 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+Y\+S\+E\+X\+\_\+\+R\+E\+A\+L\+T\+I\+ME@{S\+Y\+S\+E\+X\+\_\+\+R\+E\+A\+L\+T\+I\+ME}}
+\index{S\+Y\+S\+E\+X\+\_\+\+R\+E\+A\+L\+T\+I\+ME@{S\+Y\+S\+E\+X\+\_\+\+R\+E\+A\+L\+T\+I\+ME}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+Y\+S\+E\+X\+\_\+\+R\+E\+A\+L\+T\+I\+ME}{SYSEX\_REALTIME}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+Y\+S\+E\+X\+\_\+\+R\+E\+A\+L\+T\+I\+ME~0x7F}\hypertarget{_firmata_8h_ad6ea7e4de462dd736e48602c39387596}{}\label{_firmata_8h_ad6ea7e4de462dd736e48602c39387596}
+
+
+Definition at line 87 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+Y\+S\+E\+X\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL@{S\+Y\+S\+E\+X\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL}}
+\index{S\+Y\+S\+E\+X\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL@{S\+Y\+S\+E\+X\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+Y\+S\+E\+X\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL}{SYSEX\_SAMPLING\_INTERVAL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+Y\+S\+E\+X\+\_\+\+S\+A\+M\+P\+L\+I\+N\+G\+\_\+\+I\+N\+T\+E\+R\+V\+AL~0x7A}\hypertarget{_firmata_8h_a7a8b7eac6d6905920573eb7eb1f905f0}{}\label{_firmata_8h_a7a8b7eac6d6905920573eb7eb1f905f0}
+
+
+Definition at line 92 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET@{S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET}}
+\index{S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET@{S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET}{SYSTEM\_RESET}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET~0x\+FF}\hypertarget{_firmata_8h_a9605413125c76e4fa6ab70fd508e61d6}{}\label{_firmata_8h_a9605413125c76e4fa6ab70fd508e61d6}
+
+
+Definition at line 59 of file Firmata.\+h.
+
+
+
+Referenced by Firmata\+Class\+::attach(), Firmata\+Class\+::detach(), and Firmata\+Class\+::parse().
+
+\index{Firmata.\+h@{Firmata.\+h}!T\+O\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+M\+O\+D\+ES@{T\+O\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+M\+O\+D\+ES}}
+\index{T\+O\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+M\+O\+D\+ES@{T\+O\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+M\+O\+D\+ES}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{T\+O\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+M\+O\+D\+ES}{TOTAL\_PIN\_MODES}}]{\setlength{\rightskip}{0pt plus 5cm}\#define T\+O\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+M\+O\+D\+ES~13}\hypertarget{_firmata_8h_a71fb14b7d1dfa89eda085b52b9f5c754}{}\label{_firmata_8h_a71fb14b7d1dfa89eda085b52b9f5c754}
+
+
+Definition at line 108 of file Firmata.\+h.
+
+
+
+\subsection{Typedef Documentation}
+\index{Firmata.\+h@{Firmata.\+h}!callback\+Function@{callback\+Function}}
+\index{callback\+Function@{callback\+Function}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{callback\+Function}{callbackFunction}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ callback\+Function) (byte, int)}\hypertarget{_firmata_8h_abb0d9dbaf4bb25bc00924808c5616aa5}{}\label{_firmata_8h_abb0d9dbaf4bb25bc00924808c5616aa5}
+
+
+Definition at line 122 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!string\+Callback\+Function@{string\+Callback\+Function}}
+\index{string\+Callback\+Function@{string\+Callback\+Function}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{string\+Callback\+Function}{stringCallbackFunction}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ string\+Callback\+Function) (char $\ast$)}\hypertarget{_firmata_8h_a6557a1064a699527f15a5d4d44c9c76d}{}\label{_firmata_8h_a6557a1064a699527f15a5d4d44c9c76d}
+
+
+Definition at line 124 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!sysex\+Callback\+Function@{sysex\+Callback\+Function}}
+\index{sysex\+Callback\+Function@{sysex\+Callback\+Function}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{sysex\+Callback\+Function}{sysexCallbackFunction}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ sysex\+Callback\+Function) (byte command, byte argc, byte $\ast$argv)}\hypertarget{_firmata_8h_a382e396031e042c702aebc1eac88c8da}{}\label{_firmata_8h_a382e396031e042c702aebc1eac88c8da}
+
+
+Definition at line 125 of file Firmata.\+h.
+
+\index{Firmata.\+h@{Firmata.\+h}!system\+Reset\+Callback\+Function@{system\+Reset\+Callback\+Function}}
+\index{system\+Reset\+Callback\+Function@{system\+Reset\+Callback\+Function}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{system\+Reset\+Callback\+Function}{systemResetCallbackFunction}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ system\+Reset\+Callback\+Function) (void)}\hypertarget{_firmata_8h_a29f7a316045cd131238d6e3f9cdb8140}{}\label{_firmata_8h_a29f7a316045cd131238d6e3f9cdb8140}
+
+
+Definition at line 123 of file Firmata.\+h.
+
+
+
+\subsection{Variable Documentation}
+\index{Firmata.\+h@{Firmata.\+h}!Firmata@{Firmata}}
+\index{Firmata@{Firmata}!Firmata.\+h@{Firmata.\+h}}
+\subsubsection[{\texorpdfstring{Firmata}{Firmata}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Firmata\+Class} Firmata}\hypertarget{_firmata_8h_a986c68fac4f21302213e609c277710d7}{}\label{_firmata_8h_a986c68fac4f21302213e609c277710d7}
+
+
+Definition at line 669 of file Firmata.\+cpp.
+
+
+
+Referenced by Serial\+Firmata\+::check\+Serial(), Serial\+Firmata\+::handle\+Capability(), Serial\+Firmata\+::handle\+Pin\+Mode(), Serial\+Firmata\+::handle\+Sysex(), and Firmata\+Class\+::parse().
+

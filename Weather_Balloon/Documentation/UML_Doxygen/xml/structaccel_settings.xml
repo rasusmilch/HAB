@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structaccel_settings" kind="struct" language="C++" prot="public">
+    <compoundname>accelSettings</compoundname>
+    <includes refid="_l_s_m9_d_s1___types_8h" local="no">LSM9DS1_Types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structaccel_settings_1a6ecaf7abfbaf7e74c6986fd93798ad4b" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t accelSettings::enabled</definition>
+        <argsstring></argsstring>
+        <name>enabled</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="208" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="208" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structaccel_settings_1a3a0a38e5e32ad21fcf8e880f37c0de1e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t accelSettings::scale</definition>
+        <argsstring></argsstring>
+        <name>scale</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="209" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="209" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8656d2de1ff9cc4cb76214e4561d02c4" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="629" endline="658">LSM9DS1::setAccelScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a31597c9ae6c5a7de64a50cbbbcd24297" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="748" endline="751">LSM9DS1::calcaRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="952" endline="971">LSM9DS1::constrainScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structaccel_settings_1a51704cb40f1e72ec298f601fedcc6092" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t accelSettings::sampleRate</definition>
+        <argsstring></argsstring>
+        <name>sampleRate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="210" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="210" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a76d72839cdecc3f1c4ee6fff578182c5" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="713" endline="728">LSM9DS1::setAccelODR</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structaccel_settings_1a8cd5546cda8657ad2405d378fc815b9a" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t accelSettings::enableX</definition>
+        <argsstring></argsstring>
+        <name>enableX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="212" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="212" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structaccel_settings_1a3f9ff5abfde83c5a59808faeb5ad4c6c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t accelSettings::enableY</definition>
+        <argsstring></argsstring>
+        <name>enableY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="213" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="213" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structaccel_settings_1abdb5ee5fb9a802315d8340ea5d83b587" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t accelSettings::enableZ</definition>
+        <argsstring></argsstring>
+        <name>enableZ</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="214" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="214" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structaccel_settings_1ab64c80f62ecfeb3041744febaed9407b" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t accelSettings::bandwidth</definition>
+        <argsstring></argsstring>
+        <name>bandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="215" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="215" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structaccel_settings_1ad165444ae7996ff6160be01d77d33b62" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t accelSettings::highResEnable</definition>
+        <argsstring></argsstring>
+        <name>highResEnable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="216" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="216" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structaccel_settings_1a3925a8342b5a4b3caecd187e729954f3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t accelSettings::highResBandwidth</definition>
+        <argsstring></argsstring>
+        <name>highResBandwidth</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="217" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="217" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="206" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="205" bodyend="218"/>
+    <listofallmembers>
+      <member refid="structaccel_settings_1ab64c80f62ecfeb3041744febaed9407b" prot="public" virt="non-virtual"><scope>accelSettings</scope><name>bandwidth</name></member>
+      <member refid="structaccel_settings_1a6ecaf7abfbaf7e74c6986fd93798ad4b" prot="public" virt="non-virtual"><scope>accelSettings</scope><name>enabled</name></member>
+      <member refid="structaccel_settings_1a8cd5546cda8657ad2405d378fc815b9a" prot="public" virt="non-virtual"><scope>accelSettings</scope><name>enableX</name></member>
+      <member refid="structaccel_settings_1a3f9ff5abfde83c5a59808faeb5ad4c6c" prot="public" virt="non-virtual"><scope>accelSettings</scope><name>enableY</name></member>
+      <member refid="structaccel_settings_1abdb5ee5fb9a802315d8340ea5d83b587" prot="public" virt="non-virtual"><scope>accelSettings</scope><name>enableZ</name></member>
+      <member refid="structaccel_settings_1a3925a8342b5a4b3caecd187e729954f3" prot="public" virt="non-virtual"><scope>accelSettings</scope><name>highResBandwidth</name></member>
+      <member refid="structaccel_settings_1ad165444ae7996ff6160be01d77d33b62" prot="public" virt="non-virtual"><scope>accelSettings</scope><name>highResEnable</name></member>
+      <member refid="structaccel_settings_1a51704cb40f1e72ec298f601fedcc6092" prot="public" virt="non-virtual"><scope>accelSettings</scope><name>sampleRate</name></member>
+      <member refid="structaccel_settings_1a3a0a38e5e32ad21fcf8e880f37c0de1e" prot="public" virt="non-virtual"><scope>accelSettings</scope><name>scale</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

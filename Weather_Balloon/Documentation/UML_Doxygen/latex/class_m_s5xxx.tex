@@ -1,0 +1,452 @@
+\hypertarget{class_m_s5xxx}{}\section{M\+S5xxx Class Reference}
+\label{class_m_s5xxx}\index{M\+S5xxx@{M\+S5xxx}}
+
+
+{\ttfamily \#include $<$M\+S5xxx.\+h$>$}
+
+
+
+Inheritance diagram for M\+S5xxx\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=130pt]{class_m_s5xxx__inherit__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_m_s5xxx_a6ed6b66a0c811a9a74f6cdfdfd77e5a9}{M\+S5xxx} (Two\+Wire $\ast$a\+Wire)
+\item 
+void \hyperlink{class_m_s5xxx_a6c3d564fe39d14dfa8804fa1600077d7}{set\+I2\+Caddr} (char a\+Addr)
+\item 
+byte \hyperlink{class_m_s5xxx_a0ac88722b71ab3d82a9d8888d92fe37d}{connect} ()
+\item 
+void \hyperlink{class_m_s5xxx_a654f0608616be8c4b13ec9850caaead0}{Read\+Prom} ()
+\item 
+void \hyperlink{class_m_s5xxx_abb83428fd002519dc52a666a70966eda}{Readout} ()
+\item 
+unsigned int \hyperlink{class_m_s5xxx_a2789efaa473b6bd09fa5d68d0cd0b838}{Calc\+\_\+\+C\+R\+C4} (unsigned char poly=0x30)
+\item 
+unsigned int \hyperlink{class_m_s5xxx_ab931e8cbdfb40384f07ca95139423853}{Read\+\_\+\+C\+R\+C4} ()
+\item 
+unsigned char \hyperlink{class_m_s5xxx_ab302490c7aeb6cf7ce0f7086f33481cf}{C\+R\+Ccode\+Test} ()
+\item 
+unsigned int \hyperlink{class_m_s5xxx_a94a8aaf538936a871b1753d76ebe0b62}{Read\+\_\+C} (unsigned int index)
+\item 
+double \hyperlink{class_m_s5xxx_ac19e5298f6d3f41c7d0edce1e369c36a}{Get\+Temp} ()
+\item 
+double \hyperlink{class_m_s5xxx_aa76127405d9f2ee85eddd92afdb57892}{Get\+Pres} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+unsigned char \hyperlink{class_m_s5xxx_a8c77c76df98347ebf0bfcafd68825552}{send\+\_\+cmd} (unsigned char a\+C\+MD)
+\item 
+unsigned long \hyperlink{class_m_s5xxx_add087d5023754831de3ff629c7ced410}{read\+\_\+adc} (unsigned char a\+C\+MD)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \hyperlink{class_m_s5xxx_a1e35ed9bb07685736da32495c7d8fd90}{C} \mbox{[}8\mbox{]}
+\item 
+double \hyperlink{class_m_s5xxx_a5bf2b4f5b63d8acd877cc61346587e6a}{P}
+\item 
+double \hyperlink{class_m_s5xxx_a8b9ea0d97301232352a0484e6e944753}{T\+E\+MP}
+\item 
+char \hyperlink{class_m_s5xxx_a66741674bcf2bda11f5645b63797a279}{i2caddr}
+\item 
+Two\+Wire $\ast$ \hyperlink{class_m_s5xxx_aa92f0beac7fdd14803aea7564f760980}{\+\_\+\+Wire}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 45 of file M\+S5xxx.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{M\+S5xxx@{M\+S5xxx}!M\+S5xxx@{M\+S5xxx}}
+\index{M\+S5xxx@{M\+S5xxx}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{M\+S5xxx(\+Two\+Wire $\ast$a\+Wire)}{MS5xxx(TwoWire *aWire)}}]{\setlength{\rightskip}{0pt plus 5cm}M\+S5xxx\+::\+M\+S5xxx (
+\begin{DoxyParamCaption}
+\item[{Two\+Wire $\ast$}]{a\+Wire}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_a6ed6b66a0c811a9a74f6cdfdfd77e5a9}{}\label{class_m_s5xxx_a6ed6b66a0c811a9a74f6cdfdfd77e5a9}
+
+
+Definition at line 24 of file M\+S5xxx.\+cpp.
+
+
+
+References \+\_\+\+Wire.
+
+
+
+\subsection{Member Function Documentation}
+\index{M\+S5xxx@{M\+S5xxx}!Calc\+\_\+\+C\+R\+C4@{Calc\+\_\+\+C\+R\+C4}}
+\index{Calc\+\_\+\+C\+R\+C4@{Calc\+\_\+\+C\+R\+C4}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{Calc\+\_\+\+C\+R\+C4(unsigned char poly=0x30)}{Calc\_CRC4(unsigned char poly=0x30)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int M\+S5xxx\+::\+Calc\+\_\+\+C\+R\+C4 (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{poly = {\ttfamily 0x30}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_a2789efaa473b6bd09fa5d68d0cd0b838}{}\label{class_m_s5xxx_a2789efaa473b6bd09fa5d68d0cd0b838}
+
+
+Definition at line 66 of file M\+S5xxx.\+cpp.
+
+
+
+References C.
+
+
+
+Referenced by C\+R\+Ccode\+Test().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=326pt]{class_m_s5xxx_a2789efaa473b6bd09fa5d68d0cd0b838_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+S5xxx@{M\+S5xxx}!connect@{connect}}
+\index{connect@{connect}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{connect()}{connect()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t M\+S5xxx\+::connect (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_a0ac88722b71ab3d82a9d8888d92fe37d}{}\label{class_m_s5xxx_a0ac88722b71ab3d82a9d8888d92fe37d}
+
+
+Definition at line 40 of file M\+S5xxx.\+cpp.
+
+
+
+References \+\_\+\+Wire, and i2caddr.
+
+\index{M\+S5xxx@{M\+S5xxx}!C\+R\+Ccode\+Test@{C\+R\+Ccode\+Test}}
+\index{C\+R\+Ccode\+Test@{C\+R\+Ccode\+Test}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{C\+R\+Ccode\+Test()}{CRCcodeTest()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char M\+S5xxx\+::\+C\+R\+Ccode\+Test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_ab302490c7aeb6cf7ce0f7086f33481cf}{}\label{class_m_s5xxx_ab302490c7aeb6cf7ce0f7086f33481cf}
+
+
+Definition at line 191 of file M\+S5xxx.\+cpp.
+
+
+
+References C, Calc\+\_\+\+C\+R\+C4(), i, and Read\+Prom().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_m_s5xxx_ab302490c7aeb6cf7ce0f7086f33481cf_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+S5xxx@{M\+S5xxx}!Get\+Pres@{Get\+Pres}}
+\index{Get\+Pres@{Get\+Pres}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{Get\+Pres()}{GetPres()}}]{\setlength{\rightskip}{0pt plus 5cm}double M\+S5xxx\+::\+Get\+Pres (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_aa76127405d9f2ee85eddd92afdb57892}{}\label{class_m_s5xxx_aa76127405d9f2ee85eddd92afdb57892}
+
+
+Definition at line 187 of file M\+S5xxx.\+cpp.
+
+
+
+References P.
+
+\index{M\+S5xxx@{M\+S5xxx}!Get\+Temp@{Get\+Temp}}
+\index{Get\+Temp@{Get\+Temp}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{Get\+Temp()}{GetTemp()}}]{\setlength{\rightskip}{0pt plus 5cm}double M\+S5xxx\+::\+Get\+Temp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_ac19e5298f6d3f41c7d0edce1e369c36a}{}\label{class_m_s5xxx_ac19e5298f6d3f41c7d0edce1e369c36a}
+
+
+Definition at line 183 of file M\+S5xxx.\+cpp.
+
+
+
+References T\+E\+MP.
+
+\index{M\+S5xxx@{M\+S5xxx}!read\+\_\+adc@{read\+\_\+adc}}
+\index{read\+\_\+adc@{read\+\_\+adc}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{read\+\_\+adc(unsigned char a\+C\+M\+D)}{read\_adc(unsigned char aCMD)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned long M\+S5xxx\+::read\+\_\+adc (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{a\+C\+MD}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_m_s5xxx_add087d5023754831de3ff629c7ced410}{}\label{class_m_s5xxx_add087d5023754831de3ff629c7ced410}
+
+
+Definition at line 116 of file M\+S5xxx.\+cpp.
+
+
+
+References \+\_\+\+Wire, i2caddr, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+1024, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+2048, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+256, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+4096, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+512, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+\+C\+O\+NV, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+\+R\+E\+AD, and send\+\_\+cmd().
+
+
+
+Referenced by M\+S5611\+::\+Readout(), and Readout().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{class_m_s5xxx_add087d5023754831de3ff629c7ced410_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_m_s5xxx_add087d5023754831de3ff629c7ced410_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+S5xxx@{M\+S5xxx}!Read\+\_\+C@{Read\+\_\+C}}
+\index{Read\+\_\+C@{Read\+\_\+C}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{Read\+\_\+\+C(unsigned int index)}{Read\_C(unsigned int index)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int M\+S5xxx\+::\+Read\+\_\+C (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{index}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_a94a8aaf538936a871b1753d76ebe0b62}{}\label{class_m_s5xxx_a94a8aaf538936a871b1753d76ebe0b62}
+
+
+Definition at line 108 of file M\+S5xxx.\+cpp.
+
+
+
+References C.
+
+\index{M\+S5xxx@{M\+S5xxx}!Read\+\_\+\+C\+R\+C4@{Read\+\_\+\+C\+R\+C4}}
+\index{Read\+\_\+\+C\+R\+C4@{Read\+\_\+\+C\+R\+C4}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{Read\+\_\+\+C\+R\+C4()}{Read\_CRC4()}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int M\+S5xxx\+::\+Read\+\_\+\+C\+R\+C4 (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_ab931e8cbdfb40384f07ca95139423853}{}\label{class_m_s5xxx_ab931e8cbdfb40384f07ca95139423853}
+
+
+Definition at line 101 of file M\+S5xxx.\+cpp.
+
+
+
+References C.
+
+\index{M\+S5xxx@{M\+S5xxx}!Readout@{Readout}}
+\index{Readout@{Readout}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{Readout()}{Readout()}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+S5xxx\+::\+Readout (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_abb83428fd002519dc52a666a70966eda}{}\label{class_m_s5xxx_abb83428fd002519dc52a666a70966eda}
+
+
+Definition at line 148 of file M\+S5xxx.\+cpp.
+
+
+
+References C, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+4096, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+\+D1, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+A\+D\+C\+\_\+\+D2, P, read\+\_\+adc(), and T\+E\+MP.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_m_s5xxx_abb83428fd002519dc52a666a70966eda_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+S5xxx@{M\+S5xxx}!Read\+Prom@{Read\+Prom}}
+\index{Read\+Prom@{Read\+Prom}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{Read\+Prom()}{ReadProm()}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+S5xxx\+::\+Read\+Prom (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_a654f0608616be8c4b13ec9850caaead0}{}\label{class_m_s5xxx_a654f0608616be8c4b13ec9850caaead0}
+
+
+Definition at line 47 of file M\+S5xxx.\+cpp.
+
+
+
+References \+\_\+\+Wire, C, i, i2caddr, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+P\+R\+O\+M\+\_\+\+RD, M\+S5xxx\+\_\+\+C\+M\+D\+\_\+\+R\+E\+S\+ET, and send\+\_\+cmd().
+
+
+
+Referenced by C\+R\+Ccode\+Test().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{class_m_s5xxx_a654f0608616be8c4b13ec9850caaead0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=322pt]{class_m_s5xxx_a654f0608616be8c4b13ec9850caaead0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+S5xxx@{M\+S5xxx}!send\+\_\+cmd@{send\+\_\+cmd}}
+\index{send\+\_\+cmd@{send\+\_\+cmd}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{send\+\_\+cmd(unsigned char a\+C\+M\+D)}{send\_cmd(unsigned char aCMD)}}]{\setlength{\rightskip}{0pt plus 5cm}byte M\+S5xxx\+::send\+\_\+cmd (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{a\+C\+MD}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_m_s5xxx_a8c77c76df98347ebf0bfcafd68825552}{}\label{class_m_s5xxx_a8c77c76df98347ebf0bfcafd68825552}
+
+
+Definition at line 32 of file M\+S5xxx.\+cpp.
+
+
+
+References \+\_\+\+Wire, and i2caddr.
+
+
+
+Referenced by read\+\_\+adc(), and Read\+Prom().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_m_s5xxx_a8c77c76df98347ebf0bfcafd68825552_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{M\+S5xxx@{M\+S5xxx}!set\+I2\+Caddr@{set\+I2\+Caddr}}
+\index{set\+I2\+Caddr@{set\+I2\+Caddr}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{set\+I2\+Caddr(char a\+Addr)}{setI2Caddr(char aAddr)}}]{\setlength{\rightskip}{0pt plus 5cm}void M\+S5xxx\+::set\+I2\+Caddr (
+\begin{DoxyParamCaption}
+\item[{char}]{a\+Addr}
+\end{DoxyParamCaption}
+)}\hypertarget{class_m_s5xxx_a6c3d564fe39d14dfa8804fa1600077d7}{}\label{class_m_s5xxx_a6c3d564fe39d14dfa8804fa1600077d7}
+
+
+Definition at line 28 of file M\+S5xxx.\+cpp.
+
+
+
+References i2caddr.
+
+
+
+Referenced by M\+S5611\+::\+M\+S5611().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{class_m_s5xxx_a6c3d564fe39d14dfa8804fa1600077d7_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{M\+S5xxx@{M\+S5xxx}!\+\_\+\+Wire@{\+\_\+\+Wire}}
+\index{\+\_\+\+Wire@{\+\_\+\+Wire}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{\+\_\+\+Wire}{\_Wire}}]{\setlength{\rightskip}{0pt plus 5cm}Two\+Wire$\ast$ M\+S5xxx\+::\+\_\+\+Wire\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_m_s5xxx_aa92f0beac7fdd14803aea7564f760980}{}\label{class_m_s5xxx_aa92f0beac7fdd14803aea7564f760980}
+
+
+Definition at line 52 of file M\+S5xxx.\+h.
+
+
+
+Referenced by connect(), M\+S5xxx(), read\+\_\+adc(), Read\+Prom(), and send\+\_\+cmd().
+
+\index{M\+S5xxx@{M\+S5xxx}!C@{C}}
+\index{C@{C}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{C}{C}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int M\+S5xxx\+::C\mbox{[}8\mbox{]}\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_m_s5xxx_a1e35ed9bb07685736da32495c7d8fd90}{}\label{class_m_s5xxx_a1e35ed9bb07685736da32495c7d8fd90}
+
+
+Definition at line 48 of file M\+S5xxx.\+h.
+
+
+
+Referenced by Calc\+\_\+\+C\+R\+C4(), C\+R\+Ccode\+Test(), Read\+\_\+\+C(), Read\+\_\+\+C\+R\+C4(), M\+S5611\+::\+Readout(), Readout(), and Read\+Prom().
+
+\index{M\+S5xxx@{M\+S5xxx}!i2caddr@{i2caddr}}
+\index{i2caddr@{i2caddr}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{i2caddr}{i2caddr}}]{\setlength{\rightskip}{0pt plus 5cm}char M\+S5xxx\+::i2caddr\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_m_s5xxx_a66741674bcf2bda11f5645b63797a279}{}\label{class_m_s5xxx_a66741674bcf2bda11f5645b63797a279}
+
+
+Definition at line 51 of file M\+S5xxx.\+h.
+
+
+
+Referenced by connect(), read\+\_\+adc(), Read\+Prom(), send\+\_\+cmd(), and set\+I2\+Caddr().
+
+\index{M\+S5xxx@{M\+S5xxx}!P@{P}}
+\index{P@{P}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{P}{P}}]{\setlength{\rightskip}{0pt plus 5cm}double M\+S5xxx\+::P\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_m_s5xxx_a5bf2b4f5b63d8acd877cc61346587e6a}{}\label{class_m_s5xxx_a5bf2b4f5b63d8acd877cc61346587e6a}
+
+
+Definition at line 49 of file M\+S5xxx.\+h.
+
+
+
+Referenced by Get\+Pres(), M\+S5611\+::\+Readout(), and Readout().
+
+\index{M\+S5xxx@{M\+S5xxx}!T\+E\+MP@{T\+E\+MP}}
+\index{T\+E\+MP@{T\+E\+MP}!M\+S5xxx@{M\+S5xxx}}
+\subsubsection[{\texorpdfstring{T\+E\+MP}{TEMP}}]{\setlength{\rightskip}{0pt plus 5cm}double M\+S5xxx\+::\+T\+E\+MP\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_m_s5xxx_a8b9ea0d97301232352a0484e6e944753}{}\label{class_m_s5xxx_a8b9ea0d97301232352a0484e6e944753}
+
+
+Definition at line 50 of file M\+S5xxx.\+h.
+
+
+
+Referenced by Get\+Temp(), M\+S5611\+::\+Readout(), and Readout().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/arduino-\/ms5xxx-\/master/src/\hyperlink{_m_s5xxx_8h}{M\+S5xxx.\+h}\item 
+Weather\+\_\+\+Balloon/library/arduino-\/ms5xxx-\/master/src/\hyperlink{_m_s5xxx_8cpp}{M\+S5xxx.\+cpp}\end{DoxyCompactItemize}

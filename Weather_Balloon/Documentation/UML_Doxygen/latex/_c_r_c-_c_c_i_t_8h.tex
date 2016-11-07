@@ -1,0 +1,78 @@
+\hypertarget{_c_r_c-_c_c_i_t_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\+C\+R\+C-\/\+C\+C\+IT.h File Reference}
+\label{_c_r_c-_c_c_i_t_8h}\index{Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\+C\+R\+C-\/\+C\+C\+I\+T.\+h@{Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\+C\+R\+C-\/\+C\+C\+I\+T.\+h}}
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$avr/pgmspace.\+h$>$}\\*
+Include dependency graph for C\+R\+C-\/\+C\+C\+IT.h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_c_r_c-_c_c_i_t_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_c_r_c-_c_c_i_t_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_c_r_c-_c_c_i_t_8h_ae53bd48601e15e51c3d3c658afae6419}{C\+R\+C\+\_\+\+C\+C\+I\+T\+\_\+\+I\+N\+I\+T\+\_\+\+V\+AL}~((uint16\+\_\+t)0x\+F\+F\+F\+F)
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint16\+\_\+t \hyperlink{_c_r_c-_c_c_i_t_8h_a290cec53667d36f549f18f42d1539442}{update\+\_\+crc\+\_\+ccit} (uint8\+\_\+t c, uint16\+\_\+t prev\+\_\+crc)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const uint16\+\_\+t \hyperlink{_c_r_c-_c_c_i_t_8h_aada4617cdcf1f888402be21cb0e7215d}{crc\+\_\+ccit\+\_\+table} \mbox{[}256\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{C\+R\+C-\/\+C\+C\+I\+T.\+h@{C\+R\+C-\/\+C\+C\+I\+T.\+h}!C\+R\+C\+\_\+\+C\+C\+I\+T\+\_\+\+I\+N\+I\+T\+\_\+\+V\+AL@{C\+R\+C\+\_\+\+C\+C\+I\+T\+\_\+\+I\+N\+I\+T\+\_\+\+V\+AL}}
+\index{C\+R\+C\+\_\+\+C\+C\+I\+T\+\_\+\+I\+N\+I\+T\+\_\+\+V\+AL@{C\+R\+C\+\_\+\+C\+C\+I\+T\+\_\+\+I\+N\+I\+T\+\_\+\+V\+AL}!C\+R\+C-\/\+C\+C\+I\+T.\+h@{C\+R\+C-\/\+C\+C\+I\+T.\+h}}
+\subsubsection[{\texorpdfstring{C\+R\+C\+\_\+\+C\+C\+I\+T\+\_\+\+I\+N\+I\+T\+\_\+\+V\+AL}{CRC\_CCIT\_INIT\_VAL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define C\+R\+C\+\_\+\+C\+C\+I\+T\+\_\+\+I\+N\+I\+T\+\_\+\+V\+AL~((uint16\+\_\+t)0x\+F\+F\+F\+F)}\hypertarget{_c_r_c-_c_c_i_t_8h_ae53bd48601e15e51c3d3c658afae6419}{}\label{_c_r_c-_c_c_i_t_8h_ae53bd48601e15e51c3d3c658afae6419}
+
+
+Definition at line 9 of file C\+R\+C-\/\+C\+C\+I\+T.\+h.
+
+
+
+\subsection{Function Documentation}
+\index{C\+R\+C-\/\+C\+C\+I\+T.\+h@{C\+R\+C-\/\+C\+C\+I\+T.\+h}!update\+\_\+crc\+\_\+ccit@{update\+\_\+crc\+\_\+ccit}}
+\index{update\+\_\+crc\+\_\+ccit@{update\+\_\+crc\+\_\+ccit}!C\+R\+C-\/\+C\+C\+I\+T.\+h@{C\+R\+C-\/\+C\+C\+I\+T.\+h}}
+\subsubsection[{\texorpdfstring{update\+\_\+crc\+\_\+ccit(uint8\+\_\+t c, uint16\+\_\+t prev\+\_\+crc)}{update\_crc\_ccit(uint8\_t c, uint16\_t prev\_crc)}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t update\+\_\+crc\+\_\+ccit (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{c, }
+\item[{uint16\+\_\+t}]{prev\+\_\+crc}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_c_r_c-_c_c_i_t_8h_a290cec53667d36f549f18f42d1539442}{}\label{_c_r_c-_c_c_i_t_8h_a290cec53667d36f549f18f42d1539442}
+
+
+Definition at line 13 of file C\+R\+C-\/\+C\+C\+I\+T.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=349pt]{_c_r_c-_c_c_i_t_8h_a290cec53667d36f549f18f42d1539442_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{C\+R\+C-\/\+C\+C\+I\+T.\+h@{C\+R\+C-\/\+C\+C\+I\+T.\+h}!crc\+\_\+ccit\+\_\+table@{crc\+\_\+ccit\+\_\+table}}
+\index{crc\+\_\+ccit\+\_\+table@{crc\+\_\+ccit\+\_\+table}!C\+R\+C-\/\+C\+C\+I\+T.\+h@{C\+R\+C-\/\+C\+C\+I\+T.\+h}}
+\subsubsection[{\texorpdfstring{crc\+\_\+ccit\+\_\+table}{crc\_ccit\_table}}]{\setlength{\rightskip}{0pt plus 5cm}const uint16\+\_\+t crc\+\_\+ccit\+\_\+table\mbox{[}256\mbox{]}}\hypertarget{_c_r_c-_c_c_i_t_8h_aada4617cdcf1f888402be21cb0e7215d}{}\label{_c_r_c-_c_c_i_t_8h_aada4617cdcf1f888402be21cb0e7215d}

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structsensors__color__t_8____unnamed_____8____unnamed____" kind="struct" language="C++" prot="public">
+    <compoundname>sensors_color_t.__unnamed__.__unnamed__</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structsensors__color__t_8____unnamed_____8____unnamed_____1a4b43b0aee35624cd95b910189b3dc231" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>r</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Red component </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="90" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsensors__color__t_8____unnamed_____8____unnamed_____1ab2f5ff47436671b6e533d8dc3614845d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>g</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Green component </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structsensors__color__t_8____unnamed_____8____unnamed_____1a92eb5ffee6ae2fec3ad71c777531578f" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Blue component </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="92" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" line="89" column="1" bodyfile="Weather_Balloon/library/Adafruit_Sensor-master/Adafruit_Sensor.h" bodystart="89" bodyend="93"/>
+    <listofallmembers>
+      <member refid="structsensors__color__t_8____unnamed_____8____unnamed_____1a92eb5ffee6ae2fec3ad71c777531578f" prot="public" virt="non-virtual"><scope>sensors_color_t.__unnamed__.__unnamed__</scope><name>b</name></member>
+      <member refid="structsensors__color__t_8____unnamed_____8____unnamed_____1ab2f5ff47436671b6e533d8dc3614845d" prot="public" virt="non-virtual"><scope>sensors_color_t.__unnamed__.__unnamed__</scope><name>g</name></member>
+      <member refid="structsensors__color__t_8____unnamed_____8____unnamed_____1a4b43b0aee35624cd95b910189b3dc231" prot="public" virt="non-virtual"><scope>sensors_color_t.__unnamed__.__unnamed__</scope><name>r</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

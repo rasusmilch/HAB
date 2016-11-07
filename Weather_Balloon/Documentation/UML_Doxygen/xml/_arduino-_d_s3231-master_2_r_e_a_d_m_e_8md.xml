@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_arduino-_d_s3231-master_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">Arduino-DS3231</highlight></codeline>
+<codeline><highlight class="normal">==============</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">DS3231<sp/>Real-Time<sp/>Clock.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">![DS3231](http://www.jarzebski.pl/media/big/publish/2014/04/ds3231-dateformat.png)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Date<sp/>formats<sp/>(Day)</highlight></codeline>
+<codeline><highlight class="normal">------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>d<sp/>:<sp/>Day<sp/>of<sp/>the<sp/>month,<sp/>2<sp/>digits<sp/>with<sp/>leading<sp/>zeros<sp/>(01<sp/>to<sp/>31)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>D<sp/>:<sp/>A<sp/>textual<sp/>representation<sp/>of<sp/>a<sp/>day,<sp/>three<sp/>letters<sp/>(Mon<sp/>through<sp/>Sun)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>j<sp/>:<sp/>Day<sp/>of<sp/>the<sp/>month<sp/>without<sp/>leading<sp/>zeros<sp/>(1<sp/>to<sp/>31)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>l<sp/>:<sp/>A<sp/>full<sp/>textual<sp/>representation<sp/>of<sp/>the<sp/>day<sp/>of<sp/>the<sp/>week<sp/>(Sunday<sp/>through<sp/>Saturday)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>N<sp/>:<sp/>ISO-8601<sp/>numeric<sp/>representation<sp/>of<sp/>the<sp/>day<sp/>of<sp/>the<sp/>week<sp/>(1<sp/>for<sp/>Monday<sp/>through<sp/>7<sp/>for<sp/>Sunday)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>S<sp/>:<sp/>English<sp/>ordinal<sp/>suffix<sp/>for<sp/>the<sp/>day<sp/>of<sp/>the<sp/>month,<sp/>2<sp/>characters<sp/>(st,<sp/>nd,<sp/>rd<sp/>or<sp/>th.<sp/>Works<sp/>well<sp/>with<sp/>j)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>w<sp/>:<sp/>Numeric<sp/>representation<sp/>of<sp/>the<sp/>day<sp/>of<sp/>the<sp/>week<sp/>(0<sp/>for<sp/>Sunday<sp/>through<sp/>6<sp/>for<sp/>Saturday)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>z<sp/>:<sp/>The<sp/>day<sp/>of<sp/>the<sp/>year<sp/>(0<sp/>through<sp/>365)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Date<sp/>formats<sp/>(Month)</highlight></codeline>
+<codeline><highlight class="normal">--------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>F<sp/>:<sp/>A<sp/>full<sp/>textual<sp/>representation<sp/>of<sp/>a<sp/>month,<sp/>such<sp/>as<sp/>January<sp/>or<sp/>March<sp/>(January<sp/>through<sp/>December)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>m<sp/>:<sp/>Numeric<sp/>representation<sp/>of<sp/>a<sp/>month,<sp/>with<sp/>leading<sp/>zeros<sp/>(01<sp/>through<sp/>12)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>M<sp/>:<sp/>A<sp/>short<sp/>textual<sp/>representation<sp/>of<sp/>a<sp/>month,<sp/>three<sp/>letters<sp/>(Jan<sp/>through<sp/>Dec)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>n<sp/>:<sp/>Numeric<sp/>representation<sp/>of<sp/>a<sp/>month,<sp/>without<sp/>leading<sp/>zeros<sp/>(1<sp/>through<sp/>12)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>t<sp/>:<sp/>Number<sp/>of<sp/>days<sp/>in<sp/>the<sp/>given<sp/>month<sp/>(28<sp/>through<sp/>31)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Date<sp/>formats<sp/>(Year)</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>L<sp/>:<sp/>Whether<sp/>it&apos;s<sp/>a<sp/>leap<sp/>year<sp/>(1<sp/>if<sp/>it<sp/>is<sp/>a<sp/>leap<sp/>year,<sp/>0<sp/>otherwise)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>Y<sp/>:<sp/>A<sp/>full<sp/>numeric<sp/>representation<sp/>of<sp/>a<sp/>year,<sp/>4<sp/>digits<sp/>(Examples:<sp/>1999<sp/>or<sp/>2003)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>y<sp/>:<sp/>A<sp/>two<sp/>digit<sp/>representation<sp/>of<sp/>a<sp/>year<sp/>(Examples:<sp/>99<sp/>or<sp/>03)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Date<sp/>formats<sp/>(Time)</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>a<sp/>:<sp/>Lowercase<sp/>Ante<sp/>meridiem<sp/>and<sp/>Post<sp/>meridiem<sp/>(am<sp/>or<sp/>pm)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>A<sp/>:<sp/>Uppercase<sp/>Ante<sp/>meridiem<sp/>and<sp/>Post<sp/>meridiem<sp/>(AM<sp/>or<sp/>PM)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>g<sp/>:<sp/>2-hour<sp/>format<sp/>of<sp/>an<sp/>hour<sp/>without<sp/>leading<sp/>zeros<sp/>(1<sp/>through<sp/>12)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>G<sp/>:<sp/>24-hour<sp/>format<sp/>of<sp/>an<sp/>hour<sp/>without<sp/>leading<sp/>zeros<sp/>(0<sp/>through<sp/>23)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>h<sp/>:<sp/>12-hour<sp/>format<sp/>of<sp/>an<sp/>hour<sp/>with<sp/>leading<sp/>zeros<sp/>(01<sp/>through<sp/>12)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>H<sp/>:<sp/>24-hour<sp/>format<sp/>of<sp/>an<sp/>hour<sp/>with<sp/>leading<sp/>zeros<sp/>(00<sp/>through<sp/>23)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>i<sp/>:<sp/>Minutes<sp/>with<sp/>leading<sp/>zeros<sp/>(00<sp/>to<sp/>59)</highlight></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>s<sp/>:<sp/>Seconds,<sp/>with<sp/>leading<sp/>zeros<sp/>(00<sp/>through<sp/>59)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Dare<sp/>formats<sp/>(Full<sp/>Date/Time)</highlight></codeline>
+<codeline><highlight class="normal">-----------------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/>*<sp/>U<sp/>:<sp/>Seconds<sp/>since<sp/>the<sp/>Unix<sp/>Epoch<sp/>(January<sp/>1<sp/>1970<sp/>00:00:00<sp/>GMT)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">More<sp/>info</highlight></codeline>
+<codeline><highlight class="normal">---------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Tutorials:<sp/>www.jarzebski.pl/arduino/komponenty/zegar-czasu-rzeczywistego-rtc-ds3231.html</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>library<sp/>use<sp/>I2C<sp/>to<sp/>communicate,<sp/>2<sp/>pins<sp/>are<sp/>required<sp/>to<sp/>interface.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Credits</highlight></codeline>
+<codeline><highlight class="normal">-------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Original<sp/>Code<sp/>by<sp/>JeeLabs<sp/>http://news.jeelabs.org/code/</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">First<sp/>fork<sp/>by<sp/>adafruit<sp/>https://github.com/adafruit/RTClib</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Arduino-DS3231-master/README.md"/>
+  </compounddef>
+</doxygen>

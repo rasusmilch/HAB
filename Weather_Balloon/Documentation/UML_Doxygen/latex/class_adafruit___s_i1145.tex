@@ -1,0 +1,239 @@
+\hypertarget{class_adafruit___s_i1145}{}\section{Adafruit\+\_\+\+S\+I1145 Class Reference}
+\label{class_adafruit___s_i1145}\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+
+
+{\ttfamily \#include $<$Adafruit\+\_\+\+S\+I1145.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_adafruit___s_i1145_ae89a2548ed17479c42aa011df63160f2}{Adafruit\+\_\+\+S\+I1145} (void)
+\item 
+boolean \hyperlink{class_adafruit___s_i1145_ad17eb7214e6fba886b5595cf14e45cf0}{begin} ()
+\item 
+void \hyperlink{class_adafruit___s_i1145_ab7a22b92c14315e36b84a42498e970ea}{reset} ()
+\item 
+uint16\+\_\+t \hyperlink{class_adafruit___s_i1145_a9d1715d966500b5f5f88568a5b4f780b}{read\+UV} ()
+\item 
+uint16\+\_\+t \hyperlink{class_adafruit___s_i1145_a7295e72f69a558cd6b3ac382ac791688}{read\+IR} ()
+\item 
+uint16\+\_\+t \hyperlink{class_adafruit___s_i1145_a25bf65464093ec0ba5f9fdd884606a21}{read\+Visible} ()
+\item 
+uint16\+\_\+t \hyperlink{class_adafruit___s_i1145_a9b058485d8305725020219839285ea16}{read\+Prox} ()
+\item 
+uint8\+\_\+t \hyperlink{class_adafruit___s_i1145_ab0a29c37acf40dd227d7d23c5a5b0254}{get\+Register} (uint8\+\_\+t)
+\item 
+uint8\+\_\+t \hyperlink{class_adafruit___s_i1145_a591ba648b988a5dcb464b9f60a4a2c83}{set\+Register} (uint8\+\_\+t, uint8\+\_\+t)
+\item 
+void \hyperlink{class_adafruit___s_i1145_a67635a26a9c4c6b2fc2a7ffc86c2b5c9}{reset\+\_\+uv} ()
+\item 
+void \hyperlink{class_adafruit___s_i1145_a9290b9f5e92874e9e927cb27fd53a2ed}{nop} ()
+\item 
+void \hyperlink{class_adafruit___s_i1145_ad48796484b0107059cc8a8a33b673390}{force\+\_\+convert} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 156 of file Adafruit\+\_\+\+S\+I1145.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{Adafruit\+\_\+\+S\+I1145(void)}{Adafruit\_SI1145(void)}}]{\setlength{\rightskip}{0pt plus 5cm}Adafruit\+\_\+\+S\+I1145\+::\+Adafruit\+\_\+\+S\+I1145 (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_ae89a2548ed17479c42aa011df63160f2}{}\label{class_adafruit___s_i1145_ae89a2548ed17479c42aa011df63160f2}
+
+
+Definition at line 20 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+
+
+References S\+I1145\+\_\+\+A\+D\+DR.
+
+
+
+\subsection{Member Function Documentation}
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!begin@{begin}}
+\index{begin@{begin}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Adafruit\+\_\+\+S\+I1145\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_ad17eb7214e6fba886b5595cf14e45cf0}{}\label{class_adafruit___s_i1145_ad17eb7214e6fba886b5595cf14e45cf0}
+
+
+Definition at line 25 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+
+
+References reset(), S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+D\+C\+C\+O\+U\+N\+T\+E\+R\+\_\+511\+C\+LK, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+D\+C\+M\+U\+X\+\_\+\+L\+A\+R\+G\+E\+IR, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+D\+C\+M\+U\+X\+\_\+\+S\+M\+A\+L\+L\+IR, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+L\+S\+I\+R\+A\+D\+C\+G\+A\+IN, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+L\+S\+I\+R\+A\+D\+C\+M\+I\+SC, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+L\+S\+I\+R\+A\+D\+C\+M\+I\+S\+C\+\_\+\+R\+A\+N\+GE, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+L\+S\+I\+R\+A\+D\+C\+M\+UX, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+L\+S\+I\+R\+A\+D\+C\+O\+U\+N\+T\+ER, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+L\+S\+V\+I\+S\+A\+D\+C\+G\+A\+IN, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+L\+S\+V\+I\+S\+A\+D\+C\+M\+I\+SC, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+L\+S\+V\+I\+S\+A\+D\+C\+M\+I\+S\+C\+\_\+\+V\+I\+S\+R\+A\+N\+GE, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+A\+L\+S\+V\+I\+S\+A\+D\+C\+O\+U\+N\+T\+ER, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+C\+H\+L\+I\+ST, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+C\+H\+L\+I\+S\+T\+\_\+\+E\+N\+A\+L\+S\+IR, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+C\+H\+L\+I\+S\+T\+\_\+\+E\+N\+A\+L\+S\+V\+IS, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+C\+H\+L\+I\+S\+T\+\_\+\+E\+N\+P\+S1, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+C\+H\+L\+I\+S\+T\+\_\+\+E\+N\+UV, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S1\+A\+D\+C\+M\+UX, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+A\+D\+C\+G\+A\+IN, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+A\+D\+C\+M\+I\+SC, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+A\+D\+C\+M\+I\+S\+C\+\_\+\+P\+S\+M\+O\+DE, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+A\+D\+C\+M\+I\+S\+C\+\_\+\+R\+A\+N\+GE, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+A\+D\+C\+O\+U\+N\+T\+ER, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+L\+E\+D12\+S\+EL, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+S\+L\+E\+D12\+S\+E\+L\+\_\+\+P\+S1\+L\+E\+D1, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+I\+N\+T\+C\+FG, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+I\+N\+T\+C\+F\+G\+\_\+\+I\+N\+T\+OE, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+I\+R\+Q\+EN, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+I\+R\+Q\+E\+N\+\_\+\+A\+L\+S\+E\+V\+E\+R\+Y\+S\+A\+M\+P\+LE, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+P\+A\+R\+T\+ID, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+P\+S\+L\+E\+D21, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+U\+C\+O\+E\+F\+F0, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+U\+C\+O\+E\+F\+F1, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+U\+C\+O\+E\+F\+F2, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+U\+C\+O\+E\+F\+F3, and Wire.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_adafruit___s_i1145_ad17eb7214e6fba886b5595cf14e45cf0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!force\+\_\+convert@{force\+\_\+convert}}
+\index{force\+\_\+convert@{force\+\_\+convert}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{force\+\_\+convert()}{force\_convert()}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+S\+I1145\+::force\+\_\+convert (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_ad48796484b0107059cc8a8a33b673390}{}\label{class_adafruit___s_i1145_ad48796484b0107059cc8a8a33b673390}
+
+
+Definition at line 135 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+
+
+References S\+I1145\+\_\+\+P\+S\+A\+L\+S\+\_\+\+F\+O\+R\+CE, and S\+I1145\+\_\+\+R\+E\+G\+\_\+\+C\+O\+M\+M\+A\+ND.
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!get\+Register@{get\+Register}}
+\index{get\+Register@{get\+Register}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{get\+Register(uint8\+\_\+t)}{getRegister(uint8\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Adafruit\+\_\+\+S\+I1145\+::get\+Register (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{reg}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_ab0a29c37acf40dd227d7d23c5a5b0254}{}\label{class_adafruit___s_i1145_ab0a29c37acf40dd227d7d23c5a5b0254}
+
+
+Definition at line 117 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!nop@{nop}}
+\index{nop@{nop}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{nop()}{nop()}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+S\+I1145\+::nop (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_a9290b9f5e92874e9e927cb27fd53a2ed}{}\label{class_adafruit___s_i1145_a9290b9f5e92874e9e927cb27fd53a2ed}
+
+
+Definition at line 131 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+
+
+References S\+I1145\+\_\+\+R\+E\+G\+\_\+\+C\+O\+M\+M\+A\+ND, and S\+I1145\+\_\+\+R\+E\+S\+ET.
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!read\+IR@{read\+IR}}
+\index{read\+IR@{read\+IR}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{read\+I\+R()}{readIR()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Adafruit\+\_\+\+S\+I1145\+::read\+IR (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_a7295e72f69a558cd6b3ac382ac791688}{}\label{class_adafruit___s_i1145_a7295e72f69a558cd6b3ac382ac791688}
+
+
+Definition at line 145 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!read\+Prox@{read\+Prox}}
+\index{read\+Prox@{read\+Prox}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{read\+Prox()}{readProx()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Adafruit\+\_\+\+S\+I1145\+::read\+Prox (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_a9b058485d8305725020219839285ea16}{}\label{class_adafruit___s_i1145_a9b058485d8305725020219839285ea16}
+
+
+Definition at line 150 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+
+
+References S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+Q\+U\+E\+RY, S\+I1145\+\_\+\+P\+A\+R\+A\+M\+\_\+\+S\+ET, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+C\+O\+M\+M\+A\+ND, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+P\+A\+R\+A\+M\+RD, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+P\+A\+R\+A\+M\+WR, and Wire.
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!read\+UV@{read\+UV}}
+\index{read\+UV@{read\+UV}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{read\+U\+V()}{readUV()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Adafruit\+\_\+\+S\+I1145\+::read\+UV (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_a9d1715d966500b5f5f88568a5b4f780b}{}\label{class_adafruit___s_i1145_a9d1715d966500b5f5f88568a5b4f780b}
+
+
+Definition at line 113 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!read\+Visible@{read\+Visible}}
+\index{read\+Visible@{read\+Visible}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{read\+Visible()}{readVisible()}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Adafruit\+\_\+\+S\+I1145\+::read\+Visible (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_a25bf65464093ec0ba5f9fdd884606a21}{}\label{class_adafruit___s_i1145_a25bf65464093ec0ba5f9fdd884606a21}
+
+
+Definition at line 140 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!reset@{reset}}
+\index{reset@{reset}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{reset()}{reset()}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+S\+I1145\+::reset (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_ab7a22b92c14315e36b84a42498e970ea}{}\label{class_adafruit___s_i1145_ab7a22b92c14315e36b84a42498e970ea}
+
+
+Definition at line 93 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+
+
+References S\+I1145\+\_\+\+R\+E\+G\+\_\+\+C\+O\+M\+M\+A\+ND, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+H\+W\+K\+EY, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+I\+N\+T\+C\+FG, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+I\+R\+Q\+EN, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+I\+R\+Q\+M\+O\+D\+E1, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+I\+R\+Q\+M\+O\+D\+E2, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+I\+R\+Q\+S\+T\+AT, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+M\+E\+A\+S\+R\+A\+T\+E0, S\+I1145\+\_\+\+R\+E\+G\+\_\+\+M\+E\+A\+S\+R\+A\+T\+E1, and S\+I1145\+\_\+\+R\+E\+S\+ET.
+
+
+
+Referenced by begin().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=330pt]{class_adafruit___s_i1145_ab7a22b92c14315e36b84a42498e970ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!reset\+\_\+uv@{reset\+\_\+uv}}
+\index{reset\+\_\+uv@{reset\+\_\+uv}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{reset\+\_\+uv()}{reset\_uv()}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+S\+I1145\+::reset\+\_\+uv (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_a67635a26a9c4c6b2fc2a7ffc86c2b5c9}{}\label{class_adafruit___s_i1145_a67635a26a9c4c6b2fc2a7ffc86c2b5c9}
+
+
+Definition at line 127 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+
+
+References S\+I1145\+\_\+\+N\+OP, and S\+I1145\+\_\+\+R\+E\+G\+\_\+\+C\+O\+M\+M\+A\+ND.
+
+\index{Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}!set\+Register@{set\+Register}}
+\index{set\+Register@{set\+Register}!Adafruit\+\_\+\+S\+I1145@{Adafruit\+\_\+\+S\+I1145}}
+\subsubsection[{\texorpdfstring{set\+Register(uint8\+\_\+t, uint8\+\_\+t)}{setRegister(uint8\_t, uint8\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Adafruit\+\_\+\+S\+I1145\+::set\+Register (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{reg, }
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___s_i1145_a591ba648b988a5dcb464b9f60a4a2c83}{}\label{class_adafruit___s_i1145_a591ba648b988a5dcb464b9f60a4a2c83}
+
+
+Definition at line 122 of file Adafruit\+\_\+\+S\+I1145.\+cpp.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+S\+I1145\+\_\+\+Library-\/master/\hyperlink{_adafruit___s_i1145_8h}{Adafruit\+\_\+\+S\+I1145.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+S\+I1145\+\_\+\+Library-\/master/\hyperlink{_adafruit___s_i1145_8cpp}{Adafruit\+\_\+\+S\+I1145.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,440 @@
+\hypertarget{_lib_a_p_r_s_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\+Lib\+A\+P\+RS.h File Reference}
+\label{_lib_a_p_r_s_8h}\index{Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\+Lib\+A\+P\+R\+S.\+h@{Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\+Lib\+A\+P\+R\+S.\+h}}
+{\ttfamily \#include \char`\"{}Arduino.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$stdint.\+h$>$}\\*
+{\ttfamily \#include $<$stdbool.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}F\+I\+F\+O.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}C\+R\+C-\/\+C\+C\+I\+T.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}H\+D\+L\+C.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}A\+F\+S\+K.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}A\+X25.\+h\char`\"{}}\\*
+Include dependency graph for Lib\+A\+P\+R\+S.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lib_a_p_r_s_8h__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a4112ffe044a152d02f86f8f25a30d45a}{A\+P\+R\+S\+\_\+init} (int reference, bool open\+\_\+squelch)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a0e02a071a97738c3c3d32a6c18f897bc}{A\+P\+R\+S\+\_\+poll} (void)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_aa36158ec57ff1fc02eaa21e2bb74540d}{A\+P\+R\+S\+\_\+set\+Callsign} (char $\ast$call, int \hyperlink{wifi_config_8h_a375b545f86fd7e1d5d44926f28b75800}{ssid})
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a21a8a7357b3805665d49c92f0e120a4b}{A\+P\+R\+S\+\_\+set\+Destination} (char $\ast$call, int \hyperlink{wifi_config_8h_a375b545f86fd7e1d5d44926f28b75800}{ssid})
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_ae027f5d3426daec37661dc7ede9aedf0}{A\+P\+R\+S\+\_\+set\+Message\+Destination} (char $\ast$call, int \hyperlink{wifi_config_8h_a375b545f86fd7e1d5d44926f28b75800}{ssid})
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a893dabee106e6537f9a70b851df3a6fa}{A\+P\+R\+S\+\_\+set\+Path1} (char $\ast$call, int \hyperlink{wifi_config_8h_a375b545f86fd7e1d5d44926f28b75800}{ssid})
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_acd65cef84cc868398762c3b50b6e4444}{A\+P\+R\+S\+\_\+set\+Path2} (char $\ast$call, int \hyperlink{wifi_config_8h_a375b545f86fd7e1d5d44926f28b75800}{ssid})
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a8d2879844f6f9808dc5a101f6eb74e4c}{A\+P\+R\+S\+\_\+set\+Preamble} (unsigned long pre)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_ab32765e29df288da61f2bda8cf13e276}{A\+P\+R\+S\+\_\+set\+Tail} (unsigned long tail)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a36e9ef7abf74277e45ff59b48f7ff545}{A\+P\+R\+S\+\_\+use\+Alternate\+Symbol\+Table} (bool use)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a128fa7c712c53cbba638cab0e42bfb23}{A\+P\+R\+S\+\_\+set\+Symbol} (char sym)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a4234103a952e958b2b2c6e15d0637efd}{A\+P\+R\+S\+\_\+set\+Lat} (char $\ast$lat)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a40002fdeaf4994017005d85c334b6b65}{A\+P\+R\+S\+\_\+set\+Lon} (char $\ast$lon)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a88512e86a80a125417651ef2a4f803a0}{A\+P\+R\+S\+\_\+set\+Power} (int s)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_ad9f68984da752ee6d00d9439800debd6}{A\+P\+R\+S\+\_\+set\+Height} (int s)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a962ed213cb6b79f710aeb676d2ba53e4}{A\+P\+R\+S\+\_\+set\+Gain} (int s)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a37f30cfbe0491e15b0ae232ea9e66358}{A\+P\+R\+S\+\_\+set\+Directivity} (int s)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_ae5f394441f5ec861b661e0a63e33f44e}{A\+P\+R\+S\+\_\+send\+Pkt} (void $\ast$\+\_\+buffer, size\+\_\+t length)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a8a1dc880a0b1622b68d488a4bb69afa0}{A\+P\+R\+S\+\_\+send\+Loc} (void $\ast$\+\_\+buffer, size\+\_\+t length)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a40fd4b0339cc234de92be317d48ea9fb}{A\+P\+R\+S\+\_\+send\+Msg} (void $\ast$\+\_\+buffer, size\+\_\+t length)
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a46f010ed409b5457f351361c65d47fe4}{A\+P\+R\+S\+\_\+msg\+Retry} ()
+\item 
+void \hyperlink{_lib_a_p_r_s_8h_a3fffb640ed02c57078f50fd7289c352d}{A\+P\+R\+S\+\_\+print\+Settings} ()
+\item 
+int \hyperlink{_lib_a_p_r_s_8h_a8d862dc01c44bfabc8d952bb77f8da89}{free\+Memory} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+init@{A\+P\+R\+S\+\_\+init}}
+\index{A\+P\+R\+S\+\_\+init@{A\+P\+R\+S\+\_\+init}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+init(int reference, bool open\+\_\+squelch)}{APRS\_init(int reference, bool open\_squelch)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{int}]{reference, }
+\item[{bool}]{open\+\_\+squelch}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a4112ffe044a152d02f86f8f25a30d45a}{}\label{_lib_a_p_r_s_8h_a4112ffe044a152d02f86f8f25a30d45a}
+
+
+Definition at line 54 of file Lib\+A\+P\+R\+S.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lib_a_p_r_s_8h_a4112ffe044a152d02f86f8f25a30d45a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+msg\+Retry@{A\+P\+R\+S\+\_\+msg\+Retry}}
+\index{A\+P\+R\+S\+\_\+msg\+Retry@{A\+P\+R\+S\+\_\+msg\+Retry}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+msg\+Retry()}{APRS\_msgRetry()}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+msg\+Retry (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a46f010ed409b5457f351361c65d47fe4}{}\label{_lib_a_p_r_s_8h_a46f010ed409b5457f351361c65d47fe4}
+
+
+Definition at line 311 of file Lib\+A\+P\+R\+S.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lib_a_p_r_s_8h_a46f010ed409b5457f351361c65d47fe4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+poll@{A\+P\+R\+S\+\_\+poll}}
+\index{A\+P\+R\+S\+\_\+poll@{A\+P\+R\+S\+\_\+poll}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+poll(void)}{APRS\_poll(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+poll (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a0e02a071a97738c3c3d32a6c18f897bc}{}\label{_lib_a_p_r_s_8h_a0e02a071a97738c3c3d32a6c18f897bc}
+
+
+Definition at line 62 of file Lib\+A\+P\+R\+S.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lib_a_p_r_s_8h_a0e02a071a97738c3c3d32a6c18f897bc_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+print\+Settings@{A\+P\+R\+S\+\_\+print\+Settings}}
+\index{A\+P\+R\+S\+\_\+print\+Settings@{A\+P\+R\+S\+\_\+print\+Settings}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+print\+Settings()}{APRS\_printSettings()}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+print\+Settings (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a3fffb640ed02c57078f50fd7289c352d}{}\label{_lib_a_p_r_s_8h_a3fffb640ed02c57078f50fd7289c352d}
+
+
+Definition at line 178 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+send\+Loc@{A\+P\+R\+S\+\_\+send\+Loc}}
+\index{A\+P\+R\+S\+\_\+send\+Loc@{A\+P\+R\+S\+\_\+send\+Loc}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+send\+Loc(void $\ast$\+\_\+buffer, size\+\_\+t length)}{APRS\_sendLoc(void *\_buffer, size\_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+send\+Loc (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+buffer, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a8a1dc880a0b1622b68d488a4bb69afa0}{}\label{_lib_a_p_r_s_8h_a8a1dc880a0b1622b68d488a4bb69afa0}
+
+
+Definition at line 222 of file Lib\+A\+P\+R\+S.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lib_a_p_r_s_8h_a8a1dc880a0b1622b68d488a4bb69afa0_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+send\+Msg@{A\+P\+R\+S\+\_\+send\+Msg}}
+\index{A\+P\+R\+S\+\_\+send\+Msg@{A\+P\+R\+S\+\_\+send\+Msg}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+send\+Msg(void $\ast$\+\_\+buffer, size\+\_\+t length)}{APRS\_sendMsg(void *\_buffer, size\_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+send\+Msg (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+buffer, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a40fd4b0339cc234de92be317d48ea9fb}{}\label{_lib_a_p_r_s_8h_a40fd4b0339cc234de92be317d48ea9fb}
+
+
+Definition at line 259 of file Lib\+A\+P\+R\+S.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lib_a_p_r_s_8h_a40fd4b0339cc234de92be317d48ea9fb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=279pt]{_lib_a_p_r_s_8h_a40fd4b0339cc234de92be317d48ea9fb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+send\+Pkt@{A\+P\+R\+S\+\_\+send\+Pkt}}
+\index{A\+P\+R\+S\+\_\+send\+Pkt@{A\+P\+R\+S\+\_\+send\+Pkt}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+send\+Pkt(void $\ast$\+\_\+buffer, size\+\_\+t length)}{APRS\_sendPkt(void *\_buffer, size\_t length)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+send\+Pkt (
+\begin{DoxyParamCaption}
+\item[{void $\ast$}]{\+\_\+buffer, }
+\item[{size\+\_\+t}]{length}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_ae5f394441f5ec861b661e0a63e33f44e}{}\label{_lib_a_p_r_s_8h_ae5f394441f5ec861b661e0a63e33f44e}
+
+
+Definition at line 197 of file Lib\+A\+P\+R\+S.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lib_a_p_r_s_8h_ae5f394441f5ec861b661e0a63e33f44e_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_lib_a_p_r_s_8h_ae5f394441f5ec861b661e0a63e33f44e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Callsign@{A\+P\+R\+S\+\_\+set\+Callsign}}
+\index{A\+P\+R\+S\+\_\+set\+Callsign@{A\+P\+R\+S\+\_\+set\+Callsign}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Callsign(char $\ast$call, int ssid)}{APRS\_setCallsign(char *call, int ssid)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Callsign (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{call, }
+\item[{int}]{ssid}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_aa36158ec57ff1fc02eaa21e2bb74540d}{}\label{_lib_a_p_r_s_8h_aa36158ec57ff1fc02eaa21e2bb74540d}
+
+
+Definition at line 66 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Destination@{A\+P\+R\+S\+\_\+set\+Destination}}
+\index{A\+P\+R\+S\+\_\+set\+Destination@{A\+P\+R\+S\+\_\+set\+Destination}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Destination(char $\ast$call, int ssid)}{APRS\_setDestination(char *call, int ssid)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Destination (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{call, }
+\item[{int}]{ssid}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a21a8a7357b3805665d49c92f0e120a4b}{}\label{_lib_a_p_r_s_8h_a21a8a7357b3805665d49c92f0e120a4b}
+
+
+Definition at line 76 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Directivity@{A\+P\+R\+S\+\_\+set\+Directivity}}
+\index{A\+P\+R\+S\+\_\+set\+Directivity@{A\+P\+R\+S\+\_\+set\+Directivity}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Directivity(int s)}{APRS\_setDirectivity(int s)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Directivity (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a37f30cfbe0491e15b0ae232ea9e66358}{}\label{_lib_a_p_r_s_8h_a37f30cfbe0491e15b0ae232ea9e66358}
+
+
+Definition at line 172 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Gain@{A\+P\+R\+S\+\_\+set\+Gain}}
+\index{A\+P\+R\+S\+\_\+set\+Gain@{A\+P\+R\+S\+\_\+set\+Gain}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Gain(int s)}{APRS\_setGain(int s)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Gain (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a962ed213cb6b79f710aeb676d2ba53e4}{}\label{_lib_a_p_r_s_8h_a962ed213cb6b79f710aeb676d2ba53e4}
+
+
+Definition at line 166 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Height@{A\+P\+R\+S\+\_\+set\+Height}}
+\index{A\+P\+R\+S\+\_\+set\+Height@{A\+P\+R\+S\+\_\+set\+Height}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Height(int s)}{APRS\_setHeight(int s)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Height (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_ad9f68984da752ee6d00d9439800debd6}{}\label{_lib_a_p_r_s_8h_ad9f68984da752ee6d00d9439800debd6}
+
+
+Definition at line 160 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Lat@{A\+P\+R\+S\+\_\+set\+Lat}}
+\index{A\+P\+R\+S\+\_\+set\+Lat@{A\+P\+R\+S\+\_\+set\+Lat}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Lat(char $\ast$lat)}{APRS\_setLat(char *lat)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Lat (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{lat}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a4234103a952e958b2b2c6e15d0637efd}{}\label{_lib_a_p_r_s_8h_a4234103a952e958b2b2c6e15d0637efd}
+
+
+Definition at line 136 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Lon@{A\+P\+R\+S\+\_\+set\+Lon}}
+\index{A\+P\+R\+S\+\_\+set\+Lon@{A\+P\+R\+S\+\_\+set\+Lon}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Lon(char $\ast$lon)}{APRS\_setLon(char *lon)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Lon (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{lon}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a40002fdeaf4994017005d85c334b6b65}{}\label{_lib_a_p_r_s_8h_a40002fdeaf4994017005d85c334b6b65}
+
+
+Definition at line 145 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Message\+Destination@{A\+P\+R\+S\+\_\+set\+Message\+Destination}}
+\index{A\+P\+R\+S\+\_\+set\+Message\+Destination@{A\+P\+R\+S\+\_\+set\+Message\+Destination}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Message\+Destination(char $\ast$call, int ssid)}{APRS\_setMessageDestination(char *call, int ssid)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Message\+Destination (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{call, }
+\item[{int}]{ssid}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_ae027f5d3426daec37661dc7ede9aedf0}{}\label{_lib_a_p_r_s_8h_ae027f5d3426daec37661dc7ede9aedf0}
+
+
+Definition at line 106 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Path1@{A\+P\+R\+S\+\_\+set\+Path1}}
+\index{A\+P\+R\+S\+\_\+set\+Path1@{A\+P\+R\+S\+\_\+set\+Path1}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Path1(char $\ast$call, int ssid)}{APRS\_setPath1(char *call, int ssid)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Path1 (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{call, }
+\item[{int}]{ssid}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a893dabee106e6537f9a70b851df3a6fa}{}\label{_lib_a_p_r_s_8h_a893dabee106e6537f9a70b851df3a6fa}
+
+
+Definition at line 86 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Path2@{A\+P\+R\+S\+\_\+set\+Path2}}
+\index{A\+P\+R\+S\+\_\+set\+Path2@{A\+P\+R\+S\+\_\+set\+Path2}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Path2(char $\ast$call, int ssid)}{APRS\_setPath2(char *call, int ssid)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Path2 (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{call, }
+\item[{int}]{ssid}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_acd65cef84cc868398762c3b50b6e4444}{}\label{_lib_a_p_r_s_8h_acd65cef84cc868398762c3b50b6e4444}
+
+
+Definition at line 96 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Power@{A\+P\+R\+S\+\_\+set\+Power}}
+\index{A\+P\+R\+S\+\_\+set\+Power@{A\+P\+R\+S\+\_\+set\+Power}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Power(int s)}{APRS\_setPower(int s)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Power (
+\begin{DoxyParamCaption}
+\item[{int}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a88512e86a80a125417651ef2a4f803a0}{}\label{_lib_a_p_r_s_8h_a88512e86a80a125417651ef2a4f803a0}
+
+
+Definition at line 154 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Preamble@{A\+P\+R\+S\+\_\+set\+Preamble}}
+\index{A\+P\+R\+S\+\_\+set\+Preamble@{A\+P\+R\+S\+\_\+set\+Preamble}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Preamble(unsigned long pre)}{APRS\_setPreamble(unsigned long pre)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Preamble (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{pre}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a8d2879844f6f9808dc5a101f6eb74e4c}{}\label{_lib_a_p_r_s_8h_a8d2879844f6f9808dc5a101f6eb74e4c}
+
+
+Definition at line 116 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Symbol@{A\+P\+R\+S\+\_\+set\+Symbol}}
+\index{A\+P\+R\+S\+\_\+set\+Symbol@{A\+P\+R\+S\+\_\+set\+Symbol}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Symbol(char sym)}{APRS\_setSymbol(char sym)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Symbol (
+\begin{DoxyParamCaption}
+\item[{char}]{sym}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a128fa7c712c53cbba638cab0e42bfb23}{}\label{_lib_a_p_r_s_8h_a128fa7c712c53cbba638cab0e42bfb23}
+
+
+Definition at line 132 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+set\+Tail@{A\+P\+R\+S\+\_\+set\+Tail}}
+\index{A\+P\+R\+S\+\_\+set\+Tail@{A\+P\+R\+S\+\_\+set\+Tail}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+set\+Tail(unsigned long tail)}{APRS\_setTail(unsigned long tail)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+set\+Tail (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{tail}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_ab32765e29df288da61f2bda8cf13e276}{}\label{_lib_a_p_r_s_8h_ab32765e29df288da61f2bda8cf13e276}
+
+
+Definition at line 120 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!A\+P\+R\+S\+\_\+use\+Alternate\+Symbol\+Table@{A\+P\+R\+S\+\_\+use\+Alternate\+Symbol\+Table}}
+\index{A\+P\+R\+S\+\_\+use\+Alternate\+Symbol\+Table@{A\+P\+R\+S\+\_\+use\+Alternate\+Symbol\+Table}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{A\+P\+R\+S\+\_\+use\+Alternate\+Symbol\+Table(bool use)}{APRS\_useAlternateSymbolTable(bool use)}}]{\setlength{\rightskip}{0pt plus 5cm}void A\+P\+R\+S\+\_\+use\+Alternate\+Symbol\+Table (
+\begin{DoxyParamCaption}
+\item[{bool}]{use}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a36e9ef7abf74277e45ff59b48f7ff545}{}\label{_lib_a_p_r_s_8h_a36e9ef7abf74277e45ff59b48f7ff545}
+
+
+Definition at line 124 of file Lib\+A\+P\+R\+S.\+cpp.
+
+\index{Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}!free\+Memory@{free\+Memory}}
+\index{free\+Memory@{free\+Memory}!Lib\+A\+P\+R\+S.\+h@{Lib\+A\+P\+R\+S.\+h}}
+\subsubsection[{\texorpdfstring{free\+Memory()}{freeMemory()}}]{\setlength{\rightskip}{0pt plus 5cm}int free\+Memory (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{_lib_a_p_r_s_8h_a8d862dc01c44bfabc8d952bb77f8da89}{}\label{_lib_a_p_r_s_8h_a8d862dc01c44bfabc8d952bb77f8da89}
+
+
+Definition at line 339 of file Lib\+A\+P\+R\+S.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=248pt]{_lib_a_p_r_s_8h_a8d862dc01c44bfabc8d952bb77f8da89_cgraph}
+\end{center}
+\end{figure}
+
+

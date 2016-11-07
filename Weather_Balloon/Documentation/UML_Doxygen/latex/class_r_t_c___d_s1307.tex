@@ -1,0 +1,115 @@
+\hypertarget{class_r_t_c___d_s1307}{}\section{R\+T\+C\+\_\+\+D\+S1307 Class Reference}
+\label{class_r_t_c___d_s1307}\index{R\+T\+C\+\_\+\+D\+S1307@{R\+T\+C\+\_\+\+D\+S1307}}
+
+
+{\ttfamily \#include $<$R\+T\+C\+\_\+\+D\+S1307.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_r_t_c___d_s1307_a0ec6f600f705edfef43bd798dce9946f}{isrunning} (void)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static uint8\+\_\+t \hyperlink{class_r_t_c___d_s1307_a649a2c66ff3e4676ec190c2e2dec7981}{begin} (void)
+\item 
+static void \hyperlink{class_r_t_c___d_s1307_a6e38778b577a80008e9dc630384b8520}{adjust} (const \hyperlink{class_date_time}{Date\+Time} \&dt)
+\item 
+static \hyperlink{class_date_time}{Date\+Time} \hyperlink{class_r_t_c___d_s1307_a9f5f5dbcce65b67e00b50808a45a4249}{now} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 10 of file R\+T\+C\+\_\+\+D\+S1307.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{R\+T\+C\+\_\+\+D\+S1307@{R\+T\+C\+\_\+\+D\+S1307}!adjust@{adjust}}
+\index{adjust@{adjust}!R\+T\+C\+\_\+\+D\+S1307@{R\+T\+C\+\_\+\+D\+S1307}}
+\subsubsection[{\texorpdfstring{adjust(const Date\+Time \&dt)}{adjust(const DateTime \&dt)}}]{\setlength{\rightskip}{0pt plus 5cm}void R\+T\+C\+\_\+\+D\+S1307\+::adjust (
+\begin{DoxyParamCaption}
+\item[{const {\bf Date\+Time} \&}]{dt}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s1307_a6e38778b577a80008e9dc630384b8520}{}\label{class_r_t_c___d_s1307_a6e38778b577a80008e9dc630384b8520}
+
+
+Definition at line 44 of file R\+T\+C\+\_\+\+D\+S1307.\+cpp.
+
+
+
+References bin2bcd(), Date\+Time\+::day(), D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS, Date\+Time\+::hour(), Date\+Time\+::minute(), Date\+Time\+::month(), Date\+Time\+::second(), Wire, and Date\+Time\+::year().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_r_t_c___d_s1307_a6e38778b577a80008e9dc630384b8520_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{R\+T\+C\+\_\+\+D\+S1307@{R\+T\+C\+\_\+\+D\+S1307}!begin@{begin}}
+\index{begin@{begin}!R\+T\+C\+\_\+\+D\+S1307@{R\+T\+C\+\_\+\+D\+S1307}}
+\subsubsection[{\texorpdfstring{begin(void)}{begin(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+\_\+\+D\+S1307\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s1307_a649a2c66ff3e4676ec190c2e2dec7981}{}\label{class_r_t_c___d_s1307_a649a2c66ff3e4676ec190c2e2dec7981}
+
+
+Definition at line 28 of file R\+T\+C\+\_\+\+D\+S1307.\+cpp.
+
+\index{R\+T\+C\+\_\+\+D\+S1307@{R\+T\+C\+\_\+\+D\+S1307}!isrunning@{isrunning}}
+\index{isrunning@{isrunning}!R\+T\+C\+\_\+\+D\+S1307@{R\+T\+C\+\_\+\+D\+S1307}}
+\subsubsection[{\texorpdfstring{isrunning(void)}{isrunning(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t R\+T\+C\+\_\+\+D\+S1307\+::isrunning (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_r_t_c___d_s1307_a0ec6f600f705edfef43bd798dce9946f}{}\label{class_r_t_c___d_s1307_a0ec6f600f705edfef43bd798dce9946f}
+
+
+Definition at line 33 of file R\+T\+C\+\_\+\+D\+S1307.\+cpp.
+
+
+
+References D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS, and Wire.
+
+\index{R\+T\+C\+\_\+\+D\+S1307@{R\+T\+C\+\_\+\+D\+S1307}!now@{now}}
+\index{now@{now}!R\+T\+C\+\_\+\+D\+S1307@{R\+T\+C\+\_\+\+D\+S1307}}
+\subsubsection[{\texorpdfstring{now()}{now()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Date\+Time} R\+T\+C\+\_\+\+D\+S1307\+::now (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_r_t_c___d_s1307_a9f5f5dbcce65b67e00b50808a45a4249}{}\label{class_r_t_c___d_s1307_a9f5f5dbcce65b67e00b50808a45a4249}
+
+
+Definition at line 59 of file R\+T\+C\+\_\+\+D\+S1307.\+cpp.
+
+
+
+References bcd2bin(), D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS, and Wire.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{class_r_t_c___d_s1307_a9f5f5dbcce65b67e00b50808a45a4249_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\hyperlink{_r_t_c___d_s1307_8h}{R\+T\+C\+\_\+\+D\+S1307.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\hyperlink{_r_t_c___d_s1307_8cpp}{R\+T\+C\+\_\+\+D\+S1307.\+cpp}\end{DoxyCompactItemize}

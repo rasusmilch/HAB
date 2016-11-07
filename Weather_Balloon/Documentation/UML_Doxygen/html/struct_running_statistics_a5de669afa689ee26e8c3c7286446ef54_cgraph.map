@@ -1,0 +1,6 @@
+<map id="RunningStatistics::CV" name="RunningStatistics::CV">
+<area shape="rect" id="node2" href="$struct_running_statistics.html#a4001e3eb9ab7469014f541c16f0b30cd" title="RunningStatistics::mean" alt="" coords="365,5,519,32"/>
+<area shape="rect" id="node4" href="$struct_running_statistics.html#a46189b5442a6bd5bbd303d239ca75a89" title="RunningStatistics::\lsigma" alt="" coords="195,57,317,98"/>
+<area shape="rect" id="node3" href="$struct_filter_one_pole_cascade.html#ae8ba6b966183057560bb0d84e3ea549a" title="FilterOnePoleCascade\l::output" alt="" coords="567,27,709,69"/>
+<area shape="rect" id="node5" href="$struct_running_statistics.html#a5401a1f86867e7de5987cbb14dc496df" title="RunningStatistics::\lvariance" alt="" coords="381,57,503,98"/>
+</map>

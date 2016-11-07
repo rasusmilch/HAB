@@ -1,0 +1,70 @@
+\hypertarget{_wi_fi_stream_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Firmata/utility/\+Wi\+Fi\+Stream.h File Reference}
+\label{_wi_fi_stream_8h}\index{Weather\+\_\+\+Balloon/library/\+Firmata/utility/\+Wi\+Fi\+Stream.\+h@{Weather\+\_\+\+Balloon/library/\+Firmata/utility/\+Wi\+Fi\+Stream.\+h}}
+{\ttfamily \#include $<$inttypes.\+h$>$}\\*
+{\ttfamily \#include $<$Stream.\+h$>$}\\*
+Include dependency graph for Wi\+Fi\+Stream.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=219pt]{_wi_fi_stream_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_wi_fi_stream_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_wi_fi_stream}{Wi\+Fi\+Stream}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_wi_fi_stream_8h_a03dd368c8684838c57562f7bf55d783f}{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}~0
+\item 
+\#define \hyperlink{_wi_fi_stream_8h_a47bf7834b3fbc853b600fcc85a13e5a6}{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}~1
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef void($\ast$ \hyperlink{_wi_fi_stream_8h_ac590658d84d43947d605be50ab5fbc85}{host\+Connection\+Callback\+Function}) (byte)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{Wi\+Fi\+Stream.\+h@{Wi\+Fi\+Stream.\+h}!H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}}
+\index{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED@{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}!Wi\+Fi\+Stream.\+h@{Wi\+Fi\+Stream.\+h}}
+\subsubsection[{\texorpdfstring{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED}{HOST\_CONNECTION\_CONNECTED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+C\+O\+N\+N\+E\+C\+T\+ED~1}\hypertarget{_wi_fi_stream_8h_a47bf7834b3fbc853b600fcc85a13e5a6}{}\label{_wi_fi_stream_8h_a47bf7834b3fbc853b600fcc85a13e5a6}
+
+
+Definition at line 28 of file Wi\+Fi\+Stream.\+h.
+
+
+
+Referenced by Wi\+Fi\+Server\+Stream\+::connect\+\_\+client(), and Wi\+Fi\+Client\+Stream\+::connect\+\_\+client().
+
+\index{Wi\+Fi\+Stream.\+h@{Wi\+Fi\+Stream.\+h}!H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}}
+\index{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED@{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}!Wi\+Fi\+Stream.\+h@{Wi\+Fi\+Stream.\+h}}
+\subsubsection[{\texorpdfstring{H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED}{HOST\_CONNECTION\_DISCONNECTED}}]{\setlength{\rightskip}{0pt plus 5cm}\#define H\+O\+S\+T\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+O\+N\+\_\+\+D\+I\+S\+C\+O\+N\+N\+E\+C\+T\+ED~0}\hypertarget{_wi_fi_stream_8h_a03dd368c8684838c57562f7bf55d783f}{}\label{_wi_fi_stream_8h_a03dd368c8684838c57562f7bf55d783f}
+
+
+Definition at line 27 of file Wi\+Fi\+Stream.\+h.
+
+
+
+Referenced by Wi\+Fi\+Client\+Stream\+::stop(), and Wi\+Fi\+Server\+Stream\+::stop().
+
+
+
+\subsection{Typedef Documentation}
+\index{Wi\+Fi\+Stream.\+h@{Wi\+Fi\+Stream.\+h}!host\+Connection\+Callback\+Function@{host\+Connection\+Callback\+Function}}
+\index{host\+Connection\+Callback\+Function@{host\+Connection\+Callback\+Function}!Wi\+Fi\+Stream.\+h@{Wi\+Fi\+Stream.\+h}}
+\subsubsection[{\texorpdfstring{host\+Connection\+Callback\+Function}{hostConnectionCallbackFunction}}]{\setlength{\rightskip}{0pt plus 5cm}typedef void($\ast$ host\+Connection\+Callback\+Function) (byte)}\hypertarget{_wi_fi_stream_8h_ac590658d84d43947d605be50ab5fbc85}{}\label{_wi_fi_stream_8h_ac590658d84d43947d605be50ab5fbc85}
+
+
+Definition at line 32 of file Wi\+Fi\+Stream.\+h.
+

@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_37bf8386d90eff3bb8a686ca45f6e03b" kind="dir">
+    <compoundname>Weather_Balloon/library/Firmata/utility</compoundname>
+    <innerfile refid="_b_l_e_stream_8cpp">BLEStream.cpp</innerfile>
+    <innerfile refid="_b_l_e_stream_8h">BLEStream.h</innerfile>
+    <innerfile refid="_ethernet_client_stream_8cpp">EthernetClientStream.cpp</innerfile>
+    <innerfile refid="_ethernet_client_stream_8h">EthernetClientStream.h</innerfile>
+    <innerfile refid="firmata_debug_8h">firmataDebug.h</innerfile>
+    <innerfile refid="_firmata_feature_8h">FirmataFeature.h</innerfile>
+    <innerfile refid="_serial_firmata_8cpp">SerialFirmata.cpp</innerfile>
+    <innerfile refid="_serial_firmata_8h">SerialFirmata.h</innerfile>
+    <innerfile refid="_wi_fi_client_stream_8h">WiFiClientStream.h</innerfile>
+    <innerfile refid="_wi_fi_server_stream_8h">WiFiServerStream.h</innerfile>
+    <innerfile refid="_wi_fi_stream_8cpp">WiFiStream.cpp</innerfile>
+    <innerfile refid="_wi_fi_stream_8h">WiFiStream.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Firmata/utility/"/>
+  </compounddef>
+</doxygen>

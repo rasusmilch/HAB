@@ -1,0 +1,2174 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_l_s_m9_d_s1" kind="class" language="C++" prot="public">
+    <compoundname>LSM9DS1</compoundname>
+    <includes refid="_spark_fun_l_s_m9_d_s1_8h" local="no">SparkFunLSM9DS1.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_i_m_u_settings" kindref="compound">IMUSettings</ref></type>
+        <definition>IMUSettings LSM9DS1::settings</definition>
+        <argsstring></argsstring>
+        <name>settings</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="48" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a31597c9ae6c5a7de64a50cbbbcd24297" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="748" endline="751">calcaRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a303e0dd33e000579dc3917aecedb6e63" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="743" endline="746">calcgRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a830dfc95c7e2d8524720d78357b053cb" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="753" endline="772">calcmRes</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a2c2e98945e78daa792b87b30868c3907" compoundref="_weather___balloon_8cpp" startline="884" endline="907">configure_LSM9DS1</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="952" endline="971">constrainScales</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">initAccel</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">initGyro</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">initMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">mReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1023" endline="1031">mReadBytes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a76d72839cdecc3f1c4ee6fff578182c5" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="713" endline="728">setAccelODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8656d2de1ff9cc4cb76214e4561d02c4" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="629" endline="658">setAccelScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ab8fc33c8da4fc5c379e880ff57d331fa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="696" endline="711">setGyroODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a115d304ebcdc8c701f3e5a5d397250aa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="604" endline="627">setGyroScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8bc672fba680edc468a643fd58046b41" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="730" endline="741">setMagODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ad7604159a07b0d088cdfb6ba4a0093b0" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="660" endline="694">setMagScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">xgReadBytes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1abf02b4544b5d529036adbac02e7b9f02" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::gx</definition>
+        <argsstring></argsstring>
+        <name>gx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="55" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="556" endline="569">readGyro</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a0c351823fd094ff24ff245dd951cf783" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::gy</definition>
+        <argsstring></argsstring>
+        <name>gy</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="55" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="556" endline="569">readGyro</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1ad4d0f0585398ff917afcba1b4a73e519" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::gz</definition>
+        <argsstring></argsstring>
+        <name>gz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="55" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="55" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="556" endline="569">readGyro</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1adac13514d176cfb54aed8cda9a056335" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::ax</definition>
+        <argsstring></argsstring>
+        <name>ax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="56" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="505" endline="518">readAccel</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a978a357dedfa574d6e0fad33ad71e23f" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::ay</definition>
+        <argsstring></argsstring>
+        <name>ay</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="56" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="505" endline="518">readAccel</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1aa631c8a90b90130b5be147dd4fae0841" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::az</definition>
+        <argsstring></argsstring>
+        <name>az</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="56" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="56" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="505" endline="518">readAccel</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a0e68eb9e44969070b6d84a93ba252f71" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::mx</definition>
+        <argsstring></argsstring>
+        <name>mx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="57" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">calibrateMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae127cf75aa5f3c5421e49363795dcd38" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="533" endline="540">readMag</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a773f80f9b7cdf8375c84a4209895d732" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::my</definition>
+        <argsstring></argsstring>
+        <name>my</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="57" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">calibrateMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae127cf75aa5f3c5421e49363795dcd38" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="533" endline="540">readMag</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1aafe23993500ece9efd161e564787dce2" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::mz</definition>
+        <argsstring></argsstring>
+        <name>mz</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="57" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="57" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">calibrateMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae127cf75aa5f3c5421e49363795dcd38" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="533" endline="540">readMag</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a92791effe47c0f8c93505e53496266e5" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::temperature</definition>
+        <argsstring></argsstring>
+        <name>temperature</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="58" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="58" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aca21a51dc79a1287b97ed9c326e2080b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="549" endline="554">readTemp</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a8c0354ee78e029b6715ee7110bcd8753" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LSM9DS1::gBias[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>gBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="59" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1abe998fcc50cfe729c13ab535337849c7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LSM9DS1::aBias[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>aBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="59" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1aab3753b958a1eaabfb48ffaf837dfadc" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LSM9DS1::mBias[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>mBias</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="59" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="59" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">calibrateMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1ab2e59e0460cf88a12765238506031f2a" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::gBiasRaw[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>gBiasRaw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="60" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="556" endline="569">readGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1ae42dc2f2b9f2df223c853e233191313a" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::aBiasRaw[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>aBiasRaw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="60" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="505" endline="518">readAccel</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1ad0e3ab0b7eeee5378ab91dd20270a9b5" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::mBiasRaw[3]</definition>
+        <argsstring>[3]</argsstring>
+        <name>mBiasRaw</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="60" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="60" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">calibrateMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a7141933a2ccde95976e4eecd598ecb17" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::_mAddress</definition>
+        <argsstring></argsstring>
+        <name>_mAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="336" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="336" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a4286d5803ab028c657e007ae99acc60a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1033" endline="1048">initSPI</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">mReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1023" endline="1031">mReadBytes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a26c0f164454eba84e6486033b7061d11" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1071" endline="1088">SPIreadBytes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1ac78b7fab605570a16433a4636f91451e" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::_xgAddress</definition>
+        <argsstring></argsstring>
+        <name>_xgAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="336" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="336" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a4286d5803ab028c657e007ae99acc60a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1033" endline="1048">initSPI</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">xgReadBytes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a2d8654ebb35177088a67e67a944bd998" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LSM9DS1::gRes</definition>
+        <argsstring></argsstring>
+        <name>gRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="341" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="341" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a303e0dd33e000579dc3917aecedb6e63" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="743" endline="746">calcgRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a76707323565bc4170ea8e27a932c95e4" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="586" endline="590">calcGyro</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1acdc1f9b300b3c349e17dd21c9bb37c40" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LSM9DS1::aRes</definition>
+        <argsstring></argsstring>
+        <name>aRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="341" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="341" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a54e2a7888b67b47cf0dd986c5b91a3c5" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="592" endline="596">calcAccel</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a31597c9ae6c5a7de64a50cbbbcd24297" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="748" endline="751">calcaRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1aac7ae43adf399e8052464b966aec8472" prot="protected" static="no" mutable="no">
+        <type>float</type>
+        <definition>float LSM9DS1::mRes</definition>
+        <argsstring></argsstring>
+        <name>mRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="341" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="341" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a7d0b0740497b1a10cd3e46a282a143ec" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="598" endline="602">calcMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a830dfc95c7e2d8524720d78357b053cb" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="753" endline="772">calcmRes</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_l_s_m9_d_s1_1a8460d00ea0bb496c5d49190a34e54588" prot="protected" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool LSM9DS1::_autoCalc</definition>
+        <argsstring></argsstring>
+        <name>_autoCalc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="345" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="345" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="505" endline="518">readAccel</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="556" endline="569">readGyro</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ab62923063ffc49dca82e6f311c5c8764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LSM9DS1::LSM9DS1</definition>
+        <argsstring>(interface_mode interface, uint8_t xgAddr, uint8_t mAddr)</argsstring>
+        <name>LSM9DS1</name>
+        <param>
+          <type><ref refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adf" kindref="member">interface_mode</ref></type>
+          <declname>interface</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>xgAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mAddr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="72" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="45" bodyend="48"/>
+        <references refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a399a80ee541823b301e81d1afab32b28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>LSM9DS1::LSM9DS1</definition>
+        <argsstring>()</argsstring>
+        <name>LSM9DS1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="73" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="40" bodyend="43"/>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" compoundref="_l_s_m9_d_s1___types_8h" startline="32">IMU_MODE_I2C</references>
+        <references refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">init</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8h_1a8f6c770035b14543322ec58e37247c7b" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="35">LSM9DS1_AG_ADDR</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8h_1a46328ac68fd42bb3f38d05dc8bdd468a" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="36">LSM9DS1_M_ADDR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t LSM9DS1::begin</definition>
+        <argsstring>()</argsstring>
+        <name>begin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Todo: don&apos;t use _xgAddress or _mAddress, duplicating memory </para>        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="78" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="142" bodyend="181"/>
+        <references refid="class_l_s_m9_d_s1_1a7141933a2ccde95976e4eecd598ecb17" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_mAddress</references>
+        <references refid="class_l_s_m9_d_s1_1ac78b7fab605570a16433a4636f91451e" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_xgAddress</references>
+        <references refid="structdevice_settings_1a2f43ac785e01fcbcfaf8436885f638ab" compoundref="_l_s_m9_d_s1___types_8h" startline="201">deviceSettings::agAddress</references>
+        <references refid="class_l_s_m9_d_s1_1a31597c9ae6c5a7de64a50cbbbcd24297" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="748" endline="751">calcaRes</references>
+        <references refid="class_l_s_m9_d_s1_1a303e0dd33e000579dc3917aecedb6e63" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="743" endline="746">calcgRes</references>
+        <references refid="class_l_s_m9_d_s1_1a830dfc95c7e2d8524720d78357b053cb" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="753" endline="772">calcmRes</references>
+        <references refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" compoundref="_l_s_m9_d_s1___types_8h" startline="200">deviceSettings::commInterface</references>
+        <references refid="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="952" endline="971">constrainScales</references>
+        <references refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" compoundref="_l_s_m9_d_s1___types_8h" startline="242">IMUSettings::device</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" compoundref="_l_s_m9_d_s1___types_8h" startline="32">IMU_MODE_I2C</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" compoundref="_l_s_m9_d_s1___types_8h" startline="31">IMU_MODE_SPI</references>
+        <references refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">initAccel</references>
+        <references refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">initGyro</references>
+        <references refid="class_l_s_m9_d_s1_1ae60332c2836bd3f19846b7a44c015ddd" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1090" endline="1093">initI2C</references>
+        <references refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">initMag</references>
+        <references refid="class_l_s_m9_d_s1_1a4286d5803ab028c657e007ae99acc60a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1033" endline="1048">initSPI</references>
+        <references refid="structdevice_settings_1aec4e1d3e3f38b4e3e0f74f1640e16faa" compoundref="_l_s_m9_d_s1___types_8h" startline="202">deviceSettings::mAddress</references>
+        <references refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">mReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a8dbbb5c2aaadc877fb71ea4eda9fcbf5" compoundref="_l_s_m9_d_s1___registers_8h" startline="109">WHO_AM_I_AG_RSP</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a6f922f874e6ca9b05008b5ada8fd35a5" compoundref="_l_s_m9_d_s1___registers_8h" startline="88">WHO_AM_I_M</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a895e051d061b2d053680ab832048b2ad" compoundref="_l_s_m9_d_s1___registers_8h" startline="110">WHO_AM_I_M_RSP</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a2429bbf601523e5054cc3ef3de989449" compoundref="_l_s_m9_d_s1___registers_8h" startline="38">WHO_AM_I_XG</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+        <referencedby refid="_weather___balloon_8cpp_1a2c2e98945e78daa792b87b30868c3907" compoundref="_weather___balloon_8cpp" startline="884" endline="907">configure_LSM9DS1</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::calibrate</definition>
+        <argsstring>(bool autoCalc=true)</argsstring>
+        <name>calibrate</name>
+        <param>
+          <type>bool</type>
+          <declname>autoCalc</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="80" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="326" bodyend="364"/>
+        <references refid="class_l_s_m9_d_s1_1a8460d00ea0bb496c5d49190a34e54588" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="345">_autoCalc</references>
+        <references refid="class_l_s_m9_d_s1_1abe998fcc50cfe729c13ab535337849c7" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="59">aBias</references>
+        <references refid="class_l_s_m9_d_s1_1ae42dc2f2b9f2df223c853e233191313a" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">aBiasRaw</references>
+        <references refid="class_l_s_m9_d_s1_1acdc1f9b300b3c349e17dd21c9bb37c40" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="341">aRes</references>
+        <references refid="class_l_s_m9_d_s1_1adac13514d176cfb54aed8cda9a056335" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="56">ax</references>
+        <references refid="class_l_s_m9_d_s1_1a978a357dedfa574d6e0fad33ad71e23f" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="56">ay</references>
+        <references refid="class_l_s_m9_d_s1_1aa631c8a90b90130b5be147dd4fae0841" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="56">az</references>
+        <references refid="class_l_s_m9_d_s1_1a54e2a7888b67b47cf0dd986c5b91a3c5" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="592" endline="596">calcAccel</references>
+        <references refid="class_l_s_m9_d_s1_1a76707323565bc4170ea8e27a932c95e4" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="586" endline="590">calcGyro</references>
+        <references refid="class_l_s_m9_d_s1_1a5f01141131318697838f15d7e5d10f2c" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="931" endline="937">enableFIFO</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbac872bd466c3f62c86a9efe3f29fb18f9" compoundref="_l_s_m9_d_s1___types_8h" startline="170">FIFO_OFF</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a8ff327dd2e3548068a66bffdc932d5ad" compoundref="_l_s_m9_d_s1___registers_8h" startline="69">FIFO_SRC</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266dbada3b77d422419e73618e6e9ad2bd797c" compoundref="_l_s_m9_d_s1___types_8h" startline="171">FIFO_THS</references>
+        <references refid="class_l_s_m9_d_s1_1a8c0354ee78e029b6715ee7110bcd8753" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="59">gBias</references>
+        <references refid="class_l_s_m9_d_s1_1ab2e59e0460cf88a12765238506031f2a" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">gBiasRaw</references>
+        <references refid="class_l_s_m9_d_s1_1abf02b4544b5d529036adbac02e7b9f02" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="55">gx</references>
+        <references refid="class_l_s_m9_d_s1_1a0c351823fd094ff24ff245dd951cf783" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="55">gy</references>
+        <references refid="class_l_s_m9_d_s1_1ad4d0f0585398ff917afcba1b4a73e519" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="55">gz</references>
+        <references refid="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="505" endline="518">readAccel</references>
+        <references refid="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="556" endline="569">readGyro</references>
+        <references refid="class_l_s_m9_d_s1_1a0ec4a93a34545af1acc336bae9b360f1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="939" endline="945">setFIFO</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+        <referencedby refid="_weather___balloon_8cpp_1a2c2e98945e78daa792b87b30868c3907" compoundref="_weather___balloon_8cpp" startline="884" endline="907">configure_LSM9DS1</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::calibrateMag</definition>
+        <argsstring>(bool loadIn=true)</argsstring>
+        <name>calibrateMag</name>
+        <param>
+          <type>bool</type>
+          <declname>loadIn</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="81" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="366" bodyend="395"/>
+        <references refid="class_l_s_m9_d_s1_1a7d0b0740497b1a10cd3e46a282a143ec" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="598" endline="602">calcMag</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="class_l_s_m9_d_s1_1a85afd29e95bead7b3f0083a9a235d1df" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="497" endline="503">magAvailable</references>
+        <references refid="class_l_s_m9_d_s1_1a0d461614bd058b082c94481dc916c18b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="396" endline="405">magOffset</references>
+        <references refid="class_l_s_m9_d_s1_1aab3753b958a1eaabfb48ffaf837dfadc" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="59">mBias</references>
+        <references refid="class_l_s_m9_d_s1_1ad0e3ab0b7eeee5378ab91dd20270a9b5" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">mBiasRaw</references>
+        <references refid="class_l_s_m9_d_s1_1a0e68eb9e44969070b6d84a93ba252f71" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="57">mx</references>
+        <references refid="class_l_s_m9_d_s1_1a773f80f9b7cdf8375c84a4209895d732" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="57">my</references>
+        <references refid="class_l_s_m9_d_s1_1aafe23993500ece9efd161e564787dce2" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="57">mz</references>
+        <references refid="class_l_s_m9_d_s1_1ae127cf75aa5f3c5421e49363795dcd38" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="533" endline="540">readMag</references>
+        <referencedby refid="_weather___balloon_8cpp_1a2c2e98945e78daa792b87b30868c3907" compoundref="_weather___balloon_8cpp" startline="884" endline="907">configure_LSM9DS1</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a0d461614bd058b082c94481dc916c18b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::magOffset</definition>
+        <argsstring>(uint8_t axis, int16_t offset)</argsstring>
+        <name>magOffset</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>int16_t</type>
+          <declname>offset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="82" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="396" bodyend="405"/>
+        <references refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1aeb2fc84bba390310b1316f0945727306" compoundref="_l_s_m9_d_s1___registers_8h" startline="83">OFFSET_X_REG_H_M</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a043bf20b279c3ad248ff196af6a1daab" compoundref="_l_s_m9_d_s1___registers_8h" startline="82">OFFSET_X_REG_L_M</references>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">calibrateMag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a515ce6f5c199a86c6aa5be353b2a3a13" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::accelAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>accelAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="88" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="476" bodyend="481"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a665c442790206fcce4058d958ca5ec1e" compoundref="_l_s_m9_d_s1___registers_8h" startline="61">STATUS_REG_1</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a65b71a03a30f4e8ed1ffd46de3db0560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::gyroAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>gyroAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="94" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="483" bodyend="488"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a665c442790206fcce4058d958ca5ec1e" compoundref="_l_s_m9_d_s1___registers_8h" startline="61">STATUS_REG_1</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1aaf6683c6f3f0281d5222b74f580f321b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::tempAvailable</definition>
+        <argsstring>()</argsstring>
+        <name>tempAvailable</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="100" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="490" bodyend="495"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a665c442790206fcce4058d958ca5ec1e" compoundref="_l_s_m9_d_s1___registers_8h" startline="61">STATUS_REG_1</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a85afd29e95bead7b3f0083a9a235d1df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::magAvailable</definition>
+        <argsstring>(lsm9ds1_axis axis=ALL_AXIS)</argsstring>
+        <name>magAvailable</name>
+        <param>
+          <type><ref refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164" kindref="member">lsm9ds1_axis</ref></type>
+          <declname>axis</declname>
+          <defval><ref refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164a8a4cd6c8a7401ef4e548059cf12006c0" kindref="member">ALL_AXIS</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="110" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="497" bodyend="503"/>
+        <references refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">mReadByte</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1acdc5b337c11e6ad00f5c1a1653d80cea" compoundref="_l_s_m9_d_s1___registers_8h" startline="94">STATUS_REG_M</references>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">calibrateMag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::readGyro</definition>
+        <argsstring>()</argsstring>
+        <name>readGyro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="116" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="556" bodyend="569"/>
+        <references refid="class_l_s_m9_d_s1_1a8460d00ea0bb496c5d49190a34e54588" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="345">_autoCalc</references>
+        <references refid="class_l_s_m9_d_s1_1ab2e59e0460cf88a12765238506031f2a" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">gBiasRaw</references>
+        <references refid="class_l_s_m9_d_s1_1abf02b4544b5d529036adbac02e7b9f02" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="55">gx</references>
+        <references refid="class_l_s_m9_d_s1_1a0c351823fd094ff24ff245dd951cf783" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="55">gy</references>
+        <references refid="class_l_s_m9_d_s1_1ad4d0f0585398ff917afcba1b4a73e519" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="55">gz</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a591468875c279c327dbfb8ddd51a2e36" compoundref="_l_s_m9_d_s1___registers_8h" startline="47">OUT_X_L_G</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164a93ed1386222f87948b972889ad82cd33" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="39">X_AXIS</references>
+        <references refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">xgReadBytes</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164aa1ec9649c0a631b27ad7280af3522dd0" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="40">Y_AXIS</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164a4b8a53bafca6b43388660925049d734f" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="41">Z_AXIS</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1adc1b37609a6c850328b16da4f911cefd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::readGyro</definition>
+        <argsstring>(lsm9ds1_axis axis)</argsstring>
+        <name>readGyro</name>
+        <param>
+          <type><ref refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164" kindref="member">lsm9ds1_axis</ref></type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="124" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="571" bodyend="584"/>
+        <references refid="class_l_s_m9_d_s1_1a8460d00ea0bb496c5d49190a34e54588" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="345">_autoCalc</references>
+        <references refid="class_l_s_m9_d_s1_1ab2e59e0460cf88a12765238506031f2a" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">gBiasRaw</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a591468875c279c327dbfb8ddd51a2e36" compoundref="_l_s_m9_d_s1___registers_8h" startline="47">OUT_X_L_G</references>
+        <references refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">xgReadBytes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::readAccel</definition>
+        <argsstring>()</argsstring>
+        <name>readAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="130" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="505" bodyend="518"/>
+        <references refid="class_l_s_m9_d_s1_1a8460d00ea0bb496c5d49190a34e54588" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="345">_autoCalc</references>
+        <references refid="class_l_s_m9_d_s1_1ae42dc2f2b9f2df223c853e233191313a" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">aBiasRaw</references>
+        <references refid="class_l_s_m9_d_s1_1adac13514d176cfb54aed8cda9a056335" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="56">ax</references>
+        <references refid="class_l_s_m9_d_s1_1a978a357dedfa574d6e0fad33ad71e23f" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="56">ay</references>
+        <references refid="class_l_s_m9_d_s1_1aa631c8a90b90130b5be147dd4fae0841" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="56">az</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a938cc6d814aee02d7f4e983d8b2bc6bd" compoundref="_l_s_m9_d_s1___registers_8h" startline="62">OUT_X_L_XL</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164a93ed1386222f87948b972889ad82cd33" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="39">X_AXIS</references>
+        <references refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">xgReadBytes</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164aa1ec9649c0a631b27ad7280af3522dd0" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="40">Y_AXIS</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164a4b8a53bafca6b43388660925049d734f" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="41">Z_AXIS</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1acbe3bfc0b8db7fe3f77893d22c394594" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::readAccel</definition>
+        <argsstring>(lsm9ds1_axis axis)</argsstring>
+        <name>readAccel</name>
+        <param>
+          <type><ref refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164" kindref="member">lsm9ds1_axis</ref></type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="138" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="520" bodyend="531"/>
+        <references refid="class_l_s_m9_d_s1_1a8460d00ea0bb496c5d49190a34e54588" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="345">_autoCalc</references>
+        <references refid="class_l_s_m9_d_s1_1ae42dc2f2b9f2df223c853e233191313a" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">aBiasRaw</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a938cc6d814aee02d7f4e983d8b2bc6bd" compoundref="_l_s_m9_d_s1___registers_8h" startline="62">OUT_X_L_XL</references>
+        <references refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">xgReadBytes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ae127cf75aa5f3c5421e49363795dcd38" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::readMag</definition>
+        <argsstring>()</argsstring>
+        <name>readMag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="144" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="533" bodyend="540"/>
+        <references refid="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1023" endline="1031">mReadBytes</references>
+        <references refid="class_l_s_m9_d_s1_1a0e68eb9e44969070b6d84a93ba252f71" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="57">mx</references>
+        <references refid="class_l_s_m9_d_s1_1a773f80f9b7cdf8375c84a4209895d732" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="57">my</references>
+        <references refid="class_l_s_m9_d_s1_1aafe23993500ece9efd161e564787dce2" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="57">mz</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1abab698c56e01e1fd410398c4e7beaaf3" compoundref="_l_s_m9_d_s1___registers_8h" startline="95">OUT_X_L_M</references>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">calibrateMag</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a615fd3ab32a9af833ef9899663100330" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t LSM9DS1::readMag</definition>
+        <argsstring>(lsm9ds1_axis axis)</argsstring>
+        <name>readMag</name>
+        <param>
+          <type><ref refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164" kindref="member">lsm9ds1_axis</ref></type>
+          <declname>axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="152" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="542" bodyend="547"/>
+        <references refid="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1023" endline="1031">mReadBytes</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1abab698c56e01e1fd410398c4e7beaaf3" compoundref="_l_s_m9_d_s1___registers_8h" startline="95">OUT_X_L_M</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1aca21a51dc79a1287b97ed9c326e2080b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::readTemp</definition>
+        <argsstring>()</argsstring>
+        <name>readTemp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="158" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="549" bodyend="554"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a99d7b40624fe2b229cc4e1ab62552ea2" compoundref="_l_s_m9_d_s1___registers_8h" startline="44">OUT_TEMP_L</references>
+        <references refid="class_l_s_m9_d_s1_1a92791effe47c0f8c93505e53496266e5" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="58">temperature</references>
+        <references refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">xgReadBytes</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a76707323565bc4170ea8e27a932c95e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float LSM9DS1::calcGyro</definition>
+        <argsstring>(int16_t gyro)</argsstring>
+        <name>calcGyro</name>
+        <param>
+          <type>int16_t</type>
+          <declname>gyro</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="165" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="586" bodyend="590"/>
+        <references refid="class_l_s_m9_d_s1_1a2d8654ebb35177088a67e67a944bd998" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="341">gRes</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a54e2a7888b67b47cf0dd986c5b91a3c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float LSM9DS1::calcAccel</definition>
+        <argsstring>(int16_t accel)</argsstring>
+        <name>calcAccel</name>
+        <param>
+          <type>int16_t</type>
+          <declname>accel</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="172" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="592" bodyend="596"/>
+        <references refid="class_l_s_m9_d_s1_1acdc1f9b300b3c349e17dd21c9bb37c40" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="341">aRes</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a7d0b0740497b1a10cd3e46a282a143ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float LSM9DS1::calcMag</definition>
+        <argsstring>(int16_t mag)</argsstring>
+        <name>calcMag</name>
+        <param>
+          <type>int16_t</type>
+          <declname>mag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="179" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="598" bodyend="602"/>
+        <references refid="class_l_s_m9_d_s1_1aac7ae43adf399e8052464b966aec8472" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="341">mRes</references>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">calibrateMag</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a115d304ebcdc8c701f3e5a5d397250aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::setGyroScale</definition>
+        <argsstring>(uint16_t gScl)</argsstring>
+        <name>setGyroScale</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>gScl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="187" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="604" bodyend="627"/>
+        <references refid="class_l_s_m9_d_s1_1a303e0dd33e000579dc3917aecedb6e63" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="743" endline="746">calcgRes</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1aaadaf884e55b59323b03b8c05f80cc4f" compoundref="_l_s_m9_d_s1___registers_8h" startline="39">CTRL_REG1_G</references>
+        <references refid="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" compoundref="_l_s_m9_d_s1___types_8h" startline="244">IMUSettings::gyro</references>
+        <references refid="structgyro_settings_1a70ced5c47e97d4dd6770954117ad3a9f" compoundref="_l_s_m9_d_s1___types_8h" startline="181">gyroSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a8656d2de1ff9cc4cb76214e4561d02c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::setAccelScale</definition>
+        <argsstring>(uint8_t aScl)</argsstring>
+        <name>setAccelScale</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>aScl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="195" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="629" bodyend="658"/>
+        <references refid="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" compoundref="_l_s_m9_d_s1___types_8h" startline="245">IMUSettings::accel</references>
+        <references refid="class_l_s_m9_d_s1_1a31597c9ae6c5a7de64a50cbbbcd24297" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="748" endline="751">calcaRes</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a3f5b6fd3806c3e13590cc9746410265d" compoundref="_l_s_m9_d_s1___registers_8h" startline="55">CTRL_REG6_XL</references>
+        <references refid="structaccel_settings_1a3a0a38e5e32ad21fcf8e880f37c0de1e" compoundref="_l_s_m9_d_s1___types_8h" startline="209">accelSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ad7604159a07b0d088cdfb6ba4a0093b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::setMagScale</definition>
+        <argsstring>(uint8_t mScl)</argsstring>
+        <name>setMagScale</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mScl</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="203" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="660" bodyend="694"/>
+        <references refid="class_l_s_m9_d_s1_1a830dfc95c7e2d8524720d78357b053cb" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="753" endline="772">calcmRes</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a86d82a48866508ca682353988132e0d8" compoundref="_l_s_m9_d_s1___registers_8h" startline="90">CTRL_REG2_M</references>
+        <references refid="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" compoundref="_l_s_m9_d_s1___types_8h" startline="246">IMUSettings::mag</references>
+        <references refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">mReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</references>
+        <references refid="structmag_settings_1a5966915104376cb76d9eb787bab024bc" compoundref="_l_s_m9_d_s1___types_8h" startline="224">magSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ab8fc33c8da4fc5c379e880ff57d331fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::setGyroODR</definition>
+        <argsstring>(uint8_t gRate)</argsstring>
+        <name>setGyroODR</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>gRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="208" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="696" bodyend="711"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1aaadaf884e55b59323b03b8c05f80cc4f" compoundref="_l_s_m9_d_s1___registers_8h" startline="39">CTRL_REG1_G</references>
+        <references refid="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" compoundref="_l_s_m9_d_s1___types_8h" startline="244">IMUSettings::gyro</references>
+        <references refid="structgyro_settings_1a58ebac4d1f242d6b129570396a7355b0" compoundref="_l_s_m9_d_s1___types_8h" startline="182">gyroSettings::sampleRate</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a76d72839cdecc3f1c4ee6fff578182c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::setAccelODR</definition>
+        <argsstring>(uint8_t aRate)</argsstring>
+        <name>setAccelODR</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>aRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="213" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="713" bodyend="728"/>
+        <references refid="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" compoundref="_l_s_m9_d_s1___types_8h" startline="245">IMUSettings::accel</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a3f5b6fd3806c3e13590cc9746410265d" compoundref="_l_s_m9_d_s1___registers_8h" startline="55">CTRL_REG6_XL</references>
+        <references refid="structaccel_settings_1a51704cb40f1e72ec298f601fedcc6092" compoundref="_l_s_m9_d_s1___types_8h" startline="210">accelSettings::sampleRate</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a8bc672fba680edc468a643fd58046b41" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::setMagODR</definition>
+        <argsstring>(uint8_t mRate)</argsstring>
+        <name>setMagODR</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mRate</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="218" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="730" bodyend="741"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a681825dec9359e9d82698edcfec6c24d" compoundref="_l_s_m9_d_s1___registers_8h" startline="89">CTRL_REG1_M</references>
+        <references refid="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" compoundref="_l_s_m9_d_s1___types_8h" startline="246">IMUSettings::mag</references>
+        <references refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">mReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</references>
+        <references refid="structmag_settings_1aca3dbf81e533dce344e618a3df199c1e" compoundref="_l_s_m9_d_s1___types_8h" startline="225">magSettings::sampleRate</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a1e318c5e7c1d500c3ab2602c46265354" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::configInactivity</definition>
+        <argsstring>(uint8_t duration, uint8_t threshold, bool sleepOn)</argsstring>
+        <name>configInactivity</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>sleepOn</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="227" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="795" bodyend="804"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a4a2254de4b303d28b4c0857ecf40a19c" compoundref="_l_s_m9_d_s1___registers_8h" startline="29">ACT_DUR</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1aa7b862d228fc4821ad9e80ea404b6211" compoundref="_l_s_m9_d_s1___registers_8h" startline="28">ACT_THS</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a1e8ebc6c1e3876d8936197dc93f76717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::configAccelInt</definition>
+        <argsstring>(uint8_t generator, bool andInterrupts=false)</argsstring>
+        <name>configAccelInt</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>generator</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>andInterrupts</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="236" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="813" bodyend="820"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a79e53784ade0dbe2317b862854b16526" compoundref="_l_s_m9_d_s1___registers_8h" startline="30">INT_GEN_CFG_XL</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1acebcf64ab4e6ea7ed7a23c09ef16afe9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::configAccelThs</definition>
+        <argsstring>(uint8_t threshold, lsm9ds1_axis axis, uint8_t duration=0, bool wait=0)</argsstring>
+        <name>configAccelThs</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type><ref refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164" kindref="member">lsm9ds1_axis</ref></type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>duration</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>wait</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="247" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="822" bodyend="833"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ad2a0facf510793a8bc708244b3578569" compoundref="_l_s_m9_d_s1___registers_8h" startline="34">INT_GEN_DUR_XL</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ac101c65560ff469831215ab2491cf760" compoundref="_l_s_m9_d_s1___registers_8h" startline="31">INT_GEN_THS_X_XL</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a19a341728c4e5b454de045c8a531cf06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::configGyroInt</definition>
+        <argsstring>(uint8_t generator, bool aoi, bool latch)</argsstring>
+        <name>configGyroInt</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>generator</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>aoi</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>latch</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="257" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="848" bodyend="856"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1acc6f2bdcd6a987d9e996b0f147d52a08" compoundref="_l_s_m9_d_s1___registers_8h" startline="70">INT_GEN_CFG_G</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ad865cc972960ed476fabd54f698adf6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::configGyroThs</definition>
+        <argsstring>(int16_t threshold, lsm9ds1_axis axis, uint8_t duration, bool wait)</argsstring>
+        <name>configGyroThs</name>
+        <param>
+          <type>int16_t</type>
+          <declname>threshold</declname>
+        </param>
+        <param>
+          <type><ref refid="_spark_fun_l_s_m9_d_s1_8h_1adcbc07abda18c22c46d0a1129bb61164" kindref="member">lsm9ds1_axis</ref></type>
+          <declname>axis</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>duration</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>wait</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="268" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="858" bodyend="873"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a494192ebaf76143c9d377cae11f95d54" compoundref="_l_s_m9_d_s1___registers_8h" startline="77">INT_GEN_DUR_G</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ad004b4050288dc635e68ac2c6a3866a2" compoundref="_l_s_m9_d_s1___registers_8h" startline="71">INT_GEN_THS_XH_G</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a5b6948b9d4caf57cfe9e0559a0c7f54c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::configInt</definition>
+        <argsstring>(interrupt_select interupt, uint8_t generator, h_lactive activeLow=INT_ACTIVE_LOW, pp_od pushPull=INT_PUSH_PULL)</argsstring>
+        <name>configInt</name>
+        <param>
+          <type><ref refid="_l_s_m9_d_s1___types_8h_1a6261e8b8f54e4b66959cf92f93141a40" kindref="member">interrupt_select</ref></type>
+          <declname>interupt</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>generator</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7" kindref="member">h_lactive</ref></type>
+          <declname>activeLow</declname>
+          <defval><ref refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7a3f37d3df875092889b3df55cb542f6be" kindref="member">INT_ACTIVE_LOW</ref></defval>
+        </param>
+        <param>
+          <type><ref refid="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053" kindref="member">pp_od</ref></type>
+          <declname>pushPull</declname>
+          <defval><ref refid="_l_s_m9_d_s1___types_8h_1a60d66fa4435ec836a2f1e82fa6b10053a68a6e4216b18873633e97522e231fd8e" kindref="member">INT_PUSH_PULL</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="281" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="774" bodyend="793"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a9c0a349bd992b6f67c98ba9ff7fc4310" compoundref="_l_s_m9_d_s1___registers_8h" startline="57">CTRL_REG8</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a54a521668eb63d504d227c6d460723e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::configMagInt</definition>
+        <argsstring>(uint8_t generator, h_lactive activeLow, bool latch=true)</argsstring>
+        <name>configMagInt</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>generator</declname>
+        </param>
+        <param>
+          <type><ref refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7" kindref="member">h_lactive</ref></type>
+          <declname>activeLow</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>latch</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="291" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="888" bodyend="900"/>
+        <references refid="_l_s_m9_d_s1___types_8h_1ac99a793e4542699cb1b621bdac865ba7a7c5c74ecf9a0ae6739fe2a9e4cd76a2f" compoundref="_l_s_m9_d_s1___types_8h" startline="158">INT_ACTIVE_HIGH</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a4f5eea68b1f2ce72d284eea60e4553fb" compoundref="_l_s_m9_d_s1___registers_8h" startline="101">INT_CFG_M</references>
+        <references refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a87cf3dd3a4d9ca79106eb7c1c866a224" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::configMagThs</definition>
+        <argsstring>(uint16_t threshold)</argsstring>
+        <name>configMagThs</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>threshold</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="297" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="902" bodyend="908"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a947fca65e458b8a0876fb2081fb3d160" compoundref="_l_s_m9_d_s1___registers_8h" startline="104">INT_THS_H_M</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1acefeab011ea4e58c1713737ec1b74532" compoundref="_l_s_m9_d_s1___registers_8h" startline="103">INT_THS_L_M</references>
+        <references refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1aaba6696754df62a411a6a190100f9ca3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::getGyroIntSrc</definition>
+        <argsstring>()</argsstring>
+        <name>getGyroIntSrc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="300" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="875" bodyend="886"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ae225422f108611ebbad5dde6b8438357" compoundref="_l_s_m9_d_s1___registers_8h" startline="43">INT_GEN_SRC_G</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ae42ae3b368370f977d090ba0e53c7f5c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::getAccelIntSrc</definition>
+        <argsstring>()</argsstring>
+        <name>getAccelIntSrc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="303" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="835" bodyend="846"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a3b3a09387105483a4a5ae85600b07364" compoundref="_l_s_m9_d_s1___registers_8h" startline="60">INT_GEN_SRC_XL</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a2bc92a37db982059b89e0a06e7d05a95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::getMagIntSrc</definition>
+        <argsstring>()</argsstring>
+        <name>getMagIntSrc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="306" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="910" bodyend="921"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a5a42ea617d3bb38574b2a19b553b1e1a" compoundref="_l_s_m9_d_s1___registers_8h" startline="102">INT_SRC_M</references>
+        <references refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">mReadByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a9dab029d1d24e49709258d893042d28f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::getInactivity</definition>
+        <argsstring>()</argsstring>
+        <name>getInactivity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="309" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="806" bodyend="811"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1aef1145d8518c8fd83c853e927fb44801" compoundref="_l_s_m9_d_s1___registers_8h" startline="46">STATUS_REG_0</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a13b61812069b399547f177b0b0af8fe3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::sleepGyro</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>sleepGyro</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="314" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="923" bodyend="929"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ab2caeb21f8e14a7d5657c523b2553843" compoundref="_l_s_m9_d_s1___registers_8h" startline="58">CTRL_REG9</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a5f01141131318697838f15d7e5d10f2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::enableFIFO</definition>
+        <argsstring>(bool enable=true)</argsstring>
+        <name>enableFIFO</name>
+        <param>
+          <type>bool</type>
+          <declname>enable</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="319" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="931" bodyend="937"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ab2caeb21f8e14a7d5657c523b2553843" compoundref="_l_s_m9_d_s1___registers_8h" startline="58">CTRL_REG9</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a0ec4a93a34545af1acc336bae9b360f1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::setFIFO</definition>
+        <argsstring>(fifoMode_type fifoMode, uint8_t fifoThs)</argsstring>
+        <name>setFIFO</name>
+        <param>
+          <type><ref refid="_l_s_m9_d_s1___types_8h_1abd0fd05ddd88dadb906475b36c8266db" kindref="member">fifoMode_type</ref></type>
+          <declname>fifoMode</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>fifoThs</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="327" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="939" bodyend="945"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1adcd8d113c8791a336768b8da70010ea7" compoundref="_l_s_m9_d_s1___registers_8h" startline="68">FIFO_CTRL</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ac03ef2ff928a25c4a80af7707cd92dc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::getFIFOSamples</definition>
+        <argsstring>()</argsstring>
+        <name>getFIFOSamples</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="330" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="947" bodyend="950"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a8ff327dd2e3548068a66bffdc932d5ad" compoundref="_l_s_m9_d_s1___registers_8h" startline="69">FIFO_SRC</references>
+        <references refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::init</definition>
+        <argsstring>(interface_mode interface, uint8_t xgAddr, uint8_t mAddr)</argsstring>
+        <name>init</name>
+        <param>
+          <type><ref refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adf" kindref="member">interface_mode</ref></type>
+          <declname>interface</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>xgAddr</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>mAddr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="353" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="50" bodyend="139"/>
+        <references refid="class_l_s_m9_d_s1_1a8460d00ea0bb496c5d49190a34e54588" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="345">_autoCalc</references>
+        <references refid="class_l_s_m9_d_s1_1abe998fcc50cfe729c13ab535337849c7" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="59">aBias</references>
+        <references refid="class_l_s_m9_d_s1_1ae42dc2f2b9f2df223c853e233191313a" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">aBiasRaw</references>
+        <references refid="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" compoundref="_l_s_m9_d_s1___types_8h" startline="245">IMUSettings::accel</references>
+        <references refid="structdevice_settings_1a2f43ac785e01fcbcfaf8436885f638ab" compoundref="_l_s_m9_d_s1___types_8h" startline="201">deviceSettings::agAddress</references>
+        <references refid="structgyro_settings_1ac3f0782333ec55165c1f589d445ba374" compoundref="_l_s_m9_d_s1___types_8h" startline="184">gyroSettings::bandwidth</references>
+        <references refid="structaccel_settings_1ab64c80f62ecfeb3041744febaed9407b" compoundref="_l_s_m9_d_s1___types_8h" startline="215">accelSettings::bandwidth</references>
+        <references refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" compoundref="_l_s_m9_d_s1___types_8h" startline="200">deviceSettings::commInterface</references>
+        <references refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" compoundref="_l_s_m9_d_s1___types_8h" startline="242">IMUSettings::device</references>
+        <references refid="structgyro_settings_1ac9c769eeefed971baac74a7b81b25e7b" compoundref="_l_s_m9_d_s1___types_8h" startline="180">gyroSettings::enabled</references>
+        <references refid="structaccel_settings_1a6ecaf7abfbaf7e74c6986fd93798ad4b" compoundref="_l_s_m9_d_s1___types_8h" startline="208">accelSettings::enabled</references>
+        <references refid="structmag_settings_1a97f8e5c4baf3fc9a662f84fedb188f3c" compoundref="_l_s_m9_d_s1___types_8h" startline="223">magSettings::enabled</references>
+        <references refid="structtemperature_settings_1aeb258e2620d85e2f72fc057dbffa9715" compoundref="_l_s_m9_d_s1___types_8h" startline="237">temperatureSettings::enabled</references>
+        <references refid="structgyro_settings_1a7c1000d1151579743faa376d49751f1d" compoundref="_l_s_m9_d_s1___types_8h" startline="192">gyroSettings::enableX</references>
+        <references refid="structaccel_settings_1a8cd5546cda8657ad2405d378fc815b9a" compoundref="_l_s_m9_d_s1___types_8h" startline="212">accelSettings::enableX</references>
+        <references refid="structgyro_settings_1a4d6ea95b7a52daab6d48dc128c83f3d8" compoundref="_l_s_m9_d_s1___types_8h" startline="193">gyroSettings::enableY</references>
+        <references refid="structaccel_settings_1a3f9ff5abfde83c5a59808faeb5ad4c6c" compoundref="_l_s_m9_d_s1___types_8h" startline="213">accelSettings::enableY</references>
+        <references refid="structgyro_settings_1a86a86182fd841bd651672d43803b5c63" compoundref="_l_s_m9_d_s1___types_8h" startline="194">gyroSettings::enableZ</references>
+        <references refid="structaccel_settings_1abdb5ee5fb9a802315d8340ea5d83b587" compoundref="_l_s_m9_d_s1___types_8h" startline="214">accelSettings::enableZ</references>
+        <references refid="structgyro_settings_1a877b529e39287bed155acbca97a75540" compoundref="_l_s_m9_d_s1___types_8h" startline="188">gyroSettings::flipX</references>
+        <references refid="structgyro_settings_1a2137659e07899a0efccc941e003c07e0" compoundref="_l_s_m9_d_s1___types_8h" startline="189">gyroSettings::flipY</references>
+        <references refid="structgyro_settings_1a94c92be9f7c56dd9cd21120307d7373f" compoundref="_l_s_m9_d_s1___types_8h" startline="190">gyroSettings::flipZ</references>
+        <references refid="class_l_s_m9_d_s1_1a8c0354ee78e029b6715ee7110bcd8753" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="59">gBias</references>
+        <references refid="class_l_s_m9_d_s1_1ab2e59e0460cf88a12765238506031f2a" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">gBiasRaw</references>
+        <references refid="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" compoundref="_l_s_m9_d_s1___types_8h" startline="244">IMUSettings::gyro</references>
+        <references refid="structaccel_settings_1a3925a8342b5a4b3caecd187e729954f3" compoundref="_l_s_m9_d_s1___types_8h" startline="217">accelSettings::highResBandwidth</references>
+        <references refid="structaccel_settings_1ad165444ae7996ff6160be01d77d33b62" compoundref="_l_s_m9_d_s1___types_8h" startline="216">accelSettings::highResEnable</references>
+        <references refid="structgyro_settings_1a7357a9b858fdf515e969ae4e06459f37" compoundref="_l_s_m9_d_s1___types_8h" startline="187">gyroSettings::HPFCutoff</references>
+        <references refid="structgyro_settings_1aa7aa5eba55588e4bcfc0be9ea9b6ed8d" compoundref="_l_s_m9_d_s1___types_8h" startline="186">gyroSettings::HPFEnable</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="structgyro_settings_1a3eb9f52cae013b107fbc5059220f9333" compoundref="_l_s_m9_d_s1___types_8h" startline="195">gyroSettings::latchInterrupt</references>
+        <references refid="structgyro_settings_1a296a167235d876fa79afc471399e763b" compoundref="_l_s_m9_d_s1___types_8h" startline="185">gyroSettings::lowPowerEnable</references>
+        <references refid="structmag_settings_1abd59df268c0798fceacea68b956009df" compoundref="_l_s_m9_d_s1___types_8h" startline="230">magSettings::lowPowerEnable</references>
+        <references refid="structdevice_settings_1aec4e1d3e3f38b4e3e0f74f1640e16faa" compoundref="_l_s_m9_d_s1___types_8h" startline="202">deviceSettings::mAddress</references>
+        <references refid="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" compoundref="_l_s_m9_d_s1___types_8h" startline="246">IMUSettings::mag</references>
+        <references refid="class_l_s_m9_d_s1_1aab3753b958a1eaabfb48ffaf837dfadc" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="59">mBias</references>
+        <references refid="class_l_s_m9_d_s1_1ad0e3ab0b7eeee5378ab91dd20270a9b5" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="60">mBiasRaw</references>
+        <references refid="structmag_settings_1ae3f0044de2fbdff6d7b830c36f26c450" compoundref="_l_s_m9_d_s1___types_8h" startline="231">magSettings::operatingMode</references>
+        <references refid="structgyro_settings_1a33239fd5c4a0fd74670455008c2701ee" compoundref="_l_s_m9_d_s1___types_8h" startline="191">gyroSettings::orientation</references>
+        <references refid="structgyro_settings_1a58ebac4d1f242d6b129570396a7355b0" compoundref="_l_s_m9_d_s1___types_8h" startline="182">gyroSettings::sampleRate</references>
+        <references refid="structaccel_settings_1a51704cb40f1e72ec298f601fedcc6092" compoundref="_l_s_m9_d_s1___types_8h" startline="210">accelSettings::sampleRate</references>
+        <references refid="structmag_settings_1aca3dbf81e533dce344e618a3df199c1e" compoundref="_l_s_m9_d_s1___types_8h" startline="225">magSettings::sampleRate</references>
+        <references refid="structgyro_settings_1a70ced5c47e97d4dd6770954117ad3a9f" compoundref="_l_s_m9_d_s1___types_8h" startline="181">gyroSettings::scale</references>
+        <references refid="structaccel_settings_1a3a0a38e5e32ad21fcf8e880f37c0de1e" compoundref="_l_s_m9_d_s1___types_8h" startline="209">accelSettings::scale</references>
+        <references refid="structmag_settings_1a5966915104376cb76d9eb787bab024bc" compoundref="_l_s_m9_d_s1___types_8h" startline="224">magSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="struct_i_m_u_settings_1a55a77555f1843c186db02080078632f2" compoundref="_l_s_m9_d_s1___types_8h" startline="248">IMUSettings::temp</references>
+        <references refid="structmag_settings_1afcfa1e532fa140e42dc34a4abd7926ae" compoundref="_l_s_m9_d_s1___types_8h" startline="227">magSettings::tempCompensationEnable</references>
+        <references refid="structmag_settings_1ad36c7bb251858fb289841c91fb615a5f" compoundref="_l_s_m9_d_s1___types_8h" startline="228">magSettings::XYPerformance</references>
+        <references refid="structmag_settings_1a0ab41f0670a3fd20ce1a43332f6fe949" compoundref="_l_s_m9_d_s1___types_8h" startline="229">magSettings::ZPerformance</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a399a80ee541823b301e81d1afab32b28" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="40" endline="43">LSM9DS1</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::initGyro</definition>
+        <argsstring>()</argsstring>
+        <name>initGyro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="367" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="183" bodyend="253"/>
+        <references refid="structgyro_settings_1ac3f0782333ec55165c1f589d445ba374" compoundref="_l_s_m9_d_s1___types_8h" startline="184">gyroSettings::bandwidth</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1aaadaf884e55b59323b03b8c05f80cc4f" compoundref="_l_s_m9_d_s1___registers_8h" startline="39">CTRL_REG1_G</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a9f8fb3996b44c977ce54f85950599c78" compoundref="_l_s_m9_d_s1___registers_8h" startline="40">CTRL_REG2_G</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a9803391f389c4e31709daa1ef3c2c59c" compoundref="_l_s_m9_d_s1___registers_8h" startline="41">CTRL_REG3_G</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a36c532b0a660c101907dcad7ee399fbd" compoundref="_l_s_m9_d_s1___registers_8h" startline="53">CTRL_REG4</references>
+        <references refid="structgyro_settings_1ac9c769eeefed971baac74a7b81b25e7b" compoundref="_l_s_m9_d_s1___types_8h" startline="180">gyroSettings::enabled</references>
+        <references refid="structgyro_settings_1a7c1000d1151579743faa376d49751f1d" compoundref="_l_s_m9_d_s1___types_8h" startline="192">gyroSettings::enableX</references>
+        <references refid="structgyro_settings_1a4d6ea95b7a52daab6d48dc128c83f3d8" compoundref="_l_s_m9_d_s1___types_8h" startline="193">gyroSettings::enableY</references>
+        <references refid="structgyro_settings_1a86a86182fd841bd651672d43803b5c63" compoundref="_l_s_m9_d_s1___types_8h" startline="194">gyroSettings::enableZ</references>
+        <references refid="structgyro_settings_1a877b529e39287bed155acbca97a75540" compoundref="_l_s_m9_d_s1___types_8h" startline="188">gyroSettings::flipX</references>
+        <references refid="structgyro_settings_1a2137659e07899a0efccc941e003c07e0" compoundref="_l_s_m9_d_s1___types_8h" startline="189">gyroSettings::flipY</references>
+        <references refid="structgyro_settings_1a94c92be9f7c56dd9cd21120307d7373f" compoundref="_l_s_m9_d_s1___types_8h" startline="190">gyroSettings::flipZ</references>
+        <references refid="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" compoundref="_l_s_m9_d_s1___types_8h" startline="244">IMUSettings::gyro</references>
+        <references refid="structgyro_settings_1a7357a9b858fdf515e969ae4e06459f37" compoundref="_l_s_m9_d_s1___types_8h" startline="187">gyroSettings::HPFCutoff</references>
+        <references refid="structgyro_settings_1aa7aa5eba55588e4bcfc0be9ea9b6ed8d" compoundref="_l_s_m9_d_s1___types_8h" startline="186">gyroSettings::HPFEnable</references>
+        <references refid="structgyro_settings_1a3eb9f52cae013b107fbc5059220f9333" compoundref="_l_s_m9_d_s1___types_8h" startline="195">gyroSettings::latchInterrupt</references>
+        <references refid="structgyro_settings_1a296a167235d876fa79afc471399e763b" compoundref="_l_s_m9_d_s1___types_8h" startline="185">gyroSettings::lowPowerEnable</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ae694283e32d90de27691b389cf028efc" compoundref="_l_s_m9_d_s1___registers_8h" startline="42">ORIENT_CFG_G</references>
+        <references refid="structgyro_settings_1a58ebac4d1f242d6b129570396a7355b0" compoundref="_l_s_m9_d_s1___types_8h" startline="182">gyroSettings::sampleRate</references>
+        <references refid="structgyro_settings_1a70ced5c47e97d4dd6770954117ad3a9f" compoundref="_l_s_m9_d_s1___types_8h" startline="181">gyroSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::initAccel</definition>
+        <argsstring>()</argsstring>
+        <name>initAccel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="377" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="255" bodyend="317"/>
+        <references refid="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" compoundref="_l_s_m9_d_s1___types_8h" startline="245">IMUSettings::accel</references>
+        <references refid="structaccel_settings_1ab64c80f62ecfeb3041744febaed9407b" compoundref="_l_s_m9_d_s1___types_8h" startline="215">accelSettings::bandwidth</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ab4fc4d4ec521f1e02a72eef873e447b8" compoundref="_l_s_m9_d_s1___registers_8h" startline="54">CTRL_REG5_XL</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a3f5b6fd3806c3e13590cc9746410265d" compoundref="_l_s_m9_d_s1___registers_8h" startline="55">CTRL_REG6_XL</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a3b06f7bf6d694ff6e4c59271f3399e84" compoundref="_l_s_m9_d_s1___registers_8h" startline="56">CTRL_REG7_XL</references>
+        <references refid="structaccel_settings_1a6ecaf7abfbaf7e74c6986fd93798ad4b" compoundref="_l_s_m9_d_s1___types_8h" startline="208">accelSettings::enabled</references>
+        <references refid="structaccel_settings_1a8cd5546cda8657ad2405d378fc815b9a" compoundref="_l_s_m9_d_s1___types_8h" startline="212">accelSettings::enableX</references>
+        <references refid="structaccel_settings_1a3f9ff5abfde83c5a59808faeb5ad4c6c" compoundref="_l_s_m9_d_s1___types_8h" startline="213">accelSettings::enableY</references>
+        <references refid="structaccel_settings_1abdb5ee5fb9a802315d8340ea5d83b587" compoundref="_l_s_m9_d_s1___types_8h" startline="214">accelSettings::enableZ</references>
+        <references refid="structaccel_settings_1a3925a8342b5a4b3caecd187e729954f3" compoundref="_l_s_m9_d_s1___types_8h" startline="217">accelSettings::highResBandwidth</references>
+        <references refid="structaccel_settings_1ad165444ae7996ff6160be01d77d33b62" compoundref="_l_s_m9_d_s1___types_8h" startline="216">accelSettings::highResEnable</references>
+        <references refid="structaccel_settings_1a51704cb40f1e72ec298f601fedcc6092" compoundref="_l_s_m9_d_s1___types_8h" startline="210">accelSettings::sampleRate</references>
+        <references refid="structaccel_settings_1a3a0a38e5e32ad21fcf8e880f37c0de1e" compoundref="_l_s_m9_d_s1___types_8h" startline="209">accelSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::initMag</definition>
+        <argsstring>()</argsstring>
+        <name>initMag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="388" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="407" bodyend="474"/>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a681825dec9359e9d82698edcfec6c24d" compoundref="_l_s_m9_d_s1___registers_8h" startline="89">CTRL_REG1_M</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a86d82a48866508ca682353988132e0d8" compoundref="_l_s_m9_d_s1___registers_8h" startline="90">CTRL_REG2_M</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ac1890f3762169150ac5efdba82735976" compoundref="_l_s_m9_d_s1___registers_8h" startline="91">CTRL_REG3_M</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1ae732f3952adf7b6691e302d7446041a0" compoundref="_l_s_m9_d_s1___registers_8h" startline="92">CTRL_REG4_M</references>
+        <references refid="_l_s_m9_d_s1___registers_8h_1a75b063b95134015d2f927762f3bc7dad" compoundref="_l_s_m9_d_s1___registers_8h" startline="93">CTRL_REG5_M</references>
+        <references refid="structmag_settings_1abd59df268c0798fceacea68b956009df" compoundref="_l_s_m9_d_s1___types_8h" startline="230">magSettings::lowPowerEnable</references>
+        <references refid="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" compoundref="_l_s_m9_d_s1___types_8h" startline="246">IMUSettings::mag</references>
+        <references refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</references>
+        <references refid="structmag_settings_1ae3f0044de2fbdff6d7b830c36f26c450" compoundref="_l_s_m9_d_s1___types_8h" startline="231">magSettings::operatingMode</references>
+        <references refid="structmag_settings_1aca3dbf81e533dce344e618a3df199c1e" compoundref="_l_s_m9_d_s1___types_8h" startline="225">magSettings::sampleRate</references>
+        <references refid="structmag_settings_1a5966915104376cb76d9eb787bab024bc" compoundref="_l_s_m9_d_s1___types_8h" startline="224">magSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="structmag_settings_1afcfa1e532fa140e42dc34a4abd7926ae" compoundref="_l_s_m9_d_s1___types_8h" startline="227">magSettings::tempCompensationEnable</references>
+        <references refid="structmag_settings_1ad36c7bb251858fb289841c91fb615a5f" compoundref="_l_s_m9_d_s1___types_8h" startline="228">magSettings::XYPerformance</references>
+        <references refid="structmag_settings_1a0ab41f0670a3fd20ce1a43332f6fe949" compoundref="_l_s_m9_d_s1___types_8h" startline="229">magSettings::ZPerformance</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::mReadByte</definition>
+        <argsstring>(uint8_t subAddress)</argsstring>
+        <name>mReadByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="395" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1013" bodyend="1021"/>
+        <references refid="class_l_s_m9_d_s1_1a7141933a2ccde95976e4eecd598ecb17" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_mAddress</references>
+        <references refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" compoundref="_l_s_m9_d_s1___types_8h" startline="200">deviceSettings::commInterface</references>
+        <references refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" compoundref="_l_s_m9_d_s1___types_8h" startline="242">IMUSettings::device</references>
+        <references refid="class_l_s_m9_d_s1_1a7fc046d4b335494331905fdeb5c81c9e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1104" endline="1121">I2CreadByte</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" compoundref="_l_s_m9_d_s1___types_8h" startline="32">IMU_MODE_I2C</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" compoundref="_l_s_m9_d_s1___types_8h" startline="31">IMU_MODE_SPI</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1a6f0f50bb5e9b702d5a19c7441a3f9d8b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1062" endline="1069">SPIreadByte</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a2bc92a37db982059b89e0a06e7d05a95" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="910" endline="921">getMagIntSrc</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a85afd29e95bead7b3f0083a9a235d1df" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="497" endline="503">magAvailable</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8bc672fba680edc468a643fd58046b41" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="730" endline="741">setMagODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ad7604159a07b0d088cdfb6ba4a0093b0" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="660" endline="694">setMagScale</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::mReadBytes</definition>
+        <argsstring>(uint8_t subAddress, uint8_t *dest, uint8_t count)</argsstring>
+        <name>mReadBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="406" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1023" bodyend="1031"/>
+        <references refid="class_l_s_m9_d_s1_1a7141933a2ccde95976e4eecd598ecb17" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_mAddress</references>
+        <references refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" compoundref="_l_s_m9_d_s1___types_8h" startline="200">deviceSettings::commInterface</references>
+        <references refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" compoundref="_l_s_m9_d_s1___types_8h" startline="242">IMUSettings::device</references>
+        <references refid="class_l_s_m9_d_s1_1adfc9a22290daddd7787e8023fa8f12cc" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1123" endline="1146">I2CreadBytes</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" compoundref="_l_s_m9_d_s1___types_8h" startline="32">IMU_MODE_I2C</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" compoundref="_l_s_m9_d_s1___types_8h" startline="31">IMU_MODE_SPI</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1a26c0f164454eba84e6486033b7061d11" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1071" endline="1088">SPIreadBytes</references>
+        <referencedby refid="class_l_s_m9_d_s1_1ae127cf75aa5f3c5421e49363795dcd38" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="533" endline="540">readMag</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::mWriteByte</definition>
+        <argsstring>(uint8_t subAddress, uint8_t data)</argsstring>
+        <name>mWriteByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="412" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="983" bodyend="991"/>
+        <references refid="class_l_s_m9_d_s1_1a7141933a2ccde95976e4eecd598ecb17" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_mAddress</references>
+        <references refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" compoundref="_l_s_m9_d_s1___types_8h" startline="200">deviceSettings::commInterface</references>
+        <references refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" compoundref="_l_s_m9_d_s1___types_8h" startline="242">IMUSettings::device</references>
+        <references refid="class_l_s_m9_d_s1_1a8e66108a002cc15ec4c0db0a608d20c6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1096" endline="1102">I2CwriteByte</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" compoundref="_l_s_m9_d_s1___types_8h" startline="32">IMU_MODE_I2C</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" compoundref="_l_s_m9_d_s1___types_8h" startline="31">IMU_MODE_SPI</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1a83321c9d6ec50f6b9944907d2be482cd" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1050" endline="1060">SPIwriteByte</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a54a521668eb63d504d227c6d460723e0" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="888" endline="900">configMagInt</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a87cf3dd3a4d9ca79106eb7c1c866a224" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="902" endline="908">configMagThs</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">initMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a0d461614bd058b082c94481dc916c18b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="396" endline="405">magOffset</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8bc672fba680edc468a643fd58046b41" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="730" endline="741">setMagODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ad7604159a07b0d088cdfb6ba4a0093b0" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="660" endline="694">setMagScale</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::xgReadByte</definition>
+        <argsstring>(uint8_t subAddress)</argsstring>
+        <name>xgReadByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="419" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="993" bodyend="1001"/>
+        <references refid="class_l_s_m9_d_s1_1ac78b7fab605570a16433a4636f91451e" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_xgAddress</references>
+        <references refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" compoundref="_l_s_m9_d_s1___types_8h" startline="200">deviceSettings::commInterface</references>
+        <references refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" compoundref="_l_s_m9_d_s1___types_8h" startline="242">IMUSettings::device</references>
+        <references refid="class_l_s_m9_d_s1_1a7fc046d4b335494331905fdeb5c81c9e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1104" endline="1121">I2CreadByte</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" compoundref="_l_s_m9_d_s1___types_8h" startline="32">IMU_MODE_I2C</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" compoundref="_l_s_m9_d_s1___types_8h" startline="31">IMU_MODE_SPI</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1a6f0f50bb5e9b702d5a19c7441a3f9d8b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1062" endline="1069">SPIreadByte</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a515ce6f5c199a86c6aa5be353b2a3a13" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="476" endline="481">accelAvailable</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="326" endline="364">calibrate</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5b6948b9d4caf57cfe9e0559a0c7f54c" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="774" endline="793">configInt</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5f01141131318697838f15d7e5d10f2c" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="931" endline="937">enableFIFO</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae42ae3b368370f977d090ba0e53c7f5c" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="835" endline="846">getAccelIntSrc</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ac03ef2ff928a25c4a80af7707cd92dc8" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="947" endline="950">getFIFOSamples</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aaba6696754df62a411a6a190100f9ca3" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="875" endline="886">getGyroIntSrc</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a9dab029d1d24e49709258d893042d28f" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="806" endline="811">getInactivity</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a65b71a03a30f4e8ed1ffd46de3db0560" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="483" endline="488">gyroAvailable</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a76d72839cdecc3f1c4ee6fff578182c5" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="713" endline="728">setAccelODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8656d2de1ff9cc4cb76214e4561d02c4" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="629" endline="658">setAccelScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ab8fc33c8da4fc5c379e880ff57d331fa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="696" endline="711">setGyroODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a115d304ebcdc8c701f3e5a5d397250aa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="604" endline="627">setGyroScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a13b61812069b399547f177b0b0af8fe3" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="923" endline="929">sleepGyro</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aaf6683c6f3f0281d5222b74f580f321b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="490" endline="495">tempAvailable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::xgReadBytes</definition>
+        <argsstring>(uint8_t subAddress, uint8_t *dest, uint8_t count)</argsstring>
+        <name>xgReadBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="430" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1003" bodyend="1011"/>
+        <references refid="class_l_s_m9_d_s1_1ac78b7fab605570a16433a4636f91451e" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_xgAddress</references>
+        <references refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" compoundref="_l_s_m9_d_s1___types_8h" startline="200">deviceSettings::commInterface</references>
+        <references refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" compoundref="_l_s_m9_d_s1___types_8h" startline="242">IMUSettings::device</references>
+        <references refid="class_l_s_m9_d_s1_1adfc9a22290daddd7787e8023fa8f12cc" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1123" endline="1146">I2CreadBytes</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" compoundref="_l_s_m9_d_s1___types_8h" startline="32">IMU_MODE_I2C</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" compoundref="_l_s_m9_d_s1___types_8h" startline="31">IMU_MODE_SPI</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1a26c0f164454eba84e6486033b7061d11" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1071" endline="1088">SPIreadBytes</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="505" endline="518">readAccel</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="556" endline="569">readGyro</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aca21a51dc79a1287b97ed9c326e2080b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="549" endline="554">readTemp</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::xgWriteByte</definition>
+        <argsstring>(uint8_t subAddress, uint8_t data)</argsstring>
+        <name>xgWriteByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="436" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="973" bodyend="981"/>
+        <references refid="class_l_s_m9_d_s1_1ac78b7fab605570a16433a4636f91451e" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_xgAddress</references>
+        <references refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" compoundref="_l_s_m9_d_s1___types_8h" startline="200">deviceSettings::commInterface</references>
+        <references refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" compoundref="_l_s_m9_d_s1___types_8h" startline="242">IMUSettings::device</references>
+        <references refid="class_l_s_m9_d_s1_1a8e66108a002cc15ec4c0db0a608d20c6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1096" endline="1102">I2CwriteByte</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfad6b4b72104938596419f879b63cd2d72" compoundref="_l_s_m9_d_s1___types_8h" startline="32">IMU_MODE_I2C</references>
+        <references refid="_l_s_m9_d_s1___types_8h_1abd62c19dfd2401eba73af16c64296adfae45ea9c51bf9ae045499f04550e356c0" compoundref="_l_s_m9_d_s1___types_8h" startline="31">IMU_MODE_SPI</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <references refid="class_l_s_m9_d_s1_1a83321c9d6ec50f6b9944907d2be482cd" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1050" endline="1060">SPIwriteByte</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a1e8ebc6c1e3876d8936197dc93f76717" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="813" endline="820">configAccelInt</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1acebcf64ab4e6ea7ed7a23c09ef16afe9" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="822" endline="833">configAccelThs</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a19a341728c4e5b454de045c8a531cf06" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="848" endline="856">configGyroInt</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ad865cc972960ed476fabd54f698adf6e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="858" endline="873">configGyroThs</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a1e318c5e7c1d500c3ab2602c46265354" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="795" endline="804">configInactivity</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5b6948b9d4caf57cfe9e0559a0c7f54c" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="774" endline="793">configInt</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5f01141131318697838f15d7e5d10f2c" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="931" endline="937">enableFIFO</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">initAccel</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">initGyro</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a76d72839cdecc3f1c4ee6fff578182c5" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="713" endline="728">setAccelODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8656d2de1ff9cc4cb76214e4561d02c4" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="629" endline="658">setAccelScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a0ec4a93a34545af1acc336bae9b360f1" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="939" endline="945">setFIFO</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ab8fc33c8da4fc5c379e880ff57d331fa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="696" endline="711">setGyroODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a115d304ebcdc8c701f3e5a5d397250aa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="604" endline="627">setGyroScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a13b61812069b399547f177b0b0af8fe3" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="923" endline="929">sleepGyro</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a303e0dd33e000579dc3917aecedb6e63" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::calcgRes</definition>
+        <argsstring>()</argsstring>
+        <name>calcgRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="441" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="743" bodyend="746"/>
+        <references refid="class_l_s_m9_d_s1_1a2d8654ebb35177088a67e67a944bd998" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="341">gRes</references>
+        <references refid="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" compoundref="_l_s_m9_d_s1___types_8h" startline="244">IMUSettings::gyro</references>
+        <references refid="structgyro_settings_1a70ced5c47e97d4dd6770954117ad3a9f" compoundref="_l_s_m9_d_s1___types_8h" startline="181">gyroSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a115d304ebcdc8c701f3e5a5d397250aa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="604" endline="627">setGyroScale</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a830dfc95c7e2d8524720d78357b053cb" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::calcmRes</definition>
+        <argsstring>()</argsstring>
+        <name>calcmRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="446" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="753" bodyend="772"/>
+        <references refid="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" compoundref="_l_s_m9_d_s1___types_8h" startline="246">IMUSettings::mag</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8cpp_1abe1225b90f8c6d3ee7956881ea427fc3" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="38">magSensitivity</references>
+        <references refid="class_l_s_m9_d_s1_1aac7ae43adf399e8052464b966aec8472" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="341">mRes</references>
+        <references refid="structmag_settings_1a5966915104376cb76d9eb787bab024bc" compoundref="_l_s_m9_d_s1___types_8h" startline="224">magSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ad7604159a07b0d088cdfb6ba4a0093b0" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="660" endline="694">setMagScale</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a31597c9ae6c5a7de64a50cbbbcd24297" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::calcaRes</definition>
+        <argsstring>()</argsstring>
+        <name>calcaRes</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="451" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="748" bodyend="751"/>
+        <references refid="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" compoundref="_l_s_m9_d_s1___types_8h" startline="245">IMUSettings::accel</references>
+        <references refid="class_l_s_m9_d_s1_1acdc1f9b300b3c349e17dd21c9bb37c40" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="341">aRes</references>
+        <references refid="structaccel_settings_1a3a0a38e5e32ad21fcf8e880f37c0de1e" compoundref="_l_s_m9_d_s1___types_8h" startline="209">accelSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8656d2de1ff9cc4cb76214e4561d02c4" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="629" endline="658">setAccelScale</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::constrainScales</definition>
+        <argsstring>()</argsstring>
+        <name>constrainScales</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="456" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="952" bodyend="971"/>
+        <references refid="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" compoundref="_l_s_m9_d_s1___types_8h" startline="245">IMUSettings::accel</references>
+        <references refid="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" compoundref="_l_s_m9_d_s1___types_8h" startline="244">IMUSettings::gyro</references>
+        <references refid="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" compoundref="_l_s_m9_d_s1___types_8h" startline="246">IMUSettings::mag</references>
+        <references refid="structgyro_settings_1a70ced5c47e97d4dd6770954117ad3a9f" compoundref="_l_s_m9_d_s1___types_8h" startline="181">gyroSettings::scale</references>
+        <references refid="structaccel_settings_1a3a0a38e5e32ad21fcf8e880f37c0de1e" compoundref="_l_s_m9_d_s1___types_8h" startline="209">accelSettings::scale</references>
+        <references refid="structmag_settings_1a5966915104376cb76d9eb787bab024bc" compoundref="_l_s_m9_d_s1___types_8h" startline="224">magSettings::scale</references>
+        <references refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="48">settings</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a4286d5803ab028c657e007ae99acc60a" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::initSPI</definition>
+        <argsstring>()</argsstring>
+        <name>initSPI</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="463" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1033" bodyend="1048"/>
+        <references refid="class_l_s_m9_d_s1_1a7141933a2ccde95976e4eecd598ecb17" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_mAddress</references>
+        <references refid="class_l_s_m9_d_s1_1ac78b7fab605570a16433a4636f91451e" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_xgAddress</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a83321c9d6ec50f6b9944907d2be482cd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::SPIwriteByte</definition>
+        <argsstring>(uint8_t csPin, uint8_t subAddress, uint8_t data)</argsstring>
+        <name>SPIwriteByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>csPin</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="470" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1050" bodyend="1060"/>
+        <referencedby refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a6f0f50bb5e9b702d5a19c7441a3f9d8b" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::SPIreadByte</definition>
+        <argsstring>(uint8_t csPin, uint8_t subAddress)</argsstring>
+        <name>SPIreadByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>csPin</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="478" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1062" bodyend="1069"/>
+        <references refid="class_l_s_m9_d_s1_1a26c0f164454eba84e6486033b7061d11" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1071" endline="1088">SPIreadBytes</references>
+        <referencedby refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">mReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a26c0f164454eba84e6486033b7061d11" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::SPIreadBytes</definition>
+        <argsstring>(uint8_t csPin, uint8_t subAddress, uint8_t *dest, uint8_t count)</argsstring>
+        <name>SPIreadBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>csPin</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="488" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1071" bodyend="1088"/>
+        <references refid="class_l_s_m9_d_s1_1a7141933a2ccde95976e4eecd598ecb17" compoundref="_spark_fun_l_s_m9_d_s1_8h" startline="336">_mAddress</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <referencedby refid="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1023" endline="1031">mReadBytes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a6f0f50bb5e9b702d5a19c7441a3f9d8b" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1062" endline="1069">SPIreadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">xgReadBytes</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1ae60332c2836bd3f19846b7a44c015ddd" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::initI2C</definition>
+        <argsstring>()</argsstring>
+        <name>initI2C</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="496" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1090" bodyend="1093"/>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a8e66108a002cc15ec4c0db0a608d20c6" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void LSM9DS1::I2CwriteByte</definition>
+        <argsstring>(uint8_t address, uint8_t subAddress, uint8_t data)</argsstring>
+        <name>I2CwriteByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>data</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="503" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1096" bodyend="1102"/>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">mWriteByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">xgWriteByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1a7fc046d4b335494331905fdeb5c81c9e" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::I2CreadByte</definition>
+        <argsstring>(uint8_t address, uint8_t subAddress)</argsstring>
+        <name>I2CreadByte</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Bad! 255 will be misinterpreted as a good value. </para>        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="511" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1104" bodyend="1121"/>
+        <references refid="_spark_fun_l_s_m9_d_s1_8cpp_1ab99dc8f2f400e97f7a5d70823788aeea" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="36">LSM9DS1_COMMUNICATION_TIMEOUT</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">mReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">xgReadByte</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_l_s_m9_d_s1_1adfc9a22290daddd7787e8023fa8f12cc" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t LSM9DS1::I2CreadBytes</definition>
+        <argsstring>(uint8_t address, uint8_t subAddress, uint8_t *dest, uint8_t count)</argsstring>
+        <name>I2CreadBytes</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>subAddress</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dest</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="521" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.cpp" bodystart="1123" bodyend="1146"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_spark_fun_l_s_m9_d_s1_8cpp_1ab99dc8f2f400e97f7a5d70823788aeea" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="36">LSM9DS1_COMMUNICATION_TIMEOUT</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1023" endline="1031">mReadBytes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">xgReadBytes</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="342">
+        <label>accelSettings</label>
+        <link refid="structaccel_settings"/>
+      </node>
+      <node id="343">
+        <label>temperatureSettings</label>
+        <link refid="structtemperature_settings"/>
+      </node>
+      <node id="337">
+        <label>LSM9DS1</label>
+        <link refid="class_l_s_m9_d_s1"/>
+        <childnode refid="338" relation="usage">
+          <edgelabel>settings</edgelabel>
+        </childnode>
+      </node>
+      <node id="338">
+        <label>IMUSettings</label>
+        <link refid="struct_i_m_u_settings"/>
+        <childnode refid="339" relation="usage">
+          <edgelabel>mag</edgelabel>
+        </childnode>
+        <childnode refid="340" relation="usage">
+          <edgelabel>gyro</edgelabel>
+        </childnode>
+        <childnode refid="341" relation="usage">
+          <edgelabel>device</edgelabel>
+        </childnode>
+        <childnode refid="342" relation="usage">
+          <edgelabel>accel</edgelabel>
+        </childnode>
+        <childnode refid="343" relation="usage">
+          <edgelabel>temp</edgelabel>
+        </childnode>
+      </node>
+      <node id="340">
+        <label>gyroSettings</label>
+        <link refid="structgyro_settings"/>
+      </node>
+      <node id="339">
+        <label>magSettings</label>
+        <link refid="structmag_settings"/>
+      </node>
+      <node id="341">
+        <label>deviceSettings</label>
+        <link refid="structdevice_settings"/>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" line="46" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/SparkFunLSM9DS1.h" bodystart="45" bodyend="522"/>
+    <listofallmembers>
+      <member refid="class_l_s_m9_d_s1_1a8460d00ea0bb496c5d49190a34e54588" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>_autoCalc</name></member>
+      <member refid="class_l_s_m9_d_s1_1a7141933a2ccde95976e4eecd598ecb17" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>_mAddress</name></member>
+      <member refid="class_l_s_m9_d_s1_1ac78b7fab605570a16433a4636f91451e" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>_xgAddress</name></member>
+      <member refid="class_l_s_m9_d_s1_1abe998fcc50cfe729c13ab535337849c7" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>aBias</name></member>
+      <member refid="class_l_s_m9_d_s1_1ae42dc2f2b9f2df223c853e233191313a" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>aBiasRaw</name></member>
+      <member refid="class_l_s_m9_d_s1_1a515ce6f5c199a86c6aa5be353b2a3a13" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>accelAvailable</name></member>
+      <member refid="class_l_s_m9_d_s1_1acdc1f9b300b3c349e17dd21c9bb37c40" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>aRes</name></member>
+      <member refid="class_l_s_m9_d_s1_1adac13514d176cfb54aed8cda9a056335" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>ax</name></member>
+      <member refid="class_l_s_m9_d_s1_1a978a357dedfa574d6e0fad33ad71e23f" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>ay</name></member>
+      <member refid="class_l_s_m9_d_s1_1aa631c8a90b90130b5be147dd4fae0841" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>az</name></member>
+      <member refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>begin</name></member>
+      <member refid="class_l_s_m9_d_s1_1a54e2a7888b67b47cf0dd986c5b91a3c5" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>calcAccel</name></member>
+      <member refid="class_l_s_m9_d_s1_1a31597c9ae6c5a7de64a50cbbbcd24297" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>calcaRes</name></member>
+      <member refid="class_l_s_m9_d_s1_1a303e0dd33e000579dc3917aecedb6e63" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>calcgRes</name></member>
+      <member refid="class_l_s_m9_d_s1_1a76707323565bc4170ea8e27a932c95e4" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>calcGyro</name></member>
+      <member refid="class_l_s_m9_d_s1_1a7d0b0740497b1a10cd3e46a282a143ec" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>calcMag</name></member>
+      <member refid="class_l_s_m9_d_s1_1a830dfc95c7e2d8524720d78357b053cb" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>calcmRes</name></member>
+      <member refid="class_l_s_m9_d_s1_1a97939cb15fcb7e33abcd6d3a9230d943" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>calibrate</name></member>
+      <member refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>calibrateMag</name></member>
+      <member refid="class_l_s_m9_d_s1_1a1e8ebc6c1e3876d8936197dc93f76717" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>configAccelInt</name></member>
+      <member refid="class_l_s_m9_d_s1_1acebcf64ab4e6ea7ed7a23c09ef16afe9" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>configAccelThs</name></member>
+      <member refid="class_l_s_m9_d_s1_1a19a341728c4e5b454de045c8a531cf06" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>configGyroInt</name></member>
+      <member refid="class_l_s_m9_d_s1_1ad865cc972960ed476fabd54f698adf6e" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>configGyroThs</name></member>
+      <member refid="class_l_s_m9_d_s1_1a1e318c5e7c1d500c3ab2602c46265354" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>configInactivity</name></member>
+      <member refid="class_l_s_m9_d_s1_1a5b6948b9d4caf57cfe9e0559a0c7f54c" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>configInt</name></member>
+      <member refid="class_l_s_m9_d_s1_1a54a521668eb63d504d227c6d460723e0" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>configMagInt</name></member>
+      <member refid="class_l_s_m9_d_s1_1a87cf3dd3a4d9ca79106eb7c1c866a224" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>configMagThs</name></member>
+      <member refid="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>constrainScales</name></member>
+      <member refid="class_l_s_m9_d_s1_1a5f01141131318697838f15d7e5d10f2c" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>enableFIFO</name></member>
+      <member refid="class_l_s_m9_d_s1_1a8c0354ee78e029b6715ee7110bcd8753" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>gBias</name></member>
+      <member refid="class_l_s_m9_d_s1_1ab2e59e0460cf88a12765238506031f2a" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>gBiasRaw</name></member>
+      <member refid="class_l_s_m9_d_s1_1ae42ae3b368370f977d090ba0e53c7f5c" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>getAccelIntSrc</name></member>
+      <member refid="class_l_s_m9_d_s1_1ac03ef2ff928a25c4a80af7707cd92dc8" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>getFIFOSamples</name></member>
+      <member refid="class_l_s_m9_d_s1_1aaba6696754df62a411a6a190100f9ca3" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>getGyroIntSrc</name></member>
+      <member refid="class_l_s_m9_d_s1_1a9dab029d1d24e49709258d893042d28f" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>getInactivity</name></member>
+      <member refid="class_l_s_m9_d_s1_1a2bc92a37db982059b89e0a06e7d05a95" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>getMagIntSrc</name></member>
+      <member refid="class_l_s_m9_d_s1_1a2d8654ebb35177088a67e67a944bd998" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>gRes</name></member>
+      <member refid="class_l_s_m9_d_s1_1abf02b4544b5d529036adbac02e7b9f02" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>gx</name></member>
+      <member refid="class_l_s_m9_d_s1_1a0c351823fd094ff24ff245dd951cf783" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>gy</name></member>
+      <member refid="class_l_s_m9_d_s1_1a65b71a03a30f4e8ed1ffd46de3db0560" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>gyroAvailable</name></member>
+      <member refid="class_l_s_m9_d_s1_1ad4d0f0585398ff917afcba1b4a73e519" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>gz</name></member>
+      <member refid="class_l_s_m9_d_s1_1a7fc046d4b335494331905fdeb5c81c9e" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>I2CreadByte</name></member>
+      <member refid="class_l_s_m9_d_s1_1adfc9a22290daddd7787e8023fa8f12cc" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>I2CreadBytes</name></member>
+      <member refid="class_l_s_m9_d_s1_1a8e66108a002cc15ec4c0db0a608d20c6" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>I2CwriteByte</name></member>
+      <member refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>init</name></member>
+      <member refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>initAccel</name></member>
+      <member refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>initGyro</name></member>
+      <member refid="class_l_s_m9_d_s1_1ae60332c2836bd3f19846b7a44c015ddd" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>initI2C</name></member>
+      <member refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>initMag</name></member>
+      <member refid="class_l_s_m9_d_s1_1a4286d5803ab028c657e007ae99acc60a" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>initSPI</name></member>
+      <member refid="class_l_s_m9_d_s1_1ab62923063ffc49dca82e6f311c5c8764" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>LSM9DS1</name></member>
+      <member refid="class_l_s_m9_d_s1_1a399a80ee541823b301e81d1afab32b28" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>LSM9DS1</name></member>
+      <member refid="class_l_s_m9_d_s1_1a85afd29e95bead7b3f0083a9a235d1df" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>magAvailable</name></member>
+      <member refid="class_l_s_m9_d_s1_1a0d461614bd058b082c94481dc916c18b" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>magOffset</name></member>
+      <member refid="class_l_s_m9_d_s1_1aab3753b958a1eaabfb48ffaf837dfadc" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>mBias</name></member>
+      <member refid="class_l_s_m9_d_s1_1ad0e3ab0b7eeee5378ab91dd20270a9b5" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>mBiasRaw</name></member>
+      <member refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>mReadByte</name></member>
+      <member refid="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>mReadBytes</name></member>
+      <member refid="class_l_s_m9_d_s1_1aac7ae43adf399e8052464b966aec8472" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>mRes</name></member>
+      <member refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>mWriteByte</name></member>
+      <member refid="class_l_s_m9_d_s1_1a0e68eb9e44969070b6d84a93ba252f71" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>mx</name></member>
+      <member refid="class_l_s_m9_d_s1_1a773f80f9b7cdf8375c84a4209895d732" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>my</name></member>
+      <member refid="class_l_s_m9_d_s1_1aafe23993500ece9efd161e564787dce2" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>mz</name></member>
+      <member refid="class_l_s_m9_d_s1_1a9953684a1ff652a7d3a4d91e72bccaa1" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>readAccel</name></member>
+      <member refid="class_l_s_m9_d_s1_1acbe3bfc0b8db7fe3f77893d22c394594" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>readAccel</name></member>
+      <member refid="class_l_s_m9_d_s1_1a56e9710cb538a4c7f7ab94c2ca256ce9" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>readGyro</name></member>
+      <member refid="class_l_s_m9_d_s1_1adc1b37609a6c850328b16da4f911cefd" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>readGyro</name></member>
+      <member refid="class_l_s_m9_d_s1_1ae127cf75aa5f3c5421e49363795dcd38" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>readMag</name></member>
+      <member refid="class_l_s_m9_d_s1_1a615fd3ab32a9af833ef9899663100330" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>readMag</name></member>
+      <member refid="class_l_s_m9_d_s1_1aca21a51dc79a1287b97ed9c326e2080b" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>readTemp</name></member>
+      <member refid="class_l_s_m9_d_s1_1a76d72839cdecc3f1c4ee6fff578182c5" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>setAccelODR</name></member>
+      <member refid="class_l_s_m9_d_s1_1a8656d2de1ff9cc4cb76214e4561d02c4" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>setAccelScale</name></member>
+      <member refid="class_l_s_m9_d_s1_1a0ec4a93a34545af1acc336bae9b360f1" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>setFIFO</name></member>
+      <member refid="class_l_s_m9_d_s1_1ab8fc33c8da4fc5c379e880ff57d331fa" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>setGyroODR</name></member>
+      <member refid="class_l_s_m9_d_s1_1a115d304ebcdc8c701f3e5a5d397250aa" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>setGyroScale</name></member>
+      <member refid="class_l_s_m9_d_s1_1a8bc672fba680edc468a643fd58046b41" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>setMagODR</name></member>
+      <member refid="class_l_s_m9_d_s1_1ad7604159a07b0d088cdfb6ba4a0093b0" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>setMagScale</name></member>
+      <member refid="class_l_s_m9_d_s1_1a8397fc6c94a11a8a09f3dd17b28cf2a4" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>settings</name></member>
+      <member refid="class_l_s_m9_d_s1_1a13b61812069b399547f177b0b0af8fe3" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>sleepGyro</name></member>
+      <member refid="class_l_s_m9_d_s1_1a6f0f50bb5e9b702d5a19c7441a3f9d8b" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>SPIreadByte</name></member>
+      <member refid="class_l_s_m9_d_s1_1a26c0f164454eba84e6486033b7061d11" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>SPIreadBytes</name></member>
+      <member refid="class_l_s_m9_d_s1_1a83321c9d6ec50f6b9944907d2be482cd" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>SPIwriteByte</name></member>
+      <member refid="class_l_s_m9_d_s1_1aaf6683c6f3f0281d5222b74f580f321b" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>tempAvailable</name></member>
+      <member refid="class_l_s_m9_d_s1_1a92791effe47c0f8c93505e53496266e5" prot="public" virt="non-virtual"><scope>LSM9DS1</scope><name>temperature</name></member>
+      <member refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>xgReadByte</name></member>
+      <member refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>xgReadBytes</name></member>
+      <member refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" prot="protected" virt="non-virtual"><scope>LSM9DS1</scope><name>xgWriteByte</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

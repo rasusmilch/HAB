@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="ble_config_8h" kind="file" language="C++">
+    <compoundname>bleConfig.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ble_config_8h_1a332d00444b78547464ea3e09d1a3dfb5" prot="public" static="no">
+        <name>FIRMATA_BLE_LOCAL_NAME</name>
+        <initializer>&quot;FIRMATA&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/examples/StandardFirmataBLE/bleConfig.h" line="20" column="9" bodyfile="Weather_Balloon/library/Firmata/examples/StandardFirmataBLE/bleConfig.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*==================================================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>BLE<sp/>CONFIGURATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>If<sp/>you<sp/>are<sp/>using<sp/>an<sp/>Arduino<sp/>101,<sp/>you<sp/>do<sp/>not<sp/>need<sp/>to<sp/>make<sp/>any<sp/>changes<sp/>to<sp/>this<sp/>file<sp/>(unless<sp/>you</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*<sp/>need<sp/>a<sp/>unique<sp/>ble<sp/>local<sp/>name<sp/>(see<sp/>below).<sp/>If<sp/>you<sp/>are<sp/>using<sp/>another<sp/>supported<sp/>BLE<sp/>board<sp/>or<sp/>shield,</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>follow<sp/>the<sp/>instructions<sp/>for<sp/>the<sp/>specific<sp/>board<sp/>or<sp/>shield<sp/>below.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>Make<sp/>sure<sp/>you<sp/>have<sp/>the<sp/>Intel<sp/>Curie<sp/>Boards<sp/>package<sp/>v1.0.6<sp/>or<sp/>higher<sp/>installed<sp/>via<sp/>the<sp/>Arduino</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>Boards<sp/>Manager.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>Supported<sp/>boards<sp/>and<sp/>shields:</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>-<sp/>Arduino<sp/>101<sp/>(recommended)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>-<sp/>RedBearLab<sp/>BLE<sp/>Shield<sp/>(v2)<sp/><sp/>**<sp/>to<sp/>be<sp/>verified<sp/>**</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>-<sp/>RedBearLab<sp/>BLE<sp/>Nano<sp/>**<sp/>works<sp/>with<sp/>modifications<sp/>**</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*================================================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>change<sp/>this<sp/>to<sp/>a<sp/>unique<sp/>name<sp/>per<sp/>board<sp/>if<sp/>running<sp/>StandardFirmataBLE<sp/>on<sp/>multiple<sp/>boards</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>within<sp/>the<sp/>same<sp/>physical<sp/>space</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="ble_config_8h_1a332d00444b78547464ea3e09d1a3dfb5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIRMATA_BLE_LOCAL_NAME<sp/>&quot;FIRMATA&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*<sp/>RedBearLab<sp/>BLE<sp/>Shield</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>If<sp/>you<sp/>are<sp/>using<sp/>a<sp/>RedBearLab<sp/>BLE<sp/>shield,<sp/>uncomment<sp/>the<sp/>define<sp/>below.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*<sp/>Also,<sp/>change<sp/>the<sp/>define<sp/>for<sp/>BLE_RST<sp/>if<sp/>you<sp/>have<sp/>the<sp/>jumper<sp/>set<sp/>to<sp/>pin<sp/>7<sp/>rather<sp/>than<sp/>pin<sp/>4.</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>You<sp/>will<sp/>need<sp/>to<sp/>use<sp/>the<sp/>shield<sp/>with<sp/>an<sp/>Arduino<sp/>Zero,<sp/>Due,<sp/>Mega,<sp/>or<sp/>other<sp/>board<sp/>with<sp/>sufficient</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>Flash<sp/>and<sp/>RAM.<sp/>Arduino<sp/>Uno,<sp/>Leonardo<sp/>and<sp/>other<sp/>ATmega328p<sp/>and<sp/>Atmega32u4<sp/>boards<sp/>to<sp/>not<sp/>have</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*<sp/>enough<sp/>memory<sp/>to<sp/>run<sp/>StandardFirmataBLE.</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/>*<sp/>TODO:<sp/>verify<sp/>if<sp/>this<sp/>works<sp/>and<sp/>with<sp/>which<sp/>boards<sp/>it<sp/>works.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/>*<sp/>Test<sp/>script:<sp/>https://gist.github.com/soundanalogous/927360b797574ed50e27</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>REDBEAR_BLE_SHIELD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>REDBEAR_BLE_SHIELD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SPI.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;BLEPeripheral.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_b_l_e_stream_8h" kindref="compound">utility/BLEStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLE_REQ<sp/><sp/>9</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLE_RDY<sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BLE_RST<sp/><sp/>4<sp/>//<sp/>4<sp/>or<sp/>7<sp/>via<sp/>jumper<sp/>on<sp/>shield</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><ref refid="class_b_l_e_stream" kindref="compound">BLEStream</ref><sp/><ref refid="wifi_config_8h_1a77a9d2319914e80a4858a3c76ec39113" kindref="member">stream</ref>(BLE_REQ,<sp/>BLE_RDY,<sp/>BLE_RST);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">/*==================================================================================================</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/>END<sp/>BLE<sp/>CONFIGURATION<sp/>-<sp/>you<sp/>should<sp/>not<sp/>need<sp/>to<sp/>change<sp/>anything<sp/>below<sp/>this<sp/>line</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*================================================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>Arduino<sp/>101</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>Make<sp/>sure<sp/>you<sp/>have<sp/>the<sp/>Intel<sp/>Curie<sp/>Boards<sp/>package<sp/>v1.0.6<sp/>or<sp/>higher<sp/>installed<sp/>via<sp/>the<sp/>Arduino</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*<sp/>Boards<sp/>Manager.</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/>*<sp/>Test<sp/>script:<sp/>https://gist.github.com/soundanalogous/927360b797574ed50e27</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>_VARIANT_ARDUINO_101_X_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;CurieBLE.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_b_l_e_stream_8h" kindref="compound">utility/BLEStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><ref refid="class_b_l_e_stream" kindref="compound">BLEStream</ref><sp/><ref refid="wifi_config_8h_1a77a9d2319914e80a4858a3c76ec39113" kindref="member">stream</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*<sp/>RedBearLab<sp/>BLE<sp/>Nano<sp/>(with<sp/>default<sp/>switch<sp/>settings)</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>Blocked<sp/>on<sp/>this<sp/>issue:<sp/>https://github.com/RedBearLab/nRF51822-Arduino/issues/46</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*<sp/>Works<sp/>with<sp/>modifications.<sp/>See<sp/>comments<sp/>at<sp/>top<sp/>of<sp/>the<sp/>test<sp/>script<sp/>referenced<sp/>below.</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/>When<sp/>the<sp/>RBL<sp/>nRF51822-Arduino<sp/>library<sp/>issue<sp/>is<sp/>resolved,<sp/>this<sp/>should<sp/>work<sp/>witout</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/>any<sp/>modifications.</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>Test<sp/>script:<sp/>https://gist.github.com/soundanalogous/d39bb3eb36333a0906df</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*<sp/>Note:<sp/>If<sp/>you<sp/>have<sp/>changed<sp/>the<sp/>solder<sp/>jumpers<sp/>on<sp/>the<sp/>Nano<sp/>you<sp/>may<sp/>encounter<sp/>issues<sp/>since</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/>*<sp/>the<sp/>pins<sp/>are<sp/>currently<sp/>mapped<sp/>in<sp/>Firmata<sp/>only<sp/>for<sp/>the<sp/>default<sp/>(factory)<sp/>jumper<sp/>settings.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#ifdef<sp/>BLE_NANO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;BLEPeripheral.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;utility/BLEStream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="comment">//<sp/>BLEStream<sp/>stream;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/>*<sp/>RedBearLab<sp/>Blend<sp/>and<sp/>Blend<sp/>Micro</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/>*<sp/>StandardFirmataBLE<sp/>requires<sp/>too<sp/>much<sp/>Flash<sp/>and<sp/>RAM<sp/>to<sp/>run<sp/>on<sp/>the<sp/>ATmega32u4-based<sp/>Blend</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/>*<sp/>and<sp/>Blend<sp/>Micro<sp/>boards.<sp/>It<sp/>may<sp/>work<sp/>with<sp/>ConfigurableFirmata<sp/>selecting<sp/>only<sp/>analog<sp/>and/or</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/>*<sp/>digital<sp/>I/O.</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#if<sp/>defined(BLEND_MICRO)<sp/>||<sp/>defined(BLEND)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;SPI.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&lt;BLEPeripheral.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#include<sp/>&quot;utility/BLEStream.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>BLE_REQ<sp/><sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>BLE_RDY<sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>BLE_RST<sp/><sp/>4</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>BLEStream<sp/>stream(BLE_REQ,<sp/>BLE_RDY,<sp/>BLE_RST);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(BLE_REQ)<sp/>&amp;&amp;<sp/>defined(BLE_RDY)<sp/>&amp;&amp;<sp/>defined(BLE_RST)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_IGNORE_BLE_PINS(p)<sp/>((p)<sp/>==<sp/>BLE_REQ<sp/>||<sp/>(p)<sp/>==<sp/>BLE_RDY<sp/>||<sp/>(p)<sp/>==<sp/>BLE_RST)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Firmata/examples/StandardFirmataBLE/bleConfig.h"/>
+  </compounddef>
+</doxygen>

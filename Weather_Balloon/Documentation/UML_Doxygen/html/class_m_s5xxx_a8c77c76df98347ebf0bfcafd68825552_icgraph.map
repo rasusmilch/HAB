@@ -1,0 +1,7 @@
+<map id="MS5xxx::send_cmd" name="MS5xxx::send_cmd">
+<area shape="rect" id="node2" href="$class_m_s5xxx.html#add087d5023754831de3ff629c7ced410" title="MS5xxx::read_adc" alt="" coords="184,56,305,83"/>
+<area shape="rect" id="node5" href="$class_m_s5xxx.html#a654f0608616be8c4b13ec9850caaead0" title="MS5xxx::ReadProm" alt="" coords="180,107,309,133"/>
+<area shape="rect" id="node3" href="$class_m_s5611.html#a59c247e1180a8c4d62a6dcbe49f22b71" title="MS5611::Readout" alt="" coords="373,5,487,32"/>
+<area shape="rect" id="node4" href="$class_m_s5xxx.html#abb83428fd002519dc52a666a70966eda" title="MS5xxx::Readout" alt="" coords="371,56,489,83"/>
+<area shape="rect" id="node6" href="$class_m_s5xxx.html#ab302490c7aeb6cf7ce0f7086f33481cf" title="MS5xxx::CRCcodeTest" alt="" coords="357,107,503,133"/>
+</map>

@@ -1,0 +1,1092 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_sd2_card" kind="class" language="C++" prot="public">
+    <compoundname>Sd2Card</compoundname>
+    <includes refid="_sd2_card_8h" local="no">Sd2Card.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_sd2_card_1af6133863be6def6ce371e6d9428965f3" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t Sd2Card::block_</definition>
+        <argsstring></argsstring>
+        <name>block_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="218" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sd2_card_1a2d2c4dbf1ad5b9db664ae4004d53f1f0" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::chipSelectPin_</definition>
+        <argsstring></argsstring>
+        <name>chipSelectPin_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="219" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sd2_card_1a33f189c533f6a7e4ff4aea280fd58bdb" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::errorCode_</definition>
+        <argsstring></argsstring>
+        <name>errorCode_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="220" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sd2_card_1a357406af052ca3f7ae590213d9d47801" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::inBlock_</definition>
+        <argsstring></argsstring>
+        <name>inBlock_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="221" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sd2_card_1a82f29b72f0a60a8bb6678059bb7fc062" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Sd2Card::offset_</definition>
+        <argsstring></argsstring>
+        <name>offset_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="222" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="222" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sd2_card_1a57e8a19994351bed3136433031b776df" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::partialBlockRead_</definition>
+        <argsstring></argsstring>
+        <name>partialBlockRead_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="223" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sd2_card_1a5db39d24c7a35e8fb3ac3590381adeb4" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::status_</definition>
+        <argsstring></argsstring>
+        <name>status_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="224" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sd2_card_1ae6d445d9104162e37ac5e2cfe7209649" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::type_</definition>
+        <argsstring></argsstring>
+        <name>type_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="225" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="225" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_sd2_card_1a73bf4f38f036cc99ede9bd558c814cd5" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::writeCRC_</definition>
+        <argsstring></argsstring>
+        <name>writeCRC_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="226" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="226" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_sd2_card_1af85a5ec4f5f4ec89deb8936c3fd7de65" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Sd2Card::Sd2Card</definition>
+        <argsstring>(void)</argsstring>
+        <name>Sd2Card</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Construct an instance of <ref refid="class_sd2_card" kindref="compound">Sd2Card</ref>. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="162" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="162" bodyend="162"/>
+        <references refid="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" compoundref="_sd2_card_8cpp" startline="195" endline="213">cardSize</references>
+        <references refid="class_sd2_card_1af49fb720fad1d3ea9f5782da0d87fc0b" compoundref="_sd2_card_8cpp" startline="236" endline="261">erase</references>
+        <references refid="class_sd2_card_1a2e3998f6e910a2936d3ef54bf082b2ce" compoundref="_sd2_card_8cpp" startline="268" endline="271">eraseSingleBlockEnable</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t Sd2Card::cardSize</definition>
+        <argsstring>(void)</argsstring>
+        <name>cardSize</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine the size of an SD flash memory card.</para><para><simplesect kind="return"><para>The number of 512 byte data blocks in the card or zero if an error occurs. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="163" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="195" bodyend="213"/>
+        <references refid="structcsd1__t_1a06d6b18b8c4f7648ae18c0b504c1944a" compoundref="_sd_info_8h" startline="126">csd1_t::c_size_high</references>
+        <references refid="structcsd2__t_1a18a8c48050f362f469894317436e3de5" compoundref="_sd_info_8h" startline="194">csd2_t::c_size_high</references>
+        <references refid="structcsd1__t_1ac69176c79cc14f8e02269b5bebb5d813" compoundref="_sd_info_8h" startline="137">csd1_t::c_size_low</references>
+        <references refid="structcsd2__t_1a6161513a9cf5c4949f15f2a90cbdb1f3" compoundref="_sd_info_8h" startline="198">csd2_t::c_size_low</references>
+        <references refid="structcsd1__t_1a71836f36497f88f9e1bbd900e9601a7b" compoundref="_sd_info_8h" startline="133">csd1_t::c_size_mid</references>
+        <references refid="structcsd2__t_1ad5d3fab4ef1995e438fc31d69c989626" compoundref="_sd_info_8h" startline="196">csd2_t::c_size_mid</references>
+        <references refid="structcsd1__t_1a0e0e1303c87b9c646ad15fbb180d4baa" compoundref="_sd_info_8h" startline="139">csd1_t::c_size_mult_high</references>
+        <references refid="structcsd1__t_1abe61acf37999b7053d150c66252400ad" compoundref="_sd_info_8h" startline="145">csd1_t::c_size_mult_low</references>
+        <references refid="structcsd1__t_1af341e8a49ebe0543763192af72dfede1" compoundref="_sd_info_8h" startline="113">csd1_t::csd_ver</references>
+        <references refid="structcsd2__t_1a0cbac91cabf9d2f591037ea2629b1555" compoundref="_sd_info_8h" startline="174">csd2_t::csd_ver</references>
+        <references refid="structcsd1__t_1a60d9786b4495206c238a0615be870003" compoundref="_sd_info_8h" startline="123">csd1_t::read_bl_len</references>
+        <references refid="class_sd2_card_1a79845d8d4593cb3b1b7641ba27edddfb" compoundref="_sd2_card_8h" startline="204" endline="206">readCSD</references>
+        <references refid="_sd2_card_8h_1a0bbae62f7c90e60614cfa9063101c5e1" compoundref="_sd2_card_8h" startline="119">SD_CARD_ERROR_BAD_CSD</references>
+        <references refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" compoundref="_sd_info_8h" startline="229">csd_t::v1</references>
+        <references refid="unioncsd__t_1a19b60555856c9a485bcf4a84c248bfea" compoundref="_sd_info_8h" startline="230">csd_t::v2</references>
+        <referencedby refid="_weather___balloon_8cpp_1aec2dcfe4cd6ca84e8df5730d179fdc6f" compoundref="_weather___balloon_8cpp" startline="946" endline="979">configure_sdcard</referencedby>
+        <referencedby refid="class_sd2_card_1af85a5ec4f5f4ec89deb8936c3fd7de65" compoundref="_sd2_card_8h" startline="162" endline="162">Sd2Card</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1af49fb720fad1d3ea9f5782da0d87fc0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::erase</definition>
+        <argsstring>(uint32_t firstBlock, uint32_t lastBlock)</argsstring>
+        <name>erase</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>firstBlock</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>lastBlock</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Erase a range of blocks.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">firstBlock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of the first block in the range. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">lastBlock</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The address of the last block in the range.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function requests the SD card to do a flash erase for a range of blocks. The data on the card after an erase operation is either 0 or 1, depends on the card vendor. The card must support single block erase.</para></simplesect>
+<simplesect kind="return"><para>The value one, true, is returned for success and the value zero, false, is returned for failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="164" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="236" bodyend="261"/>
+        <references refid="_sd_info_8h_1a120c7957c30e8c619360c7bab8ba0e58" compoundref="_sd_info_8h" startline="52">CMD32</references>
+        <references refid="_sd_info_8h_1aa6202b0708714b643336fcf4d3036e23" compoundref="_sd_info_8h" startline="55">CMD33</references>
+        <references refid="_sd_info_8h_1aa5e07e08a8cccb47d966cff9d19f5f12" compoundref="_sd_info_8h" startline="57">CMD38</references>
+        <references refid="class_sd2_card_1a2e3998f6e910a2936d3ef54bf082b2ce" compoundref="_sd2_card_8cpp" startline="268" endline="271">eraseSingleBlockEnable</references>
+        <references refid="_sd2_card_8h_1a7726e63b7a04bc15b70901b418d6dd1e" compoundref="_sd2_card_8h" startline="121">SD_CARD_ERROR_ERASE</references>
+        <references refid="_sd2_card_8h_1a00e05ddd835d81e0b4d78ededae70a3c" compoundref="_sd2_card_8h" startline="123">SD_CARD_ERROR_ERASE_SINGLE_BLOCK</references>
+        <references refid="_sd2_card_8h_1a8121967a262a076c5191a0e855531f99" compoundref="_sd2_card_8h" startline="125">SD_CARD_ERROR_ERASE_TIMEOUT</references>
+        <references refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" compoundref="_sd2_card_8h" startline="153">SD_CARD_TYPE_SDHC</references>
+        <references refid="_sd2_card_8h_1afb7454898d781c58caa00f82f0f14f63" compoundref="_sd2_card_8h" startline="95">SD_ERASE_TIMEOUT</references>
+        <referencedby refid="class_sd2_card_1af85a5ec4f5f4ec89deb8936c3fd7de65" compoundref="_sd2_card_8h" startline="162" endline="162">Sd2Card</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a2e3998f6e910a2936d3ef54bf082b2ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::eraseSingleBlockEnable</definition>
+        <argsstring>(void)</argsstring>
+        <name>eraseSingleBlockEnable</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Determine if card supports single block erase.</para><para><simplesect kind="return"><para>The value one, true, is returned if single block erase is supported. The value zero, false, is returned if single block erase is not supported. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="165" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="268" bodyend="271"/>
+        <references refid="structcsd1__t_1a60b1409e2d0bd3a2fdde08314dab4821" compoundref="_sd_info_8h" startline="144">csd1_t::erase_blk_en</references>
+        <references refid="class_sd2_card_1a79845d8d4593cb3b1b7641ba27edddfb" compoundref="_sd2_card_8h" startline="204" endline="206">readCSD</references>
+        <references refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" compoundref="_sd_info_8h" startline="229">csd_t::v1</references>
+        <referencedby refid="class_sd2_card_1af49fb720fad1d3ea9f5782da0d87fc0b" compoundref="_sd2_card_8cpp" startline="236" endline="261">erase</referencedby>
+        <referencedby refid="class_sd2_card_1af85a5ec4f5f4ec89deb8936c3fd7de65" compoundref="_sd2_card_8h" startline="162" endline="162">Sd2Card</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1adfa5b1a39875236dff591acbd560bfe7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::errorCode</definition>
+        <argsstring>(void) const </argsstring>
+        <name>errorCode</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>error code for last error. See <ref refid="_sd2_card_8h" kindref="compound">Sd2Card.h</ref> for a list of error codes. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="169" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="169" bodyend="169"/>
+        <referencedby refid="_weather___balloon_8cpp_1aec2dcfe4cd6ca84e8df5730d179fdc6f" compoundref="_weather___balloon_8cpp" startline="946" endline="979">configure_sdcard</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a13fed56bd5bcfee862acb6de6924936c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::errorData</definition>
+        <argsstring>(void) const </argsstring>
+        <name>errorData</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para><simplesect kind="return"><para>error data for last error. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="171" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="171" bodyend="171"/>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1afaec9a22060626b02c07a09eff2e9113" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::init</definition>
+        <argsstring>(void)</argsstring>
+        <name>init</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an SD flash memory card with default clock rate and chip select pin. See sd2Card::init(uint8_t sckRateID, uint8_t chipSelectPin). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="176" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="176" bodyend="178"/>
+        <references refid="_sd2_card_8h_1ae6b17538c14ba6c91ccb513db2c4c29c" compoundref="_sd2_card_8h" startline="65">SD_CHIP_SELECT_PIN</references>
+        <references refid="_sd2_card_8h_1a6c091c07d1eb82a94b1c5738f720264b" compoundref="_sd2_card_8h" startline="29">SPI_FULL_SPEED</references>
+        <referencedby refid="_weather___balloon_8cpp_1aec2dcfe4cd6ca84e8df5730d179fdc6f" compoundref="_weather___balloon_8cpp" startline="946" endline="979">configure_sdcard</referencedby>
+        <referencedby refid="class_sd2_card_1ad99b2d2156c9746065c52839ef679354" compoundref="_sd2_card_8h" startline="184" endline="186">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1ad99b2d2156c9746065c52839ef679354" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::init</definition>
+        <argsstring>(uint8_t sckRateID)</argsstring>
+        <name>init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>sckRateID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an SD flash memory card with the selected SPI clock rate and the default SD chip select pin. See sd2Card::init(uint8_t sckRateID, uint8_t chipSelectPin). </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="184" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="184" bodyend="186"/>
+        <references refid="class_sd2_card_1afaec9a22060626b02c07a09eff2e9113" compoundref="_sd2_card_8h" startline="176" endline="178">init</references>
+        <references refid="class_sd2_card_1a73ad7fee10e05439f6ec832ce0eb196f" compoundref="_sd2_card_8h" startline="190" endline="190">partialBlockRead</references>
+        <references refid="_sd2_card_8h_1ae6b17538c14ba6c91ccb513db2c4c29c" compoundref="_sd2_card_8h" startline="65">SD_CHIP_SELECT_PIN</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a204ef4cc35cc6e1d5f12a8cdd5f32518" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::init</definition>
+        <argsstring>(uint8_t sckRateID, uint8_t chipSelectPin, int8_t mosiPin=-1, int8_t misoPin=-1, int8_t clockPin=-1)</argsstring>
+        <name>init</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>sckRateID</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>chipSelectPin</declname>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>mosiPin</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>misoPin</declname>
+          <defval>-1</defval>
+        </param>
+        <param>
+          <type>int8_t</type>
+          <declname>clockPin</declname>
+          <defval>-1</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Initialize an SD flash memory card.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sckRateID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SPI clock rate selector. See <ref refid="class_sd2_card_1ad849b8896de9abd4e24bd98f4204ccc4" kindref="member">setSckRate()</ref>. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">chipSelectPin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>SD chip select pin number.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value one, true, is returned for success and the value zero, false, is returned for failure. The reason for failure can be determined by calling <ref refid="class_sd2_card_1adfa5b1a39875236dff591acbd560bfe7" kindref="member">errorCode()</ref> and <ref refid="class_sd2_card_1a13fed56bd5bcfee862acb6de6924936c" kindref="member">errorData()</ref>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="187" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="283" bodyend="393"/>
+        <references refid="_sd_info_8h_1a3d9453bff2059b4175f09e82220d5dc5" compoundref="_sd_info_8h" startline="67">ACMD41</references>
+        <references refid="_sd_info_8h_1a1ec3c92c9dd38b0efa9126be38850d29" compoundref="_sd_info_8h" startline="36">CMD0</references>
+        <references refid="_sd_info_8h_1a65360b0848046db96c7a3a38ea77b027" compoundref="_sd_info_8h" startline="61">CMD58</references>
+        <references refid="_sd_info_8h_1a5555048921d7792941f6cde88d5c8e36" compoundref="_sd_info_8h" startline="38">CMD8</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_sd_info_8h_1a180d34bf6496bc49f34e750d3878c528" compoundref="_sd_info_8h" startline="72">R1_IDLE_STATE</references>
+        <references refid="_sd_info_8h_1a0299085ef0457c2d8714c838beaead80" compoundref="_sd_info_8h" startline="74">R1_ILLEGAL_COMMAND</references>
+        <references refid="_sd_info_8h_1abd9bae6aca26cbe7e75dac573bb98ed9" compoundref="_sd_info_8h" startline="70">R1_READY_STATE</references>
+        <references refid="_sd2_card_8h_1a62fdea7af4f09fb98f302bac1bfa17c2" compoundref="_sd2_card_8h" startline="117">SD_CARD_ERROR_ACMD41</references>
+        <references refid="_sd2_card_8h_1a3803cc53ecc2b346ba950053f3dced47" compoundref="_sd2_card_8h" startline="103">SD_CARD_ERROR_CMD0</references>
+        <references refid="_sd2_card_8h_1a0ebfb17cbc424fd2138918aa72307292" compoundref="_sd2_card_8h" startline="113">SD_CARD_ERROR_CMD58</references>
+        <references refid="_sd2_card_8h_1a2da93442c11fa58ffd24fe9d7038393d" compoundref="_sd2_card_8h" startline="105">SD_CARD_ERROR_CMD8</references>
+        <references refid="_sd2_card_8h_1af55081a60d333ab063a5da5dd2c3633b" compoundref="_sd2_card_8h" startline="149">SD_CARD_TYPE_SD1</references>
+        <references refid="_sd2_card_8h_1a225807c91fc41717b4230d3b7e99c9f7" compoundref="_sd2_card_8h" startline="151">SD_CARD_TYPE_SD2</references>
+        <references refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" compoundref="_sd2_card_8h" startline="153">SD_CARD_TYPE_SDHC</references>
+        <references refid="_sd2_card_8h_1ab7b9920a819e60f97f988ee13b3ddc40" compoundref="_sd2_card_8h" startline="93">SD_INIT_TIMEOUT</references>
+        <references refid="class_sd2_card_1ad849b8896de9abd4e24bd98f4204ccc4" compoundref="_sd2_card_8cpp" startline="555" endline="588">setSckRate</references>
+        <references refid="_sd2_card_8h_1ae0bebe57d4925c25bfb58d8999d300ef" compoundref="_sd2_card_8h" startline="70">SPI_MISO_PIN</references>
+        <references refid="_sd2_card_8h_1abe8593732e5a9f38455125b0d499468d" compoundref="_sd2_card_8h" startline="68">SPI_MOSI_PIN</references>
+        <references refid="_sd2_card_8h_1a7e5ead80033d2652108d1b835f3cc0f9" compoundref="_sd2_card_8h" startline="72">SPI_SCK_PIN</references>
+        <references refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">type</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1aa279ac05b3f25acbf10cc424a25750da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sd2Card::partialBlockRead</definition>
+        <argsstring>(uint8_t value)</argsstring>
+        <name>partialBlockRead</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable partial block reads.</para><para>Enabling partial block reads improves performance by allowing a block to be read over the SPI bus as several sub-blocks. Errors may occur if the time between reads is too long since the SD card may timeout. The SPI SS line will be held low until the entire block is read or <ref refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" kindref="member">readEnd()</ref> is called.</para><para>Use this for applications like the Adafruit Wave Shield.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">value</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The value TRUE (non-zero) or FALSE (zero).) </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="188" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="408" bodyend="411"/>
+        <references refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" compoundref="_sd2_card_8cpp" startline="503" endline="521">readEnd</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a73ad7fee10e05439f6ec832ce0eb196f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::partialBlockRead</definition>
+        <argsstring>(void) const </argsstring>
+        <name>partialBlockRead</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Returns the current value, true or false, for partial block read. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="190" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="190" bodyend="190"/>
+        <references refid="class_sd2_card_1ae26d840449a42d45af464fb81b92e2ab" compoundref="_sd2_card_8cpp" startline="422" endline="424">readBlock</references>
+        <references refid="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" compoundref="_sd2_card_8cpp" startline="436" endline="500">readData</references>
+        <referencedby refid="class_sd2_card_1ad99b2d2156c9746065c52839ef679354" compoundref="_sd2_card_8h" startline="184" endline="186">init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1ae26d840449a42d45af464fb81b92e2ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::readBlock</definition>
+        <argsstring>(uint32_t block, uint8_t *dst)</argsstring>
+        <name>readBlock</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a 512 byte block from an SD card device.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical block to be read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the location that will receive the data.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value one, true, is returned for success and the value zero, false, is returned for failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="191" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="422" bodyend="424"/>
+        <references refid="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" compoundref="_sd2_card_8cpp" startline="436" endline="500">readData</references>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+        <referencedby refid="class_sd2_card_1a73ad7fee10e05439f6ec832ce0eb196f" compoundref="_sd2_card_8h" startline="190" endline="190">partialBlockRead</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a450f53a446d117859c49aeaac6c31f9f" compoundref="_weather___balloon_8cpp" startline="2653" endline="2838">read_sdcard</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::readData</definition>
+        <argsstring>(uint32_t block, uint16_t offset, uint16_t count, uint8_t *dst)</argsstring>
+        <name>readData</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>block</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>offset</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>uint8_t *</type>
+          <declname>dst</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read part of a 512 byte block from an SD card.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">block</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical block to be read. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">offset</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to skip at start of block </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="out">dst</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the location that will receive the data. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">count</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Number of bytes to read </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value one, true, is returned for success and the value zero, false, is returned for failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="192" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="436" bodyend="500"/>
+        <references refid="_sd_info_8h_1ab5e57c3b26526169eb6f2150a23adfe4" compoundref="_sd_info_8h" startline="46">CMD17</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" compoundref="_sd2_card_8cpp" startline="503" endline="521">readEnd</references>
+        <references refid="_sd2_card_8h_1a2e79398dcb2711672e50dc2bea94e141" compoundref="_sd2_card_8h" startline="107">SD_CARD_ERROR_CMD17</references>
+        <references refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" compoundref="_sd2_card_8h" startline="153">SD_CARD_TYPE_SDHC</references>
+        <references refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">type</references>
+        <referencedby refid="_weather___balloon_8cpp_1a276e156004c668500daa7aaa9a770585" compoundref="_weather___balloon_8cpp" startline="2278" endline="2395">find_sdcard_tail</referencedby>
+        <referencedby refid="class_sd2_card_1a73ad7fee10e05439f6ec832ce0eb196f" compoundref="_sd2_card_8h" startline="190" endline="190">partialBlockRead</referencedby>
+        <referencedby refid="class_sd2_card_1ae26d840449a42d45af464fb81b92e2ab" compoundref="_sd2_card_8cpp" startline="422" endline="424">readBlock</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1aee2be03d649548e2ab26033f18638d19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::readCID</definition>
+        <argsstring>(cid_t *cid)</argsstring>
+        <name>readCID</name>
+        <param>
+          <type><ref refid="structcid__t" kindref="compound">cid_t</ref> *</type>
+          <declname>cid</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a cards CID register. The CID contains card identification information such as Manufacturer ID, Product name, Product serial number and Manufacturing date. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="198" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="198" bodyend="200"/>
+        <references refid="_sd_info_8h_1a7228ab7c6f05aac53cf844e8e4a9a121" compoundref="_sd_info_8h" startline="42">CMD10</references>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a79845d8d4593cb3b1b7641ba27edddfb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::readCSD</definition>
+        <argsstring>(csd_t *csd)</argsstring>
+        <name>readCSD</name>
+        <param>
+          <type><ref refid="unioncsd__t" kindref="compound">csd_t</ref> *</type>
+          <declname>csd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Read a cards CSD register. The CSD contains Card-Specific Data that provides information regarding access to the card&apos;s contents. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="204" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="204" bodyend="206"/>
+        <references refid="_sd_info_8h_1afdee4fb07dae3bf93f0e9a0d9987143e" compoundref="_sd_info_8h" startline="40">CMD9</references>
+        <references refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" compoundref="_sd2_card_8cpp" startline="503" endline="521">readEnd</references>
+        <references refid="class_sd2_card_1ad849b8896de9abd4e24bd98f4204ccc4" compoundref="_sd2_card_8cpp" startline="555" endline="588">setSckRate</references>
+        <referencedby refid="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" compoundref="_sd2_card_8cpp" startline="195" endline="213">cardSize</referencedby>
+        <referencedby refid="class_sd2_card_1a2e3998f6e910a2936d3ef54bf082b2ce" compoundref="_sd2_card_8cpp" startline="268" endline="271">eraseSingleBlockEnable</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sd2Card::readEnd</definition>
+        <argsstring>(void)</argsstring>
+        <name>readEnd</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Skip remaining data in a block when in partial block read mode. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="207" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="503" bodyend="521"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_sd2_card_8h_1af1cdb9d8082532f4fe4b7cf1931dddbe" compoundref="_sd2_card_8h" startline="129">SD_CARD_ERROR_READ_REG</references>
+        <referencedby refid="class_sd2_card_1aa279ac05b3f25acbf10cc424a25750da" compoundref="_sd2_card_8cpp" startline="408" endline="411">partialBlockRead</referencedby>
+        <referencedby refid="class_sd2_card_1a79845d8d4593cb3b1b7641ba27edddfb" compoundref="_sd2_card_8h" startline="204" endline="206">readCSD</referencedby>
+        <referencedby refid="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" compoundref="_sd2_card_8cpp" startline="436" endline="500">readData</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1ad849b8896de9abd4e24bd98f4204ccc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::setSckRate</definition>
+        <argsstring>(uint8_t sckRateID)</argsstring>
+        <name>setSckRate</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>sckRateID</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the SPI clock rate.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">sckRateID</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>A value in the range [0, 6].</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+The SPI clock will be set to F_CPU/pow(2, 1 + sckRateID). The maximum SPI rate is F_CPU/2 for <emphasis>sckRateID</emphasis> = 0 and the minimum rate is F_CPU/128 for <emphasis>scsRateID</emphasis> = 6.</para><para><simplesect kind="return"><para>The value one, true, is returned for success and the value zero, false, is returned for an invalid value of <emphasis>sckRateID</emphasis>. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="208" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="555" bodyend="588"/>
+        <references refid="_sd_info_8h_1a266235d83a613a26790bf21cc5e643e7" compoundref="_sd_info_8h" startline="76">DATA_START_BLOCK</references>
+        <references refid="_sd2_card_8h_1adb9b963e8c54c4daf616cc5fdc4010ac" compoundref="_sd2_card_8h" startline="127">SD_CARD_ERROR_READ</references>
+        <references refid="_sd2_card_8h_1a49c57f2b1d31fe1b0baf73fab5bd469b" compoundref="_sd2_card_8h" startline="131">SD_CARD_ERROR_READ_TIMEOUT</references>
+        <references refid="_sd2_card_8h_1aa4036973d09278197c2949181094e8e2" compoundref="_sd2_card_8h" startline="145">SD_CARD_ERROR_SCK_RATE</references>
+        <references refid="_sd2_card_8h_1a02f6ddc876ebab300586940bd111eccd" compoundref="_sd2_card_8h" startline="97">SD_READ_TIMEOUT</references>
+        <referencedby refid="class_sd2_card_1a204ef4cc35cc6e1d5f12a8cdd5f32518" compoundref="_sd2_card_8cpp" startline="283" endline="393">init</referencedby>
+        <referencedby refid="class_sd2_card_1a79845d8d4593cb3b1b7641ba27edddfb" compoundref="_sd2_card_8h" startline="204" endline="206">readCSD</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::type</definition>
+        <argsstring>(void) const </argsstring>
+        <name>type</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the card type: SD V1, SD V2 or SDHC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="210" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="210" bodyend="210"/>
+        <references refid="_sd_info_8h_1a6e3cb1cf62a815db82fe9f343a4cb1a4" compoundref="_sd_info_8h" startline="59">CMD55</references>
+        <references refid="class_sd2_card_1a9a84ec97d0c21e4bef8e41630a795b85" compoundref="_sd2_card_8cpp" startline="785" endline="787">enableCRC</references>
+        <references refid="class_sd2_card_1ae9bdd6cff43b8b694584f9bae7e781b0" compoundref="_sd2_card_8cpp" startline="628" endline="661">writeBlock</references>
+        <references refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" compoundref="_sd2_card_8cpp" startline="664" endline="672">writeData</references>
+        <references refid="class_sd2_card_1a82a21a07fdfe45c5c75d486a13cded8a" compoundref="_sd2_card_8cpp" startline="741" endline="765">writeStart</references>
+        <references refid="class_sd2_card_1a3a60481c0821606546a85d056bb96f47" compoundref="_sd2_card_8cpp" startline="772" endline="783">writeStop</references>
+        <referencedby refid="class_sd2_card_1a204ef4cc35cc6e1d5f12a8cdd5f32518" compoundref="_sd2_card_8cpp" startline="283" endline="393">init</referencedby>
+        <referencedby refid="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" compoundref="_sd2_card_8cpp" startline="436" endline="500">readData</referencedby>
+        <referencedby refid="class_sd2_card_1ae9bdd6cff43b8b694584f9bae7e781b0" compoundref="_sd2_card_8cpp" startline="628" endline="661">writeBlock</referencedby>
+        <referencedby refid="class_sd2_card_1a82a21a07fdfe45c5c75d486a13cded8a" compoundref="_sd2_card_8cpp" startline="741" endline="765">writeStart</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1ae9bdd6cff43b8b694584f9bae7e781b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::writeBlock</definition>
+        <argsstring>(uint32_t blockNumber, const uint8_t *src)</argsstring>
+        <name>writeBlock</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>blockNumber</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Writes a 512 byte block to an SD card.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">blockNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Logical block to be written. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">src</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Pointer to the location of the data to be written. </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>The value one, true, is returned for success and the value zero, false, is returned for failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="211" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="628" bodyend="661"/>
+        <references refid="_sd_info_8h_1a0a4b464ebac5e07eb233da545ff29259" compoundref="_sd_info_8h" startline="44">CMD13</references>
+        <references refid="_sd_info_8h_1ae0b9ab3c62fefc845e22834eb7f6abdd" compoundref="_sd_info_8h" startline="48">CMD24</references>
+        <references refid="_sd_info_8h_1a266235d83a613a26790bf21cc5e643e7" compoundref="_sd_info_8h" startline="76">DATA_START_BLOCK</references>
+        <references refid="_sd2_card_8h_1ade761c5ed037fbe0598f80c5e6d34268" compoundref="_sd2_card_8h" startline="109">SD_CARD_ERROR_CMD24</references>
+        <references refid="_sd2_card_8h_1a376db89ebd1e212110419e3ac7a0c33f" compoundref="_sd2_card_8h" startline="137">SD_CARD_ERROR_WRITE_BLOCK_ZERO</references>
+        <references refid="_sd2_card_8h_1a06b427dad894918bd33fe2e74c50c2e0" compoundref="_sd2_card_8h" startline="141">SD_CARD_ERROR_WRITE_PROGRAMMING</references>
+        <references refid="_sd2_card_8h_1ae6574296ec37c52209c5f2c5664dccdb" compoundref="_sd2_card_8h" startline="143">SD_CARD_ERROR_WRITE_TIMEOUT</references>
+        <references refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" compoundref="_sd2_card_8h" startline="153">SD_CARD_TYPE_SDHC</references>
+        <references refid="_sd2_card_8h_1a9984cf4ab3088ae5470d56e10e9f23c9" compoundref="_sd2_card_8h" startline="99">SD_WRITE_TIMEOUT</references>
+        <references refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">type</references>
+        <references refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" compoundref="_sd2_card_8cpp" startline="664" endline="672">writeData</references>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+        <referencedby refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">type</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::writeData</definition>
+        <argsstring>(const uint8_t *src)</argsstring>
+        <name>writeData</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Write one data block in a multiple block write sequence </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="212" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="664" bodyend="672"/>
+        <references refid="_sd_info_8h_1a0fbc8534d6683fea65b463f439df1c3d" compoundref="_sd_info_8h" startline="84">DATA_RES_ACCEPTED</references>
+        <references refid="_sd_info_8h_1ae8f749cad9dfa06c4a44435bac117183" compoundref="_sd_info_8h" startline="82">DATA_RES_MASK</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_sd2_card_8h_1a98bb1b625b0b9ce99d8494fbb195274c" compoundref="_sd2_card_8h" startline="135">SD_CARD_ERROR_WRITE</references>
+        <references refid="_sd2_card_8h_1a30bc1de9e3914ace0b9dc30f99a0edea" compoundref="_sd2_card_8h" startline="139">SD_CARD_ERROR_WRITE_MULTIPLE</references>
+        <references refid="_sd2_card_8h_1a9984cf4ab3088ae5470d56e10e9f23c9" compoundref="_sd2_card_8h" startline="99">SD_WRITE_TIMEOUT</references>
+        <references refid="_sd_info_8h_1a55a97e38f040eaef5ea72c04ed0b8ca3" compoundref="_sd_info_8h" startline="80">WRITE_MULTIPLE_TOKEN</references>
+        <referencedby refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">type</referencedby>
+        <referencedby refid="class_sd2_card_1ae9bdd6cff43b8b694584f9bae7e781b0" compoundref="_sd2_card_8cpp" startline="628" endline="661">writeBlock</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a82a21a07fdfe45c5c75d486a13cded8a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::writeStart</definition>
+        <argsstring>(uint32_t blockNumber, uint32_t eraseCount)</argsstring>
+        <name>writeStart</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>blockNumber</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>eraseCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Start a write multiple blocks sequence.</para><para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername direction="in">blockNumber</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>Address of first block in sequence. </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername direction="in">eraseCount</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The number of blocks to be pre-erased.</para></parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="note"><para>This function is used with <ref refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" kindref="member">writeData()</ref> and <ref refid="class_sd2_card_1a3a60481c0821606546a85d056bb96f47" kindref="member">writeStop()</ref> for optimized multiple block writes.</para></simplesect>
+<simplesect kind="return"><para>The value one, true, is returned for success and the value zero, false, is returned for failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="213" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="741" bodyend="765"/>
+        <references refid="_sd_info_8h_1a4427a8b94a0a6092255388a8666c42eb" compoundref="_sd_info_8h" startline="64">ACMD23</references>
+        <references refid="_sd_info_8h_1ac93a7f0b1843211d8fb003038c1db20f" compoundref="_sd_info_8h" startline="50">CMD25</references>
+        <references refid="_sd2_card_8h_1aa69b04c3716e3e9962617e264e7ebe44" compoundref="_sd2_card_8h" startline="115">SD_CARD_ERROR_ACMD23</references>
+        <references refid="_sd2_card_8h_1a4840a2a3026b537bf0e6a679715ec734" compoundref="_sd2_card_8h" startline="111">SD_CARD_ERROR_CMD25</references>
+        <references refid="_sd2_card_8h_1a376db89ebd1e212110419e3ac7a0c33f" compoundref="_sd2_card_8h" startline="137">SD_CARD_ERROR_WRITE_BLOCK_ZERO</references>
+        <references refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" compoundref="_sd2_card_8h" startline="153">SD_CARD_TYPE_SDHC</references>
+        <references refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">type</references>
+        <referencedby refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">type</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a3a60481c0821606546a85d056bb96f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::writeStop</definition>
+        <argsstring>(void)</argsstring>
+        <name>writeStop</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>End a write multiple blocks sequence.</para><para><simplesect kind="return"><para>The value one, true, is returned for success and the value zero, false, is returned for failure. </para></simplesect>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="214" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="772" bodyend="783"/>
+        <references refid="_sd2_card_8h_1a87264e66265e36be6b1428ebacf2e4ed" compoundref="_sd2_card_8h" startline="133">SD_CARD_ERROR_STOP_TRAN</references>
+        <references refid="_sd2_card_8h_1a9984cf4ab3088ae5470d56e10e9f23c9" compoundref="_sd2_card_8h" startline="99">SD_WRITE_TIMEOUT</references>
+        <references refid="_sd_info_8h_1a22cd4350449d8c6e4ed71ddaa86d4482" compoundref="_sd_info_8h" startline="78">STOP_TRAN_TOKEN</references>
+        <referencedby refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">type</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a9a84ec97d0c21e4bef8e41630a795b85" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sd2Card::enableCRC</definition>
+        <argsstring>(uint8_t mode)</argsstring>
+        <name>enableCRC</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="215" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="785" bodyend="787"/>
+        <referencedby refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" compoundref="_sd2_card_8h" startline="210" endline="210">type</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_sd2_card_1a0a7685e522dcd606f97d20b4a829f6ea" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::cardAcmd</definition>
+        <argsstring>(uint8_t cmd, uint32_t arg)</argsstring>
+        <name>cardAcmd</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="230" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="230" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a73a49baa8e8a9f14f26cae408db69fbd" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::cardCommand</definition>
+        <argsstring>(uint8_t cmd, uint32_t arg)</argsstring>
+        <name>cardCommand</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>arg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="234" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="162" bodyend="187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1af03e574590524f93a61641604e02f79f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sd2Card::error</definition>
+        <argsstring>(uint8_t code)</argsstring>
+        <name>error</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>code</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="235" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="235" bodyend="235"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a1fa9f0bf1673a0ce7a51ed6330495978" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::readRegister</definition>
+        <argsstring>(uint8_t cmd, void *buf)</argsstring>
+        <name>readRegister</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>cmd</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buf</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>read CID or CSR register </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="236" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="524" bodyend="541"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a432a9f31f2f1eb63311f9f0775f1dca6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::sendWriteCommand</definition>
+        <argsstring>(uint32_t blockNumber, uint32_t eraseCount)</argsstring>
+        <name>sendWriteCommand</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>blockNumber</declname>
+        </param>
+        <param>
+          <type>uint32_t</type>
+          <declname>eraseCount</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="237" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a67b063133d2384426b2b34e943def1f6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sd2Card::chipSelectHigh</definition>
+        <argsstring>(void)</argsstring>
+        <name>chipSelectHigh</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="238" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="215" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a530fc6399893b3877e1d76b9eb891d5f" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sd2Card::chipSelectLow</definition>
+        <argsstring>(void)</argsstring>
+        <name>chipSelectLow</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="239" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="219" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a2edf71fa8a21b9e49a77d068d0508c6c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Sd2Card::type</definition>
+        <argsstring>(uint8_t value)</argsstring>
+        <name>type</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="240" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="240" bodyend="240"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1ac6cf5245804cbdad306e95fe8d3d4647" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::waitNotBusy</definition>
+        <argsstring>(uint16_t timeoutMillis)</argsstring>
+        <name>waitNotBusy</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>timeoutMillis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="241" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="591" bodyend="598"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1a0ef21ed609a00460ef82ff6a6666140b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::writeData</definition>
+        <argsstring>(uint8_t token, const uint8_t *src)</argsstring>
+        <name>writeData</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>token</declname>
+        </param>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>src</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="242" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="675" bodyend="728"/>
+      </memberdef>
+      <memberdef kind="function" id="class_sd2_card_1ad3f48b7f05926eb84ed99364bb11254d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Sd2Card::waitStartBlock</definition>
+        <argsstring>(void)</argsstring>
+        <name>waitStartBlock</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Wait for start block token </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="243" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="601" bodyend="618"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Raw access to SD and SDHC flash memory cards. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SD-master/Sd2Card.h" line="159" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.h" bodystart="159" bodyend="244"/>
+    <listofallmembers>
+      <member refid="class_sd2_card_1af6133863be6def6ce371e6d9428965f3" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>block_</name></member>
+      <member refid="class_sd2_card_1a0a7685e522dcd606f97d20b4a829f6ea" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>cardAcmd</name></member>
+      <member refid="class_sd2_card_1a73a49baa8e8a9f14f26cae408db69fbd" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>cardCommand</name></member>
+      <member refid="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>cardSize</name></member>
+      <member refid="class_sd2_card_1a67b063133d2384426b2b34e943def1f6" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>chipSelectHigh</name></member>
+      <member refid="class_sd2_card_1a530fc6399893b3877e1d76b9eb891d5f" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>chipSelectLow</name></member>
+      <member refid="class_sd2_card_1a2d2c4dbf1ad5b9db664ae4004d53f1f0" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>chipSelectPin_</name></member>
+      <member refid="class_sd2_card_1a9a84ec97d0c21e4bef8e41630a795b85" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>enableCRC</name></member>
+      <member refid="class_sd2_card_1af49fb720fad1d3ea9f5782da0d87fc0b" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>erase</name></member>
+      <member refid="class_sd2_card_1a2e3998f6e910a2936d3ef54bf082b2ce" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>eraseSingleBlockEnable</name></member>
+      <member refid="class_sd2_card_1af03e574590524f93a61641604e02f79f" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>error</name></member>
+      <member refid="class_sd2_card_1adfa5b1a39875236dff591acbd560bfe7" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>errorCode</name></member>
+      <member refid="class_sd2_card_1a33f189c533f6a7e4ff4aea280fd58bdb" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>errorCode_</name></member>
+      <member refid="class_sd2_card_1a13fed56bd5bcfee862acb6de6924936c" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>errorData</name></member>
+      <member refid="class_sd2_card_1a357406af052ca3f7ae590213d9d47801" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>inBlock_</name></member>
+      <member refid="class_sd2_card_1afaec9a22060626b02c07a09eff2e9113" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>init</name></member>
+      <member refid="class_sd2_card_1ad99b2d2156c9746065c52839ef679354" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>init</name></member>
+      <member refid="class_sd2_card_1a204ef4cc35cc6e1d5f12a8cdd5f32518" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>init</name></member>
+      <member refid="class_sd2_card_1a82f29b72f0a60a8bb6678059bb7fc062" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>offset_</name></member>
+      <member refid="class_sd2_card_1aa279ac05b3f25acbf10cc424a25750da" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>partialBlockRead</name></member>
+      <member refid="class_sd2_card_1a73ad7fee10e05439f6ec832ce0eb196f" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>partialBlockRead</name></member>
+      <member refid="class_sd2_card_1a57e8a19994351bed3136433031b776df" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>partialBlockRead_</name></member>
+      <member refid="class_sd2_card_1ae26d840449a42d45af464fb81b92e2ab" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>readBlock</name></member>
+      <member refid="class_sd2_card_1aee2be03d649548e2ab26033f18638d19" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>readCID</name></member>
+      <member refid="class_sd2_card_1a79845d8d4593cb3b1b7641ba27edddfb" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>readCSD</name></member>
+      <member refid="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>readData</name></member>
+      <member refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>readEnd</name></member>
+      <member refid="class_sd2_card_1a1fa9f0bf1673a0ce7a51ed6330495978" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>readRegister</name></member>
+      <member refid="class_sd2_card_1af85a5ec4f5f4ec89deb8936c3fd7de65" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>Sd2Card</name></member>
+      <member refid="class_sd2_card_1a432a9f31f2f1eb63311f9f0775f1dca6" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>sendWriteCommand</name></member>
+      <member refid="class_sd2_card_1ad849b8896de9abd4e24bd98f4204ccc4" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>setSckRate</name></member>
+      <member refid="class_sd2_card_1a5db39d24c7a35e8fb3ac3590381adeb4" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>status_</name></member>
+      <member refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>type</name></member>
+      <member refid="class_sd2_card_1a2edf71fa8a21b9e49a77d068d0508c6c" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>type</name></member>
+      <member refid="class_sd2_card_1ae6d445d9104162e37ac5e2cfe7209649" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>type_</name></member>
+      <member refid="class_sd2_card_1ac6cf5245804cbdad306e95fe8d3d4647" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>waitNotBusy</name></member>
+      <member refid="class_sd2_card_1ad3f48b7f05926eb84ed99364bb11254d" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>waitStartBlock</name></member>
+      <member refid="class_sd2_card_1ae9bdd6cff43b8b694584f9bae7e781b0" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>writeBlock</name></member>
+      <member refid="class_sd2_card_1a73bf4f38f036cc99ede9bd558c814cd5" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>writeCRC_</name></member>
+      <member refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>writeData</name></member>
+      <member refid="class_sd2_card_1a0ef21ed609a00460ef82ff6a6666140b" prot="private" virt="non-virtual"><scope>Sd2Card</scope><name>writeData</name></member>
+      <member refid="class_sd2_card_1a82a21a07fdfe45c5c75d486a13cded8a" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>writeStart</name></member>
+      <member refid="class_sd2_card_1a3a60481c0821606546a85d056bb96f47" prot="public" virt="non-virtual"><scope>Sd2Card</scope><name>writeStop</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

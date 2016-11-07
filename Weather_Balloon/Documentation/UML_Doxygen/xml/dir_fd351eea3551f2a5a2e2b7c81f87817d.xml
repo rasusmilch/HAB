@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_fd351eea3551f2a5a2e2b7c81f87817d" kind="dir">
+    <compoundname>Weather_Balloon/library/RTCZero</compoundname>
+    <innerdir refid="dir_51501d8215cb2b8ae547905c43e36556">Weather_Balloon/library/RTCZero/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/RTCZero/"/>
+  </compounddef>
+</doxygen>

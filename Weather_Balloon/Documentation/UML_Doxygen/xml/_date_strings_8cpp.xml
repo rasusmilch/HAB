@@ -1,0 +1,360 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_date_strings_8cpp" kind="file" language="C++">
+    <compoundname>DateStrings.cpp</compoundname>
+    <includes local="no">string.h</includes>
+    <includes refid="_time_lib_8h" local="yes">TimeLib.h</includes>
+    <incdepgraph>
+      <node id="1012">
+        <label>Weather_Balloon/library/Time-master/DateStrings.cpp</label>
+        <link refid="DateStrings.cpp"/>
+        <childnode refid="1013" relation="include">
+        </childnode>
+        <childnode refid="1014" relation="include">
+        </childnode>
+      </node>
+      <node id="1014">
+        <label>TimeLib.h</label>
+        <link refid="_time_lib_8h"/>
+      </node>
+      <node id="1013">
+        <label>string.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" prot="public" static="no">
+        <name>PROGMEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="16" column="9" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_date_strings_8cpp_1a963f816fc88a5d8479c285ed4c630229" prot="public" static="no">
+        <name>PGM_P</name>
+        <initializer>const char *</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="17" column="9" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="17" bodyend="-1"/>
+        <referencedby refid="_date_strings_8cpp_1a94236cfc15d1b0f09571766402a8e471" compoundref="_date_strings_8cpp" startline="84" endline="88">dayStr</referencedby>
+        <referencedby refid="_date_strings_8cpp_1a88860cdff7c88c1f5b96b2f2b68858db" compoundref="_date_strings_8cpp" startline="70" endline="74">monthStr</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_date_strings_8cpp_1a48c60b057902adf805797f183286728d" prot="public" static="no">
+        <name>pgm_read_byte</name>
+        <param><defname>addr</defname></param>
+        <initializer>(*(const unsigned char *)(addr))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="18" column="9" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="_date_strings_8cpp_1a5172f67ce7b074768a7e31877c665931" compoundref="_date_strings_8cpp" startline="90" endline="97">dayShortStr</referencedby>
+        <referencedby refid="_date_strings_8cpp_1ae2b5f025e8c6fef73d4bc5795e9ad4a3" compoundref="_date_strings_8cpp" startline="76" endline="82">monthShortStr</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_date_strings_8cpp_1a910fb5f01313d339d3b835d45e1e5ad0" prot="public" static="no">
+        <name>pgm_read_word</name>
+        <param><defname>addr</defname></param>
+        <initializer>(*(const unsigned char **)(addr))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="19" column="9" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="19" bodyend="-1"/>
+        <referencedby refid="_date_strings_8cpp_1a94236cfc15d1b0f09571766402a8e471" compoundref="_date_strings_8cpp" startline="84" endline="88">dayStr</referencedby>
+        <referencedby refid="_date_strings_8cpp_1a88860cdff7c88c1f5b96b2f2b68858db" compoundref="_date_strings_8cpp" startline="70" endline="74">monthStr</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_date_strings_8cpp_1ae74941b597bdd8ffb5c35f45b636946b" prot="public" static="no">
+        <name>strcpy_P</name>
+        <param><defname>dest</defname></param>
+        <param><defname>src</defname></param>
+        <initializer>strcpy((dest), (src))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="20" column="9" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="_date_strings_8cpp_1a94236cfc15d1b0f09571766402a8e471" compoundref="_date_strings_8cpp" startline="84" endline="88">dayStr</referencedby>
+        <referencedby refid="_date_strings_8cpp_1a88860cdff7c88c1f5b96b2f2b68858db" compoundref="_date_strings_8cpp" startline="70" endline="74">monthStr</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_date_strings_8cpp_1aae971366e9527ab67fe2a6460b188a1c" prot="public" static="no">
+        <name>dt_SHORT_STR_LEN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="26" column="9" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="26" bodyend="-1"/>
+        <referencedby refid="_date_strings_8cpp_1a5172f67ce7b074768a7e31877c665931" compoundref="_date_strings_8cpp" startline="90" endline="97">dayShortStr</referencedby>
+        <referencedby refid="_date_strings_8cpp_1ae2b5f025e8c6fef73d4bc5795e9ad4a3" compoundref="_date_strings_8cpp" startline="76" endline="82">monthShortStr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_date_strings_8cpp_1a4c4eb833388a6b2c83f066235a986d68" prot="public" static="yes" mutable="no">
+        <type>char</type>
+        <definition>char buffer[dt_MAX_STRING_LEN+1]</definition>
+        <argsstring>[dt_MAX_STRING_LEN+1]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="28" column="1" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_date_strings_8cpp_1adaddaf9d528a42c4831b98637ae9e59d" prot="public" static="no" mutable="no">
+        <type>const char monthStr0[]</type>
+        <definition>const char dayShortNames_P [] PROGMEM</definition>
+        <argsstring></argsstring>
+        <name>PROGMEM</name>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="30" column="1" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_date_strings_8cpp_1a2e9a697e4ff5879643a60750b2255bc3" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_date_strings_8cpp_1adaddaf9d528a42c4831b98637ae9e59d" kindref="member">PROGMEM</ref> char *const <ref refid="_date_strings_8cpp_1adaddaf9d528a42c4831b98637ae9e59d" kindref="member">PROGMEM</ref></type>
+        <definition>const PROGMEM char* const PROGMEM monthNames_P[]</definition>
+        <argsstring>[]</argsstring>
+        <name>monthNames_P</name>
+        <initializer>=
+{
+    monthStr0,monthStr1,monthStr2,monthStr3,monthStr4,monthStr5,monthStr6,
+    monthStr7,monthStr8,monthStr9,monthStr10,monthStr11,monthStr12
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="44" column="1" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="_date_strings_8cpp_1a88860cdff7c88c1f5b96b2f2b68858db" compoundref="_date_strings_8cpp" startline="70" endline="74">monthStr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_date_strings_8cpp_1a5a2ad2cc68061317f557b8bb76163a53" prot="public" static="no" mutable="no">
+        <type>const <ref refid="_date_strings_8cpp_1adaddaf9d528a42c4831b98637ae9e59d" kindref="member">PROGMEM</ref> char *const <ref refid="_date_strings_8cpp_1adaddaf9d528a42c4831b98637ae9e59d" kindref="member">PROGMEM</ref></type>
+        <definition>const PROGMEM char* const PROGMEM dayNames_P[]</definition>
+        <argsstring>[]</argsstring>
+        <name>dayNames_P</name>
+        <initializer>=
+{
+   dayStr0,dayStr1,dayStr2,dayStr3,dayStr4,dayStr5,dayStr6,dayStr7
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="61" column="1" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="61" bodyend="-1"/>
+        <referencedby refid="_date_strings_8cpp_1a94236cfc15d1b0f09571766402a8e471" compoundref="_date_strings_8cpp" startline="84" endline="88">dayStr</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_date_strings_8cpp_1a88860cdff7c88c1f5b96b2f2b68858db" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* monthStr</definition>
+        <argsstring>(uint8_t month)</argsstring>
+        <name>monthStr</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="70" column="1" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="70" bodyend="74"/>
+        <references refid="_date_strings_8cpp_1a2e9a697e4ff5879643a60750b2255bc3" compoundref="_date_strings_8cpp" startline="44">monthNames_P</references>
+        <references refid="_date_strings_8cpp_1a963f816fc88a5d8479c285ed4c630229" compoundref="_date_strings_8cpp" startline="17">PGM_P</references>
+        <references refid="_date_strings_8cpp_1a910fb5f01313d339d3b835d45e1e5ad0" compoundref="_date_strings_8cpp" startline="19">pgm_read_word</references>
+        <references refid="_date_strings_8cpp_1ae74941b597bdd8ffb5c35f45b636946b" compoundref="_date_strings_8cpp" startline="20">strcpy_P</references>
+      </memberdef>
+      <memberdef kind="function" id="_date_strings_8cpp_1ae2b5f025e8c6fef73d4bc5795e9ad4a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* monthShortStr</definition>
+        <argsstring>(uint8_t month)</argsstring>
+        <name>monthShortStr</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="76" column="1" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="76" bodyend="82"/>
+        <references refid="_date_strings_8cpp_1aae971366e9527ab67fe2a6460b188a1c" compoundref="_date_strings_8cpp" startline="26">dt_SHORT_STR_LEN</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_date_strings_8cpp_1a48c60b057902adf805797f183286728d" compoundref="_date_strings_8cpp" startline="18">pgm_read_byte</references>
+      </memberdef>
+      <memberdef kind="function" id="_date_strings_8cpp_1a94236cfc15d1b0f09571766402a8e471" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* dayStr</definition>
+        <argsstring>(uint8_t day)</argsstring>
+        <name>dayStr</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="84" column="1" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="84" bodyend="88"/>
+        <references refid="_date_strings_8cpp_1a5a2ad2cc68061317f557b8bb76163a53" compoundref="_date_strings_8cpp" startline="61">dayNames_P</references>
+        <references refid="_date_strings_8cpp_1a963f816fc88a5d8479c285ed4c630229" compoundref="_date_strings_8cpp" startline="17">PGM_P</references>
+        <references refid="_date_strings_8cpp_1a910fb5f01313d339d3b835d45e1e5ad0" compoundref="_date_strings_8cpp" startline="19">pgm_read_word</references>
+        <references refid="_date_strings_8cpp_1ae74941b597bdd8ffb5c35f45b636946b" compoundref="_date_strings_8cpp" startline="20">strcpy_P</references>
+      </memberdef>
+      <memberdef kind="function" id="_date_strings_8cpp_1a5172f67ce7b074768a7e31877c665931" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char* dayShortStr</definition>
+        <argsstring>(uint8_t day)</argsstring>
+        <name>dayShortStr</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Time-master/DateStrings.cpp" line="90" column="1" bodyfile="Weather_Balloon/library/Time-master/DateStrings.cpp" bodystart="90" bodyend="97"/>
+        <references refid="_date_strings_8cpp_1aae971366e9527ab67fe2a6460b188a1c" compoundref="_date_strings_8cpp" startline="26">dt_SHORT_STR_LEN</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_date_strings_8cpp_1a48c60b057902adf805797f183286728d" compoundref="_date_strings_8cpp" startline="18">pgm_read_byte</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>DateStrings.cpp</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Definitions<sp/>for<sp/>date<sp/>strings<sp/>for<sp/>use<sp/>with<sp/>the<sp/>Time<sp/>library</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>Updated<sp/>for<sp/>Arduino<sp/>1.5.7<sp/>18<sp/>July<sp/>2014</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>No<sp/>memory<sp/>is<sp/>consumed<sp/>in<sp/>the<sp/>sketch<sp/>if<sp/>your<sp/>code<sp/>does<sp/>not<sp/>call<sp/>any<sp/>of<sp/>the<sp/>string<sp/>methods</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>You<sp/>can<sp/>change<sp/>the<sp/>text<sp/>of<sp/>the<sp/>strings,<sp/>make<sp/>sure<sp/>the<sp/>short<sp/>strings<sp/>are<sp/>each<sp/>exactly<sp/>3<sp/>characters<sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>long<sp/>strings<sp/>can<sp/>be<sp/>any<sp/>length<sp/>up<sp/>to<sp/>the<sp/>constant<sp/>dt_MAX_STRING_LEN<sp/>defined<sp/>in<sp/>TimeLib.h</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(__AVR__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/pgmspace.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>compatiblity<sp/>with<sp/>Arduino<sp/>Due<sp/>and<sp/>Teensy<sp/>3.0<sp/>and<sp/>maybe<sp/>others?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PROGMEM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="_date_strings_8cpp_1a963f816fc88a5d8479c285ed4c630229" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PGM_P<sp/><sp/>const<sp/>char<sp/>*</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_date_strings_8cpp_1a48c60b057902adf805797f183286728d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_byte(addr)<sp/>(*(const<sp/>unsigned<sp/>char<sp/>*)(addr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_date_strings_8cpp_1a910fb5f01313d339d3b835d45e1e5ad0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>pgm_read_word(addr)<sp/>(*(const<sp/>unsigned<sp/>char<sp/>**)(addr))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_date_strings_8cpp_1ae74941b597bdd8ffb5c35f45b636946b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>strcpy_P(dest,<sp/>src)<sp/>strcpy((dest),<sp/>(src))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string.h&gt;</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>for<sp/>strcpy_P<sp/>or<sp/>strcpy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_time_lib_8h" kindref="compound">TimeLib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>short<sp/>strings<sp/>for<sp/>each<sp/>day<sp/>or<sp/>month<sp/>must<sp/>be<sp/>exactly<sp/>dt_SHORT_STR_LEN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_date_strings_8cpp_1aae971366e9527ab67fe2a6460b188a1c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>dt_SHORT_STR_LEN<sp/><sp/>3<sp/>//<sp/>the<sp/>length<sp/>of<sp/>short<sp/>strings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>buffer[dt_MAX_STRING_LEN+1];<sp/><sp/></highlight><highlight class="comment">//<sp/>must<sp/>be<sp/>big<sp/>enough<sp/>for<sp/>longest<sp/>string<sp/>and<sp/>the<sp/>terminating<sp/>null</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_date_strings_8cpp_1adaddaf9d528a42c4831b98637ae9e59d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr0[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr1[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;January&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr2[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;February&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr3[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;March&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr4[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;April&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr5[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;May&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr6[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;June&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr7[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;July&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr8[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;August&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr9[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;September&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr10[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;October&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr11[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;November&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthStr12[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;December&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_date_strings_8cpp_1a2e9a697e4ff5879643a60750b2255bc3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/><ref refid="_date_strings_8cpp_1a2e9a697e4ff5879643a60750b2255bc3" kindref="member">monthNames_P</ref>[]<sp/>=</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>monthStr0,monthStr1,monthStr2,monthStr3,monthStr4,monthStr5,monthStr6,</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>monthStr7,monthStr8,monthStr9,monthStr10,monthStr11,monthStr12</highlight></codeline>
+<codeline lineno="48"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>monthShortNames_P[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ErrJanFebMarAprMayJunJulAugSepOctNovDec&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dayStr0[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Err&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dayStr1[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Sunday&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dayStr2[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Monday&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dayStr3[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Tuesday&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dayStr4[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Wednesday&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dayStr5[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Thursday&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dayStr6[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Friday&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dayStr7[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;Saturday&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_date_strings_8cpp_1a5a2ad2cc68061317f557b8bb76163a53" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/><ref refid="_date_strings_8cpp_1a5a2ad2cc68061317f557b8bb76163a53" kindref="member">dayNames_P</ref>[]<sp/>=</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/>dayStr0,dayStr1,dayStr2,dayStr3,dayStr4,dayStr5,dayStr6,dayStr7</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>dayShortNames_P[]<sp/><ref refid="_date_strings_8cpp_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/></highlight><highlight class="stringliteral">&quot;ErrSunMonTueWedThuFriSat&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>functions<sp/>to<sp/>return<sp/>date<sp/>strings<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_date_strings_8cpp_1a88860cdff7c88c1f5b96b2f2b68858db" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="_date_strings_8cpp_1a88860cdff7c88c1f5b96b2f2b68858db" kindref="member">monthStr</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_date_strings_8cpp_1ae74941b597bdd8ffb5c35f45b636946b" kindref="member">strcpy_P</ref>(buffer,<sp/>(<ref refid="_date_strings_8cpp_1a963f816fc88a5d8479c285ed4c630229" kindref="member">PGM_P</ref>)<ref refid="_date_strings_8cpp_1a910fb5f01313d339d3b835d45e1e5ad0" kindref="member">pgm_read_word</ref>(&amp;(<ref refid="_date_strings_8cpp_1a2e9a697e4ff5879643a60750b2255bc3" kindref="member">monthNames_P</ref>[month])));</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buffer;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_date_strings_8cpp_1ae2b5f025e8c6fef73d4bc5795e9ad4a3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="_date_strings_8cpp_1ae2b5f025e8c6fef73d4bc5795e9ad4a3" kindref="member">monthShortStr</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>=0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/><ref refid="_date_strings_8cpp_1aae971366e9527ab67fe2a6460b188a1c" kindref="member">dt_SHORT_STR_LEN</ref>;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buffer[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/><ref refid="_date_strings_8cpp_1a48c60b057902adf805797f183286728d" kindref="member">pgm_read_byte</ref>(&amp;(monthShortNames_P[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>+<sp/>(month*dt_SHORT_STR_LEN)]));<sp/><sp/></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/>buffer[<ref refid="_date_strings_8cpp_1aae971366e9527ab67fe2a6460b188a1c" kindref="member">dt_SHORT_STR_LEN</ref>]<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buffer;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="_date_strings_8cpp_1a94236cfc15d1b0f09571766402a8e471" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="_date_strings_8cpp_1a94236cfc15d1b0f09571766402a8e471" kindref="member">dayStr</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>)<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><ref refid="_date_strings_8cpp_1ae74941b597bdd8ffb5c35f45b636946b" kindref="member">strcpy_P</ref>(buffer,<sp/>(<ref refid="_date_strings_8cpp_1a963f816fc88a5d8479c285ed4c630229" kindref="member">PGM_P</ref>)<ref refid="_date_strings_8cpp_1a910fb5f01313d339d3b835d45e1e5ad0" kindref="member">pgm_read_word</ref>(&amp;(<ref refid="_date_strings_8cpp_1a5a2ad2cc68061317f557b8bb76163a53" kindref="member">dayNames_P</ref>[day])));</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buffer;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="_date_strings_8cpp_1a5172f67ce7b074768a7e31877c665931" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="_date_strings_8cpp_1a5172f67ce7b074768a7e31877c665931" kindref="member">dayShortStr</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>)<sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/>uint8_t<sp/>index<sp/>=<sp/>day*<ref refid="_date_strings_8cpp_1aae971366e9527ab67fe2a6460b188a1c" kindref="member">dt_SHORT_STR_LEN</ref>;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>=0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/><ref refid="_date_strings_8cpp_1aae971366e9527ab67fe2a6460b188a1c" kindref="member">dt_SHORT_STR_LEN</ref>;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>buffer[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/><ref refid="_date_strings_8cpp_1a48c60b057902adf805797f183286728d" kindref="member">pgm_read_byte</ref>(&amp;(dayShortNames_P[index<sp/>+<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]));<sp/><sp/></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/>buffer[<ref refid="_date_strings_8cpp_1aae971366e9527ab67fe2a6460b188a1c" kindref="member">dt_SHORT_STR_LEN</ref>]<sp/>=<sp/>0;<sp/></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buffer;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Time-master/DateStrings.cpp"/>
+  </compounddef>
+</doxygen>

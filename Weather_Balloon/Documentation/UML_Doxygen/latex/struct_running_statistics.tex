@@ -1,0 +1,398 @@
+\hypertarget{struct_running_statistics}{}\section{Running\+Statistics Struct Reference}
+\label{struct_running_statistics}\index{Running\+Statistics@{Running\+Statistics}}
+
+
+{\ttfamily \#include $<$Running\+Statistics.\+h$>$}
+
+
+
+Collaboration diagram for Running\+Statistics\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=217pt]{struct_running_statistics__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{struct_running_statistics_af17e8c856b42305ecb02762730e12919}{input} (float in\+Val)
+\item 
+\hyperlink{struct_running_statistics_a5ba923774908f70a5827bcdc18f46477}{Running\+Statistics} ()
+\item 
+void \hyperlink{struct_running_statistics_a035fade92bd2f6fb0bbde8e4857c33f7}{set\+Window\+Secs} (float window\+Secs)
+\item 
+void \hyperlink{struct_running_statistics_a0695a069bf0f534f3a1987699bdfb7ea}{set\+Initial\+Value} (float initial\+Mean, float initial\+Sigma=0)
+\item 
+float \hyperlink{struct_running_statistics_a4001e3eb9ab7469014f541c16f0b30cd}{mean} ()
+\item 
+float \hyperlink{struct_running_statistics_a5401a1f86867e7de5987cbb14dc496df}{variance} ()
+\item 
+float \hyperlink{struct_running_statistics_a46189b5442a6bd5bbd303d239ca75a89}{sigma} ()
+\item 
+float \hyperlink{struct_running_statistics_a5de669afa689ee26e8c3c7286446ef54}{CV} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{struct_running_statistics_a4ec83fcbddff87169b6aad7fe9784fad}{Average\+Secs}
+\item 
+\hyperlink{struct_filter_one_pole_cascade}{Filter\+One\+Pole\+Cascade} \hyperlink{struct_running_statistics_af4029c4a1059b7dccacf846f71060c04}{average\+Value}
+\item 
+\hyperlink{struct_filter_one_pole_cascade}{Filter\+One\+Pole\+Cascade} \hyperlink{struct_running_statistics_afeb370b47574823deb2eef8e81da7330}{average\+Square\+Value}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 6 of file Running\+Statistics.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Running\+Statistics@{Running\+Statistics}!Running\+Statistics@{Running\+Statistics}}
+\index{Running\+Statistics@{Running\+Statistics}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{Running\+Statistics()}{RunningStatistics()}}]{\setlength{\rightskip}{0pt plus 5cm}Running\+Statistics\+::\+Running\+Statistics (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_running_statistics_a5ba923774908f70a5827bcdc18f46477}{}\label{struct_running_statistics_a5ba923774908f70a5827bcdc18f46477}
+
+
+Definition at line 4 of file Running\+Statistics.\+cpp.
+
+
+
+References set\+Initial\+Value(), and set\+Window\+Secs().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_running_statistics_a5ba923774908f70a5827bcdc18f46477_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Running\+Statistics@{Running\+Statistics}!CV@{CV}}
+\index{CV@{CV}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{C\+V()}{CV()}}]{\setlength{\rightskip}{0pt plus 5cm}float Running\+Statistics\+::\+CV (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_running_statistics_a5de669afa689ee26e8c3c7286446ef54}{}\label{struct_running_statistics_a5de669afa689ee26e8c3c7286446ef54}
+
+
+Definition at line 49 of file Running\+Statistics.\+cpp.
+
+
+
+References mean(), and sigma().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_running_statistics_a5de669afa689ee26e8c3c7286446ef54_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Running\+Statistics@{Running\+Statistics}!input@{input}}
+\index{input@{input}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{input(float in\+Val)}{input(float inVal)}}]{\setlength{\rightskip}{0pt plus 5cm}void Running\+Statistics\+::input (
+\begin{DoxyParamCaption}
+\item[{float}]{in\+Val}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_running_statistics_af17e8c856b42305ecb02762730e12919}{}\label{struct_running_statistics_af17e8c856b42305ecb02762730e12919}
+
+
+Definition at line 21 of file Running\+Statistics.\+cpp.
+
+
+
+References average\+Square\+Value, average\+Value, and Filter\+One\+Pole\+Cascade\+::input().
+
+
+
+Referenced by test\+Running\+Statistics().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_running_statistics_af17e8c856b42305ecb02762730e12919_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{struct_running_statistics_af17e8c856b42305ecb02762730e12919_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Running\+Statistics@{Running\+Statistics}!mean@{mean}}
+\index{mean@{mean}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{mean()}{mean()}}]{\setlength{\rightskip}{0pt plus 5cm}float Running\+Statistics\+::mean (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_running_statistics_a4001e3eb9ab7469014f541c16f0b30cd}{}\label{struct_running_statistics_a4001e3eb9ab7469014f541c16f0b30cd}
+
+
+Definition at line 26 of file Running\+Statistics.\+cpp.
+
+
+
+References average\+Value, and Filter\+One\+Pole\+Cascade\+::output().
+
+
+
+Referenced by C\+V(), and test\+Running\+Statistics().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{struct_running_statistics_a4001e3eb9ab7469014f541c16f0b30cd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{struct_running_statistics_a4001e3eb9ab7469014f541c16f0b30cd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Running\+Statistics@{Running\+Statistics}!set\+Initial\+Value@{set\+Initial\+Value}}
+\index{set\+Initial\+Value@{set\+Initial\+Value}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{set\+Initial\+Value(float initial\+Mean, float initial\+Sigma=0)}{setInitialValue(float initialMean, float initialSigma=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Running\+Statistics\+::set\+Initial\+Value (
+\begin{DoxyParamCaption}
+\item[{float}]{initial\+Mean, }
+\item[{float}]{initial\+Sigma = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_running_statistics_a0695a069bf0f534f3a1987699bdfb7ea}{}\label{struct_running_statistics_a0695a069bf0f534f3a1987699bdfb7ea}
+
+
+Definition at line 16 of file Running\+Statistics.\+cpp.
+
+
+
+References average\+Square\+Value, average\+Value, and Filter\+One\+Pole\+Cascade\+::set\+To\+New\+Value().
+
+
+
+Referenced by Running\+Statistics(), and test\+Running\+Statistics().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{struct_running_statistics_a0695a069bf0f534f3a1987699bdfb7ea_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{struct_running_statistics_a0695a069bf0f534f3a1987699bdfb7ea_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Running\+Statistics@{Running\+Statistics}!set\+Window\+Secs@{set\+Window\+Secs}}
+\index{set\+Window\+Secs@{set\+Window\+Secs}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{set\+Window\+Secs(float window\+Secs)}{setWindowSecs(float windowSecs)}}]{\setlength{\rightskip}{0pt plus 5cm}void Running\+Statistics\+::set\+Window\+Secs (
+\begin{DoxyParamCaption}
+\item[{float}]{window\+Secs}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_running_statistics_a035fade92bd2f6fb0bbde8e4857c33f7}{}\label{struct_running_statistics_a035fade92bd2f6fb0bbde8e4857c33f7}
+
+
+Definition at line 9 of file Running\+Statistics.\+cpp.
+
+
+
+References Average\+Secs, average\+Square\+Value, average\+Value, and Filter\+One\+Pole\+Cascade\+::set\+Rise\+Time().
+
+
+
+Referenced by Running\+Statistics().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{struct_running_statistics_a035fade92bd2f6fb0bbde8e4857c33f7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=300pt]{struct_running_statistics_a035fade92bd2f6fb0bbde8e4857c33f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Running\+Statistics@{Running\+Statistics}!sigma@{sigma}}
+\index{sigma@{sigma}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{sigma()}{sigma()}}]{\setlength{\rightskip}{0pt plus 5cm}float Running\+Statistics\+::sigma (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_running_statistics_a46189b5442a6bd5bbd303d239ca75a89}{}\label{struct_running_statistics_a46189b5442a6bd5bbd303d239ca75a89}
+
+
+Definition at line 39 of file Running\+Statistics.\+cpp.
+
+
+
+References variance().
+
+
+
+Referenced by C\+V(), and test\+Running\+Statistics().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_running_statistics_a46189b5442a6bd5bbd303d239ca75a89_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=314pt]{struct_running_statistics_a46189b5442a6bd5bbd303d239ca75a89_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Running\+Statistics@{Running\+Statistics}!variance@{variance}}
+\index{variance@{variance}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{variance()}{variance()}}]{\setlength{\rightskip}{0pt plus 5cm}float Running\+Statistics\+::variance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_running_statistics_a5401a1f86867e7de5987cbb14dc496df}{}\label{struct_running_statistics_a5401a1f86867e7de5987cbb14dc496df}
+
+
+Definition at line 30 of file Running\+Statistics.\+cpp.
+
+
+
+References average\+Square\+Value, average\+Value, and Filter\+One\+Pole\+Cascade\+::output().
+
+
+
+Referenced by sigma().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=315pt]{struct_running_statistics_a5401a1f86867e7de5987cbb14dc496df_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_running_statistics_a5401a1f86867e7de5987cbb14dc496df_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Running\+Statistics@{Running\+Statistics}!Average\+Secs@{Average\+Secs}}
+\index{Average\+Secs@{Average\+Secs}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{Average\+Secs}{AverageSecs}}]{\setlength{\rightskip}{0pt plus 5cm}float Running\+Statistics\+::\+Average\+Secs}\hypertarget{struct_running_statistics_a4ec83fcbddff87169b6aad7fe9784fad}{}\label{struct_running_statistics_a4ec83fcbddff87169b6aad7fe9784fad}
+
+
+Definition at line 11 of file Running\+Statistics.\+h.
+
+
+
+Referenced by set\+Window\+Secs().
+
+\index{Running\+Statistics@{Running\+Statistics}!average\+Square\+Value@{average\+Square\+Value}}
+\index{average\+Square\+Value@{average\+Square\+Value}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{average\+Square\+Value}{averageSquareValue}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Filter\+One\+Pole\+Cascade} Running\+Statistics\+::average\+Square\+Value}\hypertarget{struct_running_statistics_afeb370b47574823deb2eef8e81da7330}{}\label{struct_running_statistics_afeb370b47574823deb2eef8e81da7330}
+
+
+Definition at line 14 of file Running\+Statistics.\+h.
+
+
+
+Referenced by input(), set\+Initial\+Value(), set\+Window\+Secs(), and variance().
+
+\index{Running\+Statistics@{Running\+Statistics}!average\+Value@{average\+Value}}
+\index{average\+Value@{average\+Value}!Running\+Statistics@{Running\+Statistics}}
+\subsubsection[{\texorpdfstring{average\+Value}{averageValue}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Filter\+One\+Pole\+Cascade} Running\+Statistics\+::average\+Value}\hypertarget{struct_running_statistics_af4029c4a1059b7dccacf846f71060c04}{}\label{struct_running_statistics_af4029c4a1059b7dccacf846f71060c04}
+
+
+Definition at line 13 of file Running\+Statistics.\+h.
+
+
+
+Referenced by input(), mean(), set\+Initial\+Value(), set\+Window\+Secs(), and variance().
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Filters/\hyperlink{_running_statistics_8h}{Running\+Statistics.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Filters/\hyperlink{_running_statistics_8cpp}{Running\+Statistics.\+cpp}\end{DoxyCompactItemize}

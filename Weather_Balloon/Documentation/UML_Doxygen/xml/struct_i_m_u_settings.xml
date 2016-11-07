@@ -1,0 +1,155 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_i_m_u_settings" kind="struct" language="C++" prot="public">
+    <compoundname>IMUSettings</compoundname>
+    <includes refid="_l_s_m9_d_s1___types_8h" local="no">LSM9DS1_Types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" prot="public" static="no" mutable="no">
+        <type><ref refid="structdevice_settings" kindref="compound">deviceSettings</ref></type>
+        <definition>deviceSettings IMUSettings::device</definition>
+        <argsstring></argsstring>
+        <name>device</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="242" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="242" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">LSM9DS1::begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">LSM9DS1::xgWriteByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">LSM9DS1::mWriteByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">LSM9DS1::xgReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">LSM9DS1::xgReadBytes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">LSM9DS1::mReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1023" endline="1031">LSM9DS1::mReadBytes</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a2c2e98945e78daa792b87b30868c3907" compoundref="_weather___balloon_8cpp" startline="884" endline="907">configure_LSM9DS1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" prot="public" static="no" mutable="no">
+        <type><ref refid="structgyro_settings" kindref="compound">gyroSettings</ref></type>
+        <definition>gyroSettings IMUSettings::gyro</definition>
+        <argsstring></argsstring>
+        <name>gyro</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="244" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="244" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a66a7b02acb28964ffc9362f25988e270" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="183" endline="253">LSM9DS1::initGyro</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a115d304ebcdc8c701f3e5a5d397250aa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="604" endline="627">LSM9DS1::setGyroScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ab8fc33c8da4fc5c379e880ff57d331fa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="696" endline="711">LSM9DS1::setGyroODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a303e0dd33e000579dc3917aecedb6e63" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="743" endline="746">LSM9DS1::calcgRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="952" endline="971">LSM9DS1::constrainScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" prot="public" static="no" mutable="no">
+        <type><ref refid="structaccel_settings" kindref="compound">accelSettings</ref></type>
+        <definition>accelSettings IMUSettings::accel</definition>
+        <argsstring></argsstring>
+        <name>accel</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="245" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="245" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a143ff5abf4f7ba8e1c42325859106f84" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="255" endline="317">LSM9DS1::initAccel</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8656d2de1ff9cc4cb76214e4561d02c4" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="629" endline="658">LSM9DS1::setAccelScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a76d72839cdecc3f1c4ee6fff578182c5" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="713" endline="728">LSM9DS1::setAccelODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a31597c9ae6c5a7de64a50cbbbcd24297" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="748" endline="751">LSM9DS1::calcaRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="952" endline="971">LSM9DS1::constrainScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" prot="public" static="no" mutable="no">
+        <type><ref refid="structmag_settings" kindref="compound">magSettings</ref></type>
+        <definition>magSettings IMUSettings::mag</definition>
+        <argsstring></argsstring>
+        <name>mag</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="246" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="246" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a492aa6edcf891f273d932636e3cc470d" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="407" endline="474">LSM9DS1::initMag</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ad7604159a07b0d088cdfb6ba4a0093b0" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="660" endline="694">LSM9DS1::setMagScale</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8bc672fba680edc468a643fd58046b41" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="730" endline="741">LSM9DS1::setMagODR</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a830dfc95c7e2d8524720d78357b053cb" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="753" endline="772">LSM9DS1::calcmRes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a5aadcd09cf9157de817c359e49304ca7" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="952" endline="971">LSM9DS1::constrainScales</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_i_m_u_settings_1a55a77555f1843c186db02080078632f2" prot="public" static="no" mutable="no">
+        <type><ref refid="structtemperature_settings" kindref="compound">temperatureSettings</ref></type>
+        <definition>temperatureSettings IMUSettings::temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="248" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="248" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="332">
+        <label>accelSettings</label>
+        <link refid="structaccel_settings"/>
+      </node>
+      <node id="333">
+        <label>temperatureSettings</label>
+        <link refid="structtemperature_settings"/>
+      </node>
+      <node id="328">
+        <label>IMUSettings</label>
+        <link refid="struct_i_m_u_settings"/>
+        <childnode refid="329" relation="usage">
+          <edgelabel>mag</edgelabel>
+        </childnode>
+        <childnode refid="330" relation="usage">
+          <edgelabel>gyro</edgelabel>
+        </childnode>
+        <childnode refid="331" relation="usage">
+          <edgelabel>device</edgelabel>
+        </childnode>
+        <childnode refid="332" relation="usage">
+          <edgelabel>accel</edgelabel>
+        </childnode>
+        <childnode refid="333" relation="usage">
+          <edgelabel>temp</edgelabel>
+        </childnode>
+      </node>
+      <node id="330">
+        <label>gyroSettings</label>
+        <link refid="structgyro_settings"/>
+      </node>
+      <node id="329">
+        <label>magSettings</label>
+        <link refid="structmag_settings"/>
+      </node>
+      <node id="331">
+        <label>deviceSettings</label>
+        <link refid="structdevice_settings"/>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="241" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="240" bodyend="249"/>
+    <listofallmembers>
+      <member refid="struct_i_m_u_settings_1aa8c7bf392c70397ae02ee1f5ad0ea474" prot="public" virt="non-virtual"><scope>IMUSettings</scope><name>accel</name></member>
+      <member refid="struct_i_m_u_settings_1a22b2648befc58307b43edc9e74acd583" prot="public" virt="non-virtual"><scope>IMUSettings</scope><name>device</name></member>
+      <member refid="struct_i_m_u_settings_1afab65feef7d0ca778b035a8805b1e4bf" prot="public" virt="non-virtual"><scope>IMUSettings</scope><name>gyro</name></member>
+      <member refid="struct_i_m_u_settings_1aca08359dfa3b8120aa687680d6c06ba7" prot="public" virt="non-virtual"><scope>IMUSettings</scope><name>mag</name></member>
+      <member refid="struct_i_m_u_settings_1a55a77555f1843c186db02080078632f2" prot="public" virt="non-virtual"><scope>IMUSettings</scope><name>temp</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

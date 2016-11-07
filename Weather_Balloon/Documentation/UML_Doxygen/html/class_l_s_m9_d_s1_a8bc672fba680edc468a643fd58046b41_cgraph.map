@@ -1,0 +1,9 @@
+<map id="LSM9DS1::setMagODR" name="LSM9DS1::setMagODR">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#ae4e470321567e4f93fc09f4cc6cd9efa" title="LSM9DS1::mReadByte" alt="" coords="199,56,342,83"/>
+<area shape="rect" id="node6" href="$class_l_s_m9_d_s1.html#afc171c924102c97fa1d88fa7f48bd167" title="LSM9DS1::mWriteByte" alt="" coords="197,107,344,133"/>
+<area shape="rect" id="node3" href="$class_l_s_m9_d_s1.html#a7fc046d4b335494331905fdeb5c81c9e" title="LSM9DS1::I2CreadByte" alt="" coords="395,5,541,32"/>
+<area shape="rect" id="node4" href="$class_l_s_m9_d_s1.html#a6f0f50bb5e9b702d5a19c7441a3f9d8b" title="LSM9DS1::SPIreadByte" alt="" coords="395,56,541,83"/>
+<area shape="rect" id="node5" href="$class_l_s_m9_d_s1.html#a26c0f164454eba84e6486033b7061d11" title="LSM9DS1::SPIreadBytes" alt="" coords="592,56,743,83"/>
+<area shape="rect" id="node7" href="$class_l_s_m9_d_s1.html#a8e66108a002cc15ec4c0db0a608d20c6" title="LSM9DS1::I2CwriteByte" alt="" coords="392,107,544,133"/>
+<area shape="rect" id="node8" href="$class_l_s_m9_d_s1.html#a83321c9d6ec50f6b9944907d2be482cd" title="LSM9DS1::SPIwriteByte" alt="" coords="393,157,543,184"/>
+</map>

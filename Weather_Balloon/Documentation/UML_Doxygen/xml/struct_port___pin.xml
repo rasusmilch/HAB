@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_port___pin" kind="struct" language="C++" prot="public">
+    <compoundname>Port_Pin</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_port___pin_1abdb274a593040cfbdbb903fac65e8a1f" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Port_Pin::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" line="714" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="714" bodyend="-1"/>
+        <referencedby refid="_zero_regs_8h_1ac515fdec9d58f6339d3e38cc33c6f74f" compoundref="_zero_regs_8cpp" startline="774" endline="811">printZeroRegPORT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_port___pin_1a4815156f6ae00fafe5a9dd5f725f06e8" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Port_Pin::grp</definition>
+        <argsstring></argsstring>
+        <name>grp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" line="715" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="715" bodyend="-1"/>
+        <referencedby refid="_zero_regs_8h_1ac515fdec9d58f6339d3e38cc33c6f74f" compoundref="_zero_regs_8cpp" startline="774" endline="811">printZeroRegPORT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_port___pin_1aa0152a075f602f9ea1be98921844f981" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Port_Pin::idx</definition>
+        <argsstring></argsstring>
+        <name>idx</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" line="716" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="716" bodyend="-1"/>
+        <referencedby refid="_zero_regs_8h_1ac515fdec9d58f6339d3e38cc33c6f74f" compoundref="_zero_regs_8cpp" startline="774" endline="811">printZeroRegPORT</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_port___pin_1a7818a63c184b495208403621b5fe7f11" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* Port_Pin::pmux[8]</definition>
+        <argsstring>[8]</argsstring>
+        <name>pmux</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" line="717" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="717" bodyend="-1"/>
+        <referencedby refid="_zero_regs_8h_1ac515fdec9d58f6339d3e38cc33c6f74f" compoundref="_zero_regs_8cpp" startline="774" endline="811">printZeroRegPORT</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" line="713" column="1" bodyfile="Weather_Balloon/library/arduino-ZeroRegs/src/ZeroRegs.cpp" bodystart="713" bodyend="718"/>
+    <listofallmembers>
+      <member refid="struct_port___pin_1a4815156f6ae00fafe5a9dd5f725f06e8" prot="public" virt="non-virtual"><scope>Port_Pin</scope><name>grp</name></member>
+      <member refid="struct_port___pin_1aa0152a075f602f9ea1be98921844f981" prot="public" virt="non-virtual"><scope>Port_Pin</scope><name>idx</name></member>
+      <member refid="struct_port___pin_1abdb274a593040cfbdbb903fac65e8a1f" prot="public" virt="non-virtual"><scope>Port_Pin</scope><name>name</name></member>
+      <member refid="struct_port___pin_1a7818a63c184b495208403621b5fe7f11" prot="public" virt="non-virtual"><scope>Port_Pin</scope><name>pmux</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

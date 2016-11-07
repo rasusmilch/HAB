@@ -1,0 +1,6 @@
+<map id="ax25_sendVia" name="ax25_sendVia">
+<area shape="rect" id="node2" href="$_lib_a_p_r_s_8h.html#ae5f394441f5ec861b661e0a63e33f44e" title="APRS_sendPkt" alt="" coords="151,31,252,57"/>
+<area shape="rect" id="node3" href="$_lib_a_p_r_s_8h.html#a8a1dc880a0b1622b68d488a4bb69afa0" title="APRS_sendLoc" alt="" coords="302,5,405,32"/>
+<area shape="rect" id="node4" href="$_lib_a_p_r_s_8h.html#a40fd4b0339cc234de92be317d48ea9fb" title="APRS_sendMsg" alt="" coords="300,56,407,83"/>
+<area shape="rect" id="node5" href="$_lib_a_p_r_s_8h.html#a46f010ed409b5457f351361c65d47fe4" title="APRS_msgRetry" alt="" coords="455,56,565,83"/>
+</map>

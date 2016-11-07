@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_time_8h" kind="file" language="C++">
+    <compoundname>Time.h</compoundname>
+    <includes refid="_time_lib_8h" local="yes">TimeLib.h</includes>
+    <incdepgraph>
+      <node id="1021">
+        <label>TimeLib.h</label>
+        <link refid="_time_lib_8h"/>
+      </node>
+      <node id="1020">
+        <label>Weather_Balloon/library/Time-master/Time.h</label>
+        <link refid="Time.h"/>
+        <childnode refid="1021" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_time_lib_8h" kindref="compound">TimeLib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Time-master/Time.h"/>
+  </compounddef>
+</doxygen>

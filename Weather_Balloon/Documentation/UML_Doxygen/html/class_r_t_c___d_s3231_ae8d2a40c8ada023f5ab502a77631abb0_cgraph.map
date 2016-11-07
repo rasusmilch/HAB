@@ -1,0 +1,15 @@
+<map id="RTC_DS3231::adjust" name="RTC_DS3231::adjust">
+<area shape="rect" id="node2" href="$_r_t_clib_8cpp.html#ab89a9f89f9d868e129c69675bf78d9b6" title="bin2bcd" alt="" coords="211,5,277,32"/>
+<area shape="rect" id="node3" href="$class_date_time.html#a0cedf8c399d4a38df0b8b8c4049bbac4" title="DateTime::day" alt="" coords="566,132,667,159"/>
+<area shape="rect" id="node4" href="$class_date_time.html#a71816802ff06e06d53ae3e7f420f0196" title="DateTime::hour" alt="" coords="191,107,297,133"/>
+<area shape="rect" id="node5" href="$class_date_time.html#a9990c5958c55b3aa7018e21df9d490e5" title="DateTime::minute" alt="" coords="184,157,304,184"/>
+<area shape="rect" id="node6" href="$class_date_time.html#a58beb18aec346e7081d02a2962032a43" title="DateTime::month" alt="" coords="185,208,303,235"/>
+<area shape="rect" id="node7" href="$class_date_time.html#a9b9a89a83e823b4a55e731d2b2d82f60" title="DateTime::second" alt="" coords="185,259,303,285"/>
+<area shape="rect" id="node14" href="$class_date_time.html#a019cf3799acc8c9a44fdc501fce33881" title="DateTime::year" alt="" coords="191,309,297,336"/>
+<area shape="rect" id="node8" href="$class_date_time.html#a4f3e0999a04238348adf390c29b889f9" title="DateTime::dayOfWeek" alt="" coords="354,132,499,159"/>
+<area shape="rect" id="node9" href="$class_date_time.html#a87adbc2ee0bfcb9417ffeadca2e3f375" title="DateTime::operator+=" alt="" coords="355,195,498,221"/>
+<area shape="rect" id="node11" href="$class_date_time.html#afb578f26cf9eddc7d6a0891021ee77f3" title="DateTime::unixtime" alt="" coords="551,245,682,272"/>
+<area shape="rect" id="node12" href="$class_date_time.html#a6dd7642f7f7a2d7ff7aec465bbc78187" title="DateTime::secondstime" alt="" coords="352,296,501,323"/>
+<area shape="rect" id="node13" href="$class_date_time.html#a839ec24c6bec99875ac7336deed49ac7" title="DateTime::toString" alt="" coords="364,347,489,373"/>
+<area shape="rect" id="node10" href="$class_date_time.html#af42f356752ec542faf262f485bd44a0b" title="DateTime::DateTime" alt="" coords="549,195,684,221"/>
+</map>

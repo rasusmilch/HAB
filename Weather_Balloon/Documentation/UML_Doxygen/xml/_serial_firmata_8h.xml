@@ -1,0 +1,568 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_serial_firmata_8h" kind="file" language="C++">
+    <compoundname>SerialFirmata.h</compoundname>
+    <includes refid="_firmata_8h" local="no">Firmata.h</includes>
+    <includes refid="_firmata_feature_8h" local="yes">FirmataFeature.h</includes>
+    <includedby refid="_serial_firmata_8cpp" local="yes">Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp</includedby>
+    <incdepgraph>
+      <node id="832">
+        <label>FirmataFeature.h</label>
+        <link refid="_firmata_feature_8h"/>
+        <childnode refid="828" relation="include">
+        </childnode>
+      </node>
+      <node id="831">
+        <label>WProgram.h</label>
+      </node>
+      <node id="828">
+        <label>Firmata.h</label>
+        <link refid="_firmata_8h"/>
+        <childnode refid="829" relation="include">
+        </childnode>
+      </node>
+      <node id="829">
+        <label>Boards.h</label>
+        <link refid="_boards_8h"/>
+        <childnode refid="830" relation="include">
+        </childnode>
+        <childnode refid="831" relation="include">
+        </childnode>
+      </node>
+      <node id="827">
+        <label>Weather_Balloon/library/Firmata/utility/SerialFirmata.h</label>
+        <link refid="SerialFirmata.h"/>
+        <childnode refid="828" relation="include">
+        </childnode>
+        <childnode refid="832" relation="include">
+        </childnode>
+      </node>
+      <node id="830">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="834">
+        <label>Weather_Balloon/library/Firmata/utility/SerialFirmata.cpp</label>
+        <link refid="_serial_firmata_8cpp"/>
+      </node>
+      <node id="833">
+        <label>Weather_Balloon/library/Firmata/utility/SerialFirmata.h</label>
+        <link refid="SerialFirmata.h"/>
+        <childnode refid="834" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_serial_firmata" prot="public">SerialFirmata</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_serial_firmata_8h_1ad8d1e37f7555a2974d8681c14b16cd69" prot="public" static="no">
+        <name>FIRMATA_SERIAL_FEATURE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="33" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1af3b91eec9b8ba6ba183cae8b87715e87" prot="public" static="no">
+        <name>HW_SERIAL0</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="36" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1aeb9a79ef851ece005de2b3018169d056" prot="public" static="no">
+        <name>HW_SERIAL1</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="37" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1adc7fabce0c0b1228ab25c9937a3015cf" prot="public" static="no">
+        <name>HW_SERIAL2</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="38" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="38" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a6849362229e853b1d89ef1095efbbefd" prot="public" static="no">
+        <name>HW_SERIAL3</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="39" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a669dd72611e460ea21388f62bb7ea713" prot="public" static="no">
+        <name>SW_SERIAL0</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="42" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1ae85c489fafeab0f8d4cf63866876eeca" prot="public" static="no">
+        <name>SW_SERIAL1</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="43" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="43" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1ac11cf9c5a36937c5357b112ec776d4cb" prot="public" static="no">
+        <name>SW_SERIAL2</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="44" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1aa8d8df1e8ad118cc64bbe18e8e8a3628" prot="public" static="no">
+        <name>SW_SERIAL3</name>
+        <initializer>0x0B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="45" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a6c61795269e38acfe6638b96ee14d605" prot="public" static="no">
+        <name>SERIAL_PORT_ID_MASK</name>
+        <initializer>0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="48" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="48" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a5111e506db798f016bf509d7909a5c65" prot="public" static="no">
+        <name>MAX_SERIAL_PORTS</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="49" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a446255494bac53f4def0f97794935102" prot="public" static="no">
+        <name>SERIAL_READ_ARR_LEN</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="50" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="50" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1af4936c482934bd14b97613430a7de10d" prot="public" static="no">
+        <name>RES_RX1</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="53" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1adf7b46fae7f0282eb656c8f8bf4a4ac8" prot="public" static="no">
+        <name>RES_TX1</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="54" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a6ddfeee4537783a52a5b0b782bee3668" prot="public" static="no">
+        <name>RES_RX2</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="55" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1aba419e5fb30572cb52cf3820aa3a8ee9" prot="public" static="no">
+        <name>RES_TX2</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="56" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1ac5c25ee1fb40513d8089d8592bbf04bd" prot="public" static="no">
+        <name>RES_RX3</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="57" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a8f2b2c4d034adfe64ce4a3a476ae2b12" prot="public" static="no">
+        <name>RES_TX3</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="58" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a76e6fb108715443df6d7a5f85975731a" prot="public" static="no">
+        <name>SERIAL_CONFIG</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="61" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="61" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1afb8ec1cba0a522c04f925bad0b2f3d9b" prot="public" static="no">
+        <name>SERIAL_WRITE</name>
+        <initializer>0x20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="62" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="62" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1ad8fc4f648b97f1a183f242b6c63daab1" prot="public" static="no">
+        <name>SERIAL_READ</name>
+        <initializer>0x30</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="63" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a21271d6f9809fc3b6cc2599e53a545b1" prot="public" static="no">
+        <name>SERIAL_REPLY</name>
+        <initializer>0x40</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="64" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="64" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1ab31a76a596ce2430ee3feac525da59f2" compoundref="_serial_firmata_8cpp" startline="284" endline="330">SerialFirmata::checkSerial</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1ad304b125713f3450cafd0de4da26f006" prot="public" static="no">
+        <name>SERIAL_CLOSE</name>
+        <initializer>0x50</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="65" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a6789a06a5b32fae47375237d2353d1ca" prot="public" static="no">
+        <name>SERIAL_FLUSH</name>
+        <initializer>0x60</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="66" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="66" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1aded602187eefbcd6c33fdde9c5ed80e5" prot="public" static="no">
+        <name>SERIAL_LISTEN</name>
+        <initializer>0x70</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="67" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="67" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1aae7d93ba6f6cf4b484f1ca7e49a69b01" prot="public" static="no">
+        <name>SERIAL_READ_CONTINUOUSLY</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="70" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="70" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1a2a5c705ec3a399c9930260003f008af7" prot="public" static="no">
+        <name>SERIAL_STOP_READING</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="71" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="71" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_serial_firmata_8h_1afa10f200a03d8c4555555c63d8eb1ea6" prot="public" static="no">
+        <name>SERIAL_MODE_MASK</name>
+        <initializer>0xF0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" line="72" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/SerialFirmata.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>SerialFirmata.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2016<sp/>Jeff<sp/>Hoefs.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>See<sp/>file<sp/>LICENSE.txt<sp/>for<sp/>further<sp/>informations<sp/>on<sp/>licensing<sp/>terms.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>This<sp/>version<sp/>of<sp/>SerialFirmata.h<sp/>differs<sp/>from<sp/>the<sp/>ConfigurableFirmata</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>version<sp/>in<sp/>the<sp/>following<sp/>ways:</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>-<sp/>Defines<sp/>FIRMATA_SERIAL_FEATURE<sp/>(could<sp/>add<sp/>to<sp/>Configurable<sp/>version<sp/>as<sp/>well)</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>-<sp/>Imports<sp/>Firmata.h<sp/>rather<sp/>than<sp/>ConfigurableFirmata.h</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/>Last<sp/>updated<sp/>October<sp/>16th,<sp/>2016</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SerialFirmata_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SerialFirmata_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_firmata_8h" kindref="compound">Firmata.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_firmata_feature_8h" kindref="compound">FirmataFeature.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>SoftwareSerial<sp/>is<sp/>currently<sp/>only<sp/>supported<sp/>for<sp/>AVR-based<sp/>boards<sp/>and<sp/>the<sp/>Arduino<sp/>101.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Limited<sp/>to<sp/>Arduino<sp/>1.6.6<sp/>or<sp/>higher<sp/>because<sp/>Arduino<sp/>builder<sp/>cannot<sp/>find<sp/>SoftwareSerial</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>prior<sp/>to<sp/>this<sp/>release.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(ARDUINO<sp/>&gt;<sp/>10605)<sp/>&amp;&amp;<sp/>(defined(ARDUINO_ARCH_AVR)<sp/>||<sp/>defined(ARDUINO_ARCH_ARC32))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SoftwareSerial.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_serial_firmata_8h_1ad8d1e37f7555a2974d8681c14b16cd69" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FIRMATA_SERIAL_FEATURE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Serial<sp/>port<sp/>Ids</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_serial_firmata_8h_1af3b91eec9b8ba6ba183cae8b87715e87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HW_SERIAL0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_serial_firmata_8h_1aeb9a79ef851ece005de2b3018169d056" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HW_SERIAL1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_serial_firmata_8h_1adc7fabce0c0b1228ab25c9937a3015cf" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HW_SERIAL2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_serial_firmata_8h_1a6849362229e853b1d89ef1095efbbefd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>HW_SERIAL3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>extensible<sp/>up<sp/>to<sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_serial_firmata_8h_1a669dd72611e460ea21388f62bb7ea713" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_SERIAL0<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_serial_firmata_8h_1ae85c489fafeab0f8d4cf63866876eeca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_SERIAL1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_serial_firmata_8h_1ac11cf9c5a36937c5357b112ec776d4cb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_SERIAL2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_serial_firmata_8h_1aa8d8df1e8ad118cc64bbe18e8e8a3628" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SW_SERIAL3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>extensible<sp/>up<sp/>to<sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_serial_firmata_8h_1a6c61795269e38acfe6638b96ee14d605" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_PORT_ID_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_serial_firmata_8h_1a5111e506db798f016bf509d7909a5c65" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX_SERIAL_PORTS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_serial_firmata_8h_1a446255494bac53f4def0f97794935102" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_READ_ARR_LEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/>map<sp/>configuration<sp/>query<sp/>response<sp/>resolution<sp/>value<sp/>to<sp/>serial<sp/>pin<sp/>type</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_serial_firmata_8h_1af4936c482934bd14b97613430a7de10d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES_RX1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_serial_firmata_8h_1adf7b46fae7f0282eb656c8f8bf4a4ac8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES_TX1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_serial_firmata_8h_1a6ddfeee4537783a52a5b0b782bee3668" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES_RX2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_serial_firmata_8h_1aba419e5fb30572cb52cf3820aa3a8ee9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES_TX2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="_serial_firmata_8h_1ac5c25ee1fb40513d8089d8592bbf04bd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES_RX3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_serial_firmata_8h_1a8f2b2c4d034adfe64ce4a3a476ae2b12" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>RES_TX3<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Serial<sp/>command<sp/>bytes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="_serial_firmata_8h_1a76e6fb108715443df6d7a5f85975731a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_CONFIG<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_serial_firmata_8h_1afb8ec1cba0a522c04f925bad0b2f3d9b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_WRITE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x20</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_serial_firmata_8h_1ad8fc4f648b97f1a183f242b6c63daab1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_READ<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_serial_firmata_8h_1a21271d6f9809fc3b6cc2599e53a545b1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_REPLY<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x40</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_serial_firmata_8h_1ad304b125713f3450cafd0de4da26f006" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_CLOSE<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x50</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_serial_firmata_8h_1a6789a06a5b32fae47375237d2353d1ca" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_FLUSH<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x60</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="_serial_firmata_8h_1aded602187eefbcd6c33fdde9c5ed80e5" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_LISTEN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x70</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Serial<sp/>read<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_serial_firmata_8h_1aae7d93ba6f6cf4b484f1ca7e49a69b01" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_READ_CONTINUOUSLY<sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="_serial_firmata_8h_1a2a5c705ec3a399c9930260003f008af7" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_STOP_READING<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_serial_firmata_8h_1afa10f200a03d8c4555555c63d8eb1ea6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERIAL_MODE_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">serial_pins<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>rx;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>tx;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Get<sp/>the<sp/>serial<sp/>serial<sp/>pin<sp/>type<sp/>(RX1,<sp/>TX1,<sp/>RX2,<sp/>TX2,<sp/>etc)<sp/>for<sp/>the<sp/>specified<sp/>pin.</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>uint8_t<sp/>getSerialPinType(uint8_t<sp/>pin)<sp/>{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(PIN_SERIAL_RX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TODO<sp/>when<sp/>use<sp/>of<sp/>HW_SERIAL0<sp/>is<sp/>enabled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(PIN_SERIAL1_RX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pin<sp/>==<sp/>PIN_SERIAL1_RX)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_serial_firmata_8h_1af4936c482934bd14b97613430a7de10d" kindref="member">RES_RX1</ref>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pin<sp/>==<sp/>PIN_SERIAL1_TX)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_serial_firmata_8h_1adf7b46fae7f0282eb656c8f8bf4a4ac8" kindref="member">RES_TX1</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(PIN_SERIAL2_RX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pin<sp/>==<sp/>PIN_SERIAL2_RX)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_serial_firmata_8h_1a6ddfeee4537783a52a5b0b782bee3668" kindref="member">RES_RX2</ref>;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pin<sp/>==<sp/>PIN_SERIAL2_TX)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_serial_firmata_8h_1aba419e5fb30572cb52cf3820aa3a8ee9" kindref="member">RES_TX2</ref>;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(PIN_SERIAL3_RX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pin<sp/>==<sp/>PIN_SERIAL3_RX)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_serial_firmata_8h_1ac5c25ee1fb40513d8089d8592bbf04bd" kindref="member">RES_RX3</ref>;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(pin<sp/>==<sp/>PIN_SERIAL3_TX)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="_serial_firmata_8h_1a8f2b2c4d034adfe64ce4a3a476ae2b12" kindref="member">RES_TX3</ref>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Get<sp/>the<sp/>RX<sp/>and<sp/>TX<sp/>pins<sp/>numbers<sp/>for<sp/>the<sp/>specified<sp/>HW<sp/>serial<sp/>port.</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>serial_pins<sp/>getSerialPinNumbers(uint8_t<sp/>portId)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/>serial_pins<sp/>pins;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(portId)<sp/>{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(PIN_SERIAL_RX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>case<sp/>HW_SERIAL0:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>//<sp/>TODO<sp/>when<sp/>use<sp/>of<sp/>HW_SERIAL0<sp/>is<sp/>enabled</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>break;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(PIN_SERIAL1_RX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_serial_firmata_8h_1aeb9a79ef851ece005de2b3018169d056" kindref="member">HW_SERIAL1</ref>:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pins.rx<sp/>=<sp/>PIN_SERIAL1_RX;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pins.tx<sp/>=<sp/>PIN_SERIAL1_TX;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(PIN_SERIAL2_RX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_serial_firmata_8h_1adc7fabce0c0b1228ab25c9937a3015cf" kindref="member">HW_SERIAL2</ref>:</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pins.rx<sp/>=<sp/>PIN_SERIAL2_RX;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pins.tx<sp/>=<sp/>PIN_SERIAL2_TX;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#if<sp/>defined(PIN_SERIAL3_RX)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/><ref refid="_serial_firmata_8h_1a6849362229e853b1d89ef1095efbbefd" kindref="member">HW_SERIAL3</ref>:</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pins.rx<sp/>=<sp/>PIN_SERIAL3_RX;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pins.tx<sp/>=<sp/>PIN_SERIAL3_TX;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">default</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pins.rx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pins.tx<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pins;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="class_serial_firmata" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_serial_firmata" kindref="compound">SerialFirmata</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_firmata_feature" kindref="compound">FirmataFeature</ref></highlight></codeline>
+<codeline lineno="143"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_serial_firmata" kindref="compound">SerialFirmata</ref>();</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>handlePinMode(byte<sp/>pin,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mode);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>handleCapability(byte<sp/>pin);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>handleSysex(byte<sp/>command,<sp/>byte<sp/>argc,<sp/>byte*<sp/>argv);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>update();</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset();</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>checkSerial();</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>byte<sp/>reportSerial[<ref refid="_serial_firmata_8h_1a5111e506db798f016bf509d7909a5c65" kindref="member">MAX_SERIAL_PORTS</ref>];</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>serialBytesToRead[<ref refid="_serial_firmata_8h_1a446255494bac53f4def0f97794935102" kindref="member">SERIAL_READ_ARR_LEN</ref>];</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">signed</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>serialIndex;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(SoftwareSerial_h)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>Stream<sp/>*swSerial0;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/>Stream<sp/>*swSerial1;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>Stream<sp/>*swSerial2;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/>Stream<sp/>*swSerial3;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>Stream*<sp/>getPortFromId(byte<sp/>portId);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>SerialFirmata_h<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Firmata/utility/SerialFirmata.h"/>
+  </compounddef>
+</doxygen>

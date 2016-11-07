@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_Adafruit_SHT31-master_README" kind="page">
+    <compoundname>md_Weather_Balloon_library_Adafruit_SHT31-master_README</compoundname>
+    <title>Adafruit_SHT31</title>
+    <detaileddescription>
+<para><heading level="2">Compatibility</heading>
+</para><para>MCU | Tested Works | Doesn&apos;t Work | Not Tested | Notes ---------------<mdash/> | :-------<mdash/>: | :-------<mdash/>: | :------<mdash/>: | --<mdash/> Atmega328 @ 16MHz | X | | | Atmega328 @ 12MHz | X | | | Atmega32u4 @ 16MHz | X | | | Atmega32u4 @ 8MHz | X | | | ESP8266 | X | | | Atmega2560 @ 16MHz | X | | | ATSAM3X8E | X | | | ATSAM21D | X | | | ATtiny85 @ 16MHz | X | | | ATtiny85 @ 8MHz | X | | | Intel Curie @ 32MHz | | | X | STM32F2 | | | X |</para><para><itemizedlist>
+<listitem><para>ATmega328 @ 16MHz : Arduino UNO, Adafruit Pro Trinket 5V, Adafruit Metro 328, Adafruit Metro Mini</para></listitem><listitem><para>ATmega328 @ 12MHz : Adafruit Pro Trinket 3V</para></listitem><listitem><para>ATmega32u4 @ 16MHz : Arduino Leonardo, Arduino Micro, Arduino Yun, Teensy 2.0</para></listitem><listitem><para>ATmega32u4 @ 8MHz : Adafruit Flora, Bluefruit Micro</para></listitem><listitem><para>ESP8266 : Adafruit Huzzah</para></listitem><listitem><para>ATmega2560 @ 16MHz : Arduino Mega</para></listitem><listitem><para>ATSAM3X8E : Arduino Due</para></listitem><listitem><para>ATSAM21D : Arduino Zero, M0 Pro</para></listitem><listitem><para>ATtiny85 @ 16MHz : Adafruit Trinket 5V</para></listitem><listitem><para>ATtiny85 @ 8MHz : Adafruit Gemma, Arduino Gemma, Adafruit Trinket 3V </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

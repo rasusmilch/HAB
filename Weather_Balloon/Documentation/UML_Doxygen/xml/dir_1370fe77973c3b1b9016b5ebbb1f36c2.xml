@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_1370fe77973c3b1b9016b5ebbb1f36c2" kind="dir">
+    <compoundname>Weather_Balloon/library</compoundname>
+    <innerdir refid="dir_0ab096e3c1489631ffe5eac3baf94243">Weather_Balloon/library/Adafruit_ADXL345-master</innerdir>
+    <innerdir refid="dir_2ed9fdbaa91f7f9e5bcdd0fbbaf44e55">Weather_Balloon/library/Adafruit_Sensor-master</innerdir>
+    <innerdir refid="dir_68fc1dc207ae564957ed24e74e54faef">Weather_Balloon/library/Adafruit_SHT31-master</innerdir>
+    <innerdir refid="dir_00e94e225ed21063c0eb7bffaee81589">Weather_Balloon/library/Adafruit_SI1145_Library-master</innerdir>
+    <innerdir refid="dir_3f0d14dce904a1965a04aa00da5bd275">Weather_Balloon/library/Adafruit_TSL2561-master</innerdir>
+    <innerdir refid="dir_9ac1c8065c185b42e6cd2aaabfa6caa4">Weather_Balloon/library/Arduino-DS3231-master</innerdir>
+    <innerdir refid="dir_4d1630a97e48166b8f53fcf62addaebf">Weather_Balloon/library/arduino-ms5xxx-master</innerdir>
+    <innerdir refid="dir_b3eddf97176af96f7a4bf897afc98f92">Weather_Balloon/library/Arduino-PID-Library</innerdir>
+    <innerdir refid="dir_fb342519cf31cde5c84965cd02fd7dbf">Weather_Balloon/library/Arduino-Temperature-Control-Library</innerdir>
+    <innerdir refid="dir_f27ca099e00b84cc4adf0072932620f6">Weather_Balloon/library/arduino-ZeroRegs</innerdir>
+    <innerdir refid="dir_c4ab0eab3327ffb69c61ca78dc4c448f">Weather_Balloon/library/Filters</innerdir>
+    <innerdir refid="dir_73779d542a0f1f1c71df965f7a505c99">Weather_Balloon/library/Firmata</innerdir>
+    <innerdir refid="dir_abfdc12f6afdfef197c5a100a62b9514">Weather_Balloon/library/LedControl-master</innerdir>
+    <innerdir refid="dir_8e63e94da0a218210150dde2aea06005">Weather_Balloon/library/MAG3110</innerdir>
+    <innerdir refid="dir_d28c8bb5ee29c9d79d049d816f1b9064">Weather_Balloon/library/OneWire2</innerdir>
+    <innerdir refid="dir_b4913a05e774cabd182b994ec6bed7f0">Weather_Balloon/library/RTClib-master</innerdir>
+    <innerdir refid="dir_fd351eea3551f2a5a2e2b7c81f87817d">Weather_Balloon/library/RTCZero</innerdir>
+    <innerdir refid="dir_56609fd61ff6758c31121544a541e795">Weather_Balloon/library/SD-master</innerdir>
+    <innerdir refid="dir_5eeaa7bc30d06d98ad7b0b40f81500cd">Weather_Balloon/library/SparkFun_LSM9DS1</innerdir>
+    <innerdir refid="dir_fcf509bb43b5dc1fa1fae02ea89d261b">Weather_Balloon/library/SparkFun_MAX17043</innerdir>
+    <innerdir refid="dir_ed6deb52b2f08272037e97f769d57099">Weather_Balloon/library/Time-master</innerdir>
+    <innerdir refid="dir_e0929f836d6dd2a2ac2657f49f55ddfb">Weather_Balloon/library/TinyGPSPlus-0.94b</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/"/>
+  </compounddef>
+</doxygen>

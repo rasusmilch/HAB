@@ -1,0 +1,533 @@
+\hypertarget{_sd2_card_8h}{}\section{Weather\+\_\+\+Balloon/library/\+S\+D-\/master/\+Sd2\+Card.h File Reference}
+\label{_sd2_card_8h}\index{Weather\+\_\+\+Balloon/library/\+S\+D-\/master/\+Sd2\+Card.\+h@{Weather\+\_\+\+Balloon/library/\+S\+D-\/master/\+Sd2\+Card.\+h}}
+{\ttfamily \#include \char`\"{}Sd2\+Pin\+Map.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}Sd\+Info.\+h\char`\"{}}\\*
+Include dependency graph for Sd2\+Card.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{_sd2_card_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{_sd2_card_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_sd2_card}{Sd2\+Card}
+\begin{DoxyCompactList}\small\item\em Raw access to SD and S\+D\+HC flash memory cards. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_sd2_card_8h_a9a8be32a22117702b68a446f25f142b0}{U\+S\+E\+\_\+\+S\+P\+I\+\_\+\+L\+IB}
+\item 
+\#define \hyperlink{_sd2_card_8h_ad3a00a466d2b81cff13c5447a09d704b}{M\+E\+G\+A\+\_\+\+S\+O\+F\+T\+\_\+\+S\+PI}~0
+\item 
+\#define \hyperlink{_sd2_card_8h_ad491a376db448bccdda45d46c08b2824}{S\+D\+\_\+\+P\+R\+O\+T\+E\+C\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO}~1
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a6c091c07d1eb82a94b1c5738f720264b}{S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED} = 0
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_abf126d9da3318e2709bbc3f2ab3cb3d1}{S\+P\+I\+\_\+\+H\+A\+L\+F\+\_\+\+S\+P\+E\+ED} = 1
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_ad6a75e4ff6409fe1305ec6915787458e}{S\+P\+I\+\_\+\+Q\+U\+A\+R\+T\+E\+R\+\_\+\+S\+P\+E\+ED} = 2
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_ae6b17538c14ba6c91ccb513db2c4c29c}{S\+D\+\_\+\+C\+H\+I\+P\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+IN} = S\+S\+\_\+\+P\+IN
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_abe8593732e5a9f38455125b0d499468d}{S\+P\+I\+\_\+\+M\+O\+S\+I\+\_\+\+P\+IN} = M\+O\+S\+I\+\_\+\+P\+IN
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_ae0bebe57d4925c25bfb58d8999d300ef}{S\+P\+I\+\_\+\+M\+I\+S\+O\+\_\+\+P\+IN} = M\+I\+S\+O\+\_\+\+P\+IN
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a7e5ead80033d2652108d1b835f3cc0f9}{S\+P\+I\+\_\+\+S\+C\+K\+\_\+\+P\+IN} = S\+C\+K\+\_\+\+P\+IN
+\item 
+uint16\+\_\+t const \hyperlink{_sd2_card_8h_ab7b9920a819e60f97f988ee13b3ddc40}{S\+D\+\_\+\+I\+N\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT} = 2000
+\item 
+uint16\+\_\+t const \hyperlink{_sd2_card_8h_afb7454898d781c58caa00f82f0f14f63}{S\+D\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT} = 10000
+\item 
+uint16\+\_\+t const \hyperlink{_sd2_card_8h_a02f6ddc876ebab300586940bd111eccd}{S\+D\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT} = 300
+\item 
+uint16\+\_\+t const \hyperlink{_sd2_card_8h_a9984cf4ab3088ae5470d56e10e9f23c9}{S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT} = 600
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a3803cc53ecc2b346ba950053f3dced47}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D0} = 0\+X1
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a2da93442c11fa58ffd24fe9d7038393d}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D8} = 0\+X2
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a2e79398dcb2711672e50dc2bea94e141}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D17} = 0\+X3
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_ade761c5ed037fbe0598f80c5e6d34268}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D24} = 0\+X4
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a4840a2a3026b537bf0e6a679715ec734}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D25} = 0\+X05
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a0ebfb17cbc424fd2138918aa72307292}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D58} = 0\+X06
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_aa69b04c3716e3e9962617e264e7ebe44}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D23} = 0\+X07
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a62fdea7af4f09fb98f302bac1bfa17c2}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D41} = 0\+X08
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a0bbae62f7c90e60614cfa9063101c5e1}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+SD} = 0\+X09
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a7726e63b7a04bc15b70901b418d6dd1e}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+SE} = 0\+X0A
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a00e05ddd835d81e0b4d78ededae70a3c}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+B\+L\+O\+CK} = 0\+X0B
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a8121967a262a076c5191a0e855531f99}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT} = 0\+X0C
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_adb9b963e8c54c4daf616cc5fdc4010ac}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+AD} = 0\+X0D
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_af1cdb9d8082532f4fe4b7cf1931dddbe}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+R\+EG} = 0\+X0E
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a49c57f2b1d31fe1b0baf73fab5bd469b}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT} = 0\+X0F
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a87264e66265e36be6b1428ebacf2e4ed}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+O\+P\+\_\+\+T\+R\+AN} = 0\+X10
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a98bb1b625b0b9ce99d8494fbb195274c}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+TE} = 0\+X11
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a376db89ebd1e212110419e3ac7a0c33f}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO} = 0\+X12
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a30bc1de9e3914ace0b9dc30f99a0edea}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+LE} = 0\+X13
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a06b427dad894918bd33fe2e74c50c2e0}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+M\+I\+NG} = 0\+X14
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_ae6574296ec37c52209c5f2c5664dccdb}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT} = 0\+X15
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_aa4036973d09278197c2949181094e8e2}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+C\+K\+\_\+\+R\+A\+TE} = 0\+X16
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_af55081a60d333ab063a5da5dd2c3633b}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D1} = 1
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a225807c91fc41717b4230d3b7e99c9f7}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D2} = 2
+\item 
+uint8\+\_\+t const \hyperlink{_sd2_card_8h_a39b05691c3bcfffddd5d590589980f44}{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC} = 3
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\hyperlink{class_sd2_card}{Sd2\+Card} class 
+
+\subsection{Macro Definition Documentation}
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!M\+E\+G\+A\+\_\+\+S\+O\+F\+T\+\_\+\+S\+PI@{M\+E\+G\+A\+\_\+\+S\+O\+F\+T\+\_\+\+S\+PI}}
+\index{M\+E\+G\+A\+\_\+\+S\+O\+F\+T\+\_\+\+S\+PI@{M\+E\+G\+A\+\_\+\+S\+O\+F\+T\+\_\+\+S\+PI}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{M\+E\+G\+A\+\_\+\+S\+O\+F\+T\+\_\+\+S\+PI}{MEGA\_SOFT\_SPI}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+E\+G\+A\+\_\+\+S\+O\+F\+T\+\_\+\+S\+PI~0}\hypertarget{_sd2_card_8h_ad3a00a466d2b81cff13c5447a09d704b}{}\label{_sd2_card_8h_ad3a00a466d2b81cff13c5447a09d704b}
+Define M\+E\+G\+A\+\_\+\+S\+O\+F\+T\+\_\+\+S\+PI non-\/zero to use software S\+PI on Mega Arduinos. Pins used are SS 10, M\+O\+SI 11, M\+I\+SO 12, and S\+CK 13.
+
+M\+E\+G\+A\+\_\+\+S\+O\+F\+T\+\_\+\+S\+PI allows an unmodified Adafruit G\+PS Shield to be used on Mega Arduinos. Software S\+PI works well with G\+PS Shield V1.\+1 but many SD cards will fail with G\+PS Shield V1.\+0. 
+
+Definition at line 47 of file Sd2\+Card.\+h.
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+P\+R\+O\+T\+E\+C\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO@{S\+D\+\_\+\+P\+R\+O\+T\+E\+C\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO}}
+\index{S\+D\+\_\+\+P\+R\+O\+T\+E\+C\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO@{S\+D\+\_\+\+P\+R\+O\+T\+E\+C\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+P\+R\+O\+T\+E\+C\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO}{SD\_PROTECT\_BLOCK\_ZERO}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+D\+\_\+\+P\+R\+O\+T\+E\+C\+T\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO~1}\hypertarget{_sd2_card_8h_ad491a376db448bccdda45d46c08b2824}{}\label{_sd2_card_8h_ad491a376db448bccdda45d46c08b2824}
+optimize loops for hardware S\+PI Protect block zero from write if nonzero 
+
+Definition at line 91 of file Sd2\+Card.\+h.
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!U\+S\+E\+\_\+\+S\+P\+I\+\_\+\+L\+IB@{U\+S\+E\+\_\+\+S\+P\+I\+\_\+\+L\+IB}}
+\index{U\+S\+E\+\_\+\+S\+P\+I\+\_\+\+L\+IB@{U\+S\+E\+\_\+\+S\+P\+I\+\_\+\+L\+IB}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{U\+S\+E\+\_\+\+S\+P\+I\+\_\+\+L\+IB}{USE\_SPI\_LIB}}]{\setlength{\rightskip}{0pt plus 5cm}\#define U\+S\+E\+\_\+\+S\+P\+I\+\_\+\+L\+IB}\hypertarget{_sd2_card_8h_a9a8be32a22117702b68a446f25f142b0}{}\label{_sd2_card_8h_a9a8be32a22117702b68a446f25f142b0}
+U\+S\+E\+\_\+\+S\+P\+I\+\_\+\+L\+IB\+: if set, use the S\+PI library bundled with Arduino I\+DE, otherwise run with a standalone driver for A\+VR. 
+
+Definition at line 38 of file Sd2\+Card.\+h.
+
+
+
+\subsection{Variable Documentation}
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D23@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D23}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D23@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D23}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D23}{SD\_CARD\_ERROR\_ACMD23}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D23 = 0\+X07}\hypertarget{_sd2_card_8h_aa69b04c3716e3e9962617e264e7ebe44}{}\label{_sd2_card_8h_aa69b04c3716e3e9962617e264e7ebe44}
+S\+E\+T\+\_\+\+W\+R\+\_\+\+B\+L\+K\+\_\+\+E\+R\+A\+S\+E\+\_\+\+C\+O\+U\+NT failed 
+
+Definition at line 115 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Start().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D41@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D41}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D41@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D41}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D41}{SD\_CARD\_ERROR\_ACMD41}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D41 = 0\+X08}\hypertarget{_sd2_card_8h_a62fdea7af4f09fb98f302bac1bfa17c2}{}\label{_sd2_card_8h_a62fdea7af4f09fb98f302bac1bfa17c2}
+card\textquotesingle{}s A\+C\+M\+D41 initialization process timeout 
+
+Definition at line 117 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+SD@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+SD}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+SD@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+SD}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+SD}{SD\_CARD\_ERROR\_BAD\_CSD}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+SD = 0\+X09}\hypertarget{_sd2_card_8h_a0bbae62f7c90e60614cfa9063101c5e1}{}\label{_sd2_card_8h_a0bbae62f7c90e60614cfa9063101c5e1}
+card returned a bad C\+SR version field 
+
+Definition at line 119 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::card\+Size().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D0@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D0}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D0@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D0}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D0}{SD\_CARD\_ERROR\_CMD0}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D0 = 0\+X1}\hypertarget{_sd2_card_8h_a3803cc53ecc2b346ba950053f3dced47}{}\label{_sd2_card_8h_a3803cc53ecc2b346ba950053f3dced47}
+timeout error for command C\+M\+D0 
+
+Definition at line 103 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D17@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D17}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D17@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D17}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D17}{SD\_CARD\_ERROR\_CMD17}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D17 = 0\+X3}\hypertarget{_sd2_card_8h_a2e79398dcb2711672e50dc2bea94e141}{}\label{_sd2_card_8h_a2e79398dcb2711672e50dc2bea94e141}
+card returned an error response for C\+M\+D17 (read block) 
+
+Definition at line 107 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::read\+Data().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D24@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D24}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D24@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D24}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D24}{SD\_CARD\_ERROR\_CMD24}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D24 = 0\+X4}\hypertarget{_sd2_card_8h_ade761c5ed037fbe0598f80c5e6d34268}{}\label{_sd2_card_8h_ade761c5ed037fbe0598f80c5e6d34268}
+card returned an error response for C\+M\+D24 (write block) 
+
+Definition at line 109 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Block().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D25@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D25}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D25@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D25}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D25}{SD\_CARD\_ERROR\_CMD25}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D25 = 0\+X05}\hypertarget{_sd2_card_8h_a4840a2a3026b537bf0e6a679715ec734}{}\label{_sd2_card_8h_a4840a2a3026b537bf0e6a679715ec734}
+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+B\+L\+O\+C\+KS command failed 
+
+Definition at line 111 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Start().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D58@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D58}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D58@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D58}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D58}{SD\_CARD\_ERROR\_CMD58}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D58 = 0\+X06}\hypertarget{_sd2_card_8h_a0ebfb17cbc424fd2138918aa72307292}{}\label{_sd2_card_8h_a0ebfb17cbc424fd2138918aa72307292}
+card returned an error response for C\+M\+D58 (read O\+CR) 
+
+Definition at line 113 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D8@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D8}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D8@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D8}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D8}{SD\_CARD\_ERROR\_CMD8}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D8 = 0\+X2}\hypertarget{_sd2_card_8h_a2da93442c11fa58ffd24fe9d7038393d}{}\label{_sd2_card_8h_a2da93442c11fa58ffd24fe9d7038393d}
+C\+M\+D8 was not accepted -\/ not a valid SD card 
+
+Definition at line 105 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+SE@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+SE}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+SE@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+SE}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+SE}{SD\_CARD\_ERROR\_ERASE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+SE = 0\+X0A}\hypertarget{_sd2_card_8h_a7726e63b7a04bc15b70901b418d6dd1e}{}\label{_sd2_card_8h_a7726e63b7a04bc15b70901b418d6dd1e}
+erase block group command failed 
+
+Definition at line 121 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::erase().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+B\+L\+O\+CK@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+B\+L\+O\+CK}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+B\+L\+O\+CK@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+B\+L\+O\+CK}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+B\+L\+O\+CK}{SD\_CARD\_ERROR\_ERASE\_SINGLE\_BLOCK}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+B\+L\+O\+CK = 0\+X0B}\hypertarget{_sd2_card_8h_a00e05ddd835d81e0b4d78ededae70a3c}{}\label{_sd2_card_8h_a00e05ddd835d81e0b4d78ededae70a3c}
+card not capable of single block erase 
+
+Definition at line 123 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::erase().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT}{SD\_CARD\_ERROR\_ERASE\_TIMEOUT}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT = 0\+X0C}\hypertarget{_sd2_card_8h_a8121967a262a076c5191a0e855531f99}{}\label{_sd2_card_8h_a8121967a262a076c5191a0e855531f99}
+Erase sequence timed out 
+
+Definition at line 125 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::erase().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+AD@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+AD}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+AD@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+AD}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+AD}{SD\_CARD\_ERROR\_READ}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+AD = 0\+X0D}\hypertarget{_sd2_card_8h_adb9b963e8c54c4daf616cc5fdc4010ac}{}\label{_sd2_card_8h_adb9b963e8c54c4daf616cc5fdc4010ac}
+card returned an error token instead of read data 
+
+Definition at line 127 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::set\+Sck\+Rate().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+R\+EG@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+R\+EG}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+R\+EG@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+R\+EG}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+R\+EG}{SD\_CARD\_ERROR\_READ\_REG}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+R\+EG = 0\+X0E}\hypertarget{_sd2_card_8h_af1cdb9d8082532f4fe4b7cf1931dddbe}{}\label{_sd2_card_8h_af1cdb9d8082532f4fe4b7cf1931dddbe}
+read C\+ID or C\+SD failed 
+
+Definition at line 129 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::read\+End().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT}{SD\_CARD\_ERROR\_READ\_TIMEOUT}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT = 0\+X0F}\hypertarget{_sd2_card_8h_a49c57f2b1d31fe1b0baf73fab5bd469b}{}\label{_sd2_card_8h_a49c57f2b1d31fe1b0baf73fab5bd469b}
+timeout while waiting for start of read data 
+
+Definition at line 131 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::set\+Sck\+Rate().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+C\+K\+\_\+\+R\+A\+TE@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+C\+K\+\_\+\+R\+A\+TE}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+C\+K\+\_\+\+R\+A\+TE@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+C\+K\+\_\+\+R\+A\+TE}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+C\+K\+\_\+\+R\+A\+TE}{SD\_CARD\_ERROR\_SCK\_RATE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+C\+K\+\_\+\+R\+A\+TE = 0\+X16}\hypertarget{_sd2_card_8h_aa4036973d09278197c2949181094e8e2}{}\label{_sd2_card_8h_aa4036973d09278197c2949181094e8e2}
+incorrect rate selected 
+
+Definition at line 145 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::set\+Sck\+Rate().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+O\+P\+\_\+\+T\+R\+AN@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+O\+P\+\_\+\+T\+R\+AN}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+O\+P\+\_\+\+T\+R\+AN@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+O\+P\+\_\+\+T\+R\+AN}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+O\+P\+\_\+\+T\+R\+AN}{SD\_CARD\_ERROR\_STOP\_TRAN}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+O\+P\+\_\+\+T\+R\+AN = 0\+X10}\hypertarget{_sd2_card_8h_a87264e66265e36be6b1428ebacf2e4ed}{}\label{_sd2_card_8h_a87264e66265e36be6b1428ebacf2e4ed}
+card did not accept S\+T\+O\+P\+\_\+\+T\+R\+A\+N\+\_\+\+T\+O\+K\+EN 
+
+Definition at line 133 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Stop().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+TE@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+TE}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+TE@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+TE}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+TE}{SD\_CARD\_ERROR\_WRITE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+TE = 0\+X11}\hypertarget{_sd2_card_8h_a98bb1b625b0b9ce99d8494fbb195274c}{}\label{_sd2_card_8h_a98bb1b625b0b9ce99d8494fbb195274c}
+card returned an error token as a response to a write operation 
+
+Definition at line 135 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Data().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO}{SD\_CARD\_ERROR\_WRITE\_BLOCK\_ZERO}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO = 0\+X12}\hypertarget{_sd2_card_8h_a376db89ebd1e212110419e3ac7a0c33f}{}\label{_sd2_card_8h_a376db89ebd1e212110419e3ac7a0c33f}
+attempt to write protected block zero 
+
+Definition at line 137 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Block(), and Sd2\+Card\+::write\+Start().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+LE@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+LE}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+LE@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+LE}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+LE}{SD\_CARD\_ERROR\_WRITE\_MULTIPLE}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+LE = 0\+X13}\hypertarget{_sd2_card_8h_a30bc1de9e3914ace0b9dc30f99a0edea}{}\label{_sd2_card_8h_a30bc1de9e3914ace0b9dc30f99a0edea}
+card did not go ready for a multiple block write 
+
+Definition at line 139 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Data().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+M\+I\+NG@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+M\+I\+NG}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+M\+I\+NG@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+M\+I\+NG}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+M\+I\+NG}{SD\_CARD\_ERROR\_WRITE\_PROGRAMMING}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+M\+I\+NG = 0\+X14}\hypertarget{_sd2_card_8h_a06b427dad894918bd33fe2e74c50c2e0}{}\label{_sd2_card_8h_a06b427dad894918bd33fe2e74c50c2e0}
+card returned an error to a C\+M\+D13 status check after a write 
+
+Definition at line 141 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Block().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}{SD\_CARD\_ERROR\_WRITE\_TIMEOUT}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT = 0\+X15}\hypertarget{_sd2_card_8h_ae6574296ec37c52209c5f2c5664dccdb}{}\label{_sd2_card_8h_ae6574296ec37c52209c5f2c5664dccdb}
+timeout occurred during write programming 
+
+Definition at line 143 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Block().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D1@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D1}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D1@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D1}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D1}{SD\_CARD\_TYPE\_SD1}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D1 = 1}\hypertarget{_sd2_card_8h_af55081a60d333ab063a5da5dd2c3633b}{}\label{_sd2_card_8h_af55081a60d333ab063a5da5dd2c3633b}
+Standard capacity V1 SD card 
+
+Definition at line 149 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D2@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D2}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D2@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D2}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D2}{SD\_CARD\_TYPE\_SD2}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D2 = 2}\hypertarget{_sd2_card_8h_a225807c91fc41717b4230d3b7e99c9f7}{}\label{_sd2_card_8h_a225807c91fc41717b4230d3b7e99c9f7}
+Standard capacity V2 SD card 
+
+Definition at line 151 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC}}
+\index{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC@{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC}{SD\_CARD\_TYPE\_SDHC}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC = 3}\hypertarget{_sd2_card_8h_a39b05691c3bcfffddd5d590589980f44}{}\label{_sd2_card_8h_a39b05691c3bcfffddd5d590589980f44}
+High Capacity SD card 
+
+Definition at line 153 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::erase(), Sd2\+Card\+::init(), Sd2\+Card\+::read\+Data(), Sd2\+Card\+::write\+Block(), and Sd2\+Card\+::write\+Start().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+C\+H\+I\+P\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+IN@{S\+D\+\_\+\+C\+H\+I\+P\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+IN}}
+\index{S\+D\+\_\+\+C\+H\+I\+P\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+IN@{S\+D\+\_\+\+C\+H\+I\+P\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+IN}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+C\+H\+I\+P\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+IN}{SD\_CHIP\_SELECT\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+D\+\_\+\+C\+H\+I\+P\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+IN = S\+S\+\_\+\+P\+IN}\hypertarget{_sd2_card_8h_ae6b17538c14ba6c91ccb513db2c4c29c}{}\label{_sd2_card_8h_ae6b17538c14ba6c91ccb513db2c4c29c}
+SD Chip Select pin
+
+Warning if this pin is redefined the hardware SS will pin will be enabled as an output by init(). An avr processor will not function as an S\+PI master unless SS is set to output mode.\+The default chip select pin for the SD card is SS. 
+
+Definition at line 65 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{S\+D\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT}{SD\_ERASE\_TIMEOUT}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t const S\+D\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT = 10000}\hypertarget{_sd2_card_8h_afb7454898d781c58caa00f82f0f14f63}{}\label{_sd2_card_8h_afb7454898d781c58caa00f82f0f14f63}
+erase timeout ms 
+
+Definition at line 95 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::erase().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+I\+N\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+I\+N\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{S\+D\+\_\+\+I\+N\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+I\+N\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+I\+N\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT}{SD\_INIT\_TIMEOUT}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t const S\+D\+\_\+\+I\+N\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT = 2000}\hypertarget{_sd2_card_8h_ab7b9920a819e60f97f988ee13b3ddc40}{}\label{_sd2_card_8h_ab7b9920a819e60f97f988ee13b3ddc40}
+init timeout ms 
+
+Definition at line 93 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{S\+D\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT}{SD\_READ\_TIMEOUT}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t const S\+D\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT = 300}\hypertarget{_sd2_card_8h_a02f6ddc876ebab300586940bd111eccd}{}\label{_sd2_card_8h_a02f6ddc876ebab300586940bd111eccd}
+read timeout ms 
+
+Definition at line 97 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::set\+Sck\+Rate().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}}
+\index{S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT@{S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT}{SD\_WRITE\_TIMEOUT}}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t const S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT = 600}\hypertarget{_sd2_card_8h_a9984cf4ab3088ae5470d56e10e9f23c9}{}\label{_sd2_card_8h_a9984cf4ab3088ae5470d56e10e9f23c9}
+write time out ms 
+
+Definition at line 99 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::write\+Block(), Sd2\+Card\+::write\+Data(), and Sd2\+Card\+::write\+Stop().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED@{S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED}}
+\index{S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED@{S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED}{SPI\_FULL\_SPEED}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED = 0}\hypertarget{_sd2_card_8h_a6c091c07d1eb82a94b1c5738f720264b}{}\label{_sd2_card_8h_a6c091c07d1eb82a94b1c5738f720264b}
+Set S\+CK to max rate of F\+\_\+\+C\+P\+U/2. See \hyperlink{class_sd2_card_ad849b8896de9abd4e24bd98f4204ccc4}{Sd2\+Card\+::set\+Sck\+Rate()}. 
+
+Definition at line 29 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+P\+I\+\_\+\+H\+A\+L\+F\+\_\+\+S\+P\+E\+ED@{S\+P\+I\+\_\+\+H\+A\+L\+F\+\_\+\+S\+P\+E\+ED}}
+\index{S\+P\+I\+\_\+\+H\+A\+L\+F\+\_\+\+S\+P\+E\+ED@{S\+P\+I\+\_\+\+H\+A\+L\+F\+\_\+\+S\+P\+E\+ED}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+P\+I\+\_\+\+H\+A\+L\+F\+\_\+\+S\+P\+E\+ED}{SPI\_HALF\_SPEED}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+P\+I\+\_\+\+H\+A\+L\+F\+\_\+\+S\+P\+E\+ED = 1}\hypertarget{_sd2_card_8h_abf126d9da3318e2709bbc3f2ab3cb3d1}{}\label{_sd2_card_8h_abf126d9da3318e2709bbc3f2ab3cb3d1}
+Set S\+CK rate to F\+\_\+\+C\+P\+U/4. See \hyperlink{class_sd2_card_ad849b8896de9abd4e24bd98f4204ccc4}{Sd2\+Card\+::set\+Sck\+Rate()}. 
+
+Definition at line 31 of file Sd2\+Card.\+h.
+
+
+
+Referenced by configure\+\_\+sdcard().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+P\+I\+\_\+\+M\+I\+S\+O\+\_\+\+P\+IN@{S\+P\+I\+\_\+\+M\+I\+S\+O\+\_\+\+P\+IN}}
+\index{S\+P\+I\+\_\+\+M\+I\+S\+O\+\_\+\+P\+IN@{S\+P\+I\+\_\+\+M\+I\+S\+O\+\_\+\+P\+IN}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+P\+I\+\_\+\+M\+I\+S\+O\+\_\+\+P\+IN}{SPI\_MISO\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+P\+I\+\_\+\+M\+I\+S\+O\+\_\+\+P\+IN = M\+I\+S\+O\+\_\+\+P\+IN}\hypertarget{_sd2_card_8h_ae0bebe57d4925c25bfb58d8999d300ef}{}\label{_sd2_card_8h_ae0bebe57d4925c25bfb58d8999d300ef}
+S\+PI Master In Slave Out pin 
+
+Definition at line 70 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+P\+I\+\_\+\+M\+O\+S\+I\+\_\+\+P\+IN@{S\+P\+I\+\_\+\+M\+O\+S\+I\+\_\+\+P\+IN}}
+\index{S\+P\+I\+\_\+\+M\+O\+S\+I\+\_\+\+P\+IN@{S\+P\+I\+\_\+\+M\+O\+S\+I\+\_\+\+P\+IN}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+P\+I\+\_\+\+M\+O\+S\+I\+\_\+\+P\+IN}{SPI\_MOSI\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+P\+I\+\_\+\+M\+O\+S\+I\+\_\+\+P\+IN = M\+O\+S\+I\+\_\+\+P\+IN}\hypertarget{_sd2_card_8h_abe8593732e5a9f38455125b0d499468d}{}\label{_sd2_card_8h_abe8593732e5a9f38455125b0d499468d}
+S\+PI Master Out Slave In pin 
+
+Definition at line 68 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+P\+I\+\_\+\+Q\+U\+A\+R\+T\+E\+R\+\_\+\+S\+P\+E\+ED@{S\+P\+I\+\_\+\+Q\+U\+A\+R\+T\+E\+R\+\_\+\+S\+P\+E\+ED}}
+\index{S\+P\+I\+\_\+\+Q\+U\+A\+R\+T\+E\+R\+\_\+\+S\+P\+E\+ED@{S\+P\+I\+\_\+\+Q\+U\+A\+R\+T\+E\+R\+\_\+\+S\+P\+E\+ED}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+P\+I\+\_\+\+Q\+U\+A\+R\+T\+E\+R\+\_\+\+S\+P\+E\+ED}{SPI\_QUARTER\_SPEED}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+P\+I\+\_\+\+Q\+U\+A\+R\+T\+E\+R\+\_\+\+S\+P\+E\+ED = 2}\hypertarget{_sd2_card_8h_ad6a75e4ff6409fe1305ec6915787458e}{}\label{_sd2_card_8h_ad6a75e4ff6409fe1305ec6915787458e}
+Set S\+CK rate to F\+\_\+\+C\+P\+U/8. \hyperlink{class_sd2_card_ad849b8896de9abd4e24bd98f4204ccc4}{Sd2\+Card\+::set\+Sck\+Rate()}. 
+
+Definition at line 33 of file Sd2\+Card.\+h.
+
+\index{Sd2\+Card.\+h@{Sd2\+Card.\+h}!S\+P\+I\+\_\+\+S\+C\+K\+\_\+\+P\+IN@{S\+P\+I\+\_\+\+S\+C\+K\+\_\+\+P\+IN}}
+\index{S\+P\+I\+\_\+\+S\+C\+K\+\_\+\+P\+IN@{S\+P\+I\+\_\+\+S\+C\+K\+\_\+\+P\+IN}!Sd2\+Card.\+h@{Sd2\+Card.\+h}}
+\subsubsection[{\texorpdfstring{S\+P\+I\+\_\+\+S\+C\+K\+\_\+\+P\+IN}{SPI\_SCK\_PIN}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t const S\+P\+I\+\_\+\+S\+C\+K\+\_\+\+P\+IN = S\+C\+K\+\_\+\+P\+IN}\hypertarget{_sd2_card_8h_a7e5ead80033d2652108d1b835f3cc0f9}{}\label{_sd2_card_8h_a7e5ead80033d2652108d1b835f3cc0f9}
+S\+PI Clock pin 
+
+Definition at line 72 of file Sd2\+Card.\+h.
+
+
+
+Referenced by Sd2\+Card\+::init().
+

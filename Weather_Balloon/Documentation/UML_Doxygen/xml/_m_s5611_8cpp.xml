@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_m_s5611_8cpp" kind="file" language="C++">
+    <compoundname>MS5611.cpp</compoundname>
+    <includes refid="_m_s5611_8h" local="yes">MS5611.h</includes>
+    <incdepgraph>
+      <node id="647">
+        <label>MS5611.h</label>
+        <link refid="_m_s5611_8h"/>
+        <childnode refid="648" relation="include">
+        </childnode>
+      </node>
+      <node id="648">
+        <label>MS5xxx.h</label>
+        <link refid="_m_s5xxx_8h"/>
+        <childnode refid="649" relation="include">
+        </childnode>
+        <childnode refid="650" relation="include">
+        </childnode>
+      </node>
+      <node id="650">
+        <label>Wire.h</label>
+      </node>
+      <node id="646">
+        <label>Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.cpp</label>
+        <link refid="MS5611.cpp"/>
+        <childnode refid="647" relation="include">
+        </childnode>
+      </node>
+      <node id="649">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/><sp/><sp/>MS5611.h<sp/>-<sp/>Library<sp/>for<sp/>accessing<sp/>MS5611<sp/>sensors<sp/>via<sp/>I2C</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/><sp/><sp/>Copyright<sp/>(c)<sp/>2016<sp/>Roman<sp/>Schmitz</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/><sp/><sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>arduino-MS5xxx.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/><sp/><sp/>arduino-MS5xxx<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/><sp/><sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/><sp/><sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/><sp/><sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/><sp/><sp/>arduino-MS5xxx<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/><sp/><sp/><sp/>along<sp/>with<sp/>arduino-MS5xxx.<sp/><sp/>If<sp/>not,<sp/>see<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight></codeline>
+<codeline lineno="20"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_s5611_8h" kindref="compound">MS5611.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="class_m_s5611_1a48fcc0f37a1c9edcb510811f970b767b" refkind="member"><highlight class="normal"><ref refid="class_m_s5611_1a48fcc0f37a1c9edcb510811f970b767b" kindref="member">MS5611::MS5611</ref>(TwoWire<sp/>*aWire)<sp/>:<sp/><ref refid="class_m_s5xxx" kindref="compound">MS5xxx</ref>(aWire){</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_s5xxx_1a6c3d564fe39d14dfa8804fa1600077d7" kindref="member">setI2Caddr</ref>(<ref refid="_m_s5xxx_8h_1a905ffdc40c05cd1d52f2c7a1ac2eed28" kindref="member">I2C_MS5611</ref>);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_m_s5611_1a59c247e1180a8c4d62a6dcbe49f22b71" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_s5611_1a59c247e1180a8c4d62a6dcbe49f22b71" kindref="member">MS5611::Readout</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>D1=0,<sp/>D2=0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dT;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>OFF;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>SENS;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>D2=<ref refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" kindref="member">read_adc</ref>(<ref refid="_m_s5xxx_8h_1a1db9bb6ea291989242813f646e5c600f" kindref="member">MS5xxx_CMD_ADC_D2</ref>+<ref refid="_m_s5xxx_8h_1a7cbabd13f476ab120d0c68ad6a66d079" kindref="member">MS5xxx_CMD_ADC_4096</ref>);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>D1=<ref refid="class_m_s5xxx_1add087d5023754831de3ff629c7ced410" kindref="member">read_adc</ref>(<ref refid="_m_s5xxx_8h_1adb410500d0de8950dc7f9f7803f3559a" kindref="member">MS5xxx_CMD_ADC_D1</ref>+<ref refid="_m_s5xxx_8h_1a7cbabd13f476ab120d0c68ad6a66d079" kindref="member">MS5xxx_CMD_ADC_4096</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calculate<sp/>1st<sp/>order<sp/>pressure<sp/>and<sp/>temperature<sp/>(MS5611<sp/>1st<sp/>order<sp/>algorithm)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/>dT=D2-<ref refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" kindref="member">C</ref>[5]*pow(2,8);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>OFF=<ref refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" kindref="member">C</ref>[2]*pow(2,16)+dT*<ref refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" kindref="member">C</ref>[4]/pow(2,7);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>SENS=<ref refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" kindref="member">C</ref>[1]*pow(2,15)+dT*<ref refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" kindref="member">C</ref>[3]/pow(2,8);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>=(2000+(dT*<ref refid="class_m_s5xxx_1a1e35ed9bb07685736da32495c7d8fd90" kindref="member">C</ref>[6])/pow(2,23));</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_s5xxx_1a5bf2b4f5b63d8acd877cc61346587e6a" kindref="member">P</ref>=(((D1*SENS)/pow(2,21)-OFF)/pow(2,15));</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>perform<sp/>higher<sp/>order<sp/>corrections</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>T2=0.,<sp/>OFF2=0.,<sp/>SENS2=0.;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>&lt;2000)<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>T2=dT*dT/pow(2,31);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>OFF2=5*(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>-2000)*(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>-2000)/pow(2,1);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SENS2=5*(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>-2000)*(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>-2000)/pow(2,2);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>&lt;-1500)<sp/>{</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>OFF2+=7*(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>+1500)*(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>+1500);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SENS2+=11*(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>+1500)*(<ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>+1500)/pow(2,1);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_s5xxx_1a8b9ea0d97301232352a0484e6e944753" kindref="member">TEMP</ref>-=T2;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>OFF-=OFF2;</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>SENS-=SENS2;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_m_s5xxx_1a5bf2b4f5b63d8acd877cc61346587e6a" kindref="member">P</ref>=(((D1*SENS)/pow(2,21)-OFF)/pow(2,15));<sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/MS5611.cpp"/>
+  </compounddef>
+</doxygen>

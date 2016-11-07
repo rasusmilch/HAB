@@ -1,0 +1,357 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_filter_two_pole" kind="struct" language="C++" prot="public">
+    <compoundname>FilterTwoPole</compoundname>
+    <includes refid="_filter_two_pole_8h" local="no">FilterTwoPole.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterTwoPole::X</definition>
+        <argsstring></argsstring>
+        <name>X</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="34" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" compoundref="_filter_two_pole_8cpp" startline="64" endline="73">FilterTwoPole</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a3eca794cde885b64dd1ff9236b3e4368" compoundref="_filter_two_pole_8cpp" startline="158" endline="172">getMaxAmp</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" compoundref="_filter_two_pole_8cpp" startline="120" endline="148">input</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" compoundref="_filter_two_pole_8cpp" startline="150" endline="155">output</referencedby>
+        <referencedby refid="struct_filter_two_pole_1ac86c21f0dcef76c06fe1102fb7642f2d" compoundref="_filter_two_pole_8cpp" startline="174" endline="178">print</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a65e7ce2eaa6b3c5a79c05b47a00466ad" compoundref="_filter_two_pole_8cpp" startline="86" endline="118">setAsFilter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterTwoPole::Vprev</definition>
+        <argsstring></argsstring>
+        <name>Vprev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="35" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" compoundref="_filter_two_pole_8cpp" startline="64" endline="73">FilterTwoPole</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a3eca794cde885b64dd1ff9236b3e4368" compoundref="_filter_two_pole_8cpp" startline="158" endline="172">getMaxAmp</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" compoundref="_filter_two_pole_8cpp" startline="120" endline="148">input</referencedby>
+        <referencedby refid="struct_filter_two_pole_1ac86c21f0dcef76c06fe1102fb7642f2d" compoundref="_filter_two_pole_8cpp" startline="174" endline="178">print</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_two_pole_1a1cf9be9b3615421ad0d4a985f29b223d" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterTwoPole::Vavg</definition>
+        <argsstring></argsstring>
+        <name>Vavg</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="36" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="36" bodyend="-1"/>
+        <referencedby refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" compoundref="_filter_two_pole_8cpp" startline="120" endline="148">input</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_two_pole_1afeb31882d0e8506a82f4b8cbd5745488" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterTwoPole::Fprev</definition>
+        <argsstring></argsstring>
+        <name>Fprev</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="37" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="37" bodyend="-1"/>
+        <referencedby refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" compoundref="_filter_two_pole_8cpp" startline="120" endline="148">input</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_two_pole_1af42fb47a6163a710768a4ab4c6551a08" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterTwoPole::Q</definition>
+        <argsstring></argsstring>
+        <name>Q</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="39" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="39" bodyend="-1"/>
+        <referencedby refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" compoundref="_filter_two_pole_8cpp" startline="120" endline="148">input</referencedby>
+        <referencedby refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" compoundref="_filter_two_pole_8cpp" startline="75" endline="80">setQ</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FilterTwoPole::W0</definition>
+        <argsstring></argsstring>
+        <name>W0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="40" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="40" bodyend="-1"/>
+        <referencedby refid="struct_filter_two_pole_1a3eca794cde885b64dd1ff9236b3e4368" compoundref="_filter_two_pole_8cpp" startline="158" endline="172">getMaxAmp</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" compoundref="_filter_two_pole_8cpp" startline="120" endline="148">input</referencedby>
+        <referencedby refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" compoundref="_filter_two_pole_8cpp" startline="82" endline="84">setFrequency0</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_two_pole_1abda0e3d8797b98981b5827814b56b329" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool FilterTwoPole::IsHighpass</definition>
+        <argsstring></argsstring>
+        <name>IsHighpass</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="42" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="42" bodyend="-1"/>
+        <referencedby refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" compoundref="_filter_two_pole_8cpp" startline="64" endline="73">FilterTwoPole</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a65e7ce2eaa6b3c5a79c05b47a00466ad" compoundref="_filter_two_pole_8cpp" startline="86" endline="118">setAsFilter</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_filter_two_pole_1a0cb5f7e1f22358a3b80ba1955958082e" prot="public" static="no" mutable="no">
+        <type>long</type>
+        <definition>long FilterTwoPole::LastTimeUS</definition>
+        <argsstring></argsstring>
+        <name>LastTimeUS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="44" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="44" bodyend="-1"/>
+        <referencedby refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" compoundref="_filter_two_pole_8cpp" startline="64" endline="73">FilterTwoPole</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" compoundref="_filter_two_pole_8cpp" startline="120" endline="148">input</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>FilterTwoPole::FilterTwoPole</definition>
+        <argsstring>(float frequency0=1, float qualityFactor=1, float xInit=0)</argsstring>
+        <name>FilterTwoPole</name>
+        <param>
+          <type>float</type>
+          <declname>frequency0</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>qualityFactor</declname>
+          <defval>1</defval>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>xInit</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="46" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.cpp" bodystart="64" bodyend="73"/>
+        <references refid="struct_filter_two_pole_1abda0e3d8797b98981b5827814b56b329" compoundref="_filter_two_pole_8h" startline="42">IsHighpass</references>
+        <references refid="struct_filter_two_pole_1a0cb5f7e1f22358a3b80ba1955958082e" compoundref="_filter_two_pole_8h" startline="44">LastTimeUS</references>
+        <references refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" compoundref="_filter_two_pole_8cpp" startline="82" endline="84">setFrequency0</references>
+        <references refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" compoundref="_filter_two_pole_8cpp" startline="75" endline="80">setQ</references>
+        <references refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" compoundref="_filter_two_pole_8h" startline="35">Vprev</references>
+        <references refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" compoundref="_filter_two_pole_8h" startline="34">X</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterTwoPole::setQ</definition>
+        <argsstring>(float qualityFactor)</argsstring>
+        <name>setQ</name>
+        <param>
+          <type>float</type>
+          <declname>qualityFactor</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="48" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.cpp" bodystart="75" bodyend="80"/>
+        <references refid="struct_filter_two_pole_1af42fb47a6163a710768a4ab4c6551a08" compoundref="_filter_two_pole_8h" startline="39">Q</references>
+        <referencedby refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" compoundref="_filter_two_pole_8cpp" startline="64" endline="73">FilterTwoPole</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a65e7ce2eaa6b3c5a79c05b47a00466ad" compoundref="_filter_two_pole_8cpp" startline="86" endline="118">setAsFilter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterTwoPole::setFrequency0</definition>
+        <argsstring>(float f)</argsstring>
+        <name>setFrequency0</name>
+        <param>
+          <type>float</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="50" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.cpp" bodystart="82" bodyend="84"/>
+        <references refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" compoundref="_filter_two_pole_8h" startline="40">W0</references>
+        <referencedby refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" compoundref="_filter_two_pole_8cpp" startline="64" endline="73">FilterTwoPole</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a65e7ce2eaa6b3c5a79c05b47a00466ad" compoundref="_filter_two_pole_8cpp" startline="86" endline="118">setAsFilter</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_two_pole_1a65e7ce2eaa6b3c5a79c05b47a00466ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterTwoPole::setAsFilter</definition>
+        <argsstring>(OSCILLATOR_TYPE ft, float frequency3db, float initialValue=0)</argsstring>
+        <name>setAsFilter</name>
+        <param>
+          <type><ref refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448c" kindref="member">OSCILLATOR_TYPE</ref></type>
+          <declname>ft</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>frequency3db</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>initialValue</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="52" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.cpp" bodystart="86" bodyend="118"/>
+        <references refid="struct_filter_two_pole_1abda0e3d8797b98981b5827814b56b329" compoundref="_filter_two_pole_8h" startline="42">IsHighpass</references>
+        <references refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448ca43daaf3ba6e38f8072e1b1b2708eef2d" compoundref="_filter_two_pole_8h" startline="7">LOWPASS_BESSEL</references>
+        <references refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448cad3e595a2383e6f56842d028c5e852838" compoundref="_filter_two_pole_8h" startline="9">LOWPASS_BUTTERWORTH</references>
+        <references refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" compoundref="_filter_two_pole_8cpp" startline="82" endline="84">setFrequency0</references>
+        <references refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" compoundref="_filter_two_pole_8cpp" startline="75" endline="80">setQ</references>
+        <references refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" compoundref="_filter_two_pole_8h" startline="34">X</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FilterTwoPole::input</definition>
+        <argsstring>(float drive=0)</argsstring>
+        <name>input</name>
+        <param>
+          <type>float</type>
+          <declname>drive</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="54" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.cpp" bodystart="120" bodyend="148"/>
+        <references refid="struct_filter_two_pole_1afeb31882d0e8506a82f4b8cbd5745488" compoundref="_filter_two_pole_8h" startline="37">Fprev</references>
+        <references refid="struct_filter_two_pole_1a0cb5f7e1f22358a3b80ba1955958082e" compoundref="_filter_two_pole_8h" startline="44">LastTimeUS</references>
+        <references refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" compoundref="_time_8cpp" startline="250" endline="272">now</references>
+        <references refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" compoundref="_filter_two_pole_8cpp" startline="150" endline="155">output</references>
+        <references refid="struct_filter_two_pole_1af42fb47a6163a710768a4ab4c6551a08" compoundref="_filter_two_pole_8h" startline="39">Q</references>
+        <references refid="struct_filter_two_pole_1a1cf9be9b3615421ad0d4a985f29b223d" compoundref="_filter_two_pole_8h" startline="36">Vavg</references>
+        <references refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" compoundref="_filter_two_pole_8h" startline="35">Vprev</references>
+        <references refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" compoundref="_filter_two_pole_8h" startline="40">W0</references>
+        <references refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" compoundref="_filter_two_pole_8h" startline="34">X</references>
+        <referencedby refid="struct_filter_two_pole_1a9d600c9c4c07239f34740f07a1487c2a" compoundref="_filter_two_pole_8cpp" startline="180" endline="208">test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FilterTwoPole::output</definition>
+        <argsstring>()</argsstring>
+        <name>output</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="56" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.cpp" bodystart="150" bodyend="155"/>
+        <references refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" compoundref="_filter_two_pole_8h" startline="34">X</references>
+        <referencedby refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" compoundref="_filter_two_pole_8cpp" startline="120" endline="148">input</referencedby>
+        <referencedby refid="struct_filter_two_pole_1a9d600c9c4c07239f34740f07a1487c2a" compoundref="_filter_two_pole_8cpp" startline="180" endline="208">test</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_two_pole_1a3eca794cde885b64dd1ff9236b3e4368" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float FilterTwoPole::getMaxAmp</definition>
+        <argsstring>()</argsstring>
+        <name>getMaxAmp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="59" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.cpp" bodystart="158" bodyend="172"/>
+        <references refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" compoundref="_filter_two_pole_8h" startline="35">Vprev</references>
+        <references refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" compoundref="_filter_two_pole_8h" startline="40">W0</references>
+        <references refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" compoundref="_filter_two_pole_8h" startline="34">X</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_two_pole_1ac86c21f0dcef76c06fe1102fb7642f2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterTwoPole::print</definition>
+        <argsstring>()</argsstring>
+        <name>print</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="61" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.cpp" bodystart="174" bodyend="178"/>
+        <references refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" compoundref="_filter_two_pole_8h" startline="35">Vprev</references>
+        <references refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" compoundref="_filter_two_pole_8h" startline="34">X</references>
+      </memberdef>
+      <memberdef kind="function" id="struct_filter_two_pole_1a9d600c9c4c07239f34740f07a1487c2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void FilterTwoPole::test</definition>
+        <argsstring>()</argsstring>
+        <name>test</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="63" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.cpp" bodystart="180" bodyend="208"/>
+        <references refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" compoundref="_filter_two_pole_8cpp" startline="120" endline="148">input</references>
+        <references refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" compoundref="_time_8cpp" startline="250" endline="272">now</references>
+        <references refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" compoundref="_filter_two_pole_8cpp" startline="150" endline="155">output</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Filters/FilterTwoPole.h" line="31" column="1" bodyfile="Weather_Balloon/library/Filters/FilterTwoPole.h" bodystart="31" bodyend="65"/>
+    <listofallmembers>
+      <member refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>FilterTwoPole</name></member>
+      <member refid="struct_filter_two_pole_1afeb31882d0e8506a82f4b8cbd5745488" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>Fprev</name></member>
+      <member refid="struct_filter_two_pole_1a3eca794cde885b64dd1ff9236b3e4368" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>getMaxAmp</name></member>
+      <member refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>input</name></member>
+      <member refid="struct_filter_two_pole_1abda0e3d8797b98981b5827814b56b329" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>IsHighpass</name></member>
+      <member refid="struct_filter_two_pole_1a0cb5f7e1f22358a3b80ba1955958082e" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>LastTimeUS</name></member>
+      <member refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>output</name></member>
+      <member refid="struct_filter_two_pole_1ac86c21f0dcef76c06fe1102fb7642f2d" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>print</name></member>
+      <member refid="struct_filter_two_pole_1af42fb47a6163a710768a4ab4c6551a08" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>Q</name></member>
+      <member refid="struct_filter_two_pole_1a65e7ce2eaa6b3c5a79c05b47a00466ad" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>setAsFilter</name></member>
+      <member refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>setFrequency0</name></member>
+      <member refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>setQ</name></member>
+      <member refid="struct_filter_two_pole_1a9d600c9c4c07239f34740f07a1487c2a" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>test</name></member>
+      <member refid="struct_filter_two_pole_1a1cf9be9b3615421ad0d4a985f29b223d" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>Vavg</name></member>
+      <member refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>Vprev</name></member>
+      <member refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>W0</name></member>
+      <member refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" prot="public" virt="non-virtual"><scope>FilterTwoPole</scope><name>X</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

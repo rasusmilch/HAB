@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_SparkFun_LSM9DS1_README" kind="page">
+    <compoundname>md_Weather_Balloon_library_SparkFun_LSM9DS1_README</compoundname>
+    <title>SparkFun LSM9DS1 Arduino Library</title>
+    <detaileddescription>
+<para><ulink url="https://www.sparkfun.com/products/13284"></ulink></para><para><emphasis><ulink url="https://www.sparkfun.com/products/13284">LSM9DS1 Breakout Board (SEN-13284)</ulink></emphasis></para><para>This is a breakout board for ST Micro&apos;s <ref refid="class_l_s_m9_d_s1" kindref="compound">LSM9DS1</ref> <ndash/> a 3D accelerometer, gyroscope, and magnetometer.</para><para><heading level="2">Repository Contents </heading>
+</para><para><itemizedlist>
+<listitem><para>**/examples** - Example sketches for the library (.ino). Run these from the Arduino IDE.</para></listitem><listitem><para>**/extras** - <ref refid="class_l_s_m9_d_s1" kindref="compound">LSM9DS1</ref> documentation.</para></listitem><listitem><para>**/src** - Source files for the library (.cpp, .h).</para></listitem><listitem><para><bold>keywords.txt</bold> - Keywords from this library that will be highlighted in the Arduino IDE.</para></listitem><listitem><para><bold>library.properties</bold> - General library properties for the Arduino package manager.</para></listitem></itemizedlist>
+</para><para><heading level="2">Documentation </heading>
+</para><para><itemizedlist>
+<listitem><para><bold><ulink url="https://learn.sparkfun.com/tutorials/installing-an-arduino-library">Installing an Arduino Library Guide</ulink></bold> - Basic information on how to install an Arduino library.</para></listitem><listitem><para><bold><ulink url="https://github.com/sparkfun/LSM9DS1_Breakout">Product Repository</ulink></bold> - Main repository (including hardware files) for the <ref refid="class_l_s_m9_d_s1" kindref="compound">LSM9DS1</ref> Breakout.</para></listitem><listitem><para><bold><ulink url="https://learn.sparkfun.com/tutorials/lsm9ds1-breakout-hookup-guide">LSM9DS1 Breakout Hookup Guide</ulink></bold> - Basic hookup guide for the <ref refid="class_l_s_m9_d_s1" kindref="compound">LSM9DS1</ref> Breakout.</para></listitem></itemizedlist>
+</para><para><heading level="2">Products that use this Library </heading>
+</para><para><itemizedlist>
+<listitem><para><ulink url="https://www.sparkfun.com/products/13284">LSM9DS1 Breakout Board (SEN-13284)</ulink>- <ref refid="class_l_s_m9_d_s1" kindref="compound">LSM9DS1</ref> Breakout board.</para></listitem></itemizedlist>
+</para><para><heading level="2">Version History </heading>
+</para><para><itemizedlist>
+<listitem><para><ulink url="https://github.com/sparkfun/SparkFun_LSM9DS1_Arduino_Library/releases/tag/V_1.0.0">V 1.0.0</ulink> - Initial release</para></listitem></itemizedlist>
+</para><para><heading level="2">License Information </heading>
+</para><para>This product is _**open source**_!</para><para>The <bold>code</bold> is beerware; if you see me (or any other SparkFun employee) at the local, and you&apos;ve found our code helpful, please buy us a round!</para><para>Please use, reuse, and modify these files as you see fit. Please maintain attribution to SparkFun Electronics and release anything derivative under the same license.</para><para>Distributed as-is; no warranty is given.</para><para><itemizedlist>
+<listitem><para>Your friends at SparkFun. </para></listitem></itemizedlist>
+</para>    </detaileddescription>
+  </compounddef>
+</doxygen>

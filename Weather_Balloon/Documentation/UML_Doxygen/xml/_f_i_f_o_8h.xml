@@ -1,0 +1,420 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_f_i_f_o_8h" kind="file" language="C++">
+    <compoundname>FIFO.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes local="no">util/atomic.h</includes>
+    <includedby refid="_a_f_s_k_8h" local="yes">Weather_Balloon/library/LibAPRS/AFSK.h</includedby>
+    <includedby refid="_lib_a_p_r_s_8h" local="yes">Weather_Balloon/library/LibAPRS/LibAPRS.h</includedby>
+    <incdepgraph>
+      <node id="1090">
+        <label>Weather_Balloon/library/LibAPRS/FIFO.h</label>
+        <link refid="FIFO.h"/>
+        <childnode refid="1091" relation="include">
+        </childnode>
+        <childnode refid="1092" relation="include">
+        </childnode>
+      </node>
+      <node id="1091">
+        <label>stddef.h</label>
+      </node>
+      <node id="1092">
+        <label>util/atomic.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1095">
+        <label>Weather_Balloon/library/LibAPRS/AFSK.cpp</label>
+        <link refid="_a_f_s_k_8cpp"/>
+      </node>
+      <node id="1093">
+        <label>Weather_Balloon/library/LibAPRS/FIFO.h</label>
+        <link refid="FIFO.h"/>
+        <childnode refid="1094" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1094">
+        <label>Weather_Balloon/library/LibAPRS/AFSK.h</label>
+        <link refid="_a_f_s_k_8h"/>
+        <childnode refid="1095" relation="include">
+        </childnode>
+        <childnode refid="1096" relation="include">
+        </childnode>
+        <childnode refid="1097" relation="include">
+        </childnode>
+        <childnode refid="1098" relation="include">
+        </childnode>
+      </node>
+      <node id="1098">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.h</label>
+        <link refid="_lib_a_p_r_s_8h"/>
+      </node>
+      <node id="1096">
+        <label>Weather_Balloon/library/LibAPRS/AX25.cpp</label>
+        <link refid="_a_x25_8cpp"/>
+      </node>
+      <node id="1097">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.cpp</label>
+        <link refid="_lib_a_p_r_s_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_f_i_f_o_buffer" prot="public">FIFOBuffer</innerclass>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_f_i_f_o_8h_1ab3a2d313ac9252a9ce492b50e6f1e9e2" prot="public" static="no">
+        <type>struct <ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref></type>
+        <definition>typedef struct FIFOBuffer  FIFOBuffer</definition>
+        <argsstring></argsstring>
+        <name>FIFOBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="13" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_f_i_f_o_8h_1a74dc98c02cf744306222be8de0b4665e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool fifo_isempty</definition>
+        <argsstring>(const FIFOBuffer *f)</argsstring>
+        <name>fifo_isempty</name>
+        <param>
+          <type>const <ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="15" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="15" bodyend="17"/>
+        <references refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" compoundref="_f_i_f_o_8h" startline="11">FIFOBuffer::head</references>
+        <references refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" compoundref="_f_i_f_o_8h" startline="12">FIFOBuffer::tail</references>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1aaa89b948af7949dff7c34fd6142f9e0a" compoundref="_f_i_f_o_8h" startline="46" endline="52">fifo_isempty_locked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1ab4d69b9b4cf6ace05b4a3c2fddb0b7fe" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool fifo_isfull</definition>
+        <argsstring>(const FIFOBuffer *f)</argsstring>
+        <name>fifo_isfull</name>
+        <param>
+          <type>const <ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="19" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="19" bodyend="21"/>
+        <references refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" compoundref="_f_i_f_o_8h" startline="11">FIFOBuffer::head</references>
+        <references refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" compoundref="_f_i_f_o_8h" startline="9">FIFOBuffer::begin</references>
+        <references refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" compoundref="_f_i_f_o_8h" startline="12">FIFOBuffer::tail</references>
+        <references refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" compoundref="_f_i_f_o_8h" startline="10">FIFOBuffer::end</references>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1aa11a35c25acb9584a1d452227a70f63d" compoundref="_f_i_f_o_8h" startline="54" endline="60">fifo_isfull_locked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1af58b59a5f3814ca6c0415a66797ab9f7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fifo_push</definition>
+        <argsstring>(FIFOBuffer *f, unsigned char c)</argsstring>
+        <name>fifo_push</name>
+        <param>
+          <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="23" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="23" bodyend="31"/>
+        <references refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" compoundref="_f_i_f_o_8h" startline="12">FIFOBuffer::tail</references>
+        <references refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" compoundref="_f_i_f_o_8h" startline="10">FIFOBuffer::end</references>
+        <references refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" compoundref="_f_i_f_o_8h" startline="9">FIFOBuffer::begin</references>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1af5fb2815bc19265354c00c25a4dc8994" compoundref="_f_i_f_o_8h" startline="62" endline="66">fifo_push_locked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1a540ee60aeab738e6e05dd148f5def1a3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char fifo_pop</definition>
+        <argsstring>(FIFOBuffer *f)</argsstring>
+        <name>fifo_pop</name>
+        <param>
+          <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="33" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="33" bodyend="40"/>
+        <references refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" compoundref="_f_i_f_o_8h" startline="11">FIFOBuffer::head</references>
+        <references refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" compoundref="_f_i_f_o_8h" startline="10">FIFOBuffer::end</references>
+        <references refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" compoundref="_f_i_f_o_8h" startline="9">FIFOBuffer::begin</references>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+        <referencedby refid="_f_i_f_o_8h_1a2f05edf7653b62251dd66c7ae7ad1bb7" compoundref="_f_i_f_o_8h" startline="68" endline="74">fifo_pop_locked</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1a8751dcbd047df6062c655c205b81e825" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fifo_flush</definition>
+        <argsstring>(FIFOBuffer *f)</argsstring>
+        <name>fifo_flush</name>
+        <param>
+          <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="42" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="42" bodyend="44"/>
+        <references refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" compoundref="_f_i_f_o_8h" startline="11">FIFOBuffer::head</references>
+        <references refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" compoundref="_f_i_f_o_8h" startline="12">FIFOBuffer::tail</references>
+        <referencedby refid="_a_f_s_k_8h_1adb7d23f979900b693df4f80b24e3eca1" compoundref="_a_f_s_k_8cpp" startline="109" endline="115">AFSK_transmit</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1aaa89b948af7949dff7c34fd6142f9e0a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool fifo_isempty_locked</definition>
+        <argsstring>(const FIFOBuffer *f)</argsstring>
+        <name>fifo_isempty_locked</name>
+        <param>
+          <type>const <ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="46" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="46" bodyend="52"/>
+        <references refid="_f_i_f_o_8h_1a74dc98c02cf744306222be8de0b4665e" compoundref="_f_i_f_o_8h" startline="15" endline="17">fifo_isempty</references>
+        <referencedby refid="_a_f_s_k_8h_1a52e815cce13ae490f2fed9988b75c16c" compoundref="_a_f_s_k_8cpp" startline="101" endline="107">afsk_getchar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1aa11a35c25acb9584a1d452227a70f63d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool fifo_isfull_locked</definition>
+        <argsstring>(const FIFOBuffer *f)</argsstring>
+        <name>fifo_isfull_locked</name>
+        <param>
+          <type>const <ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="54" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="54" bodyend="60"/>
+        <references refid="_f_i_f_o_8h_1ab4d69b9b4cf6ace05b4a3c2fddb0b7fe" compoundref="_f_i_f_o_8h" startline="19" endline="21">fifo_isfull</references>
+        <referencedby refid="_a_f_s_k_8h_1a68893c6a77f5945c30a7528e9841e5f3" compoundref="_a_f_s_k_8cpp" startline="95" endline="99">afsk_putchar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1af5fb2815bc19265354c00c25a4dc8994" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fifo_push_locked</definition>
+        <argsstring>(FIFOBuffer *f, unsigned char c)</argsstring>
+        <name>fifo_push_locked</name>
+        <param>
+          <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="62" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="62" bodyend="66"/>
+        <references refid="_f_i_f_o_8h_1af58b59a5f3814ca6c0415a66797ab9f7" compoundref="_f_i_f_o_8h" startline="23" endline="31">fifo_push</references>
+        <referencedby refid="_a_f_s_k_8h_1a68893c6a77f5945c30a7528e9841e5f3" compoundref="_a_f_s_k_8cpp" startline="95" endline="99">afsk_putchar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1a2f05edf7653b62251dd66c7ae7ad1bb7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char fifo_pop_locked</definition>
+        <argsstring>(FIFOBuffer *f)</argsstring>
+        <name>fifo_pop_locked</name>
+        <param>
+          <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="68" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="68" bodyend="74"/>
+        <references refid="_f_i_f_o_8h_1a540ee60aeab738e6e05dd148f5def1a3" compoundref="_f_i_f_o_8h" startline="33" endline="40">fifo_pop</references>
+        <referencedby refid="_a_f_s_k_8h_1a52e815cce13ae490f2fed9988b75c16c" compoundref="_a_f_s_k_8cpp" startline="101" endline="107">afsk_getchar</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1ae09eab69a9cb5c4d330aa248db01b5af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void fifo_init</definition>
+        <argsstring>(FIFOBuffer *f, unsigned char *buffer, size_t size)</argsstring>
+        <name>fifo_init</name>
+        <param>
+          <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="76" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="76" bodyend="79"/>
+        <references refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" compoundref="_f_i_f_o_8h" startline="11">FIFOBuffer::head</references>
+        <references refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" compoundref="_f_i_f_o_8h" startline="12">FIFOBuffer::tail</references>
+        <references refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" compoundref="_f_i_f_o_8h" startline="9">FIFOBuffer::begin</references>
+        <references refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" compoundref="_f_i_f_o_8h" startline="10">FIFOBuffer::end</references>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_f_i_f_o_8h_1a1e22de9de6255d54f759912ba4c09b78" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t fifo_len</definition>
+        <argsstring>(FIFOBuffer *f)</argsstring>
+        <name>fifo_len</name>
+        <param>
+          <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref> *</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/FIFO.h" line="81" column="1" bodyfile="Weather_Balloon/library/LibAPRS/FIFO.h" bodystart="81" bodyend="83"/>
+        <references refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" compoundref="_f_i_f_o_8h" startline="10">FIFOBuffer::end</references>
+        <references refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" compoundref="_f_i_f_o_8h" startline="9">FIFOBuffer::begin</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>UTIL_FIFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>UTIL_FIFO_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stddef.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;util/atomic.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="struct_f_i_f_o_buffer" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref></highlight></codeline>
+<codeline lineno="8"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="9" refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" kindref="member">begin</ref>;</highlight></codeline>
+<codeline lineno="10" refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<ref refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" kindref="member">end</ref>;</highlight></codeline>
+<codeline lineno="11" refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" kindref="member">head</ref>;</highlight></codeline>
+<codeline lineno="12" refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*<sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}<sp/><ref refid="_f_i_f_o_8h_1ab3a2d313ac9252a9ce492b50e6f1e9e2" kindref="member">FIFOBuffer</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15" refid="_f_i_f_o_8h_1a74dc98c02cf744306222be8de0b4665e" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1a74dc98c02cf744306222be8de0b4665e" kindref="member">fifo_isempty</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f)<sp/>{</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" kindref="member">head</ref><sp/>==<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref>;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_f_i_f_o_8h_1ab4d69b9b4cf6ace05b4a3c2fddb0b7fe" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1ab4d69b9b4cf6ace05b4a3c2fddb0b7fe" kindref="member">fifo_isfull</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f)<sp/>{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((f-&gt;<ref refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" kindref="member">head</ref><sp/>==<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" kindref="member">begin</ref>)<sp/>&amp;&amp;<sp/>(f-&gt;<ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref><sp/>==<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" kindref="member">end</ref>))<sp/>||<sp/>(f-&gt;<ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref><sp/>==<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" kindref="member">head</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="_f_i_f_o_8h_1af58b59a5f3814ca6c0415a66797ab9f7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1af58b59a5f3814ca6c0415a66797ab9f7" kindref="member">fifo_push</ref>(<ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>*(f-&gt;<ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref>)<sp/>=<sp/>c;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(f-&gt;<ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref><sp/>==<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" kindref="member">end</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref><sp/>=<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" kindref="member">begin</ref>;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref>++;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_f_i_f_o_8h_1a540ee60aeab738e6e05dd148f5def1a3" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1a540ee60aeab738e6e05dd148f5def1a3" kindref="member">fifo_pop</ref>(<ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f)<sp/>{</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(f-&gt;<ref refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" kindref="member">head</ref><sp/>==<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" kindref="member">end</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" kindref="member">head</ref><sp/>=<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" kindref="member">begin</ref>;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(f-&gt;<ref refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" kindref="member">end</ref>);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(f-&gt;<ref refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" kindref="member">head</ref>++);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_f_i_f_o_8h_1a8751dcbd047df6062c655c205b81e825" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1a8751dcbd047df6062c655c205b81e825" kindref="member">fifo_flush</ref>(<ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f)<sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" kindref="member">head</ref><sp/>=<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_f_i_f_o_8h_1aaa89b948af7949dff7c34fd6142f9e0a" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1aaa89b948af7949dff7c34fd6142f9e0a" kindref="member">fifo_isempty_locked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f)<sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>ATOMIC_BLOCK(ATOMIC_RESTORESTATE)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/><ref refid="_f_i_f_o_8h_1a74dc98c02cf744306222be8de0b4665e" kindref="member">fifo_isempty</ref>(f);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_f_i_f_o_8h_1aa11a35c25acb9584a1d452227a70f63d" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1aa11a35c25acb9584a1d452227a70f63d" kindref="member">fifo_isfull_locked</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f)<sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>ATOMIC_BLOCK(ATOMIC_RESTORESTATE)<sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>result<sp/>=<sp/><ref refid="_f_i_f_o_8h_1ab4d69b9b4cf6ace05b4a3c2fddb0b7fe" kindref="member">fifo_isfull</ref>(f);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_f_i_f_o_8h_1af5fb2815bc19265354c00c25a4dc8994" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1af5fb2815bc19265354c00c25a4dc8994" kindref="member">fifo_push_locked</ref>(<ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c)<sp/>{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>ATOMIC_BLOCK(ATOMIC_RESTORESTATE)<sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_f_i_f_o_8h_1af58b59a5f3814ca6c0415a66797ab9f7" kindref="member">fifo_push</ref>(f,<sp/>c);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68" refid="_f_i_f_o_8h_1a2f05edf7653b62251dd66c7ae7ad1bb7" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1a2f05edf7653b62251dd66c7ae7ad1bb7" kindref="member">fifo_pop_locked</ref>(<ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f)<sp/>{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>ATOMIC_BLOCK(ATOMIC_RESTORESTATE)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>c<sp/>=<sp/><ref refid="_f_i_f_o_8h_1a540ee60aeab738e6e05dd148f5def1a3" kindref="member">fifo_pop</ref>(f);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>c;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="_f_i_f_o_8h_1ae09eab69a9cb5c4d330aa248db01b5af" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1ae09eab69a9cb5c4d330aa248db01b5af" kindref="member">fifo_init</ref>(<ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a5c28bb45789016ae0dcf355453ebf116" kindref="member">head</ref><sp/>=<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a47d3fe1e057e44a108ea92b59b67e71a" kindref="member">tail</ref><sp/>=<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" kindref="member">begin</ref><sp/>=<sp/>buffer;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" kindref="member">end</ref><sp/>=<sp/>buffer<sp/>+<sp/>size<sp/>-1;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81" refid="_f_i_f_o_8h_1a1e22de9de6255d54f759912ba4c09b78" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="_f_i_f_o_8h_1a1e22de9de6255d54f759912ba4c09b78" kindref="member">fifo_len</ref>(<ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/>*f)<sp/>{</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a1e404b7d86d0e1c46008cf0f71981b37" kindref="member">end</ref><sp/>-<sp/>f-&gt;<ref refid="struct_f_i_f_o_buffer_1a88e585d52d3bce5764d78ddd25d6b053" kindref="member">begin</ref>;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/FIFO.h"/>
+  </compounddef>
+</doxygen>

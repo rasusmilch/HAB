@@ -1,0 +1,401 @@
+\hypertarget{struct_filter_two_pole}{}\section{Filter\+Two\+Pole Struct Reference}
+\label{struct_filter_two_pole}\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+
+
+{\ttfamily \#include $<$Filter\+Two\+Pole.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_filter_two_pole_a211ce9be7fd6863d5cf6cc4b6bd7b8d9}{Filter\+Two\+Pole} (float frequency0=1, float quality\+Factor=1, float x\+Init=0)
+\item 
+void \hyperlink{struct_filter_two_pole_ad74accd8618604291a9153ccaba856a6}{setQ} (float quality\+Factor)
+\item 
+void \hyperlink{struct_filter_two_pole_ab50ffd53b3c0d563c245dc728ae23973}{set\+Frequency0} (float f)
+\item 
+void \hyperlink{struct_filter_two_pole_a65e7ce2eaa6b3c5a79c05b47a00466ad}{set\+As\+Filter} (\hyperlink{_filter_two_pole_8h_a4a3542ab8ed87461cd4afffaaa23448c}{O\+S\+C\+I\+L\+L\+A\+T\+O\+R\+\_\+\+T\+Y\+PE} ft, float frequency3db, float initial\+Value=0)
+\item 
+float \hyperlink{struct_filter_two_pole_a77a802a3767a4d55290fb581a557f2ee}{input} (float drive=0)
+\item 
+float \hyperlink{struct_filter_two_pole_a55a8b2160b02117d9c054161eeee0452}{output} ()
+\item 
+float \hyperlink{struct_filter_two_pole_a3eca794cde885b64dd1ff9236b3e4368}{get\+Max\+Amp} ()
+\item 
+void \hyperlink{struct_filter_two_pole_ac86c21f0dcef76c06fe1102fb7642f2d}{print} ()
+\item 
+void \hyperlink{struct_filter_two_pole_a9d600c9c4c07239f34740f07a1487c2a}{test} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+float \hyperlink{struct_filter_two_pole_ac5e4eba07238dc7050e0a6eb99dc42ce}{X}
+\item 
+float \hyperlink{struct_filter_two_pole_a2d233c81ce30dad4381b07e5b3f44e12}{Vprev}
+\item 
+float \hyperlink{struct_filter_two_pole_a1cf9be9b3615421ad0d4a985f29b223d}{Vavg}
+\item 
+float \hyperlink{struct_filter_two_pole_afeb31882d0e8506a82f4b8cbd5745488}{Fprev}
+\item 
+float \hyperlink{struct_filter_two_pole_af42fb47a6163a710768a4ab4c6551a08}{Q}
+\item 
+float \hyperlink{struct_filter_two_pole_a75db29bd8a0c047b02c0441dea3e8212}{W0}
+\item 
+bool \hyperlink{struct_filter_two_pole_abda0e3d8797b98981b5827814b56b329}{Is\+Highpass}
+\item 
+long \hyperlink{struct_filter_two_pole_a0cb5f7e1f22358a3b80ba1955958082e}{Last\+Time\+US}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 31 of file Filter\+Two\+Pole.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{Filter\+Two\+Pole(float frequency0=1, float quality\+Factor=1, float x\+Init=0)}{FilterTwoPole(float frequency0=1, float qualityFactor=1, float xInit=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Filter\+Two\+Pole\+::\+Filter\+Two\+Pole (
+\begin{DoxyParamCaption}
+\item[{float}]{frequency0 = {\ttfamily 1}, }
+\item[{float}]{quality\+Factor = {\ttfamily 1}, }
+\item[{float}]{x\+Init = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_two_pole_a211ce9be7fd6863d5cf6cc4b6bd7b8d9}{}\label{struct_filter_two_pole_a211ce9be7fd6863d5cf6cc4b6bd7b8d9}
+
+
+Definition at line 64 of file Filter\+Two\+Pole.\+cpp.
+
+
+
+References Is\+Highpass, Last\+Time\+US, set\+Frequency0(), set\+Q(), Vprev, and X.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_two_pole_a211ce9be7fd6863d5cf6cc4b6bd7b8d9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!get\+Max\+Amp@{get\+Max\+Amp}}
+\index{get\+Max\+Amp@{get\+Max\+Amp}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{get\+Max\+Amp()}{getMaxAmp()}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+Two\+Pole\+::get\+Max\+Amp (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_two_pole_a3eca794cde885b64dd1ff9236b3e4368}{}\label{struct_filter_two_pole_a3eca794cde885b64dd1ff9236b3e4368}
+
+
+Definition at line 158 of file Filter\+Two\+Pole.\+cpp.
+
+
+
+References Vprev, W0, and X.
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!input@{input}}
+\index{input@{input}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{input(float drive=0)}{input(float drive=0)}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+Two\+Pole\+::input (
+\begin{DoxyParamCaption}
+\item[{float}]{drive = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_two_pole_a77a802a3767a4d55290fb581a557f2ee}{}\label{struct_filter_two_pole_a77a802a3767a4d55290fb581a557f2ee}
+
+
+Definition at line 120 of file Filter\+Two\+Pole.\+cpp.
+
+
+
+References Fprev, Last\+Time\+US, now(), output(), Q, Vavg, Vprev, W0, and X.
+
+
+
+Referenced by test().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_two_pole_a77a802a3767a4d55290fb581a557f2ee_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=308pt]{struct_filter_two_pole_a77a802a3767a4d55290fb581a557f2ee_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!output@{output}}
+\index{output@{output}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{output()}{output()}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+Two\+Pole\+::output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_two_pole_a55a8b2160b02117d9c054161eeee0452}{}\label{struct_filter_two_pole_a55a8b2160b02117d9c054161eeee0452}
+
+
+Definition at line 150 of file Filter\+Two\+Pole.\+cpp.
+
+
+
+References X.
+
+
+
+Referenced by input(), and test().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_two_pole_a55a8b2160b02117d9c054161eeee0452_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!print@{print}}
+\index{print@{print}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+Two\+Pole\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_two_pole_ac86c21f0dcef76c06fe1102fb7642f2d}{}\label{struct_filter_two_pole_ac86c21f0dcef76c06fe1102fb7642f2d}
+
+
+Definition at line 174 of file Filter\+Two\+Pole.\+cpp.
+
+
+
+References Vprev, and X.
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!set\+As\+Filter@{set\+As\+Filter}}
+\index{set\+As\+Filter@{set\+As\+Filter}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{set\+As\+Filter(\+O\+S\+C\+I\+L\+L\+A\+T\+O\+R\+\_\+\+T\+Y\+P\+E ft, float frequency3db, float initial\+Value=0)}{setAsFilter(OSCILLATOR\_TYPE ft, float frequency3db, float initialValue=0)}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+Two\+Pole\+::set\+As\+Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+S\+C\+I\+L\+L\+A\+T\+O\+R\+\_\+\+T\+Y\+PE}}]{ft, }
+\item[{float}]{frequency3db, }
+\item[{float}]{initial\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_two_pole_a65e7ce2eaa6b3c5a79c05b47a00466ad}{}\label{struct_filter_two_pole_a65e7ce2eaa6b3c5a79c05b47a00466ad}
+
+
+Definition at line 86 of file Filter\+Two\+Pole.\+cpp.
+
+
+
+References Is\+Highpass, L\+O\+W\+P\+A\+S\+S\+\_\+\+B\+E\+S\+S\+EL, L\+O\+W\+P\+A\+S\+S\+\_\+\+B\+U\+T\+T\+E\+R\+W\+O\+R\+TH, set\+Frequency0(), set\+Q(), and X.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_two_pole_a65e7ce2eaa6b3c5a79c05b47a00466ad_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!set\+Frequency0@{set\+Frequency0}}
+\index{set\+Frequency0@{set\+Frequency0}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{set\+Frequency0(float f)}{setFrequency0(float f)}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+Two\+Pole\+::set\+Frequency0 (
+\begin{DoxyParamCaption}
+\item[{float}]{f}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_two_pole_ab50ffd53b3c0d563c245dc728ae23973}{}\label{struct_filter_two_pole_ab50ffd53b3c0d563c245dc728ae23973}
+
+
+Definition at line 82 of file Filter\+Two\+Pole.\+cpp.
+
+
+
+References W0.
+
+
+
+Referenced by Filter\+Two\+Pole(), and set\+As\+Filter().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_two_pole_ab50ffd53b3c0d563c245dc728ae23973_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!setQ@{setQ}}
+\index{setQ@{setQ}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{set\+Q(float quality\+Factor)}{setQ(float qualityFactor)}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+Two\+Pole\+::setQ (
+\begin{DoxyParamCaption}
+\item[{float}]{quality\+Factor}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_two_pole_ad74accd8618604291a9153ccaba856a6}{}\label{struct_filter_two_pole_ad74accd8618604291a9153ccaba856a6}
+
+
+Definition at line 75 of file Filter\+Two\+Pole.\+cpp.
+
+
+
+References Q.
+
+
+
+Referenced by Filter\+Two\+Pole(), and set\+As\+Filter().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{struct_filter_two_pole_ad74accd8618604291a9153ccaba856a6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!test@{test}}
+\index{test@{test}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{test()}{test()}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+Two\+Pole\+::test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_two_pole_a9d600c9c4c07239f34740f07a1487c2a}{}\label{struct_filter_two_pole_a9d600c9c4c07239f34740f07a1487c2a}
+
+
+Definition at line 180 of file Filter\+Two\+Pole.\+cpp.
+
+
+
+References input(), now(), and output().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_two_pole_a9d600c9c4c07239f34740f07a1487c2a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!Fprev@{Fprev}}
+\index{Fprev@{Fprev}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{Fprev}{Fprev}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+Two\+Pole\+::\+Fprev}\hypertarget{struct_filter_two_pole_afeb31882d0e8506a82f4b8cbd5745488}{}\label{struct_filter_two_pole_afeb31882d0e8506a82f4b8cbd5745488}
+
+
+Definition at line 37 of file Filter\+Two\+Pole.\+h.
+
+
+
+Referenced by input().
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!Is\+Highpass@{Is\+Highpass}}
+\index{Is\+Highpass@{Is\+Highpass}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{Is\+Highpass}{IsHighpass}}]{\setlength{\rightskip}{0pt plus 5cm}bool Filter\+Two\+Pole\+::\+Is\+Highpass}\hypertarget{struct_filter_two_pole_abda0e3d8797b98981b5827814b56b329}{}\label{struct_filter_two_pole_abda0e3d8797b98981b5827814b56b329}
+
+
+Definition at line 42 of file Filter\+Two\+Pole.\+h.
+
+
+
+Referenced by Filter\+Two\+Pole(), and set\+As\+Filter().
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!Last\+Time\+US@{Last\+Time\+US}}
+\index{Last\+Time\+US@{Last\+Time\+US}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{Last\+Time\+US}{LastTimeUS}}]{\setlength{\rightskip}{0pt plus 5cm}long Filter\+Two\+Pole\+::\+Last\+Time\+US}\hypertarget{struct_filter_two_pole_a0cb5f7e1f22358a3b80ba1955958082e}{}\label{struct_filter_two_pole_a0cb5f7e1f22358a3b80ba1955958082e}
+
+
+Definition at line 44 of file Filter\+Two\+Pole.\+h.
+
+
+
+Referenced by Filter\+Two\+Pole(), and input().
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!Q@{Q}}
+\index{Q@{Q}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{Q}{Q}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+Two\+Pole\+::Q}\hypertarget{struct_filter_two_pole_af42fb47a6163a710768a4ab4c6551a08}{}\label{struct_filter_two_pole_af42fb47a6163a710768a4ab4c6551a08}
+
+
+Definition at line 39 of file Filter\+Two\+Pole.\+h.
+
+
+
+Referenced by input(), and set\+Q().
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!Vavg@{Vavg}}
+\index{Vavg@{Vavg}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{Vavg}{Vavg}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+Two\+Pole\+::\+Vavg}\hypertarget{struct_filter_two_pole_a1cf9be9b3615421ad0d4a985f29b223d}{}\label{struct_filter_two_pole_a1cf9be9b3615421ad0d4a985f29b223d}
+
+
+Definition at line 36 of file Filter\+Two\+Pole.\+h.
+
+
+
+Referenced by input().
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!Vprev@{Vprev}}
+\index{Vprev@{Vprev}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{Vprev}{Vprev}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+Two\+Pole\+::\+Vprev}\hypertarget{struct_filter_two_pole_a2d233c81ce30dad4381b07e5b3f44e12}{}\label{struct_filter_two_pole_a2d233c81ce30dad4381b07e5b3f44e12}
+
+
+Definition at line 35 of file Filter\+Two\+Pole.\+h.
+
+
+
+Referenced by Filter\+Two\+Pole(), get\+Max\+Amp(), input(), and print().
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!W0@{W0}}
+\index{W0@{W0}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{W0}{W0}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+Two\+Pole\+::\+W0}\hypertarget{struct_filter_two_pole_a75db29bd8a0c047b02c0441dea3e8212}{}\label{struct_filter_two_pole_a75db29bd8a0c047b02c0441dea3e8212}
+
+
+Definition at line 40 of file Filter\+Two\+Pole.\+h.
+
+
+
+Referenced by get\+Max\+Amp(), input(), and set\+Frequency0().
+
+\index{Filter\+Two\+Pole@{Filter\+Two\+Pole}!X@{X}}
+\index{X@{X}!Filter\+Two\+Pole@{Filter\+Two\+Pole}}
+\subsubsection[{\texorpdfstring{X}{X}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+Two\+Pole\+::X}\hypertarget{struct_filter_two_pole_ac5e4eba07238dc7050e0a6eb99dc42ce}{}\label{struct_filter_two_pole_ac5e4eba07238dc7050e0a6eb99dc42ce}
+
+
+Definition at line 34 of file Filter\+Two\+Pole.\+h.
+
+
+
+Referenced by Filter\+Two\+Pole(), get\+Max\+Amp(), input(), output(), print(), and set\+As\+Filter().
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Filters/\hyperlink{_filter_two_pole_8h}{Filter\+Two\+Pole.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Filters/\hyperlink{_filter_two_pole_8cpp}{Filter\+Two\+Pole.\+cpp}\end{DoxyCompactItemize}

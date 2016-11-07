@@ -1,0 +1,357 @@
+\hypertarget{_f_i_f_o_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\+F\+I\+FO.h File Reference}
+\label{_f_i_f_o_8h}\index{Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\+F\+I\+F\+O.\+h@{Weather\+\_\+\+Balloon/library/\+Lib\+A\+P\+R\+S/\+F\+I\+F\+O.\+h}}
+{\ttfamily \#include $<$stddef.\+h$>$}\\*
+{\ttfamily \#include $<$util/atomic.\+h$>$}\\*
+Include dependency graph for F\+I\+F\+O.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{_f_i_f_o_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_i_f_o_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} \hyperlink{_f_i_f_o_8h_ab3a2d313ac9252a9ce492b50e6f1e9e2}{F\+I\+F\+O\+Buffer}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{_f_i_f_o_8h_a74dc98c02cf744306222be8de0b4665e}{fifo\+\_\+isempty} (const \hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f)
+\item 
+bool \hyperlink{_f_i_f_o_8h_ab4d69b9b4cf6ace05b4a3c2fddb0b7fe}{fifo\+\_\+isfull} (const \hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f)
+\item 
+void \hyperlink{_f_i_f_o_8h_af58b59a5f3814ca6c0415a66797ab9f7}{fifo\+\_\+push} (\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f, unsigned char c)
+\item 
+unsigned char \hyperlink{_f_i_f_o_8h_a540ee60aeab738e6e05dd148f5def1a3}{fifo\+\_\+pop} (\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f)
+\item 
+void \hyperlink{_f_i_f_o_8h_a8751dcbd047df6062c655c205b81e825}{fifo\+\_\+flush} (\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f)
+\item 
+bool \hyperlink{_f_i_f_o_8h_aaa89b948af7949dff7c34fd6142f9e0a}{fifo\+\_\+isempty\+\_\+locked} (const \hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f)
+\item 
+bool \hyperlink{_f_i_f_o_8h_aa11a35c25acb9584a1d452227a70f63d}{fifo\+\_\+isfull\+\_\+locked} (const \hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f)
+\item 
+void \hyperlink{_f_i_f_o_8h_af5fb2815bc19265354c00c25a4dc8994}{fifo\+\_\+push\+\_\+locked} (\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f, unsigned char c)
+\item 
+unsigned char \hyperlink{_f_i_f_o_8h_a2f05edf7653b62251dd66c7ae7ad1bb7}{fifo\+\_\+pop\+\_\+locked} (\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f)
+\item 
+void \hyperlink{_f_i_f_o_8h_ae09eab69a9cb5c4d330aa248db01b5af}{fifo\+\_\+init} (\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f, unsigned char $\ast$buffer, size\+\_\+t size)
+\item 
+size\+\_\+t \hyperlink{_f_i_f_o_8h_a1e22de9de6255d54f759912ba4c09b78}{fifo\+\_\+len} (\hyperlink{struct_f_i_f_o_buffer}{F\+I\+F\+O\+Buffer} $\ast$f)
+\end{DoxyCompactItemize}
+
+
+\subsection{Typedef Documentation}
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!F\+I\+F\+O\+Buffer@{F\+I\+F\+O\+Buffer}}
+\index{F\+I\+F\+O\+Buffer@{F\+I\+F\+O\+Buffer}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{F\+I\+F\+O\+Buffer}{FIFOBuffer}}]{\setlength{\rightskip}{0pt plus 5cm}typedef struct {\bf F\+I\+F\+O\+Buffer}  {\bf F\+I\+F\+O\+Buffer}}\hypertarget{_f_i_f_o_8h_ab3a2d313ac9252a9ce492b50e6f1e9e2}{}\label{_f_i_f_o_8h_ab3a2d313ac9252a9ce492b50e6f1e9e2}
+
+
+\subsection{Function Documentation}
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+flush@{fifo\+\_\+flush}}
+\index{fifo\+\_\+flush@{fifo\+\_\+flush}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+flush(\+F\+I\+F\+O\+Buffer $\ast$f)}{fifo\_flush(FIFOBuffer *f)}}]{\setlength{\rightskip}{0pt plus 5cm}void fifo\+\_\+flush (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+I\+F\+O\+Buffer} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_a8751dcbd047df6062c655c205b81e825}{}\label{_f_i_f_o_8h_a8751dcbd047df6062c655c205b81e825}
+
+
+Definition at line 42 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{_f_i_f_o_8h_a8751dcbd047df6062c655c205b81e825_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+init@{fifo\+\_\+init}}
+\index{fifo\+\_\+init@{fifo\+\_\+init}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+init(\+F\+I\+F\+O\+Buffer $\ast$f, unsigned char $\ast$buffer, size\+\_\+t size)}{fifo\_init(FIFOBuffer *f, unsigned char *buffer, size\_t size)}}]{\setlength{\rightskip}{0pt plus 5cm}void fifo\+\_\+init (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+I\+F\+O\+Buffer} $\ast$}]{f, }
+\item[{unsigned char $\ast$}]{buffer, }
+\item[{size\+\_\+t}]{size}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_ae09eab69a9cb5c4d330aa248db01b5af}{}\label{_f_i_f_o_8h_ae09eab69a9cb5c4d330aa248db01b5af}
+
+
+Definition at line 76 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{_f_i_f_o_8h_ae09eab69a9cb5c4d330aa248db01b5af_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+isempty@{fifo\+\_\+isempty}}
+\index{fifo\+\_\+isempty@{fifo\+\_\+isempty}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+isempty(const F\+I\+F\+O\+Buffer $\ast$f)}{fifo\_isempty(const FIFOBuffer *f)}}]{\setlength{\rightskip}{0pt plus 5cm}bool fifo\+\_\+isempty (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+I\+F\+O\+Buffer} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_a74dc98c02cf744306222be8de0b4665e}{}\label{_f_i_f_o_8h_a74dc98c02cf744306222be8de0b4665e}
+
+
+Definition at line 15 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_i_f_o_8h_a74dc98c02cf744306222be8de0b4665e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+isempty\+\_\+locked@{fifo\+\_\+isempty\+\_\+locked}}
+\index{fifo\+\_\+isempty\+\_\+locked@{fifo\+\_\+isempty\+\_\+locked}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+isempty\+\_\+locked(const F\+I\+F\+O\+Buffer $\ast$f)}{fifo\_isempty\_locked(const FIFOBuffer *f)}}]{\setlength{\rightskip}{0pt plus 5cm}bool fifo\+\_\+isempty\+\_\+locked (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+I\+F\+O\+Buffer} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_aaa89b948af7949dff7c34fd6142f9e0a}{}\label{_f_i_f_o_8h_aaa89b948af7949dff7c34fd6142f9e0a}
+
+
+Definition at line 46 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=284pt]{_f_i_f_o_8h_aaa89b948af7949dff7c34fd6142f9e0a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_i_f_o_8h_aaa89b948af7949dff7c34fd6142f9e0a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+isfull@{fifo\+\_\+isfull}}
+\index{fifo\+\_\+isfull@{fifo\+\_\+isfull}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+isfull(const F\+I\+F\+O\+Buffer $\ast$f)}{fifo\_isfull(const FIFOBuffer *f)}}]{\setlength{\rightskip}{0pt plus 5cm}bool fifo\+\_\+isfull (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+I\+F\+O\+Buffer} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_ab4d69b9b4cf6ace05b4a3c2fddb0b7fe}{}\label{_f_i_f_o_8h_ab4d69b9b4cf6ace05b4a3c2fddb0b7fe}
+
+
+Definition at line 19 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_i_f_o_8h_ab4d69b9b4cf6ace05b4a3c2fddb0b7fe_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+isfull\+\_\+locked@{fifo\+\_\+isfull\+\_\+locked}}
+\index{fifo\+\_\+isfull\+\_\+locked@{fifo\+\_\+isfull\+\_\+locked}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+isfull\+\_\+locked(const F\+I\+F\+O\+Buffer $\ast$f)}{fifo\_isfull\_locked(const FIFOBuffer *f)}}]{\setlength{\rightskip}{0pt plus 5cm}bool fifo\+\_\+isfull\+\_\+locked (
+\begin{DoxyParamCaption}
+\item[{const {\bf F\+I\+F\+O\+Buffer} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_aa11a35c25acb9584a1d452227a70f63d}{}\label{_f_i_f_o_8h_aa11a35c25acb9584a1d452227a70f63d}
+
+
+Definition at line 54 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=260pt]{_f_i_f_o_8h_aa11a35c25acb9584a1d452227a70f63d_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_i_f_o_8h_aa11a35c25acb9584a1d452227a70f63d_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+len@{fifo\+\_\+len}}
+\index{fifo\+\_\+len@{fifo\+\_\+len}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+len(\+F\+I\+F\+O\+Buffer $\ast$f)}{fifo\_len(FIFOBuffer *f)}}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t fifo\+\_\+len (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+I\+F\+O\+Buffer} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_a1e22de9de6255d54f759912ba4c09b78}{}\label{_f_i_f_o_8h_a1e22de9de6255d54f759912ba4c09b78}
+
+
+Definition at line 81 of file F\+I\+F\+O.\+h.
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+pop@{fifo\+\_\+pop}}
+\index{fifo\+\_\+pop@{fifo\+\_\+pop}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+pop(\+F\+I\+F\+O\+Buffer $\ast$f)}{fifo\_pop(FIFOBuffer *f)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char fifo\+\_\+pop (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+I\+F\+O\+Buffer} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_a540ee60aeab738e6e05dd148f5def1a3}{}\label{_f_i_f_o_8h_a540ee60aeab738e6e05dd148f5def1a3}
+
+
+Definition at line 33 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_i_f_o_8h_a540ee60aeab738e6e05dd148f5def1a3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+pop\+\_\+locked@{fifo\+\_\+pop\+\_\+locked}}
+\index{fifo\+\_\+pop\+\_\+locked@{fifo\+\_\+pop\+\_\+locked}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+pop\+\_\+locked(\+F\+I\+F\+O\+Buffer $\ast$f)}{fifo\_pop\_locked(FIFOBuffer *f)}}]{\setlength{\rightskip}{0pt plus 5cm}unsigned char fifo\+\_\+pop\+\_\+locked (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+I\+F\+O\+Buffer} $\ast$}]{f}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_a2f05edf7653b62251dd66c7ae7ad1bb7}{}\label{_f_i_f_o_8h_a2f05edf7653b62251dd66c7ae7ad1bb7}
+
+
+Definition at line 68 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{_f_i_f_o_8h_a2f05edf7653b62251dd66c7ae7ad1bb7_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_i_f_o_8h_a2f05edf7653b62251dd66c7ae7ad1bb7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+push@{fifo\+\_\+push}}
+\index{fifo\+\_\+push@{fifo\+\_\+push}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+push(\+F\+I\+F\+O\+Buffer $\ast$f, unsigned char c)}{fifo\_push(FIFOBuffer *f, unsigned char c)}}]{\setlength{\rightskip}{0pt plus 5cm}void fifo\+\_\+push (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+I\+F\+O\+Buffer} $\ast$}]{f, }
+\item[{unsigned char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_af58b59a5f3814ca6c0415a66797ab9f7}{}\label{_f_i_f_o_8h_af58b59a5f3814ca6c0415a66797ab9f7}
+
+
+Definition at line 23 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_i_f_o_8h_af58b59a5f3814ca6c0415a66797ab9f7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}!fifo\+\_\+push\+\_\+locked@{fifo\+\_\+push\+\_\+locked}}
+\index{fifo\+\_\+push\+\_\+locked@{fifo\+\_\+push\+\_\+locked}!F\+I\+F\+O.\+h@{F\+I\+F\+O.\+h}}
+\subsubsection[{\texorpdfstring{fifo\+\_\+push\+\_\+locked(\+F\+I\+F\+O\+Buffer $\ast$f, unsigned char c)}{fifo\_push\_locked(FIFOBuffer *f, unsigned char c)}}]{\setlength{\rightskip}{0pt plus 5cm}void fifo\+\_\+push\+\_\+locked (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+I\+F\+O\+Buffer} $\ast$}]{f, }
+\item[{unsigned char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{_f_i_f_o_8h_af5fb2815bc19265354c00c25a4dc8994}{}\label{_f_i_f_o_8h_af5fb2815bc19265354c00c25a4dc8994}
+
+
+Definition at line 62 of file F\+I\+F\+O.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{_f_i_f_o_8h_af5fb2815bc19265354c00c25a4dc8994_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_f_i_f_o_8h_af5fb2815bc19265354c00c25a4dc8994_icgraph}
+\end{center}
+\end{figure}
+
+

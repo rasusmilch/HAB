@@ -1,0 +1,1150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_d_s3231" kind="class" language="C++" prot="public">
+    <compoundname>DS3231</compoundname>
+    <includes refid="_d_s3231_8h" local="no">DS3231.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_d_s3231_1a42cb198a26f01c4efc228791faa8899e" prot="private" static="no" mutable="no">
+        <type><ref refid="struct_r_t_c_date_time" kindref="compound">RTCDateTime</ref></type>
+        <definition>RTCDateTime DS3231::t</definition>
+        <argsstring></argsstring>
+        <name>t</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="133" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DS3231::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="93" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="33" bodyend="49"/>
+        <references refid="struct_r_t_c_date_time_1aea80bfd1209e6e459c70ea39bc248407" compoundref="_d_s3231_8h" startline="45">RTCDateTime::day</references>
+        <references refid="struct_r_t_c_date_time_1a3fa952239e8a35b7ec390838ae1a6bd0" compoundref="_d_s3231_8h" startline="49">RTCDateTime::dayOfWeek</references>
+        <references refid="struct_r_t_c_date_time_1aaf23cb6337a6c0cb3bb69ad815f9c1b1" compoundref="_d_s3231_8h" startline="46">RTCDateTime::hour</references>
+        <references refid="struct_r_t_c_date_time_1a2e9c4e2b54185ec5bb7f328732bc1c63" compoundref="_d_s3231_8h" startline="47">RTCDateTime::minute</references>
+        <references refid="struct_r_t_c_date_time_1a434dc70ef64a1e99201f3765607e8afa" compoundref="_d_s3231_8h" startline="44">RTCDateTime::month</references>
+        <references refid="struct_r_t_c_date_time_1acf01c0fbd1d95fe33238674641f40027" compoundref="_d_s3231_8h" startline="48">RTCDateTime::second</references>
+        <references refid="class_d_s3231_1a7a92e389dd214168bb73fcf2d1b88e8c" compoundref="_d_s3231_8cpp" startline="440" endline="463">setBattery</references>
+        <references refid="struct_r_t_c_date_time_1af46df69448c5456b54e9acae7629efa8" compoundref="_d_s3231_8h" startline="50">RTCDateTime::unixtime</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <references refid="struct_r_t_c_date_time_1a265de5469447ed7581fec4d3c0c5814d" compoundref="_d_s3231_8h" startline="43">RTCDateTime::year</references>
+        <referencedby refid="_weather___balloon_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="_weather___balloon_8cpp" startline="1274" endline="1420">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a15eb3576feaa3535415e9b82367c344c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::setDateTime</definition>
+        <argsstring>(uint16_t year, uint8_t month, uint8_t day, uint8_t hour, uint8_t minute, uint8_t second)</argsstring>
+        <name>setDateTime</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>minute</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>second</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="95" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="51" bodyend="86"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a142b529b95a279f6a821b94773b53ffe" compoundref="_d_s3231_8h" startline="32">DS3231_REG_TIME</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+        <referencedby refid="class_d_s3231_1ac8ccbb72f7cfbb27df1558a8896ef236" compoundref="_d_s3231_8cpp" startline="88" endline="138">setDateTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1ac8ccbb72f7cfbb27df1558a8896ef236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::setDateTime</definition>
+        <argsstring>(uint32_t t)</argsstring>
+        <name>setDateTime</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>t</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="96" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="88" bodyend="138"/>
+        <references refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" compoundref="_time_8cpp" startline="106" endline="108">day</references>
+        <references refid="_time_8cpp_1a721ff0d06e8367ee5d2c5cf1a2c40ab5" compoundref="_time_8cpp" startline="49" endline="51">hour</references>
+        <references refid="_time_8cpp_1adf618b3bac7dcfac69d4e1f5a68159b7" compoundref="_time_8cpp" startline="88" endline="90">minute</references>
+        <references refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" compoundref="_time_8cpp" startline="124" endline="126">month</references>
+        <references refid="pgmspace_8h_1a48c60b057902adf805797f183286728d" compoundref="pgmspace_8h" startline="60">pgm_read_byte</references>
+        <references refid="_time_8cpp_1aed5657208944fe098e4e5f3380e0a1f9" compoundref="_time_8cpp" startline="97" endline="99">second</references>
+        <references refid="class_d_s3231_1a15eb3576feaa3535415e9b82367c344c" compoundref="_d_s3231_8cpp" startline="51" endline="86">setDateTime</references>
+        <references refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" compoundref="_time_8cpp" startline="133" endline="135">year</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a95352ab8a40b383e4680e489ec3ee68a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::setDateTime</definition>
+        <argsstring>(const char *date, const char *time)</argsstring>
+        <name>setDateTime</name>
+        <param>
+          <type>const char *</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="97" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="140" bodyend="169"/>
+        <references refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" compoundref="_time_8cpp" startline="106" endline="108">day</references>
+        <references refid="_time_8cpp_1a721ff0d06e8367ee5d2c5cf1a2c40ab5" compoundref="_time_8cpp" startline="49" endline="51">hour</references>
+        <references refid="_time_8cpp_1adf618b3bac7dcfac69d4e1f5a68159b7" compoundref="_time_8cpp" startline="88" endline="90">minute</references>
+        <references refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" compoundref="_time_8cpp" startline="124" endline="126">month</references>
+        <references refid="_time_8cpp_1aed5657208944fe098e4e5f3380e0a1f9" compoundref="_time_8cpp" startline="97" endline="99">second</references>
+        <references refid="class_d_s3231_1a15eb3576feaa3535415e9b82367c344c" compoundref="_d_s3231_8cpp" startline="51" endline="86">setDateTime</references>
+        <references refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" compoundref="_time_8cpp" startline="133" endline="135">year</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_t_c_date_time" kindref="compound">RTCDateTime</ref></type>
+        <definition>RTCDateTime DS3231::getDateTime</definition>
+        <argsstring>(void)</argsstring>
+        <name>getDateTime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="98" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="384" bodyend="421"/>
+        <references refid="struct_r_t_c_date_time_1aea80bfd1209e6e459c70ea39bc248407" compoundref="_d_s3231_8h" startline="45">RTCDateTime::day</references>
+        <references refid="struct_r_t_c_date_time_1a3fa952239e8a35b7ec390838ae1a6bd0" compoundref="_d_s3231_8h" startline="49">RTCDateTime::dayOfWeek</references>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a142b529b95a279f6a821b94773b53ffe" compoundref="_d_s3231_8h" startline="32">DS3231_REG_TIME</references>
+        <references refid="struct_r_t_c_date_time_1aaf23cb6337a6c0cb3bb69ad815f9c1b1" compoundref="_d_s3231_8h" startline="46">RTCDateTime::hour</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="struct_r_t_c_date_time_1a2e9c4e2b54185ec5bb7f328732bc1c63" compoundref="_d_s3231_8h" startline="47">RTCDateTime::minute</references>
+        <references refid="struct_r_t_c_date_time_1a434dc70ef64a1e99201f3765607e8afa" compoundref="_d_s3231_8h" startline="44">RTCDateTime::month</references>
+        <references refid="struct_r_t_c_date_time_1acf01c0fbd1d95fe33238674641f40027" compoundref="_d_s3231_8h" startline="48">RTCDateTime::second</references>
+        <references refid="struct_r_t_c_date_time_1af46df69448c5456b54e9acae7629efa8" compoundref="_d_s3231_8h" startline="50">RTCDateTime::unixtime</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <references refid="struct_r_t_c_date_time_1a265de5469447ed7581fec4d3c0c5814d" compoundref="_d_s3231_8h" startline="43">RTCDateTime::year</references>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1ad5c01a51a34c83a2309694a653b4daf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DS3231::isReady</definition>
+        <argsstring>(void)</argsstring>
+        <name>isReady</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="99" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="423" bodyend="426"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a43521db28f7a704e5f6364e03e73f820" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_d_s3231_8h_1afb80663b1dbdb6c798670ca900ea35e1" kindref="member">DS3231_sqw_t</ref></type>
+        <definition>DS3231_sqw_t DS3231::getOutput</definition>
+        <argsstring>(void)</argsstring>
+        <name>getOutput</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="101" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="489" bodyend="499"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a1eafc57831fe8fc1ce4145911980e0f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::setOutput</definition>
+        <argsstring>(DS3231_sqw_t mode)</argsstring>
+        <name>setOutput</name>
+        <param>
+          <type><ref refid="_d_s3231_8h_1afb80663b1dbdb6c798670ca900ea35e1" kindref="member">DS3231_sqw_t</ref></type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="102" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="477" bodyend="487"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a67d438ac8a42dfdf68454444a3df336f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::enableOutput</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>enableOutput</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="103" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="428" bodyend="438"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a33a730f793ad488fe55362525da2c548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DS3231::isOutput</definition>
+        <argsstring>(void)</argsstring>
+        <name>isOutput</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="104" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="465" bodyend="475"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a615d932043f11f513468d4ab97833fd3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::enable32kHz</definition>
+        <argsstring>(bool enabled)</argsstring>
+        <name>enable32kHz</name>
+        <param>
+          <type>bool</type>
+          <declname>enabled</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="105" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="501" bodyend="511"/>
+        <references refid="_d_s3231_8h_1aeee46891f279544efa92a99e15e8d023" compoundref="_d_s3231_8h" startline="36">DS3231_REG_STATUS</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a5cb71b75ea98cbb7493610d5552bc771" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DS3231::is32kHz</definition>
+        <argsstring>(void)</argsstring>
+        <name>is32kHz</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="106" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="513" bodyend="523"/>
+        <references refid="_d_s3231_8h_1aeee46891f279544efa92a99e15e8d023" compoundref="_d_s3231_8h" startline="36">DS3231_REG_STATUS</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1ad398fd513aae24b219d19574e20da550" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::forceConversion</definition>
+        <argsstring>(void)</argsstring>
+        <name>forceConversion</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="108" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="525" bodyend="536"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a82074e0d3f0a4a646fc14f1afcb80448" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float DS3231::readTemperature</definition>
+        <argsstring>(void)</argsstring>
+        <name>readTemperature</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="109" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="538" bodyend="563"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1aec6b411bbd642c602496ca1143cafbf3" compoundref="_d_s3231_8h" startline="37">DS3231_REG_TEMPERATURE</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a23cea53349c55fba93c706b6e263e574" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::setAlarm1</definition>
+        <argsstring>(uint8_t dydw, uint8_t hour, uint8_t minute, uint8_t second, DS3231_alarm1_t mode, bool armed=true)</argsstring>
+        <name>setAlarm1</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>dydw</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>minute</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>second</declname>
+        </param>
+        <param>
+          <type><ref refid="_d_s3231_8h_1a021549876ea6cc2f35d62387624b95c6" kindref="member">DS3231_alarm1_t</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>armed</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="111" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="638" bodyend="711"/>
+        <references refid="class_d_s3231_1ad8333b85e1bcbf40e471e67ed63cc4bc" compoundref="_d_s3231_8cpp" startline="728" endline="742">armAlarm1</references>
+        <references refid="class_d_s3231_1aad73bcd32141177f36dbf0dc10feb2fd" compoundref="_d_s3231_8cpp" startline="752" endline="760">clearAlarm1</references>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a021549876ea6cc2f35d62387624b95c6ab431ec1e265f28031b3f528af977e510" compoundref="_d_s3231_8h" startline="72">DS3231_EVERY_SECOND</references>
+        <references refid="_d_s3231_8h_1a021549876ea6cc2f35d62387624b95c6a2a6fdadd4780da2c13020690cefaa5c5" compoundref="_d_s3231_8h" startline="76">DS3231_MATCH_DT_H_M_S</references>
+        <references refid="_d_s3231_8h_1a021549876ea6cc2f35d62387624b95c6a16beb03afe9c97d8e16325c3ad01db10" compoundref="_d_s3231_8h" startline="77">DS3231_MATCH_DY_H_M_S</references>
+        <references refid="_d_s3231_8h_1a021549876ea6cc2f35d62387624b95c6aa79cf5a8d792a3841444450ab2e0e7d1" compoundref="_d_s3231_8h" startline="75">DS3231_MATCH_H_M_S</references>
+        <references refid="_d_s3231_8h_1a021549876ea6cc2f35d62387624b95c6a099f764d28aa428457678a5f01848c30" compoundref="_d_s3231_8h" startline="74">DS3231_MATCH_M_S</references>
+        <references refid="_d_s3231_8h_1a021549876ea6cc2f35d62387624b95c6afd4bcd6ea8063a95b8c3bbb073d30c25" compoundref="_d_s3231_8h" startline="73">DS3231_MATCH_S</references>
+        <references refid="_d_s3231_8h_1abd5973ef29f3ed421269321e6826b8ea" compoundref="_d_s3231_8h" startline="33">DS3231_REG_ALARM_1</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a7241d497e56fc0062ad68a9bc31e212a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_t_c_alarm_time" kindref="compound">RTCAlarmTime</ref></type>
+        <definition>RTCAlarmTime DS3231::getAlarm1</definition>
+        <argsstring>(void)</argsstring>
+        <name>getAlarm1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="112" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="565" bodyend="599"/>
+        <references refid="struct_r_t_c_alarm_time_1a16ff7f4abd3d771179c4662c942597aa" compoundref="_d_s3231_8h" startline="55">RTCAlarmTime::day</references>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1abd5973ef29f3ed421269321e6826b8ea" compoundref="_d_s3231_8h" startline="33">DS3231_REG_ALARM_1</references>
+        <references refid="struct_r_t_c_alarm_time_1af80194d88cddcc273b97531f8b799138" compoundref="_d_s3231_8h" startline="56">RTCAlarmTime::hour</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="struct_r_t_c_alarm_time_1ae33cf5cda7523c05a3559485d2d26019" compoundref="_d_s3231_8h" startline="57">RTCAlarmTime::minute</references>
+        <references refid="struct_r_t_c_alarm_time_1a5367af27263fcbab3975c6c88b1be7bf" compoundref="_d_s3231_8h" startline="58">RTCAlarmTime::second</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a20d9f5ec608a5b0a5010ad1a91cf667b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_d_s3231_8h_1a021549876ea6cc2f35d62387624b95c6" kindref="member">DS3231_alarm1_t</ref></type>
+        <definition>DS3231_alarm1_t DS3231::getAlarmType1</definition>
+        <argsstring>(void)</argsstring>
+        <name>getAlarmType1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="113" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="601" bodyend="636"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1abd5973ef29f3ed421269321e6826b8ea" compoundref="_d_s3231_8h" startline="33">DS3231_REG_ALARM_1</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a9e07f99282167c3e799bef2d2d163e17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DS3231::isAlarm1</definition>
+        <argsstring>(bool clear=true)</argsstring>
+        <name>isAlarm1</name>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="114" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="713" bodyend="726"/>
+        <references refid="class_d_s3231_1aad73bcd32141177f36dbf0dc10feb2fd" compoundref="_d_s3231_8cpp" startline="752" endline="760">clearAlarm1</references>
+        <references refid="_d_s3231_8h_1aeee46891f279544efa92a99e15e8d023" compoundref="_d_s3231_8h" startline="36">DS3231_REG_STATUS</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1ad8333b85e1bcbf40e471e67ed63cc4bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::armAlarm1</definition>
+        <argsstring>(bool armed)</argsstring>
+        <name>armAlarm1</name>
+        <param>
+          <type>bool</type>
+          <declname>armed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="115" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="728" bodyend="742"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+        <referencedby refid="class_d_s3231_1a23cea53349c55fba93c706b6e263e574" compoundref="_d_s3231_8cpp" startline="638" endline="711">setAlarm1</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a5654d336dd345f7db3a4867cfe1b6f20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DS3231::isArmed1</definition>
+        <argsstring>(void)</argsstring>
+        <name>isArmed1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="116" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="744" bodyend="750"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1aad73bcd32141177f36dbf0dc10feb2fd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::clearAlarm1</definition>
+        <argsstring>(void)</argsstring>
+        <name>clearAlarm1</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="117" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="752" bodyend="760"/>
+        <references refid="_d_s3231_8h_1aeee46891f279544efa92a99e15e8d023" compoundref="_d_s3231_8h" startline="36">DS3231_REG_STATUS</references>
+        <referencedby refid="class_d_s3231_1a9e07f99282167c3e799bef2d2d163e17" compoundref="_d_s3231_8cpp" startline="713" endline="726">isAlarm1</referencedby>
+        <referencedby refid="class_d_s3231_1a23cea53349c55fba93c706b6e263e574" compoundref="_d_s3231_8cpp" startline="638" endline="711">setAlarm1</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1ad505857c3594da9a4c159f607845364e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::setAlarm2</definition>
+        <argsstring>(uint8_t dydw, uint8_t hour, uint8_t minute, DS3231_alarm2_t mode, bool armed=true)</argsstring>
+        <name>setAlarm2</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>dydw</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>minute</declname>
+        </param>
+        <param>
+          <type><ref refid="_d_s3231_8h_1aa0537c63605a088db9e55f744f1da4b0" kindref="member">DS3231_alarm2_t</ref></type>
+          <declname>mode</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>armed</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="119" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="834" bodyend="892"/>
+        <references refid="class_d_s3231_1a40cab51de53184c4be9c68cc41b9468c" compoundref="_d_s3231_8cpp" startline="894" endline="908">armAlarm2</references>
+        <references refid="class_d_s3231_1a950e95ad7dd8658037a3a4d08e83cf64" compoundref="_d_s3231_8cpp" startline="920" endline="928">clearAlarm2</references>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1aa0537c63605a088db9e55f744f1da4b0a770cbe7e03272cc3a841e8498b71032f" compoundref="_d_s3231_8h" startline="82">DS3231_EVERY_MINUTE</references>
+        <references refid="_d_s3231_8h_1aa0537c63605a088db9e55f744f1da4b0a0d0c4c8fa1dd8d16857d043eed236611" compoundref="_d_s3231_8h" startline="85">DS3231_MATCH_DT_H_M</references>
+        <references refid="_d_s3231_8h_1aa0537c63605a088db9e55f744f1da4b0a6dce7af35bfcd756b188ddc564e9c00f" compoundref="_d_s3231_8h" startline="86">DS3231_MATCH_DY_H_M</references>
+        <references refid="_d_s3231_8h_1aa0537c63605a088db9e55f744f1da4b0abd6826df798141736a962714fec1f1bd" compoundref="_d_s3231_8h" startline="84">DS3231_MATCH_H_M</references>
+        <references refid="_d_s3231_8h_1aa0537c63605a088db9e55f744f1da4b0a14446fbbe5e452d91969cc780e5e2af8" compoundref="_d_s3231_8h" startline="83">DS3231_MATCH_M</references>
+        <references refid="_d_s3231_8h_1a8b94a8907a685e2e45d3e47ce074f920" compoundref="_d_s3231_8h" startline="34">DS3231_REG_ALARM_2</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a6917f3adf3b16a5d1afb67179461ba95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="struct_r_t_c_alarm_time" kindref="compound">RTCAlarmTime</ref></type>
+        <definition>RTCAlarmTime DS3231::getAlarm2</definition>
+        <argsstring>(void)</argsstring>
+        <name>getAlarm2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="120" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="762" bodyend="796"/>
+        <references refid="struct_r_t_c_alarm_time_1a16ff7f4abd3d771179c4662c942597aa" compoundref="_d_s3231_8h" startline="55">RTCAlarmTime::day</references>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a8b94a8907a685e2e45d3e47ce074f920" compoundref="_d_s3231_8h" startline="34">DS3231_REG_ALARM_2</references>
+        <references refid="struct_r_t_c_alarm_time_1af80194d88cddcc273b97531f8b799138" compoundref="_d_s3231_8h" startline="56">RTCAlarmTime::hour</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="struct_r_t_c_alarm_time_1ae33cf5cda7523c05a3559485d2d26019" compoundref="_d_s3231_8h" startline="57">RTCAlarmTime::minute</references>
+        <references refid="struct_r_t_c_alarm_time_1a5367af27263fcbab3975c6c88b1be7bf" compoundref="_d_s3231_8h" startline="58">RTCAlarmTime::second</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1aef2ea43f887cd0444dbc233cfbe46033" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="_d_s3231_8h_1aa0537c63605a088db9e55f744f1da4b0" kindref="member">DS3231_alarm2_t</ref></type>
+        <definition>DS3231_alarm2_t DS3231::getAlarmType2</definition>
+        <argsstring>(void)</argsstring>
+        <name>getAlarmType2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="121" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="798" bodyend="832"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a8b94a8907a685e2e45d3e47ce074f920" compoundref="_d_s3231_8h" startline="34">DS3231_REG_ALARM_2</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DS3231::isAlarm2</definition>
+        <argsstring>(bool clear=true)</argsstring>
+        <name>isAlarm2</name>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="122" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="931" bodyend="944"/>
+        <references refid="class_d_s3231_1a950e95ad7dd8658037a3a4d08e83cf64" compoundref="_d_s3231_8cpp" startline="920" endline="928">clearAlarm2</references>
+        <references refid="struct_r_t_c_date_time_1aea80bfd1209e6e459c70ea39bc248407" compoundref="_d_s3231_8h" startline="45">RTCDateTime::day</references>
+        <references refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" compoundref="_time_8cpp" startline="106" endline="108">day</references>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1aeee46891f279544efa92a99e15e8d023" compoundref="_d_s3231_8h" startline="36">DS3231_REG_STATUS</references>
+        <references refid="struct_r_t_c_date_time_1aaf23cb6337a6c0cb3bb69ad815f9c1b1" compoundref="_d_s3231_8h" startline="46">RTCDateTime::hour</references>
+        <references refid="_time_8cpp_1a721ff0d06e8367ee5d2c5cf1a2c40ab5" compoundref="_time_8cpp" startline="49" endline="51">hour</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="struct_r_t_c_date_time_1a2e9c4e2b54185ec5bb7f328732bc1c63" compoundref="_d_s3231_8h" startline="47">RTCDateTime::minute</references>
+        <references refid="struct_r_t_c_date_time_1a434dc70ef64a1e99201f3765607e8afa" compoundref="_d_s3231_8h" startline="44">RTCDateTime::month</references>
+        <references refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" compoundref="_time_8cpp" startline="124" endline="126">month</references>
+        <references refid="pgmspace_8h_1a48c60b057902adf805797f183286728d" compoundref="pgmspace_8h" startline="60">pgm_read_byte</references>
+        <references refid="struct_r_t_c_date_time_1acf01c0fbd1d95fe33238674641f40027" compoundref="_d_s3231_8h" startline="48">RTCDateTime::second</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <references refid="struct_r_t_c_date_time_1a265de5469447ed7581fec4d3c0c5814d" compoundref="_d_s3231_8h" startline="43">RTCDateTime::year</references>
+        <references refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" compoundref="_time_8cpp" startline="133" endline="135">year</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a40cab51de53184c4be9c68cc41b9468c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::armAlarm2</definition>
+        <argsstring>(bool armed)</argsstring>
+        <name>armAlarm2</name>
+        <param>
+          <type>bool</type>
+          <declname>armed</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="123" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="894" bodyend="908"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+        <referencedby refid="class_d_s3231_1ad505857c3594da9a4c159f607845364e" compoundref="_d_s3231_8cpp" startline="834" endline="892">setAlarm2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a8c1a20f425e7cbc3fc728aef9c326dff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DS3231::isArmed2</definition>
+        <argsstring>(void)</argsstring>
+        <name>isArmed2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="124" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="910" bodyend="917"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a950e95ad7dd8658037a3a4d08e83cf64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::clearAlarm2</definition>
+        <argsstring>(void)</argsstring>
+        <name>clearAlarm2</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="125" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="920" bodyend="928"/>
+        <references refid="_d_s3231_8h_1aeee46891f279544efa92a99e15e8d023" compoundref="_d_s3231_8h" startline="36">DS3231_REG_STATUS</references>
+        <referencedby refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" compoundref="_d_s3231_8cpp" startline="931" endline="944">isAlarm2</referencedby>
+        <referencedby refid="class_d_s3231_1ad505857c3594da9a4c159f607845364e" compoundref="_d_s3231_8cpp" startline="834" endline="892">setAlarm2</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a7a92e389dd214168bb73fcf2d1b88e8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::setBattery</definition>
+        <argsstring>(bool timeBattery, bool squareBattery)</argsstring>
+        <name>setBattery</name>
+        <param>
+          <type>bool</type>
+          <declname>timeBattery</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>squareBattery</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="127" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="440" bodyend="463"/>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+        <referencedby refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" compoundref="_d_s3231_8cpp" startline="33" endline="49">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * DS3231::dateFormat</definition>
+        <argsstring>(const char *dateFormat, RTCDateTime dt)</argsstring>
+        <name>dateFormat</name>
+        <param>
+          <type>const char *</type>
+          <declname>dateFormat</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_r_t_c_date_time" kindref="compound">RTCDateTime</ref></type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="129" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="171" bodyend="297"/>
+        <references refid="struct_r_t_c_date_time_1aea80bfd1209e6e459c70ea39bc248407" compoundref="_d_s3231_8h" startline="45">RTCDateTime::day</references>
+        <references refid="struct_r_t_c_date_time_1a3fa952239e8a35b7ec390838ae1a6bd0" compoundref="_d_s3231_8h" startline="49">RTCDateTime::dayOfWeek</references>
+        <references refid="struct_r_t_c_date_time_1aaf23cb6337a6c0cb3bb69ad815f9c1b1" compoundref="_d_s3231_8h" startline="46">RTCDateTime::hour</references>
+        <references refid="struct_r_t_c_date_time_1a2e9c4e2b54185ec5bb7f328732bc1c63" compoundref="_d_s3231_8h" startline="47">RTCDateTime::minute</references>
+        <references refid="struct_r_t_c_date_time_1a434dc70ef64a1e99201f3765607e8afa" compoundref="_d_s3231_8h" startline="44">RTCDateTime::month</references>
+        <references refid="struct_r_t_c_date_time_1acf01c0fbd1d95fe33238674641f40027" compoundref="_d_s3231_8h" startline="48">RTCDateTime::second</references>
+        <references refid="struct_r_t_c_date_time_1af46df69448c5456b54e9acae7629efa8" compoundref="_d_s3231_8h" startline="50">RTCDateTime::unixtime</references>
+        <references refid="struct_r_t_c_date_time_1a265de5469447ed7581fec4d3c0c5814d" compoundref="_d_s3231_8h" startline="43">RTCDateTime::year</references>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a32cd1432b1c37ea0c36ba57286b764d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * DS3231::dateFormat</definition>
+        <argsstring>(const char *dateFormat, RTCAlarmTime dt)</argsstring>
+        <name>dateFormat</name>
+        <param>
+          <type>const char *</type>
+          <declname>dateFormat</declname>
+        </param>
+        <param>
+          <type><ref refid="struct_r_t_c_alarm_time" kindref="compound">RTCAlarmTime</ref></type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="130" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="299" bodyend="382"/>
+        <references refid="struct_r_t_c_alarm_time_1a16ff7f4abd3d771179c4662c942597aa" compoundref="_d_s3231_8h" startline="55">RTCAlarmTime::day</references>
+        <references refid="struct_r_t_c_alarm_time_1af80194d88cddcc273b97531f8b799138" compoundref="_d_s3231_8h" startline="56">RTCAlarmTime::hour</references>
+        <references refid="struct_r_t_c_alarm_time_1ae33cf5cda7523c05a3559485d2d26019" compoundref="_d_s3231_8h" startline="57">RTCAlarmTime::minute</references>
+        <references refid="struct_r_t_c_alarm_time_1a5367af27263fcbab3975c6c88b1be7bf" compoundref="_d_s3231_8h" startline="58">RTCAlarmTime::second</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_d_s3231_1a13f69db2cb929333ab434e20598fdc59" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * DS3231::strDayOfWeek</definition>
+        <argsstring>(uint8_t dayOfWeek)</argsstring>
+        <name>strDayOfWeek</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>dayOfWeek</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="135" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="956" bodyend="983"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1acb32a9c578bba1cb5d20c9a46339b3ca" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * DS3231::strMonth</definition>
+        <argsstring>(uint8_t month)</argsstring>
+        <name>strMonth</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="136" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="985" bodyend="1027"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a7a093f58ff3ca493d27980cfc8b81279" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * DS3231::strAmPm</definition>
+        <argsstring>(uint8_t hour, bool uppercase)</argsstring>
+        <name>strAmPm</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>hour</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>uppercase</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="137" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1029" bodyend="1050"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a0fef91a8cf23856a7f7b65a0803f45d6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * DS3231::strDaySufix</definition>
+        <argsstring>(uint8_t day)</argsstring>
+        <name>strDaySufix</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="138" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1052" bodyend="1068"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a23d1cd2e389930db57a9143f8768a350" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DS3231::hour12</definition>
+        <argsstring>(uint8_t hour24)</argsstring>
+        <name>hour12</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>hour24</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="140" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1070" bodyend="1083"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1abc6dd5f93d5fa0f671fc6ab6d3c936c4" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DS3231::bcd2dec</definition>
+        <argsstring>(uint8_t bcd)</argsstring>
+        <name>bcd2dec</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>bcd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="141" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="946" bodyend="949"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a846f375a22587f819550c5cff617ab34" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DS3231::dec2bcd</definition>
+        <argsstring>(uint8_t dec)</argsstring>
+        <name>dec2bcd</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>dec</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="142" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="951" bodyend="954"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1ac351abc02b43a24579e5ebde5df6badb" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long DS3231::time2long</definition>
+        <argsstring>(uint16_t days, uint8_t hours, uint8_t minutes, uint8_t seconds)</argsstring>
+        <name>time2long</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>days</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>hours</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>minutes</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>seconds</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="144" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1085" bodyend="1088"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1ad7398bf2cd143a0d706e60863e5af73e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t DS3231::date2days</definition>
+        <argsstring>(uint16_t year, uint8_t month, uint8_t day)</argsstring>
+        <name>date2days</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="145" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1120" bodyend="1137"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1ad2d5697932f8eaf4cc0441e0c6a2383e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DS3231::daysInMonth</definition>
+        <argsstring>(uint16_t year, uint8_t month)</argsstring>
+        <name>daysInMonth</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="146" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1106" bodyend="1118"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a2e7c3026766cdad2d7d714df4e64abb2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t DS3231::dayInYear</definition>
+        <argsstring>(uint16_t year, uint8_t month, uint8_t day)</argsstring>
+        <name>dayInYear</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="147" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1090" bodyend="1099"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1afb7328aabdad33380bfe2c9476a77b74" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool DS3231::isLeapYear</definition>
+        <argsstring>(uint16_t year)</argsstring>
+        <name>isLeapYear</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>year</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="148" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1101" bodyend="1104"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a6f3a49c1936c7ca759947024d8fcc73a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DS3231::dow</definition>
+        <argsstring>(uint16_t y, uint8_t m, uint8_t d)</argsstring>
+        <name>dow</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="149" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1161" bodyend="1174"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a65bc7232cbbd2982fa53fcbf124ab08e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t DS3231::unixtime</definition>
+        <argsstring>(void)</argsstring>
+        <name>unixtime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="151" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1139" bodyend="1147"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1afa9f0eab2336ac958117f77531d33890" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DS3231::conv2d</definition>
+        <argsstring>(const char *p)</argsstring>
+        <name>conv2d</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="152" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1149" bodyend="1159"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1af2f798f0dc7157b8d6509c0501356c92" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DS3231::writeRegister8</definition>
+        <argsstring>(uint8_t reg, uint8_t value)</argsstring>
+        <name>writeRegister8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="154" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1176" bodyend="1187"/>
+      </memberdef>
+      <memberdef kind="function" id="class_d_s3231_1a7a31911f27269414f8365010e09b5fe7" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DS3231::readRegister8</definition>
+        <argsstring>(uint8_t reg)</argsstring>
+        <name>readRegister8</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>reg</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="155" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.cpp" bodystart="1189" bodyend="1210"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" line="90" column="1" bodyfile="Weather_Balloon/library/Arduino-DS3231-master/DS3231.h" bodystart="89" bodyend="156"/>
+    <listofallmembers>
+      <member refid="class_d_s3231_1ad8333b85e1bcbf40e471e67ed63cc4bc" prot="public" virt="non-virtual"><scope>DS3231</scope><name>armAlarm1</name></member>
+      <member refid="class_d_s3231_1a40cab51de53184c4be9c68cc41b9468c" prot="public" virt="non-virtual"><scope>DS3231</scope><name>armAlarm2</name></member>
+      <member refid="class_d_s3231_1abc6dd5f93d5fa0f671fc6ab6d3c936c4" prot="private" virt="non-virtual"><scope>DS3231</scope><name>bcd2dec</name></member>
+      <member refid="class_d_s3231_1a1b6b23f76ae2a8c27f78e946608467ae" prot="public" virt="non-virtual"><scope>DS3231</scope><name>begin</name></member>
+      <member refid="class_d_s3231_1aad73bcd32141177f36dbf0dc10feb2fd" prot="public" virt="non-virtual"><scope>DS3231</scope><name>clearAlarm1</name></member>
+      <member refid="class_d_s3231_1a950e95ad7dd8658037a3a4d08e83cf64" prot="public" virt="non-virtual"><scope>DS3231</scope><name>clearAlarm2</name></member>
+      <member refid="class_d_s3231_1afa9f0eab2336ac958117f77531d33890" prot="private" virt="non-virtual"><scope>DS3231</scope><name>conv2d</name></member>
+      <member refid="class_d_s3231_1ad7398bf2cd143a0d706e60863e5af73e" prot="private" virt="non-virtual"><scope>DS3231</scope><name>date2days</name></member>
+      <member refid="class_d_s3231_1a80608a18964804b175fbbf3ca83d7a99" prot="public" virt="non-virtual"><scope>DS3231</scope><name>dateFormat</name></member>
+      <member refid="class_d_s3231_1a32cd1432b1c37ea0c36ba57286b764d0" prot="public" virt="non-virtual"><scope>DS3231</scope><name>dateFormat</name></member>
+      <member refid="class_d_s3231_1a2e7c3026766cdad2d7d714df4e64abb2" prot="private" virt="non-virtual"><scope>DS3231</scope><name>dayInYear</name></member>
+      <member refid="class_d_s3231_1ad2d5697932f8eaf4cc0441e0c6a2383e" prot="private" virt="non-virtual"><scope>DS3231</scope><name>daysInMonth</name></member>
+      <member refid="class_d_s3231_1a846f375a22587f819550c5cff617ab34" prot="private" virt="non-virtual"><scope>DS3231</scope><name>dec2bcd</name></member>
+      <member refid="class_d_s3231_1a6f3a49c1936c7ca759947024d8fcc73a" prot="private" virt="non-virtual"><scope>DS3231</scope><name>dow</name></member>
+      <member refid="class_d_s3231_1a615d932043f11f513468d4ab97833fd3" prot="public" virt="non-virtual"><scope>DS3231</scope><name>enable32kHz</name></member>
+      <member refid="class_d_s3231_1a67d438ac8a42dfdf68454444a3df336f" prot="public" virt="non-virtual"><scope>DS3231</scope><name>enableOutput</name></member>
+      <member refid="class_d_s3231_1ad398fd513aae24b219d19574e20da550" prot="public" virt="non-virtual"><scope>DS3231</scope><name>forceConversion</name></member>
+      <member refid="class_d_s3231_1a7241d497e56fc0062ad68a9bc31e212a" prot="public" virt="non-virtual"><scope>DS3231</scope><name>getAlarm1</name></member>
+      <member refid="class_d_s3231_1a6917f3adf3b16a5d1afb67179461ba95" prot="public" virt="non-virtual"><scope>DS3231</scope><name>getAlarm2</name></member>
+      <member refid="class_d_s3231_1a20d9f5ec608a5b0a5010ad1a91cf667b" prot="public" virt="non-virtual"><scope>DS3231</scope><name>getAlarmType1</name></member>
+      <member refid="class_d_s3231_1aef2ea43f887cd0444dbc233cfbe46033" prot="public" virt="non-virtual"><scope>DS3231</scope><name>getAlarmType2</name></member>
+      <member refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" prot="public" virt="non-virtual"><scope>DS3231</scope><name>getDateTime</name></member>
+      <member refid="class_d_s3231_1a43521db28f7a704e5f6364e03e73f820" prot="public" virt="non-virtual"><scope>DS3231</scope><name>getOutput</name></member>
+      <member refid="class_d_s3231_1a23d1cd2e389930db57a9143f8768a350" prot="private" virt="non-virtual"><scope>DS3231</scope><name>hour12</name></member>
+      <member refid="class_d_s3231_1a5cb71b75ea98cbb7493610d5552bc771" prot="public" virt="non-virtual"><scope>DS3231</scope><name>is32kHz</name></member>
+      <member refid="class_d_s3231_1a9e07f99282167c3e799bef2d2d163e17" prot="public" virt="non-virtual"><scope>DS3231</scope><name>isAlarm1</name></member>
+      <member refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" prot="public" virt="non-virtual"><scope>DS3231</scope><name>isAlarm2</name></member>
+      <member refid="class_d_s3231_1a5654d336dd345f7db3a4867cfe1b6f20" prot="public" virt="non-virtual"><scope>DS3231</scope><name>isArmed1</name></member>
+      <member refid="class_d_s3231_1a8c1a20f425e7cbc3fc728aef9c326dff" prot="public" virt="non-virtual"><scope>DS3231</scope><name>isArmed2</name></member>
+      <member refid="class_d_s3231_1afb7328aabdad33380bfe2c9476a77b74" prot="private" virt="non-virtual"><scope>DS3231</scope><name>isLeapYear</name></member>
+      <member refid="class_d_s3231_1a33a730f793ad488fe55362525da2c548" prot="public" virt="non-virtual"><scope>DS3231</scope><name>isOutput</name></member>
+      <member refid="class_d_s3231_1ad5c01a51a34c83a2309694a653b4daf4" prot="public" virt="non-virtual"><scope>DS3231</scope><name>isReady</name></member>
+      <member refid="class_d_s3231_1a7a31911f27269414f8365010e09b5fe7" prot="private" virt="non-virtual"><scope>DS3231</scope><name>readRegister8</name></member>
+      <member refid="class_d_s3231_1a82074e0d3f0a4a646fc14f1afcb80448" prot="public" virt="non-virtual"><scope>DS3231</scope><name>readTemperature</name></member>
+      <member refid="class_d_s3231_1a23cea53349c55fba93c706b6e263e574" prot="public" virt="non-virtual"><scope>DS3231</scope><name>setAlarm1</name></member>
+      <member refid="class_d_s3231_1ad505857c3594da9a4c159f607845364e" prot="public" virt="non-virtual"><scope>DS3231</scope><name>setAlarm2</name></member>
+      <member refid="class_d_s3231_1a7a92e389dd214168bb73fcf2d1b88e8c" prot="public" virt="non-virtual"><scope>DS3231</scope><name>setBattery</name></member>
+      <member refid="class_d_s3231_1a15eb3576feaa3535415e9b82367c344c" prot="public" virt="non-virtual"><scope>DS3231</scope><name>setDateTime</name></member>
+      <member refid="class_d_s3231_1ac8ccbb72f7cfbb27df1558a8896ef236" prot="public" virt="non-virtual"><scope>DS3231</scope><name>setDateTime</name></member>
+      <member refid="class_d_s3231_1a95352ab8a40b383e4680e489ec3ee68a" prot="public" virt="non-virtual"><scope>DS3231</scope><name>setDateTime</name></member>
+      <member refid="class_d_s3231_1a1eafc57831fe8fc1ce4145911980e0f7" prot="public" virt="non-virtual"><scope>DS3231</scope><name>setOutput</name></member>
+      <member refid="class_d_s3231_1a7a093f58ff3ca493d27980cfc8b81279" prot="private" virt="non-virtual"><scope>DS3231</scope><name>strAmPm</name></member>
+      <member refid="class_d_s3231_1a13f69db2cb929333ab434e20598fdc59" prot="private" virt="non-virtual"><scope>DS3231</scope><name>strDayOfWeek</name></member>
+      <member refid="class_d_s3231_1a0fef91a8cf23856a7f7b65a0803f45d6" prot="private" virt="non-virtual"><scope>DS3231</scope><name>strDaySufix</name></member>
+      <member refid="class_d_s3231_1acb32a9c578bba1cb5d20c9a46339b3ca" prot="private" virt="non-virtual"><scope>DS3231</scope><name>strMonth</name></member>
+      <member refid="class_d_s3231_1a42cb198a26f01c4efc228791faa8899e" prot="private" virt="non-virtual"><scope>DS3231</scope><name>t</name></member>
+      <member refid="class_d_s3231_1ac351abc02b43a24579e5ebde5df6badb" prot="private" virt="non-virtual"><scope>DS3231</scope><name>time2long</name></member>
+      <member refid="class_d_s3231_1a65bc7232cbbd2982fa53fcbf124ab08e" prot="private" virt="non-virtual"><scope>DS3231</scope><name>unixtime</name></member>
+      <member refid="class_d_s3231_1af2f798f0dc7157b8d6509c0501356c92" prot="private" virt="non-virtual"><scope>DS3231</scope><name>writeRegister8</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

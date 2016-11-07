@@ -1,0 +1,59 @@
+\hypertarget{_r_t_c___d_s1307_8cpp}{}\section{Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\+R\+T\+C\+\_\+\+D\+S1307.cpp File Reference}
+\label{_r_t_c___d_s1307_8cpp}\index{Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\+R\+T\+C\+\_\+\+D\+S1307.\+cpp@{Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\+R\+T\+C\+\_\+\+D\+S1307.\+cpp}}
+{\ttfamily \#include $<$W\+Program.\+h$>$}\\*
+{\ttfamily \#include $<$avr/pgmspace.\+h$>$}\\*
+{\ttfamily \#include $<$Wire.\+h$>$}\\*
+{\ttfamily \#include \char`\"{}R\+T\+Clib.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}R\+T\+C\+\_\+\+D\+S1307.\+h\char`\"{}}\\*
+Include dependency graph for R\+T\+C\+\_\+\+D\+S1307.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_r_t_c___d_s1307_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_r_t_c___d_s1307_8cpp_a647261f334080cbf95e4f8dd79f73769}{D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS}~0x68
+\item 
+\#define \hyperlink{_r_t_c___d_s1307_8cpp_a5eb145eaa089465602c25f14d951f513}{S\+E\+ND}(x)~send(x)
+\item 
+\#define \hyperlink{_r_t_c___d_s1307_8cpp_aec4cb06b0ec9da3dc33cdc8025dfe6e9}{R\+E\+C\+E\+I\+VE}(x)~receive(x)
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{R\+T\+C\+\_\+\+D\+S1307.\+cpp@{R\+T\+C\+\_\+\+D\+S1307.\+cpp}!D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS@{D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS@{D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS}!R\+T\+C\+\_\+\+D\+S1307.\+cpp@{R\+T\+C\+\_\+\+D\+S1307.\+cpp}}
+\subsubsection[{\texorpdfstring{D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS}{DS1307\_ADDRESS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S1307\+\_\+\+A\+D\+D\+R\+E\+SS~0x68}\hypertarget{_r_t_c___d_s1307_8cpp_a647261f334080cbf95e4f8dd79f73769}{}\label{_r_t_c___d_s1307_8cpp_a647261f334080cbf95e4f8dd79f73769}
+
+
+Definition at line 15 of file R\+T\+C\+\_\+\+D\+S1307.\+cpp.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S1307\+::adjust(), R\+T\+C\+\_\+\+D\+S1307\+::isrunning(), and R\+T\+C\+\_\+\+D\+S1307\+::now().
+
+\index{R\+T\+C\+\_\+\+D\+S1307.\+cpp@{R\+T\+C\+\_\+\+D\+S1307.\+cpp}!R\+E\+C\+E\+I\+VE@{R\+E\+C\+E\+I\+VE}}
+\index{R\+E\+C\+E\+I\+VE@{R\+E\+C\+E\+I\+VE}!R\+T\+C\+\_\+\+D\+S1307.\+cpp@{R\+T\+C\+\_\+\+D\+S1307.\+cpp}}
+\subsubsection[{\texorpdfstring{R\+E\+C\+E\+I\+VE}{RECEIVE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+E\+C\+E\+I\+VE(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~receive(x)}\hypertarget{_r_t_c___d_s1307_8cpp_aec4cb06b0ec9da3dc33cdc8025dfe6e9}{}\label{_r_t_c___d_s1307_8cpp_aec4cb06b0ec9da3dc33cdc8025dfe6e9}
+
+
+Definition at line 19 of file R\+T\+C\+\_\+\+D\+S1307.\+cpp.
+
+\index{R\+T\+C\+\_\+\+D\+S1307.\+cpp@{R\+T\+C\+\_\+\+D\+S1307.\+cpp}!S\+E\+ND@{S\+E\+ND}}
+\index{S\+E\+ND@{S\+E\+ND}!R\+T\+C\+\_\+\+D\+S1307.\+cpp@{R\+T\+C\+\_\+\+D\+S1307.\+cpp}}
+\subsubsection[{\texorpdfstring{S\+E\+ND}{SEND}}]{\setlength{\rightskip}{0pt plus 5cm}\#define S\+E\+ND(
+\begin{DoxyParamCaption}
+\item[{}]{x}
+\end{DoxyParamCaption}
+)~send(x)}\hypertarget{_r_t_c___d_s1307_8cpp_a5eb145eaa089465602c25f14d951f513}{}\label{_r_t_c___d_s1307_8cpp_a5eb145eaa089465602c25f14d951f513}
+
+
+Definition at line 18 of file R\+T\+C\+\_\+\+D\+S1307.\+cpp.
+

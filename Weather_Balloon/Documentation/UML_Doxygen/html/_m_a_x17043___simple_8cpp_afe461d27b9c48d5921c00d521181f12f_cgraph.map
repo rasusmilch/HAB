@@ -1,0 +1,5 @@
+<map id="loop" name="loop">
+<area shape="rect" id="node2" href="$class_m_a_x17043.html#ab62ceb6112cf661a9ca4ffa54d4e72c5" title="MAX17043::getAlert" alt="" coords="107,5,239,32"/>
+<area shape="rect" id="node3" href="$class_m_a_x17043.html#a9567ba1006631e2d262a01ced542523f" title="MAX17043::getSOC" alt="" coords="109,56,237,83"/>
+<area shape="rect" id="node4" href="$class_m_a_x17043.html#afcba3e7ee660335c78995d337cab1678" title="MAX17043::getVoltage" alt="" coords="100,107,247,133"/>
+</map>

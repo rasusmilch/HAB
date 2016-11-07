@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structeeprom__struct" kind="struct" language="C++" prot="public">
+    <compoundname>eeprom_struct</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structeeprom__struct_1abdd1ffbd2d5cf7b991f6e0a7cd951c39" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t eeprom_struct::queue_loc</definition>
+        <argsstring></argsstring>
+        <name>queue_loc</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="444" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="444" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structeeprom__struct_1a9c95773929c39be73375f839d44050dd" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t eeprom_struct::address</definition>
+        <argsstring></argsstring>
+        <name>address</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="446" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="446" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/Weather_Balloon.cpp" line="443" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="443" bodyend="449"/>
+    <listofallmembers>
+      <member refid="structeeprom__struct_1a9c95773929c39be73375f839d44050dd" prot="public" virt="non-virtual"><scope>eeprom_struct</scope><name>address</name></member>
+      <member refid="structeeprom__struct_1abdd1ffbd2d5cf7b991f6e0a7cd951c39" prot="public" virt="non-virtual"><scope>eeprom_struct</scope><name>queue_loc</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

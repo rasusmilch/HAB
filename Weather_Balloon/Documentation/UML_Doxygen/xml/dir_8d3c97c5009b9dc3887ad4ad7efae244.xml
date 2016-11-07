@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_8d3c97c5009b9dc3887ad4ad7efae244" kind="dir">
+    <compoundname>Weather_Balloon/library/arduino-ms5xxx-master/src</compoundname>
+    <innerfile refid="_m_s5611_8cpp">MS5611.cpp</innerfile>
+    <innerfile refid="_m_s5611_8h">MS5611.h</innerfile>
+    <innerfile refid="_m_s5xxx_8cpp">MS5xxx.cpp</innerfile>
+    <innerfile refid="_m_s5xxx_8h">MS5xxx.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/arduino-ms5xxx-master/src/"/>
+  </compounddef>
+</doxygen>

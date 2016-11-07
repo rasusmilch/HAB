@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_arduino-ms5xxx-master_README" kind="page">
+    <compoundname>md_Weather_Balloon_library_arduino-ms5xxx-master_README</compoundname>
+    <title>arduino-ms5xxx</title>
+    <detaileddescription>
+<para>Arduino Library with examples for using digital pressure sensors MS5607/MS5611 (and MS56xx, MS57xx, MS58xx) based on AN520 by manufacturer and the datasheets. This library has been tested extensively (over almost a year of datataking) with MS5607 and also tested newer <ref refid="class_m_s5611" kindref="compound">MS5611</ref> sensors. Note the different I2C-addresses, calculations and correction functions between the different chips. One generic MS5xxx-class as well as a derived class <ref refid="class_m_s5611" kindref="compound">MS5611</ref> with the new I2C address and the new calculations have been implemented.</para><para>The examples nicely show how to use this library with the standard MS5xxx-class. For usage with <ref refid="class_m_s5611" kindref="compound">MS5611</ref> chips just use the class <ref refid="class_m_s5611" kindref="compound">MS5611</ref> in the same way. &quot;Standard units&quot; are Pascals for pressure and 0.01 °C for temperature as calculations are done exactly as shown in the manufacturers datasheet.</para><para><ulink url="http://dx.doi.org/10.5281/zenodo.47085"></ulink> </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

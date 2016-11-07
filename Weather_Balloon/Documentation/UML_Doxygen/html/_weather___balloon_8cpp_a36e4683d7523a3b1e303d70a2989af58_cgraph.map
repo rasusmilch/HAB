@@ -1,0 +1,12 @@
+<map id="power_sensors" name="power_sensors">
+<area shape="rect" id="node2" href="$_weather___balloon_8cpp.html#a4e9c8d405702380dcc2cb85707283b71" title="dof_power" alt="" coords="169,5,250,32"/>
+<area shape="rect" id="node3" href="$_weather___balloon_8cpp.html#af2d24e60ddd98c1e2d7ebb921f6d7f46" title="ds18b20_power" alt="" coords="156,56,263,83"/>
+<area shape="rect" id="node4" href="$_weather___balloon_8cpp.html#ae30e39a79eefe72511818815ea7276eb" title="geiger_power" alt="" coords="160,107,259,133"/>
+<area shape="rect" id="node5" href="$_weather___balloon_8cpp.html#a4535edf461b17f1e616af9db0447dc01" title="gps_power" alt="" coords="168,157,251,184"/>
+<area shape="rect" id="node6" href="$_weather___balloon_8cpp.html#a63f902cc1f2e24f8a484f7ef780dda08" title="led_power" alt="" coords="169,208,249,235"/>
+<area shape="rect" id="node7" href="$_weather___balloon_8cpp.html#aa705df77518e8cb907ba58c825af7531" title="ms5607_power" alt="" coords="158,259,261,285"/>
+<area shape="rect" id="node8" href="$_weather___balloon_8cpp.html#a8cc7d86d6ef1fa4f680bfe19b3246307" title="piezo_power" alt="" coords="163,309,256,336"/>
+<area shape="rect" id="node9" href="$_weather___balloon_8cpp.html#aeea7cb9977724d0eff70fb24d03ef572" title="sd_power" alt="" coords="172,360,247,387"/>
+<area shape="rect" id="node10" href="$_weather___balloon_8cpp.html#a19d08a06df1dca8e8a9be91e9de13f33" title="sht31_power" alt="" coords="164,411,255,437"/>
+<area shape="rect" id="node11" href="$_weather___balloon_8cpp.html#aa1ddd1a74edee558cd1f5bbf58c32eba" title="tsl2561_power" alt="" coords="159,461,259,488"/>
+</map>

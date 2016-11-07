@@ -1,0 +1,849 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_a_f_s_k_8h" kind="file" language="C++">
+    <compoundname>AFSK.h</compoundname>
+    <includes refid="device_8h" local="yes">device.h</includes>
+    <includes local="no">stdint.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <includes local="no">stdio.h</includes>
+    <includes local="no">avr/pgmspace.h</includes>
+    <includes refid="_f_i_f_o_8h" local="yes">FIFO.h</includes>
+    <includes refid="_h_d_l_c_8h" local="yes">HDLC.h</includes>
+    <includedby refid="_a_f_s_k_8cpp" local="yes">Weather_Balloon/library/LibAPRS/AFSK.cpp</includedby>
+    <includedby refid="_a_x25_8cpp" local="yes">Weather_Balloon/library/LibAPRS/AX25.cpp</includedby>
+    <includedby refid="_lib_a_p_r_s_8cpp" local="yes">Weather_Balloon/library/LibAPRS/LibAPRS.cpp</includedby>
+    <includedby refid="_lib_a_p_r_s_8h" local="yes">Weather_Balloon/library/LibAPRS/LibAPRS.h</includedby>
+    <incdepgraph>
+      <node id="1021">
+        <label>stdbool.h</label>
+      </node>
+      <node id="1020">
+        <label>stdint.h</label>
+      </node>
+      <node id="1024">
+        <label>FIFO.h</label>
+        <link refid="_f_i_f_o_8h"/>
+        <childnode refid="1025" relation="include">
+        </childnode>
+        <childnode refid="1026" relation="include">
+        </childnode>
+      </node>
+      <node id="1027">
+        <label>HDLC.h</label>
+        <link refid="_h_d_l_c_8h"/>
+      </node>
+      <node id="1025">
+        <label>stddef.h</label>
+      </node>
+      <node id="1026">
+        <label>util/atomic.h</label>
+      </node>
+      <node id="1017">
+        <label>Weather_Balloon/library/LibAPRS/AFSK.h</label>
+        <link refid="AFSK.h"/>
+        <childnode refid="1018" relation="include">
+        </childnode>
+        <childnode refid="1020" relation="include">
+        </childnode>
+        <childnode refid="1021" relation="include">
+        </childnode>
+        <childnode refid="1022" relation="include">
+        </childnode>
+        <childnode refid="1023" relation="include">
+        </childnode>
+        <childnode refid="1024" relation="include">
+        </childnode>
+        <childnode refid="1027" relation="include">
+        </childnode>
+      </node>
+      <node id="1019">
+        <label>constants.h</label>
+        <link refid="constants_8h"/>
+      </node>
+      <node id="1023">
+        <label>avr/pgmspace.h</label>
+      </node>
+      <node id="1022">
+        <label>stdio.h</label>
+      </node>
+      <node id="1018">
+        <label>device.h</label>
+        <link refid="device_8h"/>
+        <childnode refid="1019" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1029">
+        <label>Weather_Balloon/library/LibAPRS/AFSK.cpp</label>
+        <link refid="_a_f_s_k_8cpp"/>
+      </node>
+      <node id="1028">
+        <label>Weather_Balloon/library/LibAPRS/AFSK.h</label>
+        <link refid="AFSK.h"/>
+        <childnode refid="1029" relation="include">
+        </childnode>
+        <childnode refid="1030" relation="include">
+        </childnode>
+        <childnode refid="1031" relation="include">
+        </childnode>
+        <childnode refid="1032" relation="include">
+        </childnode>
+      </node>
+      <node id="1032">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.h</label>
+        <link refid="_lib_a_p_r_s_8h"/>
+      </node>
+      <node id="1030">
+        <label>Weather_Balloon/library/LibAPRS/AX25.cpp</label>
+        <link refid="_a_x25_8cpp"/>
+      </node>
+      <node id="1031">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.cpp</label>
+        <link refid="_lib_a_p_r_s_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct_hdlc" prot="public">Hdlc</innerclass>
+    <innerclass refid="struct_afsk" prot="public">Afsk</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_a_f_s_k_8h_1aa905e754cc59c8a38f5c75127514e77a" prot="public" static="no">
+        <name>SIN_LEN</name>
+        <initializer>512</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="12" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a95fea365da4cc2eabb52f1fa7d77fc6d" prot="public" static="no">
+        <name>SWITCH_TONE</name>
+        <param><defname>inc</defname></param>
+        <initializer>(((inc) == <ref refid="_a_f_s_k_8h_1a3c7a6dbceee6762f12aa23e4930592e1" kindref="member">MARK_INC</ref>) ? <ref refid="_a_f_s_k_8h_1aaf1eba52249d5604229150a0045ade95" kindref="member">SPACE_INC</ref> : <ref refid="_a_f_s_k_8h_1a3c7a6dbceee6762f12aa23e4930592e1" kindref="member">MARK_INC</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="33" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a3e4367b6cf2d2c1bdcc82c22cf08377a" prot="public" static="no">
+        <name>BITS_DIFFER</name>
+        <param><defname>bits1</defname></param>
+        <param><defname>bits2</defname></param>
+        <initializer>(((bits1)^(bits2)) &amp; 0x01)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="34" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a9a6bb60c06409126bddfd0018e5c4b5d" prot="public" static="no">
+        <name>DUAL_XOR</name>
+        <param><defname>bits1</defname></param>
+        <param><defname>bits2</defname></param>
+        <initializer>((((bits1)^(bits2)) &amp; 0x03) == 0x03)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="35" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1afbfdee165f3dbab3c1026c3631edfe09" prot="public" static="no">
+        <name>SIGNAL_TRANSITIONED</name>
+        <param><defname>bits</defname></param>
+        <initializer><ref refid="_a_f_s_k_8h_1a9a6bb60c06409126bddfd0018e5c4b5d" kindref="member">DUAL_XOR</ref>((bits), (bits) &gt;&gt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="36" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a7c3741917df64da94dbc81b86ccb28fb" prot="public" static="no">
+        <name>TRANSITION_FOUND</name>
+        <param><defname>bits</defname></param>
+        <initializer><ref refid="_a_f_s_k_8h_1a3e4367b6cf2d2c1bdcc82c22cf08377a" kindref="member">BITS_DIFFER</ref>((bits), (bits) &gt;&gt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="37" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1ab6b652797b16c31087c6e7fef45cc175" prot="public" static="no">
+        <name>CPU_FREQ</name>
+        <initializer><ref refid="device_8h_1a43bafb28b29491ec7f871319b5a3b2f8" kindref="member">F_CPU</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="39" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1adb056877043b2fcf1477cf3a69bb89a6" prot="public" static="no">
+        <name>CONFIG_AFSK_RX_BUFLEN</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="41" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1adc5f6ad59595e8b2c14827f5012c6f4f" prot="public" static="no">
+        <name>CONFIG_AFSK_TX_BUFLEN</name>
+        <initializer>64</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="42" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1ae95b2addbd781be7d1dde09e75908a0d" prot="public" static="no">
+        <name>CONFIG_AFSK_RXTIMEOUT</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="43" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a7e4779383e6235749b7a72fffc601fa2" prot="public" static="no">
+        <name>CONFIG_AFSK_PREAMBLE_LEN</name>
+        <initializer>150UL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="44" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a438c5dd5041a940e200ab24f209e323e" prot="public" static="no">
+        <name>CONFIG_AFSK_TRAILER_LEN</name>
+        <initializer>50UL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="45" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a538e0cad3acb787a49e16b1e53787610" prot="public" static="no">
+        <name>SAMPLERATE</name>
+        <initializer>9600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="46" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a17468d10f0c67a4ee7b38aab09d9e096" prot="public" static="no">
+        <name>BITRATE</name>
+        <initializer>1200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="47" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a15440d8d1e6efc47a3263ccf91a8cb74" prot="public" static="no">
+        <name>SAMPLESPERBIT</name>
+        <initializer>(<ref refid="_a_f_s_k_8h_1a538e0cad3acb787a49e16b1e53787610" kindref="member">SAMPLERATE</ref> / <ref refid="_a_f_s_k_8h_1a17468d10f0c67a4ee7b38aab09d9e096" kindref="member">BITRATE</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="48" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1ad6e02c036335fa22b14831f729080bc3" prot="public" static="no">
+        <name>BIT_STUFF_LEN</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="49" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1aa174cc776093f5a528e68a8b16c9b7a8" prot="public" static="no">
+        <name>MARK_FREQ</name>
+        <initializer>1200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="50" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a6eb40e0cb2aac1535ae088a915ebb805" prot="public" static="no">
+        <name>SPACE_FREQ</name>
+        <initializer>2200</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="51" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1ab44db8f63c4b1549a83fb1abadec53e0" prot="public" static="no">
+        <name>PHASE_BITS</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="52" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a63e72faebeb8869f9768ff642ae90b2d" prot="public" static="no">
+        <name>PHASE_INC</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="53" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1addd9c4d64b2f30c854d55685c2f561a8" prot="public" static="no">
+        <name>PHASE_MAX</name>
+        <initializer>(<ref refid="_a_f_s_k_8h_1a15440d8d1e6efc47a3263ccf91a8cb74" kindref="member">SAMPLESPERBIT</ref> * <ref refid="_a_f_s_k_8h_1ab44db8f63c4b1549a83fb1abadec53e0" kindref="member">PHASE_BITS</ref>)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="54" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1aac65fdad64d3a017b61e5b5625f91adc" prot="public" static="no">
+        <name>PHASE_THRESHOLD</name>
+        <initializer>(<ref refid="_a_f_s_k_8h_1addd9c4d64b2f30c854d55685c2f561a8" kindref="member">PHASE_MAX</ref> / 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="55" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a1ddec5826f8a1f9010183107bb77c06d" prot="public" static="no">
+        <name>DIV_ROUND</name>
+        <param><defname>dividend</defname></param>
+        <param><defname>divisor</defname></param>
+        <initializer>(((dividend) + (divisor) / 2) / (divisor))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="110" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a3c7a6dbceee6762f12aa23e4930592e1" prot="public" static="no">
+        <name>MARK_INC</name>
+        <initializer>(uint16_t)(<ref refid="_a_f_s_k_8h_1a1ddec5826f8a1f9010183107bb77c06d" kindref="member">DIV_ROUND</ref>(<ref refid="_a_f_s_k_8h_1aa905e754cc59c8a38f5c75127514e77a" kindref="member">SIN_LEN</ref> * (uint32_t)<ref refid="_a_f_s_k_8h_1aa174cc776093f5a528e68a8b16c9b7a8" kindref="member">MARK_FREQ</ref>, <ref refid="device_8h_1a9e83bcb5c8fb1fd1712fc7c454546da9" kindref="member">CONFIG_AFSK_DAC_SAMPLERATE</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="111" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1aaf1eba52249d5604229150a0045ade95" prot="public" static="no">
+        <name>SPACE_INC</name>
+        <initializer>(uint16_t)(<ref refid="_a_f_s_k_8h_1a1ddec5826f8a1f9010183107bb77c06d" kindref="member">DIV_ROUND</ref>(<ref refid="_a_f_s_k_8h_1aa905e754cc59c8a38f5c75127514e77a" kindref="member">SIN_LEN</ref> * (uint32_t)<ref refid="_a_f_s_k_8h_1a6eb40e0cb2aac1535ae088a915ebb805" kindref="member">SPACE_FREQ</ref>, <ref refid="device_8h_1a9e83bcb5c8fb1fd1712fc7c454546da9" kindref="member">CONFIG_AFSK_DAC_SAMPLERATE</ref>))</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="112" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="112" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a6227c8e3094856f801c020b9b6e02035" prot="public" static="no">
+        <name>AFSK_DAC_IRQ_START</name>
+        <param></param>
+        <initializer>do { extern bool <ref refid="_a_f_s_k_8cpp_1a2ef8aff82c650b3ae4024239ae8f912b" kindref="member">hw_afsk_dac_isr</ref>; <ref refid="_a_f_s_k_8cpp_1a2ef8aff82c650b3ae4024239ae8f912b" kindref="member">hw_afsk_dac_isr</ref> = true; } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="114" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a3f7526a581e906e739332ccace845e2b" prot="public" static="no">
+        <name>AFSK_DAC_IRQ_STOP</name>
+        <param></param>
+        <initializer>do { extern bool <ref refid="_a_f_s_k_8cpp_1a2ef8aff82c650b3ae4024239ae8f912b" kindref="member">hw_afsk_dac_isr</ref>; <ref refid="_a_f_s_k_8cpp_1a2ef8aff82c650b3ae4024239ae8f912b" kindref="member">hw_afsk_dac_isr</ref> = false; } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="115" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="115" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1aac8110aa28bbf5739a39e186ad3ebc86" prot="public" static="no">
+        <name>AFSK_DAC_INIT</name>
+        <param></param>
+        <initializer>do { <ref refid="device_8h_1a4f88bd60347c4c0ff4344fc8614f390c" kindref="member">DAC_DDR</ref> |= 0xF8; } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="116" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a49a66c2203851e33ecbdb2e678f9663a" prot="public" static="no">
+        <name>LED_TX_INIT</name>
+        <param></param>
+        <initializer>do { <ref refid="device_8h_1a2eb4252b35effe1188cb61b6124fa617" kindref="member">LED_DDR</ref> |= _BV(1); } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="123" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="123" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1aa492cbe1864040a6233dd82239534438" prot="public" static="no">
+        <name>LED_TX_ON</name>
+        <param></param>
+        <initializer>do { <ref refid="device_8h_1a663daa01e565aee93c6f20c5845b90b4" kindref="member">LED_PORT</ref> |= _BV(1); } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="124" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="124" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1acda9d4f9b15d326fb4d56c788cb057a0" prot="public" static="no">
+        <name>LED_TX_OFF</name>
+        <param></param>
+        <initializer>do { <ref refid="device_8h_1a663daa01e565aee93c6f20c5845b90b4" kindref="member">LED_PORT</ref> &amp;= ~_BV(1); } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="125" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1aa2ae7f3b8cfd16929ff5ce9f19601c72" prot="public" static="no">
+        <name>LED_RX_INIT</name>
+        <param></param>
+        <initializer>do { <ref refid="device_8h_1a2eb4252b35effe1188cb61b6124fa617" kindref="member">LED_DDR</ref> |= _BV(2); } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="127" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a8581cc8306ae1bd1d32e66a01889a0de" prot="public" static="no">
+        <name>LED_RX_ON</name>
+        <param></param>
+        <initializer>do { <ref refid="device_8h_1a663daa01e565aee93c6f20c5845b90b4" kindref="member">LED_PORT</ref> |= _BV(2); } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="128" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_a_f_s_k_8h_1a9b644abb06b553d4ef45da36e8ff636b" prot="public" static="no">
+        <name>LED_RX_OFF</name>
+        <param></param>
+        <initializer>do { <ref refid="device_8h_1a663daa01e565aee93c6f20c5845b90b4" kindref="member">LED_PORT</ref> &amp;= ~_BV(2); } while (0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="129" column="9" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="129" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_a_f_s_k_8h_1a4201c4addae6fc512a3eb8091714d477" prot="public" static="no">
+        <type>struct <ref refid="struct_hdlc" kindref="compound">Hdlc</ref></type>
+        <definition>typedef struct Hdlc  Hdlc</definition>
+        <argsstring></argsstring>
+        <name>Hdlc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="64" column="1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="_a_f_s_k_8h_1a9c78d604c519643aecce1701bbdb2e5a" prot="public" static="no">
+        <type>struct <ref refid="struct_afsk" kindref="compound">Afsk</ref></type>
+        <definition>typedef struct Afsk  Afsk</definition>
+        <argsstring></argsstring>
+        <name>Afsk</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="108" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_a_f_s_k_8h_1a96fafac642cb51525ce79ed8fd91c474" prot="public" static="yes" mutable="no">
+        <type>const uint8_t sin_table[]</type>
+        <definition>const uint8_t sin_table [] PROGMEM</definition>
+        <argsstring></argsstring>
+        <name>PROGMEM</name>
+        <initializer>=
+{
+    128, 129, 131, 132, 134, 135, 137, 138, 140, 142, 143, 145, 146, 148, 149, 151,
+    152, 154, 155, 157, 158, 160, 162, 163, 165, 166, 167, 169, 170, 172, 173, 175,
+    176, 178, 179, 181, 182, 183, 185, 186, 188, 189, 190, 192, 193, 194, 196, 197,
+    198, 200, 201, 202, 203, 205, 206, 207, 208, 210, 211, 212, 213, 214, 215, 217,
+    218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233,
+    234, 234, 235, 236, 237, 238, 238, 239, 240, 241, 241, 242, 243, 243, 244, 245,
+    245, 246, 246, 247, 248, 248, 249, 249, 250, 250, 250, 251, 251, 252, 252, 252,
+    253, 253, 253, 253, 254, 254, 254, 254, 254, 255, 255, 255, 255, 255, 255, 255,
+}</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="13" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_a_f_s_k_8h_1a40495aa856b4cbc26953e503ba8455dc" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t sinSample</definition>
+        <argsstring>(uint16_t i)</argsstring>
+        <name>sinSample</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="25" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="25" bodyend="30"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AFSK_init</definition>
+        <argsstring>(Afsk *afsk)</argsstring>
+        <name>AFSK_init</name>
+        <param>
+          <type><ref refid="struct_afsk" kindref="compound">Afsk</ref> *</type>
+          <declname>afsk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="131" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.cpp" bodystart="60" bodyend="78"/>
+        <references refid="struct_afsk_1ae5f800f21b5aa819af756c5572e63cce" compoundref="_a_f_s_k_8h" startline="85">Afsk::phaseInc</references>
+        <references refid="_a_f_s_k_8h_1a3c7a6dbceee6762f12aa23e4930592e1" compoundref="_a_f_s_k_8h" startline="111">MARK_INC</references>
+        <references refid="_f_i_f_o_8h_1ae09eab69a9cb5c4d330aa248db01b5af" compoundref="_f_i_f_o_8h" startline="76" endline="79">fifo_init</references>
+        <references refid="struct_afsk_1a326b5be68b2c9bb6191ac8d76a021999" compoundref="_a_f_s_k_8h" startline="93">Afsk::delayFifo</references>
+        <references refid="struct_afsk_1aab24e087341259c5e3f9008a8557644e" compoundref="_a_f_s_k_8h" startline="94">Afsk::delayBuf</references>
+        <references refid="struct_afsk_1ac37f5dab53ed2219bbfc0d4c3f2f25b8" compoundref="_a_f_s_k_8h" startline="96">Afsk::rxFifo</references>
+        <references refid="struct_afsk_1a8c7ee9d7b92796ccc7c3257b581695cb" compoundref="_a_f_s_k_8h" startline="97">Afsk::rxBuf</references>
+        <references refid="struct_afsk_1a987e70d174e5cd82f73563d920273cc4" compoundref="_a_f_s_k_8h" startline="87">Afsk::txFifo</references>
+        <references refid="struct_afsk_1a32162873b8784efe43d3f28289c6ea6e" compoundref="_a_f_s_k_8h" startline="88">Afsk::txBuf</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_a_f_s_k_8h_1a15440d8d1e6efc47a3263ccf91a8cb74" compoundref="_a_f_s_k_8h" startline="48">SAMPLESPERBIT</references>
+        <references refid="_f_i_f_o_8h_1af58b59a5f3814ca6c0415a66797ab9f7" compoundref="_f_i_f_o_8h" startline="23" endline="31">fifo_push</references>
+        <references refid="_a_f_s_k_8cpp_1a3ec4dcd4db71db9100c3f30c594b1ab0" compoundref="_a_f_s_k_8cpp" startline="28" endline="58">AFSK_hw_init</references>
+        <references refid="struct_afsk_1aea4204b922aaf2c78708bacec08d7888" compoundref="_a_f_s_k_8h" startline="90">Afsk::sending</references>
+        <references refid="struct_afsk_1aa62658bb66ca18cf3d268258ef126283" compoundref="_a_f_s_k_8h" startline="84">Afsk::phaseAcc</references>
+        <references refid="struct_afsk_1ab6ea81ad33d9cf98080a6e567cfd7887" compoundref="_a_f_s_k_8h" startline="82">Afsk::bitstuffCount</references>
+        <references refid="_a_f_s_k_8h_1aa492cbe1864040a6233dd82239534438" compoundref="_a_f_s_k_8h" startline="124">LED_TX_ON</references>
+        <references refid="struct_afsk_1a586542863e66d99dbb7b655fa54af563" compoundref="_a_f_s_k_8h" startline="73">Afsk::preambleLength</references>
+        <references refid="_a_f_s_k_8h_1a1ddec5826f8a1f9010183107bb77c06d" compoundref="_a_f_s_k_8h" startline="110">DIV_ROUND</references>
+        <references refid="_a_f_s_k_8cpp_1aca36a8e2b3f8db1978f37152c411201c" compoundref="_lib_a_p_r_s_8cpp" startline="13">custom_preamble</references>
+        <references refid="_a_f_s_k_8h_1a17468d10f0c67a4ee7b38aab09d9e096" compoundref="_a_f_s_k_8h" startline="47">BITRATE</references>
+        <references refid="_a_f_s_k_8h_1a6227c8e3094856f801c020b9b6e02035" compoundref="_a_f_s_k_8h" startline="114">AFSK_DAC_IRQ_START</references>
+        <references refid="struct_afsk_1aa3297e8885c70332e9274679b9329937" compoundref="_a_f_s_k_8h" startline="74">Afsk::tailLength</references>
+        <references refid="_a_f_s_k_8cpp_1a258d100e9191b0a720dee2230b376abe" compoundref="_lib_a_p_r_s_8cpp" startline="14">custom_tail</references>
+        <referencedby refid="_lib_a_p_r_s_8h_1a4112ffe044a152d02f86f8f25a30d45a" compoundref="_lib_a_p_r_s_8cpp" startline="54" endline="60">APRS_init</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_a_f_s_k_8h_1adb7d23f979900b693df4f80b24e3eca1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AFSK_transmit</definition>
+        <argsstring>(char *buffer, size_t size)</argsstring>
+        <name>AFSK_transmit</name>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>size</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="132" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.cpp" bodystart="109" bodyend="115"/>
+        <references refid="_f_i_f_o_8h_1a8751dcbd047df6062c655c205b81e825" compoundref="_f_i_f_o_8h" startline="42" endline="44">fifo_flush</references>
+        <references refid="struct_afsk_1a987e70d174e5cd82f73563d920273cc4" compoundref="_a_f_s_k_8h" startline="87">Afsk::txFifo</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_a_f_s_k_8cpp_1a68893c6a77f5945c30a7528e9841e5f3" compoundref="_a_f_s_k_8cpp" startline="95" endline="99">afsk_putchar</references>
+      </memberdef>
+      <memberdef kind="function" id="_a_f_s_k_8h_1a306ec6e3bc5d6b1adf3ae3b1bf3f8bf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void AFSK_poll</definition>
+        <argsstring>(Afsk *afsk)</argsstring>
+        <name>AFSK_poll</name>
+        <param>
+          <type><ref refid="struct_afsk" kindref="compound">Afsk</ref> *</type>
+          <declname>afsk</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="133" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="_a_f_s_k_8h_1a68893c6a77f5945c30a7528e9841e5f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void afsk_putchar</definition>
+        <argsstring>(char c)</argsstring>
+        <name>afsk_putchar</name>
+        <param>
+          <type>char</type>
+          <declname>c</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="135" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.cpp" bodystart="95" bodyend="99"/>
+        <references refid="_f_i_f_o_8h_1aa11a35c25acb9584a1d452227a70f63d" compoundref="_f_i_f_o_8h" startline="54" endline="60">fifo_isfull_locked</references>
+        <references refid="struct_afsk_1a987e70d174e5cd82f73563d920273cc4" compoundref="_a_f_s_k_8h" startline="87">Afsk::txFifo</references>
+        <references refid="_f_i_f_o_8h_1af5fb2815bc19265354c00c25a4dc8994" compoundref="_f_i_f_o_8h" startline="62" endline="66">fifo_push_locked</references>
+        <referencedby refid="_a_f_s_k_8h_1adb7d23f979900b693df4f80b24e3eca1" compoundref="_a_f_s_k_8cpp" startline="109" endline="115">AFSK_transmit</referencedby>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+        <referencedby refid="_a_x25_8h_1ab37e8746a65819795b43d43072ce4555" compoundref="_a_x25_8cpp" startline="108" endline="120">ax25_sendRaw</referencedby>
+        <referencedby refid="_a_x25_8h_1aeb4be1c44c0faeb1fc73dbb04ac59a6e" compoundref="_a_x25_8cpp" startline="141" endline="164">ax25_sendVia</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_a_f_s_k_8h_1a52e815cce13ae490f2fed9988b75c16c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int afsk_getchar</definition>
+        <argsstring>(void)</argsstring>
+        <name>afsk_getchar</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="136" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.cpp" bodystart="101" bodyend="107"/>
+        <references refid="_f_i_f_o_8h_1aaa89b948af7949dff7c34fd6142f9e0a" compoundref="_f_i_f_o_8h" startline="46" endline="52">fifo_isempty_locked</references>
+        <references refid="struct_afsk_1ac37f5dab53ed2219bbfc0d4c3f2f25b8" compoundref="_a_f_s_k_8h" startline="96">Afsk::rxFifo</references>
+        <references refid="_f_i_f_o_8h_1a2f05edf7653b62251dd66c7ae7ad1bb7" compoundref="_f_i_f_o_8h" startline="68" endline="74">fifo_pop_locked</references>
+        <referencedby refid="_a_x25_8h_1a852682ef0f0f2764ea1dbacebfa2a4e7" compoundref="_a_x25_8cpp" startline="60" endline="99">ax25_poll</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>AFSK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AFSK_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="device_8h" kindref="compound">device.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdint.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdio.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/pgmspace.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_f_i_f_o_8h" kindref="compound">FIFO.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_h_d_l_c_8h" kindref="compound">HDLC.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="_a_f_s_k_8h_1aa905e754cc59c8a38f5c75127514e77a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIN_LEN<sp/>512</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>sin_table[]<sp/><ref refid="pgmspace_8h_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>128,<sp/>129,<sp/>131,<sp/>132,<sp/>134,<sp/>135,<sp/>137,<sp/>138,<sp/>140,<sp/>142,<sp/>143,<sp/>145,<sp/>146,<sp/>148,<sp/>149,<sp/>151,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>152,<sp/>154,<sp/>155,<sp/>157,<sp/>158,<sp/>160,<sp/>162,<sp/>163,<sp/>165,<sp/>166,<sp/>167,<sp/>169,<sp/>170,<sp/>172,<sp/>173,<sp/>175,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>176,<sp/>178,<sp/>179,<sp/>181,<sp/>182,<sp/>183,<sp/>185,<sp/>186,<sp/>188,<sp/>189,<sp/>190,<sp/>192,<sp/>193,<sp/>194,<sp/>196,<sp/>197,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>198,<sp/>200,<sp/>201,<sp/>202,<sp/>203,<sp/>205,<sp/>206,<sp/>207,<sp/>208,<sp/>210,<sp/>211,<sp/>212,<sp/>213,<sp/>214,<sp/>215,<sp/>217,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>218,<sp/>219,<sp/>220,<sp/>221,<sp/>222,<sp/>223,<sp/>224,<sp/>225,<sp/>226,<sp/>227,<sp/>228,<sp/>229,<sp/>230,<sp/>231,<sp/>232,<sp/>233,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>234,<sp/>234,<sp/>235,<sp/>236,<sp/>237,<sp/>238,<sp/>238,<sp/>239,<sp/>240,<sp/>241,<sp/>241,<sp/>242,<sp/>243,<sp/>243,<sp/>244,<sp/>245,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>245,<sp/>246,<sp/>246,<sp/>247,<sp/>248,<sp/>248,<sp/>249,<sp/>249,<sp/>250,<sp/>250,<sp/>250,<sp/>251,<sp/>251,<sp/>252,<sp/>252,<sp/>252,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>253,<sp/>253,<sp/>253,<sp/>253,<sp/>254,<sp/>254,<sp/>254,<sp/>254,<sp/>254,<sp/>255,<sp/>255,<sp/>255,<sp/>255,<sp/>255,<sp/>255,<sp/>255,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>sinSample(uint16_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>newI<sp/>=<sp/>i<sp/>%<sp/>(<ref refid="_a_f_s_k_8h_1aa905e754cc59c8a38f5c75127514e77a" kindref="member">SIN_LEN</ref>/2);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>newI<sp/>=<sp/>(newI<sp/>&gt;=<sp/>(<ref refid="_a_f_s_k_8h_1aa905e754cc59c8a38f5c75127514e77a" kindref="member">SIN_LEN</ref>/4))<sp/>?<sp/>(<ref refid="_a_f_s_k_8h_1aa905e754cc59c8a38f5c75127514e77a" kindref="member">SIN_LEN</ref>/2<sp/>-<sp/>newI<sp/>-1)<sp/>:<sp/>newI;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>sine<sp/>=<sp/><ref refid="pgmspace_8h_1a48c60b057902adf805797f183286728d" kindref="member">pgm_read_byte</ref>(&amp;sin_table[newI]);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(i<sp/>&gt;=<sp/>(<ref refid="_a_f_s_k_8h_1aa905e754cc59c8a38f5c75127514e77a" kindref="member">SIN_LEN</ref>/2))<sp/>?<sp/>(255<sp/>-<sp/>sine)<sp/>:<sp/>sine;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_a_f_s_k_8h_1a95fea365da4cc2eabb52f1fa7d77fc6d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SWITCH_TONE(inc)<sp/><sp/>(((inc)<sp/>==<sp/>MARK_INC)<sp/>?<sp/>SPACE_INC<sp/>:<sp/>MARK_INC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_a_f_s_k_8h_1a3e4367b6cf2d2c1bdcc82c22cf08377a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BITS_DIFFER(bits1,<sp/>bits2)<sp/>(((bits1)^(bits2))<sp/>&amp;<sp/>0x01)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_a_f_s_k_8h_1a9a6bb60c06409126bddfd0018e5c4b5d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DUAL_XOR(bits1,<sp/>bits2)<sp/>((((bits1)^(bits2))<sp/>&amp;<sp/>0x03)<sp/>==<sp/>0x03)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="_a_f_s_k_8h_1afbfdee165f3dbab3c1026c3631edfe09" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SIGNAL_TRANSITIONED(bits)<sp/>DUAL_XOR((bits),<sp/>(bits)<sp/>&gt;&gt;<sp/>2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="_a_f_s_k_8h_1a7c3741917df64da94dbc81b86ccb28fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>TRANSITION_FOUND(bits)<sp/>BITS_DIFFER((bits),<sp/>(bits)<sp/>&gt;&gt;<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_a_f_s_k_8h_1ab6b652797b16c31087c6e7fef45cc175" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CPU_FREQ<sp/>F_CPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="_a_f_s_k_8h_1adb056877043b2fcf1477cf3a69bb89a6" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_AFSK_RX_BUFLEN<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_a_f_s_k_8h_1adc5f6ad59595e8b2c14827f5012c6f4f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_AFSK_TX_BUFLEN<sp/>64<sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43" refid="_a_f_s_k_8h_1ae95b2addbd781be7d1dde09e75908a0d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_AFSK_RXTIMEOUT<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44" refid="_a_f_s_k_8h_1a7e4779383e6235749b7a72fffc601fa2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_AFSK_PREAMBLE_LEN<sp/>150UL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_a_f_s_k_8h_1a438c5dd5041a940e200ab24f209e323e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_AFSK_TRAILER_LEN<sp/>50UL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_a_f_s_k_8h_1a538e0cad3acb787a49e16b1e53787610" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAMPLERATE<sp/>9600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_a_f_s_k_8h_1a17468d10f0c67a4ee7b38aab09d9e096" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BITRATE<sp/><sp/><sp/><sp/>1200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_a_f_s_k_8h_1a15440d8d1e6efc47a3263ccf91a8cb74" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAMPLESPERBIT<sp/>(SAMPLERATE<sp/>/<sp/>BITRATE)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_a_f_s_k_8h_1ad6e02c036335fa22b14831f729080bc3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BIT_STUFF_LEN<sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_a_f_s_k_8h_1aa174cc776093f5a528e68a8b16c9b7a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MARK_FREQ<sp/><sp/>1200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_a_f_s_k_8h_1a6eb40e0cb2aac1535ae088a915ebb805" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPACE_FREQ<sp/>2200</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52" refid="_a_f_s_k_8h_1ab44db8f63c4b1549a83fb1abadec53e0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PHASE_BITS<sp/><sp/><sp/>8<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>How<sp/>much<sp/>to<sp/>increment<sp/>phase<sp/>counter<sp/>each<sp/>sample</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_a_f_s_k_8h_1a63e72faebeb8869f9768ff642ae90b2d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PHASE_INC<sp/><sp/><sp/><sp/>1<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Nudge<sp/>by<sp/>an<sp/>eigth<sp/>of<sp/>a<sp/>sample<sp/>each<sp/>adjustment</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_a_f_s_k_8h_1addd9c4d64b2f30c854d55685c2f561a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PHASE_MAX<sp/><sp/><sp/><sp/>(SAMPLESPERBIT<sp/>*<sp/>PHASE_BITS)<sp/><sp/><sp/>//<sp/>Resolution<sp/>of<sp/>our<sp/>phase<sp/>counter<sp/>=<sp/>64</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_a_f_s_k_8h_1aac65fdad64d3a017b61e5b5625f91adc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PHASE_THRESHOLD<sp/><sp/>(PHASE_MAX<sp/>/<sp/>2)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Target<sp/>transition<sp/>point<sp/>of<sp/>our<sp/>phase<sp/>window</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="struct_hdlc" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_hdlc" kindref="compound">Hdlc</ref></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="60" refid="struct_hdlc_1a1be563f695b6ea1097624b75e81b89b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_hdlc_1a1be563f695b6ea1097624b75e81b89b8" kindref="member">demodulatedBits</ref>;</highlight></codeline>
+<codeline lineno="61" refid="struct_hdlc_1ac2a3d40847828c994ae837f34d22bba7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_hdlc_1ac2a3d40847828c994ae837f34d22bba7" kindref="member">bitIndex</ref>;</highlight></codeline>
+<codeline lineno="62" refid="struct_hdlc_1a3cff2def6c18174cabe180aab91ac32f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_hdlc_1a3cff2def6c18174cabe180aab91ac32f" kindref="member">currentByte</ref>;</highlight></codeline>
+<codeline lineno="63" refid="struct_hdlc_1ad7bc494d6beca6c71123a96cee2baeb7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_hdlc_1ad7bc494d6beca6c71123a96cee2baeb7" kindref="member">receiving</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">}<sp/><ref refid="_a_f_s_k_8h_1a4201c4addae6fc512a3eb8091714d477" kindref="member">Hdlc</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="struct_afsk" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="struct_afsk" kindref="compound">Afsk</ref></highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Stream<sp/>access<sp/>to<sp/>modem</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="struct_afsk_1a539f9d0fd0fcdd2523aa9b5694207288" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>FILE<sp/><ref refid="struct_afsk_1a539f9d0fd0fcdd2523aa9b5694207288" kindref="member">fd</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>General<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="struct_afsk_1a0f2cf84d5882a74b33b54828e4adda6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_hdlc" kindref="compound">Hdlc</ref><sp/><ref refid="struct_afsk_1a0f2cf84d5882a74b33b54828e4adda6d" kindref="member">hdlc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>need<sp/>a<sp/>link<sp/>control<sp/>structure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73" refid="struct_afsk_1a586542863e66d99dbb7b655fa54af563" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_afsk_1a586542863e66d99dbb7b655fa54af563" kindref="member">preambleLength</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Length<sp/>of<sp/>sync<sp/>preamble</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74" refid="struct_afsk_1aa3297e8885c70332e9274679b9329937" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_afsk_1aa3297e8885c70332e9274679b9329937" kindref="member">tailLength</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Length<sp/>of<sp/>transmission<sp/>tail</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Modulation<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="struct_afsk_1a6a63466f08a5391a6515479363283fdf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_afsk_1a6a63466f08a5391a6515479363283fdf" kindref="member">sampleIndex</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>sample<sp/>index<sp/>for<sp/>outgoing<sp/>bit<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="struct_afsk_1abcc27bcdd8198ea3e46df974f7a17664" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_afsk_1abcc27bcdd8198ea3e46df974f7a17664" kindref="member">currentOutputByte</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>byte<sp/>to<sp/>be<sp/>modulated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="struct_afsk_1a763bb48860d3ba79de2dd1abffa2ad89" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_afsk_1a763bb48860d3ba79de2dd1abffa2ad89" kindref="member">txBit</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mask<sp/>of<sp/>current<sp/>modulated<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80" refid="struct_afsk_1aece27671c62a8c93ce32e4bd6c38f312" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_afsk_1aece27671c62a8c93ce32e4bd6c38f312" kindref="member">bitStuff</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Whether<sp/>bitstuffing<sp/>is<sp/>allowed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="struct_afsk_1ab6ea81ad33d9cf98080a6e567cfd7887" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_afsk_1ab6ea81ad33d9cf98080a6e567cfd7887" kindref="member">bitstuffCount</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Counter<sp/>for<sp/>bit-stuffing</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84" refid="struct_afsk_1aa62658bb66ca18cf3d268258ef126283" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_afsk_1aa62658bb66ca18cf3d268258ef126283" kindref="member">phaseAcc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Phase<sp/>accumulator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="struct_afsk_1ae5f800f21b5aa819af756c5572e63cce" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="struct_afsk_1ae5f800f21b5aa819af756c5572e63cce" kindref="member">phaseInc</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Phase<sp/>increment<sp/>per<sp/>sample</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="struct_afsk_1a987e70d174e5cd82f73563d920273cc4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/><ref refid="struct_afsk_1a987e70d174e5cd82f73563d920273cc4" kindref="member">txFifo</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIFO<sp/>for<sp/>transmit<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="struct_afsk_1a32162873b8784efe43d3f28289c6ea6e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>txBuf[<ref refid="_a_f_s_k_8h_1adc5f6ad59595e8b2c14827f5012c6f4f" kindref="member">CONFIG_AFSK_TX_BUFLEN</ref>];<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Actial<sp/>data<sp/>storage<sp/>for<sp/>said<sp/>FIFO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
+<codeline lineno="90" refid="struct_afsk_1aea4204b922aaf2c78708bacec08d7888" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="struct_afsk_1aea4204b922aaf2c78708bacec08d7888" kindref="member">sending</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>when<sp/>modem<sp/>is<sp/>sending</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Demodulation<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93" refid="struct_afsk_1a326b5be68b2c9bb6191ac8d76a021999" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/><ref refid="struct_afsk_1a326b5be68b2c9bb6191ac8d76a021999" kindref="member">delayFifo</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Delayed<sp/>FIFO<sp/>for<sp/>frequency<sp/>discrimination</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94" refid="struct_afsk_1aab24e087341259c5e3f9008a8557644e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/>delayBuf[<ref refid="_a_f_s_k_8h_1a15440d8d1e6efc47a3263ccf91a8cb74" kindref="member">SAMPLESPERBIT</ref><sp/>/<sp/>2<sp/>+<sp/>1];<sp/></highlight><highlight class="comment">//<sp/>Actual<sp/>data<sp/>storage<sp/>for<sp/>said<sp/>FIFO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96" refid="struct_afsk_1ac37f5dab53ed2219bbfc0d4c3f2f25b8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref><sp/><ref refid="struct_afsk_1ac37f5dab53ed2219bbfc0d4c3f2f25b8" kindref="member">rxFifo</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FIFO<sp/>for<sp/>received<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97" refid="struct_afsk_1a8c7ee9d7b92796ccc7c3257b581695cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>rxBuf[<ref refid="_a_f_s_k_8h_1adb056877043b2fcf1477cf3a69bb89a6" kindref="member">CONFIG_AFSK_RX_BUFLEN</ref>];<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Actual<sp/>data<sp/>storage<sp/>for<sp/>said<sp/>FIFO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="struct_afsk_1a02560c20963adab17b0706c8c69f2ed3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>iirX[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>IIR<sp/>Filter<sp/>X<sp/>cells</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100" refid="struct_afsk_1a454754399c47bf3514ffc495832b5391" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/>iirY[2];<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>IIR<sp/>Filter<sp/>Y<sp/>cells</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102" refid="struct_afsk_1af07324b473ed86d0f79b539d0e76ed8c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_afsk_1af07324b473ed86d0f79b539d0e76ed8c" kindref="member">sampledBits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Bits<sp/>sampled<sp/>by<sp/>the<sp/>demodulator<sp/>(at<sp/>ADC<sp/>speed)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103" refid="struct_afsk_1a109e9e878c62839db0f611c8c636ba93" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>int8_t<sp/><ref refid="struct_afsk_1a109e9e878c62839db0f611c8c636ba93" kindref="member">currentPhase</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Current<sp/>phase<sp/>of<sp/>the<sp/>demodulator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="struct_afsk_1a6f734e90f74a1efd094c9cde6ea9df6d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="struct_afsk_1a6f734e90f74a1efd094c9cde6ea9df6d" kindref="member">actualBits</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Actual<sp/>found<sp/>bits<sp/>at<sp/>correct<sp/>bitrate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106" refid="struct_afsk_1a4b90678865e08c02384199c6b10aa5b5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="struct_afsk_1a4b90678865e08c02384199c6b10aa5b5" kindref="member">status</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Status<sp/>of<sp/>the<sp/>modem,<sp/>0<sp/>means<sp/>OK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal">}<sp/><ref refid="_a_f_s_k_8h_1a9c78d604c519643aecce1701bbdb2e5a" kindref="member">Afsk</ref>;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110" refid="_a_f_s_k_8h_1a1ddec5826f8a1f9010183107bb77c06d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DIV_ROUND(dividend,<sp/>divisor)<sp/><sp/>(((dividend)<sp/>+<sp/>(divisor)<sp/>/<sp/>2)<sp/>/<sp/>(divisor))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111" refid="_a_f_s_k_8h_1a3c7a6dbceee6762f12aa23e4930592e1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MARK_INC<sp/><sp/><sp/>(uint16_t)(DIV_ROUND(SIN_LEN<sp/>*<sp/>(uint32_t)MARK_FREQ,<sp/>CONFIG_AFSK_DAC_SAMPLERATE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112" refid="_a_f_s_k_8h_1aaf1eba52249d5604229150a0045ade95" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SPACE_INC<sp/><sp/>(uint16_t)(DIV_ROUND(SIN_LEN<sp/>*<sp/>(uint32_t)SPACE_FREQ,<sp/>CONFIG_AFSK_DAC_SAMPLERATE))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114" refid="_a_f_s_k_8h_1a6227c8e3094856f801c020b9b6e02035" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AFSK_DAC_IRQ_START()<sp/><sp/><sp/>do<sp/>{<sp/>extern<sp/>bool<sp/>hw_afsk_dac_isr;<sp/>hw_afsk_dac_isr<sp/>=<sp/>true;<sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="_a_f_s_k_8h_1a3f7526a581e906e739332ccace845e2b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AFSK_DAC_IRQ_STOP()<sp/><sp/><sp/><sp/>do<sp/>{<sp/>extern<sp/>bool<sp/>hw_afsk_dac_isr;<sp/>hw_afsk_dac_isr<sp/>=<sp/>false;<sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="_a_f_s_k_8h_1aac8110aa28bbf5739a39e186ad3ebc86" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>AFSK_DAC_INIT()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>do<sp/>{<sp/>DAC_DDR<sp/>|=<sp/>0xF8;<sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Here&apos;s<sp/>some<sp/>macros<sp/>for<sp/>controlling<sp/>the<sp/>RX/TX<sp/>LEDs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment">//<sp/>THE<sp/>_INIT()<sp/>functions<sp/>writes<sp/>to<sp/>the<sp/>DDRB<sp/>register</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>configure<sp/>the<sp/>pins<sp/>as<sp/>output<sp/>pins,<sp/>and<sp/>the<sp/>_ON()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>_OFF()<sp/>functions<sp/>writes<sp/>to<sp/>the<sp/>PORT<sp/>registers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>to<sp/>turn<sp/>the<sp/>pins<sp/>on<sp/>or<sp/>off.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123" refid="_a_f_s_k_8h_1a49a66c2203851e33ecbdb2e678f9663a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_TX_INIT()<sp/>do<sp/>{<sp/>LED_DDR<sp/>|=<sp/>_BV(1);<sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124" refid="_a_f_s_k_8h_1aa492cbe1864040a6233dd82239534438" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_TX_ON()<sp/><sp/><sp/>do<sp/>{<sp/>LED_PORT<sp/>|=<sp/>_BV(1);<sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="_a_f_s_k_8h_1acda9d4f9b15d326fb4d56c788cb057a0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_TX_OFF()<sp/><sp/>do<sp/>{<sp/>LED_PORT<sp/>&amp;=<sp/>~_BV(1);<sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127" refid="_a_f_s_k_8h_1aa2ae7f3b8cfd16929ff5ce9f19601c72" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_RX_INIT()<sp/>do<sp/>{<sp/>LED_DDR<sp/>|=<sp/>_BV(2);<sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128" refid="_a_f_s_k_8h_1a8581cc8306ae1bd1d32e66a01889a0de" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_RX_ON()<sp/><sp/><sp/>do<sp/>{<sp/>LED_PORT<sp/>|=<sp/>_BV(2);<sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129" refid="_a_f_s_k_8h_1a9b644abb06b553d4ef45da36e8ff636b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>LED_RX_OFF()<sp/><sp/>do<sp/>{<sp/>LED_PORT<sp/>&amp;=<sp/>~_BV(2);<sp/>}<sp/>while<sp/>(0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" kindref="member">AFSK_init</ref>(<ref refid="struct_afsk" kindref="compound">Afsk</ref><sp/>*afsk);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_f_s_k_8h_1adb7d23f979900b693df4f80b24e3eca1" kindref="member">AFSK_transmit</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*buffer,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>size);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_f_s_k_8h_1a306ec6e3bc5d6b1adf3ae3b1bf3f8bf7" kindref="member">AFSK_poll</ref>(<ref refid="struct_afsk" kindref="compound">Afsk</ref><sp/>*afsk);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_a_f_s_k_8h_1a68893c6a77f5945c30a7528e9841e5f3" kindref="member">afsk_putchar</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>c);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_a_f_s_k_8h_1a52e815cce13ae490f2fed9988b75c16c" kindref="member">afsk_getchar</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/AFSK.h"/>
+  </compounddef>
+</doxygen>

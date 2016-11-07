@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_running_statistics_8cpp" kind="file" language="C++">
+    <compoundname>RunningStatistics.cpp</compoundname>
+    <includes refid="_running_statistics_8h" local="yes">RunningStatistics.h</includes>
+    <includes refid="_float_define_8h" local="yes">FloatDefine.h</includes>
+    <incdepgraph>
+      <node id="745">
+        <label>RunningStatistics.h</label>
+        <link refid="_running_statistics_8h"/>
+        <childnode refid="746" relation="include">
+        </childnode>
+      </node>
+      <node id="746">
+        <label>FilterOnePole.h</label>
+        <link refid="_filter_one_pole_8h"/>
+        <childnode refid="747" relation="include">
+        </childnode>
+      </node>
+      <node id="748">
+        <label>FloatDefine.h</label>
+        <link refid="_float_define_8h"/>
+      </node>
+      <node id="747">
+        <label>Arduino.h</label>
+      </node>
+      <node id="744">
+        <label>Weather_Balloon/library/Filters/RunningStatistics.cpp</label>
+        <link refid="RunningStatistics.cpp"/>
+        <childnode refid="745" relation="include">
+        </childnode>
+        <childnode refid="748" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_running_statistics_8cpp_1a67f264182f870b0259cd82e82e5e32cf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testRunningStatistics</definition>
+        <argsstring>()</argsstring>
+        <name>testRunningStatistics</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/RunningStatistics.cpp" line="58" column="1" bodyfile="Weather_Balloon/library/Filters/RunningStatistics.cpp" bodystart="58" bodyend="86"/>
+        <references refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" compoundref="_running_statistics_8cpp" startline="21" endline="24">RunningStatistics::input</references>
+        <references refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" compoundref="_running_statistics_8cpp" startline="26" endline="28">RunningStatistics::mean</references>
+        <references refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" compoundref="_running_statistics_8cpp" startline="16" endline="19">RunningStatistics::setInitialValue</references>
+        <references refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" compoundref="_running_statistics_8cpp" startline="39" endline="47">RunningStatistics::sigma</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_running_statistics_8h" kindref="compound">RunningStatistics.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_float_define_8h" kindref="compound">FloatDefine.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="struct_running_statistics_1a5ba923774908f70a5827bcdc18f46477" refkind="member"><highlight class="normal"><ref refid="struct_running_statistics_1a5ba923774908f70a5827bcdc18f46477" kindref="member">RunningStatistics::RunningStatistics</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" kindref="member">setWindowSecs</ref>(<sp/>1<sp/>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>setup<sp/>with<sp/>one<sp/>second<sp/>average</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" kindref="member">setInitialValue</ref>(<sp/>0<sp/>);<sp/></highlight><highlight class="comment">//<sp/>start<sp/>with<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9" refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a035fade92bd2f6fb0bbde8e4857c33f7" kindref="member">RunningStatistics::setWindowSecs</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>windowSecs<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1a4ec83fcbddff87169b6aad7fe9784fad" kindref="member">AverageSecs</ref><sp/>=<sp/>windowSecs;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" kindref="member">averageValue</ref>.<ref refid="struct_filter_one_pole_cascade_1a06aed75defb8dc7cd252436944ca0baf" kindref="member">setRiseTime</ref>(<sp/><ref refid="struct_running_statistics_1a4ec83fcbddff87169b6aad7fe9784fad" kindref="member">AverageSecs</ref><sp/>);</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" kindref="member">averageSquareValue</ref>.<ref refid="struct_filter_one_pole_cascade_1a06aed75defb8dc7cd252436944ca0baf" kindref="member">setRiseTime</ref>(<sp/><ref refid="struct_running_statistics_1a4ec83fcbddff87169b6aad7fe9784fad" kindref="member">AverageSecs</ref><sp/>);</highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" kindref="member">RunningStatistics::setInitialValue</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>initialMean,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>initialSigma<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" kindref="member">averageValue</ref>.<ref refid="struct_filter_one_pole_cascade_1a1bcac6613d187073873a825d9826ed82" kindref="member">setToNewValue</ref>(<sp/>initialMean<sp/>);</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" kindref="member">averageSquareValue</ref>.<ref refid="struct_filter_one_pole_cascade_1a1bcac6613d187073873a825d9826ed82" kindref="member">setToNewValue</ref>(<sp/>sq(initialMean)<sp/>+<sp/>sq(initialSigma<sp/>)<sp/>);</highlight></codeline>
+<codeline lineno="19"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21" refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" kindref="member">RunningStatistics::input</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inVal<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" kindref="member">averageValue</ref>.<ref refid="struct_filter_one_pole_cascade_1ae35052126bde0f0f197317b2ad003d26" kindref="member">input</ref>(inVal);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>calculates<sp/>running<sp/>average</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" kindref="member">averageSquareValue</ref>.<ref refid="struct_filter_one_pole_cascade_1ae35052126bde0f0f197317b2ad003d26" kindref="member">input</ref>(inVal*inVal);<sp/><sp/></highlight><highlight class="comment">//<sp/>calculates<sp/>running<sp/>average<sp/>of<sp/>square</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="26" refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" kindref="member">RunningStatistics::mean</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" kindref="member">averageValue</ref>.<ref refid="struct_filter_one_pole_cascade_1ae8ba6b966183057560bb0d84e3ea549a" kindref="member">output</ref>();</highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="30" refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" kindref="member">RunningStatistics::variance</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>var<sp/>=<sp/><ref refid="struct_running_statistics_1afeb370b47574823deb2eef8e81da7330" kindref="member">averageSquareValue</ref>.<ref refid="struct_filter_one_pole_cascade_1ae8ba6b966183057560bb0d84e3ea549a" kindref="member">output</ref>()<sp/>-<sp/><ref refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" kindref="member">averageValue</ref>.<ref refid="struct_filter_one_pole_cascade_1ae8ba6b966183057560bb0d84e3ea549a" kindref="member">output</ref>()*<ref refid="struct_running_statistics_1af4029c4a1059b7dccacf846f71060c04" kindref="member">averageValue</ref>.<ref refid="struct_filter_one_pole_cascade_1ae8ba6b966183057560bb0d84e3ea549a" kindref="member">output</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>because<sp/>of<sp/>the<sp/>filtering,<sp/>it&apos;s<sp/>possible<sp/>that<sp/>this<sp/>could<sp/>be<sp/>negative<sp/>...<sp/>check!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>var<sp/>&lt;<sp/>0<sp/>)<sp/>var<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>var;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" kindref="member">RunningStatistics::sigma</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ARM_FLOAT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrtf(<ref refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" kindref="member">variance</ref>());</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(<ref refid="struct_running_statistics_1a5401a1f86867e7de5987cbb14dc496df" kindref="member">variance</ref>());</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="struct_running_statistics_1a5de669afa689ee26e8c3c7286446ef54" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a5de669afa689ee26e8c3c7286446ef54" kindref="member">RunningStatistics::CV</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>maxCV<sp/>=<sp/>1e3;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>meanTmp<sp/>=<sp/><ref refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" kindref="member">mean</ref>();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>prevent<sp/>divide<sp/>by<sp/>zero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>meanTmp<sp/>==<sp/>0<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>maxCV;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" kindref="member">sigma</ref>()<sp/>/<sp/>meanTmp;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_running_statistics_8h_1a67f264182f870b0259cd82e82e5e32cf" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_running_statistics_8cpp_1a67f264182f870b0259cd82e82e5e32cf" kindref="member">testRunningStatistics</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>a<sp/>speed<sp/>test<sp/>for<sp/>running<sp/>statistics</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><ref refid="struct_running_statistics" kindref="compound">RunningStatistics</ref><sp/>myStats;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/>myStats.<ref refid="struct_running_statistics_1a0695a069bf0f534f3a1987699bdfb7ea" kindref="member">setInitialValue</ref>(<sp/>(1.0/1024)*</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">(analogRead(<sp/>A0<sp/>))<sp/>);</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>updateInterval<sp/>=<sp/>1.0;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nextUpdateTime<sp/>=<sp/>1e-6*float(micros())<sp/>+<sp/>updateInterval;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>nLoops<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/>myStats.<ref refid="struct_running_statistics_1af17e8c856b42305ecb02762730e12919" kindref="member">input</ref>(<sp/>(1.0/1024)*</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">(analogRead(<sp/>A0<sp/>))<sp/>);</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>nLoops++;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>1e-6*float(micros());</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>t<sp/>&gt;<sp/>nextUpdateTime<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nextUpdateTime<sp/>+=<sp/>updateInterval;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(<sp/></highlight><highlight class="stringliteral">&quot;mean:<sp/>&quot;</highlight><highlight class="normal">);<sp/>Serial.print(<sp/>myStats.<ref refid="struct_running_statistics_1a4001e3eb9ab7469014f541c16f0b30cd" kindref="member">mean</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(<sp/></highlight><highlight class="stringliteral">&quot;\tsigma:<sp/>&quot;</highlight><highlight class="normal"><sp/>);<sp/>Serial.print(<sp/>myStats.<ref refid="struct_running_statistics_1a46189b5442a6bd5bbd303d239ca75a89" kindref="member">sigma</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(<sp/></highlight><highlight class="stringliteral">&quot;\tHz:<sp/>&quot;</highlight><highlight class="normal">);<sp/>Serial.print(<sp/>nLoops<sp/>);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nLoops<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Filters/RunningStatistics.cpp"/>
+  </compounddef>
+</doxygen>

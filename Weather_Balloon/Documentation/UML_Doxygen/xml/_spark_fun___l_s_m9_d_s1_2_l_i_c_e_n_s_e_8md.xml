@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_spark_fun___l_s_m9_d_s1_2_l_i_c_e_n_s_e_8md" kind="file" language="Markdown">
+    <compoundname>LICENSE.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">License<sp/>Information</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>hardware<sp/>is<sp/>released<sp/>under<sp/>[Creative<sp/>Commons<sp/>Share-alike<sp/>3.0](http://creativecommons.org/licenses/by-sa/3.0/).<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">All<sp/>other<sp/>code<sp/>is<sp/>open<sp/>source<sp/>so<sp/>please<sp/>feel<sp/>free<sp/>to<sp/>do<sp/>anything<sp/>you<sp/>want<sp/>with<sp/>it;<sp/>you<sp/>buy<sp/>me<sp/>a<sp/>beer<sp/>if<sp/>you<sp/>use<sp/>this<sp/>and<sp/>we<sp/>meet<sp/>someday<sp/>([Beerware<sp/>license](http://en.wikipedia.org/wiki/Beerware)).</highlight></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/LICENSE.md"/>
+  </compounddef>
+</doxygen>

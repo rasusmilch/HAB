@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_filter_derivative_8cpp" kind="file" language="C++">
+    <compoundname>FilterDerivative.cpp</compoundname>
+    <includes refid="_filter_derivative_8h" local="yes">FilterDerivative.h</includes>
+    <includes local="yes">Arduino.h</includes>
+    <incdepgraph>
+      <node id="705">
+        <label>FilterDerivative.h</label>
+        <link refid="_filter_derivative_8h"/>
+      </node>
+      <node id="704">
+        <label>Weather_Balloon/library/Filters/FilterDerivative.cpp</label>
+        <link refid="FilterDerivative.cpp"/>
+        <childnode refid="705" relation="include">
+        </childnode>
+        <childnode refid="706" relation="include">
+        </childnode>
+      </node>
+      <node id="706">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_filter_derivative_8cpp_1aa733c0d9f97d55c0efedef0adf130c76" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void testFilterDerivative</definition>
+        <argsstring>()</argsstring>
+        <name>testFilterDerivative</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Filters/FilterDerivative.cpp" line="17" column="1" bodyfile="Weather_Balloon/library/Filters/FilterDerivative.cpp" bodystart="17" bodyend="32"/>
+        <references refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" compoundref="_filter_derivative_8cpp" startline="4" endline="13">FilterDerivative::input</references>
+        <references refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" compoundref="_filter_derivative_8cpp" startline="15" endline="15">FilterDerivative::output</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_filter_derivative_8h" kindref="compound">FilterDerivative.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4" refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" kindref="member">FilterDerivative::input</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inVal<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>thisUS<sp/>=<sp/>micros();</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/>1e-6*float(thisUS<sp/>-<sp/><ref refid="struct_filter_derivative_1a6e64fea4ef8778deb71cf8df694c8bcf" kindref="member">LastUS</ref>);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cast<sp/>to<sp/>float<sp/>here,<sp/>for<sp/>math</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_derivative_1a6e64fea4ef8778deb71cf8df694c8bcf" kindref="member">LastUS</ref><sp/>=<sp/>thisUS;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>update<sp/>this<sp/>now</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_derivative_1a3cbe0628c52a5853670b0e5daaaaeace" kindref="member">Derivative</ref><sp/>=<sp/>(inVal-<ref refid="struct_filter_derivative_1af161c7f88a440f7e3c2a7b2c33ed433a" kindref="member">LastInput</ref>)<sp/>/<sp/>dt;</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_derivative_1af161c7f88a440f7e3c2a7b2c33ed433a" kindref="member">LastInput</ref><sp/>=<sp/>inVal;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" kindref="member">output</ref>();</highlight></codeline>
+<codeline lineno="13"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="15" refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" kindref="member">FilterDerivative::output</ref>()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_filter_derivative_1a3cbe0628c52a5853670b0e5daaaaeace" kindref="member">Derivative</ref>;<sp/>}</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="17" refid="_filter_derivative_8h_1aa733c0d9f97d55c0efedef0adf130c76" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_filter_derivative_8cpp_1aa733c0d9f97d55c0efedef0adf130c76" kindref="member">testFilterDerivative</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_derivative" kindref="compound">FilterDerivative</ref><sp/>der;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(</highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>t<sp/>=<sp/>1e-6<sp/>*<sp/>float(<sp/>micros()<sp/>);</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>100*sin(TWO_PI*t);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>der.<ref refid="struct_filter_derivative_1a2251c16508ad353fc0573b3f8ddcdc8f" kindref="member">input</ref>(value);</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(<sp/></highlight><highlight class="stringliteral">&quot;\n&quot;</highlight><highlight class="normal"><sp/>);</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(<sp/>value<sp/>);<sp/>Serial.print(<sp/></highlight><highlight class="stringliteral">&quot;\t&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>Serial.print(<sp/>der.<ref refid="struct_filter_derivative_1a0794f9bc873d2bfaa9ee974e21b6a02d" kindref="member">output</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(10);</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Filters/FilterDerivative.cpp"/>
+  </compounddef>
+</doxygen>

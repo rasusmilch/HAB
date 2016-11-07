@@ -1,0 +1,14 @@
+<map id="DallasTemperature::setUserDataByIndex" name="DallasTemperature::setUserDataByIndex">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#afa644bebf50c81b6641a31c585b62538" title="DallasTemperature::\lgetAddress" alt="" coords="187,57,319,98"/>
+<area shape="rect" id="node6" href="$class_dallas_temperature.html#a0ed69b03ed848936ea0c8deea0e5c2ba" title="DallasTemperature::\lsetUserData" alt="" coords="187,151,319,193"/>
+<area shape="rect" id="node3" href="$class_one_wire.html#aae5efdf67928b5ee312ab7d7906416fa" title="OneWire::reset_search" alt="" coords="367,5,511,32"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#a71e4744b8d7b2f1c05a96cd158c83007" title="DallasTemperature::\lvalidAddress" alt="" coords="373,57,505,98"/>
+<area shape="rect" id="node5" href="$class_one_wire.html#ae3486a669581b750e4fdf3f3a12b05f1" title="OneWire::crc8" alt="" coords="575,64,675,91"/>
+<area shape="rect" id="node7" href="$class_dallas_temperature.html#a3601e8ee63c4770b716817ed68664400" title="DallasTemperature::\lgetUserData" alt="" coords="373,122,505,163"/>
+<area shape="rect" id="node8" href="$class_dallas_temperature.html#a19afa5e594de0ab6caa5a48a70650927" title="DallasTemperature::\lisConnected" alt="" coords="559,126,691,167"/>
+<area shape="rect" id="node9" href="$class_dallas_temperature.html#a74c275dabf103f268c5a271d379dcb7e" title="DallasTemperature::\lwriteScratchPad" alt="" coords="373,239,505,281"/>
+<area shape="rect" id="node10" href="$class_one_wire.html#a6a742a9112392567eae3d06dde067c07" title="OneWire::reset" alt="" coords="573,196,676,223"/>
+<area shape="rect" id="node11" href="$class_one_wire.html#accf808390abd63d3c7bce35677784384" title="OneWire::select" alt="" coords="571,247,679,273"/>
+<area shape="rect" id="node12" href="$class_one_wire.html#a843e9e7e57ed615b4880be0b76b40b7d" title="OneWire::write" alt="" coords="739,272,845,299"/>
+<area shape="rect" id="node13" href="$class_one_wire.html#a6bbc58276d1cb08653dab3ea35378f94" title="OneWire::write_bit" alt="" coords="893,272,1020,299"/>
+</map>

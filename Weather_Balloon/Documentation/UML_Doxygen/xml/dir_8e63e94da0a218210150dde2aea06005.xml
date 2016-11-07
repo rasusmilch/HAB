@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_8e63e94da0a218210150dde2aea06005" kind="dir">
+    <compoundname>Weather_Balloon/library/MAG3110</compoundname>
+    <innerfile refid="_m_a_g3110_8cpp">MAG3110.cpp</innerfile>
+    <innerfile refid="_m_a_g3110_8h">MAG3110.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/MAG3110/"/>
+  </compounddef>
+</doxygen>

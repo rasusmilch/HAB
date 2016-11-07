@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_00e94e225ed21063c0eb7bffaee81589" kind="dir">
+    <compoundname>Weather_Balloon/library/Adafruit_SI1145_Library-master</compoundname>
+    <innerfile refid="_adafruit___s_i1145_8cpp">Adafruit_SI1145.cpp</innerfile>
+    <innerfile refid="_adafruit___s_i1145_8h">Adafruit_SI1145.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_SI1145_Library-master/"/>
+  </compounddef>
+</doxygen>

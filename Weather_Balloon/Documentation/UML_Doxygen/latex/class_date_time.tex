@@ -1,0 +1,583 @@
+\hypertarget{class_date_time}{}\section{Date\+Time Class Reference}
+\label{class_date_time}\index{Date\+Time@{Date\+Time}}
+
+
+{\ttfamily \#include $<$R\+T\+Clib.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_date_time_af42f356752ec542faf262f485bd44a0b}{Date\+Time} (uint32\+\_\+t t=0)
+\item 
+\hyperlink{class_date_time_aad62a6709a1e65e6860b1efaf8c347e9}{Date\+Time} (uint16\+\_\+t \hyperlink{class_date_time_a019cf3799acc8c9a44fdc501fce33881}{year}, uint8\+\_\+t \hyperlink{class_date_time_a58beb18aec346e7081d02a2962032a43}{month}, uint8\+\_\+t \hyperlink{class_date_time_a0cedf8c399d4a38df0b8b8c4049bbac4}{day}, uint8\+\_\+t \hyperlink{class_date_time_a71816802ff06e06d53ae3e7f420f0196}{hour}=0, uint8\+\_\+t min=0, uint8\+\_\+t sec=0)
+\item 
+\hyperlink{class_date_time_aabeb5303c98a004439fe337bb5f5da63}{Date\+Time} (const char $\ast$date, const char $\ast$time)
+\item 
+uint16\+\_\+t \hyperlink{class_date_time_a019cf3799acc8c9a44fdc501fce33881}{year} () const 
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_a58beb18aec346e7081d02a2962032a43}{month} () const 
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_a0cedf8c399d4a38df0b8b8c4049bbac4}{day} () const 
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_a71816802ff06e06d53ae3e7f420f0196}{hour} () const 
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_a9990c5958c55b3aa7018e21df9d490e5}{minute} () const 
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_a9b9a89a83e823b4a55e731d2b2d82f60}{second} () const 
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_a4f3e0999a04238348adf390c29b889f9}{day\+Of\+Week} () const 
+\item 
+long \hyperlink{class_date_time_a6dd7642f7f7a2d7ff7aec465bbc78187}{secondstime} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_date_time_afb578f26cf9eddc7d6a0891021ee77f3}{unixtime} (void) const 
+\item 
+char $\ast$ \hyperlink{class_date_time_a839ec24c6bec99875ac7336deed49ac7}{to\+String} (char $\ast$buf, int maxlen) const 
+\item 
+void \hyperlink{class_date_time_a87adbc2ee0bfcb9417ffeadca2e3f375}{operator+=} (uint32\+\_\+t)
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_ac0b5906cbb32751988603bf0388e7ab9}{y\+Off}
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_a04c79ec05511462bc6a015e5b1088609}{m}
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_abad2ae4520c8a7f87fd242c0d9a53256}{d}
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_ad65c31b7b4bf0430311e5bdf3f343371}{hh}
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_af2cbffff9349832135c3280a18d21510}{mm}
+\item 
+uint8\+\_\+t \hyperlink{class_date_time_a38da3481e6355fcf8ceb4c57eb9db0ce}{ss}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file R\+T\+Clib.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{Date\+Time(uint32\+\_\+t t=0)}{DateTime(uint32\_t t=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+Time\+::\+Date\+Time (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{t = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_time_af42f356752ec542faf262f485bd44a0b}{}\label{class_date_time_af42f356752ec542faf262f485bd44a0b}
+
+
+Definition at line 46 of file R\+T\+Clib.\+cpp.
+
+
+
+References d, hh, m, mm, pgm\+\_\+read\+\_\+byte, S\+E\+C\+O\+N\+D\+S\+\_\+\+F\+R\+O\+M\+\_\+1970\+\_\+\+T\+O\+\_\+2000, ss, and y\+Off.
+
+
+
+Referenced by operator+=(), and R\+T\+C\+\_\+\+Millis\+::\+R\+T\+C\+\_\+\+Millis().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_af42f356752ec542faf262f485bd44a0b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{Date\+Time(uint16\+\_\+t year, uint8\+\_\+t month, uint8\+\_\+t day, uint8\+\_\+t hour=0, uint8\+\_\+t min=0, uint8\+\_\+t sec=0)}{DateTime(uint16\_t year, uint8\_t month, uint8\_t day, uint8\_t hour=0, uint8\_t min=0, uint8\_t sec=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+Time\+::\+Date\+Time (
+\begin{DoxyParamCaption}
+\item[{uint16\+\_\+t}]{year, }
+\item[{uint8\+\_\+t}]{month, }
+\item[{uint8\+\_\+t}]{day, }
+\item[{uint8\+\_\+t}]{hour = {\ttfamily 0}, }
+\item[{uint8\+\_\+t}]{min = {\ttfamily 0}, }
+\item[{uint8\+\_\+t}]{sec = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_time_aad62a6709a1e65e6860b1efaf8c347e9}{}\label{class_date_time_aad62a6709a1e65e6860b1efaf8c347e9}
+
+
+Definition at line 76 of file R\+T\+Clib.\+cpp.
+
+
+
+References d, hh, m, mm, ss, year(), and y\+Off.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{class_date_time_aad62a6709a1e65e6860b1efaf8c347e9_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\index{Date\+Time@{Date\+Time}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{Date\+Time(const char $\ast$date, const char $\ast$time)}{DateTime(const char *date, const char *time)}}]{\setlength{\rightskip}{0pt plus 5cm}Date\+Time\+::\+Date\+Time (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{date, }
+\item[{const char $\ast$}]{time}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_time_aabeb5303c98a004439fe337bb5f5da63}{}\label{class_date_time_aabeb5303c98a004439fe337bb5f5da63}
+
+
+Definition at line 99 of file R\+T\+Clib.\+cpp.
+
+
+
+References d, hh, m, mm, ss, and y\+Off.
+
+
+
+\subsection{Member Function Documentation}
+\index{Date\+Time@{Date\+Time}!day@{day}}
+\index{day@{day}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{day() const }{day() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::day (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_date_time_a0cedf8c399d4a38df0b8b8c4049bbac4}{}\label{class_date_time_a0cedf8c399d4a38df0b8b8c4049bbac4}
+
+
+Definition at line 23 of file R\+T\+Clib.\+h.
+
+
+
+References d.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S1307\+::adjust(), R\+T\+C\+\_\+\+D\+S3234\+::adjust(), R\+T\+C\+\_\+\+D\+S3231\+::adjust(), and day\+Of\+Week().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a0cedf8c399d4a38df0b8b8c4049bbac4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!day\+Of\+Week@{day\+Of\+Week}}
+\index{day\+Of\+Week@{day\+Of\+Week}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{day\+Of\+Week() const }{dayOfWeek() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::day\+Of\+Week (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_time_a4f3e0999a04238348adf390c29b889f9}{}\label{class_date_time_a4f3e0999a04238348adf390c29b889f9}
+
+
+Definition at line 142 of file R\+T\+Clib.\+cpp.
+
+
+
+References d, day(), m, and y\+Off.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S3234\+::adjust(), and second().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{class_date_time_a4f3e0999a04238348adf390c29b889f9_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a4f3e0999a04238348adf390c29b889f9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!hour@{hour}}
+\index{hour@{hour}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{hour() const }{hour() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::hour (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_date_time_a71816802ff06e06d53ae3e7f420f0196}{}\label{class_date_time_a71816802ff06e06d53ae3e7f420f0196}
+
+
+Definition at line 27 of file R\+T\+Clib.\+h.
+
+
+
+References hh.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S1307\+::adjust(), R\+T\+C\+\_\+\+D\+S3234\+::adjust(), and R\+T\+C\+\_\+\+D\+S3231\+::adjust().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a71816802ff06e06d53ae3e7f420f0196_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!minute@{minute}}
+\index{minute@{minute}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{minute() const }{minute() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::minute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_date_time_a9990c5958c55b3aa7018e21df9d490e5}{}\label{class_date_time_a9990c5958c55b3aa7018e21df9d490e5}
+
+
+Definition at line 31 of file R\+T\+Clib.\+h.
+
+
+
+References mm.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S1307\+::adjust(), R\+T\+C\+\_\+\+D\+S3234\+::adjust(), and R\+T\+C\+\_\+\+D\+S3231\+::adjust().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a9990c5958c55b3aa7018e21df9d490e5_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!month@{month}}
+\index{month@{month}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{month() const }{month() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::month (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_date_time_a58beb18aec346e7081d02a2962032a43}{}\label{class_date_time_a58beb18aec346e7081d02a2962032a43}
+
+
+Definition at line 19 of file R\+T\+Clib.\+h.
+
+
+
+References m.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S1307\+::adjust(), R\+T\+C\+\_\+\+D\+S3234\+::adjust(), and R\+T\+C\+\_\+\+D\+S3231\+::adjust().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a58beb18aec346e7081d02a2962032a43_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{operator+=(uint32\+\_\+t)}{operator+=(uint32\_t)}}]{\setlength{\rightskip}{0pt plus 5cm}void Date\+Time\+::operator+= (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{additional}
+\end{DoxyParamCaption}
+)}\hypertarget{class_date_time_a87adbc2ee0bfcb9417ffeadca2e3f375}{}\label{class_date_time_a87adbc2ee0bfcb9417ffeadca2e3f375}
+
+
+Definition at line 174 of file R\+T\+Clib.\+cpp.
+
+
+
+References Date\+Time(), and unixtime().
+
+
+
+Referenced by second().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=324pt]{class_date_time_a87adbc2ee0bfcb9417ffeadca2e3f375_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a87adbc2ee0bfcb9417ffeadca2e3f375_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!second@{second}}
+\index{second@{second}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{second() const }{second() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::second (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_date_time_a9b9a89a83e823b4a55e731d2b2d82f60}{}\label{class_date_time_a9b9a89a83e823b4a55e731d2b2d82f60}
+
+
+Definition at line 35 of file R\+T\+Clib.\+h.
+
+
+
+References day\+Of\+Week(), operator+=(), secondstime(), ss, to\+String(), and unixtime().
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S1307\+::adjust(), R\+T\+C\+\_\+\+D\+S3234\+::adjust(), and R\+T\+C\+\_\+\+D\+S3231\+::adjust().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a9b9a89a83e823b4a55e731d2b2d82f60_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a9b9a89a83e823b4a55e731d2b2d82f60_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!secondstime@{secondstime}}
+\index{secondstime@{secondstime}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{secondstime() const }{secondstime() const }}]{\setlength{\rightskip}{0pt plus 5cm}long Date\+Time\+::secondstime (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_time_a6dd7642f7f7a2d7ff7aec465bbc78187}{}\label{class_date_time_a6dd7642f7f7a2d7ff7aec465bbc78187}
+
+
+Referenced by second().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a6dd7642f7f7a2d7ff7aec465bbc78187_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!to\+String@{to\+String}}
+\index{to\+String@{to\+String}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{to\+String(char $\ast$buf, int maxlen) const }{toString(char *buf, int maxlen) const }}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ Date\+Time\+::to\+String (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{buf, }
+\item[{int}]{maxlen}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_time_a839ec24c6bec99875ac7336deed49ac7}{}\label{class_date_time_a839ec24c6bec99875ac7336deed49ac7}
+
+
+Definition at line 161 of file R\+T\+Clib.\+cpp.
+
+
+
+References d, hh, m, mm, months, ss, and y\+Off.
+
+
+
+Referenced by second().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a839ec24c6bec99875ac7336deed49ac7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!unixtime@{unixtime}}
+\index{unixtime@{unixtime}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{unixtime(void) const }{unixtime(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Date\+Time\+::unixtime (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const}\hypertarget{class_date_time_afb578f26cf9eddc7d6a0891021ee77f3}{}\label{class_date_time_afb578f26cf9eddc7d6a0891021ee77f3}
+
+
+Definition at line 148 of file R\+T\+Clib.\+cpp.
+
+
+
+References d, hh, m, mm, S\+E\+C\+O\+N\+D\+S\+\_\+\+F\+R\+O\+M\+\_\+1970\+\_\+\+T\+O\+\_\+2000, ss, and y\+Off.
+
+
+
+Referenced by R\+T\+C\+\_\+\+Millis\+::adjust(), operator+=(), and second().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_afb578f26cf9eddc7d6a0891021ee77f3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Date\+Time@{Date\+Time}!year@{year}}
+\index{year@{year}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{year() const }{year() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint16\+\_\+t Date\+Time\+::year (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_date_time_a019cf3799acc8c9a44fdc501fce33881}{}\label{class_date_time_a019cf3799acc8c9a44fdc501fce33881}
+
+
+Definition at line 15 of file R\+T\+Clib.\+h.
+
+
+
+References y\+Off.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S1307\+::adjust(), R\+T\+C\+\_\+\+D\+S3234\+::adjust(), R\+T\+C\+\_\+\+D\+S3231\+::adjust(), and Date\+Time().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_date_time_a019cf3799acc8c9a44fdc501fce33881_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Date\+Time@{Date\+Time}!d@{d}}
+\index{d@{d}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{d}{d}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::d\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_date_time_abad2ae4520c8a7f87fd242c0d9a53256}{}\label{class_date_time_abad2ae4520c8a7f87fd242c0d9a53256}
+
+
+Definition at line 51 of file R\+T\+Clib.\+h.
+
+
+
+Referenced by Date\+Time(), day(), day\+Of\+Week(), to\+String(), and unixtime().
+
+\index{Date\+Time@{Date\+Time}!hh@{hh}}
+\index{hh@{hh}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{hh}{hh}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::hh\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_date_time_ad65c31b7b4bf0430311e5bdf3f343371}{}\label{class_date_time_ad65c31b7b4bf0430311e5bdf3f343371}
+
+
+Definition at line 51 of file R\+T\+Clib.\+h.
+
+
+
+Referenced by Date\+Time(), hour(), to\+String(), and unixtime().
+
+\index{Date\+Time@{Date\+Time}!m@{m}}
+\index{m@{m}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{m}{m}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::m\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_date_time_a04c79ec05511462bc6a015e5b1088609}{}\label{class_date_time_a04c79ec05511462bc6a015e5b1088609}
+
+
+Definition at line 51 of file R\+T\+Clib.\+h.
+
+
+
+Referenced by Date\+Time(), day\+Of\+Week(), month(), to\+String(), and unixtime().
+
+\index{Date\+Time@{Date\+Time}!mm@{mm}}
+\index{mm@{mm}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{mm}{mm}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::mm\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_date_time_af2cbffff9349832135c3280a18d21510}{}\label{class_date_time_af2cbffff9349832135c3280a18d21510}
+
+
+Definition at line 51 of file R\+T\+Clib.\+h.
+
+
+
+Referenced by Date\+Time(), minute(), to\+String(), and unixtime().
+
+\index{Date\+Time@{Date\+Time}!ss@{ss}}
+\index{ss@{ss}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{ss}{ss}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::ss\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_date_time_a38da3481e6355fcf8ceb4c57eb9db0ce}{}\label{class_date_time_a38da3481e6355fcf8ceb4c57eb9db0ce}
+
+
+Definition at line 51 of file R\+T\+Clib.\+h.
+
+
+
+Referenced by Date\+Time(), second(), to\+String(), and unixtime().
+
+\index{Date\+Time@{Date\+Time}!y\+Off@{y\+Off}}
+\index{y\+Off@{y\+Off}!Date\+Time@{Date\+Time}}
+\subsubsection[{\texorpdfstring{y\+Off}{yOff}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Date\+Time\+::y\+Off\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_date_time_ac0b5906cbb32751988603bf0388e7ab9}{}\label{class_date_time_ac0b5906cbb32751988603bf0388e7ab9}
+
+
+Definition at line 51 of file R\+T\+Clib.\+h.
+
+
+
+Referenced by Date\+Time(), day\+Of\+Week(), to\+String(), unixtime(), and year().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\hyperlink{_r_t_clib_8h}{R\+T\+Clib.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+R\+T\+Clib-\/master/\hyperlink{_r_t_clib_8cpp}{R\+T\+Clib.\+cpp}\end{DoxyCompactItemize}

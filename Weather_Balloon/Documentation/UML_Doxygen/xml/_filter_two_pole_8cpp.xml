@@ -1,0 +1,239 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_filter_two_pole_8cpp" kind="file" language="C++">
+    <compoundname>FilterTwoPole.cpp</compoundname>
+    <includes refid="_filter_two_pole_8h" local="yes">FilterTwoPole.h</includes>
+    <incdepgraph>
+      <node id="733">
+        <label>Arduino.h</label>
+      </node>
+      <node id="732">
+        <label>FilterTwoPole.h</label>
+        <link refid="_filter_two_pole_8h"/>
+        <childnode refid="733" relation="include">
+        </childnode>
+      </node>
+      <node id="731">
+        <label>Weather_Balloon/library/Filters/FilterTwoPole.cpp</label>
+        <link refid="FilterTwoPole.cpp"/>
+        <childnode refid="732" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_filter_two_pole_8h" kindref="compound">FilterTwoPole.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ARDUINO_SAM_DUE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ARM_FLOAT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>driven,<sp/>damped<sp/>harmonic<sp/>oscillator<sp/>equation<sp/>is:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://en.wikipedia.org/wiki/Harmonic_oscillator)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>a<sp/>+<sp/>2*ζ*ω0*v<sp/>+<sp/>ω0²*x<sp/>=<sp/>F(t)/m</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>where<sp/>the<sp/>quality<sp/>factor<sp/>is<sp/>related<sp/>to<sp/>the<sp/>damping<sp/>factor<sp/>by</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>Q<sp/>=<sp/>½ζ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>It<sp/>is<sp/>useful<sp/>to<sp/>normalize<sp/>the<sp/>force<sp/>to<sp/>the<sp/>spring<sp/>constant,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="comment">//<sp/>so<sp/>a<sp/>force<sp/>of<sp/>F<sp/>will<sp/>result<sp/>in<sp/>the<sp/>oscillator<sp/>resting<sp/>at<sp/>a<sp/>position<sp/>x=F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>The<sp/>allows<sp/>the<sp/>oscillator<sp/>to<sp/>be<sp/>used<sp/>as<sp/>a<sp/>lowpass<sp/>filter,<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>where<sp/>the<sp/>position<sp/>X<sp/>functions<sp/>as<sp/>the<sp/>output<sp/>voltage<sp/>V.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Setting<sp/>a=v=0,<sp/>and<sp/>solving<sp/>for<sp/>m,<sp/>gives</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>m<sp/>=<sp/>1/w0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>the<sp/>final<sp/>equation<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>a<sp/>+<sp/>2*ζ*ω0*v<sp/>+<sp/>ω0²*x<sp/>=<sp/>ω0²*F(t)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="comment">//<sp/>for<sp/>determining<sp/>the<sp/>energy,<sp/>you<sp/>must<sp/>know<sp/>the<sp/>effective<sp/>spring<sp/>constant,<sp/>which<sp/>is</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>found<sp/>from<sp/>the<sp/>equation<sp/>(for<sp/>undampened,<sp/>where<sp/>w0<sp/>=<sp/>w)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>w0²<sp/>=<sp/>k/m</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>w0<sp/>=<sp/>k</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>this<sp/>makes<sp/>the<sp/>energy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>E<sp/>=<sp/>0.5*k*x²<sp/>+<sp/>0.5*m*v²</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>=<sp/>0.5*w0*x²<sp/>+<sp/>0.5*v²/w0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Filter<sp/>types<sp/>(such<sp/>as<sp/>Bessel<sp/>or<sp/>Butterworth)<sp/>are<sp/>defined<sp/>by<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//<sp/>specific<sp/>quality<sp/>factors<sp/>...<sp/>the<sp/>quality<sp/>factor<sp/>also<sp/>defines<sp/>a<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="comment">//<sp/>relationship<sp/>between<sp/>f0<sp/>(the<sp/>undamped<sp/>resonance<sp/>frequency)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment">//<sp/>and<sp/>the<sp/>-3<sp/>dB<sp/>frequency<sp/>of<sp/>the<sp/>filter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">//<sp/>For<sp/>a<sp/>Butterworth<sp/>filter,<sp/>these<sp/>values<sp/>are<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(see<sp/>figures<sp/>8.26<sp/>and<sp/>8.32<sp/>Bessel)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(See<sp/>Analog<sp/>Devices<sp/>note<sp/>AN-649)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://www.analog.com/static/imported-files/application_notes/447952852AN-649_0.pdf</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment">//<sp/>http://www.analog.com/library/analogDialogue/archives/43-09/EDCh%208%20filter.pdf)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Butterworth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>F_0=1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>F_(-3dB)=1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Q=1/√2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Bessel</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>F_0=1.2754</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>F_(-3dB)=1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Q=1/√3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment">//<sp/>(note<sp/>–<sp/>ramp<sp/>time<sp/>for<sp/>a<sp/>Bessel<sp/>filter<sp/>is<sp/>about<sp/>1/(2F_0<sp/>)<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" refkind="member"><highlight class="normal"><ref refid="struct_filter_two_pole_1a211ce9be7fd6863d5cf6cc4b6bd7b8d9" kindref="member">FilterTwoPole::FilterTwoPole</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>frequency0,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>qualityFactor,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>xInit<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" kindref="member">X</ref><sp/>=<sp/>xInit;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>start<sp/>it<sp/>some<sp/>arbitrary<sp/>position</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" kindref="member">Vprev</ref><sp/>=<sp/>0;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>initially<sp/>stopped</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1abda0e3d8797b98981b5827814b56b329" kindref="member">IsHighpass</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>by<sp/>default,<sp/>a<sp/>normal<sp/>oscillator</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" kindref="member">setQ</ref>(<sp/>qualityFactor<sp/>);</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" kindref="member">setFrequency0</ref>(<sp/>frequency0<sp/>);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1a0cb5f7e1f22358a3b80ba1955958082e" kindref="member">LastTimeUS</ref><sp/>=<sp/>micros();</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75" refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" kindref="member">FilterTwoPole::setQ</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>qualityFactor<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>zero<sp/>will<sp/>result<sp/>in<sp/>divide<sp/>by<sp/>zero,<sp/>upper<sp/>value<sp/>keeps<sp/>it<sp/>stable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/>qualityFactor<sp/>=<sp/>constrain(<sp/>qualityFactor,<sp/>1e-3,<sp/>1e3<sp/>);</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1af42fb47a6163a710768a4ab4c6551a08" kindref="member">Q</ref><sp/>=<sp/>qualityFactor;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82" refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" kindref="member">FilterTwoPole::setFrequency0</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>f<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref><sp/>=<sp/>TWO_PI*abs(f);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="struct_filter_two_pole_1a65e7ce2eaa6b3c5a79c05b47a00466ad" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a65e7ce2eaa6b3c5a79c05b47a00466ad" kindref="member">FilterTwoPole::setAsFilter</ref>(<sp/><ref refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448c" kindref="member">OSCILLATOR_TYPE</ref><sp/>ft,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>frequency3db,<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>initialValue<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>this<sp/>is<sp/>a<sp/>highpass<sp/>filter,<sp/>set<sp/>to<sp/>invert<sp/>the<sp/>transfer<sp/>function<sp/>on<sp/>the<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//if(<sp/>ft<sp/>==<sp/>HIGHPASS_BESSEL<sp/>||<sp/>ft<sp/>==<sp/>HIGHPASS_BUTTERWORTH<sp/>)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>IsHighpass<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//else<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_filter_two_pole_1abda0e3d8797b98981b5827814b56b329" kindref="member">IsHighpass</ref><sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" kindref="member">X</ref><sp/>=<sp/>initialValue;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>ft<sp/>==<sp/><ref refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448ca43daaf3ba6e38f8072e1b1b2708eef2d" kindref="member">LOWPASS_BESSEL</ref><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" kindref="member">setFrequency0</ref>(<sp/>frequency3db<sp/>*<sp/>1.28<sp/>);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" kindref="member">setQ</ref>(<sp/>0.5774<sp/>);</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//else<sp/>if(<sp/>ft<sp/>==<sp/>HIGHPASS_BESSEL<sp/>)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>setFrequency0(<sp/>frequency3db<sp/>*<sp/>1.28<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>setQ(<sp/>0.5774<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>ft<sp/>==<sp/><ref refid="_filter_two_pole_8h_1a4a3542ab8ed87461cd4afffaaa23448cad3e595a2383e6f56842d028c5e852838" kindref="member">LOWPASS_BUTTERWORTH</ref><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>as<sp/>butterworth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_filter_two_pole_1ab50ffd53b3c0d563c245dc728ae23973" kindref="member">setFrequency0</ref>(<sp/>frequency3db<sp/>);</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="struct_filter_two_pole_1ad74accd8618604291a9153ccaba856a6" kindref="member">setQ</ref>(<sp/>0.7071<sp/>);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//else<sp/>if(<sp/>ft<sp/>==<sp/>HIGHPASS_BUTTERWORTH<sp/>)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>as<sp/>butterworth</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>setFrequency0(<sp/>frequency3db<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>setQ(<sp/>0.7071<sp/>);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="118"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" kindref="member">FilterTwoPole::input</ref>(<sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>drive<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1afeb31882d0e8506a82f4b8cbd5745488" kindref="member">Fprev</ref><sp/>=<sp/>drive;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>needed<sp/>when<sp/>using<sp/>filter<sp/>as<sp/>a<sp/>highpass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/><ref refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" kindref="member">now</ref><sp/>=<sp/>micros();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>current<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>dt<sp/>=<sp/>1e-6*float(now<sp/>-<sp/><ref refid="struct_filter_two_pole_1a0cb5f7e1f22358a3b80ba1955958082e" kindref="member">LastTimeUS</ref>);<sp/><sp/></highlight><highlight class="comment">//<sp/>find<sp/>dt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1a0cb5f7e1f22358a3b80ba1955958082e" kindref="member">LastTimeUS</ref><sp/>=<sp/><ref refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" kindref="member">now</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>save<sp/>the<sp/>last<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>constrain<sp/>the<sp/>dt<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>input<sp/>has<sp/>not<sp/>been<sp/>called<sp/>frequently<sp/>enough</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>velocity<sp/>and<sp/>position<sp/>can<sp/>fly<sp/>off<sp/>to<sp/>extremly<sp/>high<sp/>values</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>...<sp/>constraining<sp/>the<sp/>dt<sp/>effectively<sp/>&quot;pauses&quot;<sp/>the<sp/>motion<sp/>during<sp/>delays<sp/>in<sp/>updating</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>note<sp/>this<sp/>will<sp/>result<sp/>in<sp/>an<sp/>incorrect<sp/>answer,<sp/>but<sp/>if<sp/>dt<sp/>is<sp/>too<sp/>large</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>answer<sp/>will<sp/>be<sp/>incorrect,<sp/>regardless.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>dt<sp/>=<sp/>constrain(<sp/>dt,<sp/>0,<sp/>1.0/<ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref><sp/>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>A<sp/>=<sp/>sq(<ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref>)*drive<sp/>-<sp/><ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref>/<ref refid="struct_filter_two_pole_1af42fb47a6163a710768a4ab4c6551a08" kindref="member">Q</ref>*<ref refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" kindref="member">Vprev</ref><sp/>-<sp/>sq(<ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref>)*<ref refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" kindref="member">X</ref>;<sp/></highlight><highlight class="comment">//<sp/>***<sp/>compute<sp/>acceleration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>V<sp/>=<sp/><ref refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" kindref="member">Vprev</ref><sp/>+<sp/>A<sp/>*<sp/>dt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>step<sp/>velocity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1a1cf9be9b3615421ad0d4a985f29b223d" kindref="member">Vavg</ref><sp/>=<sp/>.5*(V+<ref refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" kindref="member">Vprev</ref>);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>X<sp/>+=<sp/><ref refid="struct_filter_two_pole_1a1cf9be9b3615421ad0d4a985f29b223d" kindref="member">Vavg</ref><sp/>*<sp/>dt;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>step<sp/>position,<sp/>using<sp/>average<sp/>V<sp/>to<sp/>reduce<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(trapezoidal<sp/>integration)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" kindref="member">Vprev</ref><sp/>=<sp/>V;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>save<sp/>the<sp/>last<sp/>V</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>normally,<sp/>this<sp/>returns<sp/>output</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>it<sp/>here<sp/>to<sp/>figure<sp/>out<sp/>how<sp/>to<sp/>return<sp/>highpass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//return<sp/>Q/W0*Vavg;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" kindref="member">output</ref>();</highlight></codeline>
+<codeline lineno="148"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150" refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" kindref="member">FilterTwoPole::output</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>if(<sp/>IsHighpass<sp/>)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>Fprev-X-Q/W0*Vavg;<sp/><sp/><sp/>//<sp/>this<sp/>is<sp/>almost<sp/>correct<sp/>...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/>else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" kindref="member">X</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>filtered<sp/>value<sp/>(position<sp/>of<sp/>oscillator)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight><highlight class="comment">//<sp/>as<sp/>a<sp/>measure<sp/>for<sp/>the<sp/>energy<sp/>of<sp/>the<sp/>oscillator,<sp/>returns<sp/>the<sp/>maxium<sp/>amplitude</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="struct_filter_two_pole_1a3eca794cde885b64dd1ff9236b3e4368" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a3eca794cde885b64dd1ff9236b3e4368" kindref="member">FilterTwoPole::getMaxAmp</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>first,<sp/>calculate<sp/>the<sp/>energy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>E<sp/>=<sp/>0.5*w0*x²<sp/>+<sp/>0.5*v²/w0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>E<sp/>=<sp/>0.5<sp/>*<sp/><ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref><sp/>*<sp/>sq(<ref refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" kindref="member">X</ref>)<sp/>+<sp/>0.5<sp/>*<sp/>sq(<ref refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" kindref="member">Vprev</ref>)<sp/>/<sp/><ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref>;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>calculate<sp/>use<sp/>this<sp/>to<sp/>calculate<sp/>max<sp/>amplitude</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>E<sp/>=<sp/>0.5*w0*x²</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>x<sp/>=<sp/>sqrt(2*E/w0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ARM_FLOAT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrtf(2.0*E/<ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref>);</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sqrt(2.0*E/<ref refid="struct_filter_two_pole_1a75db29bd8a0c047b02c0441dea3e8212" kindref="member">W0</ref>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="struct_filter_two_pole_1ac86c21f0dcef76c06fe1102fb7642f2d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1ac86c21f0dcef76c06fe1102fb7642f2d" kindref="member">FilterTwoPole::print</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;<sp/>X:<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(<sp/><ref refid="struct_filter_two_pole_1ac5e4eba07238dc7050e0a6eb99dc42ce" kindref="member">X</ref><sp/>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;<sp/>Vprev:<sp/>&quot;</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/>Serial.print(<sp/><ref refid="struct_filter_two_pole_1a2d233c81ce30dad4381b07e5b3f44e12" kindref="member">Vprev</ref><sp/>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>Serial.println(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="struct_filter_two_pole_1a9d600c9c4c07239f34740f07a1487c2a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="struct_filter_two_pole_1a9d600c9c4c07239f34740f07a1487c2a" kindref="member">FilterTwoPole::test</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>updateInterval<sp/>=<sp/>.1;</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>nextupdateTime<sp/>=<sp/>1e-6*float(micros());</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>inputValue<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><ref refid="struct_filter_two_pole" kindref="compound">FilterTwoPole</ref><sp/>osc(<sp/>0.2,<sp/>4,<sp/>0);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal"><sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" kindref="member">now</ref><sp/>=<sp/>1e-6*float(micros());</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>switch<sp/>input<sp/>values<sp/>on<sp/>a<sp/>20<sp/>second<sp/>cycle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>round(now/50.0)-(now/50.0)<sp/>&lt;<sp/>0<sp/>)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>inputValue<sp/>=<sp/>100;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>inputValue<sp/>=<sp/>150;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/>osc.<ref refid="struct_filter_two_pole_1a77a802a3767a4d55290fb581a557f2ee" kindref="member">input</ref>(inputValue);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/>analogWrite(10,osc.<ref refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" kindref="member">output</ref>()<sp/>);<sp/></highlight><highlight class="comment">//<sp/>hardcoded<sp/>the<sp/>dial<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>now<sp/>&gt;<sp/>nextupdateTime<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>nextupdateTime<sp/>+=<sp/>updateInterval;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;inputValue:<sp/>&quot;</highlight><highlight class="normal">);<sp/>Serial.print(<sp/>inputValue<sp/>);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.print(</highlight><highlight class="stringliteral">&quot;\t<sp/>output:<sp/>&quot;</highlight><highlight class="normal">);<sp/>Serial.print(<sp/>osc.<ref refid="struct_filter_two_pole_1a55a8b2160b02117d9c054161eeee0452" kindref="member">output</ref>()<sp/>);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Serial.println();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Filters/FilterTwoPole.cpp"/>
+  </compounddef>
+</doxygen>

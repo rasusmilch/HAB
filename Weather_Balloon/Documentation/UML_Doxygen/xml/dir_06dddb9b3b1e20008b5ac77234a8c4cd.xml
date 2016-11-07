@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_06dddb9b3b1e20008b5ac77234a8c4cd" kind="dir">
+    <compoundname>Weather_Balloon/library/arduino-ZeroRegs/src</compoundname>
+    <innerfile refid="_zero_regs_8cpp">ZeroRegs.cpp</innerfile>
+    <innerfile refid="_zero_regs_8h">ZeroRegs.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/arduino-ZeroRegs/src/"/>
+  </compounddef>
+</doxygen>

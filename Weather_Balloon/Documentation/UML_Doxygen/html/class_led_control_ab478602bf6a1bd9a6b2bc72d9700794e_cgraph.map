@@ -1,0 +1,5 @@
+<map id="LedControl::LedControl" name="LedControl::LedControl">
+<area shape="rect" id="node2" href="$class_led_control.html#ae162b960d838588bf5cfafc1ba3858bc" title="LedControl::clearDisplay" alt="" coords="209,5,369,32"/>
+<area shape="rect" id="node3" href="$class_led_control.html#a2d32bbde945924b1389df8cc158c821a" title="LedControl::setScanLimit" alt="" coords="208,56,369,83"/>
+<area shape="rect" id="node4" href="$class_led_control.html#acae3eb6d78fc9b978fe6968611e48466" title="LedControl::shutdown" alt="" coords="216,107,361,133"/>
+</map>

@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_t_clib-master_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>RTClib</highlight></codeline>
+<codeline><highlight class="normal">A<sp/>fork<sp/>of<sp/>Jeelab&apos;s<sp/>fantastic<sp/>RTC<sp/>library<sp/>updated<sp/>to<sp/>add<sp/>support<sp/>for<sp/>the<sp/>high<sp/>accuracy<sp/>DS3231<sp/>and<sp/></highlight></codeline>
+<codeline><highlight class="normal">the<sp/>wonderful<sp/>CHRONODOT<sp/>by<sp/>macetech.com.<sp/>Includes<sp/>full-functioned<sp/>example<sp/>set<sp/>for<sp/>Chronodot.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/RTClib-master/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,9 @@
+<map id="DateTime::DateTime" name="DateTime::DateTime">
+<area shape="rect" id="node2" href="$class_date_time.html#a87adbc2ee0bfcb9417ffeadca2e3f375" title="DateTime::operator+=" alt="" coords="194,56,337,83"/>
+<area shape="rect" id="node8" href="$class_r_t_c___millis.html#a2bf3cc48adda7c115553a499a46b3506" title="RTC_Millis::RTC_Millis" alt="" coords="188,107,343,133"/>
+<area shape="rect" id="node3" href="$class_date_time.html#a9b9a89a83e823b4a55e731d2b2d82f60" title="DateTime::second" alt="" coords="391,56,509,83"/>
+<area shape="rect" id="node4" href="$class_r_t_c___d_s1307.html#a6e38778b577a80008e9dc630384b8520" title="RTC_DS1307::adjust" alt="" coords="557,5,688,32"/>
+<area shape="rect" id="node5" href="$class_r_t_c___d_s3231.html#ae8d2a40c8ada023f5ab502a77631abb0" title="RTC_DS3231::adjust" alt="" coords="557,56,688,83"/>
+<area shape="rect" id="node6" href="$class_r_t_c___d_s3234.html#a13766581ca199cae55d02327c39f78da" title="RTC_DS3234::adjust" alt="" coords="557,107,688,133"/>
+<area shape="rect" id="node7" href="$class_r_t_c___d_s3234.html#a28e48a48c9b04692e5c5049e94e389f1" title="RTC_DS3234::RTC_DS3234" alt="" coords="736,107,904,133"/>
+</map>

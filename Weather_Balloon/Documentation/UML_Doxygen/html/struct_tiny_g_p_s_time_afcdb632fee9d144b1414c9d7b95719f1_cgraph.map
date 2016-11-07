@@ -1,0 +1,7 @@
+<map id="TinyGPSTime::value" name="TinyGPSTime::value">
+<area shape="rect" id="node2" href="$_time_8cpp.html#a721ff0d06e8367ee5d2c5cf1a2c40ab5" title="hour" alt="" coords="195,5,243,32"/>
+<area shape="rect" id="node5" href="$_time_8cpp.html#adf618b3bac7dcfac69d4e1f5a68159b7" title="minute" alt="" coords="188,56,249,83"/>
+<area shape="rect" id="node6" href="$_time_8cpp.html#aed5657208944fe098e4e5f3380e0a1f9" title="second" alt="" coords="189,107,249,133"/>
+<area shape="rect" id="node3" href="$_time_8cpp.html#adea6c108853185c1d856fa38ec74992c" title="now" alt="" coords="297,56,344,83"/>
+<area shape="rect" id="node4" href="$_time_8cpp.html#a1ce752bee962425a697f513db46964d4" title="setTime" alt="" coords="392,56,459,83"/>
+</map>

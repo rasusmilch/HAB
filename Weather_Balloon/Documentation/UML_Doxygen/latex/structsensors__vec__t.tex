@@ -1,0 +1,109 @@
+\hypertarget{structsensors__vec__t}{}\section{sensors\+\_\+vec\+\_\+t Struct Reference}
+\label{structsensors__vec__t}\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+
+
+{\ttfamily \#include $<$Adafruit\+\_\+\+Sensor.\+h$>$}
+
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\begin{tabbing}
+xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=xx\=\kill
+union \{\\
+\>float \hyperlink{structsensors__vec__t_a5114a743de9aab053acce7722f394bc4}{v} \mbox{[}3\mbox{]}\\
+\>struct \{\\
+\>\>float \hyperlink{structsensors__vec__t_a9fb71ba50079915da244b839969da7d9}{x}\\
+\>\>float \hyperlink{structsensors__vec__t_a08088cd422b668c75ca0db77d0227ef8}{y}\\
+\>\>float \hyperlink{structsensors__vec__t_af955e602ed046ad810f972fbbc5e0936}{z}\\
+\>\} \\
+\>struct \{\\
+\>\>float \hyperlink{structsensors__vec__t_a6d8c6e288de54942e1d2be4f42f96bb2}{roll}\\
+\>\>float \hyperlink{structsensors__vec__t_aa298c3cbbd0016698c64d9451fbf3aff}{pitch}\\
+\>\>float \hyperlink{structsensors__vec__t_a4fe8caabff59868ff44f1ed8334cbf47}{heading}\\
+\>\} \\
+\}; \\
+
+\end{tabbing}\item 
+int8\+\_\+t \hyperlink{structsensors__vec__t_af75d491f35f979932de5609d6ef6c363}{status}
+\item 
+uint8\+\_\+t \hyperlink{structsensors__vec__t_acb78c50bdd894d4dd4015f144c4a4488}{reserved} \mbox{[}3\mbox{]}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+struct sensors\+\_\+vec\+\_\+s is used to return a vector in a common format. 
+
+Definition at line 65 of file Adafruit\+\_\+\+Sensor.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\subsubsection[{\texorpdfstring{"@1}{@1}}]{\setlength{\rightskip}{0pt plus 5cm}union \{ ... \} }\hypertarget{structsensors__vec__t_a7643befbf9d921d3c6eb53b6053b7562}{}\label{structsensors__vec__t_a7643befbf9d921d3c6eb53b6053b7562}
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}!heading@{heading}}
+\index{heading@{heading}!sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+\subsubsection[{\texorpdfstring{heading}{heading}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+vec\+\_\+t\+::heading}\hypertarget{structsensors__vec__t_a4fe8caabff59868ff44f1ed8334cbf47}{}\label{structsensors__vec__t_a4fe8caabff59868ff44f1ed8334cbf47}
+Angle between the longitudinal axis (the plane body) and magnetic north, measured clockwise when viewing from the top of the device. 0-\/359° 
+
+Definition at line 77 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}!pitch@{pitch}}
+\index{pitch@{pitch}!sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+\subsubsection[{\texorpdfstring{pitch}{pitch}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+vec\+\_\+t\+::pitch}\hypertarget{structsensors__vec__t_aa298c3cbbd0016698c64d9451fbf3aff}{}\label{structsensors__vec__t_aa298c3cbbd0016698c64d9451fbf3aff}
+Rotation around the lateral axis (the wing span, \textquotesingle{}Y axis\textquotesingle{}). Pitch is positive and increasing when moving upwards. -\/180°$<$=pitch$<$=180°) 
+
+Definition at line 76 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}!reserved@{reserved}}
+\index{reserved@{reserved}!sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+\subsubsection[{\texorpdfstring{reserved}{reserved}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t sensors\+\_\+vec\+\_\+t\+::reserved\mbox{[}3\mbox{]}}\hypertarget{structsensors__vec__t_acb78c50bdd894d4dd4015f144c4a4488}{}\label{structsensors__vec__t_acb78c50bdd894d4dd4015f144c4a4488}
+
+
+Definition at line 81 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}!roll@{roll}}
+\index{roll@{roll}!sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+\subsubsection[{\texorpdfstring{roll}{roll}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+vec\+\_\+t\+::roll}\hypertarget{structsensors__vec__t_a6d8c6e288de54942e1d2be4f42f96bb2}{}\label{structsensors__vec__t_a6d8c6e288de54942e1d2be4f42f96bb2}
+Rotation around the longitudinal axis (the plane body, \textquotesingle{}X axis\textquotesingle{}). Roll is positive and increasing when moving downward. -\/90°$<$=roll$<$=90° 
+
+Definition at line 75 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}!status@{status}}
+\index{status@{status}!sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+\subsubsection[{\texorpdfstring{status}{status}}]{\setlength{\rightskip}{0pt plus 5cm}int8\+\_\+t sensors\+\_\+vec\+\_\+t\+::status}\hypertarget{structsensors__vec__t_af75d491f35f979932de5609d6ef6c363}{}\label{structsensors__vec__t_af75d491f35f979932de5609d6ef6c363}
+
+
+Definition at line 80 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}!v@{v}}
+\index{v@{v}!sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+\subsubsection[{\texorpdfstring{v}{v}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+vec\+\_\+t\+::v\mbox{[}3\mbox{]}}\hypertarget{structsensors__vec__t_a5114a743de9aab053acce7722f394bc4}{}\label{structsensors__vec__t_a5114a743de9aab053acce7722f394bc4}
+
+
+Definition at line 67 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}!x@{x}}
+\index{x@{x}!sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+\subsubsection[{\texorpdfstring{x}{x}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+vec\+\_\+t\+::x}\hypertarget{structsensors__vec__t_a9fb71ba50079915da244b839969da7d9}{}\label{structsensors__vec__t_a9fb71ba50079915da244b839969da7d9}
+
+
+Definition at line 69 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}!y@{y}}
+\index{y@{y}!sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+\subsubsection[{\texorpdfstring{y}{y}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+vec\+\_\+t\+::y}\hypertarget{structsensors__vec__t_a08088cd422b668c75ca0db77d0227ef8}{}\label{structsensors__vec__t_a08088cd422b668c75ca0db77d0227ef8}
+
+
+Definition at line 70 of file Adafruit\+\_\+\+Sensor.\+h.
+
+\index{sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}!z@{z}}
+\index{z@{z}!sensors\+\_\+vec\+\_\+t@{sensors\+\_\+vec\+\_\+t}}
+\subsubsection[{\texorpdfstring{z}{z}}]{\setlength{\rightskip}{0pt plus 5cm}float sensors\+\_\+vec\+\_\+t\+::z}\hypertarget{structsensors__vec__t_af955e602ed046ad810f972fbbc5e0936}{}\label{structsensors__vec__t_af955e602ed046ad810f972fbbc5e0936}
+
+
+Definition at line 71 of file Adafruit\+\_\+\+Sensor.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+Sensor-\/master/\hyperlink{_adafruit___sensor_8h}{Adafruit\+\_\+\+Sensor.\+h}\end{DoxyCompactItemize}

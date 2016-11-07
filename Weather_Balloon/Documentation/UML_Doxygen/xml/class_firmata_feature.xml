@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_firmata_feature" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>FirmataFeature</compoundname>
+    <derivedcompoundref refid="class_serial_firmata" prot="public" virt="non-virtual">SerialFirmata</derivedcompoundref>
+    <includes refid="_firmata_feature_8h" local="no">FirmataFeature.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_firmata_feature_1aa865c5a740a429805855ca1a4576a6f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FirmataFeature::handleCapability</definition>
+        <argsstring>(byte pin)=0</argsstring>
+        <name>handleCapability</name>
+        <reimplementedby refid="class_serial_firmata_1af383474fc3a6d1d372489046bbcabc3b">handleCapability</reimplementedby>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/FirmataFeature.h" line="32" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_feature_1a6ef5569de60bb31c9eb55f5ebd16d88f" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>boolean</type>
+        <definition>virtual boolean FirmataFeature::handlePinMode</definition>
+        <argsstring>(byte pin, int mode)=0</argsstring>
+        <name>handlePinMode</name>
+        <reimplementedby refid="class_serial_firmata_1ace960dd7d082caf65f1f3488a7486ef5">handlePinMode</reimplementedby>
+        <param>
+          <type>byte</type>
+          <declname>pin</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/FirmataFeature.h" line="33" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_feature_1a0ce860a9345c81cbe959733e88b188be" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>boolean</type>
+        <definition>virtual boolean FirmataFeature::handleSysex</definition>
+        <argsstring>(byte command, byte argc, byte *argv)=0</argsstring>
+        <name>handleSysex</name>
+        <reimplementedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee">handleSysex</reimplementedby>
+        <param>
+          <type>byte</type>
+          <declname>command</declname>
+        </param>
+        <param>
+          <type>byte</type>
+          <declname>argc</declname>
+        </param>
+        <param>
+          <type>byte *</type>
+          <declname>argv</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/FirmataFeature.h" line="34" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="class_firmata_feature_1a511a8cc9f0e33b392ca729cab0f6e899" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void FirmataFeature::reset</definition>
+        <argsstring>()=0</argsstring>
+        <name>reset</name>
+        <reimplementedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d">reset</reimplementedby>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/FirmataFeature.h" line="35" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="322">
+        <label>FirmataFeature</label>
+        <link refid="class_firmata_feature"/>
+      </node>
+      <node id="323">
+        <label>SerialFirmata</label>
+        <link refid="class_serial_firmata"/>
+        <childnode refid="322" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Weather_Balloon/library/Firmata/utility/FirmataFeature.h" line="30" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/FirmataFeature.h" bodystart="29" bodyend="36"/>
+    <listofallmembers>
+      <member refid="class_firmata_feature_1aa865c5a740a429805855ca1a4576a6f4" prot="public" virt="pure-virtual"><scope>FirmataFeature</scope><name>handleCapability</name></member>
+      <member refid="class_firmata_feature_1a6ef5569de60bb31c9eb55f5ebd16d88f" prot="public" virt="pure-virtual"><scope>FirmataFeature</scope><name>handlePinMode</name></member>
+      <member refid="class_firmata_feature_1a0ce860a9345c81cbe959733e88b188be" prot="public" virt="pure-virtual"><scope>FirmataFeature</scope><name>handleSysex</name></member>
+      <member refid="class_firmata_feature_1a511a8cc9f0e33b392ca729cab0f6e899" prot="public" virt="pure-virtual"><scope>FirmataFeature</scope><name>reset</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

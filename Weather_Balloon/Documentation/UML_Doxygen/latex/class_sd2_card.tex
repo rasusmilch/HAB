@@ -1,0 +1,991 @@
+\hypertarget{class_sd2_card}{}\section{Sd2\+Card Class Reference}
+\label{class_sd2_card}\index{Sd2\+Card@{Sd2\+Card}}
+
+
+Raw access to SD and S\+D\+HC flash memory cards.  
+
+
+
+
+{\ttfamily \#include $<$Sd2\+Card.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sd2_card_af85a5ec4f5f4ec89deb8936c3fd7de65}{Sd2\+Card} (void)
+\item 
+uint32\+\_\+t \hyperlink{class_sd2_card_a862473431cc314238bfccdc531a70d3a}{card\+Size} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_af49fb720fad1d3ea9f5782da0d87fc0b}{erase} (uint32\+\_\+t first\+Block, uint32\+\_\+t last\+Block)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_a2e3998f6e910a2936d3ef54bf082b2ce}{erase\+Single\+Block\+Enable} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_adfa5b1a39875236dff591acbd560bfe7}{error\+Code} (void) const 
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_a13fed56bd5bcfee862acb6de6924936c}{error\+Data} (void) const 
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_afaec9a22060626b02c07a09eff2e9113}{init} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_ad99b2d2156c9746065c52839ef679354}{init} (uint8\+\_\+t sck\+Rate\+ID)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_a204ef4cc35cc6e1d5f12a8cdd5f32518}{init} (uint8\+\_\+t sck\+Rate\+ID, uint8\+\_\+t chip\+Select\+Pin, int8\+\_\+t mosi\+Pin=-\/1, int8\+\_\+t miso\+Pin=-\/1, int8\+\_\+t clock\+Pin=-\/1)
+\item 
+void \hyperlink{class_sd2_card_aa279ac05b3f25acbf10cc424a25750da}{partial\+Block\+Read} (uint8\+\_\+t value)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_a73ad7fee10e05439f6ec832ce0eb196f}{partial\+Block\+Read} (void) const 
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_ae26d840449a42d45af464fb81b92e2ab}{read\+Block} (uint32\+\_\+t block, uint8\+\_\+t $\ast$dst)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_ae2d1396ad30081b4201cd372358ef699}{read\+Data} (uint32\+\_\+t block, uint16\+\_\+t offset, uint16\+\_\+t count, uint8\+\_\+t $\ast$dst)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_aee2be03d649548e2ab26033f18638d19}{read\+C\+ID} (\hyperlink{_sd_info_8h_structcid__t}{cid\+\_\+t} $\ast$cid)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_a79845d8d4593cb3b1b7641ba27edddfb}{read\+C\+SD} (\hyperlink{_sd_info_8h_unioncsd__t}{csd\+\_\+t} $\ast$csd)
+\item 
+void \hyperlink{class_sd2_card_a0de961537d051bbcafd87ed9fff5fe48}{read\+End} (void)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_ad849b8896de9abd4e24bd98f4204ccc4}{set\+Sck\+Rate} (uint8\+\_\+t sck\+Rate\+ID)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_a3ba97504f5928c932c346101d3dabfd2}{type} (void) const 
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_ae9bdd6cff43b8b694584f9bae7e781b0}{write\+Block} (uint32\+\_\+t block\+Number, const uint8\+\_\+t $\ast$src)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_af602d107e1ead2d0971e9f4c7b744cf8}{write\+Data} (const uint8\+\_\+t $\ast$src)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_a82a21a07fdfe45c5c75d486a13cded8a}{write\+Start} (uint32\+\_\+t block\+Number, uint32\+\_\+t erase\+Count)
+\item 
+uint8\+\_\+t \hyperlink{class_sd2_card_a3a60481c0821606546a85d056bb96f47}{write\+Stop} (void)
+\item 
+void \hyperlink{class_sd2_card_a9a84ec97d0c21e4bef8e41630a795b85}{enable\+C\+RC} (uint8\+\_\+t mode)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Raw access to SD and S\+D\+HC flash memory cards. 
+
+Definition at line 159 of file Sd2\+Card.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Sd2\+Card@{Sd2\+Card}!Sd2\+Card@{Sd2\+Card}}
+\index{Sd2\+Card@{Sd2\+Card}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{Sd2\+Card(void)}{Sd2Card(void)}}]{\setlength{\rightskip}{0pt plus 5cm}Sd2\+Card\+::\+Sd2\+Card (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd2_card_af85a5ec4f5f4ec89deb8936c3fd7de65}{}\label{class_sd2_card_af85a5ec4f5f4ec89deb8936c3fd7de65}
+Construct an instance of \hyperlink{class_sd2_card}{Sd2\+Card}. 
+
+Definition at line 162 of file Sd2\+Card.\+h.
+
+
+
+References card\+Size(), erase(), and erase\+Single\+Block\+Enable().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_af85a5ec4f5f4ec89deb8936c3fd7de65_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Sd2\+Card@{Sd2\+Card}!card\+Size@{card\+Size}}
+\index{card\+Size@{card\+Size}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{card\+Size(void)}{cardSize(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Sd2\+Card\+::card\+Size (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_a862473431cc314238bfccdc531a70d3a}{}\label{class_sd2_card_a862473431cc314238bfccdc531a70d3a}
+Determine the size of an SD flash memory card.
+
+\begin{DoxyReturn}{Returns}
+The number of 512 byte data blocks in the card or zero if an error occurs. 
+\end{DoxyReturn}
+
+
+Definition at line 195 of file Sd2\+Card.\+cpp.
+
+
+
+References csd1\+\_\+t\+::c\+\_\+size\+\_\+high, csd2\+\_\+t\+::c\+\_\+size\+\_\+high, csd1\+\_\+t\+::c\+\_\+size\+\_\+low, csd2\+\_\+t\+::c\+\_\+size\+\_\+low, csd1\+\_\+t\+::c\+\_\+size\+\_\+mid, csd2\+\_\+t\+::c\+\_\+size\+\_\+mid, csd1\+\_\+t\+::c\+\_\+size\+\_\+mult\+\_\+high, csd1\+\_\+t\+::c\+\_\+size\+\_\+mult\+\_\+low, csd1\+\_\+t\+::csd\+\_\+ver, csd2\+\_\+t\+::csd\+\_\+ver, csd1\+\_\+t\+::read\+\_\+bl\+\_\+len, read\+C\+S\+D(), S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+B\+A\+D\+\_\+\+C\+SD, csd\+\_\+t\+::v1, and csd\+\_\+t\+::v2.
+
+
+
+Referenced by configure\+\_\+sdcard(), and Sd2\+Card().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a862473431cc314238bfccdc531a70d3a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a862473431cc314238bfccdc531a70d3a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!enable\+C\+RC@{enable\+C\+RC}}
+\index{enable\+C\+RC@{enable\+C\+RC}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{enable\+C\+R\+C(uint8\+\_\+t mode)}{enableCRC(uint8\_t mode)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd2\+Card\+::enable\+C\+RC (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{mode}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_a9a84ec97d0c21e4bef8e41630a795b85}{}\label{class_sd2_card_a9a84ec97d0c21e4bef8e41630a795b85}
+
+
+Definition at line 785 of file Sd2\+Card.\+cpp.
+
+
+
+Referenced by type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a9a84ec97d0c21e4bef8e41630a795b85_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!erase@{erase}}
+\index{erase@{erase}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{erase(uint32\+\_\+t first\+Block, uint32\+\_\+t last\+Block)}{erase(uint32\_t firstBlock, uint32\_t lastBlock)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::erase (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{first\+Block, }
+\item[{uint32\+\_\+t}]{last\+Block}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_af49fb720fad1d3ea9f5782da0d87fc0b}{}\label{class_sd2_card_af49fb720fad1d3ea9f5782da0d87fc0b}
+Erase a range of blocks.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em first\+Block} & The address of the first block in the range. \\
+\hline
+\mbox{\tt in}  & {\em last\+Block} & The address of the last block in the range.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function requests the SD card to do a flash erase for a range of blocks. The data on the card after an erase operation is either 0 or 1, depends on the card vendor. The card must support single block erase.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 236 of file Sd2\+Card.\+cpp.
+
+
+
+References C\+M\+D32, C\+M\+D33, C\+M\+D38, erase\+Single\+Block\+Enable(), S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+SE, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+S\+I\+N\+G\+L\+E\+\_\+\+B\+L\+O\+CK, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC, and S\+D\+\_\+\+E\+R\+A\+S\+E\+\_\+\+T\+I\+M\+E\+O\+UT.
+
+
+
+Referenced by Sd2\+Card().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_af49fb720fad1d3ea9f5782da0d87fc0b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{class_sd2_card_af49fb720fad1d3ea9f5782da0d87fc0b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!erase\+Single\+Block\+Enable@{erase\+Single\+Block\+Enable}}
+\index{erase\+Single\+Block\+Enable@{erase\+Single\+Block\+Enable}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{erase\+Single\+Block\+Enable(void)}{eraseSingleBlockEnable(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::erase\+Single\+Block\+Enable (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_a2e3998f6e910a2936d3ef54bf082b2ce}{}\label{class_sd2_card_a2e3998f6e910a2936d3ef54bf082b2ce}
+Determine if card supports single block erase.
+
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned if single block erase is supported. The value zero, false, is returned if single block erase is not supported. 
+\end{DoxyReturn}
+
+
+Definition at line 268 of file Sd2\+Card.\+cpp.
+
+
+
+References csd1\+\_\+t\+::erase\+\_\+blk\+\_\+en, read\+C\+S\+D(), and csd\+\_\+t\+::v1.
+
+
+
+Referenced by erase(), and Sd2\+Card().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a2e3998f6e910a2936d3ef54bf082b2ce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a2e3998f6e910a2936d3ef54bf082b2ce_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!error\+Code@{error\+Code}}
+\index{error\+Code@{error\+Code}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{error\+Code(void) const }{errorCode(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::error\+Code (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd2_card_adfa5b1a39875236dff591acbd560bfe7}{}\label{class_sd2_card_adfa5b1a39875236dff591acbd560bfe7}
+\begin{DoxyReturn}{Returns}
+error code for last error. See \hyperlink{_sd2_card_8h}{Sd2\+Card.\+h} for a list of error codes. 
+\end{DoxyReturn}
+
+
+Definition at line 169 of file Sd2\+Card.\+h.
+
+
+
+Referenced by configure\+\_\+sdcard(), and log\+\_\+data().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_adfa5b1a39875236dff591acbd560bfe7_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!error\+Data@{error\+Data}}
+\index{error\+Data@{error\+Data}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{error\+Data(void) const }{errorData(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::error\+Data (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd2_card_a13fed56bd5bcfee862acb6de6924936c}{}\label{class_sd2_card_a13fed56bd5bcfee862acb6de6924936c}
+\begin{DoxyReturn}{Returns}
+error data for last error. 
+\end{DoxyReturn}
+
+
+Definition at line 171 of file Sd2\+Card.\+h.
+
+
+
+Referenced by log\+\_\+data().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_sd2_card_a13fed56bd5bcfee862acb6de6924936c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!init@{init}}
+\index{init@{init}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{init(void)}{init(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::init (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd2_card_afaec9a22060626b02c07a09eff2e9113}{}\label{class_sd2_card_afaec9a22060626b02c07a09eff2e9113}
+Initialize an SD flash memory card with default clock rate and chip select pin. See sd2\+Card\+::init(uint8\+\_\+t sck\+Rate\+I\+D, uint8\+\_\+t chip\+Select\+Pin). 
+
+Definition at line 176 of file Sd2\+Card.\+h.
+
+
+
+References S\+D\+\_\+\+C\+H\+I\+P\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+IN, and S\+P\+I\+\_\+\+F\+U\+L\+L\+\_\+\+S\+P\+E\+ED.
+
+
+
+Referenced by configure\+\_\+sdcard(), and init().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{class_sd2_card_afaec9a22060626b02c07a09eff2e9113_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!init@{init}}
+\index{init@{init}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t sck\+Rate\+I\+D)}{init(uint8\_t sckRateID)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sck\+Rate\+ID}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd2_card_ad99b2d2156c9746065c52839ef679354}{}\label{class_sd2_card_ad99b2d2156c9746065c52839ef679354}
+Initialize an SD flash memory card with the selected S\+PI clock rate and the default SD chip select pin. See sd2\+Card\+::init(uint8\+\_\+t sck\+Rate\+I\+D, uint8\+\_\+t chip\+Select\+Pin). 
+
+Definition at line 184 of file Sd2\+Card.\+h.
+
+
+
+References init(), partial\+Block\+Read(), and S\+D\+\_\+\+C\+H\+I\+P\+\_\+\+S\+E\+L\+E\+C\+T\+\_\+\+P\+IN.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_ad99b2d2156c9746065c52839ef679354_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!init@{init}}
+\index{init@{init}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{init(uint8\+\_\+t sck\+Rate\+I\+D, uint8\+\_\+t chip\+Select\+Pin, int8\+\_\+t mosi\+Pin=-\/1, int8\+\_\+t miso\+Pin=-\/1, int8\+\_\+t clock\+Pin=-\/1)}{init(uint8\_t sckRateID, uint8\_t chipSelectPin, int8\_t mosiPin=-1, int8\_t misoPin=-1, int8\_t clockPin=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::init (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sck\+Rate\+ID, }
+\item[{uint8\+\_\+t}]{chip\+Select\+Pin, }
+\item[{int8\+\_\+t}]{mosi\+Pin = {\ttfamily -\/1}, }
+\item[{int8\+\_\+t}]{miso\+Pin = {\ttfamily -\/1}, }
+\item[{int8\+\_\+t}]{clock\+Pin = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_a204ef4cc35cc6e1d5f12a8cdd5f32518}{}\label{class_sd2_card_a204ef4cc35cc6e1d5f12a8cdd5f32518}
+Initialize an SD flash memory card.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sck\+Rate\+ID} & S\+PI clock rate selector. See \hyperlink{class_sd2_card_ad849b8896de9abd4e24bd98f4204ccc4}{set\+Sck\+Rate()}. \\
+\hline
+\mbox{\tt in}  & {\em chip\+Select\+Pin} & SD chip select pin number.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. The reason for failure can be determined by calling \hyperlink{class_sd2_card_adfa5b1a39875236dff591acbd560bfe7}{error\+Code()} and \hyperlink{class_sd2_card_a13fed56bd5bcfee862acb6de6924936c}{error\+Data()}. 
+\end{DoxyReturn}
+
+
+Definition at line 283 of file Sd2\+Card.\+cpp.
+
+
+
+References A\+C\+M\+D41, C\+M\+D0, C\+M\+D58, C\+M\+D8, i, R1\+\_\+\+I\+D\+L\+E\+\_\+\+S\+T\+A\+TE, R1\+\_\+\+I\+L\+L\+E\+G\+A\+L\+\_\+\+C\+O\+M\+M\+A\+ND, R1\+\_\+\+R\+E\+A\+D\+Y\+\_\+\+S\+T\+A\+TE, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D41, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D0, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D58, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D8, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D1, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D2, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC, S\+D\+\_\+\+I\+N\+I\+T\+\_\+\+T\+I\+M\+E\+O\+UT, set\+Sck\+Rate(), S\+P\+I\+\_\+\+M\+I\+S\+O\+\_\+\+P\+IN, S\+P\+I\+\_\+\+M\+O\+S\+I\+\_\+\+P\+IN, S\+P\+I\+\_\+\+S\+C\+K\+\_\+\+P\+IN, and type().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a204ef4cc35cc6e1d5f12a8cdd5f32518_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!partial\+Block\+Read@{partial\+Block\+Read}}
+\index{partial\+Block\+Read@{partial\+Block\+Read}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{partial\+Block\+Read(uint8\+\_\+t value)}{partialBlockRead(uint8\_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd2\+Card\+::partial\+Block\+Read (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_aa279ac05b3f25acbf10cc424a25750da}{}\label{class_sd2_card_aa279ac05b3f25acbf10cc424a25750da}
+Enable or disable partial block reads.
+
+Enabling partial block reads improves performance by allowing a block to be read over the S\+PI bus as several sub-\/blocks. Errors may occur if the time between reads is too long since the SD card may timeout. The S\+PI SS line will be held low until the entire block is read or \hyperlink{class_sd2_card_a0de961537d051bbcafd87ed9fff5fe48}{read\+End()} is called.
+
+Use this for applications like the Adafruit Wave Shield.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em value} & The value T\+R\+UE (non-\/zero) or F\+A\+L\+SE (zero).) \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 408 of file Sd2\+Card.\+cpp.
+
+
+
+References read\+End().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=332pt]{class_sd2_card_aa279ac05b3f25acbf10cc424a25750da_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!partial\+Block\+Read@{partial\+Block\+Read}}
+\index{partial\+Block\+Read@{partial\+Block\+Read}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{partial\+Block\+Read(void) const }{partialBlockRead(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::partial\+Block\+Read (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd2_card_a73ad7fee10e05439f6ec832ce0eb196f}{}\label{class_sd2_card_a73ad7fee10e05439f6ec832ce0eb196f}
+Returns the current value, true or false, for partial block read. 
+
+Definition at line 190 of file Sd2\+Card.\+h.
+
+
+
+References read\+Block(), and read\+Data().
+
+
+
+Referenced by init().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a73ad7fee10e05439f6ec832ce0eb196f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{class_sd2_card_a73ad7fee10e05439f6ec832ce0eb196f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!read\+Block@{read\+Block}}
+\index{read\+Block@{read\+Block}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{read\+Block(uint32\+\_\+t block, uint8\+\_\+t $\ast$dst)}{readBlock(uint32\_t block, uint8\_t *dst)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::read\+Block (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{block, }
+\item[{uint8\+\_\+t $\ast$}]{dst}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_ae26d840449a42d45af464fb81b92e2ab}{}\label{class_sd2_card_ae26d840449a42d45af464fb81b92e2ab}
+Read a 512 byte block from an SD card device.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em block} & Logical block to be read. \\
+\hline
+\mbox{\tt out}  & {\em dst} & Pointer to the location that will receive the data.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 422 of file Sd2\+Card.\+cpp.
+
+
+
+References read\+Data().
+
+
+
+Referenced by log\+\_\+data(), partial\+Block\+Read(), and read\+\_\+sdcard().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_ae26d840449a42d45af464fb81b92e2ab_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_ae26d840449a42d45af464fb81b92e2ab_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!read\+C\+ID@{read\+C\+ID}}
+\index{read\+C\+ID@{read\+C\+ID}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{read\+C\+I\+D(cid\+\_\+t $\ast$cid)}{readCID(cid\_t *cid)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::read\+C\+ID (
+\begin{DoxyParamCaption}
+\item[{{\bf cid\+\_\+t} $\ast$}]{cid}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd2_card_aee2be03d649548e2ab26033f18638d19}{}\label{class_sd2_card_aee2be03d649548e2ab26033f18638d19}
+Read a cards C\+ID register. The C\+ID contains card identification information such as Manufacturer ID, Product name, Product serial number and Manufacturing date. 
+
+Definition at line 198 of file Sd2\+Card.\+h.
+
+
+
+References C\+M\+D10.
+
+\index{Sd2\+Card@{Sd2\+Card}!read\+C\+SD@{read\+C\+SD}}
+\index{read\+C\+SD@{read\+C\+SD}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{read\+C\+S\+D(csd\+\_\+t $\ast$csd)}{readCSD(csd\_t *csd)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::read\+C\+SD (
+\begin{DoxyParamCaption}
+\item[{{\bf csd\+\_\+t} $\ast$}]{csd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd2_card_a79845d8d4593cb3b1b7641ba27edddfb}{}\label{class_sd2_card_a79845d8d4593cb3b1b7641ba27edddfb}
+Read a cards C\+SD register. The C\+SD contains Card-\/\+Specific Data that provides information regarding access to the card\textquotesingle{}s contents. 
+
+Definition at line 204 of file Sd2\+Card.\+h.
+
+
+
+References C\+M\+D9, read\+End(), and set\+Sck\+Rate().
+
+
+
+Referenced by card\+Size(), and erase\+Single\+Block\+Enable().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{class_sd2_card_a79845d8d4593cb3b1b7641ba27edddfb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a79845d8d4593cb3b1b7641ba27edddfb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!read\+Data@{read\+Data}}
+\index{read\+Data@{read\+Data}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{read\+Data(uint32\+\_\+t block, uint16\+\_\+t offset, uint16\+\_\+t count, uint8\+\_\+t $\ast$dst)}{readData(uint32\_t block, uint16\_t offset, uint16\_t count, uint8\_t *dst)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::read\+Data (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{block, }
+\item[{uint16\+\_\+t}]{offset, }
+\item[{uint16\+\_\+t}]{count, }
+\item[{uint8\+\_\+t $\ast$}]{dst}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_ae2d1396ad30081b4201cd372358ef699}{}\label{class_sd2_card_ae2d1396ad30081b4201cd372358ef699}
+Read part of a 512 byte block from an SD card.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em block} & Logical block to be read. \\
+\hline
+\mbox{\tt in}  & {\em offset} & Number of bytes to skip at start of block \\
+\hline
+\mbox{\tt out}  & {\em dst} & Pointer to the location that will receive the data. \\
+\hline
+\mbox{\tt in}  & {\em count} & Number of bytes to read \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 436 of file Sd2\+Card.\+cpp.
+
+
+
+References C\+M\+D17, i, read\+End(), S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D17, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC, and type().
+
+
+
+Referenced by find\+\_\+sdcard\+\_\+tail(), partial\+Block\+Read(), and read\+Block().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_ae2d1396ad30081b4201cd372358ef699_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_ae2d1396ad30081b4201cd372358ef699_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!read\+End@{read\+End}}
+\index{read\+End@{read\+End}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{read\+End(void)}{readEnd(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Sd2\+Card\+::read\+End (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_a0de961537d051bbcafd87ed9fff5fe48}{}\label{class_sd2_card_a0de961537d051bbcafd87ed9fff5fe48}
+Skip remaining data in a block when in partial block read mode. 
+
+Definition at line 503 of file Sd2\+Card.\+cpp.
+
+
+
+References i, and S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+R\+EG.
+
+
+
+Referenced by partial\+Block\+Read(), read\+C\+S\+D(), and read\+Data().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a0de961537d051bbcafd87ed9fff5fe48_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!set\+Sck\+Rate@{set\+Sck\+Rate}}
+\index{set\+Sck\+Rate@{set\+Sck\+Rate}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{set\+Sck\+Rate(uint8\+\_\+t sck\+Rate\+I\+D)}{setSckRate(uint8\_t sckRateID)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::set\+Sck\+Rate (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{sck\+Rate\+ID}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_ad849b8896de9abd4e24bd98f4204ccc4}{}\label{class_sd2_card_ad849b8896de9abd4e24bd98f4204ccc4}
+Set the S\+PI clock rate.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em sck\+Rate\+ID} & A value in the range \mbox{[}0, 6\mbox{]}.\\
+\hline
+\end{DoxyParams}
+The S\+PI clock will be set to F\+\_\+\+C\+P\+U/pow(2, 1 + sck\+Rate\+ID). The maximum S\+PI rate is F\+\_\+\+C\+P\+U/2 for {\itshape sck\+Rate\+ID} = 0 and the minimum rate is F\+\_\+\+C\+P\+U/128 for {\itshape scs\+Rate\+ID} = 6.
+
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for an invalid value of {\itshape sck\+Rate\+ID}. 
+\end{DoxyReturn}
+
+
+Definition at line 555 of file Sd2\+Card.\+cpp.
+
+
+
+References D\+A\+T\+A\+\_\+\+S\+T\+A\+R\+T\+\_\+\+B\+L\+O\+CK, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+AD, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+C\+K\+\_\+\+R\+A\+TE, and S\+D\+\_\+\+R\+E\+A\+D\+\_\+\+T\+I\+M\+E\+O\+UT.
+
+
+
+Referenced by init(), and read\+C\+S\+D().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_ad849b8896de9abd4e24bd98f4204ccc4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!type@{type}}
+\index{type@{type}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{type(void) const }{type(void) const }}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::type (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_sd2_card_a3ba97504f5928c932c346101d3dabfd2}{}\label{class_sd2_card_a3ba97504f5928c932c346101d3dabfd2}
+Return the card type\+: SD V1, SD V2 or S\+D\+HC 
+
+Definition at line 210 of file Sd2\+Card.\+h.
+
+
+
+References C\+M\+D55, enable\+C\+R\+C(), write\+Block(), write\+Data(), write\+Start(), and write\+Stop().
+
+
+
+Referenced by init(), read\+Data(), write\+Block(), and write\+Start().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a3ba97504f5928c932c346101d3dabfd2_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a3ba97504f5928c932c346101d3dabfd2_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!write\+Block@{write\+Block}}
+\index{write\+Block@{write\+Block}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{write\+Block(uint32\+\_\+t block\+Number, const uint8\+\_\+t $\ast$src)}{writeBlock(uint32\_t blockNumber, const uint8\_t *src)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::write\+Block (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{block\+Number, }
+\item[{const uint8\+\_\+t $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_ae9bdd6cff43b8b694584f9bae7e781b0}{}\label{class_sd2_card_ae9bdd6cff43b8b694584f9bae7e781b0}
+Writes a 512 byte block to an SD card.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em block\+Number} & Logical block to be written. \\
+\hline
+\mbox{\tt in}  & {\em src} & Pointer to the location of the data to be written. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 628 of file Sd2\+Card.\+cpp.
+
+
+
+References C\+M\+D13, C\+M\+D24, D\+A\+T\+A\+\_\+\+S\+T\+A\+R\+T\+\_\+\+B\+L\+O\+CK, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D24, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+R\+O\+G\+R\+A\+M\+M\+I\+NG, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC, S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT, type(), and write\+Data().
+
+
+
+Referenced by log\+\_\+data(), and type().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_ae9bdd6cff43b8b694584f9bae7e781b0_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_ae9bdd6cff43b8b694584f9bae7e781b0_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!write\+Data@{write\+Data}}
+\index{write\+Data@{write\+Data}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{write\+Data(const uint8\+\_\+t $\ast$src)}{writeData(const uint8\_t *src)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::write\+Data (
+\begin{DoxyParamCaption}
+\item[{const uint8\+\_\+t $\ast$}]{src}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_af602d107e1ead2d0971e9f4c7b744cf8}{}\label{class_sd2_card_af602d107e1ead2d0971e9f4c7b744cf8}
+Write one data block in a multiple block write sequence 
+
+Definition at line 664 of file Sd2\+Card.\+cpp.
+
+
+
+References D\+A\+T\+A\+\_\+\+R\+E\+S\+\_\+\+A\+C\+C\+E\+P\+T\+ED, D\+A\+T\+A\+\_\+\+R\+E\+S\+\_\+\+M\+A\+SK, i, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+TE, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+LE, S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT, and W\+R\+I\+T\+E\+\_\+\+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+T\+O\+K\+EN.
+
+
+
+Referenced by type(), and write\+Block().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_af602d107e1ead2d0971e9f4c7b744cf8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!write\+Start@{write\+Start}}
+\index{write\+Start@{write\+Start}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{write\+Start(uint32\+\_\+t block\+Number, uint32\+\_\+t erase\+Count)}{writeStart(uint32\_t blockNumber, uint32\_t eraseCount)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::write\+Start (
+\begin{DoxyParamCaption}
+\item[{uint32\+\_\+t}]{block\+Number, }
+\item[{uint32\+\_\+t}]{erase\+Count}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_a82a21a07fdfe45c5c75d486a13cded8a}{}\label{class_sd2_card_a82a21a07fdfe45c5c75d486a13cded8a}
+Start a write multiple blocks sequence.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\tt in}  & {\em block\+Number} & Address of first block in sequence. \\
+\hline
+\mbox{\tt in}  & {\em erase\+Count} & The number of blocks to be pre-\/erased.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+This function is used with \hyperlink{class_sd2_card_af602d107e1ead2d0971e9f4c7b744cf8}{write\+Data()} and \hyperlink{class_sd2_card_a3a60481c0821606546a85d056bb96f47}{write\+Stop()} for optimized multiple block writes.
+\end{DoxyNote}
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 741 of file Sd2\+Card.\+cpp.
+
+
+
+References A\+C\+M\+D23, C\+M\+D25, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+A\+C\+M\+D23, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+C\+M\+D25, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+W\+R\+I\+T\+E\+\_\+\+B\+L\+O\+C\+K\+\_\+\+Z\+E\+RO, S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+T\+Y\+P\+E\+\_\+\+S\+D\+HC, and type().
+
+
+
+Referenced by type().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a82a21a07fdfe45c5c75d486a13cded8a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a82a21a07fdfe45c5c75d486a13cded8a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Sd2\+Card@{Sd2\+Card}!write\+Stop@{write\+Stop}}
+\index{write\+Stop@{write\+Stop}!Sd2\+Card@{Sd2\+Card}}
+\subsubsection[{\texorpdfstring{write\+Stop(void)}{writeStop(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Sd2\+Card\+::write\+Stop (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_sd2_card_a3a60481c0821606546a85d056bb96f47}{}\label{class_sd2_card_a3a60481c0821606546a85d056bb96f47}
+End a write multiple blocks sequence.
+
+\begin{DoxyReturn}{Returns}
+The value one, true, is returned for success and the value zero, false, is returned for failure. 
+\end{DoxyReturn}
+
+
+Definition at line 772 of file Sd2\+Card.\+cpp.
+
+
+
+References S\+D\+\_\+\+C\+A\+R\+D\+\_\+\+E\+R\+R\+O\+R\+\_\+\+S\+T\+O\+P\+\_\+\+T\+R\+AN, S\+D\+\_\+\+W\+R\+I\+T\+E\+\_\+\+T\+I\+M\+E\+O\+UT, and S\+T\+O\+P\+\_\+\+T\+R\+A\+N\+\_\+\+T\+O\+K\+EN.
+
+
+
+Referenced by type().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_sd2_card_a3a60481c0821606546a85d056bb96f47_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+S\+D-\/master/\hyperlink{_sd2_card_8h}{Sd2\+Card.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+S\+D-\/master/\hyperlink{_sd2_card_8cpp}{Sd2\+Card.\+cpp}\end{DoxyCompactItemize}

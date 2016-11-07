@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_spark_fun___m_a_x17043_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">##<sp/>SparkFun<sp/>MAX17043<sp/>Particle<sp/>Library</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Firmware<sp/>library<sp/>SparkFun&apos;s<sp/>Photon<sp/>Battery<sp/>Shield<sp/>and<sp/>the<sp/>MAX17043<sp/>Breakout.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">About</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>a<sp/>firmware<sp/>library<sp/>for<sp/>[SparkFun&apos;s<sp/>Photon<sp/>Battery<sp/>Shield](https://www.sparkfun.com/products/13626).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![Photon<sp/>Battery<sp/>Shield](https://cdn.sparkfun.com//assets/parts/1/1/0/0/9/13626-01.jpg)](https://www.sparkfun.com/products/13626).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>MAX17043<sp/>interfaces<sp/>between<sp/>a<sp/>LiPo<sp/>battery<sp/>and<sp/>a<sp/>microcontroller.<sp/>The<sp/>MAX17043<sp/>can<sp/>read<sp/>a<sp/>battery&apos;s<sp/>voltage<sp/>and,<sp/>using<sp/>a<sp/>sophisticated<sp/>battery-modelling<sp/>algorithm,<sp/>estimate<sp/>the<sp/>state<sp/>of<sp/>charge<sp/>(SOC).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Repository<sp/>Contents</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>**/doc**<sp/>-<sp/>Additional<sp/>documentation<sp/>for<sp/>the<sp/>user.<sp/>These<sp/>files<sp/>are<sp/>ignored<sp/>by<sp/>the<sp/>IDE.<sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**/firmware**<sp/>-<sp/>Source<sp/>files<sp/>for<sp/>the<sp/>library<sp/>(.cpp,<sp/>.h).</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**/firmware/examples**<sp/>-<sp/>Example<sp/>sketches<sp/>for<sp/>the<sp/>library<sp/>(.cpp).<sp/>Run<sp/>these<sp/>from<sp/>the<sp/>Particle<sp/>IDE.<sp/></highlight></codeline>
+<codeline><highlight class="normal">*<sp/>**spark.json**<sp/>-<sp/>General<sp/>library<sp/>properties<sp/>for<sp/>the<sp/>Particel<sp/>library<sp/>manager.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Example<sp/>Usage</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Include<sp/>the<sp/>MAX17043<sp/>library:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>#include<sp/>&quot;SparkFunMAX17043.h&quot;<sp/>//<sp/>Include<sp/>the<sp/>SparkFun<sp/>MAX17043<sp/>library</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">Then<sp/>use<sp/>the<sp/>`lipo`<sp/>object<sp/>to<sp/>interact<sp/>with<sp/>it.<sp/>Begin<sp/>by<sp/>initializing<sp/>the<sp/>IC:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>void<sp/>setup()</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Set<sp/>up<sp/>the<sp/>MAX17043<sp/>LiPo<sp/>fuel<sp/>gauge:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lipo.begin();<sp/>//<sp/>Initialize<sp/>the<sp/>MAX17043<sp/>LiPo<sp/>fuel<sp/>gauge</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>Quick<sp/>start<sp/>restarts<sp/>the<sp/>MAX17043<sp/>in<sp/>hopes<sp/>of<sp/>getting<sp/>a<sp/>more<sp/>accurate</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>guess<sp/>for<sp/>the<sp/>SOC.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lipo.quickStart();</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>We<sp/>can<sp/>set<sp/>an<sp/>interrupt<sp/>to<sp/>alert<sp/>when<sp/>the<sp/>battery<sp/>SoC<sp/>gets<sp/>too<sp/>low.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>We<sp/>can<sp/>alert<sp/>at<sp/>anywhere<sp/>between<sp/>1%<sp/>-<sp/>32%:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>lipo.setThreshold(10);<sp/>//<sp/>Set<sp/>alert<sp/>threshold<sp/>to<sp/>10%.</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Then<sp/>you<sp/>can<sp/>read<sp/>the<sp/>voltage<sp/>and<sp/>state-of-charge<sp/>(SOC)<sp/>values<sp/>like<sp/>this:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>lipo.getVoltage()<sp/>returns<sp/>a<sp/>voltage<sp/>value<sp/>(e.g.<sp/>3.93)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>voltage<sp/>=<sp/>lipo.getVoltage();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>//<sp/>lipo.getSOC()<sp/>returns<sp/>the<sp/>estimated<sp/>state<sp/>of<sp/>charge<sp/>(e.g.<sp/>79%)</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/>soc<sp/>=<sp/>lipo.getSOC();</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline><highlight class="normal">Check<sp/>out<sp/>the<sp/>example<sp/>files<sp/>in<sp/>the<sp/>[examples<sp/>directory](https://github.com/sparkfun/SparkFun_MAX17043_Particle_Library/tree/master/firmware/examples)<sp/>for<sp/>more<sp/>guidance.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Recommended<sp/>Components</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>[Particle<sp/>Photon](https://www.sparkfun.com/products/13345)</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>[SparkFun<sp/>Photon<sp/>Battery<sp/>Shield](https://www.sparkfun.com/products/13626)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">License<sp/>Information</highlight></codeline>
+<codeline><highlight class="normal">-------------------</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>product<sp/>is<sp/>_**open<sp/>source**_!<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Please<sp/>review<sp/>the<sp/>LICENSE.md<sp/>file<sp/>for<sp/>license<sp/>information.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>have<sp/>any<sp/>questions<sp/>or<sp/>concerns<sp/>on<sp/>licensing,<sp/>please<sp/>contact<sp/>techsupport@sparkfun.com.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Distributed<sp/>as-is;<sp/>no<sp/>warranty<sp/>is<sp/>given.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Your<sp/>friends<sp/>at<sp/>SparkFun.</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/SparkFun_MAX17043/README.md"/>
+  </compounddef>
+</doxygen>

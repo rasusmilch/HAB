@@ -1,0 +1,272 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_adafruit___s_h_t31" kind="class" language="C++" prot="public">
+    <compoundname>Adafruit_SHT31</compoundname>
+    <includes refid="_adafruit___s_h_t31_8h" local="no">Adafruit_SHT31.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_adafruit___s_h_t31_1a82d5b6ee3c8abf96e8086a97a05faab8" prot="private" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_SHT31::_i2caddr</definition>
+        <argsstring></argsstring>
+        <name>_i2caddr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="52" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___s_h_t31_1acabfa36f88dd24d96528b5f39db97caa" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Adafruit_SHT31::humidity</definition>
+        <argsstring></argsstring>
+        <name>humidity</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="54" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_adafruit___s_h_t31_1a2d2052b8b5a91a78b00b9f7b1b8f844b" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Adafruit_SHT31::temp</definition>
+        <argsstring></argsstring>
+        <name>temp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="54" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1a3c675ce344f1dd28b04764de3d7b5104" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Adafruit_SHT31::Adafruit_SHT31</definition>
+        <argsstring>()</argsstring>
+        <name>Adafruit_SHT31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="39" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="20" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1a104eb2dfd27a732420e1fc3755516690" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Adafruit_SHT31::begin</definition>
+        <argsstring>(uint8_t i2caddr=SHT31_DEFAULT_ADDR)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>i2caddr</declname>
+          <defval><ref refid="_adafruit___s_h_t31_8h_1a126bb81a04ac54c61287dd2b106bbfe2" kindref="member">SHT31_DEFAULT_ADDR</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="40" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="24" bodyend="30"/>
+        <references refid="class_adafruit___s_h_t31_1a4cfa42c7211e1c5c3de411f3b099c827" compoundref="_adafruit___s_h_t31_8cpp" startline="42" endline="45">reset</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="_weather___balloon_8cpp_1abb8700028b489f20622252823d383f2d" compoundref="_weather___balloon_8cpp" startline="909" endline="926">configure_sht31</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1a3b518218705509eb0ab35050bf79f00a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Adafruit_SHT31::readTemperature</definition>
+        <argsstring>(void)</argsstring>
+        <name>readTemperature</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="41" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="55" bodyend="59"/>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1a2b522bec65225d5c2aadfccd31bb91e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float Adafruit_SHT31::readHumidity</definition>
+        <argsstring>(void)</argsstring>
+        <name>readHumidity</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="42" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="62" bodyend="66"/>
+        <references refid="class_adafruit___s_h_t31_1a9fe74b3c5be1794ec00a961d91227716" compoundref="_adafruit___s_h_t31_8cpp" startline="119" endline="145">crc8</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_adafruit___s_h_t31_8h_1a8f2d795cc762c216df48a61c18d78c28" compoundref="_adafruit___s_h_t31_8h" startline="28">SHT31_MEAS_HIGHREP</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1ae41f7910027c9a39afdb11aef45742ab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t Adafruit_SHT31::readStatus</definition>
+        <argsstring>(void)</argsstring>
+        <name>readStatus</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="43" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="32" bodyend="40"/>
+        <references refid="_adafruit___s_h_t31_8h_1a6c1bb86c7a247385905fe05e0c520945" compoundref="_adafruit___s_h_t31_8h" startline="31">SHT31_READSTATUS</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1a4cfa42c7211e1c5c3de411f3b099c827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_SHT31::reset</definition>
+        <argsstring>(void)</argsstring>
+        <name>reset</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="44" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="42" bodyend="45"/>
+        <references refid="_adafruit___s_h_t31_8h_1aab64dcf72dca550bfc3e5f30e5c9ec12" compoundref="_adafruit___s_h_t31_8h" startline="33">SHT31_SOFTRESET</references>
+        <referencedby refid="class_adafruit___s_h_t31_1a104eb2dfd27a732420e1fc3755516690" compoundref="_adafruit___s_h_t31_8cpp" startline="24" endline="30">begin</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1a96d0021ed52302e3a47fd2eaa6c1282f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_SHT31::heater</definition>
+        <argsstring>(boolean)</argsstring>
+        <name>heater</name>
+        <param>
+          <type>boolean</type>
+          <defname>h</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="45" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="47" bodyend="52"/>
+        <references refid="_adafruit___s_h_t31_8h_1a784f3898eaacc45a75545bb2d0f82485" compoundref="_adafruit___s_h_t31_8h" startline="35">SHT31_HEATERDIS</references>
+        <references refid="_adafruit___s_h_t31_8h_1a7a966e359de2783149ec4d37d73a3125" compoundref="_adafruit___s_h_t31_8h" startline="34">SHT31_HEATEREN</references>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1a9fe74b3c5be1794ec00a961d91227716" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t Adafruit_SHT31::crc8</definition>
+        <argsstring>(const uint8_t *data, int len)</argsstring>
+        <name>crc8</name>
+        <param>
+          <type>const uint8_t *</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="46" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="119" bodyend="145"/>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <referencedby refid="class_adafruit___s_h_t31_1a2b522bec65225d5c2aadfccd31bb91e0" compoundref="_adafruit___s_h_t31_8cpp" startline="62" endline="66">readHumidity</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1a30c83f1f8fe53f5aa5175a836729ad4a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Adafruit_SHT31::readTempHum</definition>
+        <argsstring>(void)</argsstring>
+        <name>readTempHum</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="49" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="69" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1af9205d12b278c29001fdb9f7a254356d" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Adafruit_SHT31::writeCommand</definition>
+        <argsstring>(uint16_t cmd)</argsstring>
+        <name>writeCommand</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>cmd</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="50" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp" bodystart="112" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="class_adafruit___s_h_t31_1a63739fd6355408e8ba54ed06647ef0f2" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>boolean</type>
+        <definition>boolean Adafruit_SHT31::readData</definition>
+        <argsstring>(void)</argsstring>
+        <name>readData</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="53" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="37" column="1" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="37" bodyend="55"/>
+    <listofallmembers>
+      <member refid="class_adafruit___s_h_t31_1a82d5b6ee3c8abf96e8086a97a05faab8" prot="private" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>_i2caddr</name></member>
+      <member refid="class_adafruit___s_h_t31_1a3c675ce344f1dd28b04764de3d7b5104" prot="public" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>Adafruit_SHT31</name></member>
+      <member refid="class_adafruit___s_h_t31_1a104eb2dfd27a732420e1fc3755516690" prot="public" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>begin</name></member>
+      <member refid="class_adafruit___s_h_t31_1a9fe74b3c5be1794ec00a961d91227716" prot="public" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>crc8</name></member>
+      <member refid="class_adafruit___s_h_t31_1a96d0021ed52302e3a47fd2eaa6c1282f" prot="public" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>heater</name></member>
+      <member refid="class_adafruit___s_h_t31_1acabfa36f88dd24d96528b5f39db97caa" prot="private" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>humidity</name></member>
+      <member refid="class_adafruit___s_h_t31_1a63739fd6355408e8ba54ed06647ef0f2" prot="private" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>readData</name></member>
+      <member refid="class_adafruit___s_h_t31_1a2b522bec65225d5c2aadfccd31bb91e0" prot="public" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>readHumidity</name></member>
+      <member refid="class_adafruit___s_h_t31_1ae41f7910027c9a39afdb11aef45742ab" prot="public" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>readStatus</name></member>
+      <member refid="class_adafruit___s_h_t31_1a3b518218705509eb0ab35050bf79f00a" prot="public" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>readTemperature</name></member>
+      <member refid="class_adafruit___s_h_t31_1a30c83f1f8fe53f5aa5175a836729ad4a" prot="private" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>readTempHum</name></member>
+      <member refid="class_adafruit___s_h_t31_1a4cfa42c7211e1c5c3de411f3b099c827" prot="public" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>reset</name></member>
+      <member refid="class_adafruit___s_h_t31_1a2d2052b8b5a91a78b00b9f7b1b8f844b" prot="private" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>temp</name></member>
+      <member refid="class_adafruit___s_h_t31_1af9205d12b278c29001fdb9f7a254356d" prot="private" virt="non-virtual"><scope>Adafruit_SHT31</scope><name>writeCommand</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

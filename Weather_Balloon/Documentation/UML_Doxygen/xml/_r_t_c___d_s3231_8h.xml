@@ -1,0 +1,389 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_t_c___d_s3231_8h" kind="file" language="C++">
+    <compoundname>RTC_DS3231.h</compoundname>
+    <includes refid="_r_t_clib_8h" local="no">RTClib.h</includes>
+    <includedby refid="_r_t_c___d_s3231_8cpp" local="yes">Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp</includedby>
+    <incdepgraph>
+      <node id="905">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS3231.h</label>
+        <link refid="RTC_DS3231.h"/>
+        <childnode refid="906" relation="include">
+        </childnode>
+      </node>
+      <node id="906">
+        <label>RTClib.h</label>
+        <link refid="_r_t_clib_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="908">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp</label>
+        <link refid="_r_t_c___d_s3231_8cpp"/>
+      </node>
+      <node id="907">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS3231.h</label>
+        <link refid="RTC_DS3231.h"/>
+        <childnode refid="908" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_r_t_c___d_s3231" prot="public">RTC_DS3231</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" prot="public" static="no">
+        <name>DS3231_ADDRESS</name>
+        <initializer>0x68</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="42" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1ab752aeeb9f43f088ef3ea1e92cf0dd55" prot="public" static="no">
+        <name>DS3231_REG_SECONDS</name>
+        <initializer>0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="45" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="45" bodyend="-1"/>
+        <referencedby refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" compoundref="_r_t_c___d_s3231_8cpp" startline="51" endline="65">RTC_DS3231::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1adc740b28876022b852e0f33842632fab" compoundref="_r_t_c___d_s3231_8cpp" startline="71" endline="88">RTC_DS3231::now</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a0beecd98fb52521b3df1fb020e10bde1" prot="public" static="no">
+        <name>DS3231_REG_MINUTES</name>
+        <initializer>0x01</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="46" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1ac54475e0a15745f77a8275a4ddd71574" prot="public" static="no">
+        <name>DS3231_REG_HOURS</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="47" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a0a9bb29be9c0a88dd7de147ce03b6dec" prot="public" static="no">
+        <name>DS3231_REG_DAYOFWEEK</name>
+        <initializer>0x03</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="48" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a8cc833567204ed43927808542e102cee" prot="public" static="no">
+        <name>DS3231_REG_DAYOFMONTH</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="49" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1aaa4a129d3a1b54e2ab4e77f43a6f4985" prot="public" static="no">
+        <name>DS3231_REG_MONTH</name>
+        <initializer>0x05</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="50" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a109bb0d6f731ff9453434eb80ded18b3" prot="public" static="no">
+        <name>DS3231_REG_YEAR</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="51" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1adfbe02d55daf2a561d1ece5de4894ddd" prot="public" static="no">
+        <name>DS3231_REG_A1SECONDS</name>
+        <initializer>0x07</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="53" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a20b6d70ac45aa6981569e95acfab4588" prot="public" static="no">
+        <name>DS3231_REG_A1MINUTES</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="54" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1aae42353094fa6e93ce79432627ca791a" prot="public" static="no">
+        <name>DS3231_REG_A1HOURS</name>
+        <initializer>0x09</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="55" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a9829eec8dbe56f8fdaf4c15f8d00b4fb" prot="public" static="no">
+        <name>DS3231_REG_A1DAYDATE</name>
+        <initializer>0x0A</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="56" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a4e33f97b479da26801f272dbca275c00" prot="public" static="no">
+        <name>DS3231_REG_A2MINUTES</name>
+        <initializer>0x0B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="58" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a9d4462f2048af3065303b4019b9f9044" prot="public" static="no">
+        <name>DS3231_REG_A2HOURS</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="59" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a65f0251a2f83c9b54bec3a14e181576e" prot="public" static="no">
+        <name>DS3231_REG_A2DAYDATE</name>
+        <initializer>0x0D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="60" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" prot="public" static="no">
+        <name>DS3231_REG_CONTROL</name>
+        <initializer>0x0E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="62" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a8cfbb825c0f0e51d936f9507d6c14e51" prot="public" static="no">
+        <name>DS3231_REG_STATUS_CTL</name>
+        <initializer>0x0F</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="63" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="63" bodyend="-1"/>
+        <referencedby refid="class_r_t_c___d_s3231_1ad892efd8d357db71da0c672523f6d699" compoundref="_r_t_c___d_s3231_8cpp" startline="164" endline="185">RTC_DS3231::enable32kHz</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1a771a62d39534f6689c17f7ebe42aaa34" compoundref="_r_t_c___d_s3231_8cpp" startline="37" endline="46">RTC_DS3231::isrunning</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a90dd14910a8b8464f78fc73e90cc12d4" prot="public" static="no">
+        <name>DS3231_REG_AGING</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="64" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1aa03c8831a5b1e11abc00e730c23ecc55" prot="public" static="no">
+        <name>DS3231_REG_TEMP_MSB</name>
+        <initializer>0x11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="65" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="65" bodyend="-1"/>
+        <referencedby refid="class_r_t_c___d_s3231_1a0c97cca72e971f6b4d7d4a679eac8d5b" compoundref="_r_t_c___d_s3231_8cpp" startline="101" endline="120">RTC_DS3231::getTempAsFloat</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1aad9389d7a869971cde87fc81a8b00647" compoundref="_r_t_c___d_s3231_8cpp" startline="136" endline="156">RTC_DS3231::getTempAsWord</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a35ddcaf5258fc941f90f8428c2032fa1" prot="public" static="no">
+        <name>DS3231_REG_TEMP_LSB</name>
+        <initializer>0x12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="66" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a2a519b18937a8737ed2d09b4acade7a8" prot="public" static="no">
+        <name>DS3231_SQW_FREQ_1</name>
+        <initializer>0b00000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="69" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a94e91af2ccbf3399b1ffbfc9d9e0190c" prot="public" static="no">
+        <name>DS3231_SQW_FREQ_1024</name>
+        <initializer>0b00001000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="70" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a11b26029d012568c75c96c44b78e3c81" prot="public" static="no">
+        <name>DS3231_SQW_FREQ_4096</name>
+        <initializer>0b00010000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="71" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c___d_s3231_8h_1a733b2987f9e3e10f21752cb9de2cf380" prot="public" static="no">
+        <name>DS3231_SQW_FREQ_8192</name>
+        <initializer>0b00011000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="72" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Original<sp/>Code<sp/>by<sp/>JeeLabs<sp/>http://news.jeelabs.org/code/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Released<sp/>to<sp/>the<sp/>public<sp/>domain!<sp/>Enjoy!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Modified<sp/>and<sp/>expanded<sp/>by<sp/>Red<sp/>Byer<sp/>7/24/2013<sp/>to<sp/>work<sp/>with<sp/>3231<sp/>better</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>www.redstoyland.com<sp/><sp/><sp/><sp/><sp/><sp/>Find<sp/>the<sp/>code<sp/>under<sp/>&quot;mizraith&quot;<sp/>on<sp/>github</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>Now<sp/>includes<sp/>code<sp/>to<sp/>read<sp/>the<sp/>temperature<sp/>back<sp/>form<sp/>the<sp/>3231</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>Also<sp/>allows<sp/>for<sp/>easy<sp/>access<sp/>to<sp/>the<sp/>two<sp/>status<sp/>registers.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="comment">//</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__RTC_DS3231_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__RTC_DS3231_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;<ref refid="_r_t_clib_8h" kindref="compound">RTClib.h</ref>&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>RTC<sp/>based<sp/>on<sp/>the<sp/>DS1307<sp/>chip<sp/>connected<sp/>via<sp/>I2C<sp/>and<sp/>the<sp/>Wire<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="class_r_t_c___d_s3231" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_r_t_c___d_s3231" kindref="compound">RTC_DS3231</ref></highlight></codeline>
+<codeline lineno="20"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/><ref refid="class_r_t_c___d_s3231_1ad15c2bb9d853cb1af41e8f35d7ea67db" kindref="member">begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" kindref="member">adjust</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date_time" kindref="compound">DateTime</ref>&amp;<sp/>dt);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/><ref refid="class_r_t_c___d_s3231_1a771a62d39534f6689c17f7ebe42aaa34" kindref="member">isrunning</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="class_date_time" kindref="compound">DateTime</ref><sp/><ref refid="class_r_t_c___d_s3231_1adc740b28876022b852e0f33842632fab" kindref="member">now</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3231_1a0c97cca72e971f6b4d7d4a679eac8d5b" kindref="member">getTempAsFloat</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int16_t<sp/><ref refid="class_r_t_c___d_s3231_1aad9389d7a869971cde87fc81a8b00647" kindref="member">getTempAsWord</ref>();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3231_1ad892efd8d357db71da0c672523f6d699" kindref="member">enable32kHz</ref>(uint8_t<sp/>enable);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3231_1a63a667e5cb63ea406315bd42c2037eea" kindref="member">forceTempConv</ref>(uint8_t<sp/>block);<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3231_1a3d54093b096bb5e68f03d66ee1c7e686" kindref="member">SQWEnable</ref>(uint8_t<sp/>enable);<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3231_1a08fb5001c43fa4493d370a17ffb14737" kindref="member">BBSQWEnable</ref>(uint8_t<sp/>enable);<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3231_1a85b06cbbd08d71865380e48183ddd26f" kindref="member">SQWFrequency</ref>(uint8_t<sp/>freq);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3231_1a2def91da84612846ecaa3029f8c3b9aa" kindref="member">getControlRegisterData</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>&amp;datastr);<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>tested<sp/>in<sp/>example<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>getBinaryString(uint8_t<sp/>byteval,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>bytestr[]);</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="comment">//I2C<sp/>Slave<sp/>Address<sp/><sp/>0b1101000<sp/>per<sp/>the<sp/>datasheet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42" refid="_r_t_c___d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_ADDRESS<sp/>0x68<sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//DS3231<sp/>REGISTER<sp/>DEFINITIONS</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="_r_t_c___d_s3231_8h_1ab752aeeb9f43f088ef3ea1e92cf0dd55" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_SECONDS<sp/><sp/><sp/><sp/>0x00</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="_r_t_c___d_s3231_8h_1a0beecd98fb52521b3df1fb020e10bde1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_MINUTES<sp/><sp/><sp/><sp/>0x01</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="_r_t_c___d_s3231_8h_1ac54475e0a15745f77a8275a4ddd71574" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_HOURS<sp/><sp/><sp/><sp/><sp/><sp/>0x02</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48" refid="_r_t_c___d_s3231_8h_1a0a9bb29be9c0a88dd7de147ce03b6dec" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_DAYOFWEEK<sp/><sp/>0x03</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49" refid="_r_t_c___d_s3231_8h_1a8cc833567204ed43927808542e102cee" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_DAYOFMONTH<sp/>0x04</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50" refid="_r_t_c___d_s3231_8h_1aaa4a129d3a1b54e2ab4e77f43a6f4985" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_MONTH<sp/><sp/><sp/><sp/><sp/><sp/>0x05</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51" refid="_r_t_c___d_s3231_8h_1a109bb0d6f731ff9453434eb80ded18b3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_YEAR<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="_r_t_c___d_s3231_8h_1adfbe02d55daf2a561d1ece5de4894ddd" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_A1SECONDS<sp/><sp/>0x07</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54" refid="_r_t_c___d_s3231_8h_1a20b6d70ac45aa6981569e95acfab4588" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_A1MINUTES<sp/><sp/>0x08</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55" refid="_r_t_c___d_s3231_8h_1aae42353094fa6e93ce79432627ca791a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_A1HOURS<sp/><sp/><sp/><sp/>0x09</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="_r_t_c___d_s3231_8h_1a9829eec8dbe56f8fdaf4c15f8d00b4fb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_A1DAYDATE<sp/><sp/>0x0A</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58" refid="_r_t_c___d_s3231_8h_1a4e33f97b479da26801f272dbca275c00" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_A2MINUTES<sp/><sp/>0x0B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59" refid="_r_t_c___d_s3231_8h_1a9d4462f2048af3065303b4019b9f9044" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_A2HOURS<sp/><sp/><sp/><sp/>0x0C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="_r_t_c___d_s3231_8h_1a65f0251a2f83c9b54bec3a14e181576e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_A2DAYDATE<sp/><sp/>0x0D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62" refid="_r_t_c___d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_CONTROL<sp/><sp/><sp/><sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="_r_t_c___d_s3231_8h_1a8cfbb825c0f0e51d936f9507d6c14e51" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_STATUS_CTL<sp/>0x0F</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64" refid="_r_t_c___d_s3231_8h_1a90dd14910a8b8464f78fc73e90cc12d4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_AGING<sp/><sp/><sp/><sp/><sp/><sp/>0x10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="_r_t_c___d_s3231_8h_1aa03c8831a5b1e11abc00e730c23ecc55" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_TEMP_MSB<sp/><sp/><sp/>0x11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66" refid="_r_t_c___d_s3231_8h_1a35ddcaf5258fc941f90f8428c2032fa1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_REG_TEMP_LSB<sp/><sp/><sp/>0x12</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight><highlight class="comment">//FREQUENCY<sp/>SETTINGS<sp/>FOR<sp/>THE<sp/>SQW<sp/>PIN</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69" refid="_r_t_c___d_s3231_8h_1a2a519b18937a8737ed2d09b4acade7a8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_SQW_FREQ_1<sp/><sp/><sp/><sp/>0b00000000<sp/>//<sp/>1Hz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="_r_t_c___d_s3231_8h_1a94e91af2ccbf3399b1ffbfc9d9e0190c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_SQW_FREQ_1024<sp/>0b00001000<sp/>//<sp/>1024Hz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="_r_t_c___d_s3231_8h_1a11b26029d012568c75c96c44b78e3c81" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_SQW_FREQ_4096<sp/>0b00010000<sp/>//<sp/>4096Hz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="_r_t_c___d_s3231_8h_1a733b2987f9e3e10f21752cb9de2cf380" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DS3231_SQW_FREQ_8192<sp/>0b00011000<sp/>//<sp/>8192Hz</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>__RTC_DS3231_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment">//<sp/>vim:ci:sw=4<sp/>sts=4<sp/>ft=cpp</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h"/>
+  </compounddef>
+</doxygen>

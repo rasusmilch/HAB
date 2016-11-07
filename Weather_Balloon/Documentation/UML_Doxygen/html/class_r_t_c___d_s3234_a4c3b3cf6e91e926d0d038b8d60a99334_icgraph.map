@@ -1,0 +1,7 @@
+<map id="RTC_DS3234::cs" name="RTC_DS3234::cs">
+<area shape="rect" id="node2" href="$class_r_t_c___d_s3234.html#a13766581ca199cae55d02327c39f78da" title="RTC_DS3234::adjust" alt="" coords="173,5,303,32"/>
+<area shape="rect" id="node3" href="$class_r_t_c___d_s3234.html#a28e48a48c9b04692e5c5049e94e389f1" title="RTC_DS3234::RTC_DS3234" alt="" coords="361,107,529,133"/>
+<area shape="rect" id="node4" href="$class_r_t_c___d_s3234.html#acf87a4369cb5b08fd1be62696a6be1a8" title="RTC_DS3234::begin" alt="" coords="173,107,303,133"/>
+<area shape="rect" id="node5" href="$class_r_t_c___d_s3234.html#aff58814e7f5706f341edbf9d68c4665b" title="RTC_DS3234::isrunning" alt="" coords="163,157,313,184"/>
+<area shape="rect" id="node6" href="$class_r_t_c___d_s3234.html#a1b22090fcfdbef26725da0232157a3c1" title="RTC_DS3234::now" alt="" coords="177,208,299,235"/>
+</map>

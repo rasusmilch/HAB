@@ -1,0 +1,8 @@
+<map id="FirmataClass::sendValueAsTwo7bitBytes" name="FirmataClass::sendValueAsTwo7bitBytes">
+<area shape="rect" id="node2" href="$class_firmata_class.html#abe49261eab0bd4892a09fa8b8980b11a" title="FirmataClass::printFirmware\lVersion" alt="" coords="221,23,400,65"/>
+<area shape="rect" id="node5" href="$class_firmata_class.html#ae14e1d8d9bd72068f6e8ca07721e8dda" title="FirmataClass::sendAnalog" alt="" coords="229,89,393,116"/>
+<area shape="rect" id="node6" href="$class_firmata_class.html#a81e2de5b37eb2372c8a3d9a43d5eb0cc" title="FirmataClass::sendSysex" alt="" coords="233,140,388,167"/>
+<area shape="rect" id="node3" href="$class_firmata_class.html#a119734b867186567c1cd011e52e59d2d" title="FirmataClass::available" alt="" coords="452,5,601,32"/>
+<area shape="rect" id="node4" href="$class_firmata_class.html#ab0b7b837d2c32b4ce79e62895ced2731" title="FirmataClass::begin" alt="" coords="461,56,592,83"/>
+<area shape="rect" id="node7" href="$class_firmata_class.html#ab139c0d784e69003c88eb5be8807dcdf" title="FirmataClass::sendString" alt="" coords="448,140,605,167"/>
+</map>

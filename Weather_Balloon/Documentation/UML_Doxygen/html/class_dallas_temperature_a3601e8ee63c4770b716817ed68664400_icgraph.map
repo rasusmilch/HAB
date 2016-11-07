@@ -1,0 +1,5 @@
+<map id="DallasTemperature::getUserData" name="DallasTemperature::getUserData">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#a4af999e72b9c5b85430666ad90fa9644" title="DallasTemperature::\lgetUserDataByIndex" alt="" coords="185,5,320,47"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#a0ed69b03ed848936ea0c8deea0e5c2ba" title="DallasTemperature::\lsetUserData" alt="" coords="187,71,319,112"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#a65ae6994218200e92ce43bffd122d46b" title="DallasTemperature::\lsetUserDataByIndex" alt="" coords="368,71,501,112"/>
+</map>

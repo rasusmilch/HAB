@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_spark_fun_m_a_x17043_8h" kind="file" language="C++">
+    <compoundname>SparkFunMAX17043.h</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes local="no">Wire.h</includes>
+    <includedby refid="_spark_fun_m_a_x17043_8cpp" local="yes">Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp</includedby>
+    <includedby refid="_weather___balloon_8cpp" local="yes">Weather_Balloon/Weather_Balloon.cpp</includedby>
+    <incdepgraph>
+      <node id="1008">
+        <label>Wire.h</label>
+      </node>
+      <node id="1006">
+        <label>Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h</label>
+        <link refid="SparkFunMAX17043.h"/>
+        <childnode refid="1007" relation="include">
+        </childnode>
+        <childnode refid="1008" relation="include">
+        </childnode>
+      </node>
+      <node id="1007">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1010">
+        <label>Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp</label>
+        <link refid="_spark_fun_m_a_x17043_8cpp"/>
+      </node>
+      <node id="1011">
+        <label>Weather_Balloon/Weather_Balloon.cpp</label>
+        <link refid="_weather___balloon_8cpp"/>
+      </node>
+      <node id="1009">
+        <label>Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h</label>
+        <link refid="SparkFunMAX17043.h"/>
+        <childnode refid="1010" relation="include">
+        </childnode>
+        <childnode refid="1011" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_m_a_x17043" prot="public">MAX17043</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_spark_fun_m_a_x17043_8h_1a77fcbce49b6bf9f478040b7b6ce3db20" prot="public" static="no" mutable="no">
+        <type><ref refid="class_m_a_x17043" kindref="compound">MAX17043</ref></type>
+        <definition>MAX17043 lipo</definition>
+        <argsstring></argsstring>
+        <name>lipo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="127" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="242" bodyend="-1"/>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="_m_a_x17043___simple_8cpp" startline="59" endline="83">loop</referencedby>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="_m_a_x17043___simple_8cpp" startline="36" endline="57">setup</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">SparkFunMAX17043.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">SparkFun<sp/>MAX17043<sp/>Library<sp/>Header<sp/>File</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Jim<sp/>Lindblom<sp/>@<sp/>SparkFun<sp/>Electronics</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Original<sp/>Creation<sp/>Date:<sp/>June<sp/>22,<sp/>2015</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">https://github.com/sparkfun/SparkFun_MAX17043_Particle_Library</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">This<sp/>file<sp/>implements<sp/>all<sp/>functions<sp/>of<sp/>the<sp/>MAX17043<sp/>class.<sp/>Functions<sp/>here<sp/>range</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">from<sp/>higher<sp/>level<sp/>stuff,<sp/>like<sp/>reading/writing<sp/>MAX17043<sp/>registers<sp/>to<sp/>low-level,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">hardware<sp/>reads<sp/>and<sp/>writes.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">Development<sp/>environment<sp/>specifics:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>IDE:<sp/>Particle<sp/>Build</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>Hardware<sp/>Platform:<sp/>Particle<sp/>Photon</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SparkFun<sp/>Photon<sp/>Battery<sp/>Shield</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">This<sp/>code<sp/>is<sp/>released<sp/>under<sp/>the<sp/>MIT<sp/>license.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">Distributed<sp/>as-is;<sp/>no<sp/>warranty<sp/>is<sp/>given.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__SparkFunMAX17043_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__SparkFunMAX17043_H__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//#include<sp/>&quot;application.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="class_m_a_x17043" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_m_a_x17043" kindref="compound">MAX17043</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="class_m_a_x17043_1a355bb280e2fb71a761ac539c5d6b335a" kindref="member">MAX17043</ref>();</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>begin()<sp/>-<sp/>Initializes<sp/>I2C<sp/>and<sp/>the<sp/>MAX17043.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1a7f434b44531c65f4a3b31c4f5ebcb887" kindref="member">begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>quickStart()<sp/>-<sp/>Restarts<sp/>the<sp/>MAX17043<sp/>to<sp/>allow<sp/>it<sp/>to<sp/>re-&quot;guess&quot;<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>parameters<sp/>that<sp/>go<sp/>into<sp/>its<sp/>SoC<sp/>algorithms.<sp/>Calling<sp/>this<sp/>in<sp/>your<sp/>setup()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>usually<sp/>results<sp/>in<sp/>more<sp/>accurate<sp/>SoC<sp/>readings.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>0<sp/>on<sp/>success,<sp/>positive<sp/>integer<sp/>on<sp/>fail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1a853dbf7908a1c4a37405050ec5e9c9e6" kindref="member">quickStart</ref>();</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>getVoltage()<sp/>-<sp/>Get<sp/>the<sp/>MAX17043&apos;s<sp/>voltage<sp/>reading.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>floating<sp/>point<sp/>value<sp/>between<sp/>0-5V<sp/>in<sp/>1.25mV<sp/>increments.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_a_x17043_1afcba3e7ee660335c78995d337cab1678" kindref="member">getVoltage</ref>();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>getSOC()<sp/>-<sp/>Get<sp/>the<sp/>MAX17043&apos;s<sp/>state-of-charge<sp/>(SOC)<sp/>reading,<sp/>as<sp/>calculated</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>by<sp/>the<sp/>IC&apos;s<sp/>&quot;ModelGauge&quot;<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>floating<sp/>point<sp/>value<sp/>between<sp/>0-100,<sp/>representing<sp/>a<sp/>percentage<sp/>of</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>full<sp/>charge.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_a_x17043_1a9567ba1006631e2d262a01ced542523f" kindref="member">getSOC</ref>();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>getVersion()<sp/>-<sp/>Get<sp/>the<sp/>MAX17043&apos;s<sp/>production<sp/>version<sp/>number.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>3<sp/>on<sp/>success</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_m_a_x17043_1acca2d36ef6359c085c9fe8bf2eb37ec3" kindref="member">getVersion</ref>();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>getThreshold()<sp/>-<sp/>Get<sp/>the<sp/>MAX17043&apos;s<sp/>current<sp/>percentage<sp/>threshold<sp/>that<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>trigger<sp/>an<sp/>alert.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>An<sp/>integer<sp/>value<sp/>between<sp/>1<sp/>and<sp/>32,<sp/>representing<sp/>a<sp/>%<sp/>that<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>trigger<sp/>an<sp/>alert<sp/>interrupt.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1a79f404146d8ad9a0da8e1941f99ab6a1" kindref="member">getThreshold</ref>();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>setThreshold([percent])<sp/>-<sp/>Set<sp/>the<sp/>MAX17043&apos;s<sp/>percentage<sp/>threshold<sp/>that<sp/>will</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>trigger<sp/>an<sp/>alert.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Input:<sp/>[percent]<sp/>-<sp/>Percentage<sp/>value<sp/>that<sp/>will<sp/>trigger<sp/>an<sp/>alert<sp/>interrupt.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Any<sp/>value<sp/>between<sp/>1<sp/>and<sp/>32<sp/>is<sp/>valid.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>0<sp/>on<sp/>success,<sp/>positive<sp/>integer<sp/>on<sp/>fail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1a1399c759fa7039420a2ac324db843a1f" kindref="member">setThreshold</ref>(uint8_t<sp/>percent);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>getAlert([clear])<sp/>-<sp/>Check<sp/>if<sp/>the<sp/>MAX17043&apos;s<sp/>alert<sp/>interrupt<sp/>has<sp/>been</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>triggered.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>INPUT:<sp/>[clear]<sp/>-<sp/>If<sp/>[clear]<sp/>is<sp/>true,<sp/>the<sp/>alert<sp/>flag<sp/>will<sp/>be<sp/>cleared<sp/>if<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>was<sp/>set.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>OUTPUT:<sp/>Returns<sp/>1<sp/>if<sp/>interrupt<sp/>is/was<sp/>triggered,<sp/>0<sp/>if<sp/>not.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1ab62ceb6112cf661a9ca4ffa54d4e72c5" kindref="member">getAlert</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clear<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>clearAlert()<sp/>-<sp/>Clear<sp/>the<sp/>MAX17043&apos;s<sp/>alert<sp/>flag.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>0<sp/>on<sp/>success,<sp/>positive<sp/>integer<sp/>on<sp/>fail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1a396806dcd5feff73dfea335a75d2476e" kindref="member">clearAlert</ref>();</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>sleep()<sp/>-<sp/>Set<sp/>the<sp/>MAX17043<sp/>into<sp/>sleep<sp/>mode.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>0<sp/>on<sp/>success,<sp/>positive<sp/>integer<sp/>on<sp/>fail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1ac284bdd3085b45246cc115f2c58dea5f" kindref="member">sleep</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>wake()<sp/>-<sp/>Wake<sp/>the<sp/>MAX17043<sp/>up<sp/>from<sp/>sleep.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>0<sp/>on<sp/>success,<sp/>positive<sp/>integer<sp/>on<sp/>fail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1a3362df7c61d7a9acf75d1ee83f219b1f" kindref="member">wake</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>reset()<sp/>-<sp/>Issue<sp/>a<sp/>Power-on-reset<sp/>command<sp/>to<sp/>the<sp/>MAX17043.<sp/>This<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>will<sp/>reset<sp/>every<sp/>register<sp/>in<sp/>the<sp/>MAX17043<sp/>to<sp/>its<sp/>default<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>0<sp/>on<sp/>success,<sp/>positive<sp/>integer<sp/>on<sp/>fail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1a29130068805144281ce44dc686e8ef1e" kindref="member">reset</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>getConfigRegister()<sp/>-<sp/>Read<sp/>the<sp/>16-bit<sp/>value<sp/>of<sp/>the<sp/>CONFIG<sp/>Register.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>16-bit<sp/>integer<sp/>value<sp/>representing<sp/>the<sp/>msb<sp/>and<sp/>lsb<sp/>bytes<sp/>of<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>CONFIG<sp/>register.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_m_a_x17043_1ac9e3d5347ba744323ddcc973d89c15ad" kindref="member">getConfigRegister</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>getCompensation()<sp/>-<sp/>Get<sp/>the<sp/>ModelGauge<sp/>compensation<sp/>value<sp/>-<sp/>an<sp/>obscure</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>8-bit<sp/>value<sp/>set<sp/>to<sp/>0x97<sp/>by<sp/>default.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>8-bit<sp/>value<sp/>read<sp/>from<sp/>the<sp/>CONFIG<sp/>register&apos;s<sp/>MSB.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1a644fb0b3b44c57e2d58faeb8190e82cd" kindref="member">getCompensation</ref>();</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>setCompensation([newCompensation])<sp/>-<sp/>Set<sp/>the<sp/>8-bit<sp/>compensation<sp/>value.<sp/>This</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>is<sp/>an<sp/>obscure<sp/>8-bit<sp/>value<sp/>that<sp/>has<sp/>some<sp/>effect<sp/>on<sp/>Maxim&apos;s<sp/>ModelGauge</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>algorithm.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>the<sp/>datasheet:<sp/>&quot;Contact<sp/>Maxim<sp/>for<sp/>instructions<sp/>for<sp/>optimization.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Input:<sp/>[newCompensation]<sp/>-<sp/>Should<sp/>be<sp/>a<sp/>value<sp/>between<sp/>0-255.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>0<sp/>on<sp/>success,<sp/>positive<sp/>integer<sp/>on<sp/>fail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_m_a_x17043_1a0e65f026d006cd020439329e7230d7c5" kindref="member">setCompensation</ref>(uint8_t<sp/>newCompensation);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>write16([data],<sp/>[address])<sp/>-<sp/>Write<sp/>16<sp/>bits<sp/>to<sp/>the<sp/>requested<sp/>address.<sp/>After</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>writing<sp/>the<sp/>address<sp/>to<sp/>be<sp/>written,<sp/>two<sp/>sequential<sp/>8-bit<sp/>writes<sp/>will<sp/>occur.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>msb<sp/>is<sp/>written<sp/>first,<sp/>then<sp/>lsb.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Input:<sp/>[data]<sp/>-<sp/>A<sp/>16-bit<sp/>integer<sp/>to<sp/>be<sp/>written<sp/>to<sp/>the<sp/>device.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>[address]<sp/>-<sp/>An<sp/>8-bit<sp/>address<sp/>to<sp/>be<sp/>written<sp/>to.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>0<sp/>on<sp/>success,<sp/>positive<sp/>integer<sp/>on<sp/>fail.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>uint8_t<sp/>write16(uint16_t<sp/>data,<sp/>uint8_t<sp/>address);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>read16([address])<sp/>-<sp/>Read<sp/>16-bits<sp/>from<sp/>the<sp/>requested<sp/>address<sp/>of<sp/>a<sp/>device.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Input:<sp/>[address]<sp/>-<sp/>An<sp/>8-bit<sp/>address<sp/>to<sp/>be<sp/>read<sp/>from.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Output:<sp/>A<sp/>16-bit<sp/>value<sp/>read<sp/>from<sp/>the<sp/>device&apos;s<sp/>address<sp/>will<sp/>be<sp/>returned.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>uint16_t<sp/>read16(uint8_t<sp/>address);</highlight></codeline>
+<codeline lineno="124"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>a<sp/>static<sp/>MAX17043<sp/>object<sp/>called<sp/>lipo,<sp/>which<sp/>we&apos;ll<sp/>use<sp/>in<sp/>the<sp/>sketches.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="keyword">extern</highlight><highlight class="normal"><sp/><ref refid="class_m_a_x17043" kindref="compound">MAX17043</ref><sp/><ref refid="_spark_fun_m_a_x17043_8h_1a77fcbce49b6bf9f478040b7b6ce3db20" kindref="member">lipo</ref>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h"/>
+  </compounddef>
+</doxygen>

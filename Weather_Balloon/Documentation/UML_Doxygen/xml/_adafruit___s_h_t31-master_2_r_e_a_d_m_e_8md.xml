@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_adafruit___s_h_t31-master_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>Adafruit_SHT31</highlight></codeline>
+<codeline><highlight class="normal">&lt;!--<sp/>START<sp/>COMPATIBILITY<sp/>TABLE<sp/>--&gt;</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Compatibility</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">MCU<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>Tested<sp/>Works<sp/>|<sp/>Doesn&apos;t<sp/>Work<sp/>|<sp/>Not<sp/>Tested<sp/><sp/>|<sp/>Notes</highlight></codeline>
+<codeline><highlight class="normal">------------------<sp/>|<sp/>:----------:<sp/>|<sp/>:----------:<sp/>|<sp/>:---------:<sp/>|<sp/>-----</highlight></codeline>
+<codeline><highlight class="normal">Atmega328<sp/>@<sp/>16MHz<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">Atmega328<sp/>@<sp/>12MHz<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">Atmega32u4<sp/>@<sp/>16MHz<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">Atmega32u4<sp/>@<sp/>8MHz<sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">ESP8266<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">Atmega2560<sp/>@<sp/>16MHz<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">ATSAM3X8E<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">ATSAM21D<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">ATtiny85<sp/>@<sp/>16MHz<sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">ATtiny85<sp/>@<sp/>8MHz<sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">Intel<sp/>Curie<sp/>@<sp/>32MHz<sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline><highlight class="normal">STM32F2<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/><sp/><sp/><sp/><sp/>X<sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ATmega328<sp/>@<sp/>16MHz<sp/>:<sp/>Arduino<sp/>UNO,<sp/>Adafruit<sp/>Pro<sp/>Trinket<sp/>5V,<sp/>Adafruit<sp/>Metro<sp/>328,<sp/>Adafruit<sp/>Metro<sp/>Mini</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ATmega328<sp/>@<sp/>12MHz<sp/>:<sp/>Adafruit<sp/>Pro<sp/>Trinket<sp/>3V</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ATmega32u4<sp/>@<sp/>16MHz<sp/>:<sp/>Arduino<sp/>Leonardo,<sp/>Arduino<sp/>Micro,<sp/>Arduino<sp/>Yun,<sp/>Teensy<sp/>2.0</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ATmega32u4<sp/>@<sp/>8MHz<sp/>:<sp/>Adafruit<sp/>Flora,<sp/>Bluefruit<sp/>Micro</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ESP8266<sp/>:<sp/>Adafruit<sp/>Huzzah</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ATmega2560<sp/>@<sp/>16MHz<sp/>:<sp/>Arduino<sp/>Mega</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ATSAM3X8E<sp/>:<sp/>Arduino<sp/>Due</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ATSAM21D<sp/>:<sp/>Arduino<sp/>Zero,<sp/>M0<sp/>Pro</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ATtiny85<sp/>@<sp/>16MHz<sp/>:<sp/>Adafruit<sp/>Trinket<sp/>5V</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>ATtiny85<sp/>@<sp/>8MHz<sp/>:<sp/>Adafruit<sp/>Gemma,<sp/>Arduino<sp/>Gemma,<sp/>Adafruit<sp/>Trinket<sp/>3V</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;!--<sp/>END<sp/>COMPATIBILITY<sp/>TABLE<sp/>--&gt;</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Adafruit_SHT31-master/README.md"/>
+  </compounddef>
+</doxygen>

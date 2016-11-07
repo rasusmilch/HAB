@@ -1,0 +1,909 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_sd2_card_8cpp" kind="file" language="C++">
+    <compoundname>Sd2Card.cpp</compoundname>
+    <includes local="yes">WProgram.h</includes>
+    <includes refid="_sd2_card_8h" local="yes">Sd2Card.h</includes>
+    <includes local="no">SPI.h</includes>
+    <incdepgraph>
+      <node id="949">
+        <label>SPI.h</label>
+      </node>
+      <node id="948">
+        <label>stdint.h</label>
+      </node>
+      <node id="946">
+        <label>Sd2PinMap.h</label>
+        <link refid="_sd2_pin_map_8h"/>
+      </node>
+      <node id="944">
+        <label>WProgram.h</label>
+      </node>
+      <node id="947">
+        <label>SdInfo.h</label>
+        <link refid="_sd_info_8h"/>
+        <childnode refid="948" relation="include">
+        </childnode>
+      </node>
+      <node id="945">
+        <label>Sd2Card.h</label>
+        <link refid="_sd2_card_8h"/>
+        <childnode refid="946" relation="include">
+        </childnode>
+        <childnode refid="947" relation="include">
+        </childnode>
+      </node>
+      <node id="943">
+        <label>Weather_Balloon/library/SD-master/Sd2Card.cpp</label>
+        <link refid="Sd2Card.cpp"/>
+        <childnode refid="944" relation="include">
+        </childnode>
+        <childnode refid="945" relation="include">
+        </childnode>
+        <childnode refid="949" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_sd2_card_8cpp_1a9a8be32a22117702b68a446f25f142b0" prot="public" static="no">
+        <name>USE_SPI_LIB</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="20" column="9" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" prot="public" static="no">
+        <name>nop</name>
+        <initializer>asm volatile (&quot;nop\n\t&quot;)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>nop to tune soft SPI timing </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="40" column="9" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_sd2_card_8cpp_1a0075239d0eb821036e7ccff3afc38672" prot="public" static="yes" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t mosiPin_</definition>
+        <argsstring></argsstring>
+        <name>mosiPin_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="33" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_sd2_card_8cpp_1a1fc7f3705babf3b519df8a90511c9e54" prot="public" static="yes" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t misoPin_</definition>
+        <argsstring></argsstring>
+        <name>misoPin_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="33" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_sd2_card_8cpp_1ae53a4659bb895bd40e5b2627fdae094d" prot="public" static="yes" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t clockPin_</definition>
+        <argsstring></argsstring>
+        <name>clockPin_</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="33" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_sd2_card_8cpp_1ad80bd79fb11056b8ae81ccd6176a6b02" prot="public" static="yes" mutable="no">
+        <type>uint8_t *</type>
+        <definition>volatile uint8_t* mosiport</definition>
+        <argsstring></argsstring>
+        <name>mosiport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="34" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_sd2_card_8cpp_1a68ef44b91828e1a5b70de88c917edcba" prot="public" static="yes" mutable="no">
+        <type>uint8_t *</type>
+        <definition>volatile uint8_t * clkport</definition>
+        <argsstring></argsstring>
+        <name>clkport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="34" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_sd2_card_8cpp_1a3b3a09186b26faa03c1c8b0fb18a1805" prot="public" static="yes" mutable="no">
+        <type>uint8_t *</type>
+        <definition>volatile uint8_t * misoport</definition>
+        <argsstring></argsstring>
+        <name>misoport</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="34" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_sd2_card_8cpp_1a3ecf52573b9304710349b2a5954c7ebc" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t mosipinmask</definition>
+        <argsstring></argsstring>
+        <name>mosipinmask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="35" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_sd2_card_8cpp_1ac7609e5eeaedb3b0cf0dac84037090fe" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t clkpinmask</definition>
+        <argsstring></argsstring>
+        <name>clkpinmask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="35" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_sd2_card_8cpp_1a9fee2b7aff56e0add655d100ad9b3285" prot="public" static="yes" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t misopinmask</definition>
+        <argsstring></argsstring>
+        <name>misopinmask</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="35" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_sd2_card_8cpp_1a19e8440b98633609d5fca69e6201ec99" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void spiSend</definition>
+        <argsstring>(uint8_t b)</argsstring>
+        <name>spiSend</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>b</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Send a byte to the card </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="48" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="48" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="_sd2_card_8cpp_1a4be1caaa657dcbb4b16fd78242f32be9" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t spiRec</definition>
+        <argsstring>(void)</argsstring>
+        <name>spiRec</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Receive a byte from the card </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp" line="75" column="1" bodyfile="Weather_Balloon/library/SD-master/Sd2Card.cpp" bodystart="75" bodyend="107"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*<sp/>Arduino<sp/>Sd2Card<sp/>Library</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Copyright<sp/>(C)<sp/>2009<sp/>by<sp/>William<sp/>Greiman</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>This<sp/>file<sp/>is<sp/>part<sp/>of<sp/>the<sp/>Arduino<sp/>Sd2Card<sp/>Library</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>This<sp/>Library<sp/>is<sp/>free<sp/>software:<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or<sp/>modify</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>as<sp/>published<sp/>by</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*<sp/>the<sp/>Free<sp/>Software<sp/>Foundation,<sp/>either<sp/>version<sp/>3<sp/>of<sp/>the<sp/>License,<sp/>or</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/>*<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/>*<sp/>This<sp/>Library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/>*<sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/>*<sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/><sp/>See<sp/>the</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/>*<sp/>GNU<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*<sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>General<sp/>Public<sp/>License</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>along<sp/>with<sp/>the<sp/>Arduino<sp/>Sd2Card<sp/>Library.<sp/><sp/>If<sp/>not,<sp/>see</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>&lt;http://www.gnu.org/licenses/&gt;.</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="_sd2_card_8cpp_1a9a8be32a22117702b68a446f25f142b0" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARDUINO<sp/>&gt;=<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;WProgram.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_sd2_card_8h" kindref="compound">Sd2Card.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>__arm__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/>mosiPin_,<sp/>misoPin_,<sp/>clockPin_;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>RwReg<sp/>*mosiport,<sp/>*clkport,<sp/>*misoport;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint32_t<sp/>mosipinmask,<sp/>clkpinmask,<sp/>misopinmask;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>int8_t<sp/>mosiPin_,<sp/>misoPin_,<sp/>clockPin_;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/>uint8_t<sp/>*mosiport,<sp/>*clkport,<sp/>*misoport;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>mosipinmask,<sp/>clkpinmask,<sp/>misopinmask;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="40" refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>nop<sp/>asm<sp/>volatile<sp/>(&quot;nop\n\t&quot;)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SOFTWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#include<sp/>&lt;SPI.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>functions<sp/>for<sp/>hardware<sp/>SPI</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>spiSend(uint8_t<sp/>b)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(clockPin_<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#ifndef<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPDR<sp/>=<sp/>b;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)));</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI.transfer(b);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>noInterrupts();</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fast<sp/>SPI<sp/>bitbang<sp/>swiped<sp/>from<sp/>LPD8806<sp/>library</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>8;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*clkport<sp/>&amp;=<sp/>~clkpinmask;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(b<sp/>&amp;<sp/>0x80)</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*mosiport<sp/>|=<sp/>mosipinmask;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*mosiport<sp/>&amp;=<sp/>~mosipinmask;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*clkport<sp/>|=<sp/><sp/>clkpinmask;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>b<sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;<ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;<ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;<ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*clkport<sp/>&amp;=<sp/>~clkpinmask;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>interrupts();</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><sp/>uint8_t<sp/>spiRec(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(clockPin_<sp/>==<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>spiSend(0XFF);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SPDR;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>SPI.transfer(0xFF);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>data<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>interrupts<sp/>during<sp/>byte<sp/>receive<sp/>-<sp/>about<sp/>8<sp/>us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>noInterrupts();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>output<sp/>pin<sp/>high<sp/>-<sp/>like<sp/>sending<sp/>0XFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/>*mosiport<sp/>|=<sp/>mosipinmask;</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>8;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*clkport<sp/>|=<sp/><sp/>clkpinmask;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//if<sp/>(fastDigitalRead(SPI_MISO_PIN))<sp/>data<sp/>|=<sp/>1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*misoport)<sp/>&amp;<sp/>misopinmask)<sp/><sp/>data<sp/>|=<sp/>1;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>*clkport<sp/>&amp;=<sp/><sp/>~clkpinmask;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>adjust<sp/>so<sp/>SCK<sp/>is<sp/>nice</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>interrupts();</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/>//<sp/>SOFTWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>uint8_t<sp/>spiRec(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>data<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>interrupts<sp/>during<sp/>byte<sp/>receive<sp/>-<sp/>about<sp/>8<sp/>us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/>cli();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>output<sp/>pin<sp/>high<sp/>-<sp/>like<sp/>sending<sp/>0XFF</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>fastDigitalWrite(<ref refid="_sd2_card_8h_1abe8593732e5a9f38455125b0d499468d" kindref="member">SPI_MOSI_PIN</ref>,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>8;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fastDigitalWrite(<ref refid="_sd2_card_8h_1a7e5ead80033d2652108d1b835f3cc0f9" kindref="member">SPI_SCK_PIN</ref>,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>adjust<sp/>so<sp/>SCK<sp/>is<sp/>nice</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(fastDigitalRead(<ref refid="_sd2_card_8h_1ae0bebe57d4925c25bfb58d8999d300ef" kindref="member">SPI_MISO_PIN</ref>))<sp/>data<sp/>|=<sp/>1;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fastDigitalWrite(<ref refid="_sd2_card_8h_1a7e5ead80033d2652108d1b835f3cc0f9" kindref="member">SPI_SCK_PIN</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>sei();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="137"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>spiSend(uint8_t<sp/>data)<sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>no<sp/>interrupts<sp/>during<sp/>byte<sp/>send<sp/>-<sp/>about<sp/>8<sp/>us</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>cli();</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>8;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fastDigitalWrite(<ref refid="_sd2_card_8h_1a7e5ead80033d2652108d1b835f3cc0f9" kindref="member">SPI_SCK_PIN</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fastDigitalWrite(<ref refid="_sd2_card_8h_1abe8593732e5a9f38455125b0d499468d" kindref="member">SPI_MOSI_PIN</ref>,<sp/>data<sp/>&amp;<sp/>0X80);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>data<sp/>&lt;&lt;=<sp/>1;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>fastDigitalWrite(<ref refid="_sd2_card_8h_1a7e5ead80033d2652108d1b835f3cc0f9" kindref="member">SPI_SCK_PIN</ref>,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>hold<sp/>SCK<sp/>high<sp/>for<sp/>a<sp/>few<sp/>ns</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_sd2_card_8cpp_1a51158539d4d6022c9a445e78b0abfa94" kindref="member">nop</ref>;</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>fastDigitalWrite(<ref refid="_sd2_card_8h_1a7e5ead80033d2652108d1b835f3cc0f9" kindref="member">SPI_SCK_PIN</ref>,<sp/>LOW);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>enable<sp/>interrupts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/>sei();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>SOFTWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"></highlight><highlight class="comment">//<sp/>send<sp/>command<sp/>and<sp/>return<sp/>error<sp/>code.<sp/><sp/>Return<sp/>zero<sp/>for<sp/>OK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal">uint8_t<sp/>Sd2Card::cardCommand(uint8_t<sp/>cmd,<sp/>uint32_t<sp/>arg)<sp/>{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>end<sp/>read<sp/>if<sp/>in<sp/>partialBlockRead<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><ref refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" kindref="member">readEnd</ref>();</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>select<sp/>card</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>chipSelectLow();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>up<sp/>to<sp/>300<sp/>ms<sp/>if<sp/>busy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/>waitNotBusy(300);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>command</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>spiSend(cmd<sp/>|<sp/>0x40);</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>argument</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(int8_t<sp/>s<sp/>=<sp/>24;<sp/>s<sp/>&gt;=<sp/>0;<sp/>s<sp/>-=<sp/>8)<sp/>spiSend(arg<sp/>&gt;&gt;<sp/>s);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>CRC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>uint8_t<sp/>crc<sp/>=<sp/>0XFF;</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cmd<sp/>==<sp/><ref refid="_sd_info_8h_1a1ec3c92c9dd38b0efa9126be38850d29" kindref="member">CMD0</ref>)<sp/>crc<sp/>=<sp/>0X95;<sp/><sp/></highlight><highlight class="comment">//<sp/>correct<sp/>crc<sp/>for<sp/>CMD0<sp/>with<sp/>arg<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cmd<sp/>==<sp/><ref refid="_sd_info_8h_1a5555048921d7792941f6cde88d5c8e36" kindref="member">CMD8</ref>)<sp/>crc<sp/>=<sp/>0X87;<sp/><sp/></highlight><highlight class="comment">//<sp/>correct<sp/>crc<sp/>for<sp/>CMD8<sp/>with<sp/>arg<sp/>0X1AA</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/>spiSend(crc);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>response</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/>((status_<sp/>=<sp/>spiRec())<sp/>&amp;<sp/>0X80)<sp/>&amp;&amp;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>!=<sp/>0XFF;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>status_;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="195" refid="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint32_t<sp/><ref refid="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" kindref="member">Sd2Card::cardSize</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><ref refid="unioncsd__t" kindref="compound">csd_t</ref><sp/>csd;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_sd2_card_1a79845d8d4593cb3b1b7641ba27edddfb" kindref="member">readCSD</ref>(&amp;csd))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(csd.<ref refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" kindref="member">v1</ref>.<ref refid="structcsd1__t_1af341e8a49ebe0543763192af72dfede1" kindref="member">csd_ver</ref><sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>read_bl_len<sp/>=<sp/>csd.<ref refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" kindref="member">v1</ref>.<ref refid="structcsd1__t_1a60d9786b4495206c238a0615be870003" kindref="member">read_bl_len</ref>;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>c_size<sp/>=<sp/>(csd.<ref refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" kindref="member">v1</ref>.<ref refid="structcsd1__t_1a06d6b18b8c4f7648ae18c0b504c1944a" kindref="member">c_size_high</ref><sp/>&lt;&lt;<sp/>10)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>(csd.<ref refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" kindref="member">v1</ref>.<ref refid="structcsd1__t_1a71836f36497f88f9e1bbd900e9601a7b" kindref="member">c_size_mid</ref><sp/>&lt;&lt;<sp/>2)<sp/>|<sp/>csd.<ref refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" kindref="member">v1</ref>.<ref refid="structcsd1__t_1ac69176c79cc14f8e02269b5bebb5d813" kindref="member">c_size_low</ref>;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>c_size_mult<sp/>=<sp/>(csd.<ref refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" kindref="member">v1</ref>.<ref refid="structcsd1__t_1a0e0e1303c87b9c646ad15fbb180d4baa" kindref="member">c_size_mult_high</ref><sp/>&lt;&lt;<sp/>1)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>csd.<ref refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" kindref="member">v1</ref>.<ref refid="structcsd1__t_1abe61acf37999b7053d150c66252400ad" kindref="member">c_size_mult_low</ref>;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>(uint32_t)(c_size<sp/>+<sp/>1)<sp/>&lt;&lt;<sp/>(c_size_mult<sp/>+<sp/>read_bl_len<sp/>-<sp/>7);</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(csd.<ref refid="unioncsd__t_1a19b60555856c9a485bcf4a84c248bfea" kindref="member">v2</ref>.<ref refid="structcsd2__t_1a0cbac91cabf9d2f591037ea2629b1555" kindref="member">csd_ver</ref><sp/>==<sp/>1)<sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>c_size<sp/>=<sp/>((uint32_t)csd.<ref refid="unioncsd__t_1a19b60555856c9a485bcf4a84c248bfea" kindref="member">v2</ref>.<ref refid="structcsd2__t_1a18a8c48050f362f469894317436e3de5" kindref="member">c_size_high</ref><sp/>&lt;&lt;<sp/>16)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>|<sp/>(csd.<ref refid="unioncsd__t_1a19b60555856c9a485bcf4a84c248bfea" kindref="member">v2</ref>.<ref refid="structcsd2__t_1ad5d3fab4ef1995e438fc31d69c989626" kindref="member">c_size_mid</ref><sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>csd.<ref refid="unioncsd__t_1a19b60555856c9a485bcf4a84c248bfea" kindref="member">v2</ref>.<ref refid="structcsd2__t_1a6161513a9cf5c4949f15f2a90cbdb1f3" kindref="member">c_size_low</ref>;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>(c_size<sp/>+<sp/>1)<sp/>&lt;&lt;<sp/>10;</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a0bbae62f7c90e60614cfa9063101c5e1" kindref="member">SD_CARD_ERROR_BAD_CSD</ref>);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Sd2Card::chipSelectHigh(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>digitalWrite(chipSelectPin_,<sp/>HIGH);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Sd2Card::chipSelectLow(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>digitalWrite(chipSelectPin_,<sp/>LOW);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="236" refid="class_sd2_card_1af49fb720fad1d3ea9f5782da0d87fc0b" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1af49fb720fad1d3ea9f5782da0d87fc0b" kindref="member">Sd2Card::erase</ref>(uint32_t<sp/>firstBlock,<sp/>uint32_t<sp/>lastBlock)<sp/>{</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_sd2_card_1a2e3998f6e910a2936d3ef54bf082b2ce" kindref="member">eraseSingleBlockEnable</ref>())<sp/>{</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a00e05ddd835d81e0b4d78ededae70a3c" kindref="member">SD_CARD_ERROR_ERASE_SINGLE_BLOCK</ref>);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(type_<sp/>!=<sp/><ref refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" kindref="member">SD_CARD_TYPE_SDHC</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>firstBlock<sp/>&lt;&lt;=<sp/>9;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>lastBlock<sp/>&lt;&lt;=<sp/>9;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cardCommand(<ref refid="_sd_info_8h_1a120c7957c30e8c619360c7bab8ba0e58" kindref="member">CMD32</ref>,<sp/>firstBlock)</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>||<sp/>cardCommand(<ref refid="_sd_info_8h_1aa6202b0708714b643336fcf4d3036e23" kindref="member">CMD33</ref>,<sp/>lastBlock)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/>||<sp/>cardCommand(<ref refid="_sd_info_8h_1aa5e07e08a8cccb47d966cff9d19f5f12" kindref="member">CMD38</ref>,<sp/>0))<sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a7726e63b7a04bc15b70901b418d6dd1e" kindref="member">SD_CARD_ERROR_ERASE</ref>);</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!waitNotBusy(<ref refid="_sd2_card_8h_1afb7454898d781c58caa00f82f0f14f63" kindref="member">SD_ERASE_TIMEOUT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a8121967a262a076c5191a0e855531f99" kindref="member">SD_CARD_ERROR_ERASE_TIMEOUT</ref>);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/>fail:</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="268" refid="class_sd2_card_1a2e3998f6e910a2936d3ef54bf082b2ce" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1a2e3998f6e910a2936d3ef54bf082b2ce" kindref="member">Sd2Card::eraseSingleBlockEnable</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><ref refid="unioncsd__t" kindref="compound">csd_t</ref><sp/>csd;</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_sd2_card_1a79845d8d4593cb3b1b7641ba27edddfb" kindref="member">readCSD</ref>(&amp;csd)<sp/>?<sp/>csd.<ref refid="unioncsd__t_1acb1d09f122f32629d8d6faa9edcc943b" kindref="member">v1</ref>.<ref refid="structcsd1__t_1a60b1409e2d0bd3a2fdde08314dab4821" kindref="member">erase_blk_en</ref><sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="283" refid="class_sd2_card_1a204ef4cc35cc6e1d5f12a8cdd5f32518" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1afaec9a22060626b02c07a09eff2e9113" kindref="member">Sd2Card::init</ref>(uint8_t<sp/>sckRateID,<sp/>uint8_t<sp/>chipSelectPin,<sp/>int8_t<sp/>mosiPin,<sp/>int8_t<sp/>misoPin,<sp/>int8_t<sp/>clockPin)<sp/>{</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/>writeCRC_<sp/>=<sp/>errorCode_<sp/>=<sp/>inBlock_<sp/>=<sp/>partialBlockRead_<sp/>=<sp/>type_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/>chipSelectPin_<sp/>=<sp/>chipSelectPin;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/>mosiPin_<sp/>=<sp/>mosiPin;</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>misoPin_<sp/>=<sp/>misoPin;</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/>clockPin_<sp/>=<sp/>clockPin;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>16-bit<sp/>init<sp/>start<sp/>time<sp/>allows<sp/>over<sp/>a<sp/>minute</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/>uint16_t<sp/>t0<sp/>=<sp/>(uint16_t)millis();</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>uint32_t<sp/>arg;</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>set<sp/>pin<sp/>modes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/>pinMode(chipSelectPin_,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(clockPin<sp/>!=<sp/>-1)<sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>slow<sp/>bitbang<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(misoPin_,<sp/>INPUT);</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(mosiPin_,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(clockPin_,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/>clkport<sp/><sp/><sp/><sp/><sp/>=<sp/>portOutputRegister(digitalPinToPort(clockPin_));</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/>clkpinmask<sp/><sp/>=<sp/>digitalPinToBitMask(clockPin_);</highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/>mosiport<sp/><sp/><sp/><sp/>=<sp/>portOutputRegister(digitalPinToPort(mosiPin_));</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/>mosipinmask<sp/>=<sp/>digitalPinToBitMask(mosiPin_);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/><sp/><sp/>misoport<sp/><sp/><sp/><sp/>=<sp/>portInputRegister(digitalPinToPort(misoPin_));</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>misopinmask<sp/>=<sp/>digitalPinToBitMask(misoPin_);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"></highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pinMode(<ref refid="_sd2_card_8h_1ae0bebe57d4925c25bfb58d8999d300ef" kindref="member">SPI_MISO_PIN</ref>,<sp/>INPUT);</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pinMode(<ref refid="_sd2_card_8h_1abe8593732e5a9f38455125b0d499468d" kindref="member">SPI_MOSI_PIN</ref>,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>pinMode(<ref refid="_sd2_card_8h_1a7e5ead80033d2652108d1b835f3cc0f9" kindref="member">SPI_SCK_PIN</ref>,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"></highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#ifndef<sp/>SOFTWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#ifndef<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SS<sp/>must<sp/>be<sp/>in<sp/>output<sp/>mode<sp/>even<sp/>it<sp/>is<sp/>not<sp/>chip<sp/>select</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pinMode(SS_PIN,<sp/>OUTPUT);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>digitalWrite(SS_PIN,<sp/>HIGH);<sp/></highlight><highlight class="comment">//<sp/>disable<sp/>any<sp/>SPI<sp/>device<sp/>using<sp/>hardware<sp/>SS<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Enable<sp/>SPI,<sp/>Master,<sp/>clock<sp/>rate<sp/>f_osc/128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPCR<sp/>=<sp/>(1<sp/>&lt;&lt;<sp/>SPE)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>MSTR)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SPR1)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SPR0);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>clear<sp/>double<sp/>speed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPSR<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>SPI2X);</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#else<sp/>//<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI.begin();</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>SPI_CLOCK_DIV128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI.setClockDivider(SPI_CLOCK_DIV128);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SPI.setClockDivider(255);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#endif<sp/>//<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#endif<sp/>//<sp/>SOFTWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>must<sp/>supply<sp/>min<sp/>of<sp/>74<sp/>clock<sp/>cycles<sp/>with<sp/>CS<sp/>high.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>10;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>spiSend(0XFF);</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/>chipSelectLow();</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>command<sp/>to<sp/>go<sp/>idle<sp/>in<sp/>SPI<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((status_<sp/>=<sp/>cardCommand(<ref refid="_sd_info_8h_1a1ec3c92c9dd38b0efa9126be38850d29" kindref="member">CMD0</ref>,<sp/>0))<sp/>!=<sp/><ref refid="_sd_info_8h_1a180d34bf6496bc49f34e750d3878c528" kindref="member">R1_IDLE_STATE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((uint16_t)millis()<sp/>-<sp/>t0)<sp/>&gt;<sp/><ref refid="_sd2_card_8h_1ab7b9920a819e60f97f988ee13b3ddc40" kindref="member">SD_INIT_TIMEOUT</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a3803cc53ecc2b346ba950053f3dced47" kindref="member">SD_CARD_ERROR_CMD0</ref>);</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>SD<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((cardCommand(<ref refid="_sd_info_8h_1a5555048921d7792941f6cde88d5c8e36" kindref="member">CMD8</ref>,<sp/>0x1AA)<sp/>&amp;<sp/><ref refid="_sd_info_8h_1a0299085ef0457c2d8714c838beaead80" kindref="member">R1_ILLEGAL_COMMAND</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" kindref="member">type</ref>(<ref refid="_sd2_card_8h_1af55081a60d333ab063a5da5dd2c3633b" kindref="member">SD_CARD_TYPE_SD1</ref>);</highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>only<sp/>need<sp/>last<sp/>byte<sp/>of<sp/>r7<sp/>response</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>4;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>status_<sp/>=<sp/>spiRec();</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_<sp/>!=<sp/>0XAA)<sp/>{</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a2da93442c11fa58ffd24fe9d7038393d" kindref="member">SD_CARD_ERROR_CMD8</ref>);</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" kindref="member">type</ref>(<ref refid="_sd2_card_8h_1a225807c91fc41717b4230d3b7e99c9f7" kindref="member">SD_CARD_TYPE_SD2</ref>);</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>initialize<sp/>card<sp/>and<sp/>send<sp/>host<sp/>supports<sp/>SDHC<sp/>if<sp/>SD2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/>arg<sp/>=<sp/><ref refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" kindref="member">type</ref>()<sp/>==<sp/><ref refid="_sd2_card_8h_1a225807c91fc41717b4230d3b7e99c9f7" kindref="member">SD_CARD_TYPE_SD2</ref><sp/>?<sp/>0X40000000<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"></highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((status_<sp/>=<sp/>cardAcmd(<ref refid="_sd_info_8h_1a3d9453bff2059b4175f09e82220d5dc5" kindref="member">ACMD41</ref>,<sp/>arg))<sp/>!=<sp/><ref refid="_sd_info_8h_1abd9bae6aca26cbe7e75dac573bb98ed9" kindref="member">R1_READY_STATE</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>check<sp/>for<sp/>timeout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((uint16_t)millis()<sp/>-<sp/>t0)<sp/>&gt;<sp/><ref refid="_sd2_card_8h_1ab7b9920a819e60f97f988ee13b3ddc40" kindref="member">SD_INIT_TIMEOUT</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a62fdea7af4f09fb98f302bac1bfa17c2" kindref="member">SD_CARD_ERROR_ACMD41</ref>);</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>SD2<sp/>read<sp/>OCR<sp/>register<sp/>to<sp/>check<sp/>for<sp/>SDHC<sp/>card</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" kindref="member">type</ref>()<sp/>==<sp/><ref refid="_sd2_card_8h_1a225807c91fc41717b4230d3b7e99c9f7" kindref="member">SD_CARD_TYPE_SD2</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cardCommand(<ref refid="_sd_info_8h_1a65360b0848046db96c7a3a38ea77b027" kindref="member">CMD58</ref>,<sp/>0))<sp/>{</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a0ebfb17cbc424fd2138918aa72307292" kindref="member">SD_CARD_ERROR_CMD58</ref>);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((spiRec()<sp/>&amp;<sp/>0XC0)<sp/>==<sp/>0XC0)<sp/><ref refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" kindref="member">type</ref>(<ref refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" kindref="member">SD_CARD_TYPE_SDHC</ref>);</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>discard<sp/>rest<sp/>of<sp/>ocr<sp/>-<sp/>contains<sp/>allowed<sp/>voltage<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>3;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>spiRec();</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>SOFTWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(clockPin_<sp/>==<sp/>-1)</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_sd2_card_1ad849b8896de9abd4e24bd98f4204ccc4" kindref="member">setSckRate</ref>(sckRateID);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/>//<sp/>SOFTWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>SOFTWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"></highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/>fail:</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="393"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="408" refid="class_sd2_card_1aa279ac05b3f25acbf10cc424a25750da" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sd2_card_1a73ad7fee10e05439f6ec832ce0eb196f" kindref="member">Sd2Card::partialBlockRead</ref>(uint8_t<sp/>value)<sp/>{</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><ref refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" kindref="member">readEnd</ref>();</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/>partialBlockRead_<sp/>=<sp/>value;</highlight></codeline>
+<codeline lineno="411"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="422" refid="class_sd2_card_1ae26d840449a42d45af464fb81b92e2ab" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1ae26d840449a42d45af464fb81b92e2ab" kindref="member">Sd2Card::readBlock</ref>(uint32_t<sp/>block,<sp/>uint8_t*<sp/>dst)<sp/>{</highlight></codeline>
+<codeline lineno="423"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" kindref="member">readData</ref>(block,<sp/>0,<sp/>512,<sp/>dst);</highlight></codeline>
+<codeline lineno="424"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="436" refid="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" kindref="member">Sd2Card::readData</ref>(uint32_t<sp/>block,</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint16_t<sp/>offset,<sp/>uint16_t<sp/>count,<sp/>uint8_t*<sp/>dst)<sp/>{</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/>uint16_t<sp/>n;</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(count<sp/>==<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((count<sp/>+<sp/>offset)<sp/>&gt;<sp/>512)<sp/>{</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!inBlock_<sp/>||<sp/>block<sp/>!=<sp/>block_<sp/>||<sp/>offset<sp/>&lt;<sp/>offset_)<sp/>{</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/>block_<sp/>=<sp/>block;</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>address<sp/>if<sp/>not<sp/>SDHC<sp/>card</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" kindref="member">type</ref>()!=<sp/><ref refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" kindref="member">SD_CARD_TYPE_SDHC</ref>)<sp/>block<sp/>&lt;&lt;=<sp/>9;</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cardCommand(<ref refid="_sd_info_8h_1ab5e57c3b26526169eb6f2150a23adfe4" kindref="member">CMD17</ref>,<sp/>block))<sp/>{</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a2e79398dcb2711672e50dc2bea94e141" kindref="member">SD_CARD_ERROR_CMD17</ref>);</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!waitStartBlock())<sp/>{</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>offset_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/>inBlock_<sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"></highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>OPTIMIZE_HARDWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>start<sp/>first<sp/>spi<sp/>transfer</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/>SPDR<sp/>=<sp/>0XFF;</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>skip<sp/>data<sp/>before<sp/>offset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;offset_<sp/>&lt;<sp/>offset;<sp/>offset_++)<sp/>{</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)));</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/>SPDR<sp/>=<sp/>0XFF;</highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>transfer<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/>n<sp/>=<sp/>count<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint16_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>n;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)));</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/>dst[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>SPDR;</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/>SPDR<sp/>=<sp/>0XFF;</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>last<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)));</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/>dst[n]<sp/>=<sp/>SPDR;</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"></highlight></codeline>
+<codeline lineno="478"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/>//<sp/>OPTIMIZE_HARDWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="479"><highlight class="normal"></highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>skip<sp/>data<sp/>before<sp/>offset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(;offset_<sp/>&lt;<sp/>offset;<sp/>offset_++)<sp/>{</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/>spiRec();</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>transfer<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint16_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>count;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/>dst[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>spiRec();</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>OPTIMIZE_HARDWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="489"><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/>offset_<sp/>+=<sp/>count;</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!partialBlockRead_<sp/>||<sp/>offset_<sp/>&gt;=<sp/>512)<sp/>{</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>read<sp/>rest<sp/>of<sp/>data,<sp/>checksum<sp/>and<sp/>set<sp/>chip<sp/>select<sp/>high</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" kindref="member">readEnd</ref>();</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"></highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/>fail:</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="500"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="503" refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" refkind="member"><highlight class="comment"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" kindref="member">Sd2Card::readEnd</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(inBlock_)<sp/>{</highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>skip<sp/>data<sp/>and<sp/>crc</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>OPTIMIZE_HARDWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>optimize<sp/>skip<sp/>for<sp/>hardware</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="508"><highlight class="normal"><sp/><sp/><sp/><sp/>SPDR<sp/>=<sp/>0XFF;</highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(offset_++<sp/>&lt;<sp/>513)<sp/>{</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)));</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SPDR<sp/>=<sp/>0XFF;</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>last<sp/>crc<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)));</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/>//<sp/>OPTIMIZE_HARDWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="516"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(offset_++<sp/>&lt;<sp/>514)<sp/>spiRec();</highlight></codeline>
+<codeline lineno="517"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>OPTIMIZE_HARDWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"><sp/><sp/><sp/><sp/>inBlock_<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="521"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="524"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/>Sd2Card::readRegister(uint8_t<sp/>cmd,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*<sp/>buf)<sp/>{</highlight></codeline>
+<codeline lineno="525"><highlight class="normal"><sp/><sp/>uint8_t*<sp/>dst<sp/>=<sp/></highlight><highlight class="keyword">reinterpret_cast&lt;</highlight><highlight class="normal">uint8_t*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(buf);</highlight></codeline>
+<codeline lineno="526"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cardCommand(cmd,<sp/>0))<sp/>{</highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1af1cdb9d8082532f4fe4b7cf1931dddbe" kindref="member">SD_CARD_ERROR_READ_REG</ref>);</highlight></codeline>
+<codeline lineno="528"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="529"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="530"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!waitStartBlock())<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="531"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>transfer<sp/>data</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint16_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>16;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>dst[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]<sp/>=<sp/>spiRec();</highlight></codeline>
+<codeline lineno="533"><highlight class="normal"><sp/><sp/>spiRec();<sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>first<sp/>crc<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="534"><highlight class="normal"><sp/><sp/>spiRec();<sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>second<sp/>crc<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="537"><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"><sp/>fail:</highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="541"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="542"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="555" refid="class_sd2_card_1ad849b8896de9abd4e24bd98f4204ccc4" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1ad849b8896de9abd4e24bd98f4204ccc4" kindref="member">Sd2Card::setSckRate</ref>(uint8_t<sp/>sckRateID)<sp/>{</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sckRateID<sp/>&gt;<sp/>6)<sp/>{</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1aa4036973d09278197c2949181094e8e2" kindref="member">SD_CARD_ERROR_SCK_RATE</ref>);</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="561"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>see<sp/>avr<sp/>processor<sp/>datasheet<sp/>for<sp/>SPI<sp/>register<sp/>bit<sp/>definitions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((sckRateID<sp/>&amp;<sp/>1)<sp/>||<sp/>sckRateID<sp/>==<sp/>6)<sp/>{</highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/>SPSR<sp/>&amp;=<sp/>~(1<sp/>&lt;&lt;<sp/>SPI2X);</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/>SPSR<sp/>|=<sp/>(1<sp/>&lt;&lt;<sp/>SPI2X);</highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/>SPCR<sp/>&amp;=<sp/>~((1<sp/>&lt;&lt;SPR1)<sp/>|<sp/>(1<sp/>&lt;&lt;<sp/>SPR0));</highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/>SPCR<sp/>|=<sp/>(sckRateID<sp/>&amp;<sp/>4<sp/>?<sp/>(1<sp/>&lt;&lt;<sp/>SPR1)<sp/>:<sp/>0)</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/>|<sp/>(sckRateID<sp/>&amp;<sp/>2<sp/>?<sp/>(1<sp/>&lt;&lt;<sp/>SPR0)<sp/>:<sp/>0);</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/>//<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>v;</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SPI_CLOCK_DIV128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(sckRateID)<sp/>{</highlight></codeline>
+<codeline lineno="574"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>0:<sp/>v=SPI_CLOCK_DIV2;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>1:<sp/>v=SPI_CLOCK_DIV4;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>2:<sp/>v=SPI_CLOCK_DIV8;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>3:<sp/>v=SPI_CLOCK_DIV16;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>4:<sp/>v=SPI_CLOCK_DIV32;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>5:<sp/>v=SPI_CLOCK_DIV64;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/>6:<sp/>v=SPI_CLOCK_DIV128;<sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/>//<sp/>SPI_CLOCK_DIV128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/>v<sp/>=<sp/>2<sp/>&lt;&lt;<sp/>sckRateID;</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>SPI_CLOCK_DIV128</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="585"><highlight class="normal"><sp/><sp/>SPI.setClockDivider(v);</highlight></codeline>
+<codeline lineno="586"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/>//<sp/>USE_SPI_LIB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="589"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>card<sp/>to<sp/>go<sp/>not<sp/>busy</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="591"><highlight class="normal">uint8_t<sp/>Sd2Card::waitNotBusy(uint16_t<sp/>timeoutMillis)<sp/>{</highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/>uint16_t<sp/>t0<sp/>=<sp/>millis();</highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">do</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(spiRec()<sp/>==<sp/>0XFF)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="596"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(((uint16_t)millis()<sp/>-<sp/>t0)<sp/>&lt;<sp/>timeoutMillis);</highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="598"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="601"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/>Sd2Card::waitStartBlock(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/>uint16_t<sp/>t0<sp/>=<sp/>millis();</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((status_<sp/>=<sp/>spiRec())<sp/>==<sp/>0XFF)<sp/>{</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(((uint16_t)millis()<sp/>-<sp/>t0)<sp/>&gt;<sp/><ref refid="_sd2_card_8h_1a02f6ddc876ebab300586940bd111eccd" kindref="member">SD_READ_TIMEOUT</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a49c57f2b1d31fe1b0baf73fab5bd469b" kindref="member">SD_CARD_ERROR_READ_TIMEOUT</ref>);</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="609"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(status_<sp/>!=<sp/><ref refid="_sd_info_8h_1a266235d83a613a26790bf21cc5e643e7" kindref="member">DATA_START_BLOCK</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="610"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1adb9b963e8c54c4daf616cc5fdc4010ac" kindref="member">SD_CARD_ERROR_READ</ref>);</highlight></codeline>
+<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"></highlight></codeline>
+<codeline lineno="615"><highlight class="normal"><sp/>fail:</highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="618"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="628" refid="class_sd2_card_1ae9bdd6cff43b8b694584f9bae7e781b0" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1ae9bdd6cff43b8b694584f9bae7e781b0" kindref="member">Sd2Card::writeBlock</ref>(uint32_t<sp/>blockNumber,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>src)<sp/>{</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>SD_PROTECT_BLOCK_ZERO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>don&apos;t<sp/>allow<sp/>write<sp/>to<sp/>first<sp/>block</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(blockNumber<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a376db89ebd1e212110419e3ac7a0c33f" kindref="member">SD_CARD_ERROR_WRITE_BLOCK_ZERO</ref>);</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>SD_PROTECT_BLOCK_ZERO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="636"><highlight class="normal"></highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>address<sp/>if<sp/>not<sp/>SDHC<sp/>card</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" kindref="member">type</ref>()<sp/>!=<sp/><ref refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" kindref="member">SD_CARD_TYPE_SDHC</ref>)<sp/>blockNumber<sp/>&lt;&lt;=<sp/>9;</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cardCommand(<ref refid="_sd_info_8h_1ae0b9ab3c62fefc845e22834eb7f6abdd" kindref="member">CMD24</ref>,<sp/>blockNumber))<sp/>{</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1ade761c5ed037fbe0598f80c5e6d34268" kindref="member">SD_CARD_ERROR_CMD24</ref>);</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" kindref="member">writeData</ref>(<ref refid="_sd_info_8h_1a266235d83a613a26790bf21cc5e643e7" kindref="member">DATA_START_BLOCK</ref>,<sp/>src))<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"></highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>flash<sp/>programming<sp/>to<sp/>complete</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!waitNotBusy(<ref refid="_sd2_card_8h_1a9984cf4ab3088ae5470d56e10e9f23c9" kindref="member">SD_WRITE_TIMEOUT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1ae6574296ec37c52209c5f2c5664dccdb" kindref="member">SD_CARD_ERROR_WRITE_TIMEOUT</ref>);</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>response<sp/>is<sp/>r2<sp/>so<sp/>get<sp/>and<sp/>check<sp/>two<sp/>bytes<sp/>for<sp/>nonzero</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="651"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cardCommand(<ref refid="_sd_info_8h_1a0a4b464ebac5e07eb233da545ff29259" kindref="member">CMD13</ref>,<sp/>0)<sp/>||<sp/>spiRec())<sp/>{</highlight></codeline>
+<codeline lineno="652"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a06b427dad894918bd33fe2e74c50c2e0" kindref="member">SD_CARD_ERROR_WRITE_PROGRAMMING</ref>);</highlight></codeline>
+<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"></highlight></codeline>
+<codeline lineno="658"><highlight class="normal"><sp/>fail:</highlight></codeline>
+<codeline lineno="659"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="661"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="664" refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" kindref="member">Sd2Card::writeData</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>src)<sp/>{</highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>previous<sp/>write<sp/>to<sp/>finish</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!waitNotBusy(<ref refid="_sd2_card_8h_1a9984cf4ab3088ae5470d56e10e9f23c9" kindref="member">SD_WRITE_TIMEOUT</ref>))<sp/>{</highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a30bc1de9e3914ace0b9dc30f99a0edea" kindref="member">SD_CARD_ERROR_WRITE_MULTIPLE</ref>);</highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="671"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" kindref="member">writeData</ref>(<ref refid="_sd_info_8h_1a55a97e38f040eaef5ea72c04ed0b8ca3" kindref="member">WRITE_MULTIPLE_TOKEN</ref>,<sp/>src);</highlight></codeline>
+<codeline lineno="672"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="674"><highlight class="normal"></highlight><highlight class="comment">//<sp/>send<sp/>one<sp/>block<sp/>of<sp/>data<sp/>for<sp/>write<sp/>block<sp/>or<sp/>write<sp/>multiple<sp/>blocks</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="675"><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" kindref="member">Sd2Card::writeData</ref>(uint8_t<sp/>token,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t*<sp/>src)<sp/>{</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="677"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>CRC16<sp/>checksum<sp/>is<sp/>supposed<sp/>to<sp/>be<sp/>ignored<sp/>in<sp/>SPI<sp/>mode<sp/>(unless</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="678"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>explicitly<sp/>enabled)<sp/>and<sp/>a<sp/>dummy<sp/>value<sp/>is<sp/>normally<sp/>written.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="679"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>few<sp/>funny<sp/>cards<sp/>(e.g.<sp/>Eye-Fi<sp/>X2)<sp/>expect<sp/>a<sp/>valid<sp/>CRC<sp/>anyway.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>setCRC(true)<sp/>to<sp/>enable<sp/>CRC16<sp/>checksum<sp/>on<sp/>block<sp/>writes.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>has<sp/>a<sp/>noticeable<sp/>impact<sp/>on<sp/>write<sp/>speed.<sp/>:(</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/>int16_t<sp/>crc;</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(writeCRC_)<sp/>{</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/>int16_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>,<sp/>x;</highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CRC16<sp/>code<sp/>via<sp/>Scott<sp/>Dattalo<sp/>www.dattalo.com</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(crc=i=0;<sp/>i&lt;512;<sp/>i++)<sp/>{</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/><sp/><sp/>=<sp/>((crc<sp/>&gt;&gt;<sp/>8)<sp/>^<sp/>src[i])<sp/>&amp;<sp/>0xff;</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>x<sp/><sp/>^=<sp/>x<sp/>&gt;&gt;<sp/>4;</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>crc<sp/>=<sp/>(crc<sp/>&lt;&lt;<sp/>8)<sp/>^<sp/>(x<sp/>&lt;&lt;<sp/>12)<sp/>^<sp/>(x<sp/>&lt;&lt;<sp/>5)<sp/>^<sp/>x;</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/>crc<sp/>=<sp/>0xffff;<sp/></highlight><highlight class="comment">//<sp/>Dummy<sp/>CRC<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"></highlight></codeline>
+<codeline lineno="695"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>OPTIMIZE_HARDWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight></codeline>
+<codeline lineno="697"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>data<sp/>-<sp/>optimized<sp/>loop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="698"><highlight class="normal"><sp/><sp/>SPDR<sp/>=<sp/>token;</highlight></codeline>
+<codeline lineno="699"><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>two<sp/>byte<sp/>per<sp/>iteration</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="701"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint16_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>512;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>+=<sp/>2)<sp/>{</highlight></codeline>
+<codeline lineno="702"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)));</highlight></codeline>
+<codeline lineno="703"><highlight class="normal"><sp/><sp/><sp/><sp/>SPDR<sp/>=<sp/>src[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>];</highlight></codeline>
+<codeline lineno="704"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)));</highlight></codeline>
+<codeline lineno="705"><highlight class="normal"><sp/><sp/><sp/><sp/>SPDR<sp/>=<sp/>src[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>+1];</highlight></codeline>
+<codeline lineno="706"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="707"><highlight class="normal"></highlight></codeline>
+<codeline lineno="708"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>wait<sp/>for<sp/>last<sp/>data<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="709"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(!(SPSR<sp/>&amp;<sp/>(1<sp/>&lt;&lt;<sp/>SPIF)));</highlight></codeline>
+<codeline lineno="710"><highlight class="normal"></highlight></codeline>
+<codeline lineno="711"><highlight class="normal"></highlight><highlight class="preprocessor">#else<sp/><sp/>//<sp/>OPTIMIZE_HARDWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="712"><highlight class="normal"><sp/><sp/>spiSend(token);</highlight></codeline>
+<codeline lineno="713"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint16_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>512;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>++)<sp/>{</highlight></codeline>
+<codeline lineno="714"><highlight class="normal"><sp/><sp/><sp/><sp/>spiSend(src[<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>]);</highlight></codeline>
+<codeline lineno="715"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="716"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>OPTIMIZE_HARDWARE_SPI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="717"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="718"><highlight class="normal"><sp/><sp/>spiSend(crc<sp/>&gt;&gt;<sp/>8);<sp/></highlight><highlight class="comment">//<sp/>Might<sp/>be<sp/>dummy<sp/>value,<sp/>that&apos;s<sp/>OK</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="719"><highlight class="normal"><sp/><sp/>spiSend(crc);</highlight></codeline>
+<codeline lineno="720"><highlight class="normal"></highlight></codeline>
+<codeline lineno="721"><highlight class="normal"><sp/><sp/>status_<sp/>=<sp/>spiRec();</highlight></codeline>
+<codeline lineno="722"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((status_<sp/>&amp;<sp/><ref refid="_sd_info_8h_1ae8f749cad9dfa06c4a44435bac117183" kindref="member">DATA_RES_MASK</ref>)<sp/>!=<sp/><ref refid="_sd_info_8h_1a0fbc8534d6683fea65b463f439df1c3d" kindref="member">DATA_RES_ACCEPTED</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="723"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a98bb1b625b0b9ce99d8494fbb195274c" kindref="member">SD_CARD_ERROR_WRITE</ref>);</highlight></codeline>
+<codeline lineno="724"><highlight class="normal"><sp/><sp/><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="725"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="726"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="727"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="728"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="729"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="741" refid="class_sd2_card_1a82a21a07fdfe45c5c75d486a13cded8a" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1a82a21a07fdfe45c5c75d486a13cded8a" kindref="member">Sd2Card::writeStart</ref>(uint32_t<sp/>blockNumber,<sp/>uint32_t<sp/>eraseCount)<sp/>{</highlight></codeline>
+<codeline lineno="742"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>SD_PROTECT_BLOCK_ZERO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="743"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>don&apos;t<sp/>allow<sp/>write<sp/>to<sp/>first<sp/>block</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="744"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(blockNumber<sp/>==<sp/>0)<sp/>{</highlight></codeline>
+<codeline lineno="745"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a376db89ebd1e212110419e3ac7a0c33f" kindref="member">SD_CARD_ERROR_WRITE_BLOCK_ZERO</ref>);</highlight></codeline>
+<codeline lineno="746"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="747"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="748"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//<sp/>SD_PROTECT_BLOCK_ZERO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="749"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>pre-erase<sp/>count</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="750"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cardAcmd(<ref refid="_sd_info_8h_1a4427a8b94a0a6092255388a8666c42eb" kindref="member">ACMD23</ref>,<sp/>eraseCount))<sp/>{</highlight></codeline>
+<codeline lineno="751"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1aa69b04c3716e3e9962617e264e7ebe44" kindref="member">SD_CARD_ERROR_ACMD23</ref>);</highlight></codeline>
+<codeline lineno="752"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="753"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="754"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>use<sp/>address<sp/>if<sp/>not<sp/>SDHC<sp/>card</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="755"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_sd2_card_1a3ba97504f5928c932c346101d3dabfd2" kindref="member">type</ref>()<sp/>!=<sp/><ref refid="_sd2_card_8h_1a39b05691c3bcfffddd5d590589980f44" kindref="member">SD_CARD_TYPE_SDHC</ref>)<sp/>blockNumber<sp/>&lt;&lt;=<sp/>9;</highlight></codeline>
+<codeline lineno="756"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cardCommand(<ref refid="_sd_info_8h_1ac93a7f0b1843211d8fb003038c1db20f" kindref="member">CMD25</ref>,<sp/>blockNumber))<sp/>{</highlight></codeline>
+<codeline lineno="757"><highlight class="normal"><sp/><sp/><sp/><sp/>error(<ref refid="_sd2_card_8h_1a4840a2a3026b537bf0e6a679715ec734" kindref="member">SD_CARD_ERROR_CMD25</ref>);</highlight></codeline>
+<codeline lineno="758"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="759"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="760"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="761"><highlight class="normal"></highlight></codeline>
+<codeline lineno="762"><highlight class="normal"><sp/>fail:</highlight></codeline>
+<codeline lineno="763"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="764"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="765"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="766"><highlight class="normal"></highlight><highlight class="comment">//------------------------------------------------------------------------------</highlight></codeline>
+<codeline lineno="772" refid="class_sd2_card_1a3a60481c0821606546a85d056bb96f47" refkind="member"><highlight class="comment"></highlight><highlight class="normal">uint8_t<sp/><ref refid="class_sd2_card_1a3a60481c0821606546a85d056bb96f47" kindref="member">Sd2Card::writeStop</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="773"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!waitNotBusy(<ref refid="_sd2_card_8h_1a9984cf4ab3088ae5470d56e10e9f23c9" kindref="member">SD_WRITE_TIMEOUT</ref>))<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="774"><highlight class="normal"><sp/><sp/>spiSend(<ref refid="_sd_info_8h_1a22cd4350449d8c6e4ed71ddaa86d4482" kindref="member">STOP_TRAN_TOKEN</ref>);</highlight></codeline>
+<codeline lineno="775"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!waitNotBusy(<ref refid="_sd2_card_8h_1a9984cf4ab3088ae5470d56e10e9f23c9" kindref="member">SD_WRITE_TIMEOUT</ref>))<sp/></highlight><highlight class="keywordflow">goto</highlight><highlight class="normal"><sp/>fail;</highlight></codeline>
+<codeline lineno="776"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="777"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="778"><highlight class="normal"></highlight></codeline>
+<codeline lineno="779"><highlight class="normal"><sp/>fail:</highlight></codeline>
+<codeline lineno="780"><highlight class="normal"><sp/><sp/>error(<ref refid="_sd2_card_8h_1a87264e66265e36be6b1428ebacf2e4ed" kindref="member">SD_CARD_ERROR_STOP_TRAN</ref>);</highlight></codeline>
+<codeline lineno="781"><highlight class="normal"><sp/><sp/>chipSelectHigh();</highlight></codeline>
+<codeline lineno="782"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="783"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="784"><highlight class="normal"></highlight></codeline>
+<codeline lineno="785" refid="class_sd2_card_1a9a84ec97d0c21e4bef8e41630a795b85" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_sd2_card_1a9a84ec97d0c21e4bef8e41630a795b85" kindref="member">Sd2Card::enableCRC</ref>(uint8_t<sp/>mode)<sp/>{</highlight></codeline>
+<codeline lineno="786"><highlight class="normal"><sp/><sp/>writeCRC_<sp/>=<sp/>mode;</highlight></codeline>
+<codeline lineno="787"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="788"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/SD-master/Sd2Card.cpp"/>
+  </compounddef>
+</doxygen>

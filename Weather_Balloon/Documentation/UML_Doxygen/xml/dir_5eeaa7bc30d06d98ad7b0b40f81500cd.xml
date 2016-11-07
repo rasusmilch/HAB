@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_5eeaa7bc30d06d98ad7b0b40f81500cd" kind="dir">
+    <compoundname>Weather_Balloon/library/SparkFun_LSM9DS1</compoundname>
+    <innerdir refid="dir_ce68a51b6e65a5f9fd9ad0ddccdcae45">Weather_Balloon/library/SparkFun_LSM9DS1/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/"/>
+  </compounddef>
+</doxygen>

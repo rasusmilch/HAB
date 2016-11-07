@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_t_clib_8cpp" kind="file" language="C++">
+    <compoundname>RTClib.cpp</compoundname>
+    <includes local="no">avr/pgmspace.h</includes>
+    <includes refid="_r_t_clib_8h" local="yes">RTClib.h</includes>
+    <includes local="no">WProgram.h</includes>
+    <incdepgraph>
+      <node id="920">
+        <label>Weather_Balloon/library/RTClib-master/RTClib.cpp</label>
+        <link refid="RTClib.cpp"/>
+        <childnode refid="921" relation="include">
+        </childnode>
+        <childnode refid="922" relation="include">
+        </childnode>
+        <childnode refid="923" relation="include">
+        </childnode>
+      </node>
+      <node id="923">
+        <label>WProgram.h</label>
+      </node>
+      <node id="921">
+        <label>avr/pgmspace.h</label>
+      </node>
+      <node id="922">
+        <label>RTClib.h</label>
+        <link refid="_r_t_clib_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_r_t_clib_8cpp_1a427ffe4394306d962b8972b3bc952e1c" prot="public" static="no">
+        <name>SECONDS_PER_DAY</name>
+        <initializer>86400L</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="7" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_clib_8cpp_1a1a4c3c6b78fa47471646f18b572ddd46" prot="public" static="no">
+        <name>SECONDS_FROM_1970_TO_2000</name>
+        <initializer>946684800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="8" column="9" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="8" bodyend="-1"/>
+        <referencedby refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime::DateTime</referencedby>
+        <referencedby refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">DateTime::unixtime</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int i</definition>
+        <argsstring></argsstring>
+        <name>i</name>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="18" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="18" bodyend="-1"/>
+        <referencedby refid="_weather___balloon_8cpp_1a15ac45cd15b43e174eeb8f4272f0c875" compoundref="_weather___balloon_8cpp" startline="3163" endline="3204">Atmosphere</referencedby>
+        <referencedby refid="class_firmata_class_1a119734b867186567c1cd011e52e59d2d" compoundref="_firmata_8cpp" startline="226" endline="229">FirmataClass::available</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a538a7506e344ec9bf046564b160e9e7f" compoundref="_weather___balloon_8cpp" startline="1432" endline="1454">beep_piezo</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1afb45f0bcbcbeb15d4bd1a28821b24d14" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="366" endline="395">LSM9DS1::calibrateMag</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a15e6d9ae56a77e3b476ba9804077a809" compoundref="_weather___balloon_8cpp" startline="3063" endline="3097">check_landing</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad470b7ae913b35bcd1e424b925a0277b" compoundref="_weather___balloon_8cpp" startline="3000" endline="3041">check_launch</referencedby>
+        <referencedby refid="class_serial_firmata_1ab31a76a596ce2430ee3feac525da59f2" compoundref="_serial_firmata_8cpp" startline="284" endline="330">SerialFirmata::checkSerial</referencedby>
+        <referencedby refid="class_led_control_1ae162b960d838588bf5cfafc1ba3858bc" compoundref="_led_control_8cpp" startline="99" endline="109">LedControl::clearDisplay</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1af4255510c1c5b3a92802bd817bb379c6" compoundref="_weather___balloon_8cpp" startline="748" endline="767">compare_buffers</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a0493b2a2e791c613e271755e39c7ff02" compoundref="_weather___balloon_8cpp" startline="770" endline="864">configure_ds18b20</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a807f93d1e791a191cfeceae0e12e02ed" compoundref="_weather___balloon_8cpp" startline="1772" endline="1820">configure_GPS_NMEA</referencedby>
+        <referencedby refid="class_one_wire_1a685131803ff9bd250926de68fb477998" compoundref="_one_wire_8cpp" startline="547" endline="574">OneWire::crc16</referencedby>
+        <referencedby refid="class_adafruit___s_h_t31_1a9fe74b3c5be1794ec00a961d91227716" compoundref="_adafruit___s_h_t31_8cpp" startline="119" endline="145">Adafruit_SHT31::crc8</referencedby>
+        <referencedby refid="class_one_wire_1ae3486a669581b750e4fdf3f3a12b05f1" compoundref="_one_wire_8cpp" startline="505" endline="513">OneWire::crc8</referencedby>
+        <referencedby refid="class_m_s5xxx_1ab302490c7aeb6cf7ce0f7086f33481cf" compoundref="_m_s5xxx_8cpp" startline="191" endline="199">MS5xxx::CRCcodeTest</referencedby>
+        <referencedby refid="_date_strings_8cpp_1a5172f67ce7b074768a7e31877c665931" compoundref="_date_strings_8cpp" startline="90" endline="97">dayShortStr</referencedby>
+        <referencedby refid="_e_e_p_r_o_m__anything_8h_1a15fc5dc360b561e03651fd94aa72800f" compoundref="_e_e_p_r_o_m__anything_8h" startline="13" endline="20">EEPROM_readAnything</referencedby>
+        <referencedby refid="_e_e_p_r_o_m__anything_8h_1a396fbd5a2d6b5b3f3dac10fec0bdd780" compoundref="_e_e_p_r_o_m__anything_8h" startline="4" endline="11">EEPROM_writeAnything</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a276e156004c668500daa7aaa9a770585" compoundref="_weather___balloon_8cpp" startline="2278" endline="2395">find_sdcard_tail</referencedby>
+        <referencedby refid="class_d_s3231_1a7241d497e56fc0062ad68a9bc31e212a" compoundref="_d_s3231_8cpp" startline="565" endline="599">DS3231::getAlarm1</referencedby>
+        <referencedby refid="class_d_s3231_1a6917f3adf3b16a5d1afb67179461ba95" compoundref="_d_s3231_8cpp" startline="762" endline="796">DS3231::getAlarm2</referencedby>
+        <referencedby refid="class_d_s3231_1a20d9f5ec608a5b0a5010ad1a91cf667b" compoundref="_d_s3231_8cpp" startline="601" endline="636">DS3231::getAlarmType1</referencedby>
+        <referencedby refid="class_d_s3231_1aef2ea43f887cd0444dbc233cfbe46033" compoundref="_d_s3231_8cpp" startline="798" endline="832">DS3231::getAlarmType2</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1a2def91da84612846ecaa3029f8c3b9aa" compoundref="_r_t_c___d_s3231_8cpp" startline="318" endline="341">RTC_DS3231::getControlRegisterData</referencedby>
+        <referencedby refid="class_d_s3231_1adc4bc3149377fef827a7e504264fbd40" compoundref="_d_s3231_8cpp" startline="384" endline="421">DS3231::getDateTime</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a83c4c9265bfb7ab061bf1313dfad3857" compoundref="_weather___balloon_8cpp" startline="1754" endline="1768">GPS_CRC</referencedby>
+        <referencedby refid="class_serial_firmata_1a0e13bbb12bd52762cfe2f949bda161ee" compoundref="_serial_firmata_8cpp" startline="52" endline="208">SerialFirmata::handleSysex</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1adfc9a22290daddd7787e8023fa8f12cc" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1123" endline="1146">LSM9DS1::I2CreadBytes</referencedby>
+        <referencedby refid="class_sd2_card_1a204ef4cc35cc6e1d5f12a8cdd5f32518" compoundref="_sd2_card_8cpp" startline="283" endline="393">Sd2Card::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_d_s3231_1ace5ee2a9d9cc6b6ecb16ca749514d2a3" compoundref="_d_s3231_8cpp" startline="931" endline="944">DS3231::isAlarm2</referencedby>
+        <referencedby refid="class_led_control_1ab478602bf6a1bd9a6b2bc72d9700794e" compoundref="_led_control_8cpp" startline="46" endline="70">LedControl::LedControl</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a66d17868f5a5bcc68dc70243bb439959" compoundref="_weather___balloon_8cpp" startline="2413" endline="2650">log_data</referencedby>
+        <referencedby refid="_time_8cpp_1a0b205c43ee3c17d8d84a83b6f2f77bc8" compoundref="_time_8cpp" startline="204" endline="233">makeTime</referencedby>
+        <referencedby refid="_date_strings_8cpp_1ae2b5f025e8c6fef73d4bc5795e9ad4a3" compoundref="_date_strings_8cpp" startline="76" endline="82">monthShortStr</referencedby>
+        <referencedby refid="class_firmata_class_1abe49261eab0bd4892a09fa8b8980b11a" compoundref="_firmata_8cpp" startline="160" endline="174">FirmataClass::printFirmwareVersion</referencedby>
+        <referencedby refid="_zero_regs_8h_1a91755cc900313248c2a65a925cd46c41" compoundref="_zero_regs_8cpp" startline="997" endline="1017">printZeroRegSBMATRIX</referencedby>
+        <referencedby refid="class_dallas_temperature_1a48bc1a4d0e33f1735964c22c8bd2f6fb" compoundref="_dallas_temperature_8cpp" startline="581" endline="589">DallasTemperature::rawToFahrenheit</referencedby>
+        <referencedby refid="class_one_wire_1a2407440e8e25b624617593f8ad6447d4" compoundref="_one_wire_8cpp" startline="267" endline="270">OneWire::read_bytes</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a450f53a446d117859c49aeaac6c31f9f" compoundref="_weather___balloon_8cpp" startline="2653" endline="2838">read_sdcard</referencedby>
+        <referencedby refid="class_sd2_card_1ae2d1396ad30081b4201cd372358ef699" compoundref="_sd2_card_8cpp" startline="436" endline="500">Sd2Card::readData</referencedby>
+        <referencedby refid="class_sd2_card_1a0de961537d051bbcafd87ed9fff5fe48" compoundref="_sd2_card_8cpp" startline="503" endline="521">Sd2Card::readEnd</referencedby>
+        <referencedby refid="class_adafruit___s_h_t31_1a2b522bec65225d5c2aadfccd31bb91e0" compoundref="_adafruit___s_h_t31_8cpp" startline="62" endline="66">Adafruit_SHT31::readHumidity</referencedby>
+        <referencedby refid="class_m_s5xxx_1a654f0608616be8c4b13ec9850caaead0" compoundref="_m_s5xxx_8cpp" startline="47" endline="64">MS5xxx::ReadProm</referencedby>
+        <referencedby refid="class_dallas_temperature_1a2b55774207d0211fd679247a7137142b" compoundref="_dallas_temperature_8cpp" startline="115" endline="143">DallasTemperature::readScratchPad</referencedby>
+        <referencedby refid="class_serial_firmata_1a71cefdb678d792338c2fbc0ba46cfb3d" compoundref="_serial_firmata_8cpp" startline="215" endline="233">SerialFirmata::reset</referencedby>
+        <referencedby refid="class_one_wire_1aae5efdf67928b5ee312ab7d7906416fa" compoundref="_one_wire_8cpp" startline="305" endline="315">OneWire::reset_search</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a3d30b497ce4c43d95b30a95944f9d8be" compoundref="_weather___balloon_8cpp" startline="536" endline="547">sd_calc_crc</referencedby>
+        <referencedby refid="class_one_wire_1ad84f9ed7a1b2617f580d0d1e96c52cac" compoundref="_one_wire_8cpp" startline="347" endline="468">OneWire::search</referencedby>
+        <referencedby refid="class_one_wire_1accf808390abd63d3c7bce35677784384" compoundref="_one_wire_8cpp" startline="275" endline="282">OneWire::select</referencedby>
+        <referencedby refid="class_firmata_class_1a81e2de5b37eb2372c8a3d9a43d5eb0cc" compoundref="_firmata_8cpp" startline="450" endline="459">FirmataClass::sendSysex</referencedby>
+        <referencedby refid="class_led_control_1aae9120ce2427b01ffad4cfaa91e5f537" compoundref="_led_control_8cpp" startline="171" endline="190">LedControl::setChar</referencedby>
+        <referencedby refid="class_b_l_e_stream_1ab05a77032b59c6d3525390e7e6a768ab" compoundref="_b_l_e_stream_8h" startline="217" endline="222">BLEStream::setFlushInterval</referencedby>
+        <referencedby refid="class_firmata_class_1aa9f98ba5069823b4c1d08db9f8999ba8" compoundref="_firmata_8cpp" startline="599" endline="602">FirmataClass::setPinState</referencedby>
+        <referencedby refid="class_dallas_temperature_1a43363ee4b227f1ecf9c33cd4e072c0c9" compoundref="_dallas_temperature_8cpp" startline="184" endline="194">DallasTemperature::setResolution</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a26c0f164454eba84e6486033b7061d11" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1071" endline="1088">LSM9DS1::SPIreadBytes</referencedby>
+        <referencedby refid="class_one_wire_1a0a1b8457adb609a693b865dd474e5116" compoundref="_one_wire_8cpp" startline="320" endline="329">OneWire::target_search</referencedby>
+        <referencedby refid="struct_filter_one_pole_cascade_1a48b7253c9eec2765bce755b6fc985e34" compoundref="_filter_one_pole_8cpp" startline="155" endline="227">FilterOnePoleCascade::test</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a22feff51a4b8144a2264bc812eedaddb" compoundref="_weather___balloon_8cpp" startline="2397" endline="2410">test_logging</referencedby>
+        <referencedby refid="class_one_wire_1a0fc1e0bdc2ab1f062c98567fa60a69ae" compoundref="_one_wire_8cpp" startline="243" endline="252">OneWire::write_bytes</referencedby>
+        <referencedby refid="class_sd2_card_1af602d107e1ead2d0971e9f4c7b744cf8" compoundref="_sd2_card_8cpp" startline="664" endline="672">Sd2Card::writeData</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_r_t_clib_8cpp_1a07f7414a12e65e2a192193542b7f13da" prot="public" static="yes" mutable="no">
+        <type>const uint8_t daysInMonth[]</type>
+        <definition>const uint8_t daysInMonth [] PROGMEM</definition>
+        <argsstring></argsstring>
+        <name>PROGMEM</name>
+        <initializer>= { 31,28,31,30,31,30,31,31,30,31,30,31 }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="22" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_t_clib_8cpp_1a3dd31d96db8edd1409dce1fc3560e4eb" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* months[]</definition>
+        <argsstring>[]</argsstring>
+        <name>months</name>
+        <initializer>= { &quot;Jan&quot;, &quot;Feb&quot;, &quot;Mar&quot;, &quot;Apr&quot;, &quot;May&quot;, &quot;Jun&quot;, &quot;Jul&quot;, &quot;Aug&quot;, &quot;Sep&quot;, &quot;Oct&quot;, &quot;Nov&quot;, &quot;Dec&quot; }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="158" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="158" bodyend="-1"/>
+        <referencedby refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" compoundref="_r_t_clib_8cpp" startline="161" endline="172">DateTime::toString</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_r_t_clib_8cpp_1aec92813ecebc7ed17e894f6de657d627" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>static uint16_t date2days</definition>
+        <argsstring>(uint16_t y, uint8_t m, uint8_t d)</argsstring>
+        <name>date2days</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>d</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="25" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="25" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="_r_t_clib_8cpp_1aeae3f834f2540029269cb22fefaa8b40" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>static long time2long</definition>
+        <argsstring>(uint16_t days, uint8_t h, uint8_t m, uint8_t s)</argsstring>
+        <name>time2long</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>days</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>h</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>m</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>s</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="37" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="37" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="_r_t_clib_8cpp_1a95e169d7c0cdedaa9d9033f7a38e1d30" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>static uint8_t conv2d</definition>
+        <argsstring>(const char *p)</argsstring>
+        <name>conv2d</name>
+        <param>
+          <type>const char *</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="88" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="88" bodyend="94"/>
+      </memberdef>
+      <memberdef kind="function" id="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t bcd2bin</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>bcd2bin</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="180" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="180" bodyend="183"/>
+        <referencedby refid="class_r_t_c___d_s3231_1ad892efd8d357db71da0c672523f6d699" compoundref="_r_t_c___d_s3231_8cpp" startline="164" endline="185">RTC_DS3231::enable32kHz</referencedby>
+        <referencedby refid="class_r_t_c___d_s1307_1a9f5f5dbcce65b67e00b50808a45a4249" compoundref="_r_t_c___d_s1307_8cpp" startline="59" endline="75">RTC_DS1307::now</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a1b22090fcfdbef26725da0232157a3c1" compoundref="_r_t_c___d_s3234_8cpp" startline="87" endline="101">RTC_DS3234::now</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1adc740b28876022b852e0f33842632fab" compoundref="_r_t_c___d_s3231_8cpp" startline="71" endline="88">RTC_DS3231::now</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t bin2bcd</definition>
+        <argsstring>(uint8_t val)</argsstring>
+        <name>bin2bcd</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>val</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp" line="184" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="184" bodyend="187"/>
+        <referencedby refid="class_r_t_c___d_s1307_1a6e38778b577a80008e9dc630384b8520" compoundref="_r_t_c___d_s1307_8cpp" startline="44" endline="57">RTC_DS1307::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" compoundref="_r_t_c___d_s3231_8cpp" startline="51" endline="65">RTC_DS3231::adjust</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Code<sp/>by<sp/>JeeLabs<sp/>http://news.jeelabs.org/code/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Released<sp/>to<sp/>the<sp/>public<sp/>domain!<sp/>Enjoy!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/pgmspace.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_r_t_clib_8h" kindref="compound">RTClib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="_r_t_clib_8cpp_1a427ffe4394306d962b8972b3bc952e1c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECONDS_PER_DAY<sp/>86400L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="_r_t_clib_8cpp_1a1a4c3c6b78fa47471646f18b572ddd46" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SECONDS_FROM_1970_TO_2000<sp/>946684800</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARDUINO<sp/>&lt;<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WProgram.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18" refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>0;<sp/></highlight><highlight class="comment">//The<sp/>new<sp/>wire<sp/>library<sp/>needs<sp/>to<sp/>take<sp/>an<sp/>int<sp/>when<sp/>you<sp/>are<sp/>sending<sp/>for<sp/>the<sp/>zero<sp/>register</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="comment">//<sp/>utility<sp/>code,<sp/>some<sp/>of<sp/>this<sp/>could<sp/>be<sp/>exposed<sp/>in<sp/>the<sp/>DateTime<sp/>API<sp/>if<sp/>needed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>daysInMonth[]<sp/><ref refid="pgmspace_8h_1a75acaba9e781937468d0911423bc0c35" kindref="member">PROGMEM</ref><sp/>=<sp/>{<sp/>31,28,31,30,31,30,31,31,30,31,30,31<sp/>};</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>number<sp/>of<sp/>days<sp/>since<sp/>2000/01/01,<sp/>valid<sp/>for<sp/>2001..2099</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint16_t<sp/>date2days(uint16_t<sp/>y,<sp/>uint8_t<sp/>m,<sp/>uint8_t<sp/>d)</highlight></codeline>
+<codeline lineno="26"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(y<sp/>&gt;=<sp/>2000)</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y<sp/>-=<sp/>2000;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>days<sp/>=<sp/>d;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(uint8_t<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>=<sp/>1;<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>&lt;<sp/>m;<sp/>++<ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref>)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>days<sp/>+=<sp/><ref refid="pgmspace_8h_1a48c60b057902adf805797f183286728d" kindref="member">pgm_read_byte</ref>(daysInMonth<sp/>+<sp/><ref refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" kindref="member">i</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(m<sp/>&gt;<sp/>2<sp/>&amp;&amp;<sp/>y<sp/>%<sp/>4<sp/>==<sp/>0)</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++days;</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>days<sp/>+<sp/>365<sp/>*<sp/>y<sp/>+<sp/>(y<sp/>+<sp/>3)<sp/>/<sp/>4<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>time2long(uint16_t<sp/>days,<sp/>uint8_t<sp/>h,<sp/>uint8_t<sp/>m,<sp/>uint8_t<sp/>s)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((days<sp/>*<sp/>24L<sp/>+<sp/>h)<sp/>*<sp/>60<sp/>+<sp/>m)<sp/>*<sp/>60<sp/>+<sp/>s;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="comment">//<sp/>DateTime<sp/>implementation<sp/>-<sp/>ignores<sp/>time<sp/>zones<sp/>and<sp/>DST<sp/>changes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NOTE:<sp/>also<sp/>ignores<sp/>leap<sp/>seconds,<sp/>see<sp/>http://en.wikipedia.org/wiki/Leap_second</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="46" refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" refkind="member"><highlight class="normal"><ref refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" kindref="member">DateTime::DateTime</ref><sp/>(uint32_t<sp/>t)</highlight></codeline>
+<codeline lineno="47"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>-=<sp/><ref refid="_r_t_clib_8cpp_1a1a4c3c6b78fa47471646f18b572ddd46" kindref="member">SECONDS_FROM_1970_TO_2000</ref>;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>bring<sp/>to<sp/>2000<sp/>timestamp<sp/>from<sp/>1970</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" kindref="member">ss</ref><sp/>=<sp/>t<sp/>%<sp/>60;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>/=<sp/>60;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1af2cbffff9349832135c3280a18d21510" kindref="member">mm</ref><sp/>=<sp/>t<sp/>%<sp/>60;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>/=<sp/>60;</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" kindref="member">hh</ref><sp/>=<sp/>t<sp/>%<sp/>24;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>days<sp/>=<sp/>t<sp/>/<sp/>24;</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>leap;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref><sp/>=<sp/>0;<sp/>;<sp/>++<ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref>)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leap<sp/>=<sp/><ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref><sp/>%<sp/>4<sp/>==<sp/>0;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(days<sp/>&lt;<sp/>365U<sp/>+<sp/>leap)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>days<sp/>-=<sp/>365<sp/>+<sp/>leap;</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>1;<sp/>;<sp/>++<ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref>)</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>uint8_t<sp/>daysPerMonth<sp/>=<sp/><ref refid="pgmspace_8h_1a48c60b057902adf805797f183286728d" kindref="member">pgm_read_byte</ref>(daysInMonth<sp/>+<sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>-<sp/>1);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(leap<sp/>&amp;&amp;<sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>==<sp/>2)</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>++daysPerMonth;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(days<sp/>&lt;<sp/>daysPerMonth)</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>days<sp/>-=<sp/>daysPerMonth;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" kindref="member">d</ref><sp/>=<sp/>days<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76" refid="class_date_time_1aad62a6709a1e65e6860b1efaf8c347e9" refkind="member"><highlight class="normal"><ref refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" kindref="member">DateTime::DateTime</ref><sp/>(uint16_t<sp/><ref refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" kindref="member">year</ref>,<sp/>uint8_t<sp/><ref refid="class_date_time_1a58beb18aec346e7081d02a2962032a43" kindref="member">month</ref>,<sp/>uint8_t<sp/><ref refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" kindref="member">day</ref>,<sp/>uint8_t<sp/><ref refid="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" kindref="member">hour</ref>,<sp/>uint8_t<sp/>min,<sp/>uint8_t<sp/>sec)</highlight></codeline>
+<codeline lineno="77"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(year<sp/>&gt;=<sp/>2000)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>year<sp/>-=<sp/>2000;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref><sp/>=<sp/><ref refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" kindref="member">year</ref>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>min(month,12);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" kindref="member">d</ref><sp/>=<sp/>min(day,31);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" kindref="member">hh</ref><sp/>=<sp/>min(hour,23);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1af2cbffff9349832135c3280a18d21510" kindref="member">mm</ref><sp/>=<sp/>min(min,60);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" kindref="member">ss</ref><sp/>=<sp/>min(sec,60);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>uint8_t<sp/>conv2d(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>p)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>v<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(</highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal"><sp/>&lt;=<sp/>*p<sp/>&amp;&amp;<sp/>*p<sp/>&lt;=<sp/></highlight><highlight class="charliteral">&apos;9&apos;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>v<sp/>=<sp/>*p<sp/>-<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>10<sp/>*<sp/>v<sp/>+<sp/>*++p<sp/>-<sp/></highlight><highlight class="charliteral">&apos;0&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="comment">//<sp/>A<sp/>convenient<sp/>constructor<sp/>for<sp/>using<sp/>&quot;the<sp/>compiler&apos;s<sp/>time&quot;:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>DateTime<sp/>now<sp/>(__DATE__,<sp/>__TIME__);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment">//<sp/>NOTE:<sp/>using<sp/>PSTR<sp/>would<sp/>further<sp/>reduce<sp/>the<sp/>RAM<sp/>footprint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_date_time_1aabeb5303c98a004439fe337bb5f5da63" refkind="member"><highlight class="normal"><ref refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" kindref="member">DateTime::DateTime</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>date,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>time)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>sample<sp/>input:<sp/>date<sp/>=<sp/>&quot;Dec<sp/>26<sp/>2009&quot;,<sp/>time<sp/>=<sp/>&quot;12:34:56&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref><sp/>=<sp/>conv2d(date<sp/>+<sp/>9);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Jan<sp/>Feb<sp/>Mar<sp/>Apr<sp/>May<sp/>Jun<sp/>Jul<sp/>Aug<sp/>Sep<sp/>Oct<sp/>Nov<sp/>Dec</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">switch</highlight><highlight class="normal"><sp/>(date[0])</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;J&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>date[1]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;a&apos;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>1;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>date[2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;n&apos;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>6;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>7;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;F&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>2;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;A&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>date[2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal"><sp/>?<sp/>4<sp/>:<sp/>8;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;M&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>date[2]<sp/>==<sp/></highlight><highlight class="charliteral">&apos;r&apos;</highlight><highlight class="normal"><sp/>?<sp/>3<sp/>:<sp/>5;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;S&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>9;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;O&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>10;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;N&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>11;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">case</highlight><highlight class="normal"><sp/></highlight><highlight class="charliteral">&apos;D&apos;</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref><sp/>=<sp/>12;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">break</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" kindref="member">d</ref><sp/>=<sp/>conv2d(date<sp/>+<sp/>4);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" kindref="member">hh</ref><sp/>=<sp/>conv2d(time);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1af2cbffff9349832135c3280a18d21510" kindref="member">mm</ref><sp/>=<sp/>conv2d(time<sp/>+<sp/>3);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" kindref="member">ss</ref><sp/>=<sp/>conv2d(time<sp/>+<sp/>6);</highlight></codeline>
+<codeline lineno="140"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight></codeline>
+<codeline lineno="142" refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" kindref="member">DateTime::dayOfWeek</ref>()</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="143"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/><ref refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" kindref="member">day</ref><sp/>=<sp/>date2days(<ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref>,<sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref>,<sp/><ref refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" kindref="member">d</ref>);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(day<sp/>+<sp/>6)<sp/>%<sp/>7;<sp/></highlight><highlight class="comment">//<sp/>Jan<sp/>1,<sp/>2000<sp/>is<sp/>a<sp/>Saturday,<sp/>i.e.<sp/>returns<sp/>6</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" kindref="member">DateTime::unixtime</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="149"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>t;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>days<sp/>=<sp/>date2days(<ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref>,<sp/><ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref>,<sp/><ref refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" kindref="member">d</ref>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>=<sp/>time2long(days,<sp/><ref refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" kindref="member">hh</ref>,<sp/><ref refid="class_date_time_1af2cbffff9349832135c3280a18d21510" kindref="member">mm</ref>,<sp/><ref refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" kindref="member">ss</ref>);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>t<sp/>+=<sp/><ref refid="_r_t_clib_8cpp_1a1a4c3c6b78fa47471646f18b572ddd46" kindref="member">SECONDS_FROM_1970_TO_2000</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>seconds<sp/>from<sp/>1970<sp/>to<sp/>2000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>t;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158" refid="_r_t_clib_8cpp_1a3dd31d96db8edd1409dce1fc3560e4eb" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="_r_t_clib_8cpp_1a3dd31d96db8edd1409dce1fc3560e4eb" kindref="member">months</ref>[]<sp/>=<sp/>{<sp/></highlight><highlight class="stringliteral">&quot;Jan&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Feb&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Mar&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Apr&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;May&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Jun&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Jul&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Aug&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Sep&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Oct&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Nov&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Dec&quot;</highlight><highlight class="normal"><sp/>};</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment">//<sp/>as<sp/>a<sp/>string</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/><ref refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" kindref="member">DateTime::toString</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>buf,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxlen)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="162"><highlight class="keyword"></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>snprintf(buf,maxlen,</highlight><highlight class="stringliteral">&quot;%s<sp/>%02u<sp/>%04u<sp/>%02u:%02u:%02u&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="_r_t_clib_8cpp_1a3dd31d96db8edd1409dce1fc3560e4eb" kindref="member">months</ref>[<ref refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" kindref="member">m</ref>-1],</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" kindref="member">d</ref>,</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2000<sp/>+<sp/><ref refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" kindref="member">yOff</ref>,</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" kindref="member">hh</ref>,</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1af2cbffff9349832135c3280a18d21510" kindref="member">mm</ref>,</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" kindref="member">ss</ref></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>buf;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="class_date_time_1a87adbc2ee0bfcb9417ffeadca2e3f375" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_date_time_1a87adbc2ee0bfcb9417ffeadca2e3f375" kindref="member">DateTime::operator+=</ref>(uint32_t<sp/>additional)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_date_time" kindref="compound">DateTime</ref><sp/>after<sp/>=<sp/><ref refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" kindref="member">DateTime</ref>(<sp/><ref refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" kindref="member">unixtime</ref>()<sp/>+<sp/>additional<sp/>);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal"><sp/>=<sp/>after;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180" refid="_r_t_clib_8h_1a916290df5459cfa1a9d590946ed552ac" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" kindref="member">bcd2bin</ref><sp/>(uint8_t<sp/>val)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>val<sp/>-<sp/>6<sp/>*<sp/>(val<sp/>&gt;&gt;<sp/>4);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="184" refid="_r_t_clib_8h_1ab89a9f89f9d868e129c69675bf78d9b6" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" kindref="member">bin2bcd</ref><sp/>(uint8_t<sp/>val)</highlight></codeline>
+<codeline lineno="185"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>val<sp/>+<sp/>6<sp/>*<sp/>(val<sp/>/<sp/>10);</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="comment">//<sp/>RTC_Millis<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="class_r_t_c___millis_1adcf4a13317d9b785ae79613b3429a46a" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___millis_1adcf4a13317d9b785ae79613b3429a46a" kindref="member">RTC_Millis::adjust</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date_time" kindref="compound">DateTime</ref>&amp;<sp/>dt)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/>offset<sp/>=<sp/>dt.<ref refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" kindref="member">unixtime</ref>()<sp/>-<sp/>millis()<sp/>/<sp/>1000;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197" refid="class_r_t_c___millis_1aac263a7087f8603199eb45cdc7c3c146" refkind="member"><highlight class="normal"><ref refid="class_date_time" kindref="compound">DateTime</ref><sp/><ref refid="class_r_t_c___millis_1aac263a7087f8603199eb45cdc7c3c146" kindref="member">RTC_Millis::now</ref>()</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(uint32_t)(offset<sp/>+<sp/>millis()<sp/>/<sp/>1000);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="comment">//<sp/>vim:ci:sw=4<sp/>sts=4<sp/>ft=cpp</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/RTClib-master/RTClib.cpp"/>
+  </compounddef>
+</doxygen>

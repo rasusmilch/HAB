@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_wi_fi_stream_8cpp" kind="file" language="C++">
+    <compoundname>WiFiStream.cpp</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>Implementation<sp/>is<sp/>in<sp/>WiFiStream.h<sp/>to<sp/>avoid<sp/>linker<sp/>issues.<sp/>Legacy<sp/>WiFi<sp/>and<sp/>modern<sp/>WiFi101<sp/>both<sp/>define<sp/>WiFiClass<sp/>which</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*<sp/>will<sp/>cause<sp/>linker<sp/>errors<sp/>whenever<sp/>Firmata.h<sp/>is<sp/>included.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Firmata/utility/WiFiStream.cpp"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,5 @@
+<map id="LSM9DS1::readAccel" name="LSM9DS1::readAccel">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#ae0a9cbfd74b1f4676f091c2d8e491d77" title="LSM9DS1::xgReadBytes" alt="" coords="188,31,339,57"/>
+<area shape="rect" id="node3" href="$class_l_s_m9_d_s1.html#adfc9a22290daddd7787e8023fa8f12cc" title="LSM9DS1::I2CreadBytes" alt="" coords="387,5,539,32"/>
+<area shape="rect" id="node4" href="$class_l_s_m9_d_s1.html#a26c0f164454eba84e6486033b7061d11" title="LSM9DS1::SPIreadBytes" alt="" coords="387,56,538,83"/>
+</map>

@@ -1,0 +1,430 @@
+\hypertarget{class_tiny_g_p_s_plus}{}\section{Tiny\+G\+P\+S\+Plus Class Reference}
+\label{class_tiny_g_p_s_plus}\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+
+
+{\ttfamily \#include $<$Tiny\+G\+P\+S++.\+h$>$}
+
+
+
+Collaboration diagram for Tiny\+G\+P\+S\+Plus\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tiny_g_p_s_plus__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_tiny_g_p_s_plus_a3d9173312d514abf50bd43efe6bf6af3}{Tiny\+G\+P\+S\+Plus} ()
+\item 
+bool \hyperlink{class_tiny_g_p_s_plus_ad7b78320b7e4967df17c6a27008a5154}{encode} (char c)
+\item 
+\hyperlink{class_tiny_g_p_s_plus}{Tiny\+G\+P\+S\+Plus} \& \hyperlink{class_tiny_g_p_s_plus_a32a0b61a25ce0c490216cb2b4ea19ced}{operator$<$$<$} (char c)
+\item 
+uint32\+\_\+t \hyperlink{class_tiny_g_p_s_plus_a12b6bc0169ee6b2f0beb8041e549f338}{chars\+Processed} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_tiny_g_p_s_plus_a6c502ec591dc42a83771a502c4dbdcd4}{sentences\+With\+Fix} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_tiny_g_p_s_plus_a57dd7a4430d58f784e967ee2d76e574f}{failed\+Checksum} () const 
+\item 
+uint32\+\_\+t \hyperlink{class_tiny_g_p_s_plus_a55af5d3442bf8f5c5fdd0309e416d9e5}{passed\+Checksum} () const 
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static const char $\ast$ \hyperlink{class_tiny_g_p_s_plus_a1ec39648e1c80c59f4fded642fdb88ae}{library\+Version} ()
+\item 
+static double \hyperlink{class_tiny_g_p_s_plus_ace607cf3a6d49628e44eae1232237138}{distance\+Between} (double lat1, double long1, double lat2, double long2)
+\item 
+static double \hyperlink{class_tiny_g_p_s_plus_af338c18ccf58a47659be1ffc8259541d}{course\+To} (double lat1, double long1, double lat2, double long2)
+\item 
+static const char $\ast$ \hyperlink{class_tiny_g_p_s_plus_a8c9e9444552ff85a505ffc6933dda03c}{cardinal} (double \hyperlink{class_tiny_g_p_s_plus_ad7800d3decbe58e355f5229bba231868}{course})
+\item 
+static int32\+\_\+t \hyperlink{class_tiny_g_p_s_plus_a06d9bf0c1f0d0963511dc05e2f121121}{parse\+Decimal} (const char $\ast$term)
+\item 
+static void \hyperlink{class_tiny_g_p_s_plus_a00627eaffc625bf366e4c984014fbf29}{parse\+Degrees} (const char $\ast$term, \hyperlink{struct_raw_degrees}{Raw\+Degrees} \&deg)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_tiny_g_p_s_location}{Tiny\+G\+P\+S\+Location} \hyperlink{class_tiny_g_p_s_plus_a886255f412f8e01f84e5104d36315fb3}{location}
+\item 
+\hyperlink{struct_tiny_g_p_s_date}{Tiny\+G\+P\+S\+Date} \hyperlink{class_tiny_g_p_s_plus_a83a70812b432d7f51c7c735bfe7be0f0}{date}
+\item 
+\hyperlink{struct_tiny_g_p_s_time}{Tiny\+G\+P\+S\+Time} \hyperlink{class_tiny_g_p_s_plus_a377c975527fa24b45fb86356505eb134}{time}
+\item 
+\hyperlink{struct_tiny_g_p_s_speed}{Tiny\+G\+P\+S\+Speed} \hyperlink{class_tiny_g_p_s_plus_aa085c3e72a399a829dd92af52b373404}{speed}
+\item 
+\hyperlink{struct_tiny_g_p_s_course}{Tiny\+G\+P\+S\+Course} \hyperlink{class_tiny_g_p_s_plus_ad7800d3decbe58e355f5229bba231868}{course}
+\item 
+\hyperlink{struct_tiny_g_p_s_altitude}{Tiny\+G\+P\+S\+Altitude} \hyperlink{class_tiny_g_p_s_plus_a0b3451a4ee75e5880ffd88c3038eacf8}{altitude}
+\item 
+\hyperlink{struct_tiny_g_p_s_integer}{Tiny\+G\+P\+S\+Integer} \hyperlink{class_tiny_g_p_s_plus_a5fb47066d1d03f4bb5853529053aab48}{satellites}
+\item 
+\hyperlink{struct_tiny_g_p_s_decimal}{Tiny\+G\+P\+S\+Decimal} \hyperlink{class_tiny_g_p_s_plus_a3a21b3ae7085bb278b35d703bf135632}{hdop}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_tiny_g_p_s_plus_aaad5bf5a2728a81e624ad2304f817772}{Tiny\+G\+P\+S\+Custom}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 214 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{Tiny\+G\+P\+S\+Plus()}{TinyGPSPlus()}}]{\setlength{\rightskip}{0pt plus 5cm}Tiny\+G\+P\+S\+Plus\+::\+Tiny\+G\+P\+S\+Plus (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_tiny_g_p_s_plus_a3d9173312d514abf50bd43efe6bf6af3}{}\label{class_tiny_g_p_s_plus_a3d9173312d514abf50bd43efe6bf6af3}
+
+
+Definition at line 33 of file Tiny\+G\+P\+S++.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!cardinal@{cardinal}}
+\index{cardinal@{cardinal}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{cardinal(double course)}{cardinal(double course)}}]{\setlength{\rightskip}{0pt plus 5cm}const char $\ast$ Tiny\+G\+P\+S\+Plus\+::cardinal (
+\begin{DoxyParamCaption}
+\item[{double}]{course}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_tiny_g_p_s_plus_a8c9e9444552ff85a505ffc6933dda03c}{}\label{class_tiny_g_p_s_plus_a8c9e9444552ff85a505ffc6933dda03c}
+
+
+Definition at line 328 of file Tiny\+G\+P\+S++.\+cpp.
+
+
+
+References parse\+Degrees().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tiny_g_p_s_plus_a8c9e9444552ff85a505ffc6933dda03c_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!chars\+Processed@{chars\+Processed}}
+\index{chars\+Processed@{chars\+Processed}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{chars\+Processed() const }{charsProcessed() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Tiny\+G\+P\+S\+Plus\+::chars\+Processed (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_tiny_g_p_s_plus_a12b6bc0169ee6b2f0beb8041e549f338}{}\label{class_tiny_g_p_s_plus_a12b6bc0169ee6b2f0beb8041e549f338}
+
+
+Definition at line 239 of file Tiny\+G\+P\+S++.\+h.
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!course\+To@{course\+To}}
+\index{course\+To@{course\+To}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{course\+To(double lat1, double long1, double lat2, double long2)}{courseTo(double lat1, double long1, double lat2, double long2)}}]{\setlength{\rightskip}{0pt plus 5cm}double Tiny\+G\+P\+S\+Plus\+::course\+To (
+\begin{DoxyParamCaption}
+\item[{double}]{lat1, }
+\item[{double}]{long1, }
+\item[{double}]{lat2, }
+\item[{double}]{long2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_tiny_g_p_s_plus_af338c18ccf58a47659be1ffc8259541d}{}\label{class_tiny_g_p_s_plus_af338c18ccf58a47659be1ffc8259541d}
+
+
+Definition at line 308 of file Tiny\+G\+P\+S++.\+cpp.
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!distance\+Between@{distance\+Between}}
+\index{distance\+Between@{distance\+Between}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{distance\+Between(double lat1, double long1, double lat2, double long2)}{distanceBetween(double lat1, double long1, double lat2, double long2)}}]{\setlength{\rightskip}{0pt plus 5cm}double Tiny\+G\+P\+S\+Plus\+::distance\+Between (
+\begin{DoxyParamCaption}
+\item[{double}]{lat1, }
+\item[{double}]{long1, }
+\item[{double}]{lat2, }
+\item[{double}]{long2}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_tiny_g_p_s_plus_ace607cf3a6d49628e44eae1232237138}{}\label{class_tiny_g_p_s_plus_ace607cf3a6d49628e44eae1232237138}
+
+
+Definition at line 283 of file Tiny\+G\+P\+S++.\+cpp.
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!encode@{encode}}
+\index{encode@{encode}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{encode(char c)}{encode(char c)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Tiny\+G\+P\+S\+Plus\+::encode (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_tiny_g_p_s_plus_ad7b78320b7e4967df17c6a27008a5154}{}\label{class_tiny_g_p_s_plus_ad7b78320b7e4967df17c6a27008a5154}
+
+
+Definition at line 54 of file Tiny\+G\+P\+S++.\+cpp.
+
+
+
+Referenced by read\+\_\+\+G\+P\+S().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tiny_g_p_s_plus_ad7b78320b7e4967df17c6a27008a5154_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!failed\+Checksum@{failed\+Checksum}}
+\index{failed\+Checksum@{failed\+Checksum}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{failed\+Checksum() const }{failedChecksum() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Tiny\+G\+P\+S\+Plus\+::failed\+Checksum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_tiny_g_p_s_plus_a57dd7a4430d58f784e967ee2d76e574f}{}\label{class_tiny_g_p_s_plus_a57dd7a4430d58f784e967ee2d76e574f}
+
+
+Definition at line 241 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+Referenced by print\+\_\+sensors().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tiny_g_p_s_plus_a57dd7a4430d58f784e967ee2d76e574f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!library\+Version@{library\+Version}}
+\index{library\+Version@{library\+Version}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{library\+Version()}{libraryVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}static const char$\ast$ Tiny\+G\+P\+S\+Plus\+::library\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{class_tiny_g_p_s_plus_a1ec39648e1c80c59f4fded642fdb88ae}{}\label{class_tiny_g_p_s_plus_a1ec39648e1c80c59f4fded642fdb88ae}
+
+
+Definition at line 230 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+References \+\_\+\+G\+P\+S\+\_\+\+V\+E\+R\+S\+I\+ON, and Raw\+Degrees\+::deg.
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!operator$<$$<$@{operator$<$$<$}}
+\index{operator$<$$<$@{operator$<$$<$}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{operator$<$$<$(char c)}{operator<<(char c)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Plus}\& Tiny\+G\+P\+S\+Plus\+::operator$<$$<$ (
+\begin{DoxyParamCaption}
+\item[{char}]{c}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_tiny_g_p_s_plus_a32a0b61a25ce0c490216cb2b4ea19ced}{}\label{class_tiny_g_p_s_plus_a32a0b61a25ce0c490216cb2b4ea19ced}
+
+
+Definition at line 219 of file Tiny\+G\+P\+S++.\+h.
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!parse\+Decimal@{parse\+Decimal}}
+\index{parse\+Decimal@{parse\+Decimal}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{parse\+Decimal(const char $\ast$term)}{parseDecimal(const char *term)}}]{\setlength{\rightskip}{0pt plus 5cm}int32\+\_\+t Tiny\+G\+P\+S\+Plus\+::parse\+Decimal (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{term}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_tiny_g_p_s_plus_a06d9bf0c1f0d0963511dc05e2f121121}{}\label{class_tiny_g_p_s_plus_a06d9bf0c1f0d0963511dc05e2f121121}
+
+
+Definition at line 113 of file Tiny\+G\+P\+S++.\+cpp.
+
+
+
+Referenced by Tiny\+G\+P\+S\+Time\+::centisecond(), and Tiny\+G\+P\+S\+Location\+::lng().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tiny_g_p_s_plus_a06d9bf0c1f0d0963511dc05e2f121121_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!parse\+Degrees@{parse\+Degrees}}
+\index{parse\+Degrees@{parse\+Degrees}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{parse\+Degrees(const char $\ast$term, Raw\+Degrees \&deg)}{parseDegrees(const char *term, RawDegrees \&deg)}}]{\setlength{\rightskip}{0pt plus 5cm}void Tiny\+G\+P\+S\+Plus\+::parse\+Degrees (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{term, }
+\item[{{\bf Raw\+Degrees} \&}]{deg}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\hypertarget{class_tiny_g_p_s_plus_a00627eaffc625bf366e4c984014fbf29}{}\label{class_tiny_g_p_s_plus_a00627eaffc625bf366e4c984014fbf29}
+
+
+Definition at line 130 of file Tiny\+G\+P\+S++.\+cpp.
+
+
+
+References Raw\+Degrees\+::billionths, Raw\+Degrees\+::deg, and Raw\+Degrees\+::negative.
+
+
+
+Referenced by cardinal().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_tiny_g_p_s_plus_a00627eaffc625bf366e4c984014fbf29_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!passed\+Checksum@{passed\+Checksum}}
+\index{passed\+Checksum@{passed\+Checksum}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{passed\+Checksum() const }{passedChecksum() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Tiny\+G\+P\+S\+Plus\+::passed\+Checksum (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_tiny_g_p_s_plus_a55af5d3442bf8f5c5fdd0309e416d9e5}{}\label{class_tiny_g_p_s_plus_a55af5d3442bf8f5c5fdd0309e416d9e5}
+
+
+Definition at line 242 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+References \+\_\+\+G\+P\+S\+\_\+\+M\+A\+X\+\_\+\+F\+I\+E\+L\+D\+\_\+\+S\+I\+ZE.
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!sentences\+With\+Fix@{sentences\+With\+Fix}}
+\index{sentences\+With\+Fix@{sentences\+With\+Fix}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{sentences\+With\+Fix() const }{sentencesWithFix() const }}]{\setlength{\rightskip}{0pt plus 5cm}uint32\+\_\+t Tiny\+G\+P\+S\+Plus\+::sentences\+With\+Fix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_tiny_g_p_s_plus_a6c502ec591dc42a83771a502c4dbdcd4}{}\label{class_tiny_g_p_s_plus_a6c502ec591dc42a83771a502c4dbdcd4}
+
+
+Definition at line 240 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!Tiny\+G\+P\+S\+Custom@{Tiny\+G\+P\+S\+Custom}}
+\index{Tiny\+G\+P\+S\+Custom@{Tiny\+G\+P\+S\+Custom}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{Tiny\+G\+P\+S\+Custom}{TinyGPSCustom}}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf Tiny\+G\+P\+S\+Custom}\hspace{0.3cm}{\ttfamily [friend]}}\hypertarget{class_tiny_g_p_s_plus_aaad5bf5a2728a81e624ad2304f817772}{}\label{class_tiny_g_p_s_plus_aaad5bf5a2728a81e624ad2304f817772}
+
+
+Definition at line 257 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!altitude@{altitude}}
+\index{altitude@{altitude}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{altitude}{altitude}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Altitude} Tiny\+G\+P\+S\+Plus\+::altitude}\hypertarget{class_tiny_g_p_s_plus_a0b3451a4ee75e5880ffd88c3038eacf8}{}\label{class_tiny_g_p_s_plus_a0b3451a4ee75e5880ffd88c3038eacf8}
+
+
+Definition at line 226 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+Referenced by read\+\_\+\+G\+P\+S().
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!course@{course}}
+\index{course@{course}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{course}{course}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Course} Tiny\+G\+P\+S\+Plus\+::course}\hypertarget{class_tiny_g_p_s_plus_ad7800d3decbe58e355f5229bba231868}{}\label{class_tiny_g_p_s_plus_ad7800d3decbe58e355f5229bba231868}
+
+
+Definition at line 225 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+Referenced by read\+\_\+\+G\+P\+S().
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!date@{date}}
+\index{date@{date}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{date}{date}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Date} Tiny\+G\+P\+S\+Plus\+::date}\hypertarget{class_tiny_g_p_s_plus_a83a70812b432d7f51c7c735bfe7be0f0}{}\label{class_tiny_g_p_s_plus_a83a70812b432d7f51c7c735bfe7be0f0}
+
+
+Definition at line 222 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+Referenced by Tiny\+G\+P\+S\+Date\+::day(), Tiny\+G\+P\+S\+Location\+::lng(), Tiny\+G\+P\+S\+Date\+::month(), read\+\_\+\+G\+P\+S(), Tiny\+G\+P\+S\+Date\+::\+Tiny\+G\+P\+S\+Date(), Tiny\+G\+P\+S\+Date\+::value(), and Tiny\+G\+P\+S\+Date\+::year().
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!hdop@{hdop}}
+\index{hdop@{hdop}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{hdop}{hdop}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Decimal} Tiny\+G\+P\+S\+Plus\+::hdop}\hypertarget{class_tiny_g_p_s_plus_a3a21b3ae7085bb278b35d703bf135632}{}\label{class_tiny_g_p_s_plus_a3a21b3ae7085bb278b35d703bf135632}
+
+
+Definition at line 228 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+Referenced by read\+\_\+\+G\+P\+S().
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!location@{location}}
+\index{location@{location}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{location}{location}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Location} Tiny\+G\+P\+S\+Plus\+::location}\hypertarget{class_tiny_g_p_s_plus_a886255f412f8e01f84e5104d36315fb3}{}\label{class_tiny_g_p_s_plus_a886255f412f8e01f84e5104d36315fb3}
+
+
+Definition at line 221 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+Referenced by read\+\_\+\+G\+P\+S().
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!satellites@{satellites}}
+\index{satellites@{satellites}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{satellites}{satellites}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Integer} Tiny\+G\+P\+S\+Plus\+::satellites}\hypertarget{class_tiny_g_p_s_plus_a5fb47066d1d03f4bb5853529053aab48}{}\label{class_tiny_g_p_s_plus_a5fb47066d1d03f4bb5853529053aab48}
+
+
+Definition at line 227 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+Referenced by read\+\_\+\+G\+P\+S().
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!speed@{speed}}
+\index{speed@{speed}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{speed}{speed}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Speed} Tiny\+G\+P\+S\+Plus\+::speed}\hypertarget{class_tiny_g_p_s_plus_aa085c3e72a399a829dd92af52b373404}{}\label{class_tiny_g_p_s_plus_aa085c3e72a399a829dd92af52b373404}
+
+
+Definition at line 224 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+Referenced by read\+\_\+\+G\+P\+S().
+
+\index{Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}!time@{time}}
+\index{time@{time}!Tiny\+G\+P\+S\+Plus@{Tiny\+G\+P\+S\+Plus}}
+\subsubsection[{\texorpdfstring{time}{time}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Tiny\+G\+P\+S\+Time} Tiny\+G\+P\+S\+Plus\+::time}\hypertarget{class_tiny_g_p_s_plus_a377c975527fa24b45fb86356505eb134}{}\label{class_tiny_g_p_s_plus_a377c975527fa24b45fb86356505eb134}
+
+
+Definition at line 223 of file Tiny\+G\+P\+S++.\+h.
+
+
+
+Referenced by Tiny\+G\+P\+S\+Time\+::centisecond(), Tiny\+G\+P\+S\+Time\+::hour(), Tiny\+G\+P\+S\+Location\+::lng(), Tiny\+G\+P\+S\+Time\+::minute(), read\+\_\+\+G\+P\+S(), Tiny\+G\+P\+S\+Time\+::second(), Tiny\+G\+P\+S\+Time\+::\+Tiny\+G\+P\+S\+Time(), and Tiny\+G\+P\+S\+Time\+::value().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Tiny\+G\+P\+S\+Plus-\/0.\+94b/\hyperlink{_tiny_g_p_s_09_09_8h}{Tiny\+G\+P\+S++.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Tiny\+G\+P\+S\+Plus-\/0.\+94b/\hyperlink{_tiny_g_p_s_09_09_8cpp}{Tiny\+G\+P\+S++.\+cpp}\end{DoxyCompactItemize}

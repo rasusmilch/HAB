@@ -1,0 +1,326 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_m_a_x17043" kind="class" language="C++" prot="public">
+    <compoundname>MAX17043</compoundname>
+    <includes refid="_spark_fun_m_a_x17043_8h" local="no">SparkFunMAX17043.h</includes>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_m_a_x17043_1a355bb280e2fb71a761ac539c5d6b335a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MAX17043::MAX17043</definition>
+        <argsstring>()</argsstring>
+        <name>MAX17043</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="31" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="56" bodyend="59"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a7f434b44531c65f4a3b31c4f5ebcb887" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="34" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="61" bodyend="65"/>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="_m_a_x17043___simple_8cpp" startline="36" endline="57">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a853dbf7908a1c4a37405050ec5e9c9e6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::quickStart</definition>
+        <argsstring>()</argsstring>
+        <name>quickStart</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="40" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="67" bodyend="76"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a4a52b8832e5afc9030227e0a153ce808" compoundref="_spark_fun_m_a_x17043_8cpp" startline="29">MAX17043_MODE</references>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a523219c2bf5371f0d49ca88efecc2a57" compoundref="_spark_fun_m_a_x17043_8cpp" startline="44">MAX17043_MODE_QUICKSTART</references>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="_m_a_x17043___simple_8cpp" startline="36" endline="57">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1afcba3e7ee660335c78995d337cab1678" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float MAX17043::getVoltage</definition>
+        <argsstring>()</argsstring>
+        <name>getVoltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="44" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="78" bodyend="86"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a90ee24d6ad58f453935171ccb634c289" compoundref="_spark_fun_m_a_x17043_8cpp" startline="27">MAX17043_VCELL</references>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="_m_a_x17043___simple_8cpp" startline="59" endline="83">loop</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a9567ba1006631e2d262a01ced542523f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float MAX17043::getSOC</definition>
+        <argsstring>()</argsstring>
+        <name>getSOC</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="50" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="88" bodyend="97"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1ac95c6fe41e53bcfddca5de87a0317175" compoundref="_spark_fun_m_a_x17043_8cpp" startline="28">MAX17043_SOC</references>
+        <references refid="_m_a_x17043___simple_8cpp_1a991957902833b18d327c2d8a0ea1eb42" compoundref="_m_a_x17043___simple_8cpp" startline="33">soc</references>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="_m_a_x17043___simple_8cpp" startline="59" endline="83">loop</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1ad40ccf803c2eff76d7e0e7a24c9937ef" compoundref="_weather___balloon_8cpp" startline="1596" endline="1751">readSensors</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1acca2d36ef6359c085c9fe8bf2eb37ec3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t MAX17043::getVersion</definition>
+        <argsstring>()</argsstring>
+        <name>getVersion</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="54" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="99" bodyend="102"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a1a3bc0918ad681a5d2d87884621ac07f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="30">MAX17043_VERSION</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a79f404146d8ad9a0da8e1941f99ab6a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::getThreshold</definition>
+        <argsstring>()</argsstring>
+        <name>getThreshold</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="60" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="104" bodyend="114"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="31">MAX17043_CONFIG</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a1399c759fa7039420a2ac324db843a1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::setThreshold</definition>
+        <argsstring>(uint8_t percent)</argsstring>
+        <name>setThreshold</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>percent</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="67" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="116" bodyend="133"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="31">MAX17043_CONFIG</references>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="_m_a_x17043___simple_8cpp" startline="36" endline="57">setup</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1ab62ceb6112cf661a9ca4ffa54d4e72c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::getAlert</definition>
+        <argsstring>(bool clear=false)</argsstring>
+        <name>getAlert</name>
+        <param>
+          <type>bool</type>
+          <declname>clear</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="74" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="144" bodyend="159"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="31">MAX17043_CONFIG</references>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="_m_a_x17043___simple_8cpp" startline="59" endline="83">loop</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a396806dcd5feff73dfea335a75d2476e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::clearAlert</definition>
+        <argsstring>()</argsstring>
+        <name>clearAlert</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="78" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="135" bodyend="142"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="31">MAX17043_CONFIG</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1ac284bdd3085b45246cc115f2c58dea5f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::sleep</definition>
+        <argsstring>()</argsstring>
+        <name>sleep</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="82" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="161" bodyend="170"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="31">MAX17043_CONFIG</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a3362df7c61d7a9acf75d1ee83f219b1f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::wake</definition>
+        <argsstring>()</argsstring>
+        <name>wake</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="86" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="172" bodyend="181"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="31">MAX17043_CONFIG</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a29130068805144281ce44dc686e8ef1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::reset</definition>
+        <argsstring>()</argsstring>
+        <name>reset</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="91" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="183" bodyend="186"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a2122ce9774f99824e4eb319511a68961" compoundref="_spark_fun_m_a_x17043_8cpp" startline="32">MAX17043_COMMAND</references>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1aa5ccadaa1df738ad061a22aa506976e8" compoundref="_spark_fun_m_a_x17043_8cpp" startline="49">MAX17043_COMMAND_POR</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1ac9e3d5347ba744323ddcc973d89c15ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t MAX17043::getConfigRegister</definition>
+        <argsstring>()</argsstring>
+        <name>getConfigRegister</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="96" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="195" bodyend="198"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="31">MAX17043_CONFIG</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a644fb0b3b44c57e2d58faeb8190e82cd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::getCompensation</definition>
+        <argsstring>()</argsstring>
+        <name>getCompensation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="101" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="188" bodyend="193"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="31">MAX17043_CONFIG</references>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1a0e65f026d006cd020439329e7230d7c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::setCompensation</definition>
+        <argsstring>(uint8_t newCompensation)</argsstring>
+        <name>setCompensation</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>newCompensation</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="109" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="200" bodyend="209"/>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a1d671eeb89b0998a749a104d9632e520" compoundref="_spark_fun_m_a_x17043_8cpp" startline="54">MAX17043_ADDRESS</references>
+        <references refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="31">MAX17043_CONFIG</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_m_a_x17043_1aa8b8aa55d125a8f5f9a4093f131bc5d3" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t MAX17043::write16</definition>
+        <argsstring>(uint16_t data, uint8_t address)</argsstring>
+        <name>write16</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>data</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="118" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="211" bodyend="221"/>
+      </memberdef>
+      <memberdef kind="function" id="class_m_a_x17043_1ac33d5f905489956bb73a8cce219bf3ac" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t MAX17043::read16</definition>
+        <argsstring>(uint8_t address)</argsstring>
+        <name>read16</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>address</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="123" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="223" bodyend="239"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" line="29" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.h" bodystart="28" bodyend="124"/>
+    <listofallmembers>
+      <member refid="class_m_a_x17043_1a7f434b44531c65f4a3b31c4f5ebcb887" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>begin</name></member>
+      <member refid="class_m_a_x17043_1a396806dcd5feff73dfea335a75d2476e" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>clearAlert</name></member>
+      <member refid="class_m_a_x17043_1ab62ceb6112cf661a9ca4ffa54d4e72c5" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>getAlert</name></member>
+      <member refid="class_m_a_x17043_1a644fb0b3b44c57e2d58faeb8190e82cd" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>getCompensation</name></member>
+      <member refid="class_m_a_x17043_1ac9e3d5347ba744323ddcc973d89c15ad" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>getConfigRegister</name></member>
+      <member refid="class_m_a_x17043_1a9567ba1006631e2d262a01ced542523f" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>getSOC</name></member>
+      <member refid="class_m_a_x17043_1a79f404146d8ad9a0da8e1941f99ab6a1" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>getThreshold</name></member>
+      <member refid="class_m_a_x17043_1acca2d36ef6359c085c9fe8bf2eb37ec3" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>getVersion</name></member>
+      <member refid="class_m_a_x17043_1afcba3e7ee660335c78995d337cab1678" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>getVoltage</name></member>
+      <member refid="class_m_a_x17043_1a355bb280e2fb71a761ac539c5d6b335a" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>MAX17043</name></member>
+      <member refid="class_m_a_x17043_1a853dbf7908a1c4a37405050ec5e9c9e6" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>quickStart</name></member>
+      <member refid="class_m_a_x17043_1ac33d5f905489956bb73a8cce219bf3ac" prot="private" virt="non-virtual"><scope>MAX17043</scope><name>read16</name></member>
+      <member refid="class_m_a_x17043_1a29130068805144281ce44dc686e8ef1e" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>reset</name></member>
+      <member refid="class_m_a_x17043_1a0e65f026d006cd020439329e7230d7c5" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>setCompensation</name></member>
+      <member refid="class_m_a_x17043_1a1399c759fa7039420a2ac324db843a1f" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>setThreshold</name></member>
+      <member refid="class_m_a_x17043_1ac284bdd3085b45246cc115f2c58dea5f" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>sleep</name></member>
+      <member refid="class_m_a_x17043_1a3362df7c61d7a9acf75d1ee83f219b1f" prot="public" virt="non-virtual"><scope>MAX17043</scope><name>wake</name></member>
+      <member refid="class_m_a_x17043_1aa8b8aa55d125a8f5f9a4093f131bc5d3" prot="private" virt="non-virtual"><scope>MAX17043</scope><name>write16</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

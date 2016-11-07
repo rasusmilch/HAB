@@ -1,0 +1,14 @@
+<map id="LSM9DS1::I2CreadBytes" name="LSM9DS1::I2CreadBytes">
+<area shape="rect" id="node2" href="$class_l_s_m9_d_s1.html#acfdf9862cad1e66c9fb61a17bfbe7477" title="LSM9DS1::mReadBytes" alt="" coords="207,19,354,45"/>
+<area shape="rect" id="node9" href="$class_l_s_m9_d_s1.html#ae0a9cbfd74b1f4676f091c2d8e491d77" title="LSM9DS1::xgReadBytes" alt="" coords="205,95,356,121"/>
+<area shape="rect" id="node3" href="$class_l_s_m9_d_s1.html#ae127cf75aa5f3c5421e49363795dcd38" title="LSM9DS1::readMag" alt="" coords="408,5,535,32"/>
+<area shape="rect" id="node4" href="$class_l_s_m9_d_s1.html#afb45f0bcbcbeb15d4bd1a28821b24d14" title="LSM9DS1::calibrateMag" alt="" coords="587,19,737,45"/>
+<area shape="rect" id="node7" href="$_weather___balloon_8cpp.html#ad40ccf803c2eff76d7e0e7a24c9937ef" title="readSensors" alt="" coords="619,95,705,121"/>
+<area shape="rect" id="node5" href="$_weather___balloon_8cpp.html#a2c2e98945e78daa792b87b30868c3907" title="configure_LSM9DS1" alt="" coords="785,145,916,172"/>
+<area shape="rect" id="node6" href="$_weather___balloon_8cpp.html#a4fc01d736fe50cf5b977f755b675f11d" title="setup" alt="" coords="964,145,1015,172"/>
+<area shape="rect" id="node8" href="$_weather___balloon_8cpp.html#afe461d27b9c48d5921c00d521181f12f" title="loop" alt="" coords="827,95,874,121"/>
+<area shape="rect" id="node10" href="$class_l_s_m9_d_s1.html#a9953684a1ff652a7d3a4d91e72bccaa1" title="LSM9DS1::readAccel" alt="" coords="404,107,539,133"/>
+<area shape="rect" id="node12" href="$class_l_s_m9_d_s1.html#aca21a51dc79a1287b97ed9c326e2080b" title="LSM9DS1::readTemp" alt="" coords="404,56,539,83"/>
+<area shape="rect" id="node13" href="$class_l_s_m9_d_s1.html#a56e9710cb538a4c7f7ab94c2ca256ce9" title="LSM9DS1::readGyro" alt="" coords="406,157,537,184"/>
+<area shape="rect" id="node11" href="$class_l_s_m9_d_s1.html#a97939cb15fcb7e33abcd6d3a9230d943" title="LSM9DS1::calibrate" alt="" coords="599,145,725,172"/>
+</map>

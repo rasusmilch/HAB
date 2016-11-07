@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_b3eddf97176af96f7a4bf897afc98f92" kind="dir">
+    <compoundname>Weather_Balloon/library/Arduino-PID-Library</compoundname>
+    <innerfile refid="_p_i_d__v1_8cpp">PID_v1.cpp</innerfile>
+    <innerfile refid="_p_i_d__v1_8h">PID_v1.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Arduino-PID-Library/"/>
+  </compounddef>
+</doxygen>

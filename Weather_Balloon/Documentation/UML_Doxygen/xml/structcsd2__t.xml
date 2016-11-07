@@ -1,0 +1,569 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structcsd2__t" kind="struct" language="C++" prot="public">
+    <compoundname>csd2_t</compoundname>
+    <includes refid="_sd_info_8h" local="no">SdInfo.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structcsd2__t_1ad5a58e895c52d40e6df77413441e1d9d" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::reserved1</definition>
+        <argsstring></argsstring>
+        <name>reserved1</name>
+        <bitfield> 6</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="173" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a0cbac91cabf9d2f591037ea2629b1555" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::csd_ver</definition>
+        <argsstring></argsstring>
+        <name>csd_ver</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="174" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="174" bodyend="-1"/>
+        <referencedby refid="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" compoundref="_sd2_card_8cpp" startline="195" endline="213">Sd2Card::cardSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1ae0b3c86c6dddfed5d5709e45660097ea" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t csd2_t::taac</definition>
+        <argsstring></argsstring>
+        <name>taac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="176" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a60d656187eb47d2bbf7d31b2a9845b2d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t csd2_t::nsac</definition>
+        <argsstring></argsstring>
+        <name>nsac</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="178" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="178" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a1d15fef5d32c5fe83516ab80436f3338" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t csd2_t::tran_speed</definition>
+        <argsstring></argsstring>
+        <name>tran_speed</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="180" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="180" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1ae679aa94ca94823f3dc415b84099fb4c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t csd2_t::ccc_high</definition>
+        <argsstring></argsstring>
+        <name>ccc_high</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="182" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1aafef0057172ed42e93107ba4045064f6" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::read_bl_len</definition>
+        <argsstring></argsstring>
+        <name>read_bl_len</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="184" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="184" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a3da4fe2454a510e42e4fa8d805fa631f" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::ccc_low</definition>
+        <argsstring></argsstring>
+        <name>ccc_low</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="185" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a8219c92685fbdcf8764945ec4e56ed81" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::reserved2</definition>
+        <argsstring></argsstring>
+        <name>reserved2</name>
+        <bitfield> 4</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="187" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="187" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1acbd82241cd8d3724bc7a1cc507dfe1b3" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::dsr_imp</definition>
+        <argsstring></argsstring>
+        <name>dsr_imp</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="188" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1ae719c56f235310780189d55f6cfed981" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::read_blk_misalign</definition>
+        <argsstring></argsstring>
+        <name>read_blk_misalign</name>
+        <bitfield>1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="189" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="189" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a79234391a6512dd93bf9cf7e8878db84" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::write_blk_misalign</definition>
+        <argsstring></argsstring>
+        <name>write_blk_misalign</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="190" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="190" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1abcbabaf624f7576c1509fdc39f4d4ec0" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::read_bl_partial</definition>
+        <argsstring></argsstring>
+        <name>read_bl_partial</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="191" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1af59fa2cea5afefd6e0f526ce0686b565" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::reserved3</definition>
+        <argsstring></argsstring>
+        <name>reserved3</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="193" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="193" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a18a8c48050f362f469894317436e3de5" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::c_size_high</definition>
+        <argsstring></argsstring>
+        <name>c_size_high</name>
+        <bitfield> 6</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="194" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="194" bodyend="-1"/>
+        <referencedby refid="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" compoundref="_sd2_card_8cpp" startline="195" endline="213">Sd2Card::cardSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1ad5d3fab4ef1995e438fc31d69c989626" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t csd2_t::c_size_mid</definition>
+        <argsstring></argsstring>
+        <name>c_size_mid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="196" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="196" bodyend="-1"/>
+        <referencedby refid="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" compoundref="_sd2_card_8cpp" startline="195" endline="213">Sd2Card::cardSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a6161513a9cf5c4949f15f2a90cbdb1f3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t csd2_t::c_size_low</definition>
+        <argsstring></argsstring>
+        <name>c_size_low</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="198" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="198" bodyend="-1"/>
+        <referencedby refid="class_sd2_card_1a862473431cc314238bfccdc531a70d3a" compoundref="_sd2_card_8cpp" startline="195" endline="213">Sd2Card::cardSize</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a429f320b04b37b3adf5e412527518f77" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::sector_size_high</definition>
+        <argsstring></argsstring>
+        <name>sector_size_high</name>
+        <bitfield> 6</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="200" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1add50393d566e72c61c7b3a201ccdbad4" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::erase_blk_en</definition>
+        <argsstring></argsstring>
+        <name>erase_blk_en</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="201" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="201" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1ae739f1971c481ccc4256e29f55e34042" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::reserved4</definition>
+        <argsstring></argsstring>
+        <name>reserved4</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="202" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="202" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a50931644558785cd9f8185bd167f09f3" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::wp_grp_size</definition>
+        <argsstring></argsstring>
+        <name>wp_grp_size</name>
+        <bitfield> 7</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="204" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="204" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a29c10748127a8cdaeed4d7e29cbc782b" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::sector_size_low</definition>
+        <argsstring></argsstring>
+        <name>sector_size_low</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="205" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="205" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1adc8aea91ccb93186ba75952dce474348" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::write_bl_len_high</definition>
+        <argsstring></argsstring>
+        <name>write_bl_len_high</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="207" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="207" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a08cfa785c1aa7e60b781c6dcace02d59" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::r2w_factor</definition>
+        <argsstring></argsstring>
+        <name>r2w_factor</name>
+        <bitfield> 3</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="208" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a5cdc4e6f17f9101e10f0006c18986725" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::reserved5</definition>
+        <argsstring></argsstring>
+        <name>reserved5</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="209" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a9a14593650b5e1ec22f29de45404d58f" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::wp_grp_enable</definition>
+        <argsstring></argsstring>
+        <name>wp_grp_enable</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="210" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="210" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a5cfd6fee5f16f4a93d8b4cf792d3c707" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::reserved6</definition>
+        <argsstring></argsstring>
+        <name>reserved6</name>
+        <bitfield> 5</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="212" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a45657c55d9b648dba82d69005128bf92" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::write_partial</definition>
+        <argsstring></argsstring>
+        <name>write_partial</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="213" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="213" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a0a4c1de60c9807769368558a43e94cb6" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::write_bl_len_low</definition>
+        <argsstring></argsstring>
+        <name>write_bl_len_low</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="214" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1ac2468e71b8b7e9c89e4c833d75f70596" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::reserved7</definition>
+        <argsstring></argsstring>
+        <name>reserved7</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="216" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="216" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a0189fea59a370020aafdb458601945c1" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::file_format</definition>
+        <argsstring></argsstring>
+        <name>file_format</name>
+        <bitfield> 2</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="217" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="217" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1ab040e58f7d3eb03aa3ca4fd536b12522" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::tmp_write_protect</definition>
+        <argsstring></argsstring>
+        <name>tmp_write_protect</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="218" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a585ced362130c014f28027488f83f3cc" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::perm_write_protect</definition>
+        <argsstring></argsstring>
+        <name>perm_write_protect</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="219" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="219" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a039d5cdc3fd5a856d43e12d14afb84cd" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::copy</definition>
+        <argsstring></argsstring>
+        <name>copy</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="220" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="220" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1aeb9e44838471d88e9ea855ff57d788ed" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::file_format_grp</definition>
+        <argsstring></argsstring>
+        <name>file_format_grp</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="221" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a89db0eedcc8895ce58e90884926d0c1f" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::always1</definition>
+        <argsstring></argsstring>
+        <name>always1</name>
+        <bitfield> 1</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="223" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="223" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structcsd2__t_1a7bd77fa1e307a70c09fcaf4d7c0e22d9" prot="public" static="no" mutable="no">
+        <type>unsigned</type>
+        <definition>unsigned csd2_t::crc</definition>
+        <argsstring></argsstring>
+        <name>crc</name>
+        <bitfield> 7</bitfield>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="224" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SD-master/SdInfo.h" line="171" column="1" bodyfile="Weather_Balloon/library/SD-master/SdInfo.h" bodystart="171" bodyend="225"/>
+    <listofallmembers>
+      <member refid="structcsd2__t_1a89db0eedcc8895ce58e90884926d0c1f" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>always1</name></member>
+      <member refid="structcsd2__t_1a18a8c48050f362f469894317436e3de5" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>c_size_high</name></member>
+      <member refid="structcsd2__t_1a6161513a9cf5c4949f15f2a90cbdb1f3" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>c_size_low</name></member>
+      <member refid="structcsd2__t_1ad5d3fab4ef1995e438fc31d69c989626" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>c_size_mid</name></member>
+      <member refid="structcsd2__t_1ae679aa94ca94823f3dc415b84099fb4c" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>ccc_high</name></member>
+      <member refid="structcsd2__t_1a3da4fe2454a510e42e4fa8d805fa631f" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>ccc_low</name></member>
+      <member refid="structcsd2__t_1a039d5cdc3fd5a856d43e12d14afb84cd" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>copy</name></member>
+      <member refid="structcsd2__t_1a7bd77fa1e307a70c09fcaf4d7c0e22d9" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>crc</name></member>
+      <member refid="structcsd2__t_1a0cbac91cabf9d2f591037ea2629b1555" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>csd_ver</name></member>
+      <member refid="structcsd2__t_1acbd82241cd8d3724bc7a1cc507dfe1b3" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>dsr_imp</name></member>
+      <member refid="structcsd2__t_1add50393d566e72c61c7b3a201ccdbad4" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>erase_blk_en</name></member>
+      <member refid="structcsd2__t_1a0189fea59a370020aafdb458601945c1" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>file_format</name></member>
+      <member refid="structcsd2__t_1aeb9e44838471d88e9ea855ff57d788ed" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>file_format_grp</name></member>
+      <member refid="structcsd2__t_1a60d656187eb47d2bbf7d31b2a9845b2d" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>nsac</name></member>
+      <member refid="structcsd2__t_1a585ced362130c014f28027488f83f3cc" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>perm_write_protect</name></member>
+      <member refid="structcsd2__t_1a08cfa785c1aa7e60b781c6dcace02d59" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>r2w_factor</name></member>
+      <member refid="structcsd2__t_1aafef0057172ed42e93107ba4045064f6" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>read_bl_len</name></member>
+      <member refid="structcsd2__t_1abcbabaf624f7576c1509fdc39f4d4ec0" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>read_bl_partial</name></member>
+      <member refid="structcsd2__t_1ae719c56f235310780189d55f6cfed981" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>read_blk_misalign</name></member>
+      <member refid="structcsd2__t_1ad5a58e895c52d40e6df77413441e1d9d" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>reserved1</name></member>
+      <member refid="structcsd2__t_1a8219c92685fbdcf8764945ec4e56ed81" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>reserved2</name></member>
+      <member refid="structcsd2__t_1af59fa2cea5afefd6e0f526ce0686b565" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>reserved3</name></member>
+      <member refid="structcsd2__t_1ae739f1971c481ccc4256e29f55e34042" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>reserved4</name></member>
+      <member refid="structcsd2__t_1a5cdc4e6f17f9101e10f0006c18986725" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>reserved5</name></member>
+      <member refid="structcsd2__t_1a5cfd6fee5f16f4a93d8b4cf792d3c707" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>reserved6</name></member>
+      <member refid="structcsd2__t_1ac2468e71b8b7e9c89e4c833d75f70596" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>reserved7</name></member>
+      <member refid="structcsd2__t_1a429f320b04b37b3adf5e412527518f77" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>sector_size_high</name></member>
+      <member refid="structcsd2__t_1a29c10748127a8cdaeed4d7e29cbc782b" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>sector_size_low</name></member>
+      <member refid="structcsd2__t_1ae0b3c86c6dddfed5d5709e45660097ea" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>taac</name></member>
+      <member refid="structcsd2__t_1ab040e58f7d3eb03aa3ca4fd536b12522" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>tmp_write_protect</name></member>
+      <member refid="structcsd2__t_1a1d15fef5d32c5fe83516ab80436f3338" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>tran_speed</name></member>
+      <member refid="structcsd2__t_1a9a14593650b5e1ec22f29de45404d58f" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>wp_grp_enable</name></member>
+      <member refid="structcsd2__t_1a50931644558785cd9f8185bd167f09f3" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>wp_grp_size</name></member>
+      <member refid="structcsd2__t_1adc8aea91ccb93186ba75952dce474348" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>write_bl_len_high</name></member>
+      <member refid="structcsd2__t_1a0a4c1de60c9807769368558a43e94cb6" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>write_bl_len_low</name></member>
+      <member refid="structcsd2__t_1a79234391a6512dd93bf9cf7e8878db84" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>write_blk_misalign</name></member>
+      <member refid="structcsd2__t_1a45657c55d9b648dba82d69005128bf92" prot="public" virt="non-virtual"><scope>csd2_t</scope><name>write_partial</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

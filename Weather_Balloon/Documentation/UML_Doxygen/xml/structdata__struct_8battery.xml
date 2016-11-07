@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdata__struct_8battery" kind="struct" language="C++" prot="public">
+    <compoundname>data_struct.battery</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdata__struct_8battery_1ae437ba437f4106903e619bb380574954" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>voltage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="211" column="1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structdata__struct_8battery_1ac7d5f8495162588e6bb8a9e1975c45e7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition></definition>
+        <argsstring></argsstring>
+        <name>soc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/Weather_Balloon.cpp" line="211" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/Weather_Balloon.cpp" line="209" column="1" bodyfile="Weather_Balloon/Weather_Balloon.cpp" bodystart="209" bodyend="212"/>
+    <listofallmembers>
+      <member refid="structdata__struct_8battery_1ac7d5f8495162588e6bb8a9e1975c45e7" prot="public" virt="non-virtual"><scope>data_struct.battery</scope><name>soc</name></member>
+      <member refid="structdata__struct_8battery_1ae437ba437f4106903e619bb380574954" prot="public" virt="non-virtual"><scope>data_struct.battery</scope><name>voltage</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

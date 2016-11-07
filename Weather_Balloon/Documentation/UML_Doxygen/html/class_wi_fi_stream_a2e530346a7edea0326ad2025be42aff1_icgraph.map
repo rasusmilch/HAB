@@ -1,0 +1,6 @@
+<map id="WiFiStream::connect_client" name="WiFiStream::connect_client">
+<area shape="rect" id="node2" href="$class_wi_fi_stream.html#a238fc0fc25c4a9bda83e24257587dd64" title="WiFiStream::available" alt="" coords="189,5,332,32"/>
+<area shape="rect" id="node3" href="$class_wi_fi_stream.html#a84ea0f80377001e0acf1385645ecaf1a" title="WiFiStream::peek" alt="" coords="201,56,320,83"/>
+<area shape="rect" id="node4" href="$class_wi_fi_stream.html#a238960bf0f7a3e3a7c60014a187fe577" title="WiFiStream::read" alt="" coords="202,107,319,133"/>
+<area shape="rect" id="node5" href="$class_wi_fi_stream.html#a0a4dba3370af02570ef0d3429f1a6df2" title="WiFiStream::write" alt="" coords="199,157,322,184"/>
+</map>

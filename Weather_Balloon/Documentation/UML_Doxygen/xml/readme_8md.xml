@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="readme_8md" kind="file" language="Markdown">
+    <compoundname>readme.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#Firmata</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">[![Gitter](https://badges.gitter.im/Join<sp/>Chat.svg)](https://gitter.im/firmata/arduino?utm_source=badge&amp;utm_medium=badge&amp;utm_campaign=pr-badge&amp;utm_content=badge)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Firmata<sp/>is<sp/>a<sp/>protocol<sp/>for<sp/>communicating<sp/>with<sp/>microcontrollers<sp/>from<sp/>software<sp/>on<sp/>a<sp/>host<sp/>computer.<sp/>The<sp/>[protocol](https://github.com/firmata/protocol)<sp/>can<sp/>be<sp/>implemented<sp/>in<sp/>firmware<sp/>on<sp/>any<sp/>microcontroller<sp/>architecture<sp/>as<sp/>well<sp/>as<sp/>software<sp/>on<sp/>any<sp/>host<sp/>computer<sp/>software<sp/>package.<sp/>The<sp/>Arduino<sp/>repository<sp/>described<sp/>here<sp/>is<sp/>a<sp/>Firmata<sp/>library<sp/>for<sp/>Arduino<sp/>and<sp/>Arduino-compatible<sp/>devices.<sp/>If<sp/>you<sp/>would<sp/>like<sp/>to<sp/>contribute<sp/>to<sp/>Firmata,<sp/>please<sp/>see<sp/>the<sp/>[Contributing](#contributing)<sp/>section<sp/>below.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Usage</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">There<sp/>are<sp/>two<sp/>main<sp/>models<sp/>of<sp/>usage<sp/>of<sp/>Firmata.<sp/>In<sp/>one<sp/>model,<sp/>the<sp/>author<sp/>of<sp/>the<sp/>Arduino<sp/>sketch<sp/>uses<sp/>the<sp/>various<sp/>methods<sp/>provided<sp/>by<sp/>the<sp/>Firmata<sp/>library<sp/>to<sp/>selectively<sp/>send<sp/>and<sp/>receive<sp/>data<sp/>between<sp/>the<sp/>Arduino<sp/>device<sp/>and<sp/>the<sp/>software<sp/>running<sp/>on<sp/>the<sp/>host<sp/>computer.<sp/>For<sp/>example,<sp/>a<sp/>user<sp/>can<sp/>send<sp/>analog<sp/>data<sp/>to<sp/>the<sp/>host<sp/>using<sp/>```<sp/>Firmata.sendAnalog(analogPin,<sp/>analogRead(analogPin))<sp/>```<sp/>or<sp/>send<sp/>data<sp/>packed<sp/>in<sp/>a<sp/>string<sp/>using<sp/>```<sp/>Firmata.sendString(stringToSend)<sp/>```.<sp/>See<sp/>File<sp/>-&gt;<sp/>Examples<sp/>-&gt;<sp/>Firmata<sp/>-&gt;<sp/>AnalogFirmata<sp/>&amp;<sp/>EchoString<sp/>respectively<sp/>for<sp/>examples.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>second<sp/>and<sp/>more<sp/>common<sp/>model<sp/>is<sp/>to<sp/>load<sp/>a<sp/>general<sp/>purpose<sp/>sketch<sp/>called<sp/>StandardFirmata<sp/>(or<sp/>one<sp/>of<sp/>the<sp/>variants<sp/>such<sp/>as<sp/>StandardFirmataPlus<sp/>or<sp/>StandardFirmataEthernet<sp/>depending<sp/>on<sp/>your<sp/>needs)<sp/>on<sp/>the<sp/>Arduino<sp/>board<sp/>and<sp/>then<sp/>use<sp/>the<sp/>host<sp/>computer<sp/>exclusively<sp/>to<sp/>interact<sp/>with<sp/>the<sp/>Arduino<sp/>board.<sp/>StandardFirmata<sp/>is<sp/>located<sp/>in<sp/>the<sp/>Arduino<sp/>IDE<sp/>in<sp/>File<sp/>-&gt;<sp/>Examples<sp/>-&gt;<sp/>Firmata.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Firmata<sp/>Client<sp/>Libraries</highlight></codeline>
+<codeline><highlight class="normal">Most<sp/>of<sp/>the<sp/>time<sp/>you<sp/>will<sp/>be<sp/>interacting<sp/>with<sp/>Arduino<sp/>with<sp/>a<sp/>client<sp/>library<sp/>on<sp/>the<sp/>host<sp/>computers.<sp/>Several<sp/>Firmata<sp/>client<sp/>libraries<sp/>have<sp/>been<sp/>implemented<sp/>in<sp/>a<sp/>variety<sp/>of<sp/>popular<sp/>programming<sp/>languages:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*<sp/>processing</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/firmata/processing]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[http://funnel.cc]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>python</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/MrYsLab/pymata-aio]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/MrYsLab/PyMata]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/tino/pyFirmata]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/lupeke/python-firmata]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/firmata/pyduino]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>perl</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/ntruchsess/perl-firmata]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/rcaputo/rx-firmata]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>ruby</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/hardbap/firmata]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/PlasticLizard/rufinol]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[http://funnel.cc]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>clojure</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/nakkaya/clodiuno]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/peterschwarz/clj-firmata]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>javascript</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/jgautier/firmata]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/rwldrn/johnny-five]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[http://breakoutjs.com]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>java</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/kurbatov/firmata4j]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/4ntoine/Firmata]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/reapzor/FiloFirmata]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>.NET</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/SolidSoils/Arduino]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[http://www.imagitronics.org/projects/firmatanet/]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Flash/AS3</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[http://funnel.cc]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[http://code.google.com/p/as3glue/]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>PHP</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/ThomasWeinert/carica-firmata]</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/oasynnoum/phpmake_firmata]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Haskell</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[http://hackage.haskell.org/package/hArduino]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>iOS</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/jacobrosenthal/iosfirmata]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Dart</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/nfrancois/firmata]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Max/MSP</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[http://www.maxuino.org/]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Elixir</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/kfatehi/firmata]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Modelica</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://www.wolfram.com/system-modeler/libraries/model-plug/]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Go</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/kraman/go-firmata]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>vvvv</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://vvvv.org/blog/arduino-second-service]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>openFrameworks</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[http://openframeworks.cc/documentation/communication/ofArduino/]</highlight></codeline>
+<codeline><highlight class="normal">*<sp/>Rust</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>*<sp/>[https://github.com/zankich/rust-firmata]</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Note:<sp/>The<sp/>above<sp/>libraries<sp/>may<sp/>support<sp/>various<sp/>versions<sp/>of<sp/>the<sp/>Firmata<sp/>protocol<sp/>and<sp/>therefore<sp/>may<sp/>not<sp/>support<sp/>all<sp/>features<sp/>of<sp/>the<sp/>latest<sp/>Firmata<sp/>spec<sp/>nor<sp/>all<sp/>Arduino<sp/>and<sp/>Arduino-compatible<sp/>boards.<sp/>Refer<sp/>to<sp/>the<sp/>respective<sp/>projects<sp/>for<sp/>details.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Updating<sp/>Firmata<sp/>in<sp/>the<sp/>Arduino<sp/>IDE<sp/>-<sp/>Arduino<sp/>1.6.4<sp/>and<sp/>higher</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>want<sp/>to<sp/>update<sp/>to<sp/>the<sp/>latest<sp/>stable<sp/>version:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Open<sp/>the<sp/>Arduino<sp/>IDE<sp/>and<sp/>navigate<sp/>to:<sp/>`Sketch<sp/>&gt;<sp/>Include<sp/>Library<sp/>&gt;<sp/>Manage<sp/>Libraries`</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Filter<sp/>by<sp/>&quot;Firmata&quot;<sp/>and<sp/>click<sp/>on<sp/>the<sp/>&quot;Firmata<sp/>by<sp/>Firmata<sp/>Developers&quot;<sp/>item<sp/>in<sp/>the<sp/>list<sp/>of<sp/>results.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Click<sp/>the<sp/>`Select<sp/>version`<sp/>dropdown<sp/>and<sp/>select<sp/>the<sp/>most<sp/>recent<sp/>version<sp/>(note<sp/>you<sp/>can<sp/>also<sp/>install<sp/>previous<sp/>versions)</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Click<sp/>`Install`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###Cloning<sp/>Firmata</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>are<sp/>contributing<sp/>to<sp/>Firmata<sp/>or<sp/>otherwise<sp/>need<sp/>a<sp/>version<sp/>newer<sp/>than<sp/>the<sp/>latest<sp/>tagged<sp/>release,<sp/>you<sp/>can<sp/>clone<sp/>Firmata<sp/>directly<sp/>to<sp/>your<sp/>Arduino/libraries/<sp/>directory<sp/>(where<sp/>3rd<sp/>party<sp/>libraries<sp/>are<sp/>installed).<sp/>This<sp/>only<sp/>works<sp/>for<sp/>Arduino<sp/>1.6.4<sp/>and<sp/>higher,<sp/>for<sp/>older<sp/>versions<sp/>you<sp/>need<sp/>to<sp/>clone<sp/>into<sp/>the<sp/>Arduino<sp/>application<sp/>directory<sp/>(see<sp/>section<sp/>below<sp/>titled<sp/>&quot;Using<sp/>the<sp/>Source<sp/>code<sp/>rather<sp/>than<sp/>release<sp/>archive&quot;).<sp/>Be<sp/>sure<sp/>to<sp/>change<sp/>the<sp/>name<sp/>to<sp/>Firmata<sp/>as<sp/>follows:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>git<sp/>clone<sp/>git@github.com:firmata/arduino.git<sp/>~/Documents/Arduino/libraries/Firmata</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*Update<sp/>path<sp/>above<sp/>if<sp/>you&apos;re<sp/>using<sp/>Windows<sp/>or<sp/>Linux<sp/>or<sp/>changed<sp/>the<sp/>default<sp/>Arduino<sp/>directory<sp/>on<sp/>OS<sp/>X*</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##Updating<sp/>Firmata<sp/>in<sp/>the<sp/>Arduino<sp/>IDE<sp/>-<sp/>older<sp/>versions<sp/>(&lt;=<sp/>1.6.3<sp/>or<sp/>1.0.x)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Download<sp/>the<sp/>latest<sp/>[release](https://github.com/firmata/arduino/releases/tag/2.5.4)<sp/>(for<sp/>Arduino<sp/>1.0.x<sp/>or<sp/>Arduino<sp/>1.5.6<sp/>or<sp/>higher)<sp/>and<sp/>replace<sp/>the<sp/>existing<sp/>Firmata<sp/>folder<sp/>in<sp/>your<sp/>Arduino<sp/>application.<sp/>See<sp/>the<sp/>instructions<sp/>below<sp/>for<sp/>your<sp/>platform.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*Note<sp/>that<sp/>Arduino<sp/>1.5.0<sp/>-<sp/>1.5.5<sp/>are<sp/>not<sp/>supported.<sp/>Please<sp/>use<sp/>Arduino<sp/>1.5.6<sp/>or<sp/>higher<sp/>(or<sp/>Arduino<sp/>1.0.5<sp/>or<sp/>1.0.6).*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###Mac<sp/>OSX:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Firmata<sp/>library<sp/>is<sp/>contained<sp/>within<sp/>the<sp/>Arduino<sp/>package.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Navigate<sp/>to<sp/>the<sp/>Arduino<sp/>application</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Right<sp/>click<sp/>on<sp/>the<sp/>application<sp/>icon<sp/>and<sp/>select<sp/>`Show<sp/>Package<sp/>Contents`</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Navigate<sp/>to:<sp/>`/Contents/Resources/Java/libraries/`<sp/>and<sp/>replace<sp/>the<sp/>existing</highlight></codeline>
+<codeline><highlight class="normal">`Firmata`<sp/>folder<sp/>with<sp/>latest<sp/>[Firmata<sp/>release](https://github.com/firmata/arduino/releases/tag/2.5.4)<sp/>(note<sp/>there<sp/>is<sp/>a<sp/>different<sp/>download</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>Arduino<sp/>1.0.x<sp/>vs<sp/>1.6.x)</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Restart<sp/>the<sp/>Arduino<sp/>application<sp/>and<sp/>the<sp/>latest<sp/>version<sp/>of<sp/>Firmata<sp/>will<sp/>be<sp/>available.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*If<sp/>you<sp/>are<sp/>using<sp/>the<sp/>Java<sp/>7<sp/>version<sp/>of<sp/>Arduino<sp/>1.5.7<sp/>or<sp/>higher,<sp/>the<sp/>file<sp/>path</highlight></codeline>
+<codeline><highlight class="normal">will<sp/>differ<sp/>slightly:<sp/>`Contents/Java/libraries/Firmata`<sp/>(no<sp/>Resources<sp/>directory).*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###Windows:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Navigate<sp/>to<sp/>`c:/Program\<sp/>Files/arduino-1.x/libraries/`<sp/>and<sp/>replace<sp/>the<sp/>existing</highlight></codeline>
+<codeline><highlight class="normal">`Firmata`<sp/>folder<sp/>with<sp/>the<sp/>latest<sp/>[Firmata<sp/>release](https://github.com/firmata/arduino/releases/tag/2.5.4)<sp/>(note<sp/>there<sp/>is<sp/>a<sp/>different<sp/>download</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>Arduino<sp/>1.0.x<sp/>vs<sp/>1.6.x).</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Restart<sp/>the<sp/>Arduino<sp/>application<sp/>and<sp/>the<sp/>latest<sp/>version<sp/>of<sp/>Firmata<sp/>will<sp/>be<sp/>available.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*Update<sp/>the<sp/>path<sp/>and<sp/>Arduino<sp/>version<sp/>as<sp/>necessary*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###Linux:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Navigate<sp/>to<sp/>`~/arduino-1.x/libraries/`<sp/>and<sp/>replace<sp/>the<sp/>existing</highlight></codeline>
+<codeline><highlight class="normal">`Firmata`<sp/>folder<sp/>with<sp/>the<sp/>latest<sp/>[Firmata<sp/>release](https://github.com/firmata/arduino/releases/tag/2.5.4)<sp/>(note<sp/>there<sp/>is<sp/>a<sp/>different<sp/>download</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>Arduino<sp/>1.0.x<sp/>vs<sp/>1.6.x).</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Restart<sp/>the<sp/>Arduino<sp/>application<sp/>and<sp/>the<sp/>latest<sp/>version<sp/>of<sp/>Firmata<sp/>will<sp/>be<sp/>available.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*Update<sp/>the<sp/>path<sp/>and<sp/>Arduino<sp/>version<sp/>as<sp/>necessary*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###Using<sp/>the<sp/>Source<sp/>code<sp/>rather<sp/>than<sp/>release<sp/>archive<sp/>(only<sp/>for<sp/>versions<sp/>older<sp/>than<sp/>Arduino<sp/>1.6.3)</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*It<sp/>is<sp/>recommended<sp/>you<sp/>update<sp/>to<sp/>Arduino<sp/>1.6.4<sp/>or<sp/>higher<sp/>if<sp/>possible,<sp/>that<sp/>way<sp/>you<sp/>can<sp/>clone<sp/>directly<sp/>into<sp/>the<sp/>external<sp/>Arduino/libraries/<sp/>directory<sp/>which<sp/>persists<sp/>between<sp/>Arduino<sp/>application<sp/>updates.<sp/>Otherwise<sp/>you<sp/>will<sp/>need<sp/>to<sp/>move<sp/>your<sp/>clone<sp/>each<sp/>time<sp/>you<sp/>update<sp/>to<sp/>a<sp/>newer<sp/>version<sp/>of<sp/>the<sp/>Arduino<sp/>IDE.*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you&apos;re<sp/>stuck<sp/>with<sp/>an<sp/>older<sp/>version<sp/>of<sp/>the<sp/>IDE,<sp/>then<sp/>follow<sp/>these<sp/>keep<sp/>reading<sp/>otherwise<sp/>jump<sp/>up<sp/>to<sp/>the<sp/>&quot;Cloning<sp/>Firmata<sp/>section<sp/>above&quot;.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Clone<sp/>this<sp/>repo<sp/>directly<sp/>into<sp/>the<sp/>core<sp/>Arduino<sp/>application<sp/>libraries<sp/>directory.<sp/>If<sp/>you<sp/>are<sp/>using</highlight></codeline>
+<codeline><highlight class="normal">Arduino<sp/>1.5.x<sp/>or<sp/>&lt;=<sp/>1.6.3,<sp/>the<sp/>repo<sp/>directory<sp/>structure<sp/>will<sp/>not<sp/>match<sp/>the<sp/>Arduino</highlight></codeline>
+<codeline><highlight class="normal">library<sp/>format,<sp/>however<sp/>it<sp/>should<sp/>still<sp/>compile<sp/>as<sp/>long<sp/>as<sp/>you<sp/>are<sp/>using<sp/>Arduino<sp/>1.5.7</highlight></codeline>
+<codeline><highlight class="normal">or<sp/>higher.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>will<sp/>first<sp/>need<sp/>to<sp/>remove<sp/>the<sp/>existing<sp/>Firmata<sp/>library,<sp/>then<sp/>clone<sp/>firmata/arduino</highlight></codeline>
+<codeline><highlight class="normal">into<sp/>an<sp/>empty<sp/>Firmata<sp/>directory:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```bash</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>rm<sp/>-r<sp/>/Applications/Arduino.app/Contents/Resources/Java/libraries/Firmata</highlight></codeline>
+<codeline><highlight class="normal">$<sp/>git<sp/>clone<sp/>git@github.com:firmata/arduino.git<sp/>/Applications/Arduino.app/Contents/Resources/Java/libraries/Firmata</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">*Update<sp/>paths<sp/>if<sp/>you&apos;re<sp/>using<sp/>Windows<sp/>or<sp/>Linux*</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>generate<sp/>properly<sp/>formatted<sp/>versions<sp/>of<sp/>Firmata<sp/>(for<sp/>Arduino<sp/>1.0.x<sp/>and<sp/>Arduino<sp/>1.6.x),<sp/>run<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">`release.sh`<sp/>script.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">&lt;a<sp/>name=&quot;contributing&quot;<sp/>/&gt;</highlight></codeline>
+<codeline><highlight class="normal">##Contributing</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>discover<sp/>a<sp/>bug<sp/>or<sp/>would<sp/>like<sp/>to<sp/>propose<sp/>a<sp/>new<sp/>feature,<sp/>please<sp/>open<sp/>a<sp/>new<sp/>[issue](https://github.com/firmata/arduino/issues?sort=created&amp;state=open).<sp/>Due<sp/>to<sp/>the<sp/>limited<sp/>memory<sp/>of<sp/>standard<sp/>Arduino<sp/>boards<sp/>we<sp/>cannot<sp/>add<sp/>every<sp/>requested<sp/>feature<sp/>to<sp/>StandardFirmata.<sp/>Requests<sp/>to<sp/>add<sp/>new<sp/>features<sp/>to<sp/>StandardFirmata<sp/>will<sp/>be<sp/>evaluated<sp/>by<sp/>the<sp/>Firmata<sp/>developers.<sp/>However<sp/>it<sp/>is<sp/>still<sp/>possible<sp/>to<sp/>add<sp/>new<sp/>features<sp/>to<sp/>other<sp/>Firmata<sp/>implementations<sp/>(Firmata<sp/>is<sp/>a<sp/>protocol<sp/>whereas<sp/>StandardFirmata<sp/>is<sp/>just<sp/>one<sp/>of<sp/>many<sp/>possible<sp/>implementations).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">To<sp/>contribute,<sp/>fork<sp/>this<sp/>repository<sp/>and<sp/>create<sp/>a<sp/>new<sp/>topic<sp/>branch<sp/>for<sp/>the<sp/>bug,<sp/>feature<sp/>or<sp/>other<sp/>existing<sp/>issue<sp/>you<sp/>are<sp/>addressing.<sp/>Submit<sp/>the<sp/>pull<sp/>request<sp/>against<sp/>the<sp/>*master*<sp/>branch.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>would<sp/>like<sp/>to<sp/>contribute<sp/>but<sp/>don&apos;t<sp/>have<sp/>a<sp/>specific<sp/>bugfix<sp/>or<sp/>new<sp/>feature<sp/>to<sp/>contribute,<sp/>you<sp/>can<sp/>take<sp/>on<sp/>an<sp/>existing<sp/>issue,<sp/>see<sp/>issues<sp/>labeled<sp/>&quot;pull-request-encouraged&quot;.<sp/>Add<sp/>a<sp/>comment<sp/>to<sp/>the<sp/>issue<sp/>to<sp/>express<sp/>your<sp/>intent<sp/>to<sp/>begin<sp/>work<sp/>and/or<sp/>to<sp/>get<sp/>any<sp/>additional<sp/>information<sp/>about<sp/>the<sp/>issue.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">You<sp/>must<sp/>thoroughly<sp/>test<sp/>your<sp/>contributed<sp/>code.<sp/>In<sp/>your<sp/>pull<sp/>request,<sp/>describe<sp/>tests<sp/>performed<sp/>to<sp/>ensure<sp/>that<sp/>no<sp/>existing<sp/>code<sp/>is<sp/>broken<sp/>and<sp/>that<sp/>any<sp/>changes<sp/>maintain<sp/>backwards<sp/>compatibility<sp/>with<sp/>the<sp/>existing<sp/>api.<sp/>Test<sp/>on<sp/>multiple<sp/>Arduino<sp/>board<sp/>variants<sp/>if<sp/>possible.<sp/>We<sp/>hope<sp/>to<sp/>enable<sp/>some<sp/>form<sp/>of<sp/>automated<sp/>(or<sp/>at<sp/>least<sp/>semi-automated)<sp/>testing<sp/>in<sp/>the<sp/>future,<sp/>but<sp/>for<sp/>now<sp/>any<sp/>tests<sp/>will<sp/>need<sp/>to<sp/>be<sp/>executed<sp/>manually<sp/>by<sp/>the<sp/>contributor<sp/>and<sp/>reviewers.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Use<sp/>[Artistic<sp/>Style](http://astyle.sourceforge.net/)<sp/>(astyle)<sp/>to<sp/>format<sp/>your<sp/>code.<sp/>Set<sp/>the<sp/>following<sp/>rules<sp/>for<sp/>the<sp/>astyle<sp/>formatter:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">style<sp/>=<sp/>&quot;&quot;</highlight></codeline>
+<codeline><highlight class="normal">indent-spaces<sp/>=<sp/>2</highlight></codeline>
+<codeline><highlight class="normal">indent-classes<sp/>=<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">indent-switches<sp/>=<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">indent-cases<sp/>=<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">indent-col1-comments<sp/>=<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">pad-oper<sp/>=<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">pad-header<sp/>=<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">keep-one-line-statements<sp/>=<sp/>true</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">If<sp/>you<sp/>happen<sp/>to<sp/>use<sp/>Sublime<sp/>Text,<sp/>[this<sp/>astyle<sp/>plugin](https://github.com/timonwong/SublimeAStyleFormatter)<sp/>is<sp/>helpful.<sp/>Set<sp/>the<sp/>above<sp/>rules<sp/>in<sp/>the<sp/>user<sp/>settings<sp/>file.</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Firmata/readme.md"/>
+  </compounddef>
+</doxygen>

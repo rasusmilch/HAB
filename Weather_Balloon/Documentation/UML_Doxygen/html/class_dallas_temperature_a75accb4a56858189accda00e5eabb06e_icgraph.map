@@ -1,0 +1,4 @@
+<map id="DallasTemperature::rawToCelsius" name="DallasTemperature::rawToCelsius">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#a20f94b59909b46e55a77b399d99591a2" title="DallasTemperature::\lgetTempC" alt="" coords="185,5,317,47"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#a7e3e2e23257aac6b6c896df205d5b3b5" title="DallasTemperature::\lgetTempCByIndex" alt="" coords="365,5,497,47"/>
+</map>

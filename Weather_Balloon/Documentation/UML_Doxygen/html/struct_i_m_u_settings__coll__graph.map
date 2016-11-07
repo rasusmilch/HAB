@@ -1,0 +1,7 @@
+<map id="IMUSettings" name="IMUSettings">
+<area shape="rect" id="node2" href="$_l_s_m9_d_s1___types_8h.html#structmag_settings" title="magSettings" alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node3" href="$_l_s_m9_d_s1___types_8h.html#structgyro_settings" title="gyroSettings" alt="" coords="119,5,210,32"/>
+<area shape="rect" id="node4" href="$_l_s_m9_d_s1___types_8h.html#structdevice_settings" title="deviceSettings" alt="" coords="234,5,335,32"/>
+<area shape="rect" id="node5" href="$_l_s_m9_d_s1___types_8h.html#structaccel_settings" title="accelSettings" alt="" coords="359,5,453,32"/>
+<area shape="rect" id="node6" href="$_l_s_m9_d_s1___types_8h.html#structtemperature_settings" title="temperatureSettings" alt="" coords="477,5,609,32"/>
+</map>

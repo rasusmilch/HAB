@@ -1,0 +1,8 @@
+<map id="DallasTemperature::getUserDataByIndex" name="DallasTemperature::getUserDataByIndex">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#afa644bebf50c81b6641a31c585b62538" title="DallasTemperature::\lgetAddress" alt="" coords="188,57,320,98"/>
+<area shape="rect" id="node6" href="$class_dallas_temperature.html#a3601e8ee63c4770b716817ed68664400" title="DallasTemperature::\lgetUserData" alt="" coords="188,122,320,163"/>
+<area shape="rect" id="node3" href="$class_one_wire.html#aae5efdf67928b5ee312ab7d7906416fa" title="OneWire::reset_search" alt="" coords="368,5,512,32"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#a71e4744b8d7b2f1c05a96cd158c83007" title="DallasTemperature::\lvalidAddress" alt="" coords="374,57,506,98"/>
+<area shape="rect" id="node5" href="$class_one_wire.html#ae3486a669581b750e4fdf3f3a12b05f1" title="OneWire::crc8" alt="" coords="560,64,660,91"/>
+<area shape="rect" id="node7" href="$class_dallas_temperature.html#a19afa5e594de0ab6caa5a48a70650927" title="DallasTemperature::\lisConnected" alt="" coords="374,122,506,163"/>
+</map>

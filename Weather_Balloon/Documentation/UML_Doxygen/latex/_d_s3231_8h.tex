@@ -1,0 +1,322 @@
+\hypertarget{_d_s3231_8h}{}\section{Weather\+\_\+\+Balloon/library/\+Arduino-\/\+D\+S3231-\/master/\+D\+S3231.h File Reference}
+\label{_d_s3231_8h}\index{Weather\+\_\+\+Balloon/library/\+Arduino-\/\+D\+S3231-\/master/\+D\+S3231.\+h@{Weather\+\_\+\+Balloon/library/\+Arduino-\/\+D\+S3231-\/master/\+D\+S3231.\+h}}
+{\ttfamily \#include \char`\"{}W\+Program.\+h\char`\"{}}\\*
+Include dependency graph for D\+S3231.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=199pt]{_d_s3231_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{_d_s3231_8h__dep__incl}
+\end{center}
+\end{figure}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{_d_s3231_8h_struct_r_t_c_date_time}{R\+T\+C\+Date\+Time}
+\item 
+struct \hyperlink{_d_s3231_8h_struct_r_t_c_alarm_time}{R\+T\+C\+Alarm\+Time}
+\item 
+class \hyperlink{class_d_s3231}{D\+S3231}
+\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{_d_s3231_8h_a8076305a342fb38bb70a8dc3555993ae}{D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS}~(0x68)
+\item 
+\#define \hyperlink{_d_s3231_8h_a142b529b95a279f6a821b94773b53ffe}{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+I\+ME}~(0x00)
+\item 
+\#define \hyperlink{_d_s3231_8h_abd5973ef29f3ed421269321e6826b8ea}{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1}~(0x07)
+\item 
+\#define \hyperlink{_d_s3231_8h_a8b94a8907a685e2e45d3e47ce074f920}{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2}~(0x0\+B)
+\item 
+\#define \hyperlink{_d_s3231_8h_a14b27d8bc32c34f1eaecf569355c84d3}{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL}~(0x0\+E)
+\item 
+\#define \hyperlink{_d_s3231_8h_aeee46891f279544efa92a99e15e8d023}{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US}~(0x0\+F)
+\item 
+\#define \hyperlink{_d_s3231_8h_aec6b411bbd642c602496ca1143cafbf3}{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}~(0x11)
+\item 
+\#define \hyperlink{_d_s3231_8h_abf56fa56701817571c1f9d4593d648ce}{R\+T\+C\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+H}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1}{D\+S3231\+\_\+sqw\+\_\+t} \{ \hyperlink{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a4b9e98e04a481a7a94b8e2c16025796c}{D\+S3231\+\_\+1\+HZ} = 0x00, 
+\hyperlink{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a5a05f0b6d48a56c62b4bf859b1fc0622}{D\+S3231\+\_\+4096\+HZ} = 0x01, 
+\hyperlink{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a8d31f96bd571d27f0c3fc4c38de80f6d}{D\+S3231\+\_\+8192\+HZ} = 0x02, 
+\hyperlink{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a2df69d46cca1fbb8f057672cae4f84fa}{D\+S3231\+\_\+32768\+HZ} = 0x03
+ \}
+\item 
+enum \hyperlink{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6}{D\+S3231\+\_\+alarm1\+\_\+t} \{ \\*
+\hyperlink{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6ab431ec1e265f28031b3f528af977e510}{D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+S\+E\+C\+O\+ND} = 0b00001111, 
+\hyperlink{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6afd4bcd6ea8063a95b8c3bbb073d30c25}{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+S} = 0b00001110, 
+\hyperlink{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6a099f764d28aa428457678a5f01848c30}{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+M\+\_\+S} = 0b00001100, 
+\hyperlink{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6aa79cf5a8d792a3841444450ab2e0e7d1}{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+\+M\+\_\+S} = 0b00001000, 
+\\*
+\hyperlink{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6a2a6fdadd4780da2c13020690cefaa5c5}{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+\+M\+\_\+S} = 0b00000000, 
+\hyperlink{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6a16beb03afe9c97d8e16325c3ad01db10}{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+\+M\+\_\+S} = 0b00010000
+ \}
+\item 
+enum \hyperlink{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0}{D\+S3231\+\_\+alarm2\+\_\+t} \{ \\*
+\hyperlink{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a770cbe7e03272cc3a841e8498b71032f}{D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+M\+I\+N\+U\+TE} = 0b00001110, 
+\hyperlink{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a14446fbbe5e452d91969cc780e5e2af8}{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+M} = 0b00001100, 
+\hyperlink{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0abd6826df798141736a962714fec1f1bd}{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+M} = 0b00001000, 
+\hyperlink{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a0d0c4c8fa1dd8d16857d043eed236611}{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+M} = 0b00000000, 
+\\*
+\hyperlink{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a6dce7af35bfcd756b188ddc564e9c00f}{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+M} = 0b00010000
+ \}
+\end{DoxyCompactItemize}
+
+
+\subsection{Class Documentation}
+\index{R\+T\+C\+Date\+Time@{R\+T\+C\+Date\+Time}}\label{struct_r_t_c_date_time}
+\hypertarget{_d_s3231_8h_struct_r_t_c_date_time}{}
+\subsubsection{struct R\+T\+C\+Date\+Time}
+
+
+Definition at line 41 of file D\+S3231.\+h.
+
+\begin{DoxyFields}{Class Members}
+uint8\+\_\+t\hypertarget{_d_s3231_8h_aea80bfd1209e6e459c70ea39bc248407}{}\label{_d_s3231_8h_aea80bfd1209e6e459c70ea39bc248407}
+&
+day&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_d_s3231_8h_a3fa952239e8a35b7ec390838ae1a6bd0}{}\label{_d_s3231_8h_a3fa952239e8a35b7ec390838ae1a6bd0}
+&
+day\+Of\+Week&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_d_s3231_8h_aaf23cb6337a6c0cb3bb69ad815f9c1b1}{}\label{_d_s3231_8h_aaf23cb6337a6c0cb3bb69ad815f9c1b1}
+&
+hour&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_d_s3231_8h_a2e9c4e2b54185ec5bb7f328732bc1c63}{}\label{_d_s3231_8h_a2e9c4e2b54185ec5bb7f328732bc1c63}
+&
+minute&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_d_s3231_8h_a434dc70ef64a1e99201f3765607e8afa}{}\label{_d_s3231_8h_a434dc70ef64a1e99201f3765607e8afa}
+&
+month&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_d_s3231_8h_acf01c0fbd1d95fe33238674641f40027}{}\label{_d_s3231_8h_acf01c0fbd1d95fe33238674641f40027}
+&
+second&
+\\
+\hline
+
+uint32\+\_\+t\hypertarget{_d_s3231_8h_af46df69448c5456b54e9acae7629efa8}{}\label{_d_s3231_8h_af46df69448c5456b54e9acae7629efa8}
+&
+unixtime&
+\\
+\hline
+
+uint16\+\_\+t\hypertarget{_d_s3231_8h_a265de5469447ed7581fec4d3c0c5814d}{}\label{_d_s3231_8h_a265de5469447ed7581fec4d3c0c5814d}
+&
+year&
+\\
+\hline
+
+\end{DoxyFields}
+\index{R\+T\+C\+Alarm\+Time@{R\+T\+C\+Alarm\+Time}}\label{struct_r_t_c_alarm_time}
+\hypertarget{_d_s3231_8h_struct_r_t_c_alarm_time}{}
+\subsubsection{struct R\+T\+C\+Alarm\+Time}
+
+
+Definition at line 53 of file D\+S3231.\+h.
+
+\begin{DoxyFields}{Class Members}
+uint8\+\_\+t\hypertarget{_d_s3231_8h_a16ff7f4abd3d771179c4662c942597aa}{}\label{_d_s3231_8h_a16ff7f4abd3d771179c4662c942597aa}
+&
+day&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_d_s3231_8h_af80194d88cddcc273b97531f8b799138}{}\label{_d_s3231_8h_af80194d88cddcc273b97531f8b799138}
+&
+hour&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_d_s3231_8h_ae33cf5cda7523c05a3559485d2d26019}{}\label{_d_s3231_8h_ae33cf5cda7523c05a3559485d2d26019}
+&
+minute&
+\\
+\hline
+
+uint8\+\_\+t\hypertarget{_d_s3231_8h_a5367af27263fcbab3975c6c88b1be7bf}{}\label{_d_s3231_8h_a5367af27263fcbab3975c6c88b1be7bf}
+&
+second&
+\\
+\hline
+
+\end{DoxyFields}
+
+
+\subsection{Macro Definition Documentation}
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS@{D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS}}
+\index{D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS@{D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS}{DS3231\_ADDRESS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S3231\+\_\+\+A\+D\+D\+R\+E\+SS~(0x68)}\hypertarget{_d_s3231_8h_a8076305a342fb38bb70a8dc3555993ae}{}\label{_d_s3231_8h_a8076305a342fb38bb70a8dc3555993ae}
+
+
+Definition at line 30 of file D\+S3231.\+h.
+
+
+
+Referenced by R\+T\+C\+\_\+\+D\+S3231\+::adjust(), R\+T\+C\+\_\+\+D\+S3231\+::\+B\+B\+S\+Q\+W\+Enable(), R\+T\+C\+\_\+\+D\+S3231\+::enable32k\+Hz(), R\+T\+C\+\_\+\+D\+S3231\+::force\+Temp\+Conv(), D\+S3231\+::get\+Alarm1(), D\+S3231\+::get\+Alarm2(), D\+S3231\+::get\+Alarm\+Type1(), D\+S3231\+::get\+Alarm\+Type2(), R\+T\+C\+\_\+\+D\+S3231\+::get\+Control\+Register\+Data(), D\+S3231\+::get\+Date\+Time(), R\+T\+C\+\_\+\+D\+S3231\+::get\+Temp\+As\+Float(), R\+T\+C\+\_\+\+D\+S3231\+::get\+Temp\+As\+Word(), D\+S3231\+::is\+Alarm2(), R\+T\+C\+\_\+\+D\+S3231\+::isrunning(), R\+T\+C\+\_\+\+D\+S3231\+::now(), D\+S3231\+::read\+Temperature(), D\+S3231\+::set\+Alarm1(), D\+S3231\+::set\+Alarm2(), D\+S3231\+::set\+Date\+Time(), R\+T\+C\+\_\+\+D\+S3231\+::\+S\+Q\+W\+Enable(), and R\+T\+C\+\_\+\+D\+S3231\+::\+S\+Q\+W\+Frequency().
+
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1}}
+\index{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1}{DS3231\_REG\_ALARM\_1}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+1~(0x07)}\hypertarget{_d_s3231_8h_abd5973ef29f3ed421269321e6826b8ea}{}\label{_d_s3231_8h_abd5973ef29f3ed421269321e6826b8ea}
+
+
+Definition at line 33 of file D\+S3231.\+h.
+
+
+
+Referenced by D\+S3231\+::get\+Alarm1(), D\+S3231\+::get\+Alarm\+Type1(), and D\+S3231\+::set\+Alarm1().
+
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2}}
+\index{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2}{DS3231\_REG\_ALARM\_2}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S3231\+\_\+\+R\+E\+G\+\_\+\+A\+L\+A\+R\+M\+\_\+2~(0x0\+B)}\hypertarget{_d_s3231_8h_a8b94a8907a685e2e45d3e47ce074f920}{}\label{_d_s3231_8h_a8b94a8907a685e2e45d3e47ce074f920}
+
+
+Definition at line 34 of file D\+S3231.\+h.
+
+
+
+Referenced by D\+S3231\+::get\+Alarm2(), D\+S3231\+::get\+Alarm\+Type2(), and D\+S3231\+::set\+Alarm2().
+
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL}}
+\index{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL}{DS3231\_REG\_CONTROL}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S3231\+\_\+\+R\+E\+G\+\_\+\+C\+O\+N\+T\+R\+OL~(0x0\+E)}\hypertarget{_d_s3231_8h_a14b27d8bc32c34f1eaecf569355c84d3}{}\label{_d_s3231_8h_a14b27d8bc32c34f1eaecf569355c84d3}
+
+
+Definition at line 35 of file D\+S3231.\+h.
+
+
+
+Referenced by D\+S3231\+::arm\+Alarm1(), D\+S3231\+::arm\+Alarm2(), R\+T\+C\+\_\+\+D\+S3231\+::\+B\+B\+S\+Q\+W\+Enable(), D\+S3231\+::enable\+Output(), D\+S3231\+::force\+Conversion(), R\+T\+C\+\_\+\+D\+S3231\+::force\+Temp\+Conv(), R\+T\+C\+\_\+\+D\+S3231\+::get\+Control\+Register\+Data(), D\+S3231\+::get\+Output(), D\+S3231\+::is\+Armed1(), D\+S3231\+::is\+Armed2(), D\+S3231\+::is\+Output(), D\+S3231\+::set\+Battery(), D\+S3231\+::set\+Output(), R\+T\+C\+\_\+\+D\+S3231\+::\+S\+Q\+W\+Enable(), and R\+T\+C\+\_\+\+D\+S3231\+::\+S\+Q\+W\+Frequency().
+
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US}}
+\index{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US}{DS3231\_REG\_STATUS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S3231\+\_\+\+R\+E\+G\+\_\+\+S\+T\+A\+T\+US~(0x0\+F)}\hypertarget{_d_s3231_8h_aeee46891f279544efa92a99e15e8d023}{}\label{_d_s3231_8h_aeee46891f279544efa92a99e15e8d023}
+
+
+Definition at line 36 of file D\+S3231.\+h.
+
+
+
+Referenced by D\+S3231\+::clear\+Alarm1(), D\+S3231\+::clear\+Alarm2(), D\+S3231\+::enable32k\+Hz(), D\+S3231\+::is32k\+Hz(), D\+S3231\+::is\+Alarm1(), and D\+S3231\+::is\+Alarm2().
+
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}}
+\index{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE}{DS3231\_REG\_TEMPERATURE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+RE~(0x11)}\hypertarget{_d_s3231_8h_aec6b411bbd642c602496ca1143cafbf3}{}\label{_d_s3231_8h_aec6b411bbd642c602496ca1143cafbf3}
+
+
+Definition at line 37 of file D\+S3231.\+h.
+
+
+
+Referenced by D\+S3231\+::read\+Temperature().
+
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+I\+ME@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+I\+ME}}
+\index{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+I\+ME@{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+I\+ME}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+I\+ME}{DS3231\_REG\_TIME}}]{\setlength{\rightskip}{0pt plus 5cm}\#define D\+S3231\+\_\+\+R\+E\+G\+\_\+\+T\+I\+ME~(0x00)}\hypertarget{_d_s3231_8h_a142b529b95a279f6a821b94773b53ffe}{}\label{_d_s3231_8h_a142b529b95a279f6a821b94773b53ffe}
+
+
+Definition at line 32 of file D\+S3231.\+h.
+
+
+
+Referenced by D\+S3231\+::get\+Date\+Time(), and D\+S3231\+::set\+Date\+Time().
+
+\index{D\+S3231.\+h@{D\+S3231.\+h}!R\+T\+C\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+H@{R\+T\+C\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+H}}
+\index{R\+T\+C\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+H@{R\+T\+C\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+H}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{R\+T\+C\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+H}{RTCDATETIME\_STRUCT\_H}}]{\setlength{\rightskip}{0pt plus 5cm}\#define R\+T\+C\+D\+A\+T\+E\+T\+I\+M\+E\+\_\+\+S\+T\+R\+U\+C\+T\+\_\+H}\hypertarget{_d_s3231_8h_abf56fa56701817571c1f9d4593d648ce}{}\label{_d_s3231_8h_abf56fa56701817571c1f9d4593d648ce}
+
+
+Definition at line 40 of file D\+S3231.\+h.
+
+
+
+\subsection{Enumeration Type Documentation}
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+alarm1\+\_\+t@{D\+S3231\+\_\+alarm1\+\_\+t}}
+\index{D\+S3231\+\_\+alarm1\+\_\+t@{D\+S3231\+\_\+alarm1\+\_\+t}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+alarm1\+\_\+t}{DS3231\_alarm1\_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf D\+S3231\+\_\+alarm1\+\_\+t}}\hypertarget{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6}{}\label{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+S\+E\+C\+O\+ND@{D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+S\+E\+C\+O\+ND}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+S\+E\+C\+O\+ND@{D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+S\+E\+C\+O\+ND}}\item[{\em 
+D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+S\+E\+C\+O\+ND\hypertarget{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6ab431ec1e265f28031b3f528af977e510}{}\label{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6ab431ec1e265f28031b3f528af977e510}
+}]\index{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+S}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+S}}\item[{\em 
+D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+S\hypertarget{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6afd4bcd6ea8063a95b8c3bbb073d30c25}{}\label{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6afd4bcd6ea8063a95b8c3bbb073d30c25}
+}]\index{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+M\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+M\+\_\+S}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+M\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+M\+\_\+S}}\item[{\em 
+D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+M\+\_\+S\hypertarget{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6a099f764d28aa428457678a5f01848c30}{}\label{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6a099f764d28aa428457678a5f01848c30}
+}]\index{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+\+M\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+\+M\+\_\+S}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+\+M\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+\+M\+\_\+S}}\item[{\em 
+D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+\+M\+\_\+S\hypertarget{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6aa79cf5a8d792a3841444450ab2e0e7d1}{}\label{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6aa79cf5a8d792a3841444450ab2e0e7d1}
+}]\index{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+\+M\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+\+M\+\_\+S}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+\+M\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+\+M\+\_\+S}}\item[{\em 
+D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+\+M\+\_\+S\hypertarget{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6a2a6fdadd4780da2c13020690cefaa5c5}{}\label{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6a2a6fdadd4780da2c13020690cefaa5c5}
+}]\index{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+\+M\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+\+M\+\_\+S}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+\+M\+\_\+S@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+\+M\+\_\+S}}\item[{\em 
+D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+\+M\+\_\+S\hypertarget{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6a16beb03afe9c97d8e16325c3ad01db10}{}\label{_d_s3231_8h_a021549876ea6cc2f35d62387624b95c6a16beb03afe9c97d8e16325c3ad01db10}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 70 of file D\+S3231.\+h.
+
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+alarm2\+\_\+t@{D\+S3231\+\_\+alarm2\+\_\+t}}
+\index{D\+S3231\+\_\+alarm2\+\_\+t@{D\+S3231\+\_\+alarm2\+\_\+t}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+alarm2\+\_\+t}{DS3231\_alarm2\_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf D\+S3231\+\_\+alarm2\+\_\+t}}\hypertarget{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0}{}\label{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+M\+I\+N\+U\+TE@{D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+M\+I\+N\+U\+TE}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+M\+I\+N\+U\+TE@{D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+M\+I\+N\+U\+TE}}\item[{\em 
+D\+S3231\+\_\+\+E\+V\+E\+R\+Y\+\_\+\+M\+I\+N\+U\+TE\hypertarget{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a770cbe7e03272cc3a841e8498b71032f}{}\label{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a770cbe7e03272cc3a841e8498b71032f}
+}]\index{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+M@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+M}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+M@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+M}}\item[{\em 
+D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+M\hypertarget{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a14446fbbe5e452d91969cc780e5e2af8}{}\label{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a14446fbbe5e452d91969cc780e5e2af8}
+}]\index{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+M@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+M}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+M@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+M}}\item[{\em 
+D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+H\+\_\+M\hypertarget{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0abd6826df798141736a962714fec1f1bd}{}\label{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0abd6826df798141736a962714fec1f1bd}
+}]\index{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+M@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+M}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+M@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+M}}\item[{\em 
+D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+T\+\_\+\+H\+\_\+M\hypertarget{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a0d0c4c8fa1dd8d16857d043eed236611}{}\label{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a0d0c4c8fa1dd8d16857d043eed236611}
+}]\index{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+M@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+M}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+M@{D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+M}}\item[{\em 
+D\+S3231\+\_\+\+M\+A\+T\+C\+H\+\_\+\+D\+Y\+\_\+\+H\+\_\+M\hypertarget{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a6dce7af35bfcd756b188ddc564e9c00f}{}\label{_d_s3231_8h_aa0537c63605a088db9e55f744f1da4b0a6dce7af35bfcd756b188ddc564e9c00f}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 80 of file D\+S3231.\+h.
+
+\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+sqw\+\_\+t@{D\+S3231\+\_\+sqw\+\_\+t}}
+\index{D\+S3231\+\_\+sqw\+\_\+t@{D\+S3231\+\_\+sqw\+\_\+t}!D\+S3231.\+h@{D\+S3231.\+h}}
+\subsubsection[{\texorpdfstring{D\+S3231\+\_\+sqw\+\_\+t}{DS3231\_sqw\_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf D\+S3231\+\_\+sqw\+\_\+t}}\hypertarget{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1}{}\label{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+S3231\+\_\+1\+HZ@{D\+S3231\+\_\+1\+HZ}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+1\+HZ@{D\+S3231\+\_\+1\+HZ}}\item[{\em 
+D\+S3231\+\_\+1\+HZ\hypertarget{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a4b9e98e04a481a7a94b8e2c16025796c}{}\label{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a4b9e98e04a481a7a94b8e2c16025796c}
+}]\index{D\+S3231\+\_\+4096\+HZ@{D\+S3231\+\_\+4096\+HZ}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+4096\+HZ@{D\+S3231\+\_\+4096\+HZ}}\item[{\em 
+D\+S3231\+\_\+4096\+HZ\hypertarget{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a5a05f0b6d48a56c62b4bf859b1fc0622}{}\label{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a5a05f0b6d48a56c62b4bf859b1fc0622}
+}]\index{D\+S3231\+\_\+8192\+HZ@{D\+S3231\+\_\+8192\+HZ}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+8192\+HZ@{D\+S3231\+\_\+8192\+HZ}}\item[{\em 
+D\+S3231\+\_\+8192\+HZ\hypertarget{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a8d31f96bd571d27f0c3fc4c38de80f6d}{}\label{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a8d31f96bd571d27f0c3fc4c38de80f6d}
+}]\index{D\+S3231\+\_\+32768\+HZ@{D\+S3231\+\_\+32768\+HZ}!D\+S3231.\+h@{D\+S3231.\+h}}\index{D\+S3231.\+h@{D\+S3231.\+h}!D\+S3231\+\_\+32768\+HZ@{D\+S3231\+\_\+32768\+HZ}}\item[{\em 
+D\+S3231\+\_\+32768\+HZ\hypertarget{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a2df69d46cca1fbb8f057672cae4f84fa}{}\label{_d_s3231_8h_afb80663b1dbdb6c798670ca900ea35e1a2df69d46cca1fbb8f057672cae4f84fa}
+}]\end{description}
+\end{Desc}
+
+
+Definition at line 62 of file D\+S3231.\+h.
+

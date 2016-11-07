@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_abfdc12f6afdfef197c5a100a62b9514" kind="dir">
+    <compoundname>Weather_Balloon/library/LedControl-master</compoundname>
+    <innerdir refid="dir_863a6f852b9db9b130a752f72c5bfb55">Weather_Balloon/library/LedControl-master/src</innerdir>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/LedControl-master/"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_ethernet_client_stream_8h" kind="file" language="C++">
+    <compoundname>EthernetClientStream.h</compoundname>
+    <includes local="no">inttypes.h</includes>
+    <includes local="no">Stream.h</includes>
+    <includes refid="firmata_debug_8h" local="yes">firmataDebug.h</includes>
+    <incdepgraph>
+      <node id="803">
+        <label>Weather_Balloon/library/Firmata/utility/EthernetClientStream.h</label>
+        <link refid="EthernetClientStream.h"/>
+        <childnode refid="804" relation="include">
+        </childnode>
+        <childnode refid="805" relation="include">
+        </childnode>
+        <childnode refid="806" relation="include">
+        </childnode>
+      </node>
+      <node id="806">
+        <label>firmataDebug.h</label>
+        <link refid="firmata_debug_8h"/>
+      </node>
+      <node id="805">
+        <label>Stream.h</label>
+      </node>
+      <node id="804">
+        <label>inttypes.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="class_ethernet_client_stream" prot="public">EthernetClientStream</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_ethernet_client_stream_8h_1a78cc2de9e5e51df6bd9f014636a97fea" prot="public" static="no">
+        <name>MILLIS_RECONNECT</name>
+        <initializer>5000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="29" column="9" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" compoundref="_ethernet_client_stream_8h" startline="101" endline="109">EthernetClientStream::maintain</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>EthernetClientStream.h</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>An<sp/>Arduino-Stream<sp/>that<sp/>wraps<sp/>an<sp/>instance<sp/>of<sp/>Client<sp/>reconnecting<sp/>to</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>the<sp/>remote-ip<sp/>in<sp/>a<sp/>transparent<sp/>way.<sp/>A<sp/>disconnected<sp/>client<sp/>may<sp/>be</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>recognized<sp/>by<sp/>the<sp/>returnvalues<sp/>-1<sp/>from<sp/>calls<sp/>to<sp/>peek<sp/>or<sp/>read<sp/>and</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>a<sp/>0<sp/>from<sp/>calls<sp/>to<sp/>write.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2013<sp/>Norbert<sp/>Truchsess.<sp/>All<sp/>rights<sp/>reserved.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>See<sp/>file<sp/>LICENSE.txt<sp/>for<sp/>further<sp/>informations<sp/>on<sp/>licensing<sp/>terms.</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>Last<sp/>updated<sp/>June<sp/>18th,<sp/>2016</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>ETHERNETCLIENTSTREAM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ETHERNETCLIENTSTREAM_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;inttypes.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Stream.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>SERIAL_DEBUG</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="firmata_debug_8h" kindref="compound">firmataDebug.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_ethernet_client_stream_8h_1a78cc2de9e5e51df6bd9f014636a97fea" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MILLIS_RECONNECT<sp/>5000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="class_ethernet_client_stream" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_ethernet_client_stream" kindref="compound">EthernetClientStream</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Stream</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_ethernet_client_stream_1ad0fc03caf9c77123d2557404b4e13904" kindref="member">EthernetClientStream</ref>(Client<sp/>&amp;client,<sp/>IPAddress<sp/>localip,<sp/>IPAddress<sp/>ip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>host,<sp/>uint16_t<sp/>port);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1af791449a05185d079c66a3ce7ceb8867" kindref="member">available</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1ab09d7fee2e6e57a4ae63227226991673" kindref="member">read</ref>();</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1ab48794c4ecdcf568ca915c54849e33d3" kindref="member">peek</ref>();</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1a6bfd307971b4f6936cbb00eb04276e7f" kindref="member">flush</ref>();</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1aca0236433d48beb3ada438dbdb425bbd" kindref="member">write</ref>(uint8_t);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" kindref="member">maintain</ref>(IPAddress<sp/>localip);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>Client<sp/>&amp;client;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>IPAddress<sp/>localip;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>IPAddress<sp/>ip;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>host;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>port;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>connected;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>uint32_t<sp/>time_connect;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>maintain();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>stop();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/>*<sp/>EthernetClientStream.cpp</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/>*<sp/>Copied<sp/>here<sp/>as<sp/>a<sp/>hack<sp/>to<sp/>linker<sp/>issues<sp/>with<sp/>3rd<sp/>party<sp/>board<sp/>packages<sp/>that<sp/>don&apos;t<sp/>properly</highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/>*<sp/>implement<sp/>the<sp/>Arduino<sp/>network<sp/>APIs.</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60" refid="class_ethernet_client_stream_1ad0fc03caf9c77123d2557404b4e13904" refkind="member"><highlight class="normal"><ref refid="class_ethernet_client_stream_1ad0fc03caf9c77123d2557404b4e13904" kindref="member">EthernetClientStream::EthernetClientStream</ref>(Client<sp/>&amp;client,<sp/>IPAddress<sp/>localip,<sp/>IPAddress<sp/>ip,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>host,<sp/>uint16_t<sp/>port)</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>:<sp/>client(client),</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/>localip(localip),</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>ip(ip),</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/>host(host),</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>port(port),</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>connected(false)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71" refid="class_ethernet_client_stream_1af791449a05185d079c66a3ce7ceb8867" refkind="member"><highlight class="normal"><ref refid="class_ethernet_client_stream_1af791449a05185d079c66a3ce7ceb8867" kindref="member">EthernetClientStream::available</ref>()</highlight></codeline>
+<codeline lineno="72"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" kindref="member">maintain</ref>()<sp/>?<sp/>client.available()<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77" refid="class_ethernet_client_stream_1ab09d7fee2e6e57a4ae63227226991673" refkind="member"><highlight class="normal"><ref refid="class_ethernet_client_stream_1ab09d7fee2e6e57a4ae63227226991673" kindref="member">EthernetClientStream::read</ref>()</highlight></codeline>
+<codeline lineno="78"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" kindref="member">maintain</ref>()<sp/>?<sp/>client.read()<sp/>:<sp/>-1;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83" refid="class_ethernet_client_stream_1ab48794c4ecdcf568ca915c54849e33d3" refkind="member"><highlight class="normal"><ref refid="class_ethernet_client_stream_1ab48794c4ecdcf568ca915c54849e33d3" kindref="member">EthernetClientStream::peek</ref>()</highlight></codeline>
+<codeline lineno="84"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" kindref="member">maintain</ref>()<sp/>?<sp/>client.peek()<sp/>:<sp/>-1;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_ethernet_client_stream_1a6bfd307971b4f6936cbb00eb04276e7f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1a6bfd307971b4f6936cbb00eb04276e7f" kindref="member">EthernetClientStream::flush</ref>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" kindref="member">maintain</ref>())</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>client.flush();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="class_ethernet_client_stream_1aca0236433d48beb3ada438dbdb425bbd" refkind="member"><highlight class="normal"><ref refid="class_ethernet_client_stream_1aca0236433d48beb3ada438dbdb425bbd" kindref="member">EthernetClientStream::write</ref>(uint8_t<sp/>c)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" kindref="member">maintain</ref>()<sp/>?<sp/>client.write(c)<sp/>:<sp/>0;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" refkind="member"><highlight class="normal"><ref refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" kindref="member">EthernetClientStream::maintain</ref>(IPAddress<sp/>localip)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>ensure<sp/>the<sp/>local<sp/>IP<sp/>is<sp/>updated<sp/>in<sp/>the<sp/>case<sp/>that<sp/>it<sp/>is<sp/>changed<sp/>by<sp/>the<sp/>DHCP<sp/>server</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(this-&gt;localip<sp/>!=<sp/>localip)<sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/>this-&gt;localip<sp/>=<sp/>localip;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(connected)</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>stop();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal">EthernetClientStream::stop()</highlight></codeline>
+<codeline lineno="113"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>client.stop();</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>connected<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/>time_connect<sp/>=<sp/>millis();</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><ref refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" kindref="member">EthernetClientStream::maintain</ref>()</highlight></codeline>
+<codeline lineno="121"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(client<sp/>&amp;&amp;<sp/>client.connected())</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(connected)<sp/>{</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>stop();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>the<sp/>client<sp/>is<sp/>disconnected,<sp/>attempt<sp/>to<sp/>reconnect<sp/>every<sp/>5<sp/>seconds</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(millis()<sp/>-<sp/>time_connect<sp/>&gt;=<sp/><ref refid="_ethernet_client_stream_8h_1a78cc2de9e5e51df6bd9f014636a97fea" kindref="member">MILLIS_RECONNECT</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/>connected<sp/>=<sp/>host<sp/>?<sp/>client.connect(host,<sp/>port)<sp/>:<sp/>client.connect(ip,<sp/>port);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!connected)<sp/>{</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>time_connect<sp/>=<sp/>millis();</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="firmata_debug_8h_1a8e30ff0704664fcb13dabf0c4dc5c8f5" kindref="member">DEBUG_PRINTLN</ref>(</highlight><highlight class="stringliteral">&quot;connection<sp/>failed.<sp/>attempting<sp/>to<sp/>reconnect...&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="firmata_debug_8h_1a8e30ff0704664fcb13dabf0c4dc5c8f5" kindref="member">DEBUG_PRINTLN</ref>(</highlight><highlight class="stringliteral">&quot;connected&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>connected;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>ETHERNETCLIENTSTREAM_H<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,325 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="wifi_config_8h" kind="file" language="C++">
+    <compoundname>wifiConfig.h</compoundname>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="wifi_config_8h_1ac42367fe5c999ec6650de83e9d72fe8c" prot="public" static="no">
+        <name>SERVER_PORT</name>
+        <initializer>3030</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h" line="133" column="9" bodyfile="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h" bodystart="133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="wifi_config_8h_1a4b5942a797892f1fed6ef1b5d6f2f81d" prot="public" static="no">
+        <name>WIFI_WPA_SECURITY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h" line="148" column="9" bodyfile="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char ssid[]</definition>
+        <argsstring>[]</argsstring>
+        <name>ssid</name>
+        <initializer>= &quot;your_network_name&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h" line="119" column="1" bodyfile="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h" bodystart="119" bodyend="-1"/>
+        <referencedby refid="class_wi_fi_stream_1a3aee2b1e2f93e2c6488051b249467254" compoundref="_wi_fi_stream_8h" startline="154" endline="161">WiFiStream::begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="wifi_config_8h_1af835aa6ca63e9a101de93aac1f859878" prot="public" static="no" mutable="no">
+        <type>char</type>
+        <definition>char wpa_passphrase[]</definition>
+        <argsstring>[]</argsstring>
+        <name>wpa_passphrase</name>
+        <initializer>= &quot;your_wpa_passphrase&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h" line="151" column="1" bodyfile="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="wifi_config_8h_1a77a9d2319914e80a4858a3c76ec39113" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_wi_fi_server_stream" kindref="compound">WiFiServerStream</ref></type>
+        <definition>WiFiServerStream stream</definition>
+        <argsstring>(SERVER_PORT)</argsstring>
+        <name>stream</name>
+        <param>
+          <type><ref refid="wifi_config_8h_1ac42367fe5c999ec6650de83e9d72fe8c" kindref="member">SERVER_PORT</ref></type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h" line="216" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*==============================================================================</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/>*<sp/>WIFI<sp/>CONFIGURATION</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/>*<sp/>You<sp/>must<sp/>configure<sp/>your<sp/>particular<sp/>hardware.<sp/>Follow<sp/>the<sp/>steps<sp/>below.</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/>*<sp/>By<sp/>default,<sp/>StandardFirmataWiFi<sp/>is<sp/>configured<sp/>as<sp/>a<sp/>TCP<sp/>server,<sp/>to<sp/>configure</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/>*<sp/>as<sp/>a<sp/>TCP<sp/>client,<sp/>see<sp/>STEP<sp/>2.</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/>*============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STEP<sp/>1<sp/>[REQUIRED]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Uncomment<sp/>/<sp/>comment<sp/>the<sp/>appropriate<sp/>set<sp/>of<sp/>includes<sp/>for<sp/>your<sp/>hardware<sp/>(OPTION<sp/>A,<sp/>B<sp/>or<sp/>C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Arduino<sp/>MKR1000<sp/>or<sp/>ESP8266<sp/>are<sp/>enabled<sp/>by<sp/>default<sp/>if<sp/>compiling<sp/>for<sp/>either<sp/>of<sp/>those<sp/>boards.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>*<sp/>OPTION<sp/>A:<sp/>Configure<sp/>for<sp/>Arduino<sp/>MKR1000<sp/>or<sp/>Arduino<sp/>WiFi<sp/>Shield<sp/>101</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/>*<sp/>This<sp/>will<sp/>configure<sp/>StandardFirmataWiFi<sp/>to<sp/>use<sp/>the<sp/>WiFi101<sp/>library,<sp/>which<sp/>works<sp/>with<sp/>the</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"><sp/>*<sp/>Arduino<sp/>WiFi101<sp/>shield<sp/>and<sp/>devices<sp/>that<sp/>have<sp/>the<sp/>WiFi101<sp/>chip<sp/>built<sp/>in<sp/>(such<sp/>as<sp/>the<sp/>MKR1000).</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"><sp/>*<sp/>It<sp/>is<sp/>compatible<sp/>with<sp/>802.11<sp/>B/G/N<sp/>networks.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="21"><highlight class="comment"><sp/>*<sp/>If<sp/>you<sp/>are<sp/>using<sp/>the<sp/>MKR1000<sp/>board,<sp/>continue<sp/>on<sp/>to<sp/>STEP<sp/>2.<sp/>If<sp/>you<sp/>are<sp/>using<sp/>the<sp/>WiFi<sp/>101<sp/>shield,</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"><sp/>*<sp/>follow<sp/>the<sp/>instructions<sp/>below.</highlight></codeline>
+<codeline lineno="23"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="24"><highlight class="comment"><sp/>*<sp/>To<sp/>enable<sp/>for<sp/>the<sp/>WiFi<sp/>101<sp/>shield,<sp/>uncomment<sp/>the<sp/>#define<sp/>WIFI_101<sp/>below<sp/>and<sp/>verify<sp/>the</highlight></codeline>
+<codeline lineno="25"><highlight class="comment"><sp/>*<sp/>#define<sp/>ARDUINO_WIFI_SHIELD<sp/>is<sp/>commented<sp/>out<sp/>for<sp/>OPTION<sp/>B.</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/>*<sp/>IMPORTANT:<sp/>You<sp/>must<sp/>have<sp/>the<sp/>WiFI<sp/>101<sp/>library<sp/>installed.<sp/>To<sp/>easily<sp/>install<sp/>this<sp/>library,<sp/>open</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/>*<sp/>the<sp/>library<sp/>manager<sp/>via:<sp/>Arduino<sp/>IDE<sp/>Menus:<sp/>Sketch<sp/>&gt;<sp/>Include<sp/>Library<sp/>&gt;<sp/>Manage<sp/>Libraries<sp/>&gt;<sp/>filter</highlight></codeline>
+<codeline lineno="29"><highlight class="comment"><sp/>*<sp/>search<sp/>for<sp/>&quot;WiFi101&quot;<sp/>&gt;<sp/>Select<sp/>the<sp/>result<sp/>and<sp/>click<sp/>&apos;install&apos;</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>WIFI_101</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment">//do<sp/>not<sp/>modify<sp/>the<sp/>following<sp/>11<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(ARDUINO_SAMD_MKR1000)<sp/>&amp;&amp;<sp/>!defined(WIFI_101)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="comment">//<sp/>automatically<sp/>include<sp/>if<sp/>compiling<sp/>for<sp/>MRK1000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIFI_101</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIFI_101</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WiFi101.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_wi_fi_client_stream_8h" kindref="compound">utility/WiFiClientStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_wi_fi_server_stream_8h" kindref="compound">utility/WiFiServerStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>WIFI_LIB_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/>*<sp/>OPTION<sp/>B:<sp/>Configure<sp/>for<sp/>legacy<sp/>Arduino<sp/>WiFi<sp/>shield</highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/>*<sp/>This<sp/>will<sp/>configure<sp/>StandardFirmataWiFi<sp/>to<sp/>use<sp/>the<sp/>original<sp/>WiFi<sp/>library<sp/>(deprecated)<sp/>provided</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/>*<sp/>with<sp/>the<sp/>Arduino<sp/>IDE.<sp/>It<sp/>is<sp/>supported<sp/>by<sp/>the<sp/>Arduino<sp/>WiFi<sp/>shield<sp/>(a<sp/>discontinued<sp/>product)<sp/>and</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/>*<sp/>is<sp/>compatible<sp/>with<sp/>802.11<sp/>B/G<sp/>networks.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/>*<sp/>To<sp/>configure<sp/>StandardFirmataWiFi<sp/>to<sp/>use<sp/>the<sp/>legacy<sp/>Arduino<sp/>WiFi<sp/>shield</highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/>*<sp/>leave<sp/>the<sp/>#define<sp/>below<sp/>uncommented<sp/>and<sp/>ensure<sp/>#define<sp/>WIFI_101<sp/>is<sp/>commented<sp/>out<sp/>for<sp/>OPTION<sp/>A.</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>ARDUINO_WIFI_SHIELD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment">//do<sp/>not<sp/>modify<sp/>the<sp/>following<sp/>10<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ARDUINO_WIFI_SHIELD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WiFi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_wi_fi_client_stream_8h" kindref="compound">utility/WiFiClientStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_wi_fi_server_stream_8h" kindref="compound">utility/WiFiServerStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>WIFI_LIB_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>MULTIPLE_WIFI_LIB_INCLUDES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>WIFI_LIB_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/>*<sp/>OPTION<sp/>C:<sp/>Configure<sp/>for<sp/>ESP8266</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/>*<sp/>This<sp/>will<sp/>configure<sp/>StandardFirmataWiFi<sp/>to<sp/>use<sp/>the<sp/>ESP8266WiFi<sp/>library<sp/>for<sp/>boards</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/>*<sp/>with<sp/>an<sp/>ESP8266<sp/>chip.<sp/>It<sp/>is<sp/>compatible<sp/>with<sp/>802.11<sp/>B/G/N<sp/>networks.</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/>*<sp/>The<sp/>appropriate<sp/>libraries<sp/>are<sp/>included<sp/>automatically<sp/>when<sp/>compiling<sp/>for<sp/>the<sp/>ESP8266<sp/>so</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/>*<sp/>continue<sp/>on<sp/>to<sp/>STEP<sp/>2.</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/>*<sp/>IMPORTANT:<sp/>You<sp/>must<sp/>have<sp/>the<sp/>esp8266<sp/>board<sp/>support<sp/>installed.<sp/>To<sp/>easily<sp/>install<sp/>this<sp/>board<sp/>see</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/>*<sp/>the<sp/>instructions<sp/>here:<sp/>https://github.com/esp8266/Arduino#installing-with-boards-manager.</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment">//do<sp/>not<sp/>modify<sp/>the<sp/>following<sp/>14<sp/>lines</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment">//<sp/>automatically<sp/>include<sp/>if<sp/>compiling<sp/>for<sp/>ESP8266</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>ESP8266_WIFI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>ESP8266_WIFI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;ESP8266WiFi.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_wi_fi_client_stream_8h" kindref="compound">utility/WiFiClientStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_wi_fi_server_stream_8h" kindref="compound">utility/WiFiServerStream.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#ifdef<sp/>WIFI_LIB_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>MULTIPLE_WIFI_LIB_INCLUDES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#define<sp/>WIFI_LIB_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/>*<sp/>OPTION<sp/>D:<sp/>Configure<sp/>for<sp/>HUZZAH</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/>*<sp/>HUZZAH<sp/>with<sp/>CC3000<sp/>is<sp/>not<sp/>yet<sp/>supported,<sp/>this<sp/>will<sp/>be<sp/>added<sp/>in<sp/>a<sp/>later<sp/>revision<sp/>to</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/>*<sp/>StandardFirmataWiFi.</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/>*<sp/>For<sp/>HUZZAH<sp/>with<sp/>ESP8266<sp/>use<sp/>ESP8266_WIFI.</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment">//------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment">//------------------------------</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>HUZZAH_WIFI</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STEP<sp/>2<sp/>[OPTIONAL<sp/>for<sp/>all<sp/>boards<sp/>and<sp/>shields]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>you<sp/>want<sp/>to<sp/>setup<sp/>you<sp/>board<sp/>as<sp/>a<sp/>TCP<sp/>client,<sp/>uncomment<sp/>the<sp/>following<sp/>define<sp/>and<sp/>replace</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment">//<sp/>the<sp/>IP<sp/>address<sp/>with<sp/>the<sp/>IP<sp/>address<sp/>of<sp/>your<sp/>server.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>SERVER_IP<sp/>10,<sp/>0,<sp/>0,<sp/>15</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STEP<sp/>3<sp/>[REQUIRED<sp/>for<sp/>all<sp/>boards<sp/>and<sp/>shields]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment">//<sp/>replace<sp/>this<sp/>with<sp/>your<sp/>wireless<sp/>network<sp/>SSID</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119" refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1a375b545f86fd7e1d5d44926f28b75800" kindref="member">ssid</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;your_network_name&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STEP<sp/>4<sp/>[OPTIONAL<sp/>for<sp/>all<sp/>boards<sp/>and<sp/>shields]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>you<sp/>want<sp/>to<sp/>use<sp/>a<sp/>static<sp/>IP<sp/>(v4)<sp/>address,<sp/>uncomment<sp/>the<sp/>line<sp/>below.<sp/>You<sp/>can<sp/>also<sp/>change<sp/>the<sp/>IP.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>first<sp/>line<sp/>is<sp/>commented<sp/>out,<sp/>the<sp/>WiFi<sp/>shield<sp/>will<sp/>attempt<sp/>to<sp/>get<sp/>an<sp/>IP<sp/>from<sp/>the<sp/>DHCP<sp/>server.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>you<sp/>are<sp/>using<sp/>a<sp/>static<sp/>IP<sp/>with<sp/>the<sp/>ESP8266<sp/>then<sp/>you<sp/>must<sp/>also<sp/>uncomment<sp/>the<sp/>SUBNET<sp/>and<sp/>GATEWAY.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>STATIC_IP_ADDRESS<sp/><sp/>192,168,1,113</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>SUBNET_MASK<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>255,255,255,0<sp/>//<sp/>REQUIRED<sp/>for<sp/>ESP8266_WIFI,<sp/>optional<sp/>for<sp/>others</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>GATEWAY_IP_ADDRESS<sp/>0,0,0,0<sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>REQUIRED<sp/>for<sp/>ESP8266_WIFI,<sp/>optional<sp/>for<sp/>others</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STEP<sp/>5<sp/>[REQUIRED<sp/>for<sp/>all<sp/>boards<sp/>and<sp/>shields]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment">//<sp/>define<sp/>your<sp/>port<sp/>number<sp/>here,<sp/>you<sp/>will<sp/>need<sp/>this<sp/>to<sp/>open<sp/>a<sp/>TCP<sp/>connection<sp/>to<sp/>your<sp/>Arduino</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133" refid="wifi_config_8h_1ac42367fe5c999ec6650de83e9d72fe8c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SERVER_PORT<sp/>3030</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight><highlight class="comment">//<sp/>STEP<sp/>6<sp/>[REQUIRED<sp/>for<sp/>all<sp/>boards<sp/>and<sp/>shields]</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment">//<sp/>determine<sp/>your<sp/>network<sp/>security<sp/>type<sp/>(OPTION<sp/>A,<sp/>B,<sp/>or<sp/>C).<sp/>Option<sp/>A<sp/>is<sp/>the<sp/>most<sp/>common,<sp/>and<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment">//<sp/>default.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/>*<sp/>OPTION<sp/>A:<sp/>WPA<sp/>/<sp/>WPA2</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/>*<sp/>WPA<sp/>is<sp/>the<sp/>most<sp/>common<sp/>network<sp/>security<sp/>type.<sp/>A<sp/>passphrase<sp/>is<sp/>required<sp/>to<sp/>connect<sp/>to<sp/>this<sp/>type.</highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/>*<sp/>To<sp/>enable,<sp/>leave<sp/>#define<sp/>WIFI_WPA_SECURITY<sp/>uncommented<sp/>below,<sp/>set<sp/>your<sp/>wpa_passphrase<sp/>value</highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/>*<sp/>appropriately,<sp/>and<sp/>do<sp/>not<sp/>uncomment<sp/>the<sp/>#define<sp/>values<sp/>under<sp/>options<sp/>B<sp/>and<sp/>C</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="wifi_config_8h_1a4b5942a797892f1fed6ef1b5d6f2f81d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>WIFI_WPA_SECURITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIFI_WPA_SECURITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151" refid="wifi_config_8h_1af835aa6ca63e9a101de93aac1f859878" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/><ref refid="wifi_config_8h_1af835aa6ca63e9a101de93aac1f859878" kindref="member">wpa_passphrase</ref>[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;your_wpa_passphrase&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//WIFI_WPA_SECURITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/>*<sp/>OPTION<sp/>B:<sp/>WEP</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/>*<sp/>WEP<sp/>is<sp/>a<sp/>less<sp/>common<sp/>(and<sp/>regarded<sp/>as<sp/>less<sp/>safe)<sp/>security<sp/>type.<sp/>A<sp/>WEP<sp/>key<sp/>and<sp/>its<sp/>associated</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/>*<sp/>index<sp/>are<sp/>required<sp/>to<sp/>connect<sp/>to<sp/>this<sp/>type.</highlight></codeline>
+<codeline lineno="160"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/>*<sp/>To<sp/>enable,<sp/>Uncomment<sp/>the<sp/>#define<sp/>below,<sp/>set<sp/>your<sp/>wep_index<sp/>and<sp/>wep_key<sp/>values<sp/>appropriately,</highlight></codeline>
+<codeline lineno="162"><highlight class="comment"><sp/>*<sp/>and<sp/>verify<sp/>the<sp/>#define<sp/>values<sp/>under<sp/>options<sp/>A<sp/>and<sp/>C<sp/>are<sp/>commented<sp/>out.</highlight></codeline>
+<codeline lineno="163"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>WIFI_WEP_SECURITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>WIFI_WEP_SECURITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight><highlight class="comment">//The<sp/>wep_index<sp/>below<sp/>is<sp/>a<sp/>zero-indexed<sp/>value.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight><highlight class="comment">//Valid<sp/>indices<sp/>are<sp/>[0-3],<sp/>even<sp/>if<sp/>your<sp/>router/gateway<sp/>numbers<sp/>your<sp/>keys<sp/>[1-4].</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal">byte<sp/>wep_index<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>wep_key[]<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;your_wep_key&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//WIFI_WEP_SECURITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/>*<sp/>OPTION<sp/>C:<sp/>Open<sp/>network<sp/>(no<sp/>security)</highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/>*<sp/>Open<sp/>networks<sp/>have<sp/>no<sp/>security,<sp/>can<sp/>be<sp/>connected<sp/>to<sp/>by<sp/>any<sp/>device<sp/>that<sp/>knows<sp/>the<sp/>ssid,<sp/>and<sp/>are</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/>*<sp/>unsafe.</highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/>*</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/>*<sp/>To<sp/>enable,<sp/>uncomment<sp/>#define<sp/>WIFI_NO_SECURITY<sp/>below<sp/>and<sp/>verify<sp/>the<sp/>#define<sp/>values</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/>*<sp/>under<sp/>options<sp/>A<sp/>and<sp/>B<sp/>are<sp/>commented<sp/>out.</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>WIFI_NO_SECURITY</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment">/*==============================================================================</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/>*<sp/>CONFIGURATION<sp/>ERROR<sp/>CHECK<sp/>(don&apos;t<sp/>change<sp/>anything<sp/>here)</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/>*============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>MULTIPLE_WIFI_LIB_INCLUDES</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;you<sp/>may<sp/>not<sp/>define<sp/>more<sp/>than<sp/>one<sp/>wifi<sp/>device<sp/>type<sp/>in<sp/>wifiConfig.h.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>WIFI_LIB_INCLUDED</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;you<sp/>must<sp/>define<sp/>a<sp/>wifi<sp/>device<sp/>type<sp/>in<sp/>wifiConfig.h.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>((defined(WIFI_NO_SECURITY)<sp/>&amp;&amp;<sp/>(defined(WIFI_WEP_SECURITY)<sp/>||<sp/>defined(WIFI_WPA_SECURITY)))<sp/>||<sp/>(defined(WIFI_WEP_SECURITY)<sp/>&amp;&amp;<sp/>defined(WIFI_WPA_SECURITY)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;you<sp/>may<sp/>not<sp/>define<sp/>more<sp/>than<sp/>one<sp/>security<sp/>type<sp/>at<sp/>the<sp/>same<sp/>time<sp/>in<sp/>wifiConfig.h.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//WIFI_*<sp/>security<sp/>define<sp/>check</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>!(defined(WIFI_NO_SECURITY)<sp/>||<sp/>defined(WIFI_WEP_SECURITY)<sp/>||<sp/>defined(WIFI_WPA_SECURITY))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;you<sp/>must<sp/>define<sp/>a<sp/>wifi<sp/>security<sp/>type<sp/>in<sp/>wifiConfig.h.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/><sp/>//WIFI_*<sp/>security<sp/>define<sp/>check</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(defined(ESP8266_WIFI)<sp/>&amp;&amp;<sp/>!(defined(WIFI_NO_SECURITY)<sp/>||<sp/>(defined(WIFI_WPA_SECURITY))))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#error<sp/>&quot;you<sp/>must<sp/>choose<sp/>between<sp/>WIFI_NO_SECURITY<sp/>and<sp/>WIFI_WPA_SECURITY&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment">/*==============================================================================</highlight></codeline>
+<codeline lineno="210"><highlight class="comment"><sp/>*<sp/>WIFI<sp/>STREAM<sp/>(don&apos;t<sp/>change<sp/>anything<sp/>here)</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/>*============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>SERVER_IP</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><ref refid="class_wi_fi_client_stream" kindref="compound">WiFiClientStream</ref><sp/><ref refid="wifi_config_8h_1a77a9d2319914e80a4858a3c76ec39113" kindref="member">stream</ref>(IPAddress(SERVER_IP),<sp/><ref refid="wifi_config_8h_1ac42367fe5c999ec6650de83e9d72fe8c" kindref="member">SERVER_PORT</ref>);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><ref refid="class_wi_fi_server_stream" kindref="compound">WiFiServerStream</ref><sp/><ref refid="wifi_config_8h_1a77a9d2319914e80a4858a3c76ec39113" kindref="member">stream</ref>(<ref refid="wifi_config_8h_1ac42367fe5c999ec6650de83e9d72fe8c" kindref="member">SERVER_PORT</ref>);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">/*==============================================================================</highlight></codeline>
+<codeline lineno="220"><highlight class="comment"><sp/>*<sp/>PIN<sp/>IGNORE<sp/>MACROS<sp/>(don&apos;t<sp/>change<sp/>anything<sp/>here)</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/>*============================================================================*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined(WIFI_101)<sp/>&amp;&amp;<sp/>!defined(ARDUINO_SAMD_MKR1000)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ignore<sp/>SPI<sp/>pins,<sp/>pin<sp/>5<sp/>(reset<sp/>WiFi101<sp/>shield),<sp/>pin<sp/>7<sp/>(WiFi<sp/>handshake)<sp/>and<sp/>pin<sp/>10<sp/>(WiFi<sp/>SS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment">//<sp/>also<sp/>don&apos;t<sp/>ignore<sp/>SS<sp/>pin<sp/>if<sp/>it&apos;s<sp/>not<sp/>pin<sp/>10.<sp/>Not<sp/>needed<sp/>for<sp/>Arduino<sp/>MKR1000.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_IGNORE_PIN(p)<sp/><sp/>((p)<sp/>==<sp/>10<sp/>||<sp/>(IS_PIN_SPI(p)<sp/>&amp;&amp;<sp/>(p)<sp/>!=<sp/>SS)<sp/>||<sp/>(p)<sp/>==<sp/>5<sp/>||<sp/>(p)<sp/>==<sp/>7)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(ARDUINO_WIFI_SHIELD)<sp/>&amp;&amp;<sp/>defined(__AVR_ATmega32U4__)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ignore<sp/>SPI<sp/>pins,<sp/>pin<sp/>4<sp/>(SS<sp/>for<sp/>SD-Card<sp/>on<sp/>WiFi-shield),<sp/>pin<sp/>7<sp/>(WiFi<sp/>handshake)<sp/>and<sp/>pin<sp/>10<sp/>(WiFi<sp/>SS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment">//<sp/>On<sp/>Leonardo,<sp/>pin<sp/>24<sp/>maps<sp/>to<sp/>D4<sp/>and<sp/>pin<sp/>28<sp/>maps<sp/>to<sp/>D10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_IGNORE_PIN(p)<sp/><sp/>((IS_PIN_SPI(p)<sp/>||<sp/>(p)<sp/>==<sp/>4)<sp/>||<sp/>(p)<sp/>==<sp/>7<sp/>||<sp/>(p)<sp/>==<sp/>10<sp/>||<sp/>(p)<sp/>==<sp/>24<sp/>||<sp/>(p)<sp/>==<sp/>28)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(ARDUINO_WIFI_SHIELD)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment">//<sp/>ignore<sp/>SPI<sp/>pins,<sp/>pin<sp/>4<sp/>(SS<sp/>for<sp/>SD-Card<sp/>on<sp/>WiFi-shield),<sp/>pin<sp/>7<sp/>(WiFi<sp/>handshake)<sp/>and<sp/>pin<sp/>10<sp/>(WiFi<sp/>SS)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_IGNORE_PIN(p)<sp/><sp/>((IS_PIN_SPI(p)<sp/>||<sp/>(p)<sp/>==<sp/>4)<sp/>||<sp/>(p)<sp/>==<sp/>7<sp/>||<sp/>(p)<sp/>==<sp/>10)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight><highlight class="preprocessor">#elif<sp/>defined(ESP8266_WIFI)<sp/>&amp;&amp;<sp/>defined(SERIAL_DEBUG)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>IS_IGNORE_PIN(p)<sp/><sp/>((p)<sp/>==<sp/>1)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"></highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Firmata/examples/StandardFirmataWiFi/wifiConfig.h"/>
+  </compounddef>
+</doxygen>

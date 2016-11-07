@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="structdevice_settings" kind="struct" language="C++" prot="public">
+    <compoundname>deviceSettings</compoundname>
+    <includes refid="_l_s_m9_d_s1___types_8h" local="no">LSM9DS1_Types.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t deviceSettings::commInterface</definition>
+        <argsstring></argsstring>
+        <name>commInterface</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="200" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="200" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">LSM9DS1::begin</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a263eed4b52ad087a1195755c6ba49e62" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="973" endline="981">LSM9DS1::xgWriteByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1afc171c924102c97fa1d88fa7f48bd167" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="983" endline="991">LSM9DS1::mWriteByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1af7f9789df6f0178764c815a3380c202a" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="993" endline="1001">LSM9DS1::xgReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae0a9cbfd74b1f4676f091c2d8e491d77" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1003" endline="1011">LSM9DS1::xgReadBytes</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1ae4e470321567e4f93fc09f4cc6cd9efa" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1013" endline="1021">LSM9DS1::mReadByte</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1acfdf9862cad1e66c9fb61a17bfbe7477" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="1023" endline="1031">LSM9DS1::mReadBytes</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a2c2e98945e78daa792b87b30868c3907" compoundref="_weather___balloon_8cpp" startline="884" endline="907">configure_LSM9DS1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice_settings_1a2f43ac785e01fcbcfaf8436885f638ab" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t deviceSettings::agAddress</definition>
+        <argsstring></argsstring>
+        <name>agAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="201" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="201" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">LSM9DS1::begin</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a2c2e98945e78daa792b87b30868c3907" compoundref="_weather___balloon_8cpp" startline="884" endline="907">configure_LSM9DS1</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="structdevice_settings_1aec4e1d3e3f38b4e3e0f74f1640e16faa" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t deviceSettings::mAddress</definition>
+        <argsstring></argsstring>
+        <name>mAddress</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="202" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="202" bodyend="-1"/>
+        <referencedby refid="class_l_s_m9_d_s1_1aa4f74e09e93c0133dc30545d4492849e" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="50" endline="139">LSM9DS1::init</referencedby>
+        <referencedby refid="class_l_s_m9_d_s1_1a8728e560c76bd120b3711af15a6ecbd6" compoundref="_spark_fun_l_s_m9_d_s1_8cpp" startline="142" endline="181">LSM9DS1::begin</referencedby>
+        <referencedby refid="_weather___balloon_8cpp_1a2c2e98945e78daa792b87b30868c3907" compoundref="_weather___balloon_8cpp" startline="884" endline="907">configure_LSM9DS1</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" line="199" column="1" bodyfile="Weather_Balloon/library/SparkFun_LSM9DS1/src/LSM9DS1_Types.h" bodystart="198" bodyend="203"/>
+    <listofallmembers>
+      <member refid="structdevice_settings_1a2f43ac785e01fcbcfaf8436885f638ab" prot="public" virt="non-virtual"><scope>deviceSettings</scope><name>agAddress</name></member>
+      <member refid="structdevice_settings_1a6512c63d06cce5f99760b1b3a6a4dfe9" prot="public" virt="non-virtual"><scope>deviceSettings</scope><name>commInterface</name></member>
+      <member refid="structdevice_settings_1aec4e1d3e3f38b4e3e0f74f1640e16faa" prot="public" virt="non-virtual"><scope>deviceSettings</scope><name>mAddress</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

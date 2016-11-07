@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_adafruit___t_s_l2561-master_2_r_e_a_d_m_e_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#Adafruit<sp/>TSL2561<sp/>Light<sp/>Sensor<sp/>Driver<sp/>#</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>driver<sp/>is<sp/>for<sp/>the<sp/>Adafruit<sp/>TSL2561<sp/>Breakout,<sp/>and<sp/>is<sp/>based<sp/>on<sp/>Adafruit&apos;s<sp/>Unified<sp/>Sensor<sp/>Library<sp/>(Adafruit_Sensor).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>driver<sp/>supports<sp/>manual<sp/>or<sp/>&apos;auto&apos;<sp/>gain.<sp/>Adjusting<sp/>the<sp/>gain<sp/>allows<sp/>you<sp/>to<sp/>make<sp/>the<sp/>sensor<sp/>more<sp/>or<sp/>less<sp/>&apos;sensitive&apos;<sp/>to<sp/>light<sp/>(depending<sp/>on<sp/>if<sp/>you<sp/>are<sp/>indoors<sp/>or<sp/>outdoors,<sp/>for<sp/>example):</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">tsl.setGain(TSL2561_GAIN_1X);<sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>No<sp/>gain<sp/>...<sp/>use<sp/>in<sp/>bright<sp/>light<sp/>to<sp/>avoid<sp/>sensor<sp/>saturation<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">tsl.setGain(TSL2561_GAIN_16X);<sp/><sp/><sp/><sp/><sp/>/*<sp/>16x<sp/>gain<sp/>...<sp/>use<sp/>in<sp/>low<sp/>light<sp/>to<sp/>boost<sp/>sensitivity<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">tsl.enableAutoGain(true);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>Auto-gain<sp/>...<sp/>switches<sp/>automatically<sp/>between<sp/>1x<sp/>and<sp/>16x<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>driver<sp/>also<sp/>supports<sp/>as<sp/>automatic<sp/>clipping<sp/>detection,<sp/>and<sp/>will<sp/>return<sp/>&apos;65536&apos;<sp/>lux<sp/>when<sp/>the<sp/>sensor<sp/>is<sp/>saturated<sp/>and<sp/>data<sp/>is<sp/>unreliable.<sp/>tsl.getEvent<sp/>will<sp/>return<sp/>false<sp/>in<sp/>case<sp/>of<sp/>saturation<sp/>and<sp/>true<sp/>in<sp/>case<sp/>of<sp/>valid<sp/>light<sp/>data.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>About<sp/>the<sp/>TSL2561<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>TSL2561<sp/>is<sp/>a<sp/>16-bit<sp/>digital<sp/>(I2C)<sp/>light<sp/>sensor,<sp/>with<sp/>adjustable<sp/>gain<sp/>and<sp/>&apos;integration<sp/>time&apos;.<sp/><sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Adjusting<sp/>the<sp/>&apos;integration<sp/>time&apos;<sp/>essentially<sp/>increases<sp/>the<sp/>resolution<sp/>of<sp/>the<sp/>device,<sp/>since<sp/>the<sp/>analog<sp/>converter<sp/>inside<sp/>the<sp/>chip<sp/>has<sp/>time<sp/>to<sp/>take<sp/>more<sp/>samples.<sp/><sp/>The<sp/>integration<sp/>time<sp/>can<sp/>be<sp/>set<sp/>as<sp/>follows:</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_13MS);<sp/><sp/><sp/><sp/><sp/><sp/>/*<sp/>fast<sp/>but<sp/>low<sp/>resolution<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_101MS);<sp/><sp/>/*<sp/>medium<sp/>resolution<sp/>and<sp/>speed<sp/><sp/><sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">tsl.setIntegrationTime(TSL2561_INTEGRATIONTIME_402MS);<sp/><sp/>/*<sp/>16-bit<sp/>data<sp/>but<sp/>slowest<sp/>conversions<sp/>*/</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">One<sp/>of<sp/>the<sp/>big<sp/>advantages<sp/>of<sp/>the<sp/>TSL2561<sp/>is<sp/>that<sp/>it<sp/>is<sp/>capable<sp/>of<sp/>measuring<sp/>both<sp/>broadband<sp/>(visible<sp/>plus<sp/>infrared)<sp/>and<sp/>infrared<sp/>light<sp/>thanks<sp/>to<sp/>two<sp/>distinct<sp/>sensing<sp/>units<sp/>on<sp/>the<sp/>device.<sp/><sp/>This<sp/>is<sp/>important<sp/>in<sp/>certain<sp/>lighting<sp/>environments<sp/>to<sp/>be<sp/>able<sp/>to<sp/>read<sp/>the<sp/>light<sp/>level<sp/>reliably.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">More<sp/>information<sp/>on<sp/>the<sp/>TSL2561<sp/>can<sp/>be<sp/>found<sp/>in<sp/>the<sp/>datasheet:<sp/>http://www.adafruit.com/datasheets/TSL2561.pdf</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>What<sp/>is<sp/>the<sp/>Adafruit<sp/>Unified<sp/>Sensor<sp/>Library?<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>Adafruit<sp/>Unified<sp/>Sensor<sp/>Library<sp/>(Adafruit_Sensor)<sp/>provides<sp/>a<sp/>common<sp/>interface<sp/>and<sp/>data<sp/>type<sp/>for<sp/>any<sp/>supported<sp/>sensor.<sp/><sp/>It<sp/>defines<sp/>some<sp/>basic<sp/>information<sp/>about<sp/>the<sp/>sensor<sp/>(sensor<sp/>limits,<sp/>etc.),<sp/>and<sp/>returns<sp/>standard<sp/>SI<sp/>units<sp/>of<sp/>a<sp/>specific<sp/>type<sp/>and<sp/>scale<sp/>for<sp/>each<sp/>supported<sp/>sensor<sp/>type.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It<sp/>provides<sp/>a<sp/>simple<sp/>abstraction<sp/>layer<sp/>between<sp/>your<sp/>application<sp/>and<sp/>the<sp/>actual<sp/>sensor<sp/>HW,<sp/>allowing<sp/>you<sp/>to<sp/>drop<sp/>in<sp/>any<sp/>comparable<sp/>sensor<sp/>with<sp/>only<sp/>one<sp/>or<sp/>two<sp/>lines<sp/>of<sp/>code<sp/>to<sp/>change<sp/>in<sp/>your<sp/>project<sp/>(essentially<sp/>the<sp/>constructor<sp/>since<sp/>the<sp/>functions<sp/>to<sp/>read<sp/>sensor<sp/>data<sp/>and<sp/>get<sp/>information<sp/>about<sp/>the<sp/>sensor<sp/>are<sp/>defined<sp/>in<sp/>the<sp/>base<sp/>Adafruit_Sensor<sp/>class).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>is<sp/>imporant<sp/>useful<sp/>for<sp/>two<sp/>reasons:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.)<sp/>You<sp/>can<sp/>use<sp/>the<sp/>data<sp/>right<sp/>away<sp/>because<sp/>it&apos;s<sp/>already<sp/>converted<sp/>to<sp/>SI<sp/>units<sp/>that<sp/>you<sp/>understand<sp/>and<sp/>can<sp/>compare,<sp/>rather<sp/>than<sp/>meaningless<sp/>values<sp/>like<sp/>0..1023.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.)<sp/>Because<sp/>SI<sp/>units<sp/>are<sp/>standardised<sp/>in<sp/>the<sp/>sensor<sp/>library,<sp/>you<sp/>can<sp/>also<sp/>do<sp/>quick<sp/>sanity<sp/>checks<sp/>working<sp/>with<sp/>new<sp/>sensors,<sp/>or<sp/>drop<sp/>in<sp/>any<sp/>comparable<sp/>sensor<sp/>if<sp/>you<sp/>need<sp/>better<sp/>sensitivity<sp/>or<sp/>if<sp/>a<sp/>lower<sp/>cost<sp/>unit<sp/>becomes<sp/>available,<sp/>etc.<sp/></highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Light<sp/>sensors<sp/>will<sp/>always<sp/>report<sp/>units<sp/>in<sp/>lux,<sp/>gyroscopes<sp/>will<sp/>always<sp/>report<sp/>units<sp/>in<sp/>rad/s,<sp/>etc.<sp/>...<sp/>freeing<sp/>you<sp/>up<sp/>to<sp/>focus<sp/>on<sp/>the<sp/>data,<sp/>rather<sp/>than<sp/>digging<sp/>through<sp/>the<sp/>datasheet<sp/>to<sp/>understand<sp/>what<sp/>the<sp/>sensor&apos;s<sp/>raw<sp/>numbers<sp/>really<sp/>mean.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>About<sp/>this<sp/>Driver<sp/>##</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Adafruit<sp/>invests<sp/>time<sp/>and<sp/>resources<sp/>providing<sp/>this<sp/>open<sp/>source<sp/>code.<sp/><sp/>Please<sp/>support<sp/>Adafruit<sp/>and<sp/>open-source<sp/>hardware<sp/>by<sp/>purchasing<sp/>products<sp/>from<sp/>Adafruit!</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Written<sp/>by<sp/>Kevin<sp/>(KTOWN)<sp/>Townsend<sp/>for<sp/>Adafruit<sp/>Industries.</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Adafruit_TSL2561-master/README.md"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,288 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_r_t_c___d_s3231" kind="class" language="C++" prot="public">
+    <compoundname>RTC_DS3231</compoundname>
+    <includes refid="_r_t_c___d_s3231_8h" local="no">RTC_DS3231.h</includes>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1ad15c2bb9d853cb1af41e8f35d7ea67db" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTC_DS3231::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="22" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="32" bodyend="35"/>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3231::adjust</definition>
+        <argsstring>(const DateTime &amp;dt)</argsstring>
+        <name>adjust</name>
+        <param>
+          <type>const <ref refid="class_date_time" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the datetime of the RTC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="23" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="51" bodyend="65"/>
+        <references refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" compoundref="_r_t_clib_8cpp" startline="184" endline="187">bin2bcd</references>
+        <references refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" compoundref="_r_t_clib_8h" startline="23" endline="26">DateTime::day</references>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_r_t_c___d_s3231_8h_1ab752aeeb9f43f088ef3ea1e92cf0dd55" compoundref="_r_t_c___d_s3231_8h" startline="45">DS3231_REG_SECONDS</references>
+        <references refid="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" compoundref="_r_t_clib_8h" startline="27" endline="30">DateTime::hour</references>
+        <references refid="class_date_time_1a9990c5958c55b3aa7018e21df9d490e5" compoundref="_r_t_clib_8h" startline="31" endline="34">DateTime::minute</references>
+        <references refid="class_date_time_1a58beb18aec346e7081d02a2962032a43" compoundref="_r_t_clib_8h" startline="19" endline="22">DateTime::month</references>
+        <references refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" compoundref="_r_t_clib_8h" startline="35" endline="38">DateTime::second</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+        <references refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" compoundref="_r_t_clib_8h" startline="15" endline="18">DateTime::year</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1adc740b28876022b852e0f33842632fab" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime RTC_DS3231::now</definition>
+        <argsstring>()</argsstring>
+        <name>now</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the datetime from the RTC </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="25" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="71" bodyend="88"/>
+        <references refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" compoundref="_r_t_clib_8cpp" startline="180" endline="183">bcd2bin</references>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_r_t_c___d_s3231_8h_1ab752aeeb9f43f088ef3ea1e92cf0dd55" compoundref="_r_t_c___d_s3231_8h" startline="45">DS3231_REG_SECONDS</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1a0c97cca72e971f6b4d7d4a679eac8d5b" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float RTC_DS3231::getTempAsFloat</definition>
+        <argsstring>()</argsstring>
+        <name>getTempAsFloat</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return temperature as a float in degrees C Data is 10bits provided in 2 bytes (11h and and 2bits in 12h) Resolution of 0.25C e.g. 00011001 01 = 25.25C 00011001 = 25 01 = 0.25 * 1 = .25</para><para>This function has not been tested </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="26" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="101" bodyend="120"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_r_t_c___d_s3231_8h_1aa03c8831a5b1e11abc00e730c23ecc55" compoundref="_r_t_c___d_s3231_8h" startline="65">DS3231_REG_TEMP_MSB</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1aad9389d7a869971cde87fc81a8b00647" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int16_t</type>
+        <definition>int16_t RTC_DS3231::getTempAsWord</definition>
+        <argsstring>()</argsstring>
+        <name>getTempAsWord</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return temperature as a 2 bytes in degrees C MSB is the significant 00011001 = 25 LSB is the mantissa 00011001 = .25 Display by writing them out to the display MSB . LSB</para><para>Data from the 3231 10bits provided in 2 bytes (11h and and 2bits in 12h) Resolution of 0.25C e.g. 00011001 01 = 25.25C 00011001 = 25 01 = 0.25 * 1 = .25</para><para>This function has not been tested </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="27" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="136" bodyend="156"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_r_t_c___d_s3231_8h_1aa03c8831a5b1e11abc00e730c23ecc55" compoundref="_r_t_c___d_s3231_8h" startline="65">DS3231_REG_TEMP_MSB</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1ad892efd8d357db71da0c672523f6d699" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3231::enable32kHz</definition>
+        <argsstring>(uint8_t enable)</argsstring>
+        <name>enable32kHz</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable the 32kHz pin. When 1 it will output 32768kHz. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="28" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="164" bodyend="185"/>
+        <references refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" compoundref="_r_t_clib_8cpp" startline="180" endline="183">bcd2bin</references>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_r_t_c___d_s3231_8h_1a8cfbb825c0f0e51d936f9507d6c14e51" compoundref="_r_t_c___d_s3231_8h" startline="63">DS3231_REG_STATUS_CTL</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1a63a667e5cb63ea406315bd42c2037eea" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3231::forceTempConv</definition>
+        <argsstring>(uint8_t block)</argsstring>
+        <name>forceTempConv</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>block</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Force the temp sensor to convert the temp into digital code and execute the TCXO algorithm. The <ref refid="class_d_s3231" kindref="compound">DS3231</ref> normally does this every 64 seconds anyway.</para><para>NOTE: This is a BLOCKING method. You have been warned.</para><para>This method has not been fully debugged. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="29" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="198" bodyend="224"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1a3d54093b096bb5e68f03d66ee1c7e686" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3231::SQWEnable</definition>
+        <argsstring>(uint8_t enable)</argsstring>
+        <name>SQWEnable</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable the output to the SQW pin. Send 1 or true to enable. This function does <emphasis>not</emphasis> enable battery backed output which helps conserve battery life. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="30" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="234" bodyend="256"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1a08fb5001c43fa4493d370a17ffb14737" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3231::BBSQWEnable</definition>
+        <argsstring>(uint8_t enable)</argsstring>
+        <name>BBSQWEnable</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>enable</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Enable or disable the output to the SQW pin. Send 1 or true to enable. This method enables BOTH the square wave and the battery backed output. </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="31" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="266" bodyend="290"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1a85b06cbbd08d71865380e48183ddd26f" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3231::SQWFrequency</definition>
+        <argsstring>(uint8_t freq)</argsstring>
+        <name>SQWFrequency</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>freq</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the output frequence of the squarewave SQW pin</para><para>HINT: Use the defined frequencies in the .h file </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="32" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="298" bodyend="316"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1a2def91da84612846ecaa3029f8c3b9aa" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3231::getControlRegisterData</definition>
+        <argsstring>(char &amp;datastr)</argsstring>
+        <name>getControlRegisterData</name>
+        <param>
+          <type>char &amp;</type>
+          <declname>datastr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="33" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="318" bodyend="341"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_d_s3231_8h_1a14b27d8bc32c34f1eaecf569355c84d3" compoundref="_d_s3231_8h" startline="35">DS3231_REG_CONTROL</references>
+        <references refid="_r_t_clib_8cpp_1acb559820d9ca11295b4500f179ef6392" compoundref="_r_t_clib_8cpp" startline="18">i</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1a771a62d39534f6689c17f7ebe42aaa34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTC_DS3231::isrunning</definition>
+        <argsstring>(void)</argsstring>
+        <name>isrunning</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="24" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="37" bodyend="46"/>
+        <references refid="_d_s3231_8h_1a8076305a342fb38bb70a8dc3555993ae" compoundref="_d_s3231_8h" startline="30">DS3231_ADDRESS</references>
+        <references refid="_r_t_c___d_s3231_8h_1a8cfbb825c0f0e51d936f9507d6c14e51" compoundref="_r_t_c___d_s3231_8h" startline="63">DS3231_REG_STATUS_CTL</references>
+        <references refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" compoundref="_weather___balloon_8cpp" startline="400">Wire</references>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-static-func">
+      <memberdef kind="function" id="class_r_t_c___d_s3231_1af535a05040e010cc2d9c8ee936a2588b" prot="private" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3231::getBinaryString</definition>
+        <argsstring>(uint8_t byteval, char bytestr[])</argsstring>
+        <name>getBinaryString</name>
+        <param>
+          <type>uint8_t</type>
+          <declname>byteval</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>bytestr</declname>
+          <array>[]</array>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Takes one byte and loads up bytestr[8] with the value eg &quot;8&quot; loads bytestr with &quot;00000111&quot; </para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="37" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.cpp" bodystart="352" bodyend="365"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" line="20" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3231.h" bodystart="19" bodyend="39"/>
+    <listofallmembers>
+      <member refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>adjust</name></member>
+      <member refid="class_r_t_c___d_s3231_1a08fb5001c43fa4493d370a17ffb14737" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>BBSQWEnable</name></member>
+      <member refid="class_r_t_c___d_s3231_1ad15c2bb9d853cb1af41e8f35d7ea67db" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>begin</name></member>
+      <member refid="class_r_t_c___d_s3231_1ad892efd8d357db71da0c672523f6d699" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>enable32kHz</name></member>
+      <member refid="class_r_t_c___d_s3231_1a63a667e5cb63ea406315bd42c2037eea" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>forceTempConv</name></member>
+      <member refid="class_r_t_c___d_s3231_1af535a05040e010cc2d9c8ee936a2588b" prot="private" virt="non-virtual"><scope>RTC_DS3231</scope><name>getBinaryString</name></member>
+      <member refid="class_r_t_c___d_s3231_1a2def91da84612846ecaa3029f8c3b9aa" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>getControlRegisterData</name></member>
+      <member refid="class_r_t_c___d_s3231_1a0c97cca72e971f6b4d7d4a679eac8d5b" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>getTempAsFloat</name></member>
+      <member refid="class_r_t_c___d_s3231_1aad9389d7a869971cde87fc81a8b00647" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>getTempAsWord</name></member>
+      <member refid="class_r_t_c___d_s3231_1a771a62d39534f6689c17f7ebe42aaa34" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>isrunning</name></member>
+      <member refid="class_r_t_c___d_s3231_1adc740b28876022b852e0f33842632fab" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>now</name></member>
+      <member refid="class_r_t_c___d_s3231_1a3d54093b096bb5e68f03d66ee1c7e686" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>SQWEnable</name></member>
+      <member refid="class_r_t_c___d_s3231_1a85b06cbbd08d71865380e48183ddd26f" prot="public" virt="non-virtual"><scope>RTC_DS3231</scope><name>SQWFrequency</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,436 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_spark_fun_m_a_x17043_8cpp" kind="file" language="C++">
+    <compoundname>SparkFunMAX17043.cpp</compoundname>
+    <includes refid="_spark_fun_m_a_x17043_8h" local="yes">SparkFunMAX17043.h</includes>
+    <incdepgraph>
+      <node id="1001">
+        <label>Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp</label>
+        <link refid="SparkFunMAX17043.cpp"/>
+        <childnode refid="1002" relation="include">
+        </childnode>
+      </node>
+      <node id="1004">
+        <label>Wire.h</label>
+      </node>
+      <node id="1002">
+        <label>SparkFunMAX17043.h</label>
+        <link refid="_spark_fun_m_a_x17043_8h"/>
+        <childnode refid="1003" relation="include">
+        </childnode>
+        <childnode refid="1004" relation="include">
+        </childnode>
+      </node>
+      <node id="1003">
+        <label>Arduino.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a90ee24d6ad58f453935171ccb634c289" prot="public" static="no">
+        <name>MAX17043_VCELL</name>
+        <initializer>0x02</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="27" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_m_a_x17043_1afcba3e7ee660335c78995d337cab1678" compoundref="_spark_fun_m_a_x17043_8cpp" startline="78" endline="86">MAX17043::getVoltage</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1ac95c6fe41e53bcfddca5de87a0317175" prot="public" static="no">
+        <name>MAX17043_SOC</name>
+        <initializer>0x04</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="28" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_m_a_x17043_1a9567ba1006631e2d262a01ced542523f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="88" endline="97">MAX17043::getSOC</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a4a52b8832e5afc9030227e0a153ce808" prot="public" static="no">
+        <name>MAX17043_MODE</name>
+        <initializer>0x06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="29" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="29" bodyend="-1"/>
+        <referencedby refid="class_m_a_x17043_1a853dbf7908a1c4a37405050ec5e9c9e6" compoundref="_spark_fun_m_a_x17043_8cpp" startline="67" endline="76">MAX17043::quickStart</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a1a3bc0918ad681a5d2d87884621ac07f" prot="public" static="no">
+        <name>MAX17043_VERSION</name>
+        <initializer>0x08</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="30" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="30" bodyend="-1"/>
+        <referencedby refid="class_m_a_x17043_1acca2d36ef6359c085c9fe8bf2eb37ec3" compoundref="_spark_fun_m_a_x17043_8cpp" startline="99" endline="102">MAX17043::getVersion</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" prot="public" static="no">
+        <name>MAX17043_CONFIG</name>
+        <initializer>0x0C</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="31" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_m_a_x17043_1a396806dcd5feff73dfea335a75d2476e" compoundref="_spark_fun_m_a_x17043_8cpp" startline="135" endline="142">MAX17043::clearAlert</referencedby>
+        <referencedby refid="class_m_a_x17043_1ab62ceb6112cf661a9ca4ffa54d4e72c5" compoundref="_spark_fun_m_a_x17043_8cpp" startline="144" endline="159">MAX17043::getAlert</referencedby>
+        <referencedby refid="class_m_a_x17043_1a644fb0b3b44c57e2d58faeb8190e82cd" compoundref="_spark_fun_m_a_x17043_8cpp" startline="188" endline="193">MAX17043::getCompensation</referencedby>
+        <referencedby refid="class_m_a_x17043_1ac9e3d5347ba744323ddcc973d89c15ad" compoundref="_spark_fun_m_a_x17043_8cpp" startline="195" endline="198">MAX17043::getConfigRegister</referencedby>
+        <referencedby refid="class_m_a_x17043_1a79f404146d8ad9a0da8e1941f99ab6a1" compoundref="_spark_fun_m_a_x17043_8cpp" startline="104" endline="114">MAX17043::getThreshold</referencedby>
+        <referencedby refid="class_m_a_x17043_1a0e65f026d006cd020439329e7230d7c5" compoundref="_spark_fun_m_a_x17043_8cpp" startline="200" endline="209">MAX17043::setCompensation</referencedby>
+        <referencedby refid="class_m_a_x17043_1a1399c759fa7039420a2ac324db843a1f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="116" endline="133">MAX17043::setThreshold</referencedby>
+        <referencedby refid="class_m_a_x17043_1ac284bdd3085b45246cc115f2c58dea5f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="161" endline="170">MAX17043::sleep</referencedby>
+        <referencedby refid="class_m_a_x17043_1a3362df7c61d7a9acf75d1ee83f219b1f" compoundref="_spark_fun_m_a_x17043_8cpp" startline="172" endline="181">MAX17043::wake</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a2122ce9774f99824e4eb319511a68961" prot="public" static="no">
+        <name>MAX17043_COMMAND</name>
+        <initializer>0xFE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="32" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="32" bodyend="-1"/>
+        <referencedby refid="class_m_a_x17043_1a29130068805144281ce44dc686e8ef1e" compoundref="_spark_fun_m_a_x17043_8cpp" startline="183" endline="186">MAX17043::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a8ea99b69e90cec504f424c5ed58d288a" prot="public" static="no">
+        <name>MAX17043_CONFIG_SLEEP</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="37" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a0298d551ebadc0002a2799d0f7dae7bc" prot="public" static="no">
+        <name>MAX17043_CONFIG_ALERT</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="38" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a5e44bd992896037e2e0b71d72734b914" prot="public" static="no">
+        <name>MAX17043_CONFIG_THRESHOLD</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="39" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a523219c2bf5371f0d49ca88efecc2a57" prot="public" static="no">
+        <name>MAX17043_MODE_QUICKSTART</name>
+        <initializer>0x4000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="44" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="44" bodyend="-1"/>
+        <referencedby refid="class_m_a_x17043_1a853dbf7908a1c4a37405050ec5e9c9e6" compoundref="_spark_fun_m_a_x17043_8cpp" startline="67" endline="76">MAX17043::quickStart</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1aa5ccadaa1df738ad061a22aa506976e8" prot="public" static="no">
+        <name>MAX17043_COMMAND_POR</name>
+        <initializer>0x5400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="49" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="49" bodyend="-1"/>
+        <referencedby refid="class_m_a_x17043_1a29130068805144281ce44dc686e8ef1e" compoundref="_spark_fun_m_a_x17043_8cpp" startline="183" endline="186">MAX17043::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_spark_fun_m_a_x17043_8cpp_1a1d671eeb89b0998a749a104d9632e520" prot="public" static="no">
+        <name>MAX17043_ADDRESS</name>
+        <initializer>0x36</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="54" column="9" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="54" bodyend="-1"/>
+        <referencedby refid="class_m_a_x17043_1a0e65f026d006cd020439329e7230d7c5" compoundref="_spark_fun_m_a_x17043_8cpp" startline="200" endline="209">MAX17043::setCompensation</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_spark_fun_m_a_x17043_8cpp_1a77fcbce49b6bf9f478040b7b6ce3db20" prot="public" static="no" mutable="no">
+        <type><ref refid="class_m_a_x17043" kindref="compound">MAX17043</ref></type>
+        <definition>MAX17043 lipo</definition>
+        <argsstring></argsstring>
+        <name>lipo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" line="242" column="1" bodyfile="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp" bodystart="242" bodyend="-1"/>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1afe461d27b9c48d5921c00d521181f12f" compoundref="_m_a_x17043___simple_8cpp" startline="59" endline="83">loop</referencedby>
+        <referencedby refid="_m_a_x17043___simple_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" compoundref="_m_a_x17043___simple_8cpp" startline="36" endline="57">setup</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/******************************************************************************</highlight></codeline>
+<codeline lineno="2"><highlight class="comment">SparkFunMAX17043.cpp</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">SparkFun<sp/>MAX17043<sp/>Library<sp/>Source<sp/>File</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">Jim<sp/>Lindblom<sp/>@<sp/>SparkFun<sp/>Electronics</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">Original<sp/>Creation<sp/>Date:<sp/>June<sp/>22,<sp/>2015</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">https://github.com/sparkfun/SparkFun_MAX17043_Particle_Library</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"></highlight></codeline>
+<codeline lineno="8"><highlight class="comment">This<sp/>file<sp/>implements<sp/>all<sp/>functions<sp/>of<sp/>the<sp/>MAX17043<sp/>class.<sp/>Functions<sp/>here<sp/>range</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">from<sp/>higher<sp/>level<sp/>stuff,<sp/>like<sp/>reading/writing<sp/>MAX17043<sp/>registers<sp/>to<sp/>low-level,</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">hardware<sp/>reads<sp/>and<sp/>writes.</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"></highlight></codeline>
+<codeline lineno="12"><highlight class="comment">Development<sp/>environment<sp/>specifics:</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/><sp/><sp/>IDE:<sp/>Particle<sp/>Build</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/><sp/><sp/>Hardware<sp/>Platform:<sp/>Particle<sp/>Photon</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SparkFun<sp/>Photon<sp/>Battery<sp/>Shield</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight></codeline>
+<codeline lineno="17"><highlight class="comment">This<sp/>code<sp/>is<sp/>released<sp/>under<sp/>the<sp/>MIT<sp/>license.</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight></codeline>
+<codeline lineno="19"><highlight class="comment">Distributed<sp/>as-is;<sp/>no<sp/>warranty<sp/>is<sp/>given.</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">******************************************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_spark_fun_m_a_x17043_8h" kindref="compound">SparkFunMAX17043.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="comment">//<sp/>MAX17043<sp/>Register<sp/>Definitions<sp/>//</highlight></codeline>
+<codeline lineno="26"><highlight class="comment"></highlight><highlight class="comment">//<sp/>All<sp/>registers<sp/>contain<sp/>two<sp/>bytes<sp/>of<sp/>data<sp/>and<sp/>span<sp/>two<sp/>addresses.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_spark_fun_m_a_x17043_8cpp_1a90ee24d6ad58f453935171ccb634c289" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_VCELL<sp/><sp/><sp/><sp/>0x02<sp/>//<sp/>R<sp/>-<sp/>12-bit<sp/>A/D<sp/>measurement<sp/>of<sp/>battery<sp/>voltage</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_spark_fun_m_a_x17043_8cpp_1ac95c6fe41e53bcfddca5de87a0317175" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_SOC<sp/><sp/><sp/><sp/><sp/><sp/>0x04<sp/>//<sp/>R<sp/>-<sp/>16-bit<sp/>state<sp/>of<sp/>charge<sp/>(SOC)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_spark_fun_m_a_x17043_8cpp_1a4a52b8832e5afc9030227e0a153ce808" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_MODE<sp/><sp/><sp/><sp/><sp/>0x06<sp/>//<sp/>W<sp/>-<sp/>Sends<sp/>special<sp/>commands<sp/>to<sp/>IC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_spark_fun_m_a_x17043_8cpp_1a1a3bc0918ad681a5d2d87884621ac07f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_VERSION<sp/><sp/>0x08<sp/>//<sp/>R<sp/>-<sp/>Returns<sp/>IC<sp/>version</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_CONFIG<sp/><sp/><sp/>0x0C<sp/>//<sp/>R/W<sp/>-<sp/>Battery<sp/>compensation<sp/>(default<sp/>0x971C)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_spark_fun_m_a_x17043_8cpp_1a2122ce9774f99824e4eb319511a68961" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_COMMAND<sp/><sp/>0xFE<sp/>//<sp/>W<sp/>-<sp/>Sends<sp/>special<sp/>comands<sp/>to<sp/>IC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment">//<sp/>MAX17043<sp/>Config<sp/>Register<sp/>Bits<sp/>//</highlight></codeline>
+<codeline lineno="37" refid="_spark_fun_m_a_x17043_8cpp_1a8ea99b69e90cec504f424c5ed58d288a" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_CONFIG_SLEEP<sp/><sp/><sp/><sp/><sp/>7</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="_spark_fun_m_a_x17043_8cpp_1a0298d551ebadc0002a2799d0f7dae7bc" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_CONFIG_ALERT<sp/><sp/><sp/><sp/><sp/>5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39" refid="_spark_fun_m_a_x17043_8cpp_1a5e44bd992896037e2e0b71d72734b914" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_CONFIG_THRESHOLD<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="comment">//<sp/>MAX17043<sp/>Mode<sp/>Register<sp/>Commands<sp/>//</highlight></codeline>
+<codeline lineno="44" refid="_spark_fun_m_a_x17043_8cpp_1a523219c2bf5371f0d49ca88efecc2a57" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_MODE_QUICKSTART<sp/>0x4000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="comment">//<sp/>MAX17043<sp/>Command<sp/>Register<sp/>Commands<sp/>//</highlight></codeline>
+<codeline lineno="49" refid="_spark_fun_m_a_x17043_8cpp_1aa5ccadaa1df738ad061a22aa506976e8" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_COMMAND_POR<sp/>0x5400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="comment">//<sp/>MAX17043<sp/>7-Bit<sp/>I2C<sp/>Address<sp/>//</highlight></codeline>
+<codeline lineno="54" refid="_spark_fun_m_a_x17043_8cpp_1a1d671eeb89b0998a749a104d9632e520" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>MAX17043_ADDRESS<sp/><sp/>0x36</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight></codeline>
+<codeline lineno="56" refid="class_m_a_x17043_1a355bb280e2fb71a761ac539c5d6b335a" refkind="member"><highlight class="normal"><ref refid="class_m_a_x17043_1a355bb280e2fb71a761ac539c5d6b335a" kindref="member">MAX17043::MAX17043</ref>()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61" refid="class_m_a_x17043_1a7f434b44531c65f4a3b31c4f5ebcb887" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1a7f434b44531c65f4a3b31c4f5ebcb887" kindref="member">MAX17043::begin</ref>()</highlight></codeline>
+<codeline lineno="62"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.begin();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67" refid="class_m_a_x17043_1a853dbf7908a1c4a37405050ec5e9c9e6" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1a853dbf7908a1c4a37405050ec5e9c9e6" kindref="member">MAX17043::quickStart</ref>()</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>A<sp/>quick-start<sp/>allows<sp/>the<sp/>MAX17043<sp/>to<sp/>restart<sp/>fuel-gauge<sp/>calculations<sp/>in<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>same<sp/>manner<sp/>as<sp/>initial<sp/>power-up<sp/>of<sp/>the<sp/>IC.<sp/>If<sp/>an<sp/>application’s<sp/>power-up</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>sequence<sp/>is<sp/>exceedingly<sp/>noisy<sp/>such<sp/>that<sp/>excess<sp/>error<sp/>is<sp/>introduced<sp/>into<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>IC’s<sp/>“first<sp/>guess”<sp/>of<sp/>SOC,<sp/>the<sp/>host<sp/>can<sp/>issue<sp/>a<sp/>quick-start<sp/>to<sp/>reduce<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>error.<sp/>A<sp/>quick-start<sp/>is<sp/>initiated<sp/>by<sp/>a<sp/>rising<sp/>edge<sp/>on<sp/>the<sp/>QSTRT<sp/>pin,<sp/>or</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>through<sp/>software<sp/>by<sp/>writing<sp/>4000h<sp/>to<sp/>MODE<sp/>register.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>write16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a523219c2bf5371f0d49ca88efecc2a57" kindref="member">MAX17043_MODE_QUICKSTART</ref>,<sp/><ref refid="_spark_fun_m_a_x17043_8cpp_1a4a52b8832e5afc9030227e0a153ce808" kindref="member">MAX17043_MODE</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78" refid="class_m_a_x17043_1afcba3e7ee660335c78995d337cab1678" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_a_x17043_1afcba3e7ee660335c78995d337cab1678" kindref="member">MAX17043::getVoltage</ref>()</highlight></codeline>
+<codeline lineno="79"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>uint16_t<sp/>vCell;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/>vCell<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a90ee24d6ad58f453935171ccb634c289" kindref="member">MAX17043_VCELL</ref>);</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>vCell<sp/>is<sp/>a<sp/>12-bit<sp/>register<sp/>where<sp/>each<sp/>bit<sp/>represents<sp/>1.25mV</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>vCell<sp/>=<sp/>(vCell)<sp/>&gt;&gt;<sp/>4;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">)<sp/>vCell<sp/>/<sp/>800.0);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88" refid="class_m_a_x17043_1a9567ba1006631e2d262a01ced542523f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_m_a_x17043_1a9567ba1006631e2d262a01ced542523f" kindref="member">MAX17043::getSOC</ref>()</highlight></codeline>
+<codeline lineno="89"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="_m_a_x17043___simple_8cpp_1a991957902833b18d327c2d8a0ea1eb42" kindref="member">soc</ref>;</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>percent;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>soc<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1ac95c6fe41e53bcfddca5de87a0317175" kindref="member">MAX17043_SOC</ref>);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/>percent<sp/>=<sp/>(soc<sp/>&amp;<sp/>0xFF00)<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/>percent<sp/>+=<sp/>(float)<sp/>(((uint8_t)<sp/><ref refid="_m_a_x17043___simple_8cpp_1a991957902833b18d327c2d8a0ea1eb42" kindref="member">soc</ref>)<sp/>/<sp/>256.0);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>percent;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="class_m_a_x17043_1acca2d36ef6359c085c9fe8bf2eb37ec3" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_m_a_x17043_1acca2d36ef6359c085c9fe8bf2eb37ec3" kindref="member">MAX17043::getVersion</ref>()</highlight></codeline>
+<codeline lineno="100"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a1a3bc0918ad681a5d2d87884621ac07f" kindref="member">MAX17043_VERSION</ref>);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="class_m_a_x17043_1a79f404146d8ad9a0da8e1941f99ab6a1" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1a79f404146d8ad9a0da8e1941f99ab6a1" kindref="member">MAX17043::getThreshold</ref>()</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/>uint16_t<sp/>configReg<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>uint8_t<sp/>threshold<sp/>=<sp/>(configReg<sp/>&amp;<sp/>0x001F);</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>It<sp/>has<sp/>an<sp/>LSb<sp/>weight<sp/>of<sp/>1%,<sp/>and<sp/>can<sp/>be<sp/>programmed<sp/>from<sp/>1%<sp/>to<sp/>32%.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Values<sp/>are<sp/>in<sp/>2&apos;s<sp/>complement,<sp/>e.g.:<sp/>00000=32%,<sp/>00001=31%,<sp/>11111=1%.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Let&apos;s<sp/>convert<sp/>our<sp/>percent<sp/>to<sp/>that<sp/>first:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/>threshold<sp/>=<sp/>32<sp/>-<sp/>threshold;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>threshold;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116" refid="class_m_a_x17043_1a1399c759fa7039420a2ac324db843a1f" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1a1399c759fa7039420a2ac324db843a1f" kindref="member">MAX17043::setThreshold</ref>(uint8_t<sp/>percent)</highlight></codeline>
+<codeline lineno="117"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>alert<sp/>threshold<sp/>is<sp/>a<sp/>5-bit<sp/>value<sp/>that<sp/>sets<sp/>the<sp/>state<sp/>of<sp/>charge<sp/>level</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>where<sp/>an<sp/>interrupt<sp/>is<sp/>generated<sp/>on<sp/>the<sp/>ALRT<sp/>pin.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>It<sp/>has<sp/>an<sp/>LSb<sp/>weight<sp/>of<sp/>1%,<sp/>and<sp/>can<sp/>be<sp/>programmed<sp/>from<sp/>1%<sp/>to<sp/>32%.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Values<sp/>are<sp/>in<sp/>2&apos;s<sp/>complement,<sp/>e.g.:<sp/>00000=32%,<sp/>00001=31%,<sp/>11111=1%.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Let&apos;s<sp/>convert<sp/>our<sp/>percent<sp/>to<sp/>that<sp/>first:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/>percent<sp/>=<sp/>constrain(percent,<sp/>0,<sp/>32);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>percent<sp/>=<sp/>32<sp/>-<sp/>percent;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>config<sp/>reg,<sp/>so<sp/>we<sp/>don&apos;t<sp/>modify<sp/>any<sp/>other<sp/>values:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>uint16_t<sp/>configReg<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>configReg<sp/>&amp;=<sp/>0xFFE0;<sp/></highlight><highlight class="comment">//<sp/>Mask<sp/>out<sp/>threshold<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/>configReg<sp/>|=<sp/>percent;<sp/></highlight><highlight class="comment">//<sp/>Add<sp/>new<sp/>threshold</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>write16(configReg,<sp/><ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135" refid="class_m_a_x17043_1a396806dcd5feff73dfea335a75d2476e" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1a396806dcd5feff73dfea335a75d2476e" kindref="member">MAX17043::clearAlert</ref>()</highlight></codeline>
+<codeline lineno="136"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>config<sp/>reg,<sp/>so<sp/>we<sp/>don&apos;t<sp/>modify<sp/>any<sp/>other<sp/>values:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/>uint16_t<sp/>configReg<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>configReg<sp/>&amp;=<sp/>~(1&lt;&lt;6);<sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>ALRT<sp/>bit<sp/>manually.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>write16(configReg,<sp/><ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144" refid="class_m_a_x17043_1ab62ceb6112cf661a9ca4ffa54d4e72c5" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1ab62ceb6112cf661a9ca4ffa54d4e72c5" kindref="member">MAX17043::getAlert</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>clear)</highlight></codeline>
+<codeline lineno="145"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>config<sp/>reg,<sp/>so<sp/>we<sp/>don&apos;t<sp/>modify<sp/>any<sp/>other<sp/>values:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/>uint16_t<sp/>configReg<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(configReg<sp/>&amp;<sp/>(1&lt;&lt;6))</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(clear)<sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>clear<sp/>flag<sp/>is<sp/>set</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>configReg<sp/>&amp;=<sp/>~(1&lt;&lt;6);<sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>ALRT<sp/>bit<sp/>manually.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>write16(configReg,<sp/><ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161" refid="class_m_a_x17043_1ac284bdd3085b45246cc115f2c58dea5f" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1ac284bdd3085b45246cc115f2c58dea5f" kindref="member">MAX17043::sleep</ref>()</highlight></codeline>
+<codeline lineno="162"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>config<sp/>reg,<sp/>so<sp/>we<sp/>don&apos;t<sp/>modify<sp/>any<sp/>other<sp/>values:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/>uint16_t<sp/>configReg<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(configReg<sp/>&amp;<sp/>(1&lt;&lt;7))</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>5;<sp/></highlight><highlight class="comment">//<sp/>Already<sp/>sleeping,<sp/>do<sp/>nothing<sp/>but<sp/>return<sp/>an<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>configReg<sp/>|=<sp/>(1&lt;&lt;7);<sp/></highlight><highlight class="comment">//<sp/>Set<sp/>sleep<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>write16(configReg,<sp/><ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="170"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172" refid="class_m_a_x17043_1a3362df7c61d7a9acf75d1ee83f219b1f" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1a3362df7c61d7a9acf75d1ee83f219b1f" kindref="member">MAX17043::wake</ref>()</highlight></codeline>
+<codeline lineno="173"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>config<sp/>reg,<sp/>so<sp/>we<sp/>don&apos;t<sp/>modify<sp/>any<sp/>other<sp/>values:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>uint16_t<sp/>configReg<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!(configReg<sp/>&amp;<sp/>(1&lt;&lt;7)))</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>5;<sp/></highlight><highlight class="comment">//<sp/>Already<sp/>awake,<sp/>do<sp/>nothing<sp/>but<sp/>return<sp/>an<sp/>error</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/>configReg<sp/>&amp;=<sp/>~(1&lt;&lt;7);<sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>sleep<sp/>bit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>write16(configReg,<sp/><ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="class_m_a_x17043_1a29130068805144281ce44dc686e8ef1e" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1a29130068805144281ce44dc686e8ef1e" kindref="member">MAX17043::reset</ref>()</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>write16(<ref refid="_spark_fun_m_a_x17043_8cpp_1aa5ccadaa1df738ad061a22aa506976e8" kindref="member">MAX17043_COMMAND_POR</ref>,<sp/><ref refid="_spark_fun_m_a_x17043_8cpp_1a2122ce9774f99824e4eb319511a68961" kindref="member">MAX17043_COMMAND</ref>);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188" refid="class_m_a_x17043_1a644fb0b3b44c57e2d58faeb8190e82cd" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1a644fb0b3b44c57e2d58faeb8190e82cd" kindref="member">MAX17043::getCompensation</ref>()</highlight></codeline>
+<codeline lineno="189"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/>uint16_t<sp/>configReg<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>uint8_t<sp/>compensation<sp/>=<sp/>(configReg<sp/>&amp;<sp/>0xFF00)<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>compensation;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="class_m_a_x17043_1ac9e3d5347ba744323ddcc973d89c15ad" refkind="member"><highlight class="normal">uint16_t<sp/><ref refid="class_m_a_x17043_1ac9e3d5347ba744323ddcc973d89c15ad" kindref="member">MAX17043::getConfigRegister</ref>()</highlight></codeline>
+<codeline lineno="196"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight></codeline>
+<codeline lineno="200" refid="class_m_a_x17043_1a0e65f026d006cd020439329e7230d7c5" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_m_a_x17043_1a0e65f026d006cd020439329e7230d7c5" kindref="member">MAX17043::setCompensation</ref>(uint8_t<sp/>newCompensation)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>CONFIG<sp/>register<sp/>compensates<sp/>the<sp/>ModelGauge<sp/>algorith.<sp/>The<sp/>upper<sp/>8<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>of<sp/>the<sp/>16-bit<sp/>register<sp/>control<sp/>the<sp/>compensation.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Read<sp/>the<sp/>original<sp/>configReg,<sp/>so<sp/>we<sp/>can<sp/>leave<sp/>the<sp/>lower<sp/>8<sp/>bits<sp/>alone:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/>uint16_t<sp/>configReg<sp/>=<sp/>read16(<ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>configReg<sp/>&amp;=<sp/>0x00FF;<sp/></highlight><highlight class="comment">//<sp/>Mask<sp/>out<sp/>compensation<sp/>bits</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/>configReg<sp/>|=<sp/>((uint16_t)newCompensation<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>configReg;</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>write16(configReg,<sp/><ref refid="_spark_fun_m_a_x17043_8cpp_1a9b2118a80916dc92065a566b8ced623f" kindref="member">MAX17043_CONFIG</ref>);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal">uint8_t<sp/>MAX17043::write16(uint16_t<sp/>data,<sp/>uint8_t<sp/>address)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/>uint8_t<sp/>msb,<sp/>lsb;</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>msb<sp/>=<sp/>(data<sp/>&amp;<sp/>0xFF00)<sp/>&gt;&gt;<sp/>8;</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/>lsb<sp/>=<sp/>(data<sp/>&amp;<sp/>0x00FF);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_spark_fun_m_a_x17043_8cpp_1a1d671eeb89b0998a749a104d9632e520" kindref="member">MAX17043_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(address);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(msb);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(lsb);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission());</highlight></codeline>
+<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal">uint16_t<sp/>MAX17043::read16(uint8_t<sp/>address)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/>uint8_t<sp/>msb,<sp/>lsb;</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/>int16_t<sp/>timeout<sp/>=<sp/>1000;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_spark_fun_m_a_x17043_8cpp_1a1d671eeb89b0998a749a104d9632e520" kindref="member">MAX17043_ADDRESS</ref>);</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(address);</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission(</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(<ref refid="_spark_fun_m_a_x17043_8cpp_1a1d671eeb89b0998a749a104d9632e520" kindref="member">MAX17043_ADDRESS</ref>,<sp/>2);</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>((<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.available()<sp/>&lt;<sp/>2)<sp/>&amp;&amp;<sp/>(timeout--<sp/>&gt;<sp/>0))</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(1);</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>msb<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/>lsb<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>((uint16_t)<sp/>msb<sp/>&lt;&lt;<sp/>8)<sp/>|<sp/>lsb;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Define<sp/>a<sp/>static<sp/>MAX17043<sp/>object<sp/>called<sp/>lipo,<sp/>which<sp/>we&apos;ll<sp/>use<sp/>in<sp/>the<sp/>sketches.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242" refid="_spark_fun_m_a_x17043_8h_1a77fcbce49b6bf9f478040b7b6ce3db20" refkind="member"><highlight class="normal"><ref refid="class_m_a_x17043" kindref="compound">MAX17043</ref><sp/><ref refid="_spark_fun_m_a_x17043_8cpp_1a77fcbce49b6bf9f478040b7b6ce3db20" kindref="member">lipo</ref>;</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/SparkFun_MAX17043/SparkFunMAX17043.cpp"/>
+  </compounddef>
+</doxygen>

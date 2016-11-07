@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="md_Weather_Balloon_library_SparkFun_LSM9DS1_LICENSE" kind="page">
+    <compoundname>md_Weather_Balloon_library_SparkFun_LSM9DS1_LICENSE</compoundname>
+    <title>License Information</title>
+    <detaileddescription>
+<para>The hardware is released under <ulink url="http://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Share-alike 3.0</ulink>.</para><para>All other code is open source so please feel free to do anything you want with it; you buy me a beer if you use this and we meet someday (<ulink url="http://en.wikipedia.org/wiki/Beerware">Beerware license</ulink>). </para>    </detaileddescription>
+  </compounddef>
+</doxygen>

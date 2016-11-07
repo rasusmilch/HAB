@@ -1,0 +1,978 @@
+\hypertarget{class_firmata_class}{}\section{Firmata\+Class Class Reference}
+\label{class_firmata_class}\index{Firmata\+Class@{Firmata\+Class}}
+
+
+{\ttfamily \#include $<$Firmata.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_firmata_class_a75b035ab8d96d87d28deeb87badfe11a}{Firmata\+Class} ()
+\item 
+void \hyperlink{class_firmata_class_a2fddcc643892bec2f4aa7aef6dba70eb}{begin} ()
+\item 
+void \hyperlink{class_firmata_class_ab0b7b837d2c32b4ce79e62895ced2731}{begin} (long)
+\item 
+void \hyperlink{class_firmata_class_a0c7b0e10168e3c5dc6442d77c65a156e}{begin} (Stream \&s)
+\item 
+void \hyperlink{class_firmata_class_abd8a0370db6d9e923e7e3d5836e78d7a}{print\+Version} (void)
+\item 
+void \hyperlink{class_firmata_class_a9421550f2501fc1df60fd174b154e606}{blink\+Version} (void)
+\item 
+void \hyperlink{class_firmata_class_abe49261eab0bd4892a09fa8b8980b11a}{print\+Firmware\+Version} (void)
+\item 
+void \hyperlink{class_firmata_class_ab7aa66b528027566c15b7d64c8cd0f89}{set\+Firmware\+Name\+And\+Version} (const char $\ast$name, byte major, byte minor)
+\item 
+void \hyperlink{class_firmata_class_a5ddba465c3772f841828ef82c79d4307}{disable\+Blink\+Version} ()
+\item 
+int \hyperlink{class_firmata_class_a119734b867186567c1cd011e52e59d2d}{available} (void)
+\item 
+void \hyperlink{class_firmata_class_aa698f5f5a234173d5eebb54831350676}{process\+Input} (void)
+\item 
+void \hyperlink{class_firmata_class_aaeaac8b1f8facf070615b0035120c432}{parse} (unsigned char value)
+\item 
+boolean \hyperlink{class_firmata_class_a58e9d787957c3085f22d33b59b1f6ea6}{is\+Parsing\+Message} (void)
+\item 
+void \hyperlink{class_firmata_class_ae14e1d8d9bd72068f6e8ca07721e8dda}{send\+Analog} (byte pin, int value)
+\item 
+void \hyperlink{class_firmata_class_a50a87e8339cf46fb787759603603e225}{send\+Digital} (byte pin, int value)
+\item 
+void \hyperlink{class_firmata_class_a799b91e5a888dd21b066a2020d8e2b68}{send\+Digital\+Port} (byte port\+Number, int port\+Data)
+\item 
+void \hyperlink{class_firmata_class_abe11f621154afd308926129de349fc6e}{send\+String} (const char $\ast$string)
+\item 
+void \hyperlink{class_firmata_class_ab139c0d784e69003c88eb5be8807dcdf}{send\+String} (byte command, const char $\ast$string)
+\item 
+void \hyperlink{class_firmata_class_a81e2de5b37eb2372c8a3d9a43d5eb0cc}{send\+Sysex} (byte command, byte bytec, byte $\ast$bytev)
+\item 
+void \hyperlink{class_firmata_class_ae8f29a829e17379602fcb9fd6a497807}{write} (byte c)
+\item 
+void \hyperlink{class_firmata_class_a94d53e24e973eb18fd4202b9d26a87c1}{attach} (byte command, \hyperlink{_firmata_8h_abb0d9dbaf4bb25bc00924808c5616aa5}{callback\+Function} new\+Function)
+\item 
+void \hyperlink{class_firmata_class_a5e6b3ec98bd2e616678ac0d6f3be60ba}{attach} (byte command, \hyperlink{_firmata_8h_a29f7a316045cd131238d6e3f9cdb8140}{system\+Reset\+Callback\+Function} new\+Function)
+\item 
+void \hyperlink{class_firmata_class_a3c3c11878d74fabadd50c66badf953ae}{attach} (byte command, \hyperlink{_firmata_8h_a6557a1064a699527f15a5d4d44c9c76d}{string\+Callback\+Function} new\+Function)
+\item 
+void \hyperlink{class_firmata_class_a81c394577d72b48bf74bdf47427562ab}{attach} (byte command, \hyperlink{_firmata_8h_a382e396031e042c702aebc1eac88c8da}{sysex\+Callback\+Function} new\+Function)
+\item 
+void \hyperlink{class_firmata_class_a8f6441132a0ffa4e548e9e9bce89044a}{detach} (byte command)
+\item 
+byte \hyperlink{class_firmata_class_a0c434227456ce2ba97b3b1142c329f96}{get\+Pin\+Mode} (byte pin)
+\item 
+void \hyperlink{class_firmata_class_a32c41dd94c1d23aa0e6d3d1dbe5c0c04}{set\+Pin\+Mode} (byte pin, byte config)
+\item 
+int \hyperlink{class_firmata_class_acf5d4f460b9a2298653d4a71de918dfe}{get\+Pin\+State} (byte pin)
+\item 
+void \hyperlink{class_firmata_class_aa9f98ba5069823b4c1d08db9f8999ba8}{set\+Pin\+State} (byte pin, int state)
+\item 
+void \hyperlink{class_firmata_class_a770e43f26f18204e43acebf9202a6d39}{send\+Value\+As\+Two7bit\+Bytes} (int value)
+\item 
+void \hyperlink{class_firmata_class_a3cc7ea1af348bca3ea0bd570314cada3}{start\+Sysex} (void)
+\item 
+void \hyperlink{class_firmata_class_a9bb68afbb1d37a7990f59a1d419e64c9}{end\+Sysex} (void)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 129 of file Firmata.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Firmata\+Class@{Firmata\+Class}!Firmata\+Class@{Firmata\+Class}}
+\index{Firmata\+Class@{Firmata\+Class}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{Firmata\+Class()}{FirmataClass()}}]{\setlength{\rightskip}{0pt plus 5cm}Firmata\+Class\+::\+Firmata\+Class (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a75b035ab8d96d87d28deeb87badfe11a}{}\label{class_firmata_class_a75b035ab8d96d87d28deeb87badfe11a}
+The Firmata class. An instance named \char`\"{}\+Firmata\char`\"{} is created automatically for the user. 
+
+Definition at line 64 of file Firmata.\+cpp.
+
+
+
+\subsection{Member Function Documentation}
+\index{Firmata\+Class@{Firmata\+Class}!attach@{attach}}
+\index{attach@{attach}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{attach(byte command, callback\+Function new\+Function)}{attach(byte command, callbackFunction newFunction)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::attach (
+\begin{DoxyParamCaption}
+\item[{byte}]{command, }
+\item[{{\bf callback\+Function}}]{new\+Function}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a94d53e24e973eb18fd4202b9d26a87c1}{}\label{class_firmata_class_a94d53e24e973eb18fd4202b9d26a87c1}
+Attach a generic sysex callback function to a command (options are\+: A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE, D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE, R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG, R\+E\+P\+O\+RT D\+I\+G\+I\+T\+AL, S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE and S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE). 
+\begin{DoxyParams}{Parameters}
+{\em command} & The ID of the command to attach a callback function to. \\
+\hline
+{\em new\+Function} & A reference to the callback function to attach. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 498 of file Firmata.\+cpp.
+
+
+
+References A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE, D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE, R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG, R\+E\+P\+O\+R\+T\+\_\+\+D\+I\+G\+I\+T\+AL, S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE, and S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE.
+
+
+
+Referenced by detach().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_firmata_class_a94d53e24e973eb18fd4202b9d26a87c1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!attach@{attach}}
+\index{attach@{attach}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{attach(byte command, system\+Reset\+Callback\+Function new\+Function)}{attach(byte command, systemResetCallbackFunction newFunction)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::attach (
+\begin{DoxyParamCaption}
+\item[{byte}]{command, }
+\item[{{\bf system\+Reset\+Callback\+Function}}]{new\+Function}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a5e6b3ec98bd2e616678ac0d6f3be60ba}{}\label{class_firmata_class_a5e6b3ec98bd2e616678ac0d6f3be60ba}
+Attach a callback function for the S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET command. 
+\begin{DoxyParams}{Parameters}
+{\em command} & Must be set to S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET or it will be ignored. \\
+\hline
+{\em new\+Function} & A reference to the system reset callback function to attach. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 515 of file Firmata.\+cpp.
+
+
+
+References S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET.
+
+\index{Firmata\+Class@{Firmata\+Class}!attach@{attach}}
+\index{attach@{attach}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{attach(byte command, string\+Callback\+Function new\+Function)}{attach(byte command, stringCallbackFunction newFunction)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::attach (
+\begin{DoxyParamCaption}
+\item[{byte}]{command, }
+\item[{{\bf string\+Callback\+Function}}]{new\+Function}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a3c3c11878d74fabadd50c66badf953ae}{}\label{class_firmata_class_a3c3c11878d74fabadd50c66badf953ae}
+Attach a callback function for the S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA command. 
+\begin{DoxyParams}{Parameters}
+{\em command} & Must be set to S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA or it will be ignored. \\
+\hline
+{\em new\+Function} & A reference to the string callback function to attach. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 527 of file Firmata.\+cpp.
+
+
+
+References S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA.
+
+\index{Firmata\+Class@{Firmata\+Class}!attach@{attach}}
+\index{attach@{attach}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{attach(byte command, sysex\+Callback\+Function new\+Function)}{attach(byte command, sysexCallbackFunction newFunction)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::attach (
+\begin{DoxyParamCaption}
+\item[{byte}]{command, }
+\item[{{\bf sysex\+Callback\+Function}}]{new\+Function}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a81c394577d72b48bf74bdf47427562ab}{}\label{class_firmata_class_a81c394577d72b48bf74bdf47427562ab}
+Attach a generic sysex callback function to sysex command. 
+\begin{DoxyParams}{Parameters}
+{\em command} & The ID of the command to attach a callback function to. \\
+\hline
+{\em new\+Function} & A reference to the sysex callback function to attach. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 539 of file Firmata.\+cpp.
+
+\index{Firmata\+Class@{Firmata\+Class}!available@{available}}
+\index{available@{available}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{available(void)}{available(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int Firmata\+Class\+::available (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a119734b867186567c1cd011e52e59d2d}{}\label{class_firmata_class_a119734b867186567c1cd011e52e59d2d}
+A wrapper for Stream\+::available() \begin{DoxyReturn}{Returns}
+The number of bytes remaining in the input stream buffer. 
+\end{DoxyReturn}
+
+
+Definition at line 226 of file Firmata.\+cpp.
+
+
+
+References i, print\+Firmware\+Version(), R\+E\+P\+O\+R\+T\+\_\+\+F\+I\+R\+M\+W\+A\+RE, and S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_a119734b867186567c1cd011e52e59d2d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!begin@{begin}}
+\index{begin@{begin}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{begin()}{begin()}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a2fddcc643892bec2f4aa7aef6dba70eb}{}\label{class_firmata_class_a2fddcc643892bec2f4aa7aef6dba70eb}
+Initialize the default Serial transport at the default baud of 57600. 
+
+Definition at line 79 of file Firmata.\+cpp.
+
+\index{Firmata\+Class@{Firmata\+Class}!begin@{begin}}
+\index{begin@{begin}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{begin(long)}{begin(long)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::begin (
+\begin{DoxyParamCaption}
+\item[{long}]{speed}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_ab0b7b837d2c32b4ce79e62895ced2731}{}\label{class_firmata_class_ab0b7b837d2c32b4ce79e62895ced2731}
+Initialize the default Serial transport and override the default baud. Sends the protocol version to the host application followed by the firmware version and name. blink\+Version is also called. To skip the call to blink\+Version, call Firmata.\+disable\+Blink\+Version() before calling Firmata.\+begin(baud). 
+\begin{DoxyParams}{Parameters}
+{\em speed} & The baud to use. 57600 baud is the default value. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 91 of file Firmata.\+cpp.
+
+
+
+References blink\+Version(), print\+Firmware\+Version(), and print\+Version().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_ab0b7b837d2c32b4ce79e62895ced2731_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!begin@{begin}}
+\index{begin@{begin}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{begin(\+Stream \&s)}{begin(Stream \&s)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::begin (
+\begin{DoxyParamCaption}
+\item[{Stream \&}]{s}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a0c7b0e10168e3c5dc6442d77c65a156e}{}\label{class_firmata_class_a0c7b0e10168e3c5dc6442d77c65a156e}
+Reassign the Firmata stream transport. 
+\begin{DoxyParams}{Parameters}
+{\em s} & A reference to the Stream transport object. This can be any type of transport that implements the Stream interface. Some examples include Ethernet, Wi\+Fi and other U\+A\+R\+Ts on the board (Serial1, Serial2, etc). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file Firmata.\+cpp.
+
+
+
+References print\+Firmware\+Version(), and print\+Version().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_a0c7b0e10168e3c5dc6442d77c65a156e_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!blink\+Version@{blink\+Version}}
+\index{blink\+Version@{blink\+Version}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{blink\+Version(void)}{blinkVersion(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::blink\+Version (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a9421550f2501fc1df60fd174b154e606}{}\label{class_firmata_class_a9421550f2501fc1df60fd174b154e606}
+Blink the Firmata protocol version to the onboard L\+E\+Ds (if the board has an onboard L\+ED). If V\+E\+R\+S\+I\+O\+N\+\_\+\+B\+L\+I\+N\+K\+\_\+\+P\+IN is not defined in \hyperlink{_boards_8h}{Boards.\+h} for a particular board, then this method does nothing. The first series of flashes indicates the firmware major version (2 flashes = 2). The second series of flashes indicates the firmware minor version (5 flashes = 5). 
+
+Definition at line 132 of file Firmata.\+cpp.
+
+
+
+References F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON, and F\+I\+R\+M\+A\+T\+A\+\_\+\+F\+I\+R\+M\+W\+A\+R\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON.
+
+
+
+Referenced by begin().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{class_firmata_class_a9421550f2501fc1df60fd174b154e606_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!detach@{detach}}
+\index{detach@{detach}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{detach(byte command)}{detach(byte command)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::detach (
+\begin{DoxyParamCaption}
+\item[{byte}]{command}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a8f6441132a0ffa4e548e9e9bce89044a}{}\label{class_firmata_class_a8f6441132a0ffa4e548e9e9bce89044a}
+Detach a callback function for a specified command (such as S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET, S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA, A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE, D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE, etc). 
+\begin{DoxyParams}{Parameters}
+{\em command} & The ID of the command to detatch the callback function from. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 549 of file Firmata.\+cpp.
+
+
+
+References attach(), S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX, S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA, and S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_firmata_class_a8f6441132a0ffa4e548e9e9bce89044a_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!disable\+Blink\+Version@{disable\+Blink\+Version}}
+\index{disable\+Blink\+Version@{disable\+Blink\+Version}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{disable\+Blink\+Version()}{disableBlinkVersion()}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::disable\+Blink\+Version (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a5ddba465c3772f841828ef82c79d4307}{}\label{class_firmata_class_a5ddba465c3772f841828ef82c79d4307}
+Provides a means to disable the version blink sequence on the onboard L\+ED, trimming startup time by a couple of seconds. Call this before Firmata.\+begin(). It only applies when using the default Serial transport. 
+
+Definition at line 150 of file Firmata.\+cpp.
+
+\index{Firmata\+Class@{Firmata\+Class}!end\+Sysex@{end\+Sysex}}
+\index{end\+Sysex@{end\+Sysex}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{end\+Sysex(void)}{endSysex(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::end\+Sysex (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a9bb68afbb1d37a7990f59a1d419e64c9}{}\label{class_firmata_class_a9bb68afbb1d37a7990f59a1d419e64c9}
+A helper method to write the end of a Sysex message transmission. 
+
+Definition at line 51 of file Firmata.\+cpp.
+
+
+
+References E\+N\+D\+\_\+\+S\+Y\+S\+EX.
+
+
+
+Referenced by print\+Firmware\+Version(), and send\+Sysex().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_a9bb68afbb1d37a7990f59a1d419e64c9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!get\+Pin\+Mode@{get\+Pin\+Mode}}
+\index{get\+Pin\+Mode@{get\+Pin\+Mode}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{get\+Pin\+Mode(byte pin)}{getPinMode(byte pin)}}]{\setlength{\rightskip}{0pt plus 5cm}byte Firmata\+Class\+::get\+Pin\+Mode (
+\begin{DoxyParamCaption}
+\item[{byte}]{pin}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a0c434227456ce2ba97b3b1142c329f96}{}\label{class_firmata_class_a0c434227456ce2ba97b3b1142c329f96}
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & The pin to get the configuration of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The configuration of the specified pin. 
+\end{DoxyReturn}
+
+
+Definition at line 564 of file Firmata.\+cpp.
+
+\index{Firmata\+Class@{Firmata\+Class}!get\+Pin\+State@{get\+Pin\+State}}
+\index{get\+Pin\+State@{get\+Pin\+State}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{get\+Pin\+State(byte pin)}{getPinState(byte pin)}}]{\setlength{\rightskip}{0pt plus 5cm}int Firmata\+Class\+::get\+Pin\+State (
+\begin{DoxyParamCaption}
+\item[{byte}]{pin}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_acf5d4f460b9a2298653d4a71de918dfe}{}\label{class_firmata_class_acf5d4f460b9a2298653d4a71de918dfe}
+
+\begin{DoxyParams}{Parameters}
+{\em pin} & The pin to get the state of. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The state of the specified pin. 
+\end{DoxyReturn}
+
+
+Definition at line 588 of file Firmata.\+cpp.
+
+\index{Firmata\+Class@{Firmata\+Class}!is\+Parsing\+Message@{is\+Parsing\+Message}}
+\index{is\+Parsing\+Message@{is\+Parsing\+Message}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{is\+Parsing\+Message(void)}{isParsingMessage(void)}}]{\setlength{\rightskip}{0pt plus 5cm}boolean Firmata\+Class\+::is\+Parsing\+Message (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a58e9d787957c3085f22d33b59b1f6ea6}{}\label{class_firmata_class_a58e9d787957c3085f22d33b59b1f6ea6}
+\begin{DoxyReturn}{Returns}
+Returns true if the parser is actively parsing data. 
+\end{DoxyReturn}
+
+
+Definition at line 378 of file Firmata.\+cpp.
+
+\index{Firmata\+Class@{Firmata\+Class}!parse@{parse}}
+\index{parse@{parse}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{parse(unsigned char value)}{parse(unsigned char value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::parse (
+\begin{DoxyParamCaption}
+\item[{unsigned char}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_aaeaac8b1f8facf070615b0035120c432}{}\label{class_firmata_class_aaeaac8b1f8facf070615b0035120c432}
+Parse data from the input stream. 
+\begin{DoxyParams}{Parameters}
+{\em input\+Data} & A single byte to be added to the parser. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 286 of file Firmata.\+cpp.
+
+
+
+References A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE, D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE, E\+N\+D\+\_\+\+S\+Y\+S\+EX, Firmata, print\+Version(), R\+E\+P\+O\+R\+T\+\_\+\+A\+N\+A\+L\+OG, R\+E\+P\+O\+R\+T\+\_\+\+D\+I\+G\+I\+T\+AL, R\+E\+P\+O\+R\+T\+\_\+\+V\+E\+R\+S\+I\+ON, S\+E\+T\+\_\+\+D\+I\+G\+I\+T\+A\+L\+\_\+\+P\+I\+N\+\_\+\+V\+A\+L\+UE, S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+DE, S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX, and S\+Y\+S\+T\+E\+M\+\_\+\+R\+E\+S\+ET.
+
+
+
+Referenced by process\+Input().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=338pt]{class_firmata_class_aaeaac8b1f8facf070615b0035120c432_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=339pt]{class_firmata_class_aaeaac8b1f8facf070615b0035120c432_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!print\+Firmware\+Version@{print\+Firmware\+Version}}
+\index{print\+Firmware\+Version@{print\+Firmware\+Version}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{print\+Firmware\+Version(void)}{printFirmwareVersion(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::print\+Firmware\+Version (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_abe49261eab0bd4892a09fa8b8980b11a}{}\label{class_firmata_class_abe49261eab0bd4892a09fa8b8980b11a}
+Sends the firmware name and version to the Firmata host application. The major and minor version numbers are the first 2 bytes in the message. The following bytes are the characters of the firmware name. 
+
+Definition at line 160 of file Firmata.\+cpp.
+
+
+
+References end\+Sysex(), i, R\+E\+P\+O\+R\+T\+\_\+\+F\+I\+R\+M\+W\+A\+RE, send\+Value\+As\+Two7bit\+Bytes(), and start\+Sysex().
+
+
+
+Referenced by available(), and begin().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_abe49261eab0bd4892a09fa8b8980b11a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_abe49261eab0bd4892a09fa8b8980b11a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!print\+Version@{print\+Version}}
+\index{print\+Version@{print\+Version}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{print\+Version(void)}{printVersion(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::print\+Version (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_abd8a0370db6d9e923e7e3d5836e78d7a}{}\label{class_firmata_class_abd8a0370db6d9e923e7e3d5836e78d7a}
+Send the Firmata protocol version to the Firmata host application. 
+
+Definition at line 118 of file Firmata.\+cpp.
+
+
+
+References F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON, F\+I\+R\+M\+A\+T\+A\+\_\+\+P\+R\+O\+T\+O\+C\+O\+L\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON, and R\+E\+P\+O\+R\+T\+\_\+\+V\+E\+R\+S\+I\+ON.
+
+
+
+Referenced by begin(), and parse().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_abd8a0370db6d9e923e7e3d5836e78d7a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!process\+Input@{process\+Input}}
+\index{process\+Input@{process\+Input}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{process\+Input(void)}{processInput(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::process\+Input (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_aa698f5f5a234173d5eebb54831350676}{}\label{class_firmata_class_aa698f5f5a234173d5eebb54831350676}
+Read a single int from the input stream. If the value is not = -\/1, pass it on to parse(byte) 
+
+Definition at line 274 of file Firmata.\+cpp.
+
+
+
+References parse().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_aa698f5f5a234173d5eebb54831350676_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!send\+Analog@{send\+Analog}}
+\index{send\+Analog@{send\+Analog}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{send\+Analog(byte pin, int value)}{sendAnalog(byte pin, int value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::send\+Analog (
+\begin{DoxyParamCaption}
+\item[{byte}]{pin, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_ae14e1d8d9bd72068f6e8ca07721e8dda}{}\label{class_firmata_class_ae14e1d8d9bd72068f6e8ca07721e8dda}
+Send an analog message to the Firmata host application. The range of pins is limited to \mbox{[}0..15\mbox{]} when using the A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE. The maximum value of the A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE is limited to 14 bits (16384). To increase the pin range or value, see the documentation for the E\+X\+T\+E\+N\+D\+E\+D\+\_\+\+A\+N\+A\+L\+OG message. 
+\begin{DoxyParams}{Parameters}
+{\em pin} & The analog pin to send the value of (limited to pins 0 -\/ 15). \\
+\hline
+{\em value} & The value of the analog pin (0 -\/ 1024 for 10-\/bit analog, 0 -\/ 4096 for 12-\/bit, etc). The maximum value is 14-\/bits (16384). \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 395 of file Firmata.\+cpp.
+
+
+
+References A\+N\+A\+L\+O\+G\+\_\+\+M\+E\+S\+S\+A\+GE, and send\+Value\+As\+Two7bit\+Bytes().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_ae14e1d8d9bd72068f6e8ca07721e8dda_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!send\+Digital@{send\+Digital}}
+\index{send\+Digital@{send\+Digital}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{send\+Digital(byte pin, int value)}{sendDigital(byte pin, int value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::send\+Digital (
+\begin{DoxyParamCaption}
+\item[{byte}]{pin, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a50a87e8339cf46fb787759603603e225}{}\label{class_firmata_class_a50a87e8339cf46fb787759603603e225}
+
+
+Definition at line 408 of file Firmata.\+cpp.
+
+\index{Firmata\+Class@{Firmata\+Class}!send\+Digital\+Port@{send\+Digital\+Port}}
+\index{send\+Digital\+Port@{send\+Digital\+Port}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{send\+Digital\+Port(byte port\+Number, int port\+Data)}{sendDigitalPort(byte portNumber, int portData)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::send\+Digital\+Port (
+\begin{DoxyParamCaption}
+\item[{byte}]{port\+Number, }
+\item[{int}]{port\+Data}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a799b91e5a888dd21b066a2020d8e2b68}{}\label{class_firmata_class_a799b91e5a888dd21b066a2020d8e2b68}
+Send an 8-\/bit port in a single digital message (protocol v2 and later). Send 14-\/bits in a single digital message (protocol v1). 
+\begin{DoxyParams}{Parameters}
+{\em port\+Number} & The port number to send. Note that this is not the same as a \char`\"{}port\char`\"{} on the physical microcontroller. Ports are defined in order per every 8 pins in ascending order of the Arduino digital pin numbering scheme. Port 0 = pins D0 -\/ D7, port 1 = pins D8 -\/ D15, etc. \\
+\hline
+{\em port\+Data} & The value of the port. The value of each pin in the port is represented by a bit. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 436 of file Firmata.\+cpp.
+
+
+
+References D\+I\+G\+I\+T\+A\+L\+\_\+\+M\+E\+S\+S\+A\+GE.
+
+\index{Firmata\+Class@{Firmata\+Class}!send\+String@{send\+String}}
+\index{send\+String@{send\+String}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{send\+String(const char $\ast$string)}{sendString(const char *string)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::send\+String (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_abe11f621154afd308926129de349fc6e}{}\label{class_firmata_class_abe11f621154afd308926129de349fc6e}
+Send a string to the Firmata host application. 
+\begin{DoxyParams}{Parameters}
+{\em string} & A pointer to the char string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 477 of file Firmata.\+cpp.
+
+
+
+References S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA.
+
+
+
+Referenced by Serial\+Firmata\+::handle\+Sysex().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_abe11f621154afd308926129de349fc6e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!send\+String@{send\+String}}
+\index{send\+String@{send\+String}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{send\+String(byte command, const char $\ast$string)}{sendString(byte command, const char *string)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::send\+String (
+\begin{DoxyParamCaption}
+\item[{byte}]{command, }
+\item[{const char $\ast$}]{string}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_ab139c0d784e69003c88eb5be8807dcdf}{}\label{class_firmata_class_ab139c0d784e69003c88eb5be8807dcdf}
+Send a string to the Firmata host application. 
+\begin{DoxyParams}{Parameters}
+{\em command} & Must be S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA \\
+\hline
+{\em string} & A pointer to the char string \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 466 of file Firmata.\+cpp.
+
+
+
+References send\+Sysex(), and S\+T\+R\+I\+N\+G\+\_\+\+D\+A\+TA.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_ab139c0d784e69003c88eb5be8807dcdf_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!send\+Sysex@{send\+Sysex}}
+\index{send\+Sysex@{send\+Sysex}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{send\+Sysex(byte command, byte bytec, byte $\ast$bytev)}{sendSysex(byte command, byte bytec, byte *bytev)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::send\+Sysex (
+\begin{DoxyParamCaption}
+\item[{byte}]{command, }
+\item[{byte}]{bytec, }
+\item[{byte $\ast$}]{bytev}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a81e2de5b37eb2372c8a3d9a43d5eb0cc}{}\label{class_firmata_class_a81e2de5b37eb2372c8a3d9a43d5eb0cc}
+Send a sysex message where all values after the command byte are packet as 2 7-\/bit bytes (this is not always the case so this function is not always used to send sysex messages). 
+\begin{DoxyParams}{Parameters}
+{\em command} & The sysex command byte. \\
+\hline
+{\em bytec} & The number of data bytes in the message (excludes start, command and end bytes). \\
+\hline
+{\em bytev} & A pointer to the array of data bytes to send in the message. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 450 of file Firmata.\+cpp.
+
+
+
+References end\+Sysex(), i, send\+Value\+As\+Two7bit\+Bytes(), and start\+Sysex().
+
+
+
+Referenced by send\+String().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_a81e2de5b37eb2372c8a3d9a43d5eb0cc_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_a81e2de5b37eb2372c8a3d9a43d5eb0cc_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!send\+Value\+As\+Two7bit\+Bytes@{send\+Value\+As\+Two7bit\+Bytes}}
+\index{send\+Value\+As\+Two7bit\+Bytes@{send\+Value\+As\+Two7bit\+Bytes}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{send\+Value\+As\+Two7bit\+Bytes(int value)}{sendValueAsTwo7bitBytes(int value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::send\+Value\+As\+Two7bit\+Bytes (
+\begin{DoxyParamCaption}
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a770e43f26f18204e43acebf9202a6d39}{}\label{class_firmata_class_a770e43f26f18204e43acebf9202a6d39}
+Split a 16-\/bit byte into two 7-\/bit values and write each value. 
+\begin{DoxyParams}{Parameters}
+{\em value} & The 16-\/bit value to be split and written separately. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 34 of file Firmata.\+cpp.
+
+
+
+Referenced by print\+Firmware\+Version(), send\+Analog(), and send\+Sysex().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_a770e43f26f18204e43acebf9202a6d39_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!set\+Firmware\+Name\+And\+Version@{set\+Firmware\+Name\+And\+Version}}
+\index{set\+Firmware\+Name\+And\+Version@{set\+Firmware\+Name\+And\+Version}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{set\+Firmware\+Name\+And\+Version(const char $\ast$name, byte major, byte minor)}{setFirmwareNameAndVersion(const char *name, byte major, byte minor)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::set\+Firmware\+Name\+And\+Version (
+\begin{DoxyParamCaption}
+\item[{const char $\ast$}]{name, }
+\item[{byte}]{major, }
+\item[{byte}]{minor}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_ab7aa66b528027566c15b7d64c8cd0f89}{}\label{class_firmata_class_ab7aa66b528027566c15b7d64c8cd0f89}
+Sets the name and version of the firmware. This is not the same version as the Firmata protocol (although at times the firmware version and protocol version may be the same number). 
+\begin{DoxyParams}{Parameters}
+{\em name} & A pointer to the name char array \\
+\hline
+{\em major} & The major version number \\
+\hline
+{\em minor} & The minor version number \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 183 of file Firmata.\+cpp.
+
+\index{Firmata\+Class@{Firmata\+Class}!set\+Pin\+Mode@{set\+Pin\+Mode}}
+\index{set\+Pin\+Mode@{set\+Pin\+Mode}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{set\+Pin\+Mode(byte pin, byte config)}{setPinMode(byte pin, byte config)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::set\+Pin\+Mode (
+\begin{DoxyParamCaption}
+\item[{byte}]{pin, }
+\item[{byte}]{config}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a32c41dd94c1d23aa0e6d3d1dbe5c0c04}{}\label{class_firmata_class_a32c41dd94c1d23aa0e6d3d1dbe5c0c04}
+Set the pin mode/configuration. The pin configuration (or mode) in Firmata represents the current function of the pin. Examples are digital input or output, analog input, pwm, i2c, serial (uart), etc. 
+\begin{DoxyParams}{Parameters}
+{\em pin} & The pin to configure. \\
+\hline
+{\em config} & The configuration value for the specified pin. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 576 of file Firmata.\+cpp.
+
+
+
+References P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+I\+G\+N\+O\+RE.
+
+
+
+Referenced by Serial\+Firmata\+::handle\+Pin\+Mode(), and Serial\+Firmata\+::handle\+Sysex().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_a32c41dd94c1d23aa0e6d3d1dbe5c0c04_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!set\+Pin\+State@{set\+Pin\+State}}
+\index{set\+Pin\+State@{set\+Pin\+State}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{set\+Pin\+State(byte pin, int state)}{setPinState(byte pin, int state)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::set\+Pin\+State (
+\begin{DoxyParamCaption}
+\item[{byte}]{pin, }
+\item[{int}]{state}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_aa9f98ba5069823b4c1d08db9f8999ba8}{}\label{class_firmata_class_aa9f98ba5069823b4c1d08db9f8999ba8}
+Set the pin state. The pin state of an output pin is the pin value. The state of an input pin is 0, unless the pin has it\textquotesingle{}s internal pull up resistor enabled, then the value is 1. 
+\begin{DoxyParams}{Parameters}
+{\em pin} & The pin to set the state of \\
+\hline
+{\em state} & Set the state of the specified pin \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 599 of file Firmata.\+cpp.
+
+
+
+References i, and M\+A\+X\+\_\+\+D\+A\+T\+A\+\_\+\+B\+Y\+T\+ES.
+
+\index{Firmata\+Class@{Firmata\+Class}!start\+Sysex@{start\+Sysex}}
+\index{start\+Sysex@{start\+Sysex}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{start\+Sysex(void)}{startSysex(void)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::start\+Sysex (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_a3cc7ea1af348bca3ea0bd570314cada3}{}\label{class_firmata_class_a3cc7ea1af348bca3ea0bd570314cada3}
+A helper method to write the beginning of a Sysex message transmission. 
+
+Definition at line 43 of file Firmata.\+cpp.
+
+
+
+References S\+T\+A\+R\+T\+\_\+\+S\+Y\+S\+EX.
+
+
+
+Referenced by print\+Firmware\+Version(), and send\+Sysex().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_a3cc7ea1af348bca3ea0bd570314cada3_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Firmata\+Class@{Firmata\+Class}!write@{write}}
+\index{write@{write}!Firmata\+Class@{Firmata\+Class}}
+\subsubsection[{\texorpdfstring{write(byte c)}{write(byte c)}}]{\setlength{\rightskip}{0pt plus 5cm}void Firmata\+Class\+::write (
+\begin{DoxyParamCaption}
+\item[{byte}]{c}
+\end{DoxyParamCaption}
+)}\hypertarget{class_firmata_class_ae8f29a829e17379602fcb9fd6a497807}{}\label{class_firmata_class_ae8f29a829e17379602fcb9fd6a497807}
+A wrapper for Stream\+::available(). Write a single byte to the output stream. 
+\begin{DoxyParams}{Parameters}
+{\em c} & The byte to be written. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 487 of file Firmata.\+cpp.
+
+
+
+Referenced by Serial\+Firmata\+::check\+Serial(), and Serial\+Firmata\+::handle\+Capability().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_firmata_class_ae8f29a829e17379602fcb9fd6a497807_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Firmata/\hyperlink{_firmata_8h}{Firmata.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Firmata/\hyperlink{_firmata_8cpp}{Firmata.\+cpp}\end{DoxyCompactItemize}

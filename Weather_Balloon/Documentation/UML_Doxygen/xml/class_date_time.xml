@@ -1,0 +1,462 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_date_time" kind="class" language="C++" prot="public">
+    <compoundname>DateTime</compoundname>
+    <includes refid="_r_t_clib_8h" local="no">RTClib.h</includes>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::yOff</definition>
+        <argsstring></argsstring>
+        <name>yOff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="51" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime</referencedby>
+        <referencedby refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" compoundref="_r_t_clib_8cpp" startline="142" endline="146">dayOfWeek</referencedby>
+        <referencedby refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" compoundref="_r_t_clib_8cpp" startline="161" endline="172">toString</referencedby>
+        <referencedby refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">unixtime</referencedby>
+        <referencedby refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" compoundref="_r_t_clib_8h" startline="15" endline="18">year</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_date_time_1a04c79ec05511462bc6a015e5b1088609" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::m</definition>
+        <argsstring></argsstring>
+        <name>m</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="51" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime</referencedby>
+        <referencedby refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" compoundref="_r_t_clib_8cpp" startline="142" endline="146">dayOfWeek</referencedby>
+        <referencedby refid="class_date_time_1a58beb18aec346e7081d02a2962032a43" compoundref="_r_t_clib_8h" startline="19" endline="22">month</referencedby>
+        <referencedby refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" compoundref="_r_t_clib_8cpp" startline="161" endline="172">toString</referencedby>
+        <referencedby refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">unixtime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="51" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime</referencedby>
+        <referencedby refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" compoundref="_r_t_clib_8h" startline="23" endline="26">day</referencedby>
+        <referencedby refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" compoundref="_r_t_clib_8cpp" startline="142" endline="146">dayOfWeek</referencedby>
+        <referencedby refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" compoundref="_r_t_clib_8cpp" startline="161" endline="172">toString</referencedby>
+        <referencedby refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">unixtime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::hh</definition>
+        <argsstring></argsstring>
+        <name>hh</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="51" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime</referencedby>
+        <referencedby refid="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" compoundref="_r_t_clib_8h" startline="27" endline="30">hour</referencedby>
+        <referencedby refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" compoundref="_r_t_clib_8cpp" startline="161" endline="172">toString</referencedby>
+        <referencedby refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">unixtime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_date_time_1af2cbffff9349832135c3280a18d21510" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::mm</definition>
+        <argsstring></argsstring>
+        <name>mm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="51" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime</referencedby>
+        <referencedby refid="class_date_time_1a9990c5958c55b3aa7018e21df9d490e5" compoundref="_r_t_clib_8h" startline="31" endline="34">minute</referencedby>
+        <referencedby refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" compoundref="_r_t_clib_8cpp" startline="161" endline="172">toString</referencedby>
+        <referencedby refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">unixtime</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" prot="protected" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::ss</definition>
+        <argsstring></argsstring>
+        <name>ss</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="51" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="51" bodyend="-1"/>
+        <referencedby refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime</referencedby>
+        <referencedby refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" compoundref="_r_t_clib_8h" startline="35" endline="38">second</referencedby>
+        <referencedby refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" compoundref="_r_t_clib_8cpp" startline="161" endline="172">toString</referencedby>
+        <referencedby refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">unixtime</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_date_time_1af42f356752ec542faf262f485bd44a0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DateTime::DateTime</definition>
+        <argsstring>(uint32_t t=0)</argsstring>
+        <name>DateTime</name>
+        <param>
+          <type>uint32_t</type>
+          <declname>t</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="11" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="46" bodyend="74"/>
+        <references refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" compoundref="_r_t_clib_8h" startline="51">d</references>
+        <references refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" compoundref="_r_t_clib_8h" startline="51">hh</references>
+        <references refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" compoundref="_r_t_clib_8h" startline="51">m</references>
+        <references refid="class_date_time_1af2cbffff9349832135c3280a18d21510" compoundref="_r_t_clib_8h" startline="51">mm</references>
+        <references refid="pgmspace_8h_1a48c60b057902adf805797f183286728d" compoundref="pgmspace_8h" startline="60">pgm_read_byte</references>
+        <references refid="_r_t_clib_8cpp_1a1a4c3c6b78fa47471646f18b572ddd46" compoundref="_r_t_clib_8cpp" startline="8">SECONDS_FROM_1970_TO_2000</references>
+        <references refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" compoundref="_r_t_clib_8h" startline="51">ss</references>
+        <references refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" compoundref="_r_t_clib_8h" startline="51">yOff</references>
+        <referencedby refid="class_date_time_1a87adbc2ee0bfcb9417ffeadca2e3f375" compoundref="_r_t_clib_8cpp" startline="174" endline="178">operator+=</referencedby>
+        <referencedby refid="class_r_t_c___millis_1a2bf3cc48adda7c115553a499a46b3506" compoundref="_r_t_clib_8h" startline="69" endline="72">RTC_Millis::RTC_Millis</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1aad62a6709a1e65e6860b1efaf8c347e9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DateTime::DateTime</definition>
+        <argsstring>(uint16_t year, uint8_t month, uint8_t day, uint8_t hour=0, uint8_t min=0, uint8_t sec=0)</argsstring>
+        <name>DateTime</name>
+        <param>
+          <type>uint16_t</type>
+          <declname>year</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>month</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>day</declname>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>hour</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>min</declname>
+          <defval>0</defval>
+        </param>
+        <param>
+          <type>uint8_t</type>
+          <declname>sec</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="12" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="76" bodyend="86"/>
+        <references refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" compoundref="_r_t_clib_8h" startline="51">d</references>
+        <references refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" compoundref="_r_t_clib_8h" startline="51">hh</references>
+        <references refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" compoundref="_r_t_clib_8h" startline="51">m</references>
+        <references refid="class_date_time_1af2cbffff9349832135c3280a18d21510" compoundref="_r_t_clib_8h" startline="51">mm</references>
+        <references refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" compoundref="_r_t_clib_8h" startline="51">ss</references>
+        <references refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" compoundref="_r_t_clib_8h" startline="15" endline="18">year</references>
+        <references refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" compoundref="_r_t_clib_8h" startline="51">yOff</references>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1aabeb5303c98a004439fe337bb5f5da63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>DateTime::DateTime</definition>
+        <argsstring>(const char *date, const char *time)</argsstring>
+        <name>DateTime</name>
+        <param>
+          <type>const char *</type>
+          <declname>date</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>time</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="14" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="99" bodyend="140"/>
+        <references refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" compoundref="_r_t_clib_8h" startline="51">d</references>
+        <references refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" compoundref="_r_t_clib_8h" startline="51">hh</references>
+        <references refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" compoundref="_r_t_clib_8h" startline="51">m</references>
+        <references refid="class_date_time_1af2cbffff9349832135c3280a18d21510" compoundref="_r_t_clib_8h" startline="51">mm</references>
+        <references refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" compoundref="_r_t_clib_8h" startline="51">ss</references>
+        <references refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" compoundref="_r_t_clib_8h" startline="51">yOff</references>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint16_t</type>
+        <definition>uint16_t DateTime::year</definition>
+        <argsstring>() const </argsstring>
+        <name>year</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="15" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="15" bodyend="18"/>
+        <references refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" compoundref="_r_t_clib_8h" startline="51">yOff</references>
+        <referencedby refid="class_r_t_c___d_s1307_1a6e38778b577a80008e9dc630384b8520" compoundref="_r_t_c___d_s1307_8cpp" startline="44" endline="57">RTC_DS1307::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" compoundref="_r_t_c___d_s3231_8cpp" startline="51" endline="65">RTC_DS3231::adjust</referencedby>
+        <referencedby refid="class_date_time_1aad62a6709a1e65e6860b1efaf8c347e9" compoundref="_r_t_clib_8cpp" startline="76" endline="86">DateTime</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a58beb18aec346e7081d02a2962032a43" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::month</definition>
+        <argsstring>() const </argsstring>
+        <name>month</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="19" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="19" bodyend="22"/>
+        <references refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" compoundref="_r_t_clib_8h" startline="51">m</references>
+        <referencedby refid="class_r_t_c___d_s1307_1a6e38778b577a80008e9dc630384b8520" compoundref="_r_t_c___d_s1307_8cpp" startline="44" endline="57">RTC_DS1307::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" compoundref="_r_t_c___d_s3231_8cpp" startline="51" endline="65">RTC_DS3231::adjust</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::day</definition>
+        <argsstring>() const </argsstring>
+        <name>day</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="23" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="23" bodyend="26"/>
+        <references refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" compoundref="_r_t_clib_8h" startline="51">d</references>
+        <referencedby refid="class_r_t_c___d_s1307_1a6e38778b577a80008e9dc630384b8520" compoundref="_r_t_c___d_s1307_8cpp" startline="44" endline="57">RTC_DS1307::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" compoundref="_r_t_c___d_s3231_8cpp" startline="51" endline="65">RTC_DS3231::adjust</referencedby>
+        <referencedby refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" compoundref="_r_t_clib_8cpp" startline="142" endline="146">dayOfWeek</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::hour</definition>
+        <argsstring>() const </argsstring>
+        <name>hour</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="27" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="27" bodyend="30"/>
+        <references refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" compoundref="_r_t_clib_8h" startline="51">hh</references>
+        <referencedby refid="class_r_t_c___d_s1307_1a6e38778b577a80008e9dc630384b8520" compoundref="_r_t_c___d_s1307_8cpp" startline="44" endline="57">RTC_DS1307::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" compoundref="_r_t_c___d_s3231_8cpp" startline="51" endline="65">RTC_DS3231::adjust</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a9990c5958c55b3aa7018e21df9d490e5" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::minute</definition>
+        <argsstring>() const </argsstring>
+        <name>minute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="31" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="31" bodyend="34"/>
+        <references refid="class_date_time_1af2cbffff9349832135c3280a18d21510" compoundref="_r_t_clib_8h" startline="51">mm</references>
+        <referencedby refid="class_r_t_c___d_s1307_1a6e38778b577a80008e9dc630384b8520" compoundref="_r_t_c___d_s1307_8cpp" startline="44" endline="57">RTC_DS1307::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" compoundref="_r_t_c___d_s3231_8cpp" startline="51" endline="65">RTC_DS3231::adjust</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::second</definition>
+        <argsstring>() const </argsstring>
+        <name>second</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="35" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="35" bodyend="38"/>
+        <references refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" compoundref="_r_t_clib_8cpp" startline="142" endline="146">dayOfWeek</references>
+        <references refid="class_date_time_1a87adbc2ee0bfcb9417ffeadca2e3f375" compoundref="_r_t_clib_8cpp" startline="174" endline="178">operator+=</references>
+        <references refid="class_date_time_1a6dd7642f7f7a2d7ff7aec465bbc78187">secondstime</references>
+        <references refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" compoundref="_r_t_clib_8h" startline="51">ss</references>
+        <references refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" compoundref="_r_t_clib_8cpp" startline="161" endline="172">toString</references>
+        <references refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">unixtime</references>
+        <referencedby refid="class_r_t_c___d_s1307_1a6e38778b577a80008e9dc630384b8520" compoundref="_r_t_c___d_s1307_8cpp" startline="44" endline="57">RTC_DS1307::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3231_1ae8d2a40c8ada023f5ab502a77631abb0" compoundref="_r_t_c___d_s3231_8cpp" startline="51" endline="65">RTC_DS3231::adjust</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a4f3e0999a04238348adf390c29b889f9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t DateTime::dayOfWeek</definition>
+        <argsstring>() const </argsstring>
+        <name>dayOfWeek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="39" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="142" bodyend="146"/>
+        <references refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" compoundref="_r_t_clib_8h" startline="51">d</references>
+        <references refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" compoundref="_r_t_clib_8h" startline="23" endline="26">day</references>
+        <references refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" compoundref="_r_t_clib_8h" startline="51">m</references>
+        <references refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" compoundref="_r_t_clib_8h" startline="51">yOff</references>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+        <referencedby refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" compoundref="_r_t_clib_8h" startline="35" endline="38">second</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a6dd7642f7f7a2d7ff7aec465bbc78187" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>long</type>
+        <definition>long DateTime::secondstime</definition>
+        <argsstring>() const </argsstring>
+        <name>secondstime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="42" column="1"/>
+        <referencedby refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" compoundref="_r_t_clib_8h" startline="35" endline="38">second</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t DateTime::unixtime</definition>
+        <argsstring>(void) const </argsstring>
+        <name>unixtime</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="44" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="148" bodyend="156"/>
+        <references refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" compoundref="_r_t_clib_8h" startline="51">d</references>
+        <references refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" compoundref="_r_t_clib_8h" startline="51">hh</references>
+        <references refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" compoundref="_r_t_clib_8h" startline="51">m</references>
+        <references refid="class_date_time_1af2cbffff9349832135c3280a18d21510" compoundref="_r_t_clib_8h" startline="51">mm</references>
+        <references refid="_r_t_clib_8cpp_1a1a4c3c6b78fa47471646f18b572ddd46" compoundref="_r_t_clib_8cpp" startline="8">SECONDS_FROM_1970_TO_2000</references>
+        <references refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" compoundref="_r_t_clib_8h" startline="51">ss</references>
+        <references refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" compoundref="_r_t_clib_8h" startline="51">yOff</references>
+        <referencedby refid="class_r_t_c___millis_1adcf4a13317d9b785ae79613b3429a46a" compoundref="_r_t_clib_8cpp" startline="192" endline="195">RTC_Millis::adjust</referencedby>
+        <referencedby refid="class_date_time_1a87adbc2ee0bfcb9417ffeadca2e3f375" compoundref="_r_t_clib_8cpp" startline="174" endline="178">operator+=</referencedby>
+        <referencedby refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" compoundref="_r_t_clib_8h" startline="35" endline="38">second</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>char *</type>
+        <definition>char * DateTime::toString</definition>
+        <argsstring>(char *buf, int maxlen) const </argsstring>
+        <name>toString</name>
+        <param>
+          <type>char *</type>
+          <declname>buf</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>maxlen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="46" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="161" bodyend="172"/>
+        <references refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" compoundref="_r_t_clib_8h" startline="51">d</references>
+        <references refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" compoundref="_r_t_clib_8h" startline="51">hh</references>
+        <references refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" compoundref="_r_t_clib_8h" startline="51">m</references>
+        <references refid="class_date_time_1af2cbffff9349832135c3280a18d21510" compoundref="_r_t_clib_8h" startline="51">mm</references>
+        <references refid="_r_t_clib_8cpp_1a3dd31d96db8edd1409dce1fc3560e4eb" compoundref="_r_t_clib_8cpp" startline="158">months</references>
+        <references refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" compoundref="_r_t_clib_8h" startline="51">ss</references>
+        <references refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" compoundref="_r_t_clib_8h" startline="51">yOff</references>
+        <referencedby refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" compoundref="_r_t_clib_8h" startline="35" endline="38">second</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_date_time_1a87adbc2ee0bfcb9417ffeadca2e3f375" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void DateTime::operator+=</definition>
+        <argsstring>(uint32_t)</argsstring>
+        <name>operator+=</name>
+        <param>
+          <type>uint32_t</type>
+          <defname>additional</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="48" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.cpp" bodystart="174" bodyend="178"/>
+        <references refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" compoundref="_r_t_clib_8cpp" startline="46" endline="74">DateTime</references>
+        <references refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" compoundref="_r_t_clib_8cpp" startline="148" endline="156">unixtime</references>
+        <referencedby refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" compoundref="_r_t_clib_8h" startline="35" endline="38">second</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/RTClib-master/RTClib.h" line="9" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTClib.h" bodystart="8" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_date_time_1abad2ae4520c8a7f87fd242c0d9a53256" prot="protected" virt="non-virtual"><scope>DateTime</scope><name>d</name></member>
+      <member refid="class_date_time_1af42f356752ec542faf262f485bd44a0b" prot="public" virt="non-virtual"><scope>DateTime</scope><name>DateTime</name></member>
+      <member refid="class_date_time_1aad62a6709a1e65e6860b1efaf8c347e9" prot="public" virt="non-virtual"><scope>DateTime</scope><name>DateTime</name></member>
+      <member refid="class_date_time_1aabeb5303c98a004439fe337bb5f5da63" prot="public" virt="non-virtual"><scope>DateTime</scope><name>DateTime</name></member>
+      <member refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" prot="public" virt="non-virtual"><scope>DateTime</scope><name>day</name></member>
+      <member refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" prot="public" virt="non-virtual"><scope>DateTime</scope><name>dayOfWeek</name></member>
+      <member refid="class_date_time_1ad65c31b7b4bf0430311e5bdf3f343371" prot="protected" virt="non-virtual"><scope>DateTime</scope><name>hh</name></member>
+      <member refid="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" prot="public" virt="non-virtual"><scope>DateTime</scope><name>hour</name></member>
+      <member refid="class_date_time_1a04c79ec05511462bc6a015e5b1088609" prot="protected" virt="non-virtual"><scope>DateTime</scope><name>m</name></member>
+      <member refid="class_date_time_1a9990c5958c55b3aa7018e21df9d490e5" prot="public" virt="non-virtual"><scope>DateTime</scope><name>minute</name></member>
+      <member refid="class_date_time_1af2cbffff9349832135c3280a18d21510" prot="protected" virt="non-virtual"><scope>DateTime</scope><name>mm</name></member>
+      <member refid="class_date_time_1a58beb18aec346e7081d02a2962032a43" prot="public" virt="non-virtual"><scope>DateTime</scope><name>month</name></member>
+      <member refid="class_date_time_1a87adbc2ee0bfcb9417ffeadca2e3f375" prot="public" virt="non-virtual"><scope>DateTime</scope><name>operator+=</name></member>
+      <member refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" prot="public" virt="non-virtual"><scope>DateTime</scope><name>second</name></member>
+      <member refid="class_date_time_1a6dd7642f7f7a2d7ff7aec465bbc78187" prot="public" virt="non-virtual"><scope>DateTime</scope><name>secondstime</name></member>
+      <member refid="class_date_time_1a38da3481e6355fcf8ceb4c57eb9db0ce" prot="protected" virt="non-virtual"><scope>DateTime</scope><name>ss</name></member>
+      <member refid="class_date_time_1a839ec24c6bec99875ac7336deed49ac7" prot="public" virt="non-virtual"><scope>DateTime</scope><name>toString</name></member>
+      <member refid="class_date_time_1afb578f26cf9eddc7d6a0891021ee77f3" prot="public" virt="non-virtual"><scope>DateTime</scope><name>unixtime</name></member>
+      <member refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" prot="public" virt="non-virtual"><scope>DateTime</scope><name>year</name></member>
+      <member refid="class_date_time_1ac0b5906cbb32751988603bf0388e7ab9" prot="protected" virt="non-virtual"><scope>DateTime</scope><name>yOff</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,19 @@
+var searchData=
+[
+  ['accelavailable',['accelAvailable',['../class_l_s_m9_d_s1.html#a515ce6f5c199a86c6aa5be353b2a3a13',1,'LSM9DS1']]],
+  ['adafruit_5fadxl345_5funified',['Adafruit_ADXL345_Unified',['../class_adafruit___a_d_x_l345___unified.html#a34c57b807ceb0636ab79320231e51dd6',1,'Adafruit_ADXL345_Unified::Adafruit_ADXL345_Unified(int32_t sensorID=-1)'],['../class_adafruit___a_d_x_l345___unified.html#a7e0409063a7441c35044902b947d661d',1,'Adafruit_ADXL345_Unified::Adafruit_ADXL345_Unified(uint8_t clock, uint8_t miso, uint8_t mosi, uint8_t cs, int32_t sensorID=-1)']]],
+  ['adafruit_5fsensor',['Adafruit_Sensor',['../class_adafruit___sensor.html#a1d06c6f2b9d014894f47102fc1effddf',1,'Adafruit_Sensor']]],
+  ['adafruit_5fsht31',['Adafruit_SHT31',['../class_adafruit___s_h_t31.html#a3c675ce344f1dd28b04764de3d7b5104',1,'Adafruit_SHT31']]],
+  ['adafruit_5fsi1145',['Adafruit_SI1145',['../class_adafruit___s_i1145.html#ae89a2548ed17479c42aa011df63160f2',1,'Adafruit_SI1145']]],
+  ['adafruit_5ftsl2561_5funified',['Adafruit_TSL2561_Unified',['../class_adafruit___t_s_l2561___unified.html#abd81c1ca2c46e4d8b9c3f4460a65aa3f',1,'Adafruit_TSL2561_Unified']]],
+  ['adjust',['adjust',['../class_r_t_c___d_s1307.html#a6e38778b577a80008e9dc630384b8520',1,'RTC_DS1307::adjust()'],['../class_r_t_c___d_s3231.html#ae8d2a40c8ada023f5ab502a77631abb0',1,'RTC_DS3231::adjust()'],['../class_r_t_c___d_s3234.html#a13766581ca199cae55d02327c39f78da',1,'RTC_DS3234::adjust()'],['../class_r_t_c___millis.html#adcf4a13317d9b785ae79613b3429a46a',1,'RTC_Millis::adjust()']]],
+  ['adjust_5fheaters',['adjust_heaters',['../_weather___balloon_8cpp.html#a337f8319327997530d76011aac7bfa15',1,'Weather_Balloon.cpp']]],
+  ['adjusttime',['adjustTime',['../_time_8cpp.html#acc6ec9a3678824ee0b252511300cf070',1,'Time.cpp']]],
+  ['age',['age',['../struct_tiny_g_p_s_location.html#ada111e1b74f82dc029c0c61241424ca8',1,'TinyGPSLocation::age()'],['../struct_tiny_g_p_s_date.html#a7b92ac9058dbde1770eb52ce5da890c1',1,'TinyGPSDate::age()'],['../struct_tiny_g_p_s_time.html#a22b59e1d4b22435baa2a4446981f2dce',1,'TinyGPSTime::age()'],['../struct_tiny_g_p_s_decimal.html#ab80191a3e02c92ad3f674b5df2ab752f',1,'TinyGPSDecimal::age()'],['../struct_tiny_g_p_s_integer.html#a46ea8f4fe8cca279b7d4cd44572e5881',1,'TinyGPSInteger::age()'],['../class_tiny_g_p_s_custom.html#a9bacaf774b1dba9ad942435d3ed1c2cc',1,'TinyGPSCustom::age()']]],
+  ['armalarm1',['armAlarm1',['../class_d_s3231.html#ad8333b85e1bcbf40e471e67ed63cc4bc',1,'DS3231']]],
+  ['armalarm2',['armAlarm2',['../class_d_s3231.html#a40cab51de53184c4be9c68cc41b9468c',1,'DS3231']]],
+  ['atmosphere',['Atmosphere',['../_weather___balloon_8cpp.html#a15ac45cd15b43e174eeb8f4272f0c875',1,'Weather_Balloon.cpp']]],
+  ['attach',['attach',['../class_firmata_class.html#a94d53e24e973eb18fd4202b9d26a87c1',1,'FirmataClass::attach(byte command, callbackFunction newFunction)'],['../class_firmata_class.html#a5e6b3ec98bd2e616678ac0d6f3be60ba',1,'FirmataClass::attach(byte command, systemResetCallbackFunction newFunction)'],['../class_firmata_class.html#a3c3c11878d74fabadd50c66badf953ae',1,'FirmataClass::attach(byte command, stringCallbackFunction newFunction)'],['../class_firmata_class.html#a81c394577d72b48bf74bdf47427562ab',1,'FirmataClass::attach(byte command, sysexCallbackFunction newFunction)'],['../class_wi_fi_stream.html#a4f279f8f5001c615002bf9043a0bc824',1,'WiFiStream::attach()']]],
+  ['attachinterrupt',['attachInterrupt',['../class_r_t_c_zero.html#a306f2bbbdfa83d21f8f577c11b73e76b',1,'RTCZero']]],
+  ['available',['available',['../class_firmata_class.html#a119734b867186567c1cd011e52e59d2d',1,'FirmataClass::available()'],['../class_b_l_e_stream.html#a9b8dd79faf553535df6b68a8d572c8e2',1,'BLEStream::available()'],['../class_ethernet_client_stream.html#af791449a05185d079c66a3ce7ceb8867',1,'EthernetClientStream::available()'],['../class_wi_fi_stream.html#a238fc0fc25c4a9bda83e24257587dd64',1,'WiFiStream::available()']]]
+];

@@ -1,0 +1,25 @@
+var dir_1370fe77973c3b1b9016b5ebbb1f36c2 =
+[
+    [ "Adafruit_ADXL345-master", "dir_0ab096e3c1489631ffe5eac3baf94243.html", "dir_0ab096e3c1489631ffe5eac3baf94243" ],
+    [ "Adafruit_Sensor-master", "dir_2ed9fdbaa91f7f9e5bcdd0fbbaf44e55.html", "dir_2ed9fdbaa91f7f9e5bcdd0fbbaf44e55" ],
+    [ "Adafruit_SHT31-master", "dir_68fc1dc207ae564957ed24e74e54faef.html", "dir_68fc1dc207ae564957ed24e74e54faef" ],
+    [ "Adafruit_SI1145_Library-master", "dir_00e94e225ed21063c0eb7bffaee81589.html", "dir_00e94e225ed21063c0eb7bffaee81589" ],
+    [ "Adafruit_TSL2561-master", "dir_3f0d14dce904a1965a04aa00da5bd275.html", "dir_3f0d14dce904a1965a04aa00da5bd275" ],
+    [ "Arduino-DS3231-master", "dir_9ac1c8065c185b42e6cd2aaabfa6caa4.html", "dir_9ac1c8065c185b42e6cd2aaabfa6caa4" ],
+    [ "arduino-ms5xxx-master", "dir_4d1630a97e48166b8f53fcf62addaebf.html", "dir_4d1630a97e48166b8f53fcf62addaebf" ],
+    [ "Arduino-PID-Library", "dir_b3eddf97176af96f7a4bf897afc98f92.html", "dir_b3eddf97176af96f7a4bf897afc98f92" ],
+    [ "Arduino-Temperature-Control-Library", "dir_fb342519cf31cde5c84965cd02fd7dbf.html", "dir_fb342519cf31cde5c84965cd02fd7dbf" ],
+    [ "arduino-ZeroRegs", "dir_f27ca099e00b84cc4adf0072932620f6.html", "dir_f27ca099e00b84cc4adf0072932620f6" ],
+    [ "Filters", "dir_c4ab0eab3327ffb69c61ca78dc4c448f.html", "dir_c4ab0eab3327ffb69c61ca78dc4c448f" ],
+    [ "Firmata", "dir_73779d542a0f1f1c71df965f7a505c99.html", "dir_73779d542a0f1f1c71df965f7a505c99" ],
+    [ "LedControl-master", "dir_abfdc12f6afdfef197c5a100a62b9514.html", "dir_abfdc12f6afdfef197c5a100a62b9514" ],
+    [ "MAG3110", "dir_8e63e94da0a218210150dde2aea06005.html", "dir_8e63e94da0a218210150dde2aea06005" ],
+    [ "OneWire2", "dir_d28c8bb5ee29c9d79d049d816f1b9064.html", "dir_d28c8bb5ee29c9d79d049d816f1b9064" ],
+    [ "RTClib-master", "dir_b4913a05e774cabd182b994ec6bed7f0.html", "dir_b4913a05e774cabd182b994ec6bed7f0" ],
+    [ "RTCZero", "dir_fd351eea3551f2a5a2e2b7c81f87817d.html", "dir_fd351eea3551f2a5a2e2b7c81f87817d" ],
+    [ "SD-master", "dir_56609fd61ff6758c31121544a541e795.html", "dir_56609fd61ff6758c31121544a541e795" ],
+    [ "SparkFun_LSM9DS1", "dir_5eeaa7bc30d06d98ad7b0b40f81500cd.html", "dir_5eeaa7bc30d06d98ad7b0b40f81500cd" ],
+    [ "SparkFun_MAX17043", "dir_fcf509bb43b5dc1fa1fae02ea89d261b.html", "dir_fcf509bb43b5dc1fa1fae02ea89d261b" ],
+    [ "Time-master", "dir_ed6deb52b2f08272037e97f769d57099.html", "dir_ed6deb52b2f08272037e97f769d57099" ],
+    [ "TinyGPSPlus-0.94b", "dir_e0929f836d6dd2a2ac2657f49f55ddfb.html", "dir_e0929f836d6dd2a2ac2657f49f55ddfb" ]
+];

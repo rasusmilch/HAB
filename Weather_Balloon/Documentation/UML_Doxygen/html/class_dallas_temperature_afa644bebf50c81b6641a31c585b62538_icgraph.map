@@ -1,0 +1,8 @@
+<map id="DallasTemperature::getAddress" name="DallasTemperature::getAddress">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#a7e3e2e23257aac6b6c896df205d5b3b5" title="DallasTemperature::\lgetTempCByIndex" alt="" coords="211,5,343,47"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#a96318d36b313e1f4f413e2ed2b7501c7" title="DallasTemperature::\lgetTempFByIndex" alt="" coords="211,71,343,112"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#a4af999e72b9c5b85430666ad90fa9644" title="DallasTemperature::\lgetUserDataByIndex" alt="" coords="209,136,344,177"/>
+<area shape="rect" id="node5" href="$class_dallas_temperature.html#ae9a7bf62321615519242d2421c8b349a" title="DallasTemperature::\lrequestTemperaturesByIndex" alt="" coords="185,201,368,243"/>
+<area shape="rect" id="node6" href="$class_dallas_temperature.html#a43363ee4b227f1ecf9c33cd4e072c0c9" title="DallasTemperature::\lsetResolution" alt="" coords="211,267,343,308"/>
+<area shape="rect" id="node7" href="$class_dallas_temperature.html#a65ae6994218200e92ce43bffd122d46b" title="DallasTemperature::\lsetUserDataByIndex" alt="" coords="210,332,343,373"/>
+</map>

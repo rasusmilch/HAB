@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_56609fd61ff6758c31121544a541e795" kind="dir">
+    <compoundname>Weather_Balloon/library/SD-master</compoundname>
+    <innerfile refid="_sd2_card_8cpp">Sd2Card.cpp</innerfile>
+    <innerfile refid="_sd2_card_8h">Sd2Card.h</innerfile>
+    <innerfile refid="_sd2_pin_map_8h">Sd2PinMap.h</innerfile>
+    <innerfile refid="_sd_info_8h">SdInfo.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SD-master/"/>
+  </compounddef>
+</doxygen>

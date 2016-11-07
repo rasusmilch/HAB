@@ -1,0 +1,2334 @@
+<!DOCTYPE html>
+<html itemscope="" itemtype="http://schema.org/QAPage"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<title>analog - Ultra low power/ simple flashing circuit - Electrical Engineering Stack Exchange</title>
+    <link rel="shortcut icon" href="http://cdn.sstatic.net/Sites/electronics/img/favicon.ico?v=575707ea0f4e"><style type="text/css">
+:root .ad-container,
+:root #promo-box,
+:root #herobox-mini,
+:root #herobox
+{ display: none !important; }</style>
+    <link rel="apple-touch-icon image_src" href="http://cdn.sstatic.net/Sites/electronics/img/apple-touch-icon.png?v=8ab405a669c4">
+    <link rel="search" type="application/opensearchdescription+xml" title="Electrical Engineering Stack Exchange" href="http://electronics.stackexchange.com/opensearch.xml">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@StackElectronix">
+    <meta name="twitter:domain" content="electronics.stackexchange.com">
+    <meta property="og:type" content="website">
+
+    <meta property="og:image" itemprop="image primaryImageOfPage" content="http://cdn.sstatic.net/Sites/electronics/img/apple-touch-icon@2.png?v=7b89fddaa66b&amp;a">
+    <meta name="twitter:title" property="og:title" itemprop="title name" content="Ultra low power/ simple flashing circuit">
+    <meta name="twitter:description" property="og:description" itemprop="description" content="ideally I want this to run off coin cell batteries. I found a circuit that uses transistors and capacitors but the voltage requirements are higher than I want. Is there any way I can make this circ...">
+    <meta property="og:url" content="http://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit">
+    <link rel="canonical" href="http://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit">
+
+    
+    
+    <script src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/quant.js" async=""></script><script src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/beacon.js" async=""></script><script src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/analytics.js" async=""></script><script src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/ados.js" async="" type="text/javascript"></script><script src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/jquery.js"></script>
+    <script src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/stub.js"></script>
+    <link rel="stylesheet" type="text/css" href="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/all.css">
+
+            <link rel="alternate" type="application/atom+xml" title="Feed for question 'Ultra low power/ simple flashing circuit'" href="http://electronics.stackexchange.com/feeds/question/17998">
+            <meta name="twitter:app:country" content="US">
+            <meta name="twitter:app:name:iphone" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:iphone" content="871299723">
+            <meta name="twitter:app:url:iphone" content="se-zaphod://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit">
+            <meta name="twitter:app:name:ipad" content="Stack Exchange iOS">
+            <meta name="twitter:app:id:ipad" content="871299723">
+            <meta name="twitter:app:url:ipad" content="se-zaphod://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit">
+            <meta name="twitter:app:name:googleplay" content="Stack Exchange Android">
+            <meta name="twitter:app:url:googleplay" content="http://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit">
+            <meta name="twitter:app:id:googleplay" content="com.stackexchange.marvin">
+        <script>
+        
+            StackExchange.ready(function () {
+
+                StackExchange.using("postValidation", function () {
+                    StackExchange.postValidation.initOnBlurAndSubmit($('#post-form'), 2, 'answer');
+                });
+
+                
+                StackExchange.question.init({showAnswerHelp:true,totalCommentCount:5,shownCommentCount:5,highlightColor:'#F4A83D',backgroundColor:'#FFF',questionId:17998});
+
+                styleCode();
+
+                    StackExchange.realtime.subscribeToQuestion('135', '17998');
+                                                                    StackExchange.using("gps", function () { StackExchange.gps.trackOutboundClicks('#content', '.post-text'); });
+
+            });
+        </script>
+
+                <script type="text/x-mathjax-config">
+                    MathJax.Hub.Config({"HTML-CSS": { preferredFont: "TeX", availableFonts: ["STIX","TeX"], linebreaks: { automatic:true }, EqnChunk: (MathJax.Hub.Browser.isMobile ? 10 : 50) },
+                                        tex2jax: { inlineMath: [ ["\\$", "\\$"] ], displayMath: [ ["$$","$$"], ["\\[", "\\]"] ], processEscapes: true, ignoreClass: "tex2jax_ignore|dno" },
+                                        TeX: {  noUndefined: { attributes: { mathcolor: "red", mathbackground: "#FFEEEE", mathsize: "90%" } }, Macros: { href: "{}" } },
+                                        messageStyle: "none"
+                });
+                </script>        
+            <script src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/MathJax.js"></script>  
+
+    <script>
+        StackExchange.ready(function () {
+                        StackExchange.realtime.init('wss://qa.sockets.stackexchange.com,ws://qa.sockets.stackexchange.com');
+            StackExchange.realtime.subscribeToReputationNotifications('135');
+                StackExchange.realtime.subscribeToTopBarNotifications('135');
+        });
+    </script>
+    <script>
+        StackExchange.init({"locale":"en","stackAuthUrl":"https://stackauth.com","networkMetaHostname":"meta.stackexchange.com","serverTime":1476597734,"routeName":"Questions/Show","site":{"name":"Electrical Engineering Stack Exchange","description":"Q&A for electronics and electrical engineering professionals, students, and enthusiasts","isNoticesTabEnabled":true,"recaptchaPublicKey":"6LdsB7sSAAAAAAzjgEF_Hd8vXv-C42sa_KyofaGR","recaptchaAudioLang":"en","enableNewTagCreationWarning":false,"insertSpaceAfterNameTabCompletion":false,"id":135,"enableInsertDocLinkDialog":false,"enableSocialMediaInSharePopup":true},"user":{"fkey":"3f4d516406f30e9912f4ec0f4d793235","rep":0,"isAnonymous":true,"isAnonymousNetworkWide":true},"realtime":{"newest":true,"active":true,"tagged":true,"workerIframeDomain":"http://cdn.sstatic.net"},"events":{"postType":{"question":1},"postEditionSection":{"title":1,"body":2,"tags":3}}}, {"site":{"allowImageUploads":true,"enableUserHovercards":true,"styleCode":true},"tags":{},"accounts":{"currentPasswordRequiredForChangingStackIdPassword":true},"flags":{"allowRetractingFlags":true},"snippets":{"renderDomain":"stacksnippets.net"},"markdown":{"asteriskIntraWordEmphasis":true}});
+        StackExchange.using.setCacheBreakers({"js/prettify-full.en.js":"ba88994ac4fe","js/moderator.en.js":"62a892958d5d","js/full-anon.en.js":"a9b3c60ea234","js/full.en.js":"d09df86f61e9","js/wmd.en.js":"7bb6a6bef9f9","js/third-party/jquery.autocomplete.min.js":"e5f01e97f7c3","js/third-party/jquery.autocomplete.min.en.js":"","js/mobile.en.js":"f25761525234","js/help.en.js":"c8004cc0095d","js/tageditor.en.js":"9c6df10dabc4","js/tageditornew.en.js":"3c9b516d7fa4","js/inline-tag-editing.en.js":"2ddfa79492e7","js/revisions.en.js":"47de10a8358f","js/review.en.js":"d7500ab09bf8","js/tagsuggestions.en.js":"2a9fc67ea337","js/post-validation.en.js":"ec004ee4030f","js/explore-qlist.en.js":"e71f14781288","js/events.en.js":"658c52ecb92c","js/keyboard-shortcuts.en.js":"c4fc51b44f85","js/external-editor.en.js":"235e80f649d7","js/mathjax-editing.en.js":"90c1589bd2cc","js/external-editor.en.js":"235e80f649d7"});
+        StackExchange.using("gps", function() {
+             StackExchange.gps.init(true);
+        });
+    </script>
+    
+        <script>
+            StackExchange.ready(function () {
+                $('#nav-tour').click(function () {
+                    StackExchange.using("gps", function() {
+                        StackExchange.gps.track("aboutpage.click", { aboutclick_location: "headermain" }, true);
+                    });
+                });
+            });
+        </script>
+<script>try {  for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){    var lastpass_f = document.forms[lastpass_iter];    if(typeof(lastpass_f.lpsubmitorig)=="undefined"){      if (typeof(lastpass_f.submit) == "function") {        lastpass_f.lpsubmitorig = lastpass_f.submit;        lastpass_f.submit = function(){          var form = this;          try {            if (document.documentElement && 'createEvent' in document)            {              var forms = document.getElementsByTagName('form');              for (var i=0 ; i<forms.length ; ++i)                if (forms[i]==form)                {                  var element = document.createElement('lpformsubmitdataelement');                  element.setAttribute('formnum',i);                  element.setAttribute('from','submithook');                  document.documentElement.appendChild(element);                  var evt = document.createEvent('Events');                  evt.initEvent('lpformsubmit',true,false);                  element.dispatchEvent(evt);                  break;                }            }          } catch (e) {}          try {            form.lpsubmitorig();          } catch (e) {}        }      }    }  }} catch (e) {}</script><style type="text/css">
+:root .container > .infoBoxList > .shareInfoBox,
+:root #header + #content > #left > #rlblock_left,
+:root #content > #center > .dose > .dosesingle,
+:root #content > #right > .dose > .dosesingle,
+:root #newsletter-ad,
+:root #newsletter-signup,
+:root .feed-icon
+{ display: none !important; }</style></head>
+<body class="question-page new-topbar">
+    <noscript><div id="noscript-padding"></div></noscript>
+    
+
+
+
+    <div id="notify-container"></div>
+    <div id="custom-header"></div>
+
+
+
+
+
+<div class="topbar">
+    <div class="topbar-wrapper">
+
+        <div class="js-topbar-dialog-corral">
+
+
+    <div class="topbar-dialog siteSwitcher-dialog dno">
+        <div class="header">
+            <h3><a href="http://electronics.stackexchange.com/">current community</a>
+            </h3>
+        </div>
+        <div class="modal-content current-site-container">
+            <ul class="current-site">
+                    <li>
+                            <div class="related-links">
+                    <a href="http://chat.stackexchange.com/?tab=site&amp;host=electronics.stackexchange.com" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
+            </div>
+
+
+
+
+    <a href="http://electronics.stackexchange.com/" class="current-site-link site-link js-gps-track" data-id="135" data-gps-track="
+        site_switcher.click({ item_type:3 })">
+        <div class="site-icon favicon favicon-electronics" title="Electrical Engineering"></div>
+        Electrical Engineering
+    </a>
+
+                    </li>
+                    <li class="related-site">
+                            <div class="L-shaped-icon-container">
+        <span class="L-shaped-icon"></span>
+    </div>
+
+                        
+
+
+
+    <a href="http://meta.electronics.stackexchange.com/" class="site-link js-gps-track" data-id="137" data-gps-track="
+            site.switch({ target_site:137, item_type:3 }),
+        site_switcher.click({ item_type:4 })">
+        <div class="site-icon favicon favicon-electronicsmeta" title="Electrical Engineering Meta"></div>
+        Electrical Engineering Meta
+    </a>
+
+                    </li>
+            </ul>
+        </div>
+
+        <div class="header" id="your-communities-header">
+            <h3>
+your communities            </h3>
+
+        </div>
+        <div class="modal-content" id="your-communities-section">
+
+                <div class="call-to-login">
+<a href="https://electronics.stackexchange.com/users/signup?ssrc=site_switcher&amp;returnurl=http%3a%2f%2felectronics.stackexchange.com%2fquestions%2f17998%2fultra-low-power-simple-flashing-circuit" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://electronics.stackexchange.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2felectronics.stackexchange.com%2fquestions%2f17998%2fultra-low-power-simple-flashing-circuit" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
+                </div>
+        </div>
+
+        <div class="header">
+            <h3><a href="http://stackexchange.com/sites">more stack exchange communities</a>
+            </h3>
+            <a href="http://blog.stackoverflow.com/" class="fr">company blog</a>
+        </div>
+        <div class="modal-content">
+                <div class="child-content"></div>
+        </div>        
+    </div>
+        </div>
+
+        <div class="network-items">
+                <a href="http://stackexchange.com/" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 161 Stack Exchange sites">
+                    <span class="hidden-text">Stack Exchange</span>
+                </a>
+
+    <a href="#" class="topbar-icon icon-inbox yes-hover js-inbox-button" title="Recent inbox messages">
+        <span class="hidden-text">Inbox</span>
+        <span class="unread-count" style="display:none"></span>
+    </a>
+    <a href="#" class="topbar-icon icon-achievements yes-hover js-achievements-button " data-unread-class="" title="Recent achievements: reputation, badges, and privileges earned">
+        <span class="hidden-text">Reputation and Badges</span>
+        <span class="unread-count" style="display:none">
+            
+        </span>
+    </a>
+        </div>
+
+        <div class="topbar-links">
+
+                <div class="links-container">
+                <span class="topbar-menu-links">
+                                    <a href="https://electronics.stackexchange.com/users/signup?ssrc=head&amp;returnurl=http%3a%2f%2felectronics.stackexchange.com%2fquestions%2f17998%2fultra-low-power-simple-flashing-circuit" class="login-link">sign up</a>
+                                <a href="https://electronics.stackexchange.com/users/login?ssrc=head&amp;returnurl=http%3a%2f%2felectronics.stackexchange.com%2fquestions%2f17998%2fultra-low-power-simple-flashing-circuit" class="login-link">log in</a>
+
+                            <a href="http://electronics.stackexchange.com/tour">tour</a>
+        <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
+            help
+            <span class="triangle"></span>
+        </a>
+    <div class="topbar-dialog help-dialog js-help-dialog dno">
+        <div class="modal-content">
+            <ul>
+                                    <li>
+                        <a href="http://electronics.stackexchange.com/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
+                            Tour
+                            <span class="item-summary">
+                                Start here for a quick overview of the site
+                            </span>
+                        </a>
+                    </li>
+                <li>
+                    <a href="http://electronics.stackexchange.com/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
+                        Help Center
+                        <span class="item-summary">
+                            Detailed answers to any questions you might have
+                        </span>
+                    </a>
+                </li>
+                        <li>
+                            <a href="http://meta.electronics.stackexchange.com/" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
+                                Meta
+                                <span class="item-summary">
+                                    Discuss the workings and policies of this site
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
+                                About Us
+                                <span class="item-summary">
+                                    Learn more about Stack Overflow the company
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://business.stackoverflow.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
+                                Business
+                                <span class="item-summary">
+                                    Learn more about hiring developers or posting ads with us
+                                </span>
+                            </a>
+                        </li>
+            </ul>
+        </div>
+    </div>
+                                            </span>
+                </div>
+
+            <div class="search-container">
+                <form id="search" action="/search" method="get" autocomplete="off">
+                    <input name="q" placeholder="Search Q&amp;A" tabindex="1" autocomplete="off" maxlength="240" type="text">
+                </form>
+            </div>
+
+        </div>
+    </div>
+</div>
+    <script>
+        StackExchange.ready(function() { StackExchange.topbar.init(); });
+    </script>
+
+    <div class="container">
+        <div id="header">
+            <br class="cbt">
+            <div id="hlogo">
+                <a href="http://electronics.stackexchange.com/">
+                    Electrical Engineering
+                </a>
+            </div>
+            <div id="hmenus">
+                <div class="nav mainnavs">
+                    <ul>
+                            <li class="youarehere">
+        <a id="nav-questions" href="http://electronics.stackexchange.com/questions" class="js-gps-track" data-gps-track="top_nav.click({is_current:true, location:3, destination:1})">
+        Questions
+        </a>
+    </li>
+
+                                                    <li>
+        <a id="nav-tags" href="http://electronics.stackexchange.com/tags" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:2})">
+        Tags
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-users" href="http://electronics.stackexchange.com/users" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:3})">
+        Users
+        </a>
+    </li>
+
+                            <li>
+        <a id="nav-badges" href="http://electronics.stackexchange.com/help/badges" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:4})">
+        Badges
+        </a>
+    </li>
+
+    <li>
+        <a id="nav-unanswered" href="http://electronics.stackexchange.com/unanswered" class="js-gps-track" data-gps-track="top_nav.click({is_current:false, location:3, destination:5})">
+        Unanswered
+        </a>
+    </li>
+                    </ul>
+                </div>
+                <div class="nav askquestion">
+                    <ul>
+                        <li>
+                            <a id="nav-askquestion" href="http://electronics.stackexchange.com/questions/ask">Ask Question</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        
+
+
+
+        <div id="content">
+            
+
+<div itemscope="" itemtype="http://schema.org/Question">
+    <link itemprop="image" href="http://cdn.sstatic.net/Sites/electronics/img/apple-touch-icon.png?v=8ab405a669c4">
+
+
+    <div wgnn65h="" id="herobox" hidden="">
+        <div id="hero-content">
+                <div id="close"><a title="click to minimize">_</a></div>
+            <div id="blurb">
+                Electrical Engineering Stack Exchange is a question and 
+answer site for electronics and electrical engineering professionals, 
+students, and enthusiasts. Join them; it only takes a minute:
+                <br>
+                <br>
+                <a href="http://electronics.stackexchange.com/users/signup?ssrc=hero&amp;returnurl=http%3a%2f%2felectronics.stackexchange.com%2fquestions%2f17998%2fultra-low-power-simple-flashing-circuit" id="tell-me-more" class="button">Sign up</a>
+            </div>
+            <div id="desc">
+                <b>Here's how it works:</b>
+                <ol id="hiw">
+                    <li id="q">Anybody can ask a question
+                    </li>
+                    <li id="an">Anybody can answer
+                    </li>
+                    <li id="b">The best answers are voted up and rise to the top
+                    </li>
+                </ol>
+            </div>
+            <div style="clear: both"></div>
+        </div>
+    </div>
+<script>
+    StackExchange.ready(function () {
+
+        var location = 0;
+        if ($("body").hasClass("questions-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("question-page")) {
+            location = 1;;
+        } else if ($("body").hasClass("faq-page")) {
+            location = 5;;
+        } else if ($("body").hasClass("home-page")) {
+            location = 3;;
+        }
+
+        $('#tell-me-more').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: 'cta', location: location }, true);
+            });
+        });
+        $('#herobox #close').click(function () {
+            StackExchange.using("gps", function () {
+                StackExchange.gps.track("hero.action", { hero_action_type: "minimize", location: location }, true);
+            });
+            $.cookie("hero", "mini", { path: "/", expires: 365 });
+            $.ajax({
+                url: "/hero-mini",
+                success: function (data) {
+                    $("#herobox").fadeOut("fast", function () {
+                        $("#herobox").replaceWith(data);
+                        $("#herobox-mini").fadeIn("fast");
+                    });
+                }
+            });
+            return false;
+        });
+    });
+
+</script>			<div id="question-header">
+                <h1 itemprop="name"><a href="http://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit" class="question-hyperlink">Ultra low power/ simple flashing circuit</a></h1>
+		</div>
+			<div id="mainbar">
+
+			
+
+<div class="question" data-questionid="17998" id="question">
+
+        <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="17998" type="hidden">
+        <a class="vote-up-off" title="This question shows research effort; it is useful and clear">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">2</span>
+        <a class="vote-down-off" title="This question does not show any research effort; it is unclear or not useful">down vote</a>
+
+        <a class="star-off" href="#">favorite</a>
+        <div class="favoritecount"><b>1</b></div>
+
+
+</div>
+
+            </td>
+            
+<td class="postcell">
+<div>
+    <div class="post-text" itemprop="text">
+
+<p>ideally I want this to run off coin cell batteries. I found a circuit
+ that uses transistors and capacitors but the voltage requirements are 
+higher than I want. Is there any way <a href="http://wild-bohemian.com/electronics/flasher.html" rel="nofollow">I can make this circuit</a> circuit low power?</p>
+
+<p>Any other ideas would be awesome</p>
+    </div>
+    <div class="post-taglist">
+        <a href="http://electronics.stackexchange.com/questions/tagged/analog" class="post-tag" title="show questions tagged 'analog'" rel="tag">analog</a> <a href="http://electronics.stackexchange.com/questions/tagged/low-power" class="post-tag" title="show questions tagged 'low-power'" rel="tag">low-power</a> 
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://electronics.stackexchange.com/q/17998" title="short permalink to this question" class="short-link" id="link-post-17998">share</a><span class="lsep">|</span><a href="http://electronics.stackexchange.com/posts/17998/edit" class="suggest-edit-post" title="">improve this question</a></div>        
+    </td>
+    <td class="post-signature" align="right">
+<div class="user-info user-hover">
+    <div class="user-action-time">
+        <a href="http://electronics.stackexchange.com/posts/17998/revisions" title="show all edits to this post">edited <span title="2011-08-09 20:18:29Z" class="relativetime">Aug 9 '11 at 20:18</span></a>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://electronics.stackexchange.com/users/3288/russell-mcmahon"><div class="gravatar-wrapper-32"><img title="[gravatar.com]" style="border: 1px solid rgb(255, 204, 204); background-repeat: no-repeat; background-position: center center; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gMFRANL5LXnioAAAJWSURBVDjLnZI/ixtXFMV/972ZNzPSrmTtalexlsWBGMfEYOzaVciXyKdIkW/hFKnS22WafIDUxk0g2AQSgm0csIPWK42ktaSRNPP+pRBK5SLOqS7cew7ccw4xxrPJ+8XdHx4+7AE8e3Cj++zLm71fvrqT8x+QAK35dJr2n/x89urTa+eDm/cS+eI2y3eT+Lx/bt8u1vNqfDH++teXdk/6ThAfUUBIgL9ku75z/8WL7LOlhXIGJ0Pyw75wMcnGv//xSQ2DH4ddu9k01dXWsWzcofhYaiiViLjiWi9UWQa1gzcjWF7hgfzzW5ydnXB62JLjg0PTLfJertNepnQSIA+gE4Cs03UuNYYQYP4e5jPogmSG9vA6rrjC+0AxN2i5Qk0DpXVJhCQB0EVRrzqdFgB1DZfvCDHixiV2NqO6LHHKIKnQMoaWbFBgIrQVgIXaDc+JCHgP5QRZr4jzGWFbo6yncRYviiiQKUhBRch3Lyix4bgPWsAkcDkmZAV2OiE0DaI1WoEShRKF3sWnmt01pFBnJydEpZDEwHSGt47lYsls43AIXjTWV9R1Qx0DGahqLyAhbqrj0/ib0nRzXNoyCo0Kkor2llV0eKOwdUMg4pSQA7JPQXvnJv1B+GlwOvrGlaXB6fV2lb5t6qOtike56DSJgYDGBQcOAsQAfueBMeHR48fhadb1j/58HWARdt6yBv7+/vpBe2o5OogxlcaKdt5aKCNsk309W0WxKQjmQ33/9mJVAdWHdmo/tNvtRZIkfCz+ZQwGg6rT6Zj/LTAajTbD4bD5WIF/AAseEisPFO8uAAAAAElFTkSuQmCC&quot;);" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://electronics.stackexchange.com/users/3288/russell-mcmahon">Russell McMahon</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 99,591" dir="ltr">99.6k</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="112 silver badges"><span class="badge2"></span><span class="badgecount">112</span></span><span title="225 bronze badges"><span class="badge3"></span><span class="badgecount">225</span></span>
+        </div>
+    </div>
+</div>    </td>
+    <td class="post-signature owner">
+        <div class="user-info ">
+    <div class="user-action-time">
+        asked <span title="2011-08-09 18:51:40Z" class="relativetime">Aug 9 '11 at 18:51</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://electronics.stackexchange.com/users/5298/sfhhd"><div class="gravatar-wrapper-32"><img title="[gravatar.com]" style="border: 1px solid rgb(255, 204, 204); background-repeat: no-repeat; background-position: center center; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gMFRANL5LXnioAAAJWSURBVDjLnZI/ixtXFMV/972ZNzPSrmTtalexlsWBGMfEYOzaVciXyKdIkW/hFKnS22WafIDUxk0g2AQSgm0csIPWK42ktaSRNPP+pRBK5SLOqS7cew7ccw4xxrPJ+8XdHx4+7AE8e3Cj++zLm71fvrqT8x+QAK35dJr2n/x89urTa+eDm/cS+eI2y3eT+Lx/bt8u1vNqfDH++teXdk/6ThAfUUBIgL9ku75z/8WL7LOlhXIGJ0Pyw75wMcnGv//xSQ2DH4ddu9k01dXWsWzcofhYaiiViLjiWi9UWQa1gzcjWF7hgfzzW5ydnXB62JLjg0PTLfJertNepnQSIA+gE4Cs03UuNYYQYP4e5jPogmSG9vA6rrjC+0AxN2i5Qk0DpXVJhCQB0EVRrzqdFgB1DZfvCDHixiV2NqO6LHHKIKnQMoaWbFBgIrQVgIXaDc+JCHgP5QRZr4jzGWFbo6yncRYviiiQKUhBRch3Lyix4bgPWsAkcDkmZAV2OiE0DaI1WoEShRKF3sWnmt01pFBnJydEpZDEwHSGt47lYsls43AIXjTWV9R1Qx0DGahqLyAhbqrj0/ib0nRzXNoyCo0Kkor2llV0eKOwdUMg4pSQA7JPQXvnJv1B+GlwOvrGlaXB6fV2lb5t6qOtike56DSJgYDGBQcOAsQAfueBMeHR48fhadb1j/58HWARdt6yBv7+/vpBe2o5OogxlcaKdt5aKCNsk309W0WxKQjmQ33/9mJVAdWHdmo/tNvtRZIkfCz+ZQwGg6rT6Zj/LTAajTbD4bD5WIF/AAseEisPFO8uAAAAAElFTkSuQmCC&quot;);" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://electronics.stackexchange.com/users/5298/sfhhd">sfhhd</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">16</span><span title="1 gold badge"><span class="badge1"></span><span class="badgecount">1</span></span><span title="1 silver badge"><span class="badge2"></span><span class="badgecount">1</span></span><span title="2 bronze badges"><span class="badge3"></span><span class="badgecount">2</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</div>
+</td>
+        </tr>
+                
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-17998" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-31227" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">coin cells are pretty thin. any reason you couldn't just stack two cr2032's for 6V?</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/740/justjeff" title="16,262 reputation" class="comment-user">JustJeff</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-09 21:29:57Z" class="relativetime-clean">Aug 9 '11 at 21:29</span></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31233" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">IMHO your question is a bit 
+unclear. The circuit you posted is very low power, but it is not low 
+voltage. I'm assuming you're thinking about some low voltage joule thief
+ circuit? You'll find flashing Joule thief circuit <a href="http://quantsuff.com/LED2.htm" rel="nofollow">here</a> and <a href="http://quantsuff.com/LED8.htm" rel="nofollow">here</a></span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/5077/nico-erfurth" title="738 reputation" class="comment-user">Nico Erfurth</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-09 21:52:08Z" class="relativetime-clean">Aug 9 '11 at 21:52</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31235" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">I would get a low-pin count, 
+low power micro like the PIC 10F and go to sleep mostly waking up on 
+watchdog to toggle the LED on....but that's why I'm a software guy.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/2157/kenny" title="627 reputation" class="comment-user">kenny</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-09 22:19:25Z" class="relativetime-clean">Aug 9 '11 at 22:19</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31445" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@sfhhd Comments?</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/3288/russell-mcmahon" title="99,591 reputation" class="comment-user">Russell McMahon</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-12 00:23:43Z" class="relativetime-clean">Aug 12 '11 at 0:23</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31808" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Nice joule thief circuit here too: <a href="http://watsonseblog.blogspot.com/2008/04/flash-boost-is-what-i-call-circuit-in.html" rel="nofollow">watsonseblog.blogspot.com/2008/04/…</a></span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/1750/linker3000" title="1,069 reputation" class="comment-user">Linker3000</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-15 22:59:40Z" class="relativetime-clean">Aug 15 '11 at 22:59</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-17998" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid answering questions in comments.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>        </tbody></table>
+</div>
+
+			<div id="answers">
+
+				<a name="tab-top"></a>
+				<div id="answers-header">
+					<div class="subheader answers-subheader">
+						<h2>
+								5 Answers
+                                <span style="display:none;" itemprop="answerCount">5</span>
+						</h2>
+						<div>
+							<div id="tabs">
+        <a href="http://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit?answertab=active#tab-top" data-nav-xhref="" title="Answers with the latest activity first" data-value="active" data-shortcut="A">
+            active</a>
+        <a href="http://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit?answertab=oldest#tab-top" data-nav-xhref="" title="Answers in the order they were provided" data-value="oldest" data-shortcut="O">
+            oldest</a>
+        <a class="youarehere" href="http://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit?answertab=votes#tab-top" data-nav-xhref="" title="Answers with the highest score first" data-value="votes" data-shortcut="V">
+            votes</a>
+</div>
+						</div>
+					</div>    
+				</div>    
+
+
+
+
+  
+<a name="18007"></a>
+<div id="answer-18007" class="answer" data-answerid="18007" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="18007" type="hidden">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">4</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>The first circuit on the page you linked to is already pretty 
+efficient in that just about all supply current is used to light the 
+LEDs.  So the issue isn't lower power as much as to be able to run from a
+ lower voltage.</p>
+
+<p>Typical coin cells, like the common CR2032, put out about 3V.  This 
+mean you have to use LEDs that light at somewhat lower voltage.  
+Fortunately common green LEDs typcially light at around 2.1V.  Switching
+ to green LEDs allows for using a 3V supply.</p>
+
+<p>To cut down power, you have to cut down the current thru the LEDs.  
+This directly effects brightness.  If this device is for indoor use, 
+even 1mA may be good enough to noticeably light the LEDs.  Getting 
+decent LEDs with decent efficiency definitely helps here.  Let's say you
+ want to draw only 2 mA from the coin cell.  The voltage drop accross 
+the resistor in series with the LED will be roughly 800 mV.  800mV / 2mA
+ = 400Ω.  That's a starting point.  Then you can trade off battery life 
+with brightness from there.  Lower resistors will give higher brightness
+ and shorter battery life.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://electronics.stackexchange.com/a/18007" title="short permalink to this answer" class="short-link" id="link-post-18007">share</a><span class="lsep">|</span><a href="http://electronics.stackexchange.com/posts/18007/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-08-09 20:32:09Z" class="relativetime">Aug 9 '11 at 20:32</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://electronics.stackexchange.com/users/4512/olin-lathrop"><div class="gravatar-wrapper-32"><img title="[gravatar.com]" style="border: 1px solid rgb(255, 204, 204); background-repeat: no-repeat; background-position: center center; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gMFRANL5LXnioAAAJWSURBVDjLnZI/ixtXFMV/972ZNzPSrmTtalexlsWBGMfEYOzaVciXyKdIkW/hFKnS22WafIDUxk0g2AQSgm0csIPWK42ktaSRNPP+pRBK5SLOqS7cew7ccw4xxrPJ+8XdHx4+7AE8e3Cj++zLm71fvrqT8x+QAK35dJr2n/x89urTa+eDm/cS+eI2y3eT+Lx/bt8u1vNqfDH++teXdk/6ThAfUUBIgL9ku75z/8WL7LOlhXIGJ0Pyw75wMcnGv//xSQ2DH4ddu9k01dXWsWzcofhYaiiViLjiWi9UWQa1gzcjWF7hgfzzW5ydnXB62JLjg0PTLfJertNepnQSIA+gE4Cs03UuNYYQYP4e5jPogmSG9vA6rrjC+0AxN2i5Qk0DpXVJhCQB0EVRrzqdFgB1DZfvCDHixiV2NqO6LHHKIKnQMoaWbFBgIrQVgIXaDc+JCHgP5QRZr4jzGWFbo6yncRYviiiQKUhBRch3Lyix4bgPWsAkcDkmZAV2OiE0DaI1WoEShRKF3sWnmt01pFBnJydEpZDEwHSGt47lYsls43AIXjTWV9R1Qx0DGahqLyAhbqrj0/ib0nRzXNoyCo0Kkor2llV0eKOwdUMg4pSQA7JPQXvnJv1B+GlwOvrGlaXB6fV2lb5t6qOtike56DSJgYDGBQcOAsQAfueBMeHR48fhadb1j/58HWARdt6yBv7+/vpBe2o5OogxlcaKdt5aKCNsk309W0WxKQjmQ33/9mJVAdWHdmo/tNvtRZIkfCz+ZQwGg6rT6Zj/LTAajTbD4bD5WIF/AAseEisPFO8uAAAAAElFTkSuQmCC&quot;);" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://electronics.stackexchange.com/users/4512/olin-lathrop">Olin Lathrop</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 196,460" dir="ltr">196k</span><span title="21 gold badges"><span class="badge1"></span><span class="badgecount">21</span></span><span title="219 silver badges"><span class="badge2"></span><span class="badgecount">219</span></span><span title="508 bronze badges"><span class="badge3"></span><span class="badgecount">508</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-18007" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-31234" class="comment ">
+        <td class="comment-actions">
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                <span title="number of 'useful comment' votes received" class="cool">3</span>
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Note that when Olin says 
+"green LEDs" he means the old-style green gallium-phosphide (GaP) LEDs 
+which emit around 560 nm, giving a yellow-green light. True green LEDs 
+(530-550 nm) use a different chemistry which has around a 3 V forward 
+drop, which would not work for a 3 V source unless a more complex power 
+supply were used.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/4576/mike-desimone" title="4,005 reputation" class="comment-user">Mike DeSimone</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-09 22:10:06Z" class="relativetime-clean">Aug 9 '11 at 22:10</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-18007" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="18216"></a>
+<div id="answer-18216" class="answer" data-answerid="18216" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="18216" type="hidden">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>All very nice ideas, but the real solution is of course the <strong>microcontroller</strong> :-). The TI <strong>MSP430</strong> series is known for its low-power modes,  </p>
+
+<p><img src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/ewpqH.jpg" alt="MSP430F110"></p>
+
+<p>the <a href="http://www.ti.com/lit/ds/symlink/msp430f110.pdf" rel="nofollow">MSP430F110</a>(*) for instance uses less than 1.9\$\mu\$A in LPM3, where one clock remains active which can be used to clock a timer. A <a href="http://www.panasonic.com/industrial/includes/pdf/Panasonic_Lithium_CR3032.pdf" rel="nofollow">CR3032</a> cell has a capacity of <strong>500mAh</strong>, so not counting the LED the MSP430 will run at least <strong>30 years</strong> on it. Means the microcontroller's power usage is negligible.<br>
+Put the MSP430 in LPM3, and upon timer compare switch on the LED for a 
+short time, after which you switch off the LED and go to LPM3 again. 
+Average power usage and therefore battery longevity are determined by 
+LED current and duty cycle.<br>
+Example: at 0.5% duty cycle and 70mA you can run the circuit for 1430 hours on a CR3032 cell, that's 2 months.</p>
+
+<hr>
+
+<p>(*) Yes, I know, we don't need all those pins, but I chose the MSP430 for its low power, not its I/O.</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://electronics.stackexchange.com/a/18216" title="short permalink to this answer" class="short-link" id="link-post-18216">share</a><span class="lsep">|</span><a href="http://electronics.stackexchange.com/posts/18216/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-08-14 13:20:00Z" class="relativetime">Aug 14 '11 at 13:20</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://electronics.stackexchange.com/users/2064/stevenvh"><div class="gravatar-wrapper-32"><img title="[gravatar.com]" style="border: 1px solid rgb(255, 204, 204); background-repeat: no-repeat; background-position: center center; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gMFRANL5LXnioAAAJWSURBVDjLnZI/ixtXFMV/972ZNzPSrmTtalexlsWBGMfEYOzaVciXyKdIkW/hFKnS22WafIDUxk0g2AQSgm0csIPWK42ktaSRNPP+pRBK5SLOqS7cew7ccw4xxrPJ+8XdHx4+7AE8e3Cj++zLm71fvrqT8x+QAK35dJr2n/x89urTa+eDm/cS+eI2y3eT+Lx/bt8u1vNqfDH++teXdk/6ThAfUUBIgL9ku75z/8WL7LOlhXIGJ0Pyw75wMcnGv//xSQ2DH4ddu9k01dXWsWzcofhYaiiViLjiWi9UWQa1gzcjWF7hgfzzW5ydnXB62JLjg0PTLfJertNepnQSIA+gE4Cs03UuNYYQYP4e5jPogmSG9vA6rrjC+0AxN2i5Qk0DpXVJhCQB0EVRrzqdFgB1DZfvCDHixiV2NqO6LHHKIKnQMoaWbFBgIrQVgIXaDc+JCHgP5QRZr4jzGWFbo6yncRYviiiQKUhBRch3Lyix4bgPWsAkcDkmZAV2OiE0DaI1WoEShRKF3sWnmt01pFBnJydEpZDEwHSGt47lYsls43AIXjTWV9R1Qx0DGahqLyAhbqrj0/ib0nRzXNoyCo0Kkor2llV0eKOwdUMg4pSQA7JPQXvnJv1B+GlwOvrGlaXB6fV2lb5t6qOtike56DSJgYDGBQcOAsQAfueBMeHR48fhadb1j/58HWARdt6yBv7+/vpBe2o5OogxlcaKdt5aKCNsk309W0WxKQjmQ33/9mJVAdWHdmo/tNvtRZIkfCz+ZQwGg6rT6Zj/LTAajTbD4bD5WIF/AAseEisPFO8uAAAAAElFTkSuQmCC&quot;);" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://electronics.stackexchange.com/users/2064/stevenvh">stevenvh</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 120,530" dir="ltr">121k</span><span title="12 gold badges"><span class="badge1"></span><span class="badgecount">12</span></span><span title="374 silver badges"><span class="badge2"></span><span class="badgecount">374</span></span><span title="590 bronze badges"><span class="badge3"></span><span class="badgecount">590</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-18216" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-31658" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Most of the current of the 
+original circuit was already going into the LEDs, so even if the micro 
+took no power it wouldn't be much of a improvement.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/4512/olin-lathrop" title="196,460 reputation" class="comment-user">Olin Lathrop</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-14 14:10:02Z" class="relativetime-clean">Aug 14 '11 at 14:10</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31660" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Olin - That's right, this is
+ just another way to solve it. If the circuit minus LED doesn't use any 
+power there's nothing you can do, apart from playing with duty cycle and
+ series resistor. This is also a low component count solution, compared 
+to the AMV.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/2064/stevenvh" title="120,530 reputation" class="comment-user">stevenvh</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-14 14:16:44Z" class="relativetime-clean">Aug 14 '11 at 14:16</span></span>
+                    <span class="edited-yes" title="this comment was edited 1 time"></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31751" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">Using a micro could be a 
+reasonable solution.  It has the advantage of allowing you to more 
+deliberately set the timing and blink pattern, maybe with a little dead 
+time between the LEDs to save power.  If I were to do this with a micro 
+though, I'd use a PIC 10F200.  It's the same physical size as a single 
+transistor.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/4512/olin-lathrop" title="196,460 reputation" class="comment-user">Olin Lathrop</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-15 12:18:12Z" class="relativetime-clean">Aug 15 '11 at 12:18</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31771" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Olin - I had thought of the 
+F200, but it still has too many I/Os! :-). No, I don't have any 
+experience with PIC and I guess I was too lazy to read through a 
+complete datasheet to learn about low-power modes. The MSP430 isn't easy
+ for first-time users either, but I've worked with that one before. BTW,
+ at 2x3mm the F200 is pretty small, but NXP has a Cortex M0 only 
+5mm\$^2\$. With 16 pins cq. balls. Now that's damn small!</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/2064/stevenvh" title="120,530 reputation" class="comment-user">stevenvh</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-15 15:10:33Z" class="relativetime-clean">Aug 15 '11 at 15:10</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-18216" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="18006"></a>
+<div id="answer-18006" class="answer" data-answerid="18006" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="18006" type="hidden">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">1</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p><strong>Summary</strong></p>
+
+<ul>
+<li><p>(1) <strong>Advice on running supplied circuit on lower voltage.</strong></p>
+
+<p>Reduce R2x slightly more than ratio of reduction in supply voltages for same LED current.</p>
+
+<p>Max supportable LED current set by transistor beta (current gain) and R2x.</p>
+
+<p>Increase C1x as R2x reduced to keep time constant constant. </p></li>
+<li><p>(2) <strong>Low voltage &amp; component count any-LED flasher with other uses.</strong> </p>
+
+<p>........     Details below
+<img src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/4dJbW.gif" alt="enter image description here"></p></li>
+<li><p>(3) <strong>Other options</strong></p></li>
+</ul>
+
+<hr>
+
+<p>(1) <strong>Advice on running supplied circuit on lower voltage.</strong></p>
+
+<p>Your circuit can be made to run from lower voltage. Play with components and see what happens. Se notes below for guidance. </p>
+
+<p>With care you should be able to get it down to under 1 Volt <strong>without</strong> the LED loads.With red LEDs more like 3 Volts would be the lower limit.</p>
+
+<p>This is your circuit. I've added component labels to the original.</p>
+
+<p><img src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/SKLiE.jpg" alt="enter image description here"></p>
+
+<p>The circuit is symetrical with two identical halves - so I've named 
+components with a and b suffixes. eg R1A and r1B serve the same function
+ in the two halves, as do R2A/R2B, C1A/C1B, Q1a/Q1b. The <strong>*values</strong> of eg R1A and R1b may be different (see text) so the circuit may oscillate with different on times per half etc. . </p>
+
+<p>This is an astable oscillator. The oscillation perios are set by setting the <strong>OFF</strong>
+ times of ach half, ratyer than the on times. When eg Q1a is off Q1b is 
+on so it may seem like you are setting on times but it is useful to know
+ that in fact off times are being set. </p>
+
+<ul>
+<li><p>OFF time of Q1B is set by the time constant of C1A x R2B. Note carefully the mix of left hand and right hand parts involved. </p>
+
+<p>OFF time for Q1A is set by time constant of C1B x R2a</p></li>
+</ul>
+
+<p>LED current is set by ~ (Vsupply - VLED - Vsat_ Qx)/ R1x</p>
+
+<p>Supply voltage needs to be the higher of about 1 Volt or Vf_LED + 0.5
+ to 1 V. eg with a RED LED with Vf of 1.8V then Vsupply &gt;= ~ 1.8 + 
+0.5 = 2.3V. So, operation from 3V is practical. </p>
+
+<p>Use term "Beta" = transistor_current_gain ((=hfE))</p>
+
+<p>Ic_max = iBase x Beta.
+As shown base current Ib  ~~= (Vsupply-Vbe)/R2x = (9-0.6)/100k = 84 uA.
+ For Beta = 100 then Icmax = 84 uA x 100 = 8.4 mA.</p>
+
+<p>ie for transistors with Beat of 100 (= realistic value for many but not all "jellybean" transistors) max LED current =~ 8 mA. </p>
+
+<p>If running at 3V and if LED current target was say 10 MA and Beta = 100 then</p>
+
+<ul>
+<li><p>Ib = Ic/Beta</p></li>
+<li><p>Ic/Beta  ~~= (Vsupply-Vbe)/R2x</p>
+
+<p>or R2x = (Vsupply-Vbe)/Ib x Beta = (3 - 0.6)/0.010A x 100 = 24 kohm.</p></li>
+</ul>
+
+<p>R2A of 22K is closest value and perhaps 15k or even 10k would be wise. </p>
+
+<p>Flash rate may now be set by calculating required time constant.</p>
+
+<p>Say R2A = 15k. Say half flash time = 0.5 seconds.</p>
+
+<p>RC = t or C = t/r = 0.5/15k = 33 uF.</p>
+
+<p>This is only a starting point for reasons which can be explained if 
+people are interested but gives some idea of what values to use. Note 
+that at lower voltages R2x will get smaller to supply enough base drives
+ so C1x will increase in size for the same time constant. </p>
+
+<hr>
+
+<p>(2) <strong>Low voltage low component count LED flasher with other uses.</strong> </p>
+
+<p><strong>'Russell's' one-cell "any or many LED" flasher circuit.</strong></p>
+
+<ul>
+<li><p><strong>This can be not only a LED flasher or LED driver but a -ve or +ve low power voltage generator.</strong> </p>
+
+<p>So also potentially a programmer supply, LCD bias supply, -ve opamp supply etc. </p></li>
+</ul>
+
+<p>This circuit will flash an LED of any colour and forward voltage (or 
+potentially even several LEDs in series) or will pulse a load using one 
+cell - probably about 1 volt will be enough to operate it. I "<em>designed</em>" this circuit <strong>but</strong>
+ it is based on a design that has not only long been used in transistor 
+form but existed in pre-transistor thermionic valve days and, while I 
+have never seen it used elsewhere, I would be surprised if it has not 
+been independently "developed" by many other people. </p>
+
+<p>As shown Q1 collector is driven negative below ground when Q1 turns 
+off until energy in L1 is dissipated. Swap ground and supply and 
+transistor types for +ve supply. Add diode from output to use as a DC 
+supply. L1 - small potted "resistor like" inductor or many others - 
+experiment. Q1 Q2 - almost any "jellybean" small pnp &amp; npn 
+transistors. C1 polarised only to get high capacitance per size. Can be 
+eg ceramic if capacitance high enough for needs. Use only LED2 (best) or
+ LED1 at one time. </p>
+
+<p><img src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/9lzwH.jpg" alt="enter image description here"></p>
+
+<ul>
+<li>......   Use either LED2 (most efficient) or LED1</li>
+</ul>
+
+<p>Time constant ~= R2 x C1. </p>
+
+<p>Long time constant leads to discrete flashes. Short time constant produce apparently permanently on LED. 
+Use resistor between Q1b-Q2c for higher supply voltages. Resistor in series with C1 will extend pulse length. </p>
+
+<p>This circuit is usually presented with a load of some sort in place 
+of L1 - it may be an LED (depending on voltage or a transistor base 
+(part of a following stage) or a light bulb etc. My 'innovation' was the
+ very obvious one of using an inductor (L1) as the load. This provides a
+ pulse of current into L1 when Q1 is on and when Q1 turns off L1 "flys 
+back" and delivers whatever voltage is required to dump the energy from 
+L1 into the load - here the load is one or other of the two LEDs shown. 
+LED2 is the most efficient as it is powered by Vupply + V_L1 so part of 
+the energy is stored in L1 and then released and part provided . LED1 if
+ equioped is driven solely by V_L1.  </p>
+
+<hr>
+
+<p>(3) <strong>Other options</strong></p>
+
+<p>An <a href="http://www.fairchildsemi.com/ds/LM/LM2903.pdf" rel="nofollow">LM393 dual comparator</a>
+ or its quad version can run on as little a 2 Volt and also do what you 
+want. There will be flasher circuits using it on the internet.</p>
+
+<p><a href="http://www.fairchildsemi.com/ds/LM/LM239A.pdf" rel="nofollow">LM339 quad version</a></p>
+
+<p><a href="http://www.digikey.com/scripts/DkSearch/dksus.dll?Detail&amp;name=LM339NFS-ND" rel="nofollow">prices</a></p>
+
+<hr>
+
+<p>Once you "allow" the use of an inductor you can operate any LED from 
+down to under 1 volt. Here's one way. I'll post more later. </p>
+
+<p><a href="http://www.edn.com/article/471179-Simplified_white_LED_flasher_operates_from_one_cell.php#" rel="nofollow">EDN White LED flasher operating from 1 cell</a>
+<img src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/htPjV.jpg" alt="enter image description here"></p>
+
+<hr>
+
+<p>Here are 4 flashers stated to run on 1.5V.<br>
+The LM3909 IC is designed to flash an LED from a single cell. May be hard to find.</p>
+
+<p>The 74HC04 and 74HC14 are probably at the bottom of their spec sheet 
+power supply range at 1.5V so a single cell  falls below that voltage 
+rapidly. Quite likely to work at lower voltage but out of spec.</p>
+
+<p>Circuit at bottom right will work at 1.5V and below. Note that it is a
+ variant of "my" 2 transistor + inductor flasher but they have added a 
+transistor output buffer an d do not have an inductor. Replacing the 330
+ ohm resistor with an inductor and removing the right hand 220 uF cap 
+and 330 ohm resistor would produce a pulse at the right hand 
+transistor's collector that would drive any colour LED.</p>
+
+<p><img src="analog%20-%20Ultra%20low%20power_%20simple%20flashing%20circuit%20-%20Electrical%20Engineering%20Stack%20Exchange_files/vi6JC.jpg" alt="enter image description here"></p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://electronics.stackexchange.com/a/18006" title="short permalink to this answer" class="short-link" id="link-post-18006">share</a><span class="lsep">|</span><a href="http://electronics.stackexchange.com/posts/18006/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+    <td class="post-signature" align="right">
+<div class="user-info ">
+    <div class="user-action-time">
+        <a href="http://electronics.stackexchange.com/posts/18006/revisions" title="show all edits to this post">edited <span title="2011-08-16 11:39:47Z" class="relativetime">Aug 16 '11 at 11:39</span></a>
+    </div>
+    <div class="user-gravatar32">
+        
+    </div>
+    <div class="user-details">
+        
+        <div class="-flair">
+            
+        </div>
+    </div>
+</div>    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-08-09 20:28:36Z" class="relativetime">Aug 9 '11 at 20:28</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://electronics.stackexchange.com/users/3288/russell-mcmahon"><div class="gravatar-wrapper-32"><img title="[gravatar.com]" style="border: 1px solid rgb(255, 204, 204); background-repeat: no-repeat; background-position: center center; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gMFRANL5LXnioAAAJWSURBVDjLnZI/ixtXFMV/972ZNzPSrmTtalexlsWBGMfEYOzaVciXyKdIkW/hFKnS22WafIDUxk0g2AQSgm0csIPWK42ktaSRNPP+pRBK5SLOqS7cew7ccw4xxrPJ+8XdHx4+7AE8e3Cj++zLm71fvrqT8x+QAK35dJr2n/x89urTa+eDm/cS+eI2y3eT+Lx/bt8u1vNqfDH++teXdk/6ThAfUUBIgL9ku75z/8WL7LOlhXIGJ0Pyw75wMcnGv//xSQ2DH4ddu9k01dXWsWzcofhYaiiViLjiWi9UWQa1gzcjWF7hgfzzW5ydnXB62JLjg0PTLfJertNepnQSIA+gE4Cs03UuNYYQYP4e5jPogmSG9vA6rrjC+0AxN2i5Qk0DpXVJhCQB0EVRrzqdFgB1DZfvCDHixiV2NqO6LHHKIKnQMoaWbFBgIrQVgIXaDc+JCHgP5QRZr4jzGWFbo6yncRYviiiQKUhBRch3Lyix4bgPWsAkcDkmZAV2OiE0DaI1WoEShRKF3sWnmt01pFBnJydEpZDEwHSGt47lYsls43AIXjTWV9R1Qx0DGahqLyAhbqrj0/ib0nRzXNoyCo0Kkor2llV0eKOwdUMg4pSQA7JPQXvnJv1B+GlwOvrGlaXB6fV2lb5t6qOtike56DSJgYDGBQcOAsQAfueBMeHR48fhadb1j/58HWARdt6yBv7+/vpBe2o5OogxlcaKdt5aKCNsk309W0WxKQjmQ33/9mJVAdWHdmo/tNvtRZIkfCz+ZQwGg6rT6Zj/LTAajTbD4bD5WIF/AAseEisPFO8uAAAAAElFTkSuQmCC&quot;);" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://electronics.stackexchange.com/users/3288/russell-mcmahon">Russell McMahon</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score 99,591" dir="ltr">99.6k</span><span title="7 gold badges"><span class="badge1"></span><span class="badgecount">7</span></span><span title="112 silver badges"><span class="badge2"></span><span class="badgecount">112</span></span><span title="225 bronze badges"><span class="badge3"></span><span class="badgecount">225</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-18006" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="2" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-31655" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">The rest is interesting but 
+under 3) "There will be flasher circuits using it on the internet" your 
+answer seems to be just the word "comparator", not even how it's to be 
+used for a solution.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/3920/federico-russo" title="4,267 reputation" class="comment-user">Federico Russo</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-14 12:42:02Z" class="relativetime-clean">Aug 14 '11 at 12:42</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31671" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Federico Russo - hand 
+feeding only goes so far. Knowing that a cheap available IC like the 
+LM339 is used for flashers and access to a search engine is all that is 
+required. There are many other comparators but none (I think) cheaper 
+than the 339/393. But, build the others that I describe in more detail 
+instead :-).</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/3288/russell-mcmahon" title="99,591 reputation" class="comment-user">Russell McMahon</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-14 16:16:05Z" class="relativetime-clean">Aug 14 '11 at 16:16</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31672" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">FWIW - I must say the 
+feedback is disappointing - not for the "points" but because it shows 
+people haven't appreciated the utter brilliance of the simple 2 
+transistor plus inductor circuit. A large number of really useful 
+applications beckon. Whatever.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/3288/russell-mcmahon" title="99,591 reputation" class="comment-user">Russell McMahon</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-14 16:18:05Z" class="relativetime-clean">Aug 14 '11 at 16:18</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31678" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">About the feedback: your answer is (as often) rather long, and may suffer from the <code>tl;dr</code> syndrome. If you think part of an answer deserves special attention, why not highlight it by making it a separate answer?</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/3920/federico-russo" title="4,267 reputation" class="comment-user">Federico Russo</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-14 18:00:41Z" class="relativetime-clean">Aug 14 '11 at 18:00</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31686" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">@Federico Russo- I do rather 
+gain the impression that you are trolling. You make comments on various 
+of my posts without it being evident that you have read them. You may, 
+however, just be trying to be helpful :-). Your "separate answer" 
+suggestion is wholly covered by the summary at the top of my response. 
+My point 2 is 5 lines down the answer and has a diagram, inviting 
+description and note that more follows below. You can lead a child to 
+Euclid, but you can't make him think. if people can't read to line 5 and
+ look at a picture then no amount of body shortening is liable to help. 
+Alas.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/3288/russell-mcmahon" title="99,591 reputation" class="comment-user">Russell McMahon</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-15 00:35:06Z" class="relativetime-clean">Aug 15 '11 at 0:35</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-18006" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link  dno" title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”."></a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link " title="expand to show all comments on this post" href="#" onclick="">show <b>2</b> more comments</a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="18214"></a>
+<div id="answer-18214" class="answer" data-answerid="18214" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="18214" type="hidden">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>This charge pump circuit operates from a 1.5v cell...</p>
+
+<p><a href="http://www.discovercircuits.com/H-Corner/led-flasher.htm" rel="nofollow">http://www.discovercircuits.com/H-Corner/led-flasher.htm</a></p>
+
+<p>"This electronic circuit uses only a single inexpensive C-MOS IC and 
+flashes the LED for a full year on a single 1.5 volt AA alkaline battery
+ cell. The circuit uses a charge pump technique to provide the LED with 
+the needed voltage.  This electronic schematic will only work on red, 
+green and yellow LEDs.  It is not be able to flash white LEDs."</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://electronics.stackexchange.com/a/18214" title="short permalink to this answer" class="short-link" id="link-post-18214">share</a><span class="lsep">|</span><a href="http://electronics.stackexchange.com/posts/18214/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-08-14 11:55:35Z" class="relativetime">Aug 14 '11 at 11:55</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://electronics.stackexchange.com/users/1750/linker3000"><div class="gravatar-wrapper-32"><img title="[gravatar.com]" style="border: 1px solid rgb(255, 204, 204); background-repeat: no-repeat; background-position: center center; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gMFRANL5LXnioAAAJWSURBVDjLnZI/ixtXFMV/972ZNzPSrmTtalexlsWBGMfEYOzaVciXyKdIkW/hFKnS22WafIDUxk0g2AQSgm0csIPWK42ktaSRNPP+pRBK5SLOqS7cew7ccw4xxrPJ+8XdHx4+7AE8e3Cj++zLm71fvrqT8x+QAK35dJr2n/x89urTa+eDm/cS+eI2y3eT+Lx/bt8u1vNqfDH++teXdk/6ThAfUUBIgL9ku75z/8WL7LOlhXIGJ0Pyw75wMcnGv//xSQ2DH4ddu9k01dXWsWzcofhYaiiViLjiWi9UWQa1gzcjWF7hgfzzW5ydnXB62JLjg0PTLfJertNepnQSIA+gE4Cs03UuNYYQYP4e5jPogmSG9vA6rrjC+0AxN2i5Qk0DpXVJhCQB0EVRrzqdFgB1DZfvCDHixiV2NqO6LHHKIKnQMoaWbFBgIrQVgIXaDc+JCHgP5QRZr4jzGWFbo6yncRYviiiQKUhBRch3Lyix4bgPWsAkcDkmZAV2OiE0DaI1WoEShRKF3sWnmt01pFBnJydEpZDEwHSGt47lYsls43AIXjTWV9R1Qx0DGahqLyAhbqrj0/ib0nRzXNoyCo0Kkor2llV0eKOwdUMg4pSQA7JPQXvnJv1B+GlwOvrGlaXB6fV2lb5t6qOtike56DSJgYDGBQcOAsQAfueBMeHR48fhadb1j/58HWARdt6yBv7+/vpBe2o5OogxlcaKdt5aKCNsk309W0WxKQjmQ33/9mJVAdWHdmo/tNvtRZIkfCz+ZQwGg6rT6Zj/LTAajTbD4bD5WIF/AAseEisPFO8uAAAAAElFTkSuQmCC&quot;);" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://electronics.stackexchange.com/users/1750/linker3000">Linker3000</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,069</span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="11 bronze badges"><span class="badge3"></span><span class="badgecount">11</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-18214" class="comments ">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+
+
+    <tr id="comment-31653" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">This sounds impressive, but 
+it only has a normal LED current of 20mA at 0.4% duty cycle. I wonder 
+how visible this is in daylight.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/2064/stevenvh" title="120,530 reputation" class="comment-user">stevenvh</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-14 12:04:23Z" class="relativetime-clean">Aug 14 '11 at 12:04</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+    <tr id="comment-31706" class="comment ">
+        <td>
+            <table>
+                <tbody>
+                    <tr>
+                        <td class=" comment-score">
+                                &nbsp;&nbsp;
+                        </td>
+                        <td>
+                                &nbsp;
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="comment-text">
+            <div style="display: block;" class="comment-body">
+                <span class="comment-copy">20 mA is "plenty bright" with
+ a suitable modern LED. Available white LEDs are available in the 30 to 
+40 Candela range and some monochromatic LEDs will be higher again. Note 
+that even though the circuit is from the great Dave Johnson it still 
+"breaks the rules". The IC is specified at Vcc = 1.5V minimum, so will 
+be below spec for essentially all of the battery life. Apparently it 
+works. Note that the TI version is specified at 1.5V whereas several 
+other manufacturers parts are specd at Vcc = 2.0 V min. A transistor 
+output driver could be added to provide more current.</span>
+                    –&nbsp;<a href="http://electronics.stackexchange.com/users/3288/russell-mcmahon" title="99,591 reputation" class="comment-user">Russell McMahon</a>
+                <span class="comment-date" dir="ltr"><span title="2011-08-15 07:04:38Z" class="relativetime-clean">Aug 15 '11 at 7:04</span></span>
+                                                                            </div>
+                    </td>
+    </tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-18214" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+
+  
+<a name="18273"></a>
+<div id="answer-18273" class="answer" data-answerid="18273" itemscope="" itemtype="http://schema.org/Answer">
+    <table>
+        <tbody><tr>
+            <td class="votecell">
+                
+
+<div class="vote">
+        <input name="_id_" value="18273" type="hidden">
+        <a class="vote-up-off" title="This answer is useful">up vote</a>
+        <span itemprop="upvoteCount" class="vote-count-post ">0</span>
+        <a class="vote-down-off" title="This answer is not useful">down vote</a>
+
+
+
+
+</div>
+
+            </td>
+            
+
+
+<td class="answercell">
+    <div class="post-text" itemprop="text">
+<p>There's also these circuits based on the (out of production) LM3909 LED flasher/oscillator:</p>
+
+<p><a href="http://home.cogeco.ca/%7Erpaisley4/LM3909.html" rel="nofollow">http://home.cogeco.ca/~rpaisley4/LM3909.html</a></p>
+
+<p>Side note: My first-ever home made PCB was for an LM3909 circuit (in 
+1976 when I was 11). Hand-drawn straight onto the copper with a resist 
+pen!</p>
+    </div>
+    <table class="fw">
+    <tbody><tr>
+    <td class="vt">
+<div class="post-menu"><a href="http://electronics.stackexchange.com/a/18273" title="short permalink to this answer" class="short-link" id="link-post-18273">share</a><span class="lsep">|</span><a href="http://electronics.stackexchange.com/posts/18273/edit" class="suggest-edit-post" title="">improve this answer</a></div>                    </td>
+            
+
+
+    <td class="post-signature" align="right">   
+       
+
+    <div class="user-info user-hover">
+    <div class="user-action-time">
+        answered <span title="2011-08-15 23:38:37Z" class="relativetime">Aug 15 '11 at 23:38</span>
+    </div>
+    <div class="user-gravatar32">
+        <a href="http://electronics.stackexchange.com/users/1750/linker3000"><div class="gravatar-wrapper-32"><img title="[gravatar.com]" style="border: 1px solid rgb(255, 204, 204); background-repeat: no-repeat; background-position: center center; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEwAACxMBAJqcGAAAAAd0SU1FB9gMFRANL5LXnioAAAJWSURBVDjLnZI/ixtXFMV/972ZNzPSrmTtalexlsWBGMfEYOzaVciXyKdIkW/hFKnS22WafIDUxk0g2AQSgm0csIPWK42ktaSRNPP+pRBK5SLOqS7cew7ccw4xxrPJ+8XdHx4+7AE8e3Cj++zLm71fvrqT8x+QAK35dJr2n/x89urTa+eDm/cS+eI2y3eT+Lx/bt8u1vNqfDH++teXdk/6ThAfUUBIgL9ku75z/8WL7LOlhXIGJ0Pyw75wMcnGv//xSQ2DH4ddu9k01dXWsWzcofhYaiiViLjiWi9UWQa1gzcjWF7hgfzzW5ydnXB62JLjg0PTLfJertNepnQSIA+gE4Cs03UuNYYQYP4e5jPogmSG9vA6rrjC+0AxN2i5Qk0DpXVJhCQB0EVRrzqdFgB1DZfvCDHixiV2NqO6LHHKIKnQMoaWbFBgIrQVgIXaDc+JCHgP5QRZr4jzGWFbo6yncRYviiiQKUhBRch3Lyix4bgPWsAkcDkmZAV2OiE0DaI1WoEShRKF3sWnmt01pFBnJydEpZDEwHSGt47lYsls43AIXjTWV9R1Qx0DGahqLyAhbqrj0/ib0nRzXNoyCo0Kkor2llV0eKOwdUMg4pSQA7JPQXvnJv1B+GlwOvrGlaXB6fV2lb5t6qOtike56DSJgYDGBQcOAsQAfueBMeHR48fhadb1j/58HWARdt6yBv7+/vpBe2o5OogxlcaKdt5aKCNsk309W0WxKQjmQ33/9mJVAdWHdmo/tNvtRZIkfCz+ZQwGg6rT6Zj/LTAajTbD4bD5WIF/AAseEisPFO8uAAAAAElFTkSuQmCC&quot;);" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" alt="" height="32" width="32"></div></a>
+    </div>
+    <div class="user-details">
+        <a href="http://electronics.stackexchange.com/users/1750/linker3000">Linker3000</a>
+        <div class="-flair">
+            <span class="reputation-score" title="reputation score " dir="ltr">1,069</span><span title="6 silver badges"><span class="badge2"></span><span class="badgecount">6</span></span><span title="11 bronze badges"><span class="badge3"></span><span class="badgecount">11</span></span>
+        </div>
+    </div>
+</div>
+    </td>
+    </tr>
+    </tbody></table>
+</td>
+        </tr>
+        
+<tr>
+    <td class="votecell"></td>
+    <td>
+	    <div id="comments-18273" class="comments  dno">
+		    <table>
+                <tbody data-remaining-comments-count="0" data-canpost="false" data-cansee="true" data-comments-unavailable="false" data-addlink-disabled="true">
+
+                        <tr><td></td><td></td></tr>
+                </tbody>
+		    </table>
+	    </div>
+
+        <div id="comments-link-18273" data-rep="50" data-anon="true">
+
+                <a class="js-add-link comments-link disabled-link " title="Use comments to ask for more information or suggest improvements. Avoid comments like “+1” or “thanks”.">add a comment</a><span class="js-link-separator dno">&nbsp;|&nbsp;</span>
+            <a class="js-show-link comments-link dno" title="expand to show all comments on this post" href="#" onclick=""></a>
+        </div>         
+    </td>
+</tr>    </tbody></table>
+</div>
+									<a name="new-answer"></a>
+						<form id="post-form" action="/questions/17998/answer/submit" method="post" class="post-form">
+						    <input id="post-id" value="17998" type="hidden">
+                            <input id="qualityBanWarningShown" name="qualityBanWarningShown" value="false" type="hidden">
+                            <input name="referrer" value="https://duckduckgo.com" type="hidden">
+							<h2 class="space">Your Answer</h2>
+
+        <script>
+            StackExchange.ifUsing("editor", function () {
+                return StackExchange.using("mathjaxEditing", function () {
+                    StackExchange.MarkdownEditor.creationCallbacks.add(function (editor, postfix) {
+                        StackExchange.mathjaxEditing.prepareWmdForMathJax(editor, postfix, [["\\$", "\\$"]]);
+                    });
+                });
+            }, "mathjax-editing");
+        </script>
+
+                <script>
+            StackExchange.ifUsing("editor", function () {
+                return StackExchange.using("schematics", function () {
+                    StackExchange.schematics.init();
+                });
+            }, "cicuitlab");
+        </script>
+
+
+<script>
+    StackExchange.ready(function() {
+        initTagRenderer("".split(" "), "".split(" "));
+       
+        StackExchange.using("externalEditor", function() {
+                // Have to fire editor after snippets, if snippets enabled
+                if (StackExchange.settings.snippets.snippetsEnabled) {
+                    StackExchange.using("snippets", function() {
+                        createEditor();
+                    });
+                }
+                else {
+                    createEditor();
+                }
+            });
+
+            function createEditor() {
+                prepareEditor({
+                    heartbeatType: 'answer',
+                convertImagesToLinks: false,
+                reputationToPostImages: null,
+                bindNavPrevention: true,
+                postfix: "",
+                    onDemand: true,
+                    discardSelector: ".discard-answer"
+                    ,immediatelyShowMarkdownHelp:true
+                    });
+                
+
+        }
+    });  
+</script>
+
+
+<div id="post-editor" class="post-editor js-post-editor">
+
+    <div style="position: relative;">     
+        <div class="wmd-container">
+            <div id="wmd-button-bar" class="wmd-button-bar"></div>
+            <textarea id="wmd-input" class="wmd-input" name="post-text" cols="92" rows="15" tabindex="101" data-min-length=""></textarea>
+        </div>
+    </div>
+
+    <div class="fl" style="margin-top: 8px; height:24px;">&nbsp;</div>
+    <div id="draft-saved" class="draft-saved community-option fl" style="margin-top: 8px; height:24px; display:none;">draft saved</div>
+
+    <div id="draft-discarded" class="draft-discarded community-option fl" style="margin-top: 8px; height:24px; display:none;">draft discarded</div>
+
+
+
+    <div id="wmd-preview" class="wmd-preview"></div>
+    <div></div>
+    <div class="edit-block">
+        <input id="fkey" name="fkey" value="3f4d516406f30e9912f4ec0f4d793235" type="hidden">
+        <input id="author" name="author" type="text">
+    </div>
+
+
+
+</div>
+							<div style="position: relative;">
+								
+								            <div class="form-item dno new-post-login">
+        
+                <div class="new-login-form">
+                    <div class="new-login-left">
+                        <h3>Sign up or <a id="login-link" href="http://electronics.stackexchange.com/users/login?ssrc=question_page&amp;returnurl=http%3a%2f%2felectronics.stackexchange.com%2fquestions%2f17998%2fultra-low-power-simple-flashing-circuit%23new-answer">log in</a></h3>
+                        <script>
+                            StackExchange.ready(function () {
+                                StackExchange.helpers.onClickDraftSave('#login-link');
+                            });
+                        </script>
+                        <div class="preferred-login google-login">
+                            <p><span class="icon"></span><span>Sign up using Google</span></p>
+                        </div>
+                        <div class="preferred-login facebook-login">
+                            <p><span class="icon"></span><span>Sign up using Facebook</span></p>
+                        </div>
+                        <div class="preferred-login stackexchange-login">
+                            <p><span class="icon"></span><span>Sign up using Email and Password</span></p>
+                        </div>
+                    </div>
+                    <input name="manual-openid" class="manual-openid" type="hidden">
+                    <input name="use-facebook" class="use-facebook" value="false" type="hidden">
+                    <input name="use-google" class="use-google" value="false" type="hidden">
+                    <input class="submit-openid" value="Submit" style="display:none" type="button">
+                    <div class="new-login-right">
+                                <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tbody><tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" size="30" maxlength="30" tabindex="105" type="text">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" size="30" maxlength="100" tabindex="106" placeholder="required, but never shown" type="email">
+                </div>
+            </td>
+        </tr>
+        </tbody></table>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+            <script>
+                StackExchange.ready(
+                    function () {
+                        StackExchange.openid.initPostLogin('.new-post-login', 'http%3a%2f%2felectronics.stackexchange.com%2fquestions%2f17998%2fultra-low-power-simple-flashing-circuit%23new-answer', 'question_page');
+                    }
+                );
+            </script>
+            <noscript>
+                        <h3>Post as a guest</h3>
+    <div class="form-item">
+        <table>
+        <tr>
+                    <td class="vm">
+                <div>
+                    <label for="display-name">Name</label>
+                    <input id="display-name" name="display-name" type="text" size="30" maxlength="30" value="" tabindex="105">
+                </div>
+                <div>
+                    <label for="m-address">Email</label>
+                    <input id="m-address" name="m-address" type="email" size="30" maxlength="100" value="" tabindex="106" placeholder="required, but never shown" />
+                </div>
+            </td>
+        </tr>
+        </table>
+    </div>
+
+            </noscript>
+
+							</div>
+           
+															<div class="form-submit cbt">
+									<input id="submit-button" value="Post Your Answer" tabindex="110" type="submit">
+									<a href="#" class="btn-clear discard-answer dno">discard</a>
+
+<p class="privacy-policy-agreement">
+By posting your answer, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input name="legalLinksShown" value="1" type="hidden">								</div>
+						</form>
+
+
+
+						<h2 class="bottom-notice" data-loc="1">
+Not the answer you're looking for?							Browse other questions tagged <a href="http://electronics.stackexchange.com/questions/tagged/analog" class="post-tag" title="show questions tagged 'analog'" rel="tag">analog</a> <a href="http://electronics.stackexchange.com/questions/tagged/low-power" class="post-tag" title="show questions tagged 'low-power'" rel="tag">low-power</a>  or <a href="http://electronics.stackexchange.com/questions/ask">ask your own question</a>.						</h2>
+			</div>
+		</div>
+				<div id="sidebar" class="show-votes">
+						    <div class="module question-stats">
+			        <table id="qinfo">
+			            <tbody><tr>
+			                <td>
+			                    <p class="label-key">asked</p>
+			                </td>
+			                <td style="padding-left: 10px">
+			                    <p class="label-key" title="2011-08-09 18:51:40Z"><b>5 years ago</b></p>
+			                </td>
+			            </tr>
+			            <tr>
+			                <td>
+			                    <p class="label-key">viewed</p>
+			                </td>
+
+			                <td style="padding-left: 10px">
+			                    <p class="label-key">
+			                        <b>13752 times</b>
+			                    </p>
+			                </td>
+			            </tr>
+			                <tr>
+			                    <td>
+			                        <p class="label-key">active</p>
+			                    </td>
+			                    <td style="padding-left: 10px">
+			                        <p class="label-key"><b><a href="http://electronics.stackexchange.com/questions/17998/ultra-low-power-simple-flashing-circuit?lastactivity" class="lastactivity-link" title="2011-08-16 11:39:47Z">5 years ago</a></b></p>
+			                    </td>
+			                </tr>
+			        </tbody></table>
+			    </div>
+						
+			<style type="text/css">
+    .ads { margin-left: 60px; }
+    .ad-container { width: 300px; height: 250px; margin-right: 20px; margin-bottom: 20px; }
+    .ad-container .ad { height: 250px; }
+    .ad-container .footer-container { overflow: hidden; height: 30px; position: relative; top: -30px; }
+    .ad-container .footer-container .footer { font-family: Arial,Helvetic,Sans-Serif; font-size: 12px; text-align: center; padding-top: 9px; background-color: #000; color: #EFF; opacity: 0.9; filter: alpha(opacity=90); top: 30px; height: 30px; position: relative; }
+    .ad-container a:hover { text-decoration: underline; }
+    #adzerk2 { height: 250px; }
+</style>
+<script>
+    StackExchange.ready(function () {
+        $(".ad-container").hover(
+            function () {
+                $(".ad-container .footer-container .footer").stop(true, true).animate({ top: "0px" }, "fast");
+            },
+            function () {
+                $(".ad-container .footer-container .footer").animate({ top: "30px" }, "fast");
+            });
+    });
+</script>
+    <script>
+        var ados = ados || {};ados.run = ados.run || [];
+        ados.run.push(function () { ados_add_placement(22, 12057, "adcm2", [5,17]).setZone(76); });
+    </script>
+    <div class="everyonelovesstackoverflow" id="adcm2">
+    </div> 
+<script>var p = "http", d = "static"; if (document.location.protocol == "https:") { p += "s"; d = "engine"; } var z = document.createElement("script"); z.type = "text/javascript"; z.async = true; z.src = p + "://" + d + ".adzerk.net/ados.js"; var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(z, s);</script>
+<script>
+    var ados = ados || {};
+    ados.run = ados.run || [];
+    
+    
+        
+        ados.run.push(function () {
+                ados_setKeywords('capacitor,inductor,radio,crystal-set,x-host-electronics.stackexchange.com');; ados_load();
+        });   
+        
+</script><div style="margin-bottom: 10px;">
+        
+
+<style type="text/css">
+#newsletter-ad {
+    width: 270px;
+    height: 250px;
+    overflow: hidden;
+    background: url('//cdn.sstatic.net/Sites/electronics/img/newsletter-ad.png?v=4');
+    padding: 0 15px 0 15px;
+}
+#newsletter-ad-header {
+    margin-top: 60px;
+}
+#newsletter-ad ul {
+    margin: 1em 0 1em 1.5em;
+}
+#newsletter-ad ul li {
+    margin-bottom: 5px;
+}
+#newsletter-signup-container {
+    text-align: center;
+}
+#newsletter-preview-container {
+    margin-top: 10px;
+    text-align: center;
+}
+#newsletter-email-input {
+    width: 200px;
+}
+</style>
+
+<script>
+    StackExchange.ready(function () {
+        StackExchange.newsletterAd.init();
+    });
+</script>
+
+<div wgnn65h="" id="newsletter-ad" hidden="">
+        <p id="newsletter-ad-header">Get the <b>weekly newsletter!</b> In it, you'll get:</p>
+        <ul>
+            <li>The week's top questions and answers</li>
+            <li>Important community announcements</li>
+            <li>Questions that need answers</li>
+        </ul>
+    <div id="newsletter-signup-container"><input wgnn65h="" id="newsletter-signup" value="Sign up for the newsletter" hidden="" type="button"></div>
+    <p id="newsletter-preview-container">see an <a href="http://stackexchange.com/newsletters/newsletter?site=electronics.stackexchange.com" id="newsletter-preview">example newsletter</a></p>
+    <div class="dno">
+        
+<p class="privacy-policy-agreement">
+By subscribing, you agree to the <a href="http://stackexchange.com/legal/privacy-policy" target="_blank">privacy policy</a> and <a href="http://stackexchange.com/legal/terms-of-service" target="_blank">terms of service</a>.</p>
+<input name="legalLinksShown" value="1" type="hidden">
+    </div>
+</div>
+
+    </div>
+			
+
+            <div class="module sidebar-linked">
+	<h4 id="h-linked">Linked</h4>
+	<div class="linked" data-tracker="lq=1">
+
+<div class="spacer">
+	<a href="http://electronics.stackexchange.com/q/122385" title="Vote score (upvotes - downvotes)">
+		<div class="answer-votes answered-accepted default">-1</div>
+	</a>
+	<a href="http://electronics.stackexchange.com/questions/122385/can-a-few-inexpensive-components-light-a-white-led-from-2-aaa-alkaline-batteries?noredirect=1" class="question-hyperlink">Can a few inexpensive components light a white led from 2 AAA alkaline batteries?</a>
+</div>			</div>
+</div>
+
+				<div class="module sidebar-related">
+					<h4 id="h-related">Related</h4>
+                    <div class="related js-gps-related-questions" data-tracker="rq=1">
+                        <div class="spacer"><a href="http://electronics.stackexchange.com/q/12756" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">4</div></a><a href="http://electronics.stackexchange.com/questions/12756/how-to-build-an-ultra-low-power-time-counter" class="question-hyperlink">How to build an ultra-low power time counter?</a></div><div class="spacer"><a href="http://electronics.stackexchange.com/q/33882" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">5</div></a><a href="http://electronics.stackexchange.com/questions/33882/low-battery-detection-circuit-that-can-tell-if-temporary-voltage-dip-or-actual-l" class="question-hyperlink">Low battery detection circuit that can tell if temporary voltage dip or actual low battery</a></div><div class="spacer"><a href="http://electronics.stackexchange.com/q/36930" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">17</div></a><a href="http://electronics.stackexchange.com/questions/36930/some-advice-on-charging-circuit-used-in-simple-ups" class="question-hyperlink">Some advice on charging circuit used in simple UPS</a></div><div class="spacer"><a href="http://electronics.stackexchange.com/q/60238" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">9</div></a><a href="http://electronics.stackexchange.com/questions/60238/powering-an-ic-from-a-gpio-line" class="question-hyperlink">Powering an IC from a GPIO line</a></div><div class="spacer"><a href="http://electronics.stackexchange.com/q/74477" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">2</div></a><a href="http://electronics.stackexchange.com/questions/74477/low-power-timer-switch-circuit" class="question-hyperlink">Low power timer switch circuit</a></div><div class="spacer"><a href="http://electronics.stackexchange.com/q/80579" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">2</div></a><a href="http://electronics.stackexchange.com/questions/80579/shut-down-circuit-sections" class="question-hyperlink">Shut down circuit sections</a></div><div class="spacer"><a href="http://electronics.stackexchange.com/q/216206" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">5</div></a><a href="http://electronics.stackexchange.com/questions/216206/how-to-modify-a-voltage-regulator-to-make-it-very-low-quiescent-current" class="question-hyperlink">How to modify a voltage regulator to make it very low quiescent current?</a></div><div class="spacer"><a href="http://electronics.stackexchange.com/q/216379" title="Vote score (upvotes - downvotes)"><div class="answer-votes answered-accepted default">0</div></a><a href="http://electronics.stackexchange.com/questions/216379/ultra-low-power-555-timer-circuit" class="question-hyperlink">Ultra low power 555 timer circuit</a></div><div class="spacer"><a href="http://electronics.stackexchange.com/q/232266" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">0</div></a><a href="http://electronics.stackexchange.com/questions/232266/electronic-circuit-to-power-on-module-in-intervals" class="question-hyperlink">Electronic circuit to power on module in intervals</a></div><div class="spacer"><a href="http://electronics.stackexchange.com/q/249497" title="Vote score (upvotes - downvotes)"><div class="answer-votes default">1</div></a><a href="http://electronics.stackexchange.com/questions/249497/low-power-ohmmeter" class="question-hyperlink">Low power ohmmeter</a></div>
+                    </div>
+				</div>
+            
+<div id="hot-network-questions" class="module">
+    <h4>
+        <a href="http://stackexchange.com/questions?tab=hot" class="js-gps-track" data-gps-track="posts_hot_network.click({ item_type:1, location:11 })">
+            Hot Network Questions
+        </a>
+    </h4>
+    <ul>
+            <li>
+                <div class="favicon favicon-chemistry" title="Chemistry Stack Exchange"></div><a href="http://chemistry.stackexchange.com/questions/61001/what-does-it-mean-for-meth-to-be-pure" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:431 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What does it mean for meth to be 'pure'?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-blender" title="Blender Stack Exchange"></div><a href="http://blender.stackexchange.com/questions/65106/how-to-select-edge-rings-between-two-edges" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:502 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to select edge rings between two edges?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-askubuntu" title="Ask Ubuntu"></div><a href="http://askubuntu.com/questions/837633/top-not-showing-output-over-ssh" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:89 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    "top" not showing output over "ssh"
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-academia" title="Academia Stack Exchange"></div><a href="http://academia.stackexchange.com/questions/78323/is-it-ok-for-graduate-students-to-draft-the-research-proposal-for-their-advisor" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:415 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it OK for graduate students to draft the research
+ proposal for their advisor’s funding application (like NIH’s or NSF’s 
+grant application)?
+                </a>
+
+            </li>
+            <li>
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/58152/are-there-any-rules-or-guidelines-about-designing-a-flag" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Are there any rules or guidelines about designing a flag?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/353363/good-term-for-mild-error-software" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Good Term For "Mild" Error (Software)
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-mechanics" title="Motor Vehicle Maintenance &amp; Repair Stack Exchange"></div><a href="http://mechanics.stackexchange.com/questions/37433/higher-level-in-brake-fluid-tank-after-pad-replacement" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:224 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Higher level in brake fluid tank after pad replacement
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-unix" title="Unix &amp; Linux Stack Exchange"></div><a href="http://unix.stackexchange.com/questions/315812/why-does-argv-include-the-program-name" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:106 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why does argv include the program name?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-aviation" title="Aviation Stack Exchange"></div><a href="http://aviation.stackexchange.com/questions/32391/how-do-investigators-always-know-the-logged-flight-time-of-the-pilots" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:528 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How do investigators always know the logged flight time of the pilots?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/96271/exploded-suffixes" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Exploded Suffixes
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-programmers" title="Programmers Stack Exchange"></div><a href="http://programmers.stackexchange.com/questions/333487/developing-web-applications-for-long-lifespan-20-years" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:131 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Developing web applications for long lifespan (20+ years)
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-codegolf" title="Programming Puzzles &amp; Code Golf Stack Exchange"></div><a href="http://codegolf.stackexchange.com/questions/96342/the-3x3-hexa-prime-square-puzzle" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:200 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    The 3x3 Hexa Prime Square Puzzle
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-superuser" title="Super User"></div><a href="http://superuser.com/questions/1135192/how-to-decrypt-a-broken-s-mime-message-sent-by-outlook" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:3 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    How to decrypt a broken S/MIME message sent by Outlook?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-travel" title="Travel Stack Exchange"></div><a href="http://travel.stackexchange.com/questions/80762/can-i-buy-my-plane-ticket-to-exit-the-us-to-mexico" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:273 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Can I buy my plane ticket to exit the US to Mexico?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-scifi" title="Science Fiction &amp; Fantasy Stack Exchange"></div><a href="http://scifi.stackexchange.com/questions/142964/what-are-imperial-officers-wearing-here" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:186 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What are Imperial officers wearing here?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-spanish" title="Spanish Language Stack Exchange"></div><a href="http://spanish.stackexchange.com/questions/18354/why-are-spanish-adverbs-formed-using-the-feminine" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:353 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Why are Spanish adverbs formed using the feminine?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-english" title="English Language &amp; Usage Stack Exchange"></div><a href="http://english.stackexchange.com/questions/353500/is-accuracy-binary" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:97 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is accuracy binary?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-money" title="Personal Finance &amp; Money Stack Exchange"></div><a href="http://money.stackexchange.com/questions/71752/does-an-index-have-a-currency" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:93 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Does an index have a currency?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-math" title="Mathematics Stack Exchange"></div><a href="http://math.stackexchange.com/questions/1964987/what-is-the-most-expensive-item-i-could-buy-with-%c2%a350" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:69 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    What is the most expensive item I could buy with £50?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-serverfault" title="Server Fault"></div><a href="http://serverfault.com/questions/807611/physically-locating-the-server" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:2 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Physically locating the server
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-workplace" title="The Workplace Stack Exchange"></div><a href="http://workplace.stackexchange.com/questions/77750/my-ceo-wants-permanent-access-to-every-employees-emails-how-do-i-explain-that" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:423 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    My CEO wants permanent access to every employee's emails. How do I explain that this is a terrible idea?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-worldbuilding" title="Worldbuilding Stack Exchange"></div><a href="http://worldbuilding.stackexchange.com/questions/58436/is-it-possible-to-have-a-habitable-planet-unsuitable-for-agriculture" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:579 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Is it possible to have a habitable planet unsuitable for agriculture?
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-puzzling" title="Puzzling Stack Exchange"></div><a href="http://puzzling.stackexchange.com/questions/44301/make-all-the-statements-true" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:559 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Make all the statements true
+                </a>
+
+            </li>
+            <li class="dno js-hidden">
+                <div class="favicon favicon-tex" title="TeX - LaTeX Stack Exchange"></div><a href="http://tex.stackexchange.com/questions/334265/framing-standalone-class-output-with-framed-and-others" class="js-gps-track" data-gps-track="site.switch({ item_type:11, target_site:85 }); posts_hot_network.click({ item_type:2, location:11 })">
+                    Framing "standalone" class output with "framed" and others
+                </a>
+
+            </li>
+    </ul>
+
+        <a href="#" class="show-more js-show-more js-gps-track" data-gps-track="posts_hot_network.click({ item_type:3, location:11 })">
+            more hot questions
+        </a>
+</div>
+		</div>
+	
+<div id="feed-link">
+    <div id="feed-link-text">
+        <a href="http://electronics.stackexchange.com/feeds/question/17998" title="feed of this question and its answers">
+            <span wgnn65h="" class="feed-icon" hidden=""></span>question feed
+        </a>
+    </div>
+</div>	<script>
+StackExchange.ready(function(){$.get('/posts/17998/ivc/96fd');});
+</script>
+<noscript>
+    <div><img src="/posts/17998/ivc/96fd" class="dno" alt="" width="0" height="0"></div>
+</noscript><div style="display:none" id="prettify-lang"></div></div>
+
+
+        </div>
+    </div>
+    <div id="footer" class="categories">
+        <div class="footerwrap">            
+            <div id="footer-menu">
+                <div class="top-footer-links">
+                    <a href="http://stackoverflow.com/company/about">about us</a>
+                        <a href="http://electronics.stackexchange.com/tour">tour</a>
+                    <a href="http://electronics.stackexchange.com/help">help</a>
+                    <a href="http://blog.stackoverflow.com/?blb=1">blog</a>
+                        <a href="http://chat.stackexchange.com/?tab=site&amp;host=electronics.stackexchange.com">chat</a>
+                    <a href="http://data.stackexchange.com/">data</a>
+                    <a href="http://stackexchange.com/legal">legal</a>
+                    <a href="http://stackexchange.com/legal/privacy-policy">privacy policy</a>
+                    <a href="http://stackoverflow.com/company/work-here">work here</a>
+                    <a href="http://stackexchange.com/mediakit">advertising info</a>
+
+                    <a onclick='StackExchange.switchMobile("on")'>mobile</a>
+                    <b><a href="http://electronics.stackexchange.com/contact">contact us</a></b>
+                        <b><a href="http://meta.electronics.stackexchange.com/">feedback</a></b>
+                    
+                </div>
+                <div id="footer-sites">
+                    <table>
+    <tbody><tr>
+            <th colspan="4">
+                Technology
+            </th>
+            <th colspan="2">
+                Life / Arts
+            </th>
+            <th colspan="2">
+                Culture / Recreation
+            </th>
+            <th colspan="2">
+                Science
+            </th>
+            <th>
+                Other
+            </th>
+    </tr>
+    <tr>
+            <td>
+                <ol>
+                        <li><a href="http://stackoverflow.com/" title="professional and enthusiast programmers">Stack Overflow</a></li>
+                        <li><a href="http://serverfault.com/" title="system and network administrators">Server Fault</a></li>
+                        <li><a href="http://superuser.com/" title="computer enthusiasts and power users">Super User</a></li>
+                        <li><a href="http://webapps.stackexchange.com/" title="power users of web applications">Web Applications</a></li>
+                        <li><a href="http://askubuntu.com/" title="Ubuntu users and developers">Ask Ubuntu</a></li>
+                        <li><a href="http://webmasters.stackexchange.com/" title="pro webmasters">Webmasters</a></li>
+                        <li><a href="http://gamedev.stackexchange.com/" title="professional and independent game developers">Game Development</a></li>
+                        <li><a href="http://tex.stackexchange.com/" title="users of TeX, LaTeX, ConTeXt, and related typesetting systems">TeX - LaTeX</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://programmers.stackexchange.com/" title="professional programmers interested in conceptual questions about software development">Programmers</a></li>
+                        <li><a href="http://unix.stackexchange.com/" title="users of Linux, FreeBSD and other Un*x-like operating systems">Unix &amp; Linux</a></li>
+                        <li><a href="http://apple.stackexchange.com/" title="power users of Apple hardware and software">Ask Different (Apple)</a></li>
+                        <li><a href="http://wordpress.stackexchange.com/" title="WordPress developers and administrators">WordPress Development</a></li>
+                        <li><a href="http://gis.stackexchange.com/" title="cartographers, geographers and GIS professionals">Geographic Information Systems</a></li>
+                        <li><a href="http://electronics.stackexchange.com/" title="electronics and electrical engineering professionals, students, and enthusiasts">Electrical Engineering</a></li>
+                        <li><a href="http://android.stackexchange.com/" title="enthusiasts and power users of the Android operating system">Android Enthusiasts</a></li>
+                        <li><a href="http://security.stackexchange.com/" title="information security professionals">Information Security</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://dba.stackexchange.com/" title="database professionals who wish to improve their database skills and learn from others in the community">Database Administrators</a></li>
+                        <li><a href="http://drupal.stackexchange.com/" title="Drupal developers and administrators">Drupal Answers</a></li>
+                        <li><a href="http://sharepoint.stackexchange.com/" title="SharePoint enthusiasts">SharePoint</a></li>
+                        <li><a href="http://ux.stackexchange.com/" title="user experience researchers and experts">User Experience</a></li>
+                        <li><a href="http://mathematica.stackexchange.com/" title="users of Mathematica">Mathematica</a></li>
+                        <li><a href="http://salesforce.stackexchange.com/" title="Salesforce administrators, implementation experts, developers and anybody in-between">Salesforce</a></li>
+                        <li><a href="http://expressionengine.stackexchange.com/" title="administrators, end users, developers and designers for ExpressionEngine® CMS">ExpressionEngine® Answers</a></li>
+                        <li><a href="http://crypto.stackexchange.com/" title="software developers, mathematicians and others interested in cryptography">Cryptography</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://codereview.stackexchange.com/" title="peer programmer code reviews">Code Review</a></li>
+                        <li><a href="http://magento.stackexchange.com/" title="users of the Magento e-Commerce platform">Magento</a></li>
+                        <li><a href="http://dsp.stackexchange.com/" title="practitioners of the art and science of signal, image and video processing">Signal Processing</a></li>
+                        <li><a href="http://raspberrypi.stackexchange.com/" title="users and developers of hardware and software for Raspberry Pi">Raspberry Pi</a></li>
+                        <li><a href="http://codegolf.stackexchange.com/" title="programming puzzle enthusiasts and code golfers">Programming Puzzles &amp; Code Golf</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#technology" class="more">
+                                more (7)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://photo.stackexchange.com/" title="professional, enthusiast and amateur photographers">Photography</a></li>
+                        <li><a href="http://scifi.stackexchange.com/" title="science fiction and fantasy enthusiasts">Science Fiction &amp; Fantasy</a></li>
+                        <li><a href="http://graphicdesign.stackexchange.com/" title="Graphic Design professionals, students, and enthusiasts">Graphic Design</a></li>
+                        <li><a href="http://movies.stackexchange.com/" title="movie and tv enthusiasts">Movies &amp; TV</a></li>
+                        <li><a href="http://music.stackexchange.com/" title="musicians, students, and enthusiasts">Music: Practice &amp; Theory</a></li>
+                        <li><a href="http://cooking.stackexchange.com/" title="professional and amateur chefs">Seasoned Advice (cooking)</a></li>
+                        <li><a href="http://diy.stackexchange.com/" title="contractors and serious DIYers">Home Improvement</a></li>
+                        <li><a href="http://money.stackexchange.com/" title="people who want to be financially literate">Personal Finance &amp; Money</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://academia.stackexchange.com/" title="academics and those enrolled in higher education">Academia</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#lifearts" class="more">
+                                more (8)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://english.stackexchange.com/" title="linguists, etymologists, and serious English language enthusiasts">English Language &amp; Usage</a></li>
+                        <li><a href="http://skeptics.stackexchange.com/" title="scientific skepticism">Skeptics</a></li>
+                        <li><a href="http://judaism.stackexchange.com/" title="those who base their lives on Jewish law and tradition and anyone interested in learning more">Mi Yodeya (Judaism)</a></li>
+                        <li><a href="http://travel.stackexchange.com/" title="road warriors and seasoned travelers">Travel</a></li>
+                        <li><a href="http://christianity.stackexchange.com/" title="committed Christians, experts in Christianity and those interested in learning more">Christianity</a></li>
+                        <li><a href="http://ell.stackexchange.com/" title="speakers of other languages learning English">English Language Learners</a></li>
+                        <li><a href="http://japanese.stackexchange.com/" title="students, teachers, and linguists wanting to discuss the finer points of the Japanese language">Japanese Language</a></li>
+                        <li><a href="http://gaming.stackexchange.com/" title="passionate videogamers on all platforms">Arqade (gaming)</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://bicycles.stackexchange.com/" title="people who build and repair bicycles, people who train cycling, or commute on bicycles">Bicycles</a></li>
+                        <li><a href="http://rpg.stackexchange.com/" title="gamemasters and players of tabletop, paper-and-pencil role-playing games">Role-playing Games</a></li>
+                        <li><a href="http://anime.stackexchange.com/" title="anime and manga fans">Anime &amp; Manga</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#culturerecreation" class="more">
+                                more (18)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://math.stackexchange.com/" title="people studying math at any level and professionals in related fields">Mathematics</a></li>
+                        <li><a href="http://stats.stackexchange.com/" title="people interested in statistics, machine learning, data analysis, data mining, and data visualization">Cross Validated (stats)</a></li>
+                        <li><a href="http://cstheory.stackexchange.com/" title="theoretical computer scientists and researchers in related fields">Theoretical Computer Science</a></li>
+                        <li><a href="http://physics.stackexchange.com/" title="active researchers, academics and students of physics">Physics</a></li>
+                        <li><a href="http://mathoverflow.net/" title="professional mathematicians">MathOverflow</a></li>
+                        <li><a href="http://chemistry.stackexchange.com/" title="scientists, academics, teachers and students">Chemistry</a></li>
+                        <li><a href="http://biology.stackexchange.com/" title="biology researchers, academics, and students">Biology</a></li>
+                        <li><a href="http://cs.stackexchange.com/" title="students, researchers and practitioners of computer science">Computer Science</a></li>
+                            </ol></td><td><ol>
+                        <li><a href="http://philosophy.stackexchange.com/" title="those interested in logical reasoning">Philosophy</a></li>
+                    
+                        <li>
+                            <a href="http://stackexchange.com/sites#science" class="more">
+                                more (3)
+                            </a>
+                        </li>
+                </ol>
+            </td>
+            <td>
+                <ol>
+                        <li><a href="http://stackapps.com/" title="apps, scripts, and development with the Stack Exchange API">Stack Apps</a></li>
+                        <li><a href="http://meta.stackexchange.com/" title="meta-discussion of the Stack Exchange family of Q&amp;A websites">Meta Stack Exchange</a></li>
+                        <li><a href="http://area51.stackexchange.com/" title="proposing new sites in the Stack Exchange network">Area 51</a></li>
+                        <li><a href="http://careers.stackoverflow.com/">Stack Overflow Careers</a></li>
+                    
+                </ol>
+            </td>
+    </tr>
+</tbody></table>
+                </div>
+            </div>
+            <div id="copyright">
+                site design / logo © 2016 Stack Exchange Inc; user contributions licensed under <a href="https://creativecommons.org/licenses/by-sa/3.0/" rel="license">cc by-sa 3.0</a> 
+                with <a href="http://blog.stackoverflow.com/2009/06/attribution-required/" rel="license">attribution required</a>
+            </div>
+            <div id="svnrev">
+                rev 2016.10.14.4091
+            </div>
+                </div>
+    </div>
+    <noscript>
+        <div id="noscript-warning">Electrical Engineering Stack Exchange works best with JavaScript enabled<img src="http://pixel.quantserve.com/pixel/p-c1rF4kxgLUzNc.gif" alt="" class="dno"></div>
+    </noscript>
+
+    <script>
+            (function(i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function() { (i[r].q = i[r].q || []).push(arguments) }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m);
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+            
+            ga('create', 'UA-5620270-24', {'cookieDomain': 'stackexchange.com'});
+            ga('set', 'dimension2', '|analog|low-power|');             ga('send', 'pageview');
+        
+        var _qevents = _qevents || [],
+            _comscore = _comscore || [];
+        (function () {
+            var ssl='https:'==document.location.protocol,
+                s=document.getElementsByTagName('script')[0],
+                qc=document.createElement('script');
+                qc.async = true;
+                qc.src = (ssl ? 'https://secure' : 'http://edge') + '.quantserve.com/quant.js';
+                s.parentNode.insertBefore(qc, s);
+                _qevents.push({ qacct: "p-c1rF4kxgLUzNc" });
+                            var sc=document.createElement('script');
+                sc.async=true;
+                sc.src=(ssl?'https://sb':'http://b') + '.scorecardresearch.com/beacon.js';
+                s.parentNode.insertBefore(sc, s);
+                _comscore.push({ c1: "2", c2: "17440561" });
+        })();
+
+    </script>
+        
+    
+            <script type="text/javascript">
+                
+                (function(appendChild) {
+                    Node.prototype.appendChild = function() {
+                        var parent = this;
+                        var newNode = arguments[0];
+                        if (parent.nodeName === 'HEAD'
+                            && newNode
+                            && newNode.nodeName === 'SCRIPT'
+                            && newNode.src) {
+                            
+                            window.setTimeout(function() {
+                                var result = newNode.src.match(/^https:\/\/maps\.googleapis\.com\/maps\/api\/place\/js\/(\w+)Service\./i) || [];
+                                var service = result[1];
+                                if (service) {
+                                    if (service === 'Autocompletion') service =  2;
+                                    else if (service === 'Place') service = 1;
+                                    else service = 0;
+                                    StackExchange.using('gps', function() {
+                                        StackExchange.gps.track('google_maps_places_api.call', { service: service });
+                                    });
+                                }
+                            }, 0);
+                        }
+                        return appendChild.apply(this, arguments);
+                    };
+                })(Node.prototype.appendChild);
+            </script>
+    
+</body></html>

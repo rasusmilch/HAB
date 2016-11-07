@@ -1,0 +1,31 @@
+<map id="printZeroRegs" name="printZeroRegs">
+<area shape="rect" id="node2" href="$_zero_regs_8cpp.html#a147a30d688c41a0d39922ca6d2cd6bfb" title="printZeroRegAC" alt="" coords="176,5,291,32"/>
+<area shape="rect" id="node3" href="$_zero_regs_8cpp.html#a67d77c008fc2ce98d2d78168aa64e9d8" title="printZeroRegADC" alt="" coords="172,56,295,83"/>
+<area shape="rect" id="node4" href="$_zero_regs_8cpp.html#a1095e7bbe04b7d3f6b4d58d8e7a42df8" title="printZeroRegDAC" alt="" coords="172,107,295,133"/>
+<area shape="rect" id="node5" href="$_zero_regs_8cpp.html#a9a5372cd2135bb853cfdbf3db45dd79c" title="printZeroRegDMAC" alt="" coords="166,157,301,184"/>
+<area shape="rect" id="node6" href="$_zero_regs_8cpp.html#a06b2995104e4c1cbc2f61e11e3a3e484" title="printZeroRegDSU" alt="" coords="173,208,293,235"/>
+<area shape="rect" id="node7" href="$_zero_regs_8cpp.html#ac587593ee2a9ae02c2cfc677fe773c28" title="printZeroRegEIC" alt="" coords="175,259,291,285"/>
+<area shape="rect" id="node9" href="$_zero_regs_8cpp.html#aab346cdb76613ed12e521b2e3ab8e585" title="printZeroRegEVSYS" alt="" coords="167,309,299,336"/>
+<area shape="rect" id="node10" href="$_zero_regs_8cpp.html#a4f780af586626841f0bfd07761caae27" title="printZeroRegGCLK" alt="" coords="169,360,298,387"/>
+<area shape="rect" id="node11" href="$_zero_regs_8cpp.html#ad986e6312220f31739dbe2c5e4c9326d" title="printZeroRegI2S" alt="" coords="177,411,289,437"/>
+<area shape="rect" id="node12" href="$_zero_regs_8cpp.html#aaac9e29b52fd1df890dfa14c2f502420" title="printZeroRegMTB" alt="" coords="172,461,295,488"/>
+<area shape="rect" id="node13" href="$_zero_regs_8cpp.html#a6db7f49d374fa825b83040a5acaf04b2" title="printZeroRegNVMCTRL" alt="" coords="155,512,312,539"/>
+<area shape="rect" id="node14" href="$_zero_regs_8cpp.html#a78c2deb148266895a11f2862a9d27082" title="printZeroRegPAC" alt="" coords="173,563,293,589"/>
+<area shape="rect" id="node15" href="$_zero_regs_8cpp.html#a1807ae19c29483ee063bd225c40e0d36" title="printZeroRegPM" alt="" coords="176,613,291,640"/>
+<area shape="rect" id="node16" href="$_zero_regs_8cpp.html#ac515fdec9d58f6339d3e38cc33c6f74f" title="printZeroRegPORT" alt="" coords="169,664,297,691"/>
+<area shape="rect" id="node17" href="$_zero_regs_8cpp.html#abd5756f7cbf2e09db78469867a6c5051" title="printZeroRegRTC" alt="" coords="173,715,294,741"/>
+<area shape="rect" id="node21" href="$_zero_regs_8cpp.html#a7db1a4f0d10e2e3efcd108837d85ee49" title="printZeroRegSERCOM" alt="" coords="160,765,307,792"/>
+<area shape="rect" id="node26" href="$_zero_regs_8cpp.html#a7b606cb3f1144532412356243668c1ce" title="printZeroRegSYSCTRL" alt="" coords="159,816,307,843"/>
+<area shape="rect" id="node27" href="$_zero_regs_8cpp.html#a0f776ca1e5a274dd72257e015eba2f98" title="printZeroRegTC" alt="" coords="177,867,290,893"/>
+<area shape="rect" id="node28" href="$_zero_regs_8cpp.html#acdcf41658b0d0b0747a170019743e2b8" title="printZeroRegTCC" alt="" coords="172,917,295,944"/>
+<area shape="rect" id="node29" href="$_zero_regs_8cpp.html#a0f50e185fe18ba9749b55a6d7ac781f1" title="printZeroRegUSB" alt="" coords="174,968,293,995"/>
+<area shape="rect" id="node30" href="$_zero_regs_8cpp.html#a8dd36048a3979014ebb8d385046c91e1" title="printZeroRegWDT" alt="" coords="170,1019,297,1045"/>
+<area shape="rect" id="node8" href="$_zero_regs_8cpp.html#a8697ce31d1795964e7b71cea33415b12" title="printZeroRegEIC_SENSE" alt="" coords="373,259,530,285"/>
+<area shape="rect" id="node18" href="$_zero_regs_8cpp.html#af4b043f7c87e4ecaa152fab20b2bd672" title="printZeroRegRTC_MODE0" alt="" coords="367,605,536,632"/>
+<area shape="rect" id="node19" href="$_zero_regs_8cpp.html#acba6ab3a1f0ca519efdad9af393fa315" title="printZeroRegRTC_MODE1" alt="" coords="367,656,536,683"/>
+<area shape="rect" id="node20" href="$_zero_regs_8cpp.html#a380e1c86b97a256f10b4736f8d158ce8" title="printZeroRegRTC_MODE2" alt="" coords="367,707,536,733"/>
+<area shape="rect" id="node22" href="$_zero_regs_8cpp.html#a612b4e1372fe5ad5fc4f7cab4ceb4ef3" title="printZeroRegSERCOM\l_USART" alt="" coords="378,758,525,799"/>
+<area shape="rect" id="node23" href="$_zero_regs_8cpp.html#a27f8c7ca875a60890ad70dea014e9df2" title="printZeroRegSERCOM_SPI" alt="" coords="367,824,536,851"/>
+<area shape="rect" id="node24" href="$_zero_regs_8cpp.html#a3961ade3c339a628b7174340ef3a8b35" title="printZeroRegSERCOM_I2CS" alt="" coords="363,875,540,901"/>
+<area shape="rect" id="node25" href="$_zero_regs_8cpp.html#a50889259214cfbde5a4f90a97298d68d" title="printZeroRegSERCOM_I2CM" alt="" coords="360,925,543,952"/>
+</map>

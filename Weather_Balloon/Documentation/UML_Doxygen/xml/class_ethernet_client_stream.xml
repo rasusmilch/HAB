@@ -1,0 +1,309 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_ethernet_client_stream" kind="class" language="C++" prot="public">
+    <compoundname>EthernetClientStream</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Stream</basecompoundref>
+    <includes refid="_ethernet_client_stream_8h" local="no">EthernetClientStream.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_ethernet_client_stream_1a934314825985504fa108de929ae3be04" prot="private" static="no" mutable="no">
+        <type>Client &amp;</type>
+        <definition>Client&amp; EthernetClientStream::client</definition>
+        <argsstring></argsstring>
+        <name>client</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="43" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ethernet_client_stream_1a91e702b686e7c7ba8bacf738d2f51cf5" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress EthernetClientStream::localip</definition>
+        <argsstring></argsstring>
+        <name>localip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="44" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ethernet_client_stream_1ae0e47e6076ec3d84af1ab8d958b07e89" prot="private" static="no" mutable="no">
+        <type>IPAddress</type>
+        <definition>IPAddress EthernetClientStream::ip</definition>
+        <argsstring></argsstring>
+        <name>ip</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="45" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ethernet_client_stream_1a7b5f0df12d00e855fa6b1f9cc5da11bc" prot="private" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* EthernetClientStream::host</definition>
+        <argsstring></argsstring>
+        <name>host</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="46" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ethernet_client_stream_1a35ef5992cc866fe929dfbd7a6347c958" prot="private" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t EthernetClientStream::port</definition>
+        <argsstring></argsstring>
+        <name>port</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="47" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ethernet_client_stream_1a726e807b47bf716504ee242396986a51" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool EthernetClientStream::connected</definition>
+        <argsstring></argsstring>
+        <name>connected</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="48" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_ethernet_client_stream_1ac37d82f978e21dac2f2c805879f12871" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t EthernetClientStream::time_connect</definition>
+        <argsstring></argsstring>
+        <name>time_connect</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="49" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_ethernet_client_stream_1ad0fc03caf9c77123d2557404b4e13904" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>EthernetClientStream::EthernetClientStream</definition>
+        <argsstring>(Client &amp;client, IPAddress localip, IPAddress ip, const char *host, uint16_t port)</argsstring>
+        <name>EthernetClientStream</name>
+        <param>
+          <type>Client &amp;</type>
+          <declname>client</declname>
+        </param>
+        <param>
+          <type>IPAddress</type>
+          <declname>localip</declname>
+        </param>
+        <param>
+          <type>IPAddress</type>
+          <declname>ip</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>host</declname>
+        </param>
+        <param>
+          <type>uint16_t</type>
+          <declname>port</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="34" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="60" bodyend="68"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ethernet_client_stream_1af791449a05185d079c66a3ce7ceb8867" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthernetClientStream::available</definition>
+        <argsstring>()</argsstring>
+        <name>available</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="35" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="71" bodyend="74"/>
+        <references refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" compoundref="_ethernet_client_stream_8h" startline="101" endline="109">maintain</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ethernet_client_stream_1ab09d7fee2e6e57a4ae63227226991673" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthernetClientStream::read</definition>
+        <argsstring>()</argsstring>
+        <name>read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="36" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="77" bodyend="80"/>
+        <references refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" compoundref="_ethernet_client_stream_8h" startline="101" endline="109">maintain</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ethernet_client_stream_1ab48794c4ecdcf568ca915c54849e33d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int EthernetClientStream::peek</definition>
+        <argsstring>()</argsstring>
+        <name>peek</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="37" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="83" bodyend="86"/>
+        <references refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" compoundref="_ethernet_client_stream_8h" startline="101" endline="109">maintain</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ethernet_client_stream_1a6bfd307971b4f6936cbb00eb04276e7f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthernetClientStream::flush</definition>
+        <argsstring>()</argsstring>
+        <name>flush</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="38" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="88" bodyend="92"/>
+        <references refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" compoundref="_ethernet_client_stream_8h" startline="101" endline="109">maintain</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ethernet_client_stream_1aca0236433d48beb3ada438dbdb425bbd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>size_t</type>
+        <definition>size_t EthernetClientStream::write</definition>
+        <argsstring>(uint8_t)</argsstring>
+        <name>write</name>
+        <param>
+          <type>uint8_t</type>
+          <defname>c</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="39" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="95" bodyend="98"/>
+        <references refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" compoundref="_ethernet_client_stream_8h" startline="101" endline="109">maintain</references>
+      </memberdef>
+      <memberdef kind="function" id="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthernetClientStream::maintain</definition>
+        <argsstring>(IPAddress localip)</argsstring>
+        <name>maintain</name>
+        <param>
+          <type>IPAddress</type>
+          <declname>localip</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="40" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="101" bodyend="109"/>
+        <references refid="firmata_debug_8h_1a8e30ff0704664fcb13dabf0c4dc5c8f5" compoundref="firmata_debug_8h" startline="10">DEBUG_PRINTLN</references>
+        <references refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" compoundref="_ethernet_client_stream_8h" startline="101" endline="109">maintain</references>
+        <references refid="_ethernet_client_stream_8h_1a78cc2de9e5e51df6bd9f014636a97fea" compoundref="_ethernet_client_stream_8h" startline="29">MILLIS_RECONNECT</references>
+        <referencedby refid="class_ethernet_client_stream_1af791449a05185d079c66a3ce7ceb8867" compoundref="_ethernet_client_stream_8h" startline="71" endline="74">available</referencedby>
+        <referencedby refid="class_ethernet_client_stream_1a6bfd307971b4f6936cbb00eb04276e7f" compoundref="_ethernet_client_stream_8h" startline="88" endline="92">flush</referencedby>
+        <referencedby refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" compoundref="_ethernet_client_stream_8h" startline="101" endline="109">maintain</referencedby>
+        <referencedby refid="class_ethernet_client_stream_1ab48794c4ecdcf568ca915c54849e33d3" compoundref="_ethernet_client_stream_8h" startline="83" endline="86">peek</referencedby>
+        <referencedby refid="class_ethernet_client_stream_1ab09d7fee2e6e57a4ae63227226991673" compoundref="_ethernet_client_stream_8h" startline="77" endline="80">read</referencedby>
+        <referencedby refid="class_ethernet_client_stream_1aca0236433d48beb3ada438dbdb425bbd" compoundref="_ethernet_client_stream_8h" startline="95" endline="98">write</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_ethernet_client_stream_1a7ee440a2cba43285aa61422a214f61b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool EthernetClientStream::maintain</definition>
+        <argsstring>()</argsstring>
+        <name>maintain</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="50" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="120" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="class_ethernet_client_stream_1a5ff9c38c8f49cdd86911bf291c65fd0e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void EthernetClientStream::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="51" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="112" bodyend="117"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="307">
+        <label>EthernetClientStream</label>
+        <link refid="class_ethernet_client_stream"/>
+        <childnode refid="308" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="308">
+        <label>Stream</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="309">
+        <label>EthernetClientStream</label>
+        <link refid="class_ethernet_client_stream"/>
+        <childnode refid="310" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="310">
+        <label>Stream</label>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" line="32" column="1" bodyfile="Weather_Balloon/library/Firmata/utility/EthernetClientStream.h" bodystart="31" bodyend="52"/>
+    <listofallmembers>
+      <member refid="class_ethernet_client_stream_1af791449a05185d079c66a3ce7ceb8867" prot="public" virt="non-virtual"><scope>EthernetClientStream</scope><name>available</name></member>
+      <member refid="class_ethernet_client_stream_1a934314825985504fa108de929ae3be04" prot="private" virt="non-virtual"><scope>EthernetClientStream</scope><name>client</name></member>
+      <member refid="class_ethernet_client_stream_1a726e807b47bf716504ee242396986a51" prot="private" virt="non-virtual"><scope>EthernetClientStream</scope><name>connected</name></member>
+      <member refid="class_ethernet_client_stream_1ad0fc03caf9c77123d2557404b4e13904" prot="public" virt="non-virtual"><scope>EthernetClientStream</scope><name>EthernetClientStream</name></member>
+      <member refid="class_ethernet_client_stream_1a6bfd307971b4f6936cbb00eb04276e7f" prot="public" virt="non-virtual"><scope>EthernetClientStream</scope><name>flush</name></member>
+      <member refid="class_ethernet_client_stream_1a7b5f0df12d00e855fa6b1f9cc5da11bc" prot="private" virt="non-virtual"><scope>EthernetClientStream</scope><name>host</name></member>
+      <member refid="class_ethernet_client_stream_1ae0e47e6076ec3d84af1ab8d958b07e89" prot="private" virt="non-virtual"><scope>EthernetClientStream</scope><name>ip</name></member>
+      <member refid="class_ethernet_client_stream_1a91e702b686e7c7ba8bacf738d2f51cf5" prot="private" virt="non-virtual"><scope>EthernetClientStream</scope><name>localip</name></member>
+      <member refid="class_ethernet_client_stream_1a2cb7fc9f588d352ad57527e7189196ea" prot="public" virt="non-virtual"><scope>EthernetClientStream</scope><name>maintain</name></member>
+      <member refid="class_ethernet_client_stream_1a7ee440a2cba43285aa61422a214f61b8" prot="private" virt="non-virtual"><scope>EthernetClientStream</scope><name>maintain</name></member>
+      <member refid="class_ethernet_client_stream_1ab48794c4ecdcf568ca915c54849e33d3" prot="public" virt="non-virtual"><scope>EthernetClientStream</scope><name>peek</name></member>
+      <member refid="class_ethernet_client_stream_1a35ef5992cc866fe929dfbd7a6347c958" prot="private" virt="non-virtual"><scope>EthernetClientStream</scope><name>port</name></member>
+      <member refid="class_ethernet_client_stream_1ab09d7fee2e6e57a4ae63227226991673" prot="public" virt="non-virtual"><scope>EthernetClientStream</scope><name>read</name></member>
+      <member refid="class_ethernet_client_stream_1a5ff9c38c8f49cdd86911bf291c65fd0e" prot="private" virt="non-virtual"><scope>EthernetClientStream</scope><name>stop</name></member>
+      <member refid="class_ethernet_client_stream_1ac37d82f978e21dac2f2c805879f12871" prot="private" virt="non-virtual"><scope>EthernetClientStream</scope><name>time_connect</name></member>
+      <member refid="class_ethernet_client_stream_1aca0236433d48beb3ada438dbdb425bbd" prot="public" virt="non-virtual"><scope>EthernetClientStream</scope><name>write</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

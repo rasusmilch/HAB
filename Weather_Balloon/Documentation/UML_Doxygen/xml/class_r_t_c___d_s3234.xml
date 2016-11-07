@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_r_t_c___d_s3234" kind="class" language="C++" prot="public">
+    <compoundname>RTC_DS3234</compoundname>
+    <includes refid="_r_t_c___d_s3234_8h" local="no">RTC_DS3234.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_r_t_c___d_s3234_1a2a512a847f1735fe598987e1f532b59d" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int RTC_DS3234::cs_pin</definition>
+        <argsstring></argsstring>
+        <name>cs_pin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" line="23" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_r_t_c___d_s3234_1a28e48a48c9b04692e5c5049e94e389f1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RTC_DS3234::RTC_DS3234</definition>
+        <argsstring>(int _cs_pin)</argsstring>
+        <name>RTC_DS3234</name>
+        <param>
+          <type>int</type>
+          <declname>_cs_pin</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" line="13" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" bodystart="13" bodyend="13"/>
+        <references refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">adjust</references>
+        <references refid="class_r_t_c___d_s3234_1acf87a4369cb5b08fd1be62696a6be1a8" compoundref="_r_t_c___d_s3234_8cpp" startline="30" endline="55">begin</references>
+        <references refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" compoundref="_r_t_c___d_s3234_8cpp" startline="57" endline="61">cs</references>
+        <references refid="class_r_t_c___d_s3234_1aff58814e7f5706f341edbf9d68c4665b" compoundref="_r_t_c___d_s3234_8cpp" startline="63" endline="70">isrunning</references>
+        <references refid="class_r_t_c___d_s3234_1a1b22090fcfdbef26725da0232157a3c1" compoundref="_r_t_c___d_s3234_8cpp" startline="87" endline="101">now</references>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3234_1acf87a4369cb5b08fd1be62696a6be1a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTC_DS3234::begin</definition>
+        <argsstring>(void)</argsstring>
+        <name>begin</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" line="14" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="30" bodyend="55"/>
+        <references refid="_r_t_c___d_s3234_8cpp_1afe27db885984c276cf89d59cc670e7c2" compoundref="_r_t_c___d_s3234_8cpp" startline="22">CONTROL_STATUS_W</references>
+        <references refid="_r_t_c___d_s3234_8cpp_1aff177da57a6ea04225cae3333342f1af" compoundref="_r_t_c___d_s3234_8cpp" startline="20">CONTROL_W</references>
+        <references refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" compoundref="_r_t_c___d_s3234_8cpp" startline="57" endline="61">cs</references>
+        <referencedby refid="class_r_t_c___d_s3234_1a28e48a48c9b04692e5c5049e94e389f1" compoundref="_r_t_c___d_s3234_8h" startline="13" endline="13">RTC_DS3234</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3234::adjust</definition>
+        <argsstring>(const DateTime &amp;dt)</argsstring>
+        <name>adjust</name>
+        <param>
+          <type>const <ref refid="class_date_time" kindref="compound">DateTime</ref> &amp;</type>
+          <declname>dt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" line="15" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="72" bodyend="85"/>
+        <references refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" compoundref="_r_t_clib_8cpp" startline="184" endline="187">bin2bcd</references>
+        <references refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" compoundref="_r_t_c___d_s3234_8cpp" startline="57" endline="61">cs</references>
+        <references refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" compoundref="_r_t_clib_8h" startline="23" endline="26">DateTime::day</references>
+        <references refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" compoundref="_r_t_clib_8cpp" startline="142" endline="146">DateTime::dayOfWeek</references>
+        <references refid="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" compoundref="_r_t_clib_8h" startline="27" endline="30">DateTime::hour</references>
+        <references refid="class_date_time_1a9990c5958c55b3aa7018e21df9d490e5" compoundref="_r_t_clib_8h" startline="31" endline="34">DateTime::minute</references>
+        <references refid="class_date_time_1a58beb18aec346e7081d02a2962032a43" compoundref="_r_t_clib_8h" startline="19" endline="22">DateTime::month</references>
+        <references refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" compoundref="_r_t_clib_8h" startline="35" endline="38">DateTime::second</references>
+        <references refid="_r_t_c___d_s3234_8cpp_1aead283c6b011a1d7b21253c373d3fda4" compoundref="_r_t_c___d_s3234_8cpp" startline="24">SECONDS_W</references>
+        <references refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" compoundref="_r_t_clib_8h" startline="15" endline="18">DateTime::year</references>
+        <referencedby refid="class_r_t_c___d_s3234_1a28e48a48c9b04692e5c5049e94e389f1" compoundref="_r_t_c___d_s3234_8h" startline="13" endline="13">RTC_DS3234</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3234_1aff58814e7f5706f341edbf9d68c4665b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint8_t</type>
+        <definition>uint8_t RTC_DS3234::isrunning</definition>
+        <argsstring>(void)</argsstring>
+        <name>isrunning</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" line="16" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="63" bodyend="70"/>
+        <references refid="_r_t_c___d_s3234_8cpp_1af94e227239a9ca12b8bf1f615ae5167b" compoundref="_r_t_c___d_s3234_8cpp" startline="19">CONTROL_R</references>
+        <references refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" compoundref="_r_t_c___d_s3234_8cpp" startline="57" endline="61">cs</references>
+        <references refid="_r_t_c___d_s3234_8cpp_1a31835317abb79d64c0ce0aae28c72796" compoundref="_r_t_c___d_s3234_8cpp" startline="28">OSF</references>
+        <referencedby refid="class_r_t_c___d_s3234_1a28e48a48c9b04692e5c5049e94e389f1" compoundref="_r_t_c___d_s3234_8h" startline="13" endline="13">RTC_DS3234</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_r_t_c___d_s3234_1a1b22090fcfdbef26725da0232157a3c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="class_date_time" kindref="compound">DateTime</ref></type>
+        <definition>DateTime RTC_DS3234::now</definition>
+        <argsstring>()</argsstring>
+        <name>now</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" line="17" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="87" bodyend="101"/>
+        <references refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" compoundref="_r_t_clib_8cpp" startline="180" endline="183">bcd2bin</references>
+        <references refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" compoundref="_r_t_c___d_s3234_8cpp" startline="57" endline="61">cs</references>
+        <references refid="_r_t_c___d_s3234_8cpp_1a9e9f9a8cd30deddc70fded9be7e48e30" compoundref="_r_t_c___d_s3234_8cpp" startline="23">SECONDS_R</references>
+        <referencedby refid="class_r_t_c___d_s3234_1a28e48a48c9b04692e5c5049e94e389f1" compoundref="_r_t_c___d_s3234_8h" startline="13" endline="13">RTC_DS3234</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" prot="protected" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_DS3234::cs</definition>
+        <argsstring>(int _value)</argsstring>
+        <name>cs</name>
+        <param>
+          <type>int</type>
+          <declname>_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" line="20" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="57" bodyend="61"/>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">adjust</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1acf87a4369cb5b08fd1be62696a6be1a8" compoundref="_r_t_c___d_s3234_8cpp" startline="30" endline="55">begin</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1aff58814e7f5706f341edbf9d68c4665b" compoundref="_r_t_c___d_s3234_8cpp" startline="63" endline="70">isrunning</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a1b22090fcfdbef26725da0232157a3c1" compoundref="_r_t_c___d_s3234_8cpp" startline="87" endline="101">now</referencedby>
+        <referencedby refid="class_r_t_c___d_s3234_1a28e48a48c9b04692e5c5049e94e389f1" compoundref="_r_t_c___d_s3234_8h" startline="13" endline="13">RTC_DS3234</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" line="11" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.h" bodystart="10" bodyend="24"/>
+    <listofallmembers>
+      <member refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" prot="public" virt="non-virtual"><scope>RTC_DS3234</scope><name>adjust</name></member>
+      <member refid="class_r_t_c___d_s3234_1acf87a4369cb5b08fd1be62696a6be1a8" prot="public" virt="non-virtual"><scope>RTC_DS3234</scope><name>begin</name></member>
+      <member refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" prot="protected" virt="non-virtual"><scope>RTC_DS3234</scope><name>cs</name></member>
+      <member refid="class_r_t_c___d_s3234_1a2a512a847f1735fe598987e1f532b59d" prot="private" virt="non-virtual"><scope>RTC_DS3234</scope><name>cs_pin</name></member>
+      <member refid="class_r_t_c___d_s3234_1aff58814e7f5706f341edbf9d68c4665b" prot="public" virt="non-virtual"><scope>RTC_DS3234</scope><name>isrunning</name></member>
+      <member refid="class_r_t_c___d_s3234_1a1b22090fcfdbef26725da0232157a3c1" prot="public" virt="non-virtual"><scope>RTC_DS3234</scope><name>now</name></member>
+      <member refid="class_r_t_c___d_s3234_1a28e48a48c9b04692e5c5049e94e389f1" prot="public" virt="non-virtual"><scope>RTC_DS3234</scope><name>RTC_DS3234</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,442 @@
+\hypertarget{struct_filter_one_pole}{}\section{Filter\+One\+Pole Struct Reference}
+\label{struct_filter_one_pole}\index{Filter\+One\+Pole@{Filter\+One\+Pole}}
+
+
+{\ttfamily \#include $<$Filter\+One\+Pole.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_filter_one_pole_adc98d3d03b508f5796c3971c9d0c1f6a}{Filter\+One\+Pole} (\hyperlink{_filter_one_pole_8h_a291796f7a1d5a022401edc940d62db9a}{F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+PE} ft=\hyperlink{_filter_one_pole_8h_a291796f7a1d5a022401edc940d62db9aa0f056d1892baa220efdb9afeca443025}{L\+O\+W\+P\+A\+SS}, float fc=1.\+0, float initial\+Value=0)
+\item 
+void \hyperlink{struct_filter_one_pole_a7fe2658a2bf6d171895586d0bb9fba8f}{set\+Filter} (\hyperlink{_filter_one_pole_8h_a291796f7a1d5a022401edc940d62db9a}{F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+PE} ft, float tauS, float initial\+Value)
+\item 
+void \hyperlink{struct_filter_one_pole_a258a86ec2ee6db608f5839b3b2995185}{set\+Frequency} (float new\+Frequency)
+\item 
+void \hyperlink{struct_filter_one_pole_a90433addfb2a5509e7ace6c4d5da8fe9}{set\+Tau} (float new\+Tau)
+\item 
+float \hyperlink{struct_filter_one_pole_a90ad61a0bbbf2b6db7c6b281f2747c24}{input} (float in\+Val)
+\item 
+float \hyperlink{struct_filter_one_pole_a571c2df141dab2b1072afcd192623f76}{output} ()
+\item 
+void \hyperlink{struct_filter_one_pole_a352bdb0ad964ec87a1b936409be05087}{print} ()
+\item 
+void \hyperlink{struct_filter_one_pole_a5b54248319d02b3f15d93e6333339389}{test} ()
+\item 
+void \hyperlink{struct_filter_one_pole_ad7393515a5f4d972714321a3a2ab7fdd}{set\+To\+New\+Value} (float new\+Val)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_filter_one_pole_8h_a291796f7a1d5a022401edc940d62db9a}{F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+PE} \hyperlink{struct_filter_one_pole_aed9400fc1b781fc227344d67509394a4}{FT}
+\item 
+float \hyperlink{struct_filter_one_pole_adbd63db9a63cdd75fea57ad393729d69}{Tau\+US}
+\item 
+float \hyperlink{struct_filter_one_pole_a7d7271a45a4dbd1c0833c6f840199afc}{Tau\+Samps}
+\item 
+float \hyperlink{struct_filter_one_pole_ad56691be0ad6f6958b9510f4c16538ad}{Y}
+\item 
+float \hyperlink{struct_filter_one_pole_aadcc9674d50c233b8fab1228aa338467}{Ylast}
+\item 
+float \hyperlink{struct_filter_one_pole_a8270ac992e09c0edd3405a59809f28e5}{X}
+\item 
+float \hyperlink{struct_filter_one_pole_a0a611284884d31840b2169547f072fba}{Elapsed\+US}
+\item 
+long \hyperlink{struct_filter_one_pole_a1d54fb0cd986555060c80d2b502b4200}{Last\+US}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 17 of file Filter\+One\+Pole.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{Filter\+One\+Pole(\+F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+P\+E ft=\+L\+O\+W\+P\+A\+S\+S, float fc=1.\+0, float initial\+Value=0)}{FilterOnePole(FILTER\_TYPE ft=LOWPASS, float fc=1.0, float initialValue=0)}}]{\setlength{\rightskip}{0pt plus 5cm}Filter\+One\+Pole\+::\+Filter\+One\+Pole (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+PE}}]{ft = {\ttfamily {\bf L\+O\+W\+P\+A\+SS}}, }
+\item[{float}]{fc = {\ttfamily 1.0}, }
+\item[{float}]{initial\+Value = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_one_pole_adc98d3d03b508f5796c3971c9d0c1f6a}{}\label{struct_filter_one_pole_adc98d3d03b508f5796c3971c9d0c1f6a}
+
+
+Definition at line 4 of file Filter\+One\+Pole.\+cpp.
+
+
+
+References set\+Filter().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_one_pole_adc98d3d03b508f5796c3971c9d0c1f6a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Function Documentation}
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!input@{input}}
+\index{input@{input}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{input(float in\+Val)}{input(float inVal)}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+One\+Pole\+::input (
+\begin{DoxyParamCaption}
+\item[{float}]{in\+Val}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_one_pole_a90ad61a0bbbf2b6db7c6b281f2747c24}{}\label{struct_filter_one_pole_a90ad61a0bbbf2b6db7c6b281f2747c24}
+
+
+Definition at line 19 of file Filter\+One\+Pole.\+cpp.
+
+
+
+References Elapsed\+US, Last\+US, output(), Tau\+Samps, Tau\+US, X, Y, and Ylast.
+
+
+
+Referenced by test().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=319pt]{struct_filter_one_pole_a90ad61a0bbbf2b6db7c6b281f2747c24_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{struct_filter_one_pole_a90ad61a0bbbf2b6db7c6b281f2747c24_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!output@{output}}
+\index{output@{output}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{output()}{output()}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+One\+Pole\+::output (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_one_pole_a571c2df141dab2b1072afcd192623f76}{}\label{struct_filter_one_pole_a571c2df141dab2b1072afcd192623f76}
+
+
+Definition at line 52 of file Filter\+One\+Pole.\+cpp.
+
+
+
+References D\+I\+F\+F\+E\+R\+E\+N\+T\+I\+A\+T\+OR, FT, H\+I\+G\+H\+P\+A\+SS, I\+N\+T\+E\+G\+R\+A\+T\+OR, L\+O\+W\+P\+A\+SS, Tau\+US, X, and Y.
+
+
+
+Referenced by input(), Filter\+One\+Pole\+Cascade\+::input(), and test().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_one_pole_a571c2df141dab2b1072afcd192623f76_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!print@{print}}
+\index{print@{print}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{print()}{print()}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+One\+Pole\+::print (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_one_pole_a352bdb0ad964ec87a1b936409be05087}{}\label{struct_filter_one_pole_a352bdb0ad964ec87a1b936409be05087}
+
+
+Definition at line 77 of file Filter\+One\+Pole.\+cpp.
+
+
+
+References Elapsed\+US, Tau\+Samps, Tau\+US, X, Y, and Ylast.
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!set\+Filter@{set\+Filter}}
+\index{set\+Filter@{set\+Filter}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{set\+Filter(\+F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+P\+E ft, float tau\+S, float initial\+Value)}{setFilter(FILTER\_TYPE ft, float tauS, float initialValue)}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+One\+Pole\+::set\+Filter (
+\begin{DoxyParamCaption}
+\item[{{\bf F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+PE}}]{ft, }
+\item[{float}]{tauS, }
+\item[{float}]{initial\+Value}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_one_pole_a7fe2658a2bf6d171895586d0bb9fba8f}{}\label{struct_filter_one_pole_a7fe2658a2bf6d171895586d0bb9fba8f}
+
+
+Definition at line 8 of file Filter\+One\+Pole.\+cpp.
+
+
+
+References FT, Last\+US, set\+Frequency(), X, Y, and Ylast.
+
+
+
+Referenced by Filter\+One\+Pole().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_one_pole_a7fe2658a2bf6d171895586d0bb9fba8f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_one_pole_a7fe2658a2bf6d171895586d0bb9fba8f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!set\+Frequency@{set\+Frequency}}
+\index{set\+Frequency@{set\+Frequency}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{set\+Frequency(float new\+Frequency)}{setFrequency(float newFrequency)}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+One\+Pole\+::set\+Frequency (
+\begin{DoxyParamCaption}
+\item[{float}]{new\+Frequency}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_one_pole_a258a86ec2ee6db608f5839b3b2995185}{}\label{struct_filter_one_pole_a258a86ec2ee6db608f5839b3b2995185}
+
+
+Definition at line 44 of file Filter\+One\+Pole.\+cpp.
+
+
+
+References set\+Tau().
+
+
+
+Referenced by set\+Filter().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_one_pole_a258a86ec2ee6db608f5839b3b2995185_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_one_pole_a258a86ec2ee6db608f5839b3b2995185_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!set\+Tau@{set\+Tau}}
+\index{set\+Tau@{set\+Tau}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{set\+Tau(float new\+Tau)}{setTau(float newTau)}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+One\+Pole\+::set\+Tau (
+\begin{DoxyParamCaption}
+\item[{float}]{new\+Tau}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_one_pole_a90433addfb2a5509e7ace6c4d5da8fe9}{}\label{struct_filter_one_pole_a90433addfb2a5509e7ace6c4d5da8fe9}
+
+
+Definition at line 48 of file Filter\+One\+Pole.\+cpp.
+
+
+
+References Tau\+US.
+
+
+
+Referenced by set\+Frequency().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_one_pole_a90433addfb2a5509e7ace6c4d5da8fe9_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!set\+To\+New\+Value@{set\+To\+New\+Value}}
+\index{set\+To\+New\+Value@{set\+To\+New\+Value}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{set\+To\+New\+Value(float new\+Val)}{setToNewValue(float newVal)}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+One\+Pole\+::set\+To\+New\+Value (
+\begin{DoxyParamCaption}
+\item[{float}]{new\+Val}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_one_pole_ad7393515a5f4d972714321a3a2ab7fdd}{}\label{struct_filter_one_pole_ad7393515a5f4d972714321a3a2ab7fdd}
+
+
+Definition at line 121 of file Filter\+One\+Pole.\+cpp.
+
+
+
+References X, Y, and Ylast.
+
+
+
+Referenced by Filter\+One\+Pole\+Cascade\+::\+Filter\+One\+Pole\+Cascade().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_one_pole_ad7393515a5f4d972714321a3a2ab7fdd_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!test@{test}}
+\index{test@{test}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{test()}{test()}}]{\setlength{\rightskip}{0pt plus 5cm}void Filter\+One\+Pole\+::test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{struct_filter_one_pole_a5b54248319d02b3f15d93e6333339389}{}\label{struct_filter_one_pole_a5b54248319d02b3f15d93e6333339389}
+
+
+Definition at line 89 of file Filter\+One\+Pole.\+cpp.
+
+
+
+References H\+I\+G\+H\+P\+A\+SS, input(), L\+O\+W\+P\+A\+SS, now(), and output().
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_filter_one_pole_a5b54248319d02b3f15d93e6333339389_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!Elapsed\+US@{Elapsed\+US}}
+\index{Elapsed\+US@{Elapsed\+US}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{Elapsed\+US}{ElapsedUS}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+One\+Pole\+::\+Elapsed\+US}\hypertarget{struct_filter_one_pole_a0a611284884d31840b2169547f072fba}{}\label{struct_filter_one_pole_a0a611284884d31840b2169547f072fba}
+
+
+Definition at line 31 of file Filter\+One\+Pole.\+h.
+
+
+
+Referenced by input(), and print().
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!FT@{FT}}
+\index{FT@{FT}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{FT}{FT}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf F\+I\+L\+T\+E\+R\+\_\+\+T\+Y\+PE} Filter\+One\+Pole\+::\+FT}\hypertarget{struct_filter_one_pole_aed9400fc1b781fc227344d67509394a4}{}\label{struct_filter_one_pole_aed9400fc1b781fc227344d67509394a4}
+
+
+Definition at line 18 of file Filter\+One\+Pole.\+h.
+
+
+
+Referenced by output(), and set\+Filter().
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!Last\+US@{Last\+US}}
+\index{Last\+US@{Last\+US}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{Last\+US}{LastUS}}]{\setlength{\rightskip}{0pt plus 5cm}long Filter\+One\+Pole\+::\+Last\+US}\hypertarget{struct_filter_one_pole_a1d54fb0cd986555060c80d2b502b4200}{}\label{struct_filter_one_pole_a1d54fb0cd986555060c80d2b502b4200}
+
+
+Definition at line 32 of file Filter\+One\+Pole.\+h.
+
+
+
+Referenced by input(), and set\+Filter().
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!Tau\+Samps@{Tau\+Samps}}
+\index{Tau\+Samps@{Tau\+Samps}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{Tau\+Samps}{TauSamps}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+One\+Pole\+::\+Tau\+Samps}\hypertarget{struct_filter_one_pole_a7d7271a45a4dbd1c0833c6f840199afc}{}\label{struct_filter_one_pole_a7d7271a45a4dbd1c0833c6f840199afc}
+
+
+Definition at line 20 of file Filter\+One\+Pole.\+h.
+
+
+
+Referenced by input(), and print().
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!Tau\+US@{Tau\+US}}
+\index{Tau\+US@{Tau\+US}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{Tau\+US}{TauUS}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+One\+Pole\+::\+Tau\+US}\hypertarget{struct_filter_one_pole_adbd63db9a63cdd75fea57ad393729d69}{}\label{struct_filter_one_pole_adbd63db9a63cdd75fea57ad393729d69}
+
+
+Definition at line 19 of file Filter\+One\+Pole.\+h.
+
+
+
+Referenced by input(), output(), print(), and set\+Tau().
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!X@{X}}
+\index{X@{X}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{X}{X}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+One\+Pole\+::X}\hypertarget{struct_filter_one_pole_a8270ac992e09c0edd3405a59809f28e5}{}\label{struct_filter_one_pole_a8270ac992e09c0edd3405a59809f28e5}
+
+
+Definition at line 26 of file Filter\+One\+Pole.\+h.
+
+
+
+Referenced by input(), output(), print(), set\+Filter(), and set\+To\+New\+Value().
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!Y@{Y}}
+\index{Y@{Y}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{Y}{Y}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+One\+Pole\+::Y}\hypertarget{struct_filter_one_pole_ad56691be0ad6f6958b9510f4c16538ad}{}\label{struct_filter_one_pole_ad56691be0ad6f6958b9510f4c16538ad}
+
+
+Definition at line 23 of file Filter\+One\+Pole.\+h.
+
+
+
+Referenced by input(), output(), print(), set\+Filter(), and set\+To\+New\+Value().
+
+\index{Filter\+One\+Pole@{Filter\+One\+Pole}!Ylast@{Ylast}}
+\index{Ylast@{Ylast}!Filter\+One\+Pole@{Filter\+One\+Pole}}
+\subsubsection[{\texorpdfstring{Ylast}{Ylast}}]{\setlength{\rightskip}{0pt plus 5cm}float Filter\+One\+Pole\+::\+Ylast}\hypertarget{struct_filter_one_pole_aadcc9674d50c233b8fab1228aa338467}{}\label{struct_filter_one_pole_aadcc9674d50c233b8fab1228aa338467}
+
+
+Definition at line 24 of file Filter\+One\+Pole.\+h.
+
+
+
+Referenced by input(), print(), set\+Filter(), and set\+To\+New\+Value().
+
+
+
+The documentation for this struct was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Filters/\hyperlink{_filter_one_pole_8h}{Filter\+One\+Pole.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Filters/\hyperlink{_filter_one_pole_8cpp}{Filter\+One\+Pole.\+cpp}\end{DoxyCompactItemize}

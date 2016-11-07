@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_c_r_c-_c_c_i_t_8c" kind="file" language="C++">
+    <compoundname>CRC-CCIT.c</compoundname>
+    <includes refid="_c_r_c-_c_c_i_t_8h" local="yes">CRC-CCIT.h</includes>
+    <incdepgraph>
+      <node id="1071">
+        <label>stdint.h</label>
+      </node>
+      <node id="1069">
+        <label>Weather_Balloon/library/LibAPRS/CRC-CCIT.c</label>
+        <link refid="CRC-CCIT.c"/>
+        <childnode refid="1070" relation="include">
+        </childnode>
+      </node>
+      <node id="1070">
+        <label>CRC-CCIT.h</label>
+        <link refid="_c_r_c-_c_c_i_t_8h"/>
+        <childnode refid="1071" relation="include">
+        </childnode>
+        <childnode refid="1072" relation="include">
+        </childnode>
+      </node>
+      <node id="1072">
+        <label>avr/pgmspace.h</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_c_r_c-_c_c_i_t_8c_1ae8f4cb61567bac19e74cc21717eaa048" prot="public" static="no" mutable="no">
+        <type>const uint16_t <ref refid="_c_r_c-_c_c_i_t_8h_1aada4617cdcf1f888402be21cb0e7215d" kindref="member">crc_ccit_table</ref>[256]</type>
+        <definition>const uint16_t crc_ccit_table [256] PROGMEM</definition>
+        <argsstring></argsstring>
+        <name>PROGMEM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/CRC-CCIT.c" line="3" column="1" bodyfile="Weather_Balloon/library/LibAPRS/CRC-CCIT.c" bodystart="3" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_c_r_c-_c_c_i_t_8h" kindref="compound">CRC-CCIT.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3" refid="_c_r_c-_c_c_i_t_8c_1ae8f4cb61567bac19e74cc21717eaa048" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint16_t<sp/><ref refid="_c_r_c-_c_c_i_t_8h_1aada4617cdcf1f888402be21cb0e7215d" kindref="member">crc_ccit_table</ref>[256]<sp/><ref refid="_c_r_c-_c_c_i_t_8c_1ae8f4cb61567bac19e74cc21717eaa048" kindref="member">PROGMEM</ref><sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"><sp/><sp/><sp/><sp/>0x0000,<sp/>0x1189,<sp/>0x2312,<sp/>0x329b,<sp/>0x4624,<sp/>0x57ad,<sp/>0x6536,<sp/>0x74bf,</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"><sp/><sp/><sp/><sp/>0x8c48,<sp/>0x9dc1,<sp/>0xaf5a,<sp/>0xbed3,<sp/>0xca6c,<sp/>0xdbe5,<sp/>0xe97e,<sp/>0xf8f7,</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"><sp/><sp/><sp/><sp/>0x1081,<sp/>0x0108,<sp/>0x3393,<sp/>0x221a,<sp/>0x56a5,<sp/>0x472c,<sp/>0x75b7,<sp/>0x643e,</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"><sp/><sp/><sp/><sp/>0x9cc9,<sp/>0x8d40,<sp/>0xbfdb,<sp/>0xae52,<sp/>0xdaed,<sp/>0xcb64,<sp/>0xf9ff,<sp/>0xe876,</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"><sp/><sp/><sp/><sp/>0x2102,<sp/>0x308b,<sp/>0x0210,<sp/>0x1399,<sp/>0x6726,<sp/>0x76af,<sp/>0x4434,<sp/>0x55bd,</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/>0xad4a,<sp/>0xbcc3,<sp/>0x8e58,<sp/>0x9fd1,<sp/>0xeb6e,<sp/>0xfae7,<sp/>0xc87c,<sp/>0xd9f5,</highlight></codeline>
+<codeline lineno="10"><highlight class="normal"><sp/><sp/><sp/><sp/>0x3183,<sp/>0x200a,<sp/>0x1291,<sp/>0x0318,<sp/>0x77a7,<sp/>0x662e,<sp/>0x54b5,<sp/>0x453c,</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"><sp/><sp/><sp/><sp/>0xbdcb,<sp/>0xac42,<sp/>0x9ed9,<sp/>0x8f50,<sp/>0xfbef,<sp/>0xea66,<sp/>0xd8fd,<sp/>0xc974,</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"><sp/><sp/><sp/><sp/>0x4204,<sp/>0x538d,<sp/>0x6116,<sp/>0x709f,<sp/>0x0420,<sp/>0x15a9,<sp/>0x2732,<sp/>0x36bb,</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/>0xce4c,<sp/>0xdfc5,<sp/>0xed5e,<sp/>0xfcd7,<sp/>0x8868,<sp/>0x99e1,<sp/>0xab7a,<sp/>0xbaf3,</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"><sp/><sp/><sp/><sp/>0x5285,<sp/>0x430c,<sp/>0x7197,<sp/>0x601e,<sp/>0x14a1,<sp/>0x0528,<sp/>0x37b3,<sp/>0x263a,</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>0xdecd,<sp/>0xcf44,<sp/>0xfddf,<sp/>0xec56,<sp/>0x98e9,<sp/>0x8960,<sp/>0xbbfb,<sp/>0xaa72,</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/>0x6306,<sp/>0x728f,<sp/>0x4014,<sp/>0x519d,<sp/>0x2522,<sp/>0x34ab,<sp/>0x0630,<sp/>0x17b9,</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>0xef4e,<sp/>0xfec7,<sp/>0xcc5c,<sp/>0xddd5,<sp/>0xa96a,<sp/>0xb8e3,<sp/>0x8a78,<sp/>0x9bf1,</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/>0x7387,<sp/>0x620e,<sp/>0x5095,<sp/>0x411c,<sp/>0x35a3,<sp/>0x242a,<sp/>0x16b1,<sp/>0x0738,</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/>0xffcf,<sp/>0xee46,<sp/>0xdcdd,<sp/>0xcd54,<sp/>0xb9eb,<sp/>0xa862,<sp/>0x9af9,<sp/>0x8b70,</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/>0x8408,<sp/>0x9581,<sp/>0xa71a,<sp/>0xb693,<sp/>0xc22c,<sp/>0xd3a5,<sp/>0xe13e,<sp/>0xf0b7,</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/>0x0840,<sp/>0x19c9,<sp/>0x2b52,<sp/>0x3adb,<sp/>0x4e64,<sp/>0x5fed,<sp/>0x6d76,<sp/>0x7cff,</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>0x9489,<sp/>0x8500,<sp/>0xb79b,<sp/>0xa612,<sp/>0xd2ad,<sp/>0xc324,<sp/>0xf1bf,<sp/>0xe036,</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>0x18c1,<sp/>0x0948,<sp/>0x3bd3,<sp/>0x2a5a,<sp/>0x5ee5,<sp/>0x4f6c,<sp/>0x7df7,<sp/>0x6c7e,</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>0xa50a,<sp/>0xb483,<sp/>0x8618,<sp/>0x9791,<sp/>0xe32e,<sp/>0xf2a7,<sp/>0xc03c,<sp/>0xd1b5,</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>0x2942,<sp/>0x38cb,<sp/>0x0a50,<sp/>0x1bd9,<sp/>0x6f66,<sp/>0x7eef,<sp/>0x4c74,<sp/>0x5dfd,</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>0xb58b,<sp/>0xa402,<sp/>0x9699,<sp/>0x8710,<sp/>0xf3af,<sp/>0xe226,<sp/>0xd0bd,<sp/>0xc134,</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>0x39c3,<sp/>0x284a,<sp/>0x1ad1,<sp/>0x0b58,<sp/>0x7fe7,<sp/>0x6e6e,<sp/>0x5cf5,<sp/>0x4d7c,</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>0xc60c,<sp/>0xd785,<sp/>0xe51e,<sp/>0xf497,<sp/>0x8028,<sp/>0x91a1,<sp/>0xa33a,<sp/>0xb2b3,</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/>0x4a44,<sp/>0x5bcd,<sp/>0x6956,<sp/>0x78df,<sp/>0x0c60,<sp/>0x1de9,<sp/>0x2f72,<sp/>0x3efb,</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/>0xd68d,<sp/>0xc704,<sp/>0xf59f,<sp/>0xe416,<sp/>0x90a9,<sp/>0x8120,<sp/>0xb3bb,<sp/>0xa232,</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>0x5ac5,<sp/>0x4b4c,<sp/>0x79d7,<sp/>0x685e,<sp/>0x1ce1,<sp/>0x0d68,<sp/>0x3ff3,<sp/>0x2e7a,</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>0xe70e,<sp/>0xf687,<sp/>0xc41c,<sp/>0xd595,<sp/>0xa12a,<sp/>0xb0a3,<sp/>0x8238,<sp/>0x93b1,</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/>0x6b46,<sp/>0x7acf,<sp/>0x4854,<sp/>0x59dd,<sp/>0x2d62,<sp/>0x3ceb,<sp/>0x0e70,<sp/>0x1ff9,</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>0xf78f,<sp/>0xe606,<sp/>0xd49d,<sp/>0xc514,<sp/>0xb1ab,<sp/>0xa022,<sp/>0x92b9,<sp/>0x8330,</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/>0x7bc7,<sp/>0x6a4e,<sp/>0x58d5,<sp/>0x495c,<sp/>0x3de3,<sp/>0x2c6a,<sp/>0x1ef1,<sp/>0x0f78,</highlight></codeline>
+<codeline lineno="36"><highlight class="normal">};</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/CRC-CCIT.c"/>
+  </compounddef>
+</doxygen>

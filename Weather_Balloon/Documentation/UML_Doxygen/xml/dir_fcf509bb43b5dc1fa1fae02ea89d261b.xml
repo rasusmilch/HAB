@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_fcf509bb43b5dc1fa1fae02ea89d261b" kind="dir">
+    <compoundname>Weather_Balloon/library/SparkFun_MAX17043</compoundname>
+    <innerdir refid="dir_c59ae636b8058f1b1c9e8b20063bd736">Weather_Balloon/library/SparkFun_MAX17043/examples</innerdir>
+    <innerfile refid="_spark_fun_m_a_x17043_8cpp">SparkFunMAX17043.cpp</innerfile>
+    <innerfile refid="_spark_fun_m_a_x17043_8h">SparkFunMAX17043.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/SparkFun_MAX17043/"/>
+  </compounddef>
+</doxygen>

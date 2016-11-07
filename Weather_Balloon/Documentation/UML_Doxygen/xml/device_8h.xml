@@ -1,0 +1,220 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="device_8h" kind="file" language="C++">
+    <compoundname>device.h</compoundname>
+    <includes refid="constants_8h" local="yes">constants.h</includes>
+    <includedby refid="_a_f_s_k_8h" local="yes">Weather_Balloon/library/LibAPRS/AFSK.h</includedby>
+    <includedby refid="_a_x25_8h" local="yes">Weather_Balloon/library/LibAPRS/AX25.h</includedby>
+    <incdepgraph>
+      <node id="1082">
+        <label>constants.h</label>
+        <link refid="constants_8h"/>
+      </node>
+      <node id="1081">
+        <label>Weather_Balloon/library/LibAPRS/device.h</label>
+        <link refid="device.h"/>
+        <childnode refid="1082" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1085">
+        <label>Weather_Balloon/library/LibAPRS/AFSK.cpp</label>
+        <link refid="_a_f_s_k_8cpp"/>
+      </node>
+      <node id="1089">
+        <label>Weather_Balloon/library/LibAPRS/AX25.h</label>
+        <link refid="_a_x25_8h"/>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1084">
+        <label>Weather_Balloon/library/LibAPRS/AFSK.h</label>
+        <link refid="_a_f_s_k_8h"/>
+        <childnode refid="1085" relation="include">
+        </childnode>
+        <childnode refid="1086" relation="include">
+        </childnode>
+        <childnode refid="1087" relation="include">
+        </childnode>
+        <childnode refid="1088" relation="include">
+        </childnode>
+      </node>
+      <node id="1088">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.h</label>
+        <link refid="_lib_a_p_r_s_8h"/>
+      </node>
+      <node id="1086">
+        <label>Weather_Balloon/library/LibAPRS/AX25.cpp</label>
+        <link refid="_a_x25_8cpp"/>
+      </node>
+      <node id="1087">
+        <label>Weather_Balloon/library/LibAPRS/LibAPRS.cpp</label>
+        <link refid="_lib_a_p_r_s_8cpp"/>
+      </node>
+      <node id="1083">
+        <label>Weather_Balloon/library/LibAPRS/device.h</label>
+        <link refid="device.h"/>
+        <childnode refid="1084" relation="include">
+        </childnode>
+        <childnode refid="1089" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="device_8h_1a7c97fac2f222d841b9b657b47b2aed87" prot="public" static="no">
+        <name>TARGET_CPU</name>
+        <initializer><ref refid="constants_8h_1ab21c12c8b945e012e7cad672d64c6805" kindref="member">m328p</ref></initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="8" column="13" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="device_8h_1a43bafb28b29491ec7f871319b5a3b2f8" prot="public" static="no">
+        <name>F_CPU</name>
+        <initializer>16000000</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="12" column="13" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="device_8h_1ae0c5f12cd1a193d30e4e05bbe86ce45e" prot="public" static="no">
+        <name>FREQUENCY_CORRECTION</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="16" column="13" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="device_8h_1a9e83bcb5c8fb1fd1712fc7c454546da9" prot="public" static="no">
+        <name>CONFIG_AFSK_DAC_SAMPLERATE</name>
+        <initializer>9600</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="20" column="9" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="device_8h_1afbdc123b0b82a37ee0e8272c6e39e66c" prot="public" static="no">
+        <name>DAC_PORT</name>
+        <initializer>PORTD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="24" column="13" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="device_8h_1a4f88bd60347c4c0ff4344fc8614f390c" prot="public" static="no">
+        <name>DAC_DDR</name>
+        <initializer>DDRD</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="25" column="13" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="device_8h_1a663daa01e565aee93c6f20c5845b90b4" prot="public" static="no">
+        <name>LED_PORT</name>
+        <initializer>PORTB</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="26" column="13" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="device_8h_1a2eb4252b35effe1188cb61b6124fa617" prot="public" static="no">
+        <name>LED_DDR</name>
+        <initializer>DDRB</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="27" column="13" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="device_8h_1a1c6ce969ab3d12ac37f62c399a1e02c1" prot="public" static="no">
+        <name>ADC_PORT</name>
+        <initializer>PORTC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="28" column="13" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="device_8h_1a6f53fbd627478c7f56cdb17b5aa3ff44" prot="public" static="no">
+        <name>ADC_DDR</name>
+        <initializer>DDRC</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/device.h" line="29" column="13" bodyfile="Weather_Balloon/library/LibAPRS/device.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&quot;<ref refid="constants_8h" kindref="compound">constants.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>DEVICE_CONFIGURATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>DEVICE_CONFIGURATION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="comment">//<sp/>CPU<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>TARGET_CPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="device_8h_1a7c97fac2f222d841b9b657b47b2aed87" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>TARGET_CPU<sp/>m328p</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>F_CPU</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="device_8h_1a43bafb28b29491ec7f871319b5a3b2f8" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>F_CPU<sp/>16000000</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>FREQUENCY_CORRECTION</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="device_8h_1ae0c5f12cd1a193d30e4e05bbe86ce45e" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>FREQUENCY_CORRECTION<sp/>0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Sampling<sp/>&amp;<sp/>timer<sp/>setup</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20" refid="device_8h_1a9e83bcb5c8fb1fd1712fc7c454546da9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CONFIG_AFSK_DAC_SAMPLERATE<sp/>9600</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Port<sp/>settings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>TARGET_CPU<sp/>==<sp/>m328p</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="device_8h_1afbdc123b0b82a37ee0e8272c6e39e66c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DAC_PORT<sp/>PORTD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="device_8h_1a4f88bd60347c4c0ff4344fc8614f390c" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>DAC_DDR<sp/><sp/>DDRD</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="device_8h_1a663daa01e565aee93c6f20c5845b90b4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LED_PORT<sp/>PORTB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="device_8h_1a2eb4252b35effe1188cb61b6124fa617" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>LED_DDR<sp/><sp/>DDRB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="device_8h_1a1c6ce969ab3d12ac37f62c399a1e02c1" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADC_PORT<sp/>PORTC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="device_8h_1a6f53fbd627478c7f56cdb17b5aa3ff44" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>ADC_DDR<sp/><sp/>DDRC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/LibAPRS/device.h"/>
+  </compounddef>
+</doxygen>

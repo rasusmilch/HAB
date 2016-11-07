@@ -1,0 +1,11 @@
+<map id="DS3231::setDateTime" name="DS3231::setDateTime">
+<area shape="rect" id="node2" href="$_time_8cpp.html#a075786e0a525a2bba638889efcc42385" title="day" alt="" coords="234,5,277,32"/>
+<area shape="rect" id="node5" href="$_time_8cpp.html#a721ff0d06e8367ee5d2c5cf1a2c40ab5" title="hour" alt="" coords="231,56,279,83"/>
+<area shape="rect" id="node6" href="$_time_8cpp.html#adf618b3bac7dcfac69d4e1f5a68159b7" title="minute" alt="" coords="225,107,286,133"/>
+<area shape="rect" id="node7" href="$_time_8cpp.html#a3f3be7ce4301fc1896efac6f0952f772" title="month" alt="" coords="226,157,285,184"/>
+<area shape="rect" id="node8" href="$_time_8cpp.html#aed5657208944fe098e4e5f3380e0a1f9" title="second" alt="" coords="225,208,285,235"/>
+<area shape="rect" id="node9" href="$class_d_s3231.html#a15eb3576feaa3535415e9b82367c344c" title="DS3231::setDateTime" alt="" coords="188,259,323,285"/>
+<area shape="rect" id="node10" href="$_time_8cpp.html#a98bf680dbfa28f79514ba50d33fee63f" title="year" alt="" coords="232,309,279,336"/>
+<area shape="rect" id="node3" href="$_time_8cpp.html#adea6c108853185c1d856fa38ec74992c" title="now" alt="" coords="371,132,417,159"/>
+<area shape="rect" id="node4" href="$_time_8cpp.html#a1ce752bee962425a697f513db46964d4" title="setTime" alt="" coords="465,132,532,159"/>
+</map>

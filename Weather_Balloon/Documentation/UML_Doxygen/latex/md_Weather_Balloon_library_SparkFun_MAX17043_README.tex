@@ -1,0 +1,73 @@
+Firmware library Spark\+Fun\textquotesingle{}s Photon Battery Shield and the \hyperlink{class_m_a_x17043}{M\+A\+X17043} Breakout.
+
+\subsection*{About }
+
+This is a firmware library for \href{https://www.sparkfun.com/products/13626}{\tt Spark\+Fun\textquotesingle{}s Photon Battery Shield}.
+
+\href{https://www.sparkfun.com/products/13626}{\tt }.
+
+The \hyperlink{class_m_a_x17043}{M\+A\+X17043} interfaces between a Li\+Po battery and a microcontroller. The \hyperlink{class_m_a_x17043}{M\+A\+X17043} can read a battery\textquotesingle{}s voltage and, using a sophisticated battery-\/modelling algorithm, estimate the state of charge (S\+OC).
+
+\subsection*{Repository Contents }
+
+
+\begin{DoxyItemize}
+\item $\ast$$\ast$/doc$\ast$$\ast$ -\/ Additional documentation for the user. These files are ignored by the I\+DE.
+\item $\ast$$\ast$/firmware$\ast$$\ast$ -\/ Source files for the library (.cpp, .h).
+\item $\ast$$\ast$/firmware/examples$\ast$$\ast$ -\/ Example sketches for the library (.cpp). Run these from the Particle I\+DE.
+\item {\bfseries spark.\+json} -\/ General library properties for the Particel library manager.
+\end{DoxyItemize}
+
+\subsection*{Example Usage }
+
+Include the \hyperlink{class_m_a_x17043}{M\+A\+X17043} library\+: \begin{DoxyVerb}#include "SparkFunMAX17043.h" // Include the SparkFun MAX17043 library
+\end{DoxyVerb}
+
+
+Then use the {\ttfamily lipo} object to interact with it. Begin by initializing the IC\+: \begin{DoxyVerb}void setup()
+{
+    // Set up the MAX17043 LiPo fuel gauge:
+    lipo.begin(); // Initialize the MAX17043 LiPo fuel gauge
+
+    // Quick start restarts the MAX17043 in hopes of getting a more accurate
+    // guess for the SOC.
+    lipo.quickStart();
+
+    // We can set an interrupt to alert when the battery SoC gets too low.
+    // We can alert at anywhere between 1% - 32%:
+    lipo.setThreshold(10); // Set alert threshold to 10%.
+}
+\end{DoxyVerb}
+
+
+Then you can read the voltage and state-\/of-\/charge (S\+OC) values like this\+: \begin{DoxyVerb}// lipo.getVoltage() returns a voltage value (e.g. 3.93)
+voltage = lipo.getVoltage();
+// lipo.getSOC() returns the estimated state of charge (e.g. 79%)
+soc = lipo.getSOC();
+\end{DoxyVerb}
+
+
+Check out the example files in the \href{https://github.com/sparkfun/SparkFun_MAX17043_Particle_Library/tree/master/firmware/examples}{\tt examples directory} for more guidance.
+
+\subsection*{Recommended Components }
+
+
+\begin{DoxyItemize}
+\item \href{https://www.sparkfun.com/products/13345}{\tt Particle Photon}
+\item \href{https://www.sparkfun.com/products/13626}{\tt Spark\+Fun Photon Battery Shield}
+\end{DoxyItemize}
+
+\subsection*{License Information }
+
+This product is \+\_\+$\ast$$\ast$open source$\ast$$\ast$\+\_\+!
+
+Please review the L\+I\+C\+E\+N\+S\+E.\+md file for license information.
+
+If you have any questions or concerns on licensing, please contact \href{mailto:techsupport@sparkfun.com}{\tt techsupport@sparkfun.\+com}.
+
+Distributed as-\/is; no warranty is given.
+
+
+\begin{DoxyItemize}
+\item Your friends at Spark\+Fun. 
+\end{DoxyItemize}

@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_float_define_8h" kind="file" language="C++">
+    <compoundname>FloatDefine.h</compoundname>
+    <includedby refid="_filter_one_pole_8cpp" local="yes">Weather_Balloon/library/Filters/FilterOnePole.cpp</includedby>
+    <includedby refid="_running_statistics_8cpp" local="yes">Weather_Balloon/library/Filters/RunningStatistics.cpp</includedby>
+    <invincdepgraph>
+      <node id="741">
+        <label>Weather_Balloon/library/Filters/FloatDefine.h</label>
+        <link refid="FloatDefine.h"/>
+        <childnode refid="742" relation="include">
+        </childnode>
+        <childnode refid="743" relation="include">
+        </childnode>
+      </node>
+      <node id="742">
+        <label>Weather_Balloon/library/Filters/FilterOnePole.cpp</label>
+        <link refid="_filter_one_pole_8cpp"/>
+      </node>
+      <node id="743">
+        <label>Weather_Balloon/library/Filters/RunningStatistics.cpp</label>
+        <link refid="_running_statistics_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>FloatDefine_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>FloatDefine_h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Filters/FloatDefine.h"/>
+  </compounddef>
+</doxygen>

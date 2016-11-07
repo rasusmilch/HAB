@@ -1,0 +1,8 @@
+<map id="minute" name="minute">
+<area shape="rect" id="node2" href="$_time_8cpp.html#a1f13327e0831cde49d525fe035d55fd8" title="refreshCache" alt="" coords="115,31,209,57"/>
+<area shape="rect" id="node3" href="$_time_8cpp.html#af08cc091ce5590067f695e51bfdefd17" title="breakTime" alt="" coords="257,31,340,57"/>
+<area shape="rect" id="node4" href="$_time_8cpp.html#a3f3be7ce4301fc1896efac6f0952f772" title="month" alt="" coords="388,5,447,32"/>
+<area shape="rect" id="node7" href="$_time_8cpp.html#a98bf680dbfa28f79514ba50d33fee63f" title="year" alt="" coords="394,56,441,83"/>
+<area shape="rect" id="node5" href="$_time_8cpp.html#adea6c108853185c1d856fa38ec74992c" title="now" alt="" coords="495,31,541,57"/>
+<area shape="rect" id="node6" href="$_time_8cpp.html#a1ce752bee962425a697f513db46964d4" title="setTime" alt="" coords="589,31,656,57"/>
+</map>

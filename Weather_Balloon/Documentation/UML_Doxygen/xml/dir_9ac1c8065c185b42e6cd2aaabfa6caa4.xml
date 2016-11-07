@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="dir_9ac1c8065c185b42e6cd2aaabfa6caa4" kind="dir">
+    <compoundname>Weather_Balloon/library/Arduino-DS3231-master</compoundname>
+    <innerfile refid="_d_s3231_8cpp">DS3231.cpp</innerfile>
+    <innerfile refid="_d_s3231_8h">DS3231.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Arduino-DS3231-master/"/>
+  </compounddef>
+</doxygen>

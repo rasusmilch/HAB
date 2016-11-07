@@ -1,0 +1,582 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_t_c_zero_8cpp" kind="file" language="C++">
+    <compoundname>RTCZero.cpp</compoundname>
+    <includes local="no">time.h</includes>
+    <includes refid="_r_t_c_zero_8h" local="yes">RTCZero.h</includes>
+    <incdepgraph>
+      <node id="936">
+        <label>RTCZero.h</label>
+        <link refid="_r_t_c_zero_8h"/>
+        <childnode refid="937" relation="include">
+        </childnode>
+      </node>
+      <node id="935">
+        <label>time.h</label>
+      </node>
+      <node id="937">
+        <label>Arduino.h</label>
+      </node>
+      <node id="934">
+        <label>Weather_Balloon/library/RTCZero/src/RTCZero.cpp</label>
+        <link refid="RTCZero.cpp"/>
+        <childnode refid="935" relation="include">
+        </childnode>
+        <childnode refid="936" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_r_t_c_zero_8cpp_1a0c71a1835572d6242a3741c3a28b3972" prot="public" static="no">
+        <name>EPOCH_TIME_OFF</name>
+        <initializer>946684800</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" line="24" column="9" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_r_t_c_zero_1ae660721e3ba20b6701431d8cd8bed697" compoundref="_r_t_c_zero_8cpp" startline="388" endline="391">RTCZero::getY2kEpoch</referencedby>
+        <referencedby refid="class_r_t_c_zero_1a5427b2b365b295516944a69b66e506ba" compoundref="_r_t_c_zero_8cpp" startline="393" endline="413">RTCZero::setEpoch</referencedby>
+        <referencedby refid="class_r_t_c_zero_1aea1cc5a935bacd8430cb3be5a87281aa" compoundref="_r_t_c_zero_8cpp" startline="415" endline="420">RTCZero::setY2kEpoch</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_r_t_c_zero_8cpp_1a4bc95e574565f8bbb72cc536258ad25b" prot="public" static="no">
+        <name>EPOCH_TIME_YEAR_OFF</name>
+        <initializer>100</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" line="25" column="9" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="25" bodyend="-1"/>
+        <referencedby refid="class_r_t_c_zero_1aefda208cc548613b8af437ba6e7d1ff3" compoundref="_r_t_c_zero_8cpp" startline="367" endline="386">RTCZero::getEpoch</referencedby>
+        <referencedby refid="class_r_t_c_zero_1a5427b2b365b295516944a69b66e506ba" compoundref="_r_t_c_zero_8cpp" startline="393" endline="413">RTCZero::setEpoch</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" prot="public" static="no" mutable="no">
+        <type><ref refid="_r_t_c_zero_8h_1af47ec912687cb72725d5e529eccdbb48" kindref="member">voidFuncPtr</ref></type>
+        <definition>voidFuncPtr RTC_callBack</definition>
+        <argsstring></argsstring>
+        <name>RTC_callBack</name>
+        <initializer>= NULL</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" line="27" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="27" bodyend="-1"/>
+        <referencedby refid="class_r_t_c_zero_1a306f2bbbdfa83d21f8f577c11b73e76b" compoundref="_r_t_c_zero_8cpp" startline="131" endline="134">RTCZero::attachInterrupt</referencedby>
+        <referencedby refid="class_r_t_c_zero_1a6ca6de2448cadaa33a87cdd4278cdf27" compoundref="_r_t_c_zero_8cpp" startline="136" endline="139">RTCZero::detachInterrupt</referencedby>
+        <referencedby refid="_r_t_c_zero_8cpp_1ab6a8110ba2ed9a12326dc9db531be942" compoundref="_r_t_c_zero_8cpp" startline="104" endline="111">RTC_Handler</referencedby>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="_r_t_c_zero_8cpp_1ab6a8110ba2ed9a12326dc9db531be942" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void RTC_Handler</definition>
+        <argsstring>(void)</argsstring>
+        <name>RTC_Handler</name>
+        <param>
+          <type>void</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" line="104" column="1" bodyfile="Weather_Balloon/library/RTCZero/src/RTCZero.cpp" bodystart="104" bodyend="111"/>
+        <references refid="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" compoundref="_r_t_c_zero_8cpp" startline="27">RTC_callBack</references>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>RTC<sp/>library<sp/>for<sp/>Arduino<sp/>Zero.</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"><sp/><sp/>Copyright<sp/>(c)<sp/>2015<sp/>Arduino<sp/>LLC.<sp/>All<sp/>right<sp/>reserved.</highlight></codeline>
+<codeline lineno="4"><highlight class="comment"></highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>free<sp/>software;<sp/>you<sp/>can<sp/>redistribute<sp/>it<sp/>and/or</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"><sp/><sp/>modify<sp/>it<sp/>under<sp/>the<sp/>terms<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>License<sp/>as<sp/>published<sp/>by<sp/>the<sp/>Free<sp/>Software<sp/>Foundation;<sp/>either</highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>version<sp/>2.1<sp/>of<sp/>the<sp/>License,<sp/>or<sp/>(at<sp/>your<sp/>option)<sp/>any<sp/>later<sp/>version.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>This<sp/>library<sp/>is<sp/>distributed<sp/>in<sp/>the<sp/>hope<sp/>that<sp/>it<sp/>will<sp/>be<sp/>useful,</highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>but<sp/>WITHOUT<sp/>ANY<sp/>WARRANTY;<sp/>without<sp/>even<sp/>the<sp/>implied<sp/>warranty<sp/>of</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"><sp/><sp/>MERCHANTABILITY<sp/>or<sp/>FITNESS<sp/>FOR<sp/>A<sp/>PARTICULAR<sp/>PURPOSE.<sp/>See<sp/>the<sp/>GNU</highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>Lesser<sp/>General<sp/>Public<sp/>License<sp/>for<sp/>more<sp/>details.</highlight></codeline>
+<codeline lineno="14"><highlight class="comment"></highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/><sp/>You<sp/>should<sp/>have<sp/>received<sp/>a<sp/>copy<sp/>of<sp/>the<sp/>GNU<sp/>Lesser<sp/>General<sp/>Public</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"><sp/><sp/>License<sp/>along<sp/>with<sp/>this<sp/>library;<sp/>if<sp/>not,<sp/>write<sp/>to<sp/>the<sp/>Free<sp/>Software</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"><sp/><sp/>Foundation,<sp/>Inc.,<sp/>51<sp/>Franklin<sp/>St,<sp/>Fifth<sp/>Floor,<sp/>Boston,<sp/>MA<sp/>02110-1301<sp/>USA</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;time.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_r_t_c_zero_8h" kindref="compound">RTCZero.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_r_t_c_zero_8cpp_1a0c71a1835572d6242a3741c3a28b3972" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EPOCH_TIME_OFF<sp/><sp/><sp/><sp/><sp/><sp/>946684800<sp/><sp/>//<sp/>This<sp/>is<sp/>1st<sp/>January<sp/>2000,<sp/>00:00:00<sp/>in<sp/>epoch<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_r_t_c_zero_8cpp_1a4bc95e574565f8bbb72cc536258ad25b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>EPOCH_TIME_YEAR_OFF<sp/>100<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>//<sp/>years<sp/>since<sp/>1900</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" refkind="member"><highlight class="normal"><ref refid="_r_t_c_zero_8h_1af47ec912687cb72725d5e529eccdbb48" kindref="member">voidFuncPtr</ref><sp/><ref refid="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" kindref="member">RTC_callBack</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="class_r_t_c_zero_1af74f4cc9bc122628c0023e77b7b18c76" refkind="member"><highlight class="normal"><ref refid="class_r_t_c_zero_1af74f4cc9bc122628c0023e77b7b18c76" kindref="member">RTCZero::RTCZero</ref>()</highlight></codeline>
+<codeline lineno="30"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>_configured<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="class_r_t_c_zero_1ac6ad9d73cb8d3a0575e7cfc2b26a5412" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ac6ad9d73cb8d3a0575e7cfc2b26a5412" kindref="member">RTCZero::begin</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>resetTime)</highlight></codeline>
+<codeline lineno="35"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/>uint16_t<sp/>tmp_reg<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/>PM-&gt;APBAMASK.reg<sp/>|=<sp/>PM_APBAMASK_RTC;<sp/></highlight><highlight class="comment">//<sp/>turn<sp/>on<sp/>digital<sp/>interface<sp/>clock</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>config32kOSC();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>RTC<sp/>is<sp/>in<sp/>clock<sp/>mode<sp/>and<sp/>the<sp/>reset<sp/>was</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>not<sp/>due<sp/>to<sp/>POR<sp/>or<sp/>BOD,<sp/>preserve<sp/>the<sp/>clock<sp/>time</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>POR<sp/>causes<sp/>a<sp/>reset<sp/>anyway,<sp/>BOD<sp/>behaviour<sp/>is?</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validTime<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>RTC_MODE2_CLOCK_Type<sp/>oldTime;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((!resetTime)<sp/>&amp;&amp;<sp/>(PM-&gt;RCAUSE.reg<sp/>&amp;<sp/>(PM_RCAUSE_SYST<sp/>|<sp/>PM_RCAUSE_WDT<sp/>|<sp/>PM_RCAUSE_EXT)))<sp/>{</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(RTC-&gt;MODE2.CTRL.reg<sp/>&amp;<sp/>RTC_MODE2_CTRL_MODE_CLOCK)<sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>validTime<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>oldTime.reg<sp/>=<sp/>RTC-&gt;MODE2.CLOCK.reg;</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Setup<sp/>clock<sp/>GCLK2<sp/>with<sp/>OSC32K<sp/>divided<sp/>by<sp/>32</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>GCLK-&gt;GENDIV.reg<sp/>=<sp/>GCLK_GENDIV_ID(2)|GCLK_GENDIV_DIV(4);</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(GCLK-&gt;STATUS.reg<sp/>&amp;<sp/>GCLK_STATUS_SYNCBUSY)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/>GCLK-&gt;GENCTRL.reg<sp/>=<sp/>(GCLK_GENCTRL_GENEN<sp/>|<sp/>GCLK_GENCTRL_SRC_XOSC32K<sp/>|<sp/>GCLK_GENCTRL_ID(2)<sp/>|<sp/>GCLK_GENCTRL_DIVSEL<sp/>);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(GCLK-&gt;STATUS.reg<sp/>&amp;<sp/>GCLK_STATUS_SYNCBUSY)</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/>GCLK-&gt;CLKCTRL.reg<sp/>=<sp/>(uint32_t)((GCLK_CLKCTRL_CLKEN<sp/>|<sp/>GCLK_CLKCTRL_GEN_GCLK2<sp/>|<sp/>(RTC_GCLK_ID<sp/>&lt;&lt;<sp/>GCLK_CLKCTRL_ID_Pos)));</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(GCLK-&gt;STATUS.bit.SYNCBUSY)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/>RTCdisable();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>RTCreset();</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>tmp_reg<sp/>|=<sp/>RTC_MODE2_CTRL_MODE_CLOCK;<sp/></highlight><highlight class="comment">//<sp/>set<sp/>clock<sp/>operating<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/>tmp_reg<sp/>|=<sp/>RTC_MODE2_CTRL_PRESCALER_DIV1024;<sp/></highlight><highlight class="comment">//<sp/>set<sp/>prescaler<sp/>to<sp/>1024<sp/>for<sp/>MODE2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/>tmp_reg<sp/>&amp;=<sp/>~RTC_MODE2_CTRL_MATCHCLR;<sp/></highlight><highlight class="comment">//<sp/>disable<sp/>clear<sp/>on<sp/>match</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//According<sp/>to<sp/>the<sp/>datasheet<sp/>RTC_MODE2_CTRL_CLKREP<sp/>=<sp/>0<sp/>for<sp/>24h</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/>tmp_reg<sp/>&amp;=<sp/>~RTC_MODE2_CTRL_CLKREP;<sp/></highlight><highlight class="comment">//<sp/>24h<sp/>time<sp/>representation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>RTC-&gt;MODE2.READREQ.reg<sp/>&amp;=<sp/>~RTC_READREQ_RCONT;<sp/></highlight><highlight class="comment">//<sp/>disable<sp/>continuously<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>RTC-&gt;MODE2.CTRL.reg<sp/>=<sp/>tmp_reg;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/>NVIC_EnableIRQ(RTC_IRQn);<sp/></highlight><highlight class="comment">//<sp/>enable<sp/>RTC<sp/>interrupt<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/>NVIC_SetPriority(RTC_IRQn,<sp/>0x00);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/>RTC-&gt;MODE2.INTENSET.reg<sp/>|=<sp/>RTC_MODE2_INTENSET_ALARM0;<sp/></highlight><highlight class="comment">//<sp/>enable<sp/>alarm<sp/>interrupt</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>RTC-&gt;MODE2.Mode2Alarm[0].MASK.bit.SEL<sp/>=<sp/><ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cca229a4bf48dedcd24c3058d4659fbdd2b" kindref="member">MATCH_OFF</ref>;<sp/></highlight><highlight class="comment">//<sp/>default<sp/>alarm<sp/>match<sp/>is<sp/>off<sp/>(disabled)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/>RTCenable();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>RTCresetRemove();</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>desired<sp/>and<sp/>valid,<sp/>restore<sp/>the<sp/>time<sp/>value</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((!resetTime)<sp/>&amp;&amp;<sp/>(validTime))<sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.reg<sp/>=<sp/>oldTime.reg;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>_configured<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104" refid="_r_t_c_zero_8cpp_1ab6a8110ba2ed9a12326dc9db531be942" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="_r_t_c_zero_8cpp_1ab6a8110ba2ed9a12326dc9db531be942" kindref="member">RTC_Handler</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" kindref="member">RTC_callBack</ref><sp/>!=<sp/>NULL)<sp/>{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" kindref="member">RTC_callBack</ref>();</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>RTC-&gt;MODE2.INTFLAG.reg<sp/>=<sp/>RTC_MODE2_INTFLAG_ALARM0;<sp/></highlight><highlight class="comment">//<sp/>must<sp/>clear<sp/>flag<sp/>at<sp/>end</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113" refid="class_r_t_c_zero_1af2923fee4310485bc922898376f5042c" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1af2923fee4310485bc922898376f5042c" kindref="member">RTCZero::enableAlarm</ref>(<ref refid="class_r_t_c_zero_1a331ac87204394f0e197122b8962149cc" kindref="member">Alarm_Match</ref><sp/>match)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.Mode2Alarm[0].MASK.bit.SEL<sp/>=<sp/>match;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122" refid="class_r_t_c_zero_1a9c1b7a7b7f8ed3cabbdc039ede726631" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a9c1b7a7b7f8ed3cabbdc039ede726631" kindref="member">RTCZero::disableAlarm</ref>()</highlight></codeline>
+<codeline lineno="123"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.Mode2Alarm[0].MASK.bit.SEL<sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131" refid="class_r_t_c_zero_1a306f2bbbdfa83d21f8f577c11b73e76b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a306f2bbbdfa83d21f8f577c11b73e76b" kindref="member">RTCZero::attachInterrupt</ref>(<ref refid="_r_t_c_zero_8h_1af47ec912687cb72725d5e529eccdbb48" kindref="member">voidFuncPtr</ref><sp/>callback)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><ref refid="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" kindref="member">RTC_callBack</ref><sp/>=<sp/>callback;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"></highlight></codeline>
+<codeline lineno="136" refid="class_r_t_c_zero_1a6ca6de2448cadaa33a87cdd4278cdf27" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a6ca6de2448cadaa33a87cdd4278cdf27" kindref="member">RTCZero::detachInterrupt</ref>()</highlight></codeline>
+<codeline lineno="137"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><ref refid="_r_t_c_zero_8cpp_1a09299a68da7a03891152805591a5e52b" kindref="member">RTC_callBack</ref><sp/>=<sp/>NULL;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141" refid="class_r_t_c_zero_1a2fab941e64ffe5501c30c085a5b3833e" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a2fab941e64ffe5501c30c085a5b3833e" kindref="member">RTCZero::standbyMode</ref>()</highlight></codeline>
+<codeline lineno="142"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>Entering<sp/>standby<sp/>mode<sp/>when<sp/>connected</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>via<sp/>the<sp/>native<sp/>USB<sp/>port<sp/>causes<sp/>issues.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>SCB-&gt;SCR<sp/>|=<sp/>SCB_SCR_SLEEPDEEP_Msk;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/>__WFI();</highlight></codeline>
+<codeline lineno="147"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="150"><highlight class="comment"><sp/>*<sp/>Get<sp/>Functions</highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153" refid="class_r_t_c_zero_1a914daa26d6ab1a3637a4696801532377" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a914daa26d6ab1a3637a4696801532377" kindref="member">RTCZero::getSeconds</ref>()</highlight></codeline>
+<codeline lineno="154"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>RTCreadRequest();</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.CLOCK.bit.SECOND;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159" refid="class_r_t_c_zero_1a813435838c1c830ab61e81f2c50cd76c" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a813435838c1c830ab61e81f2c50cd76c" kindref="member">RTCZero::getMinutes</ref>()</highlight></codeline>
+<codeline lineno="160"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>RTCreadRequest();</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.CLOCK.bit.MINUTE;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165" refid="class_r_t_c_zero_1a4e3c72195b429d690ca5e3febb9a2d8f" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a4e3c72195b429d690ca5e3febb9a2d8f" kindref="member">RTCZero::getHours</ref>()</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>RTCreadRequest();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.CLOCK.bit.HOUR;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171" refid="class_r_t_c_zero_1a9569ba1ee80390da5c9feb9c33681ac2" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a9569ba1ee80390da5c9feb9c33681ac2" kindref="member">RTCZero::getDay</ref>()</highlight></codeline>
+<codeline lineno="172"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/>RTCreadRequest();</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.CLOCK.bit.DAY;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177" refid="class_r_t_c_zero_1ab5a20277839b8d68d7469feb95b027ec" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1ab5a20277839b8d68d7469feb95b027ec" kindref="member">RTCZero::getMonth</ref>()</highlight></codeline>
+<codeline lineno="178"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>RTCreadRequest();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.CLOCK.bit.MONTH;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="class_r_t_c_zero_1a87b268ab9f4e2ea4b0aca4ca7f9d48e6" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a87b268ab9f4e2ea4b0aca4ca7f9d48e6" kindref="member">RTCZero::getYear</ref>()</highlight></codeline>
+<codeline lineno="184"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>RTCreadRequest();</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.CLOCK.bit.YEAR;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189" refid="class_r_t_c_zero_1a05ca5622ea0d01662326c251d3f4e960" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a05ca5622ea0d01662326c251d3f4e960" kindref="member">RTCZero::getAlarmSeconds</ref>()</highlight></codeline>
+<codeline lineno="190"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.SECOND;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight></codeline>
+<codeline lineno="194" refid="class_r_t_c_zero_1a9b689b5208dc3bd0d80524e0d5c52873" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a9b689b5208dc3bd0d80524e0d5c52873" kindref="member">RTCZero::getAlarmMinutes</ref>()</highlight></codeline>
+<codeline lineno="195"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.MINUTE;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199" refid="class_r_t_c_zero_1a0758261eb8ba11c90e903b5e38a6cee8" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a0758261eb8ba11c90e903b5e38a6cee8" kindref="member">RTCZero::getAlarmHours</ref>()</highlight></codeline>
+<codeline lineno="200"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.HOUR;</highlight></codeline>
+<codeline lineno="202"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204" refid="class_r_t_c_zero_1a4b157a1820acba087ea42095505c35cc" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a4b157a1820acba087ea42095505c35cc" kindref="member">RTCZero::getAlarmDay</ref>()</highlight></codeline>
+<codeline lineno="205"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.DAY;</highlight></codeline>
+<codeline lineno="207"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209" refid="class_r_t_c_zero_1a27152748cdb3ebdd15a4a51882dcd28b" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1a27152748cdb3ebdd15a4a51882dcd28b" kindref="member">RTCZero::getAlarmMonth</ref>()</highlight></codeline>
+<codeline lineno="210"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.MONTH;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214" refid="class_r_t_c_zero_1af15b6757eeb9281446b7575c9a15ff19" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c_zero_1af15b6757eeb9281446b7575c9a15ff19" kindref="member">RTCZero::getAlarmYear</ref>()</highlight></codeline>
+<codeline lineno="215"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.YEAR;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="220"><highlight class="comment"><sp/>*<sp/>Set<sp/>Functions</highlight></codeline>
+<codeline lineno="221"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"></highlight></codeline>
+<codeline lineno="223" refid="class_r_t_c_zero_1a654ea54b599e9269369c3d329dd41685" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a654ea54b599e9269369c3d329dd41685" kindref="member">RTCZero::setSeconds</ref>(uint8_t<sp/>seconds)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.SECOND<sp/>=<sp/>seconds;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232" refid="class_r_t_c_zero_1adeb4f4fbae93c46e227646569113cbd1" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1adeb4f4fbae93c46e227646569113cbd1" kindref="member">RTCZero::setMinutes</ref>(uint8_t<sp/>minutes)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.MINUTE<sp/>=<sp/>minutes;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="239"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241" refid="class_r_t_c_zero_1a4bcc1288366d943f3328386c89d39bf3" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a4bcc1288366d943f3328386c89d39bf3" kindref="member">RTCZero::setHours</ref>(uint8_t<sp/>hours)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.HOUR<sp/>=<sp/>hours;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250" refid="class_r_t_c_zero_1a2bd00b1214877c926001a8d60acad72d" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a2bd00b1214877c926001a8d60acad72d" kindref="member">RTCZero::setTime</ref>(uint8_t<sp/>hours,<sp/>uint8_t<sp/>minutes,<sp/>uint8_t<sp/>seconds)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a654ea54b599e9269369c3d329dd41685" kindref="member">setSeconds</ref>(seconds);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1adeb4f4fbae93c46e227646569113cbd1" kindref="member">setMinutes</ref>(minutes);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a4bcc1288366d943f3328386c89d39bf3" kindref="member">setHours</ref>(hours);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="257"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259" refid="class_r_t_c_zero_1aa1d8a2279ae41b6a7b50c5ccc974b29f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1aa1d8a2279ae41b6a7b50c5ccc974b29f" kindref="member">RTCZero::setDay</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.DAY<sp/>=<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268" refid="class_r_t_c_zero_1af91e416057bf96c8ae94b053e94ec722" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1af91e416057bf96c8ae94b053e94ec722" kindref="member">RTCZero::setMonth</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.MONTH<sp/>=<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>;</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"></highlight></codeline>
+<codeline lineno="277" refid="class_r_t_c_zero_1ad71c689f526dd7e40c6f134b2a223b81" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ad71c689f526dd7e40c6f134b2a223b81" kindref="member">RTCZero::setYear</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>)</highlight></codeline>
+<codeline lineno="278"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.YEAR<sp/>=<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>;</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight></codeline>
+<codeline lineno="286" refid="class_r_t_c_zero_1ad84a83a503a798c3f90f667de21b8a44" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ad84a83a503a798c3f90f667de21b8a44" kindref="member">RTCZero::setDate</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>,<sp/>uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>,<sp/>uint8_t<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>)</highlight></codeline>
+<codeline lineno="287"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1aa1d8a2279ae41b6a7b50c5ccc974b29f" kindref="member">setDay</ref>(day);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1af91e416057bf96c8ae94b053e94ec722" kindref="member">setMonth</ref>(month);</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1ad71c689f526dd7e40c6f134b2a223b81" kindref="member">setYear</ref>(year);</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="293"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295" refid="class_r_t_c_zero_1a1b52a726c30602d3769426974f56710f" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a1b52a726c30602d3769426974f56710f" kindref="member">RTCZero::setAlarmSeconds</ref>(uint8_t<sp/>seconds)</highlight></codeline>
+<codeline lineno="296"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.SECOND<sp/>=<sp/>seconds;</highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="302"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304" refid="class_r_t_c_zero_1a06a7ea4b7bc9d61df4fef51329927b22" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a06a7ea4b7bc9d61df4fef51329927b22" kindref="member">RTCZero::setAlarmMinutes</ref>(uint8_t<sp/>minutes)</highlight></codeline>
+<codeline lineno="305"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.MINUTE<sp/>=<sp/>minutes;</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="311"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313" refid="class_r_t_c_zero_1a915e7bc9c446be99d52f87cdb76e6cfe" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a915e7bc9c446be99d52f87cdb76e6cfe" kindref="member">RTCZero::setAlarmHours</ref>(uint8_t<sp/>hours)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.HOUR<sp/>=<sp/>hours;</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="320"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight></codeline>
+<codeline lineno="322" refid="class_r_t_c_zero_1ac16225fa8a9c07a6e8d1157b6d699747" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ac16225fa8a9c07a6e8d1157b6d699747" kindref="member">RTCZero::setAlarmTime</ref>(uint8_t<sp/>hours,<sp/>uint8_t<sp/>minutes,<sp/>uint8_t<sp/>seconds)</highlight></codeline>
+<codeline lineno="323"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a1b52a726c30602d3769426974f56710f" kindref="member">setAlarmSeconds</ref>(seconds);</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a06a7ea4b7bc9d61df4fef51329927b22" kindref="member">setAlarmMinutes</ref>(minutes);</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a915e7bc9c446be99d52f87cdb76e6cfe" kindref="member">setAlarmHours</ref>(hours);</highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="329"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"></highlight></codeline>
+<codeline lineno="331" refid="class_r_t_c_zero_1a4519ba0e3eee8a3bf03f7c14b3ffa902" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a4519ba0e3eee8a3bf03f7c14b3ffa902" kindref="member">RTCZero::setAlarmDay</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>)</highlight></codeline>
+<codeline lineno="332"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.DAY<sp/>=<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>;</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="338"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight></codeline>
+<codeline lineno="340" refid="class_r_t_c_zero_1a8fe74d0c1ec7922f893addd67dc16aba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a8fe74d0c1ec7922f893addd67dc16aba" kindref="member">RTCZero::setAlarmMonth</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>)</highlight></codeline>
+<codeline lineno="341"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.MONTH<sp/>=<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>;</highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="347"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="348"><highlight class="normal"></highlight></codeline>
+<codeline lineno="349" refid="class_r_t_c_zero_1ae55ef909edbb893eba4becc8676dd8d6" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1ae55ef909edbb893eba4becc8676dd8d6" kindref="member">RTCZero::setAlarmYear</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>)</highlight></codeline>
+<codeline lineno="350"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.Mode2Alarm[0].ALARM.bit.YEAR<sp/>=<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>;</highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="356"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358" refid="class_r_t_c_zero_1a12727934884612e1a125e6be3f461058" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a12727934884612e1a125e6be3f461058" kindref="member">RTCZero::setAlarmDate</ref>(uint8_t<sp/><ref refid="_time_8cpp_1a075786e0a525a2bba638889efcc42385" kindref="member">day</ref>,<sp/>uint8_t<sp/><ref refid="_time_8cpp_1a3f3be7ce4301fc1896efac6f0952f772" kindref="member">month</ref>,<sp/>uint8_t<sp/><ref refid="_time_8cpp_1a98bf680dbfa28f79514ba50d33fee63f" kindref="member">year</ref>)</highlight></codeline>
+<codeline lineno="359"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a4519ba0e3eee8a3bf03f7c14b3ffa902" kindref="member">setAlarmDay</ref>(day);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a8fe74d0c1ec7922f893addd67dc16aba" kindref="member">setAlarmMonth</ref>(month);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1ae55ef909edbb893eba4becc8676dd8d6" kindref="member">setAlarmYear</ref>(year);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="365"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367" refid="class_r_t_c_zero_1aefda208cc548613b8af437ba6e7d1ff3" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="class_r_t_c_zero_1aefda208cc548613b8af437ba6e7d1ff3" kindref="member">RTCZero::getEpoch</ref>()</highlight></codeline>
+<codeline lineno="368"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/>RTCreadRequest();</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/>RTC_MODE2_CLOCK_Type<sp/>clockTime;</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/>clockTime.reg<sp/>=<sp/>RTC-&gt;MODE2.CLOCK.reg;</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm<sp/>tm;</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"></highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/>tm.tm_isdst<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"><sp/><sp/>tm.tm_yday<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/>tm.tm_wday<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/>tm.tm_year<sp/>=<sp/>clockTime.bit.YEAR<sp/>+<sp/><ref refid="_r_t_c_zero_8cpp_1a4bc95e574565f8bbb72cc536258ad25b" kindref="member">EPOCH_TIME_YEAR_OFF</ref>;</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/>tm.tm_mon<sp/>=<sp/>clockTime.bit.MONTH<sp/>-<sp/>1;</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/>tm.tm_mday<sp/>=<sp/>clockTime.bit.DAY;</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/>tm.tm_hour<sp/>=<sp/>clockTime.bit.HOUR;</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/>tm.tm_min<sp/>=<sp/>clockTime.bit.MINUTE;</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/>tm.tm_sec<sp/>=<sp/>clockTime.bit.SECOND;</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>mktime(&amp;tm);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"></highlight></codeline>
+<codeline lineno="388" refid="class_r_t_c_zero_1ae660721e3ba20b6701431d8cd8bed697" refkind="member"><highlight class="normal">uint32_t<sp/><ref refid="class_r_t_c_zero_1ae660721e3ba20b6701431d8cd8bed697" kindref="member">RTCZero::getY2kEpoch</ref>()</highlight></codeline>
+<codeline lineno="389"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(<ref refid="class_r_t_c_zero_1aefda208cc548613b8af437ba6e7d1ff3" kindref="member">getEpoch</ref>()<sp/>-<sp/><ref refid="_r_t_c_zero_8cpp_1a0c71a1835572d6242a3741c3a28b3972" kindref="member">EPOCH_TIME_OFF</ref>);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight></codeline>
+<codeline lineno="393" refid="class_r_t_c_zero_1a5427b2b365b295516944a69b66e506ba" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1a5427b2b365b295516944a69b66e506ba" kindref="member">RTCZero::setEpoch</ref>(uint32_t<sp/>ts)</highlight></codeline>
+<codeline lineno="394"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ts<sp/>&lt;<sp/><ref refid="_r_t_c_zero_8cpp_1a0c71a1835572d6242a3741c3a28b3972" kindref="member">EPOCH_TIME_OFF</ref>)<sp/>{</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ts<sp/>=<sp/><ref refid="_r_t_c_zero_8cpp_1a0c71a1835572d6242a3741c3a28b3972" kindref="member">EPOCH_TIME_OFF</ref>;</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/>time_t<sp/>t<sp/>=<sp/>ts;</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">tm*<sp/>tmp<sp/>=<sp/>gmtime(&amp;t);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"></highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.YEAR<sp/>=<sp/>tmp-&gt;tm_year<sp/>-<sp/><ref refid="_r_t_c_zero_8cpp_1a4bc95e574565f8bbb72cc536258ad25b" kindref="member">EPOCH_TIME_YEAR_OFF</ref>;</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.MONTH<sp/>=<sp/>tmp-&gt;tm_mon<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.DAY<sp/>=<sp/>tmp-&gt;tm_mday;</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.HOUR<sp/>=<sp/>tmp-&gt;tm_hour;</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.MINUTE<sp/>=<sp/>tmp-&gt;tm_min;</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.CLOCK.bit.SECOND<sp/>=<sp/>tmp-&gt;tm_sec;</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"></highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="413"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"></highlight></codeline>
+<codeline lineno="415" refid="class_r_t_c_zero_1aea1cc5a935bacd8430cb3be5a87281aa" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c_zero_1aea1cc5a935bacd8430cb3be5a87281aa" kindref="member">RTCZero::setY2kEpoch</ref>(uint32_t<sp/>ts)</highlight></codeline>
+<codeline lineno="416"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c_zero_1a5427b2b365b295516944a69b66e506ba" kindref="member">setEpoch</ref>(ts<sp/>+<sp/><ref refid="_r_t_c_zero_8cpp_1a0c71a1835572d6242a3741c3a28b3972" kindref="member">EPOCH_TIME_OFF</ref>);</highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="420"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="421"><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"></highlight><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="423"><highlight class="comment"><sp/>*<sp/>Private<sp/>Utility<sp/>Functions</highlight></codeline>
+<codeline lineno="424"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Configure<sp/>the<sp/>32768Hz<sp/>Oscillator<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="427"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCZero::config32kOSC()<sp/></highlight></codeline>
+<codeline lineno="428"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/>SYSCTRL-&gt;XOSC32K.reg<sp/>=<sp/>SYSCTRL_XOSC32K_ONDEMAND<sp/>|</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSCTRL_XOSC32K_RUNSTDBY<sp/>|</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSCTRL_XOSC32K_EN32K<sp/>|</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSCTRL_XOSC32K_XTALEN<sp/>|</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSCTRL_XOSC32K_STARTUP(6)<sp/>|</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SYSCTRL_XOSC32K_ENABLE;</highlight></codeline>
+<codeline lineno="435"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"></highlight></codeline>
+<codeline lineno="437"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Synchronise<sp/>the<sp/>CLOCK<sp/>register<sp/>for<sp/>reading*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="438"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCZero::RTCreadRequest()<sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(_configured)<sp/>{</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/>RTC-&gt;MODE2.READREQ.reg<sp/>=<sp/>RTC_READREQ_RREQ;</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="444"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"></highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight><highlight class="comment">/*<sp/>Wait<sp/>for<sp/>sync<sp/>in<sp/>write<sp/>operations<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>RTCZero::RTCisSyncing()</highlight></codeline>
+<codeline lineno="448"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(RTC-&gt;MODE2.STATUS.bit.SYNCBUSY);</highlight></codeline>
+<codeline lineno="450"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCZero::RTCdisable()</highlight></codeline>
+<codeline lineno="453"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/>RTC-&gt;MODE2.CTRL.reg<sp/>&amp;=<sp/>~RTC_MODE2_CTRL_ENABLE;<sp/></highlight><highlight class="comment">//<sp/>disable<sp/>RTC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="457"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"></highlight></codeline>
+<codeline lineno="459"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCZero::RTCenable()</highlight></codeline>
+<codeline lineno="460"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/>RTC-&gt;MODE2.CTRL.reg<sp/>|=<sp/>RTC_MODE2_CTRL_ENABLE;<sp/></highlight><highlight class="comment">//<sp/>enable<sp/>RTC</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="464"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="465"><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCZero::RTCreset()</highlight></codeline>
+<codeline lineno="467"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/>RTC-&gt;MODE2.CTRL.reg<sp/>|=<sp/>RTC_MODE2_CTRL_SWRST;<sp/></highlight><highlight class="comment">//<sp/>software<sp/>reset</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="471"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"></highlight></codeline>
+<codeline lineno="473"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>RTCZero::RTCresetRemove()</highlight></codeline>
+<codeline lineno="474"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/>RTC-&gt;MODE2.CTRL.reg<sp/>&amp;=<sp/>~RTC_MODE2_CTRL_SWRST;<sp/></highlight><highlight class="comment">//<sp/>software<sp/>reset<sp/>remove</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(RTCisSyncing())</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/>;</highlight></codeline>
+<codeline lineno="478"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/RTCZero/src/RTCZero.cpp"/>
+  </compounddef>
+</doxygen>

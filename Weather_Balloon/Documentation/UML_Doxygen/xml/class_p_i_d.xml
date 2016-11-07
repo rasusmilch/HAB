@@ -1,0 +1,511 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="class_p_i_d" kind="class" language="C++" prot="public">
+    <compoundname>PID</compoundname>
+    <includes refid="_p_i_d__v1_8h" local="no">PID_v1.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_p_i_d_1ae17c110340266ddabea05cfbf28cee06" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::dispKp</definition>
+        <argsstring></argsstring>
+        <name>dispKp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="57" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a7beb970d37564d923a5a1776cefdd600" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::dispKi</definition>
+        <argsstring></argsstring>
+        <name>dispKi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="58" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a1592fdceb0d76a640e640d6050d8b89c" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::dispKd</definition>
+        <argsstring></argsstring>
+        <name>dispKd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="59" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a1d61c12e44fa9917dfc5c104493f5f29" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::kp</definition>
+        <argsstring></argsstring>
+        <name>kp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="61" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a750722249a34a914f6e2f05cd9d4dee3" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::ki</definition>
+        <argsstring></argsstring>
+        <name>ki</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="62" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a0094a774f6f64b4a1a9f93fd877c5df4" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::kd</definition>
+        <argsstring></argsstring>
+        <name>kd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="63" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1ac48886c62230f9c516a33e39595c8d35" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int PID::controllerDirection</definition>
+        <argsstring></argsstring>
+        <name>controllerDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="65" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a2fdb78df9971f03d5c52326741899771" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* PID::myInput</definition>
+        <argsstring></argsstring>
+        <name>myInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="67" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="67" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a7aeb8c39345642aa7540f80a691b9c71" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* PID::myOutput</definition>
+        <argsstring></argsstring>
+        <name>myOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="68" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="68" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a1e15f064cf0cd4d199e2919b48cf3e69" prot="private" static="no" mutable="no">
+        <type>double *</type>
+        <definition>double* PID::mySetpoint</definition>
+        <argsstring></argsstring>
+        <name>mySetpoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="69" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1afcb8eb131062be169f29fcc0733e7433" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long PID::lastTime</definition>
+        <argsstring></argsstring>
+        <name>lastTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="72" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1aa49b01a2847728df130ee897a2c65a22" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::ITerm</definition>
+        <argsstring></argsstring>
+        <name>ITerm</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="73" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1af5e573ec3778a93ac616a2ce3ef64420" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::lastInput</definition>
+        <argsstring></argsstring>
+        <name>lastInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="73" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a0dd517a3300badb571656b35f621947d" prot="private" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long PID::SampleTime</definition>
+        <argsstring></argsstring>
+        <name>SampleTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="75" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1ae22e92ee8f1cbbaae115b649b2bd60a5" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::outMin</definition>
+        <argsstring></argsstring>
+        <name>outMin</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="76" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1a4769a252cfb87c908dc89e004af8c83a" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double PID::outMax</definition>
+        <argsstring></argsstring>
+        <name>outMax</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="76" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool PID::inAuto</definition>
+        <argsstring></argsstring>
+        <name>inAuto</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="77" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PID::PID</definition>
+        <argsstring>(double *, double *, double *, double, double, double, int)</argsstring>
+        <name>PID</name>
+        <param>
+          <type>double *</type>
+          <defname>Input</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>Output</defname>
+        </param>
+        <param>
+          <type>double *</type>
+          <defname>Setpoint</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Kp</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Ki</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Kd</defname>
+        </param>
+        <param>
+          <type>int</type>
+          <defname>ControllerDirection</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="18" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="20" bodyend="38"/>
+        <references refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" compoundref="_p_i_d__v1_8cpp" startline="174" endline="183">SetControllerDirection</references>
+        <references refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" compoundref="_p_i_d__v1_8cpp" startline="125" endline="139">SetOutputLimits</references>
+        <references refid="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" compoundref="_p_i_d__v1_8cpp" startline="83" endline="100">SetTunings</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a68074bad88a8cc442ee03a036073d5d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetMode</definition>
+        <argsstring>(int Mode)</argsstring>
+        <name>SetMode</name>
+        <param>
+          <type>int</type>
+          <declname>Mode</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="21" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="146" bodyend="154"/>
+        <references refid="_p_i_d__v1_8h_1a3851a1a8ddec9eacd2e30a8a19bb8cc8" compoundref="_p_i_d__v1_8h" startline="12">AUTOMATIC</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool PID::Compute</definition>
+        <argsstring>()</argsstring>
+        <name>Compute</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="23" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="47" bodyend="75"/>
+        <references refid="_time_8cpp_1adea6c108853185c1d856fa38ec74992c" compoundref="_time_8cpp" startline="250" endline="272">now</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetOutputLimits</definition>
+        <argsstring>(double, double)</argsstring>
+        <name>SetOutputLimits</name>
+        <param>
+          <type>double</type>
+          <defname>Min</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Max</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="28" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="125" bodyend="139"/>
+        <referencedby refid="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" compoundref="_p_i_d__v1_8cpp" startline="20" endline="38">PID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetTunings</definition>
+        <argsstring>(double, double, double)</argsstring>
+        <name>SetTunings</name>
+        <param>
+          <type>double</type>
+          <defname>Kp</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Ki</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>Kd</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="35" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="83" bodyend="100"/>
+        <references refid="_p_i_d__v1_8h_1a00548cec6d104932bf79a65bac1c47e8" compoundref="_p_i_d__v1_8h" startline="15">REVERSE</references>
+        <referencedby refid="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" compoundref="_p_i_d__v1_8cpp" startline="20" endline="38">PID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetControllerDirection</definition>
+        <argsstring>(int)</argsstring>
+        <name>SetControllerDirection</name>
+        <param>
+          <type>int</type>
+          <defname>Direction</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="38" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="174" bodyend="183"/>
+        <referencedby refid="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" compoundref="_p_i_d__v1_8cpp" startline="20" endline="38">PID</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::SetSampleTime</definition>
+        <argsstring>(int)</argsstring>
+        <name>SetSampleTime</name>
+        <param>
+          <type>int</type>
+          <defname>NewSampleTime</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="42" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="105" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1ae5519c833b2887a0e6aad670d9b3d8b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PID::GetKp</definition>
+        <argsstring>()</argsstring>
+        <name>GetKp</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="48" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="190" bodyend="190"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1ac7ba6bc99c76c4378d699e176c81491c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PID::GetKi</definition>
+        <argsstring>()</argsstring>
+        <name>GetKi</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="49" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="191" bodyend="191"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a62b7e8dca41e724e1ad62dec930058d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double PID::GetKd</definition>
+        <argsstring>()</argsstring>
+        <name>GetKd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="50" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="192" bodyend="192"/>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1acc325db5e6a140b92c8199a66e03491b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PID::GetMode</definition>
+        <argsstring>()</argsstring>
+        <name>GetMode</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="51" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="193" bodyend="193"/>
+        <references refid="_p_i_d__v1_8h_1a3851a1a8ddec9eacd2e30a8a19bb8cc8" compoundref="_p_i_d__v1_8h" startline="12">AUTOMATIC</references>
+        <references refid="_p_i_d__v1_8h_1a8187a9af791c0a44ba67edd9cf266961" compoundref="_p_i_d__v1_8h" startline="13">MANUAL</references>
+      </memberdef>
+      <memberdef kind="function" id="class_p_i_d_1a2a8674f4c8937dfdf859f6a3ad9f45d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int PID::GetDirection</definition>
+        <argsstring>()</argsstring>
+        <name>GetDirection</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="52" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="194" bodyend="194"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void PID::Initialize</definition>
+        <argsstring>()</argsstring>
+        <name>Initialize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="55" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.cpp" bodystart="160" bodyend="166"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" line="6" column="1" bodyfile="Weather_Balloon/library/Arduino-PID-Library/PID_v1.h" bodystart="5" bodyend="78"/>
+    <listofallmembers>
+      <member refid="class_p_i_d_1a8d154fe921cba7963c49d7d2b42eccf1" prot="public" virt="non-virtual"><scope>PID</scope><name>Compute</name></member>
+      <member refid="class_p_i_d_1ac48886c62230f9c516a33e39595c8d35" prot="private" virt="non-virtual"><scope>PID</scope><name>controllerDirection</name></member>
+      <member refid="class_p_i_d_1a1592fdceb0d76a640e640d6050d8b89c" prot="private" virt="non-virtual"><scope>PID</scope><name>dispKd</name></member>
+      <member refid="class_p_i_d_1a7beb970d37564d923a5a1776cefdd600" prot="private" virt="non-virtual"><scope>PID</scope><name>dispKi</name></member>
+      <member refid="class_p_i_d_1ae17c110340266ddabea05cfbf28cee06" prot="private" virt="non-virtual"><scope>PID</scope><name>dispKp</name></member>
+      <member refid="class_p_i_d_1a2a8674f4c8937dfdf859f6a3ad9f45d5" prot="public" virt="non-virtual"><scope>PID</scope><name>GetDirection</name></member>
+      <member refid="class_p_i_d_1a62b7e8dca41e724e1ad62dec930058d8" prot="public" virt="non-virtual"><scope>PID</scope><name>GetKd</name></member>
+      <member refid="class_p_i_d_1ac7ba6bc99c76c4378d699e176c81491c" prot="public" virt="non-virtual"><scope>PID</scope><name>GetKi</name></member>
+      <member refid="class_p_i_d_1ae5519c833b2887a0e6aad670d9b3d8b8" prot="public" virt="non-virtual"><scope>PID</scope><name>GetKp</name></member>
+      <member refid="class_p_i_d_1acc325db5e6a140b92c8199a66e03491b" prot="public" virt="non-virtual"><scope>PID</scope><name>GetMode</name></member>
+      <member refid="class_p_i_d_1ab23e7d74b5f147c7e4bd7a9c2cdf0b52" prot="private" virt="non-virtual"><scope>PID</scope><name>inAuto</name></member>
+      <member refid="class_p_i_d_1aa0000d482704160750b8a1ec463152b0" prot="private" virt="non-virtual"><scope>PID</scope><name>Initialize</name></member>
+      <member refid="class_p_i_d_1aa49b01a2847728df130ee897a2c65a22" prot="private" virt="non-virtual"><scope>PID</scope><name>ITerm</name></member>
+      <member refid="class_p_i_d_1a0094a774f6f64b4a1a9f93fd877c5df4" prot="private" virt="non-virtual"><scope>PID</scope><name>kd</name></member>
+      <member refid="class_p_i_d_1a750722249a34a914f6e2f05cd9d4dee3" prot="private" virt="non-virtual"><scope>PID</scope><name>ki</name></member>
+      <member refid="class_p_i_d_1a1d61c12e44fa9917dfc5c104493f5f29" prot="private" virt="non-virtual"><scope>PID</scope><name>kp</name></member>
+      <member refid="class_p_i_d_1af5e573ec3778a93ac616a2ce3ef64420" prot="private" virt="non-virtual"><scope>PID</scope><name>lastInput</name></member>
+      <member refid="class_p_i_d_1afcb8eb131062be169f29fcc0733e7433" prot="private" virt="non-virtual"><scope>PID</scope><name>lastTime</name></member>
+      <member refid="class_p_i_d_1a2fdb78df9971f03d5c52326741899771" prot="private" virt="non-virtual"><scope>PID</scope><name>myInput</name></member>
+      <member refid="class_p_i_d_1a7aeb8c39345642aa7540f80a691b9c71" prot="private" virt="non-virtual"><scope>PID</scope><name>myOutput</name></member>
+      <member refid="class_p_i_d_1a1e15f064cf0cd4d199e2919b48cf3e69" prot="private" virt="non-virtual"><scope>PID</scope><name>mySetpoint</name></member>
+      <member refid="class_p_i_d_1a4769a252cfb87c908dc89e004af8c83a" prot="private" virt="non-virtual"><scope>PID</scope><name>outMax</name></member>
+      <member refid="class_p_i_d_1ae22e92ee8f1cbbaae115b649b2bd60a5" prot="private" virt="non-virtual"><scope>PID</scope><name>outMin</name></member>
+      <member refid="class_p_i_d_1aba833737b9cb8a9da181d392a0306c1b" prot="public" virt="non-virtual"><scope>PID</scope><name>PID</name></member>
+      <member refid="class_p_i_d_1a0dd517a3300badb571656b35f621947d" prot="private" virt="non-virtual"><scope>PID</scope><name>SampleTime</name></member>
+      <member refid="class_p_i_d_1a66df966f739e19482aaba38cf9308c4e" prot="public" virt="non-virtual"><scope>PID</scope><name>SetControllerDirection</name></member>
+      <member refid="class_p_i_d_1a68074bad88a8cc442ee03a036073d5d5" prot="public" virt="non-virtual"><scope>PID</scope><name>SetMode</name></member>
+      <member refid="class_p_i_d_1a5645914427bd740b12faa97cc25a8414" prot="public" virt="non-virtual"><scope>PID</scope><name>SetOutputLimits</name></member>
+      <member refid="class_p_i_d_1aaa1e0e67a0c97571bd62b326e6cf3b2e" prot="public" virt="non-virtual"><scope>PID</scope><name>SetSampleTime</name></member>
+      <member refid="class_p_i_d_1a848bb1bbeabd59d38c9c955958e3e798" prot="public" virt="non-virtual"><scope>PID</scope><name>SetTunings</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

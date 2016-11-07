@@ -1,0 +1,247 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_adafruit___s_h_t31_8h" kind="file" language="C++">
+    <compoundname>Adafruit_SHT31.h</compoundname>
+    <includes local="yes">WProgram.h</includes>
+    <includes local="yes">Wire.h</includes>
+    <includedby refid="_adafruit___s_h_t31_8cpp" local="yes">Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp</includedby>
+    <includedby refid="_weather___balloon_8cpp" local="yes">Weather_Balloon/Weather_Balloon.cpp</includedby>
+    <incdepgraph>
+      <node id="596">
+        <label>WProgram.h</label>
+      </node>
+      <node id="597">
+        <label>Wire.h</label>
+      </node>
+      <node id="595">
+        <label>Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h</label>
+        <link refid="Adafruit_SHT31.h"/>
+        <childnode refid="596" relation="include">
+        </childnode>
+        <childnode refid="597" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="600">
+        <label>Weather_Balloon/Weather_Balloon.cpp</label>
+        <link refid="_weather___balloon_8cpp"/>
+      </node>
+      <node id="598">
+        <label>Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h</label>
+        <link refid="Adafruit_SHT31.h"/>
+        <childnode refid="599" relation="include">
+        </childnode>
+        <childnode refid="600" relation="include">
+        </childnode>
+      </node>
+      <node id="599">
+        <label>Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.cpp</label>
+        <link refid="_adafruit___s_h_t31_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_adafruit___s_h_t31" prot="public">Adafruit_SHT31</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1a126bb81a04ac54c61287dd2b106bbfe2" prot="public" static="no">
+        <name>SHT31_DEFAULT_ADDR</name>
+        <initializer>0x44</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="24" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1a6c1080037a520d003d76ce2c7a3ee83d" prot="public" static="no">
+        <name>SHT31_MEAS_HIGHREP_STRETCH</name>
+        <initializer>0x2C06</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="25" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1a12be5d5a3bf97262d44ff4c212b107a9" prot="public" static="no">
+        <name>SHT31_MEAS_MEDREP_STRETCH</name>
+        <initializer>0x2C0D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="26" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1a82991434dd6a17cd4436c472ba57d20b" prot="public" static="no">
+        <name>SHT31_MEAS_LOWREP_STRETCH</name>
+        <initializer>0x2C10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="27" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1a8f2d795cc762c216df48a61c18d78c28" prot="public" static="no">
+        <name>SHT31_MEAS_HIGHREP</name>
+        <initializer>0x2400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="28" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_adafruit___s_h_t31_1a2b522bec65225d5c2aadfccd31bb91e0" compoundref="_adafruit___s_h_t31_8cpp" startline="62" endline="66">Adafruit_SHT31::readHumidity</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1abb77d0d6f5621d847e0faccfef864586" prot="public" static="no">
+        <name>SHT31_MEAS_MEDREP</name>
+        <initializer>0x240B</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="29" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1ae081e5ca6089e55a0876dcd63590c2ae" prot="public" static="no">
+        <name>SHT31_MEAS_LOWREP</name>
+        <initializer>0x2416</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="30" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1a6c1bb86c7a247385905fe05e0c520945" prot="public" static="no">
+        <name>SHT31_READSTATUS</name>
+        <initializer>0xF32D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="31" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="31" bodyend="-1"/>
+        <referencedby refid="class_adafruit___s_h_t31_1ae41f7910027c9a39afdb11aef45742ab" compoundref="_adafruit___s_h_t31_8cpp" startline="32" endline="40">Adafruit_SHT31::readStatus</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1a411f9db85b42acc85045a09289f4751a" prot="public" static="no">
+        <name>SHT31_CLEARSTATUS</name>
+        <initializer>0x3041</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="32" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1aab64dcf72dca550bfc3e5f30e5c9ec12" prot="public" static="no">
+        <name>SHT31_SOFTRESET</name>
+        <initializer>0x30A2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="33" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="33" bodyend="-1"/>
+        <referencedby refid="class_adafruit___s_h_t31_1a4cfa42c7211e1c5c3de411f3b099c827" compoundref="_adafruit___s_h_t31_8cpp" startline="42" endline="45">Adafruit_SHT31::reset</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1a7a966e359de2783149ec4d37d73a3125" prot="public" static="no">
+        <name>SHT31_HEATEREN</name>
+        <initializer>0x306D</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="34" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="34" bodyend="-1"/>
+        <referencedby refid="class_adafruit___s_h_t31_1a96d0021ed52302e3a47fd2eaa6c1282f" compoundref="_adafruit___s_h_t31_8cpp" startline="47" endline="52">Adafruit_SHT31::heater</referencedby>
+      </memberdef>
+      <memberdef kind="define" id="_adafruit___s_h_t31_8h_1a784f3898eaacc45a75545bb2d0f82485" prot="public" static="no">
+        <name>SHT31_HEATERDIS</name>
+        <initializer>0x3066</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" line="35" column="9" bodyfile="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h" bodystart="35" bodyend="-1"/>
+        <referencedby refid="class_adafruit___s_h_t31_1a96d0021ed52302e3a47fd2eaa6c1282f" compoundref="_adafruit___s_h_t31_8cpp" startline="47" endline="52">Adafruit_SHT31::heater</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/***************************************************<sp/></highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>This<sp/>is<sp/>a<sp/>library<sp/>for<sp/>the<sp/>SHT31<sp/>Digital<sp/>Humidity<sp/>&amp;<sp/>Temp<sp/>Sensor</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>Designed<sp/>specifically<sp/>to<sp/>work<sp/>with<sp/>the<sp/>SHT31<sp/>Digital<sp/>sensor<sp/>from<sp/>Adafruit</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>----&gt;<sp/>https://www.adafruit.com/products/2857</highlight></codeline>
+<codeline lineno="6"><highlight class="comment"></highlight></codeline>
+<codeline lineno="7"><highlight class="comment"><sp/><sp/>These<sp/>displays<sp/>use<sp/>I2C<sp/>to<sp/>communicate,<sp/>2<sp/>pins<sp/>are<sp/>required<sp/>to<sp/><sp/></highlight></codeline>
+<codeline lineno="8"><highlight class="comment"><sp/><sp/>interface</highlight></codeline>
+<codeline lineno="9"><highlight class="comment"><sp/><sp/>Adafruit<sp/>invests<sp/>time<sp/>and<sp/>resources<sp/>providing<sp/>this<sp/>open<sp/>source<sp/>code,<sp/></highlight></codeline>
+<codeline lineno="10"><highlight class="comment"><sp/><sp/>please<sp/>support<sp/>Adafruit<sp/>and<sp/>open-source<sp/>hardware<sp/>by<sp/>purchasing<sp/></highlight></codeline>
+<codeline lineno="11"><highlight class="comment"><sp/><sp/>products<sp/>from<sp/>Adafruit!</highlight></codeline>
+<codeline lineno="12"><highlight class="comment"></highlight></codeline>
+<codeline lineno="13"><highlight class="comment"><sp/><sp/>Written<sp/>by<sp/>Limor<sp/>Fried/Ladyada<sp/>for<sp/>Adafruit<sp/>Industries.<sp/><sp/></highlight></codeline>
+<codeline lineno="14"><highlight class="comment"><sp/><sp/>BSD<sp/>license,<sp/>all<sp/>text<sp/>above<sp/>must<sp/>be<sp/>included<sp/>in<sp/>any<sp/>redistribution</highlight></codeline>
+<codeline lineno="15"><highlight class="comment"><sp/>****************************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>(ARDUINO<sp/>&gt;=<sp/>100)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&quot;Arduino.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/>#include<sp/>&quot;WProgram.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Wire.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24" refid="_adafruit___s_h_t31_8h_1a126bb81a04ac54c61287dd2b106bbfe2" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_DEFAULT_ADDR<sp/><sp/><sp/><sp/>0x44</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25" refid="_adafruit___s_h_t31_8h_1a6c1080037a520d003d76ce2c7a3ee83d" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_MEAS_HIGHREP_STRETCH<sp/>0x2C06</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26" refid="_adafruit___s_h_t31_8h_1a12be5d5a3bf97262d44ff4c212b107a9" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_MEAS_MEDREP_STRETCH<sp/><sp/>0x2C0D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_adafruit___s_h_t31_8h_1a82991434dd6a17cd4436c472ba57d20b" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_MEAS_LOWREP_STRETCH<sp/><sp/>0x2C10</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="_adafruit___s_h_t31_8h_1a8f2d795cc762c216df48a61c18d78c28" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_MEAS_HIGHREP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2400</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29" refid="_adafruit___s_h_t31_8h_1abb77d0d6f5621d847e0faccfef864586" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_MEAS_MEDREP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x240B</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="_adafruit___s_h_t31_8h_1ae081e5ca6089e55a0876dcd63590c2ae" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_MEAS_LOWREP<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x2416</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31" refid="_adafruit___s_h_t31_8h_1a6c1bb86c7a247385905fe05e0c520945" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_READSTATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0xF32D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32" refid="_adafruit___s_h_t31_8h_1a411f9db85b42acc85045a09289f4751a" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_CLEARSTATUS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3041</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="_adafruit___s_h_t31_8h_1aab64dcf72dca550bfc3e5f30e5c9ec12" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_SOFTRESET<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x30A2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34" refid="_adafruit___s_h_t31_8h_1a7a966e359de2783149ec4d37d73a3125" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_HEATEREN<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x306D</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35" refid="_adafruit___s_h_t31_8h_1a784f3898eaacc45a75545bb2d0f82485" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SHT31_HEATERDIS<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>0x3066</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="class_adafruit___s_h_t31" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_adafruit___s_h_t31" kindref="compound">Adafruit_SHT31</ref><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="class_adafruit___s_h_t31_1a3c675ce344f1dd28b04764de3d7b5104" kindref="member">Adafruit_SHT31</ref>();</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a104eb2dfd27a732420e1fc3755516690" kindref="member">begin</ref>(uint8_t<sp/>i2caddr<sp/>=<sp/><ref refid="_adafruit___s_h_t31_8h_1a126bb81a04ac54c61287dd2b106bbfe2" kindref="member">SHT31_DEFAULT_ADDR</ref>);</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a3b518218705509eb0ab35050bf79f00a" kindref="member">readTemperature</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a2b522bec65225d5c2aadfccd31bb91e0" kindref="member">readHumidity</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>uint16_t<sp/><ref refid="class_adafruit___s_h_t31_1ae41f7910027c9a39afdb11aef45742ab" kindref="member">readStatus</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a4cfa42c7211e1c5c3de411f3b099c827" kindref="member">reset</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_adafruit___s_h_t31_1a96d0021ed52302e3a47fd2eaa6c1282f" kindref="member">heater</ref>(</highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>uint8_t<sp/><ref refid="class_adafruit___s_h_t31_1a9fe74b3c5be1794ec00a961d91227716" kindref="member">crc8</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint8_t<sp/>*data,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>len);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>readTempHum(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>writeCommand(uint16_t<sp/>cmd);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/>uint8_t<sp/>_i2caddr;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">boolean</highlight><highlight class="normal"><sp/>readData(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>humidity,<sp/>temp;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/Adafruit_SHT31-master/Adafruit_SHT31.h"/>
+  </compounddef>
+</doxygen>

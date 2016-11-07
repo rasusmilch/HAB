@@ -1,0 +1,238 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_tiny_g_p_s_decimal" kind="struct" language="C++" prot="public">
+    <compoundname>TinyGPSDecimal</compoundname>
+    <derivedcompoundref refid="struct_tiny_g_p_s_altitude" prot="public" virt="non-virtual">TinyGPSAltitude</derivedcompoundref>
+    <derivedcompoundref refid="struct_tiny_g_p_s_course" prot="public" virt="non-virtual">TinyGPSCourse</derivedcompoundref>
+    <derivedcompoundref refid="struct_tiny_g_p_s_speed" prot="public" virt="non-virtual">TinyGPSSpeed</derivedcompoundref>
+    <includes refid="_tiny_g_p_s_09_09_8h" local="no">TinyGPS++.h</includes>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="struct_tiny_g_p_s_decimal_1a6501fd5ef19ae166d43e0e5781609ee2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>friend class</type>
+        <definition>friend class TinyGPSPlus</definition>
+        <argsstring></argsstring>
+        <name>TinyGPSPlus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="128" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="struct_tiny_g_p_s_decimal_1a858e8762c24b39ee28e5076275affef2" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TinyGPSDecimal::valid</definition>
+        <argsstring></argsstring>
+        <name>valid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="139" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tiny_g_p_s_decimal_1af0803d568a59f6212f2e88e2e5ee6077" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool TinyGPSDecimal::updated</definition>
+        <argsstring></argsstring>
+        <name>updated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="139" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tiny_g_p_s_decimal_1aaa47eb71175c36d4ba3ba0e94d0c752e" prot="private" static="no" mutable="no">
+        <type>uint32_t</type>
+        <definition>uint32_t TinyGPSDecimal::lastCommitTime</definition>
+        <argsstring></argsstring>
+        <name>lastCommitTime</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="140" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tiny_g_p_s_decimal_1a187fd7724408f9828603ea4368eccb1d" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t TinyGPSDecimal::val</definition>
+        <argsstring></argsstring>
+        <name>val</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="141" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_tiny_g_p_s_decimal_1ad8fa7dfb23e381b2353ea4ecaeaebc8b" prot="private" static="no" mutable="no">
+        <type>int32_t</type>
+        <definition>int32_t TinyGPSDecimal::newval</definition>
+        <argsstring></argsstring>
+        <name>newval</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="141" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="struct_tiny_g_p_s_decimal_1a2a1d868525e903eb193b7a36cdd76984" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TinyGPSDecimal::isValid</definition>
+        <argsstring>() const </argsstring>
+        <name>isValid</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="130" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="130" bodyend="130"/>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_decimal_1ae8b7f9f7719c2974ebd3b34759493d15" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool TinyGPSDecimal::isUpdated</definition>
+        <argsstring>() const </argsstring>
+        <name>isUpdated</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="131" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_decimal_1ab80191a3e02c92ad3f674b5df2ab752f" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint32_t</type>
+        <definition>uint32_t TinyGPSDecimal::age</definition>
+        <argsstring>() const </argsstring>
+        <name>age</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="132" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="132" bodyend="132"/>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_decimal_1ac3ce80976e5d8456e9f211b910a6cb19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int32_t</type>
+        <definition>int32_t TinyGPSDecimal::value</definition>
+        <argsstring>()</argsstring>
+        <name>value</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="133" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="133" bodyend="133"/>
+        <referencedby refid="_weather___balloon_8cpp_1ab14d778dd0d52177eb147802a870639d" compoundref="_weather___balloon_8cpp" startline="1458" endline="1559">read_GPS</referencedby>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_decimal_1ae09cbb1856cd57c7dcee52fb5fb1ba16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TinyGPSDecimal::TinyGPSDecimal</definition>
+        <argsstring>()</argsstring>
+        <name>TinyGPSDecimal</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="135" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="135" bodyend="136"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="struct_tiny_g_p_s_decimal_1a37516916786d5c66990d5a1797cc8f86" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TinyGPSDecimal::commit</definition>
+        <argsstring>()</argsstring>
+        <name>commit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="142" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.cpp" bodystart="434" bodyend="439"/>
+      </memberdef>
+      <memberdef kind="function" id="struct_tiny_g_p_s_decimal_1a804fc590e73489e2f14b0daf7c8112b8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void TinyGPSDecimal::set</definition>
+        <argsstring>(const char *term)</argsstring>
+        <name>set</name>
+        <param>
+          <type>const char *</type>
+          <declname>term</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="143" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.cpp" bodystart="441" bodyend="444"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="426">
+        <label>TinyGPSAltitude</label>
+        <link refid="struct_tiny_g_p_s_altitude"/>
+        <childnode refid="425" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="427">
+        <label>TinyGPSCourse</label>
+        <link refid="struct_tiny_g_p_s_course"/>
+        <childnode refid="425" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="425">
+        <label>TinyGPSDecimal</label>
+        <link refid="struct_tiny_g_p_s_decimal"/>
+      </node>
+      <node id="428">
+        <label>TinyGPSSpeed</label>
+        <link refid="struct_tiny_g_p_s_speed"/>
+        <childnode refid="425" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <location file="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" line="127" column="1" bodyfile="Weather_Balloon/library/TinyGPSPlus-0.94b/TinyGPS++.h" bodystart="126" bodyend="144"/>
+    <listofallmembers>
+      <member refid="struct_tiny_g_p_s_decimal_1ab80191a3e02c92ad3f674b5df2ab752f" prot="public" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>age</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1a37516916786d5c66990d5a1797cc8f86" prot="private" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>commit</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ae8b7f9f7719c2974ebd3b34759493d15" prot="public" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>isUpdated</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1a2a1d868525e903eb193b7a36cdd76984" prot="public" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>isValid</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1aaa47eb71175c36d4ba3ba0e94d0c752e" prot="private" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>lastCommitTime</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ad8fa7dfb23e381b2353ea4ecaeaebc8b" prot="private" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>newval</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1a804fc590e73489e2f14b0daf7c8112b8" prot="private" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>set</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ae09cbb1856cd57c7dcee52fb5fb1ba16" prot="public" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>TinyGPSDecimal</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1a6501fd5ef19ae166d43e0e5781609ee2" prot="public" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>TinyGPSPlus</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1af0803d568a59f6212f2e88e2e5ee6077" prot="private" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>updated</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1a187fd7724408f9828603ea4368eccb1d" prot="private" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>val</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1a858e8762c24b39ee28e5076275affef2" prot="private" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>valid</name></member>
+      <member refid="struct_tiny_g_p_s_decimal_1ac3ce80976e5d8456e9f211b910a6cb19" prot="public" virt="non-virtual"><scope>TinyGPSDecimal</scope><name>value</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

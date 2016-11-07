@@ -1,0 +1,275 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_r_t_c___d_s3234_8cpp" kind="file" language="C++">
+    <compoundname>RTC_DS3234.cpp</compoundname>
+    <includes local="no">WProgram.h</includes>
+    <includes local="no">avr/pgmspace.h</includes>
+    <includes local="no">SPI.h</includes>
+    <includes refid="_r_t_clib_8h" local="yes">RTClib.h</includes>
+    <includes refid="_r_t_c___d_s3234_8h" local="yes">RTC_DS3234.h</includes>
+    <incdepgraph>
+      <node id="912">
+        <label>SPI.h</label>
+      </node>
+      <node id="914">
+        <label>RTC_DS3234.h</label>
+        <link refid="_r_t_c___d_s3234_8h"/>
+        <childnode refid="913" relation="include">
+        </childnode>
+      </node>
+      <node id="909">
+        <label>Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp</label>
+        <link refid="RTC_DS3234.cpp"/>
+        <childnode refid="910" relation="include">
+        </childnode>
+        <childnode refid="911" relation="include">
+        </childnode>
+        <childnode refid="912" relation="include">
+        </childnode>
+        <childnode refid="913" relation="include">
+        </childnode>
+        <childnode refid="914" relation="include">
+        </childnode>
+      </node>
+      <node id="910">
+        <label>WProgram.h</label>
+      </node>
+      <node id="911">
+        <label>avr/pgmspace.h</label>
+      </node>
+      <node id="913">
+        <label>RTClib.h</label>
+        <link refid="_r_t_clib_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="_r_t_c___d_s3234_8cpp_1af94e227239a9ca12b8bf1f615ae5167b" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CONTROL_R</definition>
+        <argsstring></argsstring>
+        <name>CONTROL_R</name>
+        <initializer>= 0x0e</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" line="19" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="19" bodyend="-1"/>
+        <referencedby refid="class_r_t_c___d_s3234_1aff58814e7f5706f341edbf9d68c4665b" compoundref="_r_t_c___d_s3234_8cpp" startline="63" endline="70">RTC_DS3234::isrunning</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_r_t_c___d_s3234_8cpp_1aff177da57a6ea04225cae3333342f1af" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CONTROL_W</definition>
+        <argsstring></argsstring>
+        <name>CONTROL_W</name>
+        <initializer>= 0x8e</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" line="20" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="20" bodyend="-1"/>
+        <referencedby refid="class_r_t_c___d_s3234_1acf87a4369cb5b08fd1be62696a6be1a8" compoundref="_r_t_c___d_s3234_8cpp" startline="30" endline="55">RTC_DS3234::begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_r_t_c___d_s3234_8cpp_1a5520139e3cab7d21fe8180ab7eb7e9d2" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CONTROL_STATUS_R</definition>
+        <argsstring></argsstring>
+        <name>CONTROL_STATUS_R</name>
+        <initializer>= 0x0f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" line="21" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_t_c___d_s3234_8cpp_1afe27db885984c276cf89d59cc670e7c2" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int CONTROL_STATUS_W</definition>
+        <argsstring></argsstring>
+        <name>CONTROL_STATUS_W</name>
+        <initializer>= 0x8f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" line="22" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="22" bodyend="-1"/>
+        <referencedby refid="class_r_t_c___d_s3234_1acf87a4369cb5b08fd1be62696a6be1a8" compoundref="_r_t_c___d_s3234_8cpp" startline="30" endline="55">RTC_DS3234::begin</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_r_t_c___d_s3234_8cpp_1a9e9f9a8cd30deddc70fded9be7e48e30" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int SECONDS_R</definition>
+        <argsstring></argsstring>
+        <name>SECONDS_R</name>
+        <initializer>= 0x00</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" line="23" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="23" bodyend="-1"/>
+        <referencedby refid="class_r_t_c___d_s3234_1a1b22090fcfdbef26725da0232157a3c1" compoundref="_r_t_c___d_s3234_8cpp" startline="87" endline="101">RTC_DS3234::now</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_r_t_c___d_s3234_8cpp_1aead283c6b011a1d7b21253c373d3fda4" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int SECONDS_W</definition>
+        <argsstring></argsstring>
+        <name>SECONDS_W</name>
+        <initializer>= 0x80</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" line="24" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="24" bodyend="-1"/>
+        <referencedby refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" compoundref="_r_t_c___d_s3234_8cpp" startline="72" endline="85">RTC_DS3234::adjust</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="_r_t_c___d_s3234_8cpp_1ac80cfaafac6f8a5ee973e5b6bd594048" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int EOSC</definition>
+        <argsstring></argsstring>
+        <name>EOSC</name>
+        <initializer>= 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" line="27" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="_r_t_c___d_s3234_8cpp_1a31835317abb79d64c0ce0aae28c72796" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int OSF</definition>
+        <argsstring></argsstring>
+        <name>OSF</name>
+        <initializer>= 7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" line="28" column="1" bodyfile="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp" bodystart="28" bodyend="-1"/>
+        <referencedby refid="class_r_t_c___d_s3234_1aff58814e7f5706f341edbf9d68c4665b" compoundref="_r_t_c___d_s3234_8cpp" startline="63" endline="70">RTC_DS3234::isrunning</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/>Code<sp/>by<sp/>JeeLabs<sp/>http://news.jeelabs.org/code/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Released<sp/>to<sp/>the<sp/>public<sp/>domain!<sp/>Enjoy!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ARDUINO<sp/>&lt;<sp/>100</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;WProgram.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;avr/pgmspace.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;SPI.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_r_t_clib_8h" kindref="compound">RTClib.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_r_t_c___d_s3234_8h" kindref="compound">RTC_DS3234.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">//<sp/>RTC_DS3234<sp/>implementation</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Registers<sp/>we<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19" refid="_r_t_c___d_s3234_8cpp_1af94e227239a9ca12b8bf1f615ae5167b" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_c___d_s3234_8cpp_1af94e227239a9ca12b8bf1f615ae5167b" kindref="member">CONTROL_R</ref><sp/>=<sp/>0x0e;</highlight></codeline>
+<codeline lineno="20" refid="_r_t_c___d_s3234_8cpp_1aff177da57a6ea04225cae3333342f1af" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_c___d_s3234_8cpp_1aff177da57a6ea04225cae3333342f1af" kindref="member">CONTROL_W</ref><sp/>=<sp/>0x8e;</highlight></codeline>
+<codeline lineno="21" refid="_r_t_c___d_s3234_8cpp_1a5520139e3cab7d21fe8180ab7eb7e9d2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_c___d_s3234_8cpp_1a5520139e3cab7d21fe8180ab7eb7e9d2" kindref="member">CONTROL_STATUS_R</ref><sp/>=<sp/>0x0f;</highlight></codeline>
+<codeline lineno="22" refid="_r_t_c___d_s3234_8cpp_1afe27db885984c276cf89d59cc670e7c2" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_c___d_s3234_8cpp_1afe27db885984c276cf89d59cc670e7c2" kindref="member">CONTROL_STATUS_W</ref><sp/>=<sp/>0x8f;</highlight></codeline>
+<codeline lineno="23" refid="_r_t_c___d_s3234_8cpp_1a9e9f9a8cd30deddc70fded9be7e48e30" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_c___d_s3234_8cpp_1a9e9f9a8cd30deddc70fded9be7e48e30" kindref="member">SECONDS_R</ref><sp/>=<sp/>0x00;</highlight></codeline>
+<codeline lineno="24" refid="_r_t_c___d_s3234_8cpp_1aead283c6b011a1d7b21253c373d3fda4" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_c___d_s3234_8cpp_1aead283c6b011a1d7b21253c373d3fda4" kindref="member">SECONDS_W</ref><sp/>=<sp/>0x80;</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Bits<sp/>we<sp/>use</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27" refid="_r_t_c___d_s3234_8cpp_1ac80cfaafac6f8a5ee973e5b6bd594048" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_c___d_s3234_8cpp_1ac80cfaafac6f8a5ee973e5b6bd594048" kindref="member">EOSC</ref><sp/>=<sp/>7;</highlight></codeline>
+<codeline lineno="28" refid="_r_t_c___d_s3234_8cpp_1a31835317abb79d64c0ce0aae28c72796" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="_r_t_c___d_s3234_8cpp_1a31835317abb79d64c0ce0aae28c72796" kindref="member">OSF</ref><sp/>=<sp/>7;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_r_t_c___d_s3234_1acf87a4369cb5b08fd1be62696a6be1a8" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c___d_s3234_1acf87a4369cb5b08fd1be62696a6be1a8" kindref="member">RTC_DS3234::begin</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/>pinMode(cs_pin,OUTPUT);</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(HIGH);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.setBitOrder(MSBFIRST);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Ugh!<sp/><sp/>In<sp/>order<sp/>to<sp/>get<sp/>this<sp/>to<sp/>interop<sp/>with<sp/>other<sp/>SPI<sp/>devices,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//This<sp/>has<sp/>to<sp/>be<sp/>done<sp/>in<sp/>cs()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.setDataMode(SPI_MODE1);</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Enable<sp/>oscillator,<sp/>disable<sp/>square<sp/>wave,<sp/>alarms</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(LOW);</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_c___d_s3234_8cpp_1aff177da57a6ea04225cae3333342f1af" kindref="member">CONTROL_W</ref>);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(0x0);</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(HIGH);</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(1);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Clear<sp/>oscilator<sp/>stop<sp/>flag,<sp/>32kHz<sp/>pin</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(LOW);</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_c___d_s3234_8cpp_1afe27db885984c276cf89d59cc670e7c2" kindref="member">CONTROL_STATUS_W</ref>);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(0x0);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(HIGH);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/>delay(1);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">RTC_DS3234::cs</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>_value)</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.setDataMode(SPI_MODE1);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/>digitalWrite(cs_pin,_value);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63" refid="class_r_t_c___d_s3234_1aff58814e7f5706f341edbf9d68c4665b" refkind="member"><highlight class="normal">uint8_t<sp/><ref refid="class_r_t_c___d_s3234_1aff58814e7f5706f341edbf9d68c4665b" kindref="member">RTC_DS3234::isrunning</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="64"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(LOW);</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_c___d_s3234_8cpp_1af94e227239a9ca12b8bf1f615ae5167b" kindref="member">CONTROL_R</ref>);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ss<sp/>=<sp/>SPI.transfer(-1);</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(HIGH);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>!(ss<sp/>&amp;<sp/>_BV(<ref refid="_r_t_c___d_s3234_8cpp_1a31835317abb79d64c0ce0aae28c72796" kindref="member">OSF</ref>));</highlight></codeline>
+<codeline lineno="70"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_r_t_c___d_s3234_1a13766581ca199cae55d02327c39f78da" kindref="member">RTC_DS3234::adjust</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="class_date_time" kindref="compound">DateTime</ref>&amp;<sp/>dt)</highlight></codeline>
+<codeline lineno="73"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(LOW);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_c___d_s3234_8cpp_1aead283c6b011a1d7b21253c373d3fda4" kindref="member">SECONDS_W</ref>);</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" kindref="member">bin2bcd</ref>(dt.<ref refid="class_date_time_1a9b9a89a83e823b4a55e731d2b2d82f60" kindref="member">second</ref>()));</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" kindref="member">bin2bcd</ref>(dt.<ref refid="class_date_time_1a9990c5958c55b3aa7018e21df9d490e5" kindref="member">minute</ref>()));</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" kindref="member">bin2bcd</ref>(dt.<ref refid="class_date_time_1a71816802ff06e06d53ae3e7f420f0196" kindref="member">hour</ref>()));</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" kindref="member">bin2bcd</ref>(dt.<ref refid="class_date_time_1a4f3e0999a04238348adf390c29b889f9" kindref="member">dayOfWeek</ref>()));</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" kindref="member">bin2bcd</ref>(dt.<ref refid="class_date_time_1a0cedf8c399d4a38df0b8b8c4049bbac4" kindref="member">day</ref>()));</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" kindref="member">bin2bcd</ref>(dt.<ref refid="class_date_time_1a58beb18aec346e7081d02a2962032a43" kindref="member">month</ref>()));</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_clib_8cpp_1ab89a9f89f9d868e129c69675bf78d9b6" kindref="member">bin2bcd</ref>(dt.<ref refid="class_date_time_1a019cf3799acc8c9a44fdc501fce33881" kindref="member">year</ref>()<sp/>-<sp/>2000));</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(HIGH);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"></highlight></codeline>
+<codeline lineno="87" refid="class_r_t_c___d_s3234_1a1b22090fcfdbef26725da0232157a3c1" refkind="member"><highlight class="normal"><ref refid="class_date_time" kindref="compound">DateTime</ref><sp/><ref refid="class_r_t_c___d_s3234_1a1b22090fcfdbef26725da0232157a3c1" kindref="member">RTC_DS3234::now</ref>()</highlight></codeline>
+<codeline lineno="88"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(LOW);</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(<ref refid="_r_t_c___d_s3234_8cpp_1a9e9f9a8cd30deddc70fded9be7e48e30" kindref="member">SECONDS_R</ref>);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>ss<sp/>=<sp/><ref refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" kindref="member">bcd2bin</ref>(SPI.transfer(-1)<sp/>&amp;<sp/>0x7F);</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>mm<sp/>=<sp/><ref refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" kindref="member">bcd2bin</ref>(SPI.transfer(-1));</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>hh<sp/>=<sp/><ref refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" kindref="member">bcd2bin</ref>(SPI.transfer(-1));</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/>SPI.transfer(-1);</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>d<sp/>=<sp/><ref refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" kindref="member">bcd2bin</ref>(SPI.transfer(-1));</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>m<sp/>=<sp/><ref refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" kindref="member">bcd2bin</ref>(SPI.transfer(-1));</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>uint16_t<sp/>y<sp/>=<sp/><ref refid="_r_t_clib_8cpp_1a916290df5459cfa1a9d590946ed552ac" kindref="member">bcd2bin</ref>(SPI.transfer(-1))<sp/>+<sp/>2000;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_r_t_c___d_s3234_1a4c3b3cf6e91e926d0d038b8d60a99334" kindref="member">cs</ref>(HIGH);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="class_date_time" kindref="compound">DateTime</ref><sp/>(y,<sp/>m,<sp/>d,<sp/>hh,<sp/>mm,<sp/>ss);</highlight></codeline>
+<codeline lineno="101"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment">//<sp/>vim:ai:cin:sw=4<sp/>sts=4<sp/>ft=cpp</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/RTClib-master/RTC_DS3234.cpp"/>
+  </compounddef>
+</doxygen>

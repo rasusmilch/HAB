@@ -1,0 +1,7 @@
+<map id="Adafruit_ADXL345_Unified::readRegister" name="Adafruit_ADXL345_Unified::readRegister">
+<area shape="rect" id="node2" href="$class_adafruit___a_d_x_l345___unified.html#a3b8ae7da9a66e28b38b70a08c5646b02" title="Gets the data rate for the ADXL345 (controls power consumption) " alt="" coords="225,5,397,47"/>
+<area shape="rect" id="node3" href="$class_adafruit___a_d_x_l345___unified.html#acf54ca46aa7e6a613807f489711a8ceb" title="Read the device ID (can be used to check connection) " alt="" coords="225,71,397,112"/>
+<area shape="rect" id="node5" href="$class_adafruit___a_d_x_l345___unified.html#adcdcd1ddcd58af6b1d4f85f9ab30d7a4" title="Sets the g range for the accelerometer. " alt="" coords="225,136,397,177"/>
+<area shape="rect" id="node6" href="$class_adafruit___a_d_x_l345___unified.html#ad722e964df59c7691b1666472940aa99" title="Sets the g range for the accelerometer. " alt="" coords="225,201,397,243"/>
+<area shape="rect" id="node4" href="$class_adafruit___a_d_x_l345___unified.html#a55b74a63bbb1317228d5bb5905589a02" title="Setups the HW (reads coefficients values, etc.) " alt="" coords="445,71,617,112"/>
+</map>

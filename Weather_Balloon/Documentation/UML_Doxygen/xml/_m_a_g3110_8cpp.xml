@@ -1,0 +1,184 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="_m_a_g3110_8cpp" kind="file" language="C++">
+    <compoundname>MAG3110.cpp</compoundname>
+    <includes local="no">Arduino.h</includes>
+    <includes refid="_m_a_g3110_8h" local="yes">MAG3110.h</includes>
+    <includes local="no">Wire.h</includes>
+    <incdepgraph>
+      <node id="866">
+        <label>Wire.h</label>
+      </node>
+      <node id="863">
+        <label>Weather_Balloon/library/MAG3110/MAG3110.cpp</label>
+        <link refid="MAG3110.cpp"/>
+        <childnode refid="864" relation="include">
+        </childnode>
+        <childnode refid="865" relation="include">
+        </childnode>
+        <childnode refid="866" relation="include">
+        </childnode>
+      </node>
+      <node id="864">
+        <label>Arduino.h</label>
+      </node>
+      <node id="865">
+        <label>MAG3110.h</label>
+        <link refid="_m_a_g3110_8h"/>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" prot="public" static="no">
+        <name>MAG_ADDR</name>
+        <initializer>0x0E</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/MAG3110/MAG3110.cpp" line="5" column="9" bodyfile="Weather_Balloon/library/MAG3110/MAG3110.cpp" bodystart="5" bodyend="-1"/>
+        <referencedby refid="class_m_a_g3110_1a094c8d196c12361b79fb8664fb90524b" compoundref="_m_a_g3110_8cpp" startline="16" endline="28">MAG3110::config</referencedby>
+        <referencedby refid="class_m_a_g3110_1aac2dfb191c771fb272b24b081fe26fc0" compoundref="_m_a_g3110_8cpp" startline="30" endline="61">MAG3110::read_x</referencedby>
+        <referencedby refid="class_m_a_g3110_1a5e1448a4f0a583e64e81982d37f4cddc" compoundref="_m_a_g3110_8cpp" startline="65" endline="96">MAG3110::read_y</referencedby>
+        <referencedby refid="class_m_a_g3110_1ae21332e9cb2f99dc7cbbf482c677ee85" compoundref="_m_a_g3110_8cpp" startline="98" endline="129">MAG3110::read_z</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;Arduino.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_m_a_g3110_8h" kindref="compound">MAG3110.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Wire.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight></codeline>
+<codeline lineno="5" refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MAG_ADDR<sp/><sp/>0x0E<sp/>//7-bit<sp/>address<sp/>for<sp/>the<sp/>MAG3110,<sp/>doesn&apos;t<sp/>change</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8" refid="class_m_a_g3110_1a6b1766cd6acdd6e8cfa54823c2fc4648" refkind="member"><highlight class="normal"><ref refid="class_m_a_g3110_1a6b1766cd6acdd6e8cfa54823c2fc4648" kindref="member">MAG3110::MAG3110</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//config();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12" refid="class_m_a_g3110_1a7bbd18f263a5a5f267983c9a6836dd63" refkind="member"><highlight class="normal"><ref refid="class_m_a_g3110_1a7bbd18f263a5a5f267983c9a6836dd63" kindref="member">MAG3110::~MAG3110</ref>()<sp/>{</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//dtor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_m_a_g3110_1a094c8d196c12361b79fb8664fb90524b" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_m_a_g3110_1a094c8d196c12361b79fb8664fb90524b" kindref="member">MAG3110::config</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>);<sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>to<sp/>device<sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(0x11);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cntrl<sp/>register2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(0x80);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>0x80,<sp/>enable<sp/>auto<sp/>resets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stop<sp/>transmitting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>delay(15);</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>);<sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>to<sp/>device<sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(0x10);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cntrl<sp/>register1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(1);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>send<sp/>0x01,<sp/>active<sp/>mode</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stop<sp/>transmitting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30" refid="class_m_a_g3110_1aac2dfb191c771fb272b24b081fe26fc0" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_a_g3110_1aac2dfb191c771fb272b24b081fe26fc0" kindref="member">MAG3110::read_x</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xl,<sp/>xh;<sp/><sp/></highlight><highlight class="comment">//define<sp/>the<sp/>MSB<sp/>and<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>);<sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>to<sp/>device<sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(0x01);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>x<sp/>MSB<sp/>reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stop<sp/>transmitting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>delayMicroseconds(2);<sp/></highlight><highlight class="comment">//needs<sp/>at<sp/>least<sp/>1.3us<sp/>free<sp/>time<sp/>between<sp/>start<sp/>and<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>request<sp/>1<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.available())<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slave<sp/>may<sp/>send<sp/>less<sp/>than<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>xh<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();<sp/></highlight><highlight class="comment">//<sp/>receive<sp/>the<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/>delayMicroseconds(2);<sp/></highlight><highlight class="comment">//needs<sp/>at<sp/>least<sp/>1.3us<sp/>free<sp/>time<sp/>between<sp/>start<sp/>and<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>);<sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>to<sp/>device<sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(0x02);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>x<sp/>LSB<sp/>reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stop<sp/>transmitting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/>delayMicroseconds(2);<sp/></highlight><highlight class="comment">//needs<sp/>at<sp/>least<sp/>1.3us<sp/>free<sp/>time<sp/>between<sp/>start<sp/>and<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>request<sp/>1<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.available())<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slave<sp/>may<sp/>send<sp/>less<sp/>than<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>xl<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();<sp/></highlight><highlight class="comment">//<sp/>receive<sp/>the<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>xout<sp/>=<sp/>(xl|(xh<sp/>&lt;&lt;<sp/>8));<sp/></highlight><highlight class="comment">//concatenate<sp/>the<sp/>MSB<sp/>and<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>xout;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight></codeline>
+<codeline lineno="65" refid="class_m_a_g3110_1a5e1448a4f0a583e64e81982d37f4cddc" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_a_g3110_1a5e1448a4f0a583e64e81982d37f4cddc" kindref="member">MAG3110::read_y</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yl,<sp/>yh;<sp/><sp/></highlight><highlight class="comment">//define<sp/>the<sp/>MSB<sp/>and<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>);<sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>to<sp/>device<sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(0x03);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>y<sp/>MSB<sp/>reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stop<sp/>transmitting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>delayMicroseconds(2);<sp/></highlight><highlight class="comment">//needs<sp/>at<sp/>least<sp/>1.3us<sp/>free<sp/>time<sp/>between<sp/>start<sp/>and<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>request<sp/>1<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.available())<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slave<sp/>may<sp/>send<sp/>less<sp/>than<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/>yh<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();<sp/></highlight><highlight class="comment">//<sp/>receive<sp/>the<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>delayMicroseconds(2);<sp/></highlight><highlight class="comment">//needs<sp/>at<sp/>least<sp/>1.3us<sp/>free<sp/>time<sp/>between<sp/>start<sp/>and<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>);<sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>to<sp/>device<sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(0x04);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>y<sp/>LSB<sp/>reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stop<sp/>transmitting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/>delayMicroseconds(2);<sp/></highlight><highlight class="comment">//needs<sp/>at<sp/>least<sp/>1.3us<sp/>free<sp/>time<sp/>between<sp/>start<sp/>and<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>request<sp/>1<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.available())<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slave<sp/>may<sp/>send<sp/>less<sp/>than<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>yl<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();<sp/></highlight><highlight class="comment">//<sp/>receive<sp/>the<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>yout<sp/>=<sp/>(yl|(yh<sp/>&lt;&lt;<sp/>8));<sp/></highlight><highlight class="comment">//concatenate<sp/>the<sp/>MSB<sp/>and<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>yout;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98" refid="class_m_a_g3110_1ae21332e9cb2f99dc7cbbf482c677ee85" refkind="member"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="class_m_a_g3110_1ae21332e9cb2f99dc7cbbf482c677ee85" kindref="member">MAG3110::read_z</ref>(</highlight><highlight class="keywordtype">void</highlight><highlight class="normal">)<sp/>{</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>zl,<sp/>zh;<sp/><sp/></highlight><highlight class="comment">//define<sp/>the<sp/>MSB<sp/>and<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>);<sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>to<sp/>device<sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(0x05);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>z<sp/>MSB<sp/>reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stop<sp/>transmitting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>delayMicroseconds(2);<sp/></highlight><highlight class="comment">//needs<sp/>at<sp/>least<sp/>1.3us<sp/>free<sp/>time<sp/>between<sp/>start<sp/>and<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>request<sp/>1<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.available())<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slave<sp/>may<sp/>send<sp/>less<sp/>than<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/>zh<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();<sp/></highlight><highlight class="comment">//<sp/>receive<sp/>the<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>delayMicroseconds(2);<sp/></highlight><highlight class="comment">//needs<sp/>at<sp/>least<sp/>1.3us<sp/>free<sp/>time<sp/>between<sp/>start<sp/>and<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.beginTransmission(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>);<sp/></highlight><highlight class="comment">//<sp/>transmit<sp/>to<sp/>device<sp/>0x0E</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.write(0x06);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>z<sp/>LSB<sp/>reg</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.endTransmission();<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>stop<sp/>transmitting</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/>delayMicroseconds(2);<sp/></highlight><highlight class="comment">//needs<sp/>at<sp/>least<sp/>1.3us<sp/>free<sp/>time<sp/>between<sp/>start<sp/>and<sp/>stop</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.requestFrom(<ref refid="_m_a_g3110_8cpp_1ac14381c2b4b24a3e88b3591b1190b3eb" kindref="member">MAG_ADDR</ref>,<sp/>1);<sp/></highlight><highlight class="comment">//<sp/>request<sp/>1<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(<ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.available())<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>slave<sp/>may<sp/>send<sp/>less<sp/>than<sp/>requested</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>zl<sp/>=<sp/><ref refid="_weather___balloon_8cpp_1a5924c9408a49897f2752e9c95b091461" kindref="member">Wire</ref>.read();<sp/></highlight><highlight class="comment">//<sp/>receive<sp/>the<sp/>byte</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>zout<sp/>=<sp/>(zl|(zh<sp/>&lt;&lt;<sp/>8));<sp/></highlight><highlight class="comment">//concatenate<sp/>the<sp/>MSB<sp/>and<sp/>LSB</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>zout;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Weather_Balloon/library/MAG3110/MAG3110.cpp"/>
+  </compounddef>
+</doxygen>

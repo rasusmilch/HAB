@@ -1,0 +1,409 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.11">
+  <compounddef id="struct_afsk" kind="struct" language="C++" prot="public">
+    <compoundname>Afsk</compoundname>
+    <includes refid="_a_f_s_k_8h" local="no">AFSK.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_afsk_1a539f9d0fd0fcdd2523aa9b5694207288" prot="public" static="no" mutable="no">
+        <type>FILE</type>
+        <definition>FILE Afsk::fd</definition>
+        <argsstring></argsstring>
+        <name>fd</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="69" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a0f2cf84d5882a74b33b54828e4adda6d" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_hdlc" kindref="compound">Hdlc</ref></type>
+        <definition>Hdlc Afsk::hdlc</definition>
+        <argsstring></argsstring>
+        <name>hdlc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="72" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="72" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a586542863e66d99dbb7b655fa54af563" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Afsk::preambleLength</definition>
+        <argsstring></argsstring>
+        <name>preambleLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="73" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="73" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1aa3297e8885c70332e9274679b9329937" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Afsk::tailLength</definition>
+        <argsstring></argsstring>
+        <name>tailLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="74" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="74" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a6a63466f08a5391a6515479363283fdf" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Afsk::sampleIndex</definition>
+        <argsstring></argsstring>
+        <name>sampleIndex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="77" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="77" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1abcc27bcdd8198ea3e46df974f7a17664" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Afsk::currentOutputByte</definition>
+        <argsstring></argsstring>
+        <name>currentOutputByte</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="78" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="78" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a763bb48860d3ba79de2dd1abffa2ad89" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Afsk::txBit</definition>
+        <argsstring></argsstring>
+        <name>txBit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="79" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="79" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1aece27671c62a8c93ce32e4bd6c38f312" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Afsk::bitStuff</definition>
+        <argsstring></argsstring>
+        <name>bitStuff</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="80" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="80" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1ab6ea81ad33d9cf98080a6e567cfd7887" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Afsk::bitstuffCount</definition>
+        <argsstring></argsstring>
+        <name>bitstuffCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="82" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="82" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1aa62658bb66ca18cf3d268258ef126283" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Afsk::phaseAcc</definition>
+        <argsstring></argsstring>
+        <name>phaseAcc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="84" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="84" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1ae5f800f21b5aa819af756c5572e63cce" prot="public" static="no" mutable="no">
+        <type>uint16_t</type>
+        <definition>uint16_t Afsk::phaseInc</definition>
+        <argsstring></argsstring>
+        <name>phaseInc</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="85" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="85" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a987e70d174e5cd82f73563d920273cc4" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref></type>
+        <definition>FIFOBuffer Afsk::txFifo</definition>
+        <argsstring></argsstring>
+        <name>txFifo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="87" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="87" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8h_1a68893c6a77f5945c30a7528e9841e5f3" compoundref="_a_f_s_k_8cpp" startline="95" endline="99">afsk_putchar</referencedby>
+        <referencedby refid="_a_f_s_k_8h_1adb7d23f979900b693df4f80b24e3eca1" compoundref="_a_f_s_k_8cpp" startline="109" endline="115">AFSK_transmit</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a32162873b8784efe43d3f28289c6ea6e" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Afsk::txBuf[CONFIG_AFSK_TX_BUFLEN]</definition>
+        <argsstring>[CONFIG_AFSK_TX_BUFLEN]</argsstring>
+        <name>txBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="88" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="88" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1aea4204b922aaf2c78708bacec08d7888" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>volatile bool Afsk::sending</definition>
+        <argsstring></argsstring>
+        <name>sending</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="90" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="90" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1aafcba3655264de89dda891b98d661b59" compoundref="_a_f_s_k_8cpp" startline="117" endline="176">AFSK_dac_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a326b5be68b2c9bb6191ac8d76a021999" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref></type>
+        <definition>FIFOBuffer Afsk::delayFifo</definition>
+        <argsstring></argsstring>
+        <name>delayFifo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="93" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="93" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1aab24e087341259c5e3f9008a8557644e" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t Afsk::delayBuf[SAMPLESPERBIT/2+1]</definition>
+        <argsstring>[SAMPLESPERBIT/2+1]</argsstring>
+        <name>delayBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="94" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="94" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1ac37f5dab53ed2219bbfc0d4c3f2f25b8" prot="public" static="no" mutable="no">
+        <type><ref refid="struct_f_i_f_o_buffer" kindref="compound">FIFOBuffer</ref></type>
+        <definition>FIFOBuffer Afsk::rxFifo</definition>
+        <argsstring></argsstring>
+        <name>rxFifo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="96" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="96" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+        <referencedby refid="_a_f_s_k_8h_1a52e815cce13ae490f2fed9988b75c16c" compoundref="_a_f_s_k_8cpp" startline="101" endline="107">afsk_getchar</referencedby>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a8c7ee9d7b92796ccc7c3257b581695cb" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Afsk::rxBuf[CONFIG_AFSK_RX_BUFLEN]</definition>
+        <argsstring>[CONFIG_AFSK_RX_BUFLEN]</argsstring>
+        <name>rxBuf</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="97" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="97" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8h_1a8d929ae28fa1de2980b46e953fcf0980" compoundref="_a_f_s_k_8cpp" startline="60" endline="78">AFSK_init</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a02560c20963adab17b0706c8c69f2ed3" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Afsk::iirX[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>iirX</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="99" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="99" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a454754399c47bf3514ffc495832b5391" prot="public" static="no" mutable="no">
+        <type>int16_t</type>
+        <definition>int16_t Afsk::iirY[2]</definition>
+        <argsstring>[2]</argsstring>
+        <name>iirY</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="100" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="100" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1af07324b473ed86d0f79b539d0e76ed8c" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Afsk::sampledBits</definition>
+        <argsstring></argsstring>
+        <name>sampledBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="102" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="102" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a109e9e878c62839db0f611c8c636ba93" prot="public" static="no" mutable="no">
+        <type>int8_t</type>
+        <definition>int8_t Afsk::currentPhase</definition>
+        <argsstring></argsstring>
+        <name>currentPhase</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="103" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="103" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a6f734e90f74a1efd094c9cde6ea9df6d" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t Afsk::actualBits</definition>
+        <argsstring></argsstring>
+        <name>actualBits</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="104" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="104" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      <memberdef kind="variable" id="struct_afsk_1a4b90678865e08c02384199c6b10aa5b5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>volatile int Afsk::status</definition>
+        <argsstring></argsstring>
+        <name>status</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="106" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="106" bodyend="-1"/>
+        <referencedby refid="_a_f_s_k_8cpp_1a4a34a69b6beff75a5aeca8df45cefad0" compoundref="_a_f_s_k_8cpp" startline="324" endline="457">AFSK_adc_isr</referencedby>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="240">
+        <label>Hdlc</label>
+        <link refid="struct_hdlc"/>
+      </node>
+      <node id="239">
+        <label>Afsk</label>
+        <link refid="struct_afsk"/>
+        <childnode refid="240" relation="usage">
+          <edgelabel>hdlc</edgelabel>
+        </childnode>
+        <childnode refid="241" relation="usage">
+          <edgelabel>delayFifo</edgelabel>
+          <edgelabel>txFifo</edgelabel>
+          <edgelabel>rxFifo</edgelabel>
+        </childnode>
+      </node>
+      <node id="241">
+        <label>FIFOBuffer</label>
+        <link refid="struct_f_i_f_o_buffer"/>
+      </node>
+    </collaborationgraph>
+    <location file="Weather_Balloon/library/LibAPRS/AFSK.h" line="67" column="1" bodyfile="Weather_Balloon/library/LibAPRS/AFSK.h" bodystart="66" bodyend="108"/>
+    <listofallmembers>
+      <member refid="struct_afsk_1a6f734e90f74a1efd094c9cde6ea9df6d" prot="public" virt="non-virtual"><scope>Afsk</scope><name>actualBits</name></member>
+      <member refid="struct_afsk_1aece27671c62a8c93ce32e4bd6c38f312" prot="public" virt="non-virtual"><scope>Afsk</scope><name>bitStuff</name></member>
+      <member refid="struct_afsk_1ab6ea81ad33d9cf98080a6e567cfd7887" prot="public" virt="non-virtual"><scope>Afsk</scope><name>bitstuffCount</name></member>
+      <member refid="struct_afsk_1abcc27bcdd8198ea3e46df974f7a17664" prot="public" virt="non-virtual"><scope>Afsk</scope><name>currentOutputByte</name></member>
+      <member refid="struct_afsk_1a109e9e878c62839db0f611c8c636ba93" prot="public" virt="non-virtual"><scope>Afsk</scope><name>currentPhase</name></member>
+      <member refid="struct_afsk_1aab24e087341259c5e3f9008a8557644e" prot="public" virt="non-virtual"><scope>Afsk</scope><name>delayBuf</name></member>
+      <member refid="struct_afsk_1a326b5be68b2c9bb6191ac8d76a021999" prot="public" virt="non-virtual"><scope>Afsk</scope><name>delayFifo</name></member>
+      <member refid="struct_afsk_1a539f9d0fd0fcdd2523aa9b5694207288" prot="public" virt="non-virtual"><scope>Afsk</scope><name>fd</name></member>
+      <member refid="struct_afsk_1a0f2cf84d5882a74b33b54828e4adda6d" prot="public" virt="non-virtual"><scope>Afsk</scope><name>hdlc</name></member>
+      <member refid="struct_afsk_1a02560c20963adab17b0706c8c69f2ed3" prot="public" virt="non-virtual"><scope>Afsk</scope><name>iirX</name></member>
+      <member refid="struct_afsk_1a454754399c47bf3514ffc495832b5391" prot="public" virt="non-virtual"><scope>Afsk</scope><name>iirY</name></member>
+      <member refid="struct_afsk_1aa62658bb66ca18cf3d268258ef126283" prot="public" virt="non-virtual"><scope>Afsk</scope><name>phaseAcc</name></member>
+      <member refid="struct_afsk_1ae5f800f21b5aa819af756c5572e63cce" prot="public" virt="non-virtual"><scope>Afsk</scope><name>phaseInc</name></member>
+      <member refid="struct_afsk_1a586542863e66d99dbb7b655fa54af563" prot="public" virt="non-virtual"><scope>Afsk</scope><name>preambleLength</name></member>
+      <member refid="struct_afsk_1a8c7ee9d7b92796ccc7c3257b581695cb" prot="public" virt="non-virtual"><scope>Afsk</scope><name>rxBuf</name></member>
+      <member refid="struct_afsk_1ac37f5dab53ed2219bbfc0d4c3f2f25b8" prot="public" virt="non-virtual"><scope>Afsk</scope><name>rxFifo</name></member>
+      <member refid="struct_afsk_1af07324b473ed86d0f79b539d0e76ed8c" prot="public" virt="non-virtual"><scope>Afsk</scope><name>sampledBits</name></member>
+      <member refid="struct_afsk_1a6a63466f08a5391a6515479363283fdf" prot="public" virt="non-virtual"><scope>Afsk</scope><name>sampleIndex</name></member>
+      <member refid="struct_afsk_1aea4204b922aaf2c78708bacec08d7888" prot="public" virt="non-virtual"><scope>Afsk</scope><name>sending</name></member>
+      <member refid="struct_afsk_1a4b90678865e08c02384199c6b10aa5b5" prot="public" virt="non-virtual"><scope>Afsk</scope><name>status</name></member>
+      <member refid="struct_afsk_1aa3297e8885c70332e9274679b9329937" prot="public" virt="non-virtual"><scope>Afsk</scope><name>tailLength</name></member>
+      <member refid="struct_afsk_1a763bb48860d3ba79de2dd1abffa2ad89" prot="public" virt="non-virtual"><scope>Afsk</scope><name>txBit</name></member>
+      <member refid="struct_afsk_1a32162873b8784efe43d3f28289c6ea6e" prot="public" virt="non-virtual"><scope>Afsk</scope><name>txBuf</name></member>
+      <member refid="struct_afsk_1a987e70d174e5cd82f73563d920273cc4" prot="public" virt="non-virtual"><scope>Afsk</scope><name>txFifo</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

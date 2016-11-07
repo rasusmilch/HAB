@@ -1,0 +1,16 @@
+<map id="OneWire::select" name="OneWire::select">
+<area shape="rect" id="node2" href="$class_dallas_temperature.html#af6a28c1d1009dd6d010d97dffaf5942d" title="DallasTemperature::\lreadPowerSupply" alt="" coords="161,39,293,80"/>
+<area shape="rect" id="node4" href="$class_dallas_temperature.html#a2b55774207d0211fd679247a7137142b" title="DallasTemperature::\lreadScratchPad" alt="" coords="161,136,293,177"/>
+<area shape="rect" id="node7" href="$class_dallas_temperature.html#aee2a2abd5f8293df9a0a030b3e982c90" title="DallasTemperature::\lrequestTemperaturesByAddress" alt="" coords="536,163,731,204"/>
+<area shape="rect" id="node9" href="$class_dallas_temperature.html#a74c275dabf103f268c5a271d379dcb7e" title="DallasTemperature::\lwriteScratchPad" alt="" coords="161,285,293,327"/>
+<area shape="rect" id="node3" href="$class_dallas_temperature.html#aea297b5f2a720a5455245c0fbf7333ec" title="DallasTemperature::\lbegin" alt="" coords="349,5,481,47"/>
+<area shape="rect" id="node5" href="$class_dallas_temperature.html#a624f64b186c13927d4f74bd7c5b92c2e" title="DallasTemperature::\lisConnected" alt="" coords="349,71,481,112"/>
+<area shape="rect" id="node6" href="$class_dallas_temperature.html#adaf460a3b8004218e97af7059d41053a" title="DallasTemperature::\lisConversionAvailable" alt="" coords="341,136,488,177"/>
+<area shape="rect" id="node8" href="$class_dallas_temperature.html#ae9a7bf62321615519242d2421c8b349a" title="DallasTemperature::\lrequestTemperaturesByIndex" alt="" coords="779,163,961,204"/>
+<area shape="rect" id="node10" href="$class_dallas_temperature.html#a48bc1a4d0e33f1735964c22c8bd2f6fb" title="DallasTemperature::\lrawToFahrenheit" alt="" coords="349,253,481,295"/>
+<area shape="rect" id="node13" href="$class_dallas_temperature.html#a394897437dfb8de4c8fd2198a1d1c356" title="DallasTemperature::\lsetResolution" alt="" coords="349,319,481,360"/>
+<area shape="rect" id="node14" href="$class_dallas_temperature.html#a0ed69b03ed848936ea0c8deea0e5c2ba" title="DallasTemperature::\lsetUserData" alt="" coords="349,384,481,425"/>
+<area shape="rect" id="node11" href="$class_dallas_temperature.html#ace033fbd8e4c7e17c4bcd7ecc8f3ebea" title="DallasTemperature::\lgetTempF" alt="" coords="567,253,699,295"/>
+<area shape="rect" id="node12" href="$class_dallas_temperature.html#a96318d36b313e1f4f413e2ed2b7501c7" title="DallasTemperature::\lgetTempFByIndex" alt="" coords="804,253,936,295"/>
+<area shape="rect" id="node15" href="$class_dallas_temperature.html#a65ae6994218200e92ce43bffd122d46b" title="DallasTemperature::\lsetUserDataByIndex" alt="" coords="567,384,700,425"/>
+</map>

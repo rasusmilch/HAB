@@ -1,0 +1,625 @@
+\hypertarget{class_adafruit___a_d_x_l345___unified}{}\section{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified Class Reference}
+\label{class_adafruit___a_d_x_l345___unified}\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+
+
+{\ttfamily \#include $<$Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+h$>$}
+
+
+
+Inheritance diagram for Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_adafruit___a_d_x_l345___unified__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{class_adafruit___a_d_x_l345___unified__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_adafruit___a_d_x_l345___unified_a34c57b807ceb0636ab79320231e51dd6}{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified} (int32\+\_\+t sensor\+ID=-\/1)
+\begin{DoxyCompactList}\small\item\em Instantiates a new A\+D\+X\+L345 class. \end{DoxyCompactList}\item 
+\hyperlink{class_adafruit___a_d_x_l345___unified_a7e0409063a7441c35044902b947d661d}{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified} (uint8\+\_\+t \hyperlink{_weather___balloon_8cpp_a65f172682710866247eacb1ef68df619}{clock}, uint8\+\_\+t miso, uint8\+\_\+t mosi, uint8\+\_\+t cs, int32\+\_\+t sensor\+ID=-\/1)
+\begin{DoxyCompactList}\small\item\em Instantiates a new A\+D\+X\+L345 class in S\+PI mode. \end{DoxyCompactList}\item 
+bool \hyperlink{class_adafruit___a_d_x_l345___unified_a55b74a63bbb1317228d5bb5905589a02}{begin} (void)
+\begin{DoxyCompactList}\small\item\em Setups the HW (reads coefficients values, etc.) \end{DoxyCompactList}\item 
+void \hyperlink{class_adafruit___a_d_x_l345___unified_ad722e964df59c7691b1666472940aa99}{set\+Range} (\hyperlink{_adafruit___a_d_x_l345___u_8h_a23c78f6ff1abdabd74f657e54e415e5b}{range\+\_\+t} range)
+\begin{DoxyCompactList}\small\item\em Sets the g range for the accelerometer. \end{DoxyCompactList}\item 
+\hyperlink{_adafruit___a_d_x_l345___u_8h_a23c78f6ff1abdabd74f657e54e415e5b}{range\+\_\+t} \hyperlink{class_adafruit___a_d_x_l345___unified_adcdcd1ddcd58af6b1d4f85f9ab30d7a4}{get\+Range} (void)
+\begin{DoxyCompactList}\small\item\em Sets the g range for the accelerometer. \end{DoxyCompactList}\item 
+void \hyperlink{class_adafruit___a_d_x_l345___unified_a8e837a3e456e5e17839447bbf65f76bd}{set\+Data\+Rate} (\hyperlink{_adafruit___a_d_x_l345___u_8h_a7b8465343401971414c6cc2581f28b0a}{data\+Rate\+\_\+t} data\+Rate)
+\begin{DoxyCompactList}\small\item\em Sets the data rate for the A\+D\+X\+L345 (controls power consumption) \end{DoxyCompactList}\item 
+\hyperlink{_adafruit___a_d_x_l345___u_8h_a7b8465343401971414c6cc2581f28b0a}{data\+Rate\+\_\+t} \hyperlink{class_adafruit___a_d_x_l345___unified_a3b8ae7da9a66e28b38b70a08c5646b02}{get\+Data\+Rate} (void)
+\begin{DoxyCompactList}\small\item\em Gets the data rate for the A\+D\+X\+L345 (controls power consumption) \end{DoxyCompactList}\item 
+bool \hyperlink{class_adafruit___a_d_x_l345___unified_a830e4a9d1729310c9cf0d0504b3d0229}{get\+Event} (\hyperlink{_adafruit___sensor_8h_structsensors__event__t}{sensors\+\_\+event\+\_\+t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Gets the most recent sensor event. \end{DoxyCompactList}\item 
+void \hyperlink{class_adafruit___a_d_x_l345___unified_ac53068bb82bd03fc492542b468a30478}{get\+Sensor} (\hyperlink{_adafruit___sensor_8h_structsensor__t}{sensor\+\_\+t} $\ast$)
+\begin{DoxyCompactList}\small\item\em Gets the \hyperlink{_adafruit___sensor_8h_structsensor__t}{sensor\+\_\+t} data. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_adafruit___a_d_x_l345___unified_acf54ca46aa7e6a613807f489711a8ceb}{get\+Device\+ID} (void)
+\begin{DoxyCompactList}\small\item\em Read the device ID (can be used to check connection) \end{DoxyCompactList}\item 
+void \hyperlink{class_adafruit___a_d_x_l345___unified_a8f6b9e9598618fc0cf221c4b62f924d9}{write\+Register} (uint8\+\_\+t reg, uint8\+\_\+t value)
+\begin{DoxyCompactList}\small\item\em Writes 8-\/bits to the specified destination register. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{class_adafruit___a_d_x_l345___unified_ab56b668f36793605d7be009a7efb74e8}{read\+Register} (uint8\+\_\+t reg)
+\begin{DoxyCompactList}\small\item\em Reads 8-\/bits from the specified register. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_adafruit___a_d_x_l345___unified_a62c1c34b81fdcb7825d7c9911fba988b}{read16} (uint8\+\_\+t reg)
+\begin{DoxyCompactList}\small\item\em Reads 16-\/bits from the specified register. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_adafruit___a_d_x_l345___unified_a5ad11ba3d12aa4f4aaaec38b3400fa6f}{getX} (void)
+\begin{DoxyCompactList}\small\item\em Gets the most recent X axis value. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_adafruit___a_d_x_l345___unified_ac745aefc2a66094a9c46115564939610}{getY} (void)
+\begin{DoxyCompactList}\small\item\em Gets the most recent Y axis value. \end{DoxyCompactList}\item 
+int16\+\_\+t \hyperlink{class_adafruit___a_d_x_l345___unified_ae61417ef16d19ff86ecd82efc14e960b}{getZ} (void)
+\begin{DoxyCompactList}\small\item\em Gets the most recent Z axis value. \end{DoxyCompactList}\item 
+void \hyperlink{class_adafruit___a_d_x_l345___unified_a812faf0e78b3f34a7dfe2fc701baedd7}{set\+Correction} (double)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 106 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified(int32\+\_\+t sensor\+I\+D=-\/1)}{Adafruit\_ADXL345\_Unified(int32\_t sensorID=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::\+Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified (
+\begin{DoxyParamCaption}
+\item[{int32\+\_\+t}]{sensor\+ID = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_a34c57b807ceb0636ab79320231e51dd6}{}\label{class_adafruit___a_d_x_l345___unified_a34c57b807ceb0636ab79320231e51dd6}
+
+
+Instantiates a new A\+D\+X\+L345 class. 
+
+
+
+Definition at line 183 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+A\+N\+G\+E\+\_\+2\+\_\+G.
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified(uint8\+\_\+t clock, uint8\+\_\+t miso, uint8\+\_\+t mosi, uint8\+\_\+t cs, int32\+\_\+t sensor\+I\+D=-\/1)}{Adafruit\_ADXL345\_Unified(uint8\_t clock, uint8\_t miso, uint8\_t mosi, uint8\_t cs, int32\_t sensorID=-1)}}]{\setlength{\rightskip}{0pt plus 5cm}Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::\+Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{clock, }
+\item[{uint8\+\_\+t}]{miso, }
+\item[{uint8\+\_\+t}]{mosi, }
+\item[{uint8\+\_\+t}]{cs, }
+\item[{int32\+\_\+t}]{sensor\+ID = {\ttfamily -\/1}}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_a7e0409063a7441c35044902b947d661d}{}\label{class_adafruit___a_d_x_l345___unified_a7e0409063a7441c35044902b947d661d}
+
+
+Instantiates a new A\+D\+X\+L345 class in S\+PI mode. 
+
+
+
+Definition at line 195 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+A\+N\+G\+E\+\_\+2\+\_\+G, and clock.
+
+
+
+\subsection{Member Function Documentation}
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!begin@{begin}}
+\index{begin@{begin}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{begin(void)}{begin(void)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::begin (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_a55b74a63bbb1317228d5bb5905589a02}{}\label{class_adafruit___a_d_x_l345___unified_a55b74a63bbb1317228d5bb5905589a02}
+
+
+Setups the HW (reads coefficients values, etc.) 
+
+
+
+Definition at line 210 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+E\+G\+\_\+\+P\+O\+W\+E\+R\+\_\+\+C\+TL, get\+Device\+I\+D(), Wire, and write\+Register().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_a55b74a63bbb1317228d5bb5905589a02_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!get\+Data\+Rate@{get\+Data\+Rate}}
+\index{get\+Data\+Rate@{get\+Data\+Rate}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Data\+Rate(void)}{getDataRate(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf data\+Rate\+\_\+t} Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::get\+Data\+Rate (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_a3b8ae7da9a66e28b38b70a08c5646b02}{}\label{class_adafruit___a_d_x_l345___unified_a3b8ae7da9a66e28b38b70a08c5646b02}
+
+
+Gets the data rate for the A\+D\+X\+L345 (controls power consumption) 
+
+
+
+Definition at line 289 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+E\+G\+\_\+\+B\+W\+\_\+\+R\+A\+TE, and read\+Register().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_a3b8ae7da9a66e28b38b70a08c5646b02_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!get\+Device\+ID@{get\+Device\+ID}}
+\index{get\+Device\+ID@{get\+Device\+ID}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Device\+I\+D(void)}{getDeviceID(void)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::get\+Device\+ID (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_acf54ca46aa7e6a613807f489711a8ceb}{}\label{class_adafruit___a_d_x_l345___unified_acf54ca46aa7e6a613807f489711a8ceb}
+
+
+Read the device ID (can be used to check connection) 
+
+
+
+Definition at line 146 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+E\+G\+\_\+\+D\+E\+V\+ID, and read\+Register().
+
+
+
+Referenced by begin().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_acf54ca46aa7e6a613807f489711a8ceb_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_acf54ca46aa7e6a613807f489711a8ceb_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!get\+Event@{get\+Event}}
+\index{get\+Event@{get\+Event}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Event(sensors\+\_\+event\+\_\+t $\ast$)}{getEvent(sensors\_event\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}bool Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::get\+Event (
+\begin{DoxyParamCaption}
+\item[{{\bf sensors\+\_\+event\+\_\+t} $\ast$}]{event}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_adafruit___a_d_x_l345___unified_a830e4a9d1729310c9cf0d0504b3d0229}{}\label{class_adafruit___a_d_x_l345___unified_a830e4a9d1729310c9cf0d0504b3d0229}
+
+
+Gets the most recent sensor event. 
+
+
+
+Implements \hyperlink{class_adafruit___sensor_a0636562b9bc853b796ecc87b5d4b1bec}{Adafruit\+\_\+\+Sensor}.
+
+
+
+Definition at line 299 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+M\+G2\+G\+\_\+\+M\+U\+L\+T\+I\+P\+L\+I\+ER, get\+X(), get\+Y(), get\+Z(), S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+A\+C\+C\+E\+L\+E\+R\+O\+M\+E\+T\+ER, and S\+E\+N\+S\+O\+R\+S\+\_\+\+G\+R\+A\+V\+I\+T\+Y\+\_\+\+S\+T\+A\+N\+D\+A\+RD.
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_a830e4a9d1729310c9cf0d0504b3d0229_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!get\+Range@{get\+Range}}
+\index{get\+Range@{get\+Range}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Range(void)}{getRange(void)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf range\+\_\+t} Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::get\+Range (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_adcdcd1ddcd58af6b1d4f85f9ab30d7a4}{}\label{class_adafruit___a_d_x_l345___unified_adcdcd1ddcd58af6b1d4f85f9ab30d7a4}
+
+
+Sets the g range for the accelerometer. 
+
+
+
+Definition at line 266 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+\_\+\+F\+O\+R\+M\+AT, and read\+Register().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_adcdcd1ddcd58af6b1d4f85f9ab30d7a4_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!get\+Sensor@{get\+Sensor}}
+\index{get\+Sensor@{get\+Sensor}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Sensor(sensor\+\_\+t $\ast$)}{getSensor(sensor\_t *)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::get\+Sensor (
+\begin{DoxyParamCaption}
+\item[{{\bf sensor\+\_\+t} $\ast$}]{sensor}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\hypertarget{class_adafruit___a_d_x_l345___unified_ac53068bb82bd03fc492542b468a30478}{}\label{class_adafruit___a_d_x_l345___unified_ac53068bb82bd03fc492542b468a30478}
+
+
+Gets the \hyperlink{_adafruit___sensor_8h_structsensor__t}{sensor\+\_\+t} data. 
+
+
+
+Implements \hyperlink{class_adafruit___sensor_a19e844c1eb2dc37cb72705d5572c4676}{Adafruit\+\_\+\+Sensor}.
+
+
+
+Definition at line 319 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References sensor\+\_\+t\+::max\+\_\+value, sensor\+\_\+t\+::min\+\_\+delay, sensor\+\_\+t\+::min\+\_\+value, sensor\+\_\+t\+::name, sensor\+\_\+t\+::resolution, sensor\+\_\+t\+::sensor\+\_\+id, S\+E\+N\+S\+O\+R\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+R\+E\+S\+S\+U\+RE, sensor\+\_\+t\+::type, and sensor\+\_\+t\+::version.
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!getX@{getX}}
+\index{getX@{getX}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+X(void)}{getX(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::getX (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_a5ad11ba3d12aa4f4aaaec38b3400fa6f}{}\label{class_adafruit___a_d_x_l345___unified_a5ad11ba3d12aa4f4aaaec38b3400fa6f}
+
+
+Gets the most recent X axis value. 
+
+
+
+Definition at line 156 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+X0, and read16().
+
+
+
+Referenced by get\+Event().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_a5ad11ba3d12aa4f4aaaec38b3400fa6f_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_a5ad11ba3d12aa4f4aaaec38b3400fa6f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!getY@{getY}}
+\index{getY@{getY}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Y(void)}{getY(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::getY (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_ac745aefc2a66094a9c46115564939610}{}\label{class_adafruit___a_d_x_l345___unified_ac745aefc2a66094a9c46115564939610}
+
+
+Gets the most recent Y axis value. 
+
+
+
+Definition at line 165 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+Y0, and read16().
+
+
+
+Referenced by get\+Event().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_ac745aefc2a66094a9c46115564939610_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_ac745aefc2a66094a9c46115564939610_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!getZ@{getZ}}
+\index{getZ@{getZ}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{get\+Z(void)}{getZ(void)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::getZ (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_ae61417ef16d19ff86ecd82efc14e960b}{}\label{class_adafruit___a_d_x_l345___unified_ae61417ef16d19ff86ecd82efc14e960b}
+
+
+Gets the most recent Z axis value. 
+
+
+
+Definition at line 174 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+Z0, and read16().
+
+
+
+Referenced by get\+Event().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_ae61417ef16d19ff86ecd82efc14e960b_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_ae61417ef16d19ff86ecd82efc14e960b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!read16@{read16}}
+\index{read16@{read16}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{read16(uint8\+\_\+t reg)}{read16(uint8\_t reg)}}]{\setlength{\rightskip}{0pt plus 5cm}int16\+\_\+t Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::read16 (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{reg}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_a62c1c34b81fdcb7825d7c9911fba988b}{}\label{class_adafruit___a_d_x_l345___unified_a62c1c34b81fdcb7825d7c9911fba988b}
+
+
+Reads 16-\/bits from the specified register. 
+
+
+
+Definition at line 124 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+A\+D\+D\+R\+E\+SS, and Wire.
+
+
+
+Referenced by get\+X(), get\+Y(), and get\+Z().
+
+
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_a62c1c34b81fdcb7825d7c9911fba988b_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!read\+Register@{read\+Register}}
+\index{read\+Register@{read\+Register}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{read\+Register(uint8\+\_\+t reg)}{readRegister(uint8\_t reg)}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::read\+Register (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{reg}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_ab56b668f36793605d7be009a7efb74e8}{}\label{class_adafruit___a_d_x_l345___unified_ab56b668f36793605d7be009a7efb74e8}
+
+
+Reads 8-\/bits from the specified register. 
+
+
+
+Definition at line 102 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+A\+D\+D\+R\+E\+SS, and Wire.
+
+
+
+Referenced by get\+Data\+Rate(), get\+Device\+I\+D(), get\+Range(), and set\+Range().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_ab56b668f36793605d7be009a7efb74e8_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!set\+Correction@{set\+Correction}}
+\index{set\+Correction@{set\+Correction}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{set\+Correction(double)}{setCorrection(double)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::set\+Correction (
+\begin{DoxyParamCaption}
+\item[{double}]{correction\+\_\+value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_a812faf0e78b3f34a7dfe2fc701baedd7}{}\label{class_adafruit___a_d_x_l345___unified_a812faf0e78b3f34a7dfe2fc701baedd7}
+
+
+Definition at line 335 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!set\+Data\+Rate@{set\+Data\+Rate}}
+\index{set\+Data\+Rate@{set\+Data\+Rate}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{set\+Data\+Rate(data\+Rate\+\_\+t data\+Rate)}{setDataRate(dataRate\_t dataRate)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::set\+Data\+Rate (
+\begin{DoxyParamCaption}
+\item[{{\bf data\+Rate\+\_\+t}}]{data\+Rate}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_a8e837a3e456e5e17839447bbf65f76bd}{}\label{class_adafruit___a_d_x_l345___unified_a8e837a3e456e5e17839447bbf65f76bd}
+
+
+Sets the data rate for the A\+D\+X\+L345 (controls power consumption) 
+
+
+
+Definition at line 277 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+E\+G\+\_\+\+B\+W\+\_\+\+R\+A\+TE, and write\+Register().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_a8e837a3e456e5e17839447bbf65f76bd_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!set\+Range@{set\+Range}}
+\index{set\+Range@{set\+Range}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{set\+Range(range\+\_\+t range)}{setRange(range\_t range)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::set\+Range (
+\begin{DoxyParamCaption}
+\item[{{\bf range\+\_\+t}}]{range}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_ad722e964df59c7691b1666472940aa99}{}\label{class_adafruit___a_d_x_l345___unified_ad722e964df59c7691b1666472940aa99}
+
+
+Sets the g range for the accelerometer. 
+
+
+
+Definition at line 242 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+R\+E\+G\+\_\+\+D\+A\+T\+A\+\_\+\+F\+O\+R\+M\+AT, read\+Register(), and write\+Register().
+
+
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_ad722e964df59c7691b1666472940aa99_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}!write\+Register@{write\+Register}}
+\index{write\+Register@{write\+Register}!Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified@{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified}}
+\subsubsection[{\texorpdfstring{write\+Register(uint8\+\_\+t reg, uint8\+\_\+t value)}{writeRegister(uint8\_t reg, uint8\_t value)}}]{\setlength{\rightskip}{0pt plus 5cm}void Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+Unified\+::write\+Register (
+\begin{DoxyParamCaption}
+\item[{uint8\+\_\+t}]{reg, }
+\item[{uint8\+\_\+t}]{value}
+\end{DoxyParamCaption}
+)}\hypertarget{class_adafruit___a_d_x_l345___unified_a8f6b9e9598618fc0cf221c4b62f924d9}{}\label{class_adafruit___a_d_x_l345___unified_a8f6b9e9598618fc0cf221c4b62f924d9}
+
+
+Writes 8-\/bits to the specified destination register. 
+
+
+
+Definition at line 83 of file Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp.
+
+
+
+References A\+D\+X\+L345\+\_\+\+A\+D\+D\+R\+E\+SS, and Wire.
+
+
+
+Referenced by begin(), set\+Data\+Rate(), and set\+Range().
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{class_adafruit___a_d_x_l345___unified_a8f6b9e9598618fc0cf221c4b62f924d9_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+A\+D\+X\+L345-\/master/\hyperlink{_adafruit___a_d_x_l345___u_8h}{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+h}\item 
+Weather\+\_\+\+Balloon/library/\+Adafruit\+\_\+\+A\+D\+X\+L345-\/master/\hyperlink{_adafruit___a_d_x_l345___u_8cpp}{Adafruit\+\_\+\+A\+D\+X\+L345\+\_\+\+U.\+cpp}\end{DoxyCompactItemize}
