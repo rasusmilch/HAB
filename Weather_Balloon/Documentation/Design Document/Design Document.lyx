@@ -613,6 +613,13 @@ It is further assumed that the primary users of this system will include
 
 \begin_layout Section
 Constraints
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Constraints"
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
@@ -650,12 +657,55 @@ s and data collection technologies limits the controller size.
 \begin_layout Standard
 Any system is also constrained by budgetary boundaries.
  This is especially true outside of the government funded studies in academia.
+ Hence, a low cost solution is desirable.
 \end_layout
 
 \begin_layout Standard
-Lastly, the payload is subjected to accelerations and torque upon liftoff
- and payload landing that require a secure means of attachment to both the
- balloon and the payload container.
+Ruggedness is also important.
+ The payload is subjected to accelerations and torque upon liftoff and payload
+ landing that require a secure means of attachment to both the balloon and
+ the payload container.
+\end_layout
+
+\begin_layout Standard
+Lastly, a short time-frame of three weeks between the undertaking of the
+ controller and the scheduled launch is a major constraint on development.
+\end_layout
+
+\begin_layout Section
+Goals
+\end_layout
+
+\begin_layout Standard
+The goals of the 
+\noun on
+hab
+\noun default
+ project are derived from and similar to those in the constraints section
+ (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:Constraints"
+
+\end_inset
+
+.) 
+\end_layout
+
+\begin_layout Standard
+They consist of:
+\end_layout
+
+\begin_layout Itemize
+Low weight
+\end_layout
+
+\begin_layout Itemize
+Small volume
+\end_layout
+
+\begin_layout Itemize
+Energy efficiency
 \end_layout
 
 \begin_layout Chapter
@@ -663,10 +713,155 @@ Architectural Strategies
 \end_layout
 
 \begin_layout Section
-Technologies Used
+Software Environment
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+The software used during development will include the standard Arduino 
+\noun on
+ide
+\noun default
+
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "IDE"
+description "Integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development."
+
+\end_inset
+
+
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+The Arduino IDE can scarcely be called an IDE.
+ However, time shortages do not allow migration to a more full featured
+ IDE, or distancing from the Arduino core libraries.
+\end_layout
+
+\end_inset
+
+ with various sensor libraries included with many sensors boards upon purchase.
+ The Arduino framework is written in C++ and inline assembly.
+ Custom software will be designed to provide logging and control of the
+ sensors.
+\end_layout
+
+\begin_layout Standard
+Software reuse is an important consideration due to the tight time frame.
+ Many sensors and third party libraries are available to interface with
+ the Arduino software framework.
+ These libraries save time and energy in writing interface code and debugging
+ of software problems.
+ Additionally, future maintaince is enhanced due to the ease of programming
+ and understanding the more simplistic Arduino programming language, which
+ is a subset of C++.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Though, except for the standard libraries, all C++ functionality is available.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+User Interface
+\end_layout
+
+\begin_layout Standard
+The controller interface is straight forward.
+ During launch the user will apply power by plugging in the battery and
+ observing if a 
+\noun on
+gps
+\noun default
+ signal is aquired through the built-in 
+\noun on
+led
+\noun default
+ indicator.
+ After successful recovery, the user will remove power to the unit, reapply
+ power and hold the interface button to exit recovery mode.
+ Upon exiting recovery mode the user will plug in a serial cable to the
+ appropriate on-board header and use a terminal program and commands to
+ download the raw data from the SDCard.
+\end_layout
+
+\begin_layout Section
+Data Storage
+\end_layout
+
+\begin_layout Standard
+Data is stored on an SDCard for ease of availability and large storage capacity.
+ Data integrity is important and is accomplished by detecting and correcting
+ errors during data logging.
+\end_layout
+
+\begin_layout Standard
+Successful detection of errors is done through CRC16 checksums coupled to
+ every SDCard write.
+ Every potential block of data to be written to the card is first checked
+ if empty.
+ If the SDCard block is empty, data is written to that block and immediately
+ read back into a separate area of memory.
+ This is then compared with the valid sensor data to ensure successful data
+ writes and retrieval.
+ If no match is found, the controller will continue to attempt to write
+ and check subsequent blocks.
+ Each block is written in a raw format to guard against file system corruption
+ if power loss or a watchdog
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Watchdog"
+description "An electronic timer that is used to detect and recover from computer malfunctions. A timeout is used to initiate corrective action, typically by resetting the system."
+
+\end_inset
+
+ reset occurs.
+\end_layout
+
+\begin_layout Standard
+If a reset occurs, the controller finds the tail, or end, of the log (where
+ data was last written) and continues to log data.
+ This protects against overwriting of previous data.
+\end_layout
+
+\begin_layout Section
+Hardware
+\end_layout
+
+\begin_layout Standard
+The mother and daughter board prototypes are hand made to reduce time to
+ deployment.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Typical turn-around time for affordable custom PCB boards are 3–4 weeks.
+\end_layout
+
+\end_inset
+
+ PCBs
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PCBs"
+description "Printed Circuit Boards."
+
+\end_inset
+
+ are hand laid out and soldered.
+\end_layout
+
+\begin_layout Chapter
+System Architecture
+\end_layout
+
+\begin_layout Section
 Hardware
 \end_layout
 
@@ -886,39 +1081,971 @@ A spring loaded housing to provide force to pull the nichrome wire through
  the payload line when activated.
 \end_layout
 
-\begin_layout Subsection
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Weather Balloon.svg
+	width 100text%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Main 
+\noun on
+hab
+\noun default
+ controller schematic.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Main-hab-controller-schematic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Aux-Aux.svg
+	width 90col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Schematic detailing the auxiliary connections from motherboard.
+ Controls various aspects of the controller such as power and communications.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Auxiliary-connections"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Heater-Heater.svg
+	height 90theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Heat control schematic.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Heat-control-schematic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename AT25_EEPROM-AT25_EEPROM.svg
+	height 90theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Proposed 
+\noun on
+eeprom
+\noun default
+ schematic for backup datalogging.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Proposed-eeprom-schematic"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
 Software
 \end_layout
 
 \begin_layout Standard
-The software used during development will include the standard Arduino 
+The software of the 
 \noun on
-ide
+hab
 \noun default
+ controller is primarily responsible for polling various sensors and recording
+ the data for later analysis.
+ 
+\end_layout
 
-\begin_inset CommandInset nomenclature
-LatexCommand nomenclature
-symbol "IDE"
-description "Integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development."
+\begin_layout Standard
+The controller communicates with the following sensors:
+\end_layout
+
+\begin_layout Itemize
+Temperature sensors
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Dallas Semiconductor DS18B20s mounted on the following sensors or locations:
+ 
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+GPS Receiver 
+\end_layout
+
+\begin_layout Itemize
+ML8511 UV light sensor
+\end_layout
+
+\begin_layout Itemize
+TSL2561 Lux light sensor
+\end_layout
+
+\begin_layout Itemize
+SHT31 Humidity and temperature sensor
+\end_layout
+
+\begin_layout Itemize
+Internal header break-out board
+\end_layout
+
+\begin_layout Itemize
+Free hanging outside the payload container (external temperature)
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Additionally, the DS3231 Real time clock contains a temperature sensor that
+ is designated the motherboard temperature for thermostatic regulation.
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Humidity through SHT31
+\end_layout
+
+\begin_layout Itemize
+Light levels
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+TSL2561 Lux and Broadband light level sensor
+\end_layout
+
+\begin_layout Itemize
+ML8511 UV sensor
+\end_layout
+
+\end_deeper
+\begin_layout Itemize
+Ionizing radiation through a modified MightyOhm Geiger counter board
+\end_layout
+
+\begin_layout Itemize
+Barometric pressure via a MS5607
+\end_layout
+
+\begin_layout Itemize
+LSM9DS1
+\end_layout
+
+\begin_deeper
+\begin_layout Itemize
+Magnetometer
+\end_layout
+
+\begin_layout Itemize
+Gyroscopic
+\end_layout
+
+\begin_layout Itemize
+Accelerometer
+\end_layout
+
+\end_deeper
+\begin_layout Standard
+The controller also communicates with a microSD flash card to record the
+ relevant data.
+\end_layout
+
+\begin_layout Standard
+Lastly, the controller is responsible for flashing 
+\noun on
+led
+\noun default
+s and an acoustic alarm to aid in payload retrieval once it determines it
+ has landed.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp__incl.png
+	lyxscale 70
+	width 100col%
 
 \end_inset
 
 
-\begin_inset Foot
-status collapsed
+\end_layout
 
 \begin_layout Plain Layout
-The Arduino IDE can scarcely be called an IDE.
- However, time shortages do not allow migration to a more full featured
- IDE, or distancing from the Arduino core libraries.
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Include files for the 
+\noun on
+hab
+\noun default
+ controller main program.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Include-files-for-main"
+
+\end_inset
+
+
 \end_layout
 
 \end_inset
 
- with various sensor libraries included with many sensors boards upon purchase.
- The Arduino framework is written in C++ and inline assembly.
- Custom software will be designed to provide logging and control of the
- sensors.
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a4fc01d736fe50cf5b977f755b675f11d_cgraph.png
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Overview of the function calls from the initial setup function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Overview-of-setup"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph.png
+	lyxscale 70
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the main loop function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-loop"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename /home/peanut/ownCloud-encfs/School/Robert/Arduino/Weather_Balloon/Documentation/Design Document/WeatherBalloon/_weather___balloon_8cpp_a2c2e98945e78daa792b87b30868c3907_cgraph.png
+	lyxscale 70
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls to configure the LSM9DS1 acceleration/gyroscope/magnetometer
+ sensor.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-for-LSM9DS1"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a3f8e34eb2b9d824174dced9eefeecf90_cgraph.png
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls to configure the TSL2561 light sensor.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-to-TSL2561"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a3f16b26bef419adf4e427a66af7fad37_cgraph.png
+	height 100theight%
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls for the check_alarms function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-for-check-alarms"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a6cc16c4213f4098ade81a6c9a7919bf7_cgraph.png
+	width 50col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the location_alarm function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-location_alarm"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a36e4683d7523a3b1e303d70a2989af58_cgraph.png
+	height 60theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the power_sensors function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-power_sensors"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a65d5c1fd6eda6f08406245b655c69907_cgraph.png
+	lyxscale 70
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the read_serial function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-read_serial"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a66d17868f5a5bcc68dc70243bb439959_cgraph.png
+	lyxscale 70
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the log_data function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-log_data"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a276e156004c668500daa7aaa9a770585_cgraph.png
+	lyxscale 80
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the find_sdcard_tail function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-find_sdcard_tail"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a450f53a446d117859c49aeaac6c31f9f_cgraph.png
+	lyxscale 80
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the read_sdcard function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-read_sdcard"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_ab14d778dd0d52177eb147802a870639d_cgraph.png
+	lyxscale 75
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the read_GPS function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-read_GPS"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_ad40ccf803c2eff76d7e0e7a24c9937ef_cgraph.png
+	lyxscale 80
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the readSensors function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-readSensors"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_aec2dcfe4cd6ca84e8df5730d179fdc6f_cgraph.png
+	lyxscale 80
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the configure_sdcard function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-configure_sdcard"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard

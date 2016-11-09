@@ -126,13 +126,13 @@ void setup()
   Serial.begin(9600);
   while (!Serial) ; // Wait for serial port to be available
   uint32_t wdt_ms = Watchdog.enable();
-  Serial.print(F("Watchdog timer: "));
+  /*Serial.print(F("Watchdog timer: "));
   Serial.print(wdt_ms);
   Serial.println();
   Serial.println(F("Starting server.."));
   Serial.print(F("Hardware Serial buffer size: "));
   Serial.println(SERIAL_BUFFER_SIZE);
-
+*/
     reset_modem();
     //Serial.println("init failed");
   // Defaults after init are 434.0MHz, 13dBm, Bw = 125 kHz, Cr = 4/5, Sf = 128chips/symbol, CRC on
