@@ -45,6 +45,7 @@
 \newminted[asm]{nasm}{}
 \newminted[java]{java}{}
 \newminted[bash]{bash}{}
+\newminted[cpp]{cpp}{}
 
 \newcommand{\iasm}[1]{\mintinline{nasm}{#1}}
 %\usepackage{enumitem}
@@ -199,7 +200,7 @@
 \renewlist{itemize}{itemize}{9}
 
 % KOMA script won't include the nomenclature within the table of contents
-\def\nompreamble{\addcontentsline{toc}{section}{\nomname}\markboth{\nomname}{\nomname}}
+\def\nompreamble{\addcontentsline{toc}{chapter}{\nomname}\markboth{\nomname}{\nomname}}
 %\DeclareUnicodeCharacter{21AA}{\hookarrow}
 
 \title{CS4360 HAB Design}
@@ -423,7 +424,8 @@ description "Allows communication from a ground station to the HAB controller vi
 
 \end_inset
 
- of the payload.
+ of the payload for scientific exploration of the Earth's atmosphere in
+ an educational setting.
 \end_layout
 
 \begin_layout Section
@@ -515,11 +517,31 @@ description "Ending of a flight, either naturally through a balloon bursting at 
 \end_inset
 
 .
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+To be implemented at a later date.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Itemize
 An adjustable cut-down mechanism that releases the payload after a predetermined
  amount of time or radio signal.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+To be implemented at a later date.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \end_deeper
@@ -554,17 +576,18 @@ description "Tthe region of Earth's atmosphere that lies between 20 and 100 km (
 
 \end_inset
 
-,
+, 
 \emph default
- and is of interest scientifically due to the benefits of low atmospheric
- disturbances in experiments—such as gathering cosmological data—at a fraction
- of the cost of a real-space launch.
+due to the very low amount at altitude.
+ It is of interest scientifically due to the benefits of low atmospheric
+ disturbances on experiments—such as gathering cosmological data—at a fraction
+ of the cost of a real space launch.
 \end_layout
 
 \begin_layout Standard
-Such flights require the ability to gather and record sensor data, such
- as temperature and pressure, as well as whatever experiment is primarily
- of interest on the individual flight.
+Such near-space flights require the ability to gather and record sensor
+ data, such as temperature and pressure, as well as whatever experiment
+ is primarily of interest on the individual flight.
  In addition, tracking and recovery of the equipment when a flight has ended
  is important, in light of the cost and time savings associated with equipment
  reuse.
@@ -580,8 +603,20 @@ Unfavorable flight path characteristics.
 \end_layout
 
 \begin_layout Itemize
-Balloon will fail to reach bursting altitude, and thus the payload may not
- be recoverable.
+Balloon failing to reach bursting altitude,
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+As the balloon climbs, the barometric pressure decreases.
+ This allows the balloon to expand.
+ When the elastic threshold of the balloon material is exceeded, the balloon
+ bursts and the payload parachutes to Earth.
+\end_layout
+
+\end_inset
+
+ and thus the payload may not be recoverable.
 \end_layout
 
 \begin_layout Itemize
@@ -606,9 +641,10 @@ usb
 \begin_layout Standard
 It is further assumed that the primary users of this system will include
  the typical middle school to college level students and teachers.
- Therefore, while every effort is made to build a reliable system, the current
- implementation does not implement various system reliability methods that
- would further complicate and increase the projects costs and time-to-deployment.
+ While every effort is made to build a reliable system, the current implementati
+on does not implement various system reliability methods.
+ These additional methods would further complicate and increase the project's
+ cost and time-to-deployment.
 \end_layout
 
 \begin_layout Section
@@ -633,18 +669,28 @@ hab
 \begin_layout Standard
 A weather balloon can typically lift a certain amount of weight based on
  the size of the balloon.
- Regulatory agencies also limit the payload weight.
- Thus the controller and related systems should minimize weight to allow
- cheaper and light balloons, and allow more free payload capacity for other
- experiments.
+ Regulatory agencies, such as the 
+\noun on
+faa
+\noun default
+, also limit the payload weight.
+ Thus the controller and related systems should be of minimum weight to
+ allow cheaper and light balloons, and allow more free payload capacity
+ for other experiments.
 \end_layout
 
 \begin_layout Standard
-Coupled with weight battery capacity.
+Coupled with weight, as it is a large proportion of it, is battery capacity.
  Higher capacity batteries increase run-time, but at the expense of weight.
- Hence, conservation of energy is important to allow long flights, or extended
- payload retrieval.
- 
+ Using a lighter, and hence lesser capacity battery, will be beneficial
+ to a 
+\noun on
+hab
+\noun default
+ flight.
+ It takes no leap of imagination to understand that the conservation of
+ energy is important to allow long flights, more payload capacity or extended
+ payload retrieval once on the ground.
 \end_layout
 
 \begin_layout Standard
@@ -652,19 +698,33 @@ Additionally, the desire for a compact system to allow room for other experiment
 s and data collection technologies limits the controller size.
  While size is an important consideration, weight is the overriding constraint
  due to the hard regulatory limit placed on balloon payloads.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Cost is another factor.
+ Large balloons require more Helium, which can get quite expensive for education
+al institutes as a one time use item.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Standard
 Any system is also constrained by budgetary boundaries.
  This is especially true outside of the government funded studies in academia.
- Hence, a low cost solution is desirable.
+ Hence, a low cost solution is desirable, this would allow more educational
+ opportunities through continued balloon launches.
 \end_layout
 
 \begin_layout Standard
-Ruggedness is also important.
- The payload is subjected to accelerations and torque upon liftoff and payload
- landing that require a secure means of attachment to both the balloon and
- the payload container.
+Ruggedness of the equipment is also important.
+ The payload is subjected to accelerations and torque upon liftoff, as well
+ as impacts during free-fall and ground landing.
+ This requirement can be fulfilled by a secure means of attachment to both
+ the balloon and the payload container of any hardware.
 \end_layout
 
 \begin_layout Standard
@@ -681,8 +741,8 @@ The goals of the
 \noun on
 hab
 \noun default
- project are derived from and similar to those in the constraints section
- (
+ project are derived from, and similar to, those in the constraints section
+ above (
 \begin_inset CommandInset ref
 LatexCommand vref
 reference "sec:Constraints"
@@ -741,26 +801,26 @@ The Arduino IDE can scarcely be called an IDE.
 
 \end_inset
 
- with various sensor libraries included with many sensors boards upon purchase.
- The Arduino framework is written in C++ and inline assembly.
+ with various sensor libraries (open source and typically included with
+ many sensors boards upon purchase).
+ The Arduino framework allows code written in C++ and inline assembly.
  Custom software will be designed to provide logging and control of the
- sensors.
+ various sensors and subsystems.
 \end_layout
 
 \begin_layout Standard
 Software reuse is an important consideration due to the tight time frame.
  Many sensors and third party libraries are available to interface with
  the Arduino software framework.
- These libraries save time and energy in writing interface code and debugging
- of software problems.
- Additionally, future maintaince is enhanced due to the ease of programming
- and understanding the more simplistic Arduino programming language, which
- is a subset of C++.
+ These libraries save time and energy in writing interface code, as well
+ as provide less demand for debugging of software problems.
+ Additionally, future maintenance is enhanced due to the ease of programming
+ and understanding the more simplistic Arduino programming language.
 \begin_inset Foot
 status open
 
 \begin_layout Plain Layout
-Though, except for the standard libraries, all C++ functionality is available.
+Except for the standard C and C++ libraries, all C++ functionality is available.
 \end_layout
 
 \end_inset
@@ -784,11 +844,19 @@ gps
 led
 \noun default
  indicator.
- After successful recovery, the user will remove power to the unit, reapply
- power and hold the interface button to exit recovery mode.
+ 
+\end_layout
+
+\begin_layout Standard
+After successful recovery, the user will remove power to the unit.
+\end_layout
+
+\begin_layout Standard
+When logged data is required, the user will reapply power and hold the interface
+ button to exit recovery mode.
  Upon exiting recovery mode the user will plug in a serial cable to the
- appropriate on-board header and use a terminal program and commands to
- download the raw data from the SDCard.
+ appropriate on-board header and use a terminal program to send commands
+ to download the raw data from the SDCard.
 \end_layout
 
 \begin_layout Section
@@ -804,16 +872,16 @@ Data is stored on an SDCard for ease of availability and large storage capacity.
 \begin_layout Standard
 Successful detection of errors is done through CRC16 checksums coupled to
  every SDCard write.
- Every potential block of data to be written to the card is first checked
- if empty.
+ Before every potential block of data is written to the card, the card block
+ is first checked if empty.
  If the SDCard block is empty, data is written to that block and immediately
  read back into a separate area of memory.
  This is then compared with the valid sensor data to ensure successful data
- writes and retrieval.
- If no match is found, the controller will continue to attempt to write
- and check subsequent blocks.
+ write and retrieval.
+ If the data is found to not match, the controller will continue to attempt
+ to write and check subsequent blocks.
  Each block is written in a raw format to guard against file system corruption
- if power loss or a watchdog
+ (if power loss or a watchdog
 \begin_inset CommandInset nomenclature
 LatexCommand nomenclature
 symbol "Watchdog"
@@ -821,13 +889,23 @@ description "An electronic timer that is used to detect and recover from compute
 
 \end_inset
 
- reset occurs.
+ reset occurs.)
 \end_layout
 
 \begin_layout Standard
 If a reset occurs, the controller finds the tail, or end, of the log (where
  data was last written) and continues to log data.
  This protects against overwriting of previous data.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+The user must explicitly erase the SDCard by writing zeros to it.
+\end_layout
+
+\end_inset
+
+
 \end_layout
 
 \begin_layout Section
@@ -855,6 +933,10 @@ description "Printed Circuit Boards."
 \end_inset
 
  are hand laid out and soldered.
+ Custom PCB design allows tight integration with control over all aspects
+ of the design.
+ It also reduces weight and size by eliminating unnecessary components that
+ would come with a conventional Arduino board.
 \end_layout
 
 \begin_layout Chapter
@@ -903,8 +985,8 @@ description "System-on-a-chip."
 
 \end_inset
 
-) that allows communication with various sensors without needing additional
- components.
+) that allows communication with various sensors and peripherals without
+ needing additional components.
 \end_layout
 
 \begin_layout Itemize
@@ -1052,7 +1134,7 @@ description "Light Emitting Diodes. Small electronic components that emit light 
 
 \end_inset
 
- to attract attention getting visually.
+ to attract attention visually.
 \end_layout
 
 \end_deeper
@@ -1079,6 +1161,67 @@ A microcontroller that will implement a timer and react to barometric pressure.
 \begin_layout Itemize
 A spring loaded housing to provide force to pull the nichrome wire through
  the payload line when activated.
+\end_layout
+
+\begin_layout Subsection
+Schematics
+\end_layout
+
+\begin_layout Standard
+The main control board consists of the ATMEGA2560 microcontroller shown
+ in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Main-hab-controller-schematic"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Additionally, supporting components that are needed are shown in sub-schematics.
+ The auxiliary connections, to control such features as power toggling of
+ sensors, power distribution and filtering, and real time clocks are shown
+ in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Auxiliary-connections"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+The control module regulates the temperature of the various subsystems via
+ resistive heaters.
+ This schematic is shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Heat-control-schematic"
+
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+Lastly, a proposed SDCard backup, consisting of discrete 
+\noun on
+eeprom
+\noun default
+ chips, is shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Proposed-eeprom-schematic"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1132,13 +1275,13 @@ name "fig:Main-hab-controller-schematic"
 \begin_layout Standard
 \begin_inset Float figure
 wide false
-sideways false
+sideways true
 status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename Aux-Aux.svg
-	width 90col%
+	width 100col%
 
 \end_inset
 
@@ -1266,8 +1409,123 @@ name "fig:Proposed-eeprom-schematic"
 
 \end_layout
 
+\begin_layout Subsection
+PCB Design
+\end_layout
+
+\begin_layout Standard
+The printed circuit board design in given for the front (or top) of the
+ board in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Front-PCB-routing"
+
+\end_inset
+
+ and back (bottom) in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Back-PCB-routing"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Weather Balloon-brd-F.svg
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Front PCB routing layout.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Front-PCB-routing"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways true
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename Weather Balloon-brd-B.svg
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Back PCB routing layout.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Back-PCB-routing"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 Software
+\end_layout
+
+\begin_layout Subsection
+Overview
 \end_layout
 
 \begin_layout Standard
@@ -1290,7 +1548,7 @@ Temperature sensors
 
 \begin_deeper
 \begin_layout Itemize
-Dallas Semiconductor DS18B20s mounted on the following sensors or locations:
+Dallas Semiconductor DS18B20s mounted near the following sensors or locations:
  
 \end_layout
 
@@ -1353,7 +1611,7 @@ Barometric pressure via a MS5607
 \end_layout
 
 \begin_layout Itemize
-LSM9DS1
+LSM9DS1 Nine degrees of freedom sensor
 \end_layout
 
 \begin_deeper
@@ -1376,19 +1634,165 @@ The controller also communicates with a microSD flash card to record the
 \end_layout
 
 \begin_layout Standard
-Lastly, the controller is responsible for flashing 
+Lastly, the software is responsible for flashing 
 \noun on
 led
 \noun default
-s and an acoustic alarm to aid in payload retrieval once it determines it
- has landed.
+s and sounding an acoustic alarm to aid in payload retrieval once it determines
+ it has landed.
+\end_layout
+
+\begin_layout Chapter
+Implementation
+\end_layout
+
+\begin_layout Section
+Overview
+\end_layout
+
+\begin_layout Standard
+The C++ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{
+\backslash
+#include}
+\end_layout
+
+\end_inset
+
+ diagram for the main program code, which shows the various sensor classes
+ and supporting libraries, can be seen in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Include-files-for-main"
+
+\end_inset
+
+.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Maybe...
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Certain flight parameters are stored in non-volatile 
+\noun on
+eeprom
+\noun default
+ memory to enable communication across microcontroller restarts.
+ These include flags if the payload has been launched or determined to have
+ landed.
+ Additionally altitude and pressure thresholds for those flags are also
+ stored.
+\end_layout
+
+\begin_layout Standard
+Overall program flow can be seen in the flow chart in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Program-execution-flow"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Program execution begins with initializing sensors and data structures,
+ as well as checking for errors or unintended resets.
+ The function calls from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{setup()}
+\end_layout
+
+\end_inset
+
+ are given in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Overview-of-setup"
+
+\end_inset
+
+, with a more detailed examination in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:Setup"
+
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Control then passes to the main control loop, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{loop()}
+\end_layout
+
+\end_inset
+
+, where the controller does various logging and parameter checking.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{loop()}
+\end_layout
+
+\end_inset
+
+ function calls are seen in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Function-calls-from-loop"
+
+\end_inset
+
+ with an overview in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:Loop"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 \begin_inset Float figure
 wide false
 sideways true
-status open
+status collapsed
 
 \begin_layout Plain Layout
 \begin_inset Graphics
@@ -1424,13 +1828,336 @@ name "fig:Include-files-for-main"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
 \begin_layout Plain Layout
+\begin_inset Graphics
+	filename Main Program flow.svg
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Program execution flow.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Program-execution-flow"
+
+\end_inset
+
 
 \end_layout
 
 \end_inset
 
 
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+Setup()
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Setup"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The setup function (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Overview-of-setup"
+
+\end_inset
+
+) begins by safely conserving power through disabling sensor power (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:power_sensors"
+
+\end_inset
+
+.) This ensures that a rogue reset does not leave sensors unnecessarily powered.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+An impact during landing may temporarily remove power to the controller,
+ resetting it.
+ Since the controller does not need sensors after payload cut-down, powered
+ sensors reduce the location retrieval energy budget.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The controller configures needed pin change interrupts for the user interface,
+ then restores any settings from previous sessions by reading data from
+ the onboard 
+\noun on
+eeprom
+\noun default
+.
+\end_layout
+
+\begin_layout Standard
+If it is determined that the payload has landed previously, and would enter
+ the location retrieval phase of deployment, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{setup()}
+\end_layout
+
+\end_inset
+
+ calls a user interface function, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{count
+\backslash
+_down
+\backslash
+_led()}
+\end_layout
+
+\end_inset
+
+.
+ This function allows the user to exit the low power retrieval mode and
+ reset associated data parameters by a timed press of an on-board button.
+ This insures the user can enter flight mode in the field without programming
+ or other cumbersome equipment.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+For example, leaving the controller on too long causes it to assume faulty
+ pressure or 
+\size normal
+\noun on
+gps
+\size default
+\noun default
+ altitude readings, and that it has launched.
+ A user could reset the controller prior to launch and allow data recording
+ for the upcoming flight.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+If the retrieval flag has 
+\emph on
+not 
+\emph default
+been set, the execution continues to configure the sensors (such as 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Function-calls-for-LSM9DS1"
+
+\end_inset
+
+ and 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Function-calls-to-TSL2561"
+
+\end_inset
+
+), 
+\noun on
+pid
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "PID controller"
+description "A proportional–integral–derivative controller (PID controller) is a control loop feedback mechanism (controller) commonly used in industrial control systems. A PID controller continuously calculates an error valu as the difference between a desired setpoint and a measured process variable and applies a correction based on proportional, integral, and derivative terms, (sometimes denoted P, I, and D respectively) which give their name to the controller type."
+
+\end_inset
+
+
+\noun default
+ heater control, initialize SDCard (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:configure_sdcard"
+
+\end_inset
+
+) and determine the end of any previous logged data (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:find_sdcard_tail"
+
+\end_inset
+
+) as well as configure additional interrupts
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Interrupt"
+description "An interrupt is a signal to the processor emitted by hardware or software indicating an event that needs immediate attention. An interrupt alerts the processor to a high-priority condition requiring the interruption of the current code the processor is executing. "
+
+\end_inset
+
+.
+ Control then passes to the main program 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{loop()}
+\end_layout
+
+\end_inset
+
+ described in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:Loop"
+
+\end_inset
+
+.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+Arduino 
+\noun on
+ide
+\noun default
+ deemed a normal 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{main()}
+\end_layout
+
+\end_inset
+
+ with an embedded 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{while}
+\end_layout
+
+\end_inset
+
+ loop too complicated for ordinary users.
+ Hence, Arduino's 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{main()}
+\end_layout
+
+\end_inset
+
+ continuously calls 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{loop()}
+\end_layout
+
+\end_inset
+
+ for the developer.
+ Local variables can be lost, since the function returns and they go out
+ of scope.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+However, if the retrieval flag 
+\emph on
+has
+\emph default
+ been set, and the user interaction timer is allowed to expire, and control
+ of the program passes to the location retrieval function, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{location
+\backslash
+_alarm()}
+\end_layout
+
+\end_inset
+
+, detailed in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:location_alarm"
+
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -1457,51 +2184,6 @@ Overview of the function calls from the initial setup function.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Overview-of-setup"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename WeatherBalloon/_weather___balloon_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph.png
-	lyxscale 70
-	height 100theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Function calls from the main loop function.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Function-calls-from-loop"
 
 \end_inset
 
@@ -1573,7 +2255,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename WeatherBalloon/_weather___balloon_8cpp_a3f8e34eb2b9d824174dced9eefeecf90_cgraph.png
-	width 100col%
+	width 70col%
 
 \end_inset
 
@@ -1608,6 +2290,165 @@ name "fig:Function-calls-to-TSL2561"
 
 \end_layout
 
+\begin_layout Section
+Loop()
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:Loop"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The main program logic is contained in function calls from 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{loop()}
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Function-calls-from-loop"
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{loop()}
+\end_layout
+
+\end_inset
+
+ consists of the high level calls to read the sensors (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Function-calls-from-readSensors"
+
+\end_inset
+
+, 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Function-calls-from-read_GPS"
+
+\end_inset
+
+), check for launch and decent events, ration battery energy, call for heater
+ 
+\noun on
+pid
+\noun default
+ updates, and determine if the watchdog should be reset (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:pet_watchdog"
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_afe461d27b9c48d5921c00d521181f12f_cgraph.png
+	lyxscale 70
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the main loop function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-loop"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_ad40ccf803c2eff76d7e0e7a24c9937ef_cgraph.png
+	lyxscale 80
+	height 100theight%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the readSensors function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-readSensors"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -1617,7 +2458,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename WeatherBalloon/_weather___balloon_8cpp_a3f16b26bef419adf4e427a66af7fad37_cgraph.png
-	height 100theight%
+	height 80theight%
 
 \end_inset
 
@@ -1658,7 +2499,7 @@ status open
 \begin_layout Plain Layout
 \begin_inset Graphics
 	filename WeatherBalloon/_weather___balloon_8cpp_a6cc16c4213f4098ade81a6c9a7919bf7_cgraph.png
-	width 50col%
+	width 40col%
 
 \end_inset
 
@@ -1673,50 +2514,6 @@ Function calls from the location_alarm function.
 \begin_inset CommandInset label
 LatexCommand label
 name "fig:Function-calls-from-location_alarm"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename WeatherBalloon/_weather___balloon_8cpp_a36e4683d7523a3b1e303d70a2989af58_cgraph.png
-	height 60theight%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Function calls from the power_sensors function.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Function-calls-from-power_sensors"
 
 \end_inset
 
@@ -1774,92 +2571,6 @@ name "fig:Function-calls-from-read_serial"
 \end_layout
 
 \begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename WeatherBalloon/_weather___balloon_8cpp_a66d17868f5a5bcc68dc70243bb439959_cgraph.png
-	lyxscale 70
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Function calls from the log_data function.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Function-calls-from-log_data"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\end_layout
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Standard
-\begin_inset Float figure
-wide false
-sideways false
-status open
-
-\begin_layout Plain Layout
-\begin_inset Graphics
-	filename WeatherBalloon/_weather___balloon_8cpp_a276e156004c668500daa7aaa9a770585_cgraph.png
-	lyxscale 80
-	width 100col%
-
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-\begin_inset Caption Standard
-
-\begin_layout Plain Layout
-Function calls from the find_sdcard_tail function.
-\begin_inset CommandInset label
-LatexCommand label
-name "fig:Function-calls-from-find_sdcard_tail"
-
-\end_inset
-
-
-\end_layout
-
-\end_inset
-
 
 \end_layout
 
@@ -1958,6 +2669,75 @@ name "fig:Function-calls-from-read_GPS"
 
 \end_layout
 
+\begin_layout Section
+power_sensors()
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:power_sensors"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{power
+\backslash
+_sensors()}
+\end_layout
+
+\end_inset
+
+ function passes a given argument to various sub-functions to disable power
+ to all sensors via discrete 
+\noun on
+mosfet
+\noun default
+ transistor
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "MOSFET transistor"
+description "The metal–oxide–semiconductor field-effect transistor (MOSFET, MOS-FET, or MOS FET) is a type of transistor used for amplifying or switching electronic signals.\\\\The main advantage of a MOSFET over a regular transistor is that it requires very little current to turn on (less than 1mA), while delivering a much higher current to a load (10 to 50A or more.)"
+
+\end_inset
+
+ components.
+ This is called to enable or disable all sensors as a group.
+ The rational behind this is to conserve power for later payload retrieval.
+ Low battery levels require conservation of energy so that 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{location
+\backslash
+_alarm()}
+\end_layout
+
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:location_alarm"
+
+\end_inset
+
+) will have sufficient energy to aid in location finding and equipment reclamati
+on.
+\end_layout
+
 \begin_layout Standard
 \begin_inset Float figure
 wide false
@@ -1966,9 +2746,8 @@ status open
 
 \begin_layout Plain Layout
 \begin_inset Graphics
-	filename WeatherBalloon/_weather___balloon_8cpp_ad40ccf803c2eff76d7e0e7a24c9937ef_cgraph.png
-	lyxscale 80
-	height 100theight%
+	filename WeatherBalloon/_weather___balloon_8cpp_a36e4683d7523a3b1e303d70a2989af58_cgraph.png
+	height 50theight%
 
 \end_inset
 
@@ -1979,10 +2758,10 @@ status open
 \begin_inset Caption Standard
 
 \begin_layout Plain Layout
-Function calls from the readSensors function.
+Function calls from the power_sensors function.
 \begin_inset CommandInset label
 LatexCommand label
-name "fig:Function-calls-from-readSensors"
+name "fig:Function-calls-from-power_sensors"
 
 \end_inset
 
@@ -1993,14 +2772,70 @@ name "fig:Function-calls-from-readSensors"
 
 
 \end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+configure_sdcard()
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:configure_sdcard"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This function (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Function-calls-from-configure_sdcard"
+
+\end_inset
+
+) initializes the SDCard via each cards built-in 
+\noun on
+spi
+\noun default
+ bus
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "SPI bus"
+description "The Serial Peripheral Interface (SPI) bus is a synchronous serial communication interface specification used for short distance communication, primarily in embedded systems. The interface was developed by Motorola in the late eighties and has become a de facto standard. Typical applications include Secure Digital cards and liquid crystal displays."
+
+\end_inset
+
+.
+ Following successful configuration, the tail (or last entry) of the log
+ is determined by calling 
+\begin_inset ERT
+status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+code{find
+\backslash
+_sdcard
+\backslash
+_tail()}
 \end_layout
 
 \end_inset
 
+, shown in 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "sec:find_sdcard_tail"
 
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -2039,8 +2874,806 @@ name "fig:Function-calls-from-configure_sdcard"
 
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+find_sdcard_tail()
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:find_sdcard_tail"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The smallest size access unit for SDCards is a 512 byte block.
+ This function (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Function-calls-from-find_sdcard_tail"
+
+\end_inset
+
+) utilizes a binary search algorithm to search for the last used SDCard
+ block.
+ The algorithm's focus is for the first completely empty block on the card.
+ This block is assumed to be the tail of the log and set as the next location
+ for logging data.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+Assumed because sequential access to modest size cards would take hours
+ to cycle through (15-20 million blocks).
+ A binary search finds the end of the log in, at most, 24 block reads for
+ an 8 GB SDCard.
+ Worst case access is 
+\begin_inset Formula $O\left(\nicefrac{\log n}{\log2}\right)$
+\end_inset
+
+.
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a276e156004c668500daa7aaa9a770585_cgraph.png
+	lyxscale 80
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the find_sdcard_tail function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-find_sdcard_tail"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+log_data()
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:log_data"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This function (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "fig:Function-calls-from-log_data"
+
+\end_inset
+
+) packs multiple sensor readings into one 512 byte SDCard block.
+ When enough data readings are accumulated a CRC16
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "CRC16"
+description "A cyclic redundancy check (CRC) is an error-detecting code commonly used in digital networks and storage devices to detect accidental changes to raw data. Blocks of data entering these systems get a short check value attached, based on the remainder of a polynomial division of their contents. On retrieval, the calculation is repeated and, in the event the check values do not match, corrective action can be taken against data corruption."
+
+\end_inset
+
+ checksum
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Checksum"
+description "A checksum is a small-sized datum from a block of digital data for the purpose of detecting errors which may have been introduced during its transmission or storage. By themselves, checksums are often used to verify data integrity, but is not relied upon to verify data authenticity."
+
+\end_inset
+
+ (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "alg:CRC16-implementation"
+
+\end_inset
+
+) is generated for, and appended to, that block.
+ The function then zeros a temporary buffer and reads the next assigned
+ block from the SDCard.
+ This is to verify if the location is empty, to avoid overwriting previous
+ data.
+\end_layout
+
+\begin_layout Standard
+If the block is 
+\emph on
+not
+\emph default
+ empty, the function increments the current block to the next value and
+ repeats the verification.
+ This process is repeated until either the end of the SDCard is encountered,
+ or a valid empty block is found.
+\end_layout
+
+\begin_layout Standard
+Once an empty block is verified, the data is written to the SDCard.
+ The data is then immediately reread into the temporary buffer and another
+ CRC16 checksum is generated for comparison.
+\end_layout
+
+\begin_layout Standard
+If the checksums 
+\emph on
+do 
+\emph default
+match, the current block variable is incremented for the next iteration
+ of data logging.
+\end_layout
+
+\begin_layout Standard
+If the checksums do 
+\emph on
+not
+\emph default
+ match, the current block variable is incremented and the process of searching
+ and verifying a valid location and successful write begins again.
+ This guards against silent write errors, where the card reports a successful
+ write but has silently corrupted the data.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset Graphics
+	filename WeatherBalloon/_weather___balloon_8cpp_a66d17868f5a5bcc68dc70243bb439959_cgraph.png
+	lyxscale 70
+	width 100col%
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Function calls from the log_data function.
+\begin_inset CommandInset label
+LatexCommand label
+name "fig:Function-calls-from-log_data"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
 \begin_layout Plain Layout
 
+
+\backslash
+begin{cpp}
+\end_layout
+
+\begin_layout Plain Layout
+
+int16_t sd_calc_crc(const uint8_t* src, const uint8_t block_size) {
+\end_layout
+
+\begin_layout Plain Layout
+
+	int16_t crc, i, x = 0;
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	for(crc = i = 0; i < block_size; i++) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		x = ((crc >> 8) ^ src[i]) & 0xff;
+\end_layout
+
+\begin_layout Plain Layout
+
+		x ^= x >> 4;
+\end_layout
+
+\begin_layout Plain Layout
+
+		crc = (crc << 8) ^ (x << 12) ^ (x << 5) ^ x;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	return crc;
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+CRC16 implementation.
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:CRC16-implementation"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+location_alarm()
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:location_alarm"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This function's sole task is to wake up due to a watchdog interrupt, flash
+ the external 
+\noun on
+led
+\noun default
+s and sound a short attention getting siren.
+ It then resets the watchdog and places the microcontroller back into a
+ low-power sleep mode.
+\end_layout
+
+\begin_layout Section
+pet_watchdog()
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:pet_watchdog"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+The 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{pet
+\backslash
+_watchdog()}
+\end_layout
+
+\end_inset
+
+ function (
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "alg:Watchdog-sentinel-checking"
+
+\end_inset
+
+) is designed to ensure all pieces of the control module are functioning
+ correctly.
+\begin_inset Foot
+status collapsed
+
+\begin_layout Plain Layout
+A good primer is found at 
+\begin_inset CommandInset href
+LatexCommand href
+name "Designing Watchdog Timers for Embedded Systems"
+target "http://www.ganssle.com/watchdogs.htm"
+
+\end_inset
+
+ (
+\begin_inset Flex URL
+status open
+
+\begin_layout Plain Layout
+
+http://www.ganssle.com/watchdogs.htm
+\end_layout
+
+\end_inset
+
+).
+\end_layout
+
+\end_inset
+
+ This is accomplished through strategic placement of checks within all functions
+ that should be successful in a correctly running program.
+ When 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{pet
+\backslash
+_watchdog()}
+\end_layout
+
+\end_inset
+
+ is called, it checks a volatile
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Volatile variable"
+description "The volatile keyword indicates that a value may change between different accesses, even if it does not appear to be modified. This keyword prevents an optimizing compiler from optimizing away subsequent reads or writes and thus incorrectly reusing a stale value or omitting writes. Volatile values primarily arise in hardware access (memory-mapped I/O), where reading from or writing to memory is used to communicate with peripheral devices, and in threading, where a different thread may have modified a value."
+
+\end_inset
+
+ watchdog sentinel variable against an expected value.
+ If the value does not match, it is assumed the microcontroller is in an
+ unknown state and the function enters a loop awaiting a watchdog timer
+ system reset.
+\end_layout
+
+\begin_layout Standard
+The watchdog variable is a state variable for a long 
+\begin_inset Quotes eld
+\end_inset
+
+chain
+\begin_inset Quotes erd
+\end_inset
+
+ of appropriate and successful program execution.
+ 
+\end_layout
+
+\begin_layout Standard
+Looking at the chain example of 
+\begin_inset CommandInset ref
+LatexCommand vref
+reference "alg:Example-of-the-watchdog"
+
+\end_inset
+
+, upon entering a function, the volatile
+\begin_inset CommandInset nomenclature
+LatexCommand nomenclature
+symbol "Volatile variable"
+description "The volatile keyword indicates that a value may change between different accesses, even if it does not appear to be modified. This keyword prevents an optimizing compiler from optimizing away subsequent reads or writes and thus incorrectly reusing a stale value or omitting writes. Volatile values primarily arise in hardware access (memory-mapped I/O), where reading from or writing to memory is used to communicate with peripheral devices, and in threading, where a different thread may have modified a value."
+
+\end_inset
+
+ watchdog sentinel variable is checked against an expected value.
+ The expected value is derived from the previous successful function, which
+ updated the watchdog variable prior to returning (in this example case,
+ successful completion of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{pet
+\backslash
+_watchdog()}
+\end_layout
+
+\end_inset
+
+.)
+\end_layout
+
+\begin_layout Standard
+As each of the expected values are encountered, the watchdog variable is
+ set to another value for the next appropriate watchdog check.
+ 
+\end_layout
+
+\begin_layout Standard
+Upon successful completion of the current function, the watchdog variable
+ is again checked against what it is expected to be at that point of program
+ execution.
+ If it matches, once again it is updated to a unique value for the next
+ function.
+\end_layout
+
+\begin_layout Standard
+This chain of values ensures that corruption of the program counter, buffer
+ overflows, or other unintentional actions, do not place the microcontroller
+ in an unexpected or undefined state.
+ A run-away program counter may jump anywhere within the program space executing
+ random instructions, but it would be very unlikely to set the watchdog
+ variable correctly for a valid watchdog timer reset to occur.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{cpp}
+\end_layout
+
+\begin_layout Plain Layout
+
+void pet_watchdog() {
+\end_layout
+
+\begin_layout Plain Layout
+
+	// Make sure that registers are flushed and optimizations don't fiddle
+ with our watchdog variable.
+\end_layout
+
+\begin_layout Plain Layout
+
+	_MemoryBarrier();
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (watchdog == 210) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		wdt_reset();
+\end_layout
+
+\begin_layout Plain Layout
+
+		watchdog = 20;
+\end_layout
+
+\begin_layout Plain Layout
+
+		_MemoryBarrier();
+\end_layout
+
+\begin_layout Plain Layout
+
+	} else {
+\end_layout
+
+\begin_layout Plain Layout
+
+		// Wait for reset.
+\end_layout
+
+\begin_layout Plain Layout
+
+		while(true) {}
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Watchdog sentinel checking.
+ Only if the value matches what is expected is the watchdog reset.
+ Other values allow the watchdog timer to reset the microcontroller.
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Watchdog-sentinel-checking"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float algorithm
+wide false
+sideways false
+status collapsed
+
+\begin_layout Plain Layout
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{cpp}
+\end_layout
+
+\begin_layout Plain Layout
+
+void loop() {
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (watchdog == 20) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		watchdog = 30;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	/* Execute loop body code.
+\end_layout
+
+\begin_layout Plain Layout
+
+	*  Each called function checks and 
+\end_layout
+
+\begin_layout Plain Layout
+
+	*  updates watchdog along the way */
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\begin_layout Plain Layout
+
+	if (watchdog == 200) {
+\end_layout
+
+\begin_layout Plain Layout
+
+		watchdog = 210;
+\end_layout
+
+\begin_layout Plain Layout
+
+	}
+\end_layout
+
+\begin_layout Plain Layout
+
+	pet_watchdog();
+\end_layout
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{cpp}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Example of the watchdog chain at the beginning of 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+code{loop()}
+\end_layout
+
+\end_inset
+
+.
+\begin_inset CommandInset label
+LatexCommand label
+name "alg:Example-of-the-watchdog"
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Section
+read_sdcard()
+\begin_inset CommandInset label
+LatexCommand label
+name "sec:read_sdcard"
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+This function is initiated by the user.
+ It reads and parses the data off the SDCard, and outputs a comma separated
+ value stream over the serial terminal.
+ The user is expected to save this output to a file.
+ A comma separated value file is an industry standard used by many spreadsheet,
+ graphing and statistical programs.
+\begin_inset Foot
+status open
+
+\begin_layout Plain Layout
+My give-a-damn ran out.
 \end_layout
 
 \end_inset
